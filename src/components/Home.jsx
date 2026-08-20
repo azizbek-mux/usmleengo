@@ -73,11 +73,15 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp }
           <div className="greet">
             {name ? <>Hi, <span>{name}</span></> : "usmleengo"}
           </div>
-          <div className="sub">
-            {state.answered
-              ? `${state.answered} answered · ${accuracy}% correct`
-              : bankBlurb()}
-          </div>
+          {/* Bank size stays put once there is progress to show — it is what
+              the app offers, not a first-run greeting. Progress goes on its
+              own line beneath so neither has to be truncated on a phone. */}
+          <div className="sub">{bankBlurb()}</div>
+          {state.answered > 0 && (
+            <div className="sub sub-progress">
+              {state.answered.toLocaleString()} answered · {accuracy}%
+            </div>
+          )}
         </div>
         <div className="stats">
           <div className="stat flame">

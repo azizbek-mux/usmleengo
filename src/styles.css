@@ -89,7 +89,8 @@ input { font: inherit; }
 
 .greet { font-size: 22px; font-weight: 800; letter-spacing: -0.4px; }
 .greet span { color: var(--accent); }
-.sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.sub { font-size: 13px; color: var(--muted); margin-top: 2px; line-height: 1.35; }
+.sub-progress { margin-top: 0; opacity: 0.8; }
 
 .stats { display: flex; gap: 8px; }
 
