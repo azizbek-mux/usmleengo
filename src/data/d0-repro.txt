@@ -1,0 +1,51 @@
+# Reproductive, obstetrics and gynaecology — batch 1.
+B|Preeclampsia|repro,OB|Visual scotomata in preeclampsia are caused by|Retinal artery vasospasm|Retinal detachment|Abnormal placentation causes ischemia and vasoactive release.
+B|Preeclampsia|repro,OB,pharm|Seizure prophylaxis in preeclampsia uses|Magnesium sulfate|Phenytoin|Monitor reflexes; calcium gluconate reverses toxicity.
+B|Eclampsia|repro,OB,emergency|The definitive treatment of preeclampsia is|Delivery|Antihypertensives|Everything else is temporizing.
+G|Neural crest|repro,embryology|Around week 4, ___ crest cells migrate to form the peripheral nervous system|neural|neural|Also melanocytes, adrenal medulla and branchial arch cartilage.
+B|Deformation versus malformation|repro,embryology|An amniotic band amputating a limb is a|Deformation|Malformation|Deformation is extrinsic mechanical force on normal tissue.
+B|Polyhydramnios|repro,OB|Polyhydramnios results from|Impaired fetal swallowing|Impaired fetal urination|Anencephaly and oesophageal atresia. Renal problems cause oligohydramnios.
+B|Oligohydramnios|repro,OB|Oligohydramnios results from|Reduced fetal urine output|Reduced fetal swallowing|Renal agenesis or posterior urethral valves.
+B|Mifepristone|repro,pharm,OB|Mifepristone acts as a|Progesterone antagonist|Folate antagonist|Methotrexate is the folate antagonist used in ectopic pregnancy.
+B|Congenital cytomegalovirus|repro,OB,micro|Congenital CMV classically causes|Microcephaly with periventricular calcification|Limb hypoplasia with cicatricial scarring|The commonest congenital infection.
+B|Congenital toxoplasmosis|repro,OB,micro|Congenital toxoplasmosis causes|Chorioretinitis with scattered calcification|Cataracts, deafness and heart defects|CMV calcifications are periventricular; toxoplasma are scattered.
+B|Congenital rubella|repro,OB,micro|Congenital rubella causes|Cataracts, deafness and a patent ductus|Chorioretinitis and hydrocephalus|Prevented by pre-conception live vaccine.
+G|Relaxin|repro,OB,physiology|___ loosens pelvic ligaments in pregnancy|relaxin|relaxin|Widens the pelvic outlet but causes pelvic girdle pain.
+B|Complete hydatidiform mole|repro,OB,oncology|A complete mole has which karyotype?|46,XX entirely paternal|69,XXY with fetal parts|No fetal parts; higher malignant potential.
+B|Partial hydatidiform mole|repro,OB,oncology|A partial mole is|Triploid with some fetal parts|Diploid with no fetal parts|Usually 69,XXY; lower malignancy risk.
+B|Placenta accreta|repro,OB|The main risk factor for placenta accreta is|A prior caesarean scar|Multiparity alone|Thin myometrium lacks decidua basalis.
+B|Placenta percreta|repro,OB|Placenta percreta invades|Through the myometrium into adjacent organs|Only the superficial myometrial layer|Accreta attaches, increta invades, percreta penetrates.
+B|Placenta previa|repro,OB|Placenta previa presents with|Painless bright red bleeding|Painful bleeding with a rigid uterus|Abruption is painful; never do a digital exam in previa.
+B|Placental abruption|repro,OB,emergency|Placental abruption presents with|Painful bleeding and a tense uterus|Painless bright red bleeding|Risk factors: hypertension, trauma, cocaine, smoking.
+B|Subgaleal hemorrhage|repro,OB,peds|Subgaleal hemorrhage collects between the|Periosteum and galea aponeurotica|The skull and the dura mater|Crosses suture lines; can cause hypovolemic shock after vacuum delivery.
+B|Cephalohematoma|repro,peds|A cephalohematoma|Does not cross suture lines|Crosses suture lines|Subperiosteal; caput succedaneum crosses sutures.
+B|Stress urinary incontinence|repro,gyn,urology|Stress incontinence is leakage with|Increased intra-abdominal pressure|A sudden overwhelming urgency|Pelvic floor weakness; treat with Kegel exercises first.
+B|Urge incontinence|repro,gyn,pharm|Urge incontinence is caused by|Detrusor overactivity|Sphincter weakness|Treat with antimuscarinics or mirabegron.
+B|Oocyte arrest|repro,embryology|The oocyte completes meiosis II only|After fertilization|At ovulation|Arrested in metaphase II until sperm entry.
+B|Oocyte arrest|repro,embryology|Primary oocytes are arrested in|Prophase I until ovulation|Metaphase II until birth|An egg met a sperm: Meiosis II arrests in Metaphase.
+B|Pregnancy renal physiology|repro,OB,renal|In pregnancy, glomerular filtration rate|Increases|Decreases|Serum creatinine falls; mild glycosuria and proteinuria are normal.
+G|Gestational diabetes|repro,OB,endocrine|___ from the placenta drives insulin resistance in pregnancy|human placental lactogen|human placental lactogen,hpl,placental lactogen|Diabetogenic; screened at 24-28 weeks.
+B|Pregnancy murmur|repro,OB,cardio|A systolic flow murmur in pregnancy is caused by|Increased blood volume and flow|Underlying valvular stenosis|Physiologic; plasma volume rises about 50 percent.
+B|ACE inhibitors in pregnancy|repro,OB,pharm|ACE inhibitors in pregnancy cause|Renal dysgenesis and oligohydramnios|Neural tube and limb defects|Fetal renal hypoperfusion; contraindicated throughout.
+B|Indirect inguinal hernia|repro,anatomy,embryology|A congenital indirect hernia results from|A patent processus vaginalis|Transversalis weakness|Also causes communicating hydrocele.
+B|Prostate cancer grading|repro,oncology|The Gleason score reflects|Glandular architecture|Nuclear size and shape|Higher score and stage mean worse prognosis.
+B|Prostate cancer location|repro,oncology,anatomy|Prostate cancer arises in the|Peripheral zone|Transition zone|Which is why digital rectal exam can detect it.
+B|Orchiectomy effect|repro,endocrine,oncology|Androgen deprivation reduces prostate|Glandular volume|Stromal volume|Androgens maintain the glandular epithelium.
+B|GnRH agonists|repro,pharm,oncology|Leuprolide is combined with an antiandrogen initially to prevent|A testosterone surge|Severe hot flushes|Continuous GnRH agonism eventually suppresses the axis.
+B|GnRH physiology|repro,endocrine|Pulsatile GnRH causes gonadotropins to|Rise|Fall|Continuous GnRH suppresses them — the basis of leuprolide therapy.
+B|Androgen insensitivity syndrome|repro,genetics,endocrine|Complete androgen insensitivity results from|Impaired androgen receptor function|Absent testosterone synthesis|46,XY with female phenotype, blind vagina, no uterus.
+B|Androgen insensitivity syndrome|repro,genetics|In complete androgen insensitivity, the uterus is|Absent|Present|Anti-Mullerian hormone from Sertoli cells still regresses the ducts.
+G|Mullerian ducts|repro,embryology|The Mullerian ducts form the uterus, fallopian tubes and upper ___|vagina|vagina|Regressed in males by anti-Mullerian hormone.
+G|Wolffian ducts|repro,embryology|The Wolffian ducts form the epididymis, vas deferens and seminal ___|vesicles|vesicles,vesicle|Maintained by testosterone.
+B|5-alpha reductase deficiency|repro,genetics,endocrine|In 5-alpha reductase deficiency, internal genitalia are|Normal male|Female|Testosterone works; DHT does not, so external genitalia are ambiguous until puberty.
+B|Epididymitis|repro,micro|Epididymitis under age 35 is usually caused by|Chlamydia or gonorrhoea|Coliform bacteria|Older men get coliforms from outlet obstruction.
+B|Testicular torsion|repro,emergency,urology|Testicular torsion shows|An absent cremasteric reflex|Relief of pain on elevation|Relief on elevation (Prehn sign) suggests epididymitis.
+B|Erectile dysfunction|repro,physiology,pharm|Erection depends on|Parasympathetic nitric oxide and cGMP|Sympathetic noradrenaline release|Point and shoot: parasympathetic erection, sympathetic ejaculation.
+B|Sildenafil|repro,pharm|Sildenafil inhibits|Phosphodiesterase-5|Phosphodiesterase-3|Raises cGMP; contraindicated with nitrates.
+B|Testicular tumor markers|repro,oncology|Elevated AFP in a testicular tumor indicates|A nonseminomatous germ cell tumor|A classic pure seminoma alone|Pure seminoma never raises AFP.
+G|Cryptorchidism|repro,anatomy,embryology|The testis descends through the ___ inguinal ring in the transversalis fascia|deep|deep,internal|Undescended testis raises cancer and infertility risk.
+B|Polycystic ovary syndrome|repro,endocrine,gyn|PCOS increases the long-term risk of|Endometrial carcinoma|Ovarian carcinoma|Unopposed estrogen from anovulation.
+B|Endometriosis|repro,gyn|Endometriosis classically causes|Cyclic pelvic pain and dysmenorrhea|Postmenopausal bleeding and discharge|Chocolate cysts; commonest site is the ovary.
+B|Postmenopausal bleeding|repro,gyn,oncology|Postmenopausal bleeding requires|Endometrial biopsy|Reassurance|Endometrial cancer until proven otherwise.
+B|Combined oral contraceptives|repro,pharm|Combined oral contraceptives are contraindicated in|Migraine with aura and smokers over 35|Dysmenorrhea and troublesome acne|Thromboembolic and stroke risk.
+B|Ovarian torsion|repro,gyn,emergency|Ovarian torsion presents with|Sudden unilateral pain with an adnexal mass|Gradual bilateral pain with a fever|Doppler may still show flow; diagnosis is surgical.

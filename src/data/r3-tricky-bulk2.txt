@@ -1,0 +1,78 @@
+# TRICKY — bulk batch 2.
+
+# ── Confusable pairs ─────────────────────────────────────────────────────
+BT|Cushing disease vs ectopic ACTH|endocrine,adrenal|Which causes the MOST severe hypokalemia?|Ectopic ACTH|Cushing disease|Very high cortisol overwhelms 11-beta-HSD2.
+BT|Primary vs secondary hyperaldosteronism|endocrine,renal|Which has a HIGH renin?|Secondary hyperaldosteronism|Primary hyperaldosteronism|Conn syndrome suppresses renin.
+BT|Graves vs Hashimoto|endocrine,thyroid,immuno|Which has stimulating rather than destructive antibodies?|Graves disease|Hashimoto thyroiditis|Both may have anti-TPO, but Graves has TSI.
+BT|Thyroiditis phases|endocrine,thyroid|Subacute thyroiditis typically progresses from|Thyrotoxic to hypothyroid to euthyroid|Hypothyroid to thyrotoxic to euthyroid|Stored hormone leaks first, then the gland recovers.
+BT|Diabetes insipidus vs SIADH|endocrine,renal|Which has concentrated urine with dilute serum?|SIADH|Diabetes insipidus|DI is the reverse: dilute urine, concentrated serum.
+BT|Osteoporosis vs osteopetrosis|msk,bone|Which has DENSE but brittle bones?|Osteopetrosis|Osteoporosis|Defective osteoclasts; marrow is crowded out.
+BT|Rickets vs scurvy|msk,bone,vitamins|Which causes bleeding gums rather than bowed legs?|Scurvy|Rickets|Vitamin C affects collagen; vitamin D affects mineralization.
+BT|Paget vs osteomalacia|msk,bone,lab|Which has a raised alkaline phosphatase with NORMAL calcium and phosphate?|Paget disease|Osteomalacia|Osteomalacia lowers calcium and phosphate.
+BT|Duchenne vs Becker|msk,genetics|Which preserves the reading frame and is milder?|Becker muscular dystrophy|Duchenne muscular dystrophy|Duchenne is usually a frameshift deletion.
+BT|Myotonic dystrophy vs myasthenia|msk,neuro|Which has difficulty RELAXING the grip?|Myotonic dystrophy|Myasthenia gravis|Myotonia is delayed relaxation, not weakness on repetition.
+BT|Cardiac vs neurogenic syncope|cardio,neuro|Which occurs suddenly with no warning and rapid recovery?|Cardiac syncope|Vasovagal syncope|Vasovagal has prodromal nausea, sweating and pallor.
+BT|Stable vs unstable angina|cardio,MI|Which occurs at rest or with increasing frequency?|Unstable angina|Stable angina|An acute coronary syndrome with normal troponin.
+BT|NSTEMI vs unstable angina|cardio,MI,lab|What distinguishes NSTEMI from unstable angina?|A raised troponin|ST elevation|Both may show ST depression or T inversion.
+BT|Aortic dissection vs MI|cardio,emergency|Which causes unequal blood pressure between arms?|Aortic dissection|Myocardial infarction|Tearing pain radiating to the back.
+BT|Constrictive pericarditis vs tamponade|cardio,emergency|Which has Kussmaul sign, a JVP RISING on inspiration?|Constrictive pericarditis|Cardiac tamponade|Tamponade classically shows pulsus paradoxus instead.
+BT|Mitral vs tricuspid regurgitation|cardio,murmur|Which causes a prominent v wave in the JVP?|Tricuspid regurgitation|Mitral regurgitation|Right-sided regurgitation transmits to the neck veins.
+BT|Hypovolemic vs cardiogenic shock|cardio,critical care|Which has a HIGH pulmonary capillary wedge pressure?|Cardiogenic shock|Hypovolemic shock|Hypovolemia lowers filling pressures throughout.
+BT|Septic vs cardiogenic shock|cardio,critical care|Which has warm peripheries and a low SVR?|Septic shock|Cardiogenic shock|Cardiogenic shock is cold and vasoconstricted.
+BT|Asthma vs vocal cord dysfunction|resp|Which causes INSPIRATORY stridor with a normal flow-volume loop expiration?|Vocal cord dysfunction|Acute bronchial asthma|A common asthma mimic in young adults.
+BT|Pneumothorax vs effusion|resp,exam|Which has HYPERresonant percussion?|Pneumothorax|Pleural effusion|Effusion is stony dull with absent breath sounds.
+BT|Consolidation vs effusion|resp,exam|Which increases vocal resonance and tactile fremitus?|Consolidation|Pleural effusion|Fluid dampens transmission; solid lung enhances it.
+BT|Acute vs chronic renal failure|renal,lab|Which typically has small kidneys and anemia?|Chronic kidney disease|Acute kidney injury|Plus hypocalcemia and hyperphosphatemia.
+BT|Prerenal vs hepatorenal|renal,liver|Which fails to respond to a fluid challenge?|Hepatorenal syndrome|Prerenal azotemia|Both show avid sodium retention.
+BT|Nephritic vs rapidly progressive|renal,path|Which loses renal function over days to weeks?|Rapidly progressive glomerulonephritis|The classic acute nephritic syndrome|Crescents on biopsy; a nephrological emergency.
+BT|Cystitis vs pyelonephritis|renal,micro|Which has fever and flank tenderness?|Pyelonephritis|Cystitis|Plus white cell casts in the urine.
+BT|Anion gap vs osmolar gap|renal,toxicology|Which is raised in methanol poisoning before metabolism?|The osmolar gap|The anion gap|The anion gap rises later as formic acid accumulates.
+BT|Celiac vs lactose intolerance|GI|Which causes iron deficiency and dermatitis herpetiformis?|Celiac disease|Lactose intolerance|Lactose intolerance causes no malabsorption of other nutrients.
+BT|Achalasia vs scleroderma|GI,motility|Which has a HYPOtensive lower oesophageal sphincter with reflux?|Scleroderma|Achalasia|Achalasia fails to relax a hypertensive sphincter.
+BT|Ulcer perforation vs pancreatitis|GI,emergency,imaging|Which shows free air under the diaphragm?|Perforated ulcer|Acute pancreatitis|Pancreatitis shows no free air.
+BT|Small vs large bowel obstruction|GI,imaging|Which shows valvulae conniventes crossing the whole bowel width?|Small bowel obstruction|Large bowel obstruction|Haustra in the colon do not cross fully.
+BT|Diverticulitis vs diverticulosis|GI|Which classically causes painless bleeding?|Diverticulosis|Diverticulitis|Diverticulitis causes pain and fever, rarely bleeding.
+BT|Hemolytic vs obstructive jaundice|GI,liver,lab|Which has raised urinary urobilinogen with NO bilirubin in urine?|Hemolytic jaundice|Obstructive jaundice|Unconjugated bilirubin cannot enter urine.
+BT|Iron overload vs Wilson|GI,liver,genetics|Which causes a low ceruloplasmin?|Wilson disease|Hemochromatosis|Hemochromatosis raises ferritin and transferrin saturation.
+BT|Acute vs chronic subdural|neuro,imaging|Which appears HYPOdense on CT?|Chronic subdural hematoma|Acute subdural hematoma|Acute blood is bright; it darkens over weeks.
+BT|Migraine vs subarachnoid|neuro,emergency|Which reaches maximum intensity within one minute?|Subarachnoid hemorrhage|A migraine with aura|Migraine builds over minutes to hours.
+BT|Seizure vs syncope|neuro,cardio|Which typically has a prolonged postictal period?|Seizure|Syncope|Syncope recovers within seconds to a minute.
+BT|Dementia vs pseudodementia|neuro,psych|Which patient complains loudly about their memory?|Pseudodementia of depression|Early Alzheimer disease|Alzheimer patients often minimize their deficits.
+BT|Peripheral vs central facial palsy|neuro,cranial nerves|Which is associated with taste loss and hyperacusis?|Peripheral facial palsy|Central facial palsy|The facial nerve also carries chorda tympani and stapedius.
+BT|Radial vs posterior interosseous|neuro,anatomy|Which causes finger drop with PRESERVED wrist extension?|Posterior interosseous neuropathy|Radial nerve palsy at the spiral groove|And no sensory loss.
+BT|ITP vs drug-induced thrombocytopenia|heme,pharm|Which resolves on stopping a medication?|Drug-induced thrombocytopenia|Immune thrombocytopenic purpura|Heparin, quinine and sulfonamides are classic culprits.
+BT|Hemolysis vs ineffective erythropoiesis|heme,anemia|Which has a HIGH reticulocyte count?|Hemolysis|Megaloblastic anemia|Megaloblastic marrow destroys cells before release.
+BT|Sickle cell disease vs trait|heme,genetics|Which has a normal blood film and normal hemoglobin?|Sickle cell trait|Sickle cell disease|Trait carries only papillary necrosis and altitude risk.
+BT|Acute vs chronic leukemia|heme,oncology|Which has more than 20 percent blasts in the marrow?|Acute leukemia|Chronic leukemia|Chronic leukemias show mature-appearing cells.
+BT|Contact vs atopic dermatitis|derm,immuno|Which has sharply demarcated borders matching an exposure?|Allergic contact dermatitis|Atopic eczema dermatitis|Shape follows the offending object.
+BT|Impetigo vs herpes|derm,micro|Which has grouped vesicles on an erythematous base?|Herpes simplex|Impetigo|Impetigo gives honey-coloured crust.
+
+# ── Changed context ──────────────────────────────────────────────────────
+BT|Digoxin in renal failure|cardio,pharm,renal|Digoxin dosing in renal impairment must be|Reduced|Increased|It is renally cleared with a narrow index.
+BT|Metformin in surgery|endocrine,pharm,surgery|Metformin around major surgery is|Withheld|Continued|Risk of lactic acidosis with hypoperfusion.
+BT|Beta blocker in diabetes|endocrine,pharm,cardio|A beta blocker in a diabetic on insulin|Masks hypoglycemia awareness|Prevents hypoglycemia|Sweating is preserved as a warning.
+BT|Steroids and infection|immuno,pharm,micro|Corticosteroids can make an infection appear|Less inflamed but more severe|More obviously inflamed|They mask signs while impairing control.
+BT|Antibiotics and oral contraceptives|micro,pharm,repro|Which antibiotic genuinely reduces contraceptive efficacy?|Rifampin|Amoxicillin|Enzyme induction; most others do not.
+BT|Warfarin and antibiotics|pharm,coagulation,micro|Most antibiotics affect warfarin by|Killing vitamin K-producing gut flora|Displacing it from serum albumin|Raising the INR unpredictably.
+BT|Potassium in DKA|endocrine,emergency,electrolytes|Insulin in DKA should be delayed if potassium is below|3.3 mmol/L|5.0 mmol/L|Insulin would drop it into a fatal range.
+BT|Bicarbonate in DKA|endocrine,emergency|Bicarbonate in DKA is|Reserved for extreme acidosis|Given routinely to everyone|It can worsen cerebral oedema and hypokalemia.
+BT|Fluids in heart failure|cardio,critical care|A hypotensive patient with pulmonary oedema needs|Inotropes rather than fluids|A large fluid bolus|Fluid would worsen congestion.
+BT|Oxygen in paraquat|toxicology,resp|In paraquat poisoning, oxygen is|Avoided|Given generously|It accelerates free radical lung injury.
+BT|Antiemetics in bowel obstruction|GI,pharm,surgery|Metoclopramide in complete bowel obstruction is|Contraindicated|First-line|Prokinetics risk perforation.
+BT|Opioids in head injury|neuro,pharm,trauma|Opioids in head injury are used cautiously because they|Obscure pupillary and conscious level assessment|Raise the intracranial pressure directly|Pain control still matters, but monitor closely.
+BT|Antihypertensives in stroke|neuro,pharm,emergency|Blood pressure in acute ischemic stroke is usually|Left high unless extreme|Lowered aggressively|Perfusion of the penumbra depends on it.
+
+# ── One step further ─────────────────────────────────────────────────────
+BT|Hyperventilation and potassium|renal,electrolytes,resp|Acute alkalosis makes serum potassium|Fall|Rise|Potassium shifts into cells in exchange for hydrogen.
+BT|Insulin and phosphate|endocrine,electrolytes|Besides potassium and magnesium, insulin drives which ion into cells?|Phosphate|Calcium|The basis of refeeding syndrome.
+BT|Albumin and calcium|electrolytes,lab|A low albumin makes TOTAL calcium appear|Falsely low|Falsely high|Ionized calcium is unchanged; correct for albumin.
+BT|Acidosis and calcium|electrolytes,acid base|Acidosis makes ionized calcium|Rise|Fall|Hydrogen displaces calcium from albumin.
+BT|Blood transfusion and potassium|heme,electrolytes|Stored blood raises the recipient's|Potassium|Calcium|Red cells leak potassium during storage.
+BT|Diuretics and uric acid|renal,pharm,rheum|Thiazides and loops both make serum urate|Rise|Fall|Competing with urate for tubular secretion.
+BT|Hypothyroidism and drug clearance|endocrine,pharm|Hypothyroidism makes drug clearance|Slower|Faster|Doses of digoxin and opioids may need reducing.
+BT|Cirrhosis and ammonia|GI,liver,pharm|A high-protein meal in cirrhosis can precipitate|Encephalopathy|Variceal bleeding|Protein load becomes ammonia.
+BT|Nephrotic syndrome and thyroid|renal,endocrine|Nephrotic syndrome lowers total thyroxine because it loses|Thyroid-binding globulin|Thyroid hormone directly|Free T4 and TSH remain normal.
+BT|Pregnancy and thyroid tests|OB,endocrine,lab|Pregnancy raises TOTAL T4 because oestrogen raises|Thyroid-binding globulin|The free hormone level|Free T4 stays normal in euthyroid women.
+BT|Smoking and inflammatory bowel disease|GI,IBD|Smoking cessation can worsen|Ulcerative colitis|Crohn disease|One of the few conditions where smoking appears protective.
+BT|Splenectomy and malaria|heme,micro,immuno|Splenectomy makes malaria|More severe|Less severe|The spleen clears parasitized red cells.
+BT|Chronic disease and HbA1c|endocrine,heme,lab|Chronic kidney disease makes HbA1c|Unreliable, often falsely low|More accurate than in others|Shortened red cell survival.

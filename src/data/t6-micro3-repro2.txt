@@ -1,0 +1,63 @@
+# Infectious disease and reproductive medicine — further depth. Gap-weighted.
+
+# ── Sexually transmitted infection ───────────────────────────────────────
+G|Gonorrhoea|micro,repro,pharm|Gonorrhoea is treated with intramuscular ___|ceftriaxone|ceftriaxone|Resistance has removed the oral options.
+B|Chlamydia|micro,repro,pharm|Uncomplicated chlamydia is treated with|Doxycycline for seven days|A single dose of azithromycin|Doxycycline is now preferred for efficacy.
+G|Syphilis staging|micro,repro|Asymptomatic syphilis of more than one year is staged as ___ latent|late|late,tertiary|Requiring three weekly penicillin doses.
+B|Syphilis serology|micro,repro,lab|VDRL and RPR are|Non-treponemal tests for monitoring treatment|Confirmatory tests that stay positive|Treponemal tests stay positive for life.
+G|Trichomoniasis|micro,repro|Trichomonas causes a frothy discharge and a ___ cervix|strawberry|strawberry|Treat the partner too, with metronidazole.
+B|Bacterial vaginosis|micro,repro,lab|Bacterial vaginosis shows|Clue cells and a positive whiff test|Hyphae and spores on KOH microscopy|Overgrowth of Gardnerella; pH above 4.5.
+G|Genital herpes|micro,virus,repro|Primary genital herpes causes painful ___ with systemic symptoms|ulcers|ulcers,vesicles,ulceration|Suppressive therapy reduces recurrence and shedding.
+B|Chancroid|micro,repro|Chancroid causes|A painful ulcer with tender nodes|A painless ulcer with firm nodes|Haemophilus ducreyi; you do cry with ducreyi.
+G|Lymphogranuloma venereum|micro,repro|LGV is caused by Chlamydia serotypes L1 to L___|3|3,three,l3|Painless ulcer then painful buboes.
+B|Pelvic inflammatory disease|micro,repro,surgery|PID complicated by perihepatitis is called|Fitz-Hugh-Curtis syndrome|Meigs syndrome of the ovary|Violin-string adhesions around the liver.
+
+# ── HIV and opportunistic infection ──────────────────────────────────────
+G|HIV monitoring|micro,HIV,lab|HIV treatment response is monitored with the ___ load|viral|viral|CD4 count tracks immune recovery.
+B|HIV in pregnancy|micro,HIV,OB|Antiretroviral therapy in pregnancy reduces transmission to|Under 1 percent|About 10 percent|Plus obstetric management and infant prophylaxis.
+G|Pneumocystis prophylaxis|micro,HIV,pharm|Pneumocystis prophylaxis uses ___|TMP-SMX|tmp-smx,co-trimoxazole,trimethoprim-sulfamethoxazole,bactrim|Below a CD4 of 200.
+B|Immune reconstitution|micro,HIV|Immune reconstitution inflammatory syndrome occurs|After starting antiretroviral therapy|Before any antiretroviral is started|A paradoxical worsening as immunity recovers.
+G|Cryptococcal meningitis|micro,fungi,HIV|Cryptococcal meningitis raises the CSF ___ pressure markedly|opening|opening|Serial lumbar punctures relieve it.
+B|CMV retinitis|micro,virus,HIV|CMV retinitis occurs when CD4 falls below|50|350|Pizza-pie retinal appearance.
+G|Toxoplasmosis prophylaxis|micro,parasite,HIV|Toxoplasma prophylaxis begins when CD4 falls below ___|100|100,one hundred|TMP-SMX covers it as well as PCP.
+
+# ── Hospital and travel infection ────────────────────────────────────────
+G|Catheter-associated infection|micro,infection control|The single best way to prevent catheter infection is early ___|removal|removal|Avoid unnecessary catheterization.
+B|Central line infection|micro,infection control|Central line infection prevention bundles emphasize|Aseptic insertion and daily review|Routine line changes every week|Scheduled replacement does not help.
+G|Ventilator-associated pneumonia|micro,critical care|VAP prevention includes head elevation and daily sedation ___|holds|holds,interruption,breaks|Plus oral chlorhexidine.
+B|Surgical site infection|micro,surgery|Preoperative hair removal should use|Clippers, not razors|A razor on the ward|Razors cause microabrasions that seed infection.
+G|Malaria prophylaxis|micro,parasite|Malaria prophylaxis must continue for ___ weeks after leaving an endemic area|4|4,four|Except atovaquone-proguanil, which needs one.
+B|Traveller's diarrhoea|micro,GI|Traveller's diarrhoea is most often caused by|Enterotoxigenic E. coli|Salmonella enteritidis|Usually self-limiting with fluids.
+G|Typhoid|micro,bacteria,GI|Typhoid classically causes rose ___ and relative bradycardia|spots|spots,spot|Faget sign; treat with azithromycin or ceftriaxone.
+B|Dengue warning signs|micro,virus,emergency|Dengue warning signs include|Rising haematocrit with falling platelets|Fever with a mild maculopapular rash|Plasma leakage precedes shock.
+
+# ── Immunization and public health ───────────────────────────────────────
+G|Herd immunity|micro,vaccines,epidemiology|Herd immunity threshold rises with the basic reproduction number ___|R0|r0,r-nought,r naught|Measles needs about 95 percent coverage.
+B|Cold chain|micro,vaccines|A break in the vaccine cold chain|Renders vaccines potentially ineffective|Has no effect on vaccine potency|Doses must be discarded or revalidated.
+G|Post-exposure prophylaxis|micro,vaccines,virus|Rabies post-exposure needs vaccine plus ___ into the wound|immunoglobulin|immunoglobulin,rig,antibody|For previously unvaccinated people.
+B|Measles contact|micro,virus,peds|A susceptible child exposed to measles should receive|Vaccine within 72 hours|Antibiotics for a week|Or immunoglobulin within six days.
+G|Notifiable disease|micro,ethics|Suspected ___ must be notified before laboratory confirmation|tuberculosis|tuberculosis,tb,meningitis|Public health action cannot wait for cultures.
+
+# ── Obstetrics, deeper ───────────────────────────────────────────────────
+G|Antenatal screening|repro,OB,genetics|The combined test measures nuchal translucency, hCG and PAPP-___|A|a|Between 11 and 14 weeks.
+B|Cell-free DNA|repro,OB,genetics|Non-invasive prenatal testing analyses|Fetal DNA in maternal blood|Amniotic fluid cells|A screening test needing confirmation.
+G|Amniocentesis|repro,OB,genetics|Amniocentesis is performed after ___ weeks|15|15,fifteen|Chorionic villus sampling can be done earlier.
+B|Rhesus disease|repro,OB,immuno|Rhesus disease affects|Second and subsequent pregnancies|Only the very first pregnancy|Sensitization occurs at the first delivery.
+G|Fetal monitoring|repro,OB|Late decelerations on cardiotocography suggest uteroplacental ___|insufficiency|insufficiency|Variable decelerations suggest cord compression.
+B|Shoulder dystocia|repro,OB,emergency|The first manoeuvre for shoulder dystocia is|McRoberts with suprapubic pressure|Fundal pressure with traction|Fundal pressure worsens impaction.
+G|Postpartum hemorrhage|repro,OB,pharm|First-line uterotonic for postpartum haemorrhage is ___|oxytocin|oxytocin|Then ergometrine, carboprost and misoprostol.
+B|Retained placenta|repro,OB|Postpartum bleeding with a boggy uterus after delivery of the placenta suggests|Uterine atony|Retained products|The four Ts: tone, tissue, trauma, thrombin.
+G|Puerperal sepsis|repro,OB,micro|Puerperal sepsis is most often caused by group ___ streptococcus|A|a|A rapidly progressive and historically lethal infection.
+B|Lactation|repro,OB,endocrine|Milk ejection is triggered by|Oxytocin|Prolactin|Prolactin makes milk; oxytocin lets it down.
+
+# ── Gynaecology, deeper ──────────────────────────────────────────────────
+G|Primary amenorrhea|repro,gyn|Primary amenorrhea is investigated at age ___ with no periods and normal development|15|15,fifteen,16|Or 13 with no secondary sexual characteristics.
+B|Asherman syndrome|repro,gyn|Asherman syndrome causes amenorrhea through|Intrauterine adhesions|Ovarian failure|Usually after instrumentation or infection.
+G|Premature ovarian insufficiency|repro,gyn,endocrine|Premature ovarian insufficiency is diagnosed under age ___ with high FSH|40|40,forty|Requires hormone replacement for bone protection.
+B|Fibroid degeneration|repro,gyn,OB|Red degeneration of a fibroid classically occurs|In pregnancy|After menopause|Causing acute pain as the fibroid outgrows its supply.
+G|Ovarian cyst|repro,gyn,emergency|A ruptured ovarian cyst causes sudden pain and free ___ in the pelvis|fluid|fluid|Usually managed conservatively if stable.
+B|Cervical cancer risk|repro,gyn,oncology|Beyond HPV, the strongest cervical cancer risk factor is|Smoking|Obesity|Plus immunosuppression and early first intercourse.
+G|Endometrial hyperplasia|repro,gyn,pharm|Endometrial hyperplasia without atypia is treated with a ___|progestogen|progestogen,progestin,progesterone|Often a levonorgestrel intrauterine system.
+B|Menopause hormone therapy|repro,gyn,pharm|Hormone therapy started within ten years of menopause|Has a favourable risk-benefit profile|Is always contraindicated in women|Timing matters for cardiovascular risk.
+G|Contraception|repro,gyn,pharm|The most effective reversible contraception is the ___ implant or intrauterine device|subdermal|subdermal,progestogen,etonogestrel|Long-acting and independent of adherence.
+B|Emergency contraception|repro,gyn,pharm|The most effective emergency contraception is|A copper intrauterine device|Levonorgestrel tablets|Effective up to five days after intercourse.

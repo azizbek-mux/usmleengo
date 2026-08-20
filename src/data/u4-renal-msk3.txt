@@ -1,0 +1,57 @@
+# Renal, urology, musculoskeletal — third depth pass. Gap-weighted.
+
+# ── Acid-base, more angles ───────────────────────────────────────────────
+G|Delta gap|renal,acid base|A mixed disorder alongside anion gap acidosis is detected by the ___ ratio|delta|delta,delta-delta|Comparing the rise in anion gap with the fall in bicarbonate.
+B|Mixed disorder|renal,acid base|A normal pH with abnormal bicarbonate and CO2 suggests|A mixed disorder|Full compensation|Compensation never fully normalizes pH.
+G|Respiratory acidosis|renal,acid base,resp|Chronic respiratory acidosis is compensated by renal ___ retention|bicarbonate|bicarbonate,hco3|Taking three to five days.
+B|Metabolic alkalosis|renal,acid base,GI|Chloride-responsive metabolic alkalosis is caused by|Vomiting or diuretics|Hyperaldosteronism|Chloride-resistant causes have a high urine chloride.
+G|Lactic acidosis|renal,acid base,critical care|Type A lactic acidosis is caused by tissue ___|hypoperfusion|hypoperfusion,hypoxia,ischemia|Type B occurs without hypoperfusion, as with metformin.
+B|Ketoacidosis causes|renal,acid base,endocrine|Besides diabetes, ketoacidosis occurs with|Starvation and alcohol|Renal failure|Alcoholic ketoacidosis has near-normal glucose.
+
+# ── Fluid and electrolyte, more angles ───────────────────────────────────
+G|Total body water|renal,physiology|Total body water is about ___ percent of lean body weight|60|60,sixty|Two thirds intracellular, one third extracellular.
+B|Third spacing|renal,physiology,surgery|Third spacing causes|Intravascular depletion despite total fluid excess|True whole-body dehydration with intense thirst|Common after major surgery and in sepsis.
+G|Osmotic diuresis|renal,endocrine|Glucose, mannitol and urea all cause an ___ diuresis|osmotic|osmotic|Dragging water and electrolytes with them.
+B|Pseudohyponatremia|renal,lab,lipids|Pseudohyponatremia occurs with|Severe hyperlipidemia or paraproteinemia|Marked hyperglycemia with glycosuria|Hyperglycemia causes true dilutional hyponatremia.
+G|Potassium shift|renal,electrolytes|Beta-2 agonists, insulin and alkalosis all drive potassium ___ cells|into|into,inside,intracellularly|Lowering serum levels without changing total body stores.
+B|Renal potassium handling|renal,electrolytes,pharm|Amiloride and triamterene block|The epithelial sodium channel|Aldosterone receptors|Spironolactone blocks the receptor.
+
+# ── Glomerular disease, more angles ──────────────────────────────────────
+G|Proteinuria quantification|renal,lab|Proteinuria is quantified with a urine protein to ___ ratio|creatinine|creatinine|Replacing 24-hour collections.
+B|Orthostatic proteinuria|renal,peds|Orthostatic proteinuria is|Benign and absent in early morning urine|An early sign of glomerular disease|Common in tall adolescents.
+G|Post-infectious GN|renal,micro,lab|Poststreptococcal glomerulonephritis shows LOW serum ___|C3|c3,complement|Recovering within 8 weeks.
+B|Membranous nephropathy|renal,oncology,path|Secondary membranous nephropathy should prompt a search for|Malignancy, hepatitis B and lupus|Diabetes and chronic hypertension|Especially in older patients.
+G|Lupus nephritis|renal,immuno,path|Class ___ lupus nephritis is diffuse proliferative and the most severe|IV|iv,4,four|Requiring aggressive immunosuppression.
+B|Amyloidosis type|renal,heme,path|AL amyloidosis is caused by|Immunoglobulin light chains|Serum amyloid A protein|AA amyloid follows chronic inflammation.
+G|Diabetic nephropathy prevention|renal,endocrine,pharm|The mainstays are glycemic control, blood pressure control and ___ blockade|RAAS|raas,renin-angiotensin,ace|Plus SGLT2 inhibitors.
+
+# ── Urology, deeper ──────────────────────────────────────────────────────
+G|Hematuria|renal,urology,oncology|Visible hematuria in an adult over 45 requires ___ referral|urgent|urgent,two-week,2-week|To exclude urothelial malignancy.
+B|Microscopic hematuria|renal,urology|Persistent microscopic hematuria with proteinuria suggests|A glomerular cause|A urological cause|Dysmorphic red cells and casts confirm it.
+G|Prostate specific antigen|repro,urology,oncology|PSA should not be measured within ___ days of ejaculation or instrumentation|2|2,two,48 hours|To avoid false elevation.
+B|BPH medical therapy|repro,urology,pharm|Combination therapy for BPH uses|An alpha blocker with a 5-alpha reductase inhibitor|Two alpha blockers at the maximum tolerated dose|Rapid relief plus long-term shrinkage.
+G|Urinary retention|renal,urology,emergency|After relieving chronic retention, watch for post-obstructive ___|diuresis|diuresis|Which can cause profound fluid and electrolyte loss.
+B|Neurogenic bladder|renal,urology,neuro|A spinal cord lesion above the sacral micturition centre causes|A spastic overactive bladder|A flaccid atonic bladder|Sacral lesions cause flaccidity and overflow.
+G|Testicular tumour markers|repro,oncology|Choriocarcinoma raises ___ markedly|hCG|hcg,beta-hcg|AFP marks yolk sac tumours.
+B|Priapism|repro,urology,emergency|Ischemic priapism lasting over four hours requires|Urgent aspiration and phenylephrine|Observation with simple analgesia|Risk of permanent erectile dysfunction.
+
+# ── Bone and joint, deeper ───────────────────────────────────────────────
+G|Fracture healing|msk,ortho,path|Fracture healing begins with a ___ at the fracture site|hematoma|hematoma,haematoma,blood clot|Then soft callus, hard callus and remodelling.
+B|Non-union|msk,ortho|Fracture non-union is favoured by|Poor blood supply and movement|Rigid immobilization in plaster|Smoking and NSAIDs also impair healing.
+G|Osteomyelitis|msk,micro,imaging|The most sensitive early imaging for osteomyelitis is ___|MRI|mri|Plain films lag by two weeks.
+B|Chronic osteomyelitis|msk,micro,path|A sequestrum is|Dead bone within infected tissue|New periosteal bone formation|The involucrum is the new bone around it.
+G|Septic arthritis organism|msk,micro|In a sexually active young adult, consider ___ septic arthritis|gonococcal|gonococcal,gonorrhea,neisseria|Often migratory with tenosynovitis and rash.
+B|Prosthetic joint infection|msk,micro,surgery|Late prosthetic joint infection is usually caused by|Coagulase-negative staphylococci|Streptococcus pyogenes|Biofilm on the implant surface.
+G|Bone tumours|msk,oncology|The commonest malignant bone lesion overall is ___|metastasis|metastasis,metastases,secondary|Primary bone tumours are far rarer.
+B|Osteoid osteoma|msk,oncology|Osteoid osteoma classically causes|Night pain relieved by NSAIDs|Painless swelling of bone|A small nidus with sclerotic rim.
+G|Giant cell tumour|msk,oncology,imaging|Giant cell tumour of bone shows a ___-bubble appearance at the epiphysis|soap|soap|Locally aggressive but rarely metastatic.
+
+# ── Soft tissue and sports ───────────────────────────────────────────────
+G|Tendinopathy|msk,ortho,path|Chronic tendinopathy shows ___ rather than inflammation|degeneration|degeneration,degenerative change|Which is why steroid injection may weaken the tendon.
+B|Achilles rupture|msk,ortho,exam|Achilles tendon rupture is confirmed by|A positive Simmonds calf squeeze test|An inability to dorsiflex the ankle|Fluoroquinolones raise the risk.
+G|Plantar fasciitis|msk,ortho|Plantar fasciitis causes pain worst on the ___ steps of the day|first|first|Improving with stretching and orthotics.
+B|Frozen shoulder stages|msk,ortho|Adhesive capsulitis progresses through|Freezing, frozen and thawing|Acute then chronic|Often taking 18 months to resolve.
+G|Rotator cuff tear|msk,ortho,exam|A positive drop arm test suggests a ___ tear|supraspinatus|supraspinatus,rotator cuff|The arm falls suddenly from abduction.
+B|Carpal tunnel treatment|msk,neuro,ortho|First-line treatment for mild carpal tunnel syndrome is|A night splint|Immediate surgery|With steroid injection if that fails.
+G|Ganglion cyst|msk,ortho|A ganglion cyst contains ___ fluid and transilluminates|synovial|synovial,gelatinous,mucinous|Often resolving without treatment.
+B|De Quervain tenosynovitis|msk,ortho,exam|De Quervain tenosynovitis is confirmed by|The Finkelstein test|Tinel sign|Affecting the thumb extensor and abductor tendons.

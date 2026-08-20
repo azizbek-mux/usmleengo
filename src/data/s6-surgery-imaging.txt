@@ -1,0 +1,57 @@
+# Surgery, trauma and imaging — depth pass. Gap-weighted.
+
+# ── Acute abdomen ────────────────────────────────────────────────────────
+G|Peritonitis|surgery,GI,exam|Board-like rigidity with rebound indicates ___ peritonitis|generalized|generalized,generalised,diffuse|An indication for urgent laparotomy.
+B|Appendicitis|surgery,GI|Appendicitis pain characteristically|Starts centrally then shifts to the right iliac fossa|Starts and remains fixed in the right iliac fossa|Visceral then parietal peritoneal irritation.
+G|Appendicitis|surgery,GI,imaging|In pregnancy, suspected appendicitis is first imaged with ___|ultrasound|ultrasound,us|Then MRI, avoiding radiation.
+B|Bowel obstruction|surgery,GI|The commonest cause of small bowel obstruction in the developed world is|Adhesions|Hernia|Then hernia and malignancy.
+G|Strangulated obstruction|surgery,GI,lab|Rising ___ in bowel obstruction suggests ischemia|lactate|lactate|Along with fever, tachycardia and peritonism.
+B|Sigmoid volvulus|surgery,GI|Uncomplicated sigmoid volvulus is first treated with|Endoscopic decompression|Immediate laparotomy|Surgery if there is peritonitis or failed decompression.
+G|Mesenteric ischemia|surgery,vascular|Acute mesenteric ischemia classically causes pain out of ___ to examination findings|proportion|proportion|A soft abdomen with severe pain.
+B|Perforated viscus|surgery,imaging|Free intraperitoneal air is best seen on|An erect chest x-ray|A supine abdominal film|Or CT, which is far more sensitive.
+G|Ruptured aortic aneurysm|surgery,vascular,emergency|A pulsatile mass with back pain and hypotension needs immediate ___|surgery|surgery,laparotomy,repair|Imaging only if the patient is stable.
+
+# ── Hernias and abdominal wall ───────────────────────────────────────────
+G|Strangulated hernia|surgery,anatomy|A tender irreducible hernia with skin changes is ___|strangulated|strangulated|Compromised blood supply; operate urgently.
+B|Femoral hernia|surgery,anatomy|Femoral hernias are|More likely to strangulate|Less likely to strangulate|A narrow rigid neck; commoner in women.
+G|Incisional hernia|surgery|The main risk factor for incisional hernia is wound ___|infection|infection|Plus obesity, smoking and poor technique.
+B|Richter hernia|surgery,anatomy|A Richter hernia involves|Only part of the bowel circumference|The whole loop with its mesentery|It can strangulate without obstructing.
+
+# ── Trauma ───────────────────────────────────────────────────────────────
+G|Tension pneumothorax|surgery,trauma,emergency|Tension pneumothorax is a ___ diagnosis, treated before imaging|clinical|clinical|Needle decompression then chest drain.
+B|Massive hemothorax|surgery,trauma|Immediate thoracotomy is indicated after chest drain output of|1500 mL immediately|200 mL immediately|Or ongoing 200 mL per hour.
+G|Cardiac tamponade in trauma|surgery,trauma,imaging|Trauma tamponade is detected on the ___ scan|FAST|fast,efast|Focused assessment with sonography for trauma.
+B|Flail chest|surgery,trauma,resp|The main threat in flail chest is|Underlying pulmonary contusion|The paradoxical movement itself|Analgesia and respiratory support.
+G|Pelvic fracture|surgery,trauma,emergency|An unstable pelvic fracture is first stabilized with a pelvic ___|binder|binder|Reducing volume and controlling venous bleeding.
+B|Damage control surgery|surgery,trauma|Damage control surgery aims to|Stop bleeding and contamination, then resuscitate|Complete definitive repair in one operation|Avoiding the lethal triad.
+G|Lethal triad|surgery,trauma,coagulation|The lethal triad is hypothermia, acidosis and ___|coagulopathy|coagulopathy|Each worsens the others.
+B|Head injury imaging|surgery,trauma,neuro|A CT head within one hour is indicated for|GCS below 13 on arrival|Any headache at all|Plus focal deficit, seizure or skull fracture signs.
+G|Spinal injury|surgery,trauma,neuro|Neurogenic shock causes hypotension WITH ___|bradycardia|bradycardia|Distinguishing it from hypovolemic shock.
+B|Compartment syndrome|surgery,trauma,ortho|Compartment pressure needing fasciotomy is usually above|30 mmHg|10 mmHg|Or a delta pressure under 30.
+
+# ── Perioperative care ───────────────────────────────────────────────────
+G|ASA grading|surgery,anesthesia|ASA class ___ describes a patient with severe systemic disease|3|3,three,iii|Class 4 is a constant threat to life.
+B|Postoperative fever day 1|surgery|Fever on postoperative day one is usually|Atelectasis or inflammatory response|Wound infection needing antibiotics|Wound infection appears around day 5 to 7.
+G|Postoperative fever|surgery,micro|The five Ws are wind, water, walking, wound and ___|wonder drugs|wonder drugs,wonder-drugs,drugs|A time-based framework for postoperative fever.
+B|Anastomotic leak|surgery,GI|Anastomotic leak typically presents|Around day 5 to 7 with fever and tachycardia|Within the first 24 hours after surgery|Tachycardia is often the earliest sign.
+G|Ileus|surgery,GI|Postoperative ileus is worsened by ___ and electrolyte disturbance|opioids|opioids,opiates,morphine|Encourage mobilization and correct potassium.
+B|Wound dehiscence|surgery|Serosanguinous wound discharge after laparotomy suggests|Impending dehiscence|Normal healing|A surgical emergency if evisceration follows.
+G|Surgical site infection|surgery,micro|Prophylactic antibiotics are given within ___ hour of incision|1|1,one|And usually stopped within 24 hours.
+
+# ── Vascular and breast surgery ──────────────────────────────────────────
+G|Critical limb ischemia|surgery,vascular|The six Ps of acute limb ischemia include pain, pallor, pulselessness, paraesthesia, paralysis and ___|perishing cold|perishing cold,poikilothermia,cold|Paralysis and paraesthesia mean threatened limb.
+B|Varicose veins|surgery,vascular|Varicose veins result from|Incompetent venous valves|Arterial insufficiency|Treated with ablation or stripping if symptomatic.
+G|Carotid endarterectomy|surgery,vascular,neuro|Carotid endarterectomy is offered for symptomatic stenosis above ___ percent|70|70,seventy,50|Within two weeks of the event.
+B|Breast lump|surgery,oncology|Triple assessment of a breast lump is|Clinical examination, imaging and biopsy|Imaging alone with interval follow-up|The standard of care for any discrete lump.
+G|Breast cancer|surgery,oncology|Sentinel lymph node biopsy uses blue dye and a ___ tracer|radioisotope|radioisotope,radioactive,technetium|Avoiding full axillary clearance.
+B|Nipple discharge|surgery,oncology|Bloody unilateral nipple discharge suggests|Intraductal papilloma or carcinoma|Duct ectasia or periductal mastitis|Requires imaging and often duct excision.
+
+# ── Imaging principles ───────────────────────────────────────────────────
+G|Radiation|imaging,safety|___ has no ionizing radiation and is safe in pregnancy|Ultrasound|ultrasound,us,mri|MRI is also radiation-free.
+B|Contrast nephropathy|imaging,renal|Iodinated contrast should be used cautiously when eGFR is below|30|90|Hydration is the main preventive measure.
+G|Gadolinium|imaging,renal|Gadolinium in severe renal failure risks nephrogenic systemic ___|fibrosis|fibrosis|Avoid in advanced chronic kidney disease.
+B|CT versus MRI|imaging,neuro|For acute intracranial haemorrhage, the first-line test is|Non-contrast CT|An MRI brain|Fast, available and sensitive for fresh blood.
+G|Ultrasound|imaging,physics|Ultrasound cannot image well through ___ or air|bone|bone|Which is why lung and bowel gas obscure views.
+B|Chest x-ray|imaging,resp|A lateral chest film is most useful for|Retrocardiac and posterior lesions|Rib fractures and pleural thickening|Areas hidden on the frontal view.
+G|Nuclear medicine|imaging,oncology|FDG-PET detects tumours through their high ___ uptake|glucose|glucose,fdg|Reflecting the Warburg effect.
+B|Mammography|imaging,oncology|Microcalcifications on mammography are concerning when they are|Fine, pleomorphic and clustered|Coarse, round and scattered|Suggesting ductal carcinoma in situ.

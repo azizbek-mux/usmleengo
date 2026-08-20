@@ -1,0 +1,81 @@
+# Reproductive, obstetrics and paediatrics — depth pass. Gap-weighted.
+
+# ── Menstrual cycle ──────────────────────────────────────────────────────
+G|Menstrual cycle|repro,endocrine|Ovulation is triggered by a surge of ___|LH|lh,luteinizing hormone|About 36 hours before the egg is released.
+B|Luteal phase|repro,endocrine|The luteal phase is|Consistently 14 days|Highly variable|The follicular phase varies instead.
+G|Corpus luteum|repro,endocrine|The corpus luteum secretes ___ to maintain the endometrium|progesterone|progesterone|Rescued by hCG if pregnancy occurs.
+B|Estrogen|repro,endocrine|Estrogen exerts positive feedback on LH|Just before ovulation|Throughout the cycle|Otherwise it is inhibitory.
+G|Inhibin|repro,endocrine|Inhibin selectively suppresses ___|FSH|fsh|From granulosa cells; falls in menopause.
+B|Granulosa cells|repro,endocrine,biochem|Granulosa cells convert androgens to estrogen using|Aromatase|5-alpha reductase|Theca cells supply the androgen precursor.
+
+# ── Pregnancy physiology ─────────────────────────────────────────────────
+G|hCG|repro,OB,endocrine|hCG is detectable in serum about ___ days after conception|8|8,eight,8-11|It doubles roughly every 48 hours early on.
+B|hCG|repro,OB,oncology|An hCG far higher than expected for dates suggests|A molar pregnancy or twins|Ectopic pregnancy|Ectopic hCG rises abnormally slowly instead.
+G|Pregnancy cardiovascular|repro,OB,cardio|Plasma volume rises about ___ percent in pregnancy|50|50,fifty,40-50|Causing a dilutional physiologic anemia.
+B|Pregnancy respiratory|repro,OB,resp|In pregnancy, tidal volume|Rises|Falls|Residual volume falls; a compensated respiratory alkalosis results.
+G|Placenta|repro,OB,physiology|The fetal side of the placenta is derived from the ___|chorion|chorion,trophoblast,chorion frondosum|The maternal side is the decidua basalis.
+
+# ── Obstetric complications ──────────────────────────────────────────────
+G|Ectopic pregnancy|repro,OB,lab|An ectopic is suspected when hCG is above the discriminatory zone with no ___ pregnancy|intrauterine|intrauterine,iup|About 1500 to 3500 mIU/mL.
+B|Ectopic pregnancy|repro,OB,pharm|Methotrexate for ectopic pregnancy requires|An unruptured small ectopic with stable vitals|Any ectopic once the diagnosis is made|Rupture demands surgery.
+G|Gestational diabetes|repro,OB,endocrine|Gestational diabetes is screened at ___ weeks|24|24,24-28,28|With a glucose challenge test.
+B|Gestational diabetes|repro,OB,peds|The neonate of a diabetic mother is at risk of|Hypoglycemia after birth|Hyperglycemia at birth|Fetal hyperinsulinemia persists once the glucose supply stops.
+G|Preeclampsia|repro,OB,pharm|Low-dose ___ from the second trimester reduces preeclampsia risk|aspirin|aspirin|Offered to high-risk women from 12 weeks.
+B|HELLP syndrome|repro,OB,heme|HELLP syndrome consists of hemolysis, elevated liver enzymes and|Low platelets|Low potassium|A severe variant of preeclampsia.
+G|Magnesium toxicity|repro,OB,pharm|The first sign of magnesium toxicity is loss of deep tendon ___|reflexes|reflexes,reflex|Then respiratory depression. Reverse with calcium gluconate.
+B|Rh isoimmunization|repro,OB,immuno|Anti-D immunoglobulin is given to|Rh-negative mothers|Rh-positive mothers|At 28 weeks and after delivery or any sensitizing event.
+G|Postpartum hemorrhage|repro,OB,emergency|The commonest cause of postpartum hemorrhage is uterine ___|atony|atony,atonia|Massage, oxytocin, then further uterotonics.
+B|Amniotic fluid|repro,OB,peds|Meconium-stained fluid raises the risk of|Meconium aspiration syndrome|Neural tube defects|Especially in post-term deliveries.
+G|Preterm labour|repro,OB,pharm|Antenatal ___ are given before 34 weeks to mature fetal lungs|corticosteroids|corticosteroids,steroids,betamethasone|Reduces respiratory distress and intraventricular hemorrhage.
+
+# ── Gynaecology ──────────────────────────────────────────────────────────
+G|Endometriosis|repro,gyn|The commonest site of endometriosis is the ___|ovary|ovary,ovaries|Forming chocolate cysts.
+B|Adenomyosis|repro,gyn|Adenomyosis causes|A diffusely enlarged tender uterus|Discrete firm mobile masses|Fibroids give discrete masses instead.
+G|Leiomyoma|repro,gyn,heme|Fibroids commonly cause menorrhagia and ___ deficiency anemia|iron|iron|Estrogen-sensitive; they shrink after menopause.
+B|Polycystic ovary syndrome|repro,gyn,pharm|First-line treatment of PCOS for a woman not seeking pregnancy is|Combined oral contraceptive|Clomiphene citrate cycles|Clomiphene or letrozole is used for ovulation induction.
+G|Ovarian cancer|repro,gyn,oncology|The tumour marker for epithelial ovarian cancer is CA-___|125|125,ca125|Poor for screening; used for monitoring.
+B|Ovarian cancer|repro,gyn,genetics|BRCA mutations raise the risk of breast and|Ovarian cancer|Cervical cancer|Risk-reducing salpingo-oophorectomy is offered.
+G|Cervical cancer|repro,gyn,virus|Cervical cancer is caused by HPV types 16 and ___|18|18,eighteen|Types 6 and 11 cause warts.
+B|Cervical screening|repro,gyn,oncology|Cervical screening now relies primarily on|HPV testing|Cytology alone|More sensitive; cytology is used for triage.
+G|Endometrial cancer|repro,gyn,oncology|The commonest presenting symptom of endometrial cancer is postmenopausal ___|bleeding|bleeding|Always warrants biopsy.
+B|Menopause|repro,gyn,endocrine|Menopause is diagnosed after|12 months of amenorrhea|6 months of amenorrhea|Confirmed clinically; FSH is not usually needed.
+G|Hormone therapy|repro,gyn,pharm|Unopposed estrogen in a woman with a uterus risks endometrial ___|carcinoma|carcinoma,cancer,hyperplasia|Which is why progestogen is added.
+
+# ── Neonatal ─────────────────────────────────────────────────────────────
+G|Apgar score|peds,OB|The Apgar score is assessed at 1 and ___ minutes|5|5,five|Appearance, pulse, grimace, activity, respiration.
+B|Neonatal jaundice|peds,liver|Breast milk jaundice appears|In the second week and is benign|Within the first 24 hours of life|Breastfeeding failure jaundice appears earlier from dehydration.
+G|Kernicterus|peds,neuro,liver|Unconjugated bilirubin deposits in the basal ___ causing kernicterus|ganglia|ganglia,ganglion|Choreoathetoid cerebral palsy and deafness.
+B|Respiratory distress syndrome|peds,resp|Neonatal RDS shows which chest x-ray pattern?|Ground-glass with air bronchograms|Hyperinflation with patchy collapse|Surfactant deficiency in the premature lung.
+G|Transient tachypnea|peds,resp|Transient tachypnea of the newborn follows delayed clearance of lung ___|fluid|fluid,liquid|Commoner after caesarean section; resolves in 48 hours.
+B|Neonatal sepsis|peds,micro|Early-onset neonatal sepsis is most often caused by|Group B Streptococcus|Staphylococcus aureus|Plus E. coli and Listeria.
+G|Congenital hypothyroidism|peds,endocrine|Congenital hypothyroidism causes prolonged jaundice and an umbilical ___|hernia|hernia|Plus a large tongue and poor feeding.
+B|Developmental dysplasia of the hip|peds,ortho|Developmental dysplasia is screened with|Barlow and Ortolani manoeuvres|Plain x-ray of the hips at birth|Ultrasound confirms; ossification is incomplete early.
+
+# ── Paediatric growth and development ────────────────────────────────────
+G|Growth|peds,development|Birth weight doubles by ___ months|4|4,four,4-5|And triples by one year.
+B|Milestones|peds,development|Social smiling appears at about|2 months|6 months|Sitting unsupported at 6, walking at 12.
+G|Anterior fontanelle|peds,development|The anterior fontanelle closes by ___ months|18|18,eighteen,18-24|Delayed closure suggests hypothyroidism or rickets.
+B|Failure to thrive|peds,nutrition|The commonest cause of failure to thrive worldwide is|Inadequate caloric intake|Intestinal malabsorption|Always assess feeding before investigating.
+
+# ── Paediatric disease ───────────────────────────────────────────────────
+G|Bronchiolitis|peds,resp,virus|Bronchiolitis is managed mainly with ___ and oxygen|suction|suction,supportive care,fluids|Bronchodilators and steroids do not help.
+B|Croup|peds,resp,pharm|Croup is treated with|Dexamethasone|Antibiotics|Nebulized adrenaline for severe stridor.
+G|Epiglottitis|peds,ENT,emergency|Epiglottitis shows the ___ sign on lateral neck x-ray|thumbprint|thumbprint,thumb|Do not examine the throat; secure the airway first.
+B|Intussusception|peds,GI,imaging|Intussusception is both diagnosed and treated by|Air or contrast enema|Immediate surgery|Surgery if the enema fails or there is perforation.
+G|Pyloric stenosis|peds,GI,imaging|Pyloric stenosis shows a ___ sign on ultrasound|target|target,doughnut,olive|A palpable olive in the epigastrium.
+B|Henoch-Schonlein purpura|peds,immuno,GI|HSP can be complicated by|Intussusception|Volvulus|Bowel wall edema acts as a lead point.
+G|Kawasaki disease|peds,cardio|Kawasaki requires fever for at least ___ days plus four criteria|5|5,five|Conjunctivitis, rash, adenopathy, mucositis, extremity changes.
+B|Juvenile idiopathic arthritis|peds,rheum,eye|Oligoarticular JIA requires screening for|Uveitis|Nephritis|Often asymptomatic; ANA positivity raises the risk.
+G|Cystic fibrosis|peds,genetics,GI|Meconium ___ in a newborn strongly suggests cystic fibrosis|ileus|ileus|Failure to pass meconium in 48 hours.
+B|Duchenne muscular dystrophy|peds,genetics,msk|Duchenne is screened with a raised serum|Creatine kinase|Aldolase alone|Confirmed by genetic testing.
+G|Retinoblastoma|peds,oncology,eye|Retinoblastoma classically presents with ___, a white pupillary reflex|leukocoria|leukocoria,leukokoria|Urgent referral; may be bilateral if hereditary.
+B|Neuroblastoma|peds,oncology|Opsoclonus-myoclonus syndrome is a paraneoplastic sign of|Neuroblastoma|Wilms tumour|Dancing eyes, dancing feet.
+G|Sudden infant death|peds,development|The main modifiable risk factor for SIDS is sleeping ___|prone|prone,on the stomach,face down|Back to sleep campaigns cut mortality sharply.
+B|Child immunization|peds,vaccines|MMR is first given at|12 to 15 months|At birth|Maternal antibody would neutralize it earlier.
+
+# ── Male reproductive ────────────────────────────────────────────────────
+G|Benign prostatic hyperplasia|repro,urology,pharm|Alpha blockers relieve BPH by relaxing prostatic smooth ___|muscle|muscle|Rapid symptom relief; 5-alpha reductase inhibitors shrink the gland slowly.
+B|Prostate cancer|repro,oncology|Prostate cancer most often metastasizes to|Bone, osteoblastically|Lung, as cannonball lesions|Raised alkaline phosphatase with sclerotic lesions.
+G|Varicocele|repro,urology|A varicocele feels like a bag of ___|worms|worms|Left-sided; a new right varicocele needs imaging.
+B|Testicular cancer|repro,oncology|A painless testicular mass should be assessed with|Ultrasound and tumour markers|Fine needle aspiration biopsy|Biopsy risks seeding; orchiectomy is diagnostic and therapeutic.
+G|Hydrocele|repro,urology,exam|A hydrocele ___ on examination, unlike a solid mass|transilluminates|transilluminates,transillumination|Fluid within the tunica vaginalis.

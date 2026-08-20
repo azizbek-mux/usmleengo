@@ -1,0 +1,70 @@
+# TRICKY — bulk batch 3.
+
+# ── Confusable pairs ─────────────────────────────────────────────────────
+BT|Wernicke vs Korsakoff|neuro,vitamins|Which is characterized by confabulation?|Korsakoff syndrome|Wernicke encephalopathy|Wernicke is the acute reversible triad.
+BT|Delirium vs dementia|neuro,psych|Which has an altered level of consciousness?|Delirium|Dementia|Dementia patients are alert until very late.
+BT|Absence vs atonic seizure|neuro,epilepsy,peds|Which causes sudden loss of tone and falls?|Atonic seizure|Absence seizure|Drop attacks; often needs a protective helmet.
+BT|Todd paresis vs stroke|neuro,epilepsy|Which resolves completely within 24 hours after a seizure?|Todd paresis|Ischemic stroke|A postictal focal weakness mimicking stroke.
+BT|Transient ischemic attack vs stroke|neuro,vascular|Which is defined by absence of infarction on imaging?|Transient ischemic attack|A minor completed stroke|Duration alone no longer defines it.
+BT|Carotid vs vertebrobasilar|neuro,vascular|Which causes diplopia, dysarthria and ataxia?|Vertebrobasilar ischemia|Carotid territory ischemia|Posterior circulation signs.
+BT|Myopathy vs myositis|msk,rheum,lab|Which has a raised CK with inflammatory infiltrate on biopsy?|Myositis|Steroid myopathy|Steroid myopathy has a normal CK.
+BT|Osteoarthritis vs avascular necrosis|msk,ortho|Which shows preserved joint space early with subchondral collapse?|Avascular necrosis|Osteoarthritis|Steroids, sickle cell and alcohol are risk factors.
+BT|Cellulitis vs deep vein thrombosis|msk,vascular|Which typically has fever and a sharply demarcated warm border?|Cellulitis|Deep vein thrombosis|Both cause a swollen red calf.
+BT|Gout vs cellulitis|msk,rheum,micro|Which improves dramatically within 24 hours of colchicine?|Gout|Cellulitis|Both can look identical over a red hot toe.
+BT|Bacterial vs viral pharyngitis|ENT,micro|Which is suggested by the PRESENCE of cough?|Viral pharyngitis|Streptococcal pharyngitis|Cough argues against strep in the Centor criteria.
+BT|Otitis externa vs media|ENT,micro|Which is worsened by swimming?|Otitis externa|Otitis media|Moisture macerates the canal.
+BT|Allergic vs infectious rhinitis|ENT,immuno|Which has clear discharge with itching and sneezing?|Allergic rhinitis|Bacterial sinusitis|Plus pale boggy turbinates.
+BT|Iron deficiency vs sideroblastic|heme,anemia,lab|Which has a HIGH serum iron and ferritin with microcytosis?|Sideroblastic anemia|Iron deficiency|Iron cannot be incorporated into heme.
+BT|Anemia of chronic disease vs renal|heme,renal|Which is corrected by erythropoietin?|Anemia of chronic kidney disease|Anemia of chronic inflammation|Inflammation causes EPO resistance.
+BT|Spherocytosis vs autoimmune hemolysis|heme,immuno,lab|Which has a POSITIVE direct Coombs test?|Autoimmune hemolytic anemia|Hereditary spherocytosis|Both show spherocytes on the film.
+BT|Aplastic anemia vs myelodysplasia|heme,oncology,path|Which has a HYPERcellular marrow with dysplasia?|Myelodysplastic syndrome|Aplastic anemia|Ineffective haematopoiesis despite a full marrow.
+BT|Hemophilia vs vitamin K deficiency|heme,coagulation,lab|Which prolongs BOTH the PT and PTT?|Vitamin K deficiency|Hemophilia A|Hemophilia prolongs only the PTT.
+BT|DIC vs primary fibrinolysis|heme,coagulation|Which has a LOW platelet count?|Intravascular coagulation|Primary fibrinolysis|Both consume fibrinogen and raise D-dimer.
+BT|Type 1 vs type 2 respiratory failure|resp,critical care|Which has a HIGH carbon dioxide?|Type 2 respiratory failure|Type 1 respiratory failure|Type 1 is a pure oxygenation problem.
+BT|Atelectasis vs pneumonia|resp,surgery|Which is the commonest cause of fever on the first postoperative day?|Atelectasis|Pneumonia|The five Ws: wind comes first.
+BT|Pleural effusion vs consolidation|resp,exam|Which shifts the trachea AWAY from the affected side?|Massive pleural effusion|Lobar consolidation|Collapse pulls it toward the lesion.
+BT|Restrictive lung vs chest wall|resp,physiology|Which has a reduced diffusion capacity?|Interstitial lung disease|Severe kyphoscoliosis|Chest wall restriction spares the alveolar membrane.
+BT|Asthma vs anaphylaxis|resp,immuno,emergency|Which is treated with intramuscular adrenaline first?|Anaphylaxis|Acute asthma|Asthma gets nebulized salbutamol.
+BT|Prerenal vs intrinsic AKI|renal,lab|Which has a urine osmolality above 500?|Prerenal azotemia|Acute tubular necrosis|ATN produces isosthenuric urine near 300.
+BT|Nephrogenic vs psychogenic polydipsia|renal,psych|Which corrects with water deprivation alone?|Primary polydipsia|Nephrogenic diabetes insipidus|The kidney can still concentrate.
+BT|Cystitis vs urethritis|renal,micro,repro|Which has discharge with dysuria but sterile pyuria?|Urethritis|Cystitis|Chlamydia and gonorrhoea; standard cultures are negative.
+BT|Benign prostatic hyperplasia vs cancer|repro,urology,exam|Which gives a hard irregular prostate on examination?|Prostate cancer|Benign prostatic hyperplasia|BPH feels smooth, symmetrical and rubbery.
+BT|Testicular torsion vs epididymitis|repro,emergency|Which has an absent cremasteric reflex and a high-riding testis?|Testicular torsion|Epididymitis|A six-hour surgical window.
+BT|Placenta previa vs vasa previa|repro,OB,emergency|Which causes rapid FETAL exsanguination with membrane rupture?|Vasa previa|Placenta previa|Fetal vessels cross the os; maternal vitals stay normal.
+BT|Preeclampsia vs chronic hypertension|repro,OB|Hypertension appearing BEFORE 20 weeks suggests|Chronic hypertension|Preeclampsia|Preeclampsia requires onset after 20 weeks.
+BT|Hyperemesis vs morning sickness|repro,OB,electrolytes|Which causes ketonuria and weight loss over 5 percent?|Hyperemesis gravidarum|Normal morning sickness|Needs admission and thiamine.
+BT|Crohn vs celiac|GI,immuno|Which improves on a gluten-free diet alone?|Celiac disease|Crohn disease|Both cause malabsorption and weight loss.
+BT|Peptic ulcer vs gastritis|GI,path|Which is defined by breach through the muscularis mucosae?|Peptic ulcer|Erosive gastritis|Erosions stay superficial.
+BT|Biliary colic vs cholecystitis|GI,micro|Which has fever and a positive Murphy sign?|Acute cholecystitis|Biliary colic|Colic settles within hours without fever.
+BT|Viral vs autoimmune hepatitis|GI,liver,immuno|Which responds to corticosteroids?|Autoimmune hepatitis|Acute viral hepatitis|Steroids would worsen viral hepatitis.
+BT|Hepatitis B vs C chronicity|micro,virus,hepatitis|Which becomes chronic in the majority of adults?|Hepatitis C|Hepatitis B|Hepatitis B chronifies in under 5 percent of adults.
+BT|Primary vs secondary adrenal insufficiency|endocrine,adrenal,lab|Which has a LOW ACTH?|Secondary adrenal insufficiency|Autoimmune Addison disease|Addison raises ACTH markedly.
+BT|Thyroid storm vs sepsis|endocrine,emergency|Which is suggested by a suppressed TSH with atrial fibrillation?|Thyroid storm|Septic shock|Both cause fever, tachycardia and confusion.
+BT|Insulin vs glucagon effect|endocrine,biochem|Which promotes glycogen synthesis?|Insulin|Glucagon|Glucagon does the reverse.
+BT|Osteoporosis vs multiple myeloma|bone,oncology|Which causes lytic lesions with a raised calcium and paraprotein?|Multiple myeloma|Osteoporosis|Both cause vertebral collapse in the elderly.
+
+# ── Changed context ──────────────────────────────────────────────────────
+BT|Aspirin in children|peds,pharm,virus|Aspirin in a febrile child risks|Reye syndrome|Gastric ulceration|Except in Kawasaki disease, where it is indicated.
+BT|Beta blocker in cocaine|cardio,toxicology|A beta blocker after cocaine use causes|Unopposed alpha vasoconstriction|Reflex tachycardia and flushing|Use benzodiazepines and nitrates instead.
+BT|Antibiotics in appendicitis|GI,surgery,micro|Antibiotics alone in uncomplicated appendicitis|An accepted alternative in selected patients|Never appropriate without an operation|Practice has shifted; appendicectomy remains standard.
+BT|Steroids in tuberculous meningitis|micro,neuro,pharm|Corticosteroids in tuberculous meningitis|Reduce mortality|Are contraindicated|One of the few infections where steroids clearly help.
+BT|Antivirals in shingles|micro,virus,pharm|Antivirals for shingles are most effective if started within|72 hours|One week|Reducing postherpetic neuralgia.
+BT|Oxygen in carbon monoxide|toxicology,resp|In carbon monoxide poisoning, oxygen saturation on a pulse oximeter is|Falsely reassuring|Accurately low|Give 100 percent oxygen regardless.
+BT|Sodium correction in DKA|endocrine,electrolytes|Serum sodium in hyperglycemia is|Falsely low and needs correcting for glucose|Accurate and needs no correction at all|Add roughly 2 mmol/L per 5.5 mmol/L glucose above normal.
+BT|Anticoagulation in atrial fibrillation|cardio,pharm,coagulation|Anticoagulation decisions in atrial fibrillation depend on|Stroke risk score, not rhythm control|Whether sinus rhythm is restored|CHA2DS2-VASc guides it.
+BT|Antibiotics in COPD exacerbation|resp,micro,pharm|Antibiotics in COPD exacerbation are indicated when sputum is|Increased and purulent|Any increase in breathlessness|Anthonisen criteria.
+BT|Diuretics in aortic stenosis|cardio,pharm,valve|Aggressive diuresis in severe aortic stenosis risks|Dangerous hypotension|Fluid overload|The stenotic valve needs adequate preload.
+
+# ── One step further ─────────────────────────────────────────────────────
+BT|Chronic kidney disease and drugs|renal,pharm|Chronic kidney disease makes gabapentin doses need|Reduction|Increase|Almost entirely renally cleared.
+BT|Liver disease and ammonia|GI,liver,pharm|Constipation in cirrhosis worsens encephalopathy because it|Prolongs ammonia absorption|Reduces protein intake|Lactulose keeps the bowels moving deliberately.
+BT|Hypoalbuminemia and phenytoin|pharm,neuro,lab|In hypoalbuminemia, the measured total phenytoin level is|Falsely low relative to free drug|Falsely high relative to free drug|Toxicity can occur at a "normal" level.
+BT|Thyroid and beta receptors|endocrine,cardio|Hyperthyroidism increases sensitivity to catecholamines by|Upregulating beta receptors|Raising catecholamine levels|Catecholamine levels are actually normal.
+BT|Hypercalcemia and digoxin|cardio,electrolytes,pharm|Hypercalcemia makes digoxin toxicity|More likely|Less likely|Calcium and digoxin both raise intracellular calcium.
+BT|Alkalosis and digoxin|cardio,electrolytes,pharm|Alkalosis increases digoxin toxicity because it|Drives potassium into cells|Raises serum potassium|Less potassium competition at the pump.
+BT|Obesity and drug dosing|pharm,principles|In obesity, hydrophilic drugs should be dosed on|Ideal or adjusted body weight|Total actual body weight|Lipophilic drugs distribute into fat.
+BT|Pregnancy and urinary infection|OB,micro,renal|Asymptomatic bacteriuria in pregnancy|Must be treated|Can be observed|It progresses to pyelonephritis and preterm labour.
+BT|Splenectomy and vaccination|immuno,surgery,vaccines|Vaccines before elective splenectomy should be given|At least two weeks before|Immediately after surgery|A better antibody response while the spleen still works.
+BT|Steroids and vaccination|immuno,vaccines,pharm|High-dose steroids make live vaccines|Contraindicated|More effective|Wait at least a month after stopping.
+BT|Smoking and clopidogrel|pharm,cardio|Smoking makes clopidogrel|More effective, through CYP1A2 induction|Less effective, through enzyme inhibition|The smoker's paradox; never a reason to keep smoking.
+BT|Renal artery stenosis and creatinine|renal,pharm,vascular|A sharp creatinine rise after starting an ACE inhibitor suggests|Bilateral renal artery stenosis|Entirely normal physiology|Investigate rather than simply continue.

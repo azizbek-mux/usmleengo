@@ -1,0 +1,135 @@
+# Core hand-written set — the original 134.
+G|Niacin deficiency|biochem,vitamins,pellagra|Dementia, diarrhea, and dermatitis = deficiency of vitamin ___|B3|niacin,vitamin b3,nicotinic acid,vit b3|Pellagra — the 3 D's. Niacin (B3).
+G|Thiamine deficiency|biochem,vitamins,wernicke,beriberi|Wernicke encephalopathy is caused by deficiency of vitamin ___|B1|thiamine,vitamin b1,thiamin,vit b1|B1 (thiamine). Confusion + ataxia + ophthalmoplegia.
+G|Scurvy|biochem,vitamins,collagen|Bleeding gums and poor wound healing = deficiency of vitamin ___|C|vitamin c,ascorbic acid,vit c,ascorbate|Vitamin C — needed to hydroxylate proline and lysine in collagen.
+G|Rickets|biochem,vitamins,bone|Rickets in children is caused by deficiency of vitamin ___|D|vitamin d,vit d,cholecalciferol|Vitamin D — poor mineralization. Adults get osteomalacia.
+B|Vitamin B12 deficiency|biochem,vitamins,anemia,neuro|B12 deficiency causes neurologic symptoms:|Yes|No|Yes — subacute combined degeneration. Folate deficiency does NOT.
+B|Folate deficiency|biochem,vitamins,anemia|In folate deficiency, methylmalonic acid is:|Normal|Elevated|Normal in folate deficiency, elevated in B12. Homocysteine rises in both.
+G|Vitamin A deficiency|biochem,vitamins,eye|Night blindness is caused by deficiency of vitamin ___|A|vitamin a,vit a,retinol|Vitamin A — retinal is needed to make rhodopsin.
+B|Vitamin K|biochem,vitamins,coagulation|Vitamin K deficiency prolongs PT before PTT:|True|False|True — factor VII has the shortest half-life, so PT rises first.
+G|Biotin deficiency|biochem,vitamins|Excess raw egg white causes deficiency of ___ (avidin binds it)|biotin|b7,vitamin b7,vit b7|Avidin in raw egg white binds biotin (B7).
+B|Vitamin B6 deficiency|biochem,vitamins,isoniazid|Isoniazid causes deficiency of vitamin B6:|Yes|No|Yes — give pyridoxine with INH to prevent neuropathy.
+G|Glycolysis rate limiting enzyme|biochem,metabolism,glycolysis|The rate-limiting enzyme of glycolysis is ___|phosphofructokinase-1|pfk,pfk-1,pfk1,phosphofructokinase,phosphofructokinase 1|PFK-1. Fructose-6-P → fructose-1,6-bisphosphate.
+B|Insulin|biochem,metabolism,endocrine|Insulin stimulates glycolysis:|Yes|No|Yes — insulin is the fed-state, storage hormone.
+G|G6PD deficiency|biochem,heme,genetics|G6PD deficiency shows ___ bodies on peripheral smear|Heinz|heinz bodies,heinz body|Heinz bodies (denatured Hb), then bite cells after the spleen removes them.
+B|Von Gierke disease|biochem,glycogen,genetics|In von Gierke disease (type I), blood glucose is:|Low|High|Severe fasting hypoglycemia — glucose-6-phosphatase deficiency.
+G|Phenylketonuria|biochem,genetics,amino acids|PKU patients must avoid the amino acid ___|phenylalanine|phe|Phenylalanine hydroxylase deficiency. Tyrosine becomes essential.
+B|Essential fructosuria|biochem,metabolism|Essential fructosuria is a benign condition:|Yes|No|Yes — fructokinase deficiency, asymptomatic. Aldolase B deficiency is the dangerous one.
+G|Lead poisoning|biochem,heme,toxicology|Lead inhibits ferrochelatase and ___ dehydratase|ALA|aminolevulinic acid,delta-ala,aminolevulinate|ALA dehydratase and ferrochelatase. Basophilic stippling appears on smear.
+B|Ketone bodies|biochem,metabolism|The brain can use ketone bodies during starvation:|Yes|No|Yes. Red blood cells cannot — they have no mitochondria.
+B|Addison disease|endocrine,adrenal,electrolytes|In Addison disease, serum K+ is:|Increased|Decreased|Low aldosterone → less K+ excreted → hyperkalemia.
+B|Addison disease|endocrine,adrenal,electrolytes|In Addison disease, serum Na+ is:|Decreased|Increased|Hyponatremia — aldosterone deficiency wastes sodium.
+B|Cushing syndrome|endocrine,adrenal|In Cushing syndrome, blood glucose is:|Increased|Decreased|Cortisol is a counter-regulatory hormone — it raises glucose.
+B|Conn syndrome|endocrine,adrenal,hypertension|In primary hyperaldosteronism, serum K+ is:|Decreased|Increased|Aldosterone wastes K+. Hypokalemia + hypertension + metabolic alkalosis.
+B|Graves disease|endocrine,thyroid|In Graves disease, TSH is:|Decreased|Increased|High T4 feeds back and suppresses TSH.
+B|Hypothyroidism|endocrine,thyroid|In primary hypothyroidism, TSH is:|Increased|Decreased|Failing thyroid → loss of negative feedback → TSH climbs.
+G|Hashimoto thyroiditis|endocrine,thyroid,autoimmune|Hashimoto thyroiditis has antibodies against thyroid peroxidase and ___|thyroglobulin|tg,anti-tg|Anti-TPO and anti-thyroglobulin. Commonest hypothyroidism where iodine is sufficient.
+B|Diabetes insipidus|endocrine,pituitary,renal|In diabetes insipidus, urine osmolality is:|Low|High|No ADH effect → dilute urine, concentrated serum.
+B|SIADH|endocrine,pituitary,electrolytes|In SIADH, serum Na+ is:|Decreased|Increased|Water retention dilutes sodium — euvolemic hyponatremia.
+G|Pheochromocytoma|endocrine,adrenal,hypertension|Pheochromocytoma is diagnosed by measuring plasma or urine ___|metanephrines|metanephrine,plasma metanephrines,vma|Plasma free metanephrines. The rule-of-10s tumor.
+B|Hyperparathyroidism|endocrine,calcium,bone|In primary hyperparathyroidism, serum phosphate is:|Decreased|Increased|PTH makes the kidney dump phosphate. Calcium up, phosphate down.
+B|DKA|endocrine,diabetes,acid base|DKA produces which acid-base disturbance?|Anion gap metabolic acidosis|Metabolic alkalosis with low chloride|Ketoacids raise the anion gap.
+G|Acromegaly|endocrine,pituitary|Acromegaly is best screened with serum ___|IGF-1|igf1,igf 1,insulin-like growth factor 1,somatomedin c|IGF-1 — growth hormone itself is too pulsatile to measure.
+B|Prolactinoma|endocrine,pituitary,pharm|Prolactinoma is treated first with:|Dopamine agonist|Transsphenoidal surgery|Cabergoline or bromocriptine — dopamine inhibits prolactin.
+B|Aortic stenosis|cardio,murmur,valve|The aortic stenosis murmur occurs during:|Systole|Diastole|Crescendo-decrescendo systolic murmur radiating to the carotids.
+B|Mitral stenosis|cardio,murmur,valve|The mitral stenosis murmur occurs during:|Diastole|Systole|Opening snap plus a mid-diastolic rumble. Usually rheumatic.
+G|Mitral regurgitation|cardio,murmur,valve|The murmur of mitral regurgitation radiates to the ___|axilla|left axilla,armpit|Holosystolic, blowing, radiates to the axilla.
+B|Hypertrophic cardiomyopathy|cardio,murmur|In HOCM, the murmur with Valsalva gets:|Louder|Softer|Less preload → smaller chamber → more obstruction → louder. Opposite of most murmurs.
+B|Beta blockers|cardio,pharm|Beta blockers decrease myocardial oxygen demand:|Yes|No|Yes — they lower heart rate and contractility.
+G|Myocardial infarction|cardio,labs,MI|The most specific marker for myocardial infarction is ___|troponin|troponin i,cardiac troponin,trop,troponin t|Cardiac troponin I — rises in 3-4 hours, stays up 7-10 days.
+B|Atrial fibrillation|cardio,arrhythmia,ECG|In atrial fibrillation, P waves are:|Absent|Present|Irregularly irregular rhythm with no discernible P waves.
+G|Wolff-Parkinson-White|cardio,arrhythmia,ECG|WPW syndrome shows a ___ wave on ECG|delta|delta wave|Delta wave — a slurred QRS upstroke from the accessory pathway.
+B|Heart failure|cardio,pharm|ACE inhibitors improve mortality in heart failure:|Yes|No|Yes. ACEi, beta blockers, spironolactone and SGLT2 inhibitors all reduce mortality.
+B|Left heart failure|cardio,heart failure|Left-sided heart failure primarily causes:|Pulmonary edema|Peripheral edema|It backs up into the lungs. Right-sided failure backs up into the body.
+G|Nitroglycerin|cardio,pharm,angina|Nitroglycerin relieves angina mainly by dilating ___|veins|vein,venous,venules|Venodilation → less preload → less wall stress and oxygen demand.
+B|Pericarditis|cardio,ECG|Acute pericarditis shows diffuse ST elevation:|Yes|No|Yes — diffuse ST elevation with PR depression. Pain improves leaning forward.
+B|Loop diuretics|renal,pharm,electrolytes|Furosemide causes serum calcium to:|Decrease|Increase|Loops lose calcium. Thiazides retain it.
+B|Thiazide diuretics|renal,pharm,electrolytes|Thiazides cause serum calcium to:|Increase|Decrease|Thiazides retain calcium — useful in recurrent calcium stones.
+G|Loop diuretics|renal,pharm|Loop diuretics act on the thick ascending limb of the loop of ___|Henle|loop of henle|They block the Na-K-2Cl cotransporter in the thick ascending limb.
+B|Nephrotic syndrome|renal,proteinuria|Nephrotic syndrome has proteinuria greater than 3.5 g per day:|Yes|No|Yes — plus hypoalbuminemia, edema and hyperlipidemia.
+B|Nephritic syndrome|renal,hematuria|Nephritic syndrome typically presents with:|Hematuria and hypertension|Massive proteinuria|Nephritic means inflammation: hematuria, RBC casts, hypertension, mild proteinuria.
+G|Minimal change disease|renal,peds,nephrotic|The most common nephrotic syndrome in children is ___ change disease|minimal|minimal change,mcd|Minimal change disease — podocyte effacement on EM, responds to steroids.
+B|Hyperkalemia|renal,electrolytes,ECG|Hyperkalemia produces which ECG change first?|Peaked T waves|U waves|Peaked T waves. U waves suggest hypokalemia.
+G|Renal blood flow|renal,physiology,NSAIDs|The afferent arteriole is dilated by ___, which is why NSAIDs drop GFR|prostaglandins|prostaglandin,pge2,pgs|Prostaglandins dilate the afferent arteriole. NSAIDs block them and GFR falls.
+B|ACE inhibitors|renal,pharm|ACE inhibitors dilate the efferent arteriole and lower GFR:|Yes|No|Yes — efferent dilation drops filtration pressure, so creatinine may rise slightly.
+B|Prerenal azotemia|renal,AKI,labs|In prerenal azotemia, the BUN/creatinine ratio is:|Greater than 20|Less than 15|BUN/Cr above 20 — urea is reabsorbed along with sodium and water.
+G|Acetaminophen overdose|pharm,toxicology,antidote|The antidote for acetaminophen overdose is ___|N-acetylcysteine|nac,acetylcysteine,n acetylcysteine|NAC regenerates glutathione.
+G|Warfarin|pharm,toxicology,antidote,coagulation|Warfarin overdose is reversed with vitamin ___|K|vitamin k,vit k,phytonadione|Vitamin K, plus PCC or FFP if actively bleeding.
+G|Heparin|pharm,toxicology,antidote,coagulation|Heparin overdose is reversed with ___|protamine sulfate|protamine,protamine sulphate|Protamine sulfate — a positively charged peptide that binds heparin.
+G|Opioid overdose|pharm,toxicology,antidote|The antidote for opioid overdose is ___|naloxone|narcan|Naloxone — a competitive mu receptor antagonist.
+G|Benzodiazepine overdose|pharm,toxicology,antidote|The antidote for benzodiazepine overdose is ___|flumazenil||Flumazenil — but it risks seizures in chronic users.
+B|Warfarin|pharm,coagulation,labs|Warfarin is monitored with:|PT/INR|PTT|PT/INR, the extrinsic pathway. Heparin uses PTT.
+B|Heparin|pharm,coagulation,labs|Unfractionated heparin is monitored with:|PTT|PT/INR|PTT, the intrinsic pathway. LMWH usually needs no monitoring.
+G|Aminoglycosides|pharm,antibiotics,toxicity|Aminoglycosides are nephrotoxic and ___toxic|oto|ototoxic,ear,auditory|Nephrotoxic and ototoxic. Avoid combining with loop diuretics.
+B|Statins|pharm,lipids|Statins inhibit HMG-CoA reductase:|Yes|No|Yes — the rate-limiting enzyme of cholesterol synthesis.
+G|Statins|pharm,lipids,toxicity|The classic muscle side effect of statins is ___|myopathy|myositis,rhabdomyolysis,muscle pain,myalgia|Myopathy and rhabdomyolysis — check CK. Worse when combined with fibrates.
+B|Beta blockers|pharm,cardio,resp|Non-selective beta blockers are safe in asthma:|No|Yes|No — beta-2 blockade causes bronchospasm. Use a cardioselective agent if needed.
+G|ACE inhibitors|pharm,cardio,side effect|The dry cough of ACE inhibitors is caused by accumulated ___|bradykinin|bradykinins|ACE normally degrades bradykinin. Switch the patient to an ARB.
+B|Digoxin|pharm,cardio,electrolytes|Hypokalemia increases digoxin toxicity:|Yes|No|Yes — less K+ competing at the Na/K ATPase means more digoxin binding.
+G|Methotrexate|pharm,oncology,antidote|Methotrexate toxicity is rescued with ___|leucovorin|folinic acid|Leucovorin (folinic acid) bypasses the blocked dihydrofolate reductase.
+B|Cyclophosphamide|pharm,oncology,toxicity|Cyclophosphamide causes hemorrhagic cystitis:|Yes|No|Yes — from acrolein. Prevent with mesna and aggressive hydration.
+B|Staphylococcus aureus|micro,bacteria,gram positive|Staphylococcus aureus is coagulase:|Positive|Negative|Coagulase positive — that is what separates it from S. epidermidis.
+B|Streptococcus pyogenes|micro,bacteria,gram positive|Streptococcus pyogenes shows which hemolysis?|Beta|Alpha|Beta hemolytic, group A, bacitracin sensitive.
+G|Tuberculosis|micro,bacteria,TB|Mycobacterium tuberculosis is identified with the ___ stain|acid-fast|acid fast,ziehl-neelsen,ziehl neelsen,afb|Acid-fast (Ziehl-Neelsen) — because of mycolic acid in the cell wall.
+G|Cryptococcus|micro,fungi,HIV|Cryptococcus neoformans is visualized with ___ ink|India|india ink,indian|India ink shows the capsule. Also mucicarmine positive.
+B|Pseudomonas aeruginosa|micro,bacteria,gram negative|Pseudomonas aeruginosa is:|Gram negative|Gram positive|Gram negative rod, oxidase positive, grape-like odor, blue-green pigment.
+G|Neisseria|micro,bacteria,gram negative|Neisseria organisms are gram-negative ___ in shape|diplococci|diplococcus,cocci|Gram-negative diplococci. N. meningitidis ferments maltose; gonorrhoeae does not.
+B|Clostridioides difficile|micro,bacteria,GI|C. difficile is treated first-line with:|Oral vancomycin|Metronidazole|Oral vancomycin or fidaxomicin is now first-line.
+G|Malaria|micro,parasite|The most dangerous species of malaria is Plasmodium ___|falciparum|p falciparum,p. falciparum|P. falciparum — cerebral malaria, irregular fever pattern.
+B|HIV|micro,virus,HIV|AIDS is defined by a CD4 count below:|200|500|CD4 under 200 cells/mm3, or an AIDS-defining illness.
+G|Hepatitis B|micro,virus,hepatitis|Immunity from hepatitis B vaccination shows anti-___ only|HBs|anti-hbs,hbsag,surface,hbsab|Vaccination gives anti-HBs alone. Past infection also gives anti-HBc.
+B|Influenza|micro,virus|The influenza virus genome is:|RNA|DNA|Segmented negative-sense RNA — the segments allow antigenic shift.
+G|Candida albicans|micro,fungi|Candida albicans forms germ tubes at ___ degrees Celsius|37|37c,37 c,thirty seven|Germ tube formation at 37 C is the classic identifier.
+B|Rabies|micro,virus,neuro|Rabies shows Negri bodies in neurons:|Yes|No|Yes — eosinophilic cytoplasmic inclusions, classically in the hippocampus.
+B|Type I hypersensitivity|immuno,hypersensitivity|Type I hypersensitivity is mediated by:|IgE|IgG|IgE on mast cells — anaphylaxis and allergy. Immediate onset.
+G|Type IV hypersensitivity|immuno,hypersensitivity|Type IV hypersensitivity is mediated by ___ cells, not antibodies|T|t cells,t cell,t-cell,t lymphocytes|T cells. Delayed — the PPD test and contact dermatitis.
+B|Anaphylaxis|immuno,pharm,emergency|The first drug in anaphylaxis is:|Epinephrine|Antihistamine|IM epinephrine, always first. Everything else is adjunctive.
+G|Immunoglobulins|immuno,antibody|The most abundant immunoglobulin in serum is Ig___|G|igg,ig g|IgG — and the only one that crosses the placenta.
+G|Immunoglobulins|immuno,antibody|The main antibody in secretions and breast milk is Ig___|A|iga,ig a,secretory iga|Secretory IgA — dimeric, joined by a J chain.
+B|DiGeorge syndrome|immuno,genetics,peds|DiGeorge syndrome causes a deficiency of:|T cells|B cells|Thymic aplasia means no T cells. Also hypocalcemia and cardiac defects.
+B|Chronic granulomatous disease|immuno,genetics|CGD is caused by a defect in:|NADPH oxidase|Myeloperoxidase|NADPH oxidase — abnormal dihydrorhodamine test.
+G|Transplant rejection|immuno,transplant|Hyperacute transplant rejection is caused by preformed ___|antibodies|antibody,preformed antibodies,abs|Preformed antibodies, within minutes. Prevented by cross-matching.
+B|Iron deficiency anemia|heme,anemia|In iron deficiency anemia, ferritin is:|Decreased|Increased|Low ferritin means low stores — the most specific early marker.
+B|Iron deficiency anemia|heme,anemia|In iron deficiency, TIBC is:|Increased|Decreased|TIBC (transferrin) rises as the body tries to capture more iron.
+B|Anemia of chronic disease|heme,anemia|In anemia of chronic disease, ferritin is:|Increased|Decreased|Ferritin is high — hepcidin locks iron away in storage.
+G|Sickle cell disease|heme,genetics,anemia|Sickle cell disease substitutes valine for ___ at position 6|glutamic acid|glutamate,glu|Glutamic acid → valine on the beta chain, position 6.
+B|Hemophilia A|heme,coagulation,genetics|Hemophilia A is a deficiency of factor:|VIII|IX|Factor VIII. Hemophilia B is factor IX. Both X-linked recessive.
+B|Von Willebrand disease|heme,coagulation|Von Willebrand disease prolongs bleeding time:|Yes|No|Yes — vWF is needed for platelet adhesion. The commonest inherited bleeding disorder.
+G|ITP|heme,platelets|ITP involves antibodies against platelet glycoprotein ___|IIb/IIIa|gpiib/iiia,2b/3a,iib iiia,gp iib/iiia|Anti-GpIIb/IIIa antibodies; the platelets are destroyed in the spleen.
+B|DIC|heme,coagulation|In DIC, fibrinogen is:|Decreased|Increased|Consumed. D-dimer up, platelets down, PT and PTT both up.
+G|CML|heme,oncology,genetics|CML is associated with the ___ chromosome|Philadelphia|ph,philadelphia chromosome,bcr-abl|Philadelphia chromosome t(9;22), BCR-ABL. Treated with imatinib.
+G|Hodgkin lymphoma|heme,oncology|Hodgkin lymphoma shows ___ cells on biopsy|Reed-Sternberg|reed sternberg,rs,owl eye|Reed-Sternberg cells — owl-eye nuclei, CD15 and CD30 positive.
+B|Multiple myeloma|heme,oncology,calcium|In multiple myeloma, serum calcium is:|Increased|Decreased|Hypercalcemia from bone lysis. CRAB: Calcium, Renal, Anemia, Bone.
+G|Parkinson disease|neuro,movement|Parkinson disease is loss of dopamine neurons in the substantia ___|nigra|substantia nigra,nigra pars compacta|Substantia nigra pars compacta. Lewy bodies are alpha-synuclein.
+B|Myasthenia gravis|neuro,autoimmune,NMJ|In myasthenia gravis, weakness with repeated use gets:|Worse|Better|Worse with use. Lambert-Eaton improves with use.
+G|Myasthenia gravis|neuro,autoimmune,NMJ|Myasthenia gravis has antibodies against the ___ receptor|acetylcholine|ach,acetylcholine receptor,achr,nicotinic|Post-synaptic ACh receptor antibodies. Associated with thymoma.
+B|Multiple sclerosis|neuro,autoimmune|Multiple sclerosis affects which nervous system?|Central|Peripheral|CNS demyelination. Oligoclonal bands in CSF, periventricular plaques.
+G|Guillain-Barre syndrome|neuro,autoimmune|Guillain-Barre causes ___ paralysis, moving from legs upward|ascending|ascend,upward|Ascending paralysis, often after Campylobacter. Watch the respiratory muscles.
+B|Alzheimer disease|neuro,dementia|Alzheimer disease shows amyloid beta plaques:|Yes|No|Yes — extracellular amyloid beta plaques and intracellular tau tangles.
+G|Broca aphasia|neuro,language|In Broca aphasia, comprehension is ___|intact|preserved,normal,spared,good,fine|Broca means broken speech with intact comprehension — the patient is frustrated.
+B|Wernicke aphasia|neuro,language|In Wernicke aphasia, speech is fluent but meaningless:|Yes|No|Yes — fluent, nonsensical, with impaired comprehension. Wernicke is wordy.
+G|Bacterial meningitis|neuro,infection,CSF|In bacterial meningitis, CSF glucose is ___|low|decreased,reduced,down|Low glucose, high protein, neutrophils. Viral meningitis keeps glucose normal.
+B|Horner syndrome|neuro,autonomic|Horner syndrome includes ptosis, miosis, and:|Anhidrosis|Hyperhidrosis|Anhidrosis — loss of sympathetic innervation.
+B|Upper motor neuron lesion|neuro,motor|An upper motor neuron lesion causes reflexes that are:|Increased|Decreased|Hyperreflexia, spasticity, Babinski sign. Lower motor neuron gives the opposite.
+G|Peptic ulcer disease|GI,micro|The most common cause of duodenal ulcer is ___ pylori|Helicobacter|h,h pylori,h. pylori,helicobacter pylori|H. pylori — urease positive. Treat with triple therapy.
+B|Crohn disease|GI,IBD|Crohn disease involves skip lesions:|Yes|No|Yes — transmural, skip lesions, anywhere from mouth to anus. UC is continuous.
+B|Ulcerative colitis|GI,IBD|Ulcerative colitis is limited to mucosa and submucosa:|Yes|No|Yes — continuous, starting at the rectum, colon only.
+G|Celiac disease|GI,autoimmune|Celiac disease is triggered by ___ found in wheat|gluten|gliadin|The gliadin fraction of gluten. Anti-tTG antibodies, villous atrophy.
+B|Acute pancreatitis|GI,labs|The more specific enzyme in acute pancreatitis is:|Lipase|Amylase|Lipase — more specific and stays elevated longer.
+G|Gilbert syndrome|GI,liver|Gilbert syndrome causes ___ hyperbilirubinemia|unconjugated|indirect,unconj|Mild UGT deficiency — benign, worse with stress or fasting.
+B|Asthma|resp,pharm|The first-line rescue drug in acute asthma is:|Short-acting beta-2 agonist|Inhaled corticosteroid|Albuterol for rescue. Steroids are controllers, not rescuers.
+B|COPD|resp,physiology|In COPD, the FEV1/FVC ratio is:|Decreased|Increased|Obstructive disease drops the ratio below 0.7. Restrictive keeps it normal or high.
+G|Cystic fibrosis|resp,genetics|Cystic fibrosis is caused by a mutation in the ___ gene|CFTR||CFTR, usually delta-F508. Diagnosed with a sweat chloride test.
+B|Preeclampsia|repro,OB|Preeclampsia is hypertension after 20 weeks plus:|Proteinuria or end-organ damage|Seizures or focal neurologic deficit|Seizures make it eclampsia. Treat with magnesium sulfate and delivery.
+G|Ectopic pregnancy|repro,OB,emergency|The most common site of ectopic pregnancy is the ___ tube|fallopian|uterine,ampulla|The ampulla of the fallopian tube.
+B|PCOS|repro,endocrine|In PCOS, the LH/FSH ratio is:|Increased|Decreased|LH/FSH above 2. Insulin resistance, hyperandrogenism, oligo-ovulation.
+G|Acute inflammation|path,inflammation|The first cell to arrive in acute inflammation is the ___|neutrophil|neutrophils,pmn,pmns,polymorphonuclear|Neutrophils first, within hours. Macrophages follow at 2-3 days.
+B|Granuloma|path,inflammation,immuno|Granuloma formation is driven by which cytokine?|Interferon gamma|Interleukin-4 from Th2 cells|IFN-gamma from Th1 cells activates macrophages into epithelioid cells.
+B|Apoptosis|path,cell death|Apoptosis causes inflammation:|No|Yes|No — the membrane stays intact. Necrosis is what causes inflammation.
+G|Caseous necrosis|path,cell death,TB|Caseous necrosis is classically seen in ___|tuberculosis|tb,mycobacterium tuberculosis|TB and some fungi — cheesy and granulomatous.
+B|Metaplasia|path,adaptation|Metaplasia is reversible:|Yes|No|Yes — a reversible change from one adult cell type to another.
+G|Barrett esophagus|path,GI,metaplasia|Barrett esophagus is metaplasia to ___ epithelium|columnar|intestinal,glandular,intestinal columnar|Squamous → intestinal columnar with goblet cells. Risk of adenocarcinoma.
+B|Tumor suppressor genes|path,oncology,genetics|Tumor suppressor genes usually need how many hits?|Two|One|Knudson's two-hit hypothesis. Oncogenes need only one.
+G|p53|path,oncology,genetics|p53 is located on chromosome ___|17|17p,seventeen|17p. The most commonly mutated gene in human cancer.
+B|Amyloidosis|path,stains|Amyloid shows apple-green birefringence with Congo red:|Yes|No|Yes, under polarized light. Beta-pleated sheet structure.
+G|Transudate|path,fluid|A transudate has ___ protein content|low|decreased,little,poor|Low protein — driven by pressure changes such as CHF. Exudates are protein-rich.

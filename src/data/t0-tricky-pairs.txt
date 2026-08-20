@@ -1,0 +1,94 @@
+# TRICKY — confusable pairs. Both options are real; you must know which is which.
+BT|Lambert-Eaton vs myasthenia|neuro,NMJ,immuno|Which one IMPROVES with repeated use?|Lambert-Eaton|Myasthenia gravis|Lambert-Eaton: calcium builds up with repetition. Myasthenia fatigues.
+BT|Lambert-Eaton vs myasthenia|neuro,NMJ,oncology|Which is associated with small cell lung cancer?|Lambert-Eaton|Myasthenia gravis|Lambert-Eaton is paraneoplastic. Myasthenia goes with thymoma.
+BT|Hurler vs Hunter|genetics,biochem|Which has corneal clouding?|Hurler|Hunter|Hunters need clear vision to aim. Hunter is X-linked and milder.
+BT|Hurler vs Hunter|genetics|Which is X-linked rather than autosomal recessive?|Hunter|Hurler|Hunter is the X-linked one, and has aggressive behaviour.
+BT|Tay-Sachs vs Niemann-Pick|genetics,neuro|Both have a cherry-red macula. Which has NO hepatosplenomegaly?|Tay-Sachs|Niemann-Pick|Tay-SaX has no organomegaly. Niemann-Pick has a big liver and spleen.
+BT|Tay-Sachs vs Niemann-Pick|genetics,biochem|Which is sphingomyelinase deficiency?|Niemann-Pick|Tay-Sachs|Tay-Sachs is hexosaminidase A.
+BT|Mitral stenosis vs regurgitation|cardio,murmur|Which produces an opening snap?|Mitral stenosis|Mitral regurgitation|Stenosis: opening snap then diastolic rumble. Regurgitation: holosystolic to the axilla.
+BT|Aortic stenosis vs mitral regurgitation|cardio,murmur|A systolic murmur radiating to the CAROTIDS is|Aortic stenosis|Mitral regurgitation|Mitral regurgitation radiates to the axilla instead.
+BT|Crohn vs ulcerative colitis|GI,IBD|Which is transmural with skip lesions?|Crohn disease|Ulcerative colitis|UC is continuous and mucosal only, always involving the rectum.
+BT|Crohn vs ulcerative colitis|GI,IBD,oncology|Which carries the higher colorectal cancer risk?|Ulcerative colitis|Crohn disease|Continuous colonic inflammation. UC also links to primary sclerosing cholangitis.
+BT|Wernicke vs Korsakoff|neuro,vitamins|Which is REVERSIBLE with thiamine?|Wernicke encephalopathy|Korsakoff syndrome|Wernicke is acute and reversible. Korsakoff is chronic, with confabulation.
+BT|DiGeorge vs Bruton|immuno,genetics|Which lacks T cells rather than B cells?|DiGeorge syndrome|Bruton agammaglobulinemia|DiGeorge: thymic aplasia. Bruton: no mature B cells, so no CD19.
+BT|Addison vs Conn|endocrine,adrenal|Which causes HYPERkalemia?|Addison disease|Conn syndrome|Addison: no aldosterone, K+ retained. Conn: too much aldosterone, K+ wasted.
+BT|Addison vs Cushing|endocrine,adrenal|Which causes hyperpigmentation?|Addison disease|Exogenous Cushing|High ACTH shares a precursor with MSH. Exogenous steroids suppress ACTH.
+BT|Central vs nephrogenic DI|endocrine,renal|Urine concentrates after desmopressin in|Central diabetes insipidus|Nephrogenic diabetes insipidus|Nephrogenic kidneys cannot respond to ADH at all.
+BT|Central vs nephrogenic DI|endocrine,pharm|Which is treated with a thiazide?|Nephrogenic diabetes insipidus|Central diabetes insipidus|Paradoxical effect via volume contraction. Central DI gets desmopressin.
+BT|Osteoporosis vs osteomalacia|msk,bone|Which has NORMAL mineralization of reduced bone?|Osteoporosis|Osteomalacia|Osteoporosis: less bone, normal quality. Osteomalacia: enough bone, poorly mineralized.
+BT|Osteoporosis vs osteomalacia|msk,bone,lab|Which has a raised alkaline phosphatase and low calcium?|Osteomalacia|Osteoporosis|Osteoporosis labs are entirely normal.
+BT|ALL vs AML|heme,oncology|Which is the childhood leukemia?|ALL|AML|ALL peaks around age 3. AML is the adult acute leukemia, with Auer rods.
+BT|CLL vs CML|heme,oncology,genetics|Which carries the Philadelphia chromosome?|CML|CLL|CML: BCR-ABL, treated with imatinib. CLL: smudge cells in the elderly.
+BT|Hodgkin vs non-Hodgkin|heme,oncology|Which spreads contiguously between node groups?|Hodgkin lymphoma|Non-Hodgkin lymphoma|Hodgkin is orderly and has Reed-Sternberg cells. NHL spreads unpredictably.
+BT|Type I vs type IV hypersensitivity|immuno|Which peaks at 48 to 72 hours?|Type IV|Type I|Type IV is delayed and T cell mediated. Type I is IgE and immediate.
+BT|Type II vs type III hypersensitivity|immuno|Which involves antibody against a FIXED tissue antigen?|Type II|Type III|Type III uses circulating immune complexes that deposit later.
+BT|Klinefelter vs Turner|genetics,repro|Which has a raised FSH with tall stature?|Klinefelter syndrome|Turner syndrome|Klinefelter is 47,XXY and tall. Turner is 45,XO and short.
+BT|Marfan vs Ehlers-Danlos|genetics,msk|Which is a fibrillin defect?|Marfan syndrome|Ehlers-Danlos syndrome|Ehlers-Danlos is a collagen defect with hypermobility and fragile skin.
+BT|Von Gierke vs McArdle|biochem,genetics|Which causes muscle cramps with exercise but normal blood glucose?|McArdle disease|Von Gierke disease|McArdle: muscle phosphorylase, no rise in lactate. Von Gierke: severe fasting hypoglycemia.
+BT|Acute intermittent porphyria vs PCT|biochem,heme,derm|Which causes blistering photosensitivity rather than abdominal pain?|Porphyria cutanea tarda|Acute intermittent porphyria|AIP has no skin findings at all — pain and neuropsychiatric signs.
+BT|Kwashiorkor vs marasmus|nutrition,peds|Which has edema and a distended belly?|Kwashiorkor|Marasmus|Kwashiorkor: protein deficiency, low albumin. Marasmus: total calorie deficiency, wasting.
+BT|Emphysema vs chronic bronchitis|resp,path|Which is the "pink puffer" with a raised diffusion problem?|Emphysema|Chronic bronchitis|Emphysema destroys alveoli, lowering DLCO. Bronchitis is the blue bloater.
+BT|Alpha vs beta thalassemia|heme,genetics|Which presents at birth rather than at 6 months?|Alpha thalassemia|Beta thalassemia|Beta chains are not needed until fetal hemoglobin declines around 6 months.
+BT|G6PD vs pyruvate kinase deficiency|heme,biochem|Which causes hemolysis only after an oxidative trigger?|G6PD deficiency|Pyruvate kinase deficiency|G6PD is episodic. Pyruvate kinase gives chronic hemolysis from birth.
+BT|ITP vs TTP|heme,platelets|Which has schistocytes and neurologic signs?|TTP|ITP|TTP: ADAMTS13 deficiency, microangiopathy. ITP: isolated low platelets, otherwise well.
+BT|ITP vs TTP|heme,pharm|In which is platelet transfusion dangerous?|TTP|ITP|Adding platelets fuels the microthrombi. Plasma exchange is the treatment.
+BT|Hemophilia vs von Willebrand|heme,coagulation|Which prolongs bleeding time rather than PTT alone?|Von Willebrand disease|Hemophilia A (factor VIII)|vWF is needed for platelet adhesion, so bleeding time rises.
+BT|Prerenal azotemia vs ATN|renal,AKI|Which has a fractional sodium excretion below 1 percent?|Prerenal azotemia|Acute tubular necrosis|Prerenal tubules still work and hoard sodium. ATN tubules cannot.
+BT|Prerenal azotemia vs ATN|renal,AKI,lab|Muddy brown granular casts indicate|Acute tubular necrosis|Prerenal azotemia|Prerenal urine has hyaline casts and is concentrated.
+BT|Nephritic vs nephrotic|renal|Which has RBC casts rather than heavy proteinuria?|Nephritic syndrome|Nephrotic syndrome|Nephritic is inflammation. Nephrotic is podocyte leak, over 3.5 g per day.
+BT|Minimal change vs FSGS|renal,nephrotic|Which responds well to steroids?|Minimal change disease|Focal segmental glomerulosclerosis|Minimal change is the child's disease and steroid-responsive. FSGS often is not.
+BT|PSGN vs IgA nephropathy|renal,immuno|Hematuria WITHIN 2 DAYS of a sore throat suggests|IgA nephropathy|Post-strep nephritis|IgA is synpharyngitic. PSGN comes 1 to 3 weeks later.
+BT|Cushing disease vs syndrome|endocrine,adrenal|Which term means a PITUITARY adenoma specifically?|Cushing disease|Cushing syndrome|Cushing syndrome is any cause of cortisol excess.
+BT|Primary vs secondary hyperparathyroidism|endocrine,calcium|Which has HIGH calcium with high PTH?|Primary hyperparathyroidism|Secondary hyperparathyroidism|Secondary is a response to low calcium, usually in renal failure.
+BT|Graves vs subacute thyroiditis|endocrine,thyroid|Both are thyrotoxic. Which has LOW radioiodine uptake?|Subacute thyroiditis|Graves disease|Thyroiditis leaks stored hormone. Graves actively overproduces, so uptake is high.
+BT|Graves vs toxic multinodular goiter|endocrine,thyroid|Which causes exophthalmos?|Graves disease|Toxic multinodular goiter|Only Graves has the antibody-driven orbitopathy and pretibial myxedema.
+BT|Direct vs indirect hernia|GI,anatomy|Which passes LATERAL to the inferior epigastric vessels?|Indirect inguinal hernia|Direct inguinal hernia|Indirect goes through the deep ring. Direct pushes through Hesselbach triangle, medially.
+BT|Meckel vs Zenker diverticulum|GI,path|Which is a TRUE diverticulum with all wall layers?|Meckel diverticulum|Zenker diverticulum|Zenker is a false pulsion diverticulum of mucosa only.
+BT|Achalasia vs esophageal cancer|GI,motility,oncology|Dysphagia to solids AND liquids from the start suggests|Achalasia|Esophageal carcinoma|A motility problem affects both. Mechanical obstruction hits solids first.
+BT|Epidural vs subdural hematoma|neuro,trauma|Which crosses suture lines?|Subdural hematoma|Epidural hematoma|Subdural is crescentic and crosses sutures. Epidural is lens-shaped and stops at them.
+BT|Epidural vs subdural hematoma|neuro,trauma,vascular|Which comes from a torn BRIDGING VEIN?|Subdural hematoma|Epidural hematoma|Epidural is the middle meningeal artery, with a lucid interval.
+BT|Upper vs lower motor neuron|neuro,motor|Fasciculations and atrophy indicate|A lower motor neuron lesion|An upper motor neuron lesion|UMN gives spasticity, hyperreflexia and Babinski instead.
+BT|Broca vs Wernicke aphasia|neuro,language|Which patient is FLUENT but makes no sense?|Wernicke aphasia|Broca aphasia|Wernicke is wordy with poor comprehension. Broca is broken but comprehends.
+BT|Delirium vs dementia|psych,neuro|Which fluctuates over hours with impaired attention?|Delirium|Dementia|Delirium is acute and reversible — always hunt for the medical cause.
+BT|Bipolar I vs II|psych,mood|Which requires a full manic episode?|Bipolar I|Bipolar II|Bipolar II needs hypomania plus a major depressive episode.
+BT|Schizoid vs avoidant|psych,personality|Which genuinely does NOT want relationships?|Schizoid personality disorder|Avoidant personality disorder|Avoidant wants closeness but fears rejection.
+BT|Anorexia vs bulimia|psych,eating|Which typically has a NORMAL body weight?|Bulimia nervosa|Anorexia nervosa|Anorexia is defined by low weight; bulimia often is not.
+BT|Serotonin syndrome vs NMS|psych,pharm,emergency|Which has hyperreflexia and clonus?|Serotonin syndrome|Neuroleptic malignant syndrome|NMS has lead-pipe rigidity and develops over days, not hours.
+BT|Serotonin syndrome vs NMS|psych,pharm|Which follows a DOPAMINE BLOCKER?|Neuroleptic malignant syndrome|Serotonin syndrome with clonus|Serotonin syndrome follows serotonergic drug combinations.
+BT|Osteoarthritis vs rheumatoid|msk,rheum|Morning stiffness lasting 2 hours suggests|Rheumatoid arthritis|Osteoarthritis|Osteoarthritis stiffness is under 30 minutes and improves with rest.
+BT|Osteoarthritis vs rheumatoid|msk,rheum,anatomy|Which spares the distal interphalangeal joints?|Rheumatoid arthritis|Osteoarthritis|Osteoarthritis gives Heberden nodes at the DIPs.
+BT|Gout vs pseudogout|msk,rheum,lab|Which shows NEGATIVELY birefringent needles?|Gout|Pseudogout|Pseudogout: rhomboid, positively birefringent calcium pyrophosphate.
+BT|Giant cell vs Takayasu arteritis|msk,rheum,vascular|Which affects patients UNDER 40?|Takayasu arteritis|Giant cell arteritis|Histologically identical; age and vessel distribution separate them.
+BT|Pemphigus vs pemphigoid|derm,immuno|Which has FLACCID bullae and oral involvement?|Pemphigus vulgaris|Bullous pemphigoid|Pemphigus targets desmosomes and is Nikolsky positive. Pemphigoid targets hemidesmosomes.
+BT|SSSS vs toxic epidermal necrolysis|derm,micro,emergency|Which SPARES the mucous membranes?|Staphylococcal scalded skin syndrome|Toxic epidermal necrolysis (TEN)|SSSS splits the granular layer. TEN is full thickness with mucosal loss.
+BT|Basal cell vs squamous cell carcinoma|derm,oncology|Which is a pearly papule with rolled edges?|Basal cell carcinoma|Squamous cell carcinoma|Squamous is scaly and ulcerated, arising from actinic keratosis.
+BT|Kaposi sarcoma vs bacillary angiomatosis|derm,HIV,micro|Which is BACTERIAL and responds to antibiotics?|Bacillary angiomatosis|Kaposi sarcoma|Bartonella, treatable. Kaposi is HHV-8 driven.
+BT|Osteosarcoma vs Ewing sarcoma|msk,oncology|Which shows an ONION-SKIN periosteal reaction?|Ewing sarcoma|Osteosarcoma|Osteosarcoma gives a sunburst pattern with Codman triangle.
+BT|Seminoma vs nonseminoma|repro,oncology|Which NEVER raises alpha-fetoprotein?|Classic pure seminoma|Nonseminomatous tumor|A raised AFP rules seminoma out, whatever the histology suggests.
+BT|Complete vs partial mole|repro,OB,genetics|Which is entirely paternal with NO fetal parts?|Complete mole|Partial mole|Complete is 46,XX all paternal. Partial is triploid with some fetal tissue.
+BT|Placenta previa vs abruption|repro,OB,emergency|Which is PAINLESS bleeding?|Placenta previa|Placental abruption|Abruption is painful with a rigid uterus. Never do a digital exam in previa.
+BT|Preeclampsia vs eclampsia|repro,OB|What distinguishes eclampsia?|Seizures|Proteinuria|Proteinuria is part of preeclampsia. Seizures make it eclampsia.
+BT|Hyperacute vs acute rejection|immuno,transplant|Which happens within MINUTES on the operating table?|Hyperacute rejection|Acute rejection|Preformed antibody. Acute cellular rejection takes weeks and is T cell mediated.
+BT|Dry vs wet beriberi|cardio,vitamins|Which causes high-output heart failure?|Wet beriberi|Dry beriberi|Dry beriberi is the neuropathy. Both are thiamine deficiency.
+BT|Transudate vs exudate|resp,path|Which results from raised hydrostatic pressure?|Transudate|Exudate|Transudate is protein-poor, as in heart failure. Exudate is inflammatory.
+BT|Sensitivity vs specificity|biostats|A negative result RULES OUT disease when the test has high|Sensitivity|Specificity|SnNout. A specific test rules in on a positive: SpPin.
+BT|Incidence vs prevalence|biostats,epidemiology|Better treatment prolonging survival raises|Prevalence|Incidence|Prevalence equals incidence times duration. New cases are unchanged.
+BT|Confounding vs effect modification|biostats,epidemiology|Which is a REAL difference in effect across subgroups?|Effect modification|Confounding|Confounding is a distortion to be removed; effect modification is a finding to report.
+BT|Lead-time vs length-time bias|biostats,epidemiology|Which is screening detecting slow-growing disease preferentially?|Length-time bias|Lead-time bias|Lead-time is earlier diagnosis without changing outcome.
+BT|Type I vs type II error|biostats|Concluding a difference exists when it does not is|Type I error|Type II error|Type I is the false positive, probability alpha.
+BT|Malingering vs factitious disorder|psych,ethics|Which is motivated by EXTERNAL gain?|Malingering|Factitious disorder|Factitious seeks the sick role itself, with no external reward.
+BT|Capacity vs competence|ethics|Which is determined by a court rather than a clinician?|Competence|Capacity|Capacity is a clinical, decision-specific judgment you make at the bedside.
+BT|Chlamydia vs gonorrhea|micro,repro|Which causes a WATERY rather than purulent discharge?|Chlamydia|Gonorrhea|Treat both together: ceftriaxone plus doxycycline.
+BT|Actinomyces vs Nocardia|micro|Which is anaerobic with sulfur granules?|Actinomyces|Nocardia|Nocardia is aerobic, partially acid-fast, and causes brain abscesses.
+BT|Actinomyces vs Nocardia|micro,pharm|Which is treated with TMP-SMX?|Nocardia|Actinomyces|Actinomyces gets penicillin. Remember: SNAP.
+BT|Strep viridans vs Staph aureus endocarditis|micro,cardio|Which causes SUBACUTE endocarditis after dental work?|Streptococcus viridans|Staphylococcus aureus|S. aureus is acute and destructive, classically in IV drug users.
+BT|Exotoxin vs endotoxin|micro|Which is released only by GRAM-NEGATIVE bacteria on lysis?|Endotoxin|Exotoxin|Endotoxin is lipid A of LPS. Exotoxins are secreted proteins.
+BT|Transduction vs conjugation|micro,genetics|Which uses a bacteriophage?|Transduction|Conjugation|Conjugation uses a sex pilus; transformation takes up naked DNA.
+BT|Primary vs secondary TB|micro,resp|Which classically cavitates in the UPPER lobes?|Secondary tuberculosis|Primary tuberculosis|Reactivation prefers the apices where oxygen is highest.
+BT|Hepatitis B window period|micro,virus,hepatitis|In the window period the only positive marker is|Anti-HBc IgM|Anti-HBs|HBsAg has cleared and anti-HBs has not yet risen.
+BT|Osmotic vs secretory diarrhea|GI,physiology|Which STOPS with fasting?|Osmotic diarrhea|Secretory diarrhea|Secretory diarrhea continues overnight and while fasting.
+BT|Conjugated vs unconjugated jaundice|GI,liver|Dark urine with pale stools indicates|Conjugated hyperbilirubinemia|Unconjugated hyperbilirubinemia|Only conjugated bilirubin is water soluble and reaches urine.
+BT|Gilbert vs Crigler-Najjar|GI,liver,genetics|Which is benign and worsens with fasting or stress?|Gilbert syndrome|Crigler-Najjar type I|Crigler-Najjar type I is fatal without transplant, with kernicterus.
+BT|Restrictive vs constrictive|cardio,path|Which shows a pericardial knock and calcification?|Constrictive pericarditis|Restrictive cardiomyopathy|Constriction is a pericardial problem and is surgically curable.
+BT|Stable angina vs Prinzmetal|cardio,angina|Which occurs AT REST, often at night, in a young smoker?|Prinzmetal angina|Stable angina|Vasospasm with transient ST elevation and clean coronaries.
+BT|Systolic vs diastolic heart failure|cardio,heart failure|Which has a PRESERVED ejection fraction?|Diastolic heart failure|Systolic heart failure|HFpEF is a filling problem from a stiff, hypertrophied ventricle.

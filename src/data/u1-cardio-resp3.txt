@@ -1,0 +1,59 @@
+# Cardiology and respiratory — third depth pass. Gap-weighted.
+
+# ── Hypertension ─────────────────────────────────────────────────────────
+G|Hypertension|cardio,clinical|Over 90 percent of hypertension is ___, with no identifiable cause|essential|essential,primary,idiopathic|Secondary causes are worth seeking in the young or resistant.
+B|Resistant hypertension|cardio,endocrine|Resistant hypertension should prompt screening for|Primary hyperaldosteronism|Pheochromocytoma first|The commonest secondary cause by far.
+G|Hypertension in the young|cardio,renal|Hypertension in a young woman with an abdominal bruit suggests fibromuscular ___|dysplasia|dysplasia|A string-of-beads renal artery appearance.
+B|Hypertensive urgency versus emergency|cardio,emergency|What defines a hypertensive emergency?|Acute end-organ damage|A specific blood pressure number|The number alone does not decide it.
+G|White coat hypertension|cardio,clinical|White coat hypertension is excluded with ___ blood pressure monitoring|ambulatory|ambulatory,home,24-hour|Before committing to lifelong treatment.
+B|First-line antihypertensive|cardio,pharm|In a patient under 55 without diabetes, first-line therapy is|An ACE inhibitor or ARB|A calcium channel blocker|Older or Black patients start with a CCB or thiazide.
+
+# ── Lipids and prevention ────────────────────────────────────────────────
+G|Familial hypercholesterolemia|cardio,lipids,genetics|Familial hypercholesterolemia causes tendon ___ and early coronary disease|xanthomas|xanthomas,xanthoma,xanthomata|Autosomal dominant LDL receptor defect.
+B|Statin intensity|cardio,pharm,lipids|After a myocardial infarction, patients receive|A high-intensity statin regardless of baseline LDL|A moderate statin only if the LDL is raised|Plaque stabilization is the goal.
+G|PCSK9 inhibitors|cardio,pharm,lipids|PCSK9 inhibitors work by increasing hepatic LDL ___|receptors|receptors,receptor|Preventing their degradation.
+B|Ezetimibe|cardio,pharm,lipids|Ezetimibe is typically added when|A statin alone is insufficient or not tolerated|The first-line agent before any statin|It blocks intestinal cholesterol absorption.
+G|Triglycerides|cardio,lipids,pancreas|Triglycerides above ___ mmol/L risk acute pancreatitis|10|10,ten,11|Treated with fibrates and lifestyle change.
+
+# ── Arrhythmia management ────────────────────────────────────────────────
+G|Atrial fibrillation|cardio,arrhythmia,coagulation|Anticoagulation in atrial fibrillation is guided by the CHA2DS2-___ score|VASc|vasc,vasc score|Bleeding risk is assessed separately.
+B|Rate versus rhythm control|cardio,arrhythmia|In most older patients with persistent atrial fibrillation|Rate control is equivalent to rhythm control|Rhythm control is clearly better overall|Early rhythm control may help younger patients.
+G|Cardioversion|cardio,arrhythmia,coagulation|Atrial fibrillation over ___ hours needs anticoagulation before cardioversion|48|48,forty eight|Or a transoesophageal echo to exclude thrombus.
+B|Wolff-Parkinson-White with AF|cardio,arrhythmia,pharm|In WPW with atrial fibrillation, AV nodal blockers are|Contraindicated|First-line|They accelerate conduction down the accessory pathway.
+G|Supraventricular tachycardia|cardio,arrhythmia|SVT is first treated with ___ manoeuvres|vagal|vagal,valsalva|Then adenosine if unsuccessful.
+B|Bradycardia|cardio,arrhythmia,pharm|Symptomatic bradycardia is first treated with|Atropine|Adrenaline infusion|Then pacing if atropine fails.
+G|Long QT|cardio,arrhythmia,pharm|Congenital long QT is managed with beta blockers and avoiding QT-prolonging ___|drugs|drugs,medications,medicines|Plus an ICD in high-risk patients.
+B|Brugada syndrome|cardio,arrhythmia,genetics|Brugada syndrome shows|Coved ST elevation in V1 to V3|Delta waves with a short PR|A sodium channelopathy with sudden death risk.
+
+# ── Heart failure management ─────────────────────────────────────────────
+G|Heart failure classification|cardio,heart failure|The ___ classification grades heart failure symptoms from I to IV|NYHA|nyha,new york heart association|Guiding therapy intensity.
+B|HFrEF therapy|cardio,pharm,heart failure|The four pillars of HFrEF therapy include beta blockers, MRAs, SGLT2 inhibitors and|ARNI or ACE inhibitor|Digoxin or ivabradine|All four reduce mortality.
+G|Cardiac resynchronization|cardio,heart failure|Cardiac resynchronization is considered when QRS duration exceeds ___ ms|150|150,130|With reduced ejection fraction and symptoms.
+B|Implantable defibrillator|cardio,heart failure|An ICD is indicated for primary prevention when ejection fraction is below|35 percent|50 percent|Despite optimal medical therapy.
+G|Acute pulmonary oedema|cardio,emergency,pharm|Acute pulmonary oedema is treated with oxygen, nitrates and ___|furosemide|furosemide,loop diuretic,diuretics|Plus non-invasive ventilation if needed.
+
+# ── Valvular and structural ──────────────────────────────────────────────
+G|Aortic stenosis|cardio,valve,surgery|Symptomatic severe aortic stenosis requires valve ___|replacement|replacement,intervention,surgery|Angina, syncope or heart failure mark a poor prognosis.
+B|TAVI|cardio,valve,surgery|Transcatheter aortic valve implantation was first developed for|High surgical risk patients|Young low-risk patients|Indications have since broadened.
+G|Mitral regurgitation|cardio,valve|Severe mitral regurgitation causes progressive left ___ dilation|ventricular|ventricular,atrial|Surgery before irreversible dysfunction.
+B|Prosthetic valves|cardio,valve,coagulation|Mechanical valves require|Lifelong warfarin, not a DOAC|A direct oral anticoagulant|DOACs are ineffective and dangerous here.
+G|Infective endocarditis diagnosis|cardio,micro|Infective endocarditis is diagnosed using the ___ criteria|Duke|duke|Blood cultures and echocardiography are the major criteria.
+B|Rheumatic fever diagnosis|cardio,micro|Rheumatic fever is diagnosed using|The Jones criteria|The Duke criteria|Evidence of preceding streptococcal infection is required.
+
+# ── Respiratory management ───────────────────────────────────────────────
+G|Asthma control|resp,pharm|Using a reliever inhaler more than ___ times a week indicates poor control|2|2,two,three|Prompting a step up in therapy.
+B|Asthma stepwise therapy|resp,pharm|Modern asthma guidelines favour|Inhaled steroid-formoterol as reliever|Short-acting beta agonist alone|Reducing exacerbations and deaths.
+G|Acute severe asthma|resp,emergency|Life-threatening asthma features a silent chest, exhaustion and a ___ PaCO2|normal|normal,rising,raised|Signalling imminent respiratory failure.
+B|COPD assessment|resp|COPD severity is graded by|FEV1 percent predicted and symptoms|The oxygen saturation on its own|GOLD grades combine spirometry and exacerbation history.
+G|COPD exacerbation|resp,emergency,pharm|COPD exacerbation is treated with bronchodilators, steroids and controlled ___|oxygen|oxygen|Target 88 to 92 percent saturation.
+B|Non-invasive ventilation|resp,critical care|Non-invasive ventilation is indicated in COPD when|pH is below 7.35 with hypercapnia|Hypoxia alone despite oxygen therapy|Correcting respiratory acidosis.
+G|Pulmonary rehabilitation|resp,clinical|Pulmonary rehabilitation improves exercise capacity and ___ in COPD|quality of life|quality of life,breathlessness,symptoms|One of the most effective interventions available.
+B|Home oxygen|resp,clinical|Long-term oxygen therapy improves survival only if used|At least 15 hours daily|Only during the night|Adherence determines benefit.
+
+# ── Sleep, pleura and interstitial ───────────────────────────────────────
+G|Obstructive sleep apnea|resp,sleep,pharm|Obstructive sleep apnea is treated with continuous positive airway ___|pressure|pressure,cpap|Plus weight loss and avoiding sedatives.
+B|Obesity hypoventilation|resp,sleep|Obesity hypoventilation syndrome is defined by|Daytime hypercapnia|Nocturnal desaturation alone|Distinct from simple obstructive apnea.
+G|Pleural aspiration|resp,procedure|A pleural aspiration is performed ___ the rib to avoid the neurovascular bundle|above|above,superior to,over|Which runs in the inferior groove.
+B|Malignant effusion|resp,oncology|A recurrent malignant pleural effusion is managed with|Pleurodesis or an indwelling catheter|Repeated aspiration on its own|Improving symptom control.
+G|Interstitial lung disease|resp,path|Interstitial lung disease reduces the transfer factor, or ___|DLCO|dlco,tlco,diffusing capacity|An early and sensitive marker.
+B|Occupational asthma|resp,immuno|Occupational asthma is suggested when symptoms|Improve away from work|Worsen at weekends|Serial peak flow diaries help confirm it.

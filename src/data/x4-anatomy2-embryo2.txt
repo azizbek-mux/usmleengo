@@ -1,0 +1,58 @@
+# Anatomy and embryology — second depth pass. Gap-weighted.
+
+# ── Upper limb ───────────────────────────────────────────────────────────
+G|Brachial plexus|anatomy,neuro|The brachial plexus arises from roots C5 to T___|1|1,one,t1|Roots, trunks, divisions, cords, branches.
+B|Axillary nerve|anatomy,neuro,ortho|Axillary nerve injury after shoulder dislocation causes|Deltoid weakness with regimental badge numbness|Wrist drop with numbness over the dorsal hand|Test sensation over the deltoid before and after reduction.
+G|Musculocutaneous nerve|anatomy,neuro|The musculocutaneous nerve supplies elbow ___|flexion|flexion,flexors|Biceps, brachialis and coracobrachialis.
+B|Median nerve at the elbow|anatomy,neuro|Anterior interosseous nerve injury causes|Weak thumb and index flexion, no sensory loss|Thenar wasting with palmar numbness|Unable to make an OK sign.
+G|Ulnar paradox|anatomy,neuro|A more ___ ulnar lesion produces more marked clawing|distal|distal|Because the intact long flexors still act.
+B|Radial nerve in the axilla|anatomy,neuro|Crutch palsy from axillary compression causes|Triceps weakness as well as wrist drop|Isolated wrist drop with normal triceps|A spiral groove lesion spares triceps.
+G|Carpal bones|anatomy,ortho|The ___ is the most commonly fractured carpal bone|scaphoid|scaphoid|Tender in the anatomical snuffbox.
+B|Erb palsy nerve roots|anatomy,neuro,peds|Erb palsy involves roots|C5 and C6|C8 and T1|Klumpke involves the lower roots.
+
+# ── Lower limb ───────────────────────────────────────────────────────────
+G|Sciatic nerve|anatomy,neuro|The sciatic nerve divides into tibial and common ___ nerves|fibular|fibular,peroneal|At the level of the popliteal fossa.
+B|Femoral nerve|anatomy,neuro,msk|Femoral nerve injury causes|Weak knee extension and a lost knee jerk|Foot drop with lateral calf numbness|With numbness over the anterior thigh.
+G|Obturator nerve|anatomy,neuro,repro|The obturator nerve supplies hip ___|adduction|adduction,adductors|At risk during pelvic surgery.
+B|Superior gluteal nerve|anatomy,neuro,msk|Superior gluteal nerve injury causes the pelvis to|Drops on the contralateral side on standing|Rises on the contralateral side on standing|Trendelenburg sign.
+G|Popliteal fossa|anatomy,vascular|The popliteal fossa contains the popliteal artery, vein and tibial ___|nerve|nerve|Plus the common fibular nerve laterally.
+B|Ankle sprain|anatomy,ortho|The most commonly injured ankle ligament is the|Anterior talofibular|The deltoid ligament|Inversion injuries are commonest.
+
+# ── Thorax and abdomen, deeper ───────────────────────────────────────────
+G|Pleural reflections|anatomy,resp|The lung extends to rib ___ in the midaxillary line, the pleura two ribs lower|8|8,eight|Guiding safe chest drain placement.
+B|Thoracic duct drainage|anatomy,immuno|The thoracic duct drains into the|Left subclavian vein junction|Right atrium via the azygos vein|Draining all the body except the right upper quadrant.
+G|Azygos vein|anatomy,vascular|The azygos vein drains into the superior vena ___|cava|cava|An important collateral in SVC obstruction.
+B|Coeliac plexus|anatomy,GI,pharm|A coeliac plexus block is used for pain from|Pancreatic cancer|Pelvic malignancy|Blocking foregut visceral afferents.
+G|Peritoneal spaces|anatomy,GI,surgery|Fluid in a supine patient collects in the ___ pouch|hepatorenal|hepatorenal,morison|Morison pouch, checked on FAST scanning.
+B|Inguinal canal boundaries|anatomy,surgery|The floor of the inguinal canal is formed by the|Inguinal ligament|Transversalis fascia|Which forms the posterior wall.
+G|Portal vein formation|anatomy,GI,liver|The portal vein forms from the splenic and superior ___ veins|mesenteric|mesenteric|Behind the neck of the pancreas.
+B|Appendix position|anatomy,GI,surgery|The commonest position of the appendix is|Retrocaecal|Pelvic|Which can mask classic signs.
+
+# ── Head, neck and neuroanatomy ──────────────────────────────────────────
+G|Thyroid blood supply|anatomy,ENT,surgery|The superior thyroid artery arises from the external ___ artery|carotid|carotid|The inferior comes from the thyrocervical trunk.
+B|Superior laryngeal nerve|anatomy,ENT,surgery|External laryngeal nerve injury during thyroidectomy causes|Loss of high-pitched voice|Complete aphonia|It supplies cricothyroid.
+G|Facial nerve branches|anatomy,ENT|The facial nerve branches are temporal, zygomatic, buccal, marginal mandibular and ___|cervical|cervical|Two Zulus Buggered My Cat.
+B|Parotid gland relations|anatomy,ENT|Structures within the parotid include the facial nerve, retromandibular vein and|External carotid artery|Internal carotid artery|In that order superficial to deep.
+G|Triangles of the neck|anatomy,surgery|The ___ muscle divides the neck into anterior and posterior triangles|sternocleidomastoid|sternocleidomastoid,scm|Guiding differential diagnosis of neck lumps.
+B|Cricothyroid membrane|anatomy,emergency|The cricothyroid membrane lies|Between thyroid and cricoid cartilages|Just above the thyroid cartilage|The site for emergency surgical airway.
+G|Dural venous sinuses|anatomy,neuro,vascular|The superior sagittal sinus drains into the ___ sinus confluence|transverse|transverse,confluence|Then sigmoid sinus and internal jugular vein.
+B|Blood-brain barrier gaps|anatomy,neuro|Circumventricular organs lack a blood-brain barrier, including the|Area postrema|Hippocampus|Allowing the vomiting centre to sense toxins.
+G|Basal ganglia|anatomy,neuro,movement|The basal ganglia include the caudate, putamen and globus ___|pallidus|pallidus|Plus subthalamic nucleus and substantia nigra functionally.
+B|Hypothalamic nuclei|anatomy,neuro,endocrine|The supraoptic and paraventricular nuclei produce|ADH and oxytocin|Releasing hormones only|Transported to the posterior pituitary.
+
+# ── Embryology, deeper ───────────────────────────────────────────────────
+G|Bilaminar disc|embryology|By week 2 the embryo is a ___ disc of epiblast and hypoblast|bilaminar|bilaminar,two-layer|Week 3 brings the trilaminar disc.
+B|Notochord|embryology,neuro|The notochord induces|Neural plate formation|Somite formation|Persisting as the nucleus pulposus.
+G|Somites|embryology,msk|Somites give rise to sclerotome, myotome and ___|dermatome|dermatome|Explaining segmental innervation.
+B|Neural crest derivatives|embryology|Which is a neural crest derivative?|Schwann cells|Oligodendrocytes|Oligodendrocytes come from neuroectoderm.
+G|Heart tube looping|embryology,cardio|Failure of correct cardiac ___ causes transposition and related defects|looping|looping|Occurring in week 4.
+B|Septum primum and secundum|embryology,cardio|The foramen ovale is formed between|Septum primum and secundum|Endocardial cushions|A flap valve that closes at birth.
+G|Aortic arch derivatives|embryology,cardio|The ___ arch on the left becomes the aortic arch|fourth|fourth,4th|The right fourth becomes the proximal subclavian.
+B|Branchial apparatus|embryology,ENT|Branchial cleft cysts arise from|The second cleft|The first pouch|Presenting as a lateral neck swelling.
+G|Foregut rotation|embryology,GI|The stomach rotates ___ degrees clockwise about its longitudinal axis|90|90,ninety|Explaining vagal nerve positions.
+B|Pancreatic buds|embryology,GI|An annular pancreas results from|Failed rotation of the ventral bud|Failed fusion of the ducts|Encircling and obstructing the duodenum.
+G|Urorectal septum|embryology,GI,renal|The urorectal septum divides the cloaca into urogenital sinus and ___|rectum|rectum,anorectal canal|Failure causes fistulae.
+B|Kidney ascent|embryology,renal|The kidneys ascend from the pelvis and are supplied by|Successively higher arteries|A single permanent artery|Persisting lower vessels become accessory renal arteries.
+G|Mullerian fusion|embryology,repro|Failure of Mullerian fusion causes a ___ uterus|bicornuate|bicornuate,septate,didelphys|Associated with pregnancy loss and malpresentation.
+B|Gonadal differentiation|embryology,repro,genetics|The SRY gene drives|Testis determination|Ovarian development|Its absence produces the default female pathway.
+G|Descent of the testis|embryology,repro|The processus vaginalis normally ___ after testicular descent|obliterates|obliterates,closes,regresses|Failure causes hernia or hydrocele.

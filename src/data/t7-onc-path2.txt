@@ -1,0 +1,56 @@
+# Oncology and pathology — second depth pass. Gap-weighted.
+
+# ── Carcinogenesis ───────────────────────────────────────────────────────
+G|Initiation and promotion|path,oncology|Carcinogenesis requires initiation, promotion and ___|progression|progression|Only initiation causes a permanent DNA change.
+B|Chemical carcinogens|path,oncology|Aflatoxin causes which cancer?|Hepatocellular carcinoma|Bladder carcinoma|Aromatic amines cause bladder cancer.
+G|Vinyl chloride|path,oncology,liver|Vinyl chloride causes hepatic ___|angiosarcoma|angiosarcoma|Also caused by arsenic and thorotrast.
+B|Radiation carcinogenesis|path,oncology,endocrine|Ionizing radiation to the neck classically causes|Papillary thyroid carcinoma|Medullary carcinoma|Especially with childhood exposure.
+G|Oncogenic viruses|path,oncology,virus|HTLV-1 causes adult T-cell ___|leukemia|leukemia,leukaemia,lymphoma|Endemic in Japan and the Caribbean.
+B|Helicobacter pylori|path,oncology,micro|H. pylori is classified as|A definite group 1 carcinogen|A non-carcinogenic commensal|Gastric adenocarcinoma and MALT lymphoma.
+G|Tumour suppressor genes|path,oncology,genetics|___ is called the guardian of the genome|p53|p53,tp53|Mutated in over half of human cancers.
+B|Li-Fraumeni syndrome|path,oncology,genetics|Li-Fraumeni syndrome results from germline mutation of|TP53|BRCA1|Sarcoma, breast, brain and adrenal tumours.
+G|Retinoblastoma gene|path,oncology,genetics|The RB protein restrains the ___ to S phase transition|G1|g1,g1/s|Released when phosphorylated by CDK-cyclin D.
+B|APC gene|path,oncology,GI|Loss of APC leads to accumulation of|Beta-catenin|p53|Driving unchecked WNT signalling.
+
+# ── Tumour markers and diagnostics ───────────────────────────────────────
+G|CEA|path,oncology,GI|___ is used to monitor colorectal cancer after resection|CEA|cea,carcinoembryonic antigen|Not suitable for screening.
+G|CA-125|path,oncology,repro|CA-125 monitors ___ cancer but also rises in endometriosis|ovarian|ovarian|And in any peritoneal irritation.
+G|PSA|path,oncology,repro|PSA also rises with prostatitis, instrumentation and ___|BPH|bph,benign prostatic hyperplasia,hyperplasia|Which limits its specificity.
+G|Beta-hCG|path,oncology,repro|Beta-hCG is a marker of choriocarcinoma and ___ tumours|germ cell|germ cell,testicular,nonseminomatous|Together with AFP for testicular cancer.
+B|Immunohistochemistry|path,oncology|Cytokeratin positivity indicates|Epithelial origin|Mesenchymal origin|Vimentin marks mesenchymal tumours.
+B|Chromogranin|path,oncology,endocrine|Chromogranin and synaptophysin mark|Neuroendocrine tumours|B cell lymphomas only|Small cell carcinoma and carcinoid.
+
+# ── Cancer treatment principles ──────────────────────────────────────────
+G|Neoadjuvant therapy|oncology,pharm,surgery|___ therapy is given BEFORE surgery to shrink a tumour|Neoadjuvant|neoadjuvant|Adjuvant therapy follows surgery.
+B|Radiotherapy fractionation|oncology|Radiotherapy is fractionated to|Spare normal tissue while killing tumour|Reduce the total cost of treatment|Normal tissue repairs between fractions.
+G|Cell cycle specific|oncology,pharm|Methotrexate and 5-fluorouracil act in ___ phase|S|s,s-phase|Vinca alkaloids and taxanes act in M phase.
+B|Alkylating agents|oncology,pharm|Alkylating agents are|Cell cycle non-specific|S phase specific|Cyclophosphamide, busulfan, nitrosoureas.
+G|Tyrosine kinase inhibitors|oncology,pharm,genetics|Imatinib targets the ___ fusion protein in CML|BCR-ABL|bcr-abl,bcr abl|A landmark targeted therapy.
+B|EGFR inhibitors|oncology,pharm,resp|EGFR inhibitors are most effective in|Non-smokers with adenocarcinoma|Squamous cell carcinoma|Test for the activating mutation first.
+G|Immune checkpoint|oncology,pharm,immuno|Pembrolizumab blocks the ___ receptor on T cells|PD-1|pd-1,pd1|Restoring anti-tumour immunity.
+B|CAR-T therapy|oncology,immuno|The main acute toxicity of CAR-T therapy is|Cytokine release syndrome|Severe nephrotoxicity|Treated with tocilizumab and steroids.
+G|Palliative radiotherapy|oncology,bone|A single fraction of radiotherapy effectively relieves ___ bone pain|metastatic|metastatic,bony,bone|Rapid symptom control with minimal toxicity.
+
+# ── Oncological emergencies ──────────────────────────────────────────────
+G|Neutropenic sepsis|oncology,micro,emergency|Neutropenic sepsis requires antibiotics within ___ hour|1|1,one|Before any imaging or cultures delay treatment.
+B|Hypercalcemia of malignancy|oncology,electrolytes,emergency|Malignant hypercalcemia is treated with fluids then|A bisphosphonate|Loop diuretics first|Diuretics only after rehydration.
+G|Spinal cord compression|oncology,emergency,neuro|The commonest first symptom of cord compression is ___ pain|back|back|Preceding weakness by days to weeks.
+B|SVC obstruction|oncology,emergency|Superior vena cava obstruction is treated with|Steroids and stenting or radiotherapy|Anticoagulation and diuretics alone|Depending on the underlying tumour type.
+G|Tumour lysis|oncology,emergency,renal|Tumour lysis risk is highest in bulky, rapidly proliferating ___|lymphoma|lymphoma,leukemia,leukaemia|Especially Burkitt and acute leukaemia.
+
+# ── Cell injury and adaptation, deeper ───────────────────────────────────
+G|Hyperplasia|path,adaptation|Endometrial hyperplasia from unopposed estrogen may progress to ___|carcinoma|carcinoma,cancer,neoplasia|Unlike physiological hyperplasia.
+B|Metaplasia sites|path,adaptation,resp|Smoking causes bronchial metaplasia from|Ciliated columnar to squamous|Squamous to columnar|Losing mucociliary clearance.
+G|Dystrophic calcification|path|Calcification in damaged tissue with NORMAL serum calcium is called ___|dystrophic|dystrophic|Metastatic calcification occurs with high calcium.
+B|Metastatic calcification|path,electrolytes|Metastatic calcification affects|Normal tissue in the setting of hypercalcemia|Previously damaged or necrotic tissue|Favouring lung, kidney and gastric mucosa.
+G|Hemosiderin|path,heme|Chronic haemorrhage leaves ___-laden macrophages|hemosiderin|hemosiderin,haemosiderin|Heart failure cells in the lung.
+B|Lipofuscin|path,aging|Lipofuscin accumulation indicates|Age and free radical injury|Iron overload in tissue|The wear-and-tear pigment.
+G|Fatty change|path,liver|Hepatic steatosis is a ___ change caused by alcohol or obesity|reversible|reversible|Progressing to steatohepatitis and fibrosis if sustained.
+
+# ── Inflammation and immunity, deeper ────────────────────────────────────
+G|Transudate versus exudate|path,inflammation|An exudate forms when vascular ___ increases|permeability|permeability|Letting protein and cells escape.
+B|Serous inflammation|path,inflammation|A blister after a burn is|Serous inflammation|Fibrinous inflammation|Fibrinous exudate is protein-rich, as in pericarditis.
+G|Abscess|path,inflammation,micro|An abscess is a collection of ___ walled off by granulation tissue|pus|pus,neutrophils|Requiring drainage rather than antibiotics alone.
+B|Foreign body granuloma|path,inflammation|Foreign body granulomas contain|Multinucleate giant cells around the material|Caseous necrosis with a lymphocyte cuff|No immune sensitization required.
+G|Chronic granulomatous inflammation|path,inflammation,immuno|Granulomas require ___ activation of macrophages|Th1|th1,t helper 1,interferon gamma|Which is why TNF blockers cause reactivation.
+B|Fibrosis|path,healing|Excessive TGF-beta drives|Fibrosis|Resolution|A key mediator of scarring in many organs.

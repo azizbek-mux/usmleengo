@@ -1,0 +1,76 @@
+# Respiratory — depth pass. Gap-weighted.
+
+# ── Mechanics and volumes ────────────────────────────────────────────────
+G|Lung volumes|resp,physiology|Air remaining after maximal expiration is the ___ volume|residual|residual,rv|It cannot be measured by spirometry alone.
+B|Functional residual capacity|resp,physiology|FRC is the point where|Lung recoil balances chest wall outward pull|The lungs are fully inflated at capacity|Airway pressure equals atmospheric.
+G|Compliance|resp,physiology|Compliance is the change in volume per change in ___|pressure|pressure|Raised in emphysema, reduced in fibrosis.
+B|Emphysema compliance|resp,physiology,path|Emphysema makes lung compliance|Increase|Decrease|Elastin destruction makes lungs floppy and hard to empty.
+G|Surfactant|resp,physiology,peds|Surfactant is mostly dipalmitoyl___choline|phosphatidyl|phosphatidyl,phosphatidylcholine|Made by type II pneumocytes from week 24.
+B|Laplace law|resp,physiology|By Laplace law, a small alveolus without surfactant tends to|Collapse into a larger one|Expand faster than a larger one|Pressure is inversely proportional to radius.
+G|Dead space|resp,physiology|Anatomical dead space is about ___ mL in an adult|150|150,one hundred fifty|Roughly 2 mL per kilogram.
+B|Ventilation-perfusion|resp,physiology|At the lung apex, the V/Q ratio is|High|Low|Ventilation exceeds perfusion; the base is the reverse.
+G|Hypoxia|resp,physiology|Peripheral chemoreceptors in the ___ bodies sense low oxygen|carotid|carotid,carotid and aortic|Central chemoreceptors respond to CO2 instead.
+
+# ── Gas exchange ─────────────────────────────────────────────────────────
+G|Oxygen content|resp,physiology,heme|Oxygen content depends mainly on ___ concentration|hemoglobin|hemoglobin,haemoglobin,hb|Not on PaO2, which only drives saturation.
+B|Anemia and PaO2|resp,physiology,heme|In anemia, arterial PaO2 is|Normal|Low|Content falls but partial pressure does not.
+G|Carbon dioxide transport|resp,physiology|Most carbon dioxide travels in blood as ___|bicarbonate|bicarbonate,hco3|About 70 percent; the rest is carbamino and dissolved.
+B|Haldane effect|resp,physiology|The Haldane effect describes|Deoxygenated blood carrying more CO2|Acid causing oxygen to unload|The Bohr effect is acid unloading oxygen.
+G|A-a gradient|resp,physiology|A normal A-a gradient with hypoxemia suggests ___ or high altitude|hypoventilation|hypoventilation,hypoventilating|Shunt and V/Q mismatch widen the gradient.
+B|Shunt|resp,physiology|Hypoxemia from a true shunt|Does not correct with 100% oxygen|Corrects fully with 100 percent oxygen|Blood bypasses ventilated alveoli entirely.
+
+# ── Obstructive disease ──────────────────────────────────────────────────
+G|Asthma|resp,immuno,path|Asthma sputum shows Curschmann spirals and ___-Leyden crystals|Charcot|charcot,charcot-leyden|From eosinophil membrane protein.
+B|Asthma severity|resp,emergency|A NORMAL PaCO2 in an acute severe asthma attack is|Ominous, signalling fatigue|Reassuring, signalling recovery|The patient should be hyperventilating; rising CO2 means failure.
+G|Asthma|resp,pharm|Long-acting beta agonists must never be used without an inhaled ___|corticosteroid|corticosteroid,steroid,ics|Monotherapy increases asthma deaths.
+B|COPD|resp,pharm|Which intervention improves survival in COPD?|Smoking cessation and long-term oxygen|Inhaled corticosteroids and mucolytics|Bronchodilators improve symptoms, not mortality.
+G|COPD|resp,critical care|Long-term oxygen therapy is indicated when PaO2 falls below ___ mmHg|55|55,fifty five|Or below 60 with cor pulmonale or polycythemia.
+B|Alpha-1 antitrypsin deficiency|resp,genetics,path|A1AT emphysema affects the|Lower lobes|Upper lobes|Smoking-related emphysema is upper lobe and centriacinar.
+G|Bronchiectasis|resp,path|Bronchiectasis shows ___-track markings on chest imaging|tram|tram|Dilated thick-walled airways; signet ring sign on CT.
+B|Cystic fibrosis|resp,genetics,lab|Cystic fibrosis is diagnosed by|Sweat chloride above 60|A raised serum sodium|Plus genetic testing for CFTR mutations.
+G|Cystic fibrosis|resp,micro|The commonest chronic airway pathogen in adult cystic fibrosis is ___|Pseudomonas|pseudomonas,pseudomonas aeruginosa|Staph aureus dominates in childhood.
+
+# ── Restrictive disease ──────────────────────────────────────────────────
+G|Idiopathic pulmonary fibrosis|resp,path|IPF shows usual interstitial pneumonia with ___ lung on CT|honeycomb|honeycomb,honeycombing|Basal and subpleural reticulation with traction bronchiectasis.
+B|Idiopathic pulmonary fibrosis|resp,pharm|IPF is treated with|Pirfenidone or nintedanib|High-dose steroids|Steroids do not help and may worsen outcomes.
+G|Hypersensitivity pneumonitis|resp,immuno|Hypersensitivity pneumonitis is a type ___ and IV reaction|III|iii,3,three|Farmer's lung, bird fancier's lung.
+B|Sarcoidosis|resp,immuno,lab|Sarcoidosis characteristically raises serum|ACE and calcium|Rheumatoid factor|From granuloma-derived 1-alpha-hydroxylase.
+G|Sarcoidosis|resp,immuno|Sarcoidosis with erythema nodosum, arthritis and hilar adenopathy is ___ syndrome|Lofgren|lofgren,lofgren's|A good-prognosis acute presentation.
+B|Coal worker pneumoconiosis|resp,path|Coal worker pneumoconiosis affects the|Upper lobes|Lower lobes|Asbestosis affects lower lobes instead.
+G|Asbestos exposure|resp,path,oncology|Asbestos causes pleural ___, which are benign markers of exposure|plaques|plaques,plaque|Not premalignant themselves.
+B|Berylliosis|resp,path|Berylliosis is histologically indistinguishable from|Sarcoidosis|Tuberculosis|Non-caseating granulomas; responds to steroids.
+
+# ── Vascular and critical care ───────────────────────────────────────────
+G|Pulmonary embolism|resp,vascular|Most pulmonary emboli originate in the ___ veins of the leg|deep|deep,proximal deep,iliofemoral|Especially the popliteal and above.
+B|Massive pulmonary embolism|resp,emergency,pharm|Massive PE with hypotension is treated with|Thrombolysis|Anticoagulation alone|Haemodynamic instability changes the treatment.
+G|Fat embolism|resp,ortho,emergency|Fat embolism gives dyspnea, confusion and a ___ rash|petechial|petechial,petechiae|Classically after long bone fracture.
+B|Amniotic fluid embolism|resp,OB,emergency|Amniotic fluid embolism characteristically causes|Cardiovascular collapse with DIC|Isolated hypoxia that settles fast|Rare and often fatal.
+G|Pulmonary hypertension|resp,cardio|Pulmonary hypertension is a mean pulmonary artery pressure above ___ mmHg|20|20,twenty,25|Confirmed by right heart catheterization.
+B|Primary pulmonary hypertension|resp,genetics,pharm|Idiopathic pulmonary arterial hypertension is linked to|BMPR2 mutation|CFTR mutation|Treated with endothelin antagonists and PDE5 inhibitors.
+G|ARDS|resp,critical care|ARDS shows diffuse ___ damage on histology|alveolar|alveolar|Hyaline membranes from protein-rich exudate.
+B|ARDS|resp,critical care|ARDS requires a PaO2 to FiO2 ratio below|300|500|Under 100 is severe.
+B|Ventilator-associated pneumonia|resp,micro,critical care|Ventilator-associated pneumonia is defined as occurring after|48 hours of ventilation|6 hours of ventilation|Often Pseudomonas or MRSA.
+
+# ── Pleura and mediastinum ───────────────────────────────────────────────
+G|Pleural effusion|resp,path,lab|Light criteria compare pleural and serum protein and ___|LDH|ldh,lactate dehydrogenase|Any one criterion met makes it an exudate.
+B|Empyema|resp,micro|An empyema requires|Chest tube drainage|Antibiotics alone|Frank pus, low pH and low glucose.
+G|Chylothorax|resp,anatomy|Chylothorax fluid is milky and rich in ___|triglycerides|triglycerides,triglyceride,chyle|From thoracic duct injury.
+B|Primary spontaneous pneumothorax|resp,path|Primary spontaneous pneumothorax typically occurs in|Tall thin young men|Elderly smokers|Rupture of apical subpleural blebs.
+G|Tension pneumothorax|resp,emergency|Tension pneumothorax is treated immediately with needle ___|decompression|decompression,thoracostomy|Before any imaging.
+B|Anterior mediastinal mass|resp,oncology|The four Ts of an anterior mediastinal mass include thymoma, teratoma, thyroid and|Terrible lymphoma|Tuberculosis|A useful mnemonic for the anterior compartment.
+
+# ── Infection and sleep ──────────────────────────────────────────────────
+G|Community acquired pneumonia|resp,micro,lab|The CURB-65 score includes confusion, urea, respiratory rate, blood pressure and ___|age|age,age 65|Guides admission decisions.
+B|Aspiration pneumonia|resp,micro,anatomy|Aspiration in a supine patient affects the|Right lower lobe superior segment|Left upper lobe lingular segment|The right main bronchus is wider and more vertical.
+G|Lung abscess|resp,micro|Lung abscess is usually caused by ___ organisms|anaerobic|anaerobic,anaerobes|Foul-smelling sputum; treat with clindamycin.
+B|Obstructive sleep apnea|resp,sleep,cardio|Untreated obstructive sleep apnea causes|Pulmonary hypertension and hypertension|Restrictive lung disease and fibrosis|Plus daytime somnolence and arrhythmia.
+G|Obstructive sleep apnea|resp,sleep|Obstructive sleep apnea is diagnosed with ___|polysomnography|polysomnography,sleep study|An apnea-hypopnea index above 5 with symptoms.
+B|Central sleep apnea|resp,sleep,neuro|Cheyne-Stokes breathing is associated with|Heart failure and stroke|Obesity and rib fractures|A crescendo-decrescendo pattern with apneas.
+
+# ── Lung cancer ──────────────────────────────────────────────────────────
+G|Lung cancer screening|resp,oncology|Lung cancer screening uses low-dose ___ in high-risk smokers|CT|ct,computed tomography|Annually from age 50 with a significant pack-year history.
+B|Pancoast tumour|resp,oncology,neuro|A Pancoast tumour compresses the|Brachial plexus and sympathetic chain|Phrenic nerve and the oesophagus|Shoulder pain, arm weakness and Horner syndrome.
+G|Small cell lung cancer|resp,oncology|Small cell lung cancer arises from ___ cells|neuroendocrine|neuroendocrine,kulchitsky|Which explains its paraneoplastic syndromes.
+B|Small cell lung cancer|resp,oncology,pharm|Small cell lung cancer is treated primarily with|Chemotherapy and radiotherapy|Surgical resection alone|It is almost always disseminated at diagnosis.
+G|Carcinoid of the lung|resp,oncology|Bronchial carcinoid stains for chromogranin and ___|synaptophysin|synaptophysin|Neuroendocrine markers; usually indolent.
+B|Solitary pulmonary nodule|resp,oncology,imaging|A nodule with popcorn calcification is|A benign hamartoma|Likely malignant|Spiculated margins suggest malignancy instead.

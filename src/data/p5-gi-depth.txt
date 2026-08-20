@@ -1,0 +1,79 @@
+# Gastrointestinal and hepatology — depth pass. Gap-weighted.
+
+# ── Oesophagus ───────────────────────────────────────────────────────────
+G|Barrett esophagus|GI,oncology,path|Barrett metaplasia is recognized by the presence of ___ cells|goblet|goblet|Intestinal-type mucosa above the gastro-oesophageal junction.
+B|Esophageal cancer|GI,oncology|Adenocarcinoma of the oesophagus arises in the|Lower third|Upper third|Squamous cell carcinoma favours the upper two thirds.
+G|Esophageal varices|GI,liver,pharm|Bleeding varices are controlled acutely with ___, a somatostatin analogue|octreotide|octreotide|Plus banding and antibiotic prophylaxis.
+B|Mallory-Weiss tear|GI,emergency|A Mallory-Weiss tear involves|A mucosal laceration only|Full-thickness rupture|Boerhaave is the full-thickness rupture with mediastinitis.
+G|Boerhaave syndrome|GI,emergency|Boerhaave syndrome causes subcutaneous ___ in the neck|emphysema|emphysema,crepitus|Air tracks into the mediastinum after forceful vomiting.
+B|Eosinophilic esophagitis|GI,immuno|Eosinophilic esophagitis classically shows|Concentric rings on endoscopy|A single distal stricture|Food impaction in a young atopic patient.
+G|Plummer-Vinson syndrome|GI,heme|Plummer-Vinson combines oesophageal webs with ___ deficiency anemia|iron|iron|Plus atrophic glossitis and dysphagia.
+
+# ── Stomach ──────────────────────────────────────────────────────────────
+G|Parietal cells|GI,physiology|Parietal cells secrete acid and intrinsic ___|factor|factor|Their loss causes both achlorhydria and B12 deficiency.
+G|Chief cells|GI,physiology|Chief cells secrete ___, the precursor of pepsin|pepsinogen|pepsinogen|Activated by gastric acid.
+B|Gastrin|GI,physiology,endocrine|Gastrin secretion is stimulated by|Stomach distension and amino acids|Gastric acid and somatostatin|Acid feeds back to inhibit it.
+G|Proton pump|GI,physiology,pharm|The parietal cell pump exchanges H+ for ___|K+|k+,k,potassium|The target of omeprazole.
+B|Type A chronic gastritis|GI,path,immuno|Autoimmune gastritis affects the|Body and fundus|Antrum|Antral gastritis is usually H. pylori. Autoimmune causes pernicious anemia.
+B|Gastric ulcer versus duodenal|GI,path|Pain WORSE with eating suggests|A gastric ulcer|A duodenal ulcer|Duodenal ulcer pain improves with food and recurs hours later.
+G|Gastric cancer|GI,oncology,path|Diffuse gastric cancer shows ___ ring cells|signet|signet|Linitis plastica — a thickened, rigid stomach wall.
+B|Virchow node|GI,oncology|A left supraclavicular node in gastric cancer is called|Virchow node|Sister Mary Joseph nodule|The umbilical metastasis is Sister Mary Joseph.
+
+# ── Small bowel and malabsorption ────────────────────────────────────────
+G|Celiac disease|GI,immuno,lab|The screening antibody in celiac disease is anti-tissue ___|transglutaminase|transglutaminase,ttg|Check IgA level too, since IgA deficiency causes false negatives.
+B|Celiac disease|GI,immuno,path|Celiac disease damages which part of the small bowel most?|Duodenum and proximal jejunum|Terminal ileum and caecum|Which is why iron and folate go first.
+G|Whipple disease|GI,micro,path|Whipple disease shows ___-positive foamy macrophages|PAS|pas,periodic acid-schiff|Tropheryma whipplei. Arthralgia, diarrhea, neurological signs.
+B|Tropical sprue|GI,micro|Tropical sprue differs from celiac because it|Responds to antibiotics|Responds to gluten withdrawal|It affects the whole small bowel, including the ileum.
+G|Lactose intolerance|GI,physiology|Lactose intolerance causes an ___ diarrhea that stops with fasting|osmotic|osmotic|Stool osmotic gap is high and stool pH low.
+B|Carcinoid tumour|GI,oncology|The commonest site of a gastrointestinal carcinoid is the|Small bowel|Stomach|Especially the terminal ileum and appendix.
+G|Abetalipoproteinemia|GI,genetics,heme|Abetalipoproteinemia shows ___ on peripheral smear|acanthocytes|acanthocytes,acanthocyte,spur cells|Missing microsomal triglyceride transfer protein; fat malabsorption.
+
+# ── Colon ────────────────────────────────────────────────────────────────
+G|Familial adenomatous polyposis|GI,genetics,oncology|FAP is caused by mutation of the ___ gene on chromosome 5|APC|apc|Hundreds of polyps; colectomy is inevitable.
+B|Gardner syndrome|GI,genetics,oncology|Gardner syndrome is FAP plus|Osteomas and soft tissue tumours|Brain tumours and skin pigmentation|Turcot syndrome adds CNS tumours.
+G|Lynch syndrome|GI,genetics,oncology|Lynch syndrome tumours show microsatellite ___|instability|instability|Right-sided colon cancer at a young age.
+B|Colorectal screening|GI,oncology|Average-risk colonoscopy screening now begins at age|45|60|Earlier with family history or inflammatory bowel disease.
+B|Diverticulosis|GI,path,anatomy|Colonic diverticula form where|Vasa recta penetrate the muscular wall|The taeniae coli are at their thickest|Points of structural weakness; false diverticula.
+G|Diverticulitis|GI,micro,pharm|Diverticulitis is treated with antibiotics covering gut ___|anaerobes|anaerobes,anaerobe|Metronidazole plus a fluoroquinolone or co-amoxiclav.
+B|Angiodysplasia|GI,vascular|Angiodysplasia classically causes|Painless lower GI bleeding|Severe abdominal pain|Associated with aortic stenosis and von Willebrand disease.
+G|Ischemic colitis|GI,vascular|Ischemic colitis causes pain out of proportion at the ___ flexure|splenic|splenic|The watershed between SMA and IMA territories.
+B|Toxic megacolon|GI,IBD,emergency|Toxic megacolon is a complication of|Ulcerative colitis and C. difficile|Crohn disease and coeliac disease|Avoid antimotility agents; risk of perforation.
+G|Volvulus|GI,surgery|Sigmoid volvulus produces a ___ bean sign on abdominal film|coffee|coffee|Commonest in the elderly and constipated.
+
+# ── Pancreas ─────────────────────────────────────────────────────────────
+G|Acute pancreatitis|GI,pancreas,lab|The most specific enzyme in acute pancreatitis is ___|lipase|lipase|It stays elevated longer than amylase.
+B|Acute pancreatitis|GI,pancreas,electrolytes|Acute pancreatitis lowers serum|Calcium|Potassium|Saponification of fat consumes calcium.
+G|Pancreatic pseudocyst|GI,pancreas,path|A pancreatic pseudocyst lacks a true ___ lining|epithelial|epithelial,epithelium|Which is why it is called pseudo.
+B|Chronic pancreatitis|GI,pancreas,imaging|Chronic pancreatitis shows|Pancreatic calcifications|A discrete solid mass|Plus steatorrhea and diabetes as the gland fails.
+G|Pancreatic cancer|GI,oncology,lab|The tumour marker for pancreatic cancer is CA ___|19-9|19-9,19 9,199|Used for monitoring, not screening.
+B|Courvoisier sign|GI,oncology|A palpable non-tender gallbladder with jaundice suggests|Pancreatic head cancer|Chronic gallstone disease|Stones cause a scarred, non-distensible gallbladder.
+G|Trousseau sign of malignancy|GI,oncology,coagulation|Migratory ___ suggests visceral adenocarcinoma|thrombophlebitis|thrombophlebitis,phlebitis|Classically pancreatic cancer.
+
+# ── Liver ────────────────────────────────────────────────────────────────
+G|Alcoholic hepatitis|GI,liver,lab|In alcoholic hepatitis, the AST to ALT ratio is above ___|2|2,2:1,two|A toast with two shots: AST twice ALT.
+B|Nonalcoholic fatty liver|GI,liver,lab|In non-alcoholic fatty liver disease, the ratio is|ALT above AST|AST above ALT|The reverse of alcoholic disease.
+G|Cirrhosis|GI,liver,vascular|Portal hypertension is defined by a portal pressure gradient above ___ mmHg|5|5,five,5 mmhg|Varices form above 10, and bleed above 12.
+B|Spontaneous bacterial peritonitis|GI,liver,micro|SBP is diagnosed when ascitic neutrophils exceed|250 per microlitre|1000 per microlitre|Treat with cefotaxime; commonest organism is E. coli.
+G|Hepatorenal syndrome|GI,liver,renal|Hepatorenal syndrome kidneys are ___ on biopsy|normal|normal,histologically normal|A functional failure from splanchnic vasodilation.
+B|Hepatic encephalopathy|GI,liver,pharm|Rifaximin helps encephalopathy by|Killing ammonia-producing gut bacteria|Binding ammonia in the gut lumen|Used with lactulose.
+G|Primary biliary cholangitis|GI,liver,immuno|Primary biliary cholangitis shows anti-___ antibodies|mitochondrial|mitochondrial,ama|Middle-aged women with itch and fatigue.
+B|Primary sclerosing cholangitis|GI,liver,IBD|Primary sclerosing cholangitis is associated with|Ulcerative colitis|Crohn disease|Beaded bile ducts; risk of cholangiocarcinoma.
+G|Hemochromatosis|GI,liver,genetics|Iron in the pancreas gives hemochromatosis its name: bronze ___|diabetes|diabetes,diabetes mellitus|Skin pigmentation plus pancreatic islet destruction.
+B|Hemochromatosis|GI,liver,pharm|Hemochromatosis is treated with|Repeated phlebotomy|Iron chelation first|Chelation is reserved for those who cannot be bled.
+G|Alpha-1 antitrypsin deficiency|GI,liver,genetics|Alpha-1 antitrypsin deficiency shows ___-positive globules in hepatocytes|PAS|pas,periodic acid-schiff|Misfolded protein accumulates in the endoplasmic reticulum.
+B|Budd-Chiari syndrome|GI,liver,vascular|Budd-Chiari syndrome is occlusion of the|Hepatic veins|Portal vein|Painful hepatomegaly and ascites; look for a hypercoagulable state.
+G|Hepatocellular carcinoma|GI,oncology,liver|Hepatocellular carcinoma is screened with ultrasound and serum ___|AFP|afp,alpha-fetoprotein|Every six months in cirrhosis.
+B|Liver abscess|GI,micro|An amoebic liver abscess is treated with|Metronidazole alone|Surgical drainage first|Anchovy paste contents; drainage is rarely needed.
+
+# ── Biliary ──────────────────────────────────────────────────────────────
+G|Gallstones|GI,path|The commonest gallstone type is ___|cholesterol|cholesterol|Radiolucent. Pigment stones form with hemolysis or infection.
+B|Pigment stones|GI,heme|Black pigment stones are associated with|Chronic hemolysis|High fat diet|Excess bilirubin, as in sickle cell disease.
+G|Cholangitis|GI,micro,emergency|Charcot triad is fever, jaundice and right upper quadrant ___|pain|pain|Adding hypotension and confusion gives Reynolds pentad.
+B|Biliary colic|GI,path|Biliary colic pain typically lasts|Under six hours|Several days|Longer pain with fever suggests cholecystitis.
+G|Porcelain gallbladder|GI,oncology|A porcelain gallbladder raises the risk of gallbladder ___|carcinoma|carcinoma,cancer|An indication for cholecystectomy.
+
+# ── Paediatric GI ────────────────────────────────────────────────────────
+G|Biliary atresia|GI,peds,liver|Biliary atresia causes ___ jaundice with pale stools|conjugated|conjugated,direct|Needs a Kasai portoenterostomy within weeks.
+B|Necrotizing enterocolitis|GI,peds,emergency|Necrotizing enterocolitis shows which radiographic sign?|Pneumatosis intestinalis|A double bubble sign|Gas in the bowel wall in a premature infant.
+G|Tracheoesophageal fistula|GI,peds,embryology|The commonest tracheoesophageal fistula has a blind upper ___|pouch|pouch,esophageal pouch|With a distal fistula. Coiled nasogastric tube on x-ray.
+B|Malrotation|GI,peds,emergency|Bilious vomiting in a newborn is|A surgical emergency|Usually benign reflux|Malrotation with volvulus until proven otherwise.

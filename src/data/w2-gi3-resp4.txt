@@ -1,0 +1,57 @@
+# Gastroenterology third pass and respiratory fourth pass. Gap-weighted.
+
+# ── Nutrition and absorption ─────────────────────────────────────────────
+G|Carbohydrate digestion|GI,biochem|Starch digestion begins with salivary ___|amylase|amylase|Continued by pancreatic amylase.
+B|Protein digestion|GI,biochem|Pepsinogen is activated by|Gastric acid|Trypsin|Trypsin activates the other pancreatic zymogens.
+G|Fat digestion|GI,biochem|Pancreatic lipase requires ___ as a cofactor|colipase|colipase|Bile salts would otherwise displace it.
+B|Enterokinase|GI,biochem|Enterokinase from the duodenal mucosa activates|Trypsinogen|Pepsinogen|Starting the pancreatic protease cascade.
+G|Short bowel syndrome|GI,nutrition,surgery|Short bowel syndrome is likely when under ___ cm of small bowel remains|200|200,two hundred,100|Depending on whether the colon is intact.
+B|Vitamin B12 after gastrectomy|GI,surgery,vitamins|After total gastrectomy, vitamin B12 must be given|Parenterally for life|Orally at high dose|No intrinsic factor is produced.
+
+# ── Motility and functional ──────────────────────────────────────────────
+G|Achalasia treatment|GI,motility,surgery|Achalasia is treated with pneumatic dilatation or ___ myotomy|Heller|heller,per-oral endoscopic,poem|Botulinum toxin for those unfit for procedures.
+B|Diffuse oesophageal spasm|GI,motility,imaging|Diffuse oesophageal spasm shows|A corkscrew oesophagus on barium|A bird beak narrowing on barium|Achalasia gives the bird beak appearance.
+G|Gastroparesis diagnosis|GI,motility|Gastroparesis is confirmed with a gastric ___ study|emptying|emptying|After excluding mechanical obstruction.
+B|Chronic constipation|GI,motility|Red flags in constipation include|Weight loss, bleeding or new onset over 50|Bloating relieved by opening the bowels|Prompting colonoscopy.
+G|Faecal incontinence|GI,motility,surgery|Obstetric injury to the anal ___ is a common cause of faecal incontinence|sphincter|sphincter|Often presenting years later.
+
+# ── Endoscopy and hepatology procedures ──────────────────────────────────
+G|Upper endoscopy|GI,procedure|Upper endoscopy in acute variceal bleeding should occur within ___ hours|12|12,twelve,24|After resuscitation and antibiotics.
+B|Colonoscopy preparation|GI,procedure|Inadequate bowel preparation|Reduces adenoma detection|Has no effect on findings|Prompting an early repeat.
+G|ERCP|GI,procedure,pancreas|The commonest complication of ERCP is ___|pancreatitis|pancreatitis|Reduced by rectal NSAIDs and stenting.
+B|Liver biopsy|GI,liver,procedure|Liver biopsy is contraindicated in|Uncorrected coagulopathy or ascites|Raised transaminases or jaundice|Transjugular biopsy is an alternative.
+G|Paracentesis|GI,liver,procedure|Large volume paracentesis requires ___ replacement to prevent circulatory dysfunction|albumin|albumin|About 8 g per litre removed.
+B|TIPS procedure|GI,liver,surgery|A transjugular intrahepatic portosystemic shunt commonly worsens|Hepatic encephalopathy|Ascites and leg oedema|By bypassing hepatic detoxification.
+
+# ── Hepatitis and liver, deeper ──────────────────────────────────────────
+G|Hepatitis B treatment|GI,virus,pharm|Chronic hepatitis B is treated with ___ analogues such as tenofovir|nucleoside|nucleoside,nucleotide,nucleos(t)ide|Suppressing but rarely curing.
+B|Hepatitis C treatment|GI,virus,pharm|Chronic hepatitis C is now|Curable in over 95 percent with oral antivirals|Controlled but rarely cured with interferon|A transformation in outcomes.
+G|Hepatitis B reactivation|GI,virus,oncology|Immunosuppression can reactivate hepatitis B, so screen before ___ therapy|immunosuppressive|immunosuppressive,chemotherapy,rituximab|Prophylactic antivirals prevent it.
+B|Non-alcoholic fatty liver|GI,liver,endocrine|The strongest driver of non-alcoholic fatty liver disease is|Insulin resistance|Alcohol intake|Now the commonest chronic liver disease.
+G|Liver fibrosis assessment|GI,liver,imaging|Liver stiffness is measured non-invasively by transient ___|elastography|elastography,fibroscan|Reducing the need for biopsy.
+B|Hepatorenal syndrome treatment|GI,liver,pharm|Hepatorenal syndrome is treated with|Terlipressin and albumin|Diuretics and fluid restriction|Definitive treatment is liver transplantation.
+G|Alcohol withdrawal in liver disease|GI,liver,pharm|Benzodiazepine choice in liver failure favours ___|lorazepam|lorazepam,oxazepam,temazepam|Undergoing glucuronidation only.
+
+# ── Respiratory: physiology applied ──────────────────────────────────────
+G|Spirometry reversibility|resp,physiology|Asthma reversibility is a rise in FEV1 of over ___ percent and 200 mL|12|12,twelve|After a bronchodilator.
+B|Peak flow variability|resp,physiology|Diurnal peak flow variability over 20 percent suggests|Asthma|COPD|Recorded over two weeks.
+G|Transfer factor|resp,physiology|The transfer factor is raised in alveolar ___|hemorrhage|hemorrhage,haemorrhage,bleeding|Because blood in alveoli takes up carbon monoxide.
+B|Flow volume loop|resp,physiology,ENT|A flattened INSPIRATORY limb suggests|Extrathoracic upper airway obstruction|Emphysema with expiratory collapse|Both limbs flatten in fixed obstruction.
+G|Six minute walk|resp,clinical|The six minute walk test measures functional ___ capacity|exercise|exercise,walking|Used in fibrosis and pulmonary hypertension.
+
+# ── Respiratory: infection and inflammation ──────────────────────────────
+G|Bronchiectasis causes|resp,micro,immuno|Bronchiectasis workup includes cystic fibrosis, immunoglobulins and ___|aspergillosis|aspergillosis,abpa,allergic bronchopulmonary aspergillosis|Plus ciliary function testing.
+B|Allergic bronchopulmonary aspergillosis|resp,immuno,lab|ABPA shows|Raised IgE with Aspergillus sensitization|Neutrophilia with a raised procalcitonin|Central bronchiectasis and eosinophilia.
+G|Tuberculosis contact tracing|resp,micro,infection control|Contacts of infectious tuberculosis are screened for ___ infection|latent|latent|With interferon gamma release assay or skin test.
+B|Directly observed therapy|resp,micro,ethics|Directly observed therapy in tuberculosis is used to|Ensure adherence and prevent resistance|Reduce the total cost of treatment|Especially where adherence is uncertain.
+G|Empyema management|resp,micro,surgery|Empyema is drained, and fibrinolytics may be used to break ___|loculations|loculations,adhesions,septations|Surgery if drainage fails.
+B|Lung abscess management|resp,micro|A lung abscess usually|Responds to prolonged antibiotics alone|Requires early surgical resection|Drainage only for large or refractory cavities.
+
+# ── Respiratory: chronic disease management ──────────────────────────────
+G|Asthma action plan|resp,clinical|Every asthmatic should have a written ___ plan|action|action|Improving outcomes and reducing admissions.
+B|Inhaler technique|resp,clinical,pharm|The commonest reason for apparent inhaler failure is|Poor technique|Wrong drug|Always check technique before escalating.
+G|COPD exacerbation prevention|resp,vaccines|COPD patients should receive annual influenza and ___ vaccination|pneumococcal|pneumococcal,pneumovax|Plus COVID and pertussis boosters.
+B|Alpha-1 antitrypsin testing|resp,genetics|Alpha-1 antitrypsin should be tested in|COPD under age 45 or without smoking|All patients with any COPD diagnosis|Especially with basal emphysema or liver disease.
+G|Palliative breathlessness|resp,palliative,pharm|Refractory breathlessness at the end of life responds to low-dose ___|opioids|opioids,morphine,opiates|Plus a handheld fan.
+B|Home non-invasive ventilation|resp,critical care|Long-term home NIV benefits|Chronic hypercapnic respiratory failure|Isolated hypoxaemia without hypercapnia|Improving survival in selected COPD and neuromuscular disease.
+G|Smoking cessation in COPD|resp,clinical|Smoking cessation is the only intervention that slows the decline in ___|FEV1|fev1,lung function|Everything else treats symptoms.

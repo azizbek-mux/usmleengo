@@ -1,0 +1,91 @@
+# Microbiology — batch 1.
+G|Antigenic shift|micro,virus,influenza|Influenza pandemics arise from genetic ___ of segmented genomes|reassortment|reassortment,reassort,shift|Two strains co-infect one cell and swap whole segments.
+B|Antigenic shift versus drift|micro,virus,influenza|Antigenic drift is caused by|Point mutations|Segment reassortment|Drift is gradual point mutation; shift is reassortment and causes pandemics.
+B|Segmented viruses|micro,virus|Which virus can undergo reassortment like influenza?|Rotavirus|Poliovirus|Segmented genomes only — influenza, rotavirus, bunyaviruses, arenaviruses.
+B|Phenotypic mixing|micro,virus|In phenotypic mixing, the progeny virus has|A borrowed coat but unchanged genome|A permanently altered genome|Next generation reverts — no genetic change occurred.
+G|Plasmodium relapse|micro,parasite,malaria|P. vivax and P. ovale relapse because they form ___|hypnozoites|hypnozoites,hypnozoite|Dormant liver forms; eradicate with primaquine.
+B|Malaria treatment|micro,parasite,malaria|Chloroquine fails to prevent vivax relapse because it does not kill|Exoerythrocytic liver schizonts|Circulating blood trophozoites|Add primaquine for the hepatic hypnozoites.
+B|Malaria diagnosis|micro,parasite|Malaria is diagnosed on blood smear stained with|Giemsa|Gram|Ring trophozoites inside red cells.
+B|Malaria fever|micro,parasite|The fever spikes of malaria are caused by|Synchronized rupture of infected red cells|Direct hepatic toxicity from the parasite|Schizont rupture releases pyrogens every 48-72 hours.
+G|Bacterial transformation|micro,genetics|Uptake of naked extracellular DNA is called ___|transformation|transformation|Griffith's experiment with pneumococcus.
+B|Bacterial gene transfer|micro,genetics|Transfer of DNA by a bacteriophage is called|Transduction|Conjugation|Conjugation uses a pilus; transduction uses a phage.
+G|Epstein-Barr virus|micro,virus|EBV enters B cells via the ___ receptor|CD21|cd21,cr2,complement receptor 2|CD21 is the EBV receptor on B lymphocytes.
+B|HIV entry|micro,virus,HIV|HIV membrane fusion is mediated by|gp41|gp120|gp120 binds CD4 and the chemokine receptor; gp41 fuses.
+B|Enterotoxigenic E. coli|micro,bacteria,GI|ETEC causes traveller's diarrhea using|Heat-labile and heat-stable enterotoxins|Shiga toxin and mucosal invasion|LT raises cAMP like cholera; ST raises cGMP. Watery, non-bloody.
+B|Clostridium perfringens|micro,bacteria,GI|Spore-forming bacteria survive|Boiling at 100 degrees Celsius|Standard refrigeration only|Spores need autoclaving at 121 degrees.
+B|Enveloped viruses|micro,virus|Enveloped viruses are killed by alcohol and detergents because they have|A lipid bilayer envelope|A protein capsid only|Non-enveloped viruses resist disinfectants.
+B|Giardia lamblia|micro,parasite,GI|Giardia infection is worse in patients deficient in|Secretory IgA|Complement C5|Fat malabsorption, foul-smelling greasy stools.
+G|Thayer-Martin medium|micro,bacteria,lab|Thayer-Martin agar is a ___ medium for Neisseria|selective|selective|Vancomycin, colistin and nystatin suppress competing flora.
+B|Hepatitis B replication|micro,virus,hepatitis|Hepatitis B is a DNA virus that replicates using|Reverse transcription of an RNA intermediate|Direct DNA-dependent DNA replication|Partially double-stranded DNA with a reverse transcriptase step.
+B|Hepatitis C|micro,virus,hepatitis|No effective HCV vaccine exists because|Envelope proteins vary antigenically|The virus hides inside hepatocytes|RNA polymerase lacks proofreading, generating quasispecies.
+G|Uropathogenic E. coli|micro,bacteria,renal|Pyelonephritis-causing E. coli adhere using ___ fimbriae|P|p,p fimbriae,pap|P fimbriae bind uroepithelium and allow ascent.
+B|Tuberculosis pathogenesis|micro,bacteria,TB|Mycobacterium tuberculosis survives by|Proliferating inside macrophages|Producing a potent exotoxin|Blocks phagolysosome fusion; TNF-alpha blockers reactivate it.
+B|TNF-alpha inhibitors|micro,pharm,immuno|Before starting a TNF-alpha inhibitor you must screen for|Latent tuberculosis|Hepatitis A|TNF maintains granulomas; blocking it reactivates TB.
+G|Protein A|micro,bacteria,immuno|Staphylococcus aureus protein A binds the ___ portion of IgG|Fc|fc|Prevents opsonization and complement activation.
+B|Shiga toxin|micro,bacteria,GI|Shiga toxin acts by inactivating the|60S ribosomal subunit|30S ribosomal subunit|Blocks protein synthesis; causes bloody diarrhea and HUS.
+B|EHEC|micro,bacteria,GI|E. coli O157:H7 differs from other E. coli because it|Does not ferment sorbitol|Being a gram-positive rod|Shiga-like toxin; avoid antibiotics, which raise HUS risk.
+B|Infective endocarditis|micro,bacteria,cardio|Bacteria adhere to damaged valves via|Fibrin-platelet aggregates|Intact endothelium|Sterile vegetations seed during bacteremia.
+B|Enterococcus|micro,bacteria|Enterococci show which hemolysis pattern?|Gamma (none)|Beta|Grow in 6.5% NaCl and bile.
+G|Lac operon|micro,genetics|A mutation in the ___ locus causes constitutive lac expression|operator|operator|Repressor cannot bind, so transcription proceeds regardless.
+B|Lac operon|micro,genetics|High glucose represses the lac operon by lowering|cAMP|Lactose|Less cAMP means less CAP binding and weak transcription.
+B|Influenza host range|micro,virus|Cross-species influenza infection requires change in|Hemagglutinin|Neuraminidase only|HA must bind human sialic acid receptors.
+B|Staphylococcus epidermidis|micro,bacteria|S. epidermidis is coagulase|Negative|Positive|Biofilm on prosthetic devices; novobiocin sensitive.
+B|Campylobacter jejuni|micro,bacteria,GI|Campylobacter is most often acquired from|Undercooked poultry|Canned goods|Bloody diarrhea; precedes Guillain-Barre and reactive arthritis.
+B|Human papillomavirus|micro,virus,oncology|HPV also has affinity for which respiratory structure?|True vocal cords|The alveoli and small airways|Recurrent respiratory papillomatosis from types 6 and 11.
+B|Cryptosporidium|micro,parasite,HIV|Cryptosporidium causes which diarrhea in AIDS?|Chronic watery|Bloody dysenteric|Acid-fast oocysts; severe when CD4 is low.
+B|Hepatitis B serology|micro,virus,hepatitis|Anti-HBs positive with anti-HBc negative means|Vaccinated|Past infection|The vaccine contains only HBsAg, so no core antibody forms.
+B|Pelvic inflammatory disease|micro,bacteria,repro|PID is treated with ceftriaxone plus|Doxycycline|Vancomycin|Covers both gonorrhoea and chlamydia.
+B|Clindamycin|micro,pharm,antibiotics|Clindamycin binds which ribosomal subunit?|50S|30S|Bacteriostatic; covers anaerobes above the diaphragm.
+B|Clindamycin|micro,pharm,GI|The classic adverse effect of clindamycin is|Clostridioides difficile colitis|Nephrotoxicity and hearing loss|Disrupts colonic flora.
+B|Hookworm|micro,parasite,heme|Hookworm infection causes which anemia?|Microcytic iron deficiency|Macrocytic megaloblastic|Chronic intestinal blood loss.
+G|Hookworm|micro,parasite|Hookworm larvae enter the body through the ___|skin|skin,feet,soles|Percutaneous penetration, usually barefoot.
+B|Urine dipstick nitrites|micro,renal,lab|A positive urine nitrite indicates|Nitrate-reducing gram-negative bacteria|Any bacteria, gram positive included|Requires several hours of bladder incubation.
+B|Mycobacterium avium complex|micro,bacteria,HIV|MAC prophylaxis is started when CD4 falls below|50|200|Azithromycin prophylaxis below 50 cells.
+B|Congenital syphilis|micro,bacteria,OB|Congenital syphilis is prevented by treating the mother with|Penicillin|Doxycycline|Doxycycline is contraindicated in pregnancy.
+B|HIV entry inhibitors|micro,pharm,HIV|Enfuvirtide blocks|Fusion of the viral core into the cytoplasm|Reverse transcription of the RNA genome|A gp41 fusion inhibitor.
+B|Fluoroquinolones|micro,pharm,antibiotics|Fluoroquinolones inhibit|DNA gyrase and topoisomerase IV|The 30S ribosomal subunit|Blocking DNA unwinding and supercoil relief.
+B|Fluoroquinolones|micro,pharm,toxicity|The classic musculoskeletal risk of fluoroquinolones is|Tendon rupture|Rhabdomyolysis|Avoid in children and pregnancy; cartilage damage.
+B|Beta-lactamase inhibitors|micro,pharm,antibiotics|Tazobactam is combined with piperacillin to|Prevent bacterial inactivation of piperacillin|Widen coverage by blocking the ribosome|A beta-lactamase inhibitor protects the penicillin.
+B|Foscarnet|micro,pharm,virus|Foscarnet inhibits viral DNA polymerase|Without requiring phosphorylation|Only after thymidine kinase activation|Used in acyclovir-resistant HSV and ganciclovir-resistant CMV.
+B|Foscarnet|micro,pharm,toxicity|The key toxicity of foscarnet is|Nephrotoxicity and electrolyte wasting|Bone marrow suppression and neutropenia|Hypocalcemia, hypomagnesemia, seizures. Ganciclovir causes marrow suppression.
+G|Tertiary syphilis|micro,bacteria,cardio|Syphilitic aortitis begins with obliteration of the vasa ___|vasorum|vasorum|Endarteritis of the vasa vasorum weakens the ascending aorta.
+B|Syphilitic aneurysm|micro,bacteria,cardio|Syphilis classically affects which part of the aorta?|Ascending aorta|Abdominal aorta|Tree-bark intima. Atherosclerosis prefers the abdominal aorta.
+B|Bronchiolitis|micro,virus,peds|Bronchiolitis in a child under two is usually caused by|Respiratory syncytial virus|Adenovirus or rhinovirus|Wheezing in autumn and winter.
+B|HIV-2|micro,virus,HIV|HIV-2 is endemic to|West Africa|Southeast Asia|Slower progression; some tests may miss it.
+B|Neutropenic fever|micro,oncology|In profound neutropenia, local signs of infection are|Absent or minimal|Exaggerated|No neutrophils means no pus. Fever may be the only sign.
+B|Chemotherapy nadir|micro,oncology|Chemotherapy-induced pancytopenia peaks at|10 to 14 days|24 hours|The marrow nadir after cytotoxic therapy.
+B|Cephalosporins|micro,pharm,antibiotics|Cephalosporins inhibit|Cell wall cross-linking|Protein synthesis|Beta-lactams bind penicillin-binding proteins.
+B|Cephalosporin gaps|micro,pharm,antibiotics|Which organism is intrinsically resistant to all cephalosporins?|Listeria monocytogenes|Streptococcus pneumoniae|LAME: Listeria, Atypicals, MRSA, Enterococci.
+B|Salmonella|micro,bacteria,heme|Salmonella osteomyelitis is classically seen in|Sickle cell disease|Diabetes mellitus|Functional asplenia; S. aureus is commonest overall.
+B|Toxoplasmosis treatment|micro,parasite,HIV|Cerebral toxoplasmosis is treated with|Pyrimethamine and sulfadiazine|Amphotericin B with flucytosine|Amphotericin treats cryptococcal meningitis.
+B|Primary CNS lymphoma|micro,oncology,HIV|Primary CNS lymphoma in HIV is composed of|B lymphocytes|T lymphocytes|EBV-driven diffuse large B-cell lymphoma; single ring-enhancing lesion.
+B|Acyclovir|micro,pharm,virus|Acyclovir requires activation by|Viral thymidine kinase|Host kinases only|Which is why it is selective for HSV and VZV, not EBV or CMV.
+B|Treponema pallidum|micro,bacteria|Treponema pallidum is visualized with|Darkfield microscopy|Gram stain of a chancre swab|Too thin for Gram stain and cannot be cultured.
+B|Pinworm|micro,parasite,peds|Enterobius is diagnosed with|The tape test|Stool ova and parasites|Perianal itching at night; eggs on adhesive tape.
+B|DNA polymerase I|micro,genetics|DNA polymerase I removes|RNA primers|Supercoils|Its 5' to 3' exonuclease excises primers and fills gaps.
+B|Group B Streptococcus|micro,bacteria,OB|Streptococcus agalactiae is identified by|A positive CAMP test|Bacitracin sensitivity|Hippurate positive; screen pregnant women at 35-37 weeks.
+B|Dengue|micro,virus|Dengue is transmitted by|Aedes mosquitoes|Anopheles mosquitoes|Same vector as chikungunya, Zika and yellow fever.
+B|Botulism|micro,bacteria,neuro|Botulinum toxin blocks presynaptic release of|Acetylcholine|Norepinephrine|Descending flaccid paralysis from improperly canned food.
+B|Infant botulism|micro,bacteria,peds|Infant botulism is classically linked to|Honey|Undercooked eggs|Spores germinate in the immature gut. Floppy baby.
+B|Norovirus|micro,virus,GI|Norovirus diarrhea is typically|Watery without blood|Bloody with mucus|Cruise ships and schools; no small bowel inflammation.
+B|Neonatal tetanus|micro,bacteria,OB|Neonatal tetanus is prevented by|Maternal vaccination in pregnancy|Antibiotics given to the neonate|Tdap in pregnancy gives transplacental antibody.
+B|Tetanus immunity|micro,bacteria,immuno|Tetanus vaccination protects by producing|Antitoxin antibodies|Cytotoxic T cells|Toxoid vaccine neutralizes the exotoxin.
+G|Rifampin|micro,pharm,TB|Rifampin blocks bacterial DNA-dependent ___ polymerase|RNA|rna|Resistance comes from a mutated polymerase.
+B|Rifampin|micro,pharm|Rifampin classically turns body fluids|Orange|Blue|Harmless but alarming; also a potent CYP450 inducer.
+B|Candidemia|micro,fungi,oncology|Neutropenic patients on broad-spectrum antibiotics are at risk of|Candida bloodstream infection|Listeria meningitis and sepsis|Profound neutropenia plus mucosal breakdown.
+B|Urinary tract infection|micro,bacteria,renal|The commonest cause of uncomplicated UTI is|Escherichia coli|Proteus mirabilis|E. coli in roughly 80% of cases.
+B|Cat scratch disease|micro,bacteria|Cat scratch disease is caused by|Bartonella henselae|Pasteurella multocida|Regional lymphadenopathy after a scratch. Pasteurella causes rapid cellulitis after bites.
+B|Abacavir|micro,pharm,HIV|Before prescribing abacavir you must test for|HLA-B*57:01|G6PD deficiency|That allele predicts fatal hypersensitivity.
+B|Genital herpes|micro,virus|Recurrent genital herpes is suppressed with|Daily valacyclovir|A single dose of acyclovir|Chronic suppressive therapy reduces recurrence and shedding.
+B|Tularemia|micro,bacteria|Tularemia is acquired from|Rabbits and tick bites|Contaminated water only|Francisella tularensis; hunters and skinners.
+B|Heterophile-negative mononucleosis|micro,virus|Mononucleosis with a negative monospot suggests|Cytomegalovirus|Epstein-Barr virus|CMV causes heterophile-negative mono.
+B|Trimethoprim-sulfamethoxazole|micro,pharm,toxicity|TMP-SMX classically causes which electrolyte problem?|Hyperkalemia|Hypernatremia|Trimethoprim blocks the distal tubule sodium channel, like amiloride.
+B|Procalcitonin|micro,lab,resp|Procalcitonin is elevated in|Bacterial infection|Viral infection|Helps decide whether to give antibiotics.
+B|Streptococcus gallolyticus|micro,bacteria,GI|S. gallolyticus endocarditis requires screening for|Colonic neoplasia|Prostate cancer|Formerly S. bovis. Bacteremia signals colon cancer.
+B|Pertussis|micro,bacteria,resp|Macrolides treat pertussis by inhibiting|Protein translation|Cell wall synthesis|Azithromycin binds the 50S subunit; treat contacts too.
+B|Aminoglycosides|micro,pharm,antibiotics|Aminoglycosides bind which ribosomal subunit?|30S|50S|Bactericidal; require oxygen so useless against anaerobes.
+B|Listeria monocytogenes|micro,bacteria,neuro|Listeria meningitis is covered by adding|Ampicillin|Vancomycin|Add ampicillin for neonates, elderly and immunosuppressed.
+B|Listeria monocytogenes|micro,bacteria|Listeria shows which motility?|Tumbling at room temperature|Non-motile at any temperature|Actin rockets for cell-to-cell spread.
+B|Cryptococcus neoformans|micro,fungi,HIV|Cryptococcal meningitis is treated with|Amphotericin B plus flucytosine|High-dose fluconazole alone|Induction with ampho and flucytosine, then fluconazole.
+B|Vancomycin|micro,pharm,antibiotics|Vancomycin inhibits cell wall synthesis by binding|D-alanyl-D-alanine|Penicillin-binding proteins|Resistance changes the terminus to D-ala-D-lactate.
+B|Vancomycin|micro,pharm,toxicity|Rapid vancomycin infusion causes|Flushing from histamine release|True IgE-mediated anaphylaxis|Infusion reaction, not true allergy. Slow the rate.

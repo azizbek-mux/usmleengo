@@ -1,0 +1,108 @@
+# Pharmacology — depth pass. Gap-weighted, several questions per topic so a
+# topic search returns a real session rather than one lonely question.
+
+# ── Michaelis-Menten ─────────────────────────────────────────────────────
+G|Michaelis-Menten kinetics|pharm,principles,biochem|___ is the substrate concentration at half of maximum velocity|Km|km|A measure of affinity: the enzyme's working range.
+B|Michaelis-Menten kinetics|pharm,principles,biochem|A HIGHER Km means affinity is|Lower|Higher|More substrate is needed to reach half-maximal rate.
+G|Michaelis-Menten kinetics|pharm,principles|Vmax is directly proportional to the ___ concentration|enzyme|enzyme,enzymes|More enzyme, higher ceiling. Km is unchanged.
+BT|Enzyme inhibitors|pharm,principles,biochem|On a Lineweaver-Burk plot, which inhibitor lines CROSS?|Competitive|Noncompetitive|Competitive inhibitors share a Vmax, so the lines meet on the y-axis.
+B|Competitive inhibitor|pharm,principles|A competitive inhibitor changes|Km only|Vmax only|Raises Km, Vmax unchanged. Overcome by more substrate.
+B|Noncompetitive inhibitor|pharm,principles|A noncompetitive inhibitor changes|Vmax only|Km only|Lowers Vmax, Km unchanged. Cannot be outcompeted.
+
+# ── Pharmacokinetics ─────────────────────────────────────────────────────
+G|Bioavailability|pharm,principles|Bioavailability of an intravenous dose is ___ percent|100|100,one hundred|By definition, all of it reaches the circulation.
+B|Bioavailability|pharm,principles|Oral bioavailability is below 100% mainly because of|First-pass metabolism|Renal clearance|Plus incomplete absorption across the gut wall.
+G|Volume of distribution|pharm,principles|Volume of distribution equals amount of drug divided by plasma ___|concentration|concentration,conc|A theoretical volume, not an anatomical one.
+B|Volume of distribution|pharm,principles|Liver and kidney disease change volume of distribution by|Increasing it|Decreasing it|Less protein binding leaves more free drug to distribute.
+B|Hemodialysis|pharm,principles,renal|Hemodialysis removes drugs best when volume of distribution is|Low|High|A high Vd means the drug sits in tissue, out of reach of the filter.
+G|Drug distribution|pharm,principles|Large, charged, protein-bound drugs stay in the ___ compartment|intravascular|intravascular,plasma,blood|Which is why their volume of distribution is small.
+B|Drug metabolism|pharm,principles,aging|Elderly patients lose which metabolic phase first?|Phase I|Phase II|Which is why lorazepam and oxazepam are preferred in the elderly.
+G|Phase II metabolism|pharm,principles|Phase II reactions make drugs water soluble by ___|conjugation|conjugation,glucuronidation|Glucuronidation, acetylation and sulfation.
+B|Slow acetylators|pharm,principles,micro|Slow acetylators have more adverse effects from|Isoniazid|Penicillin|Slower metabolism means higher levels. Also hydralazine and procainamide.
+
+# ── Elimination kinetics ─────────────────────────────────────────────────
+B|Zero-order elimination|pharm,principles|Zero-order elimination clears|A constant AMOUNT per unit time|A constant fraction per hour|The enzyme is saturated, so the rate cannot rise.
+G|Zero-order elimination|pharm,principles,toxicology|Phenytoin, ethanol and ___ show zero-order kinetics at high dose|aspirin|aspirin,salicylate,salicylates|PEA: Phenytoin, Ethanol, Aspirin.
+B|First-order elimination|pharm,principles|First-order elimination clears|A constant FRACTION per unit time|A constant amount per hour|Rate is proportional to concentration — most drugs behave this way.
+G|Steady state|pharm,principles|Steady state is reached after about ___ half-lives|4|4,four,4-5,five|Independent of dose or frequency.
+B|Loading dose|pharm,principles|Loading dose depends on|Volume of distribution|The clearance rate|Maintenance dose depends on clearance instead.
+B|Renal impairment|pharm,principles,renal|In renal failure you adjust the|Maintenance dose|Loading dose|Clearance falls; volume of distribution is largely unchanged.
+
+# ── Ion trapping ─────────────────────────────────────────────────────────
+G|Ion trapping|pharm,toxicology|Weak ACIDS are trapped and excreted in ___ urine|alkaline|alkaline,basic|Bicarbonate for aspirin, phenobarbital and methotrexate.
+G|Ion trapping|pharm,toxicology|Weak BASES are trapped and excreted in ___ urine|acidic|acidic,acid|Amphetamines and tricyclics are weak bases.
+B|Tricyclic overdose|pharm,toxicology,cardio|Bicarbonate in tricyclic overdose works by|Overcoming sodium channel blockade|Speeding renal elimination|It treats the cardiac toxicity, not the drug level.
+G|pKa|pharm,principles|At a pH equal to its ___, a drug is half ionized|pKa|pka|Half trapped, half able to cross membranes.
+
+# ── Efficacy and potency ─────────────────────────────────────────────────
+B|Efficacy versus potency|pharm,principles|Efficacy is represented on a dose-response curve by|The maximum height|The horizontal position|Emax is efficacy; EC50 is potency.
+G|Potency|pharm,principles|Potency is measured by the ___, the dose giving half-maximal effect|EC50|ec50,ec-50|A left shift means more potent, not more effective.
+B|Partial agonist|pharm,principles|A partial agonist has|Lower efficacy than a full agonist|Higher potency than any agonist|Buprenorphine versus morphine at the mu receptor.
+B|Inverse agonist|pharm,principles|An inverse agonist|Reduces constitutive receptor activity|Has no effect without an agonist|H1 antihistamines are inverse agonists.
+G|Therapeutic index|pharm,principles,toxicology|Therapeutic index is TD50 divided by ___|ED50|ed50,ed-50|A higher index is safer.
+B|Narrow therapeutic index|pharm,principles|Which drug needs routine level monitoring?|Digoxin|Amoxicillin|Warfarin, theophylline, digoxin, lithium and antiepileptics.
+
+# ── Autonomic ────────────────────────────────────────────────────────────
+G|Adrenal medulla|pharm,autonomic,endocrine|The adrenal medulla is innervated directly by ___ sympathetic fibers|preganglionic|preganglionic,pre-ganglionic|It behaves like a modified sympathetic ganglion.
+B|Sweat glands|pharm,autonomic|Sweat glands are sympathetic but use which transmitter?|Acetylcholine|Norepinephrine|The exception — which is why anticholinergics stop sweating.
+G|Nicotinic receptors|pharm,autonomic|Nicotinic receptors are ligand-gated ___ channels|ion|ion,sodium,cation|Na+ in, K+ out. NN in ganglia, NM at the neuromuscular junction.
+B|Muscarinic receptors|pharm,autonomic|Muscarinic receptors are|G protein-coupled|Ligand-gated channels|Five subtypes acting through second messengers.
+G|Muscarinic subtypes|pharm,autonomic,cardio|The ___ receptor slows the heart at the SA node|M2|m2,m-2|M1 in brain and stomach, M3 in glands and smooth muscle.
+B|Atropine|pharm,autonomic|Atropine blocks which receptor?|Muscarinic|Nicotinic|Which is why it does not reverse the muscle weakness of organophosphates.
+
+# ── Pain ─────────────────────────────────────────────────────────────────
+B|Pain fibers|pharm,neuro,physiology|Sharp, well-localized pain travels along|A-delta fibers|C fibers|C fibers carry dull, throbbing, poorly localized pain.
+G|Capsaicin|pharm,neuro|Capsaicin acts on the ___ receptor on nociceptors|TRPV1|trpv1,vanilloid,trpv-1|Repeated use depletes substance P.
+B|Local anesthetics|pharm,neuro|Local anesthetics block which step of pain transmission?|Transduction and conduction|Central perception|They block voltage-gated sodium channels on the nerve.
+B|Neuropathic pain|pharm,neuro|Neuropathic pain responds best to|Gabapentinoids and tricyclics|Simple oral analgesia alone|NSAIDs work poorly on nerve-generated pain.
+
+# ── Adrenergic drugs ─────────────────────────────────────────────────────
+G|Alpha-1 receptors|pharm,autonomic,cardio|Alpha-1 stimulation causes vascular ___|constriction|constriction,vasoconstriction|Raising blood pressure and triggering reflex bradycardia.
+G|Beta-1 receptors|pharm,autonomic,cardio|Beta-1 stimulation ___ heart rate and contractility|increases|increases,raises,increase|One heart, two lungs: beta-1 heart, beta-2 lungs.
+G|Beta-2 receptors|pharm,autonomic,resp|Beta-2 stimulation causes bronchial ___|dilation|dilation,dilatation,relaxation|Also uterine relaxation and vasodilation.
+B|Dopamine dose response|pharm,cardio,renal|At LOW dose, dopamine acts mainly on|Dopamine receptors|Alpha-1 receptors|Low dose renal, medium beta-1, high alpha-1.
+B|Epinephrine versus norepinephrine|pharm,cardio|Which has significant BETA-2 activity?|Epinephrine|Norepinephrine|Which is why epinephrine can lower diastolic pressure at low dose.
+BT|Norepinephrine and heart rate|pharm,cardio,autonomic|Norepinephrine causes heart rate to|Fall reflexly|Rise directly|Alpha-driven pressure rise triggers baroreceptor bradycardia despite beta-1 effect.
+G|Phenoxybenzamine|pharm,autonomic,endocrine|Phenoxybenzamine is an ___ alpha blocker used before pheochromocytoma surgery|irreversible|irreversible,non-competitive,noncompetitive|Phentolamine is the reversible one.
+B|Prazosin|pharm,autonomic,urology|Prazosin blocks alpha-1 and classically causes|First-dose orthostatic hypotension|Reflex hypertension and flushing|Also used for BPH and PTSD nightmares.
+
+# ── Cholinergic drugs ────────────────────────────────────────────────────
+G|Neostigmine|pharm,autonomic|Neostigmine inhibits ___, raising acetylcholine|acetylcholinesterase|acetylcholinesterase,cholinesterase,ache|Does not cross the blood-brain barrier.
+B|Physostigmine versus neostigmine|pharm,autonomic,toxicology|Which crosses into the brain?|Physostigmine|Neostigmine|Which is why physostigmine treats central anticholinergic toxicity.
+G|Organophosphates|pharm,toxicology,autonomic|Organophosphate poisoning causes ___ excess|cholinergic|cholinergic,acetylcholine|DUMBBELSS. Atropine first, then pralidoxime.
+B|Pralidoxime|pharm,toxicology|Pralidoxime must be given before|The enzyme ages irreversibly|The patient is intubated|Aging permanently locks the phosphate onto cholinesterase.
+
+# ── Antibiotic mechanisms, gap-heavy ─────────────────────────────────────
+G|Penicillins|pharm,micro,antibiotics|Beta-lactams bind ___-binding proteins to block cross-linking|penicillin|penicillin,pbp|Transpeptidase inhibition weakens the wall.
+G|Vancomycin|pharm,micro,antibiotics|Vancomycin binds the terminal D-alanyl-D-___ of the wall precursor|alanine|alanine,ala|Resistance switches that terminus to D-lactate.
+G|Aminoglycosides|pharm,micro,antibiotics|Aminoglycosides bind the ___S ribosomal subunit|30|30,30s|Buy AT 30, CCEL at 50.
+G|Macrolides|pharm,micro,antibiotics|Macrolides bind the ___S ribosomal subunit|50|50,50s|Blocking translocation. Also QT prolongation and CYP inhibition.
+G|Tetracyclines|pharm,micro,antibiotics|Tetracyclines must not be taken with ___ or dairy|antacids|antacids,antacid,calcium,milk|Divalent cations chelate them and block absorption.
+G|Trimethoprim|pharm,micro,antibiotics|Trimethoprim inhibits bacterial dihydrofolate ___|reductase|reductase|Sulfonamides act one step earlier, on dihydropteroate synthase.
+G|Metronidazole|pharm,micro,antibiotics|Metronidazole with alcohol causes a ___-like reaction|disulfiram|disulfiram|Flushing, vomiting and tachycardia.
+B|Chloramphenicol|pharm,micro,toxicity|Chloramphenicol in neonates causes|Gray baby syndrome|Red man syndrome|Immature glucuronyl transferase. Red man belongs to vancomycin.
+B|Linezolid|pharm,micro,toxicity|Linezolid combined with an SSRI risks|Serotonin syndrome|Nephrotoxicity|It is a weak monoamine oxidase inhibitor.
+B|Daptomycin|pharm,micro,resp|Daptomycin cannot be used for pneumonia because|Surfactant inactivates it|It cannot reach the lung|Otherwise excellent against MRSA. Watch for raised CK.
+
+# ── Anticoagulants ───────────────────────────────────────────────────────
+G|Heparin|pharm,coagulation|Heparin works by activating ___ III|antithrombin|antithrombin,at|Which then inactivates thrombin and factor Xa.
+G|Warfarin|pharm,coagulation|Warfarin inhibits vitamin K epoxide ___|reductase|reductase|Blocking factors II, VII, IX, X, and proteins C and S.
+B|Warfarin monitoring|pharm,coagulation,lab|Warfarin is monitored with the|Prothrombin time|Partial thromboplastin time|PT/INR follows the extrinsic pathway and factor VII.
+G|Direct oral anticoagulants|pharm,coagulation|Rivaroxaban and apixaban directly inhibit factor ___|Xa|xa,10a,x|Dabigatran inhibits thrombin directly instead.
+B|Dabigatran reversal|pharm,coagulation,toxicology|Dabigatran is reversed with|Idarucizumab|Andexanet alfa|Andexanet reverses the factor Xa inhibitors.
+BT|Heparin versus warfarin in pregnancy|pharm,OB,coagulation|Which is safe in pregnancy?|Heparin|Warfarin|Heparin is too large to cross the placenta; warfarin is teratogenic.
+
+# ── Antiepileptics ───────────────────────────────────────────────────────
+G|Phenytoin|pharm,neuro,epilepsy|Phenytoin blocks ___ channels and follows zero-order kinetics|sodium|sodium,na,na+|Gingival hyperplasia, hirsutism and megaloblastic anemia.
+G|Valproate|pharm,neuro,teratogen|Valproate in pregnancy causes ___ tube defects|neural|neural|Also hepatotoxicity and pancreatitis.
+G|Ethosuximide|pharm,neuro,epilepsy|Ethosuximide blocks thalamic T-type ___ channels|calcium|calcium,ca,ca2+|First-line for absence seizures.
+B|Carbamazepine|pharm,neuro,toxicity|Carbamazepine classically causes|Agranulocytosis and SIADH|Nephrogenic diabetes insipidus|Also Stevens-Johnson in HLA-B*1502 carriers.
+B|Lamotrigine|pharm,neuro,toxicity|Lamotrigine must be titrated slowly to avoid|Stevens-Johnson syndrome|Hepatic failure|Any rash needs urgent review.
+
+# ── Analgesia ────────────────────────────────────────────────────────────
+G|Opioid receptors|pharm,neuro|Opioid analgesia is mediated mainly by the ___ receptor|mu|mu,μ|Naloxone is a competitive mu antagonist.
+B|Opioid tolerance|pharm,neuro|Which opioid effect does NOT develop tolerance?|Constipation|Euphoria|Also miosis. Always co-prescribe a laxative.
+B|Morphine in renal failure|pharm,renal,neuro|Morphine is avoided in renal failure because|Active metabolites accumulate|It is directly nephrotoxic|Morphine-6-glucuronide builds up. Use fentanyl instead.
+G|NSAIDs|pharm,principles|NSAIDs inhibit ___, reducing prostaglandin synthesis|cyclooxygenase|cyclooxygenase,cox|COX-1 protects the stomach and kidney; COX-2 drives inflammation.
+B|COX-2 inhibitors|pharm,cardio,toxicity|Selective COX-2 inhibitors increase the risk of|Thrombosis|Gastric ulceration|They spare the stomach but tip the prostacyclin balance.
+B|Paracetamol|pharm,toxicology,liver|Paracetamol toxicity is worse in|Chronic alcohol use|Renal impairment|Induced CYP2E1 makes more NAPQI with less glutathione.

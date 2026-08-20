@@ -1,0 +1,58 @@
+# Psychiatry and behavioural science — batch 1.
+B|Bipolar I disorder|psych,mood|Bipolar I disorder requires|A manic episode|A depressive episode|Mania alone is enough; depression is not required.
+B|Bipolar II disorder|psych,mood|Bipolar II disorder requires hypomania plus|A major depressive episode|Psychotic features|Hypomania causes no marked impairment or psychosis.
+G|Neuroleptic malignant syndrome|psych,pharm,emergency|NMS follows blockade of ___ receptors|dopamine|dopamine,d2|Fever, rigidity, autonomic instability and raised creatine kinase.
+B|Schizophrenia|psych,psychosis|Antipsychotics work best against|Positive symptoms|Negative symptoms|Negative symptoms are largely refractory.
+B|Schizophrenia|psych,psychosis|Schizophrenia requires symptoms lasting at least|Six months|One month|Under one month is brief psychotic disorder; one to six is schizophreniform.
+B|Depression in medical illness|psych,mood|The most specific depressive symptom in a medically ill patient is|Anhedonia and loss of interest|Weight loss and fatigue|Somatic symptoms overlap with the illness itself.
+B|MAO inhibitors|psych,pharm,mood|MAO inhibitors act by blocking|Monoamine breakdown|Monoamine reuptake|Risk of tyramine hypertensive crisis and serotonin syndrome.
+B|MAO inhibitors|psych,pharm|Patients on MAO inhibitors must avoid|Aged cheese and cured meats|Grapefruit juice and citrus|Tyramine triggers hypertensive crisis.
+B|Alcohol withdrawal|psych,pharm,emergency|Alcohol withdrawal is treated with|A benzodiazepine such as chlordiazepoxide|An antipsychotic such as haloperidol|Cross-tolerant with alcohol at the GABA-A receptor.
+B|Alcohol withdrawal|psych,emergency|The earliest sign of alcohol withdrawal is|Tremulousness|Delirium tremens|Begins 8-12 hours after the last drink; DTs at 48-96 hours.
+B|Alcohol withdrawal|psych,physiology|Chronic alcohol use upregulates which receptor?|NMDA|GABA-A|Withdrawal leaves unopposed glutamatergic excitation.
+B|Autism spectrum disorder|psych,peds|Autism spectrum disorder is defined by|Social communication deficits with restricted interests|Intellectual disability with globally delayed speech|Diagnosis usually before age five; intelligence may be normal.
+B|Clozapine|psych,pharm,psychosis|Clozapine requires monitoring of|The absolute neutrophil count|Liver enzymes and lipids|Agranulocytosis risk; also myocarditis and seizures.
+B|Clozapine|psych,pharm|Clozapine is reserved for|Treatment-resistant schizophrenia|First-line therapy in psychosis|Also reduces suicidality in schizophrenia.
+B|Passive aggression|psych,defense mechanisms|Backhanded compliments and sarcasm while denying anger describe|Passive aggression|Acting out|An immature defense mechanism.
+B|Mesolimbic pathway|psych,pharm,psychosis|Positive psychotic symptoms come from excess dopamine in the|Mesolimbic pathway|Nigrostriatal pathway|Blocking it treats hallucinations and delusions.
+B|Tuberoinfundibular pathway|psych,pharm,endocrine|Dopamine blockade in the tuberoinfundibular pathway causes|Hyperprolactinemia|Parkinsonism|Nigrostriatal blockade causes extrapyramidal symptoms.
+B|Methadone|psych,pharm,addiction|Methadone helps opioid addiction because it has|A long half-life|A short half-life|Steady levels prevent craving and withdrawal.
+B|Adjustment disorder|psych,anxiety|Adjustment disorder follows an identifiable stressor and resolves within|Six months of the stressor ending|Two years from the stressor|Symptoms are below threshold for another disorder.
+B|Suicide risk|psych,emergency|The most important suicide risk factor to assess is|A specific plan with preparatory behavior|A family history of completed suicide|Access to means and intent matter most acutely.
+B|Bupropion|psych,pharm,mood|Bupropion is preferred in depression with|Hypersomnia and low energy|Severe anxiety and agitation|Activating; also aids smoking cessation and spares sexual function.
+B|Bupropion|psych,pharm|Bupropion is contraindicated in|Eating disorders and seizure disorder|Hypertension and cardiac disease|It lowers the seizure threshold.
+B|Anorexia nervosa|psych,eating|Purging in anorexia causes|Hypokalemic metabolic alkalosis|Anion gap metabolic acidosis|Loss of gastric acid and potassium.
+B|Refeeding syndrome|psych,eating,electrolytes|Refeeding syndrome is marked by a fall in|Phosphate|Sodium|Insulin drives phosphate, potassium and magnesium into cells.
+B|Panic disorder|psych,anxiety|Panic disorder requires recurrent attacks plus|Persistent worry about further attacks|Agoraphobia present in every case|Attacks peak within minutes.
+B|Panic disorder|psych,pharm,anxiety|Long-term treatment of panic disorder is|An SSRI with cognitive behavioural therapy|A benzodiazepine taken indefinitely|Benzodiazepines are only for short-term bridging.
+B|Schizoid personality disorder|psych,personality|Schizoid personality disorder involves|Genuine disinterest in relationships|Fear of rejection despite wanting them|Avoidant personality wants relationships but fears rejection.
+B|Schizotypal personality disorder|psych,personality|Schizotypal personality disorder features|Magical thinking and odd perceptions|Frank hallucinations and delusions|Cluster A, subthreshold for psychosis.
+B|Mild cognitive impairment|psych,dementia|Mild cognitive impairment differs from dementia because|Daily activities are preserved|Memory testing is entirely normal|Objective deficits without functional loss.
+B|Flat affect|psych,psychosis|Flat affect appears as|Reduced facial expression and monotone voice|Rapidly shifting mood and tearfulness|A negative symptom of schizophrenia.
+B|Schizophrenia onset|psych,psychosis|Schizophrenia typically begins|Earlier in men than women|Earlier in women than men|Early twenties in men, late twenties in women.
+B|Stranger anxiety|psych,peds,development|Stranger anxiety appearing around nine months is|Normal development|Reactive attachment disorder|Distress when unfamiliar people approach.
+B|Buspirone|psych,pharm,anxiety|Buspirone differs from benzodiazepines because it has|No dependence risk|Faster onset|Acts on serotonin 5-HT1A; takes weeks to work.
+B|Second-generation antipsychotics|psych,pharm|Atypical antipsychotics add which action to D2 blockade?|Serotonin 5-HT2A antagonism|Muscarinic receptor agonism|Lower extrapyramidal risk but more metabolic effects.
+B|Gender dysphoria|psych,development|Gender dysphoria is characterized by|Distress from incongruence with sex assigned at birth|A fixed delusional belief about the body and form|Not itself a mental illness; distress is the diagnostic criterion.
+B|Post-traumatic stress disorder|psych,trauma|PTSD requires symptoms lasting more than|One month|Six months|Under one month is acute stress disorder.
+B|Adolescent depression|psych,peds,emergency|In a depressed adolescent you must always|Ask directly about suicidal thoughts|Start an SSRI at the first visit|Asking does not increase risk.
+B|Buprenorphine|psych,pharm,addiction|Buprenorphine can precipitate withdrawal because it is|A partial agonist with high receptor affinity|A full agonist with a slow onset of action|Displaces full agonists; start only in early withdrawal.
+B|Serotonin syndrome|psych,pharm,emergency|Serotonin syndrome is distinguished from NMS by|Hyperreflexia and clonus|Lead-pipe rigidity|NMS has rigidity and develops slowly; serotonin syndrome is rapid.
+G|Serotonin syndrome|psych,pharm,emergency|Serotonin syndrome is treated with ___|cyproheptadine|cyproheptadine|A 5-HT2A antagonist, plus supportive care.
+B|Lithium toxicity|psych,pharm,renal|Lithium levels rise with|Thiazides, NSAIDs and ACE inhibitors|Loop diuretics and beta blockers|Reduced renal clearance; monitor levels closely.
+B|Lithium|psych,pharm,endocrine|Chronic lithium causes|Hypothyroidism and nephrogenic diabetes insipidus|Hyperthyroidism with a suppressed TSH level|Monitor thyroid and renal function.
+B|Tardive dyskinesia|psych,pharm|Tardive dyskinesia appears|After months to years of antipsychotic use|Within days of the very first dose|Involuntary orofacial movements; often irreversible.
+B|Acute dystonia|psych,pharm,emergency|Acute dystonia after an antipsychotic is treated with|Benztropine or diphenhydramine|Dantrolene or bromocriptine|Occurs within hours to days.
+B|Akathisia|psych,pharm|Akathisia is|Subjective inner restlessness|Rhythmic resting tremor|Often mistaken for anxiety or agitation.
+B|SSRI discontinuation|psych,pharm|Abrupt SSRI cessation causes withdrawal most with|Paroxetine|Fluoxetine|Fluoxetine has the longest half-life and self-tapers.
+B|Electroconvulsive therapy|psych,mood|ECT is first-line for|Severe depression with psychosis or food refusal|Mild depression not yet treated with therapy|Also safest option in pregnancy; main effect is amnesia.
+B|Somatic symptom disorder|psych,somatic|Somatic symptom disorder involves|Excessive worry about real symptoms|Intentional feigning of symptoms|Symptoms are genuine; the response is disproportionate.
+B|Factitious disorder|psych,somatic|Factitious disorder is motivated by|Assuming the sick role|External reward|Malingering seeks external gain such as money or drugs.
+B|Conversion disorder|psych,somatic,neuro|Conversion disorder features|Neurologic symptoms inconsistent with anatomy|Deliberate feigning for external gain|Often follows acute stress; not intentional.
+B|Grief versus depression|psych,mood|Normal grief differs from depression by|Preserved self-esteem|Absence of sadness|Guilt and worthlessness suggest depression.
+B|Narcolepsy treatment|psych,sleep,pharm|Excessive daytime sleepiness in narcolepsy is treated with|Modafinil|A benzodiazepine|Sodium oxybate helps cataplexy.
+B|Delirium|psych,neuro|Delirium is distinguished from dementia by|Acute onset with fluctuating attention|Gradual memory loss over years|Always look for an underlying medical cause.
+B|Attention deficit hyperactivity disorder|psych,peds|ADHD requires symptoms before age|Twelve|Six|Present in two or more settings.
+B|Confidentiality|psych,ethics|Confidentiality may be broken when|There is a serious threat to an identifiable person|The family requests clinical information on them|The Tarasoff duty to protect.
+B|Decision-making capacity|psych,ethics|Capacity requires understanding, appreciation, reasoning and|Communicating a choice|A formal court ruling|Capacity is clinical; competence is legal.
+B|Informed consent|psych,ethics|A minor can consent independently for|Sexually transmitted infection treatment|Elective surgery with parental notice|Also contraception, pregnancy care and substance treatment in most states.

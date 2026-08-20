@@ -1,0 +1,56 @@
+# Pharmacology third pass and toxicology second pass. Gap-weighted.
+
+# ── Prescribing principles ───────────────────────────────────────────────
+G|Therapeutic drug monitoring|pharm,principles,lab|Drugs are monitored when the therapeutic ___ is narrow|index|index,window,range|Digoxin, lithium, phenytoin, aminoglycosides.
+B|Trough levels|pharm,lab|Vancomycin and aminoglycoside trough levels are taken|Immediately before the next dose|One hour after the dose|Peaks assess efficacy, troughs assess toxicity.
+G|Prodrug|pharm,principles|A ___ requires metabolic conversion to become active|prodrug|prodrug|Codeine, clopidogrel and enalapril are examples.
+B|Bioequivalence|pharm,principles|Generic substitution is generally safe except for drugs with|A narrow therapeutic index|A high acquisition cost|Levothyroxine and antiepileptics warrant consistency.
+G|Polypharmacy|pharm,geriatrics|Regular medication ___ reduces inappropriate prescribing|review|review,reconciliation|Especially at transitions of care.
+B|Deprescribing|pharm,geriatrics,ethics|Deprescribing should be|Planned, gradual and monitored|Abrupt, to avoid prolonged exposure|Some drugs need tapering to avoid withdrawal.
+G|Medication reconciliation|pharm,safety|Medication ___ at admission prevents omission and duplication errors|reconciliation|reconciliation|One of the highest-yield safety interventions.
+B|Prescribing in pregnancy|pharm,OB|The safest approach in pregnancy is|Established drugs at the lowest effective dose|Stopping all medication until delivery|Untreated disease often harms more.
+
+# ── Autonomic and cardiovascular drugs, deeper ───────────────────────────
+G|Dobutamine|pharm,cardio|Dobutamine is a beta-___ agonist used as an inotrope|1|1,one,beta-1|Raising contractility with modest vasodilation.
+B|Noradrenaline versus adrenaline|pharm,cardio,critical care|Noradrenaline acts predominantly on|Alpha-1 receptors|Beta-2 receptors|Raising vascular resistance.
+G|Digoxin|pharm,cardio|Digoxin increases vagal tone, slowing the ___ node|AV|av,atrioventricular|Useful for rate control at rest.
+B|Ivabradine limitation|pharm,cardio|Ivabradine is ineffective in|Atrial fibrillation|Sinus tachycardia|It acts only on the sinus node.
+G|Nitroprusside|pharm,cardio,toxicology|Prolonged nitroprusside can cause ___ toxicity|cyanide|cyanide,thiocyanate|Monitor and limit duration.
+B|Alpha blocker first dose|pharm,cardio,urology|Alpha blockers are started at night because of|First-dose hypotension|Nocturia and urgency|Reducing fall risk.
+
+# ── Respiratory and GI drugs, deeper ─────────────────────────────────────
+G|Ipratropium|pharm,resp,autonomic|Ipratropium is a short-acting ___ antagonist|muscarinic|muscarinic,antimuscarinic,anticholinergic|Tiotropium is the long-acting version.
+B|Theophylline|pharm,resp,principles|Theophylline levels are raised by|Ciprofloxacin and erythromycin|Rifampin and carbamazepine|Enzyme inhibition; monitor levels closely.
+G|Montelukast|pharm,resp,psych|Montelukast can cause ___ effects including nightmares and mood change|neuropsychiatric|neuropsychiatric,psychiatric,behavioural|A recognized safety warning.
+B|Antimuscarinic bronchodilators|pharm,resp,eye|Nebulized ipratropium can precipitate|Acute angle closure glaucoma|Cataract and corneal ulceration|Especially if the mask leaks toward the eyes.
+G|Antiemetic choice|pharm,GI,neuro|___ is preferred in Parkinson disease because it does not cross into the brain|Domperidone|domperidone|Metoclopramide worsens parkinsonism.
+B|Proton pump inhibitor timing|pharm,GI|Proton pump inhibitors work best when taken|30 minutes before a meal|At bedtime on an empty stomach|They inhibit actively secreting pumps.
+G|Laxative types|pharm,GI|___ laxatives such as senna stimulate colonic motility|Stimulant|stimulant|Osmotic laxatives draw water instead.
+
+# ── Endocrine and musculoskeletal drugs ──────────────────────────────────
+G|Bisphosphonate holiday|pharm,bone|After about ___ years, a bisphosphonate holiday may be considered|5|5,five|Balancing atypical fracture risk.
+B|Denosumab discontinuation|pharm,bone|Stopping denosumab abruptly causes|Rebound vertebral fractures|No adverse effect|Transition to a bisphosphonate.
+G|Colchicine toxicity|pharm,rheum,GI|Colchicine toxicity presents first with ___|diarrhea|diarrhea,diarrhoea,gi upset|Dose-limiting and dangerous in renal impairment.
+B|Allopurinol dosing|pharm,rheum,renal|Allopurinol should be started|At a low dose and titrated to urate target|At the full dose from the first day|Reducing hypersensitivity risk.
+G|Febuxostat|pharm,rheum,cardio|Febuxostat carries a warning about ___ mortality in cardiac disease|cardiovascular|cardiovascular,cardiac|An alternative when allopurinol is unsuitable.
+B|Methotrexate dosing|pharm,rheum,safety|Methotrexate for rheumatoid arthritis is dosed|Once weekly|Once daily|Daily dosing has caused fatal errors.
+
+# ── Toxicology, second pass ──────────────────────────────────────────────
+G|Toxidrome assessment|toxicology,emergency|Toxidrome recognition uses pupils, skin, bowel sounds and ___|vital signs|vital signs,vitals,temperature|Building a pattern from the examination.
+B|Sympathomimetic toxidrome|toxicology|Sympathomimetic toxicity shows|Dilated pupils with sweating|Dilated pupils with dry skin|Dry skin points to anticholinergics.
+G|Opioid overdose|toxicology,emergency,resp|The immediate threat in opioid overdose is ___ depression|respiratory|respiratory|Support ventilation before anything else.
+B|Naloxone dosing|toxicology,pharm|In a dependent patient, naloxone should be given|In small titrated doses|As a single large bolus|Avoiding acute withdrawal and agitation.
+G|Paracetamol nomogram|toxicology,liver|The treatment line is plotted against time since ___ ingestion|single|single,acute,single-time|Staggered overdoses are treated regardless.
+B|Acetylcysteine reaction|toxicology,pharm,immuno|An anaphylactoid reaction to acetylcysteine|Is managed by slowing the infusion|Requires permanent discontinuation|It is rate-related, not true allergy.
+G|Salicylate elimination|toxicology,renal|Severe salicylate poisoning may need ___ if levels are very high|dialysis|dialysis,haemodialysis,hemodialysis|Along with alkalinization.
+B|Beta blocker versus calcium blocker overdose|toxicology,cardio|Which is treated with high-dose insulin euglycemia therapy?|Both|Neither|A cornerstone for severe cardiodepressant poisoning.
+G|Digoxin antibody|toxicology,cardio,pharm|Digoxin-specific antibody is indicated for life-threatening ___ or hyperkalemia|arrhythmia|arrhythmia,arrhythmias|Acting within minutes.
+B|Lithium toxicity precipitants|toxicology,psych,renal|Lithium toxicity is precipitated by|Dehydration, NSAIDs and ACE inhibitors|High salt intake and theophylline|Sodium depletion increases reabsorption.
+G|Iron overdose stages|toxicology,GI|Iron poisoning has a deceptive ___ phase before shock|latent|latent,quiescent|Lulling clinicians into false reassurance.
+B|Button battery ingestion|toxicology,peds,emergency|An oesophageal button battery requires|Emergency removal|Observation and repeat x-ray|Causes caustic injury within hours.
+G|Caustic ingestion|toxicology,GI,emergency|After caustic ingestion, ___ is contraindicated|induced vomiting|induced vomiting,emesis,neutralization|Re-exposing the oesophagus to injury.
+B|Organophosphate decontamination|toxicology,emergency,safety|Organophosphate poisoning requires|Staff protection and patient decontamination|Immediate intubation and nothing else|Secondary contamination of rescuers is a real risk.
+G|Carbon monoxide treatment|toxicology,resp|Hyperbaric oxygen is considered for carbon monoxide poisoning with ___ signs|neurological|neurological,neurologic,cns|Or in pregnancy and severe exposure.
+B|Snake envenomation|toxicology,emergency|Snake bite first aid includes|Immobilization and urgent transfer|A tourniquet and wound incision|Antivenom is given for systemic envenoming.
+G|Alcohol withdrawal scoring|toxicology,psych|Alcohol withdrawal severity is scored with the ___ scale|CIWA|ciwa,ciwa-ar|Guiding symptom-triggered benzodiazepine dosing.
+B|Wernicke prophylaxis|toxicology,neuro,vitamins|Parenteral thiamine in at-risk drinkers should be given|Before or with glucose|Only if symptoms appear|Prevention is far better than treatment.

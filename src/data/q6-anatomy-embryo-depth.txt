@@ -1,0 +1,77 @@
+# Anatomy, embryology, biostatistics and ethics — depth pass. Gap-weighted.
+
+# ── Embryology: early ────────────────────────────────────────────────────
+G|Implantation|embryology,OB|Implantation occurs about ___ days after fertilization|6|6,six,6-7|When hCG first becomes detectable.
+B|Gastrulation|embryology|Gastrulation begins in week|3|8|Forming the three germ layers from the primitive streak.
+G|Neurulation|embryology,neuro|The neural tube forms from ___ ectoderm|neuro|neuro,neural,neuroectoderm|Rostral neuropore closes at day 25, caudal at day 27.
+B|Neural crest|embryology|Which is NOT a neural crest derivative?|Anterior pituitary|Adrenal medulla|The anterior pituitary comes from Rathke pouch ectoderm.
+G|Teratogens|embryology,OB|The embryonic period of greatest teratogenic risk is weeks ___ to 8|3|3,three|Before week 3 it is all or nothing.
+B|Placental exchange|embryology,OB|Which crosses the placenta poorly?|Heparin|Warfarin|Its large size and charge prevent transfer.
+
+# ── Embryology: systems ──────────────────────────────────────────────────
+G|Pharyngeal arches|embryology,ENT|The first pharyngeal arch gives the muscles of ___|mastication|mastication,chewing|Innervated by the trigeminal nerve.
+B|Second pharyngeal arch|embryology,ENT|The second arch supplies the muscles of|Facial expression|Mastication|Facial nerve; stapes and styloid process.
+G|Third pharyngeal pouch|embryology,immuno|The third pouch forms the thymus and inferior ___|parathyroids|parathyroids,parathyroid glands|The fourth forms the superior parathyroids.
+B|Thyroid descent|embryology,ENT|A thyroglossal duct cyst moves with|Tongue protrusion|Shoulder shrugging|Reflecting its origin at the foramen cecum.
+G|Foregut|embryology,GI|The foregut is supplied by the ___ trunk|celiac|celiac,coeliac|Midgut by SMA, hindgut by IMA.
+B|Midgut rotation|embryology,GI|The midgut rotates|270 degrees counterclockwise|90 degrees clockwise|Failure causes malrotation and volvulus risk.
+G|Ductus venosus|embryology,cardio|The ductus venosus becomes the ligamentum ___ after birth|venosum|venosum|The umbilical vein becomes the ligamentum teres.
+B|Foramen ovale|embryology,cardio|The foramen ovale closes at birth because|Left atrial pressure exceeds right|Right atrial pressure rises|Lung expansion drops pulmonary resistance.
+G|Kidney development|embryology,renal|The definitive kidney develops from the ___|metanephros|metanephros|Pronephros regresses; mesonephros forms the Wolffian duct.
+B|Urachus|embryology,renal|A patent urachus causes|Urine leaking from the umbilicus|Bilateral hydronephrosis|A remnant of the allantois.
+G|Gonadal descent|embryology,repro|The testis is guided into the scrotum by the ___|gubernaculum|gubernaculum|Which persists as the scrotal ligament.
+
+# ── Anatomy: thorax and abdomen ──────────────────────────────────────────
+G|Diaphragm openings|anatomy,resp|The inferior vena cava passes through the diaphragm at T___|8|8,eight,t8|Oesophagus at T10, aorta at T12.
+B|Phrenic nerve|anatomy,resp,neuro|The phrenic nerve arises from|C3, C4 and C5|C5, C6 and C7|C3, 4, 5 keeps the diaphragm alive.
+G|Referred pain|anatomy,GI,neuro|Diaphragmatic irritation refers pain to the ___|shoulder|shoulder,shoulder tip|Via C3 to C5 dermatomes; Kehr sign.
+B|Inguinal canal|anatomy,repro|The spermatic cord passes through the|Deep and superficial inguinal rings|Femoral canal and saphenous opening|A femoral hernia passes below the inguinal ligament.
+G|Portosystemic anastomoses|anatomy,GI,liver|Caput medusae results from ___ vein recanalization|umbilical|umbilical,paraumbilical|Portal hypertension opening fetal channels.
+B|Retroperitoneal organs|anatomy,GI|Which is retroperitoneal?|The descending colon|The transverse colon|SAD PUCKER; the transverse colon is intraperitoneal.
+G|Femoral triangle|anatomy,vascular|From lateral to medial, the femoral triangle holds nerve, artery, vein and ___|lymphatics|lymphatics,lymph nodes,canal|NAVEL mnemonic.
+B|Carpal tunnel contents|anatomy,neuro|The carpal tunnel contains the median nerve and|Nine flexor tendons|The ulnar nerve|The ulnar nerve runs in Guyon canal.
+
+# ── Anatomy: neuro ───────────────────────────────────────────────────────
+G|Circle of Willis|anatomy,neuro,vascular|The anterior communicating artery is the commonest site of berry ___|aneurysm|aneurysm,aneurysms|Rupture causes subarachnoid haemorrhage.
+B|Middle meningeal artery|anatomy,neuro|The middle meningeal artery is a branch of the|Maxillary artery|Internal carotid|Torn at the pterion in epidural haematoma.
+G|Cranial nerve VII|anatomy,neuro,ENT|The facial nerve exits the skull through the ___ foramen|stylomastoid|stylomastoid|After traversing the internal acoustic meatus.
+B|Cavernous sinus|anatomy,neuro,eye|Which nerve is NOT in the cavernous sinus wall?|Optic nerve|Abducens nerve|CN III, IV, V1, V2 and VI pass through or beside it.
+G|Spinal cord termination|anatomy,neuro|The spinal cord ends at the level of L___ in adults|1|1,one,l1,l1-l2|Which is why lumbar puncture is done at L3 to L4.
+B|Corticospinal tract|anatomy,neuro|The corticospinal tract decussates at the|Medullary pyramids|Spinal cord level of entry|The spinothalamic tract crosses at the cord.
+G|Dorsal columns|anatomy,neuro|The dorsal columns carry vibration, proprioception and fine ___|touch|touch|Decussating in the medulla as the medial lemniscus.
+B|Broca area|anatomy,neuro,language|Broca area is supplied by the|Middle cerebral artery|Anterior cerebral artery|Dominant frontal lobe, inferior frontal gyrus.
+
+# ── Biostatistics: study design ──────────────────────────────────────────
+G|Randomization|biostats|Randomization controls for ___ confounders, both known and unknown|all|all,unknown,both|Its unique advantage over observational designs.
+B|Blinding|biostats|Double blinding means|Neither participant nor investigator knows|Only the participant is kept unaware|It reduces observer and reporting bias.
+G|Meta-analysis|biostats|A meta-analysis pools results to increase statistical ___|power|power|Vulnerable to publication bias.
+B|Funnel plot|biostats|An asymmetric funnel plot suggests|Publication bias|Effect modification|Small negative studies are missing.
+G|Number needed to harm|biostats|Number needed to harm is 1 divided by the attributable ___|risk|risk,risk increase|Higher is safer.
+B|Non-inferiority trial|biostats|A non-inferiority trial aims to show the new treatment is|Not meaningfully worse|Clearly better|Used when the new option has other advantages.
+G|Intention to treat|biostats|Intention-to-treat analysis preserves the benefit of ___|randomization|randomization,randomisation|Per-protocol analysis breaks it.
+B|Case series|biostats,epidemiology|A case series|Cannot establish causation|Establishes causation well|No comparison group.
+
+# ── Biostatistics: measures ──────────────────────────────────────────────
+G|Standard error|biostats|Standard error equals standard deviation divided by the square root of ___|n|n,sample size|It shrinks as the sample grows.
+B|Correlation coefficient|biostats|A correlation coefficient of minus 0.9 indicates|A strong negative relationship|A weak inverse relationship|Strength is the absolute value.
+G|p value|biostats|A p value is the probability of the result if the ___ hypothesis were true|null|null|Not the probability that the hypothesis is false.
+B|Confidence interval width|biostats|A wider confidence interval indicates|Less precision|A larger effect|Narrowed by increasing sample size.
+G|Odds ratio|biostats,epidemiology|The odds ratio approximates relative risk when the disease is ___|rare|rare,uncommon|The rare disease assumption.
+B|Attributable risk|biostats,epidemiology|Attributable risk is|Risk in exposed minus risk in unexposed|The ratio of exposed to unexposed risk|The ratio is relative risk.
+G|Sensitivity|biostats,lab|Sensitivity is true positives divided by all those with the ___|disease|disease|True positives plus false negatives.
+B|Likelihood ratio|biostats,lab|A positive likelihood ratio above 10|Strongly rules in disease|Rules out disease|Below 0.1 strongly rules it out.
+G|Screening|biostats,epidemiology|An ideal screening test has high ___ to avoid missing disease|sensitivity|sensitivity|Confirmed by a more specific test.
+
+# ── Ethics and health systems ────────────────────────────────────────────
+G|Autonomy|ethics|A competent adult may refuse treatment even if refusal causes ___|death|death|Autonomy outranks beneficence.
+B|Advance directive|ethics|A valid advance directive|Binds clinicians when the patient loses capacity|Serves only as guidance for the relatives|Family cannot override a clear directive.
+G|Assent|ethics,peds|Children too young to consent should still be asked for their ___|assent|assent|Alongside parental permission.
+B|Emancipated minor|ethics,peds|An emancipated minor|Consents to their own medical care|Still requires a parent present|Marriage, military service or financial independence.
+G|Confidentiality|ethics|Confidentiality may be broken to protect an identifiable ___ person|third|third,3rd|The Tarasoff duty to warn and protect.
+B|Reportable conditions|ethics,micro|Which requires mandatory reporting?|Tuberculosis|Hypertension|Along with certain other communicable diseases.
+G|Informed consent|ethics|Consent requires disclosure, understanding, capacity and ___|voluntariness|voluntariness,voluntary|A signature alone is insufficient.
+B|Therapeutic privilege|ethics|Withholding information because it might upset a patient is|Rarely justifiable|Standard practice|Patients have a right to know.
+G|Futility|ethics|Physicians are not obliged to provide treatment that is medically ___|futile|futile|But should explain rather than simply refuse.
+B|Impaired colleague|ethics|On discovering an intoxicated colleague you should|Report to the supervisor or licensing body|Confront them privately and say nothing|Patient safety takes priority.
+G|Beneficence versus nonmaleficence|ethics|Primum non nocere expresses the principle of ___|nonmaleficence|nonmaleficence,non-maleficence|First, do no harm.
+B|Justice|ethics,health systems|The principle of justice concerns|Fair distribution of resources|Respecting patient choice|Choice is autonomy.

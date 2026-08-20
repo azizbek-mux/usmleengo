@@ -1,0 +1,86 @@
+# Cardiovascular — batch 2.
+B|Hereditary hemochromatosis|cardio,genetics,path|Hemochromatosis causes which cardiomyopathy?|Restrictive, later dilated|Hypertrophic, later obstructive|Iron deposits in myocardium — restrictive then dilated.
+G|Hereditary hemochromatosis|cardio,genetics|Hemochromatosis is inherited in an autosomal ___ pattern|recessive|recessive,ar|HFE gene mutation, excessive intestinal iron absorption.
+B|Diabetic nephropathy|cardio,renal,pharm|The antihypertensive of choice in diabetic nephropathy is|An ARB or ACE inhibitor|A thiazide diuretic|RAAS blockade slows progression of proteinuric kidney disease.
+B|Atrial fibrillation|cardio,arrhythmia,aging|The strongest risk factor for atrial fibrillation is|Advanced age|Male sex|Age-related atrial remodelling and dilation.
+G|Atrial fibrillation|cardio,arrhythmia|Atrial fibrillation arises from atrial structural and electrical ___|remodeling|remodeling,remodelling,remodel|Remodelling creates the substrate for reentrant circuits.
+B|HFpEF|cardio,heart failure,hypertension|Heart failure with preserved ejection fraction is most associated with|Increased left ventricular afterload|Reduced contractile reserve of the ventricle|Chronic hypertension causes diastolic dysfunction.
+B|Drug-induced long QT|cardio,pharm,arrhythmia|Macrolides such as erythromycin affect the QT interval by|Prolonging it|Shortening it|Potassium channel blockade — torsades risk.
+G|Congenital long QT|cardio,genetics,arrhythmia|Romano-Ward long QT syndrome is inherited as autosomal ___|dominant|dominant,ad|Romano-Ward is dominant without deafness; Jervell-Lange-Nielsen is recessive with deafness.
+B|Pulmonic stenosis|cardio,valve,murmur|The murmur of pulmonic stenosis is loudest at the|Left upper sternal border|Apex, radiating to the axilla|Systolic ejection murmur at the second left intercostal space.
+B|Natriuretic peptides|cardio,heart failure,renal|ANP and BNP cause glomerular filtration rate to|Increase|Decrease|Afferent dilation and efferent constriction raise GFR and natriuresis.
+G|Natriuretic peptides|cardio,heart failure|ANP and BNP are released in response to myocardial wall ___|stretch|stretch,stress,tension|Volume overload stretches atria and ventricles.
+B|Granulomatosis with polyangiitis|cardio,immuno,resp|GPA is associated with which antibody?|c-ANCA against proteinase 3|Anti-glomerular basement membrane|c-ANCA/PR3. Necrotizing granulomatous small-vessel vasculitis.
+G|Granulomatosis with polyangiitis|cardio,resp,path|GPA lung histology shows necrotizing arteritis with epithelioid ___|histiocytes|histiocytes,granulomas,histiocyte|Necrotizing granulomas plus small-vessel vasculitis.
+B|Nesiritide|cardio,pharm,heart failure|Nesiritide acts through the same second messenger as|Brain natriuretic peptide|Angiotensin II via its receptor|Guanylyl cyclase-linked receptor raising cGMP.
+B|Amiodarone monitoring|cardio,pharm,thyroid|Before starting amiodarone you must check|Thyroid and liver function|Serum amylase and lipase|Amiodarone causes thyroid dysfunction, hepatotoxicity and pulmonary fibrosis.
+B|Amiodarone|cardio,pharm,thyroid|Amiodarone can cause hyperthyroidism|Yes|No|Iodine load raises synthesis, or destructive thyroiditis releases stored hormone.
+B|Right ventricular infarction|cardio,MI|In right ventricular infarction, treatment is|Intravenous fluids|Aggressive diuresis|The RV is preload dependent; nitrates and diuretics cause collapse.
+B|Right ventricular infarction|cardio,MI,pharm|Nitrates in right ventricular infarction are|Contraindicated|First-line|They drop preload and precipitate hypotension.
+G|Colonic watershed|cardio,GI,vascular|The classic colonic watershed area is the ___ flexure|splenic|splenic,splenic flexure|Between SMA and IMA territories — vulnerable to hypoperfusion.
+B|S4 gallop|cardio,heart failure|An S4 indicates a ventricle that is|Stiff and non-compliant|Volume overloaded|Atrial kick into a stiff ventricle — classic in LV hypertrophy.
+B|S3 gallop|cardio,heart failure|An S3 indicates|Volume overload and rapid filling|A stiff, poorly compliant ventricle|Heard in dilated ventricles and heart failure.
+B|Sudden cardiac death|cardio,MI,arrhythmia|The commonest immediate cause of death after acute MI is|Ventricular fibrillation|Free wall rupture|VF in the first hours; rupture occurs days later.
+B|Digoxin mechanism|cardio,pharm|Digoxin initially inhibits|The sodium-potassium ATPase|Calcium channels directly|Less sodium efflux raises intracellular sodium, then calcium via the exchanger.
+B|Digoxin|cardio,pharm,arrhythmia|Digoxin affects AV nodal conduction by|Slowing it|Accelerating it|Increased vagal tone slows AV conduction — rate control in AF.
+B|Digoxin toxicity|cardio,pharm,toxicology|The most dangerous consequence of digoxin toxicity is|Arrhythmia|Visual change|Potentially fatal arrhythmias of virtually any type.
+B|Ruptured abdominal aortic aneurysm|cardio,vascular,emergency|Ruptured AAA classically presents with|Sudden abdominal and back pain with hypotension|Gradual claudication with a soft abdomen|The classic triad includes a pulsatile abdominal mass.
+B|Beta blocker overdose|cardio,toxicology,pharm|Glucagon reverses beta blocker overdose by raising|cAMP in cardiac myocytes|Intracellular sodium|Glucagon bypasses the beta receptor to stimulate adenylate cyclase.
+G|Beta blocker overdose|cardio,toxicology|The antidote for beta blocker overdose is ___|glucagon|glucagon|Raises cardiac cAMP independent of beta receptors.
+B|Prinzmetal angina|cardio,angina|Variant (Prinzmetal) angina is caused by|Coronary smooth muscle hyperreactivity|Fixed atherosclerotic narrowing|Vasospasm from endothelial dysfunction and autonomic imbalance.
+B|Prinzmetal angina|cardio,angina,pharm|Prinzmetal angina is treated with|Calcium channel blockers|Beta blockers and aspirin|Beta blockers can worsen spasm.
+B|Calcific aortic stenosis|cardio,valve,path|Calcific aortic stenosis involves valve fibroblasts differentiating into|Osteoblast-like cells|Chondrocytes laying down cartilage|An active inflammatory ossification process, not passive wear.
+B|Hypertrophic cardiomyopathy|cardio,murmur|The HOCM murmur increases with manoeuvres that|Reduce left ventricular volume|Increase preload and afterload|Less volume worsens outflow obstruction — opposite to aortic stenosis.
+B|Hypertrophic cardiomyopathy|cardio,genetics|HOCM is inherited in which pattern?|Autosomal dominant|X-linked recessive|Sarcomere protein mutations, autosomal dominant.
+B|Hypertrophic cardiomyopathy|cardio,pharm|Symptoms of HOCM improve with drugs that|Reduce contractility|Increase contractility|Beta blockers slow the heart and reduce outflow obstruction.
+B|Left ventricular free wall rupture|cardio,MI,emergency|Free wall rupture after MI causes death by|Cardiac tamponade|Ventricular fibrillation|Blood abruptly fills the pericardial space.
+G|Transposition of the great arteries|cardio,congenital,embryology|TGA is caused by failed ___ of the aorticopulmonary septum|spiraling|spiraling,spiralling,spiral|Non-spiral septation gives parallel circulations.
+B|Transposition of the great arteries|cardio,congenital|Survival in TGA depends on|A shunt mixing the circulations|Pulmonary vasodilation at birth|PDA or ASD must persist; give prostaglandin E1.
+B|Ebstein anomaly|cardio,congenital|Ebstein anomaly involves|Apical displacement of the tricuspid valve|A bicuspid aortic valve with stenosis|Atrialized right ventricle with tricuspid regurgitation.
+G|Ebstein anomaly|cardio,congenital,pharm|Ebstein anomaly is classically linked to maternal ___ use|lithium|lithium|First-trimester lithium exposure.
+B|Mitral stenosis haemodynamics|cardio,valve|In mitral stenosis, the gradient is between the|Left atrium and left ventricle|Left ventricle and aorta|Elevated PCWP with normal LV end-diastolic pressure.
+B|Mitral stenosis severity|cardio,valve|Severe mitral stenosis shortens which interval?|A2 to opening snap|The PR interval|A higher left atrial pressure opens the valve sooner.
+B|Fick principle|cardio,physiology|Cardiac output by the Fick principle requires|Oxygen consumption rate|Systemic vascular resistance|CO = O2 consumption divided by the arteriovenous O2 difference.
+B|Infective endocarditis|cardio,micro,valve|Rheumatic valve scarring raises the risk of|Infective endocarditis|Constrictive pericarditis|Damaged endothelium seeds bacteria into vegetations.
+B|Takotsubo cardiomyopathy|cardio,path|Takotsubo cardiomyopathy is caused by|Catecholamine-induced myocardial stunning|Acute thrombotic coronary occlusion|Emotional stress; apical ballooning with clean coronaries.
+G|AV nodal blood supply|cardio,anatomy,MI|The AV node is supplied by the ___ coronary artery in most people|right|right,rca,right coronary|Right dominance in ~85% — inferior MI causes AV block.
+B|Anthracycline cardiotoxicity|cardio,oncology,toxicology|Doxorubicin cardiotoxicity depends on|Cumulative dose|Infusion rate alone|Dose-dependent dilated cardiomyopathy; dexrazoxane is protective.
+B|Sixth aortic arch|cardio,embryology,congenital|The ductus arteriosus derives from which aortic arch?|Sixth|Fourth|Sixth arch — pulmonary arteries and ductus.
+B|Patent foramen ovale|cardio,congenital|A patent foramen ovale is|Failed fusion of septum primum and secundum|A true tissue defect in the atrial septum|A flap valve, not absent tissue; Valsalva unmasks the shunt.
+B|Bicuspid aortic valve|cardio,congenital,vascular|Bicuspid aortic valve is associated with|Coarctation of the aorta|Ventricular septal defect|Also aortic dilation and dissection risk.
+B|Aortic regurgitation|cardio,valve,murmur|Aortic regurgitation increases which ventricular parameter?|End-diastolic volume|Afterload alone|Volume overload — eccentric hypertrophy and wide pulse pressure.
+B|Aortic regurgitation|cardio,valve,murmur|The murmur of aortic regurgitation is|Early diastolic and decrescendo|Mid-systolic and crescendo|Blowing decrescendo murmur at the left sternal border.
+B|Rate control in atrial fibrillation|cardio,pharm,arrhythmia|Verapamil controls rate in atrial fibrillation by blocking|AV nodal calcium channels|Cardiac sodium channels|Non-dihydropyridine CCBs slow AV conduction at rest and on exertion.
+G|Sinoatrial node|cardio,anatomy,physiology|The SA node sits where the right atrium meets the ___ vena cava|superior|superior,svc|Subepicardial, at the junction of right atrium and SVC.
+B|Trousseau syndrome|cardio,oncology,coagulation|Migratory superficial thrombophlebitis suggests|Visceral adenocarcinoma|Iron deficiency|Trousseau syndrome — pancreatic, lung and gastric cancer.
+B|Nutcracker syndrome|cardio,vascular,repro|Compression of the left renal vein classically causes a|Left varicocele|Right varicocele|Left gonadal vein drains into the left renal vein.
+G|Nutcracker syndrome|cardio,vascular|The left renal vein is compressed between the aorta and the ___ artery|superior mesenteric|superior mesenteric,sma|The nutcracker effect.
+B|Statin monitoring|cardio,pharm,lipids|Before starting a statin you should check|Liver transaminases|Serum amylase|Baseline transaminases; check CK if myopathy develops.
+B|Statin mechanism|cardio,pharm,lipids|Statins lower LDL by increasing hepatocyte|LDL receptor density|VLDL secretion|Less intracellular cholesterol upregulates LDL receptors.
+B|Atrial fibrillation rate|cardio,arrhythmia,physiology|Ventricular rate in atrial fibrillation is set by the|AV node refractory period|The sinus node discharge rate|The AV node filters chaotic atrial impulses.
+B|Aortic stenosis and atrial fibrillation|cardio,valve,arrhythmia|Losing atrial contraction in severe aortic stenosis causes|A sudden fall in preload|A rise in afterload|The atrial kick is critical to filling a stiff ventricle.
+B|Rheumatic fever|cardio,micro,valve|The most serious long-term sequela of rheumatic fever is|Valvular heart disease|Glomerulonephritis|Chronic rheumatic heart disease, especially mitral stenosis.
+G|Sydenham chorea|cardio,neuro,micro|In rheumatic fever, antibodies cross-react with the basal ___|ganglia|ganglia,ganglion|Molecular mimicry causing Sydenham chorea.
+B|Vasovagal syncope|cardio,autonomic|Vasovagal syncope involves|Decreased systemic vascular resistance|Increased contractility and rate|Vasodilation and bradycardia reduce cerebral perfusion.
+B|Libman-Sacks endocarditis|cardio,immuno,valve|Libman-Sacks endocarditis occurs in|Systemic lupus erythematosus|Rheumatoid arthritis|Sterile verrucous vegetations on both valve surfaces.
+B|Coronary blood flow|cardio,physiology|Coronary blood flow is regulated mainly by|Nitric oxide and adenosine|Sympathetic tone alone|Local metabolic vasodilators match flow to demand.
+B|Coronary blood flow|cardio,physiology|Left coronary perfusion occurs mainly during|Diastole|Systole|Systolic compression prevents left coronary flow.
+G|Lipofuscin|cardio,path,aging|Lipofuscin is the brown pigment of ___ peroxidation|lipid|lipid,lipids|Free radical injury; the wear-and-tear pigment of ageing.
+B|Fibrates|cardio,pharm,lipids|Fibrates lower triglycerides by|Activating PPAR-alpha and lipoprotein lipase|Blocking HMG-CoA reductase in the liver|Reduced hepatic VLDL and enhanced clearance.
+B|Nitrate mechanism|cardio,pharm|Nitrates relax smooth muscle by causing myosin light chain|Dephosphorylation|Phosphorylation|cGMP activates a kinase that dephosphorylates myosin light chains.
+B|Beta blocker withdrawal|cardio,pharm|Abruptly stopping a beta blocker causes|Rebound tachycardia and ischemia|Prolonged bradycardia and fatigue|Chronic blockade upregulates beta receptors — taper slowly.
+G|Receptor upregulation|cardio,pharm|Prolonged receptor blockade causes receptor ___|upregulation|upregulation,up-regulation,increase|More surface receptors, hence rebound on withdrawal.
+B|Aortic dissection therapy|cardio,pharm,emergency|The first drug in aortic dissection is|A beta blocker|A vasodilator alone|Reduce contraction velocity first; vasodilators alone raise shear stress.
+B|Ventricular septal defect|cardio,congenital|A large VSD raises pressure in which chamber?|Right ventricle|Left atrium only|Left-to-right shunt raises right-sided and pulmonary pressures.
+B|Persistent pulmonary hypertension of the newborn|cardio,congenital,peds|Cyanosis in PPHN is caused by|Right-to-left shunting through the ductus|A fixed ventricular septal defect|High pulmonary vascular resistance reverses ductal flow.
+B|Atrial flutter ablation|cardio,arrhythmia|Typical atrial flutter is ablated at the|Cavotricuspid isthmus|Pulmonary veins|The isthmus anchors the macro-reentrant circuit.
+B|Milrinone|cardio,pharm,heart failure|Milrinone inhibits which enzyme?|Phosphodiesterase-3|Adenylate cyclase|Raises cAMP — inotropy plus vasodilation ("inodilator").
+B|Milrinone|cardio,pharm|Milrinone affects systemic vascular resistance by|Decreasing it|Increasing it|Vasodilation with increased contractility.
+B|Aspirin intolerance|cardio,pharm|The alternative antiplatelet when aspirin is contraindicated is|Clopidogrel|Warfarin|A P2Y12 inhibitor replaces aspirin.
+B|Sick sinus syndrome|cardio,arrhythmia,aging|Sick sinus syndrome results from degeneration in the|Right atrial wall|Interventricular septum|Age-related SA node degeneration.
+B|Pulmonary ACE|cardio,physiology,resp|Angiotensin II concentration is higher in the|Pulmonary vein|Pulmonary artery|ACE on pulmonary endothelium converts angiotensin I to II.
+B|Beta blockers and renin|cardio,pharm,renal|Beta blockers lower blood pressure partly by|Decreasing renin release|Increasing renin release|Beta-1 blockade at juxtaglomerular cells inhibits renin.
+B|Beta blockers in heart failure|cardio,pharm,heart failure|Carvedilol improves survival in heart failure by|Blocking sympathetic neurohormonal drive|Increasing myocardial contractility|Only carvedilol, metoprolol succinate and bisoprolol are proven.
+B|Cardiogenic pulmonary edema|cardio,resp,heart failure|Pleural fluid in heart failure is|A transudate with low LDH|An exudate with high LDH|Raised hydrostatic pressure, not inflammation.
+B|Alpha-1 agonists|cardio,pharm,physiology|Phenylephrine causes reflex|Bradycardia|Tachycardia|Vasoconstriction raises blood pressure, triggering baroreceptor slowing.
+B|Coronary dominance|cardio,anatomy|Coronary dominance is defined by which artery gives the|Posterior descending artery|The left circumflex artery|Right dominant in about 85% of people.

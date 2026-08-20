@@ -1,0 +1,51 @@
+# Microbiology fifth pass and immunology fourth pass. Gap-weighted.
+
+# ── Diagnostic microbiology ──────────────────────────────────────────────
+G|Blood cultures|micro,lab|Blood cultures should be taken ___ antibiotics wherever possible|before|before,prior to|Yield falls sharply after the first dose.
+B|Blood culture volume|micro,lab|The single most important factor in blood culture yield is|The volume of blood taken|The number of bottles|Two sets from separate sites.
+G|Gram stain|micro,lab|Gram-positive organisms retain the ___ violet stain|crystal|crystal|Their thick peptidoglycan holds the dye.
+B|Ziehl-Neelsen|micro,lab,TB|Acid-fast bacilli appear|Red against a blue background|Blue against a red background|Because carbol fuchsin resists acid alcohol.
+G|India ink|micro,lab,fungi|India ink shows the ___ of Cryptococcus as a clear halo|capsule|capsule|Now largely replaced by antigen testing.
+B|PCR versus culture|micro,lab|PCR is preferred over culture when the organism|Fastidious, or the patient is on antibiotics|Fast-growing and easily cultured on agar|It detects nucleic acid, alive or dead.
+G|Serology timing|micro,lab|Acute and ___ serology samples are compared to show a rising titre|convalescent|convalescent|Usually 10 to 14 days apart.
+B|Antibiotic sensitivity|micro,lab,pharm|Minimum inhibitory concentration measures|The lowest concentration preventing growth|The concentration that kills the organism|MBC measures bactericidal activity.
+
+# ── Specific organisms, further angles ───────────────────────────────────
+G|Streptococcus pneumoniae vaccine|micro,vaccines,resp|The ___ pneumococcal vaccine gives T cell dependent immunity in infants|conjugate|conjugate,pcv|Polysaccharide vaccines fail under age two.
+B|Meningococcal prophylaxis|micro,neuro,pharm|Close contacts of meningococcal disease receive|Ciprofloxacin or rifampin|Oral penicillin alone|Reducing nasopharyngeal carriage.
+G|Haemophilus influenzae|micro,resp|Non-typeable H. influenzae commonly causes exacerbations of ___|COPD|copd,bronchitis,bronchiectasis|Along with otitis media and sinusitis.
+B|Moraxella catarrhalis|micro,resp|Moraxella catarrhalis is|Almost always beta-lactamase producing|Reliably sensitive to plain penicillin|Requiring co-amoxiclav or a macrolide.
+G|Staphylococcus aureus decolonization|micro,derm,surgery|MRSA decolonization uses nasal ___ and antiseptic washes|mupirocin|mupirocin|Before high-risk surgery.
+B|Enterococcus|micro,pharm|Enterococci are intrinsically resistant to|Cephalosporins|Ampicillin|Which is why cephalosporin use selects for them.
+G|Anaerobic infection|micro,GI|Foul-smelling pus and gas suggest ___ infection|anaerobic|anaerobic,anaerobes|Often polymicrobial from gut or mouth flora.
+B|Actinomycosis treatment|micro,pharm|Actinomycosis requires|Prolonged high-dose penicillin|A short course of penicillin|Often months because of poor penetration.
+G|Nocardia|micro,neuro,HIV|Nocardia typically infects the lungs and can spread to the ___|brain|brain,cns|In immunosuppressed patients.
+B|Aspergilloma|micro,fungi,resp|An aspergilloma is|A fungal ball in a pre-existing cavity|Invasive infection of lung tissue|Moving with position on imaging.
+G|Invasive aspergillosis|micro,fungi,oncology|Invasive aspergillosis is treated with ___|voriconazole|voriconazole,isavuconazole|In profoundly neutropenic patients.
+B|Candida auris|micro,fungi,infection control|Candida auris is concerning because it is|Multidrug resistant and spreads in hospitals|Highly virulent in otherwise healthy people|Requiring strict isolation.
+
+# ── Virology, further angles ─────────────────────────────────────────────
+G|Influenza antigenic drift|micro,virus,vaccines|Antigenic ___ explains the need for annual influenza vaccination|drift|drift|Gradual point mutations in HA and NA.
+B|Influenza complications|micro,virus,resp|The commonest serious complication of influenza is|Secondary bacterial pneumonia|Encephalitis with seizures|Especially staphylococcal and pneumococcal.
+G|Respiratory syncytial virus|micro,virus,peds|High-risk infants receive ___ or a monoclonal antibody for RSV prophylaxis|palivizumab|palivizumab,nirsevimab|Prematurity and congenital heart disease.
+B|Norovirus control|micro,virus,infection control|Norovirus outbreaks are controlled by|Isolation and soap-and-water hand washing|Alcohol gel and standard precautions|Alcohol is poorly effective against it.
+G|Rotavirus|micro,virus,peds,vaccines|Rotavirus vaccine is given ___ and is live attenuated|orally|orally,by mouth|Contraindicated after intussusception.
+B|Hepatitis A prophylaxis|micro,virus,vaccines|Post-exposure hepatitis A prophylaxis uses|Vaccine, with immunoglobulin for the vulnerable|Immunoglobulin alone within two weeks|Given within two weeks.
+G|Human papillomavirus vaccine|micro,virus,vaccines,oncology|HPV vaccination is most effective when given ___ sexual debut|before|before,prior to|Now offered to all genders.
+B|Herpes zoster vaccine|micro,virus,vaccines|The recombinant zoster vaccine is|Preferred and safe in immunosuppression|Live and contraindicated in them|Unlike the older live vaccine.
+G|Measles complications|micro,virus,neuro|Subacute sclerosing ___ is a rare fatal late measles complication|panencephalitis|panencephalitis|Occurring years after infection.
+B|Congenital varicella|micro,virus,OB|Maternal varicella is most dangerous to the newborn when it occurs|Around the time of delivery|In the first trimester|Requiring immunoglobulin for the infant.
+
+# ── Immunology applied, further ──────────────────────────────────────────
+G|Immunoglobulin structure|immuno,antibody|The antigen-binding site is formed by the variable regions of heavy and ___ chains|light|light|Two identical binding sites per monomer.
+B|Fab versus Fc|immuno,antibody|The Fc region determines|Effector function and half-life|Antigen binding specificity|Fab binds antigen.
+G|Monoclonal antibody naming|immuno,pharm|A monoclonal antibody ending in -___ is fully human|umab|umab,-umab|Ximab is chimeric, zumab humanized.
+B|Biosimilar|immuno,pharm|A biosimilar differs from a generic because|Biological products cannot be identical|It is chemically identical to it|Requiring comparability studies.
+G|Immunoglobulin therapy|immuno,pharm,neuro|High-dose intravenous immunoglobulin is used to ___ autoimmune disease|modulate|modulate,suppress,treat|As well as to replace antibody in deficiency.
+B|Complement inhibition|immuno,pharm,heme|Eculizumab increases the risk of|Meningococcal infection|Tuberculosis reactivation|Vaccinate and give prophylaxis before starting.
+G|JAK inhibitors|immuno,pharm,rheum|JAK inhibitors block intracellular ___ signalling|cytokine|cytokine,cytokines|Oral small molecules used in rheumatoid arthritis.
+B|Checkpoint inhibitor colitis|immuno,pharm,GI|Immune checkpoint colitis is treated with|Corticosteroids and stopping the drug|Antibiotics with supportive therapy|Infliximab if steroid refractory.
+G|Anaphylaxis to biologics|immuno,pharm|Infusion reactions to monoclonal antibodies are reduced by ___ and slowing the rate|premedication|premedication,antihistamines,steroids|Most are not true IgE allergy.
+B|Vaccine adjuvant|immuno,vaccines|An adjuvant is added to|Enhance the immune response|Preserve the vaccine|Aluminium salts are the classic example.
+G|Live vaccine interval|immuno,vaccines|Two live vaccines not given together should be separated by ___ weeks|4|4,four|Otherwise interferon may blunt the second.
+B|Immunodeficiency red flags|immuno,peds,micro|Which suggests primary immunodeficiency?|Recurrent deep-seated or unusual infections|Frequent upper respiratory infections|Plus failure to thrive and family history.

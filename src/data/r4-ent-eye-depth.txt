@@ -1,0 +1,61 @@
+# ENT, ophthalmology and head/neck — depth pass. Gap-weighted.
+
+# ── Ear ──────────────────────────────────────────────────────────────────
+G|Ossicles|ENT,anatomy|The three ossicles are the malleus, incus and ___|stapes|stapes|Amplifying sound to the oval window.
+B|Otosclerosis|ENT,path|Otosclerosis causes|Conductive loss from stapes fixation|Sensorineural loss from hair cell death|Often in young adults, worse in pregnancy.
+G|Presbycusis|ENT,aging|Presbycusis affects ___-frequency hearing first|high|high|Age-related loss of outer hair cells at the cochlear base.
+B|Noise-induced hearing loss|ENT|Noise-induced loss shows a characteristic dip at|4000 Hz|1000 Hz|The classic audiogram notch.
+G|Meniere disease|ENT|Meniere disease results from excess ___ in the inner ear|endolymph|endolymph,endolymphatic fluid|Vertigo, tinnitus, fullness and fluctuating hearing loss.
+B|Benign paroxysmal positional vertigo|ENT,neuro|BPPV is treated with|The Epley repositioning manoeuvre|Long-term vestibular sedatives|Otoconia displaced into a semicircular canal.
+G|Vestibular neuritis|ENT,neuro|Vestibular neuritis causes vertigo WITHOUT ___ loss|hearing|hearing|Labyrinthitis adds hearing loss.
+B|Cholesteatoma|ENT,path|Cholesteatoma presents with|Painless foul discharge and hearing loss|Severe otalgia with fever and vertigo|Erodes ossicles and can reach the facial nerve.
+G|Acoustic neuroma|ENT,oncology,neuro|A vestibular schwannoma causes unilateral ___ hearing loss and tinnitus|sensorineural|sensorineural|At the cerebellopontine angle.
+B|Mastoiditis|ENT,micro,emergency|Mastoiditis is suggested by|A protruding auricle with postauricular swelling|Isolated ear pain with an entirely normal drum|A complication of untreated otitis media.
+
+# ── Nose and sinuses ─────────────────────────────────────────────────────
+G|Sinusitis|ENT,micro|Acute bacterial sinusitis is suggested by symptoms beyond ___ days|10|10,ten|Or worsening after initial improvement.
+B|Sinusitis|ENT,micro|The commonest bacterial cause of sinusitis is|Streptococcus pneumoniae|Pseudomonas aeruginosa|Then H. influenzae and Moraxella.
+G|Nasal polyps|ENT,immuno,resp|Nasal polyps with asthma and aspirin sensitivity form ___ triad|Samter|samter,samter's,aspirin|Aspirin-exacerbated respiratory disease.
+B|Nasal polyps in a child|ENT,genetics,peds|Nasal polyps in a child should prompt testing for|Cystic fibrosis|Allergic rhinitis|Uncommon in healthy children.
+G|Allergic rhinitis|ENT,immuno,pharm|First-line treatment of persistent allergic rhinitis is an intranasal ___|corticosteroid|corticosteroid,steroid|More effective than antihistamines alone.
+B|Epistaxis|ENT,emergency|Posterior epistaxis is more likely in|Older hypertensive patients|Children with nose picking|Heavier bleeding, often needing packing.
+
+# ── Throat and neck ──────────────────────────────────────────────────────
+G|Tonsillitis|ENT,micro|The Centor criteria include fever, tonsillar exudate, tender nodes and absence of ___|cough|cough|Guiding streptococcal testing.
+B|Peritonsillar abscess|ENT,emergency|A peritonsillar abscess is treated with|Needle aspiration or drainage with antibiotics|Oral antibiotics alone for ten full days|Trismus and hot potato voice.
+G|Retropharyngeal abscess|ENT,peds,emergency|Retropharyngeal abscess can spread to the ___, causing mediastinitis|mediastinum|mediastinum,chest|A danger space infection.
+B|Laryngeal cancer|ENT,oncology|Persistent hoarseness beyond three weeks in a smoker requires|Laryngoscopy|Reassurance|Glottic tumours present early with voice change.
+G|Recurrent laryngeal nerve|ENT,anatomy,surgery|The recurrent laryngeal nerve is at risk during ___ surgery|thyroid|thyroid,thyroidectomy|Bilateral injury causes stridor and needs urgent airway management.
+B|Vocal cord palsy|ENT,anatomy,oncology|A left recurrent laryngeal palsy should prompt imaging of the|Chest, including the aortopulmonary window|The neck and thyroid gland and no more|The left nerve loops under the aortic arch.
+G|Salivary gland tumours|ENT,oncology|The commonest salivary gland tumour is the ___ adenoma|pleomorphic|pleomorphic|Benign but recurs if incompletely excised.
+B|Parotid surgery|ENT,anatomy,surgery|Parotidectomy risks injury to the|Facial nerve|Hypoglossal nerve|The nerve runs through the gland.
+G|Sialolithiasis|ENT|Salivary stones most often affect the ___ gland|submandibular|submandibular|Its duct runs uphill and its secretion is thicker.
+B|Head and neck cancer|ENT,oncology,virus|HPV-positive oropharyngeal cancer has|A better prognosis|A worse prognosis|Younger patients, often non-smokers.
+
+# ── Eye: anatomy and refraction ──────────────────────────────────────────
+G|Aqueous humour|eye,physiology|Aqueous humour is produced by the ___ body|ciliary|ciliary|Draining through the trabecular meshwork and canal of Schlemm.
+B|Accommodation|eye,physiology|To focus on a near object, the ciliary muscle|Contracts, relaxing the zonules|Relaxes, tightening the zonules|Allowing the lens to become more spherical.
+G|Hyperopia|eye,physiology|Hyperopia is corrected with a ___ lens|convex|convex,converging,plus|The eye is too short; myopia needs concave lenses.
+B|Astigmatism|eye,physiology|Astigmatism results from|An irregularly curved cornea|An elongated eyeball globe|Corrected with a cylindrical lens.
+G|Pupillary light reflex|eye,neuro|The afferent limb of the light reflex is cranial nerve ___|II|ii,2,two,optic|The efferent limb is cranial nerve III.
+B|Relative afferent pupillary defect|eye,neuro|A Marcus Gunn pupil indicates|Optic nerve or severe retinal disease|A third nerve palsy with ptosis|Detected with the swinging flashlight test.
+
+# ── Eye: disease ─────────────────────────────────────────────────────────
+G|Open angle glaucoma|eye|Open angle glaucoma damages the ___ visual field first|peripheral|peripheral|Central vision is preserved until late.
+B|Glaucoma treatment|eye,pharm|Latanoprost lowers pressure by|Increasing uveoscleral outflow|Reducing aqueous production|It also darkens the iris and lengthens lashes.
+G|Cataract|eye,endocrine|Diabetes accelerates cataract through ___ accumulation in the lens|sorbitol|sorbitol|Via aldose reductase.
+B|Age-related macular degeneration|eye,aging|Wet macular degeneration is treated with|Intravitreal anti-VEGF injections|Focal laser photocoagulation only|Dry AMD has no specific treatment.
+G|Macular degeneration|eye,aging|Macular degeneration destroys ___ vision, sparing the periphery|central|central|The opposite pattern to glaucoma.
+B|Retinal detachment|eye,emergency|Retinal detachment classically presents with|Flashes, floaters and a curtain|Gradual painless blurring|An ophthalmic emergency.
+G|Diabetic retinopathy|eye,endocrine|The commonest cause of vision loss in diabetes is macular ___|edema|edema,oedema|Rather than proliferative disease itself.
+B|Hypertensive retinopathy|eye,cardio|Copper wiring and AV nipping indicate|Chronic hypertension|Acute hypertensive crisis|Papilledema indicates malignant hypertension.
+G|Uveitis|eye,immuno,rheum|Anterior uveitis is associated with HLA-B___ conditions|27|27,b27|Ankylosing spondylitis, reactive arthritis, IBD.
+B|Conjunctivitis|eye,micro|Purulent discharge with eyelids stuck shut suggests|Bacterial conjunctivitis|Viral conjunctivitis|Viral is watery with a preauricular node.
+G|Herpes keratitis|eye,virus|Herpes simplex keratitis shows a ___ ulcer on fluorescein staining|dendritic|dendritic|Topical steroids are contraindicated.
+B|Corneal abrasion|eye,emergency,pharm|In a corneal abrasion, topical steroids are|Contraindicated|First-line|They delay healing and risk infection.
+G|Orbital cellulitis|eye,micro,emergency|Orbital cellulitis is distinguished by pain on eye ___ and proptosis|movement|movement,motion|Preseptal cellulitis spares eye movement.
+B|Papilledema|eye,neuro|Papilledema is|Almost always bilateral|Usually unilateral|Reflecting raised intracranial pressure.
+G|Retinoblastoma|eye,oncology,genetics|Bilateral retinoblastoma is always ___|hereditary|hereditary,germline,inherited|A germline RB1 mutation with a second somatic hit.
+B|Amblyopia|eye,peds|Amblyopia must be treated before|About age 7 to 8|Adolescence|After visual cortical development completes, it is irreversible.
+G|Strabismus|eye,peds|Persistent misalignment after ___ months of age needs referral|4|4,four,4-6|Earlier intermittent squint may be normal.
+B|Leukocoria|eye,peds,oncology|The commonest cause of leukocoria worldwide is|Congenital cataract|Retinoblastoma|But retinoblastoma must always be excluded first.

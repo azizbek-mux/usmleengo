@@ -1,0 +1,71 @@
+# Pharmacology — second depth pass, by system. Gap-weighted.
+
+# ── Autonomic pharmacology ───────────────────────────────────────────────
+G|Muscarinic antagonists|pharm,autonomic,eye|Atropine causes ___, paralysis of accommodation|cycloplegia|cycloplegia|Plus mydriasis, dry mouth and urinary retention.
+B|Glycopyrrolate|pharm,autonomic,anesthesia|Glycopyrrolate is preferred over atropine when you want to|Avoid central effects|Treat bradycardia faster|It does not cross the blood-brain barrier.
+G|Bethanechol|pharm,autonomic,urology|Bethanechol is a muscarinic agonist used for urinary ___|retention|retention|Post-operative or neurogenic bladder.
+B|Pilocarpine|pharm,autonomic,eye|Pilocarpine is used in acute angle closure because it|Constricts the pupil and opens the angle|Dilates the pupil and lowers pressure|Muscarinic agonist.
+G|Beta-3 agonists|pharm,autonomic,urology|Mirabegron relaxes the ___ to treat overactive bladder|detrusor|detrusor,bladder|An alternative to antimuscarinics in the elderly.
+B|Alpha-2 agonists|pharm,autonomic|Clonidine and dexmedetomidine|Reduce central sympathetic outflow|Stimulate peripheral alpha-1|Producing sedation without respiratory depression.
+
+# ── Anaesthesia and analgesia ────────────────────────────────────────────
+G|Inhaled anaesthetics|pharm,anesthesia|Anaesthetic potency is expressed as ___ alveolar concentration|minimum|minimum,minimal,mac|Lower MAC means more potent.
+B|Nitrous oxide|pharm,anesthesia|Nitrous oxide has|A high MAC and low potency|A low MAC and high potency|Used as an adjunct, rarely alone.
+G|Malignant hyperthermia|pharm,anesthesia,genetics|Malignant hyperthermia involves the ___ receptor|ryanodine|ryanodine,ryr1|Autosomal dominant; treat with dantrolene.
+B|Propofol|pharm,anesthesia|Propofol characteristically causes|Hypotension and pain on injection|Hypertension and prolonged emergence|Rapid onset and offset; no analgesia.
+G|Ketamine|pharm,anesthesia|Ketamine blocks the ___ receptor, producing dissociative anaesthesia|NMDA|nmda|Preserves airway reflexes and raises blood pressure.
+B|Ketamine|pharm,anesthesia,cardio|Ketamine is useful in shock because it|Maintains blood pressure|Lowers cardiac work|Sympathomimetic; avoid in severe hypertension.
+G|Local anaesthetic toxicity|pharm,anesthesia,emergency|Local anaesthetic systemic toxicity is treated with ___ emulsion|lipid|lipid,intralipid,20% lipid|A lipid sink for the drug.
+B|Bupivacaine|pharm,anesthesia,cardio|Bupivacaine is more dangerous than lidocaine because of|Cardiac toxicity|Neurotoxicity|Refractory arrhythmias if injected intravascularly.
+G|Opioid conversion|pharm,neuro|When switching opioids, reduce the dose for incomplete cross-___|tolerance|tolerance|Usually by 25 to 50 percent.
+B|Codeine|pharm,neuro,genetics|Codeine is ineffective in poor metabolizers of|CYP2D6|CYP3A4|And dangerous in ultra-rapid metabolizers.
+G|Tramadol|pharm,neuro,psych|Tramadol lowers the ___ threshold and risks serotonin syndrome|seizure|seizure|Especially with SSRIs.
+
+# ── Cardiovascular pharmacology ──────────────────────────────────────────
+G|Nitrate tolerance|pharm,cardio|Nitrate tolerance is avoided with a daily nitrate-free ___|interval|interval,period|Usually overnight.
+B|Ranolazine|pharm,cardio|Ranolazine treats angina by|Inhibiting the late sodium current|Slowing the resting heart rate|No effect on heart rate or blood pressure.
+G|Dihydropyridines|pharm,cardio|Amlodipine acts mainly on ___ smooth muscle|vascular|vascular,arterial|Non-dihydropyridines act on the heart.
+B|Verapamil|pharm,cardio,GI|Verapamil commonly causes|Constipation|Diarrhea|Plus bradycardia and gingival hyperplasia.
+G|Loop diuretic|pharm,renal,ENT|Furosemide given rapidly intravenously can cause ___|ototoxicity|ototoxicity,deafness,hearing loss|Infuse slowly, especially with aminoglycosides.
+B|Spironolactone versus eplerenone|pharm,cardio,endocrine|Eplerenone is preferred when the patient develops|Gynecomastia|Hyperkalemia|Both retain potassium equally.
+G|Hydralazine and nitrate|pharm,cardio,heart failure|Hydralazine with isosorbide dinitrate benefits ___ patients with heart failure|Black|black,african american,african-american|Proven mortality benefit in this group.
+B|Adenosine contraindication|pharm,cardio,resp|Adenosine should be avoided in|Severe asthma|Diabetes|It can cause bronchospasm.
+
+# ── Endocrine pharmacology ───────────────────────────────────────────────
+G|Glucocorticoid potency|pharm,endocrine|___ has the greatest mineralocorticoid activity of the common steroids|Fludrocortisone|fludrocortisone|Dexamethasone has essentially none.
+B|Steroid equivalence|pharm,endocrine|Compared with hydrocortisone, dexamethasone is|Far more potent and longer acting|Less potent and shorter acting|Roughly 25 times the glucocorticoid potency.
+G|Insulin types|pharm,endocrine,diabetes|___ is the fastest acting insulin analogue|Lispro|lispro,aspart,glulisine|Onset within 15 minutes.
+B|Insulin glargine|pharm,endocrine,diabetes|Glargine differs from NPH by having|No pronounced peak|A sharper peak|Reducing nocturnal hypoglycemia.
+G|Thionamides|pharm,endocrine,heme|Methimazole and propylthiouracil can both cause ___|agranulocytosis|agranulocytosis|Any sore throat or fever needs an urgent blood count.
+B|Bromocriptine versus cabergoline|pharm,endocrine|Cabergoline is preferred for prolactinoma because it is|Better tolerated and longer acting|Cheaper and more widely available|Both are dopamine agonists.
+G|Desmopressin|pharm,endocrine,heme|Desmopressin also raises factor VIII and von ___ factor|Willebrand|willebrand,willebrand's|Useful in mild haemophilia A and vWD.
+
+# ── Gastrointestinal pharmacology ────────────────────────────────────────
+G|Proton pump inhibitors|pharm,GI,electrolytes|Long-term PPIs can cause low serum ___|magnesium|magnesium,mg|Plus B12 and iron malabsorption and C. difficile risk.
+B|H2 blockers|pharm,GI,principles|Cimetidine differs from ranitidine by|Inhibiting CYP450 and causing gynecomastia|Being far more potent at the H2 receptor|An antiandrogen effect.
+G|Ondansetron|pharm,GI|Ondansetron blocks ___ receptors at the chemoreceptor trigger zone|5-HT3|5-ht3,serotonin,5ht3|Watch the QT interval.
+B|Metoclopramide|pharm,GI,neuro|Metoclopramide risks|Extrapyramidal effects and tardive dyskinesia|Hepatotoxicity and cholestatic jaundice|Avoid long-term use, especially in the young.
+G|Loperamide|pharm,GI,cardio|Loperamide in overdose causes ___ prolongation and arrhythmia|QT|qt|Increasingly seen with opioid misuse.
+B|Mesalamine|pharm,GI,IBD|Mesalamine works|Topically on colonic mucosa|Systemically after absorption|Which is why formulation and release site matter.
+G|Infliximab|pharm,GI,immuno|Before starting a TNF inhibitor, screen for latent ___|tuberculosis|tuberculosis,tb|Plus hepatitis B.
+
+# ── Neurological and psychiatric pharmacology ────────────────────────────
+G|Levetiracetam|pharm,neuro,epilepsy|Levetiracetam is well tolerated but can cause ___ changes|behavioural|behavioural,behavioral,mood,irritability|Irritability and aggression, especially in children.
+B|Topiramate|pharm,neuro|Topiramate characteristically causes|Weight loss, word-finding difficulty and stones|Weight gain with sedation, tremor and rash|Also acute angle closure glaucoma.
+G|Gabapentin|pharm,neuro,renal|Gabapentin is cleared entirely by the ___, so dosing follows GFR|kidney|kidney,kidneys,renal|No hepatic metabolism.
+B|Donepezil|pharm,neuro,dementia|Cholinesterase inhibitors commonly cause|Bradycardia and GI upset|Tachycardia and dry mouth|Caution with heart block.
+G|Memantine|pharm,neuro,dementia|Memantine is an ___ receptor antagonist used in moderate to severe dementia|NMDA|nmda|Reduces excitotoxicity.
+B|Triptans|pharm,neuro,cardio|Triptans are contraindicated in|Ischemic heart disease|Migraine with aura|They cause vasoconstriction.
+G|Sumatriptan|pharm,neuro|Sumatriptan agonizes 5-HT1B and 5-HT1___ receptors|D|d,1d|Constricting cranial vessels and inhibiting CGRP release.
+
+# ── Toxicology, second pass ──────────────────────────────────────────────
+G|Toxic alcohols|pharm,toxicology|Methanol and ethylene glycol both raise the ___ gap|osmolar|osmolar,osmolal|And later the anion gap as they are metabolized.
+B|Methanol|pharm,toxicology,eye|Methanol poisoning classically damages the|Optic nerve|Kidney|Formic acid; ethylene glycol damages the kidney.
+G|Isopropyl alcohol|pharm,toxicology|Isopropyl alcohol causes ketosis WITHOUT ___|acidosis|acidosis,metabolic acidosis|It becomes acetone, not an acid.
+B|Salicylate toxicity|pharm,toxicology,ENT|Early salicylate toxicity causes|Tinnitus and hyperventilation|Bradycardia and hypoventilation|Then a mixed acid-base picture.
+G|Iron poisoning|pharm,toxicology,GI|Iron poisoning classically causes ___ scarring weeks later|pyloric|pyloric,gastric outlet|After an initial GI, then latent, then shock phase.
+B|Digoxin visual effect|pharm,toxicology,eye|Digoxin toxicity classically causes|Yellow-green visual haloes|Blue-tinged vision|Blue vision belongs to sildenafil.
+G|Theophylline|pharm,toxicology,resp|Theophylline toxicity causes seizures and ___|arrhythmia|arrhythmia,arrhythmias,tachyarrhythmia|A very narrow therapeutic index.
+B|Serotonin syndrome onset|pharm,toxicology,psych|Serotonin syndrome typically begins|Within hours|Over days to weeks|NMS develops slowly by comparison.
+G|Anticholinergic toxidrome|pharm,toxicology|Anticholinergic toxicity causes urinary ___ and absent bowel sounds|retention|retention|Hot, dry, red, blind, mad and full.
+B|Sympathomimetic versus anticholinergic|pharm,toxicology|Which toxidrome has DIAPHORESIS?|Sympathomimetic|Anticholinergic|Anticholinergic skin is dry; that is the key discriminator.

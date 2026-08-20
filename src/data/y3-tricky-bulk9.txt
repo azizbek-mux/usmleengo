@@ -1,0 +1,53 @@
+# TRICKY — bulk batch 9.
+
+# ── Confusable pairs ─────────────────────────────────────────────────────
+BT|Primary vs secondary headache|neuro,headache|Which is suggested by headache waking the patient from sleep?|Secondary headache|Tension headache|A red flag needing imaging.
+BT|Tension vs cervicogenic headache|neuro,headache,msk|Which worsens with neck movement and has restricted range?|Cervicogenic headache|Tension headache|Often unilateral without side shift.
+BT|Giant cell arteritis vs migraine|neuro,rheum|Which causes scalp tenderness when combing the hair?|Giant cell arteritis|Migraine with aura|An urgent sight-threatening diagnosis.
+BT|Meningism vs meningitis|neuro,micro|Which can occur with any severe systemic infection?|Meningism|Bacterial meningitis|Neck stiffness alone does not confirm infection of the meninges.
+BT|Vertigo vs presyncope|neuro,cardio|Which involves a true sensation of movement?|Vertigo|Presyncope|Presyncope is a feeling of impending faint.
+BT|Diplopia monocular vs binocular|neuro,eye|Which resolves when either eye is covered?|Binocular diplopia|Monocular diplopia|Monocular diplopia is usually ocular, not neurological.
+BT|Ptosis in Horner vs third nerve|neuro,eye|Which has a PARTIAL ptosis with a small pupil?|Horner syndrome|Third nerve palsy|Third nerve palsy gives complete ptosis and a large pupil.
+BT|Tremor at rest vs intention|neuro,movement|Which worsens as the finger approaches the target?|Intention tremor|Rest tremor|Indicating cerebellar dysfunction.
+BT|Chorea vs myoclonus|neuro,movement|Which is brief, shock-like and non-flowing?|Myoclonus|Chorea|Chorea flows unpredictably from limb to limb.
+BT|Dystonia vs spasticity|neuro,movement,msk|Which is velocity-dependent on passive stretch?|Spasticity|Dystonia|Dystonia is sustained abnormal posturing.
+BT|Radiculopathy vs peripheral neuropathy|neuro,msk|Which follows a dermatomal rather than stocking distribution?|Radiculopathy|Peripheral neuropathy|Root compression maps to a dermatome.
+BT|Myelopathy vs radiculopathy|neuro,spinal cord|Which has upper motor neuron signs BELOW the lesion?|Myelopathy|Radiculopathy|Radiculopathy gives lower motor neuron signs at that root only.
+BT|Functional vs organic weakness|neuro,psych|Which shows Hoover sign positivity?|Functional weakness|Organic hemiparesis|Involuntary hip extension when the other leg flexes.
+BT|Sepsis vs anaphylaxis|immuno,micro,emergency|Which develops over minutes with urticaria and wheeze?|Anaphylaxis|Septic shock|Both cause distributive shock.
+BT|Angioedema vs urticaria|immuno,derm|Which affects the deeper dermis and is non-pruritic?|Angioedema|Urticaria|Urticaria itches; angioedema stings or burns.
+BT|Drug rash vs viral exanthem|derm,pharm,virus|Which typically starts on the trunk 7 to 10 days after a new drug?|Drug exanthem|Viral exanthem|Timing and drug history are key.
+BT|Fixed drug eruption vs erythema multiforme|derm,pharm|Which recurs in the SAME site with each exposure?|Fixed drug eruption|Erythema multiforme|Leaving post-inflammatory pigmentation.
+BT|Steroid acne vs acne vulgaris|derm,pharm|Which is monomorphic without comedones?|Steroid acne|Acne vulgaris|Uniform papules appearing after steroid use.
+BT|Tinea vs eczema|derm,fungi|Which has central clearing with an active scaly edge?|Tinea|Nummular eczema|Steroids alone worsen tinea incognito.
+BT|Scabies vs eczema|derm,parasite|Which itches most intensely at night and affects the whole household?|Scabies|Atopic eczema|Look for burrows in web spaces.
+BT|Cellulitis vs gout|derm,rheum,msk|Which causes redness centred on a single joint with extreme tenderness?|Gout|Cellulitis|Both are red, hot and swollen.
+BT|Osteomyelitis vs bone infarct|msk,heme,imaging|In sickle cell disease, which is far more common?|Bone infarct|Osteomyelitis|Both cause bone pain and fever; imaging helps.
+BT|Fracture vs contusion|msk,ortho,imaging|Which shows a joint effusion with a fat-fluid level?|Occult intra-articular fracture|A simple soft tissue contusion|A lipohaemarthrosis signals fracture.
+BT|Sprain vs strain|msk,ortho|Which is a ligament injury?|Sprain|Strain|Strain refers to muscle or tendon.
+BT|Bursitis vs septic arthritis|msk,micro|Which preserves passive joint range of movement?|Bursitis|Septic arthritis|Septic joints resist all movement.
+
+# ── Changed context ──────────────────────────────────────────────────────
+BT|Antibiotics in bites|micro,derm,pharm|Human and animal bites usually need|Prophylactic co-amoxiclav|No antibiotics at all|Covering Pasteurella and Eikenella.
+BT|Wound closure in bites|surgery,micro|Bite wounds to the hand are|Usually left open|Always closed primarily|Infection risk is high in closed spaces.
+BT|Tetanus prone wounds|micro,vaccines,surgery|A tetanus-prone wound in an incompletely vaccinated patient needs|Vaccine plus immunoglobulin|The vaccine on its own|Deep, dirty or devitalized wounds.
+BT|Antibiotic in cellulitis with lymphoedema|micro,derm|Recurrent cellulitis in lymphoedema may need|Long-term prophylactic penicillin|A single longer antibiotic course|Each episode worsens the lymphoedema.
+BT|Steroids in cellulitis|derm,micro,pharm|Corticosteroids in cellulitis are|Not indicated|Standard adjunct|They mask progression of infection.
+BT|Compression in venous ulcer|derm,vascular|Compression bandaging in a venous ulcer|Is the single most effective treatment|Should be avoided until healing starts|Only after excluding arterial disease.
+BT|Antibiotics in leg ulcer|derm,micro|Swabbing a chronic leg ulcer without signs of infection|Detects colonization and misleads|Guides useful treatment|Treat the patient, not the swab.
+BT|Elevation in compartment syndrome|msk,ortho,emergency|Elevating a limb with compartment syndrome|Reduces perfusion pressure and harms|Relieves swelling and improves pain|Keep the limb at heart level.
+BT|Ice in acute injury|msk,ortho|Prolonged icing of soft tissue injury|May delay healing|Always speeds recovery|Brief application for analgesia is reasonable.
+BT|Immobilization duration|msk,ortho|Prolonged immobilization after soft tissue injury|Causes stiffness and weakness|Improves healing and strength|Early controlled movement is preferred.
+
+# ── One step further ─────────────────────────────────────────────────────
+BT|Serum sodium and glucose|endocrine,electrolytes,lab|A glucose of 40 mmol/L makes measured sodium appear|Lower than the corrected value|Higher than the corrected value|Correct before diagnosing hyponatremia.
+BT|Potassium and acid-base|renal,electrolytes|Correcting DKA acidosis will make potassium|Fall further|Rise|Anticipate and replace before insulin.
+BT|Bicarbonate and ionized calcium|electrolytes,emergency|Rapid bicarbonate infusion can precipitate|Tetany from falling ionized calcium|Hyperkalemia with peaked T waves|Alkalosis increases albumin binding.
+BT|Magnesium and digoxin|cardio,electrolytes,pharm|Hypomagnesemia makes digoxin toxicity|More likely|Less likely|Similar mechanism to hypokalemia.
+BT|Albumin infusion and diuresis|GI,liver,pharm|Albumin given with a diuretic in hypoalbuminemic oedema|Improves diuretic delivery and response|Worsens oedema by expanding volume|Used in refractory nephrotic or cirrhotic oedema.
+BT|Feeding and glycemic control|nutrition,endocrine,critical care|Continuous enteral feeding in a diabetic requires|Adjusted background insulin cover|No change to insulin at all|Interruption then risks hypoglycemia.
+BT|Steroids and TB reactivation|immuno,micro,pharm|Long-term steroids reactivate tuberculosis by suppressing|Cell-mediated immunity|Antibody production|Screen before prolonged high-dose therapy.
+BT|Renal function and gadolinium|imaging,renal|Advanced renal failure limits use of|Gadolinium contrast|Ultrasound|Nephrogenic systemic fibrosis risk.
+BT|Age and drug sensitivity|pharm,geriatrics|The elderly are more sensitive to benzodiazepines mainly because of|Increased brain sensitivity and slower clearance|Faster absorption from the gut and stomach|Start low and go slow.
+BT|Body composition and lithium|pharm,geriatrics,renal|Reduced total body water in the elderly makes lithium levels|Higher for a given dose|Lower for a given dose|Alongside reduced renal clearance.
+BT|Frailty and treatment goals|geriatrics,ethics,clinical|In advanced frailty, treatment targets should shift toward|Function and comfort|Tight numerical targets|Time to benefit may exceed life expectancy.

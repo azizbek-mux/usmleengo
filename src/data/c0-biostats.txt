@@ -1,0 +1,45 @@
+# Biostatistics, epidemiology and ethics — batch 1.
+B|Hardy-Weinberg equilibrium|biostats,genetics|Hardy-Weinberg equilibrium requires|A large population with no selection or migration|A small isolated population with inbreeding|Small populations drift out of equilibrium.
+B|Case-control study|biostats,epidemiology|A case-control study reports which measure?|Odds ratio|Relative risk|Cases and controls are selected by outcome, so incidence is unknown.
+B|Cohort study|biostats,epidemiology|A cohort study reports which measure?|Relative risk|Odds ratio|Subjects are grouped by exposure and followed forward.
+B|Statistical power|biostats|A study failing to find a real difference most likely lacked|Sufficient power|External validity|Power rises with sample size and effect size.
+G|Type II error|biostats|Failing to reject a false null hypothesis is a type ___ error|II|ii,2,two,beta|Power equals 1 minus beta.
+G|Type I error|biostats|Rejecting a true null hypothesis is a type ___ error|I|i,1,one,alpha|The false positive; its probability is alpha.
+B|ANOVA|biostats|Comparing means across four groups requires|Analysis of variance|A two-sample t test|ANOVA compares between-group and within-group variance.
+B|Two-sample t test|biostats|Comparing the means of two groups uses|A two-sample t test|A chi-square test|Chi-square compares categorical proportions.
+B|Chi-square test|biostats|Comparing percentages between two groups uses|Chi-square|A t test|For categorical outcomes.
+B|Positive skew|biostats|In a positively skewed distribution|The mean is greater than the median|The mean is less than the median|Outliers pull the mean rightward. Mode, median, mean in alphabetical order.
+B|Crossover study|biostats,epidemiology|In a crossover trial, subjects|Receive both treatments in sequence|Are randomized to one arm only|A washout period separates the treatments.
+G|Confidence interval|biostats|A 95% confidence interval is the mean plus or minus 1.96 times the standard ___|error|error,standard error,se|Standard error is standard deviation divided by the square root of n.
+B|Confidence interval|biostats|A 95% confidence interval that includes 1 for a relative risk means|The result is not significant|The result is significant|For differences, the null value is 0; for ratios, it is 1.
+B|Phase I trial|biostats,pharm|A phase I trial primarily assesses|Safety in healthy volunteers|Efficacy in patients|Small numbers; dose-finding and toxicity.
+B|Phase II trial|biostats,pharm|A phase II trial primarily assesses|Efficacy in patients with the disease|Safety after marketing approval|Moderate size; does it work?
+B|Phase III trial|biostats,pharm|A phase III trial is|A large randomized controlled trial|An uncontrolled surveillance survey|Compares against standard treatment before approval.
+B|Phase IV trial|biostats,pharm|A phase IV study looks for|Rare adverse events after marketing|Initial dose-finding and safety|Post-marketing surveillance; can trigger withdrawal.
+B|Misclassification bias|biostats,epidemiology|Misclassification bias arises from|Incorrect categorization of exposure or outcome|Differential loss to follow-up between arms|Non-differential misclassification biases toward the null.
+B|Selection bias|biostats,epidemiology|Selection bias occurs when|Subjects differ from the target population|Measurement instruments are imprecise|Includes Berkson bias and healthy worker effect.
+B|Attrition bias|biostats,epidemiology|Attrition bias matters when losses to follow-up are|Different between groups|Random and equal|Random loss just shrinks the sample.
+B|Accuracy versus precision|biostats|A device giving consistently wrong values has|High precision and low accuracy|High accuracy and low precision|Precision is reproducibility; accuracy is closeness to truth.
+B|Relative risk interpretation|biostats,epidemiology|A relative risk of 0.86 means the exposure|Decreases the risk|Increases the risk|Below 1 is protective; a confidence interval crossing 1 is not significant.
+B|Prevalence|biostats,epidemiology|Better treatment that prolongs survival will|Increase prevalence|Decrease prevalence|Prevalence equals incidence times duration.
+B|Predictive values|biostats|As disease prevalence falls|PPV falls and NPV rises|PPV rises and NPV falls|Sensitivity and specificity are unaffected by prevalence.
+B|Sensitivity|biostats|A highly sensitive test is best used to|Rule out disease|Rule in disease|SnNout: a negative result with a sensitive test rules out.
+B|Specificity|biostats|A highly specific test is best used to|Rule in disease|Rule out disease|SpPin: a positive result with a specific test rules in.
+B|Significance level|biostats|Lowering alpha from 0.05 to 0.01|Reduces type I error but also power|Increases power to detect an effect|Fewer false positives, more false negatives.
+G|Absolute risk reduction|biostats|Absolute risk reduction is the control event rate minus the ___ event rate|treatment|treatment,experimental,treated|Number needed to treat is 1 divided by ARR.
+G|Number needed to treat|biostats|Number needed to treat equals 1 divided by the absolute risk ___|reduction|reduction,arr|Lower is better.
+B|Cross-sectional study|biostats,epidemiology|A cross-sectional study measures|Prevalence at a single point in time|Incidence accumulating over time|A snapshot; cannot establish causality.
+B|Effect modification|biostats,epidemiology|Effect modification means the exposure effect|Differs across levels of a third variable|Is falsely created by a third variable|Confounding distorts; effect modification is a real difference.
+B|Confounding|biostats,epidemiology|Confounding is best controlled at the design stage by|Randomization|Increasing sample size|Also matching, restriction, and multivariate analysis later.
+B|Control selection|biostats,epidemiology|Controls in a case-control study should be|People without the disease regardless of exposure|People without the exposure being studied|Selecting on exposure creates bias.
+B|Lead-time bias|biostats,epidemiology|Lead-time bias makes screening appear beneficial by|Detecting disease earlier without changing outcome|Preferentially selecting healthier patients|Survival from diagnosis lengthens; survival from onset does not.
+B|Length-time bias|biostats,epidemiology|Length-time bias occurs because screening preferentially detects|Slowly progressive disease|Aggressive disease|Indolent cases spend longer in the detectable phase.
+B|Recall bias|biostats,epidemiology|Recall bias is most problematic in|Case-control studies|Randomized trials|Cases remember exposures more thoroughly than controls.
+B|Hawthorne effect|biostats,epidemiology|The Hawthorne effect is when subjects|Change behavior because they are observed|Recall past exposures inaccurately|A form of observation bias.
+B|Intention to treat|biostats|Intention-to-treat analysis includes patients|In their originally assigned groups|Only if they completed treatment|Preserves randomization and avoids bias.
+B|Incidence versus prevalence|biostats,epidemiology|Incidence measures|New cases over a period|All existing cases|Prevalence includes both new and existing cases.
+B|Standard deviation|biostats|In a normal distribution, what percentage lies within two standard deviations?|95 percent|68 percent|68, 95, 99.7 for one, two and three.
+B|Informed consent|biostats,ethics|Informed consent requires disclosure, understanding, capacity and|Voluntariness|A witness signature|Signature alone does not establish valid consent.
+B|Beneficence|biostats,ethics|Overriding a patient's refusal because you know best violates|Autonomy|Beneficence|Autonomy outranks beneficence in a capable adult.
+B|Emancipated minor|biostats,ethics|An emancipated minor may consent if they are|Married, in the military, or self-supporting|Aged sixteen or older and living alone|Also for pregnancy, STI and substance care in most states.
+B|Futility|biostats,ethics|A physician may decline to provide treatment that is|Medically futile|Expensive|Futility is a clinical judgment, not a financial one.

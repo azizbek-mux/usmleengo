@@ -1,0 +1,51 @@
+# Mixed high-yield — NBME and Free 120 derived, batch 1.
+G|5-alpha reductase deficiency|repro,genetics,endocrine|5-alpha reductase converts testosterone to ___|DHT|dht,dihydrotestosterone|Deficiency impairs virilization of external genitalia only.
+B|Vitamin E deficiency|biochem,vitamins,neuro|Vitamin E deficiency mimics B12 deficiency but spares|The megaloblastic anemia|The spinal cord findings|Posterior column and spinocerebellar demyelination with normal B12.
+B|Vitamin E deficiency|biochem,vitamins,heme|Vitamin E deficiency causes which anemia?|Hemolytic|Megaloblastic|Free radical damage to red cell membranes.
+B|Pressure overload|cardio,physiology,path|Pressure overload adds sarcomeres|In parallel|In series|Concentric hypertrophy. Volume overload adds them in series.
+B|Cellulitis|derm,micro|Cellulitis after a minor abrasion is usually caused by|Streptococcus pyogenes|Pseudomonas aeruginosa|Group A strep; purulent lesions suggest S. aureus.
+B|Cerebral blood flow|neuro,physiology|Cerebral blood flow is most sensitive to|Arterial carbon dioxide|Arterial oxygen|Hypercapnia dilates cerebral vessels and raises intracranial pressure.
+B|Conjugate vaccines|immuno,vaccines,micro|Conjugating a polysaccharide to protein produces|A T cell dependent response with memory|A purely IgM response without memory|Effective in children under two.
+B|Cryptosporidium|micro,parasite,GI|Cryptosporidium oocysts are identified by|Acid-fast staining or stool antigen|Gram stain of a stool smear|Chronic watery diarrhea in AIDS.
+B|Endometrial hyperplasia|repro,gyn,oncology|The strongest risk factor for endometrial hyperplasia is|Unopposed estrogen|Combined oral contraceptives|Combined contraceptives are protective.
+B|Metformin|endocrine,pharm,toxicity|The dangerous metabolic effect of metformin is|Lactic acidosis|Ketoacidosis|Reduces gluconeogenesis; avoid in renal failure.
+B|Multiple myeloma|heme,oncology|Multiple myeloma is a neoplasm of|Plasma cells|T lymphocytes|Monoclonal immunoglobulin spike; B cell lineage.
+B|Prolactin regulation|endocrine,pituitary|Prolactin is unique among pituitary hormones because it is|Tonically inhibited by dopamine|Stimulated directly by dopamine|Stalk section raises prolactin and lowers everything else.
+B|Kaposi sarcoma|oncology,derm,HIV|Kaposi sarcoma histology shows|Spindle cells forming slit-like spaces|Reed-Sternberg cells in a nodal mass|Caused by human herpesvirus 8.
+B|Infraspinatus|msk,anatomy,ortho|The infraspinatus performs|External rotation|Internal rotation|Subscapularis does internal rotation; supraspinatus abduction.
+B|Yersinia pestis|micro,bacteria|Plague is transmitted by|Flea bites from rodents|Contaminated water|Buboes, sepsis and DIC; treat with streptomycin or gentamicin.
+B|Hypoparathyroidism|endocrine,calcium,surgery|Hypoparathyroidism after thyroidectomy causes|Perioral tingling and tetany|Hypertension and headache|Low calcium; Chvostek and Trousseau signs.
+B|Peak bone mass|msk,bone|Men have lower osteoporosis risk mainly because they|Start with higher peak bone mass|Absorb dietary calcium better|Peak bone mass is reached around age 30.
+B|Proton pump inhibitors|GI,pharm|Proton pump inhibitors irreversibly block|The gastric H/K ATPase|Histamine H2 receptors|First-line for reflux esophagitis.
+B|Thiazolidinediones|endocrine,pharm,diabetes|Pioglitazone binds which receptor family?|Peroxisome proliferator-activated receptors|Membrane tyrosine kinase receptors|PPAR-gamma; fibrates use PPAR-alpha.
+G|Fibronectin|biochem,cell biology|___ links cells to the extracellular matrix|fibronectin|fibronectin|A glycoprotein binding integrins and collagen.
+B|Cerebellar vermis|neuro,cerebellum|Cerebellar vermis atrophy causes|Truncal and gait ataxia|Limb dysmetria and tremor|Vermis is midline and truncal; hemispheres control the limbs.
+B|Cerebellar hemisphere lesion|neuro,cerebellum|Cerebellar hemisphere lesions cause deficits that are|Ipsilateral|Contralateral|Double crossing means ipsilateral signs.
+B|Neuromuscular junction|neuro,physiology,NMJ|In myasthenia gravis, miniature end-plate potentials are|Reduced in amplitude|Entirely normal|Fewer functional receptors. Lambert-Eaton reduces release instead.
+B|Cerebellar testing|neuro,exam|Rapid alternating movements test for|Dysdiadochokinesia|Nystagmus|A cerebellar function test.
+B|Motivational interviewing|psych,ethics|The most effective first statement to a smoker is|An open question about their own thoughts|A clear warning about lung cancer|Motivational interviewing elicits the patient's own motivation.
+B|Presbyopia|eye,aging|Presbyopia is caused by|Loss of lens elasticity with age|Progressive corneal steepening|Normal ageing; near objects must be held further away.
+B|Sarcoidosis|resp,immuno,path|Sarcoidosis lymph nodes show|Noncaseating granulomas|Caseating granulomas|Bilateral hilar adenopathy; commonest in young African American women.
+B|Self-selection bias|biostats,epidemiology|Volunteers responding to an advertisement create|Self-selection bias|Confounding|Volunteers differ systematically from the population.
+G|Phagocytosis|immuno,cell biology|Phagocytic cup formation requires ___ polymerization|actin|actin|Driven by WASP and Cdc42; defective in Wiskott-Aldrich.
+G|Hurler syndrome|genetics,biochem|Hurler syndrome is deficiency of alpha-___|iduronidase|iduronidase,l-iduronidase|Glycosaminoglycans accumulate; corneal clouding and coarse features.
+B|Hunter syndrome|genetics,biochem|Hunter syndrome differs from Hurler because it|Is X-linked with no corneal clouding|Has marked corneal clouding|Iduronate sulfatase deficiency; Hunters need clear vision to aim.
+B|First pharyngeal arch|embryology,anatomy|Pierre Robin sequence results from a defect of the|First pharyngeal arch|Second pharyngeal arch|Micrognathia, glossoptosis and cleft palate.
+B|Ovarian lymphatic drainage|repro,anatomy,oncology|The ovaries drain first to nodes|Along the ovarian vessels|In the inguinal region|Follows the embryologic blood supply.
+G|Acute intermittent porphyria|heme,biochem,neuro|Acute intermittent porphyria is deficiency of porphobilinogen ___|deaminase|deaminase|Attacks triggered by sulfonamides, barbiturates and rifampin.
+B|Acute intermittent porphyria|heme,pharm|Acute porphyria attacks are treated with|Intravenous glucose and heme|Phenobarbital and phenytoin|Both suppress ALA synthase.
+B|Septic arthritis|msk,micro,emergency|Septic arthritis requires|Urgent joint aspiration|Empiric oral antibiotics|Joint destruction occurs within days.
+B|Aging kidney|renal,aging,physiology|With age, the renal tubule response to ADH|Decreases|Increases|Less concentrated urine and higher dehydration risk.
+B|Trichotillomania|psych,derm|Trichotillomania is classified as|An impulse control disorder|A psychotic disorder|Repetitive hair pulling with failed attempts to stop.
+B|Pelvic splanchnic nerves|neuro,anatomy,repro|Pelvic splanchnic nerve damage causes|Erectile dysfunction|Ejaculatory failure only|Parasympathetic S2-S4 mediate erection.
+B|Retinopathy of prematurity|eye,peds|Retinopathy of prematurity is caused by|Excess supplemental oxygen|Sustained hypoxia alone|Abolishes the VEGF gradient, then causes abnormal neovascularization.
+B|Fluoroquinolones|micro,pharm|Ciprofloxacin covers which organism particularly well?|Pseudomonas aeruginosa|Streptococcus pneumoniae|Respiratory quinolones like levofloxacin cover pneumococcus better.
+B|Beta-2 agonists|resp,pharm|The classic side effect of inhaled beta-2 agonists is|Tremor|Bradycardia|Also tachycardia and hypokalemia.
+B|Squamous cell lung cancer|resp,oncology|Squamous cell lung cancer is characteristically|Central and cavitating|Peripheral and solid|Adenocarcinoma is the commonest and is peripheral.
+B|Liver and coagulation|GI,heme,liver|Liver failure prolongs PT because the liver makes|Clotting factors|Platelets|Factor VII falls first; platelets come from megakaryocytes.
+B|Erythromycin eye ointment|micro,peds,eye|Neonatal ocular prophylaxis prevents|Gonococcal conjunctivitis|Chlamydial pneumonia|Inhibits bacterial protein synthesis; given at birth.
+G|Intrinsic apoptosis|path,cell death|Mitochondrial apoptosis begins with release of ___ c|cytochrome|cytochrome|BAX and BAK permeabilize the outer membrane; BCL-2 blocks it.
+B|Struvite stones|renal,stones,micro|Struvite staghorn calculi are caused by|Proteus mirabilis|Escherichia coli|Urease splits urea and alkalinizes urine; surgery is usually needed.
+B|Hydroxyurea|heme,pharm|Hydroxyurea helps sickle cell disease by raising|Hemoglobin F|Hemoglobin A2|Fetal hemoglobin inhibits polymerization of HbS.
+B|Fetal alcohol syndrome|repro,OB,neuro|Fetal alcohol syndrome causes|Microcephaly with a smooth philtrum|Limb reduction with normal facies|The commonest preventable cause of intellectual disability.
+B|Fetal alcohol syndrome|neuro,embryology|Alcohol damages the fetal brain by impairing|Neuronal migration|Neural tube closure|Causing microcephaly and structural malformations.

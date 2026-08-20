@@ -1,0 +1,59 @@
+# Biostatistics second pass, epidemiology and ethics. Gap-weighted.
+
+# ── Study design, deeper ─────────────────────────────────────────────────
+G|Ecological study|biostats,epidemiology|An ecological study uses ___-level rather than individual data|population|population,group,aggregate|Risking the ecological fallacy.
+B|Ecological fallacy|biostats,epidemiology|The ecological fallacy is|Inferring individual risk from group data|Ignoring confounders in a cohort study|A classic error in population comparisons.
+G|Nested case-control|biostats,epidemiology|A ___ case-control study draws cases and controls from within a cohort|nested|nested|Efficient when specimens are already stored.
+B|Crossover trial limitation|biostats|Crossover trials are unsuitable when|The condition is curable or progressive|The disease is chronic and stable|Carryover effects also limit them.
+G|Cluster randomization|biostats|___ randomization allocates groups rather than individuals|Cluster|cluster|Used when contamination between individuals is likely.
+B|Pragmatic trial|biostats|A pragmatic trial prioritizes|Real-world applicability|Tight internal validity|Explanatory trials do the reverse.
+G|External validity|biostats|___ validity describes how well results apply beyond the study sample|External|external|Also called generalizability.
+B|Surrogate endpoint|biostats,pharm|A surrogate endpoint is risky because|It may not predict clinical benefit|It is harder to measure reliably|Antiarrhythmics suppressing ectopics increased mortality.
+G|Composite endpoint|biostats|A ___ endpoint combines several outcomes, which can obscure the driver|composite|composite|Often driven by the least important component.
+B|Number needed to screen|biostats,epidemiology|Number needed to screen is usually|Much larger than number needed to treat|Similar to number needed to treat|Because most screened people are healthy.
+
+# ── Statistical concepts, deeper ─────────────────────────────────────────
+G|Normal distribution|biostats|In a normal distribution, mean, median and mode are ___|equal|equal,the same,identical|Skew separates them.
+B|Skewed data|biostats|Skewed data are best summarized with|Median and interquartile range|Mean and standard deviation|And analysed with non-parametric tests.
+G|Non-parametric test|biostats|The ___-Whitney U test compares two independent non-normal groups|Mann|mann|The paired equivalent is Wilcoxon signed-rank.
+B|Paired data|biostats|Before-and-after measurements in the same subjects require|A paired test|An unpaired test|Ignoring pairing wastes statistical power.
+G|Regression|biostats|___ regression is used when the outcome is binary|Logistic|logistic|Linear regression suits continuous outcomes.
+B|Multivariable analysis|biostats,epidemiology|Multivariable regression is used mainly to|Adjust for confounding|Prove causation|Residual confounding always remains possible.
+G|Survival analysis|biostats,oncology|___-Meier curves display survival over time with censoring|Kaplan|kaplan|Compared with the log-rank test.
+B|Hazard ratio|biostats|A hazard ratio describes|Relative event rate over time|Absolute survival difference|Assuming proportional hazards.
+G|Interim analysis|biostats,ethics|A trial may be stopped early for benefit, harm or ___|futility|futility|Judged by an independent monitoring committee.
+B|Multiple testing|biostats|Testing many outcomes without correction|Inflates false positive findings|Reduces statistical power only|Bonferroni is one correction method.
+
+# ── Epidemiology applied ─────────────────────────────────────────────────
+G|Outbreak investigation|biostats,epidemiology,micro|An outbreak investigation begins with confirming the ___ and case definition|diagnosis|diagnosis,outbreak|Then describing person, place and time.
+B|Epidemic curve|biostats,epidemiology|A sharp single-peak epidemic curve suggests|A point source outbreak|Person-to-person spread|Propagated outbreaks show successive waves.
+G|Basic reproduction number|biostats,epidemiology,micro|An outbreak grows when R is above ___|1|1,one|Control measures aim to push it below one.
+B|Case fatality versus mortality rate|biostats,epidemiology|Case fatality rate uses which denominator?|People with the disease|The whole population|Mortality rate uses the population.
+G|Standardization|biostats,epidemiology|Age ___ allows fair comparison of populations with different age structures|standardization|standardization,standardisation,adjustment|Crude rates can mislead badly.
+B|Life expectancy|biostats,epidemiology|Life expectancy at birth is most influenced by|Infant and child mortality|Care of the very elderly|Which is why it rose so sharply historically.
+G|Years of life lost|biostats,epidemiology|DALYs combine years of life lost with years lived with ___|disability|disability|Capturing both mortality and morbidity.
+B|Herd immunity limits|biostats,epidemiology,vaccines|Herd immunity does not protect against|Tetanus|Measles|Tetanus is acquired from the environment, not people.
+
+# ── Evidence and appraisal ───────────────────────────────────────────────
+G|Levels of evidence|biostats|A systematic review of randomized trials sits at the ___ of the evidence hierarchy|top|top,highest|Expert opinion sits at the bottom.
+B|Systematic review versus narrative|biostats|A systematic review differs by having|A prespecified protocol and search strategy|A larger number of contributing authors|Reducing selection bias.
+G|Heterogeneity|biostats|Statistical ___ in a meta-analysis is quantified by I-squared|heterogeneity|heterogeneity|High values question pooling the results.
+B|Forest plot|biostats|In a forest plot, a confidence interval crossing the line of no effect means|That study was not significant|The study was invalid|The diamond shows the pooled estimate.
+G|GRADE|biostats|The ___ system rates certainty of evidence from high to very low|GRADE|grade|Considering risk of bias, imprecision and indirectness.
+B|Critical appraisal|biostats|The first question in appraising any study is|Whether the question is clear and relevant|Whether the p value reaches significance|Method follows question.
+
+# ── Ethics, deeper ───────────────────────────────────────────────────────
+G|Four principles|ethics|The four principles are autonomy, beneficence, non-maleficence and ___|justice|justice|A framework, not an algorithm.
+B|Best interests|ethics|For an adult lacking capacity, decisions are made|In their best interests, considering prior wishes|By the treating doctor acting on their own|Involving family and any advocate.
+G|Lasting power of attorney|ethics|A health and welfare ___ can make decisions when capacity is lost|attorney|attorney,power of attorney,lpa|If validly registered for that purpose.
+B|Gillick competence|ethics,peds|Gillick competence allows|A mature minor to consent to treatment|A parent to override a competent teenager|Assessed for the specific decision.
+G|Duty of candour|ethics,safety|The duty of ___ requires open disclosure when something goes wrong|candour|candour,candor|Including an apology and explanation.
+B|Whistleblowing|ethics,safety|A clinician with serious patient safety concerns should|Escalate through proper channels|Stay silent to protect colleagues|Protection exists for good-faith reporting.
+G|Organ donation|ethics|Deceased organ donation requires confirmation of ___ death or circulatory death|brain|brain,brainstem|With strict independent testing.
+B|Living donation|ethics,transplant|Living organ donation requires|Independent assessment for coercion and reward|Consent from the donor and recipient|Payment for organs is prohibited.
+G|Resource allocation|ethics,health systems|Rationing decisions should be transparent, consistent and ___|accountable|accountable,fair,justifiable|Accountability for reasonableness.
+B|Triage in disaster|ethics,emergency|Disaster triage shifts the goal to|The greatest good for the greatest number|Treating the sickest patients first|A deliberate departure from usual practice.
+G|Cultural competence|ethics,clinical|Cultural humility means recognizing the limits of your own ___|perspective|perspective,knowledge,assumptions|And asking rather than assuming.
+B|Interpreters|ethics,safety|Using a child as an interpreter is|Inappropriate except in emergencies|Acceptable if the family prefers|It burdens the child and risks error.
+G|Truth telling|ethics|Where a patient asks directly, information should not be ___|withheld|withheld,concealed,hidden|Therapeutic privilege is rarely justified.
+B|Refusal of blood products|ethics|A competent Jehovah's Witness refusing blood|Must have that refusal respected|Can be transfused in an emergency|Even if death results.

@@ -1,0 +1,82 @@
+# Neurology — depth pass. Gap-weighted, several angles per topic.
+
+# ── Stroke ───────────────────────────────────────────────────────────────
+G|Ischemic stroke|neuro,stroke,pharm|Thrombolysis is given within ___ hours of stroke onset|4.5|4.5,4·5,45,four and a half|Thrombectomy extends the window for large vessel occlusion.
+B|Ischemic stroke|neuro,stroke,imaging|The first imaging in suspected stroke is|Non-contrast CT|MRI with contrast|To exclude hemorrhage before thrombolysis.
+G|Cerebral edema|neuro,stroke,path|Cytotoxic edema after stroke peaks at ___ days|3|3,3-5,three|Which is when herniation risk is highest.
+B|Watershed infarct|neuro,stroke,vascular|Watershed infarcts follow|Systemic hypotension|A cardiac embolism|Bilateral proximal arm weakness — the man-in-a-barrel pattern.
+G|Lacunar stroke|neuro,stroke,vascular|Lacunar strokes affect the ___ arteries|lenticulostriate|lenticulostriate,penetrating,small penetrating|Branches of the middle cerebral artery.
+B|Wallenberg syndrome|neuro,stroke,anatomy|Lateral medullary syndrome is caused by occlusion of the|Posterior inferior cerebellar artery|Anterior spinal artery branches|Ipsilateral facial and contralateral body sensory loss.
+G|Wallenberg syndrome|neuro,stroke|Lateral medullary syndrome causes ___ syndrome on the same side|Horner|horner,horner's|Plus dysphagia, hoarseness and vertigo.
+B|Locked-in syndrome|neuro,stroke,anatomy|Locked-in syndrome results from a lesion of the|Ventral pons|Medulla|Only vertical gaze and blinking remain.
+
+# ── Hemorrhage ───────────────────────────────────────────────────────────
+G|Hypertensive hemorrhage|neuro,vascular|Hypertensive intracerebral hemorrhage most often strikes the ___|putamen|putamen,basal ganglia|From Charcot-Bouchard microaneurysms.
+B|Subarachnoid hemorrhage|neuro,emergency,lab|If CT is negative but suspicion is high, the next step is|Lumbar puncture for xanthochromia|MRI brain with contrast enhancement|Xanthochromia appears after several hours.
+G|Cerebral amyloid angiopathy|neuro,vascular,aging|Amyloid angiopathy causes recurrent ___ hemorrhages in the elderly|lobar|lobar|Unlike hypertensive bleeds, which are deep.
+
+# ── Demyelination ────────────────────────────────────────────────────────
+G|Multiple sclerosis|neuro,immuno,lab|CSF in multiple sclerosis shows oligoclonal ___|bands|bands,band|Intrathecal IgG synthesis.
+B|Multiple sclerosis|neuro,immuno,eye|Optic neuritis in MS causes|Pain on eye movement with vision loss|Painless sudden total blindness|A common first presentation.
+G|Multiple sclerosis|neuro,immuno|Heat worsening MS symptoms is called ___ phenomenon|Uhthoff|uhthoff,uhthoff's|Demyelinated axons conduct worse when warm.
+B|Multiple sclerosis|neuro,pharm|Acute MS relapse is treated with|High-dose corticosteroids|Interferon beta injections|Interferon and other agents prevent relapses rather than treat them.
+G|Central pontine myelinolysis|neuro,electrolytes|Central pontine myelinolysis follows rapid correction of ___|hyponatremia|hyponatremia,sodium,low sodium|Now called osmotic demyelination syndrome.
+B|Progressive multifocal leukoencephalopathy|neuro,virus,HIV|PML lesions characteristically|Do not enhance and lack mass effect|Ring-enhance with surrounding edema|Which distinguishes them from toxoplasmosis and lymphoma.
+
+# ── Neuromuscular ────────────────────────────────────────────────────────
+G|Myasthenia gravis|neuro,NMJ,pharm|Myasthenia gravis is treated symptomatically with ___|pyridostigmine|pyridostigmine|An acetylcholinesterase inhibitor. Thymectomy may help.
+B|Myasthenic crisis|neuro,NMJ,emergency|Myasthenic crisis is managed with|Plasma exchange or IVIG|Increased pyridostigmine|Watch forced vital capacity, not oxygen saturation.
+G|Lambert-Eaton syndrome|neuro,NMJ,oncology|Lambert-Eaton antibodies target presynaptic ___ channels|calcium|calcium,ca,voltage-gated calcium|Reducing acetylcholine release.
+B|Botulism|neuro,micro,NMJ|Botulinum toxin cleaves|SNARE proteins|Acetylcholine receptors|Blocking vesicle fusion and acetylcholine release.
+G|Guillain-Barre syndrome|neuro,immuno,lab|CSF in Guillain-Barre shows albuminocytologic ___|dissociation|dissociation|High protein with normal cell count.
+B|Guillain-Barre syndrome|neuro,immuno,pharm|Guillain-Barre is treated with|IVIG or plasma exchange|Corticosteroids|Steroids do not help and may harm.
+B|Amyotrophic lateral sclerosis|neuro,motor|ALS characteristically spares|Eye movements and sphincters|Sensation and deep reflexes|Also spares cognition in most patients.
+G|Amyotrophic lateral sclerosis|neuro,pharm|The only drug shown to prolong survival in ALS is ___|riluzole|riluzole|A glutamate antagonist; the benefit is modest.
+
+# ── Movement disorders ───────────────────────────────────────────────────
+G|Parkinson disease|neuro,movement,path|Lewy bodies are aggregates of alpha-___|synuclein|synuclein,synucleine|Found in the substantia nigra.
+B|Parkinson disease|neuro,movement|The earliest motor sign of Parkinson disease is often|Reduced arm swing|Postural instability|Bradykinesia, rigidity and rest tremor follow.
+G|Parkinson disease|neuro,pharm|Carbidopa is added to levodopa because it does not cross the ___ barrier|blood-brain|blood-brain,blood brain,bbb|So it blocks peripheral breakdown only, letting more reach the brain.
+B|Levodopa|neuro,pharm,movement|Long-term levodopa causes|Dyskinesias and wearing off|Progressive bradykinesia only|Which is why young patients may start on an agonist.
+G|Huntington disease|neuro,genetics,movement|Huntington disease causes atrophy of the ___ nucleus|caudate|caudate|Box-car ventricles on imaging.
+B|Huntington disease|neuro,genetics|Huntington disease shows anticipation when inherited from the|Father|Mother|Paternal transmission expands CAG repeats more.
+G|Wilson disease|neuro,genetics,movement|Wilson disease shows a low serum ___|ceruloplasmin|ceruloplasmin|With high urinary copper and Kayser-Fleischer rings.
+B|Essential tremor|neuro,movement,pharm|Essential tremor is treated with|Propranolol or primidone|Levodopa or an agonist|It improves with alcohol and worsens with action.
+G|Tardive dyskinesia|neuro,pharm,movement|Tardive dyskinesia is treated with a VMAT ___ inhibitor|2|2,two,vmat2|Valbenazine or tetrabenazine.
+B|Restless legs syndrome|neuro,movement,heme|Restless legs syndrome warrants checking|Serum ferritin|Serum calcium|Iron deficiency is a common reversible cause.
+
+# ── Seizures ─────────────────────────────────────────────────────────────
+G|Status epilepticus|neuro,emergency,pharm|After benzodiazepines, the next drug in status epilepticus is ___|levetiracetam|levetiracetam,fosphenytoin,valproate|Levetiracetam, fosphenytoin or valproate are all acceptable.
+B|Febrile seizure|neuro,peds|A simple febrile seizure requires|Reassurance and antipyretics|Long-term antiepileptics|Under 15 minutes, generalized, once in 24 hours.
+G|Temporal lobe epilepsy|neuro,epilepsy|Temporal lobe seizures often begin with an ___, such as a strange smell|aura|aura|Plus lip smacking and postictal confusion.
+B|Juvenile myoclonic epilepsy|neuro,epilepsy|Juvenile myoclonic epilepsy is characterized by|Morning myoclonic jerks|Nocturnal tonic seizures|Valproate or levetiracetam; often lifelong.
+G|Infantile spasms|neuro,peds,epilepsy|West syndrome shows ___ on electroencephalogram|hypsarrhythmia|hypsarrhythmia|Treated with ACTH or vigabatrin.
+
+# ── Headache ─────────────────────────────────────────────────────────────
+G|Migraine|neuro,headache,pharm|Acute migraine is treated with a ___, a 5-HT1B/1D agonist|triptan|triptan,triptans,sumatriptan|Contraindicated in coronary disease.
+B|Migraine prophylaxis|neuro,headache,pharm|Migraine prophylaxis includes|Propranolol and topiramate|Sumatriptan daily|Also amitriptyline and CGRP antagonists.
+G|Cluster headache|neuro,headache,pharm|Acute cluster headache responds to high-flow ___|oxygen|oxygen,o2|Plus subcutaneous sumatriptan.
+B|Idiopathic intracranial hypertension|neuro,headache|Idiopathic intracranial hypertension classically affects|Obese young women|Elderly men|Papilledema with normal imaging; treat with acetazolamide.
+G|Trigeminal neuralgia|neuro,headache,pharm|Trigeminal neuralgia is treated first with ___|carbamazepine|carbamazepine|Lancinating facial pain triggered by touch.
+B|Temporal arteritis|neuro,headache,emergency|Suspected temporal arteritis requires|Immediate steroids before biopsy|Biopsy before any steroids|Delay risks permanent blindness.
+
+# ── Infection ────────────────────────────────────────────────────────────
+B|Bacterial meningitis|neuro,micro,pharm|Dexamethasone in bacterial meningitis is given|Before or with the first antibiotic dose|After the first 24 hours of treatment|It reduces hearing loss in pneumococcal meningitis.
+G|Meningitis|neuro,micro,exam|Passive neck flexion causing hip flexion is ___ sign|Brudzinski|brudzinski,brudzinski's|Kernig is resistance to knee extension.
+B|Brain abscess|neuro,micro,imaging|A brain abscess on imaging appears as|A ring-enhancing lesion|A diffuse infiltrate|Ring enhancement also occurs in toxoplasmosis and metastases.
+G|Neurocysticercosis|neuro,parasite|Neurocysticercosis is the commonest cause of adult-onset ___ worldwide|epilepsy|epilepsy,seizures|Cystic lesions with calcification.
+B|Creutzfeldt-Jakob disease|neuro,path,dementia|Creutzfeldt-Jakob disease causes|Rapidly progressive dementia with myoclonus|Slow decline over many years with tremor|Spongiform change; 14-3-3 protein in CSF.
+
+# ── Neuro-oncology ───────────────────────────────────────────────────────
+B|Glioblastoma|neuro,oncology,path|Glioblastoma histology shows|Pseudopalisading necrosis|Psammoma body whorls|Crosses the corpus callosum as a butterfly lesion.
+G|Meningioma|neuro,oncology,path|Meningiomas show whorls and ___ bodies|psammoma|psammoma|Benign, dural-based, commoner in women.
+B|Medulloblastoma|neuro,oncology,peds|Medulloblastoma arises in the|Cerebellum|Frontal lobe|Commonest malignant brain tumour of childhood; drop metastases.
+G|Pilocytic astrocytoma|neuro,oncology,peds|Pilocytic astrocytoma shows ___ fibres on histology|Rosenthal|rosenthal|A cystic cerebellar lesion with a mural nodule. Good prognosis.
+B|Schwannoma|neuro,oncology,path|Schwannomas stain positive for|S-100|GFAP|GFAP marks astrocytic tumours instead.
+B|Brain metastases|neuro,oncology|Brain metastases characteristically sit|At the grey-white junction|Deep within the brainstem|Multiple lesions favour metastasis over a primary tumour.
+
+# ── Autonomic and misc ───────────────────────────────────────────────────
+G|Horner syndrome|neuro,autonomic,oncology|A Pancoast tumour causes Horner syndrome by compressing the ___ ganglion|stellate|stellate,cervical sympathetic|Apical lung tumour with arm pain.
+B|Syncope|neuro,cardio|Syncope during exertion suggests|A cardiac cause|Vasovagal syncope|Aortic stenosis or hypertrophic cardiomyopathy until excluded.
+G|Normal pressure hydrocephalus|neuro,CSF,pharm|NPH may improve after a large-volume lumbar ___|puncture|puncture,tap,drainage|Which also predicts response to shunting.
+B|Pseudotumor versus tumour|neuro,imaging|Papilledema with completely normal imaging suggests|Idiopathic intracranial hypertension|A small posterior fossa mass lesion|Confirm with a raised opening pressure.

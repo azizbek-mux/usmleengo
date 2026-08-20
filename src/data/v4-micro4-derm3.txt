@@ -1,0 +1,55 @@
+# Microbiology fourth pass and dermatology third pass. Gap-weighted.
+
+# ── Antibiotic selection by syndrome ─────────────────────────────────────
+G|Community pneumonia|micro,resp,pharm|Mild community-acquired pneumonia is treated with ___|amoxicillin|amoxicillin,amoxycillin,doxycycline|Adding a macrolide if atypical cover is needed.
+B|Hospital pneumonia|micro,resp,pharm|Hospital-acquired pneumonia needs cover for|Pseudomonas and resistant gram negatives|Atypical organisms and anaerobes|Piperacillin-tazobactam or a carbapenem.
+G|Cellulitis|micro,derm,pharm|Non-purulent cellulitis is treated with a ___-active antibiotic|streptococcal|streptococcal,strep|Flucloxacillin or cefalexin.
+B|Diabetic foot infection|micro,endocrine,pharm|Moderate diabetic foot infection needs cover for|Gram positives, negatives and anaerobes|Gram positive skin organisms only|Often polymicrobial.
+G|Meningitis empirical|micro,neuro,pharm|Empirical meningitis therapy in adults is ___ plus vancomycin|ceftriaxone|ceftriaxone,cefotaxime|Adding ampicillin for Listeria in the elderly.
+B|Endocarditis empirical|micro,cardio,pharm|Empirical native valve endocarditis therapy covers|Staphylococci, streptococci and enterococci|Gram negatives and anaerobic organisms|Usually vancomycin with gentamicin pending cultures.
+G|Intra-abdominal sepsis|micro,GI,pharm|Intra-abdominal sepsis requires ___ cover alongside gram negatives|anaerobic|anaerobic,anaerobe|Metronidazole or a beta-lactam-inhibitor combination.
+B|Urinary sepsis|micro,renal,pharm|Urosepsis is treated empirically with|A broad-spectrum beta-lactam|Oral nitrofurantoin alone|Nitrofurantoin does not reach tissue levels.
+G|Septic arthritis|micro,msk,pharm|Septic arthritis is treated with ___ plus joint drainage|flucloxacillin|flucloxacillin,vancomycin,antibiotics|Guided by Gram stain and local resistance.
+B|Neutropenic sepsis|micro,oncology,pharm|Empirical therapy in neutropenic sepsis must cover|Pseudomonas|Anaerobes only|Piperacillin-tazobactam or meropenem.
+
+# ── Zoonoses and vectors ─────────────────────────────────────────────────
+G|Brucellosis|micro,bacteria|Brucellosis is acquired from unpasteurized ___ and causes undulant fever|dairy|dairy,milk,cheese|Plus sacroiliitis and hepatosplenomegaly.
+B|Leptospirosis|micro,bacteria,renal|Leptospirosis is acquired from|Water contaminated with rat urine|Undercooked pork and wild boar|Weil disease adds jaundice and renal failure.
+G|Q fever|micro,bacteria,cardio|Q fever is caused by ___ burnetii from farm animals|Coxiella|coxiella|A cause of culture-negative endocarditis.
+B|Psittacosis|micro,bacteria,resp|Psittacosis is acquired from|Birds|Cattle|Chlamydia psittaci causing atypical pneumonia.
+G|Toxocariasis|micro,parasite,eye|Toxocara from dog faeces causes visceral larva migrans and ___ granuloma|ocular|ocular,eye,retinal|Mimicking retinoblastoma.
+B|Hydatid disease|micro,parasite,liver|Echinococcal liver cysts should NOT be|Aspirated without precaution|Treated with albendazole|Spillage risks anaphylaxis.
+G|Cysticercosis|micro,parasite,neuro|Neurocysticercosis follows ingestion of Taenia solium ___|eggs|eggs,ova|Eating larvae in pork gives intestinal tapeworm instead.
+B|Chagas disease|micro,parasite,cardio|Chagas disease causes|Dilated cardiomyopathy and megacolon|Restrictive cardiomyopathy|Transmitted by the reduviid bug.
+
+# ── Emerging and travel ──────────────────────────────────────────────────
+G|Enteric fever|micro,bacteria,GI|Enteric fever is diagnosed most sensitively with ___ culture|bone marrow|bone marrow,blood|Blood culture is more practical but less sensitive.
+B|Cholera treatment|micro,bacteria,GI|The mainstay of cholera treatment is|Aggressive rehydration|Antibiotics alone|Antibiotics shorten shedding but fluids save lives.
+G|Viral haemorrhagic fever|micro,virus,infection control|Suspected viral haemorrhagic fever requires strict ___ precautions|isolation|isolation,barrier,contact|And urgent public health notification.
+B|Zika virus|micro,virus,OB|Zika virus in pregnancy causes|Microcephaly and brain anomalies|Limb defects and cataracts|Sexual as well as vector transmission.
+G|Chikungunya|micro,virus,rheum|Chikungunya causes fever with prolonged ___ pain|joint|joint,arthralgia,arthritis|Which may persist for months.
+B|Melioidosis|micro,bacteria,resp|Melioidosis is acquired from|Soil and water in Southeast Asia|Animal bites in Southeast Asia|Burkholderia pseudomallei; the great mimicker.
+
+# ── Sterilization, resistance stewardship ────────────────────────────────
+G|Antimicrobial stewardship|micro,ethics,pharm|Stewardship aims to give the right drug, dose, duration and ___|route|route|Minimizing resistance and harm.
+B|De-escalation|micro,pharm|Antibiotic de-escalation means|Narrowing therapy once cultures return|Stopping all antibiotics at 48 hours|Reducing collateral damage.
+G|Duration of therapy|micro,pharm|Evidence increasingly supports ___ antibiotic courses for many infections|shorter|shorter,short|Five days for many pneumonias.
+B|Resistance emergence|micro,pharm|Antibiotic resistance is best limited by|Avoiding unnecessary prescriptions|Rotating antibiotics constantly|Selection pressure drives resistance.
+G|Colonization versus infection|micro,clinical|A positive culture without symptoms usually represents ___|colonization|colonisation,colonization|Treating it drives resistance without benefit.
+
+# ── Dermatology, third pass ──────────────────────────────────────────────
+G|Skin biopsy|derm,path|___ immunofluorescence is used to diagnose blistering disease|Direct|direct,dif|Detecting antibody bound in the skin.
+B|Dermoscopy|derm,oncology|Dermoscopy improves|Melanoma detection accuracy|Treatment outcomes directly|Reducing unnecessary excisions.
+G|Sun protection|derm,oncology|SPF measures protection against ___ radiation specifically|UVB|uvb,ultraviolet b|Broad-spectrum products also block UVA.
+B|Skin type|derm,oncology|Fitzpatrick type I skin|Always burns and never tans|Never burns and always tans|Highest skin cancer risk.
+G|Psoriasis triggers|derm,pharm|Beta blockers, lithium and ___ can trigger psoriasis|antimalarials|antimalarials,nsaids,hydroxychloroquine|Along with infection and steroid withdrawal.
+B|Psoriatic nail change|derm,rheum|Nail pitting and onycholysis in psoriasis predict|Psoriatic arthritis|Fungal infection|A useful clinical marker.
+G|Eczema herpeticum|derm,virus,emergency|Eczema herpeticum is disseminated ___ infection on eczematous skin|herpes simplex|herpes simplex,hsv,herpes|Painful punched-out erosions; needs urgent aciclovir.
+B|Topical steroid potency|derm,pharm|On the face, one should use|The lowest potency effective|The most potent available|Risking atrophy, telangiectasia and glaucoma.
+G|Topical steroid quantity|derm,pharm|Topical steroid quantity is measured in fingertip ___|units|units,unit,ftu|One unit covers about two adult palms.
+B|Chronic urticaria|derm,immuno,pharm|Chronic urticaria is treated with|High-dose non-sedating antihistamines|Long-term oral corticosteroids|Omalizumab if refractory.
+G|Hidradenitis suppurativa|derm,micro|Hidradenitis suppurativa affects ___ gland-bearing skin of the axillae and groin|apocrine|apocrine|Painful nodules, sinus tracts and scarring.
+B|Pyoderma gangrenosum|derm,surgery|Pyoderma gangrenosum ulcers|Worsen with surgical debridement|Heal faster with debridement|Pathergy; treat with immunosuppression.
+G|Erythroderma|derm,emergency|Erythroderma affecting over ___ percent of skin risks fluid loss and sepsis|90|90,ninety|A dermatological emergency.
+B|Drug reaction with eosinophilia|derm,pharm,immuno|DRESS syndrome typically begins|Two to eight weeks after starting the drug|Within hours of the first dose given|Fever, rash, eosinophilia and organ involvement.
+G|Leg ulcer assessment|derm,vascular|Every leg ulcer needs an ankle-brachial ___ before compression|index|index,pressure index,abpi|Compression on an ischemic limb causes necrosis.

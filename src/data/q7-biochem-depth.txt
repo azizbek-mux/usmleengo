@@ -1,0 +1,78 @@
+# Biochemistry and nutrition — depth pass. Gap-weighted.
+
+# ── Glycolysis and gluconeogenesis ───────────────────────────────────────
+G|Glycolysis|biochem,metabolism|Glycolysis yields a net of ___ ATP per glucose|2|2,two|Plus 2 NADH.
+B|Hexokinase versus glucokinase|biochem,metabolism|Glucokinase differs from hexokinase by having|A high Km and no product inhibition|A low Km with strong product inhibition|It acts as the liver glucose sensor.
+G|Pyruvate kinase|biochem,metabolism|Pyruvate kinase is activated by fructose-1,6-___|bisphosphate|bisphosphate,biphosphate,bp|Feed-forward activation from upstream.
+B|Anaerobic glycolysis|biochem,metabolism|Lactate production regenerates|NAD+|ATP|Allowing glycolysis to continue without oxygen.
+G|Cori cycle|biochem,metabolism,liver|The Cori cycle shuttles ___ from muscle to liver for gluconeogenesis|lactate|lactate,lactic acid|Costing the liver 6 ATP per glucose made.
+B|Gluconeogenesis substrates|biochem,metabolism|Which CANNOT be used for gluconeogenesis?|Acetyl-CoA from fatty acids|Lactate from anaerobic muscle|Which is why fat cannot become glucose.
+G|Gluconeogenesis|biochem,metabolism|Pyruvate carboxylase requires the vitamin ___|biotin|biotin,b7|Converting pyruvate to oxaloacetate in mitochondria.
+
+# ── TCA and oxidative phosphorylation ────────────────────────────────────
+G|Citric acid cycle|biochem,metabolism|One turn of the TCA cycle produces 3 NADH, 1 FADH2 and 1 ___|GTP|gtp|Plus 2 CO2.
+B|Rate-limiting TCA enzyme|biochem,metabolism|The rate-limiting enzyme of the TCA cycle is|Isocitrate dehydrogenase|Citrate synthase|Inhibited by ATP and NADH.
+G|Electron transport|biochem,metabolism|The final electron acceptor in the respiratory chain is ___|oxygen|oxygen,o2|Forming water at complex IV.
+B|Cyanide|biochem,toxicology,metabolism|Cyanide blocks|Complex IV|Complex I|Also blocked by carbon monoxide and azide.
+G|Uncouplers|biochem,metabolism|Uncouplers such as dinitrophenol dissipate the proton ___|gradient|gradient|Producing heat instead of ATP.
+B|Brown fat|biochem,metabolism,peds|Brown adipose tissue generates heat using|Thermogenin (UCP1)|ATP synthase|A physiological uncoupler in neonates.
+G|ATP yield|biochem,metabolism|Complete oxidation of one glucose yields about ___ ATP|32|32,30,30-32|Depending on the shuttle used.
+
+# ── Glycogen ─────────────────────────────────────────────────────────────
+G|Glycogen synthesis|biochem,metabolism|Glycogen synthase forms alpha-1,___ glycosidic bonds|4|4,four|Branching enzyme makes alpha-1,6 links.
+B|Glycogen phosphorylase|biochem,metabolism,pharm|Glycogen phosphorylase is activated by|Glucagon and epinephrine|Insulin and somatostatin|Via cAMP and protein kinase A.
+G|McArdle disease|biochem,genetics,msk|McArdle disease lacks muscle glycogen ___|phosphorylase|phosphorylase|Exercise intolerance with no rise in lactate.
+B|Von Gierke disease|biochem,genetics|Von Gierke disease causes|Severe fasting hypoglycemia with lactic acidosis|Exercise-induced cramps with normal glucose|Glucose-6-phosphatase deficiency; hepatomegaly.
+G|Pompe disease|biochem,genetics,cardio|Pompe disease causes ___ and early death from heart failure|cardiomegaly|cardiomegaly,cardiomyopathy|Lysosomal acid alpha-glucosidase deficiency.
+
+# ── Lipids ───────────────────────────────────────────────────────────────
+G|Fatty acid synthesis|biochem,metabolism|Fatty acid synthesis occurs in the ___ and requires NADPH|cytoplasm|cytoplasm,cytosol|Beta-oxidation happens in mitochondria.
+B|Acetyl-CoA carboxylase|biochem,metabolism|Acetyl-CoA carboxylase is the rate-limiting step of|Fatty acid synthesis|Beta-oxidation|Producing malonyl-CoA, which blocks carnitine shuttle entry.
+G|Beta-oxidation|biochem,metabolism|Long chain fatty acids enter mitochondria via the ___ shuttle|carnitine|carnitine|Deficiency causes hypoketotic hypoglycemia.
+B|MCAD deficiency|biochem,genetics,peds|MCAD deficiency presents with|Hypoketotic hypoglycemia after fasting|Ketoacidosis with a raised anion gap|Detected on newborn screening.
+G|Ketogenesis|biochem,metabolism,liver|Ketone bodies are synthesized in the ___|liver|liver|But the liver cannot use them, lacking thiophorase.
+B|Lipoproteins|biochem,lipids|Chylomicrons primarily transport|Dietary triglyceride|Cholesterol to tissues|LDL delivers cholesterol; HDL returns it.
+G|Lipoprotein lipase|biochem,lipids|Lipoprotein lipase is activated by apolipoprotein C-___|II|ii,2,c2,cii|Deficiency causes severe hypertriglyceridemia.
+B|Familial hypercholesterolemia|biochem,lipids,genetics|Familial hypercholesterolemia is caused by defective|LDL receptors|Lipoprotein lipase|Tendon xanthomas and early coronary disease.
+G|Cholesterol|biochem,lipids|Cholesterol is the precursor of bile acids, vitamin D and ___ hormones|steroid|steroid,steroids|Its ring structure cannot be broken down for energy.
+
+# ── Amino acids and urea ─────────────────────────────────────────────────
+G|Urea cycle|biochem,metabolism|The rate-limiting enzyme of the urea cycle is carbamoyl phosphate ___ I|synthetase|synthetase,synthase|Activated by N-acetylglutamate.
+B|Ornithine transcarbamylase deficiency|biochem,genetics|OTC deficiency is inherited in an|X-linked pattern|Autosomal recessive pattern|The commonest urea cycle disorder.
+G|Hyperammonemia|biochem,neuro,liver|Ammonia is neurotoxic partly by depleting ___-ketoglutarate|alpha|alpha,a,α|Impairing the TCA cycle in the brain.
+B|Essential amino acids|biochem,nutrition|Which is an essential amino acid?|Lysine|Alanine|PVT TIM HALL. Alanine is synthesized readily.
+G|Homocystinuria|biochem,genetics,vascular|Homocystinuria causes early ___ and lens dislocation|thrombosis|thrombosis,atherosclerosis,vascular disease|Downward lens dislocation, unlike Marfan.
+B|Homocystinuria|biochem,genetics,pharm|Some homocystinuria responds to high-dose|Vitamin B6|Vitamin B12|Cystathionine synthase uses pyridoxal phosphate.
+G|Alkaptonuria|biochem,genetics|Alkaptonuria causes dark urine and ___, blue-black cartilage pigment|ochronosis|ochronosis|Homogentisate oxidase deficiency.
+B|Maple syrup urine disease|biochem,genetics,peds|Maple syrup urine disease is treated by restricting|Branched chain amino acids|All protein permanently|Plus thiamine in some responsive forms.
+
+# ── Purines and pyrimidines ──────────────────────────────────────────────
+G|Purine synthesis|biochem,metabolism|The rate-limiting enzyme of de novo purine synthesis is ___ amidotransferase|PRPP|prpp,glutamine-prpp|Inhibited by the end products AMP and GMP.
+B|Adenosine deaminase deficiency|biochem,genetics,immuno|ADA deficiency causes|Severe combined immunodeficiency|Gout with urate nephropathy|Toxic dATP accumulates and kills lymphocytes.
+G|Lesch-Nyhan syndrome|biochem,genetics,neuro|Lesch-Nyhan causes self-___ and hyperuricemia|mutilation|mutilation,injury,harm|HGPRT deficiency; X-linked recessive.
+B|Orotic aciduria|biochem,genetics,heme|Hereditary orotic aciduria causes|Megaloblastic anemia not correcting with B12|Hemolytic anemia with a raised bilirubin|Treated with uridine.
+G|Methotrexate|biochem,pharm,oncology|Methotrexate inhibits ___ reductase, blocking thymidine synthesis|dihydrofolate|dihydrofolate,dhfr|Rescued by leucovorin.
+B|5-fluorouracil|biochem,pharm,oncology|5-fluorouracil inhibits|Thymidylate synthase|Dihydrofolate reductase|Rescued by thymidine, not leucovorin.
+
+# ── Molecular biology ────────────────────────────────────────────────────
+G|Transcription|biochem,genetics|RNA polymerase ___ makes messenger RNA in eukaryotes|II|ii,2|Inhibited by alpha-amanitin from death cap mushrooms.
+B|Promoter|biochem,genetics|The TATA box is located|Upstream of the transcription start site|Within the first intron of the gene|Where the transcription complex assembles.
+G|RNA processing|biochem,genetics|Eukaryotic mRNA receives a 5-prime cap and a poly-___ tail|A|a,adenine,adenosine|Plus splicing to remove introns.
+B|Spliceosome|biochem,genetics,immuno|Antibodies against spliceosomal snRNPs are found in|Systemic lupus erythematosus|Rheumatoid arthritis|Anti-Smith antibodies.
+G|Translation|biochem,genetics|Translation initiation begins at the ___ codon AUG|start|start,initiation|Coding for methionine.
+B|Ribosome|biochem,genetics,micro|The prokaryotic ribosome is|70S, made of 50S and 30S|80S, made of 60S and 40S|Which is why antibiotics can target it selectively.
+G|Chaperones|biochem,cell biology|___ proteins assist correct folding, often using ATP|Chaperone|chaperone,chaperones,heat shock|Heat shock proteins are the classic example.
+B|Proteasome|biochem,cell biology|Bortezomib treats myeloma by inhibiting|The proteasome|The ribosome|Misfolded proteins accumulate and kill the cell.
+
+# ── Vitamins, deeper ─────────────────────────────────────────────────────
+G|Vitamin B12 absorption|biochem,vitamins,GI|Vitamin B12 binds intrinsic factor and is absorbed in the terminal ___|ileum|ileum|Which is why ileal resection causes deficiency.
+B|Vitamin B12 stores|biochem,vitamins|Body stores of vitamin B12 last about|Three to five years|Three weeks|Which is why deficiency develops slowly.
+G|Folate|biochem,vitamins,OB|Folate supplementation before conception prevents ___ tube defects|neural|neural|400 micrograms daily, higher if previously affected.
+B|Vitamin A toxicity|biochem,vitamins,neuro|Vitamin A excess causes|Pseudotumor cerebri and teratogenicity|Peripheral neuropathy and ataxia|Isotretinoin carries the same risks.
+G|Vitamin D activation|biochem,vitamins,renal|Vitamin D is 25-hydroxylated in the liver and 1-hydroxylated in the ___|kidney|kidney,kidneys|Stimulated by PTH and low phosphate.
+B|Vitamin E|biochem,vitamins,coagulation|High-dose vitamin E|Potentiates warfarin|Antagonizes warfarin|It interferes with vitamin K-dependent clotting factors.
+G|Vitamin K|biochem,vitamins,micro|Much of our vitamin K comes from ___ flora|gut|gut,intestinal,colonic|Which is why broad-spectrum antibiotics can prolong PT.
+B|Zinc deficiency|biochem,nutrition,derm|Zinc deficiency causes|Perioral rash, hypogonadism and poor healing|Night blindness with dry conjunctivae|Acrodermatitis enteropathica in the inherited form.
+G|Copper deficiency|biochem,nutrition,heme|Copper deficiency causes anemia and ___, mimicking B12 deficiency|myelopathy|myelopathy,neuropathy|May follow gastric bypass or excess zinc.
+B|Selenium|biochem,nutrition,cardio|Selenium deficiency causes|Keshan cardiomyopathy|Goitre and cretinism|An endemic problem in low-selenium regions.
+G|Iodine deficiency|biochem,nutrition,endocrine|Iodine deficiency is the commonest preventable cause of ___ disability worldwide|intellectual|intellectual,cognitive,mental|Through congenital hypothyroidism.

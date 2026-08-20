@@ -1,0 +1,89 @@
+# TRICKY — bulk batch. Confusable pairs, changed context, one step further.
+
+# ── Confusable pairs ─────────────────────────────────────────────────────
+BT|Nephritic vs nephrotic|renal|Which has RBC casts and hypertension?|Nephritic syndrome|Nephrotic syndrome|Nephrotic gives heavy proteinuria and oedema instead.
+BT|Type 1 vs type 2 RTA|renal,acid base|Which has urine pH ABOVE 5.5 despite acidosis?|Type 1 distal RTA|Type 2 proximal RTA|Proximal RTA can still acidify urine once bicarbonate is depleted.
+BT|Central vs peripheral vertigo|neuro,ENT|Which has vertical nystagmus?|Central vertigo|Peripheral vertigo|Peripheral gives horizontal, fatigable nystagmus.
+BT|Conductive vs sensorineural|ENT|In Rinne testing, bone conduction BETTER than air suggests|Conductive loss|Sensorineural loss|Normal and sensorineural both have air better than bone.
+BT|Delirium tremens vs Wernicke|neuro,psych|Which presents with ophthalmoplegia and ataxia rather than agitation?|Wernicke encephalopathy|Delirium tremens|Wernicke is thiamine deficiency; DTs is withdrawal.
+BT|Cluster vs trigeminal neuralgia|neuro,headache|Which is triggered by light touch to the face?|Trigeminal neuralgia|Cluster headache|Cluster is spontaneous with autonomic features.
+BT|Absence vs complex partial|neuro,epilepsy|Which has an aura and postictal confusion?|Complex partial seizure|Absence seizure|Absence has neither, with instant recovery.
+BT|UMN vs LMN facial palsy|neuro,cranial nerves|Forehead SPARING indicates|An upper motor neuron lesion|A lower motor neuron lesion|Bell palsy involves the whole half of the face.
+BT|Meningitis vs encephalitis|neuro,micro|Which presents with altered mental status rather than neck stiffness?|Encephalitis|Meningitis|Meningitis irritates the meninges; encephalitis affects the parenchyma.
+BT|Cauda equina vs conus medullaris|neuro,spinal cord|Which is asymmetric with radicular pain?|Cauda equina syndrome|Conus medullaris syndrome|Conus is symmetric with early bladder involvement.
+BT|Myopathy vs neuropathy|neuro,msk|Which causes PROXIMAL weakness with normal sensation?|Myopathy|Peripheral neuropathy|Neuropathy is distal with sensory loss.
+BT|Osteomyelitis vs cellulitis|msk,micro|Which shows periosteal reaction on x-ray?|Osteomyelitis|Cellulitis|MRI is more sensitive early.
+BT|Septic arthritis vs gout|msk,rheum|Which joint fluid has over 50,000 white cells with a positive Gram stain?|Septic arthritis|Acute crystal gout|Gout can also be very inflammatory, so always culture.
+BT|Reactive arthritis vs septic|msk,rheum,micro|Which follows an infection but has STERILE joint fluid?|Reactive arthritis|Septic arthritis|Cannot see, cannot pee, cannot climb a tree.
+BT|Polymyalgia vs polymyositis|msk,rheum|Which has stiffness WITHOUT true weakness or raised CK?|Polymyalgia rheumatica|Acute polymyositis|Polymyositis raises CK and causes real weakness.
+BT|Dermatomyositis vs lupus rash|derm,rheum|Which rash favours the knuckles rather than sparing them?|Dermatomyositis|Systemic lupus erythematosus|Gottron papules sit on knuckles; lupus spares them.
+BT|Cellulitis vs erysipelas|derm,micro|Which has a sharply demarcated raised border?|Erysipelas|Cellulitis|Erysipelas is more superficial, usually group A strep.
+BT|Psoriasis vs lichen planus|derm|Which has purple polygonal pruritic papules?|Lichen planus|Psoriasis|Wickham striae; psoriasis has silvery scale.
+BT|Pemphigus vs pemphigoid|derm,immuno|Which is Nikolsky POSITIVE?|Pemphigus vulgaris|Bullous pemphigoid|Intraepidermal split; pemphigoid splits subepidermally.
+BT|Melanoma vs basal cell|derm,oncology|Which metastasizes readily?|Melanoma|Basal cell carcinoma|Basal cell is locally invasive but rarely spreads.
+BT|Hypothyroid vs hyperthyroid|endocrine,thyroid|Which causes constipation and weight gain?|Hypothyroidism|Hyperthyroidism|Hyperthyroidism causes diarrhea and weight loss.
+BT|Hyperparathyroid vs malignancy|endocrine,calcium|Hypercalcemia with a SUPPRESSED PTH suggests|Hypercalcemia of malignancy|Primary hyperparathyroidism|Hyperparathyroidism has an inappropriately normal or high PTH.
+BT|Diabetes insipidus vs primary polydipsia|renal,endocrine|Which has a LOW serum sodium?|Primary polydipsia|Diabetes insipidus|DI loses water, so sodium rises.
+BT|Cushing vs metabolic syndrome|endocrine|Which causes proximal weakness and purple striae?|Cushing syndrome|Metabolic syndrome|Both give central obesity and glucose intolerance.
+BT|Type 1 vs type 2 diabetes|endocrine,diabetes|Which typically has a normal or high C-peptide?|Type 2 diabetes|Type 1 diabetes|Type 1 has absolute insulin deficiency.
+BT|Insulinoma vs sulfonylurea|endocrine,toxicology|Which is distinguished by a positive urine drug screen?|Sulfonylurea use|Insulinoma|Both raise insulin and C-peptide together.
+BT|Iron deficiency vs anemia of chronic disease|heme,anemia|Which has a HIGH total iron binding capacity?|Iron deficiency|Anemia of chronic disease|Chronic disease lowers TIBC and raises ferritin.
+BT|B12 vs folate deficiency|heme,vitamins|Which causes irreversible neurological damage if untreated?|B12 deficiency|Folate deficiency|Which is why folate alone can mask B12 deficiency dangerously.
+BT|Hemophilia A vs von Willebrand|heme,coagulation|Which improves with desmopressin?|Von Willebrand disease|Hemophilia B (Christmas)|Desmopressin releases stored vWF and factor VIII.
+BT|DIC vs liver failure|heme,coagulation,liver|Which has a LOW factor VIII level?|DIC|Liver failure|Factor VIII is made by endothelium, so liver failure spares it.
+BT|ITP vs TTP|heme,platelets|Which is treated with plasma exchange?|TTP|ITP|Platelet transfusion is harmful in TTP.
+BT|Polycythemia vera vs secondary|heme,oncology|Which has a raised red cell mass with LOW erythropoietin?|Polycythemia vera|Secondary polycythemia|Autonomous marrow suppresses EPO.
+BT|CML vs leukemoid reaction|heme,oncology,lab|Which has a LOW leukocyte alkaline phosphatase?|Chronic myeloid leukemia|A leukemoid reaction|Neoplastic neutrophils lack the enzyme.
+BT|Hodgkin vs non-Hodgkin|heme,oncology|Which is more likely to present with extranodal disease?|Non-Hodgkin lymphoma|Hodgkin lymphoma|Hodgkin spreads contiguously between node groups.
+BT|Myeloma vs bone metastases|heme,oncology,bone|Which has a NORMAL alkaline phosphatase?|Multiple myeloma|Osteoblastic metastases|Myeloma is purely lytic without osteoblastic response.
+BT|Asthma vs COPD|resp|Which shows a marked diurnal variation in peak flow?|Asthma|COPD|Asthma is variable and reversible.
+BT|Pneumonia vs pulmonary embolism|resp,vascular|Which typically has a normal chest x-ray despite hypoxia?|Pulmonary embolism|Lobar pneumonia|A clear film with severe hypoxia should raise suspicion.
+BT|Transudate vs exudate|resp,path|Which has a pleural to serum protein ratio above 0.5?|Exudate|Transudate|Any one Light criterion makes it exudative.
+BT|Emphysema vs asthma|resp,physiology|Which has a REDUCED diffusion capacity?|Emphysema|Asthma|Asthma preserves alveolar surface area.
+BT|Sarcoidosis vs tuberculosis|resp,immuno|Which typically has a NEGATIVE tuberculin skin test?|Sarcoidosis|Tuberculosis|Sarcoid causes cutaneous anergy.
+BT|Crohn vs ulcerative colitis|GI,IBD|Which is associated with smoking as a risk factor?|Crohn disease|Ulcerative colitis|Smoking is oddly protective in ulcerative colitis.
+BT|Crohn vs ulcerative colitis|GI,IBD,path|Which shows cobblestoning and creeping fat?|Crohn disease|Ulcerative colitis|UC shows pseudopolyps and a lead-pipe colon.
+BT|Gastric vs duodenal ulcer|GI,oncology|Which requires biopsy to exclude malignancy?|Gastric ulcer|Duodenal ulcer|Duodenal ulcers are almost never malignant.
+BT|Acute vs chronic pancreatitis|GI,pancreas|Which typically has NORMAL amylase and lipase?|Chronic pancreatitis|Acute pancreatitis|The gland is burnt out and cannot release enzymes.
+BT|Conjugated vs unconjugated|GI,liver|Which appears in the urine?|Conjugated bilirubin|Unconjugated bilirubin|Unconjugated is albumin-bound and water-insoluble.
+BT|Hepatitis A vs B|micro,virus,hepatitis|Which has NO chronic carrier state?|Hepatitis A|Hepatitis B|Faecal-oral, self-limiting, no chronicity.
+BT|Cholecystitis vs cholangitis|GI,micro|Which has jaundice and rigors?|Ascending cholangitis|Acute cholecystitis|Cholecystitis rarely causes jaundice.
+BT|Appendicitis vs mesenteric adenitis|GI,peds|Which typically follows a viral upper respiratory infection?|Mesenteric adenitis|Appendicitis|A common mimic in children.
+
+# ── Changed context ──────────────────────────────────────────────────────
+BT|Beta blocker in heart failure|cardio,pharm|In ACUTE decompensated heart failure, a beta blocker should be|Held or reduced|Started immediately|Start once euvolemic; they are chronic therapy.
+BT|Aspirin in gout|msk,rheum,pharm|Low-dose aspirin in a gout patient|Raises urate and can trigger a flare|Lowers urate and prevents attacks|Only high doses are uricosuric.
+BT|Steroids in septic arthritis|msk,micro|In septic arthritis, corticosteroids are|Not used before drainage|First-line before drainage|Drain the joint and give antibiotics.
+BT|Antibiotics in bronchiolitis|peds,resp,micro|In viral bronchiolitis, antibiotics are|Not indicated|Routine|Supportive care only unless secondary infection.
+BT|Antipyretics in febrile seizure|peds,neuro,pharm|Antipyretics in febrile seizures|Do not prevent recurrence|Prevent recurrence reliably|Give them for comfort, not prevention.
+BT|Oxygen in neonates|peds,resp,eye|Excess oxygen in a premature neonate risks|Retinopathy of prematurity|Kernicterus and deafness|Titrate saturations carefully.
+BT|Nitrofurantoin in pregnancy|micro,OB,pharm|Nitrofurantoin should be avoided|Near term, at 36 weeks onward|In the first trimester only|Risk of neonatal hemolysis.
+BT|Trimethoprim in pregnancy|micro,OB,pharm|Trimethoprim is avoided in|The first trimester|The third trimester|A folate antagonist; neural tube risk.
+BT|Tetracyclines in children|micro,peds,pharm|Tetracyclines in children under eight cause|Tooth discolouration|Cartilage damage|Fluoroquinolones affect cartilage instead.
+BT|Live vaccine after immunoglobulin|immuno,vaccines|Live vaccines given soon after immunoglobulin|May fail to take|Are more effective|Passive antibody neutralizes the vaccine virus.
+BT|Statin in pregnancy|pharm,OB,lipids|Statins in pregnancy are|Contraindicated|Continued|Cholesterol is essential for fetal development.
+BT|Metformin in heart failure|endocrine,pharm,cardio|Metformin in stable heart failure is|Acceptable|Contraindicated|Avoid only in unstable disease or renal failure.
+BT|ACE inhibitor with potassium|renal,pharm,electrolytes|Combining an ACE inhibitor with spironolactone risks|Dangerous hyperkalemia|Dangerous hypokalemia|Both retain potassium.
+BT|NSAID with warfarin|pharm,coagulation|Adding an NSAID to warfarin raises bleeding risk by|Displacing it from albumin and harming platelets|Slowing its hepatic metabolism and no more|Multiple mechanisms combine.
+BT|Antacid with iron|GI,heme,pharm|Antacids taken with iron|Reduce iron absorption|Improve absorption|Acid is needed to reduce iron to the ferrous form.
+BT|Calcium with levothyroxine|endocrine,pharm|Calcium taken with levothyroxine|Blocks its absorption|Enhances its absorption|Separate doses by four hours.
+BT|Beta blocker in thyroid storm|endocrine,pharm|In thyroid storm, propranolol is used because it|Also blocks T4 to T3 conversion|Directly blocks synthesis|An extra benefit beyond rate control.
+BT|Steroids before antibiotics|neuro,micro,pharm|In bacterial meningitis, dexamethasone is given|Before or with the first antibiotic|24 hours after antibiotics are started|Timing determines whether it helps.
+
+# ── One step further ─────────────────────────────────────────────────────
+BT|Aldosterone escape|renal,endocrine|Chronic aldosterone excess does NOT cause oedema because of|Aldosterone escape via natriuretic peptides|Reduced sodium delivery to the tubule|Which is why Conn syndrome presents without swelling.
+BT|Chronic hypoxia and hematocrit|resp,heme|Chronic lung disease raises hematocrit, which makes blood|More viscous and prone to thrombosis|Thinner and less prone to clotting|A reason for therapeutic venesection.
+BT|Cirrhosis and drug dosing|GI,liver,pharm|In cirrhosis, protein-bound drugs have|More free active drug|Less free drug|Low albumin leaves more unbound.
+BT|Nephrotic syndrome and drugs|renal,pharm|Nephrotic syndrome affects protein-bound drugs by|Increasing the free fraction|Reducing absorption|Albumin is lost in urine.
+BT|Splenectomy and platelets|heme,surgery|After splenectomy, thrombocytosis raises the risk of|Thrombosis|Bleeding|Consider aspirin if the count climbs very high.
+BT|Transfusion and citrate|heme,electrolytes|Massive transfusion causes tetany because citrate|Chelates calcium|Raises potassium|Give calcium during large transfusions.
+BT|Hyperventilation and calcium|neuro,electrolytes|Hyperventilation causes tetany because alkalosis|Increases calcium binding to albumin|Lowers the total calcium level|Ionized calcium falls while total stays normal.
+BT|Diuretics and lithium|psych,renal,pharm|Volume depletion from a diuretic makes lithium levels|Rise|Fall|The proximal tubule reabsorbs lithium with sodium.
+BT|Vomiting and urine chloride|GI,renal,acid base|Vomiting causes alkalosis with a urine chloride that is|Low|High|Chloride-responsive alkalosis corrects with saline.
+BT|Thyroid hormone and warfarin|endocrine,pharm,coagulation|Starting levothyroxine in a warfarinized patient|Increases the INR|Lowers the INR|Faster clotting factor turnover.
+BT|Obesity and lung volumes|resp,physiology|Obesity reduces which lung volume most?|Expiratory reserve volume|The residual volume|Abdominal mass splints the diaphragm.
+BT|Pregnancy and drug levels|OB,pharm,principles|Increased plasma volume in pregnancy makes many drug concentrations|Fall|Rise|Doses of antiepileptics often need increasing.
+BT|Ageing and drug clearance|pharm,aging,renal|In the elderly, a normal creatinine may still mean|Significantly reduced GFR|Normal renal function|Reduced muscle mass produces less creatinine.
+BT|Burns and fluid|derm,critical care|Large burns cause hypovolemia because of|Massive capillary leak|Blood loss from the wound|Fluid resuscitation is calculated by body surface area.
+BT|Crush injury and the kidney|renal,msk,emergency|Crush injury threatens the kidney through|Myoglobin released from muscle|Direct trauma to the kidney|Aggressive fluids and urine alkalinization.
+BT|Tumour lysis and the kidney|oncology,renal|Tumour lysis damages the kidney through|Uric acid and phosphate crystals|Direct tumour invasion of it|Prevented with hydration and rasburicase.

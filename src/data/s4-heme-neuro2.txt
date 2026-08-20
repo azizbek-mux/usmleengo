@@ -1,0 +1,66 @@
+# Haematology and neurology — second depth pass. Gap-weighted.
+
+# ── Transfusion medicine ─────────────────────────────────────────────────
+G|Blood groups|heme,immuno|Group ___ is the universal red cell donor|O|o,o negative,o neg|AB is the universal plasma donor.
+B|Acute hemolytic transfusion reaction|heme,immuno,emergency|Acute hemolytic reaction is usually caused by|ABO incompatibility from clerical error|Bacterial contamination of the unit|Fever, loin pain and haemoglobinuria; stop immediately.
+G|Febrile transfusion reaction|heme,immuno|Febrile non-hemolytic reactions come from donor ___ and cytokines|leukocytes|leukocytes,white cells,wbc|Reduced by leukodepletion.
+B|TRALI|heme,resp,immuno|Transfusion-related acute lung injury presents as|Non-cardiogenic pulmonary oedema within 6 hours|Fluid overload from excess transfusion|Donor antibodies against recipient neutrophils.
+B|TACO|heme,cardio|Transfusion-associated circulatory overload is distinguished from TRALI by|A raised BNP and response to diuretics|Fever with a neutrophil leucocytosis|Volume, not immune injury.
+G|Massive transfusion|heme,electrolytes|Massive transfusion causes hypocalcemia, hyperkalemia and ___|hypothermia|hypothermia|Warm the blood and monitor calcium.
+B|Cryoprecipitate|heme,coagulation|Cryoprecipitate is given mainly for|Low fibrinogen|Low platelets|It contains fibrinogen, factor VIII, vWF and factor XIII.
+G|Irradiated blood|heme,immuno,transplant|Irradiated products prevent transfusion-associated ___ disease|graft-versus-host|graft-versus-host,gvhd,graft versus host|For immunocompromised recipients.
+
+# ── Haemostasis, deeper ──────────────────────────────────────────────────
+G|Aspirin|heme,pharm,coagulation|Aspirin irreversibly acetylates ___ in platelets|COX-1|cox-1,cox1,cyclooxygenase|Lasting the platelet lifespan of about 10 days.
+B|Clopidogrel|heme,pharm,coagulation|Clopidogrel blocks|The P2Y12 ADP receptor|Glycoprotein IIb/IIIa|A prodrug requiring CYP2C19 activation.
+G|Abciximab|heme,pharm,coagulation|Abciximab blocks glycoprotein ___, the final common pathway of aggregation|IIb/IIIa|iib/iiia,2b/3a,gpiib/iiia|Used during coronary intervention.
+B|Tranexamic acid|heme,pharm,coagulation|Tranexamic acid works by|Inhibiting plasminogen activation|Activating clotting factors|An antifibrinolytic, useful in trauma and menorrhagia.
+G|Fibrinolysis|heme,physiology|Tissue plasminogen activator converts an inactive zymogen into the active enzyme ___|plasmin|plasmin|Which digests fibrin and dissolves formed clot.
+B|Protein C and S|heme,coagulation|Proteins C and S inactivate|Factors Va and VIIIa|Factors II and X|Vitamin K dependent, like the procoagulants.
+
+# ── Marrow and cytopenias ────────────────────────────────────────────────
+G|Neutropenia|heme,micro|Severe neutropenia is a neutrophil count below ___ per microlitre|500|500,0.5|Febrile neutropenia is a medical emergency.
+B|Febrile neutropenia|heme,micro,emergency|Febrile neutropenia requires antibiotics within|One hour|Six hours|Broad-spectrum, covering Pseudomonas.
+G|Pancytopenia|heme,path|Pancytopenia with a dry tap suggests ___|myelofibrosis|myelofibrosis|Or marrow infiltration; needs a trephine biopsy.
+B|Eosinophilia|heme,immuno|Marked eosinophilia suggests|Parasites, allergy, drugs or malignancy|Acute bacterial infection with abscess|Bacterial infection usually lowers eosinophils.
+G|Leukoerythroblastic film|heme,oncology,path|Nucleated red cells with immature white cells suggest marrow ___|infiltration|infiltration,replacement|From metastasis, fibrosis or severe stress.
+
+# ── Neurology: localization ──────────────────────────────────────────────
+G|Internal capsule|neuro,stroke,anatomy|A pure motor stroke localizes to the internal ___|capsule|capsule|A classic lacunar syndrome without cortical signs.
+B|Cortical signs|neuro,stroke|Which indicates a cortical rather than lacunar stroke?|Aphasia or neglect|Pure hemiparesis|Cortical signs imply large-vessel disease.
+G|Homonymous hemianopia|neuro,eye,stroke|A homonymous hemianopia localizes behind the optic ___|chiasm|chiasm|Bitemporal loss localizes at the chiasm.
+B|Macular sparing|neuro,eye,vascular|Macular sparing in a hemianopia suggests|Posterior cerebral artery occlusion|Optic nerve compression or disease|Dual blood supply to the occipital pole.
+G|Cerebellar signs|neuro,cerebellum|Cerebellar hemisphere lesions cause ___ limb ataxia|ipsilateral|ipsilateral,same side|Vermis lesions cause truncal ataxia.
+B|Frontal lobe|neuro,psych|Frontal lobe damage classically causes|Disinhibition and impaired judgement|Early loss of short-term memory|Personality change dominates.
+G|Temporal lobe|neuro,memory|Bilateral ___ lobe damage causes profound anterograde amnesia|temporal|temporal|Hippocampal involvement, as in herpes encephalitis.
+B|Parietal lobe|neuro,exam|Non-dominant parietal damage causes|Hemispatial neglect|Expressive aphasia|Dominant parietal gives Gerstmann syndrome.
+
+# ── Neurology: peripheral ────────────────────────────────────────────────
+G|Diabetic neuropathy|neuro,endocrine|Diabetic neuropathy classically produces a ___ and glove pattern|stocking|stocking|Longest axons affected first.
+B|Carpal tunnel|neuro,endocrine,msk|Carpal tunnel syndrome is associated with|Hypothyroidism, pregnancy and acromegaly|Hyperthyroidism and rheumatoid disease|Anything that causes swelling in the tunnel.
+G|Ulnar neuropathy|neuro,anatomy|Ulnar nerve compression at the elbow occurs at the cubital ___|tunnel|tunnel|Causing clawing of the fourth and fifth fingers.
+B|Sciatica|neuro,msk|An L5 radiculopathy causes weakness of|Great toe dorsiflexion|Plantarflexion|S1 affects plantarflexion and the ankle reflex.
+G|Charcot-Marie-Tooth|neuro,genetics|Charcot-Marie-Tooth causes distal wasting with ___ cavus feet|pes|pes|An inverted champagne bottle appearance.
+B|Mononeuritis multiplex|neuro,rheum|Mononeuritis multiplex suggests|Vasculitis or diabetes|A single nerve entrapment|Multiple named nerves affected asynchronously.
+
+# ── Neurology: cranial nerves ────────────────────────────────────────────
+G|Third nerve palsy|neuro,eye|A painful third nerve palsy with a dilated pupil suggests a posterior communicating ___|aneurysm|aneurysm|Compressive lesions hit the outer pupillary fibres first.
+B|Diabetic third nerve palsy|neuro,eye,endocrine|A diabetic third nerve palsy typically|Spares the pupil|Dilates the pupil|Microvascular ischemia affects the inner fibres.
+G|Fourth nerve palsy|neuro,eye|A fourth nerve palsy causes vertical diplopia worse on looking ___|down|down,downward,downwards|Patients tilt the head away from the lesion.
+B|Sixth nerve palsy|neuro,eye|A sixth nerve palsy causes|Failure of abduction|Failure of adduction|It has the longest intracranial course, so it is a false localizing sign.
+G|Internuclear ophthalmoplegia|neuro,eye|Internuclear ophthalmoplegia results from a lesion of the medial longitudinal ___|fasciculus|fasciculus,mlf|Classic in multiple sclerosis when bilateral.
+B|Bulbar versus pseudobulbar palsy|neuro,cranial nerves|Which has a spastic tongue and brisk jaw jerk?|Pseudobulbar palsy|Bulbar palsy|Bulbar palsy has a wasted fasciculating tongue.
+
+# ── Neurology: infection and inflammation ────────────────────────────────
+G|Herpes encephalitis|neuro,virus,lab|Herpes encephalitis is confirmed by CSF ___ for HSV DNA|PCR|pcr|Start aciclovir before results return.
+B|Cerebral abscess|neuro,micro,pharm|A cerebral abscess is treated with|Antibiotics plus drainage if large|Antibiotics alone in every case|Surgical drainage for lesions over about 2.5 cm.
+G|Neuromyelitis optica|neuro,immuno|Neuromyelitis optica has antibodies against ___-4|aquaporin|aquaporin,aqp|Optic neuritis with longitudinally extensive myelitis.
+B|Transverse myelitis|neuro,immuno|Transverse myelitis produces|A sensory level with bilateral weakness|Unilateral facial and arm weakness|An urgent MRI of the whole cord is needed.
+G|Chronic inflammatory demyelinating polyneuropathy|neuro,immuno|CIDP differs from Guillain-Barre by lasting more than ___ weeks|8|8,eight|And it responds to steroids, unlike GBS.
+
+# ── Neurology: sleep and autonomic ───────────────────────────────────────
+G|Narcolepsy|neuro,sleep|Sudden loss of muscle tone with emotion in narcolepsy is called ___|cataplexy|cataplexy|Pathognomonic when present.
+B|REM sleep behaviour disorder|neuro,sleep|REM sleep behaviour disorder often precedes|Parkinson disease and Lewy body dementia|Alzheimer disease and vascular dementia|A synucleinopathy marker, sometimes by years.
+G|Restless legs|neuro,sleep,pharm|Restless legs syndrome is treated with a dopamine ___ or gabapentinoid|agonist|agonist,agonists|After correcting iron deficiency.
+B|Autonomic failure|neuro,autonomic|Orthostatic hypotension WITHOUT a compensatory tachycardia suggests|Autonomic failure|Hypovolemia|The reflex tachycardia is lost.
+G|Multiple system atrophy|neuro,autonomic,movement|Multiple system atrophy combines parkinsonism with early ___ failure|autonomic|autonomic|Poor levodopa response distinguishes it.

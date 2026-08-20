@@ -1,0 +1,21 @@
+{
+  "name": "usmle-drops",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/compile.mjs && vite",
+    "build": "node tools/compile.mjs && vite build",
+    "preview": "vite preview",
+    "compile": "node tools/compile.mjs",
+    "build:single": "npm run build && node tools/build-single.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7"
+  }
+}

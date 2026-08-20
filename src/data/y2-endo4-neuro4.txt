@@ -1,0 +1,52 @@
+# Endocrine fourth pass and neurology fourth pass. Gap-weighted.
+
+# ── Endocrine physiology applied ─────────────────────────────────────────
+G|Hormone feedback|endocrine,physiology|Most endocrine axes are controlled by ___ feedback|negative|negative|Positive feedback is rare, as in the LH surge.
+B|Free versus total hormone|endocrine,lab|The biologically active fraction of a hormone is|The free fraction|The protein-bound fraction|Which is why binding protein changes mislead.
+G|Pulsatility|endocrine,physiology|___ secretion of GnRH is required for gonadotropin release|Pulsatile|pulsatile,pulsed|Continuous exposure suppresses the axis.
+B|Diurnal variation|endocrine,lab|Which hormone must be timed to the morning?|Cortisol|Prolactin|Testosterone is also best measured early.
+G|Stimulation versus suppression|endocrine,lab|___ tests are used when hormone excess is suspected|Suppression|suppression|Stimulation tests are used for suspected deficiency.
+B|Insulin tolerance test|endocrine,lab|The insulin tolerance test assesses|Growth hormone and cortisol reserve|Thyroid and parathyroid function|Contraindicated in epilepsy and cardiac disease.
+
+# ── Diabetes complications ───────────────────────────────────────────────
+G|Diabetic neuropathy pain|endocrine,neuro,pharm|Painful diabetic neuropathy is treated with ___ or duloxetine|amitriptyline|amitriptyline,gabapentin,pregabalin|Simple analgesics rarely help.
+B|Charcot foot|endocrine,msk,neuro|Charcot neuroarthropathy requires|Immediate offloading and immobilization|Weight-bearing exercise and physio|Continued walking destroys the joint.
+G|Diabetic retinopathy screening|endocrine,eye|Diabetic retinal screening should occur at least ___|annually|annually,yearly,every year|From diagnosis in type 2, from puberty in type 1.
+B|Diabetic gastroparesis|endocrine,GI|Diabetic gastroparesis makes glucose control harder because|Absorption becomes unpredictable|Insulin is destroyed in the gut|Causing post-meal hypoglycemia then hyperglycemia.
+G|Diabetic ketoacidosis resolution|endocrine,emergency,lab|DKA resolution is judged by ___ clearance and closing of the anion gap|ketone|ketone,ketones|Not by glucose alone.
+B|Hypoglycemia unawareness|endocrine,diabetes|Hypoglycemia unawareness can be partly reversed by|Avoiding hypoglycemia for several weeks|Tighter glucose control for weeks|Raising the threshold for symptoms again.
+
+# ── Thyroid and parathyroid applied ──────────────────────────────────────
+G|Thyroid emergencies|endocrine,emergency|Thyroid storm mortality remains high, so treatment starts on ___ suspicion|clinical|clinical|Not waiting for laboratory confirmation.
+B|Non-thyroidal illness|endocrine,lab,critical care|Thyroid function tests in critical illness should|Generally be avoided|Be done routinely|Sick euthyroid syndrome causes confusion.
+G|Hypercalcemic crisis|endocrine,emergency,electrolytes|Severe hypercalcemia is treated with saline, bisphosphonate and sometimes ___|calcitonin|calcitonin|Which works fast but tachyphylaxes.
+B|Primary hyperparathyroidism surgery|endocrine,surgery,calcium|Parathyroidectomy is indicated for|Symptoms, young age or marked hypercalcemia|Any confirmed biochemical diagnosis|Plus renal impairment or osteoporosis.
+G|Hypoparathyroidism treatment|endocrine,calcium,pharm|Hypoparathyroidism is treated with calcium and active vitamin ___|D|d,calcitriol,alfacalcidol|Plain vitamin D needs PTH for activation.
+
+# ── Adrenal, pituitary and gonadal applied ───────────────────────────────
+G|Adrenal insufficiency emergency|endocrine,emergency,pharm|Suspected adrenal crisis is treated with ___ before confirming the diagnosis|hydrocortisone|hydrocortisone,steroids|Take a cortisol sample first if it causes no delay.
+B|Steroid equivalent doses|endocrine,pharm|Prednisolone 5 mg is roughly equivalent to hydrocortisone|20 mg|5 mg|Dexamethasone 0.75 mg is similar.
+G|Pituitary imaging|endocrine,imaging,pituitary|The pituitary is best imaged with dedicated ___|MRI|mri|CT poorly resolves the sella.
+B|Hyperprolactinemia causes|endocrine,pharm,pituitary|Before diagnosing prolactinoma, exclude|Drugs, pregnancy and hypothyroidism|Diabetes and metabolic syndrome|Antipsychotics are a very common cause.
+G|Male hypogonadism|endocrine,repro,lab|Testosterone should be measured in the ___ when levels peak|morning|morning,am|Repeated to confirm before treating.
+B|Testosterone therapy risk|endocrine,repro,heme|Testosterone therapy requires monitoring for|Polycythemia|Anemia|Along with PSA and symptoms.
+
+# ── Neurology: acute and chronic care ────────────────────────────────────
+G|Stroke unit care|neuro,stroke,clinical|Admission to a specialist ___ unit reduces death and dependency|stroke|stroke|One of the most robust findings in medicine.
+B|Dysphagia after stroke|neuro,stroke,resp|Every stroke patient must have a swallow assessment because of|Aspiration risk|Malnutrition only|Keep nil by mouth until screened.
+G|Secondary stroke prevention|neuro,stroke,pharm|Secondary prevention after ischemic stroke includes antiplatelet, statin and ___ control|blood pressure|blood pressure,bp,hypertension|Plus anticoagulation if atrial fibrillation.
+B|Carotid imaging|neuro,stroke,vascular|Carotid imaging after a TIA should be done|Within days, urgently|Within three months|Endarterectomy benefit is greatest early.
+G|Epilepsy driving|neuro,epilepsy,ethics|After a seizure, patients must inform the ___ authority and stop driving|licensing|licensing,driving,dvla|A legal and ethical duty to advise.
+B|Antiepileptic monotherapy|neuro,epilepsy,pharm|Epilepsy is best controlled initially with|Monotherapy titrated to effect|Two drugs from the start|About 70 percent are controlled on one drug.
+G|Status migrainosus|neuro,headache|A migraine lasting more than ___ hours is called status migrainosus|72|72,seventy two|Requiring intravenous treatment.
+B|Medication overuse headache|neuro,headache,pharm|Medication overuse headache is treated by|Withdrawing the offending analgesic|Increasing the analgesic dose|Symptoms worsen before improving.
+
+# ── Neurology: rehabilitation and chronic disease ────────────────────────
+G|Spasticity|neuro,pharm,msk|Spasticity is treated with physiotherapy, baclofen and focal ___ toxin|botulinum|botulinum,botox|Alongside splinting and positioning.
+B|Neuropathic bladder management|neuro,urology|Neurogenic bladder with retention is managed with|Intermittent self-catheterization|Long-term indwelling catheter|Reducing infection and preserving renal function.
+G|Multiple sclerosis fatigue|neuro,immuno,clinical|Fatigue in multiple sclerosis is managed with pacing, exercise and treating ___|depression|depression,mood,sleep|Often the most disabling symptom.
+B|Parkinson non-motor symptoms|neuro,movement,clinical|Non-motor Parkinson symptoms include|Constipation, anosmia and REM sleep disorder|Tremor and rigidity in isolation only|Often preceding motor signs by years.
+G|Dementia driving|neuro,dementia,ethics|A dementia diagnosis requires assessment of ___ to drive safely|fitness|fitness,capacity,ability|Not automatic disqualification.
+B|Delirium in dementia|neuro,geriatrics|New confusion in a person with dementia should be assumed to be|Delirium until proven otherwise|Progression of the dementia|Always look for infection, drugs and pain.
+G|Motor neuron disease care|neuro,palliative|Non-invasive ventilation prolongs survival and improves quality of life in motor ___ disease|neuron|neuron,neurone|Discussed early alongside advance planning.
+B|Palliative neurology|neuro,palliative,ethics|Advance care planning in progressive neurological disease should begin|Early, while communication is intact|Only once speech has been lost|Preserving the patient's voice in decisions.

@@ -1,0 +1,93 @@
+# TRICKY — batch 4. Fills the subjects thin on tricky items, and adds tricky gaps.
+GT|Hunter syndrome|genetics,biochem|Hurler lacks alpha-L-iduronidase; Hunter lacks iduronate ___|sulfatase|sulfatase,sulphatase|One letter of difference, two different diseases. Hunter is X-linked with clear corneas.
+GT|Secondary adrenal insufficiency|endocrine,adrenal|In SECONDARY adrenal insufficiency the hormone that stays normal is ___|aldosterone|aldosterone|It is driven by the RAAS, not ACTH — which is why potassium stays normal.
+GT|ACE inhibitor cough|cardio,pharm|ACE inhibitors cause cough by letting ___ accumulate|bradykinin|bradykinin,bradykinins|The same peptide causes their angioedema. ARBs avoid both.
+GT|Carcinoid and niacin|GI,oncology,vitamins|Carcinoid syndrome causes pellagra by diverting ___ to serotonin|tryptophan|tryptophan,trp|Niacin is made from tryptophan, so the tumour steals the precursor.
+GT|Folate versus B12|heme,vitamins,biochem|Both raise homocysteine, but only B12 deficiency raises ___ acid|methylmalonic|methylmalonic,mma|The single test that separates them. Folate leaves MMA normal.
+GT|Osmotic demyelination|renal,neuro,electrolytes|Correcting chronic hyponatremia too fast causes osmotic ___ syndrome|demyelination|demyelination,demyelinolysis|Formerly central pontine myelinolysis. Correct slowly.
+GT|Pseudogout crystals|msk,rheum,lab|Gout crystals are negatively birefringent; pseudogout crystals are ___ birefringent|positively|positively,positive|Rhomboid calcium pyrophosphate versus needle-shaped urate.
+GT|Reperfusion arrhythmia|cardio,MI|The classic rhythm after successful reperfusion is accelerated ___ rhythm|idioventricular|idioventricular|A benign marker of reperfusion, not a reason to treat.
+GT|Unopposed alpha|endocrine,pharm|In pheochromocytoma, beta blockade before ___ blockade causes crisis|alpha|alpha,alpha-1|Always phenoxybenzamine first.
+GT|Protein C paradox|heme,pharm,coagulation|Warfarin transiently causes skin ___ by dropping protein C first|necrosis|necrosis|Protein C has the shortest half-life. Bridge with heparin.
+GT|Refeeding syndrome|nutrition,electrolytes|Refeeding a starved patient causes a dangerous fall in serum ___|phosphate|phosphate,phosphorus,po4|Insulin drives it intracellularly, along with potassium and magnesium.
+GT|Tumor lysis syndrome|oncology,electrolytes|Tumor lysis raises potassium, phosphate and urate, but lowers ___|calcium|calcium,ca|Released phosphate binds it.
+GT|Aspirin ion trapping|toxicology,renal|Aspirin overdose is cleared faster by making the urine ___|alkaline|alkaline,basic,alkalotic|Ion trapping of a weak acid. The opposite for weak bases.
+GT|Thiamine first|neuro,vitamins,emergency|In an alcoholic, giving glucose before ___ precipitates Wernicke|thiamine|thiamine,thiamin,b1|The last thiamine is consumed metabolizing the glucose.
+GT|Sickle cell and hemoglobin F|heme,pharm|Hydroxyurea works in sickle cell by raising hemoglobin ___|F|f,hbf,fetal|Fetal hemoglobin blocks HbS polymerization.
+GT|Loop versus thiazide calcium|renal,pharm,calcium|Loops LOSE calcium; thiazides ___ it|retain|retain,retains,keep,save|Which is why thiazides help calcium stones and loops help hypercalcemia.
+GT|Cushing reflex|neuro,emergency,physiology|Raised intracranial pressure causes hypertension, irregular breathing and ___|bradycardia|bradycardia,slow heart rate|Cushing triad — a late and ominous sign.
+GT|Charcot triad|GI,micro,emergency|Ascending cholangitis gives fever, jaundice and right upper quadrant ___|pain|pain|Add hypotension and confusion for Reynolds pentad.
+GT|Virchow triad|heme,vascular,coagulation|Virchow triad is stasis, endothelial injury and ___|hypercoagulability|hypercoagulability,hypercoagulable|The three roots of thrombosis.
+GT|Beck triad|cardio,emergency|Beck triad is hypotension, distended neck veins and ___ heart sounds|distant|distant,muffled,quiet|Cardiac tamponade.
+BT|Anion gap in DKA vs HHS|endocrine,acid base|Which has a NORMAL anion gap despite huge glucose?|Hyperosmolar hyperglycemic state|Early diabetic ketoacidosis|HHS has enough insulin to block ketogenesis. Glucose is far higher.
+BT|Type 1 vs type 2 diabetes|endocrine,diabetes|Which typically presents with ketoacidosis?|Type 1 diabetes|Type 2 diabetes|Absolute insulin deficiency. Type 2 tends toward HHS.
+BT|Insulinoma vs surreptitious insulin|endocrine,oncology|Low glucose with HIGH insulin and LOW C-peptide means|Injected insulin|Insulinoma|Exogenous insulin suppresses endogenous C-peptide.
+BT|Sulfonylurea vs insulin injection|endocrine,toxicology|Low glucose with high insulin AND high C-peptide suggests|Sulfonylurea use|Injected insulin|A sulfonylurea screen distinguishes it from insulinoma.
+BT|Primary vs secondary polycythemia|heme,renal|Which has a LOW erythropoietin level?|Polycythemia vera|Secondary polycythemia|The marrow is autonomous, so negative feedback suppresses EPO.
+BT|Iron studies|heme,anemia,lab|Ferritin HIGH with low serum iron indicates|Anemia of chronic disease|True iron deficiency|Hepcidin traps iron in stores. Iron deficiency drops ferritin.
+BT|Thalassemia vs iron deficiency|heme,genetics,lab|Microcytosis with a NORMAL RDW and normal ferritin suggests|Thalassemia trait|Iron deficiency|Iron deficiency raises RDW and drops ferritin.
+BT|Direct vs indirect Coombs|heme,immuno,lab|Which detects antibody already ON the red cell?|Direct Coombs|Indirect Coombs|Indirect detects free antibody in serum, used for cross-matching.
+BT|Warm vs cold agglutinin|heme,immuno,micro|Which is associated with Mycoplasma and EBV?|Cold agglutinin disease|Warm agglutinin disease|Cold is IgM. Warm is IgG, linked to lupus and drugs.
+BT|Intravascular vs extravascular hemolysis|heme,lab|Which lowers haptoglobin and shows hemoglobinuria?|Intravascular hemolysis|Extravascular hemolysis|Extravascular happens in the spleen, raising bilirubin without hemoglobinuria.
+BT|Osteoblastic vs osteolytic metastases|oncology,bone|Which cancer gives OSTEOBLASTIC bone metastases?|Prostate|Multiple myeloma|Myeloma is purely lytic with a normal alkaline phosphatase.
+BT|Multiple myeloma vs MGUS|heme,oncology|Which requires end-organ damage for diagnosis?|Multiple myeloma|Smouldering MGUS|CRAB features. MGUS is a paraprotein without damage.
+BT|Squamous vs small cell lung cancer|resp,oncology,endocrine|Which causes HYPERCALCEMIA rather than SIADH?|Squamous cell carcinoma|Small cell carcinoma|Squamous makes PTH-related peptide; small cell makes ADH and ACTH.
+BT|Adenocarcinoma vs squamous lung cancer|resp,oncology|Which is commonest in NON-smokers and peripheral?|Adenocarcinoma|Squamous cell carcinoma|Squamous is central and cavitating in smokers.
+BT|Mesothelioma vs lung cancer|resp,oncology|Which is NOT made more likely by smoking?|Mesothelioma|Bronchogenic carcinoma|Asbestos causes both, but smoking multiplies only lung cancer risk.
+BT|Sarcoidosis vs tuberculosis|resp,immuno,path|Which has NON-caseating granulomas?|Sarcoidosis|Tuberculosis|Caseation means TB or fungus until proven otherwise.
+BT|Asthma vs COPD|resp,physiology|Which shows full reversibility with a bronchodilator?|Asthma|COPD|Over 12 percent and 200 mL improvement. COPD is only partly reversible.
+BT|Obstructive vs restrictive|resp,physiology|Which has a NORMAL or high FEV1/FVC ratio?|Restrictive disease|Obstructive disease|Both volumes fall in restriction, but FVC falls more.
+BT|Central vs obstructive sleep apnea|resp,neuro,sleep|Which has ABSENT respiratory effort during apneas?|Central sleep apnea|Obstructive sleep apnea|Obstructive shows effort against a closed airway.
+BT|Croup vs epiglottitis|ENT,peds,emergency|Which has drooling and a tripod posture?|Epiglottitis|Croup|Croup barks with a steeple sign. Epiglottitis shows a thumbprint sign.
+BT|Otitis media vs externa|ENT,micro|Pain on pulling the pinna indicates|Otitis externa|Otitis media|Swimmer's ear, often Pseudomonas.
+BT|Conductive vs sensorineural|ENT,physiology|In Weber testing, sound lateralizes to the AFFECTED ear in|Conductive hearing loss|Sensorineural hearing loss|Sensorineural lateralizes away from the bad ear.
+BT|Meniere vs BPPV|ENT,neuro|Which includes hearing loss and tinnitus?|Meniere disease|Positional vertigo|BPPV is brief, positional, and purely vestibular.
+BT|Open vs closed angle glaucoma|eye,emergency|Which presents with a painful red eye and vomiting?|Acute angle closure|Open angle glaucoma|Open angle is painless and gradual, found on screening.
+BT|Papilledema vs papillitis|eye,neuro|Which is BILATERAL with preserved vision early?|Papilledema|Optic neuritis|Papilledema reflects raised intracranial pressure.
+BT|Central retinal artery vs vein occlusion|eye,vascular|Which gives a cherry-red spot with a pale retina?|Artery occlusion|Vein occlusion|Vein occlusion looks like blood and thunder.
+BT|Cataract vs glaucoma|eye,aging|Which causes halos around lights with gradual clouding?|Cataract|Open angle glaucoma|Glaucoma takes peripheral vision first, painlessly.
+BT|Psoriasis vs eczema|derm|Which has silvery scale on EXTENSOR surfaces?|Psoriasis|Atopic dermatitis|Eczema prefers flexures and is intensely itchy.
+BT|Impetigo vs cellulitis|derm,micro|Which is superficial with a honey-coloured crust?|Impetigo|Cellulitis|Cellulitis involves deeper dermis and subcutaneous fat.
+BT|Erythema multiforme vs urticaria|derm,immuno|Which has fixed TARGET lesions lasting days?|Erythema multiforme|Acute urticaria|Urticarial wheals move and resolve within 24 hours.
+BT|Melanoma vs seborrheic keratosis|derm,oncology|Which looks "stuck on" and waxy?|Seborrheic keratosis|Nodular melanoma|Benign. But sudden crops may signal internal malignancy.
+BT|Molluscum vs warts|derm,virus,peds|Which has central umbilication?|Molluscum contagiosum|Verruca vulgaris|A poxvirus. Warts are HPV.
+BT|Tinea versicolor vs vitiligo|derm,fungi|Which shows spaghetti-and-meatballs on KOH?|Tinea versicolor|Vitiligo|Vitiligo is complete melanocyte loss with no organism.
+BT|Cellulitis vs necrotizing fasciitis|derm,micro,emergency|Pain OUT OF PROPORTION to skin findings suggests|Necrotizing fasciitis|Simple cellulitis|A surgical emergency. Crepitus and rapid progression.
+BT|Scarlet fever vs Kawasaki|peds,micro,immuno|Which requires fever for at least 5 days plus conjunctivitis?|Kawasaki disease|Scarlet fever|Kawasaki risks coronary aneurysms. Scarlet fever follows strep pharyngitis.
+BT|Measles vs rubella|peds,virus|Which has Koplik spots?|Measles|Rubella|Rubella is milder with posterior auricular lymphadenopathy.
+BT|Roseola vs measles|peds,virus|Which has a rash appearing AFTER the fever breaks?|Roseola|Measles|HHV-6. High fever for 3 days, then rash as fever resolves.
+BT|Intussusception vs pyloric stenosis|peds,GI|Which gives currant jelly stool?|Intussusception|Pyloric stenosis|Pyloric stenosis gives non-bilious projectile vomiting in a hungry infant.
+BT|Duodenal vs jejunal atresia|peds,GI,embryology|Which shows a DOUBLE BUBBLE and links to Down syndrome?|Duodenal atresia|Jejunal atresia|Failed recanalization. Jejunal atresia is vascular, giving apple-peel.
+BT|Hirschsprung vs meconium ileus|peds,GI,genetics|Which points to cystic fibrosis?|Meconium ileus|Hirschsprung disease|Hirschsprung is absent ganglion cells on rectal biopsy.
+BT|Physiologic vs pathologic jaundice|peds,liver|Jaundice in the FIRST 24 HOURS of life is|Always pathologic|Usually physiologic|Physiologic jaundice starts after day 2 and is unconjugated.
+BT|Cephalohematoma vs caput|peds,OB|Which does NOT cross suture lines?|Cephalohematoma|Caput succedaneum|Subperiosteal, so bounded by sutures.
+BT|Turner vs Noonan|peds,genetics,cardio|Which has a normal karyotype with pulmonic stenosis?|Noonan syndrome|Turner syndrome|Turner is 45,XO with coarctation and bicuspid aortic valve.
+BT|Down syndrome cardiac lesion|peds,genetics,cardio|The classic cardiac defect in Down syndrome is|Complete atrioventricular septal defect|Tetralogy of Fallot with a VSD|Endocardial cushion defect.
+BT|Prader-Willi vs Angelman|peds,genetics|Which comes from loss of the PATERNAL allele?|Prader-Willi syndrome|Angelman syndrome|Imprinting. Angelman is maternal loss, with the happy puppet phenotype.
+BT|Fragile X vs Down syndrome|peds,genetics|Which has macro-orchidism and a long face?|Fragile X syndrome|Down syndrome|The commonest inherited cause of intellectual disability.
+BT|Neuroblastoma vs Wilms tumor|peds,oncology|Which CROSSES the midline and is calcified?|Neuroblastoma|Wilms tumor|Neuroblastoma comes from neural crest with raised VMA and HVA.
+BT|Retinoblastoma vs cataract|peds,eye,oncology|Leukocoria in a toddler is presumed to be|Retinoblastoma until excluded|A congenital cataract|An urgent referral, not reassurance.
+BT|ADHD vs autism|psych,peds|Which is defined by SOCIAL COMMUNICATION deficits?|Autism spectrum disorder|Attention deficit disorder|ADHD is inattention and hyperactivity across settings before age 12.
+BT|Conduct disorder vs oppositional defiant|psych,peds|Which violates the basic rights of others?|Conduct disorder|Oppositional defiant disorder|ODD is defiance toward authority without violating rights.
+BT|Absence vs focal seizure|neuro,epilepsy,peds|Which has NO postictal confusion?|A typical absence seizure|Focal impaired awareness|Absence: 3-Hz spike-wave, instant recovery.
+BT|Migraine vs cluster headache|neuro,headache|Which causes tearing and a stuffy nose on one side?|Cluster headache|Migraine|Migraine prefers a dark quiet room; cluster patients pace.
+BT|Tension vs migraine|neuro,headache|Which is bilateral and band-like without nausea?|Tension headache|Migraine|No photophobia and no aura.
+BT|Subarachnoid vs migraine|neuro,emergency,vascular|Thunderclap headache peaking in SECONDS suggests|Subarachnoid hemorrhage|A migraine with aura|Non-contrast CT, then lumbar puncture for xanthochromia.
+BT|Guillain-Barre vs botulism|neuro,micro,NMJ|Which causes DESCENDING paralysis?|Botulism intoxication|Guillain-Barre syndrome|Guillain-Barre ascends from the legs after Campylobacter.
+BT|Multiple sclerosis vs ALS|neuro|Which has NO sensory involvement?|Amyotrophic lateral sclerosis|Relapsing multiple sclerosis|ALS mixes upper and lower motor neuron signs, sensation intact.
+BT|Parkinson vs essential tremor|neuro,movement|Which tremor IMPROVES with alcohol and worsens with action?|Essential tremor|Parkinson disease|Parkinson tremor is at rest and pill-rolling.
+BT|Huntington vs Parkinson|neuro,genetics,movement|Which shows CAUDATE atrophy with chorea?|Huntington disease|Parkinson disease|CAG repeat, autosomal dominant, anticipation.
+BT|Alzheimer vs Lewy body dementia|neuro,dementia|Which has visual hallucinations and parkinsonism early?|Lewy body dementia|Alzheimer disease|Antipsychotics are dangerous in Lewy body dementia.
+BT|Alzheimer vs frontotemporal|neuro,dementia|Which starts with personality change rather than memory loss?|Frontotemporal dementia|Alzheimer disease|Pick bodies; younger onset.
+BT|Normal pressure hydrocephalus|neuro,CSF|NPH is distinguished from other dementias by|Gait disturbance appearing first|Memory loss appearing first|Wet, wobbly, wacky — and the gait leads.
+BT|Meningitis CSF|neuro,micro,CSF|Normal glucose with lymphocytes suggests|Viral meningitis|Bacterial meningitis|Bacterial drops glucose and raises neutrophils.
+BT|Brown-Sequard syndrome|neuro,spinal cord|Hemisection loses pain and temperature|Contralaterally|Ipsilaterally|Spinothalamic crosses at the cord. Vibration and motor are lost ipsilaterally.
+BT|Syringomyelia vs B12 deficiency|neuro,spinal cord|Which loses pain and temperature in a CAPE distribution?|Syringomyelia of the cord|Subacute combined degeneration|B12 hits dorsal columns and corticospinal tracts.
+BT|Anterior cord vs posterior cord|neuro,spinal cord,vascular|Anterior spinal artery infarct SPARES|Vibration and proprioception|Pain and temperature|The posterior columns have a separate supply.
+BT|Radial vs ulnar nerve|neuro,anatomy,msk|Wrist drop indicates injury to the|Radial nerve|Ulnar nerve|Ulnar injury gives a claw hand and loss of finger abduction.
+BT|Median vs ulnar nerve|neuro,anatomy,msk|Thenar wasting with preserved palmar sensation suggests|Carpal tunnel syndrome|Ulnar neuropathy|The palmar cutaneous branch passes above the flexor retinaculum.
+BT|Common peroneal vs tibial|neuro,anatomy,msk|Foot drop indicates injury to the|Common peroneal nerve|Tibial nerve|It wraps the fibular neck and is easily compressed.
+BT|Erb vs Klumpke palsy|neuro,peds,OB|Which gives a waiter's tip posture?|Erb palsy|Klumpke palsy|Upper trunk C5-C6. Klumpke is lower trunk with a claw hand.
+BT|Bell palsy vs stroke|neuro,cranial nerves|Inability to wrinkle the forehead indicates|A peripheral facial nerve lesion|A contralateral cortical stroke|The upper face has bilateral cortical input, so stroke spares it.
+BT|Horner vs oculomotor palsy|neuro,eye,autonomic|Which has a CONSTRICTED pupil with ptosis?|Horner syndrome|Third nerve palsy|Third nerve palsy dilates the pupil, with a down-and-out eye.
+BT|Amaurosis fugax vs TIA|neuro,vascular,eye|Transient monocular vision loss like a curtain suggests|Carotid embolism|Vertebrobasilar disease|Retinal artery from the internal carotid.

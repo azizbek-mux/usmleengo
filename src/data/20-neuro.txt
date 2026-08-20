@@ -1,0 +1,101 @@
+# Neurology — batch 1.
+B|Wallerian degeneration|neuro,nerve,path|After axonal injury, the distal segment undergoes|Wallerian degeneration|Compensatory hypertrophy|Debris cleared by Schwann cells and macrophages; a growth cone forms proximally.
+G|Peripheral nerve regeneration|neuro,nerve|In the peripheral nervous system, ___ cells guide axonal regrowth|Schwann|schwann,schwann cells|They clear debris and form the regeneration tube.
+B|Herpes simplex latency|neuro,micro,virus|HSV travels to the ganglion by which transport?|Retrograde, dynein-dependent|Anterograde, kinesin-dependent|Retrograde on dynein to the ganglion; anterograde on kinesin on reactivation.
+G|Axonal transport|neuro,cell biology|___ carries cargo anterograde, away from the cell body|kinesin|kinesin|Kinesin anterograde, dynein retrograde.
+G|Fragile X syndrome|neuro,genetics|Fragile X is a trinucleotide repeat expansion in the ___ gene|FMR1|fmr1,fmr-1|CGG repeat expansion causing gene silencing.
+B|Fragile X syndrome|neuro,genetics|Fragile X affects which sex more severely?|Males|Females|X-linked; females have a milder, variable phenotype.
+G|Lesch-Nyhan syndrome|neuro,genetics,biochem|Lesch-Nyhan is caused by deficiency of ___|HGPRT|hgprt,hprt,hypoxanthine-guanine phosphoribosyltransferase|Purine salvage fails, so de novo synthesis and uric acid rise.
+B|Lesch-Nyhan syndrome|neuro,genetics|Lesch-Nyhan features self-mutilation and|Hyperuricemia|Hypouricemia|Failed salvage drives purine overproduction and gout.
+B|Persistent vegetative state|neuro,consciousness|In a persistent vegetative state, sleep-wake cycles are|Preserved|Absent|Wakefulness without awareness; the brainstem works, the cortex does not.
+B|Subarachnoid hemorrhage|neuro,vascular,pharm|Vasospasm after subarachnoid hemorrhage is prevented with|Nimodipine|Mannitol|A calcium channel blocker reduces delayed ischemic deficits.
+B|Subarachnoid hemorrhage|neuro,vascular|Subarachnoid hemorrhage is most often caused by|A ruptured saccular aneurysm|An arteriovenous malformation|Berry aneurysm, associated with ADPKD and Ehlers-Danlos.
+G|Locus ceruleus|neuro,neurotransmitter|The locus ceruleus is the main source of ___ in the brain|norepinephrine|norepinephrine,noradrenaline,ne|Pontine nucleus supplying noradrenergic projections.
+G|Reticular activating system|neuro,consciousness|Damage to the ___ activating system causes coma|reticular|reticular,ras|Bilateral pontine damage disrupts arousal.
+B|Duchenne muscular dystrophy|neuro,genetics,cardio|The commonest cause of death in Duchenne dystrophy is|Cardiomyopathy|Renal failure|Dilated cardiomyopathy and respiratory failure.
+B|Lamotrigine|neuro,pharm,epilepsy|The dangerous adverse effect of lamotrigine is|Stevens-Johnson syndrome|Hepatic steatosis|Titrate slowly; any rash needs immediate review.
+B|Valproate in pregnancy|neuro,pharm,teratogen|Valproate in pregnancy causes|Neural tube defects|Ebstein anomaly|Also lowers IQ. Lithium causes Ebstein anomaly.
+G|Anencephaly|neuro,embryology|Anencephaly results from failure of the ___ neuropore to close|rostral|rostral,anterior,cranial|Rostral neuropore failure; caudal failure gives spina bifida.
+B|Anencephaly|neuro,embryology,OB|Anencephaly causes maternal serum AFP to be|Elevated|Decreased|Open neural tube defects leak AFP into amniotic fluid.
+B|Toxoplasmosis|neuro,micro,HIV|Cerebral toxoplasmosis is acquired by|Ingesting contaminated material|A mosquito or tick bite|Oocysts from cat faeces or undercooked meat; reactivates when CD4 is low.
+B|Cerebral toxoplasmosis|neuro,micro,HIV|Toxoplasma brain lesions on imaging are typically|Multiple ring-enhancing|Single and non-enhancing|Ring-enhancing lesions in the basal ganglia.
+B|Local anesthetics|neuro,pharm|Local anesthetics block sodium channels from|Inside the cell|Outside the cell|The uncharged form diffuses in, then the charged form blocks the pore.
+B|Local anesthetics|neuro,pharm|Local anesthetics work poorly in infected tissue because|Acidity keeps the drug ionized|The nerve is destroyed|Low pH prevents membrane diffusion.
+G|Neuroleptic malignant syndrome|neuro,pharm,emergency|NMS is treated with ___, which blocks sarcoplasmic calcium release|dantrolene|dantrolene|Also used for malignant hyperthermia.
+B|Neuroleptic malignant syndrome|neuro,pharm|NMS is caused by drugs that|Block dopamine receptors|Block serotonin reuptake|Antipsychotics. Fever, rigidity, autonomic instability, raised CK.
+B|Malignant hyperthermia|neuro,pharm,anesthesia|Malignant hyperthermia is triggered by|Succinylcholine and volatile anesthetics|Propofol and non-depolarizing blockers|Ryanodine receptor mutation; treat with dantrolene.
+B|Metastatic cord compression|neuro,oncology,emergency|Epidural cord compression most often comes from|Breast, lung or prostate cancer|Thyroid and testicular cancer|Give glucocorticoids immediately, then image.
+B|Spinal shock|neuro,trauma|Immediately after acute cord injury, reflexes are|Absent|Exaggerated|Flaccid areflexic paralysis first; spasticity develops over weeks.
+B|Levodopa-carbidopa|neuro,pharm,parkinson|Carbidopa reduces which adverse effects?|Peripheral ones such as nausea|Central ones such as hallucinations|It cannot cross the blood-brain barrier, so central effects persist.
+G|Levodopa|neuro,pharm,parkinson|Levodopa enters the brain via the large neutral ___ transporter|amino acid|amino acid,amino acids,laat|Dopamine itself cannot cross; L-DOPA uses the LNAA carrier.
+B|Hyperventilation and ICP|neuro,physiology,emergency|Hyperventilation lowers intracranial pressure by|Cerebral vasoconstriction|Increasing CSF absorption|Low CO2 constricts cerebral vessels, reducing blood volume.
+G|Monro-Kellie doctrine|neuro,physiology|Brain, blood and ___ fill a fixed intracranial volume|CSF|csf,cerebrospinal fluid|A rise in one component must be offset or ICP climbs.
+B|Status epilepticus|neuro,pharm,emergency|The first-line drug in status epilepticus is|A benzodiazepine|Phenytoin|Lorazepam — enhances postsynaptic chloride influx via GABA-A.
+G|Benzodiazepines|neuro,pharm|Benzodiazepines increase the ___ of GABA-A channel opening|frequency|frequency|Benzos raise frequency, barbiturates raise duration.
+B|Diabetic neuropathy|neuro,endocrine,path|Diabetic neuropathy shows endoneurial arteriole|Hyalinization|Vasculitis|Microvascular hyaline change causing nerve ischemia.
+B|Diabetic neuropathy|neuro,endocrine|Diabetic neuropathy classically begins|Distally and symmetrically|Proximally and asymmetrically|Stocking-glove pattern, longest axons first.
+B|Horner syndrome|neuro,autonomic|Horner syndrome is caused by impaired|Sympathetic activity|Parasympathetic activity|Ptosis, miosis, anhidrosis. Parasympathetic damage dilates the pupil.
+B|Depression and sleep|neuro,psych|In major depression, REM latency is|Shortened|Prolonged|Reduced REM latency, increased REM density, early morning waking.
+B|Myasthenia gravis|neuro,immuno,NMJ|Myasthenia gravis antibodies target|The acetylcholine receptor|Voltage-gated calcium channels|Post-synaptic ACh receptors; Lambert-Eaton targets calcium channels.
+B|Facial nerve palsy|neuro,cranial nerves|Forehead sparing in facial weakness indicates a lesion that is|Central|Peripheral|The upper face has bilateral cortical input, so it is spared in stroke.
+B|Cerebral cavernous malformation|neuro,vascular|Cavernous malformations classically cause|Seizures and spontaneous hemorrhage|Large territorial ischemic stroke|Hemosiderin from microbleeds irritates cortex.
+B|Bacterial meningitis spread|neuro,micro|Meningococcus reaches the meninges via|Pharynx, blood, choroid plexus|Direct sinus extension|Nasopharyngeal colonization then hematogenous seeding.
+B|Bacterial meningitis|neuro,micro|The commonest cause of bacterial meningitis in adults is|Streptococcus pneumoniae|Listeria monocytogenes|S. pneumoniae, then N. meningitidis.
+B|Tabes dorsalis|neuro,micro,spinal cord|Tabes dorsalis degenerates which tract?|Dorsal columns|Lateral corticospinal|Loss of vibration, proprioception; positive CSF VDRL.
+B|Tabes dorsalis|neuro,micro|Tabes dorsalis is a late complication of|Syphilis|Lyme disease|Tertiary neurosyphilis. Argyll Robertson pupils.
+B|Normal pressure hydrocephalus|neuro,CSF|NPH causes incontinence by stretching|Descending cortical fibers|The pudendal nerve|Periventricular corticospinal fibers to the legs and bladder.
+G|Normal pressure hydrocephalus|neuro,CSF|The NPH triad is gait apraxia, incontinence and ___|dementia|dementia,cognitive decline,confusion|Wet, wobbly and wacky. Impaired CSF absorption at arachnoid granulations.
+B|Dopamine agonist psychosis|neuro,pharm,parkinson|Excess central dopamine stimulation causes|Hallucinations and agitation|Bradykinesia and rigidity|Dopaminergic therapy can precipitate psychosis.
+B|Cerebellar tremor|neuro,cerebellum|A cerebellar tremor is|Low frequency and high amplitude|High frequency and fine amplitude|Coarse intention tremor worsening near the target.
+B|Ataxia-telangiectasia|neuro,genetics,immuno|Ataxia-telangiectasia is a defect in|DNA double-strand break repair|Nucleotide excision repair|ATM gene. Raised AFP, IgA deficiency, lymphoma risk.
+B|Zellweger syndrome|neuro,genetics,cell biology|Zellweger syndrome is a disorder of|Peroxisomes|Lysosomes|Very long chain fatty acids accumulate; impaired myelination and migration.
+B|Subacute combined degeneration|neuro,vitamins,spinal cord|B12 deficiency degenerates the dorsal columns and|Lateral corticospinal tracts|Spinothalamic tracts|Ataxia, spasticity and loss of vibration sense.
+B|Wilson disease|neuro,genetics,liver|Wilson disease is confirmed at the eye by|Slit lamp for Kayser-Fleischer rings|Fundoscopy showing papilledema|ATP7B mutation; low ceruloplasmin, high urinary copper.
+G|Narcolepsy|neuro,sleep|Narcolepsy is caused by loss of ___-secreting neurons|orexin|orexin,hypocretin|Lateral hypothalamic orexin neurons maintain wakefulness.
+B|Narcolepsy|neuro,sleep|Sleep onset in narcolepsy goes directly into|REM sleep|Slow wave sleep|Short REM latency, cataplexy, hypnagogic hallucinations.
+B|Syringomyelia|neuro,spinal cord|Syringomyelia first causes loss of|Pain and temperature in a cape distribution|Vibration and position sense in the legs|The expanding cavity crosses the anterior white commissure.
+B|Syringomyelia|neuro,spinal cord|Syringomyelia is associated with which malformation?|Chiari I|Dandy-Walker|Cerebellar tonsillar herniation obstructing CSF flow.
+B|Phrenic nerve|neuro,anatomy,resp|Phrenic nerve injury shows on chest x-ray as|An elevated hemidiaphragm|A widened mediastinum|C3, 4, 5 keeps the diaphragm alive.
+B|Alzheimer disease|neuro,dementia,path|Amyloid plaques stain with Congo red showing|Apple-green birefringence|Blue metachromasia|Beta-pleated sheet structure under polarized light.
+B|Neurofibromatosis type 1|neuro,genetics,oncology|Neurofibroma cells originate from|Neural crest|Mesoderm|Cafe-au-lait macules, Lisch nodules, optic gliomas.
+B|Absence seizures|neuro,epilepsy,pharm|The long-term drug for absence seizures is|Ethosuximide or valproate|Phenytoin or carbamazepine|3-Hz spike-and-wave; ethosuximide blocks thalamic T-type calcium channels.
+B|Superior gluteal nerve|neuro,anatomy,msk|Superior gluteal nerve injury causes|Trendelenburg gait|Difficulty rising from a chair|Hip abductor weakness; the pelvis drops on the contralateral side.
+B|Gliosis|neuro,path|The brain's scarring response to injury is|Astrocytic proliferation|Fibroblast proliferation|Reactive gliosis, not collagen fibrosis.
+B|Lacunar infarct|neuro,vascular,stroke|Lacunar infarcts result from|Lipohyalinosis of small penetrating arteries|Embolism from an ulcerated carotid plaque|Chronic hypertension damaging lenticulostriate vessels.
+B|Lacunar infarct|neuro,vascular,stroke|Pure motor hemiparesis localizes to the|Internal capsule|Cerebral cortex|Classic lacunar syndrome; no cortical signs.
+B|Thalamic stroke|neuro,stroke|A pure sensory stroke localizes to the|Thalamus|Frontal lobe|Ventral posterolateral nucleus infarct.
+B|Communicating hydrocephalus|neuro,CSF,vascular|After subarachnoid hemorrhage, hydrocephalus is due to|Impaired CSF absorption|Overproduction of CSF|Blood causes arachnoid granulation fibrosis.
+B|Uncal herniation|neuro,emergency|Uncal herniation first compresses which nerve?|Oculomotor|Trochlear|Fixed dilated pupil with down-and-out eye.
+G|Cushing reflex|neuro,emergency,physiology|Cushing triad is hypertension, bradycardia and irregular ___|respirations|respirations,breathing,respiration|Signals dangerously raised intracranial pressure.
+B|Huntington disease|neuro,genetics|Huntington disease represses transcription through|Histone deacetylation|DNA methylation alone|Expanded polyglutamine interferes with transcription factors.
+G|Huntington disease|neuro,genetics|Huntington disease is a ___ repeat expansion|CAG|cag|CAG on chromosome 4, autosomal dominant, anticipation.
+B|Inferior alveolar nerve|neuro,anatomy,cranial nerves|Inferior alveolar nerve block anesthetizes the|Lower lip and teeth|The upper lip and teeth|A branch of V3, blocked at the mandibular foramen.
+B|Craniopharyngioma|neuro,oncology,peds|Craniopharyngioma arises from remnants of|Rathke pouch|Neural crest|Suprasellar calcified tumor of childhood; bitemporal hemianopia.
+B|Wernicke encephalopathy|neuro,vitamins|Wernicke encephalopathy is caused by deficiency of|Thiamine|Niacin|Give thiamine before glucose to avoid precipitating it.
+B|Epidural hematoma|neuro,trauma,vascular|An epidural hematoma collects between|Bone and dura|Dura and arachnoid|Middle meningeal artery tear at the pterion; lucid interval.
+B|Epidural hematoma|neuro,trauma,imaging|An epidural hematoma on CT is|Lens-shaped and does not cross sutures|Crescent-shaped and crossing sutures|Biconvex, limited by sutures. Subdural is crescentic and crosses them.
+B|Aseptic meningitis|neuro,micro,virus|The commonest cause of viral meningitis is|Enterovirus|Herpes simplex|Lymphocytes, normal glucose, negative Gram stain.
+B|Myotonic dystrophy|neuro,genetics,cardio|Myotonic dystrophy notably affects which cells besides muscle?|Myocardial|Renal tubular|CTG repeat; cardiac conduction defects, cataracts, frontal balding.
+B|Blood-brain barrier|neuro,physiology|The blood-brain barrier depends on endothelial|Tight junctions|Fenestrations|Non-fenestrated capillaries with tight junctions.
+B|Conduction aphasia|neuro,language|Conduction aphasia is caused by a lesion of the|Arcuate fasciculus|Broca area|Fluent speech, intact comprehension, poor repetition.
+B|Korsakoff syndrome|neuro,vitamins,memory|Korsakoff syndrome damages which structures?|Mammillary bodies and dorsomedial thalamus|The hippocampus and entorhinal cortex|Anterograde amnesia with confabulation.
+B|Shingles|neuro,micro,virus|Shingles reactivates in|A single dorsal root ganglion|Multiple random nerves|Dermatomal vesicular rash that respects the midline.
+G|Shingles pain|neuro,pharm|Capsaicin relieves pain by depleting substance ___|P|p,substance p|Depletes the nociceptive neurotransmitter from C fibres.
+B|Beta-2 agonists|neuro,pharm,resp|Beta-2 receptor activation causes smooth muscle to|Relax|Contract|Bronchodilation, vasodilation and uterine relaxation.
+B|Methotrexate in pregnancy|neuro,pharm,teratogen|Methotrexate causes which fetal defect?|Neural tube defects|Limb shortening only|Folate antagonism impairs DNA synthesis.
+B|Excitotoxicity|neuro,path,physiology|Magnesium protects dying neurons by reducing|Calcium and sodium influx|Potassium and chloride efflux|Magnesium blocks the NMDA receptor channel.
+G|Excitotoxicity|neuro,path|Excitotoxic neuronal death is mediated by ___|glutamate|glutamate,glutamic acid|Excess glutamate opens NMDA channels, flooding cells with calcium.
+B|Vestibular schwannoma|neuro,oncology,anatomy|A vestibular schwannoma sits at the|Cerebellopontine angle|The pineal region|Between cerebellum and lateral pons; bilateral means NF2.
+B|Benzodiazepines and antihistamines|neuro,pharm|Combining a benzodiazepine with a sedating antihistamine causes|Additive CNS depression|Reduced sedation|Both depress the CNS; avoid the combination.
+B|Accessory nerve injury|neuro,cranial nerves,msk|Cranial nerve XI injury paralyzes the|Trapezius|Serratus anterior|Shoulder droop and weak head turning.
+B|Neuroblastoma|neuro,oncology,peds|Neuroblastoma arises from|Neural crest cells|Epithelial cells|Commonest extracranial solid tumor of childhood; raised urinary HVA and VMA.
+B|Posterior interosseous nerve|neuro,anatomy,msk|The deep radial nerve is compressed at the|Supinator muscle|Carpal tunnel|Finger drop without sensory loss or true wrist drop.
+B|Brainstem stroke|neuro,stroke,anatomy|Brainstem strokes classically cause deficits that are|Ipsilateral cranial nerve, contralateral body|Contralateral cranial nerve and body signs|Cranial nerves do not decussate; long tracts do.
+B|Progressive multifocal leukoencephalopathy|neuro,micro,HIV|PML is caused by JC virus infecting|Oligodendrocytes|Astrocytes|Demyelination in advanced HIV; no enhancement, no mass effect.
+B|Tension headache|neuro,headache|Tension headache is typically|Bilateral and band-like|Unilateral and throbbing|Non-pulsatile, no nausea or photophobia.
+G|Raphe nuclei|neuro,neurotransmitter|The raphe nuclei are the main source of ___|serotonin|serotonin,5-ht,5ht|Brainstem serotonergic projections.
+G|Nucleus basalis of Meynert|neuro,dementia,neurotransmitter|In Alzheimer disease, the nucleus basalis loses ___ neurons|cholinergic|cholinergic,acetylcholine,ach|Which is why cholinesterase inhibitors are used.
+B|Vascular dementia|neuro,dementia|Vascular dementia progresses|In a stepwise fashion|Smoothly and gradually|Stepwise decline with focal signs; Alzheimer is gradual.
+B|Anterior cerebral artery stroke|neuro,stroke,anatomy|An ACA stroke affects mainly the|Contralateral leg|Contralateral face and arm|Medial homunculus. MCA affects face and arm.
+B|Middle cerebral artery stroke|neuro,stroke,anatomy|An MCA stroke affects mainly the|Contralateral face and arm|The contralateral leg and foot|Lateral homunculus, plus aphasia if dominant.
+G|Jugular foramen syndrome|neuro,cranial nerves,anatomy|Vernet syndrome affects cranial nerves IX, X and ___|XI|xi,11,eleven|Glossopharyngeal, vagus and accessory exit the jugular foramen.

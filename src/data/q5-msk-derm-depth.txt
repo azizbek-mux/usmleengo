@@ -1,0 +1,73 @@
+# Musculoskeletal, rheumatology and dermatology — depth pass. Gap-weighted.
+
+# ── Bone biology ─────────────────────────────────────────────────────────
+G|Bone remodelling|msk,bone|Osteoblasts secrete ___ ligand to activate osteoclasts|RANK|rank,rankl|Osteoprotegerin is the decoy that blocks it.
+B|Osteoclasts|msk,bone,cell biology|Osteoclasts are derived from|Monocyte-macrophage lineage|Mesenchymal stem cells|Osteoblasts come from mesenchyme.
+G|Bone matrix|msk,bone,biochem|The organic matrix of bone is mostly type ___ collagen|I|i,1,type 1|Mineralized with hydroxyapatite.
+B|Endochondral ossification|msk,bone,embryology|Long bones form by|Endochondral ossification from cartilage|Membranous ossification from mesenchyme|Flat skull bones form by membranous ossification.
+G|Achondroplasia|msk,bone,genetics|Achondroplasia impairs ___ ossification, so limbs are short|endochondral|endochondral|Membranous ossification is normal, so the skull is large.
+B|Alkaline phosphatase|msk,bone,lab|A raised alkaline phosphatase with normal calcium suggests|Paget disease|Primary hyperparathyroidism|Or bone metastases and healing fracture.
+
+# ── Arthritis ────────────────────────────────────────────────────────────
+G|Osteoarthritis|msk,rheum,imaging|Osteoarthritis x-rays show joint space narrowing, sclerosis, cysts and ___|osteophytes|osteophytes,osteophyte|LOSS: loss of space, osteophytes, sclerosis, subchondral cysts.
+B|Osteoarthritis|msk,rheum,path|In osteoarthritis, the primary problem is|Cartilage degeneration|Synovial inflammation|Inflammation is secondary and mild.
+G|Rheumatoid arthritis|msk,rheum,path|Rheumatoid joints develop a destructive ___ over the cartilage|pannus|pannus|Inflamed proliferating synovium.
+B|Rheumatoid arthritis|msk,rheum,resp|Rheumatoid arthritis with pneumoconiosis is called|Caplan syndrome|Felty syndrome|Felty is RA with splenomegaly and neutropenia.
+G|Rheumatoid arthritis|msk,rheum,neuro|Atlantoaxial ___ in rheumatoid arthritis threatens the cord during intubation|subluxation|subluxation,instability|Always image the neck before general anaesthesia.
+B|Ankylosing spondylitis|msk,rheum,resp|Ankylosing spondylitis can cause|Apical pulmonary fibrosis|Basal pulmonary fibrosis|Plus aortic regurgitation and uveitis.
+G|Ankylosing spondylitis|msk,rheum,genetics|Ankylosing spondylitis is associated with HLA-B___|27|27,b27|Along with the other seronegative spondyloarthropathies.
+B|Psoriatic arthritis|msk,rheum,imaging|Psoriatic arthritis classically shows|A pencil-in-cup deformity|Marginal erosions only|Plus dactylitis and nail pitting.
+G|Gout|msk,rheum,biochem|Most gout results from ___ of urate rather than overproduction|underexcretion|underexcretion,under-excretion,reduced excretion|About 90 percent of cases.
+B|Chronic gout|msk,rheum,pharm|Urate-lowering therapy should be started|Once the acute flare has settled|During the acute flare itself|With colchicine cover for several months.
+G|Pseudogout|msk,rheum,path|Pseudogout crystals are calcium ___ dihydrate|pyrophosphate|pyrophosphate|Rhomboid and positively birefringent.
+B|Pseudogout|msk,rheum,endocrine|Pseudogout should prompt screening for|Hemochromatosis and hyperparathyroidism|Diabetes and metabolic syndrome only|Also hypomagnesemia and hypophosphatasia.
+
+# ── Connective tissue disease ────────────────────────────────────────────
+G|Systemic sclerosis|msk,rheum,GI|Systemic sclerosis commonly causes ___ dysmotility with reflux|esophageal|esophageal,oesophageal|Smooth muscle atrophy and fibrosis.
+B|Limited scleroderma|msk,rheum,resp|Limited cutaneous scleroderma is more likely to cause|Pulmonary hypertension|Interstitial lung disease|Diffuse disease causes interstitial fibrosis.
+G|Raynaud phenomenon|msk,rheum,vascular|Raynaud shows a triphasic colour change: white, blue then ___|red|red|Pallor, cyanosis, then reactive hyperaemia.
+B|Sjogren syndrome|msk,rheum,lab|Sjogren syndrome is confirmed with|A labial salivary gland biopsy|A parotid ultrasound alone|Showing focal lymphocytic sialadenitis.
+G|Dermatomyositis|msk,rheum,derm|The purple eyelid rash of dermatomyositis is called ___|heliotrope|heliotrope|With Gottron papules over the knuckles.
+B|Inclusion body myositis|msk,rheum|Inclusion body myositis differs from polymyositis by|Affecting distal muscles and resisting steroids|Responding well to steroids within a few weeks|Commonest myopathy over 50.
+G|Fibromyalgia|msk,rheum|Fibromyalgia has normal inflammatory markers and normal ___|CK|ck,creatine kinase,muscle enzymes|A diagnosis of exclusion with widespread tenderness.
+
+# ── Vasculitis ───────────────────────────────────────────────────────────
+G|Large vessel vasculitis|msk,rheum,vascular|Giant cell arteritis and ___ arteritis affect large vessels|Takayasu|takayasu|Distinguished mainly by age.
+B|Granulomatosis with polyangiitis|msk,rheum,ENT|GPA classically involves|Upper airway, lungs and kidneys|The skin and the joints only|Saddle nose deformity and haemoptysis.
+G|Eosinophilic granulomatosis|msk,rheum,resp|Churg-Strauss combines asthma, eosinophilia and ___|vasculitis|vasculitis|p-ANCA positive in about half.
+B|Microscopic polyangiitis|msk,rheum,path|Microscopic polyangiitis differs from GPA by|Having no granulomas|Sparing the kidney|Both are p-ANCA or c-ANCA associated small vessel vasculitides.
+G|Behcet disease|msk,rheum|Behcet disease causes recurrent oral and ___ ulcers|genital|genital|Plus uveitis and pathergy.
+B|Buerger disease|msk,rheum,vascular|Thromboangiitis obliterans is strongly linked to|Smoking|Diabetes|Cessation is the only effective treatment.
+
+# ── Orthopaedics ─────────────────────────────────────────────────────────
+G|Scaphoid fracture|msk,ortho,vascular|Scaphoid fracture risks avascular ___ of the proximal pole|necrosis|necrosis|Retrograde blood supply; may be x-ray negative initially.
+B|Femoral neck fracture|msk,ortho,vascular|Displaced intracapsular hip fracture in the elderly is treated with|Arthroplasty|Internal fixation|The femoral head blood supply is disrupted.
+G|Compartment syndrome|msk,ortho,emergency|The earliest sign of compartment syndrome is pain on ___ stretch|passive|passive|Pulselessness is a very late sign.
+B|Compartment syndrome|msk,ortho,emergency|Compartment syndrome is treated with|Urgent fasciotomy|Elevation and observation|Elevation actually reduces perfusion pressure.
+G|Rotator cuff|msk,ortho,anatomy|The rotator cuff comprises supraspinatus, infraspinatus, teres minor and ___|subscapularis|subscapularis|SITS. Subscapularis internally rotates.
+B|Adhesive capsulitis|msk,ortho,endocrine|Frozen shoulder is strongly associated with|Diabetes mellitus|Rheumatoid arthritis|Loss of both active and passive movement.
+G|Anterior cruciate ligament|msk,ortho,exam|The ___ test is most sensitive for ACL rupture|Lachman|lachman|More sensitive than anterior drawer.
+B|Meniscal tear|msk,ortho,exam|A meniscal tear classically causes|Locking and joint line tenderness|Instability when pivoting round|Instability suggests ligament injury.
+G|Osgood-Schlatter|msk,ortho,peds|Osgood-Schlatter disease affects the tibial ___|tubercle|tubercle,tuberosity|Traction apophysitis in an active adolescent.
+B|Slipped capital femoral epiphysis|msk,ortho,peds|SCFE typically presents in|An obese adolescent with knee or groin pain|A toddler with a painless limp on walking|Refer knee pain in adolescents to the hip.
+G|Legg-Calve-Perthes|msk,ortho,peds|Perthes disease is avascular necrosis of the femoral ___|head|head,epiphysis|In a child aged 4 to 10.
+
+# ── Dermatology ──────────────────────────────────────────────────────────
+G|Epidermis layers|derm,anatomy|The epidermal layers are basale, spinosum, granulosum, lucidum and ___|corneum|corneum,stratum corneum|Come, Let's Get Sun Burned reversed.
+B|Keratinocytes|derm,cell biology|Keratinocytes are joined by|Desmosomes|Tight junctions|Hemidesmosomes anchor them to the basement membrane.
+G|Melanin|derm,biochem|Melanin is synthesized from tyrosine by the enzyme ___|tyrosinase|tyrosinase|Absent in oculocutaneous albinism.
+B|Albinism versus vitiligo|derm,path|In albinism, melanocyte numbers are|Normal|Absent|Vitiligo destroys the melanocytes themselves.
+G|Acanthosis nigricans|derm,endocrine,oncology|Acanthosis nigricans suggests insulin ___ or visceral malignancy|resistance|resistance|Velvety hyperpigmentation in flexures.
+B|Erythema nodosum|derm,immuno|Erythema nodosum is|Painful nodules on the shins|Painless plaques on the trunk|Sarcoid, strep, IBD, tuberculosis and drugs.
+G|Pyoderma gangrenosum|derm,GI,immuno|Pyoderma gangrenosum is associated with inflammatory ___ disease|bowel|bowel|A rapidly enlarging ulcer with a violaceous border.
+B|Stevens-Johnson syndrome|derm,pharm|Stevens-Johnson is distinguished from toxic epidermal necrolysis by|Body surface area involved|Mucosal involvement|Under 10 percent is SJS, over 30 percent is TEN.
+G|Acne|derm,pharm|Severe nodulocystic acne is treated with ___|isotretinoin|isotretinoin,accutane|Requires strict pregnancy prevention.
+B|Rosacea|derm|Rosacea is distinguished from acne by|Absence of comedones|Presence of comedones|Flushing, telangiectasia and papulopustules.
+G|Atopic dermatitis|derm,peds|Atopic dermatitis in older children favours the ___ surfaces|flexor|flexor,flexural,flexures|Infants have facial and extensor involvement.
+B|Seborrheic dermatitis|derm,fungi|Seborrheic dermatitis is associated with|Malassezia yeast|Staphylococcus aureus|Treated with antifungal shampoo.
+G|Lichen sclerosus|derm,repro,oncology|Lichen sclerosus of the vulva raises the risk of ___ cell carcinoma|squamous|squamous|Needs long-term surveillance.
+B|Actinic keratosis|derm,oncology|Actinic keratosis is|A precursor of squamous cell carcinoma|Entirely benign with no malignant risk|Rough scaly patches on sun-exposed skin.
+G|Melanoma ABCDE|derm,oncology|The E in the melanoma ABCDE rule stands for ___|evolving|evolving,evolution,enlarging|Asymmetry, border, colour, diameter, evolving.
+B|Nail changes|derm,cardio|Splinter haemorrhages with fever suggest|Infective endocarditis|Psoriatic nail disease|Though trauma is the commonest cause overall.
+G|Alopecia areata|derm,immuno|Alopecia areata shows ___ mark hairs at the edge of the patch|exclamation|exclamation,exclamation point|An autoimmune, non-scarring alopecia.
+B|Tinea capitis|derm,fungi,peds|Tinea capitis requires|Oral antifungals|Topical treatment only|Topicals cannot reach the hair follicle.

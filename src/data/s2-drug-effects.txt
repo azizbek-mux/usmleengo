@@ -1,0 +1,63 @@
+# Drug side effects and interactions — gap-weighted, one drug several angles.
+
+# ── Signature toxicities ─────────────────────────────────────────────────
+G|Amiodarone|pharm,resp,toxicity|Amiodarone can cause pulmonary ___ requiring baseline lung function tests|fibrosis|fibrosis|Plus thyroid, hepatic and corneal deposits.
+G|Amiodarone|pharm,eye,toxicity|Amiodarone deposits in the ___, causing halos|cornea|cornea,corneal|Usually reversible and rarely limits therapy.
+G|Bleomycin|pharm,oncology,resp|Bleomycin causes pulmonary ___, worsened by high oxygen|fibrosis|fibrosis|Which matters during anaesthesia.
+G|Cyclophosphamide|pharm,oncology,renal|Cyclophosphamide causes haemorrhagic ___ from acrolein|cystitis|cystitis|Prevented with mesna and hydration.
+G|Cisplatin|pharm,oncology,electrolytes|Cisplatin classically wastes ___ in the urine|magnesium|magnesium,mg|Along with nephrotoxicity and ototoxicity.
+G|Vincristine|pharm,oncology,neuro|Vincristine causes peripheral ___ rather than marrow suppression|neuropathy|neuropathy|Vinblastine blasts the bone marrow instead.
+G|Doxorubicin|pharm,oncology,cardio|Doxorubicin causes dilated ___ in a dose-dependent way|cardiomyopathy|cardiomyopathy|Monitor ejection fraction; dexrazoxane protects.
+G|Methotrexate|pharm,rheum,liver|Long-term methotrexate requires monitoring of the ___ and blood count|liver|liver,lfts,liver function|Plus folic acid supplementation.
+G|Tamoxifen|pharm,oncology,repro|Tamoxifen raises the risk of ___ carcinoma and thromboembolism|endometrial|endometrial|An estrogen agonist in the uterus.
+G|Trastuzumab|pharm,oncology,cardio|Trastuzumab cardiotoxicity is usually ___, unlike anthracyclines|reversible|reversible|Monitor ejection fraction during treatment.
+
+# ── Endocrine and metabolic effects ──────────────────────────────────────
+G|Thiazides|pharm,endocrine,electrolytes|Thiazides raise calcium, glucose, urate and ___|lipids|lipids,cholesterol,triglycerides|And lower sodium, potassium and magnesium.
+G|Corticosteroids|pharm,endocrine|Chronic steroids cause ___, osteoporosis and immunosuppression|hyperglycemia|hyperglycemia,diabetes,high blood sugar|Plus adrenal suppression on withdrawal.
+G|Atypical antipsychotics|pharm,psych,endocrine|Olanzapine and clozapine most cause weight gain and ___|diabetes|diabetes,hyperglycemia,metabolic syndrome|Monitor weight, lipids and glucose.
+G|Protease inhibitors|pharm,HIV,endocrine|Protease inhibitors cause ___ and insulin resistance|lipodystrophy|lipodystrophy|Fat redistribution with hyperlipidemia.
+G|Thionamides|pharm,endocrine,heme|Propylthiouracil carries a black box warning for ___ failure|liver|liver,hepatic|Methimazole is preferred outside the first trimester.
+B|Lithium|pharm,psych,endocrine|Lithium causes|Hypothyroidism and hypercalcemia|Hyperthyroidism and hypocalcemia|Plus nephrogenic diabetes insipidus.
+G|Phenytoin|pharm,neuro,derm|Phenytoin classically causes ___ hyperplasia and hirsutism|gingival|gingival,gum,gums|Plus ataxia, nystagmus and megaloblastic anemia.
+
+# ── Haematological effects ───────────────────────────────────────────────
+G|Chloramphenicol|pharm,micro,heme|Chloramphenicol can cause irreversible ___ anemia|aplastic|aplastic|Plus dose-dependent marrow suppression and grey baby syndrome.
+G|Clozapine|pharm,psych,heme|Clozapine can cause ___, requiring regular neutrophil counts|agranulocytosis|agranulocytosis|Roughly 1 percent risk.
+G|Heparin|pharm,coagulation,heme|Antibodies against platelet factor 4 bound to ___ cause HIT|heparin|heparin|Platelets fall after 5 to 10 days, with thrombosis not bleeding.
+G|Methyldopa|pharm,cardio,heme|Methyldopa causes a positive direct ___ test|Coombs|coombs,antiglobulin|Usually without clinical hemolysis.
+G|Dapsone|pharm,micro,heme|Dapsone causes ___ and hemolysis in G6PD deficiency|methemoglobinemia|methemoglobinemia,methaemoglobinaemia|Chocolate-brown blood, treated with methylene blue.
+B|Linezolid|pharm,micro,heme|Prolonged linezolid causes|Thrombocytopenia and optic neuropathy|Nephrotoxicity and electrolyte loss|Limit courses beyond two weeks.
+
+# ── Renal and electrolyte effects ────────────────────────────────────────
+G|Aminoglycosides|pharm,micro,renal|Aminoglycosides accumulate in the proximal ___, causing non-oliguric failure|tubule|tubule,tubules,tubular cells|Monitor levels and renal function.
+G|NSAIDs|pharm,renal|NSAIDs cause acute kidney injury by removing ___ vasodilation|prostaglandin|prostaglandin,prostaglandins|Dangerous with volume depletion, ACE inhibitors and diuretics.
+G|Lithium|pharm,psych,renal|Lithium causes ___ diabetes insipidus by blocking ADH in the collecting duct|nephrogenic|nephrogenic|Amiloride can help.
+G|Amphotericin B|pharm,fungi,electrolytes|Amphotericin wastes potassium and ___ in the urine|magnesium|magnesium,mg|Plus renal tubular acidosis.
+G|Cyclosporine|pharm,transplant,renal|Cyclosporine causes dose-dependent ___ and hypertension|nephrotoxicity|nephrotoxicity,renal impairment|Plus gum hypertrophy and hirsutism.
+B|Tenofovir|pharm,HIV,renal|Tenofovir disoproxil can cause|Fanconi syndrome and bone loss|Hepatic steatosis and lactate|The alafenamide form is safer.
+
+# ── Hepatic effects ──────────────────────────────────────────────────────
+G|Isoniazid|pharm,micro,liver|Isoniazid hepatitis risk rises with ___ and alcohol|age|age,older age|Monitor transaminases in older patients.
+G|Statins|pharm,lipids,liver|Statins can raise ___, though clinically significant injury is rare|transaminases|transaminases,alt,liver enzymes|Check a baseline before starting.
+G|Valproate|pharm,neuro,liver|Valproate can cause fatal ___ and pancreatitis|hepatotoxicity|hepatotoxicity,liver failure,hepatitis|Highest risk in young children.
+B|Halothane|pharm,anesthesia,liver|Halothane can cause|Fulminant hepatitis on repeat exposure|Acute renal failure after one dose|Which is why it has been largely abandoned.
+G|Amoxicillin-clavulanate|pharm,micro,liver|Co-amoxiclav classically causes ___ jaundice|cholestatic|cholestatic,cholestasis|Often weeks after the course ends.
+
+# ── Neurological and psychiatric effects ─────────────────────────────────
+G|Metronidazole|pharm,micro,neuro|Prolonged metronidazole causes peripheral ___ and a metallic taste|neuropathy|neuropathy|Plus a disulfiram-like reaction with alcohol.
+G|Isoniazid|pharm,micro,neuro|Isoniazid neuropathy is prevented by ___|pyridoxine|pyridoxine,b6,vitamin b6|It depletes vitamin B6.
+G|Vigabatrin|pharm,neuro,eye|Vigabatrin causes irreversible ___ field constriction|visual|visual|Requiring regular perimetry.
+G|Mefloquine|pharm,parasite,psych|Mefloquine can cause vivid dreams and ___ disturbance|neuropsychiatric|neuropsychiatric,psychiatric,mood|Avoid in those with a psychiatric history.
+B|Steroid psychosis|pharm,endocrine,psych|High-dose corticosteroids can cause|Mania and psychosis|Only sedation|Usually early and dose-related.
+G|Anticholinergic burden|pharm,geriatrics,psych|A high anticholinergic burden in the elderly worsens ___|confusion|confusion,delirium,cognition|Diphenhydramine and oxybutynin are common culprits.
+
+# ── Interactions and enzyme effects ──────────────────────────────────────
+G|CYP450 inducers|pharm,principles|Rifampin, phenytoin, carbamazepine and St John's ___ induce CYP450|wort|wort,worts|Lowering levels of co-administered drugs.
+G|CYP450 inhibitors|pharm,principles|Macrolides, azoles, and grapefruit juice ___ CYP450|inhibit|inhibit,inhibits,block|Raising levels and toxicity risk.
+B|Warfarin and amiodarone|pharm,coagulation|Adding amiodarone to warfarin|Raises the INR|Lowers the INR|Reduce the warfarin dose and monitor closely.
+B|MAOI and tyramine|pharm,psych,cardio|MAOIs with aged cheese cause|Hypertensive crisis|Serotonin syndrome|Tyramine displaces stored noradrenaline.
+G|Serotonin syndrome triggers|pharm,psych|Combining an SSRI with tramadol, linezolid or ___ risks serotonin syndrome|MAOI|maoi,maois,triptan,triptans|Also St John's wort and ondansetron.
+B|Potassium-sparing combinations|pharm,renal,electrolytes|Combining an ACE inhibitor, spironolactone and trimethoprim risks|Severe hyperkalemia|Hypokalemia|All three retain potassium.
+G|QT prolonging drugs|pharm,cardio|Macrolides, antipsychotics, ondansetron and ___ prolong the QT|methadone|methadone,fluoroquinolones,quinolones|Additive risk when combined.
+B|Grapefruit juice|pharm,principles|Grapefruit juice most affects drugs with|High first-pass metabolism|A high renal clearance|By inhibiting intestinal CYP3A4.

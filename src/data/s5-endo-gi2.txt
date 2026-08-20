@@ -1,0 +1,65 @@
+# Endocrine and gastroenterology — second depth pass. Gap-weighted.
+
+# ── Diabetes management, deeper ──────────────────────────────────────────
+G|Diabetes targets|endocrine,diabetes|A typical HbA1c target in type 2 diabetes is below ___ percent|7|7,seven,7%|Relaxed in the frail elderly.
+B|Metformin|endocrine,diabetes,pharm|Metformin is stopped when eGFR falls below|30|60|Dose-reduced between 30 and 45.
+G|Metformin|endocrine,diabetes,vitamins|Long-term metformin can cause ___ deficiency|B12|b12,vitamin b12|Check levels periodically.
+B|GLP-1 agonists|endocrine,diabetes,cardio|GLP-1 agonists have proven benefit for|Cardiovascular events and weight|Diabetic retinopathy and neuropathy|Along with SGLT2 inhibitors.
+G|SGLT2 inhibitors|endocrine,diabetes,renal|SGLT2 inhibitors slow progression of diabetic ___ disease|kidney|kidney,renal,nephropathy|Independent of glucose lowering.
+B|Euglycemic ketoacidosis|endocrine,diabetes,emergency|Euglycemic DKA is associated with|SGLT2 inhibitors|Metformin|Ketones may be high with near-normal glucose.
+G|Hypoglycemia|endocrine,diabetes,emergency|A conscious hypoglycemic patient is given fast-acting oral ___|glucose|glucose,carbohydrate,sugar|Then a longer-acting carbohydrate.
+B|Somogyi versus dawn|endocrine,diabetes|Morning hyperglycemia preceded by 3am hypoglycemia is|The Somogyi effect|The dawn phenomenon|Dawn phenomenon has no nocturnal low.
+G|Diabetic foot|endocrine,diabetes,micro|Diabetic foot ulcers require assessment of perfusion, infection and ___|neuropathy|neuropathy,sensation|Plus offloading pressure.
+
+# ── Thyroid, deeper ──────────────────────────────────────────────────────
+G|Subclinical hypothyroidism|endocrine,thyroid,lab|Subclinical hypothyroidism has a raised TSH with a normal free ___|T4|t4,thyroxine|Treat if TSH is above 10 or the patient is symptomatic.
+B|Thyroid nodule|endocrine,thyroid,oncology|The single best test for a thyroid nodule with normal TSH is|Fine needle aspiration|A radioiodine scan|Scanning is for suppressed TSH.
+G|Thyroid cancer|endocrine,thyroid,oncology|___ thyroid carcinoma spreads via lymphatics and has the best prognosis|Papillary|papillary|Follicular spreads haematogenously.
+B|Thyroglobulin|endocrine,thyroid,oncology|Serum thyroglobulin is used to monitor|Differentiated cancer after thyroidectomy|Medullary carcinoma after resection|Medullary uses calcitonin and CEA.
+G|Amiodarone thyrotoxicosis|endocrine,thyroid,pharm|Amiodarone thyrotoxicosis type ___ is destructive and steroid-responsive|2|2,two,ii|Type 1 is iodine-induced excess synthesis.
+B|Levothyroxine absorption|endocrine,thyroid,pharm|Levothyroxine should be taken|Fasting, away from calcium and iron|With breakfast and a calcium tablet|Absorption is markedly reduced otherwise.
+
+# ── Adrenal and pituitary, deeper ────────────────────────────────────────
+G|Adrenal incidentaloma|endocrine,adrenal|Every adrenal incidentaloma must be screened for ___ and hormone excess|malignancy|malignancy,cancer|Especially pheochromocytoma before any biopsy.
+B|Adrenal mass biopsy|endocrine,adrenal,emergency|Biopsy of an adrenal mass before excluding pheochromocytoma can cause|Hypertensive crisis|Tumour seeding only|Always measure metanephrines first.
+G|Congenital adrenal hyperplasia|endocrine,adrenal,lab|21-hydroxylase deficiency raises serum 17-hydroxy___|progesterone|progesterone|The screening test in ambiguous genitalia.
+B|Adrenal crisis prevention|endocrine,adrenal|Patients on long-term steroids need|Sick day dose increases and a steroid card|No change to their usual daily regimen|Doubling the dose during illness.
+G|Acromegaly|endocrine,pituitary,lab|Acromegaly is confirmed by failure of GH to suppress after an oral ___ load|glucose|glucose|IGF-1 is used for screening.
+B|Hypopituitarism|endocrine,pituitary|In hypopituitarism, which hormone is replaced FIRST?|Hydrocortisone|Levothyroxine|Thyroid hormone first could precipitate adrenal crisis.
+G|Diabetes insipidus|endocrine,pituitary,lab|The water deprivation test distinguishes central from ___ diabetes insipidus|nephrogenic|nephrogenic|Desmopressin is given at the end.
+
+# ── Calcium and bone, deeper ─────────────────────────────────────────────
+G|Hypercalcemia|endocrine,calcium,ECG|Hypercalcemia shortens the ___ interval on the ECG|QT|qt|Hypocalcemia prolongs it instead.
+B|Parathyroidectomy|endocrine,calcium,surgery|After parathyroidectomy, watch for|Hungry bone syndrome with hypocalcemia|Persistent hypercalcemia and stones|Rapid remineralization consumes calcium.
+G|Osteomalacia|endocrine,bone,path|Osteomalacia shows Looser zones, also called pseudo___|fractures|fractures,fracture|Ribbon-like lucencies in bone.
+B|Vitamin D resistant rickets|endocrine,bone,genetics|X-linked hypophosphatemic rickets is caused by|Renal phosphate wasting|Vitamin D deficiency|FGF-23 excess; calcium and PTH are normal.
+
+# ── Oesophagus and stomach, deeper ───────────────────────────────────────
+G|GERD|GI,pharm|Refractory reflux is investigated with 24-hour oesophageal ___ monitoring|pH|ph|Plus manometry before surgery.
+B|Barrett surveillance|GI,oncology|Barrett oesophagus with high-grade dysplasia is treated with|Endoscopic ablation or resection|Annual surveillance only|Progression risk is high.
+G|H pylori testing|GI,micro,pharm|Proton pump inhibitors must be stopped ___ weeks before H. pylori testing|2|2,two|They cause false negatives.
+B|H pylori eradication|GI,micro,pharm|First-line H. pylori therapy is|A PPI with two antibiotics|A PPI given on its own|Quadruple therapy where resistance is high.
+G|Gastroparesis|GI,endocrine,pharm|Diabetic gastroparesis is treated with prokinetics such as ___|metoclopramide|metoclopramide,erythromycin,domperidone|Plus small frequent low-fat meals.
+B|Upper GI bleed|GI,emergency|The first priority in an upper GI bleed is|Resuscitation before endoscopy|Immediate endoscopy first|Stabilize, then scope within 24 hours.
+G|Variceal prophylaxis|GI,liver,pharm|Non-selective beta blockers such as ___ prevent variceal bleeding|propranolol|propranolol,carvedilol,nadolol|Or endoscopic band ligation.
+
+# ── Small and large bowel, deeper ────────────────────────────────────────
+G|Inflammatory bowel disease|GI,IBD,lab|Faecal ___ distinguishes inflammatory from functional bowel disease|calprotectin|calprotectin|A useful non-invasive screen.
+B|Crohn disease|GI,IBD,pharm|Perianal fistulizing Crohn disease responds best to|Anti-TNF therapy|Mesalamine|Often with surgical drainage.
+G|Ulcerative colitis|GI,IBD,oncology|Colonoscopic surveillance in ulcerative colitis begins ___ years after diagnosis|8|8,eight,8-10|Because of the dysplasia risk.
+B|Irritable bowel syndrome|GI|Which feature argues AGAINST irritable bowel syndrome?|Nocturnal symptoms and weight loss|Bloating relieved by defecation|Red flags demand investigation.
+G|Coeliac crisis|GI,immuno,electrolytes|Severe untreated celiac disease can cause profound ___ and dehydration|hypokalemia|hypokalemia,electrolyte disturbance|A rare but dangerous presentation.
+B|Bile acid diarrhoea|GI,physiology,pharm|Bile acid diarrhoea after ileal resection is treated with|Cholestyramine|Loperamide alone|A bile acid sequestrant.
+G|Clostridioides difficile recurrence|GI,micro|Recurrent C. difficile may be treated with faecal ___ transplant|microbiota|microbiota,microbiome,flora|Highly effective for multiple recurrences.
+B|Colonic polyps|GI,oncology,path|Which polyp type carries the highest malignant potential?|Villous adenoma|Hyperplastic polyp|Villous, large and sessile is worst.
+
+# ── Liver and pancreas, deeper ───────────────────────────────────────────
+G|Ascites|GI,liver,lab|A serum-ascites albumin gradient above ___ indicates portal hypertension|1.1|1.1,1·1,11|Below that suggests malignancy or infection.
+B|Ascites management|GI,liver,pharm|First-line diuretics for cirrhotic ascites are|Spironolactone with furosemide|High-dose furosemide alone|Aldosterone excess drives the retention.
+G|Hepatic encephalopathy grading|GI,liver,neuro|___ is the flapping tremor of hepatic encephalopathy|Asterixis|asterixis|Also seen in uraemia and CO2 retention.
+B|Paracetamol overdose|GI,liver,toxicology|The King's College criteria for transplant include|pH below 7.3 after resuscitation|Any raised transaminase|Plus creatinine, INR and encephalopathy grade.
+G|Alcoholic hepatitis|GI,liver,pharm|Severe alcoholic hepatitis is scored with the ___ discriminant function|Maddrey|maddrey|Above 32 suggests steroid benefit.
+B|Wilson disease treatment|GI,liver,pharm|Wilson disease is maintained on|Zinc, which blocks copper absorption|Iron, which competes with copper|After initial chelation.
+G|Pancreatic insufficiency|GI,pancreas,lab|Faecal ___ is the screening test for exocrine pancreatic insufficiency|elastase|elastase|Low levels indicate insufficiency.
+B|Severe pancreatitis|GI,pancreas,critical care|Nutrition in severe pancreatitis should be|Enteral where possible|Strictly nil by mouth|Enteral feeding preserves gut barrier function.
+G|Autoimmune pancreatitis|GI,pancreas,immuno|Autoimmune pancreatitis is associated with raised IgG___|4|4,four,igg4|Sausage-shaped pancreas; responds to steroids.

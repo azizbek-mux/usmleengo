@@ -1,0 +1,81 @@
+# Renal, electrolytes and acid-base — depth pass. Gap-weighted.
+
+# ── Filtration and clearance ─────────────────────────────────────────────
+G|Glomerular filtration|renal,physiology|GFR is estimated clinically from serum ___|creatinine|creatinine|Inulin clearance is the gold standard but impractical.
+B|Creatinine|renal,physiology,lab|Creatinine overestimates GFR slightly because it is|Secreted by the proximal tubule|Reabsorbed in the distal tubule|Which is why cystatin C is sometimes preferred.
+G|Filtration fraction|renal,physiology|Filtration fraction is GFR divided by renal ___ flow|plasma|plasma,rpf|Normally about 20 percent.
+B|Afferent constriction|renal,physiology|Constricting the afferent arteriole makes GFR|Fall|Rise|Efferent constriction raises GFR instead.
+G|Renal clearance|renal,physiology,lab|A substance that is filtered and fully secreted measures renal ___ flow|plasma|plasma,plasma flow|PAH clearance approximates it.
+B|Glucose reabsorption|renal,physiology,diabetes|Glucosuria begins when plasma glucose exceeds about|200 mg/dL|100 mg/dL|The transport maximum of SGLT2 is exceeded.
+
+# ── Tubular function ─────────────────────────────────────────────────────
+G|Proximal tubule|renal,physiology|The proximal tubule reabsorbs all filtered glucose and amino ___|acids|acids,acid|Plus most bicarbonate, sodium and water.
+B|Fanconi syndrome|renal,physiology,path|Fanconi syndrome causes loss of|Glucose, amino acids, phosphate and bicarbonate|Potassium, magnesium and calcium alone|Generalized proximal tubular dysfunction; causes rickets.
+G|Loop of Henle|renal,physiology|The thin descending limb is permeable to ___ only|water|water|The thick ascending limb moves solute but not water.
+B|Thick ascending limb|renal,physiology|The thick ascending limb is|Impermeable to water|Freely permeable to water|Which is how it dilutes the tubular fluid.
+G|Distal convoluted tubule|renal,physiology,pharm|The distal tubule reabsorbs sodium via the Na-Cl ___|cotransporter|cotransporter,symporter,transporter|Blocked by thiazides.
+B|Collecting duct|renal,physiology,endocrine|Aldosterone acts on which cell of the collecting duct?|Principal cells|Intercalated cells|Alpha-intercalated cells secrete acid.
+G|Countercurrent multiplier|renal,physiology|The loop of Henle creates a medullary ___ gradient|osmotic|osmotic,concentration|Allowing urine concentration under ADH.
+
+# ── Acid-base, several angles ────────────────────────────────────────────
+G|Anion gap|renal,acid base,lab|Anion gap equals sodium minus chloride minus ___|bicarbonate|bicarbonate,hco3|Normal is 8 to 12.
+G|Anion gap acidosis|renal,acid base|MUDPILES: methanol, uremia, DKA, propylene glycol, iron, lactate, ethylene glycol and ___|salicylates|salicylates,salicylate,aspirin|The classic causes of a raised gap.
+B|Normal gap acidosis|renal,acid base,GI|A normal anion gap acidosis suggests|Diarrhea or renal tubular acidosis|Lactic acidosis or ketoacidosis|Bicarbonate is lost and chloride replaces it.
+G|Winter formula|renal,acid base|Winter formula predicts the expected ___ in metabolic acidosis|PCO2|pco2,paco2,co2|1.5 times bicarbonate plus 8, plus or minus 2.
+B|Type 1 RTA|renal,acid base|Distal renal tubular acidosis shows urine pH that is|Above 5.5 despite acidosis|Below 5.5 despite acidosis|The distal tubule cannot secrete hydrogen ions.
+B|Type 2 RTA|renal,acid base|Proximal renal tubular acidosis is caused by|Failure to reabsorb bicarbonate|Failure to secrete acid|Associated with Fanconi syndrome and acetazolamide.
+G|Type 4 RTA|renal,acid base,electrolytes|Type 4 renal tubular acidosis is the only one with ___kalemia|hyper|hyper,hyperkalemia|Aldosterone deficiency or resistance.
+B|Respiratory compensation|renal,acid base,resp|Respiratory compensation for metabolic acidosis begins|Within minutes|After 3 days|Renal compensation for respiratory problems takes days.
+
+# ── Sodium and water ─────────────────────────────────────────────────────
+G|Hyponatremia|renal,electrolytes|The first step in assessing hyponatremia is measuring serum ___|osmolality|osmolality,osmolarity|To exclude pseudohyponatremia and hyperglycemia.
+B|Hypovolemic hyponatremia|renal,electrolytes|Hyponatremia with a urine sodium below 20 suggests|Extrarenal losses|Diuretic use|The kidney is appropriately conserving sodium.
+G|SIADH|renal,electrolytes,endocrine|SIADH shows a urine osmolality inappropriately ___|high|high,concentrated,elevated|Above 100 despite a low serum osmolality.
+B|SIADH treatment|renal,electrolytes,pharm|Chronic SIADH is treated with|Fluid restriction|Aggressive saline|Add tolvaptan or demeclocycline if restriction fails.
+G|Hypernatremia|renal,electrolytes|Hypernatremia almost always means a deficit of ___|water|water,free water|Usually impaired thirst or access.
+B|Correcting hypernatremia|renal,electrolytes,neuro|Correcting hypernatremia too quickly causes|Cerebral edema|Osmotic demyelination|The reverse of over-rapid hyponatremia correction.
+
+# ── Potassium, calcium, magnesium ────────────────────────────────────────
+G|Hyperkalemia|renal,electrolytes,acid base|Acidosis raises serum potassium by driving it ___ of cells|out|out,outside,extracellularly|In exchange for hydrogen ions.
+B|Pseudohyperkalemia|renal,electrolytes,lab|A raised potassium with no ECG change and a haemolysed sample suggests|Pseudohyperkalemia|True hyperkalemia|Repeat the sample before treating.
+G|Hypokalemia|renal,electrolytes|Refractory hypokalemia should prompt checking serum ___|magnesium|magnesium,mg|Low magnesium prevents potassium correction.
+B|Hypomagnesemia|renal,electrolytes,endocrine|Hypomagnesemia also causes|Hypocalcemia through PTH resistance|Hypercalcemia through increased PTH|A common cause of resistant electrolyte disturbance.
+G|Hypercalcemia|renal,electrolytes,emergency|The first treatment of severe hypercalcemia is intravenous ___|saline|saline,fluids,normal saline|Then bisphosphonates and calcitonin.
+B|Hypercalcemia causes|renal,electrolytes,oncology|The two commonest causes of hypercalcemia are|Hyperparathyroidism and malignancy|Sarcoidosis and lithium therapy|Outpatients: parathyroid. Inpatients: cancer.
+G|Phosphate|renal,electrolytes,endocrine|FGF-23 lowers serum phosphate by reducing its ___ reabsorption|renal|renal,tubular,proximal|Raised early in chronic kidney disease.
+
+# ── Glomerular disease, multiple angles ──────────────────────────────────
+G|Nephrotic syndrome|renal,nephrotic|Nephrotic syndrome requires proteinuria above ___ grams per day|3.5|3.5,3·5,35|Plus hypoalbuminemia, edema and hyperlipidemia.
+B|Membranoproliferative glomerulonephritis|renal,path|MPGN shows which histologic pattern?|Tram-track basement membranes|Spike and dome subepithelial deposits|From mesangial interposition.
+G|Diabetic nephropathy|renal,endocrine,path|Diabetic nephropathy shows ___-Wilson nodules|Kimmelstiel|kimmelstiel,kimmelstiel-wilson|Nodular glomerulosclerosis.
+B|Amyloid nephropathy|renal,path|Renal amyloidosis presents as|Nephrotic syndrome|Nephritic syndrome|Congo red apple-green birefringence.
+G|Rapidly progressive glomerulonephritis|renal,path|RPGN shows ___ on light microscopy|crescents|crescents,crescent|Proliferating parietal cells and fibrin in Bowman space.
+B|Anti-GBM disease|renal,immuno,resp|Goodpasture disease is treated with|Plasmapheresis and immunosuppression|High-dose steroids without exchange|Removing circulating anti-GBM antibody is essential.
+G|Alport syndrome|renal,genetics|Alport syndrome is usually inherited in an X-___ pattern|linked|linked,linked dominant|Hematuria, deafness and lenticonus.
+B|Thin basement membrane disease|renal,genetics|Thin basement membrane disease causes|Benign familial hematuria|Progressive renal failure|Normal renal function, no deafness.
+
+# ── Acute kidney injury ──────────────────────────────────────────────────
+G|Acute kidney injury|renal,AKI|Postrenal AKI is excluded with a renal ___|ultrasound|ultrasound,us|Looking for hydronephrosis.
+B|Contrast nephropathy|renal,AKI|Contrast nephropathy creatinine peaks at|3 to 5 days|24 hours|Prevented with hydration and by stopping nephrotoxins.
+G|Rhabdomyolysis|renal,AKI,msk|Rhabdomyolysis causes AKI through ___ toxicity to tubules|myoglobin|myoglobin|Urine dipstick positive for blood with no red cells.
+B|Rhabdomyolysis|renal,AKI,electrolytes|Rhabdomyolysis causes serum calcium to|Fall initially|Rise initially|Calcium deposits in damaged muscle, then rebounds.
+G|Hepatorenal syndrome|renal,liver|Hepatorenal syndrome shows a urine sodium that is very ___|low|low,decreased|Intense sodium avidity with structurally normal kidneys.
+B|Abdominal compartment syndrome|renal,AKI,surgery|Raised intra-abdominal pressure causes AKI by|Reducing renal perfusion|Direct tubular toxicity|Measured via bladder pressure.
+
+# ── Chronic kidney disease ───────────────────────────────────────────────
+G|Chronic kidney disease|renal|CKD stage 5 is a GFR below ___ mL/min|15|15,fifteen|Where dialysis or transplant is considered.
+B|CKD mineral bone disease|renal,endocrine,bone|CKD causes bone disease through|Low calcitriol and phosphate retention|Excess vitamin D and phosphate loss|Leading to secondary hyperparathyroidism.
+G|CKD anemia|renal,heme,pharm|CKD anemia is treated with iron and an erythropoiesis-___ agent|stimulating|stimulating,stimulation|Targeting a haemoglobin around 10 to 11.
+B|Dialysis indications|renal,emergency|AEIOU indications for dialysis include acidosis, electrolytes, ingestion, overload and|Uremia|Uric acid|Pericarditis or encephalopathy from uremia.
+B|Peritoneal dialysis|renal,micro|The commonest complication of peritoneal dialysis is|Peritonitis|Air embolism|Cloudy effluent with abdominal pain.
+
+# ── Stones and urology ───────────────────────────────────────────────────
+G|Kidney stones|renal,stones,imaging|The best imaging for renal colic is non-contrast ___|CT|ct,computed tomography|Detects all stone types including radiolucent urate.
+B|Stone passage|renal,stones|Stones under 5 mm|Usually pass spontaneously|Always need intervention|Tamsulosin can aid passage.
+G|Cystinuria|renal,stones,genetics|Cystine stones form ___-shaped crystals|hexagonal|hexagonal,hexagon,six-sided|A defect in dibasic amino acid transport.
+B|Renal cell carcinoma|renal,oncology,genetics|Von Hippel-Lindau disease causes|Bilateral clear cell renal carcinoma|Transitional cell carcinoma|Plus hemangioblastomas and pheochromocytoma.
+G|Renal cell carcinoma|renal,oncology,endocrine|Renal cell carcinoma can secrete EPO, causing ___|polycythemia|polycythemia,erythrocytosis|Also renin, PTHrP and ACTH.
+B|Bladder cancer|renal,oncology|Painless gross hematuria in an older smoker requires|Cystoscopy and upper tract imaging|Reassurance and repeat urinalysis|Bladder cancer until proven otherwise.
+G|Wilms tumour|renal,oncology,peds|Wilms tumour is associated with the ___ gene on chromosome 11|WT1|wt1,wt-1|WAGR and Beckwith-Wiedemann syndromes.
+B|Posterior urethral valves|renal,peds,embryology|Posterior urethral valves cause|Bilateral hydronephrosis in a male infant|Isolated microscopic hematuria in a boy|The commonest cause of bladder outlet obstruction in boys.
+G|Vesicoureteral reflux|renal,peds|Vesicoureteral reflux predisposes to renal ___|scarring|scarring,scars|From recurrent pyelonephritis; detected on a voiding cystourethrogram.

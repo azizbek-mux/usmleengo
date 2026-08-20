@@ -1,0 +1,62 @@
+# Biochemistry, genetics and cell biology — batch 1. Gap-weighted.
+G|Essential fructosuria|biochem,genetics|In fructokinase deficiency, fructose is still handled by ___|hexokinase|hexokinase|A slow alternative route; the condition is benign.
+G|Transamination|biochem,amino acids|Alanine transfers its amino group to alpha-___ to form glutamate|ketoglutarate|ketoglutarate,alpha-ketoglutarate,akg|ALT catalyzes this; vitamin B6 is the cofactor.
+G|Transaminases|biochem,vitamins|Transamination reactions require vitamin ___ as a cofactor|B6|b6,pyridoxine,vitamin b6,vit b6|Pyridoxal phosphate.
+B|GLUT transporters|biochem,physiology|Glucose enters most cells by|Facilitated diffusion without energy|Primary active transport using ATP|Carrier-mediated, stereoselective for D-glucose.
+B|Steroid hormone receptors|biochem,endocrine|Progesterone binds a receptor located|Intracellularly|On the cell membrane|Steroids are lipophilic and act on transcription.
+G|Ehlers-Danlos syndrome|biochem,genetics|Ehlers-Danlos syndrome is a defect in ___ synthesis|collagen|collagen|Hypermobile joints, hyperelastic skin, easy bruising.
+G|Orotic aciduria|biochem,genetics|Hereditary orotic aciduria is treated with ___|uridine|uridine,uridine monophosphate,ump|Bypasses the blocked UMP synthase. No hyperammonemia, unlike OTC deficiency.
+B|Orotic aciduria|biochem,genetics|Orotic aciduria with hyperammonemia suggests|Ornithine transcarbamylase deficiency|UMP synthase deficiency in the liver|OTC deficiency is X-linked with encephalopathy.
+G|Phenylketonuria|biochem,genetics,amino acids|In PKU, ___ becomes an essential amino acid|tyrosine|tyrosine,tyr|Phenylalanine hydroxylase cannot make it.
+G|Maple syrup urine disease|biochem,genetics|Maple syrup urine disease blocks breakdown of ___-chain amino acids|branched|branched,branched chain|Leucine, isoleucine and valine. Deficient alpha-ketoacid dehydrogenase.
+G|Pentose phosphate pathway|biochem,metabolism|Transketolase requires vitamin ___ as a cofactor|B1|b1,thiamine,thiamin|Which is why it is used to assess thiamine status.
+G|Proteasome|biochem,cell biology|Proteins are tagged for proteasomal degradation by ___|ubiquitin|ubiquitin,ubiquitination|Four or more monomers signal destruction.
+G|Carnitine deficiency|biochem,metabolism|Carnitine shuttles long-chain fatty acids into the ___|mitochondria|mitochondria,mitochondrion,mitochondrial matrix|Deficiency gives hypoketotic hypoglycemia and weakness.
+B|Hypoketotic hypoglycemia|biochem,metabolism|Hypoketotic hypoglycemia after fasting suggests a defect in|Fatty acid oxidation|Glycogenolysis|MCAD deficiency or carnitine deficiency.
+G|Transmembrane domains|biochem,cell biology|Membrane-spanning protein regions are rich in ___ amino acids|hydrophobic|hydrophobic,nonpolar,non-polar|Extracellular domains are hydrophilic.
+G|Thiamine-dependent enzymes|biochem,vitamins|Pyruvate dehydrogenase requires vitamin ___|B1|b1,thiamine,thiamin|Also alpha-ketoglutarate dehydrogenase and transketolase.
+B|Pyruvate dehydrogenase deficiency|biochem,metabolism|Pyruvate dehydrogenase deficiency causes|Lactic acidosis|Ketoacidosis|Treat with a ketogenic diet high in lysine and leucine.
+G|Pompe disease|biochem,genetics,glycogen|Pompe disease is deficiency of acid ___|alpha-glucosidase|alpha-glucosidase,alpha glucosidase,acid maltase|Lysosomal storage; cardiomegaly and hypotonia. Pompe trashes the pump.
+G|Homocystinuria|biochem,genetics|Homocysteine is remethylated to the amino acid ___|methionine|methionine|Needs B12 and folate. Cystathionine synthase uses B6 instead.
+G|Galactokinase deficiency|biochem,genetics|Galactokinase deficiency presents with isolated ___|cataracts|cataracts,cataract|Galactitol accumulates in the lens. Milder than classic galactosemia.
+B|Classic galactosemia|biochem,genetics|Classic galactosemia is deficiency of|Galactose-1-phosphate uridyltransferase|Galactokinase in the lens epithelium|Jaundice, hepatomegaly, E. coli sepsis, intellectual disability.
+G|Urea cycle defects|biochem,genetics|Urea cycle disorders are managed by restricting dietary ___|protein|protein,proteins|Ammonia accumulates causing lethargy, vomiting and cerebral edema.
+G|Hereditary fructose intolerance|biochem,genetics|Aldolase B deficiency requires removing fructose and ___ from the diet|sucrose|sucrose|Fructose-1-phosphate accumulates and depletes phosphate.
+B|Calcium-sensing receptor|biochem,endocrine,calcium|The calcium-sensing receptor is|A G protein-coupled receptor|A receptor tyrosine kinase|Familial hypocalciuric hypercalcemia comes from its mutation.
+G|Ras protein|biochem,oncology,cell biology|Ras is active only when bound to ___|GTP|gtp|Intrinsic GTPase switches it off; mutations lock it on.
+G|Pentose phosphate pathway|biochem,metabolism|The oxidative pentose phosphate pathway generates ___ for fatty acid synthesis|NADPH|nadph|Also maintains reduced glutathione.
+G|Niacin|biochem,vitamins|Niacin is a precursor of ___ used in redox reactions|NAD|nad,nad+,nadh|Pellagra causes the three D's.
+B|Ribosomal subunits|biochem,cell biology|The 40S ribosomal subunit binds|The mRNA and the initiator tRNA|The signal recognition particle|Eukaryotic ribosome is 80S: 40S plus 60S.
+G|Genetic anticipation|biochem,genetics|Trinucleotide repeat disorders worsen in successive generations through ___|anticipation|anticipation|Repeat expansion; classic in myotonic dystrophy and Huntington.
+G|Cori disease|biochem,genetics,glycogen|Cori disease is deficiency of the glycogen ___ enzyme|debranching|debranching,debrancher|Hypoglycemia and hepatomegaly, milder than von Gierke.
+G|Lyonization|biochem,genetics|Random X inactivation in females is called ___|lyonization|lyonization,lyonisation,x-inactivation|Skewed lyonization can make a female express an X-linked recessive disease.
+B|Barr body|biochem,genetics|A Barr body represents|An inactivated X chromosome|An extra Y chromosome|Number of Barr bodies equals X count minus one.
+B|Glucocorticoid action|biochem,endocrine|Cortisol acts through|An intracellular receptor altering transcription|A membrane receptor raising cyclic AMP levels|Lipophilic; diffuses through the membrane.
+G|DNA replication|biochem,genetics|___ synthesizes the RNA primer during DNA replication|primase|primase|Uracil in the primer marks it as RNA.
+G|Pleiotropy|biochem,genetics|One gene causing many unrelated effects is called ___|pleiotropy|pleiotropy,pleiotropic|Classic in PKU and Marfan syndrome.
+B|Achondroplasia|biochem,genetics|Achondroplasia is caused by|A gain-of-function FGFR3 mutation|A loss-of-function mutation|Autosomal dominant; inhibits chondrocyte proliferation.
+B|Achondroplasia inheritance|biochem,genetics|If one parent has achondroplasia, offspring risk is|50 percent|25 percent|Autosomal dominant, full penetrance.
+G|Phospholipase C|biochem,cell biology|Phospholipase C activation raises intracellular ___|calcium|calcium,ca,ca2+|IP3 releases calcium; DAG activates protein kinase C.
+G|Histone H1|biochem,genetics,cell biology|Histone ___ sits outside the nucleosome core and compacts chromatin|H1|h1|The core octamer is H2A, H2B, H3 and H4.
+B|Heterochromatin|biochem,genetics|Heterochromatin is|Densely packed and transcriptionally inactive|Loosely packed and actively transcribed|Euchromatin is expressed.
+G|Riboflavin|biochem,vitamins|Riboflavin is the precursor of ___ used by succinate dehydrogenase|FAD|fad,fadh2|B2 deficiency causes cheilosis and corneal vascularization.
+G|Telomerase|biochem,cell biology,oncology|___ maintains chromosome ends in stem and cancer cells|telomerase|telomerase|Absent in most somatic cells, causing replicative senescence.
+B|Post-translational modification|biochem,cell biology|Glycosylation and phosphorylation occur|After translation|During transcription|In the endoplasmic reticulum and Golgi.
+B|Eukaryotic replication|biochem,genetics|Eukaryotic DNA replicates faster than prokaryotic because it has|Multiple origins of replication|Circular DNA with one origin|Prokaryotes have a single origin on circular DNA.
+G|Nonsense mutation|biochem,genetics|A mutation creating a stop codon is called a ___ mutation|nonsense|nonsense|Produces a truncated protein, as in some Duchenne cases.
+B|Frameshift mutation|biochem,genetics|A frameshift mutation results from|Insertion or deletion not a multiple of three|A single base substitution changing one codon|Duchenne is usually frameshift; Becker preserves the frame.
+G|Linkage disequilibrium|biochem,genetics,biostats|Non-random association of alleles at two loci is called linkage ___|disequilibrium|disequilibrium|Does not always imply physical proximity.
+B|Western blot|biochem,lab|Western blot detects|Proteins|DNA|Southern for DNA, Northern for RNA, Western for protein.
+G|Southern blot|biochem,lab|A ___ blot detects DNA|Southern|southern|SNoW DRoP: Southern DNA, Northern RNA, Western Protein.
+B|Rate limiting enzymes|biochem,metabolism|The rate-limiting enzyme of gluconeogenesis is|Fructose-1,6-bisphosphatase|Phosphofructokinase-1|PFK-1 is glycolysis; F-1,6-BPase reverses it.
+G|Cholesterol synthesis|biochem,metabolism,lipids|The rate-limiting enzyme of cholesterol synthesis is ___ reductase|HMG-CoA|hmg-coa,hmg coa,hmgcoa|The statin target.
+G|Heme synthesis|biochem,heme|The rate-limiting enzyme of heme synthesis is ALA ___|synthase|synthase|Requires vitamin B6; inhibited by heme.
+B|Acute intermittent porphyria|biochem,heme,neuro|Acute intermittent porphyria presents with|Abdominal pain and neuropsychiatric symptoms|Photosensitive blistering of the hands|Porphobilinogen deaminase deficiency; no skin findings.
+B|Porphyria cutanea tarda|biochem,heme,derm|Porphyria cutanea tarda causes|Blistering photosensitivity|Abdominal pain and neuropathy|Uroporphyrinogen decarboxylase deficiency; tea-coloured urine.
+G|Mitochondrial inheritance|biochem,genetics|Mitochondrial disorders are inherited from the ___|mother|mother,maternal|All children of an affected mother may be affected; heteroplasmy varies severity.
+B|Imprinting|biochem,genetics|Prader-Willi syndrome results from loss of the|Paternal allele|Maternal allele|Angelman results from maternal loss.
+G|Signal recognition particle|biochem,cell biology|The ___ targets ribosomes to the rough endoplasmic reticulum|signal recognition particle|signal recognition particle,srp|Absence leads to protein accumulation in the cytosol.
+B|I-cell disease|biochem,genetics,cell biology|I-cell disease is failure to add|Mannose-6-phosphate|Ubiquitin chains|Enzymes are secreted instead of reaching lysosomes.
+G|Collagen synthesis|biochem,vitamins|Vitamin ___ is needed to hydroxylate proline and lysine|C|c,vitamin c,ascorbic acid|Deficiency causes scurvy.
+G|Osteogenesis imperfecta|biochem,genetics|Osteogenesis imperfecta is a defect in type ___ collagen|I|i,1,type 1,type i|Blue sclerae, fractures, hearing loss.
+B|Marfan syndrome|biochem,genetics|Marfan syndrome is a defect in|Fibrillin-1|Type III collagen|Excess free TGF-beta weakens the aortic media.

@@ -1,0 +1,68 @@
+# TRICKY — bulk batch 4.
+
+# ── Confusable pairs ─────────────────────────────────────────────────────
+BT|Sensitivity vs positive predictive value|biostats,lab|Which changes with disease prevalence?|Positive predictive value|The test sensitivity|Sensitivity and specificity are properties of the test.
+BT|Incidence vs attack rate|biostats,epidemiology|Which is used during an outbreak over a short period?|Attack rate|Incidence rate|A cumulative incidence for a defined outbreak.
+BT|Cohort vs case-control|biostats,epidemiology|Which is better for a RARE disease?|Case-control|Cohort|Cohorts suit rare exposures instead.
+BT|Selection vs measurement bias|biostats,epidemiology|Which arises from how outcomes are ASSESSED?|Measurement bias|Selection bias|Selection bias arises from who is enrolled.
+BT|Precision vs accuracy|biostats,lab|Which is affected by RANDOM error?|Precision|Accuracy|Systematic error affects accuracy.
+BT|Mean vs median|biostats|Which is more affected by outliers?|The mean|The median|Which is why skewed data are reported as medians.
+BT|Absolute vs relative risk reduction|biostats|Which can look impressive even when the benefit is tiny?|Relative risk reduction|Absolute risk reduction|Always ask for the absolute numbers.
+BT|Beneficence vs paternalism|ethics|Overriding a competent refusal for the patient's own good is|Paternalism|Beneficence|Beneficence must not override autonomy.
+BT|Malpractice elements|ethics|Which is NOT required to prove negligence?|Intent to harm|Duty of care|Duty, breach, causation and damages.
+BT|Confidentiality vs privilege|ethics|Which applies specifically in a court setting?|Privilege|Confidentiality|Confidentiality is the broader clinical duty.
+BT|Osteoarthritis vs septic arthritis|msk,micro|Which has an effusion with more than 50,000 white cells?|Septic arthritis|Osteoarthritis|Osteoarthritic fluid is non-inflammatory, under 2,000.
+BT|Rheumatoid vs psoriatic arthritis|msk,rheum|Which affects the distal interphalangeal joints?|Psoriatic arthritis|Rheumatoid arthritis|With nail changes and dactylitis.
+BT|Ankylosing spondylitis vs mechanical back pain|msk,rheum|Which IMPROVES with exercise and worsens with rest?|Inflammatory back pain|Mechanical back pain|Plus morning stiffness over 30 minutes.
+BT|Osteomyelitis vs Charcot foot|msk,endocrine|Which is warm and swollen with NORMAL inflammatory markers?|Charcot arthropathy|Osteomyelitis|A difficult and important distinction in diabetes.
+BT|Cauda equina vs sciatica|neuro,msk,emergency|Which has saddle anaesthesia and urinary retention?|Cauda equina syndrome|Simple sciatica|A surgical emergency needing urgent MRI.
+BT|Migraine aura vs TIA|neuro,vascular|Which spreads gradually over minutes with positive symptoms?|Migraine aura|Transient ischemic attack|TIA causes sudden negative symptoms.
+BT|Essential vs Parkinsonian tremor|neuro,movement|Which is symmetrical and affects the head and voice?|Essential tremor|Parkinson tremor|Parkinson tremor is asymmetrical and at rest.
+BT|Vascular vs Alzheimer dementia|neuro,dementia|Which has early gait disturbance and focal signs?|Vascular dementia|Alzheimer disease|Stepwise decline with vascular risk factors.
+BT|Encephalitis vs psychiatric illness|neuro,psych,emergency|New psychosis with fever and seizures suggests|Encephalitis|Primary psychosis|Autoimmune or herpes encephalitis must be excluded.
+BT|Anemia of chronic kidney disease vs iron deficiency|renal,heme|Which is normocytic with a normal ferritin?|Anemia of chronic kidney disease|Early iron deficiency anemia|EPO deficiency rather than iron lack.
+BT|Acute vs chronic urinary retention|renal,urology|Which is painless with a huge residual volume?|Chronic retention|Acute retention|Acute retention is agonizing.
+BT|Nephrolithiasis vs pyelonephritis|renal,micro|Which has fever with costovertebral tenderness?|Pyelonephritis|Renal colic|Colic causes writhing pain without fever unless infected.
+BT|Urge vs stress incontinence|renal,urology|Which leaks on coughing or laughing?|Stress incontinence|Urge incontinence|Urge incontinence follows a sudden compulsion.
+BT|Asthma vs heart failure|resp,cardio|Which improves with sitting upright and diuresis?|Cardiac asthma from heart failure|Bronchial asthma with wheeze|Both wheeze; the history and BNP separate them.
+BT|Pneumonia vs pulmonary oedema|resp,cardio,imaging|Which shows bilateral perihilar bat-wing shadowing?|Pulmonary oedema|Lobar pneumonia|Pneumonia is usually focal.
+BT|Pneumothorax vs bullous emphysema|resp,imaging|Which has lung markings visible within the lucency?|Bullous emphysema|Pneumothorax|Misplacing a drain into a bulla is dangerous.
+BT|Pleuritic vs cardiac chest pain|resp,cardio|Which is sharp and worse on deep inspiration?|Pleuritic pain|Cardiac ischemic pain|Ischemic pain is heavy and unrelated to breathing.
+BT|Hyperventilation vs pulmonary embolism|resp,psych|Which has hypoxia alongside hypocapnia?|Pulmonary embolism|Anxiety hyperventilation|Anxiety lowers CO2 with normal oxygenation.
+BT|Viral vs bacterial diarrhoea|GI,micro|Which typically causes bloody stool with fever?|Bacterial dysentery|Viral gastroenteritis|Invasive organisms; consider stool culture.
+BT|Small bowel vs colonic bleeding|GI,emergency|Which causes melena rather than fresh blood?|Upper gastrointestinal bleeding|Colonic bleeding above the rectum|Digested blood turns black and tarry.
+BT|Cholestasis vs hepatocellular injury|GI,liver,lab|Which raises alkaline phosphatase more than transaminases?|Cholestasis|Hepatocellular injury|The pattern guides imaging versus serology.
+BT|Acute vs chronic liver failure|GI,liver|Which has encephalopathy within 8 weeks of jaundice with NO prior liver disease?|Acute liver failure|Decompensated cirrhosis|Requires transplant referral.
+BT|Hyperthyroidism vs anxiety|endocrine,psych|Which has weight loss with an INCREASED appetite?|Hyperthyroidism|Generalized anxiety|Plus tremor, heat intolerance and a suppressed TSH.
+BT|Hypoglycemia vs stroke|endocrine,neuro,emergency|Which is excluded first in any patient with sudden neurological deficit?|Hypoglycemia|Ischemic stroke|A bedside glucose is mandatory.
+BT|Cushing vs polycystic ovary|endocrine,repro|Which has proximal myopathy and easy bruising?|Cushing syndrome|Polycystic ovary syndrome|Both cause hirsutism and irregular periods.
+BT|Precocious puberty central vs peripheral|endocrine,peds|Which has raised LH and FSH?|Central precocious puberty|Peripheral precocious puberty|Peripheral causes suppress gonadotropins.
+
+# ── Changed context ──────────────────────────────────────────────────────
+BT|Antibiotics in otitis media|ENT,peds,micro|In a well child over two with mild otitis media, antibiotics are|Often deferred with safety-netting|Always required within 24 hours|Most resolve spontaneously.
+BT|Steroids in croup|ENT,peds,pharm|Dexamethasone in croup is given|Even for mild disease|Only if stridor at rest|A single dose shortens illness.
+BT|Antibiotics in sore throat|ENT,micro|Antibiotics for streptococcal pharyngitis are given mainly to|Prevent rheumatic fever|Shorten symptoms|Symptom benefit is modest.
+BT|Antipyretics and vaccines|peds,immuno,pharm|Prophylactic paracetamol before vaccination|May blunt the antibody response|Improves the immune response|Give it only if the child is uncomfortable.
+BT|Iron in infection|heme,micro,pharm|Iron supplementation during active infection|May favour bacterial growth|Speeds recovery from it|Anemia of inflammation is protective.
+BT|Transfusion threshold|heme,critical care|In stable patients, transfusion is generally withheld until haemoglobin falls below|7 g/dL|10 g/dL|Restrictive strategies improve outcomes.
+BT|Oxygen in myocardial infarction|cardio,emergency|Routine oxygen in a normoxic MI patient is|Not beneficial and possibly harmful|Standard care for all chest pain|Give only if saturations are low.
+BT|Bed rest in back pain|msk,clinical|For acute mechanical back pain, bed rest is|Discouraged|Recommended|Early mobilization improves recovery.
+BT|Antibiotics in bronchitis|resp,micro|Acute bronchitis in a healthy adult|Rarely needs antibiotics|Always needs antibiotics|Almost always viral, even with purulent sputum.
+BT|Colonoscopy timing after diverticulitis|GI,oncology|Colonoscopy after acute diverticulitis should be|Delayed six weeks|Performed immediately|Risk of perforation during acute inflammation.
+BT|Statin after stroke|neuro,pharm,lipids|A high-intensity statin after ischemic stroke is|Recommended regardless of cholesterol|Given only if LDL is above target|Plaque stabilization matters beyond the number.
+BT|Anticoagulation after GI bleed|GI,coagulation,pharm|Anticoagulation after a controlled GI bleed in atrial fibrillation is usually|Restarted after a short interval|Stopped permanently in everyone|Thrombotic risk usually exceeds rebleeding risk.
+
+# ── One step further ─────────────────────────────────────────────────────
+BT|Hyponatremia and seizure|renal,neuro,emergency|Severe symptomatic hyponatremia is treated with|Hypertonic saline|Fluid restriction alone|Restriction is too slow when seizing.
+BT|Potassium and insulin|endocrine,electrolytes|Hyperkalemia treated with insulin also requires|Glucose to prevent hypoglycemia|Additional potassium chloride|Unless the patient is already hyperglycemic.
+BT|Calcium and hyperkalemia|cardio,electrolytes|Calcium in hyperkalemia works within|Minutes, but only briefly|Hours, and lasts all day|Repeat if ECG changes return.
+BT|Magnesium and arrhythmia|cardio,electrolytes|Magnesium is given in torsades even when the level is|Normal|Only if low|It stabilizes the myocardium regardless.
+BT|Bicarbonate and calcium|electrolytes,emergency|Giving bicarbonate and calcium through the same line causes|Precipitation|Enhanced effect|Flush between them.
+BT|Thiamine and refeeding|nutrition,neuro|Thiamine in refeeding must be given|Before the first feed|After a week|Carbohydrate consumes the last stores.
+BT|Steroids and glucose monitoring|endocrine,pharm|Starting high-dose steroids in a diabetic requires|More frequent glucose monitoring|No change to their usual regimen|Post-prandial glucose rises most.
+BT|Diuretics and gout|renal,rheum,pharm|A patient with gout needing an antihypertensive should avoid|Thiazides|Losartan|Losartan is mildly uricosuric.
+BT|Beta blockers and peripheral arterial disease|cardio,vascular,pharm|Beta blockers in peripheral arterial disease are|Generally safe|Absolutely contraindicated|An outdated concern for most patients.
+BT|Renal function and metformin|endocrine,renal,pharm|Acute illness with dehydration in a metformin user requires|Temporarily stopping it|Doubling the dose|Sick day rules prevent lactic acidosis.
+BT|Contrast and metformin|imaging,pharm,renal|Metformin after contrast is restarted once|Renal function is confirmed stable|The scan has been completed|Usually after 48 hours.
+BT|Pregnancy and radiation|OB,imaging,safety|A chest x-ray in pregnancy delivers|A negligible fetal dose|A dangerous fetal dose|Never withhold necessary imaging; shield and justify.
+BT|Anaemia and heart failure|heme,cardio|Correcting iron deficiency in heart failure|Improves symptoms and capacity|Has no effect on symptoms|Intravenous iron even without anemia.

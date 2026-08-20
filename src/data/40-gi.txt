@@ -1,0 +1,90 @@
+# Gastrointestinal and hepatology — batch 1.
+G|Pancreatic cancer genetics|GI,oncology,genetics|The commonest mutated oncogene in pancreatic adenocarcinoma is ___|KRAS|kras,k-ras|Also loss of CDKN2A, TP53 and SMAD4.
+B|Obstructive jaundice|GI,liver|Common bile duct obstruction raises which bilirubin?|Conjugated|Unconjugated|Dark urine and pale stools — conjugated bilirubin is water soluble.
+B|Zollinger-Ellison syndrome|GI,endocrine,oncology|Zollinger-Ellison syndrome is caused by a tumor secreting|Gastrin|Somatostatin|Gastrinoma of the duodenum or pancreas; refractory multiple ulcers.
+B|Zollinger-Ellison syndrome|GI,endocrine,genetics|Zollinger-Ellison is associated with which syndrome?|MEN 1|MEN 2A|Pituitary, parathyroid and pancreas.
+B|Oral rehydration solution|GI,physiology|Glucose is added to oral rehydration solution to|Drive sodium absorption|Sweeten the taste|The SGLT1 cotransporter needs glucose to absorb sodium and water.
+B|MALT lymphoma|GI,oncology,micro|Gastric MALT lymphoma is caused by|Chronic immune stimulation by H. pylori|Aflatoxin exposure from stored grain|Eradicating H. pylori often cures the lymphoma.
+B|Liver and aging|GI,liver,aging|With normal ageing, serum aminotransferases are|Unchanged|Elevated|Liver mass and blood flow fall, but transaminases stay normal.
+B|Hepatic encephalopathy|GI,liver,neuro|Hepatic encephalopathy is driven by|Increased gut absorption of nitrogenous waste|Direct toxicity of conjugated bilirubin|Ammonia bypasses the liver and crosses the blood-brain barrier.
+B|Lactulose|GI,liver,pharm|Lactulose treats encephalopathy by|Reducing intraluminal ammonia production|Increasing hepatic blood flow and clearance|Acidifies the colon, trapping ammonium for excretion.
+B|Cystic fibrosis|GI,genetics,pancreas|Pancreatic insufficiency in cystic fibrosis is treated with|Pancreatic enzyme replacement|Insulin replacement alone|Lipase replacement corrects steatorrhea and failure to thrive.
+G|Brunner glands|GI,anatomy,physiology|Brunner glands secrete alkaline mucus in the ___ part of the duodenum|first|first,1st,duodenal bulb|They protect against gastric acid; hypertrophy in peptic ulcer disease.
+B|Clostridioides difficile toxin|GI,micro|C. difficile toxins damage the enterocyte|Cytoskeleton|Ribosome|Toxins A and B disrupt actin, causing pseudomembranes.
+B|Pseudomembranous colitis|GI,micro|Pseudomembranes are composed of|Fibrin, inflammatory cells and debris|Pure colonies of the organism|Yellow-white plaques on colonic mucosa.
+B|Pregnancy and the gut|GI,repro,physiology|Progesterone in pregnancy makes colonic motility|Decrease|Increase|Smooth muscle relaxation causes constipation and reflux.
+B|Acute cholecystitis|GI,imaging|The most specific test for acute cholecystitis is|A HIDA scan|Ultrasound|Failure to visualize the gallbladder indicates cystic duct obstruction.
+G|Biliary colic|GI,physiology|Gallbladder contraction after a fatty meal is triggered by ___|cholecystokinin|cholecystokinin,cck|CCK from duodenal I cells.
+B|Marginal artery of Drummond|GI,anatomy,vascular|The marginal artery connects the SMA to the|Inferior mesenteric artery|The celiac trunk directly|Collateral flow protects the colon during aortic surgery.
+B|IL-10|GI,immuno|IL-10 is which type of cytokine?|Anti-inflammatory|Pro-inflammatory|Dampens Th1 responses; loss of function causes early-onset IBD.
+B|Gastroschisis|GI,embryology,peds|Gastroschisis differs from omphalocele because it|Has no covering membrane|Is always left-sided|Gastroschisis is bare bowel, usually to the right of the umbilicus.
+B|Omphalocele|GI,embryology,peds|Omphalocele is covered by a membrane and associated with|Other congenital anomalies|Isolated defects only|Trisomies and Beckwith-Wiedemann.
+B|Esophageal cancer|GI,oncology|Progressive dysphagia to solids then liquids suggests|Malignant obstruction|Achalasia of the sphincter|Mechanical narrowing progresses; motility disorders affect both from the start.
+B|Achalasia|GI,motility|Achalasia is caused by|Loss of inhibitory myenteric neurons|Excess acid production by the stomach|Failure of LES relaxation; bird-beak on barium swallow.
+B|Achalasia|GI,motility|Dysphagia in achalasia affects|Solids and liquids from the start|Solids well before liquids|A motility problem, not an obstruction.
+G|Secretin|GI,endocrine,physiology|Secretin is produced by duodenal ___ cells|S|s,s cells|Stimulates pancreatic bicarbonate; inhibits gastric acid.
+G|Celiac trunk|GI,anatomy|The celiac trunk branches into left gastric, splenic and common ___ arteries|hepatic|hepatic,common hepatic|The three branches supplying the foregut.
+B|Pernicious anemia|GI,heme,vitamins|After gastrectomy, patients require lifelong|Vitamin B12|Vitamin K|Loss of parietal cells means no intrinsic factor.
+B|Whipple disease|GI,micro|Whipple disease is caused by|Tropheryma whipplei|Giardia lamblia|PAS-positive foamy macrophages; arthralgia, diarrhea, neurologic signs.
+B|Folate deficiency|GI,biochem,vitamins|Folate deficiency raises the ratio of|dUMP to dTMP|dTMP to dUMP|Thymidylate synthase stalls, so uracil is misincorporated into DNA.
+B|Anorexia nervosa|GI,psych|Anorexia nervosa is defined by|Fear of weight gain with distorted body image|Low body weight without other features|Malnutrition without those psychological features suggests organic disease.
+B|Direct inguinal hernia|GI,anatomy|Direct inguinal hernia results from weakness of the|Transversalis fascia|Internal ring|Through Hesselbach triangle, medial to the inferior epigastric vessels.
+B|Indirect inguinal hernia|GI,anatomy,embryology|Indirect inguinal hernia passes|Through the deep inguinal ring|Through Hesselbach triangle|Failed processus vaginalis closure; lateral to the epigastric vessels.
+B|Pancreatic trauma|GI,anatomy,trauma|The pancreas is injured in blunt trauma because it is|Retroperitoneal and fixed against the spine|Highly mobile within the peritoneum|Handlebar injury crushes the body against L1-L2.
+B|Acute viral hepatitis|GI,liver,virus|Acute hepatitis B typically raises transaminases|More than ten times normal|Mildly, under twice normal|ALT above AST, often in the thousands.
+B|Colorectal cancer staging|GI,oncology|The strongest prognostic factor in colorectal cancer is|Distant metastasis|Tumor grade|Stage beats grade; depth of invasion and nodes come next.
+B|Dumping syndrome|GI,surgery|Dumping syndrome is caused by|Rapid hyperosmolar delivery to the small bowel|Delayed gastric emptying with retention|Cramps, diarrhea and vasomotor symptoms 10-30 minutes after eating.
+B|Pancreatic adenocarcinoma|GI,oncology|Pancreatic adenocarcinoma arises from|Ductal epithelium|Islet cells|Head tumors obstruct the bile duct causing painless jaundice.
+B|Pancreatic cancer risk|GI,oncology,risk|The strongest modifiable risk factor for pancreatic cancer is|Cigarette smoking|Heavy alcohol intake|Smoking roughly doubles the risk.
+B|Pyloric stenosis|GI,peds|Hypertrophic pyloric stenosis involves abnormal growth of|Smooth muscle|Mucosa|Non-bilious projectile vomiting; the infant is hungry again immediately.
+B|Pyloric stenosis|GI,peds,electrolytes|Pyloric stenosis causes which metabolic disturbance?|Hypochloremic metabolic alkalosis|Anion gap metabolic acidosis|Loss of gastric hydrogen and chloride.
+B|Milk protein colitis|GI,peds,immuno|Infant milk protein colitis shows which infiltrate?|Eosinophilic|Neutrophilic|Non-IgE reaction to cow's milk; blood-streaked stool in a well infant.
+B|Stress ulcers|GI,path|Stress-related mucosal injury is caused by|Mucosal ischemia|Acid hypersecretion alone|Splanchnic vasoconstriction during hypotension.
+G|Curling and Cushing ulcers|GI,path|A ___ ulcer follows severe burns|Curling|curling|Curling with burns; Cushing with brain injury and raised ICP.
+B|Shigella invasion|GI,micro,immuno|Shigella invades the gut through|Microfold (M) cells|Goblet cells|M cells overlie Peyer patches and sample luminal antigen.
+B|Fructose metabolism|GI,biochem|Fructose is metabolized faster than glucose because it|Bypasses phosphofructokinase|Skips the citric acid cycle|Enters as fructose-1-phosphate past the rate-limiting step.
+B|Umbilical hernia|GI,peds,anatomy|Umbilical hernia in infants usually|Closes spontaneously|Requires urgent surgery|Incomplete umbilical ring closure; most resolve by age two.
+B|Celiac disease|GI,immuno,genetics|Celiac disease is associated with which HLA types?|HLA-DQ2 and DQ8|HLA-B27|Anti-tissue transglutaminase antibodies; duodenal villous atrophy.
+B|Celiac disease|GI,immuno,heme|The commonest nutritional deficiency in celiac disease is|Iron|Vitamin K|Duodenal damage impairs iron and folate absorption.
+B|Vegan diet|GI,nutrition|Vegans are most at risk of deficiency in|Vitamin B12|Vitamin C|Also calcium, iron, zinc and vitamin D.
+B|Loperamide|GI,pharm|Loperamide slows the gut by acting on|Opioid receptors in the myenteric plexus|Muscarinic receptors on smooth muscle|Does not cross the blood-brain barrier.
+B|Crohn disease|GI,IBD,path|Crohn disease granulomas are|Noncaseating|Caseating|Epithelioid macrophages without central necrosis.
+B|Crohn disease|GI,IBD|Crohn disease most commonly involves the|Terminal ileum|Rectum|Rectal sparing is typical; ulcerative colitis always involves the rectum.
+B|Bleeding gastric ulcer|GI,anatomy,vascular|A bleeding lesser curvature gastric ulcer erodes the|Left gastric artery|Gastroduodenal artery|Posterior duodenal ulcers erode the gastroduodenal artery.
+B|Physiologic neonatal jaundice|GI,peds,liver|Neonatal jaundice is unconjugated because newborns have|Immature UGT activity|Biliary obstruction|Plus higher red cell mass and shorter red cell lifespan.
+B|Midgut volvulus|GI,peds,vascular|Midgut volvulus twists around the|Superior mesenteric artery|Inferior mesenteric artery|Malrotation with bilious vomiting — a surgical emergency.
+B|Gallstone risk|GI,liver,repro|Estrogen increases gallstone risk by|Raising biliary cholesterol secretion|Reducing gallbladder emptying|Female, fat, forty, fertile.
+B|Esophageal varices|GI,liver,vascular|Esophageal varices form from shunting through the|Left gastric vein|Superior mesenteric vein|Portosystemic anastomosis with the azygos system.
+B|Splenic vein thrombosis|GI,vascular|Isolated gastric varices suggest thrombosis of the|Splenic vein|Portal vein|Often from chronic pancreatitis.
+B|Antacids|GI,pharm|Magnesium and aluminium salts are combined to|Balance their bowel effects|Increasing acid-neutralizing potency|Magnesium causes diarrhea, aluminium causes constipation.
+B|Hepatitis A|GI,virus,liver|Hepatitis A is classically acquired from|Raw or steamed shellfish|Blood transfusion|Faecal-oral; no chronic carrier state.
+G|Ghrelin|GI,endocrine,nutrition|___ rises with fasting and stimulates hunger|ghrelin|ghrelin|The hunger hormone from the stomach; falls after sleeve gastrectomy.
+B|Leptin|GI,endocrine,nutrition|Leptin levels correlate with|Fat mass|Blood glucose|Made by adipocytes; signals satiety.
+B|Infant reflux|GI,peds|Physiologic infant reflux is caused by|Low lower esophageal sphincter tone|Partial pyloric obstruction|A happy spitter who is growing normally needs no treatment.
+G|Acute pancreatitis|GI,pancreas,path|Acute pancreatitis begins with inappropriate activation of ___|trypsinogen|trypsinogen,trypsin|Trypsin then activates the other zymogens.
+B|Acute pancreatitis|GI,pancreas|The two commonest causes of acute pancreatitis are|Gallstones and alcohol|Trauma and drugs|Together they account for most cases.
+B|Ulcerative colitis|GI,IBD|Ulcerative colitis classically presents with|Bloody diarrhea and tenesmus|Perianal fistulae and abscesses|Continuous mucosal disease from the rectum upward.
+B|Wilson disease|GI,liver,genetics|Wilson disease impairs which process?|Biliary copper excretion|Intestinal copper absorption|ATP7B defect; low ceruloplasmin, Kayser-Fleischer rings.
+B|Duodenal atresia|GI,embryology,peds|Duodenal atresia results from|Failure of recanalization|Vascular occlusion|Double-bubble sign; associated with Down syndrome.
+B|Jejunoileal atresia|GI,embryology,peds|Jejunal and ileal atresia result from|Vascular occlusion in utero|Failed recanalization|Apple-peel deformity; linked to maternal smoking and cocaine.
+B|Small intestinal bacterial overgrowth|GI,micro|SIBO causes diarrhea by|Maldigestion within the lumen|Direct mucosal invasion|Bacteria deconjugate bile acids and consume B12.
+B|Hepatocellular carcinoma|GI,oncology,liver|Aflatoxin causes which mutation in hepatocellular carcinoma?|TP53|KRAS|Aspergillus toxin on stored grains; synergistic with hepatitis B.
+B|Right-sided colon cancer|GI,oncology|Right-sided colon cancer typically presents with|Iron deficiency anemia|Obstruction and constipation|Occult blood loss in a wide caecum. Left-sided obstructs earlier.
+B|Systemic sclerosis|GI,immuno,motility|Scleroderma causes reflux by|Fibrous replacement of esophageal muscularis|Increased gastric acid production and reflux|Smooth muscle atrophy and fibrosis lower LES pressure.
+B|Hereditary hemochromatosis|GI,genetics,liver|Hemochromatosis increases|Intestinal iron absorption|Urinary iron excretion|HFE C282Y mutation lowers hepcidin.
+G|Biotin|GI,biochem,vitamins|Biotin is the cofactor for ___ carboxylase enzymes|pyruvate|pyruvate,carboxylase,pyruvate carboxylase|Pyruvate to oxaloacetate. Depleted by raw egg white.
+B|Zenker diverticulum|GI,motility,anatomy|Zenker diverticulum results from|Cricopharyngeal dysfunction|Achalasia of the lower sphincter|A false pulsion diverticulum above the upper esophageal sphincter.
+B|Zenker diverticulum|GI,anatomy,path|Zenker diverticulum is which type of diverticulum?|False (pulsion)|True, with all wall layers|Only mucosa and submucosa herniate.
+B|Steatorrhea|GI,lab|Fat malabsorption is screened with|Sudan III stain of stool|Stool culture and sensitivity|Detects unabsorbed fat.
+B|Gallstone ileus|GI,surgery|A gallstone causing small bowel obstruction usually lodges in the|Terminal ileum|Duodenum|The narrowest point; entered via a cholecystoenteric fistula.
+B|Hepatic blood supply|GI,anatomy,liver|The liver resists arterial occlusion because it has|A dual blood supply|Extensive collaterals only|Portal vein plus hepatic artery.
+B|Carcinoid syndrome|GI,oncology,endocrine|Carcinoid syndrome only appears once the tumor|Metastasizes to the liver|Grows beyond two centimetres|The liver otherwise clears serotonin via first-pass metabolism.
+G|Carcinoid syndrome|GI,oncology,lab|Carcinoid tumors are screened with urinary ___|5-HIAA|5-hiaa,5 hiaa,hiaa|The serotonin metabolite.
+B|Vitamin B12 absorption|GI,physiology,vitamins|Vitamin B12 is absorbed in the|Terminal ileum|Duodenum|Which is why ileal Crohn disease and resection cause deficiency.
+B|Bile acid absorption|GI,physiology|Bile acids are reabsorbed in the|Terminal ileum|Jejunum|Enterohepatic circulation; ileal disease causes bile acid diarrhea.
+B|Iron absorption|GI,physiology,heme|Iron is absorbed mainly in the|Duodenum|Ileum|Which is why celiac disease causes iron deficiency early.
+B|Hirschsprung disease|GI,peds,embryology|Hirschsprung disease is caused by failed migration of|Neural crest cells|Endodermal cells|Absent ganglion cells; failure to pass meconium.
+B|Hirschsprung disease|GI,peds|Hirschsprung disease is diagnosed definitively by|Rectal suction biopsy|Barium enema with contrast|Biopsy shows absent ganglion cells.
+B|Intussusception|GI,peds|The commonest lead point for intussusception in adults is|A tumor|Meckel diverticulum|In children it is usually idiopathic or lymphoid hyperplasia.
+G|Meckel diverticulum|GI,peds,embryology|Meckel diverticulum is a persistent ___ duct|vitelline|vitelline,omphalomesenteric|Rule of 2s; ectopic gastric mucosa causes painless bleeding.
+B|Meckel diverticulum|GI,peds,path|Meckel diverticulum is which type of diverticulum?|True|False|All three layers of bowel wall.

@@ -1,0 +1,97 @@
+# Cardiovascular — derived from UWorld/NBME fact cards, batch 1.
+B|Acute cardiac transplant rejection|cardio,transplant,path|Acute cellular rejection of a heart transplant shows which infiltrate?|Dense interstitial lymphocytic infiltrate|Neutrophilic abscesses with necrosis|Host T cells attack foreign HLA in the graft — lymphocytic infiltrate on biopsy.
+G|Acute cardiac transplant rejection|cardio,transplant,immuno|Acute cellular rejection is driven by host ___ lymphocytes|T|t cells,t cell,t-cell|Recipient T cells sensitized against donor HLA.
+B|Athlete's heart|cardio,physiology|In a trained endurance athlete, resting stroke volume is|Increased|Decreased|Larger ventricular volume raises stroke volume; resting heart rate falls.
+G|Athlete's heart|cardio,physiology|Elite endurance athletes can raise cardiac output to about ___ L/min|40|35,35-40,40 l/min|Up to 35-40 L/min versus roughly 20 in an untrained adult.
+B|Exercise physiology|cardio,physiology|During peak exercise, total systemic vascular resistance|Decreases|Increases|Skeletal muscle arterioles dilate, dropping total SVR despite higher blood pressure.
+B|Exercise physiology|cardio,physiology|During exercise, systolic blood pressure|Increases|Decreases|Rises to perfuse contracting muscle; diastolic stays flat or falls.
+B|Septic shock|cardio,shock,micro|In septic shock, systemic vascular resistance is|Decreased|Increased|Distributive shock — vasodilation. Cardiac output is high, SVR low.
+G|Septic shock|cardio,shock|Untreated shock progresses to multiorgan ___|failure|failure,organ failure|Prompt diagnosis matters because shock rapidly causes multiorgan failure.
+G|Hypertensive emergency|cardio,pharm,hypertension|Fenoldopam lowers blood pressure by agonizing ___ receptors|dopamine|dopamine,dopamine-1,d1|A D1 agonist — vasodilates and increases renal perfusion.
+B|Hypertensive emergency|cardio,hypertension|In hypertensive emergency, blood pressure should be lowered|Gradually and controlled|As fast as possible|Too-rapid reduction causes cerebral and renal hypoperfusion.
+G|Thrombolytics|cardio,pharm,MI|Alteplase restores perfusion by breaking down ___|fibrin|fibrin,fibrin clot,clot|A tissue plasminogen activator — converts plasminogen to plasmin.
+B|Reperfusion arrhythmia|cardio,MI,arrhythmia|The classic arrhythmia after successful reperfusion is|Accelerated idioventricular rhythm|Atrial flutter with variable block|Self-limiting accelerated idioventricular rhythm — a marker of reperfusion.
+B|Cardiac trauma|cardio,anatomy,trauma|The chamber most often injured in anterior penetrating chest trauma is the|Right ventricle|Left atrium|The RV forms most of the anterior cardiac surface.
+G|Cardiac anatomy|cardio,anatomy|The ___ ventricle forms most of the anterior surface of the heart|right|right,rv,right ventricle|Which is why it is hit first in penetrating sternal trauma.
+G|Class IC antiarrhythmics|cardio,pharm,arrhythmia|Flecainide blocks ___ channels|sodium|sodium,na,na+|Class IC — strong sodium blockade with marked use-dependence.
+B|Use-dependence|cardio,pharm,arrhythmia|Sodium channel blockade with use-dependence gets stronger when heart rate|Increases|Decreases|Less time to dissociate from the receptor between beats.
+B|Right heart catheterization|cardio,physiology|Crossing the pulmonic valve into the pulmonary artery causes|A rise in diastolic pressure|A fall in systolic pressure|Diastolic pressure jumps; systolic is unchanged.
+B|Excitation-contraction coupling|cardio,physiology,muscle|Skeletal muscle contraction depends on extracellular calcium influx|No|Yes|Skeletal muscle uses its own SR calcium, so it resists calcium channel blockers.
+G|Excitation-contraction coupling|cardio,physiology|Cardiac muscle contraction requires calcium-induced calcium release from the ___|sarcoplasmic reticulum|sarcoplasmic reticulum,sr|Extracellular calcium triggers RyR release from the SR.
+B|Acute decompensated heart failure|cardio,heart failure|Chronic hypertension causes which ventricular change?|Concentric hypertrophy|Eccentric dilation|Pressure overload adds sarcomeres in parallel — concentric hypertrophy.
+B|Diastolic dysfunction|cardio,heart failure|In concentric hypertrophy, ejection fraction is typically|Preserved|Reduced|HFpEF — the problem is filling, not emptying.
+G|Retinal artery occlusion|cardio,neuro,eye|Retinal artery emboli usually arise from the ___ carotid artery|internal|internal,internal carotid,ica|Internal carotid atherosclerosis is the commonest source.
+B|Retinal artery occlusion|cardio,eye|Central retinal artery occlusion causes vision loss that is|Painless and sudden|Painful and gradual|Sudden painless monocular loss — a stroke equivalent.
+G|Cardiac action potential|cardio,physiology|Phase 0 of the ventricular action potential is caused by ___ influx|sodium|sodium,na,na+|Fast sodium influx. Phase 2 is calcium, phase 3 is potassium efflux.
+G|Cardiac action potential|cardio,physiology|The plateau of the ventricular action potential is due to ___ influx|calcium|calcium,ca,ca++,ca2+|L-type calcium channels balance potassium efflux.
+B|SA node action potential|cardio,physiology|Phase 0 in the SA node is caused by|Calcium influx|Sodium influx|Pacemaker cells depolarize via L-type calcium, not fast sodium.
+G|Aortic arch derivatives|cardio,embryology|The common carotid artery derives from the ___ aortic arch|third|third,3rd,3|Third arch — carotids. Fourth becomes aortic arch and subclavian.
+B|Wolff-Parkinson-White|cardio,arrhythmia|The arrhythmia of WPW is caused by|An accessory atrioventricular tract|A reentrant AV nodal circuit alone|Bundle of Kent bypasses the AV node.
+G|Wolff-Parkinson-White|cardio,arrhythmia|The commonest tachycardia in WPW is atrioventricular ___ tachycardia|reentrant|reentrant,reentry,avrt|AVRT — a form of paroxysmal SVT.
+B|Mitral stenosis|cardio,valve|The commonest cause of mitral stenosis worldwide is|Rheumatic heart disease|Infective endocarditis|Rheumatic fever accounts for up to 99% of cases.
+G|Rheumatic mitral stenosis|cardio,valve|Rheumatic disease fuses and thickens the valve ___|leaflets|leaflets,leaflet,commissures|Fibrous thickening and commissural fusion.
+B|Isolated systolic hypertension|cardio,hypertension,aging|Aging raises systolic pressure mainly by|Increasing arterial stiffness|Increasing cardiac output|Elastin is replaced by collagen — stiffer aorta, wider pulse pressure.
+G|Arterial aging|cardio,aging|With age, arterial elastin is replaced by ___|collagen|collagen|Increased collagen deposition stiffens the aorta.
+B|Labetalol|cardio,pharm,hypertension|Labetalol blocks which receptors?|Beta-1, beta-2 and alpha-1|Beta-1 receptors only|Nonselective beta blocker with alpha-1 blockade — vasodilatory.
+G|Long QT syndrome|cardio,arrhythmia,genetics|Congenital long QT most often involves mutated ___ channels|potassium|potassium,k,k+|Delayed repolarization from defective potassium channels.
+B|Long QT syndrome|cardio,arrhythmia|Long QT predisposes to which arrhythmia?|Torsades de pointes|Atrial flutter|Polymorphic VT — torsades.
+B|ACE inhibitors|cardio,pharm,renal|ACE inhibitors cause serum renin to|Increase|Decrease|Loss of angiotensin II feedback disinhibits renin release.
+G|ACE inhibitors|cardio,pharm,renal|ACE inhibitors preferentially dilate the glomerular ___ arteriole|efferent|efferent,efferent arteriole|Efferent dilation drops filtration pressure and GFR.
+B|Statins|cardio,pharm,lipids|Statins increase hepatocyte LDL receptor recycling|Yes|No|Less intracellular cholesterol upregulates LDL receptors, clearing serum LDL.
+B|Turner syndrome|cardio,genetics,congenital|The commonest congenital cardiac lesion in Turner syndrome is|Bicuspid aortic valve|Tetralogy of Fallot|Bicuspid aortic valve, then coarctation of the aorta.
+G|Turner syndrome|cardio,genetics|Turner syndrome causes ___ dysgenesis of the ovaries|gonadal|gonadal,gonad|Streak gonads — primary amenorrhea.
+B|Coarctation of the aorta|cardio,congenital|Coarctation classically causes blood pressure that is|Higher in arms than legs|Higher in legs than arms|Upper extremity hypertension with weak delayed femoral pulses.
+G|Aortic dissection|cardio,emergency|Aortic dissection begins with a tear of the ___|intima|intima,intimal,tunica intima|Intimal tear lets blood enter the media and propagate.
+B|Aortic dissection|cardio,emergency,hypertension|The main risk factor for aortic dissection is|Hypertension|Hyperlipidemia|Chronic hypertension raises aortic wall stress.
+B|Wet beriberi|cardio,vitamins,heart failure|Thiamine deficiency causes which type of heart failure?|High-output|Low-output|Wet beriberi — vasodilation and high-output failure.
+G|Wernicke-Korsakoff|cardio,vitamins,neuro|Thiamine deficiency causes confusion, ataxia and ___ abnormalities|oculomotor|oculomotor,eye,ophthalmoplegia|The Wernicke triad.
+B|Athlete's heart|cardio,physiology|Endurance training produces which ventricular change?|Eccentric hypertrophy|Concentric hypertrophy|Volume load — chambers dilate with proportional wall growth.
+B|Pulmonary circulation|cardio,physiology,resp|Pulmonary vascular resistance compared with systemic is|Much lower|Much higher|Low resistance circuit — small pressure gradient moves the same flow.
+B|Pulmonary circulation|cardio,physiology,resp|Blood flow per minute in the pulmonary and systemic circuits is|Equal|Higher in the lungs|The circuits are in series, so flow must match.
+B|STEMI|cardio,MI|A STEMI is caused by|Plaque rupture with occlusive thrombus|Fixed stenosis with a stable plaque|Complete occlusion. Partial occlusion gives NSTEMI or unstable angina.
+G|STEMI ECG|cardio,MI,ECG|The earliest ECG change in STEMI is ___ T waves|peaked|peaked,hyperacute,tall|Hyperacute peaked T waves, then ST elevation, then Q waves.
+B|Stable angina|cardio,MI|Stable angina reflects|Fixed stenosis with demand-supply mismatch|Acute plaque rupture with thrombus|Ischemia only on exertion; no thrombus.
+G|Fetal circulation|cardio,embryology,physiology|The fetal vessel with the highest oxygen saturation is the ___ vein|umbilical|umbilical,umbilical vein|Umbilical vein carries oxygenated placental blood; IVC is highest of the great veins.
+B|Malignant pericardial effusion|cardio,oncology|Malignant pericardial effusion typically yields fluid that is|Hemorrhagic with atypical cells|Clear and straw-coloured|Bloody exudate containing malignant cells.
+B|Cardiac tamponade|cardio,emergency|Tamponade depends most on the effusion's|Rate of accumulation|Absolute volume|A rapid small effusion tamponades; a slow large one may not.
+G|Cardiac tamponade|cardio,emergency|Beck triad is hypotension, distant heart sounds and jugular venous ___|distension|distension,distention,jvd|The classic tamponade triad.
+B|Cardiac tamponade|cardio,emergency|Echocardiography in tamponade shows an inferior vena cava that is|Engorged and non-collapsing|Small and collapsing|Plethoric IVC from impaired venous return.
+B|Nitrates|cardio,pharm,angina|Nitrates act mainly on|Large veins|Large arteries|Venodilation reduces preload and wall stress.
+G|Nitrates|cardio,pharm|Nitrates raise ___ in vascular smooth muscle|cGMP|cgmp,cyclic gmp,cyclic guanosine monophosphate|NO activates guanylate cyclase, raising cGMP and relaxing muscle.
+B|Cocaine chest pain|cardio,toxicology|Cocaine causes chest pain mainly by|Coronary vasoconstriction|Direct myocardial toxicity alone|Blocks norepinephrine reuptake — vasospasm.
+B|Cocaine chest pain|cardio,toxicology,pharm|Beta blockers in acute cocaine chest pain are|Avoided|First-line|Unopposed alpha stimulation worsens vasoconstriction.
+G|Clonidine|cardio,pharm,hypertension|Clonidine is a central alpha-___ agonist|2|2,two,alpha-2,alpha 2|Reduces presynaptic norepinephrine release and sympathetic outflow.
+B|Clonidine|cardio,pharm|Clonidine causes heart rate to|Decrease|Increase|Reduced sympathetic outflow — bradycardia and lower SVR.
+B|Class IB antiarrhythmics|cardio,pharm,arrhythmia|Lidocaine acts preferentially on tissue that is|Ischemic and depolarized|Normally polarized|Class IB binds depolarized tissue — ideal post-MI.
+B|Tricuspid regurgitation|cardio,murmur,valve|A holosystolic murmur that gets louder with inspiration is|Tricuspid regurgitation|Mitral regurgitation|Inspiration increases venous return to the right heart.
+G|Right-sided murmurs|cardio,murmur|Right-sided murmurs get louder with ___|inspiration|inspiration,inhalation,breathing in|More venous return to the right heart.
+B|Abdominal aortic aneurysm|cardio,vascular|AAA wall pathology is characterized by|Chronic transmural inflammation|Acute neutrophilic inflammation|Oxidative stress, smooth muscle apoptosis, transmural inflammation.
+G|Abdominal aortic aneurysm|cardio,vascular,risk|The strongest modifiable risk factor for AAA is ___|smoking|smoking,tobacco,cigarettes|Smoking, plus age over 60, male sex and hypertension.
+B|Cystic medial degeneration|cardio,vascular,path|Cystic medial degeneration predisposes to|Aortic aneurysm and dissection|Coronary thrombosis and infarction|Fragmented elastic tissue in the tunica media.
+B|Cardiac amyloidosis|cardio,path,elderly|Transthyretin amyloid causes which cardiomyopathy?|Restrictive|Dilated|Infiltrative restrictive cardiomyopathy in the elderly.
+G|Cardiac amyloidosis|cardio,path|Senile cardiac amyloidosis is caused by ___ deposition|transthyretin|transthyretin,ttr|Wild-type transthyretin infiltrates the elderly heart.
+B|Patent ductus arteriosus|cardio,congenital|Ligating a PDA causes left ventricular afterload to|Increase|Decrease|Losing the low-resistance runoff raises systemic afterload.
+B|Patent ductus arteriosus|cardio,congenital,murmur|The murmur of PDA is|Continuous and machine-like|Mid-diastolic with an opening snap|Continuous murmur throughout systole and diastole.
+G|Drug-induced lupus|cardio,pharm,immuno|Procainamide and hydralazine cause drug-induced ___|lupus|lupus,sle,dile|Highest-risk agents. Anti-histone antibodies.
+B|Drug-induced lupus|cardio,pharm,immuno|Drug-induced lupus is associated with antibodies to|Histones|Double-stranded DNA|Anti-histone antibodies; anti-dsDNA suggests true SLE.
+B|Heart failure compensation|cardio,heart failure|Chronic sympathetic activation in heart failure is ultimately|Harmful|Protective|Short-term compensation, long-term remodelling and deterioration.
+B|Varicose veins|cardio,vascular|Chronic venous insufficiency raises the risk of|Skin ulceration|Arterial gangrene|Venous stasis ulcers, classically at the medial malleolus.
+G|Venous insufficiency|cardio,vascular|Venous insufficiency results from failure of venous ___|valves|valves,valve|Dilation prevents valve closure, raising venous pressure.
+B|Costochondritis|cardio,msk|Chest pain reproduced by palpation suggests|Costochondritis|Myocardial infarction|Reproducible tenderness, worse with movement.
+B|Subclavian steal|cardio,vascular|Subclavian steal is most often caused by|Atherosclerosis|Takayasu arteritis|Atherosclerotic proximal subclavian stenosis; arm exertion steals vertebral flow.
+B|Dilated cardiomyopathy|cardio,path|Doxorubicin causes which cardiomyopathy?|Dilated|Restrictive|Dose-dependent dilated cardiomyopathy.
+G|Dilated cardiomyopathy|cardio,path,toxicology|Alcohol, cocaine and ___ are classic toxic causes of dilated cardiomyopathy|doxorubicin|doxorubicin,adriamycin,anthracycline|All produce systolic dysfunction and chamber dilation.
+G|Tetralogy of Fallot|cardio,congenital,embryology|Tetralogy of Fallot results from deviation of the ___ septum|infundibular|infundibular,conotruncal,outflow|Anterocephalad deviation gives a malaligned VSD and overriding aorta.
+B|Tetralogy of Fallot|cardio,congenital|The degree of cyanosis in tetralogy depends on|Right ventricular outflow obstruction|The size of the septal defect|Outflow obstruction determines right-to-left shunting.
+B|Left atrial enlargement|cardio,valve,GI|Dysphagia in mitral stenosis is caused by enlargement of the|Left atrium|Right ventricle|The dilated left atrium compresses the mid-oesophagus.
+B|Supraventricular tachycardia|cardio,arrhythmia|Hypotension in fast SVT is caused by|Shortened diastolic filling time|Reduced myocardial contractility|Less filling time drops stroke volume.
+B|Atrial septal defect|cardio,congenital|Untreated ASD ultimately damages which vessels?|Pulmonary|Coronary|Chronic overcirculation causes pulmonary vascular disease.
+G|Atrial septal defect|cardio,congenital,murmur|ASD causes a ___ split S2|fixed|fixed,fixed wide,widely fixed|Fixed splitting that does not vary with respiration.
+G|Cardiac conduction velocity|cardio,physiology|The ___ node has the slowest conduction velocity in the heart|AV|av,av node,atrioventricular|Park At Venture Avenue — Purkinje, atria, ventricles, AV node.
+B|Cardiac conduction velocity|cardio,physiology|The fastest conducting cardiac tissue is the|Purkinje system|AV node|Purkinje fastest, AV node slowest.
+B|Ventricular septal defect|cardio,congenital,murmur|A very large VSD produces a murmur that is|Soft or absent|Loud and harsh|Large defects equalize pressures, so little gradient and little murmur.
+B|Sotalol|cardio,pharm,arrhythmia|Sotalol blocks which channels?|Potassium|Calcium|Class III — potassium blockade prolongs phase 3 and the QT.
+B|Class III antiarrhythmics|cardio,pharm,arrhythmia|Class III antiarrhythmics prolong which ECG interval?|QT|PR|Delayed repolarization lengthens QT and risks torsades.
+B|Aortic stenosis|cardio,valve|Aortic stenosis causes which ventricular remodelling?|Concentric hypertrophy|Eccentric dilation|Pressure overload adds sarcomeres in parallel.
+G|Ventricular remodelling|cardio,physiology|Pressure overload adds sarcomeres in ___|parallel|parallel|Parallel for pressure, series for volume overload.
+B|Normal cardiac aging|cardio,aging|Normal aging changes the interventricular septum to a|Sigmoid shape|Uniformly thin wall|Sigmoid septum, dilated aortic root, shortened long axis.

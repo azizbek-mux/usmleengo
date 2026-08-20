@@ -1,0 +1,81 @@
+# Cardiovascular — depth pass. Gap-weighted.
+
+# ── Cardiac cycle and physiology ─────────────────────────────────────────
+G|Cardiac cycle|cardio,physiology|The first heart sound is closure of the mitral and ___ valves|tricuspid|tricuspid|Marking the start of systole.
+G|Cardiac cycle|cardio,physiology|The second heart sound is closure of the aortic and ___ valves|pulmonic|pulmonic,pulmonary|Splitting widens on inspiration.
+B|Isovolumetric contraction|cardio,physiology|During isovolumetric contraction, all valves are|Closed|Open|Pressure rises with no change in volume.
+G|Ejection fraction|cardio,physiology|Ejection fraction is stroke volume divided by end-___ volume|diastolic|diastolic|Normal is above 55 percent.
+G|Cardiac output|cardio,physiology|Cardiac output equals stroke volume times ___ rate|heart|heart|Fick: oxygen consumption over the arteriovenous difference.
+B|Preload|cardio,physiology|Preload corresponds most closely to|End-diastolic volume|Systemic vascular resistance|Afterload corresponds to aortic pressure.
+G|Frank-Starling|cardio,physiology|The Frank-Starling relationship links stroke volume to ___ length|sarcomere|sarcomere,muscle fibre,fiber|More stretch, more force, up to a point.
+B|Pulse pressure|cardio,physiology|Pulse pressure is determined mainly by|Stroke volume and arterial compliance|Heart rate and systemic resistance|Widens in aortic regurgitation, narrows in tamponade.
+G|Jugular venous pulse|cardio,physiology|The a wave of the JVP is atrial ___|contraction|contraction,systole|Absent in atrial fibrillation; giant in tricuspid stenosis.
+B|Cannon a waves|cardio,physiology,arrhythmia|Cannon a waves indicate|Atria contracting against a closed valve|Regurgitation through the tricuspid valve|Seen in complete heart block and ventricular tachycardia.
+
+# ── ECG ──────────────────────────────────────────────────────────────────
+G|ECG intervals|cardio,ECG|The PR interval normally lasts under ___ seconds|0.2|0.2,200,0·2,0.20|Above that is first-degree block.
+B|Mobitz type I|cardio,ECG,arrhythmia|Wenckebach block shows|Progressive PR lengthening then a dropped beat|Sudden dropped beats with an unchanging PR|Usually benign and AV nodal.
+B|Mobitz type II|cardio,ECG,arrhythmia|Mobitz type II block requires|A pacemaker|Observation only|It is infranodal and can progress abruptly to complete block.
+G|Complete heart block|cardio,ECG|In third-degree block, P waves and QRS complexes are ___|dissociated|dissociated,independent|Atrial and ventricular rates are unrelated.
+B|Ventricular tachycardia|cardio,ECG,emergency|Wide-complex tachycardia should be assumed to be|Ventricular tachycardia|SVT with aberrancy|Treating VT as SVT can be fatal.
+G|Torsades de pointes|cardio,arrhythmia,pharm|Torsades de pointes is treated with intravenous ___|magnesium|magnesium,mgso4,magnesium sulfate|Plus correcting potassium and stopping the offending drug.
+B|Atrial flutter|cardio,ECG,arrhythmia|Atrial flutter classically shows|Sawtooth waves at about 300 per minute|Absent P waves with an irregular rhythm|Often with 2:1 block giving a rate near 150.
+G|Hyperkalemia|cardio,ECG,electrolytes|Severe hyperkalemia widens the QRS into a ___ wave pattern|sine|sine|A pre-arrest rhythm needing immediate calcium.
+B|Hypokalemia|cardio,ECG,electrolytes|Hypokalemia classically produces|U waves|Peaked T waves|Peaked T waves belong to hyperkalemia.
+G|Pericarditis|cardio,ECG|Acute pericarditis shows diffuse ST elevation with ___ depression|PR|pr,pr segment|A useful discriminator from STEMI.
+
+# ── Ischemic heart disease ───────────────────────────────────────────────
+G|Myocardial infarction|cardio,MI,path|Coagulative necrosis after MI is established by ___ hours|4|4,4-12,four|Wavy fibres appear earlier.
+B|Myocardial infarction|cardio,MI,path|Rupture risk after MI peaks at|3 to 7 days|24 hours|When macrophages have digested the most collagen.
+G|Dressler syndrome|cardio,MI,immuno|Dressler syndrome is an ___ pericarditis weeks after infarction|autoimmune|autoimmune,immune|Fever, pleuritic pain and raised inflammatory markers.
+B|Inferior myocardial infarction|cardio,MI,ECG|An inferior MI shows changes in leads|II, III and aVF|V1 to V4|Usually the right coronary artery.
+B|Anterior myocardial infarction|cardio,MI,ECG|An anterior MI shows changes in leads|V1 to V4|II, III and aVF|Left anterior descending territory; the worst prognosis.
+G|Troponin|cardio,MI,lab|Troponin begins to rise ___ hours after infarction|3|3,3-4,4,three|Peaks at 24 hours and stays up for a week.
+B|Reinfarction|cardio,MI,lab|To detect reinfarction within days, the best marker is|CK-MB|Troponin|CK-MB normalizes in 48 hours, so it can rise again.
+G|Coronary steal|cardio,pharm,physiology|Dipyridamole causes coronary ___ by dilating healthy vessels|steal|steal|Blood is diverted away from stenosed territory.
+
+# ── Heart failure ────────────────────────────────────────────────────────
+G|Heart failure|cardio,heart failure,lab|A normal ___ effectively excludes heart failure|BNP|bnp,nt-probnp,natriuretic peptide|High negative predictive value.
+B|Heart failure|cardio,heart failure,pharm|Which drug class improves symptoms but NOT mortality?|Loop diuretics|ACE inhibitors|Diuretics relieve congestion without changing survival.
+G|Heart failure|cardio,heart failure,pharm|___ inhibitors now reduce mortality in both reduced and preserved EF|SGLT2|sglt2,sglt-2|Dapagliflozin and empagliflozin.
+B|Digoxin in heart failure|cardio,pharm,heart failure|Digoxin in heart failure|Reduces hospitalization but not mortality|Improves survival as well as symptoms|Useful for symptom control and rate control.
+G|Orthopnea|cardio,heart failure|Orthopnea is breathlessness on lying ___|flat|flat,down,supine|Increased venous return overwhelms the failing ventricle.
+B|Cor pulmonale|cardio,resp,heart failure|Cor pulmonale is right heart failure caused by|Lung disease|Left heart failure|Left heart failure causing right failure is not cor pulmonale.
+
+# ── Valves ───────────────────────────────────────────────────────────────
+G|Aortic stenosis|cardio,valve|Aortic stenosis gives a pulse that is slow-rising, called pulsus ___ et tardus|parvus|parvus|Plus a soft second heart sound.
+B|Aortic stenosis|cardio,valve,GI|Aortic stenosis with GI bleeding suggests|Heyde syndrome|Zollinger-Ellison|Acquired von Willebrand disease plus angiodysplasia.
+G|Aortic regurgitation|cardio,valve|A head-bobbing sign in aortic regurgitation is called ___ sign|de Musset|de musset,musset|One of many eponymous signs of a wide pulse pressure.
+B|Mitral valve prolapse|cardio,valve,murmur|Mitral valve prolapse produces|A mid-systolic click|An opening snap|The commonest valve lesion; usually benign.
+G|Infective endocarditis|cardio,micro|Painful finger nodules in endocarditis are called ___ nodes|Osler|osler,osler's|Ouch-sler. Janeway lesions are painless.
+B|Endocarditis prophylaxis|cardio,micro,pharm|Antibiotic prophylaxis before dental work is given to|Prosthetic valves or previous endocarditis|Any patient with an audible murmur|Indications have narrowed considerably.
+B|Culture-negative endocarditis|cardio,micro|Culture-negative endocarditis suggests|HACEK or Coxiella organisms|Staphylococcus aureus|Fastidious organisms that grow poorly.
+
+# ── Vascular ─────────────────────────────────────────────────────────────
+G|Abdominal aortic aneurysm|cardio,vascular|AAA repair is considered above a diameter of ___ cm|5.5|5.5,5·5,55|Or rapid expansion, or symptoms.
+B|Aortic dissection|cardio,vascular,imaging|Stanford type A dissection requires|Emergency surgery|Medical management|Type B is managed medically unless complicated.
+G|Peripheral arterial disease|cardio,vascular,lab|Peripheral arterial disease is screened with the ankle-___ index|brachial|brachial|Below 0.9 is abnormal.
+B|Deep vein thrombosis|cardio,vascular,coagulation|The commonest inherited thrombophilia is|Factor V Leiden|Antithrombin deficiency|Activated protein C resistance.
+G|Superior vena cava syndrome|cardio,oncology,vascular|SVC syndrome is most often caused by ___ cancer|lung|lung|Facial swelling and distended neck veins.
+B|Giant cell arteritis|cardio,vascular,lab|Giant cell arteritis characteristically raises|ESR markedly|Creatine kinase|Often above 100 mm per hour.
+G|Kawasaki disease|cardio,peds,vascular|Kawasaki disease damages the ___ arteries|coronary|coronary|Aneurysms in up to a quarter if untreated.
+B|Takayasu arteritis|cardio,vascular|Takayasu arteritis is called the pulseless disease because it affects|The aortic arch branches|Small dermal vessels|Young Asian women; absent upper limb pulses.
+
+# ── Congenital ───────────────────────────────────────────────────────────
+G|Eisenmenger syndrome|cardio,congenital|Eisenmenger syndrome is the ___ of a left-to-right shunt|reversal|reversal,reverse|Pulmonary vascular disease raises right-sided pressure past the left.
+B|Eisenmenger syndrome|cardio,congenital,surgery|Once Eisenmenger physiology develops, shunt closure is|Contraindicated|Urgent|Closing it removes the only decompression route.
+G|Coarctation of the aorta|cardio,congenital,imaging|Coarctation causes ___ notching of the ribs on chest x-ray|inferior|inferior|From dilated collateral intercostal arteries.
+B|Tetralogy of Fallot|cardio,congenital,peds|A tet spell is relieved by|Squatting|Standing up|Squatting raises systemic resistance and reduces right-to-left shunting.
+G|Transposition of the great arteries|cardio,congenital,imaging|TGA gives an ___ on a string appearance on chest x-ray|egg|egg|A narrow mediastinum with the great vessels superimposed.
+B|Ventricular septal defect|cardio,congenital|The commonest congenital heart defect overall is|Ventricular septal defect|Atrial septal defect|Most small ones close spontaneously.
+B|Truncus arteriosus|cardio,congenital,embryology|Truncus arteriosus results from failure of|Aorticopulmonary septation|Endocardial cushion fusion|A single outflow vessel over a VSD.
+
+# ── Cardiac pharmacology ─────────────────────────────────────────────────
+G|Class IA antiarrhythmics|cardio,pharm,arrhythmia|Quinidine and procainamide ___ the QT interval|prolong|prolong,lengthen,increase|Risk of torsades. Quinidine also causes cinchonism.
+B|Amiodarone|cardio,pharm,resp|The most feared long-term toxicity of amiodarone is|Pulmonary fibrosis|Renal failure|Plus thyroid, hepatic, corneal and skin effects.
+G|Adenosine|cardio,pharm,arrhythmia|Adenosine terminates SVT by transiently blocking the ___ node|AV|av,atrioventricular|Causes a brief but alarming sense of doom.
+B|Verapamil and beta blockers|cardio,pharm|Combining verapamil with a beta blocker risks|Profound bradycardia and heart block|Rebound hypertension and tachycardia|Additive AV nodal suppression.
+G|Hydralazine|cardio,pharm,hypertension|Hydralazine dilates ___ more than veins|arterioles|arterioles,arteries|Causes reflex tachycardia; pair with a beta blocker.
+B|Clonidine withdrawal|cardio,pharm,hypertension|Abrupt clonidine withdrawal causes|Rebound hypertension|Prolonged hypotension|Taper slowly.
+G|Ivabradine|cardio,pharm,heart failure|Ivabradine slows the heart by blocking the funny ___ current|If|if,i-f,f|Acts only on the SA node, without affecting contractility.
+B|Sacubitril|cardio,pharm,heart failure|Sacubitril works by inhibiting|Neprilysin|ACE|It must not be combined with an ACE inhibitor.

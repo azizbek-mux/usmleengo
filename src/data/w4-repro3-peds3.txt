@@ -1,0 +1,58 @@
+# Reproductive third pass and paediatrics third pass. Gap-weighted.
+
+# ── Fertility and early pregnancy ────────────────────────────────────────
+G|Infertility|repro,gyn|Infertility is investigated after ___ months of trying under age 35|12|12,twelve|Six months if over 35.
+B|Male factor infertility|repro,urology|Male factor contributes to|About half of infertility cases|Under a tenth of all cases|Semen analysis should be early in the workup.
+G|Ovulation confirmation|repro,gyn,lab|Ovulation is confirmed by a mid-luteal serum ___|progesterone|progesterone|Measured seven days before the expected period.
+B|Tubal patency|repro,gyn,imaging|Tubal patency is assessed with|Hysterosalpingography|Transvaginal ultrasound alone|Or laparoscopy with dye.
+G|Ovarian reserve|repro,gyn,lab|Ovarian reserve is estimated with anti-___ hormone|Mullerian|mullerian,müllerian,amh|Plus antral follicle count.
+B|Ovarian hyperstimulation|repro,gyn,emergency|Ovarian hyperstimulation syndrome causes|Third spacing, ascites and thrombosis risk|Isolated pelvic pain settling in a day|A complication of fertility treatment.
+G|Recurrent miscarriage|repro,OB|Recurrent miscarriage is investigated after ___ consecutive losses|3|3,three,2|Testing for antiphospholipid syndrome and karyotype.
+
+# ── Antenatal care ───────────────────────────────────────────────────────
+G|Folic acid|repro,OB,vitamins|Folic acid should start ___ conception, not after a positive test|before|before,pre,prior to|The neural tube closes by week four.
+B|High-dose folate|repro,OB|5 mg folic acid is used for|Previous neural tube defect or antiepileptics|Every pregnancy from the first trimester|Standard dose is 400 micrograms.
+G|Booking bloods|repro,OB,lab|Antenatal booking screens for anemia, blood group, infections and ___|haemoglobinopathy|haemoglobinopathy,hemoglobinopathy,thalassemia|Plus rubella immunity in some settings.
+B|Anomaly scan|repro,OB,imaging|The detailed fetal anomaly scan is performed at|18 to 21 weeks|12 weeks|The dating scan is earlier.
+G|Symphysis-fundal height|repro,OB,exam|After 24 weeks, fundal height in ___ roughly matches gestational age|centimetres|centimetres,centimeters,cm|A discrepancy over 3 prompts growth scanning.
+B|Reduced fetal movements|repro,OB,emergency|Reduced fetal movements require|Same-day assessment|Reassurance until the next visit|A potential warning of compromise.
+G|Group B strep|repro,OB,micro|Group B streptococcus carriers receive intrapartum ___ prophylaxis|antibiotic|antibiotic,antibiotics,penicillin|Reducing early-onset neonatal sepsis.
+
+# ── Labour and delivery ──────────────────────────────────────────────────
+G|Stages of labour|repro,OB|The ___ stage of labour ends with full cervical dilatation|first|first|The second ends with delivery of the baby.
+B|Active management of third stage|repro,OB,pharm|Active management of the third stage|Reduces postpartum haemorrhage|Increases retained placenta|Uterotonic, cord traction and clamping.
+G|Cord prolapse|repro,OB,emergency|Cord prolapse requires relieving pressure and immediate ___|delivery|delivery,caesarean|Usually by emergency caesarean.
+B|Failure to progress|repro,OB|Failure to progress is assessed by considering|Power, passenger and passage|Maternal age and parity|The three Ps.
+G|Instrumental delivery|repro,OB,peds|Ventouse delivery carries a higher risk of neonatal ___ haemorrhage|subgaleal|subgaleal,cephalhaematoma,scalp|Forceps carry more maternal trauma.
+B|Caesarean risks|repro,OB,surgery|Repeat caesarean sections increase the risk of|Placenta accreta|Preterm labour|Each scar raises the risk further.
+G|Perineal tear|repro,OB|A third degree perineal tear involves the anal ___|sphincter|sphincter|Fourth degree extends into rectal mucosa.
+
+# ── Neonatal, deeper ─────────────────────────────────────────────────────
+G|Neonatal resuscitation|peds,OB,emergency|Neonatal resuscitation begins with drying, warming and opening the ___|airway|airway|Most respond to effective inflation breaths.
+B|Delayed cord clamping|peds,OB,heme|Delayed cord clamping|Improves neonatal iron stores|Increases jaundice risk unacceptably|Recommended when the baby is well.
+G|Vitamin K at birth|peds,coagulation|Intramuscular vitamin K prevents haemorrhagic disease of the ___|newborn|newborn|Oral regimens require multiple doses.
+B|Neonatal hypoglycemia|peds,endocrine|Neonates at risk of hypoglycemia include|Preterm, small, large and diabetic mothers' babies|All term babies in the first 24 hours of life|Requiring early feeding and monitoring.
+G|Neonatal jaundice threshold|peds,liver|Neonatal jaundice is plotted against age in ___ on a treatment chart|hours|hours,hour|Guiding phototherapy or exchange transfusion.
+B|Exchange transfusion|peds,liver,heme|Exchange transfusion is used when|Bilirubin threatens kernicterus|Phototherapy is unavailable|Removing bilirubin and antibody.
+G|Newborn hearing screen|peds,ENT|Universal newborn hearing screening uses otoacoustic ___|emissions|emissions|Followed by auditory brainstem response if abnormal.
+
+# ── Paediatric acute care ────────────────────────────────────────────────
+G|Paediatric fluid bolus|peds,emergency|A paediatric resuscitation fluid bolus is ___ mL per kilogram|10|10,ten,20|Repeated with careful reassessment.
+B|Paediatric dehydration|peds,emergency|The most reliable measure of dehydration in a child is|Weight loss|Skin turgor alone|Comparing with a recent known weight.
+G|Sepsis in children|peds,micro,emergency|Paediatric sepsis often shows ___ before hypotension|tachycardia|tachycardia,tachypnoea,tachypnea|Hypotension is a late and ominous sign.
+B|Meningococcal septicaemia|peds,micro,emergency|A non-blanching rash with fever requires|Immediate parenteral antibiotics|Observation for 24 hours|Do not delay for investigations.
+G|Anaphylaxis in children|peds,immuno,pharm|Adrenaline dose in anaphylaxis is ___ micrograms per kilogram intramuscularly|10|10,ten|Repeated after five minutes if needed.
+B|Status epilepticus in children|peds,neuro,emergency|Paediatric status epilepticus is first treated with|A benzodiazepine|Phenytoin|Then escalation per protocol.
+G|Croup severity|peds,ENT,emergency|Stridor ___ indicates severe croup|at rest|at rest,at-rest|Needing nebulized adrenaline and close monitoring.
+B|Bronchiolitis red flags|peds,resp|Apnoea in bronchiolitis is most common in|Young or premature infants|Older toddlers and children|A reason for admission.
+
+# ── Child health and development ─────────────────────────────────────────
+G|Growth faltering|peds,nutrition|Growth faltering is assessed by plotting weight on a ___ chart|centile|centile,growth,percentile|Crossing centiles downward is the concern.
+B|Short stature|peds,endocrine|The commonest cause of short stature is|Familial or constitutional|Growth hormone deficiency|Pathology is the exception.
+G|Speech delay|peds,development,ENT|Any child with speech delay needs a ___ test|hearing|hearing|Deafness is a common and correctable cause.
+B|Toe walking|peds,neuro,development|Persistent toe walking beyond age three suggests|Cerebral palsy or a myopathy|Entirely normal variation|Check tone, reflexes and creatine kinase.
+G|Cerebral palsy|peds,neuro|Cerebral palsy is a ___ disorder of movement and posture|non-progressive|non-progressive,static,nonprogressive|Though clinical manifestations change with growth.
+B|Enuresis|peds,urology|Primary nocturnal enuresis is first managed with|Reassurance and an enuresis alarm|Desmopressin at bedtime from the start|Most resolve spontaneously.
+G|Immunization schedule|peds,vaccines|The primary immunization course typically starts at ___ weeks of age|8|8,eight,6|Protecting before maternal antibody wanes.
+B|Vaccine hesitancy|peds,vaccines,ethics|The most effective response to vaccine hesitancy is|Listening and presenting evidence respectfully|Refusing to continue caring for them|Confrontation entrenches views.
+G|Safeguarding|peds,ethics|Any professional with a safeguarding concern has a duty to ___|refer|refer,report,share|Certainty is not required.

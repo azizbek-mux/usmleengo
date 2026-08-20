@@ -1,0 +1,69 @@
+# Microbiology and antimicrobials — second depth pass. Gap-weighted.
+
+# ── Bacterial structure and genetics ─────────────────────────────────────
+G|Bacterial capsule|micro,bacteria,immuno|The bacterial capsule is usually made of ___|polysaccharide|polysaccharide,polysaccharides|Except Bacillus anthracis, which uses poly-D-glutamate.
+B|Encapsulated organisms|micro,bacteria,immuno|Which is NOT a classically encapsulated organism?|Listeria monocytogenes|Neisseria meningitidis|SHiNE SKiS. Asplenics are at risk from the encapsulated ones.
+G|Endotoxin|micro,bacteria|Endotoxin activity resides in the ___ A portion of LPS|lipid|lipid|Triggering TNF, IL-1 and nitric oxide release.
+B|Spores|micro,bacteria|Bacterial spores contain|Dipicolinic acid, surviving boiling water|Free water, and are killed by boiling|Bacillus and Clostridium species.
+G|Plasmids|micro,bacteria,genetics|Resistance genes are often carried on ___|plasmids|plasmids,plasmid|Transferred by conjugation between species.
+B|Transposons|micro,bacteria,genetics|Transposons can move resistance genes|Between plasmid and chromosome|Only between bacterial species|Jumping genes.
+G|Biofilm|micro,bacteria|Biofilm on prosthetic material is classically formed by Staphylococcus ___|epidermidis|epidermidis|Also viridans streptococci on valves.
+B|Obligate aerobes|micro,bacteria|Which is an obligate aerobe?|Mycobacterium tuberculosis|Clostridium tetani|Nagging Pests Must Breathe: Nocardia, Pseudomonas, Mycobacteria, Bacillus.
+G|Obligate anaerobes|micro,bacteria,pharm|Anaerobes are resistant to ___ because those need oxygen to enter|aminoglycosides|aminoglycosides,aminoglycoside|Uptake is oxygen dependent.
+
+# ── Gram-positive detail ─────────────────────────────────────────────────
+G|Corynebacterium diphtheriae|micro,bacteria|Diphtheria toxin inhibits elongation factor ___|2|2,ef-2,two,ef2|By ADP-ribosylation; same mechanism as Pseudomonas exotoxin A.
+B|Diphtheria|micro,bacteria,cardio|The main causes of death in diphtheria are|Airway obstruction and myocarditis|Renal failure and liver necrosis|A grey pseudomembrane in the pharynx.
+G|Clostridium tetani|micro,bacteria,neuro|Tetanus toxin blocks release of glycine and ___|GABA|gaba|Removing inhibition, causing spastic paralysis.
+B|Tetanus versus botulism|micro,bacteria,neuro|Which causes SPASTIC paralysis?|Tetanus|Botulism|Botulinum blocks acetylcholine release, causing flaccid paralysis.
+G|Clostridium perfringens|micro,bacteria|C. perfringens alpha toxin is a ___ that destroys membranes|lecithinase|lecithinase,phospholipase|Causing gas gangrene and double zone hemolysis.
+B|Bacillus cereus|micro,bacteria,GI|Bacillus cereus food poisoning is classically linked to|Reheated rice|Undercooked chicken|Preformed toxin; rapid vomiting.
+G|Listeria monocytogenes|micro,bacteria,GI|Listeria is acquired from unpasteurized dairy and cold ___|deli meats|deli meats,deli,processed meats|Dangerous in pregnancy and the immunosuppressed.
+B|Actinomyces israelii|micro,bacteria,ENT|Actinomyces classically follows|Dental work or jaw trauma|A dog or cat bite wound|Cervicofacial abscess with draining sinuses.
+
+# ── Antimicrobial resistance ─────────────────────────────────────────────
+G|Beta-lactamase|micro,pharm|Beta-lactamases hydrolyze the beta-lactam ___|ring|ring|Inhibited by clavulanate, sulbactam and tazobactam.
+B|ESBL organisms|micro,pharm|Extended-spectrum beta-lactamase producers are treated with|A carbapenem such as meropenem|A third-generation cephalosporin|They inactivate most penicillins and cephalosporins.
+G|Vancomycin resistance|micro,pharm|VRE resistance replaces D-alanine with D-___|lactate|lactate|Reducing vancomycin binding a thousandfold.
+B|Aminoglycoside resistance|micro,pharm|Aminoglycoside resistance is usually caused by|Bacterial transferase enzymes|Altered ribosomes only|Modifying the drug so it cannot bind.
+G|Efflux pumps|micro,pharm|___ pumps expel tetracyclines and fluoroquinolones from bacteria|Efflux|efflux|A common multidrug resistance mechanism.
+B|Methicillin resistance|micro,pharm|MRSA infections are treated with|Vancomycin or linezolid|Nafcillin or cefazolin|The altered PBP2a binds no beta-lactam except ceftaroline.
+
+# ── Antifungals and antivirals ───────────────────────────────────────────
+G|Amphotericin B|micro,pharm,fungi|Amphotericin binds ___ in the fungal membrane, forming pores|ergosterol|ergosterol|Its similarity to cholesterol explains the toxicity.
+B|Amphotericin B|micro,pharm,electrolytes|Amphotericin classically causes|Nephrotoxicity with potassium and magnesium loss|Hepatotoxicity with cholestatic jaundice|Plus fever and rigors during infusion.
+G|Azoles|micro,pharm,fungi|Azoles inhibit the enzyme 14-alpha-___|demethylase|demethylase|Blocking lanosterol conversion to ergosterol.
+B|Fluconazole|micro,pharm,fungi|Fluconazole is preferred for cryptococcal meningitis maintenance because it|Penetrates CSF well|Is fungicidal|Amphotericin plus flucytosine is used for induction.
+G|Caspofungin|micro,pharm,fungi|Echinocandins inhibit synthesis of beta-glucan in the fungal ___|wall|wall,cell wall|Effective against Candida including resistant species.
+G|Aciclovir|micro,pharm,virus|Aciclovir is monophosphorylated by viral thymidine ___|kinase|kinase|Which is why it spares uninfected cells.
+B|Ganciclovir|micro,pharm,virus|Ganciclovir toxicity is chiefly|Bone marrow suppression|Nephrotoxicity|Foscarnet is the nephrotoxic alternative.
+G|Oseltamivir|micro,pharm,virus|Oseltamivir inhibits influenza ___|neuraminidase|neuraminidase|Preventing release of new virions; give within 48 hours.
+B|HIV therapy|micro,pharm,HIV|Modern first-line HIV therapy is usually|An integrase inhibitor with two NRTIs|Three nucleoside reverse transcriptase drugs|Dolutegravir or bictegravir based.
+G|Zidovudine|micro,pharm,HIV|Zidovudine classically causes ___ anemia|megaloblastic|megaloblastic,macrocytic|Plus myopathy and lipodystrophy.
+B|Protease inhibitors|micro,pharm,HIV|Protease inhibitors characteristically cause|Lipodystrophy and hyperglycemia|Peripheral neuropathy and rash|Ritonavir is used as a booster.
+
+# ── Antiparasitics and misc ──────────────────────────────────────────────
+G|Praziquantel|micro,pharm,parasite|Praziquantel is used for ___ and other trematodes|schistosomiasis|schistosomiasis,schistosoma,flukes|Increases membrane permeability to calcium.
+B|Albendazole|micro,pharm,parasite|Albendazole works by|Blocking microtubule polymerization|Inhibiting folate synthesis|Used for nematodes and neurocysticercosis.
+G|Ivermectin|micro,pharm,parasite|Ivermectin treats onchocerciasis and ___|strongyloidiasis|strongyloidiasis,strongyloides,scabies|Opens glutamate-gated chloride channels in the parasite.
+B|Chloroquine resistance|micro,pharm,parasite|Chloroquine-resistant falciparum malaria is treated with|Artemisinin combination therapy|Higher dose chloroquine|The global standard.
+G|Primaquine|micro,pharm,parasite,heme|Primaquine causes hemolysis in ___ deficiency|G6PD|g6pd|Always test before prescribing.
+
+# ── Infection control and epidemiology ───────────────────────────────────
+B|Standard precautions|micro,infection control|Alcohol hand rub is ineffective against|Clostridioides difficile spores|Influenza and rhinovirus particles|Soap and water are required.
+G|Airborne precautions|micro,infection control,TB|Tuberculosis requires a negative pressure room and an N___ respirator|95|95,n95|Along with measles and varicella.
+B|Needlestick|micro,HIV,infection control|The highest transmission risk from a needlestick is|Hepatitis B|HIV|Roughly 30 percent versus 0.3 percent for HIV.
+G|Post-exposure prophylaxis|micro,HIV,pharm|HIV post-exposure prophylaxis should start within ___ hours|72|72,seventy two|The sooner the better; continue four weeks.
+B|Sterilization|micro,infection control|Autoclaving works at|121 degrees under pressure|100 degrees at atmospheric pressure|Only pressure raises the temperature enough to kill spores.
+
+# ── Antibiotic side effects, gap-heavy ───────────────────────────────────
+G|Penicillin allergy|micro,pharm,immuno|True immediate penicillin allergy is mediated by ___|IgE|ige|A delayed rash is usually not a true allergy.
+G|Cephalosporins|micro,pharm,coagulation|Cephalosporins with a methylthiotetrazole group cause a ___-like reaction with alcohol|disulfiram|disulfiram|And can prolong the prothrombin time.
+G|Carbapenems|micro,pharm,neuro|Imipenem can lower the ___ threshold|seizure|seizure,convulsion|Meropenem is less epileptogenic.
+G|Fluoroquinolones|micro,pharm,neuro|Fluoroquinolones can cause peripheral ___ that may be permanent|neuropathy|neuropathy|Plus tendon rupture and QT prolongation.
+G|Sulfonamides|micro,pharm,heme|Sulfonamides cause hemolysis in ___ deficiency|G6PD|g6pd|Plus Stevens-Johnson syndrome and crystalluria.
+G|Nitrofurantoin|micro,pharm,resp|Long-term nitrofurantoin can cause pulmonary ___|fibrosis|fibrosis|Plus hemolysis in G6PD deficiency.
+B|Clindamycin versus metronidazole|micro,pharm|Which covers anaerobes BELOW the diaphragm better?|Metronidazole|Clindamycin|Clindamycin is stronger above the diaphragm.
+B|Doxycycline|micro,pharm,renal|Doxycycline is preferred over other tetracyclines in|Renal impairment|Pregnancy|It is cleared mainly by the gut.
+G|Macrolides|micro,pharm,cardio|Macrolides prolong the ___ interval and inhibit CYP3A4|QT|qt|Azithromycin has the least interaction potential.
+B|Trimethoprim-sulfamethoxazole|micro,pharm,renal|TMP-SMX raises serum creatinine by|Blocking tubular creatinine secretion|Causing true renal tubular injury|GFR is often unchanged.

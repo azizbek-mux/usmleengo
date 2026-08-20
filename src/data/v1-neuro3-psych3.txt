@@ -1,0 +1,61 @@
+# Neurology and psychiatry — third depth pass. Gap-weighted.
+
+# ── CSF and neuroimaging ─────────────────────────────────────────────────
+G|Cerebrospinal fluid|neuro,physiology|CSF is produced by the ___ plexus|choroid|choroid|About 500 mL per day, with 150 mL circulating.
+B|CSF absorption|neuro,physiology|CSF is absorbed by|Arachnoid granulations into venous sinuses|The choroid plexus of the ventricles|Obstruction here causes communicating hydrocephalus.
+G|Lumbar puncture|neuro,procedure|Lumbar puncture is performed at the L3 to L___ interspace|4|4,four,5|Below the termination of the cord.
+B|Lumbar puncture contraindication|neuro,emergency|Lumbar puncture is contraindicated when there is|Raised intracranial pressure with a mass lesion|Fever with suspected bacterial meningitis|Risk of coning; image first if focal signs.
+G|Xanthochromia|neuro,emergency,lab|___ in CSF confirms subarachnoid haemorrhage|Xanthochromia|xanthochromia|Detectable from 12 hours to 2 weeks.
+B|Obstructive hydrocephalus|neuro,imaging|Obstructive hydrocephalus is distinguished on imaging by|Dilatation proximal to the block only|Uniform ventricular enlargement|Communicating hydrocephalus dilates all ventricles.
+
+# ── Neurodegeneration ────────────────────────────────────────────────────
+G|Alzheimer pathology|neuro,dementia,path|Alzheimer tangles are made of hyperphosphorylated ___|tau|tau|Plaques are extracellular amyloid beta.
+B|Alzheimer genetics|neuro,dementia,genetics|Late-onset Alzheimer risk is increased by|APOE e4|APOE e2|APOE e2 is protective.
+G|Alzheimer treatment|neuro,dementia,pharm|Mild to moderate Alzheimer disease is treated with ___ inhibitors|cholinesterase|cholinesterase,acetylcholinesterase|Donepezil, rivastigmine, galantamine.
+B|Frontotemporal dementia|neuro,dementia,path|Frontotemporal dementia involves|Tau or TDP-43 inclusions|Amyloid plaques|Presenting with behaviour or language change.
+G|Parkinson diagnosis|neuro,movement|Parkinson disease requires bradykinesia plus rigidity or ___ tremor|rest|rest,resting|Diagnosis remains clinical.
+B|Progressive supranuclear palsy|neuro,movement|Progressive supranuclear palsy features|Early falls and vertical gaze palsy|A pill-rolling tremor at rest|Poor levodopa response.
+G|Corticobasal degeneration|neuro,movement|Corticobasal degeneration causes an ___ limb phenomenon|alien|alien|Plus apraxia and asymmetric rigidity.
+B|Wilson disease screening|neuro,liver,genetics|Any young person with new movement disorder plus liver disease needs|Copper studies|Iron studies|Wilson disease is treatable if caught early.
+
+# ── Neuromuscular, deeper ────────────────────────────────────────────────
+G|Motor neuron disease|neuro,motor|ALS combines upper and lower motor neuron signs with preserved ___|sensation|sensation,sensory function|And spared eye movements and sphincters.
+B|Spinal muscular atrophy|neuro,genetics,peds|Spinal muscular atrophy is caused by|SMN1 gene deletion|Dystrophin deletion|Now treatable with gene-targeted therapy.
+G|Myasthenia crisis trigger|neuro,NMJ,pharm|___ can precipitate myasthenic crisis and should be avoided|Aminoglycosides|aminoglycosides,gentamicin,antibiotics|Along with beta blockers and magnesium.
+B|Muscular dystrophy inheritance|neuro,genetics|Duchenne muscular dystrophy is inherited as|X-linked recessive|Autosomal dominant|A third are new mutations.
+G|Periodic paralysis|neuro,electrolytes,genetics|Hypokalemic periodic paralysis attacks follow ___ meals or exercise|carbohydrate|carbohydrate,high-carbohydrate,carb|Treated by correcting potassium and avoiding triggers.
+B|Statin myopathy|neuro,pharm,msk|Statin myopathy is confirmed by|A raised creatine kinase with symptoms|Muscle symptoms with a normal CK|Stop the statin and check renal function.
+
+# ── Neuro-ophthalmology and vestibular ───────────────────────────────────
+G|Optic neuritis|neuro,eye|Optic neuritis causes pain on eye movement and a relative afferent ___ defect|pupillary|pupillary|Often the first sign of multiple sclerosis.
+B|Papilloedema versus optic neuritis|neuro,eye|Which usually preserves visual acuity early?|Papilloedema|Optic neuritis|Optic neuritis reduces acuity and colour vision.
+G|Nystagmus|neuro,ENT|Vertical or non-fatiguing nystagmus points to a ___ cause|central|central|Peripheral nystagmus is horizontal and fatigues.
+B|HINTS examination|neuro,ENT,emergency|In acute vertigo, a NORMAL head impulse test suggests|A central cause such as stroke|Acute vestibular neuritis|Counterintuitive but crucial.
+G|Horner localization|neuro,autonomic|Anhidrosis of the whole face in Horner syndrome suggests a ___-order lesion|first|first,central|Preganglionic lesions spare part of the face.
+
+# ── Psychiatry: assessment and risk ──────────────────────────────────────
+G|Mental state examination|psych|The mental state examination covers appearance, behaviour, speech, mood, thought, perception, cognition and ___|insight|insight|Plus judgement and risk.
+B|Suicide risk factors|psych,emergency|Which is the strongest static risk factor for suicide?|A previous attempt|Male sex|Along with a current plan and access to means.
+G|Capacity assessment|psych,ethics|Capacity requires understanding, retaining, weighing and ___ a decision|communicating|communicating,expressing|Assessed for each specific decision.
+B|Involuntary admission|psych,ethics|Involuntary psychiatric admission requires|Mental disorder plus risk to self or others|A request from concerned family members|Legal criteria vary but always include risk.
+G|Formal thought disorder|psych,psychosis|Loosening of ___ is a form of formal thought disorder|associations|associations,association|Along with tangentiality and word salad.
+B|Delusion versus overvalued idea|psych,psychosis|A delusion is|Held with unshakeable conviction against evidence|An unusual belief that few other people share|And out of keeping with cultural background.
+
+# ── Psychiatry: management ───────────────────────────────────────────────
+G|First episode psychosis|psych,pharm,psychosis|Early intervention in first episode psychosis improves long-term ___|outcome|outcome,outcomes,prognosis|Shorter duration of untreated psychosis is better.
+B|Depot antipsychotics|psych,pharm|Long-acting injectable antipsychotics are used mainly for|Poor adherence|Acute agitation|Improving relapse rates.
+G|Treatment-resistant depression|psych,pharm,mood|Depression failing two adequate antidepressant trials is called ___|treatment-resistant|treatment-resistant,resistant|Consider augmentation, ECT or ketamine.
+B|Lithium monitoring|psych,pharm,lab|Lithium levels are checked|12 hours after the dose|Immediately after dosing|Along with renal and thyroid function.
+G|Cognitive behavioural therapy|psych|CBT targets the link between thoughts, feelings and ___|behaviour|behaviour,behavior,behaviours|First-line for many anxiety and mood disorders.
+B|Motivational interviewing|psych,addiction|Motivational interviewing works by|Resolving ambivalence using their own reasons|Providing firm and directive advice|Confrontation increases resistance.
+G|Relapse prevention|psych,addiction|Relapse prevention identifies high-risk situations and ___|triggers|triggers,cues|Building coping strategies in advance.
+
+# ── Psychiatry: special populations ──────────────────────────────────────
+G|Postnatal depression|psych,OB,mood|Postnatal depression is screened with the ___ scale|Edinburgh|edinburgh,epds|Distinguishing it from transient baby blues.
+B|Puerperal psychosis|psych,OB,emergency|Puerperal psychosis is|A psychiatric emergency needing admission|Managed in the community with follow-up|Rapid onset within two weeks of delivery.
+G|Perinatal medication|psych,OB,pharm|___ is generally avoided in pregnancy because of Ebstein anomaly|Lithium|lithium|Weigh relapse risk against teratogenicity.
+B|Elderly depression|psych,geriatrics|Depression in older adults often presents with|Somatic complaints and cognitive impairment|Classic low mood with early waking|Pseudodementia may mimic dementia.
+G|Delirium screening|psych,geriatrics|Delirium is screened with tools such as the ___|4AT|4at,cam,confusion assessment method|Testing attention and alertness.
+B|Behavioural symptoms in dementia|psych,geriatrics,pharm|Agitation in dementia is managed first with|Non-pharmacological approaches|Antipsychotics at low dose|Antipsychotics raise stroke and death risk.
+G|Learning disability|psych,ethics|People with learning disability need reasonable ___ to access care|adjustments|adjustments,accommodations|Plus capacity assessed decision by decision.
+B|Diagnostic overshadowing|psych,ethics|Diagnostic overshadowing is|Attributing physical symptoms to mental illness|Overlooking a psychiatric diagnosis entirely|A major cause of excess physical mortality.

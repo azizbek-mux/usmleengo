@@ -1,0 +1,67 @@
+# TRICKY — one step further. Not the fact, but its consequence.
+BT|ACE inhibitor and creatinine|renal,pharm,cardio|After starting an ACE inhibitor, serum creatinine|Rises slightly|Falls slightly|Efferent dilation drops filtration pressure. A rise under 30 percent is acceptable.
+BT|ACE inhibitor and potassium|renal,pharm,electrolytes|An ACE inhibitor makes serum potassium|Rise|Fall|Less aldosterone means less K+ excreted. Watch it with spironolactone.
+BT|Hyperventilation and ICP|neuro,physiology,emergency|Hyperventilating a head-injured patient makes intracranial pressure|Fall|Rise|Low CO2 constricts cerebral vessels, cutting blood volume. A temporary measure.
+BT|Valsalva in HOCM|cardio,murmur|During Valsalva, the HOCM murmur becomes|Louder|Softer|Less preload, smaller chamber, more obstruction. Opposite to nearly every other murmur.
+BT|Squatting in HOCM|cardio,murmur|On squatting, the HOCM murmur becomes|Softer|Louder|More preload opens the outflow tract.
+BT|Handgrip in aortic stenosis|cardio,murmur|Handgrip makes the aortic stenosis murmur|Softer|Louder|Raised afterload reduces flow across the valve. It makes mitral regurgitation louder.
+BT|Inspiration and murmurs|cardio,murmur|On inspiration, RIGHT-sided murmurs become|Louder|Softer|More venous return to the right heart. Left-sided murmurs get softer.
+BT|PTH and phosphate|endocrine,calcium,renal|PTH raises calcium and makes phosphate|Fall|Rise|The kidney dumps phosphate. Ca up, PO4 down in primary hyperparathyroidism.
+BT|Vitamin D and phosphate|endocrine,calcium|Vitamin D raises calcium AND makes phosphate|Rise|Fall|Both are absorbed from the gut — the key contrast with PTH.
+BT|Renal failure and calcium|renal,endocrine,calcium|Chronic kidney disease makes serum calcium|Fall|Rise|No 1-alpha-hydroxylation, and phosphate retention binds calcium. Secondary hyperparathyroidism follows.
+BT|Aldosterone and pH|renal,endocrine,acid base|Excess aldosterone causes|Metabolic alkalosis|Metabolic acidosis|H+ is excreted alongside K+. Conn syndrome: hypokalemia with alkalosis.
+BT|Vomiting and acid-base|GI,acid base,electrolytes|Prolonged vomiting causes|Hypochloremic metabolic alkalosis|Anion gap metabolic acidosis|Losing gastric HCl. Diarrhea instead causes a normal-gap acidosis.
+BT|Diarrhea and acid-base|GI,acid base|Severe diarrhea causes|Normal anion gap metabolic acidosis|Raised anion gap metabolic acidosis|Bicarbonate is lost from the gut, and chloride rises to compensate.
+BT|Salicylate overdose|toxicology,acid base|Aspirin overdose produces|Respiratory alkalosis AND anion gap acidosis|Pure metabolic acidosis with a normal gap|Direct respiratory centre stimulation plus uncoupled metabolism.
+BT|Aspirin and urine pH|toxicology,renal,pharm|Alkalinizing the urine in aspirin overdose|Traps salicylate and speeds excretion|Slows excretion by trapping it in blood|Ion trapping of a weak acid. Acidify instead for weak bases.
+BT|Insulin and phosphate|endocrine,electrolytes,nutrition|On refeeding a starved patient, serum phosphate|Falls|Rises|Insulin drives phosphate into cells — refeeding syndrome. Also K+ and magnesium.
+BT|Cortisol and white cells|endocrine,immuno,lab|Steroids make the neutrophil count|Rise|Fall|Demargination raises neutrophils while lymphocytes and eosinophils fall.
+BT|Cortisol and wound healing|endocrine,path,healing|Chronic steroids make wound healing|Worse|Better|Collagen synthesis and fibroblast activity are suppressed.
+BT|Thyroid hormone and beta receptors|endocrine,cardio|Excess thyroid hormone makes beta receptors|More numerous|Fewer|Upregulation explains the tachycardia and tremor — and why beta blockers help.
+BT|Hypothyroidism and lipids|endocrine,lipids|Hypothyroidism makes LDL cholesterol|Rise|Fall|Fewer hepatic LDL receptors. Always check TSH in new hyperlipidemia.
+BT|Growth hormone and glucose|endocrine,diabetes|Growth hormone excess makes blood glucose|Rise|Fall|A counter-regulatory hormone. Acromegaly commonly causes diabetes.
+BT|Somatostatin|endocrine,GI,pharm|Octreotide raises the risk of|Gallstones|Peptic ulcer|Suppressed cholecystokinin means poor gallbladder emptying.
+BT|Splenectomy and platelets|heme,immuno,surgery|After splenectomy the platelet count|Rises|Falls|Loss of splenic sequestration. Also Howell-Jolly bodies appear.
+BT|Iron deficiency and RDW|heme,anemia,lab|In early iron deficiency, red cell distribution width|Rises|Stays normal|Mixed old and new cell sizes. Thalassemia keeps RDW normal.
+BT|Chronic hypoxia and 2,3-BPG|resp,heme,physiology|Chronic hypoxia makes 2,3-BPG|Rise|Fall|Shifts the curve right so oxygen unloads more easily in tissues.
+BT|Stored blood transfusion|heme,physiology|Stored blood has LOW 2,3-BPG, so oxygen affinity is|Increased|Decreased|Higher affinity means it releases oxygen less readily.
+BT|Carbon monoxide and pulse oximetry|toxicology,resp|In carbon monoxide poisoning, pulse oximetry reads|Falsely normal|Falsely low|The oximeter cannot distinguish carboxyhemoglobin. Use co-oximetry.
+BT|Methemoglobinemia and oxygen|toxicology,resp|In methemoglobinemia, saturation on supplemental oxygen|Barely improves|Normalizes|The problem is the heme iron, not oxygen delivery. Give methylene blue.
+BT|Pulmonary embolism and CO2|resp,vascular,physiology|In acute pulmonary embolism, arterial CO2 is usually|Low|High|Hyperventilation from hypoxia and pain causes respiratory alkalosis.
+BT|Hypoxic vasoconstriction|resp,cardio,physiology|Chronic lung disease raises which ventricular afterload?|Right|Left|Hypoxic pulmonary vasoconstriction leads to cor pulmonale.
+BT|Left heart failure and the lungs|cardio,resp|Left heart failure raises pulmonary capillary pressure, causing|Pulmonary edema|Peripheral edema|Right-sided failure gives peripheral edema and a raised JVP.
+BT|Aortic regurgitation and pulse pressure|cardio,valve,physiology|Aortic regurgitation makes pulse pressure|Wide|Narrow|Blood runs back in diastole. Aortic stenosis narrows it instead.
+BT|Cardiac tamponade and pulse|cardio,emergency,physiology|Tamponade produces pulsus|Paradoxus|Parvus et tardus|An inspiratory systolic drop over 10 mmHg. Parvus et tardus is aortic stenosis.
+BT|Beta blockers and hypoglycemia|endocrine,pharm,diabetes|In a diabetic, a beta blocker|Masks the warning signs of hypoglycemia|Prevents hypoglycemia from occurring|Tremor and palpitations are blunted; sweating persists.
+BT|Opioids and pupils|neuro,toxicology|Opioid overdose causes pupils that are|Constricted|Dilated|Pinpoint pupils with respiratory depression. Anticholinergics dilate.
+BT|Anticholinergics and temperature|toxicology,physiology|Anticholinergic toxicity makes the patient|Hot and dry|Cold and sweaty|Sweating is blocked, so heat cannot dissipate.
+BT|Alpha-1 agonist and heart rate|cardio,pharm,physiology|Phenylephrine causes heart rate to|Fall|Rise|Reflex bradycardia from baroreceptors as blood pressure climbs.
+BT|Atropine and secretions|pharm,autonomic|Atropine makes bronchial secretions|Decrease|Increase|Antimuscarinic. This is why it treats organophosphate poisoning.
+BT|Denervation and receptors|pharm,neuro,physiology|After denervation, receptor sensitivity|Increases|Decreases|Upregulation — the basis of hyperkalemia risk with succinylcholine.
+BT|Liver failure and ammonia|GI,liver,neuro|Gastrointestinal bleeding in cirrhosis makes encephalopathy|Worse|Better|Blood in the gut is a protein load converted to ammonia.
+BT|Cirrhosis and estrogen|GI,liver,endocrine|Cirrhosis in a male causes|Gynecomastia and spider angiomas|Virilization and male pattern hair|The liver fails to clear estrogen.
+BT|Portal hypertension and platelets|GI,liver,heme|Portal hypertension makes the platelet count|Fall|Rise|Splenic sequestration from congestive splenomegaly.
+BT|Obstructive jaundice and vitamin K|GI,liver,coagulation|Prolonged biliary obstruction prolongs PT because of|Impaired vitamin K absorption|Failure of hepatocyte synthesis|A fat-soluble vitamin needs bile. It corrects with parenteral vitamin K.
+BT|Terminal ileum resection|GI,vitamins,heme|Resecting the terminal ileum causes deficiency of|Vitamin B12|Iron|B12 and bile acids are absorbed there. Iron is duodenal.
+BT|Gastrectomy and iron|GI,heme,surgery|Gastrectomy causes iron deficiency because acid is needed to|Reduce iron to the ferrous form|Bind and release intrinsic factor|Same reason proton pump inhibitors impair iron absorption.
+BT|Celiac disease and bone|GI,bone,vitamins|Untreated celiac disease causes|Osteopenia from calcium malabsorption|Osteosclerosis from high turnover|Duodenal villous atrophy hits the absorption site.
+BT|Nephrotic syndrome and clotting|renal,heme,coagulation|Nephrotic syndrome makes thrombosis|More likely|Less likely|Antithrombin III is lost in the urine. Renal vein thrombosis is classic.
+BT|Nephrotic syndrome and infection|renal,immuno|Nephrotic syndrome raises infection risk because urine loses|Immunoglobulins|Complement C3 only|Encapsulated organisms are the danger.
+BT|Chronic kidney disease and anemia|renal,heme|Chronic kidney disease causes anemia because the kidney makes less|Erythropoietin|Stored iron|Peritubular fibroblasts make EPO.
+BT|Hyperkalemia treatment order|renal,electrolytes,emergency|In hyperkalemia with ECG changes, the FIRST drug is|Calcium gluconate|Insulin and glucose|Calcium stabilizes the myocardium without lowering K+. Then shift, then remove.
+BT|Blood transfusion and calcium|heme,electrolytes,surgery|Massive transfusion makes ionized calcium|Fall|Rise|Citrate anticoagulant chelates calcium.
+BT|Pregnancy and creatinine|repro,OB,renal|In normal pregnancy, serum creatinine|Falls|Rises|GFR rises about 50 percent. A "normal" creatinine may signal renal impairment.
+BT|Pregnancy and clotting|repro,OB,coagulation|Pregnancy makes venous thromboembolism|More likely|Less likely|A physiologic hypercoagulable state, worst postpartum.
+BT|Pregnancy and respiratory|repro,OB,resp|In pregnancy, arterial CO2 is|Low|High|Progesterone drives hyperventilation — a compensated respiratory alkalosis.
+BT|Fetal circulation and oxygen|repro,OB,cardio|Closing the ductus arteriosus at birth is triggered by|Rising oxygen and falling prostaglandins|Falling oxygen and rising prostaglandins|Indomethacin closes a PDA; prostaglandin E1 keeps it open.
+BT|Prostaglandins and the ductus|repro,peds,pharm|In transposition of the great arteries, you give|Prostaglandin E1 to KEEP the duct open|Indomethacin to close the duct|The duct is the only mixing point keeping the baby alive.
+BT|Surfactant and prematurity|resp,peds,OB|Antenatal steroids help the premature lung by|Inducing surfactant production|Dilating the fetal airways|Type II pneumocytes respond to betamethasone.
+BT|Sickle cell and the spleen|heme,genetics,micro|Repeated splenic infarction in sickle cell disease causes|Functional asplenia|Splenomegaly in adults|Encapsulated organism risk. Children may have splenomegaly early.
+BT|Sickle cell trait and the kidney|heme,renal|Sickle cell TRAIT can still cause|Painless hematuria from papillary necrosis|Full vaso-occlusive painful crises in adults|The hypoxic hypertonic medulla sickles even in trait.
+BT|Hydroxyurea|heme,pharm,genetics|Hydroxyurea helps sickle cell disease by raising|Hemoglobin F|Hemoglobin A|Fetal hemoglobin blocks HbS polymerization.
+BT|Lead poisoning and iron|heme,toxicology,biochem|Lead poisoning and iron deficiency both cause|Microcytic anemia|Macrocytic anemia|Lead adds basophilic stippling and inhibits ALA dehydratase.
+BT|Alcohol and folate|nutrition,heme,GI|Chronic alcohol use most commonly causes deficiency of|Folate|Vitamin C|Poor intake plus impaired absorption. Thiamine matters too.
+BT|Phenytoin and folate|neuro,pharm,heme|Long-term phenytoin causes|Megaloblastic anemia|Microcytic anemia|Folate antagonism. Also gingival hyperplasia and hirsutism.
+BT|Smoking and warfarin|pharm,principles,coagulation|Stopping smoking makes warfarin levels|Rise|Fall|Smoking induces CYP1A2; stopping removes the induction.
+BT|Obesity and drug loading|pharm,principles|For a highly lipophilic drug, the loading dose in obesity should be|Higher|Lower|A larger volume of distribution. Maintenance depends on clearance instead.
+BT|Renal failure and drug dosing|pharm,principles,renal|In renal failure, you adjust|The maintenance dose|The loading dose|Loading depends on volume of distribution; maintenance on clearance.

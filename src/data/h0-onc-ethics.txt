@@ -1,0 +1,47 @@
+# Oncology principles, ethics and miscellaneous — batch 1.
+B|Post-transplant lymphoproliferative disorder|oncology,transplant,virus|PTLD is driven by|Epstein-Barr virus|Cytomegalovirus|Reduced cytotoxic T cell surveillance under immunosuppression.
+G|HER2|oncology,genetics,pharm|___ overexpression predicts aggressive breast cancer and responds to trastuzumab|HER2|her2,her-2,erbb2|A transmembrane tyrosine kinase driving proliferation.
+B|Trastuzumab|oncology,pharm,cardio|The characteristic toxicity of trastuzumab is|Cardiomyopathy|Pulmonary fibrosis|Usually reversible; monitor ejection fraction.
+G|Antigen presentation|oncology,immuno,cell biology|MHC class I presentation begins with ___ tagging by ubiquitin ligase|proteasomal|proteasomal,proteasome,degradation|Peptides then enter via TAP.
+B|Chronic inflammation|oncology,immuno,heme|Anemia of chronic disease is driven by|IL-6 raising hepcidin|IL-2 suppressing marrow|Hepcidin traps iron in macrophages.
+B|Estrogen receptor positive breast cancer|oncology,pharm,repro|ER-positive breast cancer is treated with|Antiestrogens such as tamoxifen|Trastuzumab and pertuzumab|Hormone receptor stimulation drives proliferation.
+B|Radiation injury|oncology,path|Ionizing radiation damages cells mainly through|Reactive oxygen species|Direct protein denaturation|Free radicals damage DNA; rapidly dividing tissues suffer first.
+B|Cetuximab resistance|oncology,pharm,genetics|Anti-EGFR antibodies fail when there is|An activating KRAS mutation|An EGFR amplification|KRAS is downstream, so blocking EGFR is futile.
+G|Colorectal carcinogenesis|oncology,genetics,GI|The adenoma-carcinoma sequence begins with mutation of ___|APC|apc|Then KRAS, then TP53. APC is also mutated in FAP.
+B|MEN 2|oncology,genetics,endocrine|MEN 2 is caused by|Activation of the RET proto-oncogene|Loss of both RB gene copies|Prophylactic thyroidectomy is offered to carriers.
+G|Invasion and metastasis|oncology,path|Tumors breach the basement membrane using ___|metalloproteinases|metalloproteinases,mmp,matrix metalloproteinases|Zinc-dependent enzymes degrading collagen IV and laminin.
+B|Retinoblastoma protein|oncology,genetics,cell biology|The RB protein normally|Blocks progression from G1 to S phase|Triggers apoptosis in damaged cells|Loss of RB releases the cell cycle brake.
+G|Cancer cachexia|oncology,path|Cachexia degrades muscle protein via the ___-proteasome pathway|ubiquitin|ubiquitin|Driven by TNF-alpha and IL-6.
+G|Lynch syndrome|oncology,genetics,GI|Lynch syndrome is caused by defective DNA ___ repair|mismatch|mismatch|MSH2 and MLH1; also endometrial and ovarian cancer.
+G|Superoxide dismutase|oncology,biochem,path|The free radical O2- is neutralized by the enzyme ___ dismutase|superoxide|superoxide,sod|Then catalase and glutathione peroxidase finish the job.
+B|BRCA mutations|oncology,genetics|BRCA1 and BRCA2 normally function in|DNA double-strand break repair|Cell cycle checkpoint control only|Homologous recombination; targeted by PARP inhibitors.
+B|Scurvy|nutrition,vitamins,path|Vitamin C deficiency impairs|Proline and lysine hydroxylation|Transcription of collagen genes|Perifollicular hemorrhage, bleeding gums, poor healing.
+B|Complement anaphylatoxins|immuno,complement|Which complement fragment is the strongest chemoattractant?|C5a|C3b|C3b is the opsonin; C5a recruits neutrophils and raises permeability.
+B|Kawasaki disease|peds,vascular,immuno|Kawasaki disease is most dangerous because of|Coronary artery aneurysms|Progressive renal failure|Fever over five days, conjunctivitis, rash, mucositis, adenopathy.
+B|Kawasaki disease|peds,pharm|Kawasaki disease is treated with|IVIG and aspirin|Corticosteroids alone|One of the few paediatric indications for aspirin.
+B|Cardiac aging|cardio,aging,physiology|With age, the cardiac response to adrenergic stimulation|Decreases|Increases|Reduced maximum heart rate and reserve in critical illness.
+G|DiGeorge syndrome|genetics,immuno|DiGeorge syndrome is a microdeletion of chromosome ___|22|22,22q11,22q11.2|CATCH-22: cardiac, abnormal facies, thymic aplasia, cleft palate, hypocalcemia.
+B|Rib fracture injury|anatomy,trauma|Fracture of the left lower ribs risks laceration of the|Spleen and left kidney|Liver and gallbladder|Right lower ribs threaten the liver.
+B|Turner syndrome|genetics,repro,peds|Lymphedema in a newborn with webbed neck suggests|Turner syndrome|Down syndrome|Lymphatic network dysgenesis; cystic hygroma.
+B|Lymphatic drainage|anatomy,immuno|A foot laceration drains first to which nodes?|Inguinal|Popliteal only|Superficial lymphatics of the leg drain to inguinal nodes.
+B|Atrophy|path,adaptation|Glucocorticoid therapy causes adrenal atrophy through|Reduced ACTH stimulation|Direct steroid toxicity|Never stop long-term steroids abruptly.
+G|Proopiomelanocortin|endocrine,biochem|ACTH and beta-endorphin both derive from ___|POMC|pomc,proopiomelanocortin,pro-opiomelanocortin|Also MSH, which explains hyperpigmentation in Addison disease.
+B|Myotonic dystrophy|genetics,msk|Myotonic dystrophy is caused by|A CTG repeat expansion in DMPK|A deletion in the dystrophin gene|Autosomal dominant with anticipation; cataracts and arrhythmia.
+B|Patau syndrome|genetics,peds|Patau syndrome is trisomy|13|18|Cleft lip and palate, polydactyly, holoprosencephaly, microphthalmia.
+B|Edwards syndrome|genetics,peds|Edwards syndrome is trisomy|18|13|Rocker-bottom feet, clenched hands with overlapping fingers, micrognathia.
+B|Sympathetic stimulation|cardio,physiology|Beta-1 stimulation shortens which ECG interval?|PR|QT|Faster AV nodal conduction.
+B|Peritonsillar abscess|ENT,micro|A peritonsillar abscess deviates the|Uvula to the opposite side|Trachea to the same side|Polymicrobial; hot potato voice and trismus.
+B|Transudative effusion|resp,path|Low albumin causes effusion by|Reducing plasma oncotic pressure|Increasing capillary permeability|A transudate with low protein and LDH.
+B|Capacity in dementia|ethics|A diagnosis of Alzheimer disease means the patient|May still retain decision-making capacity|Automatically lacks capacity to consent|Capacity is decision-specific and must be assessed.
+B|Physician fatigue|ethics,safety|Cognitive impairment from sleep deprivation appears after about|17 hours awake|30 hours awake|Comparable to alcohol intoxication.
+B|Medical error disclosure|ethics|After a medical error causing harm you should|Disclose it fully with an apology|Wait for the family to ask|Disclosure is required even if the patient has died.
+B|Shared decision making|ethics|Involving patients in decisions tends to|Reduce overutilization|Increase testing|Patient-centred care does not mean giving every request.
+B|Medication nonadherence|ethics,pharm|The best first response to suspected nonadherence is|Explore barriers non-judgmentally|Check a serum drug level|Building partnership improves adherence more than testing.
+B|Polypharmacy|ethics,pharm,aging|In an elderly patient with confusion, first|Review and stop non-essential drugs|Order urgent brain imaging|Anticholinergics like diphenhydramine are common culprits.
+B|Against medical advice|ethics|A patient with capacity refusing admission should be|Informed of risks and allowed to leave|Detained until family can attend|Document the discussion and offer follow-up.
+B|Language access|ethics,safety|A patient with limited English proficiency requires|A qualified medical interpreter|A family member to translate|Family interpreters cause errors and breach confidentiality.
+B|Surrogate decision making|ethics|Without an advance directive, decisions fall to|The next of kin|The treating physician|Spouse, then adult child, parent, then sibling.
+B|Hospice eligibility|ethics|Hospice referral requires a prognosis of|Six months or less|Two years or less|Focus shifts to comfort; care may continue past six months.
+B|Suspected child abuse|ethics,peds|Suspected child abuse requires|Reporting to child protective services|Certainty of abuse before reporting|Reasonable suspicion is the threshold; reporting is mandatory.
+B|Parental refusal|ethics,peds|If parents refuse life-saving treatment for a child you should|Treat and involve child protective services|Honour the parents' stated refusal|Parents cannot refuse life-saving care for a minor.
+B|Capitation|ethics,health systems|Under capitation, providers are paid|A fixed amount per patient|Per service delivered|Creates incentive to reduce utilization; fee-for-service does the opposite.

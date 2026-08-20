@@ -1,0 +1,46 @@
+# ENT, ophthalmology and toxicology — batch 1.
+B|Head and neck squamous cell carcinoma|ENT,oncology|Head and neck squamous cell carcinoma shows|Irregular nests of cells with keratinization|Signet ring cells filled with mucin|Tobacco and alcohol are the main mutagens; HPV for oropharynx.
+G|Field cancerization|ENT,oncology|Multiple primary tumours from a widely mutagenized mucosa is called field ___|cancerization|cancerization,cancerisation|Explains second primaries in head and neck cancer.
+B|Rhinitis medicamentosa|ENT,pharm|Rebound nasal congestion is treated by|Stopping the topical decongestant|Increasing the decongestant dose|Oxymetazoline used beyond three days causes rebound.
+B|Thyroglossal duct cyst|ENT,embryology|A midline neck cyst that moves with swallowing is a|Thyroglossal duct cyst|Branchial cleft cyst|Incomplete duct obliteration; branchial cysts are lateral.
+B|Branchial cleft cyst|ENT,embryology|A branchial cleft cyst is located|Laterally, anterior to sternocleidomastoid|In the midline, moving on swallowing|Second branchial cleft remnant.
+B|Temporomandibular joint dislocation|ENT,anatomy|Persistent jaw dislocation is maintained by spasm of the|Lateral pterygoid|Masseter|The lateral pterygoid protrudes the jaw.
+B|Otitis media|ENT,micro,peds|The commonest cause of acute otitis media is|Streptococcus pneumoniae|Moraxella catarrhalis|Then non-typeable H. influenzae, which lacks a capsule.
+B|Non-typeable Haemophilus|ENT,micro,immuno|The Hib vaccine does not protect against non-typeable strains because they|Lack a capsule|Have a different toxin|The vaccine targets the type b polysaccharide capsule.
+B|DiGeorge syndrome|ENT,immuno,embryology|Third pharyngeal pouch failure causes|T cell dysfunction and hypocalcemia|B cell deficiency and low IgG|Thymus and inferior parathyroids fail to develop.
+B|Acute otitis media complications|ENT,anatomy,neuro|Spreading otitis media may involve which nerve?|Facial|Trigeminal|The facial nerve runs through the middle ear.
+G|Epistaxis|ENT,anatomy|Most nosebleeds arise from ___ plexus on the anterior septum|Kiesselbach|kiesselbach,kiesselbach's|Anterior bleeds are commonest and easiest to cauterize.
+B|Cholesteatoma|ENT,path|A cholesteatoma is composed of|Keratinizing squamous debris|Cholesterol crystals|Erodes the ossicles causing conductive hearing loss.
+B|Cricothyrotomy|ENT,anatomy,emergency|An emergency cricothyrotomy passes through the|Cricothyroid membrane|Thyroid cartilage|Between the thyroid and cricoid cartilage.
+B|Laryngeal papillomatosis|ENT,virus,peds|Recurrent respiratory papillomatosis is caused by|HPV types 6 and 11|HPV types 16 and 18|Acquired vertically during delivery; 16 and 18 cause cancer.
+B|Referred ear pain|ENT,neuro,anatomy|Temporomandibular disorder causes ear pain via the|Trigeminal nerve|Facial nerve|V3 supplies the joint and part of the ear.
+B|Allergic rhinitis|ENT,immuno|Allergic rhinitis requires prior|Sensitization with IgE production|Complement activation and lysis|Th2 cytokines drive IgE class switching on first exposure.
+B|Vasovagal syncope|ENT,autonomic|Vagal stimulation during a procedure causes|Bradycardia and hypotension|Tachycardia and hypertension|Parasympathetic outflow slows the heart.
+B|Steroid-induced cataract|eye,pharm|Chronic prednisone causes|Posterior subcapsular cataract|Optic neuritis and pain|Also raises intraocular pressure.
+B|Retinoblastoma|eye,oncology,genetics|Survivors of hereditary retinoblastoma are at risk of|Osteosarcoma|Leukemia|RB1 germline mutation; leukocoria under age five.
+B|Congenital CMV|eye,micro,OB|The commonest eye finding in congenital CMV is|Chorioretinitis|Cataract|Cataracts suggest congenital rubella.
+B|Antihistamine ocular effects|eye,pharm|Blurred vision from antihistamines is due to blockade of|Acetylcholine|Histamine|Anticholinergic effect paralyzes accommodation.
+B|Diabetic retinopathy|eye,endocrine|Cotton wool spots represent|Retinal nerve fibre layer microinfarcts|Lipid exudate from leaking vessels|From chronic hyperglycemic microvascular injury.
+B|Cataract|eye,aging|Cataract formation is caused by|Lens protein cross-linking with age|Progressive corneal opacification|Glare and halos around lights at night.
+B|Sildenafil visual effects|eye,pharm|Sildenafil causes a blue tinge to vision by inhibiting|Phosphodiesterase-6 in the retina|Carbonic anhydrase in the eye|Cross-reactivity with the retinal isoform.
+B|Herpes zoster ophthalmicus|eye,virus|Zoster involving the nasal tip predicts eye involvement — this is|Hutchinson sign|Battle sign|The nasociliary branch supplies both.
+B|Myopia|eye,physiology|Myopia is caused by|An eye that is too long|An eye that is too short|Image focuses in front of the retina; corrected with concave lenses.
+B|Endogenous endophthalmitis|eye,micro|Candida reaches the eye by|Hematogenous spread|Direct extension|Molds like Aspergillus spread directly after trauma or surgery.
+B|Acute angle closure glaucoma|eye,emergency|Acute angle closure glaucoma presents with|A painful red eye with a fixed pupil|Painless loss of peripheral vision|Nausea and halos; an ophthalmic emergency.
+B|Acute angle closure glaucoma|eye,pharm|Which drug class can precipitate angle closure?|Anticholinergics and sympathomimetics|Beta blockers and prostaglandins|Pupillary dilation blocks the drainage angle.
+B|Glaucoma drugs|eye,pharm|Timolol lowers intraocular pressure by|Reducing aqueous production|Increasing uveoscleral outflow|Prostaglandin analogues increase uveoscleral outflow.
+B|Naloxone|toxicology,pharm,emergency|A patient may deteriorate after naloxone because it has|A shorter half-life than the opioid|A ceiling effect at high doses|Repeat dosing or an infusion may be needed.
+B|Organophosphate poisoning|toxicology,pharm|Pralidoxime works by|Regenerating acetylcholinesterase|Blocking muscarinic receptors|Give atropine first for muscarinic symptoms.
+B|Organophosphate poisoning|toxicology,emergency|The first drug in organophosphate poisoning is|Atropine|Pralidoxime|Atropine reverses the life-threatening muscarinic effects.
+B|Exertional heat stroke|toxicology,physiology|Heat stroke is defined as hyperthermia above 40 degrees plus|Central nervous system dysfunction|Complete absence of sweating|Heat exhaustion has no encephalopathy.
+B|Anticholinergic heat stroke|toxicology,pharm|Anticholinergic drugs cause heat stroke by|Impairing sweating and heat loss|Raising the metabolic rate|Hot, dry skin without sweat.
+G|Nitroprusside|toxicology,pharm,cardio|Nitroprusside releases ___ oxide and can cause cyanide toxicity|nitric|nitric,no|Raises cGMP; thiocyanate accumulates in renal failure.
+B|Methemoglobinemia|toxicology,heme|Methemoglobinemia is caused by|Oxidation of heme iron to ferric|Reduction of heme iron to ferrous|Benzocaine and dapsone; treat with methylene blue.
+B|Hypothermia|toxicology,physiology|Early hypothermia triggers|Peripheral vasoconstriction and shivering|Peripheral vasodilation and sweating|Osborn J waves appear on ECG.
+B|Beta blocker overdose|toxicology,endocrine|Beta blocker overdose causes blood glucose to|Fall|Rise|Blocks glycogenolysis and gluconeogenesis; masks hypoglycemia symptoms.
+B|Niacin overdose|toxicology,vitamins|High-dose niacin classically causes|Flushing|Constipation|Prostaglandin-mediated; blunted by aspirin.
+B|Tricyclic overdose|toxicology,cardio|The lethal effect of tricyclic overdose is|QRS widening from sodium channel blockade|Bradycardia from vagal stimulation|Treat with sodium bicarbonate.
+B|Salicylate elimination|toxicology,renal|Alkalinizing the urine in aspirin overdose|Traps salicylate and speeds excretion|Reduces gastrointestinal absorption|Ion trapping of a weak acid.
+B|Physostigmine|toxicology,pharm|Physostigmine reverses|Anticholinergic toxicity|Cholinergic toxicity|Crosses the blood-brain barrier, unlike neostigmine.
+B|Lead poisoning|toxicology,heme|Lead poisoning is confirmed by|A blood lead level|Urine porphyrins|Inhibits ALA dehydratase and ferrochelatase.
+G|Serotonin syndrome|toxicology,psych,biochem|Serotonin is synthesized from the amino acid ___|tryptophan|tryptophan,trp|Tyrosine makes dopamine and catecholamines.

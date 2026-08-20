@@ -1,0 +1,79 @@
+# Haematology and oncology — depth pass. Gap-weighted.
+
+# ── Red cell physiology ──────────────────────────────────────────────────
+G|Erythropoiesis|heme,physiology|Erythropoietin is released in response to tissue ___|hypoxia|hypoxia,low oxygen|From peritubular fibroblasts in the renal cortex.
+G|Hemoglobin|heme,physiology|Adult hemoglobin A is made of two alpha and two ___ chains|beta|beta,b|HbF is two alpha and two gamma.
+B|Reticulocyte count|heme,anemia,lab|A HIGH reticulocyte count in anemia indicates|Hemolysis or blood loss|Marrow failure|A low count means the marrow is not responding.
+G|Red cell lifespan|heme,physiology|A red cell survives about ___ days|120|120,one hundred twenty|Shortened in hemolysis, which is why HbA1c falls.
+B|Howell-Jolly bodies|heme,path,immuno|Howell-Jolly bodies indicate|Absent splenic function|Iron overload states|Nuclear remnants the spleen would normally pit out.
+
+# ── Anemias ──────────────────────────────────────────────────────────────
+G|Iron deficiency|heme,anemia,lab|The earliest change in iron deficiency is a fall in serum ___|ferritin|ferritin|Before hemoglobin or MCV change.
+B|Iron deficiency in men|heme,anemia,GI|Iron deficiency in an adult man requires|Investigation for GI blood loss|Dietary advice on its own|Colon cancer until proven otherwise.
+G|Sideroblastic anemia|heme,anemia,path|Sideroblastic anemia shows ringed ___ in the marrow|sideroblasts|sideroblasts,sideroblast|Iron trapped in mitochondria around the nucleus.
+B|Sideroblastic anemia|heme,anemia,vitamins|Sideroblastic anemia may respond to|Vitamin B6|Vitamin B12|B6 is a cofactor for ALA synthase.
+G|Megaloblastic anemia|heme,anemia,path|Megaloblastic anemia shows hypersegmented ___|neutrophils|neutrophils,neutrophil,pmn|More than five lobes.
+B|Pernicious anemia|heme,anemia,immuno|Pernicious anemia is caused by antibodies against|Intrinsic factor and parietal cells|Red cell membrane and spectrin|Autoimmune atrophic gastritis of the body and fundus.
+G|Aplastic anemia|heme,anemia,path|Aplastic anemia shows a ___ marrow on biopsy|hypocellular|hypocellular,empty,fatty|Pancytopenia with no abnormal cells.
+B|Hereditary spherocytosis|heme,anemia,lab|Hereditary spherocytosis is confirmed by|The eosin-5-maleimide binding test|A direct Coombs antiglobulin test|Osmotic fragility is the older test. Coombs is negative.
+G|Hereditary spherocytosis|heme,anemia,path|Hereditary spherocytosis shows a raised mean corpuscular hemoglobin ___|concentration|concentration,mchc|Cells are small, round and densely packed.
+B|G6PD deficiency|heme,genetics,lab|G6PD should be tested|Weeks after the hemolytic episode|During the acute crisis itself|Young cells have higher enzyme levels, giving false normals.
+G|Sickle cell disease|heme,genetics,micro|Sickle cell patients need penicillin prophylaxis because of functional ___|asplenia|asplenia,hyposplenism|Repeated splenic infarction from childhood.
+B|Sickle cell crisis|heme,genetics,emergency|Acute chest syndrome is treated with|Oxygen, antibiotics and transfusion|Intravenous fluids and analgesia|The leading cause of death in sickle cell disease.
+G|Beta thalassemia major|heme,genetics,path|Beta thalassemia major causes ___ bone marrow expansion, giving crew-cut skull|extramedullary|extramedullary,marrow|Plus chipmunk facies and hepatosplenomegaly.
+B|Thalassemia|heme,genetics,pharm|Chronic transfusion in thalassemia requires|Iron chelation|Folate restriction|Deferasirox or deferoxamine to prevent iron overload.
+G|Autoimmune hemolytic anemia|heme,immuno,lab|Autoimmune hemolysis is confirmed by a direct ___ test|Coombs|coombs,antiglobulin|Detecting antibody already bound to red cells.
+
+# ── Bleeding and clotting ────────────────────────────────────────────────
+G|Primary hemostasis|heme,coagulation|Platelets adhere to collagen via von Willebrand factor and glycoprotein ___|Ib|ib,gp1b,gpib,1b|Bernard-Soulier lacks GpIb.
+B|Glanzmann thrombasthenia|heme,coagulation,genetics|Glanzmann thrombasthenia is a defect of|GpIIb/IIIa|GpIb|Platelets cannot aggregate with each other.
+G|Bernard-Soulier syndrome|heme,coagulation,path|Bernard-Soulier shows ___ platelets on smear|large|large,giant,big|Big suckers. Defective adhesion.
+B|Platelet count and bleeding|heme,coagulation|Spontaneous bleeding usually begins below a platelet count of|20,000|100,000|Surgery generally needs above 50,000.
+G|Hemophilia|heme,coagulation,lab|Hemophilia prolongs the ___ but leaves PT normal|PTT|ptt,aptt|Factor VIII and IX are intrinsic pathway factors.
+B|Mixing study|heme,coagulation,lab|If a prolonged PTT corrects on mixing, the cause is|Factor deficiency|An inhibitor|Failure to correct suggests an inhibitor such as lupus anticoagulant.
+G|Vitamin K|heme,coagulation,biochem|Vitamin K carboxylates ___ residues on clotting factors|glutamate|glutamate,glutamic acid,glu|Allowing calcium binding.
+B|Newborn vitamin K|heme,coagulation,peds|Newborns receive vitamin K at birth because|Gut flora have not yet colonized|The liver is immature only|Prevents hemorrhagic disease of the newborn.
+G|Disseminated intravascular coagulation|heme,coagulation,lab|DIC raises ___, the fibrin degradation product|D-dimer|d-dimer,d dimer,ddimer|With low fibrinogen and platelets.
+B|Heparin-induced thrombocytopenia|heme,pharm,coagulation|HIT antibodies are directed against|Platelet factor 4 bound to heparin|Factor VIII bound to von Willebrand|Platelets fall after 5 to 10 days, with thrombosis not bleeding.
+G|Thrombotic thrombocytopenic purpura|heme,path|TTP results from deficiency of ___|ADAMTS13|adamts13,adamts-13|Ultra-large von Willebrand multimers cause microthrombi.
+B|Hemolytic uremic syndrome|heme,micro,renal|HUS in children classically follows|E. coli O157:H7 infection|Streptococcal pharyngitis|Shiga toxin damages endothelium.
+G|Factor V Leiden|heme,coagulation,genetics|Factor V Leiden makes factor V resistant to activated protein ___|C|c|The commonest inherited thrombophilia.
+B|Protein C deficiency|heme,coagulation,pharm|Protein C deficiency raises the risk of|Warfarin-induced skin necrosis|Heparin resistance and failure|Protein C falls fastest when warfarin starts.
+
+# ── Leukemias ────────────────────────────────────────────────────────────
+G|Acute lymphoblastic leukemia|heme,oncology,peds|ALL blasts are positive for terminal deoxynucleotidyl ___|transferase|transferase,tdt|A marker of immature lymphoid cells.
+B|Acute lymphoblastic leukemia|heme,oncology,peds|ALL commonly spreads to which sanctuary sites?|CNS and testes|Liver and spleen only|Which is why prophylactic intrathecal therapy is given.
+G|Acute promyelocytic leukemia|heme,oncology,genetics|APL carries the t(15;17) translocation and responds to all-trans retinoic ___|acid|acid|Differentiation therapy. Watch for DIC and differentiation syndrome.
+B|Acute myeloid leukemia|heme,oncology,path|Auer rods indicate|Acute myeloid leukemia|Chronic lymphocytic leukemia|Needle-shaped azurophilic granules.
+G|Chronic lymphocytic leukemia|heme,oncology,path|CLL shows ___ cells on peripheral smear|smudge|smudge,smudge cells|Fragile lymphocytes crushed during smearing.
+B|Chronic lymphocytic leukemia|heme,oncology,immuno|CLL is complicated by|Autoimmune hemolytic anemia|Tumour lysis at diagnosis|Plus hypogammaglobulinemia and infection.
+B|Hairy cell leukemia|heme,oncology,lab|Hairy cell leukemia stains positive for|TRAP|Myeloperoxidase|Tartrate-resistant acid phosphatase; treat with cladribine.
+G|Chronic myeloid leukemia|heme,oncology,pharm|CML is treated with ___, a tyrosine kinase inhibitor|imatinib|imatinib|Targets the BCR-ABL fusion protein.
+B|Leukemoid reaction|heme,oncology,lab|A leukemoid reaction differs from CML by having|High leukocyte alkaline phosphatase|A low leukocyte alkaline phosphatase|CML has a low LAP score.
+
+# ── Lymphomas and myeloma ────────────────────────────────────────────────
+G|Hodgkin lymphoma|heme,oncology,path|Reed-Sternberg cells are positive for CD15 and CD___|30|30,cd30|Owl-eye binucleate cells in a reactive background.
+B|Hodgkin lymphoma|heme,oncology|B symptoms in lymphoma are fever, night sweats and|Weight loss|Pruritus|Ten percent loss over six months.
+G|Burkitt lymphoma|heme,oncology,genetics|Burkitt lymphoma carries the t(8;14) translocation involving ___|MYC|myc,c-myc|Starry-sky appearance from tingible body macrophages.
+B|Follicular lymphoma|heme,oncology,genetics|Follicular lymphoma carries|t(14;18) with BCL-2 overexpression|t(9;22) with a BCR-ABL fusion|BCL-2 blocks apoptosis.
+G|Mantle cell lymphoma|heme,oncology,genetics|Mantle cell lymphoma overexpresses cyclin ___|D1|d1,d-1|From t(11;14). Aggressive with a poor prognosis.
+G|Multiple myeloma|heme,oncology,renal|Myeloma light chains in urine are called ___ Jones protein|Bence|bence,bence-jones|Missed by standard urine dipstick.
+B|Multiple myeloma|heme,oncology,path|Myeloma marrow shows|Over 10 percent clonal plasma cells|Over 20 percent myeloid blasts|Plus a monoclonal spike on electrophoresis.
+G|Waldenstrom macroglobulinemia|heme,oncology|Waldenstrom produces excess Ig___, causing hyperviscosity|M|m,igm|Treated acutely with plasmapheresis.
+
+# ── Myeloproliferative ───────────────────────────────────────────────────
+G|Polycythemia vera|heme,oncology,genetics|Polycythemia vera carries the ___ mutation|JAK2|jak2,jak-2|Present in nearly all cases; also in ET and myelofibrosis.
+B|Polycythemia vera|heme,oncology|Polycythemia vera classically causes|Itching after a hot shower|Cold intolerance and pallor|Aquagenic pruritus from histamine release.
+B|Essential thrombocythemia|heme,oncology|Essential thrombocythemia carries a risk of|Both thrombosis and bleeding|Thrombosis but never bleeding|Very high counts cause acquired von Willebrand disease.
+G|Myelofibrosis|heme,oncology,path|Myelofibrosis shows ___-shaped red cells on smear|teardrop|teardrop,tear drop,dacrocytes|With a dry marrow tap and massive splenomegaly.
+
+# ── Oncology principles ──────────────────────────────────────────────────
+G|Tumour lysis syndrome|oncology,electrolytes,pharm|Tumour lysis is prevented with hydration and ___|allopurinol|allopurinol,rasburicase|Rasburicase for high-risk patients.
+B|Superior vena cava syndrome|oncology,emergency|SVC syndrome is a complication of|Mediastinal tumours|Bone metastases|Small cell lung cancer and lymphoma.
+G|Spinal cord compression|oncology,emergency,pharm|Malignant cord compression is treated immediately with ___|dexamethasone|dexamethasone,steroids,corticosteroids|Then urgent imaging and radiotherapy.
+B|Paraneoplastic hypercalcemia|oncology,endocrine|The commonest mechanism of hypercalcemia of malignancy is|PTH-related peptide|Bone metastases|Especially squamous cell carcinomas.
+G|Anthracyclines|oncology,pharm,cardio|Doxorubicin cardiotoxicity is reduced by ___|dexrazoxane|dexrazoxane|An iron chelator limiting free radical damage.
+B|Bleomycin|oncology,pharm,resp|Bleomycin toxicity affects the|Lungs|Kidneys|Pulmonary fibrosis; monitor lung function.
+B|Vincristine|oncology,pharm,neuro|Vincristine toxicity is characteristically|Peripheral neuropathy|Myelosuppression|Vinblastine blasts the marrow instead.
+G|Cisplatin|oncology,pharm,toxicity|Cisplatin causes nephrotoxicity and ___toxicity|oto|oto,ototoxicity,ear|Prevented with hydration and amifostine.
+B|Tamoxifen versus aromatase inhibitors|oncology,pharm,repro|Aromatase inhibitors are used in|Postmenopausal women|Premenopausal women|They cannot overcome ovarian estrogen production.

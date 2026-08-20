@@ -1,0 +1,58 @@
+# Physiology across systems — depth pass. Gap-weighted.
+
+# ── Cell and membrane physiology ─────────────────────────────────────────
+G|Resting membrane potential|physiology,neuro|The resting membrane potential is closest to the equilibrium potential of ___|potassium|potassium,k,k+|Because the membrane is most permeable to it at rest.
+B|Sodium-potassium pump|physiology,cell biology|The Na/K ATPase moves|3 sodium out for 2 potassium in|2 sodium out for 3 potassium in|Electrogenic, and inhibited by digoxin.
+G|Action potential|physiology,neuro|Repolarization of a neuron is caused by ___ efflux|potassium|potassium,k,k+|After sodium channels inactivate.
+B|Saltatory conduction|physiology,neuro|Myelin speeds conduction by|Forcing depolarization to jump between nodes|Increasing the capacitance of membrane|Demyelination slows or blocks conduction.
+G|Neuromuscular junction|physiology,neuro,NMJ|Acetylcholine release at the nerve terminal requires ___ influx|calcium|calcium,ca,ca2+|Blocked in Lambert-Eaton syndrome.
+B|Skeletal versus cardiac muscle|physiology,cardio,msk|Which depends on extracellular calcium for contraction?|Cardiac muscle|Skeletal muscle|Skeletal muscle uses its own sarcoplasmic reticulum stores.
+
+# ── Cardiovascular physiology ────────────────────────────────────────────
+G|Baroreceptors|physiology,cardio|Carotid sinus baroreceptors signal via cranial nerve ___|IX|ix,9,nine,glossopharyngeal|Aortic arch receptors use the vagus.
+B|Baroreceptor reflex|physiology,cardio|A fall in blood pressure causes baroreceptor firing to|Decrease|Increase|Less inhibition means more sympathetic outflow.
+G|Starling forces|physiology,cardio|Oedema forms when capillary ___ pressure exceeds oncotic pressure|hydrostatic|hydrostatic|Or when oncotic pressure falls, as in nephrotic syndrome.
+B|Vascular resistance|physiology,cardio|Resistance is most sensitive to changes in|Vessel radius|Vessel length|Resistance varies with the fourth power of radius.
+G|Coronary flow|physiology,cardio|Coronary flow is driven by ___ pressure during diastole|aortic diastolic|aortic diastolic,diastolic,aortic|Which is why tachycardia worsens ischemia.
+B|Cardiac oxygen demand|physiology,cardio|Myocardial oxygen demand rises most with|Heart rate and wall stress|Preload and nothing else|Rate-pressure product estimates it.
+
+# ── Respiratory physiology ───────────────────────────────────────────────
+G|Oxygen dissociation|physiology,resp|The oxygen-hemoglobin curve is ___-shaped due to cooperative binding|sigmoid|sigmoid,sigmoidal,s|Myoglobin's curve is hyperbolic.
+B|Fetal hemoglobin|physiology,resp,peds|Fetal hemoglobin has higher oxygen affinity because it|Binds 2,3-BPG poorly|Has more heme groups|Allowing placental oxygen extraction.
+G|Carbon monoxide|physiology,resp,toxicology|Carbon monoxide shifts the oxygen curve to the ___|left|left|Worsening tissue delivery beyond the loss of carrying capacity.
+B|High altitude|physiology,resp|At altitude, the initial compensation is|Hyperventilation with respiratory alkalosis|A rise in 2,3-BPG with metabolic acidosis|Renal bicarbonate excretion follows over days.
+G|Pulmonary circulation|physiology,resp|Alveolar hypoxia causes pulmonary vessels to ___|constrict|constrict,vasoconstrict|The opposite of systemic vessels.
+B|Zones of the lung|physiology,resp|In lung zone 1, ventilation exceeds perfusion because|Alveolar pressure exceeds arterial pressure|Gravity increases flow at the apex|Zone 1 expands in hypovolemia.
+
+# ── Renal physiology ─────────────────────────────────────────────────────
+G|Renin release|physiology,renal,endocrine|Renin is released by juxtaglomerular cells in response to low ___|perfusion|perfusion,blood pressure,pressure|Plus sympathetic tone and low distal sodium.
+B|Macula densa|physiology,renal|The macula densa senses|Distal tubular sodium chloride|Blood pressure directly|Mediating tubuloglomerular feedback.
+G|Angiotensin II|physiology,renal,endocrine|Angiotensin II stimulates ___ release from the adrenal cortex|aldosterone|aldosterone|Plus thirst, ADH and vasoconstriction.
+B|ADH|physiology,renal,endocrine|ADH is released in response to|Rising plasma osmolality|Falling plasma osmolality|Volume depletion is a weaker but overriding stimulus.
+G|Free water clearance|physiology,renal|Negative free water clearance means the kidney is ___ water|conserving|conserving,retaining,saving|Producing concentrated urine.
+B|Potassium handling|physiology,renal|Potassium is secreted mainly in the|Distal tubule and collecting duct|Proximal tubule and loop of Henle|Under aldosterone control.
+
+# ── GI physiology ────────────────────────────────────────────────────────
+G|Gastric acid|physiology,GI|Gastric acid secretion is stimulated by gastrin, acetylcholine and ___|histamine|histamine|Histamine from ECL cells is the final common amplifier.
+B|Somatostatin|physiology,GI,endocrine|Somatostatin|Inhibits nearly all gastrointestinal secretion|Stimulates acid and pancreatic secretion|The universal off switch.
+G|Bile|physiology,GI,liver|Bile salts emulsify fat by forming ___|micelles|micelles,micelle|Essential for fat-soluble vitamin absorption.
+B|Secretin|physiology,GI,endocrine|Secretin is released in response to|Acid in the duodenum|Fat in the duodenum|CCK responds to fat and protein.
+G|Migrating motor complex|physiology,GI|Between meals the gut is swept clean by the migrating motor complex, driven by ___|motilin|motilin|Erythromycin mimics it, aiding gastroparesis.
+B|Vitamin absorption|physiology,GI,vitamins|Which vitamin is absorbed in the terminal ileum with intrinsic factor?|B12|Folate|Folate is absorbed in the jejunum.
+
+# ── Endocrine physiology ─────────────────────────────────────────────────
+G|Second messengers|physiology,endocrine|Glucagon and PTH both act through ___|cAMP|camp,cyclic amp|Gs-coupled receptors.
+B|Insulin receptor|physiology,endocrine|The insulin receptor signals through|Intrinsic tyrosine kinase activity|A G protein-coupled second messenger|Autophosphorylation then IRS-1.
+G|Thyroid hormone|physiology,endocrine|The more active thyroid hormone at the receptor is ___|T3|t3,triiodothyronine|T4 is a prohormone converted peripherally.
+B|Cortisol rhythm|physiology,endocrine|Cortisol peaks|Early in the morning|At midnight|Which is why midnight cortisol is used to screen for Cushing.
+G|Calcium regulation|physiology,endocrine,calcium|PTH raises calcium and calcitriol raises both calcium and ___|phosphate|phosphate,po4|The key contrast between them.
+B|Growth hormone|physiology,endocrine|Growth hormone secretion is greatest|During deep sleep|After meals|Pulsatile, which is why IGF-1 is measured instead.
+
+# ── Temperature, exercise, ageing ────────────────────────────────────────
+G|Fever|physiology,inflammation|Fever raises the hypothalamic set point, causing ___ and shivering|vasoconstriction|vasoconstriction|The patient feels cold while the temperature climbs.
+B|Heat stroke versus fever|physiology,emergency|In heat stroke, the hypothalamic set point is|Normal|Raised|Which is why antipyretics do not work.
+G|Exercise|physiology,cardio|During exercise, the greatest increase in cardiac output comes from ___ rate|heart|heart|Stroke volume plateaus relatively early.
+B|Endurance training|physiology,cardio|Endurance training lowers resting heart rate by|Increasing vagal tone and stroke volume|Reducing contractility and volume|A physiological, reversible adaptation.
+G|Ageing|physiology,aging,renal|GFR falls roughly ___ mL/min per year after age 40|1|1,one|Which is why drug dosing must be adjusted.
+B|Ageing|physiology,aging,resp|With age, which lung measure rises?|Residual volume|Vital capacity|Loss of elastic recoil traps air.
+B|Ageing|physiology,aging,endocrine|In healthy ageing, fasting glucose|Rises slightly|Falls|Insulin resistance increases with age.

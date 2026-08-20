@@ -1,0 +1,80 @@
+# Microbiology — depth pass. Several angles per organism, gap-weighted.
+
+# ── Staphylococcus ───────────────────────────────────────────────────────
+G|Staphylococcus aureus|micro,bacteria|S. aureus food poisoning is caused by a preformed ___|enterotoxin|enterotoxin,toxin|Vomiting within 6 hours; heating the food does not help.
+G|Staphylococcus aureus|micro,bacteria,derm|Toxic shock syndrome toxin acts as a ___|superantigen|superantigen|Non-specific T cell activation and cytokine storm.
+B|Staphylococcus aureus|micro,bacteria,cardio|S. aureus endocarditis in IV drug users affects which valve?|Tricuspid|Mitral|Right-sided, seeding septic pulmonary emboli.
+B|MRSA|micro,bacteria,pharm|MRSA resistance comes from|An altered penicillin-binding protein|Beta-lactamase production alone|mecA gene encoding PBP2a; beta-lactams cannot bind.
+G|Staphylococcus saprophyticus|micro,bacteria,renal|S. saprophyticus causes urinary infection in young ___ women|sexually active|sexually active,sexually-active|Second commonest cause after E. coli.
+
+# ── Streptococcus ────────────────────────────────────────────────────────
+G|Streptococcus pyogenes|micro,bacteria,renal|Post-streptococcal glomerulonephritis follows ___ or skin infection|pharyngitis|pharyngitis,throat,sore throat|Unlike rheumatic fever, it is not prevented by antibiotics.
+B|Rheumatic fever|micro,bacteria,cardio|Rheumatic fever follows infection of the|Throat only|Skin only|Skin infection can cause glomerulonephritis but not rheumatic fever.
+G|Rheumatic fever|micro,bacteria,immuno|Rheumatic fever is caused by molecular ___ with M protein|mimicry|mimicry|Antibodies cross-react with myosin and valve tissue.
+B|Streptococcus pneumoniae|micro,bacteria,resp|Pneumococcal pneumonia classically produces|Rust-coloured sputum|Currant jelly sputum|Currant jelly suggests Klebsiella.
+B|Streptococcus pneumoniae|micro,bacteria,immuno|Asplenic patients are especially vulnerable to pneumococcus because|The spleen clears encapsulated organisms|The spleen produces most antibody|Vaccinate against pneumococcus, meningococcus and Hib.
+G|Viridans streptococci|micro,bacteria,cardio|Viridans streptococci adhere to valves using ___|dextrans|dextrans,dextran,glycocalyx|Made from sucrose; they also cause dental caries.
+
+# ── Gram negatives ───────────────────────────────────────────────────────
+G|Escherichia coli|micro,bacteria,neuro|E. coli causing neonatal meningitis carries the ___ capsular antigen|K1|k1,k-1|One of the top three neonatal meningitis organisms.
+B|Klebsiella|micro,bacteria,resp|Klebsiella pneumonia classically affects|Alcoholics and diabetics|Healthy young adults|Thick currant jelly sputum and upper lobe cavitation.
+G|Pseudomonas aeruginosa|micro,bacteria|Pseudomonas produces a blue-green pigment called ___|pyocyanin|pyocyanin|Plus a grape-like odour. Oxidase positive.
+B|Pseudomonas aeruginosa|micro,bacteria,derm|Ecthyma gangrenosum indicates|Pseudomonas bacteremia|Staph abscess|Black necrotic skin lesions in a neutropenic patient.
+G|Haemophilus influenzae|micro,bacteria,lab|H. influenzae needs factors ___ and V to grow|X|x|X is hematin, V is NAD. Grows beside S. aureus on blood agar.
+B|Bordetella pertussis|micro,bacteria,lab|Pertussis characteristically causes|Marked lymphocytosis|Neutrophilia|Pertussis toxin blocks lymphocyte migration out of the blood.
+G|Vibrio cholerae|micro,bacteria,GI|Cholera toxin permanently activates ___, raising cAMP|Gs|gs,g-s,adenylate cyclase|Massive rice-water diarrhea from chloride secretion.
+B|Salmonella versus Shigella|micro,bacteria,GI|Which is motile and produces hydrogen sulfide?|Salmonella|Shigella|Shigella is non-motile. Salmonella has flagella.
+BT|Salmonella versus Shigella|micro,bacteria,pharm|In which do antibiotics PROLONG the carrier state?|Salmonella|Shigella|Antibiotics are reserved for severe salmonellosis.
+G|Helicobacter pylori|micro,bacteria,GI|H. pylori survives gastric acid by producing ___|urease|urease|The basis of the urea breath test.
+B|Helicobacter pylori|micro,bacteria,oncology|H. pylori increases the risk of|Gastric adenocarcinoma and MALT lymphoma|Esophageal adenocarcinoma and Barrett|Barrett esophagus drives esophageal adenocarcinoma instead.
+
+# ── Mycobacteria and atypicals ───────────────────────────────────────────
+G|Mycobacterium tuberculosis|micro,bacteria,TB|The acid-fastness of mycobacteria comes from ___ acid|mycolic|mycolic|A waxy wall that resists Gram stain and decolourization.
+B|Tuberculosis|micro,TB,resp|Primary tuberculosis typically affects|The lower lobes|The apices|Reactivation prefers the oxygen-rich apices.
+G|Tuberculosis|micro,TB,path|The calcified primary lesion plus a hilar node is called a ___ complex|Ghon|ghon|Ranke complex once calcified.
+B|Latent tuberculosis|micro,TB,pharm|Latent tuberculosis is treated with|Isoniazid alone for several months|Four-drug therapy for six months|Or rifampin. Four drugs are for active disease.
+G|Antituberculous drugs|micro,TB,pharm|Ethambutol classically damages the ___ nerve|optic|optic|Red-green colour blindness; check vision before starting.
+B|Leprosy|micro,bacteria,derm|Mycobacterium leprae grows best in|Cool areas such as skin and nerves|The warm core of the body and liver|Which is why it damages extremities and the face.
+G|Mycoplasma|micro,bacteria,resp|Mycoplasma lacks a ___, so beta-lactams fail|cell wall|cell wall,wall,peptidoglycan|Its membrane contains sterols instead.
+B|Legionella|micro,bacteria,lab|Legionella is diagnosed with|A urine antigen test|Blood culture|It stains poorly on Gram; needs charcoal yeast extract agar.
+B|Legionella|micro,bacteria,GI|Legionella pneumonia is classically accompanied by|Diarrhea and hyponatremia|Constipation and high sodium|From water systems and air conditioning.
+G|Chlamydia trachomatis|micro,bacteria,eye|Chlamydia serotypes A to C cause ___, a leading cause of blindness|trachoma|trachoma|D to K cause genital infection; L1 to L3 cause LGV.
+B|Chlamydia|micro,bacteria|Chlamydia cannot make its own|ATP|Protein|An obligate intracellular energy parasite.
+
+# ── Spirochetes and vector-borne ─────────────────────────────────────────
+G|Lyme disease|micro,bacteria,derm|Early Lyme disease causes erythema ___|migrans|migrans,chronicum migrans|A target rash after an Ixodes tick bite.
+B|Lyme disease|micro,bacteria,cardio|Late Lyme disease can cause|Atrioventricular block|Aortic stenosis|Plus arthritis and facial nerve palsy.
+G|Syphilis|micro,bacteria|Primary syphilis causes a painless ___|chancre|chancre|Painful ulcers suggest chancroid instead.
+B|Secondary syphilis|micro,bacteria,derm|Secondary syphilis classically involves|The palms and soles|The scalp only|Maculopapular rash with condylomata lata.
+G|Neurosyphilis|micro,bacteria,neuro|Argyll Robertson pupils accommodate but do not ___|react|react,constrict,respond to light|The prostitute's pupil.
+B|Jarisch-Herxheimer reaction|micro,bacteria,pharm|The Jarisch-Herxheimer reaction follows|Treating syphilis with penicillin|Untreated secondary syphilis|Fever and myalgia from lysed spirochetes.
+G|Rocky Mountain spotted fever|micro,bacteria,derm|The rash of Rocky Mountain spotted fever starts on the ___|wrists and ankles|wrists,wrists and ankles,ankles|Then spreads centrally. Rickettsia rickettsii.
+
+# ── Viruses ──────────────────────────────────────────────────────────────
+G|Herpes simplex|micro,virus,neuro|HSV-1 encephalitis has a predilection for the ___ lobe|temporal|temporal|Hemorrhagic necrosis; treat with aciclovir immediately.
+B|Cytomegalovirus|micro,virus,path|CMV infected cells show|Owl-eye intranuclear inclusions|Negri cytoplasmic inclusion bodies|Negri bodies belong to rabies.
+G|Epstein-Barr virus|micro,virus,oncology|EBV is linked to nasopharyngeal carcinoma and ___ lymphoma|Burkitt|burkitt|Also Hodgkin lymphoma and post-transplant lymphoproliferative disease.
+B|Infectious mononucleosis|micro,virus,pharm|Giving amoxicillin in mononucleosis causes|A maculopapular rash|Anaphylaxis|A classic clue, not a true penicillin allergy.
+B|Infectious mononucleosis|micro,virus|Patients with mononucleosis must avoid|Contact sports|Dairy products|Risk of splenic rupture for several weeks.
+G|Varicella zoster|micro,virus,neuro|Varicella zoster stays latent in the dorsal root ___|ganglia|ganglia,ganglion|Reactivating as dermatomal shingles.
+G|Hepatitis B|micro,virus,hepatitis|HBeAg indicates high ___ and infectivity|replication|replication,viral replication,infectivity|It marks active viral replication.
+B|Hepatitis D|micro,virus,hepatitis|Hepatitis D requires which virus to replicate?|Hepatitis B|Hepatitis C|It borrows the HBsAg envelope.
+B|Hepatitis E|micro,virus,OB|Hepatitis E is especially dangerous in|Pregnancy|Childhood|High mortality from fulminant hepatitis in the third trimester.
+G|HIV|micro,virus,HIV|HIV integrates into host DNA using the enzyme ___|integrase|integrase|Targeted by raltegravir and dolutegravir.
+B|HIV|micro,virus,HIV,lab|HIV infection is confirmed with|A fourth-generation antigen-antibody assay|Western blot as the initial screen|Fourth-generation testing detects p24 antigen early.
+G|Measles|micro,virus,peds|Measles gives Koplik spots on the buccal ___|mucosa|mucosa,mucosae,mucous membrane|Small white spots preceding the rash.
+B|Rabies|micro,virus,neuro|Rabies virus reaches the CNS by|Retrograde axonal transport|Hematogenous spread|Which is why post-exposure prophylaxis still works early.
+G|Poliovirus|micro,virus,neuro|Poliovirus destroys the anterior ___ of the spinal cord|horn|horn,horn cells|Pure lower motor neuron paralysis, sensation intact.
+B|Parvovirus B19|micro,virus,heme|Parvovirus B19 in sickle cell disease causes|Aplastic crisis|Vaso-occlusive crisis|It infects erythroid precursors directly.
+B|Parvovirus B19|micro,virus,OB|Parvovirus B19 in pregnancy causes|Hydrops fetalis|Limb defects|Severe fetal anemia and high-output failure.
+
+# ── Fungi and parasites ──────────────────────────────────────────────────
+G|Aspergillus|micro,fungi,resp|Aspergillus shows septate hyphae branching at ___ degrees|45|45,45 degrees,acute|Mucor is non-septate and branches at 90 degrees.
+B|Mucormycosis|micro,fungi,endocrine|Mucormycosis classically occurs in|Diabetic ketoacidosis|Healthy adults|Rhino-orbital-cerebral invasion; needs urgent debridement.
+G|Pneumocystis jirovecii|micro,fungi,HIV|Pneumocystis is visualized with ___ methenamine silver|Gomori|gomori,gms|Ground-glass infiltrates and a raised LDH.
+B|Candida|micro,fungi|Candida on KOH shows|Pseudohyphae and budding yeast|Broad-based budding yeast|Broad-based budding is Blastomyces.
+G|Toxoplasma gondii|micro,parasite,OB|Pregnant women should avoid ___ litter to prevent toxoplasmosis|cat|cat,cats,cat's|Also undercooked meat.
+B|Entamoeba histolytica|micro,parasite,GI|Entamoeba classically causes|Flask-shaped colonic ulcers|Villous atrophy and blunting|Plus anchovy-paste liver abscess.
+G|Schistosoma haematobium|micro,parasite,oncology|S. haematobium raises the risk of ___ cell bladder carcinoma|squamous|squamous|Unlike the usual urothelial carcinoma.
+B|Taenia solium|micro,parasite,neuro|Ingesting Taenia solium EGGS causes|Neurocysticercosis|Intestinal tapeworm|Eating larvae in pork gives the intestinal worm instead.
+G|Ascaris|micro,parasite,resp|Ascaris larvae migrate through the ___ causing transient wheeze|lungs|lungs,lung|Loffler syndrome with eosinophilia.

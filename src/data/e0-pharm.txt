@@ -1,0 +1,55 @@
+# General pharmacology, toxicology and pathology principles — batch 1.
+G|Protein binding|pharm,principles|Only the ___ fraction of a drug is pharmacologically active|free|free,unbound|Highly protein-bound drugs need higher doses.
+B|Probenecid|pharm,principles|Probenecid raises penicillin levels by|Blocking renal tubular secretion|Inhibiting hepatic metabolism|Historically used to prolong penicillin action.
+G|Drug allergy|pharm,immuno|Small drugs become immunogenic by forming a ___-carrier complex|hapten|hapten|Penicillin is the classic hapten.
+B|Aspirin and GI bleeding|pharm,GI|Aspirin causes GI bleeding by inhibiting|COX-1|COX-2|Loses mucosal prostaglandins and blocks platelets irreversibly.
+B|Type A adverse reactions|pharm,principles|Predictable dose-related adverse effects are|Type A reactions|Type B reactions|Type B are idiosyncratic or immunologic.
+B|Clindamycin|pharm,micro,GI|Clindamycin most characteristically causes|Clostridioides difficile colitis|Nephrotoxicity and hearing loss|Disrupts colonic flora.
+B|Enterohepatic cycling|pharm,principles|Increased enterohepatic recirculation produces|A longer half-life with a second peak|A higher initial plasma peak|Drug is excreted in bile then reabsorbed.
+B|CYP3A4 inhibitors|pharm,principles,lipids|Which drug precipitates statin myopathy?|Clarithromycin|Azithromycin|Also ketoconazole, diltiazem, amiodarone and grapefruit juice.
+B|Efficacy versus potency|pharm,principles|Efficacy refers to|The maximal effect achievable|The dose required for an effect|Potency is the dose needed; efficacy is the ceiling.
+B|Competitive antagonist|pharm,principles|A competitive antagonist shifts the dose-response curve|Right, with the same maximum|Down, with a lower maximum|Non-competitive antagonists lower efficacy.
+B|Bile acid sequestrants|pharm,principles|Cholestyramine impairs absorption of|Other drugs and fat-soluble vitamins|Only dietary cholesterol itself|Separate dosing from other medications.
+G|P-glycoprotein|pharm,principles|___ is an efflux pump limiting drug entry into the brain|p-glycoprotein|p-glycoprotein,pgp,p glycoprotein|Also confers multidrug resistance in tumors.
+B|Volume of distribution|pharm,principles|A drug that is highly protein-bound and charged has|A low volume of distribution|A high volume of distribution|It stays in the plasma compartment.
+B|Volume of distribution|pharm,principles|A high volume of distribution means the drug is|Lipophilic and tissue-bound|Confined to the plasma|Loading dose depends on volume of distribution.
+B|Hepatic clearance|pharm,principles|Drugs cleared by the liver are typically|Lipophilic|Hydrophilic|Hydrophilic drugs are cleared renally.
+B|Maintenance dose|pharm,principles|Maintenance dose depends on|Clearance|Volume of distribution|Loading dose depends on volume of distribution.
+G|Isoniazid metabolism|pharm,principles,micro|Isoniazid is inactivated by ___ in a bimodal fashion|acetylation|acetylation,n-acetylation,nat|Fast and slow acetylators; slow acetylators get neuropathy and hepatitis.
+B|Acetaminophen hepatotoxicity|pharm,toxicology,liver|Acetaminophen injures the liver through|A toxic metabolite depleting glutathione|Direct toxicity of the parent drug|NAPQI; treat with N-acetylcysteine.
+B|Methotrexate toxicity|pharm,toxicology|Methotrexate-induced pancytopenia is treated with|Folinic acid|Folic acid|Leucovorin bypasses the blocked dihydrofolate reductase.
+B|Neostigmine|pharm,anesthesia|Neostigmine reverses|Non-depolarizing neuromuscular blockade|Depolarizing neuromuscular blockade|An acetylcholinesterase inhibitor; give with glycopyrrolate.
+B|Zero-order kinetics|pharm,principles|Zero-order elimination means|A constant amount is cleared per unit time|A constant fraction is cleared per hour|Phenytoin, ethanol and aspirin at high doses.
+G|Zero-order drugs|pharm,principles|Phenytoin, ethanol and ___ follow zero-order kinetics|aspirin|aspirin,salicylate,salicylates|Saturated enzymes; small dose increases cause large level jumps.
+B|Half-life|pharm,principles|Steady state is reached after approximately|Four to five half-lives|One single half-life|Independent of dosing frequency.
+B|First-pass metabolism|pharm,principles|A drug with high first-pass metabolism has|Low oral bioavailability|High oral bioavailability|Bypassed by sublingual, rectal or intravenous routes.
+B|Nitroglycerin|pharm,principles,cardio|Nitroglycerin is given sublingually to|Avoid first-pass metabolism|Slow absorption and onset|Extensive hepatic extraction otherwise.
+B|Weak base overdose|pharm,toxicology|Amphetamine elimination is enhanced by|Acidifying the urine|Alkalinizing the urine|Ion trapping. Alkalinize for weak acids like aspirin.
+B|Salicylate overdose|pharm,toxicology|Aspirin overdose is treated with|Urinary alkalinization with bicarbonate|Urinary acidification with vitamin C|Traps the ionized weak acid in the tubule.
+B|Carbon monoxide poisoning|pharm,toxicology|Carbon monoxide poisoning shows|Normal PaO2 with low co-oximetry saturation|Low PaO2 with a low measured saturation|Pulse oximetry reads falsely normal; give 100 percent oxygen.
+B|Cyanide poisoning|pharm,toxicology|Cyanide poisoning is treated with|Hydroxocobalamin|Methylene blue|Blocks cytochrome c oxidase; also sodium thiosulfate.
+B|Methemoglobinemia|pharm,toxicology|Methemoglobinemia is treated with|Methylene blue|Hydroxocobalamin|Chocolate-coloured blood; caused by nitrites, dapsone and local anesthetics.
+B|Organophosphate poisoning|pharm,toxicology|Organophosphate poisoning is treated with|Atropine and pralidoxime|Physostigmine and atropine|DUMBBELSS cholinergic excess.
+B|Anticholinergic toxicity|pharm,toxicology|Anticholinergic toxidrome presents as|Hot, dry, flushed and delirious|Cold, clammy and sweating|Mad as a hatter, dry as a bone, red as a beet.
+B|Lead poisoning|pharm,toxicology|Lead poisoning in children is treated with|Succimer|Deferoxamine|Deferoxamine is for iron; EDTA and dimercaprol for severe lead.
+B|Iron overdose|pharm,toxicology|Iron overdose is treated with|Deferoxamine|Penicillamine|Penicillamine chelates copper in Wilson disease.
+B|Copper overload|pharm,toxicology,liver|Wilson disease is treated with|Penicillamine or trientine|Deferoxamine or deferasirox|Plus zinc to block absorption.
+B|Methanol poisoning|pharm,toxicology|Methanol poisoning is treated with|Fomepizole|Naloxone|Blocks alcohol dehydrogenase; methanol causes blindness.
+B|Ethylene glycol poisoning|pharm,toxicology,renal|Ethylene glycol poisoning shows which urinary crystals?|Calcium oxalate|Uric acid|Anion gap acidosis with renal failure; treat with fomepizole.
+B|Tricyclic overdose|pharm,toxicology,cardio|Tricyclic antidepressant overdose is treated with|Sodium bicarbonate|Flumazenil|Widened QRS from sodium channel blockade.
+B|Beta blocker overdose|pharm,toxicology|Beta blocker overdose is treated with|Glucagon|Atropine alone|Raises cardiac cAMP independently of beta receptors.
+B|Digoxin toxicity|pharm,toxicology|Severe digoxin toxicity is treated with|Digoxin-specific antibody fragments|Intravenous calcium gluconate|Avoid calcium, which worsens arrhythmia.
+B|Apoptosis versus necrosis|path,cell death|Apoptosis is characterized by|Cell shrinkage with intact membranes|Cell swelling with membrane rupture|Apoptosis is ATP-dependent and non-inflammatory.
+B|Coagulative necrosis|path,cell death|Coagulative necrosis is typical of|Ischemic infarction in most organs|Infarction of the brain only|The brain undergoes liquefactive necrosis.
+B|Liquefactive necrosis|path,cell death|Liquefactive necrosis occurs in|Brain infarcts and abscesses|Myocardial and renal infarcts|Enzymatic digestion dominates.
+B|Fat necrosis|path,cell death,GI|Fat necrosis with saponification occurs in|Acute pancreatitis|Tuberculosis|Released lipases; calcium soaps form.
+B|Fibrinoid necrosis|path,cell death,vascular|Fibrinoid necrosis is seen in|Vasculitis and malignant hypertension|Tuberculosis and fungal infection|Immune complexes and plasma protein leak into the vessel wall.
+B|Hypertrophy|path,adaptation|Hypertrophy is|An increase in cell size|An increase in cell number|Hyperplasia is more cells; permanent tissues can only hypertrophy.
+B|Dysplasia|path,adaptation,oncology|Dysplasia is|Reversible disordered growth|Irreversible malignancy|Becomes carcinoma in situ once full thickness.
+B|Free radical injury|path,cell death|Free radical damage is caused by|Reperfusion, radiation and metals|Hypoxia alone without reperfusion|Lipid peroxidation and DNA damage.
+B|Granulation tissue|path,healing|Granulation tissue consists of|Fibroblasts, capillaries and myofibroblasts|Neutrophils and strands of dense fibrin|Appears 3-5 days after injury.
+B|Wound healing|path,healing,vitamins|Which deficiency most impairs wound healing?|Vitamin C|Vitamin K|Needed for collagen cross-linking.
+B|Keloid|path,healing|A keloid differs from a hypertrophic scar because it|Extends beyond the original wound|Stays within the wound margins|Excess type III collagen.
+B|Tumor markers|path,oncology|Which marker is associated with hepatocellular carcinoma?|Alpha-fetoprotein|CA 19-9 antigen|CA 19-9 is pancreatic; CEA is colorectal.
+B|Metastasis|path,oncology|The commonest source of brain metastasis is|Lung cancer|Prostate cancer|Also breast and melanoma; metastases outnumber primary tumors.
+B|Cachexia|path,oncology|Cancer cachexia is mediated mainly by|TNF-alpha and IL-6|Insulin and IGF-1|Also called cachectin; causes wasting despite intake.

@@ -1,0 +1,60 @@
+# Paediatrics and genetics — second depth pass. Gap-weighted.
+
+# ── Chromosomal syndromes ────────────────────────────────────────────────
+G|Down syndrome|genetics,peds|Down syndrome is most often caused by ___ of chromosome 21|nondisjunction|nondisjunction,non-disjunction,trisomy|About 95 percent; 4 percent translocation.
+B|Down syndrome|genetics,peds,GI|Down syndrome is associated with which gut anomaly?|Duodenal atresia|Malrotation|Plus Hirschsprung disease and coeliac disease.
+G|Down syndrome|genetics,peds,heme|Children with Down syndrome have increased risk of ___|leukemia|leukemia,leukaemia,all,aml|Both ALL and AML, especially megakaryoblastic.
+B|Down syndrome|genetics,peds,neuro|Adults with Down syndrome develop|Early Alzheimer disease|Huntington disease|The APP gene sits on chromosome 21.
+G|Turner syndrome|genetics,repro|Turner syndrome causes short stature and ___ webbing|neck|neck|From fetal cystic hygroma.
+B|Turner syndrome|genetics,renal|Turner syndrome is associated with which renal anomaly?|Horseshoe kidney|Polycystic kidney disease|Plus coarctation and bicuspid aortic valve.
+G|Klinefelter syndrome|genetics,repro|Klinefelter syndrome causes ___ and small firm testes|gynecomastia|gynecomastia,gynaecomastia|47,XXY; often diagnosed during infertility workup.
+B|Cri du chat|genetics,peds|Cri du chat results from deletion on chromosome|5p|22q11|A high-pitched cat-like cry.
+G|Williams syndrome|genetics,peds,cardio|Williams syndrome causes supravalvular aortic ___ and hypercalcemia|stenosis|stenosis|With an overly friendly personality; 7q deletion.
+B|22q11 deletion|genetics,peds,immuno|22q11 deletion causes|Cardiac defects, hypocalcemia and thymic aplasia|Renal agenesis with pulmonary hypoplasia|DiGeorge and velocardiofacial syndromes.
+
+# ── Single gene disorders ────────────────────────────────────────────────
+G|Cystic fibrosis|genetics,resp|The commonest CFTR mutation is delta-F___|508|508,f508|A class II folding defect.
+B|Cystic fibrosis|genetics,repro|Men with cystic fibrosis are usually infertile because of|Congenital absence of the vas deferens|Absent spermatogenesis in the testis|Sperm can be retrieved surgically.
+G|Sickle cell disease|genetics,heme|Sickle cell disease is inherited in an autosomal ___ pattern|recessive|recessive|Trait confers malaria protection.
+B|Huntington disease|genetics,neuro|Huntington disease typically presents at age|30 to 50|Childhood|Earlier with paternal transmission and more repeats.
+G|Neurofibromatosis type 1|genetics,neuro,derm|NF1 features cafe-au-lait spots, neurofibromas and ___ nodules of the iris|Lisch|lisch|Chromosome 17; also optic gliomas.
+B|Neurofibromatosis type 2|genetics,neuro|NF2 characteristically causes|Bilateral vestibular schwannomas|Bilateral optic nerve gliomas|Chromosome 22; NF2 has two ears affected.
+G|Tuberous sclerosis|genetics,neuro,derm|Tuberous sclerosis causes seizures, ash-leaf spots and ___ adenoma|sebaceous|sebaceous,angiofibromas|Plus cardiac rhabdomyomas and renal angiomyolipomas.
+B|Von Hippel-Lindau|genetics,oncology|Von Hippel-Lindau causes|Hemangioblastomas and clear cell renal carcinoma|Medullary thyroid carcinoma and adenomas|Chromosome 3; also pheochromocytoma.
+G|Marfan syndrome|genetics,eye|Marfan lens dislocation is classically ___|upward|upward,up,superotemporal|Homocystinuria dislocates downward.
+B|Ehlers-Danlos vascular type|genetics,vascular|Vascular Ehlers-Danlos is dangerous because of|Arterial and bowel rupture|Joint dislocation|A type III collagen defect.
+
+# ── Inborn errors, presentation-based ────────────────────────────────────
+G|Newborn screening|genetics,peds|Newborn blood spot screening is taken on day ___ of life|5|5,five,5-8|Detecting PKU, CF, hypothyroidism and others.
+B|Galactosemia|genetics,peds,micro|Neonatal galactosemia predisposes to sepsis with|Escherichia coli|Group B streptococcus|Along with jaundice and cataracts.
+G|Phenylketonuria|genetics,peds|Untreated PKU causes intellectual disability and a ___ odour|musty|musty,mousy,mouse-like|Plus fair skin and eczema.
+B|Urea cycle defect timing|genetics,peds|A urea cycle defect classically presents|After the first protein feeds|At birth before any feeding|With vomiting, lethargy and hyperammonemia.
+G|Organic acidemia|genetics,peds,acid base|Organic acidemias cause a raised ___ gap acidosis with ketosis|anion|anion|Distinguishing them from urea cycle defects.
+B|Mitochondrial disease|genetics,neuro|MELAS syndrome features|Stroke-like episodes and lactic acidosis|Pure proximal myopathy with a raised CK|Maternally inherited with heteroplasmy.
+
+# ── Growth and nutrition ─────────────────────────────────────────────────
+G|Mid-parental height|peds,development|Predicted adult height uses the ___-parental height calculation|mid|mid|Adjusted by 6.5 cm for sex.
+B|Constitutional delay|peds,endocrine|Constitutional growth delay shows|Delayed bone age with normal growth velocity|Advanced bone age with rapid growth|Family history of late puberty is typical.
+G|Breastfeeding|peds,nutrition|Exclusive breastfeeding is recommended for the first ___ months|6|6,six|With continued breastfeeding alongside solids.
+B|Vitamin D in infants|peds,nutrition,bone|Breastfed infants need supplementation with|Vitamin D|Vitamin C|Breast milk is low in vitamin D.
+G|Iron in infancy|peds,nutrition,heme|Term infants deplete stored iron by about ___ months|6|6,six,4-6|Which is when iron-rich weaning foods matter.
+B|Cow milk in infancy|peds,nutrition|Unmodified cow milk before one year causes|Iron deficiency and occult GI bleeding|Lactose intolerance and constipation|Low iron and high renal solute load.
+
+# ── Common paediatric presentations ──────────────────────────────────────
+G|Febrile infant|peds,micro,emergency|A febrile infant under ___ months needs a full septic screen|3|3,three,1|Immature immunity and non-specific signs.
+B|Bronchiolitis admission|peds,resp|Bronchiolitis warrants admission for|Poor feeding, apnoea or hypoxia|Any wheeze heard on auscultation|Most are managed at home.
+G|Asthma in children|peds,resp,pharm|Children under five with wheeze are given a bronchodilator via a ___|spacer|spacer|More effective than a nebulizer for most.
+B|Urinary tract infection in infancy|peds,renal,micro|A UTI in an infant should prompt|Renal tract imaging|Reassurance only|Looking for reflux or structural anomaly.
+G|Nephrotic syndrome in children|peds,renal,pharm|Childhood nephrotic syndrome is treated empirically with ___|steroids|steroids,corticosteroids,prednisolone|Biopsy only if steroid-resistant.
+B|Non-accidental injury|peds,ethics,emergency|Which injury pattern most suggests abuse?|Posterior rib fractures in an infant|A forehead bruise in a toddler|Plus injuries of differing ages and an inconsistent history.
+G|Developmental red flag|peds,development|Not walking by ___ months requires assessment|18|18,eighteen|Along with loss of previously acquired skills.
+B|Autism screening|peds,development|Autism screening is recommended at|18 and 24 months|5 years|Early intervention improves outcomes.
+G|Sudden infant death|peds,development|The safest infant sleep position is on the ___|back|back|On a firm surface, without loose bedding.
+B|Kawasaki treatment timing|peds,cardio,pharm|IVIG in Kawasaki disease is most effective within|10 days of fever onset|One month of fever onset|Reducing coronary aneurysm risk substantially.
+
+# ── Adolescent and behavioural ───────────────────────────────────────────
+G|Puberty in girls|peds,endocrine|The first sign of puberty in girls is ___|thelarche|thelarche,breast budding,breast development|Followed by pubarche then menarche.
+B|Puberty in boys|peds,endocrine|The first sign of puberty in boys is|Testicular enlargement|Voice deepening|Measured with an orchidometer.
+G|Adolescent confidentiality|peds,ethics|Adolescents should be offered part of the consultation without a ___ present|parent|parent,parents,caregiver|Encouraging honest disclosure.
+B|Scoliosis|peds,ortho|Adolescent idiopathic scoliosis is screened with|The forward bend test|A standing x-ray|Referral if the rib hump is prominent.
+G|Eating disorder in adolescence|peds,psych|The most dangerous acute complication of anorexia in adolescence is ___ instability|cardiac|cardiac,cardiovascular,electrolyte|Bradycardia, arrhythmia and refeeding risk.

@@ -1,0 +1,74 @@
+# General pathology, genetics and cell biology — depth pass. Gap-weighted.
+
+# ── Cell injury ──────────────────────────────────────────────────────────
+G|Reversible cell injury|path,cell death|The earliest sign of reversible cell injury is cellular ___|swelling|swelling,oedema,edema|From failure of the sodium-potassium pump.
+B|Irreversible injury|path,cell death|The hallmark of irreversible cell injury is|Membrane damage|Ribosomal detachment|Plus mitochondrial vacuolization and lysosomal rupture.
+G|Nuclear changes|path,cell death|Nuclear shrinkage in cell death is called ___|pyknosis|pyknosis|Then karyorrhexis, then karyolysis.
+B|Ischemia-reperfusion injury|path,cell death|Reperfusion injury is caused by|Oxygen free radicals and calcium influx|Continued hypoxia and ATP depletion|Which is why reperfusion can worsen damage briefly.
+G|Apoptosis|path,cell death|The extrinsic apoptosis pathway is triggered by ___ receptors|death|death,fas,tnf|Fas ligand and TNF binding activate caspase 8.
+B|Caspases|path,cell death|Caspases are|Proteases that execute apoptosis|Ligases that repair DNA|They cleave the cytoskeleton and nuclear proteins.
+G|Gangrene|path,cell death,vascular|Wet gangrene differs from dry by the presence of ___ infection|bacterial|bacterial,bacteria,superimposed|Liquefactive on top of coagulative necrosis.
+
+# ── Inflammation ─────────────────────────────────────────────────────────
+G|Acute inflammation|path,inflammation|Vasodilation in acute inflammation is mediated by histamine and ___|prostaglandins|prostaglandins,prostaglandin,nitric oxide|Producing rubor and calor.
+B|Leukocyte extravasation|path,inflammation,immuno|Rolling of leukocytes is mediated by|Selectins|Integrins|Integrins mediate firm adhesion afterwards.
+G|Chemotaxis|path,inflammation,immuno|Neutrophil chemoattractants include C5a, LTB4, IL-8 and bacterial ___|products|products,peptides,formyl peptides|Guiding cells to the injury.
+B|Chronic inflammation|path,inflammation|The dominant cell of chronic inflammation is the|Macrophage|Neutrophil|With lymphocytes and plasma cells.
+G|Granuloma|path,inflammation|Granulomas contain epithelioid macrophages and multinucleate ___ cells|giant|giant,langhans|Surrounded by a lymphocyte cuff.
+B|Acute phase reactants|path,inflammation,lab|Which acute phase reactant FALLS in inflammation?|Albumin|C-reactive protein|A negative acute phase reactant, along with transferrin.
+G|Fever|path,inflammation,physiology|Endogenous pyrogens raise the hypothalamic set point via ___|prostaglandin E2|prostaglandin e2,pge2,prostaglandins|Blocked by aspirin and paracetamol.
+B|Amyloid|path,inflammation|Secondary amyloidosis deposits which protein?|Serum amyloid A|Transthyretin|From chronic inflammatory disease.
+
+# ── Healing ──────────────────────────────────────────────────────────────
+G|Wound healing|path,healing|Type ___ collagen is laid down first, then replaced by type I|III|iii,3,three|Remodelling continues for months.
+B|Primary intention|path,healing,surgery|Healing by primary intention|Has minimal scarring with apposed edges|Fills a large defect with granulation|Secondary intention involves granulation and contraction.
+G|Myofibroblasts|path,healing|Wound contraction is performed by ___|myofibroblasts|myofibroblasts,myofibroblast|Excess contraction gives contractures.
+B|Vitamin A|path,healing,vitamins|Vitamin A in wound healing|Counteracts the impairment caused by steroids|Has no measurable effect on any healing|Useful in steroid-treated patients.
+G|Zinc deficiency|path,healing,nutrition|Zinc is required by ___ that remodel collagen|metalloproteinases|metalloproteinases,mmp,collagenase|Deficiency delays healing.
+
+# ── Neoplasia ────────────────────────────────────────────────────────────
+G|Carcinoma versus sarcoma|path,oncology|Tumours of ___ origin are called carcinomas|epithelial|epithelial,epithelium|Mesenchymal tumours are sarcomas.
+B|Metastatic spread|path,oncology|Carcinomas typically spread first via|Lymphatics|Blood|Sarcomas prefer haematogenous spread.
+G|Grade versus stage|path,oncology|___ describes how abnormal the cells look; stage describes spread|Grade|grade|Stage carries more prognostic weight.
+B|Anaplasia|path,oncology|Anaplasia refers to|Complete loss of differentiation|Reversible cellular dysplasia|A hallmark of malignancy.
+G|Oncogenes|path,oncology,genetics|Oncogenes require a ___-of-function mutation in one allele|gain|gain|Tumour suppressors need loss of both.
+B|Tumour suppressor|path,oncology,genetics|Loss of heterozygosity refers to|Loss of the second normal allele|Gain of an extra gene copy|The second hit of Knudson's hypothesis.
+G|Telomerase|path,oncology|Cancer cells escape senescence by reactivating ___|telomerase|telomerase|Maintaining telomere length indefinitely.
+B|Warburg effect|path,oncology,biochem|The Warburg effect describes tumour reliance on|Glycolysis even with oxygen present|Beta-oxidation of fatty acids for ATP|The basis of FDG-PET imaging.
+G|Angiogenesis|path,oncology|Tumour angiogenesis is driven mainly by ___|VEGF|vegf|Targeted by bevacizumab.
+B|Cachexia|path,oncology|Cancer cachexia is|Not reversed by increased calorie intake|Fully reversed by adequate nutrition|A cytokine-driven hypermetabolic state.
+G|Psammoma bodies|path,oncology|Psammoma bodies are laminated ___ concretions|calcium|calcium,calcified,calcific|Papillary thyroid, serous ovarian, meningioma, mesothelioma.
+B|Paraneoplastic syndrome|path,oncology,neuro|Anti-Hu antibodies cause|Paraneoplastic encephalomyelitis|Myasthenia gravis with thymoma|Associated with small cell lung cancer.
+
+# ── Genetics: patterns ───────────────────────────────────────────────────
+G|Autosomal dominant|genetics|Autosomal dominant diseases often show variable ___, differing in severity|expressivity|expressivity,expression|Penetrance is whether it appears at all.
+B|Incomplete penetrance|genetics|Incomplete penetrance means|Some carriers show no phenotype|Severity varies among affected people|Varying severity is expressivity.
+G|Autosomal recessive|genetics|Two carrier parents have a ___ percent chance of an affected child|25|25,twenty five,1 in 4|And a 50 percent chance of a carrier.
+B|X-linked recessive|genetics|In X-linked recessive disease, an affected father|Passes it to no sons|Passes it to all sons|All daughters become carriers.
+G|Mitochondrial inheritance|genetics|Mitochondrial disease shows ___, a variable mix of mutant genomes|heteroplasmy|heteroplasmy|Explaining variable severity between siblings.
+B|Genomic imprinting|genetics|Uniparental disomy causing Prader-Willi means both chromosomes come from the|Mother|Father|Prader-Willi needs a working paternal copy.
+G|Anticipation|genetics|Trinucleotide repeat disorders worsen through generations by repeat ___|expansion|expansion,expanding|Huntington, myotonic dystrophy, fragile X.
+B|Locus heterogeneity|genetics|Locus heterogeneity means|Different genes cause the same phenotype|One gene causes many phenotypes|One gene, many effects is pleiotropy.
+G|Mosaicism|genetics|Mosaicism means two cell lines from one ___|zygote|zygote,fertilized egg|Chimerism means two zygotes.
+
+# ── Genetics: molecular ──────────────────────────────────────────────────
+G|Missense mutation|genetics|A missense mutation changes one ___ for another|amino acid|amino acid,aminoacid|Conservative if the new one is chemically similar.
+B|Silent mutation|genetics|A silent mutation is possible because the genetic code is|Degenerate|Overlapping|Multiple codons encode the same amino acid.
+G|Splice site mutation|genetics|A splice site mutation causes retention of an ___|intron|intron,introns|Or skipping of an exon.
+B|Trinucleotide repeat|genetics,neuro|Fragile X repeat expansion causes|Hypermethylation and gene silencing|Production of a toxic protein|Huntington produces a toxic protein instead.
+G|Lyonization|genetics|One X chromosome in each female cell is randomly ___|inactivated|inactivated,silenced|Forming the Barr body.
+B|Nondisjunction|genetics|Trisomy 21 most often results from|Maternal meiosis I nondisjunction|Paternal meiosis II nondisjunction|Risk rises steeply with maternal age.
+G|Robertsonian translocation|genetics|Robertsonian translocations involve ___ chromosomes|acrocentric|acrocentric|13, 14, 15, 21 and 22.
+B|Hardy-Weinberg|genetics,biostats|In Hardy-Weinberg, carrier frequency is represented by|2pq|p squared|q squared is the affected homozygote frequency.
+
+# ── Cell biology ─────────────────────────────────────────────────────────
+G|Rough endoplasmic reticulum|genetics,cell biology|Rough ER synthesizes ___ and membrane proteins|secretory|secretory,secreted,exported|Abundant in plasma cells and goblet cells.
+B|Smooth endoplasmic reticulum|genetics,cell biology|Smooth ER is abundant in|Steroid-producing and detoxifying cells|Plasma cells and pancreatic acinar cells|Liver, adrenal cortex and gonads.
+G|Golgi apparatus|genetics,cell biology|The Golgi adds mannose-6-___ to target enzymes to lysosomes|phosphate|phosphate|Its failure causes I-cell disease.
+B|Peroxisomes|genetics,cell biology|Peroxisomes handle|Very long chain fatty acid beta-oxidation|Anaerobic glycolysis and lactate|Zellweger and adrenoleukodystrophy are peroxisomal.
+G|Microtubules|genetics,cell biology|Microtubules are polymers of ___ dimers|tubulin|tubulin|Targeted by colchicine, vincristine and taxanes.
+B|Kartagener syndrome|genetics,cell biology,resp|Kartagener syndrome is a defect of|Dynein arms|Actin filaments|Immotile cilia and sperm.
+G|Collagen synthesis|genetics,biochem|Collagen triple helix formation requires hydroxylation of proline and ___|lysine|lysine,lys|Vitamin C dependent.
+B|Elastin|genetics,biochem|Elastin is rich in|Proline and glycine cross-linked by desmosine|Hydroxyproline in a collagen triple helix|Broken down by elastase, opposed by alpha-1 antitrypsin.
+G|Marfan syndrome|genetics,cardio|Marfan syndrome is caused by mutation of ___, disrupting elastic fibres|fibrillin-1|fibrillin-1,fibrillin,fbn1|Excess free TGF-beta weakens the aortic wall.
+B|Osteogenesis imperfecta|genetics,bone|Osteogenesis imperfecta type I involves|Reduced quantity of normal type I collagen|Abnormal structure of type IV collagen|Blue sclerae from translucent connective tissue.

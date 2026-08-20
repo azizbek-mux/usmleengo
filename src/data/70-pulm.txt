@@ -1,0 +1,64 @@
+# Pulmonary and critical care — batch 1.
+G|Physiologic shunt|resp,physiology|Normal arterial blood is slightly desaturated because of the physiologic ___|shunt|shunt,shunts|Bronchial and Thebesian veins drain deoxygenated blood into the arterial side.
+B|Blastomycosis|resp,fungi,micro|Blastomyces shows which morphology?|Broad-based budding yeast|Narrow-based budding|Thick-walled round yeast; treat with itraconazole.
+B|Histoplasmosis|resp,fungi,micro|Histoplasma is found within|Macrophages|The extracellular matrix|Mississippi and Ohio river valleys; bird and bat droppings.
+B|Coccidioidomycosis|resp,fungi,micro|Coccidioides is endemic to|The southwestern United States|The Ohio and Mississippi valleys|Arizona and California; spherules with endospores.
+B|Obstructive sleep apnea|resp,sleep,neuro|Hypoglossal nerve stimulation treats OSA by|Advancing the tongue to open the airway|Increasing central respiratory drive|Apneas occur only in sleep, when muscle tone falls.
+B|Bohr effect|resp,physiology|In peripheral tissues, hemoglobin releases oxygen and binds|Protons|Bicarbonate|Acidity shifts the curve right, unloading oxygen.
+B|Oxygen dissociation curve|resp,physiology|A right shift of the oxygen curve means affinity is|Decreased|Increased|Caused by acid, CO2, heat and 2,3-BPG.
+B|Type II pneumocytes|resp,physiology,path|Alveolar epithelium regenerates from|Type II pneumocytes|Type I pneumocytes|Type I covers 95% of surface; type II is the stem cell and makes surfactant.
+B|Idiopathic pulmonary fibrosis|resp,path|Pulmonary fibrosis produces which spirometry pattern?|Restrictive with normal or high FEV1/FVC|Obstructive with a reduced ratio|Reduced volumes and reduced diffusion capacity.
+B|Chronic lung transplant rejection|resp,transplant|Chronic lung allograft rejection manifests as|Bronchiolitis obliterans|Alveolar hemorrhage|Small airway fibrosis; dry cough and progressive dyspnea.
+B|Pulmonary hypertension|resp,vascular,cardio|Pulmonary hypertension presents with dyspnea and|Exertional syncope|Orthopnea alone|Fixed low cardiac output; loud P2 and right heart failure.
+B|Digital clubbing|resp,oncology|New digital clubbing in an adult smoker suggests|Lung cancer|Asthma|Growth factors including VEGF from hypoxic-inflammatory pathways.
+B|Post-influenza pneumonia|resp,micro|Pneumonia following influenza is classically caused by|Staphylococcus aureus|Mycoplasma pneumoniae|Rapidly necrotizing with cavitation.
+B|Montelukast|resp,pharm,asthma|Montelukast blocks|Leukotriene receptors|Muscarinic receptors|Useful in aspirin-exacerbated respiratory disease.
+B|Hypoxic pulmonary vasoconstriction|resp,physiology|Alveolar hypoxia causes pulmonary arterioles to|Constrict|Dilate|Unique to the lung; diverts blood to ventilated areas but raises RV afterload.
+B|Tuberculosis immunity|resp,micro,immuno|TB is controlled by|CD4 T cells and macrophages|Neutrophils and antibody|Which is why HIV and TNF blockers cause reactivation.
+B|Caseating granuloma|resp,micro,path|TB cavities form through|Aggregation of activated leukocytes|Direct toxin-mediated tissue lysis|Central caseous necrosis liquefies and drains.
+B|ARDS|resp,critical care|ARDS is defined by hypoxemia with bilateral infiltrates and|No evidence of heart failure|A raised wedge pressure|Non-cardiogenic pulmonary edema from increased permeability.
+B|ARDS ventilation|resp,critical care|ARDS is ventilated with|Low tidal volumes|High tidal volumes|6 mL/kg lung-protective ventilation reduces mortality.
+B|Pneumocystis pneumonia|resp,micro,HIV|Pneumocystis pneumonia is treated with|Trimethoprim-sulfamethoxazole|Azithromycin and ceftriaxone|Add steroids if PaO2 is below 70 mmHg.
+B|Pneumocystis prophylaxis|resp,micro,HIV|PCP prophylaxis begins when CD4 falls below|200|50|MAC prophylaxis starts below 50.
+B|Neonatal respiratory distress|resp,peds,OB|Antenatal betamethasone improves fetal survival by|Inducing surfactant production|Accelerating cardiac maturation|Type II pneumocytes make dipalmitoylphosphatidylcholine.
+G|Surfactant|resp,peds,physiology|Surfactant lowers alveolar surface ___|tension|tension|Preventing collapse. Lecithin-sphingomyelin ratio above 2 indicates maturity.
+B|Inhaled corticosteroids|resp,pharm,asthma|Inhaled corticosteroids in asthma are|Controllers, not rescuers|Rescue medication|Reduce inflammation over weeks; albuterol rescues.
+B|Corticosteroids|resp,pharm|Besides anti-inflammatory action, corticosteroids|Increase beta-2 receptor responsiveness|Cause direct bronchial smooth muscle relaxation|Which is why they are combined with beta agonists.
+B|Pertussis|resp,micro|Bordetella pertussis is a|Gram-negative coccobacillus|A gram-positive spore-forming rod|Consider it in prolonged cough in an unboosted adult.
+B|Small cell lung cancer|resp,oncology,endocrine|Small cell lung cancer classically causes which paraneoplastic syndrome?|SIADH|Hypercalcemia|Also Lambert-Eaton and ectopic ACTH. Squamous cell causes hypercalcemia.
+B|Squamous cell lung cancer|resp,oncology,endocrine|Squamous cell lung cancer causes hypercalcemia via|PTH-related peptide|Bone metastasis alone|Central cavitating tumor in smokers.
+B|Croup|resp,virus,peds|Croup is caused by|Parainfluenza virus|Respiratory syncytial virus|Barking cough and steeple sign.
+B|A-a gradient|resp,physiology|An increased A-a gradient occurs in all of these except|Hypoventilation|Diffusion impairment|Hypoventilation and high altitude keep the gradient normal.
+B|Diffusion limitation|resp,physiology|Diffusion impairment is worsened by|Exercise|Rest|Reduced capillary transit time exposes the limitation.
+B|Asthma sensitization|resp,immuno,asthma|Th2 cells drive asthma by secreting|IL-4 and IL-5|IL-2 and IFN-gamma|IL-4 for IgE class switching, IL-5 for eosinophils.
+B|Streptococcus pneumoniae|resp,micro|The main virulence factor of pneumococcus is|Its polysaccharide capsule|Protein A in its cell wall|Resists phagocytosis; asplenic patients are at high risk.
+B|Exudative effusion|resp,path|An exudative effusion is caused by|Increased vascular permeability|Raised hydrostatic pressure|Light criteria: high protein and LDH ratios.
+B|COPD and polycythemia|resp,heme|Chronic hypoxemia in COPD raises|Erythropoietin|Ferritin|Secondary polycythemia.
+G|Carbonic anhydrase|resp,physiology,biochem|___ converts CO2 and water to bicarbonate in red cells|carbonic anhydrase|carbonic anhydrase|Most CO2 is carried as bicarbonate.
+G|2,3-BPG|resp,physiology|2,3-BPG ___ hemoglobin affinity for oxygen|decreases|decreases,lowers,reduces|Facilitating unloading; rises in chronic hypoxia and anemia.
+B|Succinylcholine|resp,pharm,anesthesia|Succinylcholine is which type of blocker?|Depolarizing|Non-depolarizing|Phase II block shows fade on train-of-four.
+B|Succinylcholine|resp,pharm,electrolytes|Succinylcholine can cause dangerous|Hyperkalemia|Hypokalemia|Avoid in burns, crush injury and denervation.
+B|Congenital diaphragmatic hernia|resp,peds,embryology|Congenital diaphragmatic hernia causes respiratory failure from|Pulmonary hypoplasia|Airway obstruction|Failed pleuroperitoneal fold fusion, usually left-sided.
+B|Mesothelioma|resp,oncology|Mesothelioma is strongly associated with|Asbestos exposure|Silica exposure|Encases the pleura; smoking multiplies asbestos lung cancer risk instead.
+B|Asbestosis|resp,oncology,path|Asbestos bodies are|Ferruginous golden-brown rods|Birefringent crystals|Lower lobe fibrosis with pleural plaques.
+B|Silicosis|resp,path,micro|Silicosis increases susceptibility to|Tuberculosis|Aspergillosis|Silica impairs macrophage function; upper lobe nodules and eggshell calcification.
+B|Malignant pleural effusion|resp,oncology|Malignant effusions arise from|Lymphatic obstruction|Low oncotic pressure|Blocked pleural lymphatic stomata plus increased permeability.
+B|Mycoplasma pneumoniae|resp,micro|Mycoplasma pneumonia is associated with|Cold agglutinin hemolysis|Rusty sputum and lobar consolidation|Walking pneumonia in adolescents; no cell wall so beta-lactams fail.
+B|Mycoplasma pneumoniae|resp,micro,pharm|Mycoplasma is treated with|A macrolide|A cephalosporin|No cell wall means beta-lactams are useless.
+B|Chylothorax|resp,anatomy,surgery|Thoracic duct injury causes a|Chylothorax with milky fluid|Hemothorax with clotted blood|High triglyceride content after thoracic surgery.
+B|Panton-Valentine leukocidin|resp,micro|Leukocidin causes necrotizing pneumonia by killing|Leukocytes|Erythrocytes|Community-acquired MRSA after influenza.
+G|Haemophilus influenzae type b|resp,micro,immuno|The Hib vaccine targets the ___ capsule|polyribosylribitol phosphate|polyribosylribitol phosphate,prp|Conjugated to protein for T-cell dependent immunity.
+B|Sarcoidosis|resp,immuno|Bronchoalveolar lavage in sarcoidosis shows predominantly|CD4 lymphocytes|Neutrophils|Noncaseating granulomas; raised ACE and calcium.
+B|Kaposi sarcoma|resp,oncology,HIV|Kaposi sarcoma is caused by|Human herpesvirus 8|Epstein-Barr virus|Purple skin papules; can involve lungs and gut.
+B|Chest tube placement|resp,anatomy,procedure|A chest tube is inserted in the|Fifth intercostal space, midaxillary line|Second space in the midclavicular line|Above the rib to avoid the neurovascular bundle.
+B|Airway histology|resp,anatomy|Which structure persists furthest down the airway?|Cilia|Cartilage|Cartilage and glands stop at the bronchioles; cilia persist longest.
+B|Nocardia|resp,micro|Nocardia is characterized by|Partial acid fastness|Full acid fastness|Branching filaments; brain abscesses; treat with TMP-SMX.
+B|Actinomyces|resp,micro|Actinomyces classically forms|Sulfur granules with sinus tracts|Cavitary upper lobe lesions|Anaerobic, not acid fast; treat with penicillin.
+B|Emphysema|resp,path|Centriacinar emphysema is caused by|Cigarette smoking over many years|Alpha-1 antitrypsin deficiency|Smoking affects upper lobes; A1AT deficiency is panacinar and lower lobe.
+B|Alpha-1 antitrypsin deficiency|resp,genetics,liver|Alpha-1 antitrypsin deficiency also causes|Liver cirrhosis|Renal failure|Misfolded protein accumulates in hepatocytes; PAS-positive globules.
+B|Bronchiectasis|resp,path|Bronchiectasis results from|Chronic infection and airway destruction|Loss of elastin in the alveolar walls|Copious purulent sputum; tram-track markings.
+B|Kartagener syndrome|resp,genetics|Primary ciliary dyskinesia causes|Situs inversus, bronchiectasis and infertility|Emphysema with lower lobe bullae and cirrhosis|Dynein arm defect.
+B|Pulmonary embolism|resp,vascular,emergency|The commonest ECG finding in pulmonary embolism is|Sinus tachycardia|The S1Q3T3 pattern|S1Q3T3 is classic but uncommon.
+B|Pulmonary embolism|resp,vascular,lab|A normal D-dimer is most useful to|Rule out PE in low-risk patients|Confirm PE in high-risk patients|High sensitivity, low specificity.
+B|Tension pneumothorax|resp,emergency|Tension pneumothorax shifts the trachea|Away from the affected side|Toward the affected side|Needle decompression before imaging.
+B|Obstructive versus restrictive|resp,physiology|In restrictive lung disease, the FEV1/FVC ratio is|Normal or increased|Reduced below 0.7|Both volumes fall, but FVC falls more.

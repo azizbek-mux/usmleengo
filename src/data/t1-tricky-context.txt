@@ -1,0 +1,53 @@
+# TRICKY — changed context. The memorised fact becomes wrong when one detail shifts.
+BT|Secondary adrenal insufficiency|endocrine,adrenal,electrolytes|In SECONDARY adrenal insufficiency, serum K+ is|Normal|Increased|ACTH loss spares aldosterone — the RAAS is intact. Only PRIMARY Addison raises K+.
+BT|Secondary adrenal insufficiency|endocrine,adrenal|In SECONDARY adrenal insufficiency, skin pigmentation is|Normal|Increased|No ACTH excess means no MSH effect. Pigmentation is a primary Addison sign.
+BT|Cocaine chest pain|cardio,toxicology,pharm|In cocaine-induced chest pain, a beta blocker is|Contraindicated|First-line|Unopposed alpha stimulation worsens coronary vasospasm. Use benzodiazepines.
+BT|Pheochromocytoma|endocrine,pharm,surgery|Before beta blockade in pheochromocytoma you must first give|An alpha blocker|A calcium channel blocker|Beta first leaves unopposed alpha and a hypertensive crisis. Phenoxybenzamine first.
+BT|Statin plus fibrate|pharm,lipids,toxicity|Adding a fibrate to a statin makes myopathy risk|Higher|Unchanged|Both are myotoxic; gemfibrozil especially. Check CK if symptoms appear.
+BT|Bilateral renal artery stenosis|renal,pharm,vascular|With BILATERAL renal artery stenosis, an ACE inhibitor is|Contraindicated|First-line|Both kidneys depend on efferent constriction; blocking it causes acute renal failure.
+BT|Scleroderma renal crisis|renal,pharm,immuno|In scleroderma renal crisis, an ACE inhibitor is|Given despite rising creatinine|Withheld once creatinine rises|The one place you push through the creatinine rise. It is life-saving.
+BT|Right ventricular infarction|cardio,MI,pharm|In right ventricular infarction, nitrates are|Contraindicated|First-line|The RV is preload dependent. Nitrates drop preload and cause collapse. Give fluids.
+BT|EHEC gastroenteritis|micro,GI,pharm|In E. coli O157:H7 infection, antibiotics are|Avoided|First-line|Killing the bacteria releases more Shiga toxin and raises hemolytic uremic syndrome risk.
+BT|Reye syndrome|pharm,peds,virus|In a child with a viral illness, aspirin is|Avoided|First-line for fever|Reye syndrome: encephalopathy with fatty liver. Use paracetamol.
+BT|Live vaccines|immuno,vaccines,OB|In pregnancy, live attenuated vaccines are|Contraindicated|Recommended|Also contraindicated in severe immunodeficiency. Inactivated vaccines are fine.
+BT|Metformin and contrast|endocrine,pharm,renal|Before iodinated contrast, metformin is|Held|Continued|Contrast nephropathy plus metformin risks lactic acidosis.
+BT|Succinylcholine in burns|pharm,anesthesia,electrolytes|In a patient burned 3 days ago, succinylcholine is|Contraindicated|Preferred|Upregulated receptors cause massive hyperkalemia and arrest. Same in crush injury and denervation.
+BT|Thiamine before glucose|neuro,vitamins,emergency|In a malnourished alcoholic, giving glucose FIRST|Precipitates Wernicke encephalopathy|Is safe if the glucose is given slowly|Glucose consumes the last thiamine. Always thiamine first.
+BT|Flumazenil|pharm,toxicology|In a CHRONIC benzodiazepine user, flumazenil|Can precipitate seizures|Is the first-line antidote|Abrupt reversal in a dependent patient removes seizure protection.
+BT|Naloxone duration|pharm,toxicology,emergency|After naloxone reverses a long-acting opioid, the patient may|Deteriorate again as naloxone wears off|Remain stable once initially reversed|Naloxone has the shorter half-life. Observe or infuse.
+BT|Digoxin and potassium|cardio,pharm,electrolytes|In a patient on digoxin, HYPOkalemia makes toxicity|More likely|Less likely|Less K+ competition at the Na/K ATPase means more digoxin binding.
+BT|Digoxin toxicity treatment|cardio,pharm,toxicology|In digoxin toxicity, intravenous calcium is|Avoided|First-line|Calcium worsens the arrhythmia. Use digoxin-specific antibody fragments.
+BT|Lithium and thiazides|psych,pharm,renal|Adding a thiazide to lithium makes lithium levels|Rise|Fall|Reduced renal clearance. Same with NSAIDs and ACE inhibitors.
+BT|Warfarin in pregnancy|pharm,OB,coagulation|For anticoagulation in pregnancy, the correct drug is|Heparin|Warfarin|Warfarin is teratogenic and crosses the placenta. Heparin does not.
+BT|Clostridioides difficile|micro,GI,pharm|In C. difficile colitis, the first step is|Stop the offending antibiotic|Add a second antibiotic|Then oral vancomycin or fidaxomicin.
+BT|Beta blockers in asthma|resp,pharm,cardio|In an asthmatic needing a beta blocker, choose|A cardioselective agent|A non-selective agent|Beta-2 blockade causes bronchospasm. Metoprolol over propranolol.
+BT|Steroid withdrawal|endocrine,pharm|After months of prednisone, stopping abruptly causes|Adrenal crisis|No problem|Chronic suppression atrophies the adrenals. Taper slowly.
+BT|Beta blocker withdrawal|cardio,pharm|Abruptly stopping a beta blocker causes|Rebound tachycardia and ischemia|Prolonged bradycardia and fatigue|Receptor upregulation during blockade. Always taper.
+BT|Allopurinol and azathioprine|pharm,rheum,toxicity|Adding allopurinol to azathioprine causes|Dangerous marrow suppression|No clinically important interaction|Xanthine oxidase inhibition blocks 6-mercaptopurine breakdown.
+BT|Allopurinol timing|msk,rheum,pharm|Starting allopurinol DURING an acute gout flare|Can worsen the flare|Shortens the attack|Shifting urate levels destabilizes crystals. Treat the flare first.
+BT|Aminoglycosides and loops|pharm,renal,toxicity|Combining an aminoglycoside with furosemide raises the risk of|Ototoxicity|Hepatotoxicity|Both are ototoxic; the effect is additive.
+BT|Nitrates and sildenafil|cardio,pharm|Nitrates in a patient who took sildenafil cause|Life-threatening hypotension|No clinically significant interaction|Both raise cGMP. Wait 24 to 48 hours.
+BT|Isoniazid|micro,pharm,vitamins|Isoniazid is given with pyridoxine to prevent|Peripheral neuropathy|Drug-induced hepatitis|B6 deficiency. Hepatotoxicity is separate and monitored with LFTs.
+BT|Hyponatremia correction|renal,electrolytes,neuro|Correcting CHRONIC hyponatremia too quickly causes|Osmotic demyelination|Cerebral edema|Correct slowly. Correcting hypernatremia too fast causes cerebral edema.
+BT|Insulin in DKA|endocrine,emergency,electrolytes|Giving insulin in DKA makes serum potassium|Fall|Rise|Insulin drives K+ into cells. Replace K+ before it drops dangerously.
+BT|DKA potassium|endocrine,emergency,electrolytes|In DKA with a NORMAL serum potassium, total body potassium is|Depleted|Normal|Osmotic diuresis has wasted it; acidosis masks the deficit.
+BT|Oxygen in COPD|resp,critical care|In a hypoxic COPD patient, oxygen should be|Given, targeting 88 to 92 percent|Withheld to avoid CO2 retention|Never withhold oxygen from hypoxia. Titrate rather than avoid.
+BT|Antibiotics in viral pharyngitis|micro,ethics,peds|For a sore throat with cough and rhinorrhea, antibiotics are|Not indicated|Indicated|Cough points to a virus. Centor criteria guide testing.
+BT|Corticosteroids in septic shock|immuno,critical care|In septic shock, steroids are used|Only if refractory to fluids and pressors|Routinely, at the time of diagnosis|Not first-line; reserved for vasopressor-resistant shock.
+BT|Mannitol in renal failure|neuro,renal,pharm|In a patient with anuria, mannitol is|Contraindicated|First-line for raised ICP|It cannot be excreted and causes volume overload.
+BT|NSAIDs in renal hypoperfusion|renal,pharm|In a dehydrated patient, an NSAID causes GFR to|Fall sharply|Stay normal|Prostaglandins maintain afferent dilation; blocking them is dangerous when volume-depleted.
+BT|Thiazide in calcium stones|renal,pharm,stones|For recurrent CALCIUM stones, a thiazide is|Helpful|Harmful|Thiazides retain calcium, lowering urinary calcium. Loops would worsen it.
+BT|Loop diuretic in hypercalcemia|renal,pharm,calcium|In hypercalcemia, furosemide is|Helpful after rehydration|First step before fluids|Loops lose calcium — but fluids come first; give saline, then furosemide if needed.
+BT|Spironolactone|cardio,pharm,endocrine|Spironolactone in a male patient may cause|Gynecomastia|Hirsutism|Antiandrogen effect. Eplerenone avoids it.
+BT|Grapefruit juice|pharm,principles,lipids|Grapefruit juice raises statin levels by inhibiting|CYP3A4|P-glycoprotein only|Same mechanism as clarithromycin and ketoconazole.
+BT|Rifampin|micro,pharm,principles|Rifampin makes oral contraceptives|Less effective|More effective|A potent CYP450 inducer accelerating their metabolism.
+BT|Vancomycin infusion|micro,pharm,immuno|Flushing during rapid vancomycin infusion means|Slow the infusion, it is not an allergy|Stop the drug and label an allergy|Direct mast cell degranulation, not IgE mediated.
+BT|Penicillin allergy|micro,pharm,immuno|A patient reporting a childhood rash from penicillin|Usually can receive cephalosporins|Must never receive any beta-lactam|True cross-reactivity is low. Anaphylaxis history is different.
+BT|Contrast allergy|pharm,immuno,imaging|A shellfish allergy predicts iodinated contrast reaction|No|Yes|A persistent myth — it is the contrast molecule, not iodine content.
+BT|Charcoal in overdose|pharm,toxicology|Activated charcoal is useless for|Iron, lithium and alcohols|Aspirin and paracetamol|Charcoal does not bind metals or small alcohols.
+BT|Antidote timing|pharm,toxicology,liver|N-acetylcysteine works best when given|Within 8 hours of ingestion|Only after transaminases rise|Waiting for liver injury means waiting too long.
+BT|Beta-2 agonist side effect|resp,pharm,electrolytes|Albuterol makes serum potassium|Fall|Rise|Beta-2 drives K+ into cells — which is why it treats hyperkalemia.
+BT|Heparin-induced thrombocytopenia|heme,pharm,coagulation|In HIT, the main danger is|Thrombosis|Bleeding|Platelet activation causes clots despite the low count. Stop heparin, start argatroban.
+BT|Warfarin initiation|heme,pharm,coagulation|Starting warfarin alone can transiently cause|A hypercoagulable state|Immediate anticoagulation|Protein C falls first. Bridge with heparin.
+BT|Blood transfusion in IgA deficiency|immuno,heme|In selective IgA deficiency, blood products risk|Anaphylaxis|Delayed hemolysis|Anti-IgA antibodies. Use washed products.
+BT|Tumor lysis syndrome|oncology,electrolytes|Tumor lysis syndrome causes calcium to|Fall|Rise|Phosphate released from cells binds calcium. K+, phosphate and urate all rise.

@@ -1,0 +1,65 @@
+# Renal, urology and electrolytes — batch 1.
+B|Henoch-Schonlein purpura|renal,immuno,peds|IgA vasculitis damages the kidney by|Immune complex deposition in the mesangium|T cell cytotoxicity against mesangial cells|Hematuria with RBC casts and normal creatinine in most children.
+B|Henoch-Schonlein purpura|renal,immuno,peds|The classic tetrad of IgA vasculitis includes purpura, abdominal pain, renal disease and|Joint pain|Oral ulcers|Palpable purpura on buttocks and legs.
+B|Ureteral injury|renal,surgery,anatomy|Accidental ureteral ligation causes|Hydronephrosis and flank pain|Immediate anuria and uremia|Distension of ureter and renal pelvis.
+B|Bladder innervation|renal,autonomic,physiology|Sympathetic stimulation of the bladder promotes|Urine storage|Voiding|Raises internal sphincter tone and inhibits the detrusor.
+B|Renal tubular acidosis|renal,acid base|Renal tubular acidosis produces which acid-base picture?|Normal anion gap metabolic acidosis|Raised anion gap metabolic acidosis|Hyperchloremic acidosis with a normal gap.
+B|Type 1 RTA|renal,acid base|Distal (type 1) RTA is complicated by|Calcium phosphate stones|Uric acid stones|Alkaline urine promotes stone formation.
+B|Contrast-induced nephropathy|renal,AKI|Contrast nephropathy damages which structure?|Proximal tubular cells|Glomerular endothelial cells|Creatinine rises in 24-48 hours then recovers.
+B|Dialysis clearance|renal,physiology|Diffusion across a dialysis membrane increases most with|Greater membrane surface area|A thicker dialysis membrane|Fick's law — area up, thickness down.
+B|Poststreptococcal glomerulonephritis|renal,micro,immuno|PSGN shows what on electron microscopy?|Subepithelial humps|Linear deposits|Linear IgG suggests Goodpasture.
+B|Poststreptococcal glomerulonephritis|renal,immuno,peds|PSGN is the commonest cause of|Nephritic syndrome in children|Nephrotic syndrome in children|Periorbital edema, hypertension, cola urine, RBC casts.
+B|Renal cell carcinoma|renal,oncology,vascular|Renal cell carcinoma classically invades the|Renal vein and inferior vena cava|The ureter and renal pelvis|Left-sided tumors can cause a varicocele.
+B|Renal cell carcinoma|renal,oncology,risk|The main risk factor for renal cell carcinoma is|Smoking|Analgesic use|Also obesity and hypertension; von Hippel-Lindau if familial.
+B|PTH and phosphate|renal,endocrine,calcium|PTH decreases phosphate reabsorption in the|Proximal tubule|Collecting duct|Raises calcium, lowers phosphate.
+B|Benign prostatic hyperplasia|renal,urology|BPH causes renal damage through|Parenchymal pressure atrophy|Direct tumor invasion|Back-pressure hydronephrosis from chronic obstruction.
+B|Benign prostatic hyperplasia|renal,urology,anatomy|BPH arises in which prostate zone?|Transition zone|Peripheral zone|Prostate cancer arises peripherally, which is why it is felt on exam.
+B|Kidney stone prevention|renal,stones|Low urinary citrate promotes stones because citrate|Chelates calcium|Acidifies urine|Citrate is a natural stone inhibitor.
+B|Calcium oxalate stones|renal,stones|The commonest kidney stone type is|Calcium oxalate|Uric acid|Radiopaque; envelope-shaped crystals.
+B|Struvite stones|renal,stones,micro|Struvite stones are caused by|Urease-producing organisms|Hyperuricosuria and acid urine|Proteus and Klebsiella; staghorn calculi in alkaline urine.
+B|Uric acid stones|renal,stones|Uric acid stones are|Radiolucent|Radiopaque|Form in acidic urine; treat with urinary alkalinization.
+B|Glomerular filtration|renal,physiology|Angiotensin II constricts the efferent arteriole, which makes filtration fraction|Increase|Decrease|GFR is maintained while renal plasma flow falls.
+B|Bladder cancer|renal,oncology,risk|The strongest risk factor for bladder cancer is|Tobacco smoking|Recurrent UTI|Painless gross hematuria; muscle invasion worsens prognosis.
+B|Acute urinary retention|renal,urology,pharm|Which drug class precipitates urinary retention in BPH?|Anticholinergics and sympathomimetics|Loop diuretics and beta blockers|They reduce detrusor contraction or raise sphincter tone.
+B|Salicylate poisoning|renal,toxicology,acid base|Aspirin overdose causes|Anion gap acidosis with respiratory alkalosis|Pure metabolic alkalosis with hypokalemia|Direct respiratory centre stimulation plus metabolic acidosis.
+B|Scleroderma renal crisis|renal,immuno,hypertension|Scleroderma renal crisis injures the|Small renal vessels|Glomerular capillaries|No RBC casts; treat with an ACE inhibitor.
+B|Scleroderma renal crisis|renal,pharm,hypertension|Scleroderma renal crisis is treated with|An ACE inhibitor|A beta blocker|The one setting where ACE inhibitors are used despite rising creatinine.
+B|Hyperkalemia treatment|renal,electrolytes,pharm|Calcium gluconate in hyperkalemia works by|Stabilizing the cardiac membrane|Lowering serum potassium|Does not shift or remove potassium; buys time.
+B|Hyperkalemia treatment|renal,electrolytes,pharm|Insulin with glucose lowers potassium by|Shifting it into cells|Increasing renal excretion|Temporary; definitive removal needs dialysis or a binder.
+B|Nephrotic proteinuria|renal,proteinuria,lab|The main protein lost in nephrotic syndrome is|Albumin|Immunoglobulin|Selective albuminuria in minimal change disease.
+B|Glycosuria|renal,physiology,diabetes|Glucose appears in urine above a plasma level of about|200 mg/dL|100 mg/dL|Transport maximum of the proximal tubule is exceeded.
+B|Multiple myeloma kidney|renal,oncology,heme|Myeloma damages the kidney through|Light chain cast nephropathy|IgG deposition alone|Plus hypercalcemia. Bence Jones proteins are missed by dipstick.
+B|Renal amyloidosis|renal,path,heme|Renal amyloid is confirmed by|Congo red with apple-green birefringence|Silver stain of the basement membrane|Then serum and urine protein electrophoresis.
+B|Hypokalemia causes|renal,electrolytes|Insulin and beta-2 agonists cause potassium to|Shift into cells|Shift out of cells|A transcellular shift, not a true deficit.
+B|Water reabsorption|renal,physiology|Most filtered water is reabsorbed in the|Proximal tubule|Collecting duct|About two-thirds isosmotically in the proximal tubule.
+B|ADH|renal,physiology,endocrine|ADH acts on which receptor in the collecting duct?|V2|V1|Inserts aquaporin-2 channels via cAMP.
+G|Osmoreceptors|renal,physiology,neuro|Osmoreceptors sensing plasma osmolality sit in the ___|hypothalamus|hypothalamus,anterior hypothalamus|They drive both ADH release and thirst.
+B|Ureteral blood supply|renal,anatomy,surgery|The distal ureter is supplied by branches of the|Internal iliac artery|Uterine artery only|Water under the bridge: the ureter runs beneath the uterine artery.
+B|DKA management|renal,endocrine,emergency|DKA is treated first with|Intravenous fluids and insulin|Intravenous sodium bicarbonate|Fluids first, then insulin, and replace potassium before it falls.
+B|Erythropoietin|renal,heme,physiology|Erythropoietin is produced by|Peritubular interstitial cells|Proximal tubular epithelium|Cortical fibroblasts respond to hypoxia; CKD causes anemia.
+B|Thrombotic microangiopathy|renal,heme,path|HUS and TTP show which renal histology?|Platelet-rich thrombi in glomerular capillaries|Crescents filling and obliterating Bowman space|Microangiopathic hemolysis with schistocytes.
+B|Central diabetes insipidus|renal,endocrine|Central DI is treated with|Desmopressin|Hydrochlorothiazide|Nephrogenic DI uses thiazides and a low-salt diet.
+B|Nephrogenic diabetes insipidus|renal,endocrine,pharm|Nephrogenic DI is treated with|A thiazide diuretic|Desmopressin|Paradoxically reduces urine output via volume contraction.
+B|Nephrogenic diabetes insipidus|renal,pharm,toxicity|Which drug classically causes nephrogenic DI?|Lithium|Furosemide|Also demeclocycline and hypercalcemia.
+B|Spironolactone|renal,pharm,electrolytes|Spironolactone blocks the receptor for|Aldosterone|Antidiuretic hormone|Potassium-sparing; causes gynecomastia.
+B|Transplant kidney placement|renal,surgery,anatomy|A transplanted kidney is anastomosed to the|External iliac vessels|Renal artery stump|Placed retroperitoneally in the iliac fossa; native kidneys stay.
+B|Cholesterol embolization|renal,vascular,AKI|Cholesterol emboli after catheterization show|Cholesterol clefts in arterioles|Urate crystals in the tubules|Livedo reticularis, blue toes, eosinophilia and low complement.
+B|Nephrotic hyperlipidemia|renal,lipids|Hyperlipidemia in nephrotic syndrome is caused by|Increased hepatic lipoprotein synthesis|Reduced peripheral lipoprotein lipolysis|Low oncotic pressure drives hepatic synthesis.
+B|Papillary necrosis|renal,path,heme|Sudden gross hematuria in sickle cell trait suggests|Renal papillary necrosis|Urate nephropathy|The hypoxic hypertonic medulla sickles.
+B|Papillary necrosis|renal,path,pharm|Which analgesic pattern causes papillary necrosis?|Chronic NSAID or phenacetin use|Single paracetamol overdose|Also diabetes and sickle cell disease.
+B|Idiopathic hypercalciuria|renal,stones,calcium|Most calcium stone formers have|Normocalcemia with hypercalciuria|Hypercalcemia with high PTH|Unless there is hyperparathyroidism.
+B|Loop diuretics|renal,pharm,acid base|Loop diuretics cause which acid-base disturbance?|Metabolic alkalosis|Metabolic acidosis|Contraction alkalosis with hypokalemia.
+B|Acetazolamide|renal,pharm,acid base|Acetazolamide causes|Normal anion gap metabolic acidosis|Hypokalemic metabolic alkalosis|Carbonic anhydrase inhibition wastes bicarbonate.
+B|Minimal change disease|renal,nephrotic,peds|Minimal change disease shows what on electron microscopy?|Podocyte foot process effacement|Subendothelial dense deposits|Light microscopy and immunofluorescence are normal.
+B|Focal segmental glomerulosclerosis|renal,nephrotic|FSGS is the commonest nephrotic syndrome in|African American adults|White children under six|Associated with HIV, heroin and obesity.
+B|Membranous nephropathy|renal,nephrotic,immuno|Primary membranous nephropathy is linked to antibodies against|PLA2R|PLA2R and DNA|Spike-and-dome subepithelial deposits.
+B|IgA nephropathy|renal,immuno|IgA nephropathy typically presents with hematuria|Within days of an upper respiratory infection|Two to three weeks after a skin infection|PSGN is delayed; IgA nephropathy is synpharyngitic.
+B|Goodpasture syndrome|renal,immuno,resp|Anti-GBM disease shows what on immunofluorescence?|Linear IgG deposition|Granular deposition|Hemoptysis with hematuria in a young man.
+B|Alport syndrome|renal,genetics|Alport syndrome is a defect in|Type IV collagen|Type I collagen|Hematuria, sensorineural deafness and eye problems.
+B|Acute tubular necrosis|renal,AKI,lab|Acute tubular necrosis shows which urinary finding?|Muddy brown granular casts|Red cell casts and dysmorphic cells|FENa above 2 percent and isosthenuric urine.
+B|Acute interstitial nephritis|renal,AKI,pharm|Drug-induced interstitial nephritis classically shows|Sterile pyuria with eosinophils|Red cell casts and proteinuria|Fever, rash and eosinophilia after a new drug.
+B|Prerenal azotemia|renal,AKI,lab|In prerenal azotemia, fractional excretion of sodium is|Below 1 percent|Above 2 percent|Avid sodium retention with concentrated urine.
+B|Renal artery stenosis|renal,vascular,hypertension|Renal artery stenosis in young women is usually caused by|Fibromuscular dysplasia|Atherosclerosis|String-of-beads appearance; atherosclerosis in older patients.
+B|Autosomal dominant polycystic kidney disease|renal,genetics|ADPKD is associated with which cerebral lesion?|Berry aneurysm|Cavernoma|PKD1 on chromosome 16; also mitral prolapse and hepatic cysts.
+B|Potter sequence|renal,embryology,peds|Potter sequence results from|Oligohydramnios|Polyhydramnios|Bilateral renal agenesis causes pulmonary hypoplasia and limb deformity.
+B|Horseshoe kidney|renal,embryology,anatomy|A horseshoe kidney is trapped beneath the|Inferior mesenteric artery|Superior mesenteric artery|Cannot ascend fully; associated with Turner syndrome.

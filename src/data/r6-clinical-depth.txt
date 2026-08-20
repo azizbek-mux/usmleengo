@@ -1,0 +1,60 @@
+# Clinical medicine, emergencies and labs — depth pass. Gap-weighted.
+
+# ── Emergencies ──────────────────────────────────────────────────────────
+G|Anaphylaxis|emergency,immuno,pharm|Adrenaline in anaphylaxis is given ___muscularly into the thigh|intra|intra,intramuscular,im|0.5 mg of 1 in 1000 in adults.
+B|Anaphylaxis|emergency,immuno|Biphasic anaphylaxis means|Symptoms recur hours after apparent recovery|Two organ systems are involved at once|Observe for 4 to 6 hours.
+G|Cardiac arrest|emergency,cardio|The two shockable rhythms are pulseless VT and ___ fibrillation|ventricular|ventricular,vf|Asystole and PEA are non-shockable.
+B|Cardiac arrest|emergency,cardio,pharm|Adrenaline in cardiac arrest is given|Every 3 to 5 minutes|Once at the start|Immediately in non-shockable rhythms.
+G|Reversible causes|emergency,critical care|The four Hs include hypoxia, hypovolemia, hypothermia and ___/metabolic|hyperkalemia|hyperkalemia,hypokalemia,hydrogen ion|The four Ts are tension pneumothorax, tamponade, toxins and thrombosis.
+B|Sepsis|emergency,micro|The single most time-critical intervention in sepsis is|Early antibiotics|Central line insertion|Each hour of delay increases mortality.
+G|Sepsis|emergency,micro,lab|Rising serum ___ indicates tissue hypoperfusion in sepsis|lactate|lactate|Above 4 mmol/L marks severe illness.
+B|Trauma primary survey|emergency,trauma|The primary survey order is|Airway, breathing, circulation, disability, exposure|Circulation first, then airway and breathing|Catastrophic haemorrhage may precede airway in some protocols.
+G|Head injury|emergency,neuro|A Glasgow Coma Scale of ___ or below mandates intubation|8|8,eight|The airway is unprotected below that.
+B|Burns|emergency,derm|Burn fluid requirements are calculated from|Body surface area burned and weight|Depth of the burn and patient age|The Parkland formula.
+G|Hypothermia|emergency,cardio|Hypothermia produces the ___ wave on ECG|J|j,osborn,osborn j|Also called the Osborn wave.
+B|Drowning|emergency,resp|Salt and fresh water drowning are managed|Identically|With different fluids|Hypoxia is the common pathway.
+
+# ── Common lab interpretation ────────────────────────────────────────────
+G|Elevated alkaline phosphatase|lab,liver,bone|To decide if a raised alkaline phosphatase is hepatic, check ___|GGT|ggt,gamma gt,gamma-glutamyl transferase|Raised GGT confirms a liver source.
+B|Isolated raised bilirubin|lab,liver|An isolated unconjugated hyperbilirubinemia with normal enzymes suggests|Gilbert syndrome or hemolysis|Biliary tract obstruction|Check reticulocytes and haptoglobin.
+G|Raised amylase|lab,GI|Amylase can also rise in bowel perforation, salivary disease and ___ pregnancy|ectopic|ectopic|Lipase is more specific for pancreas.
+B|Troponin elevation|lab,cardio,renal|Troponin can rise without infarction in|Renal failure, sepsis or pulmonary embolism|Only in anemia and dehydration states|Look for a rise and fall pattern with symptoms.
+G|D-dimer|lab,vascular|D-dimer is useful mainly to ___ out thromboembolism in low-risk patients|rule|rule|Its specificity is poor.
+B|Raised CK|lab,msk,pharm|A markedly raised creatine kinase after exercise plus a statin suggests|Rhabdomyolysis|Myocardial infarction|Check renal function and urine myoglobin.
+G|Erythrocyte sedimentation rate|lab,inflammation|ESR rises with age and ___, independent of inflammation|anemia|anemia,anaemia|CRP is a more direct marker.
+B|Procalcitonin|lab,micro|Procalcitonin is most useful for|Deciding whether to stop antibiotics|Diagnosing a viral infection|It falls as bacterial infection resolves.
+G|Serum osmolality|lab,renal|Calculated osmolality is 2 times sodium plus glucose plus ___|urea|urea,bun|A gap suggests unmeasured osmoles.
+B|Urinalysis|lab,renal|Nitrites on dipstick indicate|Gram-negative bacteria|Any infection|Gram positives lack nitrate reductase.
+G|Urine casts|lab,renal|___ casts are pathognomonic of glomerulonephritis|Red cell|red cell,rbc,red blood cell|White cell casts suggest pyelonephritis or interstitial nephritis.
+B|Blood film|lab,heme|Target cells are seen in|Liver disease, thalassemia and asplenia|Iron overload and lead poisoning|Excess membrane relative to volume.
+
+# ── Preventive medicine and screening ────────────────────────────────────
+G|Blood pressure|clinical,cardio|Hypertension is diagnosed at a clinic reading of ___/90 or above|140|140,140/90|Confirmed with ambulatory or home readings.
+B|Diabetes screening|clinical,endocrine|Screening for type 2 diabetes is recommended from age|35 with risk factors|60, regardless of risk|Or earlier if overweight with additional risks.
+G|Abdominal aortic aneurysm|clinical,vascular|AAA screening is offered once to ___ men aged 65 to 75 who have smoked|male|male,men|A single ultrasound.
+B|Mammography|clinical,oncology|Breast cancer screening typically begins at age|40 to 50 depending on the guideline|30 for all average-risk women|Shared decision making in the forties.
+G|Cervical screening|clinical,oncology|Cervical screening usually begins at age ___|21|21,25|Interval depends on cytology or HPV testing.
+B|Osteoporosis screening|clinical,bone|DEXA screening is recommended for women from age|65|50|Earlier with risk factors.
+G|Colorectal screening|clinical,oncology|Colonoscopy screening is repeated every ___ years if normal|10|10,ten|More often with polyps or family history.
+B|Lung cancer screening|clinical,oncology,resp|Lung cancer screening uses|Annual low-dose CT|Chest x-ray|In current or recent heavy smokers.
+G|Smoking cessation|clinical,pharm|___ is the most effective single pharmacological aid to quitting|Varenicline|varenicline|A partial nicotinic agonist.
+B|Alcohol screening|clinical,psych|The CAGE questionnaire asks about cutting down, annoyance, guilt and|An eye-opener drink|Memory blackouts|Two or more positives is significant.
+
+# ── Fluids, nutrition and perioperative ──────────────────────────────────
+G|Maintenance fluids|clinical,electrolytes|Normal daily sodium requirement is about ___ mmol/kg|1|1,one,1-2|Potassium is also about 1 mmol/kg.
+B|Normal saline|clinical,electrolytes,acid base|Large volumes of normal saline cause|Hyperchloremic metabolic acidosis|Hypochloremic metabolic alkalosis|Balanced solutions avoid this.
+G|Refeeding syndrome|clinical,nutrition|Refeeding is prevented by starting feeding ___ and replacing electrolytes|slowly|slowly,cautiously,low|Plus thiamine before feeding.
+B|Parenteral nutrition|clinical,nutrition,liver|Long-term parenteral nutrition risks|Cholestasis and line sepsis|Iron overload and cirrhosis|Enteral feeding is preferred whenever the gut works.
+G|Preoperative fasting|clinical,anesthesia|Clear fluids may usually be taken up to ___ hours before surgery|2|2,two|Solids need six.
+B|Venous thromboembolism prophylaxis|clinical,coagulation,surgery|The commonest preventable cause of hospital death is|Pulmonary embolism|Severe sepsis|Which is why risk assessment is routine.
+G|Wound infection|clinical,surgery,micro|Surgical prophylaxis should be given within ___ hour before incision|1|1,one|Redosed for long operations.
+B|Delirium prevention|clinical,geriatrics|The most effective delirium prevention is|Orientation, sleep and early mobilization|Prophylactic low-dose haloperidol|Multicomponent care bundles.
+
+# ── Geriatrics and palliative ────────────────────────────────────────────
+G|Polypharmacy|clinical,geriatrics,pharm|Drugs on the ___ criteria list are potentially inappropriate in the elderly|Beers|beers|Anticholinergics, benzodiazepines and NSAIDs feature heavily.
+B|Falls|clinical,geriatrics|The strongest predictor of a future fall is|A previous fall|Age alone|Review medications and check orthostatic blood pressure.
+G|Pressure ulcers|clinical,geriatrics,derm|Pressure ulcers are prevented mainly by regular ___|repositioning|repositioning,turning,position changes|Plus nutrition and pressure-relieving surfaces.
+B|Urinary incontinence in the elderly|clinical,geriatrics|New incontinence in an older person should first prompt|A search for reversible causes|Long-term catheterization|DIAPPERS mnemonic: delirium, infection, atrophy, pharmaceuticals.
+G|Palliative dyspnea|clinical,palliative,pharm|Breathlessness at the end of life is relieved with low-dose ___|opioids|opioids,opioid,morphine|Plus a fan and positioning.
+B|Double effect|clinical,palliative,ethics|The doctrine of double effect permits|Symptom relief that may incidentally shorten life|Deliberate action intended to hasten death|Intent and proportionality matter.
+G|Advance care planning|clinical,palliative,ethics|A ___ order addresses resuscitation specifically, not all treatment|DNAR|dnar,dnr,do not resuscitate|Other care continues unchanged.

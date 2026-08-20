@@ -1,0 +1,41 @@
+# Dermatology — batch 1.
+G|Contact inhibition|derm,cell biology|Keratinocytes stop dividing on contact — this is contact ___|inhibition|inhibition|Lost in malignant transformation.
+B|Cellulitis|derm,micro|Non-purulent cellulitis is usually caused by|Beta-hemolytic streptococci|Staphylococcus aureus|Purulent cellulitis and abscess suggest S. aureus.
+B|Atopic dermatitis|derm,immuno,peds|Atopic dermatitis is part of the atopic march toward|Asthma and allergic rhinitis|Psoriasis and arthritis|Eczema, then food allergy, then asthma.
+G|Atopic dermatitis|derm,genetics|Atopic dermatitis is linked to mutations in ___|filaggrin|filaggrin|Impaired skin barrier lets water out and allergens in.
+B|Irritant diaper dermatitis|derm,peds|Irritant diaper dermatitis characteristically|Spares the skin folds|Involves the skin folds|Candidal dermatitis involves folds with satellite lesions.
+B|Varicella zoster|derm,virus,path|A Tzanck smear in herpes infection shows|Multinucleated giant cells with inclusions|Acantholytic cells without inclusions|Seen in HSV and VZV.
+B|Melanoma histology|derm,oncology|Melanoma cells stain positive for|S-100 and HMB-45|Cytokeratin|S-100 marks neural crest origin.
+G|Melanoma genetics|derm,oncology,genetics|The commonest melanoma driver mutation is in ___|BRAF|braf,b-raf|V600E; targeted by vemurafenib.
+B|Melanoma prognosis|derm,oncology|The strongest prognostic factor in melanoma is|Breslow depth|Lesion diameter|Vertical growth phase determines metastatic risk.
+G|Terbinafine|derm,pharm,fungi|Terbinafine inhibits ___ epoxidase|squalene|squalene|Blocking ergosterol synthesis. Azoles block 14-alpha-demethylase.
+B|Accessory nipple|derm,embryology|A supernumerary nipple results from|Failed involution of the mammary ridge|Ectopic metastasis of breast tissue|Along the embryonic milk line.
+B|Tuberculoid leprosy|derm,micro,immuno|Tuberculoid leprosy is characterized by|A strong Th1 response with high IFN-gamma|A Th2 response with a high bacterial load|Few organisms, well-formed granulomas, limited lesions.
+B|Lepromatous leprosy|derm,micro,immuno|Lepromatous leprosy reflects|A weak cell-mediated response|A strong Th1 response|High bacterial load, leonine facies, symmetric lesions.
+G|Wound remodeling|derm,path,healing|Collagen remodeling requires zinc-dependent ___|metalloproteinases|metalloproteinases,mmp,matrix metalloproteinases|Zinc deficiency impairs wound healing.
+B|Wound healing|derm,path|The tensile strength of a scar reaches at most|About 80 percent of normal|100 percent of normal|Type III collagen is replaced by type I over months.
+G|Epidermolysis bullosa|derm,genetics|Epidermolysis bullosa simplex impairs ___ filament assembly|keratin|keratin|Blisters after minor trauma.
+B|Immune checkpoint inhibitors|derm,oncology,immuno|PD-1 inhibitors work by|Restoring cytotoxic T cell activity|Directly lysing tumor cells|Tumor PD-L1 otherwise suppresses T cells.
+B|Immune checkpoint inhibitors|derm,oncology,pharm|The characteristic toxicity of checkpoint inhibitors is|Autoimmune inflammation of any organ|Profound bone marrow suppression|Colitis, thyroiditis, hepatitis, pneumonitis.
+B|Psoriasis|derm,path|Psoriasis is caused by|Excessive keratinocyte proliferation|Reduced keratinocyte turnover|Acanthosis, parakeratosis, Munro microabscesses.
+G|Psoriasis|derm,path|Removing psoriatic scale causes pinpoint bleeding — the ___ sign|Auspitz|auspitz|From thinned suprapapillary epidermis over dilated capillaries.
+B|IL-10 in wound healing|derm,immuno,healing|IL-10 aids healing by|Resolving inflammation|Prolonging neutrophil recruitment|Excess inflammation impairs re-epithelialization.
+B|Acne mechanics|derm|Acne mechanica is worsened by|Tight-fitting clothing and friction|Eating chocolate and fatty foods|Occlusion and pressure on follicles.
+B|Acne|derm,micro|The organism implicated in acne is|Cutibacterium acnes|Staphylococcus epidermidis|Metabolizes sebum, releasing inflammatory mediators.
+B|Isotretinoin|derm,pharm,teratogen|Isotretinoin requires|Two forms of contraception and pregnancy testing|A liver biopsy before and during treatment|Severely teratogenic; also causes dry skin and raised triglycerides.
+B|Infantile hemangioma|derm,peds,oncology|Infantile hemangioma is composed of|Endothelial cells|Melanocytes|Rapid growth then spontaneous involution over years.
+B|Infantile hemangioma|derm,peds,pharm|An infantile hemangioma needing treatment is given|Propranolol|Systemic steroids|First-line when vision or airway is threatened.
+B|Contact dermatitis|derm,immuno|Allergic contact dermatitis requires|Hapten-activated Langerhans cells reaching nodes|Preformed IgE already bound to mast cells|Type IV delayed hypersensitivity.
+B|Hand-foot-and-mouth disease|derm,virus,peds|Hand-foot-and-mouth disease is caused by|Coxsackievirus A|Parvovirus B19|Oral ulcers with vesicles on palms and soles.
+B|Staphylococcal scalded skin syndrome|derm,micro,peds|SSSS is caused by|An exfoliative exotoxin|Direct bacterial invasion of skin|Splits the granular layer; Nikolsky positive, mucosa spared.
+B|Toxic epidermal necrolysis|derm,pharm,emergency|Toxic epidermal necrolysis differs from SSSS by|Mucosal involvement with full-thickness necrosis|Sparing of mucosa with superficial splitting|Usually drug-induced; separation at the dermoepidermal junction.
+B|Pemphigus vulgaris|derm,immuno|Pemphigus vulgaris antibodies target|Desmoglein in desmosomes|Hemidesmosome antigens|Flaccid bullae, oral involvement, Nikolsky positive.
+B|Bullous pemphigoid|derm,immuno|Bullous pemphigoid targets|Hemidesmosomes at the basement membrane|Desmosomes between keratinocytes|Tense bullae, mucosa usually spared, Nikolsky negative.
+B|Dermatitis herpetiformis|derm,immuno,GI|Dermatitis herpetiformis is associated with|Celiac disease|Crohn disease|Granular IgA at dermal papillae; responds to dapsone.
+B|Basal cell carcinoma|derm,oncology|Basal cell carcinoma classically appears as|A pearly papule with telangiectasias|A scaly ulcerated crusted plaque|Rarely metastasizes; palisading nuclei on histology.
+B|Squamous cell carcinoma|derm,oncology|Cutaneous squamous cell carcinoma is preceded by|Actinic keratosis|Seborrheic keratosis|Keratin pearls on histology.
+B|Seborrheic keratosis|derm,oncology|Seborrheic keratoses are|Benign with a stuck-on appearance|Premalignant and often invasive|Sudden eruption (Leser-Trelat) may signal internal malignancy.
+B|Erythema multiforme|derm,immuno,micro|Erythema multiforme is most often triggered by|Herpes simplex virus|Staphylococcus aureus|Target lesions on palms and soles.
+B|Tinea versicolor|derm,fungi|Tinea versicolor is caused by|Malassezia|Trichophyton|Spaghetti-and-meatballs on KOH; hypopigmented patches.
+B|Scabies|derm,parasite|Scabies characteristically itches|Worse at night with burrows in web spaces|Only after prolonged sun exposure|Treat with permethrin and all close contacts.
+B|Vitiligo|derm,immuno|Vitiligo is caused by|Autoimmune destruction of melanocytes|Absent tyrosinase with normal melanocytes|Albinism has normal melanocyte numbers but no pigment production.

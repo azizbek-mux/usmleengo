@@ -1,0 +1,79 @@
+# Endocrine — depth pass. Multiple distinct angles per condition.
+
+# ── Addison / primary adrenal insufficiency ──────────────────────────────
+G|Addison disease|endocrine,adrenal|Hyperpigmentation in Addison comes from excess ___|ACTH|acth,acth and msh,pomc|ACTH shares the POMC precursor with melanocyte-stimulating hormone.
+G|Addison disease|endocrine,adrenal|The mineralocorticoid missing in Addison disease is ___|aldosterone|aldosterone|Its loss drives the hyperkalemia and hyponatremia.
+B|Addison disease|endocrine,adrenal,lab|In Addison disease, plasma ACTH is|High|Low|The adrenal fails, so feedback disappears and ACTH climbs.
+B|Addison disease|endocrine,adrenal|Blood pressure in Addison disease is|Low|High|Aldosterone loss causes salt wasting and volume depletion.
+B|Addison disease|endocrine,adrenal,lab|Addison disease is confirmed with|A cosyntropin stimulation test|A dexamethasone suppression test|Cortisol fails to rise after synthetic ACTH.
+G|Addison disease|endocrine,adrenal,acid base|Aldosterone deficiency causes a metabolic ___|acidosis|acidosis|H+ is retained alongside potassium.
+B|Adrenal crisis|endocrine,adrenal,emergency|The commonest trigger of adrenal crisis is|Intercurrent illness or surgery|Excess dietary salt intake|Steroid doses must be raised during stress.
+
+# ── Cushing ──────────────────────────────────────────────────────────────
+B|Cushing syndrome|endocrine,adrenal|The commonest cause of Cushing syndrome overall is|Exogenous glucocorticoids|A pituitary adenoma|Iatrogenic by far. Cushing DISEASE is the pituitary cause.
+G|Cushing syndrome|endocrine,adrenal,electrolytes|At high levels cortisol also acts on the ___ receptor, causing hypokalemia|mineralocorticoid|mineralocorticoid,aldosterone|Cortisol spillover onto the aldosterone receptor.
+B|Cushing syndrome|endocrine,adrenal,msk|Cushing syndrome causes muscle weakness that is|Proximal|Distal|Steroid myopathy affects proximal girdle muscles.
+B|Cushing syndrome|endocrine,bone|Chronic cortisol excess causes bone to|Thin, with reduced formation|Thicken, with increased formation|Osteoblast suppression plus reduced calcium absorption.
+B|Ectopic ACTH|endocrine,oncology,adrenal|Ectopic ACTH is most often produced by|Small cell lung cancer|Renal cell carcinoma|Rapid onset, marked hypokalemia, less weight gain.
+BT|Cushing localization|endocrine,adrenal,lab|Cortisol that fails to suppress on HIGH-dose dexamethasone suggests|Ectopic ACTH|A pituitary adenoma|Pituitary adenomas retain partial feedback and do suppress.
+
+# ── Thyroid ──────────────────────────────────────────────────────────────
+G|Thyroid hormone synthesis|endocrine,thyroid|Thyroid peroxidase oxidizes ___ and couples it to thyroglobulin|iodide|iodide,iodine|Blocked by propylthiouracil and methimazole.
+B|Propylthiouracil|endocrine,thyroid,pharm|Propylthiouracil differs from methimazole because it also|Blocks peripheral T4 to T3 conversion|Blocks TSH release from the pituitary|Useful in thyroid storm.
+G|Thyroid hormone|endocrine,thyroid|Most circulating thyroid hormone is bound to thyroxine-binding ___|globulin|globulin,tbg|Pregnancy raises TBG, so total T4 rises but free T4 is normal.
+B|Sick euthyroid syndrome|endocrine,thyroid,lab|In severe illness, T3 typically|Falls|Rises|Low T3 syndrome. Avoid testing thyroid function in acute illness.
+B|Thyroid storm|endocrine,thyroid,emergency|In thyroid storm, iodine must be given|After the antithyroid drug|Before the antithyroid drug|Given first, iodine would fuel new hormone synthesis.
+G|Thyroid storm|endocrine,thyroid,pharm|A ___ blocker controls the adrenergic symptoms of thyroid storm|beta|beta,beta-1,b|Propranolol also blocks T4 to T3 conversion.
+B|Myxedema coma|endocrine,thyroid,emergency|Myxedema coma is treated with thyroid hormone plus|Glucocorticoids|Insulin|Coexisting adrenal insufficiency must be covered first.
+G|Congenital hypothyroidism|endocrine,thyroid,peds|Untreated congenital hypothyroidism causes irreversible ___ disability|intellectual|intellectual,cognitive,mental|Caught on newborn screening; treat within two weeks.
+B|Thyroid nodule|endocrine,thyroid,oncology|A thyroid nodule with LOW TSH should first have|A radioiodine uptake scan|Fine needle aspiration|A hot nodule is almost never malignant.
+B|Anaplastic thyroid carcinoma|endocrine,thyroid,oncology|Anaplastic thyroid carcinoma occurs in|The elderly, with rapid growth|Young women, with slow growth|The worst prognosis of all thyroid cancers.
+
+# ── Parathyroid and calcium ──────────────────────────────────────────────
+G|Parathyroid hormone|endocrine,calcium,bone|PTH stimulates osteoclasts indirectly through ___ ligand on osteoblasts|RANK|rank,rankl,rank-l|Osteoclasts have no PTH receptor of their own.
+B|Primary hyperparathyroidism|endocrine,calcium|The commonest cause of primary hyperparathyroidism is|A single adenoma|Four-gland hyperplasia|About 85% of cases.
+G|Hyperparathyroidism|endocrine,calcium,bone|Severe hyperparathyroidism causes osteitis fibrosa ___|cystica|cystica|Brown tumours from intense bone resorption.
+B|Familial hypocalciuric hypercalcemia|endocrine,calcium,genetics|FHH is distinguished from hyperparathyroidism by|Low urinary calcium|High urinary calcium|A calcium-sensing receptor mutation. No surgery needed.
+B|Hypocalcemia|endocrine,calcium|Carpopedal spasm on inflating a blood pressure cuff is|Trousseau sign|Chvostek sign|Chvostek is facial twitching on tapping the facial nerve.
+G|Pseudohypoparathyroidism|endocrine,calcium,genetics|In pseudohypoparathyroidism, the tissues are resistant to ___|PTH|pth,parathyroid hormone|PTH is high but calcium stays low. Albright hereditary osteodystrophy.
+B|Vitamin D deficiency|endocrine,calcium,lab|In vitamin D deficiency, PTH is|Raised|Suppressed|Secondary hyperparathyroidism compensating for low calcium.
+
+# ── Diabetes ─────────────────────────────────────────────────────────────
+G|Type 1 diabetes|endocrine,diabetes,immuno|Type 1 diabetes destroys pancreatic ___ cells|beta|beta,b|Autoimmune, with anti-GAD and islet cell antibodies.
+B|Type 1 diabetes|endocrine,diabetes,genetics|Type 1 diabetes is associated with|HLA-DR3 and DR4|HLA-B27|Type 2 has stronger family clustering but no HLA link.
+G|Insulin secretion|endocrine,diabetes,physiology|Glucose closes the ATP-sensitive ___ channel to trigger insulin release|potassium|potassium,k,k+|Sulfonylureas close the same channel directly.
+B|Sulfonylureas|endocrine,diabetes,pharm|The main risk of sulfonylureas is|Hypoglycemia|Lactic acidosis|They force insulin release regardless of glucose level.
+G|GLP-1 agonists|endocrine,diabetes,pharm|GLP-1 agonists slow gastric ___ and promote weight loss|emptying|emptying|Semaglutide and liraglutide. Risk of pancreatitis.
+B|SGLT2 inhibitors|endocrine,diabetes,pharm|SGLT2 inhibitors characteristically cause|Genital fungal infection|Weight gain and oedema|Glycosuria feeds yeast. Also euglycemic ketoacidosis.
+B|DKA versus HHS|endocrine,diabetes,emergency|Ketones are absent in|Hyperosmolar hyperglycemic state|Early diabetic ketoacidosis|Residual insulin in type 2 suppresses ketogenesis.
+G|Diabetic nephropathy|endocrine,renal,diabetes|The earliest sign of diabetic nephropathy is ___|microalbuminuria|microalbuminuria,albuminuria|Screened annually; treated with an ACE inhibitor or ARB.
+B|Diabetic retinopathy|endocrine,eye,diabetes|Proliferative diabetic retinopathy is defined by|New vessel formation|Cotton wool spots|Neovascularization; treated with laser or anti-VEGF.
+G|Glycation|endocrine,diabetes,biochem|HbA1c reflects average glucose over the previous ___ months|3|3,three,2-3|The lifespan of a red cell.
+
+# ── Pituitary ────────────────────────────────────────────────────────────
+B|Pituitary adenoma|endocrine,pituitary,eye|A pituitary macroadenoma classically causes|Bitemporal hemianopia|Homonymous hemianopia|It compresses the decussating nasal fibres at the optic chiasm.
+G|Prolactinoma|endocrine,pituitary|Prolactin suppresses ___, causing infertility and amenorrhea|GnRH|gnrh,gonadotropin-releasing hormone|Which is why galactorrhea comes with oligomenorrhea.
+B|Stalk compression|endocrine,pituitary|Pituitary stalk compression raises which hormone?|Prolactin|Growth hormone|Prolactin alone is tonically inhibited, so it rises when the stalk is cut.
+G|Sheehan syndrome|endocrine,pituitary,OB|Sheehan syndrome is pituitary ___ after postpartum hemorrhage|infarction|infarction,necrosis,ischemia|Failure to lactate is often the first sign.
+B|Pituitary apoplexy|endocrine,pituitary,emergency|Pituitary apoplexy requires urgent|Glucocorticoid replacement|Thyroid hormone replacement|Sudden headache, visual loss and adrenal collapse.
+G|Acromegaly|endocrine,pituitary,cardio|The commonest cause of death in acromegaly is ___ disease|cardiovascular|cardiovascular,cardiac,heart|Cardiomyopathy, hypertension and diabetes.
+B|Growth hormone deficiency|endocrine,pituitary,peds|In a short child, growth hormone deficiency shows|Delayed bone age|Advanced bone age|Constitutional delay also delays bone age but has a family history.
+
+# ── Adrenal medulla and MEN ──────────────────────────────────────────────
+G|Pheochromocytoma|endocrine,adrenal|Pheochromocytoma follows the rule of ___ percent|10|10,ten|10% bilateral, extra-adrenal, malignant, familial and paediatric.
+B|Paraganglioma|endocrine,adrenal,oncology|An extra-adrenal pheochromocytoma is called a|Paraganglioma|Neuroblastoma|Commonest at the organ of Zuckerkandl.
+G|MEN 1|endocrine,genetics,oncology|MEN 1 involves parathyroid, pituitary and ___ tumours|pancreatic|pancreatic,pancreas|The three Ps. Autosomal dominant, MEN1 tumour suppressor.
+B|MEN 2B|endocrine,genetics,oncology|MEN 2B differs from 2A by including|Mucosal neuromas and marfanoid habitus|Parathyroid hyperplasia and stones|Both share medullary thyroid cancer and pheochromocytoma.
+
+# ── Growth, puberty, gonads ──────────────────────────────────────────────
+B|Precocious puberty|endocrine,peds|Central precocious puberty shows gonadotropins that are|Raised|Suppressed|Peripheral causes suppress LH and FSH.
+G|Kallmann syndrome|endocrine,repro,genetics|Kallmann syndrome combines hypogonadism with loss of ___|smell|smell,anosmia,olfaction|Failed migration of GnRH neurons with the olfactory placode.
+B|Klinefelter syndrome|endocrine,repro,genetics|In Klinefelter syndrome, testosterone is|Low with high FSH and LH|High with low LH|Primary testicular failure; 47,XXY.
+G|Turner syndrome|endocrine,repro,genetics|Turner syndrome causes ___ gonads and primary amenorrhea|streak|streak|45,XO. Short stature, webbed neck, coarctation.
+B|Anabolic steroid use|endocrine,repro,pharm|Exogenous testosterone makes sperm count|Fall|Rise|Negative feedback shuts down LH, FSH and intratesticular testosterone.
+
+# ── Bone and mineral ─────────────────────────────────────────────────────
+G|Osteoporosis|endocrine,bone|Osteoporosis is diagnosed at a T-score at or below minus ___|2.5|2.5,-2.5,2·5|Between minus 1 and minus 2.5 is osteopenia.
+B|Bisphosphonate|endocrine,bone,pharm|Bisphosphonates must be taken|Upright, fasting, with water|With food late at night|To prevent oesophagitis and aid absorption.
+B|Paget disease|endocrine,bone,lab|In Paget disease, calcium and phosphate are|Normal|Both raised|Only alkaline phosphatase is high.
+G|Rickets|endocrine,bone,peds|Rickets causes a rosary of enlarged costochondral ___|junctions|junctions,junction|The rachitic rosary, with bowed legs and craniotabes.

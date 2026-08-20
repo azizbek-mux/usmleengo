@@ -1,0 +1,69 @@
+# Endocrine and metabolism — batch 1.
+B|Congenital hypothyroidism|endocrine,thyroid,peds|Untreated congenital hypothyroidism causes|Intellectual disability|Precocious puberty|A leading preventable cause; caught on newborn screening.
+B|Hypothyroidism and lipids|endocrine,thyroid,lipids|Hypothyroidism raises LDL by|Decreasing LDL receptor expression|Increasing cholesterol synthesis|Fewer hepatic LDL receptors clear less LDL.
+B|Testosterone therapy|endocrine,pharm|Testosterone therapy requires monitoring of|Hematocrit|Serum sodium|Stimulates erythropoiesis and risks polycythemia.
+G|Pheochromocytoma origin|endocrine,adrenal,embryology|The adrenal medulla and melanocytes both derive from ___ crest|neural|neural,neural crest|Both are neural crest derivatives.
+B|MEN 2A|endocrine,genetics,oncology|MEN 2A includes medullary thyroid cancer, pheochromocytoma and|Parathyroid hyperplasia|Pituitary adenoma|RET proto-oncogene mutation.
+G|MODY|endocrine,diabetes,genetics|Maturity-onset diabetes of the young most often involves the ___ gene|glucokinase|glucokinase,gck|Beta cells sense glucose poorly, so insulin release shifts upward.
+B|Follicular thyroid carcinoma|endocrine,thyroid,oncology|Follicular carcinoma is distinguished from adenoma by|Capsular or vascular invasion|Nuclear grooves and inclusions|Adenomas are fully encapsulated; fine needle aspiration cannot tell them apart.
+B|Papillary thyroid carcinoma|endocrine,thyroid,oncology|Papillary thyroid carcinoma is diagnosed by|Nuclear features such as Orphan Annie nuclei|Capsular and vascular invasion on biopsy|Psammoma bodies and nuclear grooves; best prognosis.
+B|Tamoxifen|endocrine,pharm,oncology|Tamoxifen acts on the endometrium as an|Estrogen agonist|Estrogen antagonist|Antagonist in breast, agonist in uterus — endometrial cancer risk.
+B|Diabetes mortality|endocrine,diabetes|The greatest mortality reduction in diabetes comes from|Smoking cessation|Tight glucose control|Macrovascular disease drives mortality.
+B|Diabetes diagnosis|endocrine,diabetes,lab|Diabetes is diagnosed by a hemoglobin A1c of at least|6.5 percent|5.7 percent|5.7 to 6.4 percent is prediabetes.
+B|Graves disease|endocrine,thyroid|Which finding is specific to Graves disease?|Pretibial myxedema|Tachycardia|Also exophthalmos — from stimulating TSH receptor antibodies.
+B|Diabetic foot ulcer|endocrine,diabetes,neuro|Diabetic foot ulcers are caused mainly by|Sensory neuropathy|Arterial insufficiency alone|Painless repetitive trauma over pressure points.
+B|Menopause|endocrine,repro|In menopause, FSH is|Elevated|Suppressed|Loss of inhibin and estrogen feedback; FSH rises more than LH.
+B|Basal-bolus insulin|endocrine,diabetes,pharm|Insulin glargine is used to control|Fasting hyperglycemia|Postprandial spikes|Long-acting basal insulin; lispro covers meals.
+G|Hormone-sensitive lipase|endocrine,biochem|___ mobilizes fat from adipocytes during stress and fasting|hormone-sensitive lipase|hormone-sensitive lipase,hsl,hormone sensitive lipase|Activated by protein kinase A downstream of cAMP.
+B|Hemoglobin A1c pitfalls|endocrine,diabetes,heme|Conditions that shorten red cell lifespan make A1c|Falsely low|Falsely high|Hemolysis and thalassemia lower A1c; iron deficiency raises it.
+B|Adrenal crisis|endocrine,adrenal,emergency|Adrenal crisis is treated immediately with|Glucocorticoids and saline|Insulin and normal saline|Dexamethasone does not interfere with cortisol assays.
+B|Ketone metabolism|endocrine,biochem|Which cells cannot use ketone bodies?|Erythrocytes|Neurons|No mitochondria — red cells rely on glycolysis alone.
+B|Functional hypothalamic amenorrhea|endocrine,repro|Amenorrhea from low body weight and exercise is due to|Hypothalamic GnRH suppression|Primary ovarian failure|Low FSH and LH; energy deficit suppresses pulsatile GnRH.
+G|Phosphocreatine|endocrine,biochem,muscle|The fastest ATP source in the first seconds of exercise is ___|phosphocreatine|phosphocreatine,creatine phosphate,pcr|Immediate but tiny reserve, then anaerobic glycolysis.
+B|Hypoglycemia unawareness|endocrine,diabetes|Recurrent hypoglycemia in long-standing diabetes is due to|Impaired glucagon release|Excess insulin sensitivity|Alpha cell failure removes the main counter-regulatory response.
+B|Type 2 diabetes mortality|endocrine,diabetes,cardio|Most patients with type 2 diabetes die from|Myocardial infarction|Hyperosmolar coma|Cardiovascular disease dominates.
+B|Sarcoidosis|endocrine,immuno,calcium|Hypercalcemia in sarcoidosis is caused by|Macrophage production of calcitriol|Increased parathyroid hormone|Granulomas express 1-alpha-hydroxylase.
+B|Neonatal goiter|endocrine,thyroid,OB|Maternal propylthiouracil can cause the neonate to have|A goiter with hypothyroidism|Neonatal hyperthyroidism|Antithyroid drugs cross the placenta.
+B|Central diabetes insipidus|endocrine,pituitary|Permanent central DI follows damage to the|Hypothalamic nuclei|Posterior pituitary stalk only|Stalk injury alone often recovers; nuclear loss does not.
+B|Diabetes insipidus testing|endocrine,pituitary,renal|After desmopressin, urine osmolality rises in|Central diabetes insipidus|Nephrogenic diabetes insipidus|Nephrogenic kidneys cannot respond.
+B|Adrenal androgen excess|endocrine,adrenal|Adrenal androgen-secreting tumors cause|Virilization and hirsutism|Feminization and gynecomastia|DHEA-S is the adrenal marker.
+G|Adrenal medulla|endocrine,adrenal,autonomic|Chromaffin cells are stimulated directly by ___|acetylcholine|acetylcholine,ach|Preganglionic sympathetic fibers synapse directly on the medulla.
+G|Adrenal cortex zones|endocrine,adrenal|The zona ___ secretes aldosterone|glomerulosa|glomerulosa|Salt, sugar, sex — the deeper you go the sweeter it gets.
+B|Metformin|endocrine,diabetes,pharm|Before starting metformin you must check|Serum creatinine|Serum amylase|Renal impairment raises lactic acidosis risk.
+B|Metformin|endocrine,diabetes,pharm|Metformin activates which enzyme?|AMP-activated protein kinase|Protein kinase A via cAMP|Reduces hepatic gluconeogenesis; does not cause hypoglycemia.
+B|Thyroid hormone resistance|endocrine,thyroid,genetics|Resistance to thyroid hormone shows|High T4 with non-suppressed TSH|Low T4 with a raised TSH|Mutated thyroid hormone receptor beta.
+B|Finasteride|endocrine,pharm,repro|Finasteride inhibits|5-alpha reductase|Aromatase|Blocks conversion of testosterone to dihydrotestosterone.
+B|Tay-Sachs and Niemann-Pick|endocrine,genetics,cell biology|Sphingolipidoses are disorders of which organelle?|Lysosomes|Peroxisomes|Enzyme deficiency causes substrate accumulation.
+B|Niemann-Pick disease|endocrine,genetics|Niemann-Pick disease features a cherry-red macula and|Hepatosplenomegaly|Normal organs|Sphingomyelinase deficiency. Tay-Sachs has no splenomegaly.
+B|Antithyroid drugs in pregnancy|endocrine,thyroid,OB|Propylthiouracil is switched to methimazole after the first trimester because of|Maternal hepatotoxicity|Fetal goiter and hypothyroidism|PTU risks liver failure; methimazole is teratogenic early.
+B|DKA potassium|endocrine,diabetes,electrolytes|In DKA, total body potassium is|Depleted despite a normal serum level|Elevated in proportion to the serum level|Osmotic diuresis wastes potassium; insulin then drops serum levels sharply.
+B|Hypertriglyceridemia|endocrine,lipids,pancreas|Severe hypertriglyceridemia can precipitate|Acute pancreatitis|Acute cholecystitis|Above roughly 1000 mg/dL; treat with a fibrate.
+B|Fibrates|endocrine,pharm,lipids|Fibrates activate|PPAR-alpha|PPAR-gamma|Raising lipoprotein lipase and clearing triglycerides.
+B|Medullary thyroid carcinoma|endocrine,thyroid,oncology|Before thyroidectomy for medullary carcinoma, screen for|Pheochromocytoma|Insulinoma|An undetected pheochromocytoma can cause intraoperative crisis.
+G|Medullary thyroid carcinoma|endocrine,thyroid,lab|Medullary thyroid carcinoma secretes ___|calcitonin|calcitonin|Derived from parafollicular C cells; amyloid stroma.
+G|Maple syrup urine disease|endocrine,genetics,biochem|In maple syrup urine disease, ___ must be restricted|leucine|leucine|Branched-chain amino acids: leucine, isoleucine and valine.
+B|Levothyroxine over-replacement|endocrine,thyroid,cardio|Excess levothyroxine risks which arrhythmia?|Atrial fibrillation|Bradycardia|Thyroid hormone upregulates beta receptors; also causes osteoporosis.
+B|Insulin signaling|endocrine,biochem|The insulin receptor is which kind of receptor?|Tyrosine kinase|G protein-coupled|Autophosphorylation then IRS-1 signalling.
+B|Pubertal gynecomastia|endocrine,repro,peds|Physiologic pubertal gynecomastia is managed with|Reassurance|Tamoxifen|Resolves in one to two years.
+B|Pathologic gynecomastia|endocrine,repro,oncology|Gynecomastia with delayed sexual maturity suggests|A pathologic cause|Normal puberty|Prompts workup for tumor, Klinefelter or drugs.
+B|Sulfonylurea overdose|endocrine,diabetes,pharm|Sulfonylurea hypoglycemia shows C-peptide that is|Elevated|Suppressed|Endogenous insulin release. Exogenous insulin suppresses C-peptide.
+G|Alkaptonuria|endocrine,genetics,biochem|Alkaptonuria blocks conversion of tyrosine to ___|fumarate|fumarate|Homogentisate oxidase deficiency; urine darkens on standing.
+B|Bile acid sequestrants|endocrine,pharm,lipids|Cholestyramine as monotherapy raises|Triglycerides|LDL cholesterol|Lowers LDL but increases hepatic VLDL output.
+B|Ezetimibe|endocrine,pharm,lipids|Ezetimibe blocks|Intestinal cholesterol absorption|Hepatic HMG-CoA reductase|Acts at the brush border NPC1L1 transporter.
+B|Postpartum thyroiditis|endocrine,thyroid,OB|Postpartum thyroiditis is caused by|Lymphocytic destruction of follicles|Stimulating TSH receptor antibodies|Transient thyrotoxicosis then hypothyroidism; painless.
+B|Subacute thyroiditis|endocrine,thyroid|Subacute granulomatous thyroiditis shows|Giant cells and mixed infiltrate|Lymphoid follicles and germinal centres|Painful gland after a viral illness; low radioiodine uptake.
+B|Thiazolidinediones|endocrine,diabetes,pharm|Thiazolidinediones activate PPAR-gamma to|Decrease insulin resistance|Increase insulin secretion|Risk of fluid retention, heart failure and fractures.
+B|Cystic fibrosis and glucose|endocrine,genetics,pancreas|CF-related hypoglycemia results from|Impaired glucagon release|Excess endogenous insulin|Islet destruction affects alpha as well as beta cells.
+B|Hypercalcemia of malignancy|endocrine,oncology,calcium|Hypercalcemia of malignancy suppresses|Parathyroid hormone|Calcitonin from C cells|PTH is appropriately low; PTHrP may be high.
+B|Primary hyperaldosteronism|endocrine,adrenal,hypertension|The commonest cause of primary hyperaldosteronism is|Bilateral adrenal hyperplasia|A unilateral adrenal carcinoma|Then unilateral adenoma (Conn syndrome).
+B|Somatostatin|endocrine,GI,pharm|Somatostatin analogues cause gallstones by suppressing|Cholecystokinin|Secretin|Reduced gallbladder contraction causes biliary stasis.
+B|Insulinoma|endocrine,oncology|Insulinoma shows high insulin with|High C-peptide|Low C-peptide|Distinguishes it from surreptitious insulin injection.
+B|Cushing syndrome screening|endocrine,adrenal,lab|Cushing syndrome is screened with|Late-night salivary cortisol|A single random morning cortisol|Random cortisol is uninterpretable because of diurnal variation.
+B|Cushing disease|endocrine,pituitary,adrenal|In Cushing disease, high-dose dexamethasone|Suppresses cortisol|Fails to suppress cortisol|Pituitary adenomas retain partial feedback; ectopic ACTH does not.
+B|Congenital adrenal hyperplasia|endocrine,adrenal,genetics|The commonest enzyme defect in CAH is|21-hydroxylase|11-beta-hydroxylase|Salt wasting, virilization, high 17-hydroxyprogesterone.
+B|21-hydroxylase deficiency|endocrine,adrenal,electrolytes|21-hydroxylase deficiency causes serum potassium to|Rise|Fall|Aldosterone deficiency — hyperkalemia and hyponatremia.
+B|11-beta-hydroxylase deficiency|endocrine,adrenal,hypertension|11-beta-hydroxylase deficiency causes blood pressure to|Rise|Fall|11-deoxycorticosterone accumulates and acts as a mineralocorticoid.
+B|Growth hormone|endocrine,pituitary|Growth hormone raises blood glucose|Yes|No|A counter-regulatory hormone causing insulin resistance.
+B|Calcitonin|endocrine,calcium|Calcitonin acts to|Lower serum calcium|Raise serum calcium|Inhibits osteoclasts; minor role in humans.
+B|Vitamin D activation|endocrine,calcium,renal|The final activation of vitamin D occurs in the|Kidney|Liver|25-hydroxylation in liver, 1-alpha-hydroxylation in kidney.
+B|PTH actions|endocrine,calcium,renal|PTH increases calcium reabsorption in the|Distal convoluted tubule|The proximal convoluted tubule|And decreases phosphate reabsorption proximally.

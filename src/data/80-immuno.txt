@@ -1,0 +1,59 @@
+# Immunology — batch 1.
+B|Hyperacute rejection|immuno,transplant|Hyperacute rejection is which hypersensitivity type?|Type II|Type IV|Preformed IgG against donor HLA; occurs within minutes.
+B|Acute rejection|immuno,transplant|Acute cellular rejection is mediated by|Host T cells against graft MHC|Preformed anti-donor antibody|Occurs over weeks; responds to immunosuppression.
+B|Terminal complement deficiency|immuno,complement,micro|Deficiency of C5 to C9 causes recurrent infection with|Neisseria|Staphylococcus aureus|The membrane attack complex is needed to lyse Neisseria.
+B|Early complement deficiency|immuno,complement|C1 to C4 deficiency predisposes to|Lupus-like disease and encapsulated organisms|Neisseria meningitidis and gonorrhoeae only|Impaired immune complex clearance.
+B|Leukocytoclastic vasculitis|immuno,path|Palpable purpura shows which histology?|Perivascular neutrophils damaging small vessels|Lymphocytes sparing the vessel wall entirely|Nonthrombocytopenic purpura on dependent areas.
+B|Budesonide|immuno,pharm,GI|Budesonide is favoured in mild Crohn disease because it has|High first-pass metabolism|Greater potency than prednisone|Targeted ileal release.
+B|Anaphylaxis|immuno,emergency|Hypotension in anaphylaxis is caused by|Increased vascular permeability and vasodilation|Acute cardiac pump failure with low output|Mediators from mast cell degranulation.
+B|Anaphylaxis|immuno,pharm,emergency|The immediate treatment of anaphylaxis is|Intramuscular epinephrine|Intravenous antihistamine|Given in the anterolateral thigh; everything else is adjunctive.
+B|Vasovagal reaction|immuno,autonomic|Fainting right after vaccination is|A vasovagal reaction|Early anaphylaxis|Cardioinhibitory and vasodepressor; observe for 15 minutes.
+B|Sjogren syndrome|immuno,autoimmune|Sjogren syndrome increases the risk of|B cell lymphoma|Melanoma|Anti-Ro and anti-La; dry eyes and mouth.
+B|Serum sickness|immuno,hypersensitivity|Serum sickness shows which complement change?|Decreased C3|Increased C3|Type III immune complex disease 7-14 days after exposure.
+B|Serum sickness|immuno,hypersensitivity|Serum sickness is which hypersensitivity type?|Type III|Type I|Fever, urticarial rash and arthralgia.
+B|Bronchiolitis obliterans|immuno,transplant,resp|Bronchiolitis obliterans injures the|Small airways|Alveoli|Granulation tissue obliterates bronchiolar lumens.
+B|Pseudoallergic reactions|immuno,pharm|Opioids and vancomycin cause rash through|Direct mast cell degranulation|IgE-mediated mast cell activation|Not a true allergy; no prior sensitization needed.
+B|Aspirin-exacerbated respiratory disease|immuno,pharm,resp|NSAIDs trigger bronchospasm by shunting arachidonic acid toward|5-lipoxygenase and leukotrienes|Prostaglandin overproduction|Samter triad: asthma, nasal polyps, aspirin sensitivity.
+B|Septic shock mediator|immuno,critical care|The main cytokine of early septic shock is|Tumor necrosis factor-alpha|Interleukin-10 from macrophages|Peripheral vasodilation with high cardiac output and warm extremities.
+B|Chronic granulomatous disease|immuno,genetics|CGD impairs which neutrophil function?|Oxidative burst|Chemotaxis|NADPH oxidase defect; catalase-positive organisms.
+B|Chronic granulomatous disease|immuno,lab|CGD is diagnosed with|The dihydrorhodamine flow cytometry test|A nitroblue tetrazolium test only|DHR has replaced NBT as the standard.
+B|Immunosenescence|immuno,aging|Vaccines work less well in the elderly because of|Fewer naive B lymphocytes|Absent memory cells|Thymic involution and chronic low-grade inflammation.
+B|Tuberculin skin test|immuno,hypersensitivity|The PPD reaction is mediated by|T lymphocytes|IgE antibody|Type IV delayed hypersensitivity peaking at 48-72 hours.
+B|Delayed hypersensitivity|immuno,hypersensitivity|T cell activation in a PPD reaction requires|CD28 binding CD80/86|CD40 binding CD40 ligand only|Costimulation prevents anergy.
+B|Leukocyte adhesion deficiency|immuno,genetics|LAD type 1 impairs neutrophil|Transmigration and adhesion|Phagocytosis and killing|CD18 integrin defect; delayed cord separation, no pus.
+B|Wheal and flare|immuno,hypersensitivity|The wheal-and-flare reaction is caused by|Histamine|Bradykinin|Increased permeability and vasodilation.
+B|Severe combined immunodeficiency|immuno,genetics|The second commonest cause of SCID is deficiency of|Adenosine deaminase|Bruton tyrosine kinase|Toxic metabolites kill lymphocytes; X-linked IL-2 receptor defect is commonest.
+B|ACE inhibitor angioedema|immuno,pharm|ACE inhibitor angioedema is caused by|Bradykinin accumulation|Histamine release|No urticaria or itching; switch to an ARB.
+B|Hereditary angioedema|immuno,genetics,pharm|In hereditary angioedema, which drug is contraindicated?|An ACE inhibitor|A beta blocker|C1 esterase inhibitor deficiency already raises bradykinin.
+B|Hereditary angioedema|immuno,genetics,complement|Hereditary angioedema shows low levels of|C4|C3|C1 inhibitor deficiency consumes C4.
+B|Vancomycin infusion reaction|immuno,pharm|Vancomycin flushing is caused by|Direct mast cell activation|IgE-mediated allergy|Slow the infusion; not a contraindication.
+B|Interferon gamma|immuno,cytokines,micro|Impaired interferon-gamma signalling predisposes to|Mycobacterial infection|Encapsulated bacteria|IL-12 to IFN-gamma axis controls intracellular organisms.
+B|Glucocorticoid mechanism|immuno,pharm|Glucocorticoids reduce eosinophils by|Inducing their apoptosis|Blocking their production only|Also inhibit transcription of inflammatory genes.
+B|Sympathetic ophthalmia|immuno,autoimmune,eye|Sympathetic ophthalmia is caused by|T cell response to sequestered antigens|Immune complex deposition in the uvea|Trauma to one eye exposes hidden antigen and threatens the other.
+B|X-linked agammaglobulinemia|immuno,genetics|Bruton agammaglobulinemia shows near absence of|CD19-positive cells|CD3-positive cells|BTK mutation halts pre-B cell maturation; recurrent infections after six months.
+B|Rituximab|immuno,pharm,oncology|Rituximab depletes B cells by targeting|CD20|CD19|Used in lymphoma, GPA and rheumatoid arthritis.
+B|Toll-like receptors|immuno,innate|Lipopolysaccharide is recognized by|Toll-like receptor 4|The T cell receptor|Pattern recognition of PAMPs by innate cells.
+B|Chediak-Higashi syndrome|immuno,genetics|Chediak-Higashi syndrome impairs|Phagolysosome fusion|Oxidative burst|Giant granules, albinism, neuropathy.
+B|Antihistamines|immuno,pharm|Acute urticaria is treated first with|A second-generation antihistamine|A systemic corticosteroid|Loratadine or cetirizine; less sedating.
+B|Vaccine response|immuno,cytokines|Local vaccine reaction involves macrophages releasing|IL-6 and IL-1|IL-4 and IL-5|Innate response before adaptive immunity develops.
+B|Opsonization|immuno,antibody|Phagocytes bind antibody at the|Constant region of the heavy chain|Variable region of the light chain|The Fc region binds Fc receptors.
+B|Interferon gamma|immuno,cytokines|Interferon-gamma is secreted mainly by|Th1 cells and NK cells|Th2 cells and eosinophils|Activates macrophages and raises MHC expression.
+B|Th1 versus Th2|immuno,cytokines|Th2 differentiation is driven by|IL-4|IL-12|IL-12 drives Th1; IL-4 drives Th2.
+B|IgE receptor|immuno,hypersensitivity|Type I hypersensitivity requires IgE cross-linking on|Mast cells and basophils|Neutrophils and macrophages|Prior sensitization is required.
+B|Type II hypersensitivity|immuno,hypersensitivity|Type II hypersensitivity is mediated by|Antibody against a cell surface antigen|Circulating immune complexes depositing|Autoimmune hemolytic anemia, Goodpasture, myasthenia.
+B|Type III hypersensitivity|immuno,hypersensitivity|Type III hypersensitivity involves|Circulating immune complexes|Antibody bound to fixed tissue|Serum sickness and the Arthus reaction.
+B|MHC class I|immuno,antigen presentation|MHC class I presents antigen to|CD8 T cells|CD4 T cells|Endogenous antigen on all nucleated cells.
+B|MHC class II|immuno,antigen presentation|MHC class II presents antigen to|CD4 T cells|CD8 T cells|Exogenous antigen on professional antigen-presenting cells.
+B|Natural killer cells|immuno,innate|NK cells kill targets that|Lack MHC class I|Overexpress MHC class I|Missing-self recognition; kill virus-infected and tumor cells.
+B|Thymic selection|immuno,development|Negative selection in the thymus removes T cells that|Bind self antigen too strongly|Fail to bind MHC at all|Positive selection keeps those that bind MHC weakly.
+G|Central tolerance|immuno,genetics,development|The ___ gene lets the thymus express peripheral self antigens|AIRE|aire|Mutation causes autoimmune polyendocrine syndrome type 1.
+B|Live vaccines|immuno,vaccines|Live attenuated vaccines are contraindicated in|Severe immunodeficiency and pregnancy|Egg allergy and mild persistent asthma|Risk of disseminated infection.
+B|Passive immunity|immuno,vaccines|Passive immunization gives|Immediate but temporary protection|Slow but lasting protection|Preformed antibody; no memory.
+B|Hyper-IgM syndrome|immuno,genetics|Hyper-IgM syndrome is caused by a defect in|CD40 ligand|BTK|Class switching fails; high IgM, low IgG, IgA and IgE.
+B|Wiskott-Aldrich syndrome|immuno,genetics|Wiskott-Aldrich syndrome features eczema, infections and|Thrombocytopenia|Neutropenia|X-linked WAS gene defect.
+B|Common variable immunodeficiency|immuno,genetics|CVID typically presents|In adulthood|In infancy|Low immunoglobulins with normal B cell numbers; lymphoma risk.
+B|Selective IgA deficiency|immuno,genetics|Selective IgA deficiency risks which transfusion reaction?|Anaphylaxis to blood products|Febrile non-hemolytic reaction|Anti-IgA antibodies; the commonest primary immunodeficiency.
+B|Graft-versus-host disease|immuno,transplant|Graft-versus-host disease is mediated by|Donor T cells attacking host tissue|Host antibody against graft|Rash, jaundice and diarrhea after bone marrow transplant.
+B|Superantigens|immuno,micro|Superantigens cause shock by|Cross-linking MHC II and the T cell receptor|Direct cytotoxic damage to endothelium|Massive nonspecific T cell activation and cytokine release.
+B|Calcineurin inhibitors|immuno,pharm,transplant|Cyclosporine and tacrolimus block production of|IL-2|IL-4|Calcineurin inhibition prevents T cell activation.
+B|Cyclosporine|immuno,pharm,transplant|The characteristic toxicity of cyclosporine is|Nephrotoxicity with gum hypertrophy|Pulmonary fibrosis and neutropenia|Tacrolimus is more diabetogenic and neurotoxic.

@@ -1,0 +1,83 @@
+# Psychiatry, behavioural science and neuropharmacology — depth pass.
+
+# ── Neurotransmitters ────────────────────────────────────────────────────
+G|Dopamine|psych,neuro,neurotransmitter|The rate-limiting enzyme of catecholamine synthesis is tyrosine ___|hydroxylase|hydroxylase|It makes L-DOPA from tyrosine.
+B|Schizophrenia|psych,psychosis,neurotransmitter|Schizophrenia involves dopamine that is|High mesolimbic and low mesocortical dopamine|Uniformly high dopamine in all pathways|Which is why negative symptoms resist D2 blockade.
+G|Serotonin|psych,neurotransmitter,biochem|Serotonin is made from ___ and metabolized to 5-HIAA|tryptophan|tryptophan,trp|Measured in urine to screen for carcinoid.
+B|Depression|psych,mood,neurotransmitter|Depression is associated with reduced|Serotonin, norepinephrine and dopamine|Acetylcholine and histamine levels|Also reduced hippocampal volume and BDNF.
+G|GABA|psych,neurotransmitter|GABA is the principal ___ neurotransmitter of the brain|inhibitory|inhibitory|Glutamate is the principal excitatory one.
+B|Anxiety|psych,anxiety,neurotransmitter|Anxiety is associated with|Reduced GABA and raised norepinephrine|Raised GABA with low norepinephrine|Which is why benzodiazepines and beta blockers help.
+G|Acetylcholine|psych,dementia,neurotransmitter|Alzheimer disease reduces acetylcholine from the nucleus ___ of Meynert|basalis|basalis|The rationale for cholinesterase inhibitors.
+
+# ── Antidepressants ──────────────────────────────────────────────────────
+G|SSRIs|psych,pharm,mood|SSRIs take about ___ weeks to produce a full antidepressant effect|4|4,four,4-6,6|Side effects appear immediately, benefit does not.
+B|SSRI side effects|psych,pharm|The commonest persistent SSRI side effect is|Sexual dysfunction|Weight loss|Nausea and insomnia usually settle.
+G|SSRI in the elderly|psych,pharm,electrolytes|SSRIs in older adults commonly cause ___ through SIADH|hyponatremia|hyponatremia,low sodium|Check sodium after starting.
+B|Mirtazapine|psych,pharm,mood|Mirtazapine is useful when depression features|Insomnia and poor appetite|Agitation and overeating|It causes sedation and weight gain.
+G|Venlafaxine|psych,pharm,cardio|Venlafaxine at higher doses can raise blood ___|pressure|pressure,bp|Through noradrenergic reuptake inhibition.
+B|Tricyclic antidepressants|psych,pharm,toxicity|Tricyclics are dangerous in overdose because of|Cardiac sodium channel blockade|Serotonin syndrome and rigidity|Widened QRS; treat with bicarbonate.
+G|Trazodone|psych,pharm,repro|Trazodone rarely causes ___, a urological emergency|priapism|priapism|Often used at low dose for insomnia.
+B|Antidepressants in bipolar|psych,pharm,mood|Antidepressant monotherapy in bipolar disorder risks|Precipitating mania|Worsening depression|Always pair with a mood stabilizer.
+
+# ── Antipsychotics ───────────────────────────────────────────────────────
+G|Typical antipsychotics|psych,pharm,psychosis|Typical antipsychotics act mainly by blocking ___ receptors|D2|d2,dopamine,dopamine d2|High potency agents cause more extrapyramidal effects.
+B|Extrapyramidal symptoms|psych,pharm|The order of extrapyramidal effects over time is|Dystonia, akathisia, parkinsonism, then tardive|Tardive dyskinesia first, then dystonia|Hours, days, weeks, then months to years.
+G|Atypical antipsychotics|psych,pharm,endocrine|Atypical antipsychotics commonly cause ___ syndrome with weight gain|metabolic|metabolic|Monitor weight, lipids and glucose.
+B|Olanzapine|psych,pharm,endocrine|Olanzapine is notable for|The greatest metabolic burden|Minimal metabolic burden|Aripiprazole and ziprasidone are more weight-neutral.
+G|Risperidone|psych,pharm,endocrine|Risperidone raises ___ more than other atypicals|prolactin|prolactin|Causing galactorrhea and amenorrhea.
+B|Ziprasidone|psych,pharm,cardio|Ziprasidone requires caution because of|QT prolongation|Agranulocytosis|Clozapine carries the agranulocytosis risk.
+G|Clozapine|psych,pharm|Clozapine requires regular monitoring of the absolute ___ count|neutrophil|neutrophil,neutrophils,anc|Weekly at first, because of agranulocytosis.
+B|Clozapine|psych,pharm,GI|An under-recognized clozapine risk is|Severe constipation and ileus|Profuse diarrhea and weight loss|It can be fatal; treat prophylactically.
+
+# ── Mood stabilizers ─────────────────────────────────────────────────────
+G|Lithium|psych,pharm,lab|Lithium has a narrow therapeutic range around ___ mmol/L|1|1,1.0,0.6-1.2|Toxicity above 1.5.
+B|Lithium toxicity|psych,pharm,emergency|Severe lithium toxicity is treated with|Hemodialysis|Activated charcoal|Charcoal does not bind lithium.
+G|Lithium in pregnancy|psych,pharm,OB|Lithium in the first trimester causes ___ anomaly|Ebstein|ebstein,ebstein's|A tricuspid valve malformation.
+B|Valproate|psych,pharm,OB|Valproate in women of childbearing age|Should generally be avoided|Is the first-line choice|Neural tube defects and reduced IQ.
+G|Lamotrigine|psych,pharm,mood|Lamotrigine is particularly useful for bipolar ___|depression|depression|Less effective against acute mania.
+B|Carbamazepine|psych,pharm,principles|Carbamazepine induces its own metabolism, which is called|Autoinduction|Zero-order kinetics|Levels fall over the first weeks.
+
+# ── Anxiolytics and sedatives ────────────────────────────────────────────
+G|Benzodiazepines|psych,pharm,anxiety|Benzodiazepines increase the ___ of chloride channel opening|frequency|frequency|Barbiturates increase duration.
+B|Benzodiazepine choice|psych,pharm,liver|In liver disease, the safest benzodiazepines are|Lorazepam, oxazepam and temazepam|Diazepam and chlordiazepoxide|They undergo only glucuronidation.
+G|Benzodiazepine withdrawal|psych,pharm,emergency|Abrupt benzodiazepine withdrawal can cause ___|seizures|seizures,seizure|Like alcohol, it can be fatal.
+B|Zolpidem|psych,pharm,sleep|Zolpidem differs from benzodiazepines by|Acting selectively at the BZ1 subtype|Carrying no risk of dependence at all|Less muscle relaxation; complex sleep behaviours reported.
+G|Buspirone|psych,pharm,anxiety|Buspirone is a partial agonist at the 5-HT1___ receptor|A|a,1a|No dependence, but takes weeks to work.
+
+# ── Substance use ────────────────────────────────────────────────────────
+G|Alcohol withdrawal|psych,emergency|Delirium tremens typically begins ___ hours after the last drink|48|48,48-96,72|Later than simple withdrawal or seizures.
+B|Alcohol withdrawal seizures|psych,emergency|Withdrawal seizures typically occur at|12 to 48 hours|1 week|Before delirium tremens.
+G|Disulfiram|psych,pharm,addiction|Disulfiram blocks aldehyde ___, causing a violent reaction with alcohol|dehydrogenase|dehydrogenase|Acetaldehyde accumulates.
+B|Naltrexone|psych,pharm,addiction|Naltrexone reduces alcohol craving by blocking|Opioid receptors|Dopamine receptors|Contraindicated with opioid use.
+G|Acamprosate|psych,pharm,addiction|Acamprosate modulates ___ transmission to maintain abstinence|glutamate|glutamate,nmda|Safe in liver disease, unlike naltrexone.
+B|Opioid withdrawal|psych,addiction|Opioid withdrawal is|Extremely unpleasant but rarely fatal|Frequently fatal without inpatient care|Alcohol and benzodiazepine withdrawal can kill.
+G|Cocaine intoxication|psych,toxicology|Cocaine intoxication causes ___ pupils and hypertension|dilated|dilated,mydriasis,large|Along with agitation and chest pain.
+B|Opioid intoxication|psych,toxicology|Opioid intoxication causes|Pinpoint pupils and respiratory depression|Dilated pupils with agitation and sweating|The most reliable clinical clue.
+G|Phencyclidine|psych,toxicology|PCP intoxication classically causes ___ nystagmus and violence|vertical|vertical,rotatory|Distinctive among intoxicants.
+B|Cannabis|psych,toxicology|Chronic heavy cannabis use is associated with|Amotivational syndrome and psychosis risk|Physical dependence with fatal withdrawal|Hyperemesis with compulsive hot bathing.
+
+# ── Disorders ────────────────────────────────────────────────────────────
+G|Major depression|psych,mood|Major depression requires symptoms for at least ___ weeks|2|2,two|Including low mood or anhedonia.
+B|Persistent depressive disorder|psych,mood|Dysthymia requires depressed mood for at least|Two years|Six months|Chronic but less severe.
+G|Bipolar mania|psych,mood|A manic episode must last at least ___ week|1|1,one,7 days|Or any duration if hospitalization is needed.
+B|Schizoaffective disorder|psych,psychosis|Schizoaffective disorder requires psychosis|For two weeks WITHOUT mood symptoms|Only during the mood episodes|Otherwise it is a mood disorder with psychotic features.
+G|Brief psychotic disorder|psych,psychosis|Brief psychotic disorder lasts less than one ___|month|month|One to six months is schizophreniform.
+B|Generalized anxiety disorder|psych,anxiety|GAD requires excessive worry for at least|Six months|One month|More days than not, about multiple domains.
+G|Obsessive-compulsive disorder|psych,anxiety,pharm|OCD often needs ___ doses of SSRIs than depression|higher|higher,larger|Plus exposure and response prevention.
+B|Body dysmorphic disorder|psych,anxiety|Body dysmorphic disorder is treated with|SSRIs and cognitive therapy|Cosmetic surgical correction|Surgery worsens the preoccupation.
+G|PTSD|psych,trauma,pharm|First-line drug treatment for PTSD is an ___|SSRI|ssri,ssris|With trauma-focused psychotherapy.
+B|Acute stress disorder|psych,trauma|Acute stress disorder lasts|Three days to one month|Over six months|Beyond a month it becomes PTSD.
+G|Borderline personality disorder|psych,personality|Borderline personality disorder responds best to ___ behaviour therapy|dialectical|dialectical,dbt|Focused on emotion regulation.
+B|Antisocial personality disorder|psych,personality|Antisocial personality disorder requires|Evidence of conduct disorder before age 15|Onset of symptoms only in adulthood|And the patient must be at least 18.
+G|Narcissistic personality|psych,personality|Narcissistic personality disorder features grandiosity and lack of ___|empathy|empathy|With fragile self-esteem underneath.
+B|Somatization|psych,somatic|Somatic symptom disorder differs from illness anxiety disorder by|Having actual physical symptoms|Being deliberately produced|Illness anxiety is fear of disease without symptoms.
+
+# ── Development and behaviour ────────────────────────────────────────────
+G|Attachment|psych,peds,development|Separation anxiety normally peaks around ___ months|12|12,twelve,9-18|Resolving by age three.
+B|Object permanence|psych,peds,development|Object permanence develops at about|9 months|3 years|A Piagetian sensorimotor milestone.
+G|Erikson|psych,development|Erikson's adolescent stage is identity versus role ___|confusion|confusion,diffusion|Intimacy versus isolation follows in young adulthood.
+B|Grief|psych,mood|Prolonged grief disorder is diagnosed after|Twelve months in adults|Two weeks in adults|Persistent, disabling yearning.
+G|Defense mechanisms|psych,defense mechanisms|Attributing your own unacceptable feelings to another is ___|projection|projection|An immature defense.
+B|Sublimation|psych,defense mechanisms|Sublimation is|A mature defense channelling impulses usefully|An immature defense avoiding the feeling|Along with humour, altruism and suppression.
+G|Sleep architecture|psych,sleep|Most slow wave sleep occurs in the ___ half of the night|first|first|REM predominates in the second half.
+B|REM sleep|psych,sleep,physiology|During REM sleep, skeletal muscle tone is|Absent|Increased|Loss of that atonia causes REM behaviour disorder.

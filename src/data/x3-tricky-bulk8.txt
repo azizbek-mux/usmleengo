@@ -1,0 +1,61 @@
+# TRICKY — bulk batch 8.
+
+# ── Confusable pairs ─────────────────────────────────────────────────────
+BT|Osteoporosis vs osteopenia|bone,lab|Which is a T-score between minus 1 and minus 2.5?|Osteopenia|Osteoporosis|Osteoporosis is at or below minus 2.5.
+BT|T-score vs Z-score|bone,lab,geriatrics|Which compares with a young healthy adult?|T-score|Z-score|Z-score compares with age-matched peers.
+BT|Vitamin D deficiency vs hypoparathyroidism|endocrine,calcium|Which has a HIGH PTH with low calcium?|Vitamin D deficiency|Hypoparathyroidism|Hypoparathyroidism has low calcium with low PTH.
+BT|Hypercalcemia symptoms vs hypocalcemia|endocrine,calcium|Which causes tetany and perioral tingling?|Hypocalcemia|Hypercalcemia|Hypercalcemia causes stones, bones, groans and moans.
+BT|Diabetes insipidus vs osmotic diuresis|endocrine,renal|Which has a HIGH urine osmolality despite polyuria?|Osmotic diuresis|Diabetes insipidus|Solute drags water; DI produces dilute urine.
+BT|Metabolic vs respiratory compensation speed|renal,acid base|Which compensation happens within minutes?|Respiratory|Renal|Renal compensation takes days.
+BT|Hypovolemic vs distributive shock|critical care,cardio|Which has a LOW systemic vascular resistance?|Distributive shock|Hypovolemic shock|Warm peripheries in early sepsis.
+BT|Obstructive vs cardiogenic shock|critical care,cardio|Which is caused by tension pneumothorax or tamponade?|Obstructive shock|Cardiogenic shock|Mechanical impedance to filling or output.
+BT|SIRS vs sepsis|critical care,micro|What must be present for sepsis rather than SIRS?|Infection|Fever|SIRS criteria can arise from pancreatitis or trauma.
+BT|Acute vs chronic respiratory acidosis|resp,acid base|Which has a markedly raised bicarbonate?|Chronic respiratory acidosis|Acute respiratory acidosis|Renal compensation takes days to develop.
+BT|Type 1 vs type 2 respiratory failure management|resp,critical care|Which is treated with non-invasive ventilation rather than oxygen alone?|Type 2 with acidosis|Type 1 with hypoxia|NIV clears carbon dioxide.
+BT|Bronchospasm vs upper airway obstruction|resp,emergency|Which produces stridor rather than wheeze?|Upper airway obstruction|Lower airway spasm|Stridor is inspiratory and demands airway assessment.
+BT|Pneumothorax vs tension pneumothorax|resp,emergency|Which shows tracheal deviation and haemodynamic compromise?|Tension pneumothorax|Simple pneumothorax|Never wait for a chest x-ray.
+BT|Pulmonary oedema vs ARDS|resp,cardio,critical care|Which has a normal left atrial pressure?|Acute respiratory distress|Cardiogenic pulmonary oedema|Increased permeability, not hydrostatic pressure.
+BT|Aspiration pneumonitis vs pneumonia|resp,micro|Which does NOT usually need antibiotics initially?|Chemical pneumonitis|Aspiration pneumonia|Acid injury without infection at first.
+BT|Empyema vs parapneumonic effusion|resp,micro|Which requires chest drainage?|A pleural empyema|A simple effusion|Guided by pH, glucose and appearance.
+BT|Pleural vs pericardial pain|resp,cardio|Which improves on leaning forward?|Pericardial pain|Pleuritic pain|Both worsen with inspiration.
+BT|Angina vs oesophageal reflux|cardio,GI|Which is more likely to wake the patient when lying flat?|Reflux|Stable angina|Position dependence favours oesophageal causes.
+BT|Vasovagal vs orthostatic syncope|cardio,autonomic|Which occurs specifically on standing up?|Orthostatic syncope|Vasovagal syncope|Measure lying and standing blood pressure.
+BT|Anemia vs dehydration on FBC|heme,lab|Which raises the haematocrit?|Dehydration|Anemia|Haemoconcentration can mask blood loss.
+BT|Leucoerythroblastic vs leukemoid|heme,path|Which shows nucleated red cells and immature granulocytes together?|Leucoerythroblastic film|Leukemoid reaction|Suggesting marrow infiltration.
+BT|Myeloma vs MGUS progression|heme,oncology|Which requires only monitoring?|MGUS|Multiple myeloma|About 1 percent per year progress.
+BT|Lymphoma B symptoms vs infection|heme,oncology,micro|Which typically has drenching night sweats over weeks with painless nodes?|Hodgkin lymphoma|Acute infection|Infected nodes are tender and acute.
+BT|Reactive vs malignant lymphadenopathy|heme,oncology|Which is typically tender, mobile and under 1 cm?|Reactive lymphadenopathy|Malignant lymphadenopathy|Hard, fixed and growing nodes need biopsy.
+BT|Splenomegaly causes|heme,GI|Massive splenomegaly most suggests|Myelofibrosis or CML|Infectious mononucleosis|Mild enlargement has many causes.
+BT|Direct vs indirect bilirubin|GI,liver,lab|Which rises in Gilbert syndrome?|Indirect bilirubin|Direct bilirubin|Impaired conjugation.
+BT|Alcoholic vs viral hepatitis pattern|GI,liver,lab|Which has AST greater than ALT?|Alcoholic hepatitis|Viral hepatitis|A ratio above 2 is suggestive.
+BT|Acute vs chronic cholecystitis|GI,surgery|Which typically has a thickened gallbladder wall without fever?|Chronic cholecystitis|Acute cholecystitis|Repeated episodes of inflammation.
+BT|Pancreatic cancer vs chronic pancreatitis|GI,oncology|Which causes painless progressive jaundice?|Pancreatic head cancer|Chronic pancreatitis|Pain usually dominates in pancreatitis.
+BT|Coeliac vs pancreatic insufficiency|GI,nutrition|Which has a low faecal elastase?|Pancreatic insufficiency|Coeliac disease|Coeliac damages mucosa, not the pancreas.
+BT|Ulcerative colitis vs infective colitis|GI,micro|Which has chronic symptoms over months with negative stool cultures?|Ulcerative colitis|Infective colitis|Always exclude infection before immunosuppression.
+
+# ── Changed context ──────────────────────────────────────────────────────
+BT|Steroids in inflammatory bowel disease|GI,IBD,pharm|Steroids in inflammatory bowel disease are used|To induce remission, not maintain it|For long-term maintenance therapy|Maintenance uses thiopurines or biologics.
+BT|Loperamide in colitis|GI,IBD,pharm|Antimotility drugs in acute severe colitis|Risk toxic megacolon|Are first-line|Avoid in bloody diarrhoea with systemic upset.
+BT|Iron in inflammatory bowel disease|GI,heme,pharm|Oral iron in active inflammatory bowel disease|May be poorly tolerated and absorbed|Is always preferred to intravenous|Intravenous iron is often better.
+BT|Antibiotics in diverticulitis|GI,micro,pharm|Uncomplicated diverticulitis in a well patient|May be managed without antibiotics|Always needs antibiotics|Practice has shifted with evidence.
+BT|Antispasmodics in irritable bowel|GI,pharm|Antispasmodics in irritable bowel syndrome|Help pain but not global symptoms|Cure the condition completely|Diet and psychological therapy also matter.
+BT|PPI deprescribing|GI,pharm,geriatrics|Long-term proton pump inhibitors should be|Reviewed and stepped down when possible|Continued indefinitely without review|Many are continued without ongoing indication.
+BT|Warfarin and vitamin K diet|heme,pharm,nutrition|Patients on warfarin should keep vitamin K intake|Consistent rather than absent|As low as they possibly can|Sudden changes destabilize the INR.
+BT|DOAC in valvular disease|heme,pharm,cardio|DOACs are contraindicated in|Mechanical valves and severe mitral stenosis|Any prosthetic or diseased native valve|Warfarin remains necessary there.
+BT|Antiplatelet before surgery|heme,pharm,surgery|Aspirin before most surgery|Is often continued|Must be stopped beforehand|Depends on bleeding and thrombotic risk.
+BT|Heparin in HIT|heme,pharm|In heparin-induced thrombocytopenia, low molecular weight heparin is|Also contraindicated|A safe alternative|Use argatroban, bivalirudin or fondaparinux.
+BT|Transfusion in stable anemia|heme,clinical|Transfusing a stable patient with iron deficiency anemia|Is usually unnecessary|Is standard practice|Treat the cause with iron instead.
+
+# ── One step further ─────────────────────────────────────────────────────
+BT|Hyperventilation in metabolic acidosis|resp,acid base|Kussmaul breathing in DKA represents|Appropriate respiratory compensation|Primary respiratory alkalosis|Do not suppress it with sedation.
+BT|Oxygen and carbon dioxide retention|resp,critical care|Excess oxygen in chronic hypercapnia raises CO2 mainly through|Increased V/Q mismatch|Loss of hypoxic drive alone|The Haldane effect also contributes.
+BT|Positive pressure and ICP|neuro,resp,critical care|High PEEP in head injury can|Raise it by impeding cerebral venous drainage|Lower it by reducing cerebral blood volume|Balance oxygenation against cerebral venous return.
+BT|Head elevation in stroke|neuro,critical care|Head-up positioning in raised intracranial pressure aims to|Improve venous drainage|Increase cerebral blood flow|Usually 30 degrees with a neutral neck.
+BT|Fever and seizure threshold|neuro,peds|Fever lowers the seizure threshold, which explains|Febrile convulsions in young children|Adult onset epilepsy after infection|Antipyretics do not prevent recurrence.
+BT|Hypoglycemia and neurological signs|neuro,endocrine|Hypoglycemia can produce focal deficits that|Fully resolve with glucose|Indicate permanent damage|A stroke mimic worth excluding first.
+BT|Uremia and platelets|renal,heme|Uraemia causes bleeding through|Platelet dysfunction|Thrombocytopenia|Desmopressin can help acutely.
+BT|Chronic kidney disease and vaccination|renal,immuno,vaccines|Chronic kidney disease patients respond to hepatitis B vaccine|Less well, needing higher doses|Normally, at the standard dose|Check antibody titres afterwards.
+BT|Malnutrition and immunity|nutrition,immuno|Protein energy malnutrition impairs mainly|Cell-mediated immunity|Antibody production only|Increasing susceptibility to tuberculosis and measles.
+BT|Obesity and inflammation|nutrition,immuno,cardio|Adipose tissue in obesity behaves as|An endocrine organ releasing inflammatory cytokines|Inert storage tissue with no signalling role|Driving insulin resistance and vascular risk.
+BT|Exercise and insulin|endocrine,physiology|Exercise lowers glucose partly by increasing|Insulin-independent glucose uptake|Insulin secretion from beta cells|Which is why hypoglycemia can follow in diabetics.
+BT|Sleep deprivation and metabolism|physiology,endocrine|Chronic sleep deprivation increases|Insulin resistance and appetite|The basal metabolic rate|Through cortisol, ghrelin and leptin changes.

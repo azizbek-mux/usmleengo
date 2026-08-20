@@ -1,0 +1,52 @@
+# Rheumatology, orthopaedics and musculoskeletal — batch 1.
+B|Ganglion cyst|msk,ortho|The usual management of an asymptomatic ganglion cyst is|Observation|Surgical excision|Most resolve spontaneously; commonest on the dorsal wrist.
+B|Teriparatide|msk,pharm,bone|Teriparatide builds bone by|Stimulating osteoblast maturation|Blocking osteoclast resorption|Intermittent PTH is anabolic; continuous PTH resorbs bone.
+B|Bisphosphonates|msk,pharm,bone|Bisphosphonates work by|Increasing osteoclast apoptosis|Stimulating osteoblasts|Risk of jaw osteonecrosis and atypical femoral fracture.
+B|Osteoporosis histology|msk,bone,path|Osteoporosis shows|Trabecular thinning with fewer interconnections|Excess unmineralized osteoid seams on bone|Bone quality and quantity fall; mineralization is normal.
+B|Osteomalacia|msk,bone,vitamins|Osteomalacia is characterized by|Excess unmineralized osteoid on bone|Reduced mass, normal mineralization|Vitamin D deficiency in adults.
+G|Ankylosing spondylitis|msk,rheum,immuno|Ankylosing spondylitis inflames the ___ insertion sites|tendon|tendon,enthesis,entheseal|Enthesitis, driven by TNF-alpha and IL-17. HLA-B27 associated.
+B|Ankylosing spondylitis|msk,rheum,imaging|Radiographs in ankylosing spondylitis show|Erosions with new bone formation|Pure bone loss without new formation|Bamboo spine and sacroiliitis.
+G|Muscle contraction|msk,physiology|Calcium binds ___ to expose myosin binding sites|troponin|troponin,troponin c|Troponin C shifts tropomyosin off the actin binding site.
+B|Sarcomere|msk,physiology|Which band contains only thick filaments?|The H band|The I band|The I band is thin filaments only; both shorten during contraction.
+B|Sarcomere|msk,physiology|Which band stays constant during contraction?|The A band|The I band|The A band is the thick filament length, which never changes.
+G|Mitochondrial disease|msk,genetics|Variable severity in mitochondrial disease is explained by ___|heteroplasmy|heteroplasmy|Different proportions of mutant mitochondria per cell.
+B|Osteogenesis imperfecta|msk,genetics,bone|Osteogenesis imperfecta impairs|Osteoid production by osteoblasts|Osteoclast resorption of bone|Defective type I collagen; blue sclerae and fractures.
+B|Hypertrophic osteoarthropathy|msk,oncology|Hypertrophic osteoarthropathy involves|Abnormal new periosteal bone formation|Generalized loss of bone mineral|Clubbing and painful periostosis; often with lung cancer.
+G|Hamstring injury|msk,anatomy|The biceps femoris is a hip extensor and knee ___|flexor|flexor,flexion|Hamstring strain limits hip extension and knee flexion.
+B|Myasthenia gravis|msk,immuno,neuro|Myasthenia gravis is associated with abnormality of the|Thymus|Thyroid|Thymoma or thymic hyperplasia; thymectomy may help.
+B|Rheumatoid factor|msk,rheum,immuno|Rheumatoid factor is an antibody against|The Fc portion of IgG|Cyclic citrullinated peptide|Anti-CCP is more specific for rheumatoid arthritis.
+B|Rheumatoid arthritis|msk,rheum|Rheumatoid arthritis characteristically spares the|Distal interphalangeal joints|Metacarpophalangeal joints|Osteoarthritis affects DIPs with Heberden nodes.
+B|Rheumatoid arthritis|msk,rheum,pharm|The first-line DMARD in rheumatoid arthritis is|Methotrexate|Hydroxychloroquine|Steroids give rapid relief while DMARDs take effect.
+B|Paget disease of bone|msk,bone|Paget disease begins with excessive activity of|Osteoclasts|Osteoblasts|Then disorganized osteoblastic bone; raised alkaline phosphatase with normal calcium.
+B|Paget disease of bone|msk,bone,oncology|The feared complication of Paget disease is|Osteosarcoma|Multiple myeloma|Sudden new pain in an affected bone.
+B|Azathioprine and allopurinol|msk,pharm,toxicity|Allopurinol dangerously raises levels of|Azathioprine|Methotrexate|Xanthine oxidase inhibition blocks 6-mercaptopurine breakdown.
+B|Achondroplasia|msk,genetics,bone|In achondroplasia, FGFR3 mutation affects|Chondrocytes|Osteoblasts|Impaired endochondral ossification; membranous ossification is normal.
+B|Proton pump inhibitors|msk,pharm,bone|Long-term proton pump inhibitors increase the risk of|Osteoporotic fracture|Osteosarcoma of bone|Reduced calcium absorption in a less acidic stomach.
+B|Acute gout|msk,rheum,immuno|The main effector cell in an acute gout flare is the|Neutrophil|Mast cell|Phagocytosis of urate crystals amplifies inflammation.
+B|Gout crystals|msk,rheum,lab|Gout crystals are|Needle-shaped and negatively birefringent|Rhomboid and positively birefringent|Pseudogout uses calcium pyrophosphate, which is positively birefringent.
+B|Colchicine|msk,pharm,rheum|Colchicine treats gout by binding|Microtubules|Cyclooxygenase|Blocks neutrophil chemotaxis and phagocytosis.
+B|Thiazides and gout|msk,pharm,rheum|Which antihypertensive precipitates gout?|Hydrochlorothiazide|Losartan potassium|Thiazides reduce urate excretion; losartan is uricosuric.
+B|Giant cell arteritis|msk,rheum,vascular|Giant cell arteritis shows|Granulomatous inflammation of the media|Fibrinoid necrosis of the intima|Jaw claudication and vision loss; start steroids before biopsy.
+B|Giant cell arteritis|msk,rheum|Giant cell arteritis is associated with|Polymyalgia rheumatica|Ankylosing spondylitis|Proximal stiffness with a high ESR.
+B|Polyarteritis nodosa|msk,rheum,vascular|Polyarteritis nodosa characteristically spares the|Lungs|Kidneys|Transmural necrotizing inflammation; associated with hepatitis B.
+B|Polyarteritis nodosa|msk,rheum,path|Polyarteritis nodosa lesions are|Segmental and of different ages|Uniform and simultaneous|String-of-beads microaneurysms on angiography.
+B|Supraspinatus|msk,anatomy,ortho|Supraspinatus tendinopathy causes pain on|Abduction|Internal rotation|The first 15 degrees of abduction; the empty can test.
+B|Dupuytren contracture|msk,ortho|Dupuytren contracture is caused by|Fibroblastic proliferation of palmar fascia|Flexor tendon rupture and retraction|Affects the ring and little fingers.
+B|Hemochromatosis arthropathy|msk,rheum,genetics|Hemochromatosis arthropathy classically affects the|Second and third metacarpophalangeal joints|The distal interphalangeal joints of the hand|Iron deposition with calcium pyrophosphate deposition.
+B|Shoulder dislocation|msk,ortho,anatomy|The commonest direction of shoulder dislocation is|Anterior|Posterior|Shallow glenoid; axillary nerve at risk.
+B|Posterior shoulder dislocation|msk,ortho|Posterior shoulder dislocation classically follows|Seizure or electrocution|A fall on an outstretched hand|Internal rotators overpower external rotators.
+G|Osteoclast differentiation|msk,bone,physiology|RANK ligand binds RANK to drive ___ differentiation|osteoclast|osteoclast,osteoclasts|Osteoprotegerin is the decoy receptor that blocks it.
+B|Denosumab|msk,pharm,bone|Denosumab is a monoclonal antibody against|RANK ligand|Sclerostin|Mimics osteoprotegerin to inhibit osteoclasts.
+B|Systemic sclerosis|msk,rheum,resp|The leading cause of death in systemic sclerosis is|Interstitial lung disease|Acute renal crisis|Diffuse collagen deposition; anti-Scl-70 antibodies.
+B|Limited scleroderma|msk,rheum,immuno|CREST syndrome is associated with which antibody?|Anti-centromere|Anti-Scl-70|Calcinosis, Raynaud, esophageal dysmotility, sclerodactyly, telangiectasia.
+B|Sporotrichosis|msk,micro,derm|Sporothrix infection follows|Contact with soil and plant material|Scratches from an infected cat|Rose gardener's disease; nodules ascending along lymphatics.
+B|Osteoarthritis|msk,rheum|Morning stiffness in osteoarthritis lasts|Under 30 minutes|Over one hour|Prolonged stiffness suggests inflammatory arthritis.
+B|Septic arthritis|msk,micro,emergency|The commonest organism in septic arthritis is|Staphylococcus aureus|Neisseria gonorrhoeae|Gonococcus is commonest in young sexually active adults.
+B|Osteosarcoma|msk,oncology|Osteosarcoma classically shows|Sunburst pattern with Codman triangle|Onion-skin periosteal layering|Metaphysis of long bones in adolescents.
+B|Ewing sarcoma|msk,oncology,genetics|Ewing sarcoma shows which translocation?|t(11;22)|t(9;22)|Onion-skin periosteal reaction; small round blue cells.
+B|Duchenne muscular dystrophy|msk,genetics|Duchenne dystrophy is caused by mutation in|Dystrophin|Fibrillin|X-linked; frameshift deletion. Becker preserves the reading frame.
+B|Gower sign|msk,peds,neuro|The Gower sign indicates weakness of the|Proximal muscles|Distal muscles|The child walks their hands up their legs to stand.
+B|Polymyositis|msk,rheum,path|Polymyositis shows which inflammatory pattern?|Endomysial CD8 infiltration|Perimysial CD4 infiltration|Dermatomyositis is perimysial with perifascicular atrophy.
+B|Dermatomyositis|msk,rheum,oncology|Dermatomyositis warrants screening for|Occult malignancy|Renal disease|Gottron papules and heliotrope rash.
+B|Carpal tunnel syndrome|msk,neuro,anatomy|Carpal tunnel syndrome compresses the|Median nerve|Ulnar nerve|Thenar wasting; spares palmar sensation as that branch passes above.
+B|Osteomyelitis in children|msk,micro,peds|Childhood osteomyelitis usually involves the|Metaphysis of long bones|The epiphysis near the joint|Rich sluggish blood supply seeds bacteria.

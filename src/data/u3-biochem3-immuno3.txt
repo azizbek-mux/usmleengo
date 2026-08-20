@@ -1,0 +1,61 @@
+# Biochemistry and immunology — third depth pass. Gap-weighted.
+
+# ── Enzymes and cofactors ────────────────────────────────────────────────
+G|Vitamin cofactors|biochem,vitamins|Pyruvate dehydrogenase needs thiamine, lipoic acid, CoA, FAD and ___|NAD|nad,nad+,niacin|Tender Loving Care For Nancy.
+G|Arsenic poisoning|biochem,toxicology|Arsenic inhibits ___ acid, blocking pyruvate dehydrogenase|lipoic|lipoic|Causing a garlic breath odour and rice-water stools.
+G|Transaminases|biochem,liver,vitamins|ALT and AST both require vitamin ___ as a cofactor|B6|b6,pyridoxine|Which is why B6 deficiency can lower them.
+B|Alkaline phosphatase|biochem,lab,bone|Alkaline phosphatase requires which mineral as a cofactor?|Zinc|Iron|Zinc deficiency can lower measured levels.
+G|Carbonic anhydrase|biochem,renal,pharm|Carbonic anhydrase requires ___ at its active site|zinc|zinc|Inhibited by acetazolamide.
+B|Superoxide dismutase|biochem,path|Superoxide dismutase requires|Copper, zinc or manganese|Iron or molybdenum only|Mutations cause familial ALS.
+
+# ── Signalling ───────────────────────────────────────────────────────────
+G|Gs pathway|biochem,endocrine|Gs proteins activate adenylate cyclase, raising ___|cAMP|camp,cyclic amp|Then protein kinase A.
+G|Gq pathway|biochem,endocrine|Gq proteins activate phospholipase C, producing IP3 and ___|DAG|dag,diacylglycerol|Raising calcium and activating protein kinase C.
+B|Gi pathway|biochem,endocrine|Gi proteins|Inhibit adenylate cyclase|Stimulate adenylate cyclase|Alpha-2, M2 and D2 receptors are Gi coupled.
+G|Cholera toxin|biochem,micro|Cholera toxin permanently ACTIVATES ___|Gs|gs,g-s|Locking cAMP high in the gut.
+G|Pertussis toxin|biochem,micro|Pertussis toxin INACTIVATES ___, also raising cAMP|Gi|gi,g-i|Disabling the inhibitory arm.
+B|Nitric oxide|biochem,cardio|Nitric oxide signals through|cGMP|cAMP|Activating guanylate cyclase.
+G|Steroid receptors|biochem,endocrine|Steroid hormone receptors act as ___ factors in the nucleus|transcription|transcription|Slow onset, long duration.
+B|Receptor tyrosine kinases|biochem,endocrine|Insulin, EGF and PDGF receptors are|Receptor tyrosine kinases|G protein coupled|Autophosphorylation starts the cascade.
+
+# ── Cellular structures ──────────────────────────────────────────────────
+G|Mitochondria|biochem,cell biology,genetics|Mitochondria contain their own circular ___|DNA|dna,genome|Inherited maternally.
+B|Nuclear pore|biochem,cell biology|Proteins entering the nucleus carry|A nuclear localization signal|An N-terminal signal peptide|Signal peptides target the ER instead.
+G|Lysosomes|biochem,cell biology|Lysosomal enzymes work at an ___ pH|acidic|acidic,low|Maintained by a proton pump.
+B|Autophagy|biochem,cell biology|Autophagy is|Self-digestion of damaged organelles|Programmed death of the whole cell|Upregulated in starvation.
+G|Cytoskeleton|biochem,cell biology|___ filaments provide tensile strength and include keratin|Intermediate|intermediate|Used in tumour immunohistochemistry.
+B|Actin|biochem,cell biology,micro|Listeria and Shigella spread cell to cell using|Actin polymerization|Microtubules|Actin rockets propel them.
+G|Cilia|biochem,cell biology,resp|Ciliary movement depends on ___ ATPase arms|dynein|dynein|Defective in Kartagener syndrome.
+B|Peroxisome|biochem,cell biology|Peroxisomes generate and detoxify|Hydrogen peroxide|Lactic acid|Using catalase.
+
+# ── Immunology: cells and cytokines ──────────────────────────────────────
+G|IL-1|immuno,cytokines|Interleukin-1 is an endogenous ___ causing fever|pyrogen|pyrogen|Along with IL-6 and TNF-alpha.
+G|IL-2|immuno,cytokines|Interleukin-2 drives T cell ___|proliferation|proliferation,growth,expansion|Blocked by calcineurin inhibitors.
+G|IL-5|immuno,cytokines|Interleukin-5 stimulates ___ and IgA class switching|eosinophils|eosinophils,eosinophil|Targeted by mepolizumab in asthma.
+G|IL-6|immuno,cytokines,lab|Interleukin-6 drives hepatic ___ phase protein production|acute|acute|Including CRP and hepcidin.
+G|IL-8|immuno,cytokines|Interleukin-8 is the major ___ for neutrophils|chemoattractant|chemoattractant,chemokine|Clean up on aisle 8.
+G|IL-10|immuno,cytokines|Interleukin-10 and TGF-beta are ___-inflammatory cytokines|anti|anti|Dampening the Th1 response.
+G|IL-12|immuno,cytokines|Interleukin-12 drives ___ differentiation|Th1|th1,t helper 1|From macrophages and dendritic cells.
+B|TNF-alpha|immuno,cytokines,oncology|TNF-alpha is responsible for|Cachexia and septic shock|Antibody class switching|Blocked by infliximab and etanercept.
+B|Dendritic cells|immuno,antigen presentation|Dendritic cells are|The most effective antigen-presenting cells|Purely phagocytic scavenging cells|Bridging innate and adaptive immunity.
+G|Regulatory T cells|immuno,autoimmune|Regulatory T cells express CD4, CD25 and the transcription factor ___|FOXP3|foxp3,foxp-3|Its mutation causes IPEX syndrome.
+
+# ── Immunology: clinical ─────────────────────────────────────────────────
+G|Anaphylaxis biphasic|immuno,emergency|Observation after anaphylaxis is advised for at least ___ hours|4|4,four,6|Because of biphasic reactions.
+B|Allergy testing|immuno,lab|Skin prick testing is|More sensitive than specific IgE|Definitive for diagnosis|Clinical history remains essential.
+G|Desensitization|immuno,pharm|Allergen ___ gradually induces tolerance over years|immunotherapy|immunotherapy,desensitization,desensitisation|Effective for venom and pollen allergy.
+B|Angioedema without urticaria|immuno,pharm|Angioedema WITHOUT urticaria suggests|Bradykinin-mediated causes|IgE-mediated allergy|ACE inhibitors or C1 inhibitor deficiency.
+G|Mast cell tryptase|immuno,lab,emergency|Serum ___ confirms mast cell degranulation retrospectively|tryptase|tryptase|Peaks 1 to 2 hours after anaphylaxis.
+B|Common variable immunodeficiency|immuno,genetics,GI|CVID is complicated by|Bronchiectasis, autoimmunity and lymphoma|Neutropenia and recurrent candidiasis|Recurrent sinopulmonary infection in adulthood.
+G|Immunoglobulin replacement|immuno,pharm|Immunoglobulin replacement is given every ___ weeks intravenously|4|4,four,3-4|Or weekly subcutaneously.
+B|Asplenia vaccination|immuno,vaccines,micro|Asplenic patients need vaccination against|Pneumococcus, meningococcus and Haemophilus|Influenza and COVID vaccines alone|Plus annual influenza and prophylactic antibiotics.
+
+# ── Autoimmunity, deeper ─────────────────────────────────────────────────
+G|Molecular mimicry|immuno,autoimmune,micro|___ mimicry explains rheumatic fever and Guillain-Barre|Molecular|molecular|Microbial antigens resembling self.
+B|Epitope spreading|immuno,autoimmune|Epitope spreading describes|Widening autoimmune response over time|Loss of antigen recognition over time|Explaining progression of autoimmune disease.
+G|HLA-B27|immuno,rheum,genetics|HLA-B27 is linked to ankylosing spondylitis, reactive arthritis, psoriatic arthritis and ___ disease|inflammatory bowel|inflammatory bowel,ibd|PAIR mnemonic.
+B|HLA-DQ2|immuno,GI,genetics|HLA-DQ2 and DQ8 are required for|Celiac disease|Type 1 diabetes only|Their absence effectively excludes celiac disease.
+G|Anti-nuclear antibody|immuno,autoimmune,lab|ANA is highly ___ but poorly specific for lupus|sensitive|sensitive|A negative ANA makes lupus very unlikely.
+B|Rheumatoid factor|immuno,rheum,lab|Rheumatoid factor is also positive in|Sjogren syndrome, hepatitis C and endocarditis|Rheumatoid arthritis and nothing else|Which limits its diagnostic value.
+G|ANCA|immuno,rheum,lab|c-ANCA targets ___ and suggests granulomatosis with polyangiitis|proteinase 3|proteinase 3,pr3|p-ANCA targets myeloperoxidase.
+B|Complement in lupus|immuno,autoimmune,lab|Active lupus nephritis shows|Low C3 and C4|Raised complement|Consumption by immune complexes.
