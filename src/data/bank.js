@@ -9,6 +9,8 @@
 // paint for everyone. As a separate asset it is cached independently, so a
 // code change does not force users to re-download the whole bank.
 
+import { BANK_VERSION } from "./bank-version.js";
+
 const bank = [];
 
 let pending = null;
@@ -30,7 +32,9 @@ export function loadBank() {
 
   if (pending) return pending;
 
-  const url = `${import.meta.env.BASE_URL}questions.json`;
+  // ?v= is the bank's content hash, so a redeploy that adds questions busts
+  // the cache while an unchanged bank keeps being served from it.
+  const url = `${import.meta.env.BASE_URL}questions.json?v=${BANK_VERSION}`;
   pending = fetch(url)
     .then((res) => {
       if (!res.ok) throw new Error(`${res.status} loading question bank`);
