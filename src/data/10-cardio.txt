@@ -37,7 +37,7 @@ G|Long QT syndrome|cardio,arrhythmia,genetics|Congenital long QT most often invo
 B|Long QT syndrome|cardio,arrhythmia|Long QT predisposes to which arrhythmia?|Torsades de pointes|Atrial flutter|Polymorphic VT — torsades.
 B|ACE inhibitors|cardio,pharm,renal|ACE inhibitors cause serum renin to|Increase|Decrease|Loss of angiotensin II feedback disinhibits renin release.
 G|ACE inhibitors|cardio,pharm,renal|ACE inhibitors preferentially dilate the glomerular ___ arteriole|efferent|efferent,efferent arteriole|Efferent dilation drops filtration pressure and GFR.
-B|Statins|cardio,pharm,lipids|Statins increase hepatocyte LDL receptor recycling|Yes|No|Less intracellular cholesterol upregulates LDL receptors, clearing serum LDL.
+B|Statin LDL receptor effect|cardio,pharm,lipids|Statins increase hepatocyte LDL receptor recycling|Yes|No|Less intracellular cholesterol upregulates LDL receptors, clearing serum LDL.
 B|Turner syndrome|cardio,genetics,congenital|The commonest congenital cardiac lesion in Turner syndrome is|Bicuspid aortic valve|Tetralogy of Fallot|Bicuspid aortic valve, then coarctation of the aorta.
 G|Turner syndrome|cardio,genetics|Turner syndrome causes ___ dysgenesis of the ovaries|gonadal|gonadal,gonad|Streak gonads — primary amenorrhea.
 B|Coarctation of the aorta|cardio,congenital|Coarctation classically causes blood pressure that is|Higher in arms than legs|Higher in legs than arms|Upper extremity hypertension with weak delayed femoral pulses.
