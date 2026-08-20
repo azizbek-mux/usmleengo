@@ -113,7 +113,13 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, o
         <button className="btn btn-primary" onClick={onAgain}>Another round</button>
         <button
           className="btn btn-ghost"
-          onClick={() => share(`I scored ${correct}/${log.length} on usmleengo — ${streak} day streak 🔥`)}
+          onClick={() =>
+            share(
+              `I scored ${correct}/${log.length} on usmleengo` +
+              (streak > 1 ? ` — ${streak} day streak 🔥` : "") +
+              `\n\n5000+ USMLE micro-quizzes, free:`
+            )
+          }
         >
           Share score
         </button>

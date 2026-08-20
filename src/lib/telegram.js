@@ -70,9 +70,20 @@ export function cloudSet(key, value) {
   });
 }
 
-/** Share the user's streak back into a Telegram chat. */
+/**
+ * The Mini App's public link, exactly as BotFather issued it.
+ *
+ * This is the only place it is written down. A shared score is worthless
+ * without it — whoever receives the message needs somewhere to tap.
+ * If the bot is ever renamed, change this line and nothing else.
+ */
+export const APP_LINK = "https://t.me/usmleengo_bot/study";
+
+/** Share the user's streak back into a Telegram chat, with a way in. */
 export function share(text) {
-  const url = `https://t.me/share/url?url=${encodeURIComponent("https://t.me/")}&text=${encodeURIComponent(text)}`;
+  const url =
+    `https://t.me/share/url?url=${encodeURIComponent(APP_LINK)}` +
+    `&text=${encodeURIComponent(text)}`;
   if (tg?.openTelegramLink) tg.openTelegramLink(url);
   else window.open(url, "_blank");
 }
