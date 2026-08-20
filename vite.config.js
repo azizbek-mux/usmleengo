@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: './',
   plugins: [react()],
-    // The question bank is bundled deliberately: one request, works offline
-  // inside Telegram, and gzips well. Raise the limit rather than code-split it.
+  // The bank is fetched as a separate asset (see src/data/bank.js), so the JS
+  // chunk stays small; this limit only guards the app code.
   build: { outDir: 'dist', assetsDir: 'assets', chunkSizeWarningLimit: 2000 },
 })
