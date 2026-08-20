@@ -37,7 +37,7 @@ B|Parietal lobe|neuro,exam|Non-dominant parietal damage causes|Hemispatial negle
 
 # ── Neurology: peripheral ────────────────────────────────────────────────
 G|Diabetic neuropathy|neuro,endocrine|Diabetic neuropathy classically produces a ___ and glove pattern|stocking|stocking|Longest axons affected first.
-B|Carpal tunnel|neuro,endocrine,msk|Carpal tunnel syndrome is associated with|Hypothyroidism, pregnancy and acromegaly|Hyperthyroidism and rheumatoid disease|Anything that causes swelling in the tunnel.
+B|Carpal tunnel|neuro,endocrine,msk|Carpal tunnel syndrome is associated with|Hypothyroidism, pregnancy and acromegaly|Hyperthyroidism, anemia and osteoarthritis|Anything that causes swelling in the tunnel.
 G|Ulnar neuropathy|neuro,anatomy|Ulnar nerve compression at the elbow occurs at the cubital ___|tunnel|tunnel|Causing clawing of the fourth and fifth fingers.
 B|Sciatica|neuro,msk|An L5 radiculopathy causes weakness of|Great toe dorsiflexion|Plantarflexion|S1 affects plantarflexion and the ankle reflex.
 G|Charcot-Marie-Tooth|neuro,genetics|Charcot-Marie-Tooth causes distal wasting with ___ cavus feet|pes|pes|An inverted champagne bottle appearance.

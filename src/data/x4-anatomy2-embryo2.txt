@@ -14,9 +14,9 @@ B|Erb palsy nerve roots|anatomy,neuro,peds|Erb palsy involves roots|C5 and C6|C8
 G|Sciatic nerve|anatomy,neuro|The sciatic nerve divides into tibial and common ___ nerves|fibular|fibular,peroneal|At the level of the popliteal fossa.
 B|Femoral nerve|anatomy,neuro,msk|Femoral nerve injury causes|Weak knee extension and a lost knee jerk|Foot drop with lateral calf numbness|With numbness over the anterior thigh.
 G|Obturator nerve|anatomy,neuro,repro|The obturator nerve supplies hip ___|adduction|adduction,adductors|At risk during pelvic surgery.
-B|Superior gluteal nerve|anatomy,neuro,msk|Superior gluteal nerve injury causes the pelvis to|Drops on the contralateral side on standing|Rises on the contralateral side on standing|Trendelenburg sign.
+B|Superior gluteal nerve|anatomy,neuro,msk|Superior gluteal nerve injury causes the pelvis to|Drop on the contralateral side on standing|Rise on the contralateral side on standing|Trendelenburg sign.
 G|Popliteal fossa|anatomy,vascular|The popliteal fossa contains the popliteal artery, vein and tibial ___|nerve|nerve|Plus the common fibular nerve laterally.
-B|Ankle sprain|anatomy,ortho|The most commonly injured ankle ligament is the|Anterior talofibular|The deltoid ligament|Inversion injuries are commonest.
+B|Ankle sprain|anatomy,ortho|The most commonly injured ankle ligament is the|Anterior talofibular|Deltoid ligament|Inversion injuries are commonest.
 
 # ── Thorax and abdomen, deeper ───────────────────────────────────────────
 G|Pleural reflections|anatomy,resp|The lung extends to rib ___ in the midaxillary line, the pleura two ribs lower|8|8,eight|Guiding safe chest drain placement.

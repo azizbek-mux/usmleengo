@@ -8,7 +8,7 @@ B|Complement|immuno,complement|Which complement fragment causes anaphylaxis and 
 G|Membrane attack complex|immuno,complement,micro|The membrane attack complex is formed by C5b through C___|9|9,nine|Deficiency gives recurrent Neisseria infection.
 B|Paroxysmal nocturnal hemoglobinuria|immuno,complement,heme|PNH results from loss of|GPI-anchored CD55 and CD59|C3 convertase activity|Complement lyses unprotected red cells; treat with eculizumab.
 G|Interferon alpha and beta|immuno,virus|Interferons alpha and beta make neighbouring cells resist ___|viruses|viruses,virus,viral infection|They halt protein synthesis in infected cells.
-B|Natural killer cells|immuno,innate,oncology|NK cell killing is enhanced by|IL-12 and interferon gamma|IL-4 and interleukin-10|They kill cells that have downregulated MHC I.
+B|Natural killer cells|immuno,innate,oncology|NK cell killing is enhanced by|IL-12 and interferon gamma|IL-4 and IL-10 from Th2 cells|They kill cells that have downregulated MHC I.
 G|Macrophage activation|immuno,cytokines|Macrophages are classically activated by interferon ___|gamma|gamma,γ,y|From Th1 cells and NK cells.
 
 # ── Adaptive immunity ────────────────────────────────────────────────────

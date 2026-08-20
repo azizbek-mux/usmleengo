@@ -19,7 +19,7 @@ BT|Anemia of chronic disease vs renal|heme,renal|Which is corrected by erythropo
 BT|Spherocytosis vs autoimmune hemolysis|heme,immuno,lab|Which has a POSITIVE direct Coombs test?|Autoimmune hemolytic anemia|Hereditary spherocytosis|Both show spherocytes on the film.
 BT|Aplastic anemia vs myelodysplasia|heme,oncology,path|Which has a HYPERcellular marrow with dysplasia?|Myelodysplastic syndrome|Aplastic anemia|Ineffective haematopoiesis despite a full marrow.
 BT|Hemophilia vs vitamin K deficiency|heme,coagulation,lab|Which prolongs BOTH the PT and PTT?|Vitamin K deficiency|Hemophilia A|Hemophilia prolongs only the PTT.
-BT|DIC vs primary fibrinolysis|heme,coagulation|Which has a LOW platelet count?|Intravascular coagulation|Primary fibrinolysis|Both consume fibrinogen and raise D-dimer.
+BT|DIC vs primary fibrinolysis|heme,coagulation|Which has a LOW platelet count?|DIC with consumption|Primary fibrinolysis|Both consume fibrinogen and raise D-dimer.
 BT|Type 1 vs type 2 respiratory failure|resp,critical care|Which has a HIGH carbon dioxide?|Type 2 respiratory failure|Type 1 respiratory failure|Type 1 is a pure oxygenation problem.
 BT|Atelectasis vs pneumonia|resp,surgery|Which is the commonest cause of fever on the first postoperative day?|Atelectasis|Pneumonia|The five Ws: wind comes first.
 BT|Pleural effusion vs consolidation|resp,exam|Which shifts the trachea AWAY from the affected side?|Massive pleural effusion|Lobar consolidation|Collapse pulls it toward the lesion.

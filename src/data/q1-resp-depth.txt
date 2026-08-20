@@ -17,7 +17,7 @@ B|Anemia and PaO2|resp,physiology,heme|In anemia, arterial PaO2 is|Normal|Low|Co
 G|Carbon dioxide transport|resp,physiology|Most carbon dioxide travels in blood as ___|bicarbonate|bicarbonate,hco3|About 70 percent; the rest is carbamino and dissolved.
 B|Haldane effect|resp,physiology|The Haldane effect describes|Deoxygenated blood carrying more CO2|Acid causing oxygen to unload|The Bohr effect is acid unloading oxygen.
 G|A-a gradient|resp,physiology|A normal A-a gradient with hypoxemia suggests ___ or high altitude|hypoventilation|hypoventilation,hypoventilating|Shunt and V/Q mismatch widen the gradient.
-B|Shunt|resp,physiology|Hypoxemia from a true shunt|Does not correct with 100% oxygen|Corrects fully with 100 percent oxygen|Blood bypasses ventilated alveoli entirely.
+B|Shunt|resp,physiology|Hypoxemia from a true shunt|Does not correct with 100% oxygen|Corrects fully with 100% oxygen|Blood bypasses ventilated alveoli entirely.
 
 # ── Obstructive disease ──────────────────────────────────────────────────
 G|Asthma|resp,immuno,path|Asthma sputum shows Curschmann spirals and ___-Leyden crystals|Charcot|charcot,charcot-leyden|From eosinophil membrane protein.

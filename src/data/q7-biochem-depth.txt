@@ -74,5 +74,5 @@ B|Vitamin E|biochem,vitamins,coagulation|High-dose vitamin E|Potentiates warfari
 G|Vitamin K|biochem,vitamins,micro|Much of our vitamin K comes from ___ flora|gut|gut,intestinal,colonic|Which is why broad-spectrum antibiotics can prolong PT.
 B|Zinc deficiency|biochem,nutrition,derm|Zinc deficiency causes|Perioral rash, hypogonadism and poor healing|Night blindness with dry conjunctivae|Acrodermatitis enteropathica in the inherited form.
 G|Copper deficiency|biochem,nutrition,heme|Copper deficiency causes anemia and ___, mimicking B12 deficiency|myelopathy|myelopathy,neuropathy|May follow gastric bypass or excess zinc.
-B|Selenium|biochem,nutrition,cardio|Selenium deficiency causes|Keshan cardiomyopathy|Goitre and cretinism|An endemic problem in low-selenium regions.
+B|Selenium|biochem,nutrition,cardio|Selenium deficiency causes|Keshan cardiomyopathy|Night blindness and dry skin|An endemic problem in low-selenium regions.
 G|Iodine deficiency|biochem,nutrition,endocrine|Iodine deficiency is the commonest preventable cause of ___ disability worldwide|intellectual|intellectual,cognitive,mental|Through congenital hypothyroidism.
