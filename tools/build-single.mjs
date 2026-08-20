@@ -32,7 +32,7 @@ const questions = readFileSync(join(ROOT, "public", "questions.json"), "utf8");
 // `</script>` inside a JSON string would close the enclosing tag early.
 const safeJson = questions.replace(/<\//g, "<\\/");
 
-const html = `<title>USMLE Drops</title>
+const html = `<title>usmleengo</title>
 
 <style>
 ${css}
