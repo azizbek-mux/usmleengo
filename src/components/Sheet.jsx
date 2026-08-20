@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { QTYPES } from "../lib/qtypes.js";
 import { haptic } from "../lib/telegram.js";
 
 /** Bottom sheet. Closes on backdrop tap or Escape. */
@@ -23,18 +24,12 @@ export function Sheet({ title, onClose, children }) {
   );
 }
 
-const TYPES = [
-  { id: "random", name: "Mix of both", note: "Tapping and typing together" },
-  { id: "binary", name: "Multiple choice only", note: "Two options, one tap" },
-  { id: "gap", name: "Fill the gap only", note: "Type the answer yourself" },
-];
-
 export function SettingsSheet({ state, onQType, onReset, onClose }) {
   return (
     <Sheet title="Settings" onClose={onClose}>
       <div className="section-label" style={{ marginTop: 4 }}>Question type</div>
       <div className="opt-list">
-        {TYPES.map((t) => (
+        {QTYPES.map((t) => (
           <button
             key={t.id}
             className={`opt-row${state.qtype === t.id ? " on" : ""}`}

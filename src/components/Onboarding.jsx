@@ -1,16 +1,18 @@
 import React from "react";
 import Logo from "./Logo.jsx";
-import bank, { bankBlurb } from "../data/bank.js";
+import { bankBlurb } from "../data/bank.js";
+import { QTYPES } from "../lib/qtypes.js";
 import { haptic } from "../lib/telegram.js";
 
 /**
  * First run only. Asked once, stored, and changeable later from Settings —
  * so this screen never appears again unless the user resets.
+ *
+ * Deliberately unexplained: the three modes are self-evident from their names,
+ * and this is the screen standing between someone and their first question.
+ * The same rows appear in Settings, so nothing here is a one-time decision.
  */
 export default function Onboarding({ onChoose }) {
-  const binary = bank.filter((q) => q.type === "binary").length;
-  const gap = bank.length - binary;
-
   const choose = (qtype) => {
     haptic("medium");
     onChoose(qtype);
@@ -20,43 +22,19 @@ export default function Onboarding({ onChoose }) {
     <div className="screen onboard">
       <div className="onboard-top">
         <Logo size={104} className="onboard-mark" />
-        <p className="onboard-sub">
-          {bankBlurb()}. Pick how you want to practise —
-          you can change this any time.
-        </p>
+        <p className="onboard-sub">{bankBlurb()}</p>
       </div>
 
-      <div className="choices">
-        <button className="choice" onClick={() => choose("random")}>
-          <div className="choice-head">
-            <span className="choice-name">Mix of both</span>
-            <span className="badge">Recommended</span>
-          </div>
-          <div className="choice-desc">
-            Alternates tapping and typing. Recognition and recall together —
-            the combination that sticks best.
-          </div>
-        </button>
-
-        <button className="choice" onClick={() => choose("binary")}>
-          <div className="choice-head">
-            <span className="choice-name">Multiple choice only</span>
-          </div>
-          <div className="choice-desc">
-            Two options, one tap. The fastest way to run a session — good for
-            queues and short breaks.
-          </div>
-        </button>
-
-        <button className="choice" onClick={() => choose("gap")}>
-          <div className="choice-head">
-            <span className="choice-name">Fill the gap only</span>
-          </div>
-          <div className="choice-desc">
-            Type the answer yourself. Harder than recognising it, and it exposes
-            what you only half-know.
-          </div>
-        </button>
+      <div className="section-label">Question type</div>
+      <div className="opt-list">
+        {QTYPES.map((t) => (
+          <button key={t.id} className="opt-row" onClick={() => choose(t.id)}>
+            <div>
+              <div className="opt-name">{t.name}</div>
+              <div className="opt-note">{t.note}</div>
+            </div>
+          </button>
+        ))}
       </div>
     </div>
   );

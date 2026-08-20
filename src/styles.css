@@ -451,46 +451,12 @@ input { font: inherit; }
 .onboard { justify-content: center; }
 .onboard-top { text-align: center; margin-bottom: 26px; }
 .onboard-mark { color: var(--accent); margin-bottom: 10px; }
-.onboard-title { font-size: 27px; font-weight: 800; letter-spacing: -0.6px; margin: 0; }
 .onboard-sub {
   font-size: 14px;
   color: var(--muted);
   margin: 8px auto 0;
   max-width: 30ch;
   line-height: 1.5;
-}
-
-.choices { display: flex; flex-direction: column; gap: 11px; }
-
-.choice {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 15px;
-  padding: 16px 17px;
-  text-align: left;
-  transition: transform 0.12s var(--tap), border-color 0.15s;
-}
-.choice:active { transform: scale(0.98); border-color: var(--accent); }
-.choice-head { display: flex; align-items: center; gap: 9px; margin-bottom: 5px; }
-.choice-name { font-size: 16px; font-weight: 800; }
-.badge {
-  background: var(--accent-dim);
-  color: var(--accent);
-  font-size: 10px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  padding: 3px 7px;
-  border-radius: 100px;
-}
-.choice-desc { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
-.choice-meta {
-  font-size: 11px;
-  color: var(--accent);
-  font-weight: 700;
-  margin-top: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 /* ─────────────────────────── header controls ─────────────────────────── */
