@@ -65,6 +65,8 @@ export function SettingsSheet({ state, onQType, onReset, onClose }) {
 
       <button className="btn btn-danger" onClick={onReset}>Reset all progress</button>
       <div className="cta-note">Clears XP, streak and question history. Cannot be undone.</div>
+
+      <div className="byline">designed by mukhtorov</div>
     </Sheet>
   );
 }
