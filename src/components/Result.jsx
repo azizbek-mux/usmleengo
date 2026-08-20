@@ -113,7 +113,7 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, o
         <button className="btn btn-primary" onClick={onAgain}>Another round</button>
         <button
           className="btn btn-ghost"
-          onClick={() => share(`I scored ${correct}/${log.length} on USMLE Drops — ${streak} day streak 🔥`)}
+          onClick={() => share(`I scored ${correct}/${log.length} on usmleengo — ${streak} day streak 🔥`)}
         >
           Share score
         </button>

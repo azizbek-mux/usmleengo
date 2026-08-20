@@ -1,5 +1,6 @@
 import React from "react";
-import bank from "../data/bank.js";
+import Logo from "./Logo.jsx";
+import bank, { bankBlurb } from "../data/bank.js";
 import { haptic } from "../lib/telegram.js";
 
 /**
@@ -18,10 +19,9 @@ export default function Onboarding({ onChoose }) {
   return (
     <div className="screen onboard">
       <div className="onboard-top">
-        <div className="onboard-mark">💊</div>
-        <h1 className="onboard-title">USMLE Drops</h1>
+        <Logo size={104} className="onboard-mark" />
         <p className="onboard-sub">
-          {bank.length.toLocaleString()} questions. Pick how you want to practise —
+          {bankBlurb()}. Pick how you want to practise —
           you can change this any time.
         </p>
       </div>
@@ -36,7 +36,6 @@ export default function Onboarding({ onChoose }) {
             Alternates tapping and typing. Recognition and recall together —
             the combination that sticks best.
           </div>
-          <div className="choice-meta">all {bank.length.toLocaleString()} questions</div>
         </button>
 
         <button className="choice" onClick={() => choose("binary")}>
@@ -47,7 +46,6 @@ export default function Onboarding({ onChoose }) {
             Two options, one tap. The fastest way to run a session — good for
             queues and short breaks.
           </div>
-          <div className="choice-meta">{binary.toLocaleString()} questions</div>
         </button>
 
         <button className="choice" onClick={() => choose("gap")}>
@@ -58,7 +56,6 @@ export default function Onboarding({ onChoose }) {
             Type the answer yourself. Harder than recognising it, and it exposes
             what you only half-know.
           </div>
-          <div className="choice-meta">{gap.toLocaleString()} questions</div>
         </button>
       </div>
     </div>

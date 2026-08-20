@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import bank from "../data/bank.js";
+import bank, { bankBlurb } from "../data/bank.js";
 import { search, suggest, subjects } from "../lib/match.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
@@ -65,19 +65,18 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp }
   }
 
   /** A topic may hold fewer questions than the chosen session length. */
-  const actual = (n) => Math.min(count, n);
 
   return (
     <div className="screen">
       <div className="home-head">
         <div>
           <div className="greet">
-            {name ? <>Hi, <span>{name}</span></> : "USMLE Drops"}
+            {name ? <>Hi, <span>{name}</span></> : "usmleengo"}
           </div>
           <div className="sub">
             {state.answered
               ? `${state.answered} answered · ${accuracy}% correct`
-              : `${bank.length.toLocaleString()} questions ready`}
+              : bankBlurb()}
           </div>
         </div>
         <div className="stats">
@@ -146,12 +145,12 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp }
       {query.trim() ? (
         groups.length ? (
           <>
-            <div className="section-label">{hits.length} questions found</div>
+            <div className="section-label">Results</div>
             <div className="results">
               <button className="result-row" onClick={() => launch(hits, query.trim())}>
                 <div>
                   <div className="t">Quiz me on “{query.trim()}”</div>
-                  <div className="n">{actual(hits.length)} of {hits.length} matching</div>
+                  <div className="n">Start a round on this</div>
                 </div>
                 <span className="go"><Arrow /></span>
               </button>
@@ -160,8 +159,7 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp }
                   <div>
                     <div className="t">{g.topic}</div>
                     <div className="n">
-                      {actual(g.questions.length)} question{actual(g.questions.length) > 1 ? "s" : ""}
-                      {g.questions.length < count && " available"}
+                      Tap to practise
                     </div>
                   </div>
                   <span className="go"><Arrow /></span>
@@ -189,9 +187,9 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp }
         <>
           <div className="section-label">Or pick a subject</div>
           <div className="chips">
-            {chips.map(({ tag, n }) => (
+            {chips.map(({ tag }) => (
               <button key={tag} className="chip" onClick={() => launch(search(tag), tag)}>
-                {tag}<b>{n}</b>
+                {tag}
               </button>
             ))}
           </div>

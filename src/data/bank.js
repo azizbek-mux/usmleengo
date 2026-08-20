@@ -52,4 +52,19 @@ export function loadBank() {
   return pending;
 }
 
+/**
+ * How the bank's size is described in the UI.
+ *
+ * Rounded down to the nearest thousand rather than printed exactly: an exact
+ * figure invites the reader to treat it as a target to finish, and it goes
+ * stale every time questions are added. Derived, so it keeps itself current.
+ */
+export function bankBlurb() {
+  // Callers render this; an empty bank means it was read before loadBank()
+  // resolved. Say nothing rather than advertise "0 questions".
+  if (!bank.length) return "Thousands of questions";
+  if (bank.length < 1000) return `${bank.length} questions`;
+  return `${Math.floor(bank.length / 1000) * 1000}+ questions`;
+}
+
 export default bank;

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import bank from "../data/bank.js";
 import { haptic } from "../lib/telegram.js";
 
 /** Bottom sheet. Closes on backdrop tap or Escape. */
@@ -31,12 +30,6 @@ const TYPES = [
 ];
 
 export function SettingsSheet({ state, onQType, onReset, onClose }) {
-  const counts = {
-    binary: bank.filter((q) => q.type === "binary").length,
-    gap: bank.filter((q) => q.type === "gap").length,
-    random: bank.length,
-  };
-
   return (
     <Sheet title="Settings" onClose={onClose}>
       <div className="section-label" style={{ marginTop: 4 }}>Question type</div>
@@ -49,7 +42,7 @@ export function SettingsSheet({ state, onQType, onReset, onClose }) {
           >
             <div>
               <div className="opt-name">{t.name}</div>
-              <div className="opt-note">{t.note} · {counts[t.id].toLocaleString()} questions</div>
+              <div className="opt-note">{t.note}</div>
             </div>
             <span className="tick">{state.qtype === t.id ? "✓" : ""}</span>
           </button>

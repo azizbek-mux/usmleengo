@@ -151,7 +151,6 @@ input { font: inherit; }
   transition: transform 0.12s var(--tap), border-color 0.15s;
 }
 .chip:active { transform: scale(0.94); }
-.chip b { color: var(--muted); font-weight: 600; margin-left: 5px; font-size: 12px; }
 
 .results { display: flex; flex-direction: column; gap: 8px; }
 
@@ -347,7 +346,7 @@ input { font: inherit; }
   text-align: center;
 }
 .boot-mark {
-  font-size: 46px;
+  color: var(--accent);
   margin-bottom: 16px;
   animation: pulse 1.4s ease-in-out infinite;
 }
@@ -450,7 +449,7 @@ input { font: inherit; }
 
 .onboard { justify-content: center; }
 .onboard-top { text-align: center; margin-bottom: 26px; }
-.onboard-mark { font-size: 44px; margin-bottom: 10px; }
+.onboard-mark { color: var(--accent); margin-bottom: 10px; }
 .onboard-title { font-size: 27px; font-weight: 800; letter-spacing: -0.6px; margin: 0; }
 .onboard-sub {
   font-size: 14px;

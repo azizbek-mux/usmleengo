@@ -1,4 +1,4 @@
-# USMLE Drops
+# usmleengo
 
 A Duolingo-style micro-quiz Telegram Mini App for USMLE recall. Two question
 types, both answerable in about five seconds:
@@ -40,7 +40,7 @@ progress falls back to `localStorage` and haptics become no-ops.
 **1. Push to GitHub.** Create a repo and push this folder.
 
 ```bash
-git init && git add -A && git commit -m "USMLE Drops" && git branch -M main
+git init && git add -A && git commit -m "usmleengo" && git branch -M main
 ```
 
 Then add your remote and push. In the repo, open **Settings → Pages** and set

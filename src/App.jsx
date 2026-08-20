@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Logo from "./components/Logo.jsx";
 import Home from "./components/Home.jsx";
 import Onboarding from "./components/Onboarding.jsx";
 import { SettingsSheet, XpSheet } from "./components/Sheet.jsx";
@@ -112,10 +113,9 @@ export default function App() {
   if (bankStatus !== "ready") {
     return (
       <div className="screen boot">
-        <div className="boot-mark">💊</div>
+        <Logo size={92} className="boot-mark" />
         {bankStatus === "loading" ? (
           <>
-            <div className="boot-title">USMLE Drops</div>
             <div className="boot-sub">Loading questions…</div>
           </>
         ) : (
