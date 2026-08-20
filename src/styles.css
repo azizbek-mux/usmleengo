@@ -5,13 +5,13 @@
   --line: #272d38;
   --text: #e8ecf1;
   --muted: #8b95a5;
-  /* Accent is violet rather than green so it stays clearly apart from the red
-     "wrong" state and the gold streak flame. Every accent-coloured surface
-     reads from these four tokens — change them together, nowhere else. */
-  --accent: #8b7cf6;
-  --accent-dim: #322a5e;
-  --on-accent: #150c2e;
-  --accent-soft: #d9d2ff;
+  /* Every accent-coloured surface reads from these four tokens — the fill, its
+     shadow/inactive pair, the dark text that sits on top of it, and the light
+     text used on the correct-answer state. Change them together, nowhere else. */
+  --accent: #46d19e;
+  --accent-dim: #1d4f3f;
+  --on-accent: #06231a;
+  --accent-soft: #a8f0d5;
   --wrong: #ff6b6b;
   --wrong-dim: #4a2229;
   --gold: #ffc531;
