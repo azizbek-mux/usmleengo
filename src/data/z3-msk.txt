@@ -1,0 +1,64 @@
+# MSK / orthopaedics — from the Mehlman HY MSK_Anatomy notes.
+
+# ── Shoulder ─────────────────────────────────────────────────────────────
+B|Bursitis versus cuff tendonitis|msk,ortho|Weakness on resisted testing separates|Rotator cuff tendonitis|Subacromial bursitis|Bursitis gives pain without true weakness.
+B|Impingement syndrome history|msk,ortho|Impingement syndrome classically follows|Repeated overhead movement|A single fall onto the arm|Painting, decorating, throwing.
+B|Adhesive capsulitis movement|msk,ortho|Adhesive capsulitis restricts|Both active and passive motion|Active motion on its own|A cuff tear spares passive range.
+B|Adhesive capsulitis risk|msk,ortho,diabetes|Adhesive capsulitis is more common in|Diabetes|Gout|Otherwise largely idiopathic.
+B|Adhesive capsulitis treatment|msk,ortho|Frozen shoulder is treated with|Physiotherapy and range exercise|Early arthroscopic release|Most resolve slowly with movement.
+B|Biceps tendonitis site|msk,ortho|Biceps tendonitis gives tenderness over the|Anterior shoulder|Posterior shoulder|Directly over the tendon.
+
+# ── Peripheral nerve lesions ─────────────────────────────────────────────
+B|Deep peroneal nerve loss|msk,neuro,anatomy|Deep peroneal nerve injury loses|Dorsiflexion, sparing eversion|Eversion, sparing dorsiflexion|Deep does Dorsiflexion.
+G|Deep peroneal gait|msk,neuro|Losing dorsiflexion produces a high-___ gait|steppage|steppage|The foot must be lifted clear of the ground.
+B|Superficial peroneal nerve|msk,neuro,anatomy|The superficial peroneal nerve performs|Eversion of the foot|Plantarflexion of the foot|Deep does dorsiflexion instead.
+B|Tibial nerve loss|msk,neuro,anatomy|Tibial nerve injury means the patient cannot|Stand on tiptoes|Lift the forefoot|Plantarflexion is lost.
+B|Meralgia paresthetica nerve|msk,neuro,anatomy|Meralgia paresthetica is entrapment of the|Lateral femoral cutaneous nerve|The common peroneal nerve|Giving lateral thigh paraesthesia.
+
+# ── Radiculopathy ────────────────────────────────────────────────────────
+B|L4 radiculopathy reflex|msk,neuro|An L4 radiculopathy abolishes the|Knee reflex|Ankle reflex|With weak knee extension.
+B|S1 radiculopathy reflex|msk,neuro|An S1 radiculopathy abolishes the|Ankle reflex|Knee reflex|With weak plantarflexion.
+B|L5 radiculopathy motor|msk,neuro|An L5 radiculopathy weakens|Dorsiflexion of the foot|Extension of the knee|With lateral leg numbness.
+G|S1 disc level|msk,neuro,anatomy|An S1 radiculopathy comes from herniation at the L5 to ___ level|S1|s1|The disc below the L5 vertebra.
+B|Disc herniation material|msk,ortho,path|A disc herniation is protrusion of the|Nucleus pulposus|Annulus fibrosus|Through a tear in the annulus.
+B|Disc herniation imaging|msk,ortho,imaging|Suspected simple disc herniation needs|No imaging at first|Urgent MRI in all cases|Image only if there is a motor deficit.
+
+# ── Spine ────────────────────────────────────────────────────────────────
+B|Lumbar spinal stenosis posture|msk,ortho,neuro|Lumbar spinal stenosis pain is relieved by|Leaning forward|Standing upright|Flexion opens the canal.
+B|Neurogenic claudication|msk,vascular,neuro|Claudication with normal foot pulses suggests|Neurogenic claudication|Peripheral arterial disease|The canal, not the artery.
+B|Cervical spondylosis age|msk,ortho|Cervical spondylosis is described in patients|Over 50, with degenerative MRI|Under 30, after minor trauma|Degeneration of the cervical spine.
+B|Atlantoaxial subluxation risk|msk,rheum,surgery|Atlantoaxial subluxation is a hazard in|Rheumatoid arthritis before surgery|Ankylosing spondylitis in flare|Image the neck before intubation.
+B|Spondylolisthesis sign|msk,ortho|A palpable step-off between vertebrae indicates|Spondylolisthesis|Spinal stenosis|One vertebra slips forward on another.
+
+# ── Arthritis ────────────────────────────────────────────────────────────
+B|Reactive arthritis triad|msk,rheum,micro|Reactive arthritis is urethritis, arthritis and|Conjunctivitis|Dermatitis|Cannot see, cannot pee, cannot climb a tree.
+B|Reactive arthritis organism|msk,rheum,micro|Reactive arthritis classically follows|Chlamydia infection|Gonococcal infection|Gonococcus causes septic, not reactive, arthritis.
+B|Toxic synovitis history|msk,peds|Transient synovitis of the hip follows|A recent viral illness|A fall onto the hip|In an otherwise well child.
+B|Toxic synovitis diagnosis|msk,peds,micro|Transient synovitis is diagnosed by|Excluding septic arthritis|A positive joint culture|Markers stay low and the child is well.
+B|Toxic synovitis treatment|msk,peds,pharm|Transient synovitis is treated with|Ibuprofen and observation|Surgical washout of the hip|It settles on its own.
+B|Nursemaid elbow history|msk,peds,ortho|Radial head subluxation follows|A sharp pull on the arm|A fall onto the elbow|The child stops using the arm.
+B|Nursemaid elbow position|msk,peds,ortho|In nursemaid elbow the arm is held|Pronated and partly flexed|Supinated and fully extended|Reduced by hyperpronation or supination.
+
+# ── Knee, foot and joint ─────────────────────────────────────────────────
+B|Unhappy triad structures|msk,ortho|The unhappy triad involves the ACL, a meniscus and the|Medial collateral ligament|Posterior cruciate ligament|From a lateral blow to the knee.
+B|Iliotibial band syndrome|msk,ortho|Lateral knee pain in a runner suggests|Iliotibial band syndrome|A medial meniscal tear|Worst where the band crosses the knee.
+B|Morton neuroma site|msk,ortho,neuro|Morton neuroma sits between the|Second and third metatarsals|First and second metatarsals|Worse in tight or high-heeled shoes.
+B|Morton neuroma treatment|msk,ortho,pharm|Morton neuroma is treated with|Orthotics and steroid injection|Immediate surgical excision|Comfortable footwear comes first.
+B|Charcot joint cause|msk,neuro,diabetes|A Charcot joint arises from|Loss of joint sensation|Chronic joint infection|Usually diabetic neuropathy.
+G|Charcot joint x-ray|msk,imaging,diabetes|Charcot foot shows disorganisation of the ___ joints on x-ray|tarsometatarsal|tarsometatarsal|A classic exam description.
+B|Growing pains description|msk,peds|Growing pains classically wake a child with|Throbbing pain in both legs|Swelling of a single joint|Between ages three and twelve.
+
+# ── Paediatric hip and limb ──────────────────────────────────────────────
+B|Tibia vara definition|msk,peds,ortho|Tibia vara is bowing that persists beyond age|Two years|Six months|After rickets has been excluded.
+B|Legg-Calve-Perthes age|msk,peds,ortho|Legg-Calve-Perthes affects children aged|Five to eight years|Twelve to fifteen years|Older than that suggests SCFE.
+B|Legg-Calve-Perthes nature|msk,peds,ortho|Legg-Calve-Perthes is|Idiopathic avascular necrosis|Septic necrosis of the head|A known cause makes it plain avascular necrosis.
+B|Perthes first investigation|msk,peds,imaging|The first investigation in suspected Perthes is|A plain hip x-ray|An immediate MRI scan|Showing a flattened femoral head.
+
+# ── Metabolic bone and tumours ───────────────────────────────────────────
+B|Osteopetrosis mechanism|msk,bone,genetics|Osteopetrosis is caused by|Osteoclast failure|Osteoblast failure|Bone is dense but brittle.
+G|Osteopetrosis enzyme|msk,bone,biochem|Osteopetrosis follows deficiency of carbonic ___ II|anhydrase|anhydrase|Osteoclasts cannot generate acid.
+B|Osteopetrosis fracture paradox|msk,bone|In osteopetrosis, bones fracture because they are|Too dense, and therefore brittle|Too soft, and therefore bendy|Strength needs turnover, not just density.
+B|Chondrosarcoma appearance|msk,oncology,path|Chondrosarcoma is described as|Glistening and shiny|Dry and chalky white|Neoplastic chondrocytes in a cartilage matrix.
+B|Ewing sarcoma mimic|msk,oncology,peds|Ewing sarcoma in a child mimics|Osteomyelitis, with fever and pain|A simple growth-plate injury|Both give fever and bone pain.
+B|Ewing sarcoma site|msk,oncology,imaging|Ewing sarcoma takes up tracer in the|Diaphysis|Epiphysis|Osteomyelitis takes up in the metaphysis.
+G|Ewing sarcoma histology|msk,oncology,path|Ewing sarcoma shows small blue cells and ___-skinning of the periosteum|onion|onion|A classic radiological description.

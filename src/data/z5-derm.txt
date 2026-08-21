@@ -1,0 +1,51 @@
+# Dermatology — from the Mehlman HY Dermatology image-question bank.
+
+# ── Fungal and bacterial skin infection ──────────────────────────────────
+B|Tinea versicolor organism|derm,fungi|Tinea versicolor is caused by|Malassezia furfur|Trichophyton rubrum|Giving hypopigmented patches after sun.
+G|Tinea versicolor treatment|derm,fungi,pharm|Tinea versicolor is treated with topical ___ sulfide|selenium|selenium|Or a topical azole.
+B|Tinea versicolor pigment|derm,fungi|Tinea versicolor lightens skin because the fungus|Degrades fatty acids in the skin|Destroys melanocytes outright|The patches show after tanning.
+B|Erythrasma Wood lamp|derm,micro|Under a Wood lamp, erythrasma glows|Coral red|Apple green|From Corynebacterium minutissimum.
+B|Erythrasma site|derm,micro,diabetes|Erythrasma affects|Intertriginous skin folds|The palms and the soles|Common in diabetes.
+B|Ecthyma gangrenosum organism|derm,micro,immuno|Ecthyma gangrenosum indicates|Pseudomonas bacteraemia|Staphylococcal abscess|In a severely unwell patient.
+B|Cutaneous anthrax lesion|derm,micro|Cutaneous anthrax produces|A black eschar with oedema|A spreading red cellulitis|From a Gram-positive rod.
+G|Anthrax toxin|derm,micro,biochem|Anthrax oedema factor works by raising ___ in the cell|cAMP|camp,cyclic amp|Producing the marked surrounding swelling.
+B|Mycobacterium marinum exposure|derm,micro|Ulcers on the hand of an aquarium worker suggest|Mycobacterium marinum|Staphylococcus aureus|The exposure history is the clue.
+B|Herpetic whitlow|derm,virus|A painful vesicular lesion on a dentist's finger is|Herpetic whitlow|Bacterial paronychia|HSV inoculated from a patient's mouth.
+B|Eczema herpeticum|derm,virus,immuno|HSV superimposed on eczema is called|Eczema herpeticum|Dermatitis herpetiformis|A painful, feverish, spreading eruption.
+B|Eczema herpeticum treatment|derm,virus,pharm|Eczema herpeticum is treated with|Oral acyclovir|Topical steroid|Antivirals, not stronger steroid.
+
+# ── Viral exanthems ──────────────────────────────────────────────────────
+G|Koplik spots|derm,virus,peds|White spots on the buccal mucosa in measles are ___ spots|Koplik|koplik|Pathognomonic, and precede the rash.
+B|Measles treatment|derm,virus,peds|Measles is treated with|Supportive care and vitamin A|Oral acyclovir straight away|There is no specific antiviral.
+B|Pityriasis rosea cause|derm,virus|Pityriasis rosea is associated with|Human herpesvirus 6 or 7|Human papillomavirus 6|Following a herald patch.
+B|Kaposi sarcoma virus|derm,virus,oncology|Kaposi sarcoma is caused by|Human herpesvirus 8|Human herpesvirus 4|Violaceous plaques, often in HIV.
+
+# ── Skin signs of systemic disease ───────────────────────────────────────
+B|Dermatitis herpetiformis association|derm,gi,immuno|Dermatitis herpetiformis occurs with|Coeliac disease|Ulcerative colitis|Itchy vesicles on the elbows and knees.
+G|Dermatitis herpetiformis biopsy|derm,immuno,path|Biopsy in dermatitis herpetiformis shows ___ deposits at the dermal papillae|IgA|iga|Not herpes, despite the name.
+B|Pyoderma gangrenosum association|derm,gi|Pyoderma gangrenosum is associated with|Ulcerative colitis|Coeliac disease|An ulcer with a violaceous undermined edge.
+B|Lupus pernio meaning|derm,immuno,resp|Lupus pernio is a skin sign of|Sarcoidosis|Systemic lupus|Despite the misleading name.
+B|Leishmaniasis vector|derm,parasite|Cutaneous leishmaniasis is transmitted by|The sandfly|The tsetse fly|A protozoan, not a bacterium.
+G|Visceral leishmaniasis|derm,parasite,liver|Visceral leishmaniasis is known as kala ___|azar|azar|With raised liver enzymes and pancytopenia.
+B|Cryoglobulinemia association|derm,immuno,liver|Cryoglobulinaemia is classically secondary to|Hepatitis C infection|Hepatitis A infection|With low C4 and livedo reticularis.
+B|Buerger disease population|derm,vascular|Thromboangiitis obliterans occurs in|Young male heavy smokers|Elderly diabetic patients|Causing digital, not pedal, gangrene.
+B|Buerger disease treatment|derm,vascular,clinical|The treatment of Buerger disease is|Complete smoking cessation|Long-term anticoagulation|Nothing else alters the course.
+B|Venous ulcer site|derm,vascular|A venous ulcer classically sits|At the medial malleolus|Over the lateral toes|Large, sloughy, with surrounding pigment.
+G|Venous pigmentation|derm,vascular,heme|Brown staining around a venous ulcer comes from ___ deposition|hemosiderin|hemosiderin,haemosiderin,iron|From chronic congestion.
+
+# ── Drug eruptions and urticaria ─────────────────────────────────────────
+B|Urticaria hypersensitivity type|derm,immuno,pharm|Urticaria is a hypersensitivity reaction of type|I|IV|IgE-mediated, and often drug-triggered.
+B|Stevens-Johnson trigger|derm,pharm,immuno|Skin sloughing after trimethoprim-sulfamethoxazole suggests|Stevens-Johnson syndrome|Simple urticarial rash|Sulfonamides are a classic trigger.
+B|Hereditary angioedema defect|derm,immuno,genetics|Hereditary angioedema is deficiency of|C1 esterase inhibitor|C1 esterase itself|The inhibitor, not the enzyme.
+B|Hereditary angioedema drug|derm,immuno,pharm|Hereditary angioedema can be prevented with|Danazol|Prednisolone|Steroids and antihistamines do not work.
+B|Lichen simplex chronicus|derm|Thickened excoriated skin from repeated scratching is|Lichen simplex chronicus|Lichen sclerosus|An itch-scratch cycle.
+B|Perniosis cause|derm,vascular|Chilblains follow|Cold exposure then rapid rewarming|A fungal infection of the toes|Antifungals do not help.
+
+# ── Paediatric and benign lesions ────────────────────────────────────────
+B|Strawberry haemangioma management|derm,peds|A strawberry haemangioma is managed with|Observation, as it regresses|Early surgical excision|Unless it obstructs vision or feeding.
+B|Aplasia cutis teratogen|derm,peds,pharm|Aplasia cutis congenita is linked to maternal|Methimazole|Propylthiouracil|Absent skin over part of the scalp.
+B|Keloid versus hypertrophic scar|derm,path|A keloid differs from a hypertrophic scar by|Growing beyond the wound edge|Staying within the wound edge|Disorganised collagen I and III.
+B|Pseudofolliculitis barbae treatment|derm|Pseudofolliculitis barbae is treated by|Letting the beard grow out|Shaving closer and more often|Curly hair re-enters the skin.
+B|Chalazion nature|derm,eye|A chalazion is|A blocked oil duct, not infected|A staphylococcal infection|Treated with warm compresses.
+B|Suspicious naevus next step|derm,oncology|A suspicious pigmented lesion needs|Excisional biopsy|Superficial shave biopsy|Depth determines staging.
+B|Pemberton sign meaning|derm,oncology,resp|Facial flushing when the arms are raised indicates|Superior vena cava obstruction|Simple facial flushing|A positive Pemberton sign.

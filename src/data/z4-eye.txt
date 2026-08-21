@@ -1,0 +1,66 @@
+# Ophthalmology — from the Mehlman HY Ophthal question bank explanations.
+# Targeted at eye, one of the thinnest subjects in the bank.
+
+# ── Glaucoma ─────────────────────────────────────────────────────────────
+B|Open-angle glaucoma vision loss|eye|Open-angle glaucoma takes away|Peripheral vision, painlessly|Central vision, painfully|Progressing to tunnel vision over months.
+G|Optic disc in glaucoma|eye,imaging|Glaucoma causes ___ of the optic disc, a raised cup-to-disc ratio|cupping|cupping|Seen on fundoscopy.
+B|Glaucoma first step|eye,clinical|The first step in suspected glaucoma is|Tonometry|Fundoscopy|Measuring the intraocular pressure.
+B|Closed-angle glaucoma pupil|eye,emergency|Acute closed-angle glaucoma gives a pupil that is|Fixed and mid-dilated|Small and reactive|In a red, painful, watering eye.
+B|Closed-angle systemic symptoms|eye,emergency|Acute angle closure is often accompanied by|Headache, nausea and vomiting|Fever and neck stiffness|Which can send the patient to the wrong clinic.
+G|Halos in angle closure|eye,emergency|Patients in acute angle closure describe coloured ___ around lights|halos|halos,haloes,rings|From corneal oedema.
+B|Pilocarpine mechanism|eye,pharm|Pilocarpine helps angle closure by|Constricting the pupil|Dilating the pupil|Opening the drainage angle.
+G|Drainage structure|eye,anatomy|Aqueous humour drains through the canal of ___|Schlemm|schlemm|Between the cornea and iris.
+
+# ── Retina ───────────────────────────────────────────────────────────────
+B|Macular degeneration vision|eye|Macular degeneration takes away|Central vision|Peripheral vision|The opposite of glaucoma.
+G|Amsler grid finding|eye,clinical|Straight lines appearing ___ on an Amsler grid indicate macular degeneration|wavy|wavy,distorted,bent|A simple bedside test.
+B|Drusen appearance|eye,path|Drusen on fundoscopy are|Yellow lipoproteinaceous deposits|White wispy axoplasmic patches|The hallmark of macular degeneration.
+B|Cotton wool spots|eye,path,diabetes|Cotton wool spots represent|Microinfarcts of retinal vessels|Leaked lipid from the vessels|Seen in diabetes and hypertension.
+B|Hard exudates|eye,path,diabetes|Hard exudates on the retina come from|Leaky vessels in diabetes|Aged deposits under the macula|Drusen sit under the macula instead.
+B|Retinitis pigmentosa symptoms|eye,genetics|Retinitis pigmentosa causes night blindness and|Peripheral vision loss|Central vision loss|Often with a family history.
+G|Night blindness term|eye|Loss of night vision is called ___|nyctalopia|nyctalopia|A hallmark of retinitis pigmentosa.
+B|Central retinal artery occlusion|eye,vascular,emergency|Central retinal artery occlusion causes|Sudden painless loss of vision|Gradual painful loss of vision|Like a curtain coming down.
+B|CRAO fundoscopy|eye,vascular|The fundus in central retinal artery occlusion shows|A pale retina, cherry red spot|Tortuous veins with haemorrhage|The choroid still perfuses the fovea.
+B|Central retinal vein occlusion|eye,vascular|Central retinal vein occlusion shows|Tortuous veins and haemorrhages|A pale retina with a red spot|In a diabetic or hypertensive patient.
+B|Vitreous haemorrhage risks|eye,vascular,diabetes|Bleeding into the vitreous is most likely with|Diabetes and hypertension|Glaucoma and cataract|Presenting with floaters and flashes.
+B|Retinal detachment history|eye,emergency|Retinal detachment classically follows|Eye trauma or severe myopia|A slow rise in eye pressure|With floaters, flashes and a shadow.
+
+# ── Vascular and emboli ──────────────────────────────────────────────────
+G|Amaurosis fugax|eye,vascular,neuro|Painless transient monocular vision loss is called amaurosis ___|fugax|fugax|From carotid atheroembolism.
+B|Amaurosis fugax first test|eye,vascular,imaging|Amaurosis fugax is investigated first with|Carotid duplex ultrasound|Carotid angiography|Looking for a stenosis to treat.
+B|Refractile body composition|eye,vascular,lipids|A refractile body seen in a retinal vessel is made of|Cholesterol|Calcium|A Hollenhorst plaque from the carotid.
+B|AV nicking meaning|eye,vascular,cardio|Arteriovenous nicking on fundoscopy indicates|Hypertensive retinopathy|Diabetic retinopathy|A stiff artery indenting the vein.
+
+# ── Infection and inflammation ───────────────────────────────────────────
+B|HSV keratitis pattern|eye,virus|Herpes simplex keratitis stains as|A dendritic, branching pattern|A round, punched-out ulcer|Seen on fluorescein instillation.
+B|Herpesvirus genome|eye,virus,micro|The Herpesviridae, including HSV and VZV, are|DNA, enveloped and linear|RNA, enveloped and segmented|A high-yield structural point.
+B|CMV retinitis setting|eye,virus,hiv|CMV retinitis occurs in|Advanced HIV infection|Immunocompetent adults|A late opportunistic infection.
+B|Allergic conjunctivitis sign|eye,immuno|Cobblestoning of the conjunctiva indicates|Allergic conjunctivitis|Bacterial conjunctivitis|The same term applies in the nose.
+B|Chlamydial conjunctivitis timing|eye,micro,peds|Chlamydial conjunctivitis of the newborn appears|After the first week of life|Within hours of delivery|Gonococcal appears far sooner.
+B|Neonatal gonococcal prophylaxis|eye,micro,peds|Neonatal eye prophylaxis now uses|Erythromycin ointment|Silver nitrate drops|Silver nitrate caused chemical conjunctivitis.
+B|Orbital cellulitis features|eye,micro,emergency|Orbital cellulitis is distinguished by|Proptosis with ophthalmoplegia|Itching with watery discharge|Often after an upper respiratory infection.
+B|Orbital cellulitis treatment|eye,micro,emergency|Orbital cellulitis requires|Intravenous antibiotics|Topical antibiotic drops|It is a sight-threatening emergency.
+B|Chalazion versus hordeolum|eye,derm|A PAINLESS lump on the eyelid is a|Chalazion|Hordeolum|A hordeolum, or sty, is painful.
+B|Hordeolum organism|eye,micro|A hordeolum is caused by|Staphylococcus aureus|Streptococcus pyogenes|Both are first treated with warm compresses.
+G|Hyphema definition|eye,emergency|A hyphema is blood in the ___ chamber of the eye|anterior|anterior|Usually after blunt trauma.
+
+# ── Neuro-ophthalmology ──────────────────────────────────────────────────
+B|Optic neuritis association|eye,neuro,immuno|Optic neuritis is classically associated with|Multiple sclerosis|Myasthenia gravis|Often the first presenting sign.
+G|Marcus Gunn pupil|eye,neuro|Optic neuritis produces a relative ___ pupillary defect|afferent|afferent|The Marcus Gunn pupil.
+B|Internuclear ophthalmoplegia lesion|eye,neuro,anatomy|In internuclear ophthalmoplegia the lesion is on the side that|Cannot adduct|Cannot abduct|In the medial longitudinal fasciculus.
+B|INO convergence|eye,neuro|In internuclear ophthalmoplegia, convergence is|Preserved|Also lost|Which proves the third nerve is intact.
+B|Third nerve palsy eye position|eye,neuro,anatomy|A complete third nerve palsy leaves the eye|Down and out|Medially deviated|With ptosis and a dilated pupil.
+B|PCOM aneurysm pupil|eye,neuro,vascular|A posterior communicating artery aneurysm causes|A blown pupil on that side|A small reactive pupil|It compresses superficial parasympathetic fibres.
+B|Diabetic third nerve palsy|eye,neuro,diabetes|A diabetic third nerve palsy characteristically|Spares the pupil|Blows the pupil|The deep motor fibres go first.
+B|Fourth nerve palsy head position|eye,neuro|A trochlear nerve palsy makes the patient|Tilt the head away from it|Turn the head towards it|To compensate for the upward drift.
+B|Sixth nerve palsy eye position|eye,neuro,anatomy|An abducens palsy leaves the eye|Turned medially|Turned laterally|Abduction is lost.
+B|Bitemporal hemianopsia lesion|eye,neuro,endocrine|Bitemporal hemianopsia localises to the|Optic chiasm|Optic tract|Classically from a pituitary tumour.
+B|Cavernous sinus thrombosis triad|eye,neuro,micro|Cavernous sinus thrombosis gives headache, proptosis and|Ophthalmoplegia|Vision loss alone|Spreading from sinusitis via valveless veins.
+B|Cavernous sinus nerve|eye,neuro,anatomy|The nerve classically hit in cavernous sinus thrombosis is|The abducens nerve|The trochlear nerve|It runs free within the sinus.
+B|Horner syndrome triad|eye,neuro,autonomic|Horner syndrome is miosis, anhidrosis and|Partial ptosis|Complete ptosis|Complete ptosis suggests a third nerve palsy.
+B|Wallenberg and Horner|eye,neuro,vascular|Lateral medullary syndrome causes Horner syndrome plus|Dysphagia and hoarseness|Contralateral hemiplegia|From a PICA territory stroke.
+
+# ── Retinoblastoma ───────────────────────────────────────────────────────
+G|Leukocoria|eye,oncology,peds|An abnormal white pupillary reflex is called ___|leukocoria|leukocoria|The presenting sign of retinoblastoma.
+B|Retinoblastoma later cancer|eye,oncology,genetics|Hereditary retinoblastoma raises the later risk of|Osteosarcoma|Ewing sarcoma|The same Rb mutation drives both.
+B|Rb gene inheritance|eye,oncology,genetics|Retinoblastoma behaves as|Autosomal dominant, needing two hits|Autosomal recessive, needing one|The second hit is near-certain in childhood.
