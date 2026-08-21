@@ -43,7 +43,7 @@ B|Medullary thyroid carcinoma|endocrine,thyroid,oncology|Before thyroidectomy fo
 G|Medullary thyroid carcinoma|endocrine,thyroid,lab|Medullary thyroid carcinoma secretes ___|calcitonin|calcitonin|Derived from parafollicular C cells; amyloid stroma.
 G|Maple syrup urine disease|endocrine,genetics,biochem|In maple syrup urine disease, ___ must be restricted|leucine|leucine|Branched-chain amino acids: leucine, isoleucine and valine.
 B|Levothyroxine over-replacement|endocrine,thyroid,cardio|Excess levothyroxine risks which arrhythmia?|Atrial fibrillation|Bradycardia|Thyroid hormone upregulates beta receptors; also causes osteoporosis.
-B|Insulin signaling|endocrine,biochem|The insulin receptor is which kind of receptor?|Tyrosine kinase|G protein-coupled|Autophosphorylation then IRS-1 signalling.
+B|Insulin signaling|endocrine,biochem|The insulin receptor is which kind of receptor?|Tyrosine kinase|G protein-coupled|Autophosphorylation then IRS-1 signaling.
 B|Pubertal gynecomastia|endocrine,repro,peds|Physiologic pubertal gynecomastia is managed with|Reassurance|Tamoxifen|Resolves in one to two years.
 B|Pathologic gynecomastia|endocrine,repro,oncology|Gynecomastia with delayed sexual maturity suggests|A pathologic cause|Normal puberty|Prompts workup for tumor, Klinefelter or drugs.
 B|Sulfonylurea overdose|endocrine,diabetes,pharm|Sulfonylurea hypoglycemia shows C-peptide that is|Elevated|Suppressed|Endogenous insulin release. Exogenous insulin suppresses C-peptide.
@@ -51,7 +51,7 @@ G|Alkaptonuria|endocrine,genetics,biochem|Alkaptonuria blocks conversion of tyro
 B|Bile acid sequestrants|endocrine,pharm,lipids|Cholestyramine as monotherapy raises|Triglycerides|LDL cholesterol|Lowers LDL but increases hepatic VLDL output.
 B|Ezetimibe|endocrine,pharm,lipids|Ezetimibe blocks|Intestinal cholesterol absorption|Hepatic HMG-CoA reductase|Acts at the brush border NPC1L1 transporter.
 B|Postpartum thyroiditis|endocrine,thyroid,OB|Postpartum thyroiditis is caused by|Lymphocytic destruction of follicles|Stimulating TSH receptor antibodies|Transient thyrotoxicosis then hypothyroidism; painless.
-B|Subacute thyroiditis|endocrine,thyroid|Subacute granulomatous thyroiditis shows|Giant cells and mixed infiltrate|Lymphoid follicles and germinal centres|Painful gland after a viral illness; low radioiodine uptake.
+B|Subacute thyroiditis|endocrine,thyroid|Subacute granulomatous thyroiditis shows|Giant cells and mixed infiltrate|Lymphoid follicles and germinal centers|Painful gland after a viral illness; low radioiodine uptake.
 B|Thiazolidinediones|endocrine,diabetes,pharm|Thiazolidinediones activate PPAR-gamma to|Decrease insulin resistance|Increase insulin secretion|Risk of fluid retention, heart failure and fractures.
 B|Cystic fibrosis and glucose|endocrine,genetics,pancreas|CF-related hypoglycemia results from|Impaired glucagon release|Excess endogenous insulin|Islet destruction affects alpha as well as beta cells.
 B|Hypercalcemia of malignancy|endocrine,oncology,calcium|Hypercalcemia of malignancy suppresses|Parathyroid hormone|Calcitonin from C cells|PTH is appropriately low; PTHrP may be high.

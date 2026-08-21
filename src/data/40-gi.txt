@@ -57,7 +57,7 @@ B|Gallstone risk|GI,liver,repro|Estrogen increases gallstone risk by|Raising bil
 B|Esophageal varices|GI,liver,vascular|Esophageal varices form from shunting through the|Left gastric vein|Superior mesenteric vein|Portosystemic anastomosis with the azygos system.
 B|Splenic vein thrombosis|GI,vascular|Isolated gastric varices suggest thrombosis of the|Splenic vein|Portal vein|Often from chronic pancreatitis.
 B|Antacids|GI,pharm|Magnesium and aluminium salts are combined to|Balance their bowel effects|Increasing acid-neutralizing potency|Magnesium causes diarrhea, aluminium causes constipation.
-B|Hepatitis A|GI,virus,liver|Hepatitis A is classically acquired from|Raw or steamed shellfish|Blood transfusion|Faecal-oral; no chronic carrier state.
+B|Hepatitis A|GI,virus,liver|Hepatitis A is classically acquired from|Raw or steamed shellfish|Blood transfusion|Fecal-oral; no chronic carrier state.
 G|Ghrelin|GI,endocrine,nutrition|___ rises with fasting and stimulates hunger|ghrelin|ghrelin|The hunger hormone from the stomach; falls after sleeve gastrectomy.
 B|Leptin|GI,endocrine,nutrition|Leptin levels correlate with|Fat mass|Blood glucose|Made by adipocytes; signals satiety.
 B|Infant reflux|GI,peds|Physiologic infant reflux is caused by|Low lower esophageal sphincter tone|Partial pyloric obstruction|A happy spitter who is growing normally needs no treatment.
@@ -69,7 +69,7 @@ B|Duodenal atresia|GI,embryology,peds|Duodenal atresia results from|Failure of r
 B|Jejunoileal atresia|GI,embryology,peds|Jejunal and ileal atresia result from|Vascular occlusion in utero|Failed recanalization|Apple-peel deformity; linked to maternal smoking and cocaine.
 B|Small intestinal bacterial overgrowth|GI,micro|SIBO causes diarrhea by|Maldigestion within the lumen|Direct mucosal invasion|Bacteria deconjugate bile acids and consume B12.
 B|Hepatocellular carcinoma|GI,oncology,liver|Aflatoxin causes which mutation in hepatocellular carcinoma?|TP53|KRAS|Aspergillus toxin on stored grains; synergistic with hepatitis B.
-B|Right-sided colon cancer|GI,oncology|Right-sided colon cancer typically presents with|Iron deficiency anemia|Obstruction and constipation|Occult blood loss in a wide caecum. Left-sided obstructs earlier.
+B|Right-sided colon cancer|GI,oncology|Right-sided colon cancer typically presents with|Iron deficiency anemia|Obstruction and constipation|Occult blood loss in a wide cecum. Left-sided obstructs earlier.
 B|Systemic sclerosis|GI,immuno,motility|Scleroderma causes reflux by|Fibrous replacement of esophageal muscularis|Increased gastric acid production and reflux|Smooth muscle atrophy and fibrosis lower LES pressure.
 B|Hereditary hemochromatosis|GI,genetics,liver|Hemochromatosis increases|Intestinal iron absorption|Urinary iron excretion|HFE C282Y mutation lowers hepcidin.
 G|Biotin|GI,biochem,vitamins|Biotin is the cofactor for ___ carboxylase enzymes|pyruvate|pyruvate,carboxylase,pyruvate carboxylase|Pyruvate to oxaloacetate. Depleted by raw egg white.
@@ -78,7 +78,7 @@ B|Zenker diverticulum|GI,anatomy,path|Zenker diverticulum is which type of diver
 B|Steatorrhea|GI,lab|Fat malabsorption is screened with|Sudan III stain of stool|Stool culture and sensitivity|Detects unabsorbed fat.
 B|Gallstone ileus|GI,surgery|A gallstone causing small bowel obstruction usually lodges in the|Terminal ileum|Duodenum|The narrowest point; entered via a cholecystoenteric fistula.
 B|Hepatic blood supply|GI,anatomy,liver|The liver resists arterial occlusion because it has|A dual blood supply|Extensive collaterals only|Portal vein plus hepatic artery.
-B|Carcinoid syndrome|GI,oncology,endocrine|Carcinoid syndrome only appears once the tumor|Metastasizes to the liver|Grows beyond two centimetres|The liver otherwise clears serotonin via first-pass metabolism.
+B|Carcinoid syndrome|GI,oncology,endocrine|Carcinoid syndrome only appears once the tumor|Metastasizes to the liver|Grows beyond two centimeters|The liver otherwise clears serotonin via first-pass metabolism.
 G|Carcinoid syndrome|GI,oncology,lab|Carcinoid tumors are screened with urinary ___|5-HIAA|5-hiaa,5 hiaa,hiaa|The serotonin metabolite.
 B|Vitamin B12 absorption|GI,physiology,vitamins|Vitamin B12 is absorbed in the|Terminal ileum|Duodenum|Which is why ileal Crohn disease and resection cause deficiency.
 B|Bile acid absorption|GI,physiology|Bile acids are reabsorbed in the|Terminal ileum|Jejunum|Enterohepatic circulation; ileal disease causes bile acid diarrhea.

@@ -11,8 +11,8 @@ B|Candidal vaginitis smear|gyn,fungi,lab|Vaginal candidiasis on smear shows|Pseu
 B|Bipolar I defining episode|psych|Bipolar I disorder requires at least one episode of|Mania|Depression|Seven or more days of elevated mood.
 B|Pancreatic insufficiency vitamins|gi,nutrition,vitamins|Exocrine pancreatic insufficiency depletes|The fat-soluble vitamins|The B group vitamins|Because lipase is needed to absorb them.
 B|Breaking bad news|ethics,clinical|When giving unexpected serious news, the physician should|Give a small amount, then pause|Give the full picture at once|People cannot absorb detail while shocked.
-B|Sickle cell gallstones|heme,gi,genetics|Gallstones in sickle cell disease are caused by|Chronic haemolysis|Chronic dehydration|Pigment stones from bilirubin.
-B|Familial hypercholesterolemia signs|cardio,genetics,lipids|Tendinous xanthomas with early family coronary disease indicate|Familial hypercholesterolaemia|Lipoprotein lipase deficiency|Autosomal dominant, affecting both sexes.
+B|Sickle cell gallstones|heme,gi,genetics|Gallstones in sickle cell disease are caused by|Chronic hemolysis|Chronic dehydration|Pigment stones from bilirubin.
+B|Familial hypercholesterolemia signs|cardio,genetics,lipids|Tendinous xanthomas with early family coronary disease indicate|Familial hypercholesterolemia|Lipoprotein lipase deficiency|Autosomal dominant, affecting both sexes.
 B|Reactive gliosis cell|neuro,path|Repair of injured CNS tissue is carried out by|Astrocytes|Oligodendrocytes|The most abundant glial cell.
 B|Latex contact dermatitis type|derm,immuno|Occupational latex contact dermatitis is hypersensitivity type|IV|I|Delayed, and cell-mediated.
 B|Viral meningitis CSF|neuro,micro,lab|Viral meningitis gives CSF with|Lymphocytosis and normal glucose|Neutrophilia and low glucose|Enteroviruses are the usual cause.
@@ -22,8 +22,8 @@ B|SCFE demographics|msk,peds,ortho|Slipped capital femoral epiphysis occurs in|O
 B|SCFE examination|msk,peds,ortho|SCFE limits hip|Internal rotation and abduction|External rotation on its own|Often presenting as knee pain.
 G|Acanthosis nigricans meaning|derm,endocrine,diabetes|Thickened dark skin at the nape of the neck indicates ___ resistance|insulin|insulin|A marker of metabolic risk.
 B|Keratosis pilaris management|derm|Keratosis pilaris requires|No treatment; it is benign|Long-term topical steroid|Keratolytics only if it distresses the patient.
-B|OSA and polycythaemia|resp,heme|Obstructive sleep apnoea causes secondary polycythaemia through|Hypoxia raising erythropoietin|Direct marrow stimulation|Via hypoxia-inducible factor.
-B|OSA bicarbonate|resp,acid base|Chronic obstructive sleep apnoea raises the|Serum bicarbonate|Serum chloride|Renal compensation for CO2 retention.
+B|OSA and polycythemia|resp,heme|Obstructive sleep apnea causes secondary polycythemia through|Hypoxia raising erythropoietin|Direct marrow stimulation|Via hypoxia-inducible factor.
+B|OSA bicarbonate|resp,acid base|Chronic obstructive sleep apnea raises the|Serum bicarbonate|Serum chloride|Renal compensation for CO2 retention.
 B|Goodpasture immunofluorescence pattern|renal,immuno,resp|Goodpasture syndrome shows immunofluorescence that is|Linear along the capillaries|Granular and lumpy-bumpy|Against type IV collagen.
 B|Horseshoe kidney embryology|renal,embryology|A horseshoe kidney forms by fusion of the|Inferior poles of the metanephros|Superior poles of the mesonephros|Caught under the inferior mesenteric artery.
 B|Horseshoe kidney complication|renal,micro|A horseshoe kidney predisposes to|Urinary tract infection|Renal cell carcinoma|From associated tract anomalies.
@@ -32,7 +32,7 @@ B|Acute HIV presentation|micro,hiv,immuno|Primary HIV infection presents as|A mo
 B|AV nicking mechanism|eye,cardio,vascular|Arteriovenous nicking occurs when|An artery compresses a vein at a crossing|A vein compresses an artery there|A sign of chronic hypertension.
 B|Left MCA stroke deficits|neuro,stroke|A left middle cerebral artery stroke causes|Right weakness with Broca aphasia|Left weakness with neglect|Broca area sits in the inferior frontal gyrus.
 B|Reflux and overeating|gi,clinical|Large meals worsen reflux by|Raising intragastric pressure|Slowing gastric emptying|Forcing the lower sphincter open.
-B|Alcohol and the lower sphincter|gi,pharm|Alcohol worsens reflux by|Relaxing the lower oesophageal sphincter|Increasing acid production directly|On top of the medication interaction.
+B|Alcohol and the lower sphincter|gi,pharm|Alcohol worsens reflux by|Relaxing the lower esophageal sphincter|Increasing acid production directly|On top of the medication interaction.
 B|Methylmalonic acid enzyme|heme,vitamins,biochem|Methylmalonyl CoA mutase requires|Vitamin B12|Vitamin B9|Which is why B12 deficiency raises the acid.
 B|Colon cancer metastasis route|gi,oncology,anatomy|Right-sided colon cancer reaches the lungs by way of the|Portal vein, then liver, then vena cava|Thoracic duct, then subclavian vein|Liver metastases come first.
 B|Diabetes insipidus subtype test|endocrine,renal|Desmopressin raises urine osmolality in|Central diabetes insipidus|Nephrogenic diabetes insipidus|The nephrogenic kidney cannot respond.

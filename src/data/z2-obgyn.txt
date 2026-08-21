@@ -3,15 +3,15 @@
 
 # ── Reproductive endocrine axis ──────────────────────────────────────────
 G|GnRH source|repro,endocrine|GnRH is released by the ___|hypothalamus|hypothalamus|It drives LH and FSH from the anterior pituitary.
-B|GnRH pulsatility|repro,endocrine,pharm|Leuprolide given CONTINUOUSLY makes gonadotropins|Fall, by desensitising the receptor|Rise, by sustained stimulation|Pulsatile delivery stimulates; continuous delivery suppresses.
+B|GnRH pulsatility|repro,endocrine,pharm|Leuprolide given CONTINUOUSLY makes gonadotropins|Fall, by desensitizing the receptor|Rise, by sustained stimulation|Pulsatile delivery stimulates; continuous delivery suppresses.
 B|Amenorrhea in anorexia|repro,psych,endocrine|Amenorrhea in anorexia is driven by|Low leptin blunting GnRH pulses|High cortisol destroying the ovary|Body fat is required for a normal pulse generator.
 G|GnRH negative feedback|repro,endocrine|GnRH release is inhibited by estrogen, progesterone and ___|androgen|androgen,androgens,testosterone|Which is why anabolic steroids shut the axis down.
 B|Androgen insensitivity feedback|repro,genetics,endocrine|In androgen insensitivity, GnRH is|High, as feedback cannot be sensed|Low, from excess receptor signal|The receptor cannot register the androgen present.
 G|FSH target cells|repro,endocrine|FSH acts on Sertoli cells in males and ___ cells in females|granulosa|granulosa|Both make aromatase and inhibin B.
 B|LH to FSH ratio in PCOS|repro,gyn,endocrine|In PCOS the LH to FSH ratio is|Raised, with FSH itself low|Reduced, with FSH itself high|Abnormal GnRH pulsation drives the imbalance.
-G|Aromatase reaction|repro,endocrine,biochem|Aromatase converts androgens into ___|estrogens|estrogens,estrogen,oestrogens|Testosterone to estradiol, androstenedione to estrone.
-B|Adolescent gynecomastia|repro,endocrine,peds|Physiologic gynecomastia in adolescent boys comes from|Aromatisation of rising androgen|Failure of testicular descent|A transient imbalance that resolves.
-G|Growth plate closure|repro,endocrine,bone|Epiphyseal growth plates are closed by ___|estrogen|estrogen,estrogens,oestrogen|Aromatised from androgen, in both sexes.
+G|Aromatase reaction|repro,endocrine,biochem|Aromatase converts androgens into ___|estrogens|estrogens,estrogen,estrogens|Testosterone to estradiol, androstenedione to estrone.
+B|Adolescent gynecomastia|repro,endocrine,peds|Physiologic gynecomastia in adolescent boys comes from|Aromatization of rising androgen|Failure of testicular descent|A transient imbalance that resolves.
+G|Growth plate closure|repro,endocrine,bone|Epiphyseal growth plates are closed by ___|estrogen|estrogen,estrogens,estrogen|Aromatized from androgen, in both sexes.
 B|Estrone source|repro,endocrine|After menopause the main source of estrogen is|Adipose tissue making estrone|The ovary making estradiol|Which is why low BMI raises osteoporosis risk.
 G|Placental estrogen|repro,ob,endocrine|The estrogen produced mainly by the placenta is ___|estriol|estriol|Low in Down syndrome on the quad screen.
 B|Estrogen and bone|repro,bone,endocrine|Estrogen protects bone by|Raising the OPG to RANK ratio|Raising osteoclast recruitment|Losing it releases osteoclast activity.
@@ -32,7 +32,7 @@ G|Inhibin action|repro,endocrine|Inhibin selectively suppresses ___ from the ant
 B|Quad screen inhibin|repro,ob,lab|The quad screen measures|Inhibin A, not inhibin B|Inhibin B, not inhibin A|A is the better predictor of aneuploidy.
 G|Strongest androgen|repro,endocrine|Testosterone is converted by 5-alpha-reductase into ___|DHT|dht,dihydrotestosterone|The most potent androgen at tissue.
 B|Finasteride target|repro,pharm,urology|Finasteride blocks|5-alpha-reductase|Aromatase|Lowering DHT, not testosterone.
-B|Low DHT phenotype|repro,genetics|A male fetus with very low DHT will appear|Phenotypically female outside|Entirely normal at birth|External virilisation needs DHT.
+B|Low DHT phenotype|repro,genetics|A male fetus with very low DHT will appear|Phenotypically female outside|Entirely normal at birth|External virilization needs DHT.
 G|Androgen carrier protein|repro,endocrine,lab|Most circulating sex steroid is bound to ___|SHBG|shbg,sex hormone-binding globulin|Only the free fraction is active.
 B|Anabolic steroid lipids|repro,pharm,lipids|Anabolic steroids change lipids by|Raising LDL and lowering HDL|Lowering LDL and raising HDL|Accelerating plaque maturation.
 G|Placental lactogen|repro,ob,endocrine|Human placental ___ raises maternal insulin resistance|lactogen|lactogen|Which is why gestational diabetes emerges.
@@ -54,24 +54,24 @@ B|Urge incontinence mechanism|gyn,urology|Urge incontinence is caused by|Detruso
 B|Urge incontinence and MS|gyn,neuro,urology|Multiple sclerosis characteristically causes|Urge incontinence|Overflow incontinence|It appears repeatedly this way on exams.
 B|Urge incontinence treatment|gyn,urology,pharm|Urge incontinence is treated with|Oxybutynin, an antimuscarinic|Duloxetine, an SNRI agent|It calms the detrusor muscle.
 
-# ── Gestational trophoblastic and ovarian tumours ────────────────────────
+# ── Gestational trophoblastic and ovarian tumors ────────────────────────
 B|Complete mole karyotype|gyn,ob,oncology|A complete hydatidiform mole is|Entirely paternal in origin|Half maternal, half paternal|Two sperm, or one that duplicates.
 B|Molar pregnancy hCG|gyn,ob,lab|In a molar pregnancy the hCG is|Far higher than dates predict|Lower than dates would predict|With a uterus large for dates.
-G|Choriocarcinoma spread|gyn,oncology|Choriocarcinoma spreads haematogenously, classically to the ___|lungs|lungs,lung|Presenting with cannonball lesions.
+G|Choriocarcinoma spread|gyn,oncology|Choriocarcinoma spreads hematogenously, classically to the ___|lungs|lungs,lung|Presenting with cannonball lesions.
 B|Choriocarcinoma chemosensitivity|gyn,oncology,pharm|Gestational choriocarcinoma is|Highly sensitive to methotrexate|Resistant to all chemotherapy|One of the curable metastatic cancers.
 G|Dysgerminoma marker|gyn,oncology,lab|Dysgerminoma classically raises serum ___|LDH|ldh,lactate dehydrogenase|The ovarian counterpart of seminoma.
-B|Granulosa cell tumour hormone|gyn,oncology,endocrine|A granulosa cell tumour secretes|Estrogen, causing bleeding|Androgen, causing virilisation|Call-Exner bodies on histology.
-B|Granulosa tumour presentation|gyn,oncology|A granulosa cell tumour in a child causes|Precocious puberty|Delayed puberty|From autonomous estrogen.
+B|Granulosa cell tumor hormone|gyn,oncology,endocrine|A granulosa cell tumor secretes|Estrogen, causing bleeding|Androgen, causing virilization|Call-Exner bodies on histology.
+B|Granulosa tumor presentation|gyn,oncology|A granulosa cell tumor in a child causes|Precocious puberty|Delayed puberty|From autonomous estrogen.
 
 # ── Vulva and cervix ─────────────────────────────────────────────────────
 B|Lichen sclerosus appearance|gyn,derm|Lichen sclerosus of the vulva appears as|A whitish, thin, scratchy patch|A pigmented, thickened plaque|Typically in a woman over 50.
 B|Lichen sclerosus next step|gyn,derm,oncology|Vulval lichen sclerosus warrants|Biopsy, to exclude carcinoma|Reassurance without biopsy|It is not itself neoplastic, but SCC hides in it.
 B|Lichen sclerosus cause|gyn,derm,immuno|Lichen sclerosus is|Autoimmune and irritative|Driven by HPV infection|Unlike cervical disease, HPV plays no part.
 G|Bartholin cyst position|gyn,anatomy|A Bartholin cyst sits at the 4 or ___ o'clock position on the vulva|8|8,eight|Either side of the vaginal opening.
-B|Bartholin abscess organism|gyn,micro|A Bartholin abscess is usually|Polymicrobial in origin|Caused by gonorrhoea alone|Which is what the exam wants named.
+B|Bartholin abscess organism|gyn,micro|A Bartholin abscess is usually|Polymicrobial in origin|Caused by gonorrhea alone|Which is what the exam wants named.
 B|Bartholin cyst management|gyn,surgery|An uninfected Bartholin cyst is treated with|Sitz baths and warm compresses|Immediate surgical excision|Drainage is for a frank abscess.
 B|Vaginal foreign body|gyn,peds|Foul-smelling vaginal discharge in a young child suggests|A retained foreign body|A sexually acquired infection|Examine before assuming anything else.
-G|Sarcoma botryoides|gyn,peds,oncology|Grape-like masses protruding from a child's vagina indicate ___ of the vagina|rhabdomyosarcoma|rhabdomyosarcoma,sarcoma botryoides|A rare embryonal tumour.
+G|Sarcoma botryoides|gyn,peds,oncology|Grape-like masses protruding from a child's vagina indicate ___ of the vagina|rhabdomyosarcoma|rhabdomyosarcoma,sarcoma botryoides|A rare embryonal tumor.
 G|Cervical cancer origin|gyn,oncology,path|Cervical cancer arises at the ___ zone of the cervix|transformation|transformation,transitional|Where squamous meets columnar epithelium.
 B|Cervical cancer strains|gyn,oncology,virus|Cervical carcinoma is caused by|HPV 16 and 18|HPV 6 and 11|Six and eleven cause warts, not cancer.
 B|Cervical cancer obstruction|gyn,oncology,renal|Advanced cervical cancer can cause|Hydronephrosis from ureteric block|Nephrotic-range proteinuria|By local spread through the parametrium.
@@ -85,9 +85,9 @@ B|Paget disease of breast|gyn,oncology,derm|An eczema-like nipple in an older wo
 B|Lobular carcinoma laterality|gyn,oncology|Bilateral breast cancer suggests|Lobular carcinoma|Ductal carcinoma|Lobular is bilateral in a fifth to a third.
 G|Lobular histology|gyn,oncology,path|Lobular carcinoma lines up in single-file rows because it loses ___|E-cadherin|e-cadherin,cadherin|The cells no longer clump together.
 B|Bloody nipple discharge|gyn,oncology|Unilateral bloody nipple discharge suggests|Intraductal papilloma|Fibrocystic change|Papilloma until proven otherwise.
-G|Peau d'orange mechanism|gyn,oncology,path|Peau d'orange comes from tumour blocking ___ drainage of the breast|lymphatic|lymphatic,lymph|Tethering the skin at Cooper ligaments.
+G|Peau d'orange mechanism|gyn,oncology,path|Peau d'orange comes from tumor blocking ___ drainage of the breast|lymphatic|lymphatic,lymph|Tethering the skin at Cooper ligaments.
 B|Inflammatory carcinoma mimic|gyn,oncology|A red, hot, swollen breast that is not infected suggests|Inflammatory carcinoma|Simple fibroadenoma|It mimics mastitis exactly.
-B|Fibroadenoma features|gyn,oncology|A fibroadenoma is typically|Rubbery, mobile and non-tender|Hard, fixed and tender|The commonest breast tumour overall.
+B|Fibroadenoma features|gyn,oncology|A fibroadenoma is typically|Rubbery, mobile and non-tender|Hard, fixed and tender|The commonest breast tumor overall.
 B|Fibroadenoma management|gyn,oncology,surgery|A confirmed fibroadenoma requires|No excision, once confirmed|Excision in every case|FNA confirms the diagnosis.
 G|Phyllodes appearance|gyn,oncology,path|Cystosarcoma phyllodes looks ___-like under the microscope|leaf|leaf,leaflike|Fast-growing, and may be benign or malignant.
 B|Fibrocystic change workup|gyn,clinical|Fibrocystic change of the breast needs|No biopsy; treat symptoms|Core biopsy of every lesion|It is a clinical diagnosis.
@@ -105,7 +105,7 @@ B|Fat necrosis of breast|gyn,path|Fat necrosis of the breast follows|Trauma, and
 B|Ruptured ovarian cyst signs|gyn,emergency|A ruptured ovarian cyst gives|Sudden pain with free fluid|A large mass without fluid|Serosanguineous fluid in the pouch of Douglas.
 B|Ruptured cyst management|gyn,emergency,pharm|A ruptured ovarian cyst is managed with|Analgesia and observation|Urgent laparoscopy always|It settles on its own.
 B|Ovarian torsion pain pattern|gyn,emergency|Ovarian torsion classically gives pain that is|Intermittent, then constant|Constant from the first hour|Over hours to weeks.
-B|Ovarian torsion mass|gyn,emergency,imaging|Ovarian torsion is accompanied by|A large adnexal mass|Free fluid without a mass|Often 8 by 12 centimetres.
+B|Ovarian torsion mass|gyn,emergency,imaging|Ovarian torsion is accompanied by|A large adnexal mass|Free fluid without a mass|Often 8 by 12 centimeters.
 B|Ovarian torsion risk factor|gyn,emergency|The biggest risk factor for ovarian torsion is|A pre-existing ovarian cyst|Recent vigorous exercise|The mass gives the pedicle something to twist on.
 B|Ovarian torsion treatment|gyn,surgery,emergency|Ovarian torsion is treated by|Laparoscopic detorsion|Antibiotics and analgesia|Speed preserves the ovary.
 
@@ -114,11 +114,11 @@ B|HPV wart strains|gyn,virus,derm|Condylomata acuminata are caused by|HPV 6 and 
 G|Laryngeal papillomatosis|peds,virus,ent|HPV 6 and 11 can cause ___ papillomatosis in a neonate|laryngeal|laryngeal|Acquired passing through the birth canal.
 B|Chlamydia on microscopy|gyn,micro,lab|Chlamydial discharge under the microscope shows|White cells but no organisms|Gram-negative diplococci|It is an obligate intracellular organism.
 G|PID sequela|gyn,micro,ob|Tubal scarring after PID raises the risk of ___ pregnancy|ectopic|ectopic|Along with infertility and chronic pain.
-B|Gonorrhoea microscopy|gyn,micro,lab|Gonorrhoea appears on microscopy as|Gram-negative diplococci|Gram-positive cocci in chains|Intracellular within neutrophils.
-B|Gonococcal arthritis|gyn,micro,rheum|Disseminated gonorrhoea causes|Monoarthritis of the knee|Symmetrical small joint disease|Or a triad with tenosynovitis and rash.
-B|Gonorrhoea co-treatment|gyn,micro,pharm|Treating gonorrhoea requires ceftriaxone plus|Cover for chlamydia|Cover for trichomonas|Chlamydia is invisible on the same slide.
+B|Gonorrhea microscopy|gyn,micro,lab|Gonorrhea appears on microscopy as|Gram-negative diplococci|Gram-positive cocci in chains|Intracellular within neutrophils.
+B|Gonococcal arthritis|gyn,micro,rheum|Disseminated gonorrhea causes|Monoarthritis of the knee|Symmetrical small joint disease|Or a triad with tenosynovitis and rash.
+B|Gonorrhea co-treatment|gyn,micro,pharm|Treating gonorrhea requires ceftriaxone plus|Cover for chlamydia|Cover for trichomonas|Chlamydia is invisible on the same slide.
 B|Trichomonas discharge|gyn,micro,parasite|Trichomonas gives a discharge that is|Yellow-green and frothy|Thick, white and curd-like|On a flagellated protozoan wet mount.
-G|Strawberry cervix|gyn,micro,parasite|Punctate cervical haemorrhages, the ___ cervix, suggest trichomonas|strawberry|strawberry|Seen in a minority of cases.
+G|Strawberry cervix|gyn,micro,parasite|Punctate cervical hemorrhages, the ___ cervix, suggest trichomonas|strawberry|strawberry|Seen in a minority of cases.
 B|Trichomonas partner treatment|gyn,micro,pharm|Trichomonas is treated with metronidazole for|The patient and her partner|The patient by herself|Reinfection rates are high otherwise.
 B|Primary syphilis ulcer|gyn,micro|The chancre of primary syphilis is|Painless and indurated|Painful with ragged edges|Painful ulcers point to chancroid.
 B|Secondary syphilis rash|gyn,micro,derm|The rash of secondary syphilis characteristically involves|The palms and the soles|The trunk, sparing the limbs|With condylomata lata in moist areas.
@@ -131,8 +131,8 @@ G|cfDNA earliest week|ob,genetics,lab|Cell-free DNA testing can be done from ___
 B|Amniocentesis risk|ob,genetics|The miscarriage risk of amniocentesis is about|One in a thousand|One in twenty|Which is why screening comes first.
 
 # ── Rhesus disease ───────────────────────────────────────────────────────
-B|Rh isoimmunisation timing|ob,heme|Rhesus disease threatens|The second and later pregnancies|The very first pregnancy|Sensitisation happens in the first.
-G|Anti-D timing|ob,heme,pharm|Anti-D immunoglobulin is given at ___ weeks and again after delivery|28|28,twenty-eight|Plus after any sensitising event.
+B|Rh isoimmunization timing|ob,heme|Rhesus disease threatens|The second and later pregnancies|The very first pregnancy|Sensitization happens in the first.
+G|Anti-D timing|ob,heme,pharm|Anti-D immunoglobulin is given at ___ weeks and again after delivery|28|28,twenty-eight|Plus after any sensitizing event.
 B|Rh antibody class|ob,heme,immuno|The antibody that crosses to harm the fetus is|IgG against the Rh antigen|IgM against the Rh antigen|IgM is too large to cross the placenta.
 
 # ── Amniotic fluid ───────────────────────────────────────────────────────
@@ -151,15 +151,15 @@ G|Magnesium toxicity sign|ob,pharm,emergency|Magnesium toxicity is detected by l
 # ── Early pregnancy loss ─────────────────────────────────────────────────
 B|Ectopic hCG pattern|ob,gyn,lab|In an ectopic pregnancy the beta-hCG is|Lower than dates would predict|Far higher than dates predict|And rises too slowly between tests.
 G|hCG doubling time|ob,lab|Beta-hCG should roughly double every ___ days in early pregnancy|2|2,two,2-3,3|A slow rise suggests a failing or ectopic pregnancy.
-B|Ectopic biggest risk factor|ob,gyn,micro|The strongest risk factor for ectopic pregnancy is|Previous pelvic inflammatory disease|Previous caesarean section delivery|Tubal scarring stops the conceptus travelling.
+B|Ectopic biggest risk factor|ob,gyn,micro|The strongest risk factor for ectopic pregnancy is|Previous pelvic inflammatory disease|Previous cesarean section delivery|Tubal scarring stops the conceptus traveling.
 B|Threatened miscarriage cervix|ob,gyn|In a threatened miscarriage the cervix is|Closed, with a viable fetus|Open, with tissue passing|Bleeding may still be heavy.
 B|Inevitable miscarriage cervix|ob,gyn|In an inevitable miscarriage the cervix is|Open, and loss will follow|Closed, and loss may not|Cramping is usually prominent.
 B|Incomplete miscarriage|ob,gyn|An incomplete miscarriage means|Some tissue has already passed|Nothing has yet been passed|Distinguishing it from a missed miscarriage.
 B|Blighted ovum ultrasound|ob,gyn,imaging|A blighted ovum shows on ultrasound as|A sac with no embryo inside|A fetus without a heartbeat|An anembryonic pregnancy.
-G|Cervical ripening drug|ob,pharm|___, a prostaglandin E1 analogue, is used to ripen the cervix|Misoprostol|misoprostol|Also used for postpartum haemorrhage.
+G|Cervical ripening drug|ob,pharm|___, a prostaglandin E1 analogue, is used to ripen the cervix|Misoprostol|misoprostol|Also used for postpartum hemorrhage.
 
 # ── Postpartum infection ─────────────────────────────────────────────────
-B|Endometritis presentation|ob,micro|Postpartum endometritis presents with|Fever and foul-smelling lochia|Painless heavy fresh bleeding|Days after delivery, often a caesarean.
+B|Endometritis presentation|ob,micro|Postpartum endometritis presents with|Fever and foul-smelling lochia|Painless heavy fresh bleeding|Days after delivery, often a cesarean.
 B|Endometritis organisms|ob,micro|Postpartum endometritis is usually|Polymicrobial|Due to group B strep|Requiring broad cover.
 B|Septic pelvic thrombophlebitis|ob,micro,coagulation|Fever persisting despite antibiotics after delivery suggests|Septic pelvic thrombophlebitis|Simple postpartum endometritis|Infected clot in the pelvic veins.
 
@@ -170,14 +170,14 @@ B|Obstetric cholestasis symptom|ob,liver,derm|Intrahepatic cholestasis of pregna
 B|Obstetric cholestasis treatment|ob,liver,pharm|Intrahepatic cholestasis of pregnancy is treated with|Ursodeoxycholic acid|Topical corticosteroids|Plus fetal monitoring and early delivery.
 B|Acute fatty liver treatment|ob,liver,emergency|Acute fatty liver of pregnancy is treated by|Immediate delivery of the fetus|Steroids and expectant care|It threatens both mother and fetus.
 
-# ── Antepartum and postpartum haemorrhage ────────────────────────────────
-B|Commonest cause of PPH|ob,emergency|The commonest cause of postpartum haemorrhage is|Uterine atony|Retained placenta|Around three quarters of cases.
+# ── Antepartum and postpartum hemorrhage ────────────────────────────────
+B|Commonest cause of PPH|ob,emergency|The commonest cause of postpartum hemorrhage is|Uterine atony|Retained placenta|Around three quarters of cases.
 B|Uterine atony examination|ob,emergency|Uterine atony gives a uterus that is|Large and boggy|Firm and contracted|Bleeding continues while it stays soft.
 B|Atony first measure|ob,emergency|The first measure for uterine atony is|Uterine massage|Immediate hysterectomy|Then oxytocin, then ergometrine.
-B|Ergometrine contraindication|ob,pharm,cardio|Ergometrine must be avoided in|Hypertension and preeclampsia|Anaemia and low platelets|It is a potent vasoconstrictor.
-B|Placenta previa bleeding|ob,emergency|Placenta previa causes third-trimester bleeding that is|Painless|Agonising|The placenta covers the internal os.
-B|Placenta previa delivery|ob,surgery|Placenta previa is delivered by|Caesarean from 37 weeks|Induced vaginal delivery|Earlier, the placenta may still migrate.
-B|Placenta previa risk factor|ob,surgery|Placenta previa is more likely after|Previous caesarean or myomectomy|A previous rapid vaginal birth|Scarring alters where implantation occurs.
+B|Ergometrine contraindication|ob,pharm,cardio|Ergometrine must be avoided in|Hypertension and preeclampsia|Anemia and low platelets|It is a potent vasoconstrictor.
+B|Placenta previa bleeding|ob,emergency|Placenta previa causes third-trimester bleeding that is|Painless|Agonizing|The placenta covers the internal os.
+B|Placenta previa delivery|ob,surgery|Placenta previa is delivered by|Cesarean from 37 weeks|Induced vaginal delivery|Earlier, the placenta may still migrate.
+B|Placenta previa risk factor|ob,surgery|Placenta previa is more likely after|Previous cesarean or myomectomy|A previous rapid vaginal birth|Scarring alters where implantation occurs.
 B|Vasa previa triad|ob,emergency,peds|Vasa previa presents with painless bleeding, ruptured membranes and|Fetal bradycardia|Maternal hypotension|The blood lost is fetal, not maternal.
 G|Velamentous cord|ob,path|In ___ cord insertion the fetal vessels run unprotected in the membranes|velamentous|velamentous|A cause of vasa previa.
 
@@ -188,5 +188,5 @@ B|Deceleration management|ob,emergency|Late decelerations are managed by stoppin
 B|True labour contractions|ob|True labour contractions are distinguished by|Cervical effacement and dilation|Relief on changing position|They persist and intensify.
 G|Nitrazine test|ob,lab|___ paper turns blue when amniotic fluid is present|Nitrazine|nitrazine|Because the fluid is alkaline.
 G|Ferning pattern|ob,lab|Amniotic fluid dries in a ___ pattern on a slide|ferning|ferning,fern|Confirming ruptured membranes.
-B|Caput versus cephalohaematoma|ob,peds|A scalp swelling that CROSSES suture lines is|Caput succedaneum|Cephalohaematoma|A cephalohaematoma is bounded by sutures.
-B|Cephalohaematoma jaundice|ob,peds,heme|A cephalohaematoma raises the risk of|Jaundice, as blood breaks down|Meningitis from the scalp|Watch the bilirubin.
+B|Caput versus cephalohematoma|ob,peds|A scalp swelling that CROSSES suture lines is|Caput succedaneum|Cephalohematoma|A cephalohematoma is bounded by sutures.
+B|Cephalohematoma jaundice|ob,peds,heme|A cephalohematoma raises the risk of|Jaundice, as blood breaks down|Meningitis from the scalp|Watch the bilirubin.

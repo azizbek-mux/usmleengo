@@ -14,7 +14,7 @@ B|Number needed to screen|biostats,epidemiology|Number needed to screen is usual
 
 # ── Statistical concepts, deeper ─────────────────────────────────────────
 G|Normal distribution|biostats|In a normal distribution, mean, median and mode are ___|equal|equal,the same,identical|Skew separates them.
-B|Skewed data|biostats|Skewed data are best summarized with|Median and interquartile range|Mean and standard deviation|And analysed with non-parametric tests.
+B|Skewed data|biostats|Skewed data are best summarized with|Median and interquartile range|Mean and standard deviation|And analyzed with non-parametric tests.
 G|Non-parametric test|biostats|The ___-Whitney U test compares two independent non-normal groups|Mann|mann|The paired equivalent is Wilcoxon signed-rank.
 B|Paired data|biostats|Before-and-after measurements in the same subjects require|A paired test|An unpaired test|Ignoring pairing wastes statistical power.
 G|Regression|biostats|___ regression is used when the outcome is binary|Logistic|logistic|Linear regression suits continuous outcomes.
@@ -29,7 +29,7 @@ G|Outbreak investigation|biostats,epidemiology,micro|An outbreak investigation b
 B|Epidemic curve|biostats,epidemiology|A sharp single-peak epidemic curve suggests|A point source outbreak|Person-to-person spread|Propagated outbreaks show successive waves.
 G|Basic reproduction number|biostats,epidemiology,micro|An outbreak grows when R is above ___|1|1,one|Control measures aim to push it below one.
 B|Case fatality versus mortality rate|biostats,epidemiology|Case fatality rate uses which denominator?|People with the disease|The whole population|Mortality rate uses the population.
-G|Standardization|biostats,epidemiology|Age ___ allows fair comparison of populations with different age structures|standardization|standardization,standardisation,adjustment|Crude rates can mislead badly.
+G|Standardization|biostats,epidemiology|Age ___ allows fair comparison of populations with different age structures|standardization|standardization,standardization,adjustment|Crude rates can mislead badly.
 B|Life expectancy|biostats,epidemiology|Life expectancy at birth is most influenced by|Infant and child mortality|Care of the very elderly|Which is why it rose so sharply historically.
 G|Years of life lost|biostats,epidemiology|DALYs combine years of life lost with years lived with ___|disability|disability|Capturing both mortality and morbidity.
 B|Herd immunity limits|biostats,epidemiology,vaccines|Herd immunity does not protect against|Tetanus|Measles|Tetanus is acquired from the environment, not people.

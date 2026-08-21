@@ -12,7 +12,7 @@ BT|Renal failure and calcium|renal,endocrine,calcium|Chronic kidney disease make
 BT|Aldosterone and pH|renal,endocrine,acid base|Excess aldosterone causes|Metabolic alkalosis|Metabolic acidosis|H+ is excreted alongside K+. Conn syndrome: hypokalemia with alkalosis.
 BT|Vomiting and acid-base|GI,acid base,electrolytes|Prolonged vomiting causes|Hypochloremic metabolic alkalosis|Anion gap metabolic acidosis|Losing gastric HCl. Diarrhea instead causes a normal-gap acidosis.
 BT|Diarrhea and acid-base|GI,acid base|Severe diarrhea causes|Normal anion gap metabolic acidosis|Raised anion gap metabolic acidosis|Bicarbonate is lost from the gut, and chloride rises to compensate.
-BT|Salicylate overdose|toxicology,acid base|Aspirin overdose produces|Respiratory alkalosis AND anion gap acidosis|Pure metabolic acidosis with a normal gap|Direct respiratory centre stimulation plus uncoupled metabolism.
+BT|Salicylate overdose|toxicology,acid base|Aspirin overdose produces|Respiratory alkalosis AND anion gap acidosis|Pure metabolic acidosis with a normal gap|Direct respiratory center stimulation plus uncoupled metabolism.
 BT|Aspirin and urine pH|toxicology,renal,pharm|Alkalinizing the urine in aspirin overdose|Traps salicylate and speeds excretion|Slows excretion by trapping it in blood|Ion trapping of a weak acid. Acidify instead for weak bases.
 BT|Insulin and phosphate|endocrine,electrolytes,nutrition|On refeeding a starved patient, serum phosphate|Falls|Rises|Insulin drives phosphate into cells — refeeding syndrome. Also K+ and magnesium.
 BT|Cortisol and white cells|endocrine,immuno,lab|Steroids make the neutrophil count|Rise|Fall|Demargination raises neutrophils while lymphocytes and eosinophils fall.

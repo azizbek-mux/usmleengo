@@ -1,14 +1,14 @@
 # Renal — from the Mehlman HY Renal notes.
 
 # ── Renal failure biochemistry ───────────────────────────────────────────
-G|Azotemia meaning|renal,lab|A high blood urea nitrogen is called ___|azotemia|azotemia,azotaemia|Uraemia adds the symptoms.
+G|Azotemia meaning|renal,lab|A high blood urea nitrogen is called ___|azotemia|azotemia,azotemia|Uremia adds the symptoms.
 B|Potassium in renal failure|renal,electrolytes|Potassium in renal failure is|Always raised|Variable, either way|Secretion at the collecting duct fails.
 B|Sodium in renal failure|renal,electrolytes|Sodium in renal failure is|Variable, not predictable|Always markedly low|Unlike potassium and phosphate.
 B|Phosphate in renal failure|renal,electrolytes,calcium|Phosphate in renal failure is|Always raised|Always reduced|It cannot be filtered out.
 B|CKD and parathyroid|renal,calcium,endocrine|Low calcium with high phosphate in CKD causes|Secondary hyperparathyroidism|Primary hyperparathyroidism|The gland responds to the calcium.
-B|Bicarbonate in renal failure|renal,acid base|Bicarbonate in renal failure is|Always reduced|Always elevated|Uraemia is the U in MUDPILES.
+B|Bicarbonate in renal failure|renal,acid base|Bicarbonate in renal failure is|Always reduced|Always elevated|Uremia is the U in MUDPILES.
 
-# ── Renal haemodynamics ──────────────────────────────────────────────────
+# ── Renal hemodynamics ──────────────────────────────────────────────────
 B|Afferent arteriole patency|renal,pharm,physiology|The afferent arteriole is kept open by|Vasodilating prostaglandins|Circulating angiotensin II|Which is why NSAIDs are dangerous here.
 B|NSAID mechanism at kidney|renal,pharm|NSAIDs reduce renal blood flow by|Removing prostaglandin dilation|Actively constricting the vessel|The wording matters on exams.
 B|ACE inhibitor at efferent|renal,pharm,cardio|ACE inhibitors act on the efferent arteriole by|Reducing its constriction|Actively dilating it open|Angiotensin II normally constricts it.
@@ -23,7 +23,7 @@ B|ATN casts|renal,lab|Acute tubular necrosis classically shows|Muddy brown granu
 B|ATN drug causes|renal,pharm,toxicology|Acute tubular necrosis is caused by|Aminoglycosides, cisplatin, contrast|Penicillins and cephalosporins|Any of these plus a rising creatinine.
 B|Rhabdomyolysis dipstick|renal,lab,msk|Rhabdomyolysis gives a urine dipstick that is|Positive for blood, with few red cells|Negative for blood, with many cells|Myoglobin cross-reacts with the pad.
 B|Rhabdomyolysis triggers|renal,msk,pharm|Rhabdomyolysis follows|A long fall, marathon or statin|A short viral illness at home|Also McArdle disease and alcohol.
-B|Tumour lysis prevention drug|renal,oncology,pharm|Renal failure in tumour lysis is prevented with|Allopurinol|Furosemide|A xanthine oxidase inhibitor.
+B|Tumor lysis prevention drug|renal,oncology,pharm|Renal failure in tumor lysis is prevented with|Allopurinol|Furosemide|A xanthine oxidase inhibitor.
 
 # ── Glomerular disease ───────────────────────────────────────────────────
 B|Nephritic versus nephrotic|renal,path|The feature separating nephritic from nephrotic disease is|Blood in the urine|Protein in the urine|Nephritic disease also has some protein.

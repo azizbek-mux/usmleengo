@@ -11,7 +11,7 @@ B|Skeletal versus cardiac muscle|physiology,cardio,msk|Which depends on extracel
 # ── Cardiovascular physiology ────────────────────────────────────────────
 G|Baroreceptors|physiology,cardio|Carotid sinus baroreceptors signal via cranial nerve ___|IX|ix,9,nine,glossopharyngeal|Aortic arch receptors use the vagus.
 B|Baroreceptor reflex|physiology,cardio|A fall in blood pressure causes baroreceptor firing to|Decrease|Increase|Less inhibition means more sympathetic outflow.
-G|Starling forces|physiology,cardio|Oedema forms when capillary ___ pressure exceeds oncotic pressure|hydrostatic|hydrostatic|Or when oncotic pressure falls, as in nephrotic syndrome.
+G|Starling forces|physiology,cardio|Edema forms when capillary ___ pressure exceeds oncotic pressure|hydrostatic|hydrostatic|Or when oncotic pressure falls, as in nephrotic syndrome.
 B|Vascular resistance|physiology,cardio|Resistance is most sensitive to changes in|Vessel radius|Vessel length|Resistance varies with the fourth power of radius.
 G|Coronary flow|physiology,cardio|Coronary flow is driven by ___ pressure during diastole|aortic diastolic|aortic diastolic,diastolic,aortic|Which is why tachycardia worsens ischemia.
 B|Cardiac oxygen demand|physiology,cardio|Myocardial oxygen demand rises most with|Heart rate and wall stress|Preload and nothing else|Rate-pressure product estimates it.

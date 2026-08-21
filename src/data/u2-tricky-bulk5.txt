@@ -8,7 +8,7 @@ BT|Primary vs secondary prevention|biostats,epidemiology|Which is treating hyper
 BT|Tertiary vs quaternary prevention|biostats,ethics|Which protects patients from over-medicalization?|Quaternary prevention|Tertiary prevention|Tertiary limits disability from established disease.
 BT|Sensitivity vs specificity trade-off|biostats,lab|Raising the cut-off of a continuous test|Increases specificity and lowers sensitivity|Increases both sensitivity and specificity|The ROC curve shows the trade-off.
 BT|Absolute vs attributable risk|biostats,epidemiology|Which estimates disease preventable by removing an exposure?|Attributable risk|Relative risk|Population attributable risk factors in prevalence.
-BT|Kwashiorkor vs marasmus|nutrition,peds|Which has a relatively preserved weight with oedema?|Kwashiorkor|Marasmus|Marasmus is severe wasting without oedema.
+BT|Kwashiorkor vs marasmus|nutrition,peds|Which has a relatively preserved weight with edema?|Kwashiorkor|Marasmus|Marasmus is severe wasting without edema.
 BT|Vitamin B1 vs B12 deficiency|vitamins,neuro|Which causes ophthalmoplegia and confusion?|Thiamine deficiency|B12 deficiency|B12 gives dorsal column and corticospinal signs.
 BT|Vitamin A vs zinc deficiency|vitamins,derm,eye|Which causes night blindness and Bitot spots?|Vitamin A deficiency|Zinc deficiency|Zinc causes perioral rash and poor healing.
 BT|Scurvy vs vitamin K deficiency|vitamins,coagulation|Which has a NORMAL prothrombin time?|Scurvy|Vitamin K deficiency|Scurvy is a vessel wall problem, not a clotting one.
@@ -36,7 +36,7 @@ BT|Prolactinoma vs stalk effect|endocrine,pituitary|Which typically causes prola
 
 # ── Changed context ──────────────────────────────────────────────────────
 BT|Beta blocker in variceal bleeding|GI,liver,pharm|In ACUTE variceal bleeding, a non-selective beta blocker is|Not started until bleeding is controlled|Given immediately on presentation|It blunts the compensatory tachycardia.
-BT|Fluids in variceal bleeding|GI,liver,emergency|Over-transfusion in variceal bleeding|Raises portal pressure and worsens bleeding|Improves outcomes by restoring volume|Aim for a restrictive haemoglobin target.
+BT|Fluids in variceal bleeding|GI,liver,emergency|Over-transfusion in variceal bleeding|Raises portal pressure and worsens bleeding|Improves outcomes by restoring volume|Aim for a restrictive hemoglobin target.
 BT|NSAIDs in heart failure|cardio,pharm|NSAIDs in heart failure cause|Sodium retention and decompensation|No clinically important interaction|Prostaglandin inhibition worsens renal sodium handling.
 BT|Verapamil in heart failure|cardio,pharm|Verapamil in systolic heart failure is|Contraindicated|First-line|Negative inotropy worsens function.
 BT|Antiarrhythmics post-MI|cardio,pharm,arrhythmia|Class IC antiarrhythmics after myocardial infarction|Increase mortality|Reduce mortality|The CAST trial finding.
@@ -59,5 +59,5 @@ BT|Alkalosis and oxygen delivery|resp,physiology|Alkalosis shifts the oxygen cur
 BT|Anemia and angina|heme,cardio|Anemia worsens angina by|Reducing oxygen delivery to myocardium|Increasing afterload on the ventricle|Correcting it may relieve symptoms.
 BT|Thyroid and lipids|endocrine,lipids|New hyperlipidemia should prompt checking|Thyroid function|Liver function only|Hypothyroidism is a reversible cause.
 BT|Steroids and wound healing|pharm,surgery,path|Perioperative steroids|Impair wound healing and mask infection|Speed recovery and reduce swelling|Vitamin A can partially counteract this.
-BT|Smoking and wound healing|surgery,path|Stopping smoking before surgery improves outcomes if done at least|Four weeks before|The night before|Vasoconstriction and carboxyhaemoglobin impair healing.
-BT|Obesity and respiratory function|resp,physiology,surgery|Obesity reduces functional residual capacity, which shortens|The safe apnoea time at intubation|The duration of anaesthesia|Preoxygenation matters more.
+BT|Smoking and wound healing|surgery,path|Stopping smoking before surgery improves outcomes if done at least|Four weeks before|The night before|Vasoconstriction and carboxyhemoglobin impair healing.
+BT|Obesity and respiratory function|resp,physiology,surgery|Obesity reduces functional residual capacity, which shortens|The safe apnea time at intubation|The duration of anesthesia|Preoxygenation matters more.

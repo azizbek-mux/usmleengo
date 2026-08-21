@@ -5,14 +5,14 @@ B|Vitamin E versus B12 tracts|nutrition,vitamins,neuro|Vitamin E deficiency mimi
 B|CO2 and cerebral blood flow|neuro,physiology,critical care|Hypercapnia makes cerebral vessels|Dilate, raising intracranial pressure|Constrict, lowering the pressure|Which is why hyperventilation is used acutely.
 G|Testicular artery origin|anatomy,repro|The testicular arteries arise from the aorta at the level of ___ 2|L|l,lumbar|Just below the renal arteries.
 B|Pierre Robin triad|peds,genetics,ent|Pierre Robin sequence is micrognathia, cleft palate and|Downward displacement of the tongue|Low-set, malformed external ears|Causing airway obstruction at birth.
-B|Spinothalamic decussation|neuro,anatomy|Pain and temperature fibres cross in the|Anterior white commissure|Medulla, at the pyramids|Then ascend contralaterally.
+B|Spinothalamic decussation|neuro,anatomy|Pain and temperature fibers cross in the|Anterior white commissure|Medulla, at the pyramids|Then ascend contralaterally.
 B|Thiazide site of action|renal,pharm|Thiazide diuretics act at the|Distal convoluted tubule|Thick ascending limb|Blocking the sodium-chloride cotransporter.
 B|Trypsinogen activation|gi,biochem|Trypsinogen is secreted by pancreatic acinar cells and activated|In the duodenal lumen|Inside the acinar cell|Premature activation causes pancreatitis.
-B|Abetalipoproteinemia protein|gi,genetics,lipids|Hypobetalipoproteinaemia is a defect in|Apolipoprotein B|Apolipoprotein E|Causing steatorrhoea and failure to thrive.
+B|Abetalipoproteinemia protein|gi,genetics,lipids|Hypobetalipoproteinemia is a defect in|Apolipoprotein B|Apolipoprotein E|Causing steatorrhea and failure to thrive.
 B|Overactive bladder mechanism|renal,urology|An overactive bladder is caused by|Detrusor instability|Sphincter weakness|Giving urge incontinence.
-B|Caecal blood supply|gi,anatomy,surgery|The caecum is supplied by the|Ileocolic artery|Middle colic artery|A branch of the superior mesenteric artery.
+B|Cecal blood supply|gi,anatomy,surgery|The cecum is supplied by the|Ileocolic artery|Middle colic artery|A branch of the superior mesenteric artery.
 B|Cleft lip embryology|peds,embryology|Cleft lip results from failure of fusion of the|Maxillary and nasal prominences|The palatine prominences|The palatine pair give cleft palate.
 B|Branchial cleft cyst position|ent,embryology,peds|A branchial cleft cyst appears as|A lateral neck mass|A midline neck mass|A midline mass suggests a thyroglossal cyst.
 G|Sphenoid sinus drainage|ent,anatomy|The sphenoid sinus drains into the spheno___ recess|ethmoidal|ethmoidal|Above and behind the superior concha.
 B|Musculocutaneous nerve cord|anatomy,neuro,msk|The musculocutaneous nerve arises from the|Lateral cord of the brachial plexus|Medial cord of the brachial plexus|Supplying biceps and brachialis.
-B|Pituitary adenoma visual field|endocrine,eye,anatomy|A pituitary adenoma compresses the chiasm, cutting the|Nasal retinal fibres, giving bitemporal loss|Temporal retinal fibres, giving nasal loss|The nasal fibres are the ones that cross.
+B|Pituitary adenoma visual field|endocrine,eye,anatomy|A pituitary adenoma compresses the chiasm, cutting the|Nasal retinal fibers, giving bitemporal loss|Temporal retinal fibers, giving nasal loss|The nasal fibers are the ones that cross.

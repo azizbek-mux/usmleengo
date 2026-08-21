@@ -1,4 +1,4 @@
-# MSK / orthopaedics — from the Mehlman HY MSK_Anatomy notes.
+# MSK / orthopedics — from the Mehlman HY MSK_Anatomy notes.
 
 # ── Shoulder ─────────────────────────────────────────────────────────────
 B|Bursitis versus cuff tendonitis|msk,ortho|Weakness on resisted testing separates|Rotator cuff tendonitis|Subacromial bursitis|Bursitis gives pain without true weakness.
@@ -13,7 +13,7 @@ B|Deep peroneal nerve loss|msk,neuro,anatomy|Deep peroneal nerve injury loses|Do
 G|Deep peroneal gait|msk,neuro|Losing dorsiflexion produces a high-___ gait|steppage|steppage|The foot must be lifted clear of the ground.
 B|Superficial peroneal nerve|msk,neuro,anatomy|The superficial peroneal nerve performs|Eversion of the foot|Plantarflexion of the foot|Deep does dorsiflexion instead.
 B|Tibial nerve loss|msk,neuro,anatomy|Tibial nerve injury means the patient cannot|Stand on tiptoes|Lift the forefoot|Plantarflexion is lost.
-B|Meralgia paresthetica nerve|msk,neuro,anatomy|Meralgia paresthetica is entrapment of the|Lateral femoral cutaneous nerve|The common peroneal nerve|Giving lateral thigh paraesthesia.
+B|Meralgia paresthetica nerve|msk,neuro,anatomy|Meralgia paresthetica is entrapment of the|Lateral femoral cutaneous nerve|The common peroneal nerve|Giving lateral thigh paresthesia.
 
 # ── Radiculopathy ────────────────────────────────────────────────────────
 B|L4 radiculopathy reflex|msk,neuro|An L4 radiculopathy abolishes the|Knee reflex|Ankle reflex|With weak knee extension.
@@ -45,16 +45,16 @@ B|Iliotibial band syndrome|msk,ortho|Lateral knee pain in a runner suggests|Ilio
 B|Morton neuroma site|msk,ortho,neuro|Morton neuroma sits between the|Second and third metatarsals|First and second metatarsals|Worse in tight or high-heeled shoes.
 B|Morton neuroma treatment|msk,ortho,pharm|Morton neuroma is treated with|Orthotics and steroid injection|Immediate surgical excision|Comfortable footwear comes first.
 B|Charcot joint cause|msk,neuro,diabetes|A Charcot joint arises from|Loss of joint sensation|Chronic joint infection|Usually diabetic neuropathy.
-G|Charcot joint x-ray|msk,imaging,diabetes|Charcot foot shows disorganisation of the ___ joints on x-ray|tarsometatarsal|tarsometatarsal|A classic exam description.
+G|Charcot joint x-ray|msk,imaging,diabetes|Charcot foot shows disorganization of the ___ joints on x-ray|tarsometatarsal|tarsometatarsal|A classic exam description.
 B|Growing pains description|msk,peds|Growing pains classically wake a child with|Throbbing pain in both legs|Swelling of a single joint|Between ages three and twelve.
 
-# ── Paediatric hip and limb ──────────────────────────────────────────────
+# ── Pediatric hip and limb ──────────────────────────────────────────────
 B|Tibia vara definition|msk,peds,ortho|Tibia vara is bowing that persists beyond age|Two years|Six months|After rickets has been excluded.
 B|Legg-Calve-Perthes age|msk,peds,ortho|Legg-Calve-Perthes affects children aged|Five to eight years|Twelve to fifteen years|Older than that suggests SCFE.
 B|Legg-Calve-Perthes nature|msk,peds,ortho|Legg-Calve-Perthes is|Idiopathic avascular necrosis|Septic necrosis of the head|A known cause makes it plain avascular necrosis.
 B|Perthes first investigation|msk,peds,imaging|The first investigation in suspected Perthes is|A plain hip x-ray|An immediate MRI scan|Showing a flattened femoral head.
 
-# ── Metabolic bone and tumours ───────────────────────────────────────────
+# ── Metabolic bone and tumors ───────────────────────────────────────────
 B|Osteopetrosis mechanism|msk,bone,genetics|Osteopetrosis is caused by|Osteoclast failure|Osteoblast failure|Bone is dense but brittle.
 G|Osteopetrosis enzyme|msk,bone,biochem|Osteopetrosis follows deficiency of carbonic ___ II|anhydrase|anhydrase|Osteoclasts cannot generate acid.
 B|Osteopetrosis fracture paradox|msk,bone|In osteopetrosis, bones fracture because they are|Too dense, and therefore brittle|Too soft, and therefore bendy|Strength needs turnover, not just density.

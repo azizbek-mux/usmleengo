@@ -8,7 +8,7 @@ B|Cardiac arrest|emergency,cardio,pharm|Adrenaline in cardiac arrest is given|Ev
 G|Reversible causes|emergency,critical care|The four Hs include hypoxia, hypovolemia, hypothermia and ___/metabolic|hyperkalemia|hyperkalemia,hypokalemia,hydrogen ion|The four Ts are tension pneumothorax, tamponade, toxins and thrombosis.
 B|Sepsis|emergency,micro|The single most time-critical intervention in sepsis is|Early antibiotics|Central line insertion|Each hour of delay increases mortality.
 G|Sepsis|emergency,micro,lab|Rising serum ___ indicates tissue hypoperfusion in sepsis|lactate|lactate|Above 4 mmol/L marks severe illness.
-B|Trauma primary survey|emergency,trauma|The primary survey order is|Airway, breathing, circulation, disability, exposure|Circulation first, then airway and breathing|Catastrophic haemorrhage may precede airway in some protocols.
+B|Trauma primary survey|emergency,trauma|The primary survey order is|Airway, breathing, circulation, disability, exposure|Circulation first, then airway and breathing|Catastrophic hemorrhage may precede airway in some protocols.
 G|Head injury|emergency,neuro|A Glasgow Coma Scale of ___ or below mandates intubation|8|8,eight|The airway is unprotected below that.
 B|Burns|emergency,derm|Burn fluid requirements are calculated from|Body surface area burned and weight|Depth of the burn and patient age|The Parkland formula.
 G|Hypothermia|emergency,cardio|Hypothermia produces the ___ wave on ECG|J|j,osborn,osborn j|Also called the Osborn wave.
@@ -21,7 +21,7 @@ G|Raised amylase|lab,GI|Amylase can also rise in bowel perforation, salivary dis
 B|Troponin elevation|lab,cardio,renal|Troponin can rise without infarction in|Renal failure, sepsis or pulmonary embolism|Only in anemia and dehydration states|Look for a rise and fall pattern with symptoms.
 G|D-dimer|lab,vascular|D-dimer is useful mainly to ___ out thromboembolism in low-risk patients|rule|rule|Its specificity is poor.
 B|Raised CK|lab,msk,pharm|A markedly raised creatine kinase after exercise plus a statin suggests|Rhabdomyolysis|Myocardial infarction|Check renal function and urine myoglobin.
-G|Erythrocyte sedimentation rate|lab,inflammation|ESR rises with age and ___, independent of inflammation|anemia|anemia,anaemia|CRP is a more direct marker.
+G|Erythrocyte sedimentation rate|lab,inflammation|ESR rises with age and ___, independent of inflammation|anemia|anemia,anemia|CRP is a more direct marker.
 B|Procalcitonin|lab,micro|Procalcitonin is most useful for|Deciding whether to stop antibiotics|Diagnosing a viral infection|It falls as bacterial infection resolves.
 G|Serum osmolality|lab,renal|Calculated osmolality is 2 times sodium plus glucose plus ___|urea|urea,bun|A gap suggests unmeasured osmoles.
 B|Urinalysis|lab,renal|Nitrites on dipstick indicate|Gram-negative bacteria|Any infection|Gram positives lack nitrate reductase.

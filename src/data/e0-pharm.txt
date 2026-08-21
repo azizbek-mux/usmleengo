@@ -28,7 +28,7 @@ B|Weak base overdose|pharm,toxicology|Amphetamine elimination is enhanced by|Aci
 B|Salicylate overdose|pharm,toxicology|Aspirin overdose is treated with|Urinary alkalinization with bicarbonate|Urinary acidification with vitamin C|Traps the ionized weak acid in the tubule.
 B|Carbon monoxide poisoning|pharm,toxicology|Carbon monoxide poisoning shows|Normal PaO2 with low co-oximetry saturation|Low PaO2 with a low measured saturation|Pulse oximetry reads falsely normal; give 100 percent oxygen.
 B|Cyanide poisoning|pharm,toxicology|Cyanide poisoning is treated with|Hydroxocobalamin|Methylene blue|Blocks cytochrome c oxidase; also sodium thiosulfate.
-B|Methemoglobinemia|pharm,toxicology|Methemoglobinemia is treated with|Methylene blue|Hydroxocobalamin|Chocolate-coloured blood; caused by nitrites, dapsone and local anesthetics.
+B|Methemoglobinemia|pharm,toxicology|Methemoglobinemia is treated with|Methylene blue|Hydroxocobalamin|Chocolate-colored blood; caused by nitrites, dapsone and local anesthetics.
 B|Organophosphate poisoning|pharm,toxicology|Organophosphate poisoning is treated with|Atropine and pralidoxime|Physostigmine and atropine|DUMBBELSS cholinergic excess.
 B|Anticholinergic toxicity|pharm,toxicology|Anticholinergic toxidrome presents as|Hot, dry, flushed and delirious|Cold, clammy and sweating|Mad as a hatter, dry as a bone, red as a beet.
 B|Lead poisoning|pharm,toxicology|Lead poisoning in children is treated with|Succimer|Deferoxamine|Deferoxamine is for iron; EDTA and dimercaprol for severe lead.

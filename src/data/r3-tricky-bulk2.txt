@@ -28,7 +28,7 @@ BT|Nephritic vs rapidly progressive|renal,path|Which loses renal function over d
 BT|Cystitis vs pyelonephritis|renal,micro|Which has fever and flank tenderness?|Pyelonephritis|Cystitis|Plus white cell casts in the urine.
 BT|Anion gap vs osmolar gap|renal,toxicology|Which is raised in methanol poisoning before metabolism?|The osmolar gap|The anion gap|The anion gap rises later as formic acid accumulates.
 BT|Celiac vs lactose intolerance|GI|Which causes iron deficiency and dermatitis herpetiformis?|Celiac disease|Lactose intolerance|Lactose intolerance causes no malabsorption of other nutrients.
-BT|Achalasia vs scleroderma|GI,motility|Which has a HYPOtensive lower oesophageal sphincter with reflux?|Scleroderma|Achalasia|Achalasia fails to relax a hypertensive sphincter.
+BT|Achalasia vs scleroderma|GI,motility|Which has a HYPOtensive lower esophageal sphincter with reflux?|Scleroderma|Achalasia|Achalasia fails to relax a hypertensive sphincter.
 BT|Ulcer perforation vs pancreatitis|GI,emergency,imaging|Which shows free air under the diaphragm?|Perforated ulcer|Acute pancreatitis|Pancreatitis shows no free air.
 BT|Small vs large bowel obstruction|GI,imaging|Which shows valvulae conniventes crossing the whole bowel width?|Small bowel obstruction|Large bowel obstruction|Haustra in the colon do not cross fully.
 BT|Diverticulitis vs diverticulosis|GI|Which classically causes painless bleeding?|Diverticulosis|Diverticulitis|Diverticulitis causes pain and fever, rarely bleeding.
@@ -45,7 +45,7 @@ BT|Hemolysis vs ineffective erythropoiesis|heme,anemia|Which has a HIGH reticulo
 BT|Sickle cell disease vs trait|heme,genetics|Which has a normal blood film and normal hemoglobin?|Sickle cell trait|Sickle cell disease|Trait carries only papillary necrosis and altitude risk.
 BT|Acute vs chronic leukemia|heme,oncology|Which has more than 20 percent blasts in the marrow?|Acute leukemia|Chronic leukemia|Chronic leukemias show mature-appearing cells.
 BT|Contact vs atopic dermatitis|derm,immuno|Which has sharply demarcated borders matching an exposure?|Allergic contact dermatitis|Atopic eczema dermatitis|Shape follows the offending object.
-BT|Impetigo vs herpes|derm,micro|Which has grouped vesicles on an erythematous base?|Herpes simplex|Impetigo|Impetigo gives honey-coloured crust.
+BT|Impetigo vs herpes|derm,micro|Which has grouped vesicles on an erythematous base?|Herpes simplex|Impetigo|Impetigo gives honey-colored crust.
 
 # ── Changed context ──────────────────────────────────────────────────────
 BT|Digoxin in renal failure|cardio,pharm,renal|Digoxin dosing in renal impairment must be|Reduced|Increased|It is renally cleared with a narrow index.
@@ -55,8 +55,8 @@ BT|Steroids and infection|immuno,pharm,micro|Corticosteroids can make an infecti
 BT|Antibiotics and oral contraceptives|micro,pharm,repro|Which antibiotic genuinely reduces contraceptive efficacy?|Rifampin|Amoxicillin|Enzyme induction; most others do not.
 BT|Warfarin and antibiotics|pharm,coagulation,micro|Most antibiotics affect warfarin by|Killing vitamin K-producing gut flora|Displacing it from serum albumin|Raising the INR unpredictably.
 BT|Potassium in DKA|endocrine,emergency,electrolytes|Insulin in DKA should be delayed if potassium is below|3.3 mmol/L|5.0 mmol/L|Insulin would drop it into a fatal range.
-BT|Bicarbonate in DKA|endocrine,emergency|Bicarbonate in DKA is|Reserved for extreme acidosis|Given routinely to everyone|It can worsen cerebral oedema and hypokalemia.
-BT|Fluids in heart failure|cardio,critical care|A hypotensive patient with pulmonary oedema needs|Inotropes rather than fluids|A large fluid bolus|Fluid would worsen congestion.
+BT|Bicarbonate in DKA|endocrine,emergency|Bicarbonate in DKA is|Reserved for extreme acidosis|Given routinely to everyone|It can worsen cerebral edema and hypokalemia.
+BT|Fluids in heart failure|cardio,critical care|A hypotensive patient with pulmonary edema needs|Inotropes rather than fluids|A large fluid bolus|Fluid would worsen congestion.
 BT|Oxygen in paraquat|toxicology,resp|In paraquat poisoning, oxygen is|Avoided|Given generously|It accelerates free radical lung injury.
 BT|Antiemetics in bowel obstruction|GI,pharm,surgery|Metoclopramide in complete bowel obstruction is|Contraindicated|First-line|Prokinetics risk perforation.
 BT|Opioids in head injury|neuro,pharm,trauma|Opioids in head injury are used cautiously because they|Obscure pupillary and conscious level assessment|Raise the intracranial pressure directly|Pain control still matters, but monitor closely.
@@ -72,7 +72,7 @@ BT|Diuretics and uric acid|renal,pharm,rheum|Thiazides and loops both make serum
 BT|Hypothyroidism and drug clearance|endocrine,pharm|Hypothyroidism makes drug clearance|Slower|Faster|Doses of digoxin and opioids may need reducing.
 BT|Cirrhosis and ammonia|GI,liver,pharm|A high-protein meal in cirrhosis can precipitate|Encephalopathy|Variceal bleeding|Protein load becomes ammonia.
 BT|Nephrotic syndrome and thyroid|renal,endocrine|Nephrotic syndrome lowers total thyroxine because it loses|Thyroid-binding globulin|Thyroid hormone directly|Free T4 and TSH remain normal.
-BT|Pregnancy and thyroid tests|OB,endocrine,lab|Pregnancy raises TOTAL T4 because oestrogen raises|Thyroid-binding globulin|The free hormone level|Free T4 stays normal in euthyroid women.
+BT|Pregnancy and thyroid tests|OB,endocrine,lab|Pregnancy raises TOTAL T4 because estrogen raises|Thyroid-binding globulin|The free hormone level|Free T4 stays normal in euthyroid women.
 BT|Smoking and inflammatory bowel disease|GI,IBD|Smoking cessation can worsen|Ulcerative colitis|Crohn disease|One of the few conditions where smoking appears protective.
 BT|Splenectomy and malaria|heme,micro,immuno|Splenectomy makes malaria|More severe|Less severe|The spleen clears parasitized red cells.
 BT|Chronic disease and HbA1c|endocrine,heme,lab|Chronic kidney disease makes HbA1c|Unreliable, often falsely low|More accurate than in others|Shortened red cell survival.

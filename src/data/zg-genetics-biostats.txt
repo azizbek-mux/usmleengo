@@ -5,8 +5,8 @@ B|Angelman gene|genetics,neuro,peds|Angelman syndrome results from loss of the|M
 B|Prader-Willi origin|genetics,peds,endocrine|Prader-Willi syndrome results from loss of the|Paternal chromosome 15 region|Maternal chromosome 15 region|The mirror image of Angelman.
 B|Duchenne carrier sex|genetics,msk|A boy cannot be a carrier of Duchenne because he|Has only one X chromosome|Cannot inherit the mutation|X-linked recessive disease.
 B|Duchenne mutation type|genetics,msk|Duchenne muscular dystrophy is usually caused by|A frameshift mutation|A point substitution|Becker disease keeps the reading frame.
-B|Sideroblastic anaemia inheritance|genetics,heme|Congenital sideroblastic anaemia is|X-linked recessive|Autosomal dominant|Ringed sideroblasts on Prussian blue.
-B|Hemochromatosis gene|genetics,liver|Hereditary haemochromatosis is caused by mutation in|The HFE gene|The ATP7B gene|ATP7B causes Wilson disease.
+B|Sideroblastic anemia inheritance|genetics,heme|Congenital sideroblastic anemia is|X-linked recessive|Autosomal dominant|Ringed sideroblasts on Prussian blue.
+B|Hemochromatosis gene|genetics,liver|Hereditary hemochromatosis is caused by mutation in|The HFE gene|The ATP7B gene|ATP7B causes Wilson disease.
 B|Pyloric stenosis syndrome link|genetics,peds,gi|Pyloric stenosis is|A one-off anomaly, not a syndrome|Strongly linked to Down syndrome|Duodenal atresia is the one linked to Down.
 B|Duodenal atresia association|genetics,peds,gi|Duodenal atresia and Hirschsprung disease are associated with|Down syndrome|Turner syndrome|Unlike pyloric stenosis.
 

@@ -7,18 +7,18 @@ BT|Syncope vs cardiac arrest|cardio,emergency|Which has spontaneous recovery wit
 BT|Stridor vs wheeze|resp,ENT|Which is predominantly inspiratory and upper airway?|Stridor|Wheeze|Wheeze is expiratory and lower airway.
 BT|Orthopnea vs platypnea|resp,cardio|Which is breathlessness that worsens SITTING UP?|Platypnea|Orthopnea|Suggesting a right-to-left shunt or hepatopulmonary syndrome.
 BT|Clubbing vs koilonychia|resp,heme|Which suggests iron deficiency rather than lung disease?|Koilonychia|Clubbing|Spoon-shaped nails.
-BT|Pitting vs non-pitting oedema|cardio,endocrine|Which suggests lymphoedema or myxoedema?|Non-pitting oedema|Pitting oedema|Pitting reflects raised hydrostatic pressure or low albumin.
+BT|Pitting vs non-pitting edema|cardio,endocrine|Which suggests lymphedema or myxedema?|Non-pitting edema|Pitting edema|Pitting reflects raised hydrostatic pressure or low albumin.
 BT|Jaundice vs carotenemia|GI,nutrition|Which spares the sclerae?|Carotenemia|Jaundice|Scleral yellowing means real hyperbilirubinemia.
 BT|Melena vs iron therapy|GI,heme|Which produces black stool that is guaiac NEGATIVE?|Oral iron|Upper GI bleeding|Bismuth also darkens stool without bleeding.
-BT|Steatorrhea vs osmotic diarrhoea|GI,nutrition|Which floats, smells foul and leaves an oily film?|Steatorrhea|Osmotic diarrhoea|Indicating fat malabsorption.
+BT|Steatorrhea vs osmotic diarrhea|GI,nutrition|Which floats, smells foul and leaves an oily film?|Steatorrhea|Osmotic diarrhea|Indicating fat malabsorption.
 BT|Hematemesis vs hemoptysis|GI,resp|Which is frothy, bright red and alkaline?|Hemoptysis|Hematemesis|Hematemesis is dark, acidic and may contain food.
 BT|Dysphagia vs odynophagia|GI,ENT|Which is PAIN on swallowing rather than difficulty?|Odynophagia|Dysphagia|Odynophagia suggests infection or ulceration.
 BT|Anemia vs polycythemia symptoms|heme|Which causes plethora, itching and headache?|Polycythemia|Anemia|Anemia causes pallor and exertional dyspnea.
 BT|Petechiae vs purpura|heme,derm|Which is under 3 mm and non-blanching?|Petechiae|Purpura|Both indicate extravasated blood, not vasodilation.
-BT|Thrombocytopenia vs coagulopathy bleeding|heme,coagulation|Which causes mucocutaneous bleeding rather than deep haematoma?|Thrombocytopenia|Factor deficiency|Platelet problems bleed superficially and immediately.
+BT|Thrombocytopenia vs coagulopathy bleeding|heme,coagulation|Which causes mucocutaneous bleeding rather than deep hematoma?|Thrombocytopenia|Factor deficiency|Platelet problems bleed superficially and immediately.
 BT|Arterial vs venous ulcer|vascular,derm|Which is painful, punched out and on the toes?|Arterial ulcer|Venous ulcer|Venous ulcers sit above the medial malleolus and are shallow.
-BT|Cellulitis vs necrotising fasciitis|derm,emergency|Which progresses over hours with systemic toxicity?|Necrotising fasciitis|Simple cellulitis|Requires urgent surgical exploration.
-BT|Acute vs chronic limb ischemia|vascular,emergency|Which has paraesthesia and paralysis?|Acute limb ischemia|Chronic limb ischemia|A threatened limb needing immediate revascularization.
+BT|Cellulitis vs necrotizing fasciitis|derm,emergency|Which progresses over hours with systemic toxicity?|Necrotizing fasciitis|Simple cellulitis|Requires urgent surgical exploration.
+BT|Acute vs chronic limb ischemia|vascular,emergency|Which has paresthesia and paralysis?|Acute limb ischemia|Chronic limb ischemia|A threatened limb needing immediate revascularization.
 BT|Thyroid vs adrenal crisis|endocrine,emergency|Which presents with hypotension unresponsive to fluids and pressors?|Adrenal crisis|Thyroid storm|Give hydrocortisone empirically if suspected.
 BT|Hypoglycemia vs hyperglycemia signs|endocrine,emergency|Which causes sweating, tremor and confusion coming on in minutes?|Hypoglycemia|Hyperglycemia|Hyperglycemia develops over hours to days.
 BT|Diabetes insipidus vs diabetes mellitus|endocrine,renal|Which has polyuria with a LOW urine osmolality and normal glucose?|Diabetes insipidus|Diabetes mellitus|Mellitus causes an osmotic diuresis.
@@ -26,7 +26,7 @@ BT|Pheochromocytoma vs panic attack|endocrine,psych|Which has documented hyperte
 BT|Cushing vs exogenous steroid|endocrine,pharm|Which has a LOW ACTH and low DHEA-S?|Exogenous steroid use|Cushing disease|Exogenous steroids suppress the whole axis.
 BT|Primary vs secondary amenorrhea|repro,endocrine|Which means periods never started at all?|Primary amenorrhea|Secondary amenorrhea|Secondary means they stopped after starting.
 BT|Threatened vs inevitable miscarriage|repro,OB|Which has a CLOSED cervical os?|Threatened miscarriage|Inevitable miscarriage|An open os means the pregnancy cannot continue.
-BT|Placental abruption vs uterine rupture|repro,OB,emergency|Which causes loss of the presenting part on examination?|Uterine rupture|Placental abruption|Often with a scar from previous caesarean.
+BT|Placental abruption vs uterine rupture|repro,OB,emergency|Which causes loss of the presenting part on examination?|Uterine rupture|Placental abruption|Often with a scar from previous cesarean.
 BT|Preterm labour vs Braxton Hicks|repro,OB|Which produces cervical change?|Preterm labour|Braxton Hicks contractions|Contractions alone do not define labour.
 BT|Endometritis vs mastitis|repro,OB,micro|Which causes a tender uterus with offensive lochia?|Endometritis|Mastitis|Mastitis affects the breast with a wedge of erythema.
 BT|Cystitis vs interstitial cystitis|renal,urology|Which has sterile urine with chronic pelvic pain?|Interstitial cystitis|Bacterial cystitis|A diagnosis of exclusion.
@@ -40,8 +40,8 @@ BT|Statin in the very elderly|cardio,pharm,geriatrics|Statins for primary preven
 BT|Anticoagulation with falls|cardio,coagulation,geriatrics|Falls risk alone|Rarely outweighs stroke prevention benefit|Is an absolute contraindication to it|The number of falls needed to offset benefit is very high.
 BT|Aspirin for primary prevention|cardio,pharm|Aspirin for primary prevention in most adults|Is no longer routinely recommended|Remains standard care for all adults|Bleeding risk outweighs benefit for most.
 BT|Oxygen target in sepsis|critical care,resp|Excess oxygen in critical illness|Is associated with harm|Is always beneficial|Titrate to a normal target, not maximum.
-BT|Blood pressure in intracerebral haemorrhage|neuro,emergency|Blood pressure in acute intracerebral haemorrhage is|Lowered promptly|Left high|The opposite of ischemic stroke.
-BT|Steroids in head injury|neuro,trauma,pharm|Corticosteroids in traumatic brain injury|Increase mortality|Reduce swelling safely|Unlike in tumour-related oedema.
+BT|Blood pressure in intracerebral hemorrhage|neuro,emergency|Blood pressure in acute intracerebral hemorrhage is|Lowered promptly|Left high|The opposite of ischemic stroke.
+BT|Steroids in head injury|neuro,trauma,pharm|Corticosteroids in traumatic brain injury|Increase mortality|Reduce swelling safely|Unlike in tumor-related edema.
 BT|Antiepileptics after first seizure|neuro,pharm,epilepsy|After a single unprovoked seizure, treatment is|Often deferred pending investigation|Always started immediately|Unless imaging or EEG shows high recurrence risk.
 BT|Thrombolysis with anticoagulation|neuro,pharm,emergency|Thrombolysis for stroke in a patient on a DOAC is|Generally contraindicated|Routine, with no extra checks|Timing of the last dose matters critically.
 BT|Antibiotic in penicillin allergy|micro,pharm,immuno|In a patient with anaphylaxis to penicillin, the safest alternative class is|A non-beta-lactam|A carbapenem|Cross-reactivity is low but not zero.

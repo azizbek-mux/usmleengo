@@ -70,13 +70,13 @@ B|Creutzfeldt-Jakob disease|neuro,path,dementia|Creutzfeldt-Jakob disease causes
 # ── Neuro-oncology ───────────────────────────────────────────────────────
 B|Glioblastoma|neuro,oncology,path|Glioblastoma histology shows|Pseudopalisading necrosis|Psammoma body whorls|Crosses the corpus callosum as a butterfly lesion.
 G|Meningioma|neuro,oncology,path|Meningiomas show whorls and ___ bodies|psammoma|psammoma|Benign, dural-based, commoner in women.
-B|Medulloblastoma|neuro,oncology,peds|Medulloblastoma arises in the|Cerebellum|Frontal lobe|Commonest malignant brain tumour of childhood; drop metastases.
-G|Pilocytic astrocytoma|neuro,oncology,peds|Pilocytic astrocytoma shows ___ fibres on histology|Rosenthal|rosenthal|A cystic cerebellar lesion with a mural nodule. Good prognosis.
-B|Schwannoma|neuro,oncology,path|Schwannomas stain positive for|S-100|GFAP|GFAP marks astrocytic tumours instead.
-B|Brain metastases|neuro,oncology|Brain metastases characteristically sit|At the grey-white junction|Deep within the brainstem|Multiple lesions favour metastasis over a primary tumour.
+B|Medulloblastoma|neuro,oncology,peds|Medulloblastoma arises in the|Cerebellum|Frontal lobe|Commonest malignant brain tumor of childhood; drop metastases.
+G|Pilocytic astrocytoma|neuro,oncology,peds|Pilocytic astrocytoma shows ___ fibers on histology|Rosenthal|rosenthal|A cystic cerebellar lesion with a mural nodule. Good prognosis.
+B|Schwannoma|neuro,oncology,path|Schwannomas stain positive for|S-100|GFAP|GFAP marks astrocytic tumors instead.
+B|Brain metastases|neuro,oncology|Brain metastases characteristically sit|At the gray-white junction|Deep within the brainstem|Multiple lesions favour metastasis over a primary tumor.
 
 # ── Autonomic and misc ───────────────────────────────────────────────────
-G|Horner syndrome|neuro,autonomic,oncology|A Pancoast tumour causes Horner syndrome by compressing the ___ ganglion|stellate|stellate,cervical sympathetic|Apical lung tumour with arm pain.
+G|Horner syndrome|neuro,autonomic,oncology|A Pancoast tumor causes Horner syndrome by compressing the ___ ganglion|stellate|stellate,cervical sympathetic|Apical lung tumor with arm pain.
 B|Syncope|neuro,cardio|Syncope during exertion suggests|A cardiac cause|Vasovagal syncope|Aortic stenosis or hypertrophic cardiomyopathy until excluded.
 G|Normal pressure hydrocephalus|neuro,CSF,pharm|NPH may improve after a large-volume lumbar ___|puncture|puncture,tap,drainage|Which also predicts response to shunting.
-B|Pseudotumor versus tumour|neuro,imaging|Papilledema with completely normal imaging suggests|Idiopathic intracranial hypertension|A small posterior fossa mass lesion|Confirm with a raised opening pressure.
+B|Pseudotumor versus tumor|neuro,imaging|Papilledema with completely normal imaging suggests|Idiopathic intracranial hypertension|A small posterior fossa mass lesion|Confirm with a raised opening pressure.

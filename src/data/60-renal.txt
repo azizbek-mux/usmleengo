@@ -21,7 +21,7 @@ B|Uric acid stones|renal,stones|Uric acid stones are|Radiolucent|Radiopaque|Form
 B|Glomerular filtration|renal,physiology|Angiotensin II constricts the efferent arteriole, which makes filtration fraction|Increase|Decrease|GFR is maintained while renal plasma flow falls.
 B|Bladder cancer|renal,oncology,risk|The strongest risk factor for bladder cancer is|Tobacco smoking|Recurrent UTI|Painless gross hematuria; muscle invasion worsens prognosis.
 B|Acute urinary retention|renal,urology,pharm|Which drug class precipitates urinary retention in BPH?|Anticholinergics and sympathomimetics|Loop diuretics and beta blockers|They reduce detrusor contraction or raise sphincter tone.
-B|Salicylate poisoning|renal,toxicology,acid base|Aspirin overdose causes|Anion gap acidosis with respiratory alkalosis|Pure metabolic alkalosis with hypokalemia|Direct respiratory centre stimulation plus metabolic acidosis.
+B|Salicylate poisoning|renal,toxicology,acid base|Aspirin overdose causes|Anion gap acidosis with respiratory alkalosis|Pure metabolic alkalosis with hypokalemia|Direct respiratory center stimulation plus metabolic acidosis.
 B|Scleroderma renal crisis|renal,immuno,hypertension|Scleroderma renal crisis injures the|Small renal vessels|Glomerular capillaries|No RBC casts; treat with an ACE inhibitor.
 B|Scleroderma renal crisis|renal,pharm,hypertension|Scleroderma renal crisis is treated with|An ACE inhibitor|A beta blocker|The one setting where ACE inhibitors are used despite rising creatinine.
 B|Hyperkalemia treatment|renal,electrolytes,pharm|Calcium gluconate in hyperkalemia works by|Stabilizing the cardiac membrane|Lowering serum potassium|Does not shift or remove potassium; buys time.

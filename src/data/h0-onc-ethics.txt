@@ -18,7 +18,7 @@ B|BRCA mutations|oncology,genetics|BRCA1 and BRCA2 normally function in|DNA doub
 B|Scurvy|nutrition,vitamins,path|Vitamin C deficiency impairs|Proline and lysine hydroxylation|Transcription of collagen genes|Perifollicular hemorrhage, bleeding gums, poor healing.
 B|Complement anaphylatoxins|immuno,complement|Which complement fragment is the strongest chemoattractant?|C5a|C3b|C3b is the opsonin; C5a recruits neutrophils and raises permeability.
 B|Kawasaki disease|peds,vascular,immuno|Kawasaki disease is most dangerous because of|Coronary artery aneurysms|Progressive renal failure|Fever over five days, conjunctivitis, rash, mucositis, adenopathy.
-B|Kawasaki disease|peds,pharm|Kawasaki disease is treated with|IVIG and aspirin|Corticosteroids alone|One of the few paediatric indications for aspirin.
+B|Kawasaki disease|peds,pharm|Kawasaki disease is treated with|IVIG and aspirin|Corticosteroids alone|One of the few pediatric indications for aspirin.
 B|Cardiac aging|cardio,aging,physiology|With age, the cardiac response to adrenergic stimulation|Decreases|Increases|Reduced maximum heart rate and reserve in critical illness.
 G|DiGeorge syndrome|genetics,immuno|DiGeorge syndrome is a microdeletion of chromosome ___|22|22,22q11,22q11.2|CATCH-22: cardiac, abnormal facies, thymic aplasia, cleft palate, hypocalcemia.
 B|Rib fracture injury|anatomy,trauma|Fracture of the left lower ribs risks laceration of the|Spleen and left kidney|Liver and gallbladder|Right lower ribs threaten the liver.
@@ -35,7 +35,7 @@ B|Transudative effusion|resp,path|Low albumin causes effusion by|Reducing plasma
 B|Capacity in dementia|ethics|A diagnosis of Alzheimer disease means the patient|May still retain decision-making capacity|Automatically lacks capacity to consent|Capacity is decision-specific and must be assessed.
 B|Physician fatigue|ethics,safety|Cognitive impairment from sleep deprivation appears after about|17 hours awake|30 hours awake|Comparable to alcohol intoxication.
 B|Medical error disclosure|ethics|After a medical error causing harm you should|Disclose it fully with an apology|Wait for the family to ask|Disclosure is required even if the patient has died.
-B|Shared decision making|ethics|Involving patients in decisions tends to|Reduce overutilization|Increase testing|Patient-centred care does not mean giving every request.
+B|Shared decision making|ethics|Involving patients in decisions tends to|Reduce overutilization|Increase testing|Patient-centerd care does not mean giving every request.
 B|Medication nonadherence|ethics,pharm|The best first response to suspected nonadherence is|Explore barriers non-judgmentally|Check a serum drug level|Building partnership improves adherence more than testing.
 B|Polypharmacy|ethics,pharm,aging|In an elderly patient with confusion, first|Review and stop non-essential drugs|Order urgent brain imaging|Anticholinergics like diphenhydramine are common culprits.
 B|Against medical advice|ethics|A patient with capacity refusing admission should be|Informed of risks and allowed to leave|Detained until family can attend|Document the discussion and offer follow-up.

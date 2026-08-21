@@ -52,7 +52,7 @@ B|STEMI|cardio,MI|A STEMI is caused by|Plaque rupture with occlusive thrombus|Fi
 G|STEMI ECG|cardio,MI,ECG|The earliest ECG change in STEMI is ___ T waves|peaked|peaked,hyperacute,tall|Hyperacute peaked T waves, then ST elevation, then Q waves.
 B|Stable angina|cardio,MI|Stable angina reflects|Fixed stenosis with demand-supply mismatch|Acute plaque rupture with thrombus|Ischemia only on exertion; no thrombus.
 G|Fetal circulation|cardio,embryology,physiology|The fetal vessel with the highest oxygen saturation is the ___ vein|umbilical|umbilical,umbilical vein|Umbilical vein carries oxygenated placental blood; IVC is highest of the great veins.
-B|Malignant pericardial effusion|cardio,oncology|Malignant pericardial effusion typically yields fluid that is|Hemorrhagic with atypical cells|Clear and straw-coloured|Bloody exudate containing malignant cells.
+B|Malignant pericardial effusion|cardio,oncology|Malignant pericardial effusion typically yields fluid that is|Hemorrhagic with atypical cells|Clear and straw-colored|Bloody exudate containing malignant cells.
 B|Cardiac tamponade|cardio,emergency|Tamponade depends most on the effusion's|Rate of accumulation|Absolute volume|A rapid small effusion tamponades; a slow large one may not.
 G|Cardiac tamponade|cardio,emergency|Beck triad is hypotension, distant heart sounds and jugular venous ___|distension|distension,distention,jvd|The classic tamponade triad.
 B|Cardiac tamponade|cardio,emergency|Echocardiography in tamponade shows an inferior vena cava that is|Engorged and non-collapsing|Small and collapsing|Plethoric IVC from impaired venous return.
@@ -74,7 +74,7 @@ B|Patent ductus arteriosus|cardio,congenital|Ligating a PDA causes left ventricu
 B|Patent ductus arteriosus|cardio,congenital,murmur|The murmur of PDA is|Continuous and machine-like|Mid-diastolic with an opening snap|Continuous murmur throughout systole and diastole.
 G|Drug-induced lupus|cardio,pharm,immuno|Procainamide and hydralazine cause drug-induced ___|lupus|lupus,sle,dile|Highest-risk agents. Anti-histone antibodies.
 B|Drug-induced lupus|cardio,pharm,immuno|Drug-induced lupus is associated with antibodies to|Histones|Double-stranded DNA|Anti-histone antibodies; anti-dsDNA suggests true SLE.
-B|Heart failure compensation|cardio,heart failure|Chronic sympathetic activation in heart failure is ultimately|Harmful|Protective|Short-term compensation, long-term remodelling and deterioration.
+B|Heart failure compensation|cardio,heart failure|Chronic sympathetic activation in heart failure is ultimately|Harmful|Protective|Short-term compensation, long-term remodeling and deterioration.
 B|Varicose veins|cardio,vascular|Chronic venous insufficiency raises the risk of|Skin ulceration|Arterial gangrene|Venous stasis ulcers, classically at the medial malleolus.
 G|Venous insufficiency|cardio,vascular|Venous insufficiency results from failure of venous ___|valves|valves,valve|Dilation prevents valve closure, raising venous pressure.
 B|Costochondritis|cardio,msk|Chest pain reproduced by palpation suggests|Costochondritis|Myocardial infarction|Reproducible tenderness, worse with movement.
@@ -83,7 +83,7 @@ B|Dilated cardiomyopathy|cardio,path|Doxorubicin causes which cardiomyopathy?|Di
 G|Dilated cardiomyopathy|cardio,path,toxicology|Alcohol, cocaine and ___ are classic toxic causes of dilated cardiomyopathy|doxorubicin|doxorubicin,adriamycin,anthracycline|All produce systolic dysfunction and chamber dilation.
 G|Tetralogy of Fallot|cardio,congenital,embryology|Tetralogy of Fallot results from deviation of the ___ septum|infundibular|infundibular,conotruncal,outflow|Anterocephalad deviation gives a malaligned VSD and overriding aorta.
 B|Tetralogy of Fallot|cardio,congenital|The degree of cyanosis in tetralogy depends on|Right ventricular outflow obstruction|The size of the septal defect|Outflow obstruction determines right-to-left shunting.
-B|Left atrial enlargement|cardio,valve,GI|Dysphagia in mitral stenosis is caused by enlargement of the|Left atrium|Right ventricle|The dilated left atrium compresses the mid-oesophagus.
+B|Left atrial enlargement|cardio,valve,GI|Dysphagia in mitral stenosis is caused by enlargement of the|Left atrium|Right ventricle|The dilated left atrium compresses the mid-esophagus.
 B|Supraventricular tachycardia|cardio,arrhythmia|Hypotension in fast SVT is caused by|Shortened diastolic filling time|Reduced myocardial contractility|Less filling time drops stroke volume.
 B|Atrial septal defect|cardio,congenital|Untreated ASD ultimately damages which vessels?|Pulmonary|Coronary|Chronic overcirculation causes pulmonary vascular disease.
 G|Atrial septal defect|cardio,congenital,murmur|ASD causes a ___ split S2|fixed|fixed,fixed wide,widely fixed|Fixed splitting that does not vary with respiration.
@@ -92,6 +92,6 @@ B|Cardiac conduction velocity|cardio,physiology|The fastest conducting cardiac t
 B|Ventricular septal defect|cardio,congenital,murmur|A very large VSD produces a murmur that is|Soft or absent|Loud and harsh|Large defects equalize pressures, so little gradient and little murmur.
 B|Sotalol|cardio,pharm,arrhythmia|Sotalol blocks which channels?|Potassium|Calcium|Class III — potassium blockade prolongs phase 3 and the QT.
 B|Class III antiarrhythmics|cardio,pharm,arrhythmia|Class III antiarrhythmics prolong which ECG interval?|QT|PR|Delayed repolarization lengthens QT and risks torsades.
-B|Aortic stenosis|cardio,valve|Aortic stenosis causes which ventricular remodelling?|Concentric hypertrophy|Eccentric dilation|Pressure overload adds sarcomeres in parallel.
-G|Ventricular remodelling|cardio,physiology|Pressure overload adds sarcomeres in ___|parallel|parallel|Parallel for pressure, series for volume overload.
+B|Aortic stenosis|cardio,valve|Aortic stenosis causes which ventricular remodeling?|Concentric hypertrophy|Eccentric dilation|Pressure overload adds sarcomeres in parallel.
+G|Ventricular remodeling|cardio,physiology|Pressure overload adds sarcomeres in ___|parallel|parallel|Parallel for pressure, series for volume overload.
 B|Normal cardiac aging|cardio,aging|Normal aging changes the interventricular septum to a|Sigmoid shape|Uniformly thin wall|Sigmoid septum, dilated aortic root, shortened long axis.

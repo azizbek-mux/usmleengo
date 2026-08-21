@@ -1,7 +1,7 @@
 # Surgery, trauma and imaging — depth pass. Gap-weighted.
 
 # ── Acute abdomen ────────────────────────────────────────────────────────
-G|Peritonitis|surgery,GI,exam|Board-like rigidity with rebound indicates ___ peritonitis|generalized|generalized,generalised,diffuse|An indication for urgent laparotomy.
+G|Peritonitis|surgery,GI,exam|Board-like rigidity with rebound indicates ___ peritonitis|generalized|generalized,generalized,diffuse|An indication for urgent laparotomy.
 B|Appendicitis|surgery,GI|Appendicitis pain characteristically|Starts centrally then shifts to the right iliac fossa|Starts and remains fixed in the right iliac fossa|Visceral then parietal peritoneal irritation.
 G|Appendicitis|surgery,GI,imaging|In pregnancy, suspected appendicitis is first imaged with ___|ultrasound|ultrasound,us|Then MRI, avoiding radiation.
 B|Bowel obstruction|surgery,GI|The commonest cause of small bowel obstruction in the developed world is|Adhesions|Hernia|Then hernia and malignancy.
@@ -39,7 +39,7 @@ B|Wound dehiscence|surgery|Serosanguinous wound discharge after laparotomy sugge
 G|Surgical site infection|surgery,micro|Prophylactic antibiotics are given within ___ hour of incision|1|1,one|And usually stopped within 24 hours.
 
 # ── Vascular and breast surgery ──────────────────────────────────────────
-G|Critical limb ischemia|surgery,vascular|The six Ps of acute limb ischemia include pain, pallor, pulselessness, paraesthesia, paralysis and ___|perishing cold|perishing cold,poikilothermia,cold|Paralysis and paraesthesia mean threatened limb.
+G|Critical limb ischemia|surgery,vascular|The six Ps of acute limb ischemia include pain, pallor, pulselessness, paresthesia, paralysis and ___|perishing cold|perishing cold,poikilothermia,cold|Paralysis and paresthesia mean threatened limb.
 B|Varicose veins|surgery,vascular|Varicose veins result from|Incompetent venous valves|Arterial insufficiency|Treated with ablation or stripping if symptomatic.
 G|Carotid endarterectomy|surgery,vascular,neuro|Carotid endarterectomy is offered for symptomatic stenosis above ___ percent|70|70,seventy,50|Within two weeks of the event.
 B|Breast lump|surgery,oncology|Triple assessment of a breast lump is|Clinical examination, imaging and biopsy|Imaging alone with interval follow-up|The standard of care for any discrete lump.
@@ -50,8 +50,8 @@ B|Nipple discharge|surgery,oncology|Bloody unilateral nipple discharge suggests|
 G|Radiation|imaging,safety|___ has no ionizing radiation and is safe in pregnancy|Ultrasound|ultrasound,us,mri|MRI is also radiation-free.
 B|Contrast nephropathy|imaging,renal|Iodinated contrast should be used cautiously when eGFR is below|30|90|Hydration is the main preventive measure.
 G|Gadolinium|imaging,renal|Gadolinium in severe renal failure risks nephrogenic systemic ___|fibrosis|fibrosis|Avoid in advanced chronic kidney disease.
-B|CT versus MRI|imaging,neuro|For acute intracranial haemorrhage, the first-line test is|Non-contrast CT|An MRI brain|Fast, available and sensitive for fresh blood.
+B|CT versus MRI|imaging,neuro|For acute intracranial hemorrhage, the first-line test is|Non-contrast CT|An MRI brain|Fast, available and sensitive for fresh blood.
 G|Ultrasound|imaging,physics|Ultrasound cannot image well through ___ or air|bone|bone|Which is why lung and bowel gas obscure views.
 B|Chest x-ray|imaging,resp|A lateral chest film is most useful for|Retrocardiac and posterior lesions|Rib fractures and pleural thickening|Areas hidden on the frontal view.
-G|Nuclear medicine|imaging,oncology|FDG-PET detects tumours through their high ___ uptake|glucose|glucose,fdg|Reflecting the Warburg effect.
+G|Nuclear medicine|imaging,oncology|FDG-PET detects tumors through their high ___ uptake|glucose|glucose,fdg|Reflecting the Warburg effect.
 B|Mammography|imaging,oncology|Microcalcifications on mammography are concerning when they are|Fine, pleomorphic and clustered|Coarse, round and scattered|Suggesting ductal carcinoma in situ.

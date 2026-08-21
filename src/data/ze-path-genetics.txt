@@ -2,8 +2,8 @@
 
 # ── Cellular adaptation ──────────────────────────────────────────────────
 B|Dysplasia reversibility|path,oncology|Dysplasia is|Reversible, and pre-cancerous|Irreversible, and cancerous|Students often assume the opposite.
-B|Metaplasia definition|path|Metaplasia is one mature cell type becoming|Another mature cell type|An immature stem cell|Reversible, as in Barrett oesophagus.
-B|Anaplasia grade|path,oncology|Anaplasia in a tumour indicates|High grade and poor prognosis|Low grade and good prognosis|Reversion towards an immature cell.
+B|Metaplasia definition|path|Metaplasia is one mature cell type becoming|Another mature cell type|An immature stem cell|Reversible, as in Barrett esophagus.
+B|Anaplasia grade|path,oncology|Anaplasia in a tumor indicates|High grade and poor prognosis|Low grade and good prognosis|Reversion towards an immature cell.
 B|Endometrial hyperplasia driver|path,gyn,endocrine|Endometrial hyperplasia is caused by|Unopposed estrogen|Unopposed progesterone|From anovulatory cycles.
 B|Concentric hypertrophy cause|path,cardio|Concentric ventricular hypertrophy follows|High afterload|High preload|Volume overload dilates instead.
 B|Testicular atrophy cause|path,repro,pharm|Anabolic steroid use causes testicular atrophy by|Suppressing LH by feedback|Direct toxicity to the testis|The gonadotropin drive is lost.
@@ -12,18 +12,18 @@ B|Intrinsic apoptosis proteins|path,cell biology|The intrinsic apoptosis pathway
 
 # ── Cancer genes ─────────────────────────────────────────────────────────
 B|APC gene syndrome|path,oncology,genetics|APC mutations cause|Familial adenomatous polyposis|Hereditary non-polyposis cancer|With a hundred percent cancer risk.
-B|Gardner syndrome|path,oncology,genetics|FAP plus bone and soft tissue tumours is|Gardner syndrome|Turcot syndrome|Osteomas and lipomas.
+B|Gardner syndrome|path,oncology,genetics|FAP plus bone and soft tissue tumors is|Gardner syndrome|Turcot syndrome|Osteomas and lipomas.
 B|BCL-2 function|path,oncology,heme|BCL-2 codes for a protein that is|Anti-apoptotic|Pro-apoptotic|Overexpressed in follicular lymphoma.
 G|Follicular lymphoma translocation|path,oncology,heme|Follicular lymphoma carries the t(14;___) translocation|18|18,eighteen|Placing BCL-2 under an antibody promoter.
 B|KRAS product|path,oncology,biochem|KRAS codes for|A GTPase, locked always on|A tyrosine kinase receptor|The first gene mutated in colonic neoplasia.
 B|HNPCC genes|path,oncology,genetics|Hereditary non-polyposis colorectal cancer involves|Mismatch repair genes|Nucleotide excision repair|Producing microsatellite instability.
 B|TP53 function|path,oncology,cell biology|The p53 protein normally|Halts the cycle for DNA repair|Drives the cycle forward|Loss allows damaged cells to divide.
 B|Li-Fraumeni gene|path,oncology,genetics|Li-Fraumeni syndrome is a germline mutation in|TP53|RB1|Cancers across many organ systems.
-B|MEN 1 components|path,endocrine,genetics|MEN 1 involves pituitary, parathyroid and|Pancreatic tumours|Adrenal tumours|The three P's.
+B|MEN 1 components|path,endocrine,genetics|MEN 1 involves pituitary, parathyroid and|Pancreatic tumors|Adrenal tumors|The three P's.
 B|MEN 2 shared features|path,endocrine,genetics|Both MEN 2A and 2B include|Medullary thyroid carcinoma and pheochromocytoma|Parathyroid adenoma alongside a prolactinoma|On the RET proto-oncogene.
-B|VHL tumours|path,oncology,genetics|Von Hippel-Lindau causes renal cell carcinoma plus|Retinal and cerebellar haemangioblastomas|Medullary thyroid carcinoma of the neck|Autosomal dominant, chromosome 3.
-B|WT1 tumour|path,oncology,peds|WT1 mutation causes|Wilms tumour of the kidney|Neuroblastoma of the adrenal|A painless flank mass in a child.
-G|WAGR syndrome|path,oncology,peds|WAGR is Wilms tumour, ___, genitourinary anomalies and retardation|aniridia|aniridia|Associated with WT1.
+B|VHL tumors|path,oncology,genetics|Von Hippel-Lindau causes renal cell carcinoma plus|Retinal and cerebellar hemangioblastomas|Medullary thyroid carcinoma of the neck|Autosomal dominant, chromosome 3.
+B|WT1 tumor|path,oncology,peds|WT1 mutation causes|Wilms tumor of the kidney|Neuroblastoma of the adrenal|A painless flank mass in a child.
+G|WAGR syndrome|path,oncology,peds|WAGR is Wilms tumor, ___, genitourinary anomalies and retardation|aniridia|aniridia|Associated with WT1.
 B|NF1 chromosome|path,genetics,neuro|Neurofibromatosis type 1 sits on chromosome|17|22|Type 2 sits on chromosome 22.
 B|NF1 expressivity|path,genetics|Neurofibromatosis type 1 classically demonstrates|Variable expressivity|Incomplete penetrance|Severity differs between affected people.
 G|Tuberous sclerosis proteins|path,genetics,neuro|Tuberous sclerosis involves hamartin and ___|tuberin|tuberin|From TSC1 and TSC2.
@@ -34,9 +34,9 @@ B|Duchenne pseudohypertrophy|path,genetics,msk|Calf pseudohypertrophy in Duchenn
 B|Marfan protein|path,genetics|Marfan syndrome is a mutation in|Fibrillin|Dystrophin|A sheath around elastin.
 B|Fragile X repeat|path,genetics,peds|Fragile X is caused by expansion of a|CGG trinucleotide repeat|CAG trinucleotide repeat|Silencing FMR1 by hypermethylation.
 B|Fragile X features|path,genetics,peds|Fragile X presents with|Large ears, long jaw, macroorchidism|Short stature and webbed neck|With intellectual disability.
-B|G6PD film findings|path,heme,genetics|G6PD deficiency shows|Heinz bodies and bite cells|Target cells and schistocytes|After an oxidising drug.
+B|G6PD film findings|path,heme,genetics|G6PD deficiency shows|Heinz bodies and bite cells|Target cells and schistocytes|After an oxidizing drug.
 G|Elastin cross-link|path,biochem|Elastin is cross-linked by ___, and is rich in lysine|desmosine|desmosine|Fibrillin sheathes it.
 G|Collagen primary sequence|path,biochem|Collagen has a repeating Gly-X-___ primary structure|Y|y|Glycine every third residue.
 B|I-cell disease defect|path,genetics,biochem|I-cell disease is failure to add|Mannose-6-phosphate at the Golgi|A signal peptide at the ER|Enzymes are secreted instead of targeted.
 B|Alport collagen|path,genetics,renal|Alport syndrome is a defect in collagen type|IV|I|With eye, ear and kidney disease.
-B|Mitochondrial inheritance|path,genetics|Mitochondrial disorders are|Maternally inherited|Paternally inherited|Ragged red fibres on biopsy.
+B|Mitochondrial inheritance|path,genetics|Mitochondrial disorders are|Maternally inherited|Paternally inherited|Ragged red fibers on biopsy.

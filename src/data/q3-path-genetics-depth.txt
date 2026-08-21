@@ -1,7 +1,7 @@
 # General pathology, genetics and cell biology — depth pass. Gap-weighted.
 
 # ── Cell injury ──────────────────────────────────────────────────────────
-G|Reversible cell injury|path,cell death|The earliest sign of reversible cell injury is cellular ___|swelling|swelling,oedema,edema|From failure of the sodium-potassium pump.
+G|Reversible cell injury|path,cell death|The earliest sign of reversible cell injury is cellular ___|swelling|swelling,edema,edema|From failure of the sodium-potassium pump.
 B|Irreversible injury|path,cell death|The hallmark of irreversible cell injury is|Membrane damage|Ribosomal detachment|Plus mitochondrial vacuolization and lysosomal rupture.
 G|Nuclear changes|path,cell death|Nuclear shrinkage in cell death is called ___|pyknosis|pyknosis|Then karyorrhexis, then karyolysis.
 B|Ischemia-reperfusion injury|path,cell death|Reperfusion injury is caused by|Oxygen free radicals and calcium influx|Continued hypoxia and ATP depletion|Which is why reperfusion can worsen damage briefly.
@@ -20,22 +20,22 @@ G|Fever|path,inflammation,physiology|Endogenous pyrogens raise the hypothalamic 
 B|Amyloid|path,inflammation|Secondary amyloidosis deposits which protein?|Serum amyloid A|Transthyretin|From chronic inflammatory disease.
 
 # ── Healing ──────────────────────────────────────────────────────────────
-G|Wound healing|path,healing|Type ___ collagen is laid down first, then replaced by type I|III|iii,3,three|Remodelling continues for months.
+G|Wound healing|path,healing|Type ___ collagen is laid down first, then replaced by type I|III|iii,3,three|Remodeling continues for months.
 B|Primary intention|path,healing,surgery|Healing by primary intention|Has minimal scarring with apposed edges|Fills a large defect with granulation|Secondary intention involves granulation and contraction.
 G|Myofibroblasts|path,healing|Wound contraction is performed by ___|myofibroblasts|myofibroblasts,myofibroblast|Excess contraction gives contractures.
 B|Vitamin A|path,healing,vitamins|Vitamin A in wound healing|Counteracts the impairment caused by steroids|Has no measurable effect on any healing|Useful in steroid-treated patients.
 G|Zinc deficiency|path,healing,nutrition|Zinc is required by ___ that remodel collagen|metalloproteinases|metalloproteinases,mmp,collagenase|Deficiency delays healing.
 
 # ── Neoplasia ────────────────────────────────────────────────────────────
-G|Carcinoma versus sarcoma|path,oncology|Tumours of ___ origin are called carcinomas|epithelial|epithelial,epithelium|Mesenchymal tumours are sarcomas.
-B|Metastatic spread|path,oncology|Carcinomas typically spread first via|Lymphatics|Blood|Sarcomas prefer haematogenous spread.
+G|Carcinoma versus sarcoma|path,oncology|Tumors of ___ origin are called carcinomas|epithelial|epithelial,epithelium|Mesenchymal tumors are sarcomas.
+B|Metastatic spread|path,oncology|Carcinomas typically spread first via|Lymphatics|Blood|Sarcomas prefer hematogenous spread.
 G|Grade versus stage|path,oncology|___ describes how abnormal the cells look; stage describes spread|Grade|grade|Stage carries more prognostic weight.
 B|Anaplasia|path,oncology|Anaplasia refers to|Complete loss of differentiation|Reversible cellular dysplasia|A hallmark of malignancy.
-G|Oncogenes|path,oncology,genetics|Oncogenes require a ___-of-function mutation in one allele|gain|gain|Tumour suppressors need loss of both.
-B|Tumour suppressor|path,oncology,genetics|Loss of heterozygosity refers to|Loss of the second normal allele|Gain of an extra gene copy|The second hit of Knudson's hypothesis.
+G|Oncogenes|path,oncology,genetics|Oncogenes require a ___-of-function mutation in one allele|gain|gain|Tumor suppressors need loss of both.
+B|Tumor suppressor|path,oncology,genetics|Loss of heterozygosity refers to|Loss of the second normal allele|Gain of an extra gene copy|The second hit of Knudson's hypothesis.
 G|Telomerase|path,oncology|Cancer cells escape senescence by reactivating ___|telomerase|telomerase|Maintaining telomere length indefinitely.
-B|Warburg effect|path,oncology,biochem|The Warburg effect describes tumour reliance on|Glycolysis even with oxygen present|Beta-oxidation of fatty acids for ATP|The basis of FDG-PET imaging.
-G|Angiogenesis|path,oncology|Tumour angiogenesis is driven mainly by ___|VEGF|vegf|Targeted by bevacizumab.
+B|Warburg effect|path,oncology,biochem|The Warburg effect describes tumor reliance on|Glycolysis even with oxygen present|Beta-oxidation of fatty acids for ATP|The basis of FDG-PET imaging.
+G|Angiogenesis|path,oncology|Tumor angiogenesis is driven mainly by ___|VEGF|vegf|Targeted by bevacizumab.
 B|Cachexia|path,oncology|Cancer cachexia is|Not reversed by increased calorie intake|Fully reversed by adequate nutrition|A cytokine-driven hypermetabolic state.
 G|Psammoma bodies|path,oncology|Psammoma bodies are laminated ___ concretions|calcium|calcium,calcified,calcific|Papillary thyroid, serous ovarian, meningioma, mesothelioma.
 B|Paraneoplastic syndrome|path,oncology,neuro|Anti-Hu antibodies cause|Paraneoplastic encephalomyelitis|Myasthenia gravis with thymoma|Associated with small cell lung cancer.
@@ -70,5 +70,5 @@ G|Microtubules|genetics,cell biology|Microtubules are polymers of ___ dimers|tub
 B|Kartagener syndrome|genetics,cell biology,resp|Kartagener syndrome is a defect of|Dynein arms|Actin filaments|Immotile cilia and sperm.
 G|Collagen synthesis|genetics,biochem|Collagen triple helix formation requires hydroxylation of proline and ___|lysine|lysine,lys|Vitamin C dependent.
 B|Elastin|genetics,biochem|Elastin is rich in|Proline and glycine cross-linked by desmosine|Hydroxyproline in a collagen triple helix|Broken down by elastase, opposed by alpha-1 antitrypsin.
-G|Marfan syndrome|genetics,cardio|Marfan syndrome is caused by mutation of ___, disrupting elastic fibres|fibrillin-1|fibrillin-1,fibrillin,fbn1|Excess free TGF-beta weakens the aortic wall.
+G|Marfan syndrome|genetics,cardio|Marfan syndrome is caused by mutation of ___, disrupting elastic fibers|fibrillin-1|fibrillin-1,fibrillin,fbn1|Excess free TGF-beta weakens the aortic wall.
 B|Osteogenesis imperfecta|genetics,bone|Osteogenesis imperfecta type I involves|Reduced quantity of normal type I collagen|Abnormal structure of type IV collagen|Blue sclerae from translucent connective tissue.

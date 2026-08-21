@@ -12,7 +12,7 @@ B|Ventilation-perfusion|resp,physiology|At the lung apex, the V/Q ratio is|High|
 G|Hypoxia|resp,physiology|Peripheral chemoreceptors in the ___ bodies sense low oxygen|carotid|carotid,carotid and aortic|Central chemoreceptors respond to CO2 instead.
 
 # ── Gas exchange ─────────────────────────────────────────────────────────
-G|Oxygen content|resp,physiology,heme|Oxygen content depends mainly on ___ concentration|hemoglobin|hemoglobin,haemoglobin,hb|Not on PaO2, which only drives saturation.
+G|Oxygen content|resp,physiology,heme|Oxygen content depends mainly on ___ concentration|hemoglobin|hemoglobin,hemoglobin,hb|Not on PaO2, which only drives saturation.
 B|Anemia and PaO2|resp,physiology,heme|In anemia, arterial PaO2 is|Normal|Low|Content falls but partial pressure does not.
 G|Carbon dioxide transport|resp,physiology|Most carbon dioxide travels in blood as ___|bicarbonate|bicarbonate,hco3|About 70 percent; the rest is carbamino and dissolved.
 B|Haldane effect|resp,physiology|The Haldane effect describes|Deoxygenated blood carrying more CO2|Acid causing oxygen to unload|The Bohr effect is acid unloading oxygen.
@@ -21,7 +21,7 @@ B|Shunt|resp,physiology|Hypoxemia from a true shunt|Does not correct with 100% o
 
 # ── Obstructive disease ──────────────────────────────────────────────────
 G|Asthma|resp,immuno,path|Asthma sputum shows Curschmann spirals and ___-Leyden crystals|Charcot|charcot,charcot-leyden|From eosinophil membrane protein.
-B|Asthma severity|resp,emergency|A NORMAL PaCO2 in an acute severe asthma attack is|Ominous, signalling fatigue|Reassuring, signalling recovery|The patient should be hyperventilating; rising CO2 means failure.
+B|Asthma severity|resp,emergency|A NORMAL PaCO2 in an acute severe asthma attack is|Ominous, signaling fatigue|Reassuring, signaling recovery|The patient should be hyperventilating; rising CO2 means failure.
 G|Asthma|resp,pharm|Long-acting beta agonists must never be used without an inhaled ___|corticosteroid|corticosteroid,steroid,ics|Monotherapy increases asthma deaths.
 B|COPD|resp,pharm|Which intervention improves survival in COPD?|Smoking cessation and long-term oxygen|Inhaled corticosteroids and mucolytics|Bronchodilators improve symptoms, not mortality.
 G|COPD|resp,critical care|Long-term oxygen therapy is indicated when PaO2 falls below ___ mmHg|55|55,fifty five|Or below 60 with cor pulmonale or polycythemia.
@@ -42,7 +42,7 @@ B|Berylliosis|resp,path|Berylliosis is histologically indistinguishable from|Sar
 
 # ── Vascular and critical care ───────────────────────────────────────────
 G|Pulmonary embolism|resp,vascular|Most pulmonary emboli originate in the ___ veins of the leg|deep|deep,proximal deep,iliofemoral|Especially the popliteal and above.
-B|Massive pulmonary embolism|resp,emergency,pharm|Massive PE with hypotension is treated with|Thrombolysis|Anticoagulation alone|Haemodynamic instability changes the treatment.
+B|Massive pulmonary embolism|resp,emergency,pharm|Massive PE with hypotension is treated with|Thrombolysis|Anticoagulation alone|Hemodynamic instability changes the treatment.
 G|Fat embolism|resp,ortho,emergency|Fat embolism gives dyspnea, confusion and a ___ rash|petechial|petechial,petechiae|Classically after long bone fracture.
 B|Amniotic fluid embolism|resp,OB,emergency|Amniotic fluid embolism characteristically causes|Cardiovascular collapse with DIC|Isolated hypoxia that settles fast|Rare and often fatal.
 G|Pulmonary hypertension|resp,cardio|Pulmonary hypertension is a mean pulmonary artery pressure above ___ mmHg|20|20,twenty,25|Confirmed by right heart catheterization.
@@ -69,7 +69,7 @@ B|Central sleep apnea|resp,sleep,neuro|Cheyne-Stokes breathing is associated wit
 
 # ── Lung cancer ──────────────────────────────────────────────────────────
 G|Lung cancer screening|resp,oncology|Lung cancer screening uses low-dose ___ in high-risk smokers|CT|ct,computed tomography|Annually from age 50 with a significant pack-year history.
-B|Pancoast tumour|resp,oncology,neuro|A Pancoast tumour compresses the|Brachial plexus and sympathetic chain|Phrenic nerve and the oesophagus|Shoulder pain, arm weakness and Horner syndrome.
+B|Pancoast tumor|resp,oncology,neuro|A Pancoast tumor compresses the|Brachial plexus and sympathetic chain|Phrenic nerve and the esophagus|Shoulder pain, arm weakness and Horner syndrome.
 G|Small cell lung cancer|resp,oncology|Small cell lung cancer arises from ___ cells|neuroendocrine|neuroendocrine,kulchitsky|Which explains its paraneoplastic syndromes.
 B|Small cell lung cancer|resp,oncology,pharm|Small cell lung cancer is treated primarily with|Chemotherapy and radiotherapy|Surgical resection alone|It is almost always disseminated at diagnosis.
 G|Carcinoid of the lung|resp,oncology|Bronchial carcinoid stains for chromogranin and ___|synaptophysin|synaptophysin|Neuroendocrine markers; usually indolent.

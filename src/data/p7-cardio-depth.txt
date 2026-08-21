@@ -7,7 +7,7 @@ B|Isovolumetric contraction|cardio,physiology|During isovolumetric contraction, 
 G|Ejection fraction|cardio,physiology|Ejection fraction is stroke volume divided by end-___ volume|diastolic|diastolic|Normal is above 55 percent.
 G|Cardiac output|cardio,physiology|Cardiac output equals stroke volume times ___ rate|heart|heart|Fick: oxygen consumption over the arteriovenous difference.
 B|Preload|cardio,physiology|Preload corresponds most closely to|End-diastolic volume|Systemic vascular resistance|Afterload corresponds to aortic pressure.
-G|Frank-Starling|cardio,physiology|The Frank-Starling relationship links stroke volume to ___ length|sarcomere|sarcomere,muscle fibre,fiber|More stretch, more force, up to a point.
+G|Frank-Starling|cardio,physiology|The Frank-Starling relationship links stroke volume to ___ length|sarcomere|sarcomere,muscle fiber,fiber|More stretch, more force, up to a point.
 B|Pulse pressure|cardio,physiology|Pulse pressure is determined mainly by|Stroke volume and arterial compliance|Heart rate and systemic resistance|Widens in aortic regurgitation, narrows in tamponade.
 G|Jugular venous pulse|cardio,physiology|The a wave of the JVP is atrial ___|contraction|contraction,systole|Absent in atrial fibrillation; giant in tricuspid stenosis.
 B|Cannon a waves|cardio,physiology,arrhythmia|Cannon a waves indicate|Atria contracting against a closed valve|Regurgitation through the tricuspid valve|Seen in complete heart block and ventricular tachycardia.
@@ -25,7 +25,7 @@ B|Hypokalemia|cardio,ECG,electrolytes|Hypokalemia classically produces|U waves|P
 G|Pericarditis|cardio,ECG|Acute pericarditis shows diffuse ST elevation with ___ depression|PR|pr,pr segment|A useful discriminator from STEMI.
 
 # ── Ischemic heart disease ───────────────────────────────────────────────
-G|Myocardial infarction|cardio,MI,path|Coagulative necrosis after MI is established by ___ hours|4|4,4-12,four|Wavy fibres appear earlier.
+G|Myocardial infarction|cardio,MI,path|Coagulative necrosis after MI is established by ___ hours|4|4,4-12,four|Wavy fibers appear earlier.
 B|Myocardial infarction|cardio,MI,path|Rupture risk after MI peaks at|3 to 7 days|24 hours|When macrophages have digested the most collagen.
 G|Dressler syndrome|cardio,MI,immuno|Dressler syndrome is an ___ pericarditis weeks after infarction|autoimmune|autoimmune,immune|Fever, pleuritic pain and raised inflammatory markers.
 B|Inferior myocardial infarction|cardio,MI,ECG|An inferior MI shows changes in leads|II, III and aVF|V1 to V4|Usually the right coronary artery.

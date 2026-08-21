@@ -37,7 +37,7 @@ B|Correcting hypernatremia|renal,electrolytes,neuro|Correcting hypernatremia too
 
 # ── Potassium, calcium, magnesium ────────────────────────────────────────
 G|Hyperkalemia|renal,electrolytes,acid base|Acidosis raises serum potassium by driving it ___ of cells|out|out,outside,extracellularly|In exchange for hydrogen ions.
-B|Pseudohyperkalemia|renal,electrolytes,lab|A raised potassium with no ECG change and a haemolysed sample suggests|Pseudohyperkalemia|True hyperkalemia|Repeat the sample before treating.
+B|Pseudohyperkalemia|renal,electrolytes,lab|A raised potassium with no ECG change and a hemolyzed sample suggests|Pseudohyperkalemia|True hyperkalemia|Repeat the sample before treating.
 G|Hypokalemia|renal,electrolytes|Refractory hypokalemia should prompt checking serum ___|magnesium|magnesium,mg|Low magnesium prevents potassium correction.
 B|Hypomagnesemia|renal,electrolytes,endocrine|Hypomagnesemia also causes|Hypocalcemia through PTH resistance|Hypercalcemia through increased PTH|A common cause of resistant electrolyte disturbance.
 G|Hypercalcemia|renal,electrolytes,emergency|The first treatment of severe hypercalcemia is intravenous ___|saline|saline,fluids,normal saline|Then bisphosphonates and calcitonin.
@@ -65,7 +65,7 @@ B|Abdominal compartment syndrome|renal,AKI,surgery|Raised intra-abdominal pressu
 # ── Chronic kidney disease ───────────────────────────────────────────────
 G|Chronic kidney disease|renal|CKD stage 5 is a GFR below ___ mL/min|15|15,fifteen|Where dialysis or transplant is considered.
 B|CKD mineral bone disease|renal,endocrine,bone|CKD causes bone disease through|Low calcitriol and phosphate retention|Excess vitamin D and phosphate loss|Leading to secondary hyperparathyroidism.
-G|CKD anemia|renal,heme,pharm|CKD anemia is treated with iron and an erythropoiesis-___ agent|stimulating|stimulating,stimulation|Targeting a haemoglobin around 10 to 11.
+G|CKD anemia|renal,heme,pharm|CKD anemia is treated with iron and an erythropoiesis-___ agent|stimulating|stimulating,stimulation|Targeting a hemoglobin around 10 to 11.
 B|Dialysis indications|renal,emergency|AEIOU indications for dialysis include acidosis, electrolytes, ingestion, overload and|Uremia|Uric acid|Pericarditis or encephalopathy from uremia.
 B|Peritoneal dialysis|renal,micro|The commonest complication of peritoneal dialysis is|Peritonitis|Air embolism|Cloudy effluent with abdominal pain.
 
@@ -76,6 +76,6 @@ G|Cystinuria|renal,stones,genetics|Cystine stones form ___-shaped crystals|hexag
 B|Renal cell carcinoma|renal,oncology,genetics|Von Hippel-Lindau disease causes|Bilateral clear cell renal carcinoma|Transitional cell carcinoma|Plus hemangioblastomas and pheochromocytoma.
 G|Renal cell carcinoma|renal,oncology,endocrine|Renal cell carcinoma can secrete EPO, causing ___|polycythemia|polycythemia,erythrocytosis|Also renin, PTHrP and ACTH.
 B|Bladder cancer|renal,oncology|Painless gross hematuria in an older smoker requires|Cystoscopy and upper tract imaging|Reassurance and repeat urinalysis|Bladder cancer until proven otherwise.
-G|Wilms tumour|renal,oncology,peds|Wilms tumour is associated with the ___ gene on chromosome 11|WT1|wt1,wt-1|WAGR and Beckwith-Wiedemann syndromes.
+G|Wilms tumor|renal,oncology,peds|Wilms tumor is associated with the ___ gene on chromosome 11|WT1|wt1,wt-1|WAGR and Beckwith-Wiedemann syndromes.
 B|Posterior urethral valves|renal,peds,embryology|Posterior urethral valves cause|Bilateral hydronephrosis in a male infant|Isolated microscopic hematuria in a boy|The commonest cause of bladder outlet obstruction in boys.
 G|Vesicoureteral reflux|renal,peds|Vesicoureteral reflux predisposes to renal ___|scarring|scarring,scars|From recurrent pyelonephritis; detected on a voiding cystourethrogram.

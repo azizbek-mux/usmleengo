@@ -17,7 +17,7 @@ BT|Allergic vs infectious rhinitis|ENT,immuno|Which has clear discharge with itc
 BT|Iron deficiency vs sideroblastic|heme,anemia,lab|Which has a HIGH serum iron and ferritin with microcytosis?|Sideroblastic anemia|Iron deficiency|Iron cannot be incorporated into heme.
 BT|Anemia of chronic disease vs renal|heme,renal|Which is corrected by erythropoietin?|Anemia of chronic kidney disease|Anemia of chronic inflammation|Inflammation causes EPO resistance.
 BT|Spherocytosis vs autoimmune hemolysis|heme,immuno,lab|Which has a POSITIVE direct Coombs test?|Autoimmune hemolytic anemia|Hereditary spherocytosis|Both show spherocytes on the film.
-BT|Aplastic anemia vs myelodysplasia|heme,oncology,path|Which has a HYPERcellular marrow with dysplasia?|Myelodysplastic syndrome|Aplastic anemia|Ineffective haematopoiesis despite a full marrow.
+BT|Aplastic anemia vs myelodysplasia|heme,oncology,path|Which has a HYPERcellular marrow with dysplasia?|Myelodysplastic syndrome|Aplastic anemia|Ineffective hematopoiesis despite a full marrow.
 BT|Hemophilia vs vitamin K deficiency|heme,coagulation,lab|Which prolongs BOTH the PT and PTT?|Vitamin K deficiency|Hemophilia A|Hemophilia prolongs only the PTT.
 BT|DIC vs primary fibrinolysis|heme,coagulation|Which has a LOW platelet count?|DIC with consumption|Primary fibrinolysis|Both consume fibrinogen and raise D-dimer.
 BT|Type 1 vs type 2 respiratory failure|resp,critical care|Which has a HIGH carbon dioxide?|Type 2 respiratory failure|Type 1 respiratory failure|Type 1 is a pure oxygenation problem.
@@ -27,7 +27,7 @@ BT|Restrictive lung vs chest wall|resp,physiology|Which has a reduced diffusion 
 BT|Asthma vs anaphylaxis|resp,immuno,emergency|Which is treated with intramuscular adrenaline first?|Anaphylaxis|Acute asthma|Asthma gets nebulized salbutamol.
 BT|Prerenal vs intrinsic AKI|renal,lab|Which has a urine osmolality above 500?|Prerenal azotemia|Acute tubular necrosis|ATN produces isosthenuric urine near 300.
 BT|Nephrogenic vs psychogenic polydipsia|renal,psych|Which corrects with water deprivation alone?|Primary polydipsia|Nephrogenic diabetes insipidus|The kidney can still concentrate.
-BT|Cystitis vs urethritis|renal,micro,repro|Which has discharge with dysuria but sterile pyuria?|Urethritis|Cystitis|Chlamydia and gonorrhoea; standard cultures are negative.
+BT|Cystitis vs urethritis|renal,micro,repro|Which has discharge with dysuria but sterile pyuria?|Urethritis|Cystitis|Chlamydia and gonorrhea; standard cultures are negative.
 BT|Benign prostatic hyperplasia vs cancer|repro,urology,exam|Which gives a hard irregular prostate on examination?|Prostate cancer|Benign prostatic hyperplasia|BPH feels smooth, symmetrical and rubbery.
 BT|Testicular torsion vs epididymitis|repro,emergency|Which has an absent cremasteric reflex and a high-riding testis?|Testicular torsion|Epididymitis|A six-hour surgical window.
 BT|Placenta previa vs vasa previa|repro,OB,emergency|Which causes rapid FETAL exsanguination with membrane rupture?|Vasa previa|Placenta previa|Fetal vessels cross the os; maternal vitals stay normal.

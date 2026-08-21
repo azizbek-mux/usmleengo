@@ -29,7 +29,7 @@ G|Niacin|biochem,vitamins|Niacin is a precursor of ___ used in redox reactions|N
 B|Ribosomal subunits|biochem,cell biology|The 40S ribosomal subunit binds|The mRNA and the initiator tRNA|The signal recognition particle|Eukaryotic ribosome is 80S: 40S plus 60S.
 G|Genetic anticipation|biochem,genetics|Trinucleotide repeat disorders worsen in successive generations through ___|anticipation|anticipation|Repeat expansion; classic in myotonic dystrophy and Huntington.
 G|Cori disease|biochem,genetics,glycogen|Cori disease is deficiency of the glycogen ___ enzyme|debranching|debranching,debrancher|Hypoglycemia and hepatomegaly, milder than von Gierke.
-G|Lyonization|biochem,genetics|Random X inactivation in females is called ___|lyonization|lyonization,lyonisation,x-inactivation|Skewed lyonization can make a female express an X-linked recessive disease.
+G|Lyonization|biochem,genetics|Random X inactivation in females is called ___|lyonization|lyonization,lyonization,x-inactivation|Skewed lyonization can make a female express an X-linked recessive disease.
 B|Barr body|biochem,genetics|A Barr body represents|An inactivated X chromosome|An extra Y chromosome|Number of Barr bodies equals X count minus one.
 B|Glucocorticoid action|biochem,endocrine|Cortisol acts through|An intracellular receptor altering transcription|A membrane receptor raising cyclic AMP levels|Lipophilic; diffuses through the membrane.
 G|DNA replication|biochem,genetics|___ synthesizes the RNA primer during DNA replication|primase|primase|Uracil in the primer marks it as RNA.
@@ -52,7 +52,7 @@ B|Rate limiting enzymes|biochem,metabolism|The rate-limiting enzyme of gluconeog
 G|Cholesterol synthesis|biochem,metabolism,lipids|The rate-limiting enzyme of cholesterol synthesis is ___ reductase|HMG-CoA|hmg-coa,hmg coa,hmgcoa|The statin target.
 G|Heme synthesis|biochem,heme|The rate-limiting enzyme of heme synthesis is ALA ___|synthase|synthase|Requires vitamin B6; inhibited by heme.
 B|Acute intermittent porphyria|biochem,heme,neuro|Acute intermittent porphyria presents with|Abdominal pain and neuropsychiatric symptoms|Photosensitive blistering of the hands|Porphobilinogen deaminase deficiency; no skin findings.
-B|Porphyria cutanea tarda|biochem,heme,derm|Porphyria cutanea tarda causes|Blistering photosensitivity|Abdominal pain and neuropathy|Uroporphyrinogen decarboxylase deficiency; tea-coloured urine.
+B|Porphyria cutanea tarda|biochem,heme,derm|Porphyria cutanea tarda causes|Blistering photosensitivity|Abdominal pain and neuropathy|Uroporphyrinogen decarboxylase deficiency; tea-colored urine.
 G|Mitochondrial inheritance|biochem,genetics|Mitochondrial disorders are inherited from the ___|mother|mother,maternal|All children of an affected mother may be affected; heteroplasmy varies severity.
 B|Imprinting|biochem,genetics|Prader-Willi syndrome results from loss of the|Paternal allele|Maternal allele|Angelman results from maternal loss.
 G|Signal recognition particle|biochem,cell biology|The ___ targets ribosomes to the rough endoplasmic reticulum|signal recognition particle|signal recognition particle,srp|Absence leads to protein accumulation in the cytosol.

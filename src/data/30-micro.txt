@@ -11,7 +11,7 @@ G|Bacterial transformation|micro,genetics|Uptake of naked extracellular DNA is c
 B|Bacterial gene transfer|micro,genetics|Transfer of DNA by a bacteriophage is called|Transduction|Conjugation|Conjugation uses a pilus; transduction uses a phage.
 G|Epstein-Barr virus|micro,virus|EBV enters B cells via the ___ receptor|CD21|cd21,cr2,complement receptor 2|CD21 is the EBV receptor on B lymphocytes.
 B|HIV entry|micro,virus,HIV|HIV membrane fusion is mediated by|gp41|gp120|gp120 binds CD4 and the chemokine receptor; gp41 fuses.
-B|Enterotoxigenic E. coli|micro,bacteria,GI|ETEC causes traveller's diarrhea using|Heat-labile and heat-stable enterotoxins|Shiga toxin and mucosal invasion|LT raises cAMP like cholera; ST raises cGMP. Watery, non-bloody.
+B|Enterotoxigenic E. coli|micro,bacteria,GI|ETEC causes traveler's diarrhea using|Heat-labile and heat-stable enterotoxins|Shiga toxin and mucosal invasion|LT raises cAMP like cholera; ST raises cGMP. Watery, non-bloody.
 B|Clostridium perfringens|micro,bacteria,GI|Spore-forming bacteria survive|Boiling at 100 degrees Celsius|Standard refrigeration only|Spores need autoclaving at 121 degrees.
 B|Enveloped viruses|micro,virus|Enveloped viruses are killed by alcohol and detergents because they have|A lipid bilayer envelope|A protein capsid only|Non-enveloped viruses resist disinfectants.
 B|Giardia lamblia|micro,parasite,GI|Giardia infection is worse in patients deficient in|Secretory IgA|Complement C5|Fat malabsorption, foul-smelling greasy stools.
@@ -34,7 +34,7 @@ B|Campylobacter jejuni|micro,bacteria,GI|Campylobacter is most often acquired fr
 B|Human papillomavirus|micro,virus,oncology|HPV also has affinity for which respiratory structure?|True vocal cords|The alveoli and small airways|Recurrent respiratory papillomatosis from types 6 and 11.
 B|Cryptosporidium|micro,parasite,HIV|Cryptosporidium causes which diarrhea in AIDS?|Chronic watery|Bloody dysenteric|Acid-fast oocysts; severe when CD4 is low.
 B|Hepatitis B serology|micro,virus,hepatitis|Anti-HBs positive with anti-HBc negative means|Vaccinated|Past infection|The vaccine contains only HBsAg, so no core antibody forms.
-B|Pelvic inflammatory disease|micro,bacteria,repro|PID is treated with ceftriaxone plus|Doxycycline|Vancomycin|Covers both gonorrhoea and chlamydia.
+B|Pelvic inflammatory disease|micro,bacteria,repro|PID is treated with ceftriaxone plus|Doxycycline|Vancomycin|Covers both gonorrhea and chlamydia.
 B|Clindamycin|micro,pharm,antibiotics|Clindamycin binds which ribosomal subunit?|50S|30S|Bacteriostatic; covers anaerobes above the diaphragm.
 B|Clindamycin|micro,pharm,GI|The classic adverse effect of clindamycin is|Clostridioides difficile colitis|Nephrotoxicity and hearing loss|Disrupts colonic flora.
 B|Hookworm|micro,parasite,heme|Hookworm infection causes which anemia?|Microcytic iron deficiency|Macrocytic megaloblastic|Chronic intestinal blood loss.

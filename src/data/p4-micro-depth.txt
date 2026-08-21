@@ -11,7 +11,7 @@ G|Staphylococcus saprophyticus|micro,bacteria,renal|S. saprophyticus causes urin
 G|Streptococcus pyogenes|micro,bacteria,renal|Post-streptococcal glomerulonephritis follows ___ or skin infection|pharyngitis|pharyngitis,throat,sore throat|Unlike rheumatic fever, it is not prevented by antibiotics.
 B|Rheumatic fever|micro,bacteria,cardio|Rheumatic fever follows infection of the|Throat only|Skin only|Skin infection can cause glomerulonephritis but not rheumatic fever.
 G|Rheumatic fever|micro,bacteria,immuno|Rheumatic fever is caused by molecular ___ with M protein|mimicry|mimicry|Antibodies cross-react with myosin and valve tissue.
-B|Streptococcus pneumoniae|micro,bacteria,resp|Pneumococcal pneumonia classically produces|Rust-coloured sputum|Currant jelly sputum|Currant jelly suggests Klebsiella.
+B|Streptococcus pneumoniae|micro,bacteria,resp|Pneumococcal pneumonia classically produces|Rust-colored sputum|Currant jelly sputum|Currant jelly suggests Klebsiella.
 B|Streptococcus pneumoniae|micro,bacteria,immuno|Asplenic patients are especially vulnerable to pneumococcus because|The spleen clears encapsulated organisms|The spleen produces most antibody|Vaccinate against pneumococcus, meningococcus and Hib.
 G|Viridans streptococci|micro,bacteria,cardio|Viridans streptococci adhere to valves using ___|dextrans|dextrans,dextran,glycocalyx|Made from sucrose; they also cause dental caries.
 
@@ -29,11 +29,11 @@ G|Helicobacter pylori|micro,bacteria,GI|H. pylori survives gastric acid by produ
 B|Helicobacter pylori|micro,bacteria,oncology|H. pylori increases the risk of|Gastric adenocarcinoma and MALT lymphoma|Esophageal adenocarcinoma and Barrett|Barrett esophagus drives esophageal adenocarcinoma instead.
 
 # ── Mycobacteria and atypicals ───────────────────────────────────────────
-G|Mycobacterium tuberculosis|micro,bacteria,TB|The acid-fastness of mycobacteria comes from ___ acid|mycolic|mycolic|A waxy wall that resists Gram stain and decolourization.
+G|Mycobacterium tuberculosis|micro,bacteria,TB|The acid-fastness of mycobacteria comes from ___ acid|mycolic|mycolic|A waxy wall that resists Gram stain and decolorization.
 B|Tuberculosis|micro,TB,resp|Primary tuberculosis typically affects|The lower lobes|The apices|Reactivation prefers the oxygen-rich apices.
 G|Tuberculosis|micro,TB,path|The calcified primary lesion plus a hilar node is called a ___ complex|Ghon|ghon|Ranke complex once calcified.
 B|Latent tuberculosis|micro,TB,pharm|Latent tuberculosis is treated with|Isoniazid alone for several months|Four-drug therapy for six months|Or rifampin. Four drugs are for active disease.
-G|Antituberculous drugs|micro,TB,pharm|Ethambutol classically damages the ___ nerve|optic|optic|Red-green colour blindness; check vision before starting.
+G|Antituberculous drugs|micro,TB,pharm|Ethambutol classically damages the ___ nerve|optic|optic|Red-green color blindness; check vision before starting.
 B|Leprosy|micro,bacteria,derm|Mycobacterium leprae grows best in|Cool areas such as skin and nerves|The warm core of the body and liver|Which is why it damages extremities and the face.
 G|Mycoplasma|micro,bacteria,resp|Mycoplasma lacks a ___, so beta-lactams fail|cell wall|cell wall,wall,peptidoglycan|Its membrane contains sterols instead.
 B|Legionella|micro,bacteria,lab|Legionella is diagnosed with|A urine antigen test|Blood culture|It stains poorly on Gram; needs charcoal yeast extract agar.
@@ -75,6 +75,6 @@ G|Pneumocystis jirovecii|micro,fungi,HIV|Pneumocystis is visualized with ___ met
 B|Candida|micro,fungi|Candida on KOH shows|Pseudohyphae and budding yeast|Broad-based budding yeast|Broad-based budding is Blastomyces.
 G|Toxoplasma gondii|micro,parasite,OB|Pregnant women should avoid ___ litter to prevent toxoplasmosis|cat|cat,cats,cat's|Also undercooked meat.
 B|Entamoeba histolytica|micro,parasite,GI|Entamoeba classically causes|Flask-shaped colonic ulcers|Villous atrophy and blunting|Plus anchovy-paste liver abscess.
-G|Schistosoma haematobium|micro,parasite,oncology|S. haematobium raises the risk of ___ cell bladder carcinoma|squamous|squamous|Unlike the usual urothelial carcinoma.
+G|Schistosoma hematobium|micro,parasite,oncology|S. hematobium raises the risk of ___ cell bladder carcinoma|squamous|squamous|Unlike the usual urothelial carcinoma.
 B|Taenia solium|micro,parasite,neuro|Ingesting Taenia solium EGGS causes|Neurocysticercosis|Intestinal tapeworm|Eating larvae in pork gives the intestinal worm instead.
 G|Ascaris|micro,parasite,resp|Ascaris larvae migrate through the ___ causing transient wheeze|lungs|lungs,lung|Loffler syndrome with eosinophilia.

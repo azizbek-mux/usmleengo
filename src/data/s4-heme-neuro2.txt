@@ -1,16 +1,16 @@
-# Haematology and neurology — second depth pass. Gap-weighted.
+# Hematology and neurology — second depth pass. Gap-weighted.
 
 # ── Transfusion medicine ─────────────────────────────────────────────────
 G|Blood groups|heme,immuno|Group ___ is the universal red cell donor|O|o,o negative,o neg|AB is the universal plasma donor.
-B|Acute hemolytic transfusion reaction|heme,immuno,emergency|Acute hemolytic reaction is usually caused by|ABO incompatibility from clerical error|Bacterial contamination of the unit|Fever, loin pain and haemoglobinuria; stop immediately.
+B|Acute hemolytic transfusion reaction|heme,immuno,emergency|Acute hemolytic reaction is usually caused by|ABO incompatibility from clerical error|Bacterial contamination of the unit|Fever, loin pain and hemoglobinuria; stop immediately.
 G|Febrile transfusion reaction|heme,immuno|Febrile non-hemolytic reactions come from donor ___ and cytokines|leukocytes|leukocytes,white cells,wbc|Reduced by leukodepletion.
-B|TRALI|heme,resp,immuno|Transfusion-related acute lung injury presents as|Non-cardiogenic pulmonary oedema within 6 hours|Fluid overload from excess transfusion|Donor antibodies against recipient neutrophils.
-B|TACO|heme,cardio|Transfusion-associated circulatory overload is distinguished from TRALI by|A raised BNP and response to diuretics|Fever with a neutrophil leucocytosis|Volume, not immune injury.
+B|TRALI|heme,resp,immuno|Transfusion-related acute lung injury presents as|Non-cardiogenic pulmonary edema within 6 hours|Fluid overload from excess transfusion|Donor antibodies against recipient neutrophils.
+B|TACO|heme,cardio|Transfusion-associated circulatory overload is distinguished from TRALI by|A raised BNP and response to diuretics|Fever with a neutrophil leukocytosis|Volume, not immune injury.
 G|Massive transfusion|heme,electrolytes|Massive transfusion causes hypocalcemia, hyperkalemia and ___|hypothermia|hypothermia|Warm the blood and monitor calcium.
 B|Cryoprecipitate|heme,coagulation|Cryoprecipitate is given mainly for|Low fibrinogen|Low platelets|It contains fibrinogen, factor VIII, vWF and factor XIII.
 G|Irradiated blood|heme,immuno,transplant|Irradiated products prevent transfusion-associated ___ disease|graft-versus-host|graft-versus-host,gvhd,graft versus host|For immunocompromised recipients.
 
-# ── Haemostasis, deeper ──────────────────────────────────────────────────
+# ── Hemostasis, deeper ──────────────────────────────────────────────────
 G|Aspirin|heme,pharm,coagulation|Aspirin irreversibly acetylates ___ in platelets|COX-1|cox-1,cox1,cyclooxygenase|Lasting the platelet lifespan of about 10 days.
 B|Clopidogrel|heme,pharm,coagulation|Clopidogrel blocks|The P2Y12 ADP receptor|Glycoprotein IIb/IIIa|A prodrug requiring CYP2C19 activation.
 G|Abciximab|heme,pharm,coagulation|Abciximab blocks glycoprotein ___, the final common pathway of aggregation|IIb/IIIa|iib/iiia,2b/3a,gpiib/iiia|Used during coronary intervention.
@@ -19,7 +19,7 @@ G|Fibrinolysis|heme,physiology|Tissue plasminogen activator converts an inactive
 B|Protein C and S|heme,coagulation|Proteins C and S inactivate|Factors Va and VIIIa|Factors II and X|Vitamin K dependent, like the procoagulants.
 
 # ── Marrow and cytopenias ────────────────────────────────────────────────
-G|Neutropenia|heme,micro|Severe neutropenia is a neutrophil count below ___ per microlitre|500|500,0.5|Febrile neutropenia is a medical emergency.
+G|Neutropenia|heme,micro|Severe neutropenia is a neutrophil count below ___ per microliter|500|500,0.5|Febrile neutropenia is a medical emergency.
 B|Febrile neutropenia|heme,micro,emergency|Febrile neutropenia requires antibiotics within|One hour|Six hours|Broad-spectrum, covering Pseudomonas.
 G|Pancytopenia|heme,path|Pancytopenia with a dry tap suggests ___|myelofibrosis|myelofibrosis|Or marrow infiltration; needs a trephine biopsy.
 B|Eosinophilia|heme,immuno|Marked eosinophilia suggests|Parasites, allergy, drugs or malignancy|Acute bacterial infection with abscess|Bacterial infection usually lowers eosinophils.
@@ -44,8 +44,8 @@ G|Charcot-Marie-Tooth|neuro,genetics|Charcot-Marie-Tooth causes distal wasting w
 B|Mononeuritis multiplex|neuro,rheum|Mononeuritis multiplex suggests|Vasculitis or diabetes|A single nerve entrapment|Multiple named nerves affected asynchronously.
 
 # ── Neurology: cranial nerves ────────────────────────────────────────────
-G|Third nerve palsy|neuro,eye|A painful third nerve palsy with a dilated pupil suggests a posterior communicating ___|aneurysm|aneurysm|Compressive lesions hit the outer pupillary fibres first.
-B|Diabetic third nerve palsy|neuro,eye,endocrine|A diabetic third nerve palsy typically|Spares the pupil|Dilates the pupil|Microvascular ischemia affects the inner fibres.
+G|Third nerve palsy|neuro,eye|A painful third nerve palsy with a dilated pupil suggests a posterior communicating ___|aneurysm|aneurysm|Compressive lesions hit the outer pupillary fibers first.
+B|Diabetic third nerve palsy|neuro,eye,endocrine|A diabetic third nerve palsy typically|Spares the pupil|Dilates the pupil|Microvascular ischemia affects the inner fibers.
 G|Fourth nerve palsy|neuro,eye|A fourth nerve palsy causes vertical diplopia worse on looking ___|down|down,downward,downwards|Patients tilt the head away from the lesion.
 B|Sixth nerve palsy|neuro,eye|A sixth nerve palsy causes|Failure of abduction|Failure of adduction|It has the longest intracranial course, so it is a false localizing sign.
 G|Internuclear ophthalmoplegia|neuro,eye|Internuclear ophthalmoplegia results from a lesion of the medial longitudinal ___|fasciculus|fasciculus,mlf|Classic in multiple sclerosis when bilateral.
@@ -60,7 +60,7 @@ G|Chronic inflammatory demyelinating polyneuropathy|neuro,immuno|CIDP differs fr
 
 # ── Neurology: sleep and autonomic ───────────────────────────────────────
 G|Narcolepsy|neuro,sleep|Sudden loss of muscle tone with emotion in narcolepsy is called ___|cataplexy|cataplexy|Pathognomonic when present.
-B|REM sleep behaviour disorder|neuro,sleep|REM sleep behaviour disorder often precedes|Parkinson disease and Lewy body dementia|Alzheimer disease and vascular dementia|A synucleinopathy marker, sometimes by years.
+B|REM sleep behavior disorder|neuro,sleep|REM sleep behavior disorder often precedes|Parkinson disease and Lewy body dementia|Alzheimer disease and vascular dementia|A synucleinopathy marker, sometimes by years.
 G|Restless legs|neuro,sleep,pharm|Restless legs syndrome is treated with a dopamine ___ or gabapentinoid|agonist|agonist,agonists|After correcting iron deficiency.
 B|Autonomic failure|neuro,autonomic|Orthostatic hypotension WITHOUT a compensatory tachycardia suggests|Autonomic failure|Hypovolemia|The reflex tachycardia is lost.
 G|Multiple system atrophy|neuro,autonomic,movement|Multiple system atrophy combines parkinsonism with early ___ failure|autonomic|autonomic|Poor levodopa response distinguishes it.

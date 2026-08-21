@@ -8,14 +8,14 @@ B|Pilocarpine|pharm,autonomic,eye|Pilocarpine is used in acute angle closure bec
 G|Beta-3 agonists|pharm,autonomic,urology|Mirabegron relaxes the ___ to treat overactive bladder|detrusor|detrusor,bladder|An alternative to antimuscarinics in the elderly.
 B|Alpha-2 agonists|pharm,autonomic|Clonidine and dexmedetomidine|Reduce central sympathetic outflow|Stimulate peripheral alpha-1|Producing sedation without respiratory depression.
 
-# ── Anaesthesia and analgesia ────────────────────────────────────────────
-G|Inhaled anaesthetics|pharm,anesthesia|Anaesthetic potency is expressed as ___ alveolar concentration|minimum|minimum,minimal,mac|Lower MAC means more potent.
+# ── Anesthesia and analgesia ────────────────────────────────────────────
+G|Inhaled anesthetics|pharm,anesthesia|Anesthetic potency is expressed as ___ alveolar concentration|minimum|minimum,minimal,mac|Lower MAC means more potent.
 B|Nitrous oxide|pharm,anesthesia|Nitrous oxide has|A high MAC and low potency|A low MAC and high potency|Used as an adjunct, rarely alone.
 G|Malignant hyperthermia|pharm,anesthesia,genetics|Malignant hyperthermia involves the ___ receptor|ryanodine|ryanodine,ryr1|Autosomal dominant; treat with dantrolene.
 B|Propofol|pharm,anesthesia|Propofol characteristically causes|Hypotension and pain on injection|Hypertension and prolonged emergence|Rapid onset and offset; no analgesia.
-G|Ketamine|pharm,anesthesia|Ketamine blocks the ___ receptor, producing dissociative anaesthesia|NMDA|nmda|Preserves airway reflexes and raises blood pressure.
+G|Ketamine|pharm,anesthesia|Ketamine blocks the ___ receptor, producing dissociative anesthesia|NMDA|nmda|Preserves airway reflexes and raises blood pressure.
 B|Ketamine|pharm,anesthesia,cardio|Ketamine is useful in shock because it|Maintains blood pressure|Lowers cardiac work|Sympathomimetic; avoid in severe hypertension.
-G|Local anaesthetic toxicity|pharm,anesthesia,emergency|Local anaesthetic systemic toxicity is treated with ___ emulsion|lipid|lipid,intralipid,20% lipid|A lipid sink for the drug.
+G|Local anesthetic toxicity|pharm,anesthesia,emergency|Local anesthetic systemic toxicity is treated with ___ emulsion|lipid|lipid,intralipid,20% lipid|A lipid sink for the drug.
 B|Bupivacaine|pharm,anesthesia,cardio|Bupivacaine is more dangerous than lidocaine because of|Cardiac toxicity|Neurotoxicity|Refractory arrhythmias if injected intravascularly.
 G|Opioid conversion|pharm,neuro|When switching opioids, reduce the dose for incomplete cross-___|tolerance|tolerance|Usually by 25 to 50 percent.
 B|Codeine|pharm,neuro,genetics|Codeine is ineffective in poor metabolizers of|CYP2D6|CYP3A4|And dangerous in ultra-rapid metabolizers.
@@ -38,7 +38,7 @@ G|Insulin types|pharm,endocrine,diabetes|___ is the fastest acting insulin analo
 B|Insulin glargine|pharm,endocrine,diabetes|Glargine differs from NPH by having|No pronounced peak|A sharper peak|Reducing nocturnal hypoglycemia.
 G|Thionamides|pharm,endocrine,heme|Methimazole and propylthiouracil can both cause ___|agranulocytosis|agranulocytosis|Any sore throat or fever needs an urgent blood count.
 B|Bromocriptine versus cabergoline|pharm,endocrine|Cabergoline is preferred for prolactinoma because it is|Better tolerated and longer acting|Cheaper and more widely available|Both are dopamine agonists.
-G|Desmopressin|pharm,endocrine,heme|Desmopressin also raises factor VIII and von ___ factor|Willebrand|willebrand,willebrand's|Useful in mild haemophilia A and vWD.
+G|Desmopressin|pharm,endocrine,heme|Desmopressin also raises factor VIII and von ___ factor|Willebrand|willebrand,willebrand's|Useful in mild hemophilia A and vWD.
 
 # ── Gastrointestinal pharmacology ────────────────────────────────────────
 G|Proton pump inhibitors|pharm,GI,electrolytes|Long-term PPIs can cause low serum ___|magnesium|magnesium,mg|Plus B12 and iron malabsorption and C. difficile risk.
@@ -50,7 +50,7 @@ B|Mesalamine|pharm,GI,IBD|Mesalamine works|Topically on colonic mucosa|Systemica
 G|Infliximab|pharm,GI,immuno|Before starting a TNF inhibitor, screen for latent ___|tuberculosis|tuberculosis,tb|Plus hepatitis B.
 
 # ── Neurological and psychiatric pharmacology ────────────────────────────
-G|Levetiracetam|pharm,neuro,epilepsy|Levetiracetam is well tolerated but can cause ___ changes|behavioural|behavioural,behavioral,mood,irritability|Irritability and aggression, especially in children.
+G|Levetiracetam|pharm,neuro,epilepsy|Levetiracetam is well tolerated but can cause ___ changes|behavioral|behavioral,behavioral,mood,irritability|Irritability and aggression, especially in children.
 B|Topiramate|pharm,neuro|Topiramate characteristically causes|Weight loss, word-finding difficulty and stones|Weight gain with sedation, tremor and rash|Also acute angle closure glaucoma.
 G|Gabapentin|pharm,neuro,renal|Gabapentin is cleared entirely by the ___, so dosing follows GFR|kidney|kidney,kidneys,renal|No hepatic metabolism.
 B|Donepezil|pharm,neuro,dementia|Cholinesterase inhibitors commonly cause|Bradycardia and GI upset|Tachycardia and dry mouth|Caution with heart block.

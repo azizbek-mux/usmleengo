@@ -1,10 +1,10 @@
-# Reproductive, obstetrics and gynaecology — batch 1.
+# Reproductive, obstetrics and gynecology — batch 1.
 B|Preeclampsia|repro,OB|Visual scotomata in preeclampsia are caused by|Retinal artery vasospasm|Retinal detachment|Abnormal placentation causes ischemia and vasoactive release.
 B|Preeclampsia|repro,OB,pharm|Seizure prophylaxis in preeclampsia uses|Magnesium sulfate|Phenytoin|Monitor reflexes; calcium gluconate reverses toxicity.
 B|Eclampsia|repro,OB,emergency|The definitive treatment of preeclampsia is|Delivery|Antihypertensives|Everything else is temporizing.
 G|Neural crest|repro,embryology|Around week 4, ___ crest cells migrate to form the peripheral nervous system|neural|neural|Also melanocytes, adrenal medulla and branchial arch cartilage.
 B|Deformation versus malformation|repro,embryology|An amniotic band amputating a limb is a|Deformation|Malformation|Deformation is extrinsic mechanical force on normal tissue.
-B|Polyhydramnios|repro,OB|Polyhydramnios results from|Impaired fetal swallowing|Impaired fetal urination|Anencephaly and oesophageal atresia. Renal problems cause oligohydramnios.
+B|Polyhydramnios|repro,OB|Polyhydramnios results from|Impaired fetal swallowing|Impaired fetal urination|Anencephaly and esophageal atresia. Renal problems cause oligohydramnios.
 B|Oligohydramnios|repro,OB|Oligohydramnios results from|Reduced fetal urine output|Reduced fetal swallowing|Renal agenesis or posterior urethral valves.
 B|Mifepristone|repro,pharm,OB|Mifepristone acts as a|Progesterone antagonist|Folate antagonist|Methotrexate is the folate antagonist used in ectopic pregnancy.
 B|Congenital cytomegalovirus|repro,OB,micro|Congenital CMV classically causes|Microcephaly with periventricular calcification|Limb hypoplasia with cicatricial scarring|The commonest congenital infection.
@@ -13,7 +13,7 @@ B|Congenital rubella|repro,OB,micro|Congenital rubella causes|Cataracts, deafnes
 G|Relaxin|repro,OB,physiology|___ loosens pelvic ligaments in pregnancy|relaxin|relaxin|Widens the pelvic outlet but causes pelvic girdle pain.
 B|Complete hydatidiform mole|repro,OB,oncology|A complete mole has which karyotype?|46,XX entirely paternal|69,XXY with fetal parts|No fetal parts; higher malignant potential.
 B|Partial hydatidiform mole|repro,OB,oncology|A partial mole is|Triploid with some fetal parts|Diploid with no fetal parts|Usually 69,XXY; lower malignancy risk.
-B|Placenta accreta|repro,OB|The main risk factor for placenta accreta is|A prior caesarean scar|Multiparity alone|Thin myometrium lacks decidua basalis.
+B|Placenta accreta|repro,OB|The main risk factor for placenta accreta is|A prior cesarean scar|Multiparity alone|Thin myometrium lacks decidua basalis.
 B|Placenta percreta|repro,OB|Placenta percreta invades|Through the myometrium into adjacent organs|Only the superficial myometrial layer|Accreta attaches, increta invades, percreta penetrates.
 B|Placenta previa|repro,OB|Placenta previa presents with|Painless bright red bleeding|Painful bleeding with a rigid uterus|Abruption is painful; never do a digital exam in previa.
 B|Placental abruption|repro,OB,emergency|Placental abruption presents with|Painful bleeding and a tense uterus|Painless bright red bleeding|Risk factors: hypertension, trauma, cocaine, smoking.
@@ -38,7 +38,7 @@ B|Androgen insensitivity syndrome|repro,genetics|In complete androgen insensitiv
 G|Mullerian ducts|repro,embryology|The Mullerian ducts form the uterus, fallopian tubes and upper ___|vagina|vagina|Regressed in males by anti-Mullerian hormone.
 G|Wolffian ducts|repro,embryology|The Wolffian ducts form the epididymis, vas deferens and seminal ___|vesicles|vesicles,vesicle|Maintained by testosterone.
 B|5-alpha reductase deficiency|repro,genetics,endocrine|In 5-alpha reductase deficiency, internal genitalia are|Normal male|Female|Testosterone works; DHT does not, so external genitalia are ambiguous until puberty.
-B|Epididymitis|repro,micro|Epididymitis under age 35 is usually caused by|Chlamydia or gonorrhoea|Coliform bacteria|Older men get coliforms from outlet obstruction.
+B|Epididymitis|repro,micro|Epididymitis under age 35 is usually caused by|Chlamydia or gonorrhea|Coliform bacteria|Older men get coliforms from outlet obstruction.
 B|Testicular torsion|repro,emergency,urology|Testicular torsion shows|An absent cremasteric reflex|Relief of pain on elevation|Relief on elevation (Prehn sign) suggests epididymitis.
 B|Erectile dysfunction|repro,physiology,pharm|Erection depends on|Parasympathetic nitric oxide and cGMP|Sympathetic noradrenaline release|Point and shoot: parasympathetic erection, sympathetic ejaculation.
 B|Sildenafil|repro,pharm|Sildenafil inhibits|Phosphodiesterase-5|Phosphodiesterase-3|Raises cGMP; contraindicated with nitrates.

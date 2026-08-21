@@ -1,9 +1,9 @@
-# Paediatrics and genetics — second depth pass. Gap-weighted.
+# Pediatrics and genetics — second depth pass. Gap-weighted.
 
 # ── Chromosomal syndromes ────────────────────────────────────────────────
 G|Down syndrome|genetics,peds|Down syndrome is most often caused by ___ of chromosome 21|nondisjunction|nondisjunction,non-disjunction,trisomy|About 95 percent; 4 percent translocation.
-B|Down syndrome|genetics,peds,GI|Down syndrome is associated with which gut anomaly?|Duodenal atresia|Malrotation|Plus Hirschsprung disease and coeliac disease.
-G|Down syndrome|genetics,peds,heme|Children with Down syndrome have increased risk of ___|leukemia|leukemia,leukaemia,all,aml|Both ALL and AML, especially megakaryoblastic.
+B|Down syndrome|genetics,peds,GI|Down syndrome is associated with which gut anomaly?|Duodenal atresia|Malrotation|Plus Hirschsprung disease and celiac disease.
+G|Down syndrome|genetics,peds,heme|Children with Down syndrome have increased risk of ___|leukemia|leukemia,leukemia,all,aml|Both ALL and AML, especially megakaryoblastic.
 B|Down syndrome|genetics,peds,neuro|Adults with Down syndrome develop|Early Alzheimer disease|Huntington disease|The APP gene sits on chromosome 21.
 G|Turner syndrome|genetics,repro|Turner syndrome causes short stature and ___ webbing|neck|neck|From fetal cystic hygroma.
 B|Turner syndrome|genetics,renal|Turner syndrome is associated with which renal anomaly?|Horseshoe kidney|Polycystic kidney disease|Plus coarctation and bicuspid aortic valve.
@@ -40,9 +40,9 @@ B|Vitamin D in infants|peds,nutrition,bone|Breastfed infants need supplementatio
 G|Iron in infancy|peds,nutrition,heme|Term infants deplete stored iron by about ___ months|6|6,six,4-6|Which is when iron-rich weaning foods matter.
 B|Cow milk in infancy|peds,nutrition|Unmodified cow milk before one year causes|Iron deficiency and occult GI bleeding|Lactose intolerance and constipation|Low iron and high renal solute load.
 
-# ── Common paediatric presentations ──────────────────────────────────────
+# ── Common pediatric presentations ──────────────────────────────────────
 G|Febrile infant|peds,micro,emergency|A febrile infant under ___ months needs a full septic screen|3|3,three,1|Immature immunity and non-specific signs.
-B|Bronchiolitis admission|peds,resp|Bronchiolitis warrants admission for|Poor feeding, apnoea or hypoxia|Any wheeze heard on auscultation|Most are managed at home.
+B|Bronchiolitis admission|peds,resp|Bronchiolitis warrants admission for|Poor feeding, apnea or hypoxia|Any wheeze heard on auscultation|Most are managed at home.
 G|Asthma in children|peds,resp,pharm|Children under five with wheeze are given a bronchodilator via a ___|spacer|spacer|More effective than a nebulizer for most.
 B|Urinary tract infection in infancy|peds,renal,micro|A UTI in an infant should prompt|Renal tract imaging|Reassurance only|Looking for reflux or structural anomaly.
 G|Nephrotic syndrome in children|peds,renal,pharm|Childhood nephrotic syndrome is treated empirically with ___|steroids|steroids,corticosteroids,prednisolone|Biopsy only if steroid-resistant.
@@ -52,7 +52,7 @@ B|Autism screening|peds,development|Autism screening is recommended at|18 and 24
 G|Sudden infant death|peds,development|The safest infant sleep position is on the ___|back|back|On a firm surface, without loose bedding.
 B|Kawasaki treatment timing|peds,cardio,pharm|IVIG in Kawasaki disease is most effective within|10 days of fever onset|One month of fever onset|Reducing coronary aneurysm risk substantially.
 
-# ── Adolescent and behavioural ───────────────────────────────────────────
+# ── Adolescent and behavioral ───────────────────────────────────────────
 G|Puberty in girls|peds,endocrine|The first sign of puberty in girls is ___|thelarche|thelarche,breast budding,breast development|Followed by pubarche then menarche.
 B|Puberty in boys|peds,endocrine|The first sign of puberty in boys is|Testicular enlargement|Voice deepening|Measured with an orchidometer.
 G|Adolescent confidentiality|peds,ethics|Adolescents should be offered part of the consultation without a ___ present|parent|parent,parents,caregiver|Encouraging honest disclosure.

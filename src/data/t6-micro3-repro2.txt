@@ -1,7 +1,7 @@
 # Infectious disease and reproductive medicine — further depth. Gap-weighted.
 
 # ── Sexually transmitted infection ───────────────────────────────────────
-G|Gonorrhoea|micro,repro,pharm|Gonorrhoea is treated with intramuscular ___|ceftriaxone|ceftriaxone|Resistance has removed the oral options.
+G|Gonorrhea|micro,repro,pharm|Gonorrhea is treated with intramuscular ___|ceftriaxone|ceftriaxone|Resistance has removed the oral options.
 B|Chlamydia|micro,repro,pharm|Uncomplicated chlamydia is treated with|Doxycycline for seven days|A single dose of azithromycin|Doxycycline is now preferred for efficacy.
 G|Syphilis staging|micro,repro|Asymptomatic syphilis of more than one year is staged as ___ latent|late|late,tertiary|Requiring three weekly penicillin doses.
 B|Syphilis serology|micro,repro,lab|VDRL and RPR are|Non-treponemal tests for monitoring treatment|Confirmatory tests that stay positive|Treponemal tests stay positive for life.
@@ -27,9 +27,9 @@ B|Central line infection|micro,infection control|Central line infection preventi
 G|Ventilator-associated pneumonia|micro,critical care|VAP prevention includes head elevation and daily sedation ___|holds|holds,interruption,breaks|Plus oral chlorhexidine.
 B|Surgical site infection|micro,surgery|Preoperative hair removal should use|Clippers, not razors|A razor on the ward|Razors cause microabrasions that seed infection.
 G|Malaria prophylaxis|micro,parasite|Malaria prophylaxis must continue for ___ weeks after leaving an endemic area|4|4,four|Except atovaquone-proguanil, which needs one.
-B|Traveller's diarrhoea|micro,GI|Traveller's diarrhoea is most often caused by|Enterotoxigenic E. coli|Salmonella enteritidis|Usually self-limiting with fluids.
+B|Traveler's diarrhea|micro,GI|Traveler's diarrhea is most often caused by|Enterotoxigenic E. coli|Salmonella enteritidis|Usually self-limiting with fluids.
 G|Typhoid|micro,bacteria,GI|Typhoid classically causes rose ___ and relative bradycardia|spots|spots,spot|Faget sign; treat with azithromycin or ceftriaxone.
-B|Dengue warning signs|micro,virus,emergency|Dengue warning signs include|Rising haematocrit with falling platelets|Fever with a mild maculopapular rash|Plasma leakage precedes shock.
+B|Dengue warning signs|micro,virus,emergency|Dengue warning signs include|Rising hematocrit with falling platelets|Fever with a mild maculopapular rash|Plasma leakage precedes shock.
 
 # ── Immunization and public health ───────────────────────────────────────
 G|Herd immunity|micro,vaccines,epidemiology|Herd immunity threshold rises with the basic reproduction number ___|R0|r0,r-nought,r naught|Measles needs about 95 percent coverage.
@@ -40,17 +40,17 @@ G|Notifiable disease|micro,ethics|Suspected ___ must be notified before laborato
 
 # ── Obstetrics, deeper ───────────────────────────────────────────────────
 G|Antenatal screening|repro,OB,genetics|The combined test measures nuchal translucency, hCG and PAPP-___|A|a|Between 11 and 14 weeks.
-B|Cell-free DNA|repro,OB,genetics|Non-invasive prenatal testing analyses|Fetal DNA in maternal blood|Amniotic fluid cells|A screening test needing confirmation.
+B|Cell-free DNA|repro,OB,genetics|Non-invasive prenatal testing analyzes|Fetal DNA in maternal blood|Amniotic fluid cells|A screening test needing confirmation.
 G|Amniocentesis|repro,OB,genetics|Amniocentesis is performed after ___ weeks|15|15,fifteen|Chorionic villus sampling can be done earlier.
 B|Rhesus disease|repro,OB,immuno|Rhesus disease affects|Second and subsequent pregnancies|Only the very first pregnancy|Sensitization occurs at the first delivery.
 G|Fetal monitoring|repro,OB|Late decelerations on cardiotocography suggest uteroplacental ___|insufficiency|insufficiency|Variable decelerations suggest cord compression.
-B|Shoulder dystocia|repro,OB,emergency|The first manoeuvre for shoulder dystocia is|McRoberts with suprapubic pressure|Fundal pressure with traction|Fundal pressure worsens impaction.
-G|Postpartum hemorrhage|repro,OB,pharm|First-line uterotonic for postpartum haemorrhage is ___|oxytocin|oxytocin|Then ergometrine, carboprost and misoprostol.
+B|Shoulder dystocia|repro,OB,emergency|The first maneuver for shoulder dystocia is|McRoberts with suprapubic pressure|Fundal pressure with traction|Fundal pressure worsens impaction.
+G|Postpartum hemorrhage|repro,OB,pharm|First-line uterotonic for postpartum hemorrhage is ___|oxytocin|oxytocin|Then ergometrine, carboprost and misoprostol.
 B|Retained placenta|repro,OB|Postpartum bleeding with a boggy uterus after delivery of the placenta suggests|Uterine atony|Retained products|The four Ts: tone, tissue, trauma, thrombin.
 G|Puerperal sepsis|repro,OB,micro|Puerperal sepsis is most often caused by group ___ streptococcus|A|a|A rapidly progressive and historically lethal infection.
 B|Lactation|repro,OB,endocrine|Milk ejection is triggered by|Oxytocin|Prolactin|Prolactin makes milk; oxytocin lets it down.
 
-# ── Gynaecology, deeper ──────────────────────────────────────────────────
+# ── Gynecology, deeper ──────────────────────────────────────────────────
 G|Primary amenorrhea|repro,gyn|Primary amenorrhea is investigated at age ___ with no periods and normal development|15|15,fifteen,16|Or 13 with no secondary sexual characteristics.
 B|Asherman syndrome|repro,gyn|Asherman syndrome causes amenorrhea through|Intrauterine adhesions|Ovarian failure|Usually after instrumentation or infection.
 G|Premature ovarian insufficiency|repro,gyn,endocrine|Premature ovarian insufficiency is diagnosed under age ___ with high FSH|40|40,forty|Requires hormone replacement for bone protection.

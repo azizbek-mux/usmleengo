@@ -17,7 +17,7 @@ G|Brucellosis|micro,bacteria|Brucellosis is acquired from unpasteurized ___ and 
 B|Leptospirosis|micro,bacteria,renal|Leptospirosis is acquired from|Water contaminated with rat urine|Undercooked pork and wild boar|Weil disease adds jaundice and renal failure.
 G|Q fever|micro,bacteria,cardio|Q fever is caused by ___ burnetii from farm animals|Coxiella|coxiella|A cause of culture-negative endocarditis.
 B|Psittacosis|micro,bacteria,resp|Psittacosis is acquired from|Birds|Cattle|Chlamydia psittaci causing atypical pneumonia.
-G|Toxocariasis|micro,parasite,eye|Toxocara from dog faeces causes visceral larva migrans and ___ granuloma|ocular|ocular,eye,retinal|Mimicking retinoblastoma.
+G|Toxocariasis|micro,parasite,eye|Toxocara from dog feces causes visceral larva migrans and ___ granuloma|ocular|ocular,eye,retinal|Mimicking retinoblastoma.
 B|Hydatid disease|micro,parasite,liver|Echinococcal liver cysts should NOT be|Aspirated without precaution|Treated with albendazole|Spillage risks anaphylaxis.
 G|Cysticercosis|micro,parasite,neuro|Neurocysticercosis follows ingestion of Taenia solium ___|eggs|eggs,ova|Eating larvae in pork gives intestinal tapeworm instead.
 B|Chagas disease|micro,parasite,cardio|Chagas disease causes|Dilated cardiomyopathy and megacolon|Restrictive cardiomyopathy|Transmitted by the reduviid bug.
@@ -25,7 +25,7 @@ B|Chagas disease|micro,parasite,cardio|Chagas disease causes|Dilated cardiomyopa
 # ── Emerging and travel ──────────────────────────────────────────────────
 G|Enteric fever|micro,bacteria,GI|Enteric fever is diagnosed most sensitively with ___ culture|bone marrow|bone marrow,blood|Blood culture is more practical but less sensitive.
 B|Cholera treatment|micro,bacteria,GI|The mainstay of cholera treatment is|Aggressive rehydration|Antibiotics alone|Antibiotics shorten shedding but fluids save lives.
-G|Viral haemorrhagic fever|micro,virus,infection control|Suspected viral haemorrhagic fever requires strict ___ precautions|isolation|isolation,barrier,contact|And urgent public health notification.
+G|Viral hemorrhagic fever|micro,virus,infection control|Suspected viral hemorrhagic fever requires strict ___ precautions|isolation|isolation,barrier,contact|And urgent public health notification.
 B|Zika virus|micro,virus,OB|Zika virus in pregnancy causes|Microcephaly and brain anomalies|Limb defects and cataracts|Sexual as well as vector transmission.
 G|Chikungunya|micro,virus,rheum|Chikungunya causes fever with prolonged ___ pain|joint|joint,arthralgia,arthritis|Which may persist for months.
 B|Melioidosis|micro,bacteria,resp|Melioidosis is acquired from|Soil and water in Southeast Asia|Animal bites in Southeast Asia|Burkholderia pseudomallei; the great mimicker.
@@ -35,7 +35,7 @@ G|Antimicrobial stewardship|micro,ethics,pharm|Stewardship aims to give the righ
 B|De-escalation|micro,pharm|Antibiotic de-escalation means|Narrowing therapy once cultures return|Stopping all antibiotics at 48 hours|Reducing collateral damage.
 G|Duration of therapy|micro,pharm|Evidence increasingly supports ___ antibiotic courses for many infections|shorter|shorter,short|Five days for many pneumonias.
 B|Resistance emergence|micro,pharm|Antibiotic resistance is best limited by|Avoiding unnecessary prescriptions|Rotating antibiotics constantly|Selection pressure drives resistance.
-G|Colonization versus infection|micro,clinical|A positive culture without symptoms usually represents ___|colonization|colonisation,colonization|Treating it drives resistance without benefit.
+G|Colonization versus infection|micro,clinical|A positive culture without symptoms usually represents ___|colonization|colonization,colonization|Treating it drives resistance without benefit.
 
 # ── Dermatology, third pass ──────────────────────────────────────────────
 G|Skin biopsy|derm,path|___ immunofluorescence is used to diagnose blistering disease|Direct|direct,dif|Detecting antibody bound in the skin.

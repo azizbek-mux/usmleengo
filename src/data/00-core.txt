@@ -55,7 +55,7 @@ B|ACE inhibitors|renal,pharm|ACE inhibitors dilate the efferent arteriole and lo
 B|Prerenal azotemia|renal,AKI,labs|In prerenal azotemia, the BUN/creatinine ratio is:|Greater than 20|Less than 15|BUN/Cr above 20 — urea is reabsorbed along with sodium and water.
 G|Acetaminophen overdose|pharm,toxicology,antidote|The antidote for acetaminophen overdose is ___|N-acetylcysteine|nac,acetylcysteine,n acetylcysteine|NAC regenerates glutathione.
 G|Warfarin|pharm,toxicology,antidote,coagulation|Warfarin overdose is reversed with vitamin ___|K|vitamin k,vit k,phytonadione|Vitamin K, plus PCC or FFP if actively bleeding.
-G|Heparin|pharm,toxicology,antidote,coagulation|Heparin overdose is reversed with ___|protamine sulfate|protamine,protamine sulphate|Protamine sulfate — a positively charged peptide that binds heparin.
+G|Heparin|pharm,toxicology,antidote,coagulation|Heparin overdose is reversed with ___|protamine sulfate|protamine,protamine sulfate|Protamine sulfate — a positively charged peptide that binds heparin.
 G|Opioid overdose|pharm,toxicology,antidote|The antidote for opioid overdose is ___|naloxone|narcan|Naloxone — a competitive mu receptor antagonist.
 G|Benzodiazepine overdose|pharm,toxicology,antidote|The antidote for benzodiazepine overdose is ___|flumazenil||Flumazenil — but it risks seizures in chronic users.
 B|Warfarin|pharm,coagulation,labs|Warfarin is monitored with:|PT/INR|PTT|PT/INR, the extrinsic pathway. Heparin uses PTT.
@@ -73,7 +73,7 @@ B|Streptococcus pyogenes|micro,bacteria,gram positive|Streptococcus pyogenes sho
 G|Tuberculosis|micro,bacteria,TB|Mycobacterium tuberculosis is identified with the ___ stain|acid-fast|acid fast,ziehl-neelsen,ziehl neelsen,afb|Acid-fast (Ziehl-Neelsen) — because of mycolic acid in the cell wall.
 G|Cryptococcus|micro,fungi,HIV|Cryptococcus neoformans is visualized with ___ ink|India|india ink,indian|India ink shows the capsule. Also mucicarmine positive.
 B|Pseudomonas aeruginosa|micro,bacteria,gram negative|Pseudomonas aeruginosa is:|Gram negative|Gram positive|Gram negative rod, oxidase positive, grape-like odor, blue-green pigment.
-G|Neisseria|micro,bacteria,gram negative|Neisseria organisms are gram-negative ___ in shape|diplococci|diplococcus,cocci|Gram-negative diplococci. N. meningitidis ferments maltose; gonorrhoeae does not.
+G|Neisseria|micro,bacteria,gram negative|Neisseria organisms are gram-negative ___ in shape|diplococci|diplococcus,cocci|Gram-negative diplococci. N. meningitidis ferments maltose; gonorrheae does not.
 B|Clostridioides difficile|micro,bacteria,GI|C. difficile is treated first-line with:|Oral vancomycin|Metronidazole|Oral vancomycin or fidaxomicin is now first-line.
 G|Malaria|micro,parasite|The most dangerous species of malaria is Plasmodium ___|falciparum|p falciparum,p. falciparum|P. falciparum — cerebral malaria, irregular fever pattern.
 B|HIV|micro,virus,HIV|AIDS is defined by a CD4 count below:|200|500|CD4 under 200 cells/mm3, or an AIDS-defining illness.

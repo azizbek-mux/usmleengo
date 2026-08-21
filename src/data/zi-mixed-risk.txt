@@ -8,33 +8,33 @@ B|Perioperative MI reduction|cardio,surgery,clinical|The best way to cut periope
 B|Recurrent MI risk factor|cardio,clinical|In a patient who has already had one MI, the biggest risk factor is|The previous infarction itself|The ongoing cigarette smoking|Past disease outranks every modifiable factor.
 B|Stroke risk in atrial fibrillation|cardio,neuro,clinical|In a hypertensive patient in atrial fibrillation, the main stroke risk is|The atrial fibrillation|The hypertension|Not the blood pressure, on these questions.
 B|Stroke prevention in AF|cardio,neuro,pharm|Stroke risk in atrial fibrillation is best reduced by|Anticoagulation|Blood pressure control|Rate control does not prevent stroke.
-B|Stroke prevention after stroke|neuro,cardio,pharm|After an ischaemic stroke in a hypertensive smoker, the biggest gain is|Treating the blood pressure|Stopping the smoking|Hypertension leads for recurrent stroke.
+B|Stroke prevention after stroke|neuro,cardio,pharm|After an ischemic stroke in a hypertensive smoker, the biggest gain is|Treating the blood pressure|Stopping the smoking|Hypertension leads for recurrent stroke.
 B|Amaurosis with carotid stenosis|eye,vascular,surgery|Retinal artery occlusion with 90 percent carotid stenosis is treated by|Carotid endarterectomy|Starting antiplatelet therapy|The stenosis is the target.
 B|Duodenal ulcer healing|gi,micro,clinical|After eradicating H. pylori, ulcer healing is best helped by|Stopping smoking|Avoiding spicy food|A recurring exam answer.
 B|Autoimmune flare reduction|rheum,immuno,clinical|Flares of lupus or rheumatoid arthritis are reduced by|Stopping smoking|Avoiding sun exposure|A consistent answer across autoimmune disease.
 B|Recurrent otitis media|ent,peds,clinical|Recurrent otitis media in a child is most reduced by|Stopping parental smoking|Removing pets from the home|Even smoking outdoors still matters.
 
-# ── Mechanisms and localisation ──────────────────────────────────────────
-B|Lacunar infarct localisation|neuro,stroke|Face and limb weakness with intact sensation suggests a lacunar infarct of the|Internal capsule|Cerebral cortex|Pure motor, with sensation spared.
+# ── Mechanisms and localization ──────────────────────────────────────────
+B|Lacunar infarct localization|neuro,stroke|Face and limb weakness with intact sensation suggests a lacunar infarct of the|Internal capsule|Cerebral cortex|Pure motor, with sensation spared.
 B|Incretin effect|gi,endocrine,physiology|Oral glucose raises insulin more than intravenous glucose because of|Glucose-dependent insulinotropic peptide|Faster absorption from the small gut|The incretin effect.
 B|Homozygous deletion inheritance|genetics|A homozygous gene deletion in a neonate suggests inheritance that is|Autosomal recessive|Autosomal dominant|Both copies are lost.
 B|Ureteric compression vessel|renal,anatomy,surgery|A ureter is classically compressed by the|Common iliac artery|Internal iliac vein|Where it crosses the pelvic brim.
-B|Oedema with normal ejection fraction|cardio,liver,physiology|Ascites and oedema with an ejection fraction of 55 percent suggest|Low plasma oncotic pressure|A failing left ventricle|The heart is working normally.
-B|Methaemoglobinaemia in a neonate|peds,heme|Persistent cyanosis with normal haematocrit and normal echo suggests|Methaemoglobinaemia|Cyanotic heart disease|From cytochrome b5 reductase deficiency.
+B|Edema with normal ejection fraction|cardio,liver,physiology|Ascites and edema with an ejection fraction of 55 percent suggest|Low plasma oncotic pressure|A failing left ventricle|The heart is working normally.
+B|Methemoglobinemia in a neonate|peds,heme|Persistent cyanosis with normal hematocrit and normal echo suggests|Methemoglobinemia|Cyanotic heart disease|From cytochrome b5 reductase deficiency.
 B|GFR in renal artery stenosis|renal,physiology|GFR is preserved in renal artery stenosis by|Efferent arteriolar constriction|Afferent arteriolar constriction|Which is why ACE inhibitors are dangerous.
 B|Babesia film|micro,heme,parasite|Intra-erythrocytic rings in an asplenic patient from the north-east suggest|Babesia|Plasmodium|Splenectomy raises the risk sharply.
-B|Insulin receptor signalling|endocrine,biochem|The insulin receptor signals through|Tyrosine kinase|A G protein cascade|Autophosphorylating on binding.
+B|Insulin receptor signaling|endocrine,biochem|The insulin receptor signals through|Tyrosine kinase|A G protein cascade|Autophosphorylating on binding.
 B|LPS receptor|immuno,micro,critical care|Lipopolysaccharide triggers shock by binding|Toll-like receptors|Complement C3b receptors|Initiating the cytokine cascade.
 B|Superior parathyroid pouch|endocrine,embryology|The superior parathyroid glands come from the|Fourth pharyngeal pouch|Third pharyngeal pouch|The inferior pair come from the third.
-B|CD18 deficiency mechanism|immuno,genetics|Leucocyte adhesion deficiency prevents|Phagocytes leaving the vessel|Phagocytes killing organisms|Recurrent infection with poor pus formation.
-B|Benzene and leukaemia|oncology,toxicology|Acute myeloid leukaemia after chemical exposure suggests|Benzene|Asbestos|A classic occupational association.
+B|CD18 deficiency mechanism|immuno,genetics|Leukocyte adhesion deficiency prevents|Phagocytes leaving the vessel|Phagocytes killing organisms|Recurrent infection with poor pus formation.
+B|Benzene and leukemia|oncology,toxicology|Acute myeloid leukemia after chemical exposure suggests|Benzene|Asbestos|A classic occupational association.
 B|Abciximab target|pharm,cardio,coagulation|Abciximab blocks|Glycoprotein IIb/IIIa on platelets|The ADP receptor on platelets|Preventing fibrinogen bridging.
 B|Cilostazol dual action|pharm,vascular|Cilostazol is both an antiplatelet agent and a|Vasodilator|Diuretic|Used in claudication.
 B|Celecoxib cardiovascular risk|pharm,cardio|Celecoxib raises cardiovascular risk because it|Spares thromboxane while blocking prostacyclin|Blocks thromboxane far more than prostacyclin|Tilting the balance towards clotting.
 B|Phentolamine intracellular effect|pharm,autonomic,biochem|Phentolamine, an alpha blocker, reduces|Phospholipase C activity|Adenylyl cyclase activity|Alpha-1 receptors are Gq-coupled.
 B|Von Willebrand laboratory pattern|heme,coagulation,gyn|Heavy menses with normal platelets, normal PT and a long aPTT suggests|Von Willebrand disease|Immune thrombocytopenia|It also carries factor VIII.
 B|Hardy-Weinberg disturbance|genetics,biostats|Hardy-Weinberg equilibrium is disturbed by|An appreciable mutation rate|A very large population size|Along with selection and migration.
-B|Haemochromatosis mechanism|liver,genetics,gi|Diabetes with arthritis and cardiomegaly is caused by|Increased intestinal iron absorption|Reduced hepatic iron storage|The classic bronze diabetes triad.
+B|Hemochromatosis mechanism|liver,genetics,gi|Diabetes with arthritis and cardiomegaly is caused by|Increased intestinal iron absorption|Reduced hepatic iron storage|The classic bronze diabetes triad.
 B|Diverticula location|gi,anatomy|Colonic diverticula are found mostly in the|Sigmoid colon|Ascending colon|Where luminal pressure is highest.
 B|Addison electrolyte pattern|endocrine,adrenal,electrolytes|Hyperpigmentation with low blood pressure gives|Low sodium, high potassium, low cortisol|High sodium, low potassium, high cortisol|Primary adrenal failure.
 B|Nedocromil mechanism|pharm,resp,immuno|Nedocromil works by|Blocking mediator release from mast cells|Blocking the histamine H1 receptor|A mast cell stabiliser.

@@ -1,4 +1,4 @@
-# TRICKY — changed context. The memorised fact becomes wrong when one detail shifts.
+# TRICKY — changed context. The memorized fact becomes wrong when one detail shifts.
 BT|Secondary adrenal insufficiency|endocrine,adrenal,electrolytes|In SECONDARY adrenal insufficiency, serum K+ is|Normal|Increased|ACTH loss spares aldosterone — the RAAS is intact. Only PRIMARY Addison raises K+.
 BT|Secondary adrenal insufficiency|endocrine,adrenal|In SECONDARY adrenal insufficiency, skin pigmentation is|Normal|Increased|No ACTH excess means no MSH effect. Pigmentation is a primary Addison sign.
 BT|Cocaine chest pain|cardio,toxicology,pharm|In cocaine-induced chest pain, a beta blocker is|Contraindicated|First-line|Unopposed alpha stimulation worsens coronary vasospasm. Use benzodiazepines.

@@ -4,7 +4,7 @@
 B|Failure to thrive definition|nutrition,peds|Failure to thrive means weight|Below the 3rd percentile, or crossing two lines|Anywhere below the 50th percentile line|Tracking a low percentile steadily is normal.
 B|Growth parameter order|nutrition,peds|In undernutrition the first parameter to fall is|Weight, then length, then head|Head circumference, then weight|Head sparing comes last.
 B|Elderly weight loss workup|nutrition,geriatrics,psych|Unintentional weight loss in an older adult with normal labs needs|Screening for depression and cognition|Immediate CT of chest and abdomen|Both are common and treatable causes.
-B|Marasmus versus kwashiorkor|nutrition,peds|Kwashiorkor is distinguished from marasmus by|Oedema|Muscle wasting|From low albumin and oncotic pressure.
+B|Marasmus versus kwashiorkor|nutrition,peds|Kwashiorkor is distinguished from marasmus by|Edema|Muscle wasting|From low albumin and oncotic pressure.
 B|Kwashiorkor liver|nutrition,liver,peds|Kwashiorkor causes a fatty liver because of|Impaired lipoprotein export|Excess dietary fat intake|Protein is needed to ship fat out.
 B|Nitrogen balance in burns|nutrition,critical care|A burns patient on adequate calories but low protein has|Negative nitrogen balance|Negative energy balance|Weight can be stable while muscle is lost.
 G|Burns protein requirement|nutrition,critical care|A hypercatabolic patient needs about 1.5 to 2.5 g/kg/day of ___|protein|protein|Driven by catecholamines and cortisol.
@@ -26,14 +26,14 @@ B|Dumping syndrome mechanism|nutrition,gi,surgery|Dumping syndrome is caused by|
 # ── Carbohydrate metabolism disorders ────────────────────────────────────
 B|Hereditary fructose intolerance enzyme|nutrition,biochem,peds|Hereditary fructose intolerance is deficiency of|Aldolase B|Galactokinase|Fructose-1-phosphate accumulates.
 B|Fructose versus galactose timing|nutrition,peds,biochem|Symptoms starting after fruit and honey at 7 months suggest|A fructose disorder|A galactose disorder|Galactose disease starts with milk at birth.
-B|Galactosemia eye sign|nutrition,peds,eye|Galactosaemia is distinguished by|Cataracts|Bitot spots|Absent in fructose intolerance.
+B|Galactosemia eye sign|nutrition,peds,eye|Galactosemia is distinguished by|Cataracts|Bitot spots|Absent in fructose intolerance.
 
 # ── Fat-soluble vitamins ─────────────────────────────────────────────────
 G|Bitot spots|nutrition,vitamins,eye|Foamy conjunctival ___ spots are pathognomonic of vitamin A deficiency|Bitot|bitot|Squamous metaplasia of the conjunctiva.
 B|Vitamin A deficiency progression|nutrition,vitamins,eye|Vitamin A deficiency progresses from night blindness to|Xerophthalmia and keratomalacia|Cataract and acute glaucoma|Ending in blindness.
 B|Isotretinoin toxicity|nutrition,vitamins,pharm|Isotretinoin can cause|Papilledema and alopecia|Peripheral neuropathy and ataxia|Hypervitaminosis A raises intracranial pressure.
-B|Vitamin E deficiency anaemia|nutrition,vitamins,heme|Vitamin E deficiency causes anaemia that is|Haemolytic|Megaloblastic|It protects the red cell membrane.
-B|Vitamin E versus B12|nutrition,vitamins,neuro|Vitamin E deficiency mimics B12 deficiency but has|Normal methylmalonic acid|Raised methylmalonic acid|And haemolysis rather than macrocytosis.
+B|Vitamin E deficiency anemia|nutrition,vitamins,heme|Vitamin E deficiency causes anemia that is|Hemolytic|Megaloblastic|It protects the red cell membrane.
+B|Vitamin E versus B12|nutrition,vitamins,neuro|Vitamin E deficiency mimics B12 deficiency but has|Normal methylmalonic acid|Raised methylmalonic acid|And hemolysis rather than macrocytosis.
 
 # ── Water-soluble vitamins ───────────────────────────────────────────────
 B|Korsakoff features|nutrition,vitamins,neuro|Korsakoff syndrome is anterograde amnesia with|Confabulation|Ophthalmoplegia|From mammillary body damage.
@@ -42,21 +42,21 @@ B|Wet versus dry beriberi|nutrition,vitamins,cardio|Wet beriberi differs from dr
 B|Niacin flushing mediator|nutrition,vitamins,pharm|Niacin-induced flushing is mediated by|Prostaglandins|Histamine release|Reduced by pretreatment with aspirin.
 B|Niacin lipid effect|nutrition,vitamins,lipids|Niacin is the most effective agent for raising|HDL|LDL|While lowering triglycerides.
 B|Vitamin B5 deficiency|nutrition,vitamins,derm|Pantothenic acid deficiency causes dermatitis and|Burning feet syndrome|Night blindness|B5 forms coenzyme A.
-B|Folate and neural tube|nutrition,vitamins,ob|The neural tube closes at|Days 21 to 28 after conception|Weeks 12 to 16 of pregnancy|Often before pregnancy is recognised.
+B|Folate and neural tube|nutrition,vitamins,ob|The neural tube closes at|Days 21 to 28 after conception|Weeks 12 to 16 of pregnancy|Often before pregnancy is recognized.
 G|Folate dose on antiepileptics|nutrition,vitamins,ob,pharm|Women on valproate need ___ mg of folate daily|4|4,four|Rather than the usual 400 micrograms.
-B|Folate versus B12 neurology|nutrition,vitamins,neuro|Folate deficiency differs from B12 deficiency by having|No neurological signs|Prominent dorsal column signs|Both give a megaloblastic anaemia.
+B|Folate versus B12 neurology|nutrition,vitamins,neuro|Folate deficiency differs from B12 deficiency by having|No neurological signs|Prominent dorsal column signs|Both give a megaloblastic anemia.
 B|Methylmalonic acid discriminator|nutrition,vitamins,lab|Methylmalonic acid is raised in|B12 deficiency only|Both B12 and folate|Homocysteine rises in both.
 B|Folate store duration|nutrition,vitamins|Folate stores are exhausted within|Weeks|Years|B12 stores last years.
 B|Vitamin C excess stones|nutrition,vitamins,renal|Megadose vitamin C causes|Calcium oxalate stones|Uric acid stones|From excess oxalate production.
 
 # ── Minerals and trace elements ──────────────────────────────────────────
-B|Hypocalcaemia signs|nutrition,electrolytes,exam|Hypocalcaemia causes carpopedal spasm and|A prolonged QT interval|A shortened QT interval|With Chvostek and Trousseau signs.
-B|Refractory hypokalaemia cause|nutrition,electrolytes|Hypokalaemia that will not correct suggests|Magnesium deficiency|Sodium depletion|Magnesium must be replaced first.
+B|Hypocalcemia signs|nutrition,electrolytes,exam|Hypocalcemia causes carpopedal spasm and|A prolonged QT interval|A shortened QT interval|With Chvostek and Trousseau signs.
+B|Refractory hypokalemia cause|nutrition,electrolytes|Hypokalemia that will not correct suggests|Magnesium deficiency|Sodium depletion|Magnesium must be replaced first.
 B|Magnesium and PTH|nutrition,electrolytes,endocrine|Magnesium deficiency lowers calcium by|Impairing PTH release|Binding calcium directly|Which is why calcium alone fails.
-B|Hypokalaemia ECG|nutrition,electrolytes,cardio|Hypokalaemia shows on ECG as|U waves with flattened T waves|Peaked T waves with a wide QRS|Peaked T waves mean hyperkalaemia.
+B|Hypokalemia ECG|nutrition,electrolytes,cardio|Hypokalemia shows on ECG as|U waves with flattened T waves|Peaked T waves with a wide QRS|Peaked T waves mean hyperkalemia.
 B|Zinc deficiency features|nutrition,vitamins,derm|Zinc deficiency causes perioral dermatitis, alopecia and|Loss of taste and smell|Night blindness and dry eyes|Worse after weaning.
 G|Acrodermatitis enteropathica|nutrition,derm,genetics|Inherited zinc malabsorption is called acrodermatitis ___|enteropathica|enteropathica|Presenting around weaning.
-B|Chromium deficiency clue|nutrition,critical care,endocrine|Unexplained hyperglycaemia in a TPN patient suggests|Chromium deficiency|Selenium deficiency|It potentiates the insulin receptor.
+B|Chromium deficiency clue|nutrition,critical care,endocrine|Unexplained hyperglycemia in a TPN patient suggests|Chromium deficiency|Selenium deficiency|It potentiates the insulin receptor.
 B|Zinc excess consequence|nutrition,heme|Prolonged high-dose zinc causes deficiency of|Copper|Iron|By inducing intestinal metallothionein.
-B|Copper deficiency picture|nutrition,heme,neuro|Copper deficiency causes anaemia, neutropenia and|A myeloneuropathy mimicking B12|A haemolytic anaemia with jaundice|But methylmalonic acid stays normal.
+B|Copper deficiency picture|nutrition,heme,neuro|Copper deficiency causes anemia, neutropenia and|A myeloneuropathy mimicking B12|A hemolytic anemia with jaundice|But methylmalonic acid stays normal.
 B|Selenium deficiency context|nutrition,critical care,cardio|Selenium deficiency classically follows|Long-term TPN without trace elements|A strict vegetarian diet at home|Causing Keshan cardiomyopathy.

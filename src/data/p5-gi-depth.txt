@@ -1,13 +1,13 @@
 # Gastrointestinal and hepatology — depth pass. Gap-weighted.
 
-# ── Oesophagus ───────────────────────────────────────────────────────────
-G|Barrett esophagus|GI,oncology,path|Barrett metaplasia is recognized by the presence of ___ cells|goblet|goblet|Intestinal-type mucosa above the gastro-oesophageal junction.
-B|Esophageal cancer|GI,oncology|Adenocarcinoma of the oesophagus arises in the|Lower third|Upper third|Squamous cell carcinoma favours the upper two thirds.
+# ── Esophagus ───────────────────────────────────────────────────────────
+G|Barrett esophagus|GI,oncology,path|Barrett metaplasia is recognized by the presence of ___ cells|goblet|goblet|Intestinal-type mucosa above the gastro-esophageal junction.
+B|Esophageal cancer|GI,oncology|Adenocarcinoma of the esophagus arises in the|Lower third|Upper third|Squamous cell carcinoma favours the upper two thirds.
 G|Esophageal varices|GI,liver,pharm|Bleeding varices are controlled acutely with ___, a somatostatin analogue|octreotide|octreotide|Plus banding and antibiotic prophylaxis.
 B|Mallory-Weiss tear|GI,emergency|A Mallory-Weiss tear involves|A mucosal laceration only|Full-thickness rupture|Boerhaave is the full-thickness rupture with mediastinitis.
 G|Boerhaave syndrome|GI,emergency|Boerhaave syndrome causes subcutaneous ___ in the neck|emphysema|emphysema,crepitus|Air tracks into the mediastinum after forceful vomiting.
 B|Eosinophilic esophagitis|GI,immuno|Eosinophilic esophagitis classically shows|Concentric rings on endoscopy|A single distal stricture|Food impaction in a young atopic patient.
-G|Plummer-Vinson syndrome|GI,heme|Plummer-Vinson combines oesophageal webs with ___ deficiency anemia|iron|iron|Plus atrophic glossitis and dysphagia.
+G|Plummer-Vinson syndrome|GI,heme|Plummer-Vinson combines esophageal webs with ___ deficiency anemia|iron|iron|Plus atrophic glossitis and dysphagia.
 
 # ── Stomach ──────────────────────────────────────────────────────────────
 G|Parietal cells|GI,physiology|Parietal cells secrete acid and intrinsic ___|factor|factor|Their loss causes both achlorhydria and B12 deficiency.
@@ -21,23 +21,23 @@ B|Virchow node|GI,oncology|A left supraclavicular node in gastric cancer is call
 
 # ── Small bowel and malabsorption ────────────────────────────────────────
 G|Celiac disease|GI,immuno,lab|The screening antibody in celiac disease is anti-tissue ___|transglutaminase|transglutaminase,ttg|Check IgA level too, since IgA deficiency causes false negatives.
-B|Celiac disease|GI,immuno,path|Celiac disease damages which part of the small bowel most?|Duodenum and proximal jejunum|Terminal ileum and caecum|Which is why iron and folate go first.
+B|Celiac disease|GI,immuno,path|Celiac disease damages which part of the small bowel most?|Duodenum and proximal jejunum|Terminal ileum and cecum|Which is why iron and folate go first.
 G|Whipple disease|GI,micro,path|Whipple disease shows ___-positive foamy macrophages|PAS|pas,periodic acid-schiff|Tropheryma whipplei. Arthralgia, diarrhea, neurological signs.
 B|Tropical sprue|GI,micro|Tropical sprue differs from celiac because it|Responds to antibiotics|Responds to gluten withdrawal|It affects the whole small bowel, including the ileum.
 G|Lactose intolerance|GI,physiology|Lactose intolerance causes an ___ diarrhea that stops with fasting|osmotic|osmotic|Stool osmotic gap is high and stool pH low.
-B|Carcinoid tumour|GI,oncology|The commonest site of a gastrointestinal carcinoid is the|Small bowel|Stomach|Especially the terminal ileum and appendix.
+B|Carcinoid tumor|GI,oncology|The commonest site of a gastrointestinal carcinoid is the|Small bowel|Stomach|Especially the terminal ileum and appendix.
 G|Abetalipoproteinemia|GI,genetics,heme|Abetalipoproteinemia shows ___ on peripheral smear|acanthocytes|acanthocytes,acanthocyte,spur cells|Missing microsomal triglyceride transfer protein; fat malabsorption.
 
 # ── Colon ────────────────────────────────────────────────────────────────
 G|Familial adenomatous polyposis|GI,genetics,oncology|FAP is caused by mutation of the ___ gene on chromosome 5|APC|apc|Hundreds of polyps; colectomy is inevitable.
-B|Gardner syndrome|GI,genetics,oncology|Gardner syndrome is FAP plus|Osteomas and soft tissue tumours|Brain tumours and skin pigmentation|Turcot syndrome adds CNS tumours.
-G|Lynch syndrome|GI,genetics,oncology|Lynch syndrome tumours show microsatellite ___|instability|instability|Right-sided colon cancer at a young age.
+B|Gardner syndrome|GI,genetics,oncology|Gardner syndrome is FAP plus|Osteomas and soft tissue tumors|Brain tumors and skin pigmentation|Turcot syndrome adds CNS tumors.
+G|Lynch syndrome|GI,genetics,oncology|Lynch syndrome tumors show microsatellite ___|instability|instability|Right-sided colon cancer at a young age.
 B|Colorectal screening|GI,oncology|Average-risk colonoscopy screening now begins at age|45|60|Earlier with family history or inflammatory bowel disease.
 B|Diverticulosis|GI,path,anatomy|Colonic diverticula form where|Vasa recta penetrate the muscular wall|The taeniae coli are at their thickest|Points of structural weakness; false diverticula.
 G|Diverticulitis|GI,micro,pharm|Diverticulitis is treated with antibiotics covering gut ___|anaerobes|anaerobes,anaerobe|Metronidazole plus a fluoroquinolone or co-amoxiclav.
 B|Angiodysplasia|GI,vascular|Angiodysplasia classically causes|Painless lower GI bleeding|Severe abdominal pain|Associated with aortic stenosis and von Willebrand disease.
 G|Ischemic colitis|GI,vascular|Ischemic colitis causes pain out of proportion at the ___ flexure|splenic|splenic|The watershed between SMA and IMA territories.
-B|Toxic megacolon|GI,IBD,emergency|Toxic megacolon is a complication of|Ulcerative colitis and C. difficile|Crohn disease and coeliac disease|Avoid antimotility agents; risk of perforation.
+B|Toxic megacolon|GI,IBD,emergency|Toxic megacolon is a complication of|Ulcerative colitis and C. difficile|Crohn disease and celiac disease|Avoid antimotility agents; risk of perforation.
 G|Volvulus|GI,surgery|Sigmoid volvulus produces a ___ bean sign on abdominal film|coffee|coffee|Commonest in the elderly and constipated.
 
 # ── Pancreas ─────────────────────────────────────────────────────────────
@@ -45,7 +45,7 @@ G|Acute pancreatitis|GI,pancreas,lab|The most specific enzyme in acute pancreati
 B|Acute pancreatitis|GI,pancreas,electrolytes|Acute pancreatitis lowers serum|Calcium|Potassium|Saponification of fat consumes calcium.
 G|Pancreatic pseudocyst|GI,pancreas,path|A pancreatic pseudocyst lacks a true ___ lining|epithelial|epithelial,epithelium|Which is why it is called pseudo.
 B|Chronic pancreatitis|GI,pancreas,imaging|Chronic pancreatitis shows|Pancreatic calcifications|A discrete solid mass|Plus steatorrhea and diabetes as the gland fails.
-G|Pancreatic cancer|GI,oncology,lab|The tumour marker for pancreatic cancer is CA ___|19-9|19-9,19 9,199|Used for monitoring, not screening.
+G|Pancreatic cancer|GI,oncology,lab|The tumor marker for pancreatic cancer is CA ___|19-9|19-9,19 9,199|Used for monitoring, not screening.
 B|Courvoisier sign|GI,oncology|A palpable non-tender gallbladder with jaundice suggests|Pancreatic head cancer|Chronic gallstone disease|Stones cause a scarred, non-distensible gallbladder.
 G|Trousseau sign of malignancy|GI,oncology,coagulation|Migratory ___ suggests visceral adenocarcinoma|thrombophlebitis|thrombophlebitis,phlebitis|Classically pancreatic cancer.
 
@@ -53,7 +53,7 @@ G|Trousseau sign of malignancy|GI,oncology,coagulation|Migratory ___ suggests vi
 G|Alcoholic hepatitis|GI,liver,lab|In alcoholic hepatitis, the AST to ALT ratio is above ___|2|2,2:1,two|A toast with two shots: AST twice ALT.
 B|Nonalcoholic fatty liver|GI,liver,lab|In non-alcoholic fatty liver disease, the ratio is|ALT above AST|AST above ALT|The reverse of alcoholic disease.
 G|Cirrhosis|GI,liver,vascular|Portal hypertension is defined by a portal pressure gradient above ___ mmHg|5|5,five,5 mmhg|Varices form above 10, and bleed above 12.
-B|Spontaneous bacterial peritonitis|GI,liver,micro|SBP is diagnosed when ascitic neutrophils exceed|250 per microlitre|1000 per microlitre|Treat with cefotaxime; commonest organism is E. coli.
+B|Spontaneous bacterial peritonitis|GI,liver,micro|SBP is diagnosed when ascitic neutrophils exceed|250 per microliter|1000 per microliter|Treat with cefotaxime; commonest organism is E. coli.
 G|Hepatorenal syndrome|GI,liver,renal|Hepatorenal syndrome kidneys are ___ on biopsy|normal|normal,histologically normal|A functional failure from splanchnic vasodilation.
 B|Hepatic encephalopathy|GI,liver,pharm|Rifaximin helps encephalopathy by|Killing ammonia-producing gut bacteria|Binding ammonia in the gut lumen|Used with lactulose.
 G|Primary biliary cholangitis|GI,liver,immuno|Primary biliary cholangitis shows anti-___ antibodies|mitochondrial|mitochondrial,ama|Middle-aged women with itch and fatigue.
@@ -72,8 +72,8 @@ G|Cholangitis|GI,micro,emergency|Charcot triad is fever, jaundice and right uppe
 B|Biliary colic|GI,path|Biliary colic pain typically lasts|Under six hours|Several days|Longer pain with fever suggests cholecystitis.
 G|Porcelain gallbladder|GI,oncology|A porcelain gallbladder raises the risk of gallbladder ___|carcinoma|carcinoma,cancer|An indication for cholecystectomy.
 
-# ── Paediatric GI ────────────────────────────────────────────────────────
+# ── Pediatric GI ────────────────────────────────────────────────────────
 G|Biliary atresia|GI,peds,liver|Biliary atresia causes ___ jaundice with pale stools|conjugated|conjugated,direct|Needs a Kasai portoenterostomy within weeks.
 B|Necrotizing enterocolitis|GI,peds,emergency|Necrotizing enterocolitis shows which radiographic sign?|Pneumatosis intestinalis|A double bubble sign|Gas in the bowel wall in a premature infant.
-G|Tracheoesophageal fistula|GI,peds,embryology|The commonest tracheoesophageal fistula has a blind upper ___|pouch|pouch,esophageal pouch|With a distal fistula. Coiled nasogastric tube on x-ray.
+G|Tracheesophageal fistula|GI,peds,embryology|The commonest tracheesophageal fistula has a blind upper ___|pouch|pouch,esophageal pouch|With a distal fistula. Coiled nasogastric tube on x-ray.
 B|Malrotation|GI,peds,emergency|Bilious vomiting in a newborn is|A surgical emergency|Usually benign reflux|Malrotation with volvulus until proven otherwise.

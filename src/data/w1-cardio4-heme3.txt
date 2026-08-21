@@ -1,4 +1,4 @@
-# Cardiology fourth pass and haematology third pass. Gap-weighted.
+# Cardiology fourth pass and hematology third pass. Gap-weighted.
 
 # ── Cardiac examination and signs ────────────────────────────────────────
 G|Apex beat|cardio,exam|A displaced, diffuse apex beat suggests ___ overload|volume|volume|A heaving apex suggests pressure overload.
@@ -29,31 +29,31 @@ B|Myocardial bridging|cardio,anatomy|Myocardial bridging causes ischemia through
 # ── Cardiomyopathy and pericardium ───────────────────────────────────────
 G|Hypertrophic cardiomyopathy|cardio,genetics|HOCM is the commonest cause of sudden cardiac death in young ___|athletes|athletes,adults|Screening includes ECG and echocardiography.
 B|HOCM management|cardio,pharm|Patients with HOCM should avoid|Dehydration and vasodilators|Beta blockers and verapamil|Anything reducing preload worsens obstruction.
-G|Restrictive cardiomyopathy|cardio,path|Amyloid, sarcoid and ___ cause restrictive cardiomyopathy|hemochromatosis|hemochromatosis,haemochromatosis|Impaired filling with normal systolic function.
+G|Restrictive cardiomyopathy|cardio,path|Amyloid, sarcoid and ___ cause restrictive cardiomyopathy|hemochromatosis|hemochromatosis,hemochromatosis|Impaired filling with normal systolic function.
 B|Arrhythmogenic right ventricular cardiomyopathy|cardio,genetics|ARVC replaces myocardium with|Fibrofatty tissue|Amyloid|Causing ventricular arrhythmia in young people.
 G|Peripartum cardiomyopathy|cardio,OB|Peripartum cardiomyopathy presents in late pregnancy to ___ months postpartum|5|5,five,6|Recurrence risk in future pregnancy is significant.
 B|Acute pericarditis|cardio,pharm|Acute pericarditis is treated with|NSAIDs plus colchicine|Steroids first-line|Colchicine reduces recurrence.
-G|Pericardial effusion|cardio,imaging|Pericardial effusion is best assessed with ___|echocardiography|echocardiography,echo,ultrasound|Assessing size and haemodynamic impact.
+G|Pericardial effusion|cardio,imaging|Pericardial effusion is best assessed with ___|echocardiography|echocardiography,echo,ultrasound|Assessing size and hemodynamic impact.
 
-# ── Haematology: red cells, deeper ───────────────────────────────────────
-G|Mean corpuscular volume|heme,anemia,lab|An MCV above ___ femtolitres defines macrocytosis|100|100,one hundred|Causes include B12, folate, alcohol and hypothyroidism.
+# ── Hematology: red cells, deeper ───────────────────────────────────────
+G|Mean corpuscular volume|heme,anemia,lab|An MCV above ___ femtoliters defines macrocytosis|100|100,one hundred|Causes include B12, folate, alcohol and hypothyroidism.
 B|Non-megaloblastic macrocytosis|heme,anemia|Which causes macrocytosis WITHOUT hypersegmented neutrophils?|Alcohol excess|Folate deficiency|Also liver disease, hypothyroidism and reticulocytosis.
 G|Anemia in pregnancy|heme,OB|Physiological anemia of pregnancy results from ___ expansion|plasma|plasma,plasma volume|Dilutional, with a genuine iron requirement too.
-B|Iron therapy response|heme,anemia,lab|After starting iron, the first response seen is|A reticulocyte rise within a week|Haemoglobin normalization in days|Haemoglobin takes weeks to correct.
+B|Iron therapy response|heme,anemia,lab|After starting iron, the first response seen is|A reticulocyte rise within a week|Hemoglobin normalization in days|Hemoglobin takes weeks to correct.
 G|Intravenous iron|heme,pharm|Intravenous iron is used when oral iron is not ___ or absorbed|tolerated|tolerated,effective|Modern preparations rarely cause anaphylaxis.
 B|Blood film in hyposplenism|heme,path,immuno|Hyposplenism shows|Howell-Jolly bodies and target cells|Schistocytes and helmet cells|Plus thrombocytosis and acanthocytes.
 
-# ── Haematology: white cells and marrow ──────────────────────────────────
+# ── Hematology: white cells and marrow ──────────────────────────────────
 G|Leukocytosis|heme,lab,micro|A left ___ describes immature neutrophils in the blood|shift|shift|Suggesting infection or marrow stress.
 B|Lymphocytosis|heme,lab,virus|Marked lymphocytosis with atypical cells suggests|Viral infection such as EBV|Acute bacterial sepsis|Bacterial infection raises neutrophils.
 G|Monoclonal gammopathy|heme,oncology,lab|A monoclonal band on ___ electrophoresis needs further evaluation|protein|protein,serum protein,spep|With free light chains and imaging.
 B|Bone marrow examination|heme,path|Bone marrow trephine is needed rather than aspirate when|The marrow is fibrotic or infiltrated|Any cytopenia at all is present|A dry tap suggests fibrosis.
-G|Tumour lysis prevention|heme,oncology,pharm|___ is used for high-risk tumour lysis prophylaxis|Rasburicase|rasburicase|Contraindicated in G6PD deficiency.
+G|Tumor lysis prevention|heme,oncology,pharm|___ is used for high-risk tumor lysis prophylaxis|Rasburicase|rasburicase|Contraindicated in G6PD deficiency.
 
-# ── Haematology: clinical scenarios ──────────────────────────────────────
+# ── Hematology: clinical scenarios ──────────────────────────────────────
 G|Sickle cell crisis|heme,emergency,pharm|Sickle cell painful crisis needs prompt ___, hydration and oxygen|analgesia|analgesia,opioids,pain relief|Undertreatment of pain is common and unjust.
 B|Sickle cell stroke|heme,peds,neuro|Children with sickle cell disease are screened for stroke risk with|Transcranial Doppler|MRI annually|High velocities prompt transfusion programmes.
-G|Thalassemia screening|heme,genetics,OB|Antenatal ___ screening identifies couples at risk of severe thalassemia|haemoglobinopathy|haemoglobinopathy,hemoglobinopathy,carrier|Allowing informed reproductive choice.
+G|Thalassemia screening|heme,genetics,OB|Antenatal ___ screening identifies couples at risk of severe thalassemia|hemoglobinopathy|hemoglobinopathy,hemoglobinopathy,carrier|Allowing informed reproductive choice.
 B|G6PD triggers|heme,genetics,pharm|G6PD hemolysis is triggered by|Fava beans, infection and oxidant drugs|Iron supplements and vitamin C|Primaquine, dapsone, nitrofurantoin and sulfonamides.
 G|Aplastic crisis|heme,virus,genetics|Parvovirus B19 causes an aplastic crisis by infecting ___ precursors|erythroid|erythroid,red cell,rbc|Transient but severe in chronic hemolysis.
 B|Venous thromboembolism in cancer|heme,oncology|Unprovoked venous thromboembolism should prompt|Age-appropriate cancer screening|Extensive imaging of everyone|Occult malignancy is found in a minority.

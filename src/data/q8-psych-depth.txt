@@ -1,4 +1,4 @@
-# Psychiatry, behavioural science and neuropharmacology — depth pass.
+# Psychiatry, behavioral science and neuropharmacology — depth pass.
 
 # ── Neurotransmitters ────────────────────────────────────────────────────
 G|Dopamine|psych,neuro,neurotransmitter|The rate-limiting enzyme of catecholamine synthesis is tyrosine ___|hydroxylase|hydroxylase|It makes L-DOPA from tyrosine.
@@ -41,7 +41,7 @@ B|Carbamazepine|psych,pharm,principles|Carbamazepine induces its own metabolism,
 G|Benzodiazepines|psych,pharm,anxiety|Benzodiazepines increase the ___ of chloride channel opening|frequency|frequency|Barbiturates increase duration.
 B|Benzodiazepine choice|psych,pharm,liver|In liver disease, the safest benzodiazepines are|Lorazepam, oxazepam and temazepam|Diazepam and chlordiazepoxide|They undergo only glucuronidation.
 G|Benzodiazepine withdrawal|psych,pharm,emergency|Abrupt benzodiazepine withdrawal can cause ___|seizures|seizures,seizure|Like alcohol, it can be fatal.
-B|Zolpidem|psych,pharm,sleep|Zolpidem differs from benzodiazepines by|Acting selectively at the BZ1 subtype|Carrying no risk of dependence at all|Less muscle relaxation; complex sleep behaviours reported.
+B|Zolpidem|psych,pharm,sleep|Zolpidem differs from benzodiazepines by|Acting selectively at the BZ1 subtype|Carrying no risk of dependence at all|Less muscle relaxation; complex sleep behaviors reported.
 G|Buspirone|psych,pharm,anxiety|Buspirone is a partial agonist at the 5-HT1___ receptor|A|a,1a|No dependence, but takes weeks to work.
 
 # ── Substance use ────────────────────────────────────────────────────────
@@ -67,12 +67,12 @@ G|Obsessive-compulsive disorder|psych,anxiety,pharm|OCD often needs ___ doses of
 B|Body dysmorphic disorder|psych,anxiety|Body dysmorphic disorder is treated with|SSRIs and cognitive therapy|Cosmetic surgical correction|Surgery worsens the preoccupation.
 G|PTSD|psych,trauma,pharm|First-line drug treatment for PTSD is an ___|SSRI|ssri,ssris|With trauma-focused psychotherapy.
 B|Acute stress disorder|psych,trauma|Acute stress disorder lasts|Three days to one month|Over six months|Beyond a month it becomes PTSD.
-G|Borderline personality disorder|psych,personality|Borderline personality disorder responds best to ___ behaviour therapy|dialectical|dialectical,dbt|Focused on emotion regulation.
+G|Borderline personality disorder|psych,personality|Borderline personality disorder responds best to ___ behavior therapy|dialectical|dialectical,dbt|Focused on emotion regulation.
 B|Antisocial personality disorder|psych,personality|Antisocial personality disorder requires|Evidence of conduct disorder before age 15|Onset of symptoms only in adulthood|And the patient must be at least 18.
 G|Narcissistic personality|psych,personality|Narcissistic personality disorder features grandiosity and lack of ___|empathy|empathy|With fragile self-esteem underneath.
 B|Somatization|psych,somatic|Somatic symptom disorder differs from illness anxiety disorder by|Having actual physical symptoms|Being deliberately produced|Illness anxiety is fear of disease without symptoms.
 
-# ── Development and behaviour ────────────────────────────────────────────
+# ── Development and behavior ────────────────────────────────────────────
 G|Attachment|psych,peds,development|Separation anxiety normally peaks around ___ months|12|12,twelve,9-18|Resolving by age three.
 B|Object permanence|psych,peds,development|Object permanence develops at about|9 months|3 years|A Piagetian sensorimotor milestone.
 G|Erikson|psych,development|Erikson's adolescent stage is identity versus role ___|confusion|confusion,diffusion|Intimacy versus isolation follows in young adulthood.
@@ -80,4 +80,4 @@ B|Grief|psych,mood|Prolonged grief disorder is diagnosed after|Twelve months in 
 G|Defense mechanisms|psych,defense mechanisms|Attributing your own unacceptable feelings to another is ___|projection|projection|An immature defense.
 B|Sublimation|psych,defense mechanisms|Sublimation is|A mature defense channelling impulses usefully|An immature defense avoiding the feeling|Along with humour, altruism and suppression.
 G|Sleep architecture|psych,sleep|Most slow wave sleep occurs in the ___ half of the night|first|first|REM predominates in the second half.
-B|REM sleep|psych,sleep,physiology|During REM sleep, skeletal muscle tone is|Absent|Increased|Loss of that atonia causes REM behaviour disorder.
+B|REM sleep|psych,sleep,physiology|During REM sleep, skeletal muscle tone is|Absent|Increased|Loss of that atonia causes REM behavior disorder.

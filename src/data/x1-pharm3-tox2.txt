@@ -21,7 +21,7 @@ B|Alpha blocker first dose|pharm,cardio,urology|Alpha blockers are started at ni
 # ── Respiratory and GI drugs, deeper ─────────────────────────────────────
 G|Ipratropium|pharm,resp,autonomic|Ipratropium is a short-acting ___ antagonist|muscarinic|muscarinic,antimuscarinic,anticholinergic|Tiotropium is the long-acting version.
 B|Theophylline|pharm,resp,principles|Theophylline levels are raised by|Ciprofloxacin and erythromycin|Rifampin and carbamazepine|Enzyme inhibition; monitor levels closely.
-G|Montelukast|pharm,resp,psych|Montelukast can cause ___ effects including nightmares and mood change|neuropsychiatric|neuropsychiatric,psychiatric,behavioural|A recognized safety warning.
+G|Montelukast|pharm,resp,psych|Montelukast can cause ___ effects including nightmares and mood change|neuropsychiatric|neuropsychiatric,psychiatric,behavioral|A recognized safety warning.
 B|Antimuscarinic bronchodilators|pharm,resp,eye|Nebulized ipratropium can precipitate|Acute angle closure glaucoma|Cataract and corneal ulceration|Especially if the mask leaks toward the eyes.
 G|Antiemetic choice|pharm,GI,neuro|___ is preferred in Parkinson disease because it does not cross into the brain|Domperidone|domperidone|Metoclopramide worsens parkinsonism.
 B|Proton pump inhibitor timing|pharm,GI|Proton pump inhibitors work best when taken|30 minutes before a meal|At bedtime on an empty stomach|They inhibit actively secreting pumps.
@@ -30,7 +30,7 @@ G|Laxative types|pharm,GI|___ laxatives such as senna stimulate colonic motility
 # ── Endocrine and musculoskeletal drugs ──────────────────────────────────
 G|Bisphosphonate holiday|pharm,bone|After about ___ years, a bisphosphonate holiday may be considered|5|5,five|Balancing atypical fracture risk.
 B|Denosumab discontinuation|pharm,bone|Stopping denosumab abruptly causes|Rebound vertebral fractures|No adverse effect|Transition to a bisphosphonate.
-G|Colchicine toxicity|pharm,rheum,GI|Colchicine toxicity presents first with ___|diarrhea|diarrhea,diarrhoea,gi upset|Dose-limiting and dangerous in renal impairment.
+G|Colchicine toxicity|pharm,rheum,GI|Colchicine toxicity presents first with ___|diarrhea|diarrhea,diarrhea,gi upset|Dose-limiting and dangerous in renal impairment.
 B|Allopurinol dosing|pharm,rheum,renal|Allopurinol should be started|At a low dose and titrated to urate target|At the full dose from the first day|Reducing hypersensitivity risk.
 G|Febuxostat|pharm,rheum,cardio|Febuxostat carries a warning about ___ mortality in cardiac disease|cardiovascular|cardiovascular,cardiac|An alternative when allopurinol is unsuitable.
 B|Methotrexate dosing|pharm,rheum,safety|Methotrexate for rheumatoid arthritis is dosed|Once weekly|Once daily|Daily dosing has caused fatal errors.
@@ -42,13 +42,13 @@ G|Opioid overdose|toxicology,emergency,resp|The immediate threat in opioid overd
 B|Naloxone dosing|toxicology,pharm|In a dependent patient, naloxone should be given|In small titrated doses|As a single large bolus|Avoiding acute withdrawal and agitation.
 G|Paracetamol nomogram|toxicology,liver|The treatment line is plotted against time since ___ ingestion|single|single,acute,single-time|Staggered overdoses are treated regardless.
 B|Acetylcysteine reaction|toxicology,pharm,immuno|An anaphylactoid reaction to acetylcysteine|Is managed by slowing the infusion|Requires permanent discontinuation|It is rate-related, not true allergy.
-G|Salicylate elimination|toxicology,renal|Severe salicylate poisoning may need ___ if levels are very high|dialysis|dialysis,haemodialysis,hemodialysis|Along with alkalinization.
+G|Salicylate elimination|toxicology,renal|Severe salicylate poisoning may need ___ if levels are very high|dialysis|dialysis,hemodialysis,hemodialysis|Along with alkalinization.
 B|Beta blocker versus calcium blocker overdose|toxicology,cardio|Which is treated with high-dose insulin euglycemia therapy?|Both|Neither|A cornerstone for severe cardiodepressant poisoning.
 G|Digoxin antibody|toxicology,cardio,pharm|Digoxin-specific antibody is indicated for life-threatening ___ or hyperkalemia|arrhythmia|arrhythmia,arrhythmias|Acting within minutes.
 B|Lithium toxicity precipitants|toxicology,psych,renal|Lithium toxicity is precipitated by|Dehydration, NSAIDs and ACE inhibitors|High salt intake and theophylline|Sodium depletion increases reabsorption.
 G|Iron overdose stages|toxicology,GI|Iron poisoning has a deceptive ___ phase before shock|latent|latent,quiescent|Lulling clinicians into false reassurance.
-B|Button battery ingestion|toxicology,peds,emergency|An oesophageal button battery requires|Emergency removal|Observation and repeat x-ray|Causes caustic injury within hours.
-G|Caustic ingestion|toxicology,GI,emergency|After caustic ingestion, ___ is contraindicated|induced vomiting|induced vomiting,emesis,neutralization|Re-exposing the oesophagus to injury.
+B|Button battery ingestion|toxicology,peds,emergency|An esophageal button battery requires|Emergency removal|Observation and repeat x-ray|Causes caustic injury within hours.
+G|Caustic ingestion|toxicology,GI,emergency|After caustic ingestion, ___ is contraindicated|induced vomiting|induced vomiting,emesis,neutralization|Re-exposing the esophagus to injury.
 B|Organophosphate decontamination|toxicology,emergency,safety|Organophosphate poisoning requires|Staff protection and patient decontamination|Immediate intubation and nothing else|Secondary contamination of rescuers is a real risk.
 G|Carbon monoxide treatment|toxicology,resp|Hyperbaric oxygen is considered for carbon monoxide poisoning with ___ signs|neurological|neurological,neurologic,cns|Or in pregnancy and severe exposure.
 B|Snake envenomation|toxicology,emergency|Snake bite first aid includes|Immobilization and urgent transfer|A tourniquet and wound incision|Antivenom is given for systemic envenoming.

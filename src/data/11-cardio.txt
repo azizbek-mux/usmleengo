@@ -2,8 +2,8 @@
 B|Hereditary hemochromatosis|cardio,genetics,path|Hemochromatosis causes which cardiomyopathy?|Restrictive, later dilated|Hypertrophic, later obstructive|Iron deposits in myocardium — restrictive then dilated.
 G|Hereditary hemochromatosis|cardio,genetics|Hemochromatosis is inherited in an autosomal ___ pattern|recessive|recessive,ar|HFE gene mutation, excessive intestinal iron absorption.
 B|Diabetic nephropathy|cardio,renal,pharm|The antihypertensive of choice in diabetic nephropathy is|An ARB or ACE inhibitor|A thiazide diuretic|RAAS blockade slows progression of proteinuric kidney disease.
-B|Atrial fibrillation|cardio,arrhythmia,aging|The strongest risk factor for atrial fibrillation is|Advanced age|Male sex|Age-related atrial remodelling and dilation.
-G|Atrial fibrillation|cardio,arrhythmia|Atrial fibrillation arises from atrial structural and electrical ___|remodeling|remodeling,remodelling,remodel|Remodelling creates the substrate for reentrant circuits.
+B|Atrial fibrillation|cardio,arrhythmia,aging|The strongest risk factor for atrial fibrillation is|Advanced age|Male sex|Age-related atrial remodeling and dilation.
+G|Atrial fibrillation|cardio,arrhythmia|Atrial fibrillation arises from atrial structural and electrical ___|remodeling|remodeling,remodeling,remodel|Remodeling creates the substrate for reentrant circuits.
 B|HFpEF|cardio,heart failure,hypertension|Heart failure with preserved ejection fraction is most associated with|Increased left ventricular afterload|Reduced contractile reserve of the ventricle|Chronic hypertension causes diastolic dysfunction.
 B|Drug-induced long QT|cardio,pharm,arrhythmia|Macrolides such as erythromycin affect the QT interval by|Prolonging it|Shortening it|Potassium channel blockade — torsades risk.
 G|Congenital long QT|cardio,genetics,arrhythmia|Romano-Ward long QT syndrome is inherited as autosomal ___|dominant|dominant,ad|Romano-Ward is dominant without deafness; Jervell-Lange-Nielsen is recessive with deafness.
@@ -30,7 +30,7 @@ G|Beta blocker overdose|cardio,toxicology|The antidote for beta blocker overdose
 B|Prinzmetal angina|cardio,angina|Variant (Prinzmetal) angina is caused by|Coronary smooth muscle hyperreactivity|Fixed atherosclerotic narrowing|Vasospasm from endothelial dysfunction and autonomic imbalance.
 B|Prinzmetal angina|cardio,angina,pharm|Prinzmetal angina is treated with|Calcium channel blockers|Beta blockers and aspirin|Beta blockers can worsen spasm.
 B|Calcific aortic stenosis|cardio,valve,path|Calcific aortic stenosis involves valve fibroblasts differentiating into|Osteoblast-like cells|Chondrocytes laying down cartilage|An active inflammatory ossification process, not passive wear.
-B|Hypertrophic cardiomyopathy|cardio,murmur|The HOCM murmur increases with manoeuvres that|Reduce left ventricular volume|Increase preload and afterload|Less volume worsens outflow obstruction — opposite to aortic stenosis.
+B|Hypertrophic cardiomyopathy|cardio,murmur|The HOCM murmur increases with maneuvers that|Reduce left ventricular volume|Increase preload and afterload|Less volume worsens outflow obstruction — opposite to aortic stenosis.
 B|Hypertrophic cardiomyopathy|cardio,genetics|HOCM is inherited in which pattern?|Autosomal dominant|X-linked recessive|Sarcomere protein mutations, autosomal dominant.
 B|Hypertrophic cardiomyopathy|cardio,pharm|Symptoms of HOCM improve with drugs that|Reduce contractility|Increase contractility|Beta blockers slow the heart and reduce outflow obstruction.
 B|Left ventricular free wall rupture|cardio,MI,emergency|Free wall rupture after MI causes death by|Cardiac tamponade|Ventricular fibrillation|Blood abruptly fills the pericardial space.
@@ -38,7 +38,7 @@ G|Transposition of the great arteries|cardio,congenital,embryology|TGA is caused
 B|Transposition of the great arteries|cardio,congenital|Survival in TGA depends on|A shunt mixing the circulations|Pulmonary vasodilation at birth|PDA or ASD must persist; give prostaglandin E1.
 B|Ebstein anomaly|cardio,congenital|Ebstein anomaly involves|Apical displacement of the tricuspid valve|A bicuspid aortic valve with stenosis|Atrialized right ventricle with tricuspid regurgitation.
 G|Ebstein anomaly|cardio,congenital,pharm|Ebstein anomaly is classically linked to maternal ___ use|lithium|lithium|First-trimester lithium exposure.
-B|Mitral stenosis haemodynamics|cardio,valve|In mitral stenosis, the gradient is between the|Left atrium and left ventricle|Left ventricle and aorta|Elevated PCWP with normal LV end-diastolic pressure.
+B|Mitral stenosis hemodynamics|cardio,valve|In mitral stenosis, the gradient is between the|Left atrium and left ventricle|Left ventricle and aorta|Elevated PCWP with normal LV end-diastolic pressure.
 B|Mitral stenosis severity|cardio,valve|Severe mitral stenosis shortens which interval?|A2 to opening snap|The PR interval|A higher left atrial pressure opens the valve sooner.
 B|Fick principle|cardio,physiology|Cardiac output by the Fick principle requires|Oxygen consumption rate|Systemic vascular resistance|CO = O2 consumption divided by the arteriovenous O2 difference.
 B|Infective endocarditis|cardio,micro,valve|Rheumatic valve scarring raises the risk of|Infective endocarditis|Constrictive pericarditis|Damaged endothelium seeds bacteria into vegetations.

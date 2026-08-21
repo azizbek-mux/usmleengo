@@ -20,7 +20,7 @@ G|Thyroid eye disease|endocrine,eye,pharm|Severe thyroid eye disease is treated 
 B|Radioiodine|endocrine,thyroid,pharm|Radioiodine is contraindicated in|Pregnancy and breastfeeding|Atrial fibrillation|And may worsen active eye disease.
 
 # ── Nutrition ────────────────────────────────────────────────────────────
-G|Protein energy malnutrition|nutrition,peds|Severe acute malnutrition is assessed with mid-upper arm ___|circumference|circumference,muac|Plus weight for height and oedema.
+G|Protein energy malnutrition|nutrition,peds|Severe acute malnutrition is assessed with mid-upper arm ___|circumference|circumference,muac|Plus weight for height and edema.
 B|Vitamin C sources|nutrition,vitamins|Scurvy develops after about|Three months of deficient intake|Three weeks of deficient intake|Body stores are limited but not tiny.
 G|Fat-soluble vitamins|nutrition,vitamins,GI|Vitamins A, D, E and ___ require bile for absorption|K|k|Deficient in cholestasis and fat malabsorption.
 B|Vitamin toxicity|nutrition,vitamins|Which vitamin is most dangerous in excess?|Vitamin A|Vitamin C|Teratogenic, hepatotoxic and raises intracranial pressure.
@@ -31,17 +31,17 @@ G|Alcohol|nutrition,liver|Alcohol provides ___ kilocalories per gram, displacing
 # ── Environmental and occupational ───────────────────────────────────────
 G|Lead exposure|toxicology,peds,nutrition|Lead absorption is increased by ___ deficiency|iron|iron|Which is why deprived children are doubly at risk.
 B|Mercury|toxicology,neuro|Organic mercury exposure comes mainly from|Large predatory fish|Dental fillings|Causing neurodevelopmental harm in the fetus.
-G|Carbon monoxide|toxicology,resp|Carbon monoxide binds haemoglobin about ___ times more avidly than oxygen|240|240,200,250|Producing tissue hypoxia with a normal PaO2.
+G|Carbon monoxide|toxicology,resp|Carbon monoxide binds hemoglobin about ___ times more avidly than oxygen|240|240,200,250|Producing tissue hypoxia with a normal PaO2.
 B|Asbestos latency|toxicology,oncology,resp|Mesothelioma after asbestos exposure has a latency of|20 to 40 years|1 to 2 years|Which is why cases still occur today.
 G|Silica|toxicology,resp,micro|Silicosis raises the risk of ___ markedly|tuberculosis|tuberculosis,tb|Impaired macrophage function.
 B|Noise exposure|toxicology,ENT|Occupational noise-induced hearing loss is|Preventable but irreversible|Fully reversible with rest|Hearing protection is the only defence.
 G|Heat illness|toxicology,physiology|Heat stroke is distinguished from exhaustion by ___ dysfunction|CNS|cns,neurological,central nervous system|Confusion, seizures or coma.
-B|Altitude illness|toxicology,resp,neuro|High altitude cerebral oedema is treated with|Descent, oxygen and dexamethasone|Acetazolamide and rest alone|Descent is the definitive treatment.
+B|Altitude illness|toxicology,resp,neuro|High altitude cerebral edema is treated with|Descent, oxygen and dexamethasone|Acetazolamide and rest alone|Descent is the definitive treatment.
 
 # ── Genetics and population health ───────────────────────────────────────
 G|Consanguinity|genetics,epidemiology|Consanguinity raises the risk of ___ recessive conditions|autosomal|autosomal|Shared ancestral alleles.
 B|Founder effect|genetics,epidemiology|The founder effect explains|High frequency of one mutation in an isolated group|A higher rate of new mutations in a population|Tay-Sachs in Ashkenazi Jewish populations.
-G|Genetic counselling|genetics,ethics|Genetic counselling should be ___, not directive|non-directive|non-directive,nondirective,supportive|Supporting autonomous decisions.
+G|Genetic counseling|genetics,ethics|Genetic counseling should be ___, not directive|non-directive|non-directive,nondirective,supportive|Supporting autonomous decisions.
 B|Predictive testing|genetics,ethics,neuro|Predictive testing for Huntington disease in a healthy minor is|Generally deferred until adulthood|Encouraged as early as possible|Preserving the child's future autonomy.
 G|Incidental findings|genetics,ethics|Genomic testing may reveal ___ findings unrelated to the original question|incidental|incidental,secondary|Consent should address this in advance.
 

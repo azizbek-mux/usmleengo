@@ -1,8 +1,8 @@
 # Cardiology — from the Mehlman Cardio notes.
 
 # ── Heart failure ────────────────────────────────────────────────────────
-B|Left heart failure findings|cardio,resp|Left heart failure presents with|Orthopnoea and nocturnal dyspnoea|Raised JVP and ankle oedema|Pressure backs up into the lungs.
-B|Right heart failure findings|cardio|Right heart failure presents with|Raised JVP and peripheral oedema|Orthopnoea and pulmonary crackles|Pressure backs up into the body.
+B|Left heart failure findings|cardio,resp|Left heart failure presents with|Orthopnea and nocturnal dyspnea|Raised JVP and ankle edema|Pressure backs up into the lungs.
+B|Right heart failure findings|cardio|Right heart failure presents with|Raised JVP and peripheral edema|Orthopnea and pulmonary crackles|Pressure backs up into the body.
 B|Commonest cause of right heart failure|cardio|The commonest cause of right heart failure is|Left heart failure|Chronic lung disease|Which together make congestive failure.
 B|Wedge pressure equivalence|cardio,critical care|Pulmonary capillary wedge pressure is equal to|Left atrial pressure|Right atrial pressure|A measure of left-sided filling.
 B|Cor pulmonale definition|cardio,resp|Cor pulmonale is right heart failure caused by|A pulmonary disease|A left heart problem|The left heart is entirely normal.
@@ -14,9 +14,9 @@ G|Aortic stenosis pulse|cardio,exam|Aortic stenosis gives a slow-rising pulse, p
 B|Aortic regurgitation timing|cardio,exam|Aortic regurgitation gives a murmur that is|Early diastolic and decrescendo|Mid-systolic and crescendo|With a wide pulse pressure.
 B|Mitral valve prolapse sound|cardio,exam|Mitral valve prolapse produces|A mid-systolic click|An opening snap|Often entirely asymptomatic.
 G|Mitral prolapse pathology|cardio,path,genetics|Mitral valve prolapse follows ___ degeneration of the valve|myxomatous|myxomatous|Seen in Marfan and Ehlers-Danlos.
-B|Right-sided murmur manoeuvre|cardio,exam,physiology|Right-sided murmurs get louder on|Inspiration|Expiration|Venous return to the right heart rises.
+B|Right-sided murmur maneuver|cardio,exam,physiology|Right-sided murmurs get louder on|Inspiration|Expiration|Venous return to the right heart rises.
 B|Tricuspid regurgitation sign|cardio,exam,liver|Tricuspid regurgitation can cause|A pulsatile liver|A palpable spleen tip|From regurgitant flow into the veins.
-B|Functional murmur nature|cardio,peds,exam|A functional flow murmur|Disappears as the heart rate falls|Persists whatever the heart rate|Seen with fever, anaemia or pregnancy.
+B|Functional murmur nature|cardio,peds,exam|A functional flow murmur|Disappears as the heart rate falls|Persists whatever the heart rate|Seen with fever, anemia or pregnancy.
 
 # ── Congenital ───────────────────────────────────────────────────────────
 B|Tetralogy prognosis determinant|cardio,peds|Prognosis in tetralogy of Fallot is set by|The degree of pulmonic stenosis|The size of the ventricular defect|It determines how much blood reaches the lung.

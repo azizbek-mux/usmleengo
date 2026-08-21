@@ -13,7 +13,7 @@ G|Obligate anaerobes|micro,bacteria,pharm|Anaerobes are resistant to ___ because
 
 # ── Gram-positive detail ─────────────────────────────────────────────────
 G|Corynebacterium diphtheriae|micro,bacteria|Diphtheria toxin inhibits elongation factor ___|2|2,ef-2,two,ef2|By ADP-ribosylation; same mechanism as Pseudomonas exotoxin A.
-B|Diphtheria|micro,bacteria,cardio|The main causes of death in diphtheria are|Airway obstruction and myocarditis|Renal failure and liver necrosis|A grey pseudomembrane in the pharynx.
+B|Diphtheria|micro,bacteria,cardio|The main causes of death in diphtheria are|Airway obstruction and myocarditis|Renal failure and liver necrosis|A gray pseudomembrane in the pharynx.
 G|Clostridium tetani|micro,bacteria,neuro|Tetanus toxin blocks release of glycine and ___|GABA|gaba|Removing inhibition, causing spastic paralysis.
 B|Tetanus versus botulism|micro,bacteria,neuro|Which causes SPASTIC paralysis?|Tetanus|Botulism|Botulinum blocks acetylcholine release, causing flaccid paralysis.
 G|Clostridium perfringens|micro,bacteria|C. perfringens alpha toxin is a ___ that destroys membranes|lecithinase|lecithinase,phospholipase|Causing gas gangrene and double zone hemolysis.

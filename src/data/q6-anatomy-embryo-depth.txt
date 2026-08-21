@@ -13,7 +13,7 @@ G|Pharyngeal arches|embryology,ENT|The first pharyngeal arch gives the muscles o
 B|Second pharyngeal arch|embryology,ENT|The second arch supplies the muscles of|Facial expression|Mastication|Facial nerve; stapes and styloid process.
 G|Third pharyngeal pouch|embryology,immuno|The third pouch forms the thymus and inferior ___|parathyroids|parathyroids,parathyroid glands|The fourth forms the superior parathyroids.
 B|Thyroid descent|embryology,ENT|A thyroglossal duct cyst moves with|Tongue protrusion|Shoulder shrugging|Reflecting its origin at the foramen cecum.
-G|Foregut|embryology,GI|The foregut is supplied by the ___ trunk|celiac|celiac,coeliac|Midgut by SMA, hindgut by IMA.
+G|Foregut|embryology,GI|The foregut is supplied by the ___ trunk|celiac|celiac,celiac|Midgut by SMA, hindgut by IMA.
 B|Midgut rotation|embryology,GI|The midgut rotates|270 degrees counterclockwise|90 degrees clockwise|Failure causes malrotation and volvulus risk.
 G|Ductus venosus|embryology,cardio|The ductus venosus becomes the ligamentum ___ after birth|venosum|venosum|The umbilical vein becomes the ligamentum teres.
 B|Foramen ovale|embryology,cardio|The foramen ovale closes at birth because|Left atrial pressure exceeds right|Right atrial pressure rises|Lung expansion drops pulmonary resistance.
@@ -22,7 +22,7 @@ B|Urachus|embryology,renal|A patent urachus causes|Urine leaking from the umbili
 G|Gonadal descent|embryology,repro|The testis is guided into the scrotum by the ___|gubernaculum|gubernaculum|Which persists as the scrotal ligament.
 
 # ── Anatomy: thorax and abdomen ──────────────────────────────────────────
-G|Diaphragm openings|anatomy,resp|The inferior vena cava passes through the diaphragm at T___|8|8,eight,t8|Oesophagus at T10, aorta at T12.
+G|Diaphragm openings|anatomy,resp|The inferior vena cava passes through the diaphragm at T___|8|8,eight,t8|Esophagus at T10, aorta at T12.
 B|Phrenic nerve|anatomy,resp,neuro|The phrenic nerve arises from|C3, C4 and C5|C5, C6 and C7|C3, 4, 5 keeps the diaphragm alive.
 G|Referred pain|anatomy,GI,neuro|Diaphragmatic irritation refers pain to the ___|shoulder|shoulder,shoulder tip|Via C3 to C5 dermatomes; Kehr sign.
 B|Inguinal canal|anatomy,repro|The spermatic cord passes through the|Deep and superficial inguinal rings|Femoral canal and saphenous opening|A femoral hernia passes below the inguinal ligament.
@@ -32,8 +32,8 @@ G|Femoral triangle|anatomy,vascular|From lateral to medial, the femoral triangle
 B|Carpal tunnel contents|anatomy,neuro|The carpal tunnel contains the median nerve and|Nine flexor tendons|The ulnar nerve|The ulnar nerve runs in Guyon canal.
 
 # ── Anatomy: neuro ───────────────────────────────────────────────────────
-G|Circle of Willis|anatomy,neuro,vascular|The anterior communicating artery is the commonest site of berry ___|aneurysm|aneurysm,aneurysms|Rupture causes subarachnoid haemorrhage.
-B|Middle meningeal artery|anatomy,neuro|The middle meningeal artery is a branch of the|Maxillary artery|Internal carotid|Torn at the pterion in epidural haematoma.
+G|Circle of Willis|anatomy,neuro,vascular|The anterior communicating artery is the commonest site of berry ___|aneurysm|aneurysm,aneurysms|Rupture causes subarachnoid hemorrhage.
+B|Middle meningeal artery|anatomy,neuro|The middle meningeal artery is a branch of the|Maxillary artery|Internal carotid|Torn at the pterion in epidural hematoma.
 G|Cranial nerve VII|anatomy,neuro,ENT|The facial nerve exits the skull through the ___ foramen|stylomastoid|stylomastoid|After traversing the internal acoustic meatus.
 B|Cavernous sinus|anatomy,neuro,eye|Which nerve is NOT in the cavernous sinus wall?|Optic nerve|Abducens nerve|CN III, IV, V1, V2 and VI pass through or beside it.
 G|Spinal cord termination|anatomy,neuro|The spinal cord ends at the level of L___ in adults|1|1,one,l1,l1-l2|Which is why lumbar puncture is done at L3 to L4.
@@ -48,7 +48,7 @@ G|Meta-analysis|biostats|A meta-analysis pools results to increase statistical _
 B|Funnel plot|biostats|An asymmetric funnel plot suggests|Publication bias|Effect modification|Small negative studies are missing.
 G|Number needed to harm|biostats|Number needed to harm is 1 divided by the attributable ___|risk|risk,risk increase|Higher is safer.
 B|Non-inferiority trial|biostats|A non-inferiority trial aims to show the new treatment is|Not meaningfully worse|Clearly better|Used when the new option has other advantages.
-G|Intention to treat|biostats|Intention-to-treat analysis preserves the benefit of ___|randomization|randomization,randomisation|Per-protocol analysis breaks it.
+G|Intention to treat|biostats|Intention-to-treat analysis preserves the benefit of ___|randomization|randomization,randomization|Per-protocol analysis breaks it.
 B|Case series|biostats,epidemiology|A case series|Cannot establish causation|Establishes causation well|No comparison group.
 
 # ── Biostatistics: measures ──────────────────────────────────────────────

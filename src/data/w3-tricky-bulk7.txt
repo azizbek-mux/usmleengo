@@ -1,27 +1,27 @@
 # TRICKY — bulk batch 7.
 
 # ── Confusable pairs ─────────────────────────────────────────────────────
-BT|Primary vs secondary polycythemia|heme,resp|Which has a raised erythropoietin?|Secondary polycythemia|Polycythemia vera|Driven by hypoxia or tumour EPO production.
+BT|Primary vs secondary polycythemia|heme,resp|Which has a raised erythropoietin?|Secondary polycythemia|Polycythemia vera|Driven by hypoxia or tumor EPO production.
 BT|Relative vs absolute polycythemia|heme,physiology|Which has a normal red cell mass with reduced plasma volume?|Relative polycythemia|Absolute polycythemia|Dehydration or diuretic use.
 BT|Neutropenia vs neutrophilia in sepsis|heme,micro|Which carries the worse prognosis in severe sepsis?|Neutropenia|Neutrophilia|Marrow exhaustion signals overwhelming infection.
-BT|Anemia vs hemodilution|heme,OB|Which explains a falling haemoglobin in normal pregnancy?|Hemodilution|True iron deficiency|Though iron deficiency often coexists.
+BT|Anemia vs hemodilution|heme,OB|Which explains a falling hemoglobin in normal pregnancy?|Hemodilution|True iron deficiency|Though iron deficiency often coexists.
 BT|Hemolysis vs bleeding|heme,lab|Which raises the bilirubin and LDH?|Hemolysis|Acute blood loss|Both raise reticulocytes.
 BT|Thalassemia trait vs anemia of chronic disease|heme,lab|Which has a normal or high red cell COUNT despite microcytosis?|Thalassemia trait|Anemia of chronic disease|The Mentzer index helps distinguish them.
 BT|Marrow failure vs peripheral destruction|heme,path|Which has a LOW reticulocyte count?|Marrow failure|Peripheral destruction|Reticulocytes measure marrow response.
-BT|Acute vs chronic blood loss|heme,lab|Which initially shows a NORMAL haemoglobin?|Acute haemorrhage|Chronic blood loss|Before haemodilution occurs.
+BT|Acute vs chronic blood loss|heme,lab|Which initially shows a NORMAL hemoglobin?|Acute hemorrhage|Chronic blood loss|Before hemodilution occurs.
 BT|Pulmonary vs cardiac dyspnea|resp,cardio,lab|A normal BNP in a breathless patient argues against|Heart failure|Pulmonary embolism|A useful rule-out test.
 BT|Type 1 vs type 2 MI|cardio,MI|Which is caused by supply-demand mismatch without plaque rupture?|Type 2 myocardial infarction|Type 1 myocardial infarction|Common in sepsis, anemia and tachyarrhythmia.
 BT|Takotsubo vs STEMI|cardio,MI,imaging|Which has apical ballooning with unobstructed coronaries?|Takotsubo cardiomyopathy|Anterior STEMI|Often after emotional stress.
 BT|Pericarditis vs STEMI on ECG|cardio,ECG|Which shows ST elevation that is DIFFUSE with PR depression?|Pericarditis|STEMI|STEMI elevation is territorial with reciprocal change.
 BT|Aortic dissection vs pulmonary embolism|cardio,resp,emergency|Which is worsened by anticoagulation?|Aortic dissection|Pulmonary embolism|Which is why the diagnosis must be right.
-BT|Cardiac vs oesophageal chest pain|cardio,GI|Which may be relieved by both nitrates and antacids, confusing matters?|Oesophageal spasm|Stable angina|Response to nitrates does not confirm cardiac origin.
+BT|Cardiac vs esophageal chest pain|cardio,GI|Which may be relieved by both nitrates and antacids, confusing matters?|Esophageal spasm|Stable angina|Response to nitrates does not confirm cardiac origin.
 BT|Hypertensive emergency vs pheochromocytoma|cardio,endocrine|Which has episodic surges with headache and sweating?|Pheochromocytoma|Essential hypertension|Between episodes the pressure may be normal.
 BT|Hyperkalemia vs hypokalemia ECG|cardio,electrolytes|Which flattens T waves and produces U waves?|Hypokalemia|Hyperkalemia|Hyperkalemia peaks T waves and widens QRS.
 BT|Sinus tachycardia vs SVT|cardio,ECG|Which has a rate that varies gradually with activity?|Sinus tachycardia|Supraventricular tachycardia|SVT starts and stops abruptly at a fixed rate.
 BT|First vs second degree block|cardio,ECG|Which never drops a beat?|First degree block|Mobitz type I|First degree only prolongs the PR interval.
 BT|Digoxin effect vs toxicity|cardio,pharm,ECG|Which is a normal finding on therapeutic digoxin?|Reverse tick ST depression|Ventricular bigeminy|Bigeminy suggests toxicity.
 BT|COPD vs asthma reversibility|resp,physiology|Which may show partial but incomplete bronchodilator response?|COPD|Asthma|Complete reversibility favours asthma.
-BT|Pneumonia vs lung cancer|resp,oncology|Which requires follow-up imaging to confirm resolution?|Pneumonia in a smoker|Viral bronchitis|An unresolving consolidation may hide a tumour.
+BT|Pneumonia vs lung cancer|resp,oncology|Which requires follow-up imaging to confirm resolution?|Pneumonia in a smoker|Viral bronchitis|An unresolving consolidation may hide a tumor.
 BT|Pleural plaques vs mesothelioma|resp,oncology|Which is benign and merely marks exposure?|Pleural plaques|Mesothelioma|Plaques do not become malignant.
 BT|Sarcoid vs lymphoma|resp,oncology,immuno|Which classically has SYMMETRICAL bilateral hilar adenopathy?|Sarcoidosis|Lymphoma|Asymmetry favours malignancy.
 BT|Aspiration vs obstruction|resp,emergency|Which causes sudden coughing and unilateral wheeze in a toddler?|Foreign body aspiration|Bronchiolitis|A missed diagnosis with serious consequences.
@@ -39,7 +39,7 @@ BT|Thyroid hormone in the elderly|endocrine,pharm,geriatrics|Levothyroxine in an
 BT|Insulin in renal failure|endocrine,renal,pharm|Insulin requirements in worsening renal failure typically|Fall|Rise|The kidney clears insulin.
 BT|Metformin and alcohol|endocrine,pharm,GI|Heavy alcohol use with metformin raises the risk of|Lactic acidosis|Hypoglycemia|Both impair lactate clearance.
 BT|Steroids in diabetics|endocrine,pharm|Steroids raise glucose most|After meals in the afternoon|Overnight while fasting|Which shapes insulin adjustment.
-BT|Diuretics in cirrhosis|GI,liver,pharm|Excessive diuresis in cirrhotic ascites can precipitate|Hepatorenal syndrome and encephalopathy|Rebound hypertension and oedema|Limit weight loss to about 0.5 kg daily without oedema.
+BT|Diuretics in cirrhosis|GI,liver,pharm|Excessive diuresis in cirrhotic ascites can precipitate|Hepatorenal syndrome and encephalopathy|Rebound hypertension and edema|Limit weight loss to about 0.5 kg daily without edema.
 BT|Beta blockers in cirrhosis|GI,liver,pharm|Non-selective beta blockers in refractory ascites|May be harmful|Are strongly indicated|The window hypothesis.
 BT|Sedation in liver failure|GI,liver,pharm|Sedatives in decompensated liver disease|Can precipitate encephalopathy|Are safe at normal doses|Reduced clearance and increased sensitivity.
 BT|NSAIDs in cirrhosis|GI,liver,renal|NSAIDs in cirrhosis risk|Renal failure and variceal bleeding|Dyspepsia and mild nausea only|Prostaglandins maintain renal perfusion.
@@ -47,7 +47,7 @@ BT|Anticoagulation in liver disease|GI,liver,coagulation|A raised INR in liver d
 BT|Antibiotics in variceal bleed|GI,liver,micro|Prophylactic antibiotics in variceal bleeding|Reduce mortality|Are unnecessary|One of the strongest evidence-based interventions.
 
 # ── One step further ─────────────────────────────────────────────────────
-BT|Hypoalbuminemia and oedema|renal,physiology|Oedema from hypoalbuminemia reflects reduced|Plasma oncotic pressure|Hydrostatic pressure|Starling forces shift toward filtration.
+BT|Hypoalbuminemia and edema|renal,physiology|Edema from hypoalbuminemia reflects reduced|Plasma oncotic pressure|Hydrostatic pressure|Starling forces shift toward filtration.
 BT|Ascites and infection risk|GI,liver,micro|Low-protein ascites carries a higher risk of|Spontaneous bacterial peritonitis|Underlying peritoneal malignancy|Fewer opsonins in the fluid.
 BT|Splenomegaly and cytopenias|heme,GI,liver|Hypersplenism causes cytopenias through|Sequestration|Marrow failure|Marrow is typically hypercellular in response.
 BT|Iron and inflammation|heme,immuno,lab|Ferritin in active inflammation is|Falsely reassuring|Accurately low|It is an acute phase reactant.

@@ -17,7 +17,7 @@ B|Lamotrigine|neuro,pharm,epilepsy|The dangerous adverse effect of lamotrigine i
 B|Valproate in pregnancy|neuro,pharm,teratogen|Valproate in pregnancy causes|Neural tube defects|Ebstein anomaly|Also lowers IQ. Lithium causes Ebstein anomaly.
 G|Anencephaly|neuro,embryology|Anencephaly results from failure of the ___ neuropore to close|rostral|rostral,anterior,cranial|Rostral neuropore failure; caudal failure gives spina bifida.
 B|Anencephaly|neuro,embryology,OB|Anencephaly causes maternal serum AFP to be|Elevated|Decreased|Open neural tube defects leak AFP into amniotic fluid.
-B|Toxoplasmosis|neuro,micro,HIV|Cerebral toxoplasmosis is acquired by|Ingesting contaminated material|A mosquito or tick bite|Oocysts from cat faeces or undercooked meat; reactivates when CD4 is low.
+B|Toxoplasmosis|neuro,micro,HIV|Cerebral toxoplasmosis is acquired by|Ingesting contaminated material|A mosquito or tick bite|Oocysts from cat feces or undercooked meat; reactivates when CD4 is low.
 B|Cerebral toxoplasmosis|neuro,micro,HIV|Toxoplasma brain lesions on imaging are typically|Multiple ring-enhancing|Single and non-enhancing|Ring-enhancing lesions in the basal ganglia.
 B|Local anesthetics|neuro,pharm|Local anesthetics block sodium channels from|Inside the cell|Outside the cell|The uncharged form diffuses in, then the charged form blocks the pore.
 B|Local anesthetics|neuro,pharm|Local anesthetics work poorly in infected tissue because|Acidity keeps the drug ionized|The nerve is destroyed|Low pH prevents membrane diffusion.
@@ -80,7 +80,7 @@ B|Blood-brain barrier|neuro,physiology|The blood-brain barrier depends on endoth
 B|Conduction aphasia|neuro,language|Conduction aphasia is caused by a lesion of the|Arcuate fasciculus|Broca area|Fluent speech, intact comprehension, poor repetition.
 B|Korsakoff syndrome|neuro,vitamins,memory|Korsakoff syndrome damages which structures?|Mammillary bodies and dorsomedial thalamus|The hippocampus and entorhinal cortex|Anterograde amnesia with confabulation.
 B|Shingles|neuro,micro,virus|Shingles reactivates in|A single dorsal root ganglion|Multiple random nerves|Dermatomal vesicular rash that respects the midline.
-G|Shingles pain|neuro,pharm|Capsaicin relieves pain by depleting substance ___|P|p,substance p|Depletes the nociceptive neurotransmitter from C fibres.
+G|Shingles pain|neuro,pharm|Capsaicin relieves pain by depleting substance ___|P|p,substance p|Depletes the nociceptive neurotransmitter from C fibers.
 B|Beta-2 agonists|neuro,pharm,resp|Beta-2 receptor activation causes smooth muscle to|Relax|Contract|Bronchodilation, vasodilation and uterine relaxation.
 B|Methotrexate in pregnancy|neuro,pharm,teratogen|Methotrexate causes which fetal defect?|Neural tube defects|Limb shortening only|Folate antagonism impairs DNA synthesis.
 B|Excitotoxicity|neuro,path,physiology|Magnesium protects dying neurons by reducing|Calcium and sodium influx|Potassium and chloride efflux|Magnesium blocks the NMDA receptor channel.

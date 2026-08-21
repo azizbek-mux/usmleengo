@@ -1,8 +1,8 @@
 # TRICKY — batch 4. Fills the subjects thin on tricky items, and adds tricky gaps.
-GT|Hunter syndrome|genetics,biochem|Hurler lacks alpha-L-iduronidase; Hunter lacks iduronate ___|sulfatase|sulfatase,sulphatase|One letter of difference, two different diseases. Hunter is X-linked with clear corneas.
+GT|Hunter syndrome|genetics,biochem|Hurler lacks alpha-L-iduronidase; Hunter lacks iduronate ___|sulfatase|sulfatase,sulfatase|One letter of difference, two different diseases. Hunter is X-linked with clear corneas.
 GT|Secondary adrenal insufficiency|endocrine,adrenal|In SECONDARY adrenal insufficiency the hormone that stays normal is ___|aldosterone|aldosterone|It is driven by the RAAS, not ACTH — which is why potassium stays normal.
-GT|ACE inhibitor cough|cardio,pharm|ACE inhibitors cause cough by letting ___ accumulate|bradykinin|bradykinin,bradykinins|The same peptide causes their angioedema. ARBs avoid both.
-GT|Carcinoid and niacin|GI,oncology,vitamins|Carcinoid syndrome causes pellagra by diverting ___ to serotonin|tryptophan|tryptophan,trp|Niacin is made from tryptophan, so the tumour steals the precursor.
+GT|ACE inhibitor cough|cardio,pharm|ACE inhibitors cause cough by letting ___ accumulate|bradykinin|bradykinin,bradykinins|The same peptide causes their angiedema. ARBs avoid both.
+GT|Carcinoid and niacin|GI,oncology,vitamins|Carcinoid syndrome causes pellagra by diverting ___ to serotonin|tryptophan|tryptophan,trp|Niacin is made from tryptophan, so the tumor steals the precursor.
 GT|Folate versus B12|heme,vitamins,biochem|Both raise homocysteine, but only B12 deficiency raises ___ acid|methylmalonic|methylmalonic,mma|The single test that separates them. Folate leaves MMA normal.
 GT|Osmotic demyelination|renal,neuro,electrolytes|Correcting chronic hyponatremia too fast causes osmotic ___ syndrome|demyelination|demyelination,demyelinolysis|Formerly central pontine myelinolysis. Correct slowly.
 GT|Pseudogout crystals|msk,rheum,lab|Gout crystals are negatively birefringent; pseudogout crystals are ___ birefringent|positively|positively,positive|Rhomboid calcium pyrophosphate versus needle-shaped urate.
@@ -47,7 +47,7 @@ BT|Papilledema vs papillitis|eye,neuro|Which is BILATERAL with preserved vision 
 BT|Central retinal artery vs vein occlusion|eye,vascular|Which gives a cherry-red spot with a pale retina?|Artery occlusion|Vein occlusion|Vein occlusion looks like blood and thunder.
 BT|Cataract vs glaucoma|eye,aging|Which causes halos around lights with gradual clouding?|Cataract|Open angle glaucoma|Glaucoma takes peripheral vision first, painlessly.
 BT|Psoriasis vs eczema|derm|Which has silvery scale on EXTENSOR surfaces?|Psoriasis|Atopic dermatitis|Eczema prefers flexures and is intensely itchy.
-BT|Impetigo vs cellulitis|derm,micro|Which is superficial with a honey-coloured crust?|Impetigo|Cellulitis|Cellulitis involves deeper dermis and subcutaneous fat.
+BT|Impetigo vs cellulitis|derm,micro|Which is superficial with a honey-colored crust?|Impetigo|Cellulitis|Cellulitis involves deeper dermis and subcutaneous fat.
 BT|Erythema multiforme vs urticaria|derm,immuno|Which has fixed TARGET lesions lasting days?|Erythema multiforme|Acute urticaria|Urticarial wheals move and resolve within 24 hours.
 BT|Melanoma vs seborrheic keratosis|derm,oncology|Which looks "stuck on" and waxy?|Seborrheic keratosis|Nodular melanoma|Benign. But sudden crops may signal internal malignancy.
 BT|Molluscum vs warts|derm,virus,peds|Which has central umbilication?|Molluscum contagiosum|Verruca vulgaris|A poxvirus. Warts are HPV.

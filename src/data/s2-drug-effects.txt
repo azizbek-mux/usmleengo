@@ -3,8 +3,8 @@
 # ── Signature toxicities ─────────────────────────────────────────────────
 G|Amiodarone|pharm,resp,toxicity|Amiodarone can cause pulmonary ___ requiring baseline lung function tests|fibrosis|fibrosis|Plus thyroid, hepatic and corneal deposits.
 G|Amiodarone|pharm,eye,toxicity|Amiodarone deposits in the ___, causing halos|cornea|cornea,corneal|Usually reversible and rarely limits therapy.
-G|Bleomycin|pharm,oncology,resp|Bleomycin causes pulmonary ___, worsened by high oxygen|fibrosis|fibrosis|Which matters during anaesthesia.
-G|Cyclophosphamide|pharm,oncology,renal|Cyclophosphamide causes haemorrhagic ___ from acrolein|cystitis|cystitis|Prevented with mesna and hydration.
+G|Bleomycin|pharm,oncology,resp|Bleomycin causes pulmonary ___, worsened by high oxygen|fibrosis|fibrosis|Which matters during anesthesia.
+G|Cyclophosphamide|pharm,oncology,renal|Cyclophosphamide causes hemorrhagic ___ from acrolein|cystitis|cystitis|Prevented with mesna and hydration.
 G|Cisplatin|pharm,oncology,electrolytes|Cisplatin classically wastes ___ in the urine|magnesium|magnesium,mg|Along with nephrotoxicity and ototoxicity.
 G|Vincristine|pharm,oncology,neuro|Vincristine causes peripheral ___ rather than marrow suppression|neuropathy|neuropathy|Vinblastine blasts the bone marrow instead.
 G|Doxorubicin|pharm,oncology,cardio|Doxorubicin causes dilated ___ in a dose-dependent way|cardiomyopathy|cardiomyopathy|Monitor ejection fraction; dexrazoxane protects.
@@ -21,12 +21,12 @@ G|Thionamides|pharm,endocrine,heme|Propylthiouracil carries a black box warning 
 B|Lithium|pharm,psych,endocrine|Lithium causes|Hypothyroidism and hypercalcemia|Hyperthyroidism and hypocalcemia|Plus nephrogenic diabetes insipidus.
 G|Phenytoin|pharm,neuro,derm|Phenytoin classically causes ___ hyperplasia and hirsutism|gingival|gingival,gum,gums|Plus ataxia, nystagmus and megaloblastic anemia.
 
-# ── Haematological effects ───────────────────────────────────────────────
-G|Chloramphenicol|pharm,micro,heme|Chloramphenicol can cause irreversible ___ anemia|aplastic|aplastic|Plus dose-dependent marrow suppression and grey baby syndrome.
+# ── Hematological effects ───────────────────────────────────────────────
+G|Chloramphenicol|pharm,micro,heme|Chloramphenicol can cause irreversible ___ anemia|aplastic|aplastic|Plus dose-dependent marrow suppression and gray baby syndrome.
 G|Clozapine|pharm,psych,heme|Clozapine can cause ___, requiring regular neutrophil counts|agranulocytosis|agranulocytosis|Roughly 1 percent risk.
 G|Heparin|pharm,coagulation,heme|Antibodies against platelet factor 4 bound to ___ cause HIT|heparin|heparin|Platelets fall after 5 to 10 days, with thrombosis not bleeding.
 G|Methyldopa|pharm,cardio,heme|Methyldopa causes a positive direct ___ test|Coombs|coombs,antiglobulin|Usually without clinical hemolysis.
-G|Dapsone|pharm,micro,heme|Dapsone causes ___ and hemolysis in G6PD deficiency|methemoglobinemia|methemoglobinemia,methaemoglobinaemia|Chocolate-brown blood, treated with methylene blue.
+G|Dapsone|pharm,micro,heme|Dapsone causes ___ and hemolysis in G6PD deficiency|methemoglobinemia|methemoglobinemia,methemoglobinemia|Chocolate-brown blood, treated with methylene blue.
 B|Linezolid|pharm,micro,heme|Prolonged linezolid causes|Thrombocytopenia and optic neuropathy|Nephrotoxicity and electrolyte loss|Limit courses beyond two weeks.
 
 # ── Renal and electrolyte effects ────────────────────────────────────────

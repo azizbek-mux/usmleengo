@@ -43,7 +43,7 @@ G|Monoclonal antibody naming|immuno,pharm|A monoclonal antibody ending in -___ i
 B|Biosimilar|immuno,pharm|A biosimilar differs from a generic because|Biological products cannot be identical|It is chemically identical to it|Requiring comparability studies.
 G|Immunoglobulin therapy|immuno,pharm,neuro|High-dose intravenous immunoglobulin is used to ___ autoimmune disease|modulate|modulate,suppress,treat|As well as to replace antibody in deficiency.
 B|Complement inhibition|immuno,pharm,heme|Eculizumab increases the risk of|Meningococcal infection|Tuberculosis reactivation|Vaccinate and give prophylaxis before starting.
-G|JAK inhibitors|immuno,pharm,rheum|JAK inhibitors block intracellular ___ signalling|cytokine|cytokine,cytokines|Oral small molecules used in rheumatoid arthritis.
+G|JAK inhibitors|immuno,pharm,rheum|JAK inhibitors block intracellular ___ signaling|cytokine|cytokine,cytokines|Oral small molecules used in rheumatoid arthritis.
 B|Checkpoint inhibitor colitis|immuno,pharm,GI|Immune checkpoint colitis is treated with|Corticosteroids and stopping the drug|Antibiotics with supportive therapy|Infliximab if steroid refractory.
 G|Anaphylaxis to biologics|immuno,pharm|Infusion reactions to monoclonal antibodies are reduced by ___ and slowing the rate|premedication|premedication,antihistamines,steroids|Most are not true IgE allergy.
 B|Vaccine adjuvant|immuno,vaccines|An adjuvant is added to|Enhance the immune response|Preserve the vaccine|Aluminium salts are the classic example.

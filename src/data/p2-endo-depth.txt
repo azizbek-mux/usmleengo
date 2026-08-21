@@ -32,7 +32,7 @@ B|Anaplastic thyroid carcinoma|endocrine,thyroid,oncology|Anaplastic thyroid car
 # ── Parathyroid and calcium ──────────────────────────────────────────────
 G|Parathyroid hormone|endocrine,calcium,bone|PTH stimulates osteoclasts indirectly through ___ ligand on osteoblasts|RANK|rank,rankl,rank-l|Osteoclasts have no PTH receptor of their own.
 B|Primary hyperparathyroidism|endocrine,calcium|The commonest cause of primary hyperparathyroidism is|A single adenoma|Four-gland hyperplasia|About 85% of cases.
-G|Hyperparathyroidism|endocrine,calcium,bone|Severe hyperparathyroidism causes osteitis fibrosa ___|cystica|cystica|Brown tumours from intense bone resorption.
+G|Hyperparathyroidism|endocrine,calcium,bone|Severe hyperparathyroidism causes osteitis fibrosa ___|cystica|cystica|Brown tumors from intense bone resorption.
 B|Familial hypocalciuric hypercalcemia|endocrine,calcium,genetics|FHH is distinguished from hyperparathyroidism by|Low urinary calcium|High urinary calcium|A calcium-sensing receptor mutation. No surgery needed.
 B|Hypocalcemia|endocrine,calcium|Carpopedal spasm on inflating a blood pressure cuff is|Trousseau sign|Chvostek sign|Chvostek is facial twitching on tapping the facial nerve.
 G|Pseudohypoparathyroidism|endocrine,calcium,genetics|In pseudohypoparathyroidism, the tissues are resistant to ___|PTH|pth,parathyroid hormone|PTH is high but calcium stays low. Albright hereditary osteodystrophy.
@@ -44,14 +44,14 @@ B|Type 1 diabetes|endocrine,diabetes,genetics|Type 1 diabetes is associated with
 G|Insulin secretion|endocrine,diabetes,physiology|Glucose closes the ATP-sensitive ___ channel to trigger insulin release|potassium|potassium,k,k+|Sulfonylureas close the same channel directly.
 B|Sulfonylureas|endocrine,diabetes,pharm|The main risk of sulfonylureas is|Hypoglycemia|Lactic acidosis|They force insulin release regardless of glucose level.
 G|GLP-1 agonists|endocrine,diabetes,pharm|GLP-1 agonists slow gastric ___ and promote weight loss|emptying|emptying|Semaglutide and liraglutide. Risk of pancreatitis.
-B|SGLT2 inhibitors|endocrine,diabetes,pharm|SGLT2 inhibitors characteristically cause|Genital fungal infection|Weight gain and oedema|Glycosuria feeds yeast. Also euglycemic ketoacidosis.
+B|SGLT2 inhibitors|endocrine,diabetes,pharm|SGLT2 inhibitors characteristically cause|Genital fungal infection|Weight gain and edema|Glycosuria feeds yeast. Also euglycemic ketoacidosis.
 B|DKA versus HHS|endocrine,diabetes,emergency|Ketones are absent in|Hyperosmolar hyperglycemic state|Early diabetic ketoacidosis|Residual insulin in type 2 suppresses ketogenesis.
 G|Diabetic nephropathy|endocrine,renal,diabetes|The earliest sign of diabetic nephropathy is ___|microalbuminuria|microalbuminuria,albuminuria|Screened annually; treated with an ACE inhibitor or ARB.
 B|Diabetic retinopathy|endocrine,eye,diabetes|Proliferative diabetic retinopathy is defined by|New vessel formation|Cotton wool spots|Neovascularization; treated with laser or anti-VEGF.
 G|Glycation|endocrine,diabetes,biochem|HbA1c reflects average glucose over the previous ___ months|3|3,three,2-3|The lifespan of a red cell.
 
 # ── Pituitary ────────────────────────────────────────────────────────────
-B|Pituitary adenoma|endocrine,pituitary,eye|A pituitary macroadenoma classically causes|Bitemporal hemianopia|Homonymous hemianopia|It compresses the decussating nasal fibres at the optic chiasm.
+B|Pituitary adenoma|endocrine,pituitary,eye|A pituitary macroadenoma classically causes|Bitemporal hemianopia|Homonymous hemianopia|It compresses the decussating nasal fibers at the optic chiasm.
 G|Prolactinoma|endocrine,pituitary|Prolactin suppresses ___, causing infertility and amenorrhea|GnRH|gnrh,gonadotropin-releasing hormone|Which is why galactorrhea comes with oligomenorrhea.
 B|Stalk compression|endocrine,pituitary|Pituitary stalk compression raises which hormone?|Prolactin|Growth hormone|Prolactin alone is tonically inhibited, so it rises when the stalk is cut.
 G|Sheehan syndrome|endocrine,pituitary,OB|Sheehan syndrome is pituitary ___ after postpartum hemorrhage|infarction|infarction,necrosis,ischemia|Failure to lactate is often the first sign.
@@ -60,9 +60,9 @@ G|Acromegaly|endocrine,pituitary,cardio|The commonest cause of death in acromega
 B|Growth hormone deficiency|endocrine,pituitary,peds|In a short child, growth hormone deficiency shows|Delayed bone age|Advanced bone age|Constitutional delay also delays bone age but has a family history.
 
 # ── Adrenal medulla and MEN ──────────────────────────────────────────────
-G|Pheochromocytoma|endocrine,adrenal|Pheochromocytoma follows the rule of ___ percent|10|10,ten|10% bilateral, extra-adrenal, malignant, familial and paediatric.
+G|Pheochromocytoma|endocrine,adrenal|Pheochromocytoma follows the rule of ___ percent|10|10,ten|10% bilateral, extra-adrenal, malignant, familial and pediatric.
 B|Paraganglioma|endocrine,adrenal,oncology|An extra-adrenal pheochromocytoma is called a|Paraganglioma|Neuroblastoma|Commonest at the organ of Zuckerkandl.
-G|MEN 1|endocrine,genetics,oncology|MEN 1 involves parathyroid, pituitary and ___ tumours|pancreatic|pancreatic,pancreas|The three Ps. Autosomal dominant, MEN1 tumour suppressor.
+G|MEN 1|endocrine,genetics,oncology|MEN 1 involves parathyroid, pituitary and ___ tumors|pancreatic|pancreatic,pancreas|The three Ps. Autosomal dominant, MEN1 tumor suppressor.
 B|MEN 2B|endocrine,genetics,oncology|MEN 2B differs from 2A by including|Mucosal neuromas and marfanoid habitus|Parathyroid hyperplasia and stones|Both share medullary thyroid cancer and pheochromocytoma.
 
 # ── Growth, puberty, gonads ──────────────────────────────────────────────
@@ -74,6 +74,6 @@ B|Anabolic steroid use|endocrine,repro,pharm|Exogenous testosterone makes sperm 
 
 # ── Bone and mineral ─────────────────────────────────────────────────────
 G|Osteoporosis|endocrine,bone|Osteoporosis is diagnosed at a T-score at or below minus ___|2.5|2.5,-2.5,2·5|Between minus 1 and minus 2.5 is osteopenia.
-B|Bisphosphonate|endocrine,bone,pharm|Bisphosphonates must be taken|Upright, fasting, with water|With food late at night|To prevent oesophagitis and aid absorption.
+B|Bisphosphonate|endocrine,bone,pharm|Bisphosphonates must be taken|Upright, fasting, with water|With food late at night|To prevent esophagitis and aid absorption.
 B|Paget disease|endocrine,bone,lab|In Paget disease, calcium and phosphate are|Normal|Both raised|Only alkaline phosphatase is high.
 G|Rickets|endocrine,bone,peds|Rickets causes a rosary of enlarged costochondral ___|junctions|junctions,junction|The rachitic rosary, with bowed legs and craniotabes.

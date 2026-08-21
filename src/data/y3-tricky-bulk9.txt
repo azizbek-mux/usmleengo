@@ -15,15 +15,15 @@ BT|Radiculopathy vs peripheral neuropathy|neuro,msk|Which follows a dermatomal r
 BT|Myelopathy vs radiculopathy|neuro,spinal cord|Which has upper motor neuron signs BELOW the lesion?|Myelopathy|Radiculopathy|Radiculopathy gives lower motor neuron signs at that root only.
 BT|Functional vs organic weakness|neuro,psych|Which shows Hoover sign positivity?|Functional weakness|Organic hemiparesis|Involuntary hip extension when the other leg flexes.
 BT|Sepsis vs anaphylaxis|immuno,micro,emergency|Which develops over minutes with urticaria and wheeze?|Anaphylaxis|Septic shock|Both cause distributive shock.
-BT|Angioedema vs urticaria|immuno,derm|Which affects the deeper dermis and is non-pruritic?|Angioedema|Urticaria|Urticaria itches; angioedema stings or burns.
+BT|Angiedema vs urticaria|immuno,derm|Which affects the deeper dermis and is non-pruritic?|Angiedema|Urticaria|Urticaria itches; angiedema stings or burns.
 BT|Drug rash vs viral exanthem|derm,pharm,virus|Which typically starts on the trunk 7 to 10 days after a new drug?|Drug exanthem|Viral exanthem|Timing and drug history are key.
 BT|Fixed drug eruption vs erythema multiforme|derm,pharm|Which recurs in the SAME site with each exposure?|Fixed drug eruption|Erythema multiforme|Leaving post-inflammatory pigmentation.
 BT|Steroid acne vs acne vulgaris|derm,pharm|Which is monomorphic without comedones?|Steroid acne|Acne vulgaris|Uniform papules appearing after steroid use.
 BT|Tinea vs eczema|derm,fungi|Which has central clearing with an active scaly edge?|Tinea|Nummular eczema|Steroids alone worsen tinea incognito.
 BT|Scabies vs eczema|derm,parasite|Which itches most intensely at night and affects the whole household?|Scabies|Atopic eczema|Look for burrows in web spaces.
-BT|Cellulitis vs gout|derm,rheum,msk|Which causes redness centred on a single joint with extreme tenderness?|Gout|Cellulitis|Both are red, hot and swollen.
+BT|Cellulitis vs gout|derm,rheum,msk|Which causes redness centerd on a single joint with extreme tenderness?|Gout|Cellulitis|Both are red, hot and swollen.
 BT|Osteomyelitis vs bone infarct|msk,heme,imaging|In sickle cell disease, which is far more common?|Bone infarct|Osteomyelitis|Both cause bone pain and fever; imaging helps.
-BT|Fracture vs contusion|msk,ortho,imaging|Which shows a joint effusion with a fat-fluid level?|Occult intra-articular fracture|A simple soft tissue contusion|A lipohaemarthrosis signals fracture.
+BT|Fracture vs contusion|msk,ortho,imaging|Which shows a joint effusion with a fat-fluid level?|Occult intra-articular fracture|A simple soft tissue contusion|A lipohemarthrosis signals fracture.
 BT|Sprain vs strain|msk,ortho|Which is a ligament injury?|Sprain|Strain|Strain refers to muscle or tendon.
 BT|Bursitis vs septic arthritis|msk,micro|Which preserves passive joint range of movement?|Bursitis|Septic arthritis|Septic joints resist all movement.
 
@@ -31,7 +31,7 @@ BT|Bursitis vs septic arthritis|msk,micro|Which preserves passive joint range of
 BT|Antibiotics in bites|micro,derm,pharm|Human and animal bites usually need|Prophylactic co-amoxiclav|No antibiotics at all|Covering Pasteurella and Eikenella.
 BT|Wound closure in bites|surgery,micro|Bite wounds to the hand are|Usually left open|Always closed primarily|Infection risk is high in closed spaces.
 BT|Tetanus prone wounds|micro,vaccines,surgery|A tetanus-prone wound in an incompletely vaccinated patient needs|Vaccine plus immunoglobulin|The vaccine on its own|Deep, dirty or devitalized wounds.
-BT|Antibiotic in cellulitis with lymphoedema|micro,derm|Recurrent cellulitis in lymphoedema may need|Long-term prophylactic penicillin|A single longer antibiotic course|Each episode worsens the lymphoedema.
+BT|Antibiotic in cellulitis with lymphedema|micro,derm|Recurrent cellulitis in lymphedema may need|Long-term prophylactic penicillin|A single longer antibiotic course|Each episode worsens the lymphedema.
 BT|Steroids in cellulitis|derm,micro,pharm|Corticosteroids in cellulitis are|Not indicated|Standard adjunct|They mask progression of infection.
 BT|Compression in venous ulcer|derm,vascular|Compression bandaging in a venous ulcer|Is the single most effective treatment|Should be avoided until healing starts|Only after excluding arterial disease.
 BT|Antibiotics in leg ulcer|derm,micro|Swabbing a chronic leg ulcer without signs of infection|Detects colonization and misleads|Guides useful treatment|Treat the patient, not the swab.
@@ -44,7 +44,7 @@ BT|Serum sodium and glucose|endocrine,electrolytes,lab|A glucose of 40 mmol/L ma
 BT|Potassium and acid-base|renal,electrolytes|Correcting DKA acidosis will make potassium|Fall further|Rise|Anticipate and replace before insulin.
 BT|Bicarbonate and ionized calcium|electrolytes,emergency|Rapid bicarbonate infusion can precipitate|Tetany from falling ionized calcium|Hyperkalemia with peaked T waves|Alkalosis increases albumin binding.
 BT|Magnesium and digoxin|cardio,electrolytes,pharm|Hypomagnesemia makes digoxin toxicity|More likely|Less likely|Similar mechanism to hypokalemia.
-BT|Albumin infusion and diuresis|GI,liver,pharm|Albumin given with a diuretic in hypoalbuminemic oedema|Improves diuretic delivery and response|Worsens oedema by expanding volume|Used in refractory nephrotic or cirrhotic oedema.
+BT|Albumin infusion and diuresis|GI,liver,pharm|Albumin given with a diuretic in hypoalbuminemic edema|Improves diuretic delivery and response|Worsens edema by expanding volume|Used in refractory nephrotic or cirrhotic edema.
 BT|Feeding and glycemic control|nutrition,endocrine,critical care|Continuous enteral feeding in a diabetic requires|Adjusted background insulin cover|No change to insulin at all|Interruption then risks hypoglycemia.
 BT|Steroids and TB reactivation|immuno,micro,pharm|Long-term steroids reactivate tuberculosis by suppressing|Cell-mediated immunity|Antibody production|Screen before prolonged high-dose therapy.
 BT|Renal function and gadolinium|imaging,renal|Advanced renal failure limits use of|Gadolinium contrast|Ultrasound|Nephrogenic systemic fibrosis risk.

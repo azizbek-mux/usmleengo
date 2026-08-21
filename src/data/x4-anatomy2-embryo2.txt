@@ -22,11 +22,11 @@ B|Ankle sprain|anatomy,ortho|The most commonly injured ankle ligament is the|Ant
 G|Pleural reflections|anatomy,resp|The lung extends to rib ___ in the midaxillary line, the pleura two ribs lower|8|8,eight|Guiding safe chest drain placement.
 B|Thoracic duct drainage|anatomy,immuno|The thoracic duct drains into the|Left subclavian vein junction|Right atrium via the azygos vein|Draining all the body except the right upper quadrant.
 G|Azygos vein|anatomy,vascular|The azygos vein drains into the superior vena ___|cava|cava|An important collateral in SVC obstruction.
-B|Coeliac plexus|anatomy,GI,pharm|A coeliac plexus block is used for pain from|Pancreatic cancer|Pelvic malignancy|Blocking foregut visceral afferents.
+B|Celiac plexus|anatomy,GI,pharm|A celiac plexus block is used for pain from|Pancreatic cancer|Pelvic malignancy|Blocking foregut visceral afferents.
 G|Peritoneal spaces|anatomy,GI,surgery|Fluid in a supine patient collects in the ___ pouch|hepatorenal|hepatorenal,morison|Morison pouch, checked on FAST scanning.
 B|Inguinal canal boundaries|anatomy,surgery|The floor of the inguinal canal is formed by the|Inguinal ligament|Transversalis fascia|Which forms the posterior wall.
 G|Portal vein formation|anatomy,GI,liver|The portal vein forms from the splenic and superior ___ veins|mesenteric|mesenteric|Behind the neck of the pancreas.
-B|Appendix position|anatomy,GI,surgery|The commonest position of the appendix is|Retrocaecal|Pelvic|Which can mask classic signs.
+B|Appendix position|anatomy,GI,surgery|The commonest position of the appendix is|Retrocecal|Pelvic|Which can mask classic signs.
 
 # ── Head, neck and neuroanatomy ──────────────────────────────────────────
 G|Thyroid blood supply|anatomy,ENT,surgery|The superior thyroid artery arises from the external ___ artery|carotid|carotid|The inferior comes from the thyrocervical trunk.
@@ -36,7 +36,7 @@ B|Parotid gland relations|anatomy,ENT|Structures within the parotid include the 
 G|Triangles of the neck|anatomy,surgery|The ___ muscle divides the neck into anterior and posterior triangles|sternocleidomastoid|sternocleidomastoid,scm|Guiding differential diagnosis of neck lumps.
 B|Cricothyroid membrane|anatomy,emergency|The cricothyroid membrane lies|Between thyroid and cricoid cartilages|Just above the thyroid cartilage|The site for emergency surgical airway.
 G|Dural venous sinuses|anatomy,neuro,vascular|The superior sagittal sinus drains into the ___ sinus confluence|transverse|transverse,confluence|Then sigmoid sinus and internal jugular vein.
-B|Blood-brain barrier gaps|anatomy,neuro|Circumventricular organs lack a blood-brain barrier, including the|Area postrema|Hippocampus|Allowing the vomiting centre to sense toxins.
+B|Blood-brain barrier gaps|anatomy,neuro|Circumventricular organs lack a blood-brain barrier, including the|Area postrema|Hippocampus|Allowing the vomiting center to sense toxins.
 G|Basal ganglia|anatomy,neuro,movement|The basal ganglia include the caudate, putamen and globus ___|pallidus|pallidus|Plus subthalamic nucleus and substantia nigra functionally.
 B|Hypothalamic nuclei|anatomy,neuro,endocrine|The supraoptic and paraventricular nuclei produce|ADH and oxytocin|Releasing hormones only|Transported to the posterior pituitary.
 

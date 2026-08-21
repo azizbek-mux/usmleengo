@@ -3,10 +3,10 @@
 # ── Histology and cytology buzzwords ─────────────────────────────────────
 G|Auer rods|heme,oncology,path|___ rods indicate acute myeloid leukemia|Auer|auer|Especially the promyelocytic subtype.
 G|Reed-Sternberg cells|heme,oncology,path|Owl-eye binucleate cells are called ___-Sternberg cells|Reed|reed|Diagnostic of Hodgkin lymphoma.
-G|Starry sky|heme,oncology,path|A starry-sky appearance on lymph node biopsy suggests ___ lymphoma|Burkitt|burkitt|Tingible body macrophages among sheets of tumour cells.
+G|Starry sky|heme,oncology,path|A starry-sky appearance on lymph node biopsy suggests ___ lymphoma|Burkitt|burkitt|Tingible body macrophages among sheets of tumor cells.
 G|Bence Jones|heme,oncology,renal|___ Jones proteins in urine indicate multiple myeloma|Bence|bence|Free immunoglobulin light chains.
 G|Smudge cells|heme,oncology,path|Smudge cells on a blood film suggest chronic ___ leukemia|lymphocytic|lymphocytic,lymphoid,cll|Fragile lymphocytes crushed during smearing.
-G|Heinz bodies|heme,path,genetics|___ bodies are denatured haemoglobin in G6PD deficiency|Heinz|heinz|Followed by bite cells after splenic removal.
+G|Heinz bodies|heme,path,genetics|___ bodies are denatured hemoglobin in G6PD deficiency|Heinz|heinz|Followed by bite cells after splenic removal.
 G|Howell-Jolly bodies|heme,path,immuno|Howell-Jolly bodies indicate absent ___ function|splenic|splenic,spleen|Nuclear remnants normally pitted out.
 G|Basophilic stippling|heme,path,toxicology|Basophilic stippling suggests ___ poisoning or thalassemia|lead|lead|Ribosomal aggregates in the red cell.
 G|Schistocytes|heme,path|Fragmented red cells called ___ indicate microangiopathy|schistocytes|schistocytes,schistocyte,helmet cells|DIC, TTP, HUS or a mechanical valve.
@@ -16,9 +16,9 @@ G|Negri bodies|micro,virus,neuro|___ bodies are the cytoplasmic inclusions of ra
 G|Councilman bodies|GI,liver,path|___ bodies are apoptotic hepatocytes in viral hepatitis|Councilman|councilman|Also seen in yellow fever.
 G|Mallory bodies|GI,liver,path|___ bodies are damaged keratin filaments in alcoholic hepatitis|Mallory|mallory|Eosinophilic intracytoplasmic inclusions.
 G|Lewy bodies|neuro,path,dementia|___ bodies are alpha-synuclein aggregates in Parkinson disease|Lewy|lewy|Also in dementia with Lewy bodies.
-G|Rosenthal fibres|neuro,oncology,path|___ fibres are seen in pilocytic astrocytoma|Rosenthal|rosenthal|Eosinophilic corkscrew fibres.
+G|Rosenthal fibers|neuro,oncology,path|___ fibers are seen in pilocytic astrocytoma|Rosenthal|rosenthal|Eosinophilic corkscrew fibers.
 G|Curschmann spirals|resp,path,immuno|___ spirals are shed epithelium in asthmatic sputum|Curschmann|curschmann|With Charcot-Leyden crystals.
-G|Ferruginous bodies|resp,path,oncology|Golden-brown ___ bodies indicate asbestos exposure|ferruginous|ferruginous|Asbestos fibres coated in iron and protein.
+G|Ferruginous bodies|resp,path,oncology|Golden-brown ___ bodies indicate asbestos exposure|ferruginous|ferruginous|Asbestos fibers coated in iron and protein.
 G|Birbeck granules|immuno,path,oncology|Tennis-racket ___ granules identify Langerhans cell histiocytosis|Birbeck|birbeck|CD1a and S-100 positive.
 
 # ── Radiological signs ───────────────────────────────────────────────────
@@ -38,13 +38,13 @@ G|Ground glass|resp,imaging|Bilateral ___-glass opacity with hypoxia suggests AR
 G|Tram track|resp,imaging,path|___-track markings indicate bronchiectasis|Tram|tram|Dilated, thick-walled airways.
 G|String sign|GI,IBD,imaging|A ___ sign on small bowel imaging indicates Crohn stricture|string|string|Narrowed terminal ileum.
 G|Lead pipe colon|GI,IBD,imaging|A ___ pipe colon indicates chronic ulcerative colitis|lead|lead|Loss of haustra from chronic inflammation.
-G|Apple core lesion|GI,oncology,imaging|An ___-core lesion on barium enema suggests colorectal carcinoma|apple|apple|Annular constricting tumour.
+G|Apple core lesion|GI,oncology,imaging|An ___-core lesion on barium enema suggests colorectal carcinoma|apple|apple|Annular constricting tumor.
 
 # ── Eponymous signs ──────────────────────────────────────────────────────
 G|Murphy sign|GI,surgery|___ sign is arrest of inspiration on palpating the gallbladder|Murphy|murphy|Suggesting acute cholecystitis.
 G|McBurney point|GI,surgery,anatomy|___ point tenderness suggests appendicitis|McBurney|mcburney,mc burney|One third from the anterior superior iliac spine to the umbilicus.
 G|Rovsing sign|GI,surgery|___ sign is right iliac fossa pain on pressing the left|Rovsing|rovsing|Another appendicitis sign.
-G|Cullen sign|GI,emergency|___ sign is periumbilical bruising in haemorrhagic pancreatitis|Cullen|cullen|Grey Turner sign is flank bruising.
+G|Cullen sign|GI,emergency|___ sign is periumbilical bruising in hemorrhagic pancreatitis|Cullen|cullen|Gray Turner sign is flank bruising.
 G|Kehr sign|GI,trauma,anatomy|___ sign is left shoulder pain from splenic rupture|Kehr|kehr|Diaphragmatic irritation referred via C3 to C5.
 G|Trousseau sign|endocrine,calcium|___ sign is carpal spasm on inflating a blood pressure cuff|Trousseau|trousseau|A sign of hypocalcemia.
 G|Chvostek sign|endocrine,calcium|___ sign is facial twitching on tapping the facial nerve|Chvostek|chvostek|Also hypocalcemia.
@@ -63,11 +63,11 @@ G|Virchow node|GI,oncology,anatomy|A left supraclavicular ___ node suggests gast
 # ── Classic clinical triads ──────────────────────────────────────────────
 G|Charcot triad|GI,micro|Charcot triad is fever, jaundice and right upper quadrant ___|pain|pain|Ascending cholangitis.
 G|Wernicke triad|neuro,vitamins|The Wernicke triad is confusion, ataxia and ___|ophthalmoplegia|ophthalmoplegia,oculomotor dysfunction,eye signs|Thiamine deficiency.
-G|Cushing triad|neuro,emergency|Cushing triad is hypertension, bradycardia and irregular ___|respiration|respiration,breathing,respirations|Signalling raised intracranial pressure.
+G|Cushing triad|neuro,emergency|Cushing triad is hypertension, bradycardia and irregular ___|respiration|respiration,breathing,respirations|Signaling raised intracranial pressure.
 G|Horner triad|neuro,autonomic|Horner syndrome is ptosis, miosis and ___|anhidrosis|anhidrosis|Sympathetic interruption.
 G|Reactive arthritis|msk,rheum,micro|Reactive arthritis is arthritis, urethritis and ___|conjunctivitis|conjunctivitis,uveitis|Cannot see, cannot pee, cannot climb a tree.
 G|Meniere triad|ENT|Meniere disease is vertigo, tinnitus and ___ loss|hearing|hearing|Plus a sense of aural fullness.
 G|Hypertensive triad of pheochromocytoma|endocrine,adrenal|Pheochromocytoma classically gives headache, palpitations and ___|sweating|sweating,diaphoresis|In episodic attacks.
-G|Nephrotic triad|renal|Nephrotic syndrome is proteinuria, hypoalbuminemia and ___|edema|edema,oedema|Plus hyperlipidemia.
+G|Nephrotic triad|renal|Nephrotic syndrome is proteinuria, hypoalbuminemia and ___|edema|edema,edema|Plus hyperlipidemia.
 G|Whipple triad|endocrine|Whipple triad confirms hypoglycemia: symptoms, low glucose and relief on ___|feeding|feeding,glucose,eating|Used to diagnose insulinoma.
 G|Triad of tetralogy|cardio,congenital|Tetralogy of Fallot: VSD, overriding aorta, RV hypertrophy and pulmonary ___|stenosis|stenosis,obstruction|Four features despite the classic triads elsewhere.

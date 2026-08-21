@@ -1,4 +1,4 @@
-# Psychiatry and behavioural science — batch 1.
+# Psychiatry and behavioral science — batch 1.
 B|Bipolar I disorder|psych,mood|Bipolar I disorder requires|A manic episode|A depressive episode|Mania alone is enough; depression is not required.
 B|Bipolar II disorder|psych,mood|Bipolar II disorder requires hypomania plus|A major depressive episode|Psychotic features|Hypomania causes no marked impairment or psychosis.
 G|Neuroleptic malignant syndrome|psych,pharm,emergency|NMS follows blockade of ___ receptors|dopamine|dopamine,d2|Fever, rigidity, autonomic instability and raised creatine kinase.
@@ -24,7 +24,7 @@ B|Bupropion|psych,pharm|Bupropion is contraindicated in|Eating disorders and sei
 B|Anorexia nervosa|psych,eating|Purging in anorexia causes|Hypokalemic metabolic alkalosis|Anion gap metabolic acidosis|Loss of gastric acid and potassium.
 B|Refeeding syndrome|psych,eating,electrolytes|Refeeding syndrome is marked by a fall in|Phosphate|Sodium|Insulin drives phosphate, potassium and magnesium into cells.
 B|Panic disorder|psych,anxiety|Panic disorder requires recurrent attacks plus|Persistent worry about further attacks|Agoraphobia present in every case|Attacks peak within minutes.
-B|Panic disorder|psych,pharm,anxiety|Long-term treatment of panic disorder is|An SSRI with cognitive behavioural therapy|A benzodiazepine taken indefinitely|Benzodiazepines are only for short-term bridging.
+B|Panic disorder|psych,pharm,anxiety|Long-term treatment of panic disorder is|An SSRI with cognitive behavioral therapy|A benzodiazepine taken indefinitely|Benzodiazepines are only for short-term bridging.
 B|Schizoid personality disorder|psych,personality|Schizoid personality disorder involves|Genuine disinterest in relationships|Fear of rejection despite wanting them|Avoidant personality wants relationships but fears rejection.
 B|Schizotypal personality disorder|psych,personality|Schizotypal personality disorder features|Magical thinking and odd perceptions|Frank hallucinations and delusions|Cluster A, subthreshold for psychosis.
 B|Mild cognitive impairment|psych,dementia|Mild cognitive impairment differs from dementia because|Daily activities are preserved|Memory testing is entirely normal|Objective deficits without functional loss.

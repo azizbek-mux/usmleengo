@@ -31,20 +31,20 @@ B|Microscopic hematuria|renal,urology|Persistent microscopic hematuria with prot
 G|Prostate specific antigen|repro,urology,oncology|PSA should not be measured within ___ days of ejaculation or instrumentation|2|2,two,48 hours|To avoid false elevation.
 B|BPH medical therapy|repro,urology,pharm|Combination therapy for BPH uses|An alpha blocker with a 5-alpha reductase inhibitor|Two alpha blockers at the maximum tolerated dose|Rapid relief plus long-term shrinkage.
 G|Urinary retention|renal,urology,emergency|After relieving chronic retention, watch for post-obstructive ___|diuresis|diuresis|Which can cause profound fluid and electrolyte loss.
-B|Neurogenic bladder|renal,urology,neuro|A spinal cord lesion above the sacral micturition centre causes|A spastic overactive bladder|A flaccid atonic bladder|Sacral lesions cause flaccidity and overflow.
-G|Testicular tumour markers|repro,oncology|Choriocarcinoma raises ___ markedly|hCG|hcg,beta-hcg|AFP marks yolk sac tumours.
+B|Neurogenic bladder|renal,urology,neuro|A spinal cord lesion above the sacral micturition center causes|A spastic overactive bladder|A flaccid atonic bladder|Sacral lesions cause flaccidity and overflow.
+G|Testicular tumor markers|repro,oncology|Choriocarcinoma raises ___ markedly|hCG|hcg,beta-hcg|AFP marks yolk sac tumors.
 B|Priapism|repro,urology,emergency|Ischemic priapism lasting over four hours requires|Urgent aspiration and phenylephrine|Observation with simple analgesia|Risk of permanent erectile dysfunction.
 
 # ── Bone and joint, deeper ───────────────────────────────────────────────
-G|Fracture healing|msk,ortho,path|Fracture healing begins with a ___ at the fracture site|hematoma|hematoma,haematoma,blood clot|Then soft callus, hard callus and remodelling.
+G|Fracture healing|msk,ortho,path|Fracture healing begins with a ___ at the fracture site|hematoma|hematoma,hematoma,blood clot|Then soft callus, hard callus and remodeling.
 B|Non-union|msk,ortho|Fracture non-union is favoured by|Poor blood supply and movement|Rigid immobilization in plaster|Smoking and NSAIDs also impair healing.
 G|Osteomyelitis|msk,micro,imaging|The most sensitive early imaging for osteomyelitis is ___|MRI|mri|Plain films lag by two weeks.
 B|Chronic osteomyelitis|msk,micro,path|A sequestrum is|Dead bone within infected tissue|New periosteal bone formation|The involucrum is the new bone around it.
 G|Septic arthritis organism|msk,micro|In a sexually active young adult, consider ___ septic arthritis|gonococcal|gonococcal,gonorrhea,neisseria|Often migratory with tenosynovitis and rash.
 B|Prosthetic joint infection|msk,micro,surgery|Late prosthetic joint infection is usually caused by|Coagulase-negative staphylococci|Streptococcus pyogenes|Biofilm on the implant surface.
-G|Bone tumours|msk,oncology|The commonest malignant bone lesion overall is ___|metastasis|metastasis,metastases,secondary|Primary bone tumours are far rarer.
+G|Bone tumors|msk,oncology|The commonest malignant bone lesion overall is ___|metastasis|metastasis,metastases,secondary|Primary bone tumors are far rarer.
 B|Osteoid osteoma|msk,oncology|Osteoid osteoma classically causes|Night pain relieved by NSAIDs|Painless swelling of bone|A small nidus with sclerotic rim.
-G|Giant cell tumour|msk,oncology,imaging|Giant cell tumour of bone shows a ___-bubble appearance at the epiphysis|soap|soap|Locally aggressive but rarely metastatic.
+G|Giant cell tumor|msk,oncology,imaging|Giant cell tumor of bone shows a ___-bubble appearance at the epiphysis|soap|soap|Locally aggressive but rarely metastatic.
 
 # ── Soft tissue and sports ───────────────────────────────────────────────
 G|Tendinopathy|msk,ortho,path|Chronic tendinopathy shows ___ rather than inflammation|degeneration|degeneration,degenerative change|Which is why steroid injection may weaken the tendon.

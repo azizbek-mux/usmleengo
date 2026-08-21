@@ -8,7 +8,7 @@ B|Alkaline phosphatase|biochem,lab,bone|Alkaline phosphatase requires which mine
 G|Carbonic anhydrase|biochem,renal,pharm|Carbonic anhydrase requires ___ at its active site|zinc|zinc|Inhibited by acetazolamide.
 B|Superoxide dismutase|biochem,path|Superoxide dismutase requires|Copper, zinc or manganese|Iron or molybdenum only|Mutations cause familial ALS.
 
-# ── Signalling ───────────────────────────────────────────────────────────
+# ── Signaling ───────────────────────────────────────────────────────────
 G|Gs pathway|biochem,endocrine|Gs proteins activate adenylate cyclase, raising ___|cAMP|camp,cyclic amp|Then protein kinase A.
 G|Gq pathway|biochem,endocrine|Gq proteins activate phospholipase C, producing IP3 and ___|DAG|dag,diacylglycerol|Raising calcium and activating protein kinase C.
 B|Gi pathway|biochem,endocrine|Gi proteins|Inhibit adenylate cyclase|Stimulate adenylate cyclase|Alpha-2, M2 and D2 receptors are Gi coupled.
@@ -23,7 +23,7 @@ G|Mitochondria|biochem,cell biology,genetics|Mitochondria contain their own circ
 B|Nuclear pore|biochem,cell biology|Proteins entering the nucleus carry|A nuclear localization signal|An N-terminal signal peptide|Signal peptides target the ER instead.
 G|Lysosomes|biochem,cell biology|Lysosomal enzymes work at an ___ pH|acidic|acidic,low|Maintained by a proton pump.
 B|Autophagy|biochem,cell biology|Autophagy is|Self-digestion of damaged organelles|Programmed death of the whole cell|Upregulated in starvation.
-G|Cytoskeleton|biochem,cell biology|___ filaments provide tensile strength and include keratin|Intermediate|intermediate|Used in tumour immunohistochemistry.
+G|Cytoskeleton|biochem,cell biology|___ filaments provide tensile strength and include keratin|Intermediate|intermediate|Used in tumor immunohistochemistry.
 B|Actin|biochem,cell biology,micro|Listeria and Shigella spread cell to cell using|Actin polymerization|Microtubules|Actin rockets propel them.
 G|Cilia|biochem,cell biology,resp|Ciliary movement depends on ___ ATPase arms|dynein|dynein|Defective in Kartagener syndrome.
 B|Peroxisome|biochem,cell biology|Peroxisomes generate and detoxify|Hydrogen peroxide|Lactic acid|Using catalase.
@@ -43,8 +43,8 @@ G|Regulatory T cells|immuno,autoimmune|Regulatory T cells express CD4, CD25 and 
 # ── Immunology: clinical ─────────────────────────────────────────────────
 G|Anaphylaxis biphasic|immuno,emergency|Observation after anaphylaxis is advised for at least ___ hours|4|4,four,6|Because of biphasic reactions.
 B|Allergy testing|immuno,lab|Skin prick testing is|More sensitive than specific IgE|Definitive for diagnosis|Clinical history remains essential.
-G|Desensitization|immuno,pharm|Allergen ___ gradually induces tolerance over years|immunotherapy|immunotherapy,desensitization,desensitisation|Effective for venom and pollen allergy.
-B|Angioedema without urticaria|immuno,pharm|Angioedema WITHOUT urticaria suggests|Bradykinin-mediated causes|IgE-mediated allergy|ACE inhibitors or C1 inhibitor deficiency.
+G|Desensitization|immuno,pharm|Allergen ___ gradually induces tolerance over years|immunotherapy|immunotherapy,desensitization,desensitization|Effective for venom and pollen allergy.
+B|Angiedema without urticaria|immuno,pharm|Angiedema WITHOUT urticaria suggests|Bradykinin-mediated causes|IgE-mediated allergy|ACE inhibitors or C1 inhibitor deficiency.
 G|Mast cell tryptase|immuno,lab,emergency|Serum ___ confirms mast cell degranulation retrospectively|tryptase|tryptase|Peaks 1 to 2 hours after anaphylaxis.
 B|Common variable immunodeficiency|immuno,genetics,GI|CVID is complicated by|Bronchiectasis, autoimmunity and lymphoma|Neutropenia and recurrent candidiasis|Recurrent sinopulmonary infection in adulthood.
 G|Immunoglobulin replacement|immuno,pharm|Immunoglobulin replacement is given every ___ weeks intravenously|4|4,four,3-4|Or weekly subcutaneously.

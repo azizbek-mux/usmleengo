@@ -1,7 +1,7 @@
 # TRICKY — bulk batch. Confusable pairs, changed context, one step further.
 
 # ── Confusable pairs ─────────────────────────────────────────────────────
-BT|Nephritic vs nephrotic|renal|Which has RBC casts and hypertension?|Nephritic syndrome|Nephrotic syndrome|Nephrotic gives heavy proteinuria and oedema instead.
+BT|Nephritic vs nephrotic|renal|Which has RBC casts and hypertension?|Nephritic syndrome|Nephrotic syndrome|Nephrotic gives heavy proteinuria and edema instead.
 BT|Type 1 vs type 2 RTA|renal,acid base|Which has urine pH ABOVE 5.5 despite acidosis?|Type 1 distal RTA|Type 2 proximal RTA|Proximal RTA can still acidify urine once bicarbonate is depleted.
 BT|Central vs peripheral vertigo|neuro,ENT|Which has vertical nystagmus?|Central vertigo|Peripheral vertigo|Peripheral gives horizontal, fatigable nystagmus.
 BT|Conductive vs sensorineural|ENT|In Rinne testing, bone conduction BETTER than air suggests|Conductive loss|Sensorineural loss|Normal and sensorineural both have air better than bone.
@@ -46,7 +46,7 @@ BT|Crohn vs ulcerative colitis|GI,IBD,path|Which shows cobblestoning and creepin
 BT|Gastric vs duodenal ulcer|GI,oncology|Which requires biopsy to exclude malignancy?|Gastric ulcer|Duodenal ulcer|Duodenal ulcers are almost never malignant.
 BT|Acute vs chronic pancreatitis|GI,pancreas|Which typically has NORMAL amylase and lipase?|Chronic pancreatitis|Acute pancreatitis|The gland is burnt out and cannot release enzymes.
 BT|Conjugated vs unconjugated|GI,liver|Which appears in the urine?|Conjugated bilirubin|Unconjugated bilirubin|Unconjugated is albumin-bound and water-insoluble.
-BT|Hepatitis A vs B|micro,virus,hepatitis|Which has NO chronic carrier state?|Hepatitis A|Hepatitis B|Faecal-oral, self-limiting, no chronicity.
+BT|Hepatitis A vs B|micro,virus,hepatitis|Which has NO chronic carrier state?|Hepatitis A|Hepatitis B|Fecal-oral, self-limiting, no chronicity.
 BT|Cholecystitis vs cholangitis|GI,micro|Which has jaundice and rigors?|Ascending cholangitis|Acute cholecystitis|Cholecystitis rarely causes jaundice.
 BT|Appendicitis vs mesenteric adenitis|GI,peds|Which typically follows a viral upper respiratory infection?|Mesenteric adenitis|Appendicitis|A common mimic in children.
 
@@ -59,7 +59,7 @@ BT|Antipyretics in febrile seizure|peds,neuro,pharm|Antipyretics in febrile seiz
 BT|Oxygen in neonates|peds,resp,eye|Excess oxygen in a premature neonate risks|Retinopathy of prematurity|Kernicterus and deafness|Titrate saturations carefully.
 BT|Nitrofurantoin in pregnancy|micro,OB,pharm|Nitrofurantoin should be avoided|Near term, at 36 weeks onward|In the first trimester only|Risk of neonatal hemolysis.
 BT|Trimethoprim in pregnancy|micro,OB,pharm|Trimethoprim is avoided in|The first trimester|The third trimester|A folate antagonist; neural tube risk.
-BT|Tetracyclines in children|micro,peds,pharm|Tetracyclines in children under eight cause|Tooth discolouration|Cartilage damage|Fluoroquinolones affect cartilage instead.
+BT|Tetracyclines in children|micro,peds,pharm|Tetracyclines in children under eight cause|Tooth discoloration|Cartilage damage|Fluoroquinolones affect cartilage instead.
 BT|Live vaccine after immunoglobulin|immuno,vaccines|Live vaccines given soon after immunoglobulin|May fail to take|Are more effective|Passive antibody neutralizes the vaccine virus.
 BT|Statin in pregnancy|pharm,OB,lipids|Statins in pregnancy are|Contraindicated|Continued|Cholesterol is essential for fetal development.
 BT|Metformin in heart failure|endocrine,pharm,cardio|Metformin in stable heart failure is|Acceptable|Contraindicated|Avoid only in unstable disease or renal failure.
@@ -71,7 +71,7 @@ BT|Beta blocker in thyroid storm|endocrine,pharm|In thyroid storm, propranolol i
 BT|Steroids before antibiotics|neuro,micro,pharm|In bacterial meningitis, dexamethasone is given|Before or with the first antibiotic|24 hours after antibiotics are started|Timing determines whether it helps.
 
 # ── One step further ─────────────────────────────────────────────────────
-BT|Aldosterone escape|renal,endocrine|Chronic aldosterone excess does NOT cause oedema because of|Aldosterone escape via natriuretic peptides|Reduced sodium delivery to the tubule|Which is why Conn syndrome presents without swelling.
+BT|Aldosterone escape|renal,endocrine|Chronic aldosterone excess does NOT cause edema because of|Aldosterone escape via natriuretic peptides|Reduced sodium delivery to the tubule|Which is why Conn syndrome presents without swelling.
 BT|Chronic hypoxia and hematocrit|resp,heme|Chronic lung disease raises hematocrit, which makes blood|More viscous and prone to thrombosis|Thinner and less prone to clotting|A reason for therapeutic venesection.
 BT|Cirrhosis and drug dosing|GI,liver,pharm|In cirrhosis, protein-bound drugs have|More free active drug|Less free drug|Low albumin leaves more unbound.
 BT|Nephrotic syndrome and drugs|renal,pharm|Nephrotic syndrome affects protein-bound drugs by|Increasing the free fraction|Reducing absorption|Albumin is lost in urine.
@@ -86,4 +86,4 @@ BT|Pregnancy and drug levels|OB,pharm,principles|Increased plasma volume in preg
 BT|Ageing and drug clearance|pharm,aging,renal|In the elderly, a normal creatinine may still mean|Significantly reduced GFR|Normal renal function|Reduced muscle mass produces less creatinine.
 BT|Burns and fluid|derm,critical care|Large burns cause hypovolemia because of|Massive capillary leak|Blood loss from the wound|Fluid resuscitation is calculated by body surface area.
 BT|Crush injury and the kidney|renal,msk,emergency|Crush injury threatens the kidney through|Myoglobin released from muscle|Direct trauma to the kidney|Aggressive fluids and urine alkalinization.
-BT|Tumour lysis and the kidney|oncology,renal|Tumour lysis damages the kidney through|Uric acid and phosphate crystals|Direct tumour invasion of it|Prevented with hydration and rasburicase.
+BT|Tumor lysis and the kidney|oncology,renal|Tumor lysis damages the kidney through|Uric acid and phosphate crystals|Direct tumor invasion of it|Prevented with hydration and rasburicase.

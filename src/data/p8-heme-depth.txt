@@ -1,4 +1,4 @@
-# Haematology and oncology — depth pass. Gap-weighted.
+# Hematology and oncology — depth pass. Gap-weighted.
 
 # ── Red cell physiology ──────────────────────────────────────────────────
 G|Erythropoiesis|heme,physiology|Erythropoietin is released in response to tissue ___|hypoxia|hypoxia,low oxygen|From peritubular fibroblasts in the renal cortex.
@@ -46,7 +46,7 @@ B|Acute lymphoblastic leukemia|heme,oncology,peds|ALL commonly spreads to which 
 G|Acute promyelocytic leukemia|heme,oncology,genetics|APL carries the t(15;17) translocation and responds to all-trans retinoic ___|acid|acid|Differentiation therapy. Watch for DIC and differentiation syndrome.
 B|Acute myeloid leukemia|heme,oncology,path|Auer rods indicate|Acute myeloid leukemia|Chronic lymphocytic leukemia|Needle-shaped azurophilic granules.
 G|Chronic lymphocytic leukemia|heme,oncology,path|CLL shows ___ cells on peripheral smear|smudge|smudge,smudge cells|Fragile lymphocytes crushed during smearing.
-B|Chronic lymphocytic leukemia|heme,oncology,immuno|CLL is complicated by|Autoimmune hemolytic anemia|Tumour lysis at diagnosis|Plus hypogammaglobulinemia and infection.
+B|Chronic lymphocytic leukemia|heme,oncology,immuno|CLL is complicated by|Autoimmune hemolytic anemia|Tumor lysis at diagnosis|Plus hypogammaglobulinemia and infection.
 B|Hairy cell leukemia|heme,oncology,lab|Hairy cell leukemia stains positive for|TRAP|Myeloperoxidase|Tartrate-resistant acid phosphatase; treat with cladribine.
 G|Chronic myeloid leukemia|heme,oncology,pharm|CML is treated with ___, a tyrosine kinase inhibitor|imatinib|imatinib|Targets the BCR-ABL fusion protein.
 B|Leukemoid reaction|heme,oncology,lab|A leukemoid reaction differs from CML by having|High leukocyte alkaline phosphatase|A low leukocyte alkaline phosphatase|CML has a low LAP score.
@@ -68,8 +68,8 @@ B|Essential thrombocythemia|heme,oncology|Essential thrombocythemia carries a ri
 G|Myelofibrosis|heme,oncology,path|Myelofibrosis shows ___-shaped red cells on smear|teardrop|teardrop,tear drop,dacrocytes|With a dry marrow tap and massive splenomegaly.
 
 # ── Oncology principles ──────────────────────────────────────────────────
-G|Tumour lysis syndrome|oncology,electrolytes,pharm|Tumour lysis is prevented with hydration and ___|allopurinol|allopurinol,rasburicase|Rasburicase for high-risk patients.
-B|Superior vena cava syndrome|oncology,emergency|SVC syndrome is a complication of|Mediastinal tumours|Bone metastases|Small cell lung cancer and lymphoma.
+G|Tumor lysis syndrome|oncology,electrolytes,pharm|Tumor lysis is prevented with hydration and ___|allopurinol|allopurinol,rasburicase|Rasburicase for high-risk patients.
+B|Superior vena cava syndrome|oncology,emergency|SVC syndrome is a complication of|Mediastinal tumors|Bone metastases|Small cell lung cancer and lymphoma.
 G|Spinal cord compression|oncology,emergency,pharm|Malignant cord compression is treated immediately with ___|dexamethasone|dexamethasone,steroids,corticosteroids|Then urgent imaging and radiotherapy.
 B|Paraneoplastic hypercalcemia|oncology,endocrine|The commonest mechanism of hypercalcemia of malignancy is|PTH-related peptide|Bone metastases|Especially squamous cell carcinomas.
 G|Anthracyclines|oncology,pharm,cardio|Doxorubicin cardiotoxicity is reduced by ___|dexrazoxane|dexrazoxane|An iron chelator limiting free radical damage.

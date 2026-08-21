@@ -2,7 +2,7 @@
 BT|Lambert-Eaton vs myasthenia|neuro,NMJ,immuno|Which one IMPROVES with repeated use?|Lambert-Eaton|Myasthenia gravis|Lambert-Eaton: calcium builds up with repetition. Myasthenia fatigues.
 BT|Lambert-Eaton vs myasthenia|neuro,NMJ,oncology|Which is associated with small cell lung cancer?|Lambert-Eaton|Myasthenia gravis|Lambert-Eaton is paraneoplastic. Myasthenia goes with thymoma.
 BT|Hurler vs Hunter|genetics,biochem|Which has corneal clouding?|Hurler|Hunter|Hunters need clear vision to aim. Hunter is X-linked and milder.
-BT|Hurler vs Hunter|genetics|Which is X-linked rather than autosomal recessive?|Hunter|Hurler|Hunter is the X-linked one, and has aggressive behaviour.
+BT|Hurler vs Hunter|genetics|Which is X-linked rather than autosomal recessive?|Hunter|Hurler|Hunter is the X-linked one, and has aggressive behavior.
 BT|Tay-Sachs vs Niemann-Pick|genetics,neuro|Both have a cherry-red macula. Which has NO hepatosplenomegaly?|Tay-Sachs|Niemann-Pick|Tay-SaX has no organomegaly. Niemann-Pick has a big liver and spleen.
 BT|Tay-Sachs vs Niemann-Pick|genetics,biochem|Which is sphingomyelinase deficiency?|Niemann-Pick|Tay-Sachs|Tay-Sachs is hexosaminidase A.
 BT|Mitral stenosis vs regurgitation|cardio,murmur|Which produces an opening snap?|Mitral stenosis|Mitral regurgitation|Stenosis: opening snap then diastolic rumble. Regurgitation: holosystolic to the axilla.

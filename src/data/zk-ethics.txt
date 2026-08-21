@@ -24,7 +24,7 @@ B|Accepting patient gifts|ethics,clinical|Accepting a small gift from a patient 
 # ── Organ donation ───────────────────────────────────────────────────────
 B|Transplant team separation|ethics,surgery|The team pronouncing death and the transplant team must be|Separate, to avoid conflict of interest|The same, for continuity of care|An AMA requirement.
 B|Sale of organs|ethics,surgery|Buying or selling organs is|Illegal, from living or dead donors|Legal with proper documentation|Since the National Organ Transplant Act.
-B|Sale of gametes|ethics,repro|Selling unfertilised eggs or sperm is|Legal, as donor compensation|Illegal, like organ sale|Selling embryos is not.
+B|Sale of gametes|ethics,repro|Selling unfertilized eggs or sperm is|Legal, as donor compensation|Illegal, like organ sale|Selling embryos is not.
 
 # ── Safety and systems ───────────────────────────────────────────────────
 B|Surgical site marking|ethics,surgery,clinical|The surgical site is marked by|The person performing the surgery|The patient before entering theatre|The operator marks their own site.

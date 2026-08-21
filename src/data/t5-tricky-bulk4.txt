@@ -15,7 +15,7 @@ BT|Osteoarthritis vs septic arthritis|msk,micro|Which has an effusion with more 
 BT|Rheumatoid vs psoriatic arthritis|msk,rheum|Which affects the distal interphalangeal joints?|Psoriatic arthritis|Rheumatoid arthritis|With nail changes and dactylitis.
 BT|Ankylosing spondylitis vs mechanical back pain|msk,rheum|Which IMPROVES with exercise and worsens with rest?|Inflammatory back pain|Mechanical back pain|Plus morning stiffness over 30 minutes.
 BT|Osteomyelitis vs Charcot foot|msk,endocrine|Which is warm and swollen with NORMAL inflammatory markers?|Charcot arthropathy|Osteomyelitis|A difficult and important distinction in diabetes.
-BT|Cauda equina vs sciatica|neuro,msk,emergency|Which has saddle anaesthesia and urinary retention?|Cauda equina syndrome|Simple sciatica|A surgical emergency needing urgent MRI.
+BT|Cauda equina vs sciatica|neuro,msk,emergency|Which has saddle anesthesia and urinary retention?|Cauda equina syndrome|Simple sciatica|A surgical emergency needing urgent MRI.
 BT|Migraine aura vs TIA|neuro,vascular|Which spreads gradually over minutes with positive symptoms?|Migraine aura|Transient ischemic attack|TIA causes sudden negative symptoms.
 BT|Essential vs Parkinsonian tremor|neuro,movement|Which is symmetrical and affects the head and voice?|Essential tremor|Parkinson tremor|Parkinson tremor is asymmetrical and at rest.
 BT|Vascular vs Alzheimer dementia|neuro,dementia|Which has early gait disturbance and focal signs?|Vascular dementia|Alzheimer disease|Stepwise decline with vascular risk factors.
@@ -25,11 +25,11 @@ BT|Acute vs chronic urinary retention|renal,urology|Which is painless with a hug
 BT|Nephrolithiasis vs pyelonephritis|renal,micro|Which has fever with costovertebral tenderness?|Pyelonephritis|Renal colic|Colic causes writhing pain without fever unless infected.
 BT|Urge vs stress incontinence|renal,urology|Which leaks on coughing or laughing?|Stress incontinence|Urge incontinence|Urge incontinence follows a sudden compulsion.
 BT|Asthma vs heart failure|resp,cardio|Which improves with sitting upright and diuresis?|Cardiac asthma from heart failure|Bronchial asthma with wheeze|Both wheeze; the history and BNP separate them.
-BT|Pneumonia vs pulmonary oedema|resp,cardio,imaging|Which shows bilateral perihilar bat-wing shadowing?|Pulmonary oedema|Lobar pneumonia|Pneumonia is usually focal.
+BT|Pneumonia vs pulmonary edema|resp,cardio,imaging|Which shows bilateral perihilar bat-wing shadowing?|Pulmonary edema|Lobar pneumonia|Pneumonia is usually focal.
 BT|Pneumothorax vs bullous emphysema|resp,imaging|Which has lung markings visible within the lucency?|Bullous emphysema|Pneumothorax|Misplacing a drain into a bulla is dangerous.
 BT|Pleuritic vs cardiac chest pain|resp,cardio|Which is sharp and worse on deep inspiration?|Pleuritic pain|Cardiac ischemic pain|Ischemic pain is heavy and unrelated to breathing.
 BT|Hyperventilation vs pulmonary embolism|resp,psych|Which has hypoxia alongside hypocapnia?|Pulmonary embolism|Anxiety hyperventilation|Anxiety lowers CO2 with normal oxygenation.
-BT|Viral vs bacterial diarrhoea|GI,micro|Which typically causes bloody stool with fever?|Bacterial dysentery|Viral gastroenteritis|Invasive organisms; consider stool culture.
+BT|Viral vs bacterial diarrhea|GI,micro|Which typically causes bloody stool with fever?|Bacterial dysentery|Viral gastroenteritis|Invasive organisms; consider stool culture.
 BT|Small bowel vs colonic bleeding|GI,emergency|Which causes melena rather than fresh blood?|Upper gastrointestinal bleeding|Colonic bleeding above the rectum|Digested blood turns black and tarry.
 BT|Cholestasis vs hepatocellular injury|GI,liver,lab|Which raises alkaline phosphatase more than transaminases?|Cholestasis|Hepatocellular injury|The pattern guides imaging versus serology.
 BT|Acute vs chronic liver failure|GI,liver|Which has encephalopathy within 8 weeks of jaundice with NO prior liver disease?|Acute liver failure|Decompensated cirrhosis|Requires transplant referral.
@@ -44,7 +44,7 @@ BT|Steroids in croup|ENT,peds,pharm|Dexamethasone in croup is given|Even for mil
 BT|Antibiotics in sore throat|ENT,micro|Antibiotics for streptococcal pharyngitis are given mainly to|Prevent rheumatic fever|Shorten symptoms|Symptom benefit is modest.
 BT|Antipyretics and vaccines|peds,immuno,pharm|Prophylactic paracetamol before vaccination|May blunt the antibody response|Improves the immune response|Give it only if the child is uncomfortable.
 BT|Iron in infection|heme,micro,pharm|Iron supplementation during active infection|May favour bacterial growth|Speeds recovery from it|Anemia of inflammation is protective.
-BT|Transfusion threshold|heme,critical care|In stable patients, transfusion is generally withheld until haemoglobin falls below|7 g/dL|10 g/dL|Restrictive strategies improve outcomes.
+BT|Transfusion threshold|heme,critical care|In stable patients, transfusion is generally withheld until hemoglobin falls below|7 g/dL|10 g/dL|Restrictive strategies improve outcomes.
 BT|Oxygen in myocardial infarction|cardio,emergency|Routine oxygen in a normoxic MI patient is|Not beneficial and possibly harmful|Standard care for all chest pain|Give only if saturations are low.
 BT|Bed rest in back pain|msk,clinical|For acute mechanical back pain, bed rest is|Discouraged|Recommended|Early mobilization improves recovery.
 BT|Antibiotics in bronchitis|resp,micro|Acute bronchitis in a healthy adult|Rarely needs antibiotics|Always needs antibiotics|Almost always viral, even with purulent sputum.
@@ -65,4 +65,4 @@ BT|Beta blockers and peripheral arterial disease|cardio,vascular,pharm|Beta bloc
 BT|Renal function and metformin|endocrine,renal,pharm|Acute illness with dehydration in a metformin user requires|Temporarily stopping it|Doubling the dose|Sick day rules prevent lactic acidosis.
 BT|Contrast and metformin|imaging,pharm,renal|Metformin after contrast is restarted once|Renal function is confirmed stable|The scan has been completed|Usually after 48 hours.
 BT|Pregnancy and radiation|OB,imaging,safety|A chest x-ray in pregnancy delivers|A negligible fetal dose|A dangerous fetal dose|Never withhold necessary imaging; shield and justify.
-BT|Anaemia and heart failure|heme,cardio|Correcting iron deficiency in heart failure|Improves symptoms and capacity|Has no effect on symptoms|Intravenous iron even without anemia.
+BT|Anemia and heart failure|heme,cardio|Correcting iron deficiency in heart failure|Improves symptoms and capacity|Has no effect on symptoms|Intravenous iron even without anemia.

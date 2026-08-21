@@ -1,6 +1,6 @@
 # ENT, ophthalmology and toxicology — batch 1.
 B|Head and neck squamous cell carcinoma|ENT,oncology|Head and neck squamous cell carcinoma shows|Irregular nests of cells with keratinization|Signet ring cells filled with mucin|Tobacco and alcohol are the main mutagens; HPV for oropharynx.
-G|Field cancerization|ENT,oncology|Multiple primary tumours from a widely mutagenized mucosa is called field ___|cancerization|cancerization,cancerisation|Explains second primaries in head and neck cancer.
+G|Field cancerization|ENT,oncology|Multiple primary tumors from a widely mutagenized mucosa is called field ___|cancerization|cancerization,cancerization|Explains second primaries in head and neck cancer.
 B|Rhinitis medicamentosa|ENT,pharm|Rebound nasal congestion is treated by|Stopping the topical decongestant|Increasing the decongestant dose|Oxymetazoline used beyond three days causes rebound.
 B|Thyroglossal duct cyst|ENT,embryology|A midline neck cyst that moves with swallowing is a|Thyroglossal duct cyst|Branchial cleft cyst|Incomplete duct obliteration; branchial cysts are lateral.
 B|Branchial cleft cyst|ENT,embryology|A branchial cleft cyst is located|Laterally, anterior to sternocleidomastoid|In the midline, moving on swallowing|Second branchial cleft remnant.
@@ -20,7 +20,7 @@ B|Steroid-induced cataract|eye,pharm|Chronic prednisone causes|Posterior subcaps
 B|Retinoblastoma|eye,oncology,genetics|Survivors of hereditary retinoblastoma are at risk of|Osteosarcoma|Leukemia|RB1 germline mutation; leukocoria under age five.
 B|Congenital CMV|eye,micro,OB|The commonest eye finding in congenital CMV is|Chorioretinitis|Cataract|Cataracts suggest congenital rubella.
 B|Antihistamine ocular effects|eye,pharm|Blurred vision from antihistamines is due to blockade of|Acetylcholine|Histamine|Anticholinergic effect paralyzes accommodation.
-B|Diabetic retinopathy|eye,endocrine|Cotton wool spots represent|Retinal nerve fibre layer microinfarcts|Lipid exudate from leaking vessels|From chronic hyperglycemic microvascular injury.
+B|Diabetic retinopathy|eye,endocrine|Cotton wool spots represent|Retinal nerve fiber layer microinfarcts|Lipid exudate from leaking vessels|From chronic hyperglycemic microvascular injury.
 B|Cataract|eye,aging|Cataract formation is caused by|Lens protein cross-linking with age|Progressive corneal opacification|Glare and halos around lights at night.
 B|Sildenafil visual effects|eye,pharm|Sildenafil causes a blue tinge to vision by inhibiting|Phosphodiesterase-6 in the retina|Carbonic anhydrase in the eye|Cross-reactivity with the retinal isoform.
 B|Herpes zoster ophthalmicus|eye,virus|Zoster involving the nasal tip predicts eye involvement — this is|Hutchinson sign|Battle sign|The nasociliary branch supplies both.

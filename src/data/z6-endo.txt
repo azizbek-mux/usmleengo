@@ -1,11 +1,11 @@
 # Endocrine — from the Mehlman HY Endocrine notes.
 
 # ── Thyroid embryology and structure ─────────────────────────────────────
-G|Thyroid origin|endocrine,embryology,ent|The thyroid begins at the foramen ___ at the base of the tongue|cecum|cecum,caecum|Then descends through the neck.
+G|Thyroid origin|endocrine,embryology,ent|The thyroid begins at the foramen ___ at the base of the tongue|cecum|cecum,cecum|Then descends through the neck.
 B|Thyroglossal duct cyst sign|endocrine,ent,peds|A thyroglossal duct cyst characteristically|Moves up on tongue protrusion|Stays fixed when swallowing|A midline neck lump in a child.
 B|Thyroglossal cyst germ layer|endocrine,embryology|A thyroglossal duct cyst arises from|Endoderm of the foramen cecum|Ectoderm of the branchial cleft|The exam wants that exact phrase.
 B|Lingual thyroid consequence|endocrine,ent|Ectopic lingual thyroid tissue matters because|It may be the only thyroid present|It reliably turns malignant|Removing it causes hypothyroidism.
-B|Parathyroid blood supply|endocrine,anatomy,surgery|The parathyroid glands are supplied by|The inferior and superior thyroid arteries|Branches direct from the carotid artery|Which is why thyroidectomy risks hypocalcaemia.
+B|Parathyroid blood supply|endocrine,anatomy,surgery|The parathyroid glands are supplied by|The inferior and superior thyroid arteries|Branches direct from the carotid artery|Which is why thyroidectomy risks hypocalcemia.
 
 # ── Thyroid physiology ───────────────────────────────────────────────────
 G|Iodide organification|endocrine,biochem|___ mediates the organification of iodide in the thyroid|Thyroperoxidase|thyroperoxidase,tpo|Blocked by the thionamides.
@@ -14,15 +14,15 @@ G|Iodine storage protein|endocrine,biochem|Thyroid hormone is built on tyrosine 
 B|Wolff-Chaikoff effect|endocrine,pharm|A sudden iodide load makes thyroid hormone synthesis|Fall, transiently|Rise, transiently|Which is why iodide is used in thyroid storm.
 
 # ── Thyroid disease patterns ─────────────────────────────────────────────
-B|Secondary hypothyroidism causes|endocrine,thyroid|Secondary hypothyroidism follows|Sheehan syndrome or a pituitary tumour|Dietary iodine deficiency alone|The pituitary, not the gland, fails.
-B|Secondary hyperthyroidism TSH|endocrine,thyroid,oncology|In secondary hyperthyroidism the TSH is|High, from an autonomous tumour|Suppressed by the high hormone|Feedback cannot switch the tumour off.
+B|Secondary hypothyroidism causes|endocrine,thyroid|Secondary hypothyroidism follows|Sheehan syndrome or a pituitary tumor|Dietary iodine deficiency alone|The pituitary, not the gland, fails.
+B|Secondary hyperthyroidism TSH|endocrine,thyroid,oncology|In secondary hyperthyroidism the TSH is|High, from an autonomous tumor|Suppressed by the high hormone|Feedback cannot switch the tumor off.
 B|Hashimoto biopsy|endocrine,thyroid,path|Biopsy in Hashimoto thyroiditis shows|A lymphocytic infiltrate|Granulomas with giant cells|Granulomas point to de Quervain.
 B|Hashimoto antibodies|endocrine,thyroid,immuno|Hashimoto thyroiditis carries antibodies against|Thyroperoxidase and thyroglobulin|The TSH receptor and its ligand|TSH receptor antibodies mean Graves.
 B|de Quervain uptake|endocrine,thyroid,imaging|In subacute thyroiditis, radioiodine uptake is|Low, whatever the hormone level|High, matching the hormone|The gland leaks, it does not make more.
 B|de Quervain tenderness|endocrine,thyroid|Subacute granulomatous thyroiditis is distinguished by|A painful, tender thyroid|A painless, firm thyroid|Usually after a viral illness.
 B|Drug-induced thyroiditis|endocrine,thyroid,pharm|Thyroiditis is caused by|Lithium and amiodarone|Metformin and statins|Painless, with low uptake.
 B|Toxic adenoma malignancy|endocrine,thyroid,oncology|A HOT thyroid nodule is|Benign, and autonomously secreting|Malignant until proven otherwise|Cold nodules are the worrying ones.
-B|Cold nodule significance|endocrine,thyroid,oncology|A COLD thyroid nodule raises concern for|Carcinoma|Overactivity|Hot nodules do not metastasise.
+B|Cold nodule significance|endocrine,thyroid,oncology|A COLD thyroid nodule raises concern for|Carcinoma|Overactivity|Hot nodules do not metastasize.
 B|Factitious thyrotoxicosis gland|endocrine,thyroid|In factitious thyrotoxicosis the thyroid gland is|Small and non-palpable|Diffusely enlarged and firm|Suppressed TSH has atrophied it.
 G|Reverse T3|endocrine,thyroid,critical care|In euthyroid sick syndrome, T4 is shunted into reverse ___|T3|t3|An inactive form of the hormone.
 B|TBG deficiency pattern|endocrine,thyroid,genetics|Thyroid-binding globulin deficiency gives|Low total T4 with normal free T4|Low free T4 with normal total|Less carrier, same active hormone.
@@ -39,6 +39,6 @@ B|Rickets versus osteomalacia|endocrine,bone,vitamins|Rickets and osteomalacia d
 B|Sunlight and vitamin D|endocrine,vitamins,derm|Without sunlight, the skin cannot make|Cholecalciferol|7-dehydrocholesterol|The substrate is still made; the product is not.
 
 # ── Reproductive endocrine, further angles ───────────────────────────────
-B|High DHEA-S localisation|endocrine,repro,adrenal|Hirsutism with a high DHEA-S localises to the|Adrenal gland|Ovary|DHEA-S is adrenal-specific.
+B|High DHEA-S localization|endocrine,repro,adrenal|Hirsutism with a high DHEA-S localizes to the|Adrenal gland|Ovary|DHEA-S is adrenal-specific.
 B|Pituitary stalk section hormone|endocrine,neuro|Cutting the pituitary stalk raises only|Prolactin|Growth hormone|Everything else loses its releasing signal.
 B|Mannitol and ADH|endocrine,renal,pharm|Mannitol infusion causes ADH to|Rise, with serum osmolality|Fall, with serum osmolality|The osmoreceptors sense the added solute.
