@@ -1,7 +1,6 @@
 # From the NBME 27 self-assessment explanations — the only NBME set in the
 # collection with a usable text layer; the rest are image-only scans.
 
-B|Vitamin E versus B12 tracts|nutrition,vitamins,neuro|Vitamin E deficiency mimics B12 deficiency but spares|Methylmalonic acid levels|The posterior columns|Both demyelinate posterior and spinocerebellar tracts.
 B|CO2 and cerebral blood flow|neuro,physiology,critical care|Hypercapnia makes cerebral vessels|Dilate, raising intracranial pressure|Constrict, lowering the pressure|Which is why hyperventilation is used acutely.
 G|Testicular artery origin|anatomy,repro|The testicular arteries arise from the aorta at the level of ___ 2|L|l,lumbar|Just below the renal arteries.
 B|Pierre Robin triad|peds,genetics,ent|Pierre Robin sequence is micrognathia, cleft palate and|Downward displacement of the tongue|Low-set, malformed external ears|Causing airway obstruction at birth.
@@ -11,7 +10,7 @@ B|Trypsinogen activation|gi,biochem|Trypsinogen is secreted by pancreatic acinar
 B|Abetalipoproteinemia protein|gi,genetics,lipids|Hypobetalipoproteinemia is a defect in|Apolipoprotein B|Apolipoprotein E|Causing steatorrhea and failure to thrive.
 B|Overactive bladder mechanism|renal,urology|An overactive bladder is caused by|Detrusor instability|Sphincter weakness|Giving urge incontinence.
 B|Cecal blood supply|gi,anatomy,surgery|The cecum is supplied by the|Ileocolic artery|Middle colic artery|A branch of the superior mesenteric artery.
-B|Cleft lip embryology|peds,embryology|Cleft lip results from failure of fusion of the|Maxillary and nasal prominences|The palatine prominences|The palatine pair give cleft palate.
+B|Cleft lip embryology|peds,embryology|Cleft lip results from failure of fusion of the|Maxillary and nasal prominences|Palatine shelves of the maxilla|The palatine pair give cleft palate.
 B|Branchial cleft cyst position|ent,embryology,peds|A branchial cleft cyst appears as|A lateral neck mass|A midline neck mass|A midline mass suggests a thyroglossal cyst.
 G|Sphenoid sinus drainage|ent,anatomy|The sphenoid sinus drains into the spheno___ recess|ethmoidal|ethmoidal|Above and behind the superior concha.
 B|Musculocutaneous nerve cord|anatomy,neuro,msk|The musculocutaneous nerve arises from the|Lateral cord of the brachial plexus|Medial cord of the brachial plexus|Supplying biceps and brachialis.

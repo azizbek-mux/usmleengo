@@ -69,7 +69,7 @@ B|Uncal herniation|neuro,emergency|Uncal herniation first compresses which nerve
 G|Cushing reflex|neuro,emergency,physiology|Cushing triad is hypertension, bradycardia and irregular ___|respirations|respirations,breathing,respiration|Signals dangerously raised intracranial pressure.
 B|Huntington disease|neuro,genetics|Huntington disease represses transcription through|Histone deacetylation|DNA methylation alone|Expanded polyglutamine interferes with transcription factors.
 G|Huntington disease|neuro,genetics|Huntington disease is a ___ repeat expansion|CAG|cag|CAG on chromosome 4, autosomal dominant, anticipation.
-B|Inferior alveolar nerve|neuro,anatomy,cranial nerves|Inferior alveolar nerve block anesthetizes the|Lower lip and teeth|The upper lip and teeth|A branch of V3, blocked at the mandibular foramen.
+B|Inferior alveolar nerve|neuro,anatomy,cranial nerves|Inferior alveolar nerve block anesthetizes the|Lower lip and teeth|Upper lip and teeth|A branch of V3, blocked at the mandibular foramen.
 B|Craniopharyngioma|neuro,oncology,peds|Craniopharyngioma arises from remnants of|Rathke pouch|Neural crest|Suprasellar calcified tumor of childhood; bitemporal hemianopia.
 B|Wernicke encephalopathy|neuro,vitamins|Wernicke encephalopathy is caused by deficiency of|Thiamine|Niacin|Give thiamine before glucose to avoid precipitating it.
 B|Epidural hematoma|neuro,trauma,vascular|An epidural hematoma collects between|Bone and dura|Dura and arachnoid|Middle meningeal artery tear at the pterion; lucid interval.
@@ -85,7 +85,7 @@ B|Beta-2 agonists|neuro,pharm,resp|Beta-2 receptor activation causes smooth musc
 B|Methotrexate in pregnancy|neuro,pharm,teratogen|Methotrexate causes which fetal defect?|Neural tube defects|Limb shortening only|Folate antagonism impairs DNA synthesis.
 B|Excitotoxicity|neuro,path,physiology|Magnesium protects dying neurons by reducing|Calcium and sodium influx|Potassium and chloride efflux|Magnesium blocks the NMDA receptor channel.
 G|Excitotoxicity|neuro,path|Excitotoxic neuronal death is mediated by ___|glutamate|glutamate,glutamic acid|Excess glutamate opens NMDA channels, flooding cells with calcium.
-B|Vestibular schwannoma|neuro,oncology,anatomy|A vestibular schwannoma sits at the|Cerebellopontine angle|The pineal region|Between cerebellum and lateral pons; bilateral means NF2.
+B|Vestibular schwannoma|neuro,oncology,anatomy|A vestibular schwannoma sits at the|Cerebellopontine angle|Pineal region|Between cerebellum and lateral pons; bilateral means NF2.
 B|Benzodiazepines and antihistamines|neuro,pharm|Combining a benzodiazepine with a sedating antihistamine causes|Additive CNS depression|Reduced sedation|Both depress the CNS; avoid the combination.
 B|Accessory nerve injury|neuro,cranial nerves,msk|Cranial nerve XI injury paralyzes the|Trapezius|Serratus anterior|Shoulder droop and weak head turning.
 B|Neuroblastoma|neuro,oncology,peds|Neuroblastoma arises from|Neural crest cells|Epithelial cells|Commonest extracranial solid tumor of childhood; raised urinary HVA and VMA.
@@ -97,5 +97,5 @@ G|Raphe nuclei|neuro,neurotransmitter|The raphe nuclei are the main source of __
 G|Nucleus basalis of Meynert|neuro,dementia,neurotransmitter|In Alzheimer disease, the nucleus basalis loses ___ neurons|cholinergic|cholinergic,acetylcholine,ach|Which is why cholinesterase inhibitors are used.
 B|Vascular dementia|neuro,dementia|Vascular dementia progresses|In a stepwise fashion|Smoothly and gradually|Stepwise decline with focal signs; Alzheimer is gradual.
 B|Anterior cerebral artery stroke|neuro,stroke,anatomy|An ACA stroke affects mainly the|Contralateral leg|Contralateral face and arm|Medial homunculus. MCA affects face and arm.
-B|Middle cerebral artery stroke|neuro,stroke,anatomy|An MCA stroke affects mainly the|Contralateral face and arm|The contralateral leg and foot|Lateral homunculus, plus aphasia if dominant.
+B|Middle cerebral artery stroke|neuro,stroke,anatomy|An MCA stroke affects mainly the|Contralateral face and arm|Contralateral leg and foot|Lateral homunculus, plus aphasia if dominant.
 G|Jugular foramen syndrome|neuro,cranial nerves,anatomy|Vernet syndrome affects cranial nerves IX, X and ___|XI|xi,11,eleven|Glossopharyngeal, vagus and accessory exit the jugular foramen.

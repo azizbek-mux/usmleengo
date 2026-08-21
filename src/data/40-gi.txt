@@ -15,7 +15,7 @@ B|Pseudomembranous colitis|GI,micro|Pseudomembranes are composed of|Fibrin, infl
 B|Pregnancy and the gut|GI,repro,physiology|Progesterone in pregnancy makes colonic motility|Decrease|Increase|Smooth muscle relaxation causes constipation and reflux.
 B|Acute cholecystitis|GI,imaging|The most specific test for acute cholecystitis is|A HIDA scan|Ultrasound|Failure to visualize the gallbladder indicates cystic duct obstruction.
 G|Biliary colic|GI,physiology|Gallbladder contraction after a fatty meal is triggered by ___|cholecystokinin|cholecystokinin,cck|CCK from duodenal I cells.
-B|Marginal artery of Drummond|GI,anatomy,vascular|The marginal artery connects the SMA to the|Inferior mesenteric artery|The celiac trunk directly|Collateral flow protects the colon during aortic surgery.
+B|Marginal artery of Drummond|GI,anatomy,vascular|The marginal artery connects the SMA to the|Inferior mesenteric artery|Celiac trunk directly|Collateral flow protects the colon during aortic surgery.
 B|IL-10|GI,immuno|IL-10 is which type of cytokine?|Anti-inflammatory|Pro-inflammatory|Dampens Th1 responses; loss of function causes early-onset IBD.
 B|Gastroschisis|GI,embryology,peds|Gastroschisis differs from omphalocele because it|Has no covering membrane|Is always left-sided|Gastroschisis is bare bowel, usually to the right of the umbilicus.
 B|Omphalocele|GI,embryology,peds|Omphalocele is covered by a membrane and associated with|Other congenital anomalies|Isolated defects only|Trisomies and Beckwith-Wiedemann.

@@ -32,7 +32,7 @@ B|Polyarteritis nodosa|msk,rheum,vascular|Polyarteritis nodosa characteristicall
 B|Polyarteritis nodosa|msk,rheum,path|Polyarteritis nodosa lesions are|Segmental and of different ages|Uniform and simultaneous|String-of-beads microaneurysms on angiography.
 B|Supraspinatus|msk,anatomy,ortho|Supraspinatus tendinopathy causes pain on|Abduction|Internal rotation|The first 15 degrees of abduction; the empty can test.
 B|Dupuytren contracture|msk,ortho|Dupuytren contracture is caused by|Fibroblastic proliferation of palmar fascia|Flexor tendon rupture and retraction|Affects the ring and little fingers.
-B|Hemochromatosis arthropathy|msk,rheum,genetics|Hemochromatosis arthropathy classically affects the|Second and third metacarpophalangeal joints|The distal interphalangeal joints of the hand|Iron deposition with calcium pyrophosphate deposition.
+B|Hemochromatosis arthropathy|msk,rheum,genetics|Hemochromatosis arthropathy classically affects the|Second and third metacarpophalangeal joints|Distal interphalangeal joints of the hand|Iron deposition with calcium pyrophosphate deposition.
 B|Shoulder dislocation|msk,ortho,anatomy|The commonest direction of shoulder dislocation is|Anterior|Posterior|Shallow glenoid; axillary nerve at risk.
 B|Posterior shoulder dislocation|msk,ortho|Posterior shoulder dislocation classically follows|Seizure or electrocution|A fall on an outstretched hand|Internal rotators overpower external rotators.
 G|Osteoclast differentiation|msk,bone,physiology|RANK ligand binds RANK to drive ___ differentiation|osteoclast|osteoclast,osteoclasts|Osteoprotegerin is the decoy receptor that blocks it.
@@ -49,4 +49,4 @@ B|Gower sign|msk,peds,neuro|The Gower sign indicates weakness of the|Proximal mu
 B|Polymyositis|msk,rheum,path|Polymyositis shows which inflammatory pattern?|Endomysial CD8 infiltration|Perimysial CD4 infiltration|Dermatomyositis is perimysial with perifascicular atrophy.
 B|Dermatomyositis|msk,rheum,oncology|Dermatomyositis warrants screening for|Occult malignancy|Renal disease|Gottron papules and heliotrope rash.
 B|Carpal tunnel syndrome|msk,neuro,anatomy|Carpal tunnel syndrome compresses the|Median nerve|Ulnar nerve|Thenar wasting; spares palmar sensation as that branch passes above.
-B|Osteomyelitis in children|msk,micro,peds|Childhood osteomyelitis usually involves the|Metaphysis of long bones|The epiphysis near the joint|Rich sluggish blood supply seeds bacteria.
+B|Osteomyelitis in children|msk,micro,peds|Childhood osteomyelitis usually involves the|Metaphysis of long bones|Epiphysis near the joint|Rich sluggish blood supply seeds bacteria.

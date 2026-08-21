@@ -28,6 +28,29 @@ const slug = (s) =>
 const fingerprint = (s) =>
   s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
 
+/**
+ * Does the topic give the answer away?
+ *
+ * The app prints the topic as a chip directly above the question, so a topic
+ * like "Telomerase" over "___ maintains chromosome ends" hands the reader the
+ * answer. Flagged here rather than fixed by renaming the topics, because the
+ * topic is also half the same-fact dedup key — renaming 298 of them would let
+ * duplicates back in.
+ */
+const bagOf = (s) =>
+  new Set(String(s).toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(Boolean));
+
+function topicLeaks(topic, right, wrong) {
+  const t = bagOf(topic), c = bagOf(right);
+  if (!t.size || !c.size) return false;
+  const covered = (set) => [...set].filter((w) => t.has(w)).length / set.size;
+  const cc = covered(c);
+  if (cc < 0.8) return false;
+  if (wrong == null) return true;                 // gap: nothing to compare against
+  const w = bagOf(wrong);
+  return w.size ? cc - covered(w) >= 0.5 : true;  // binary: only if it favours one side
+}
+
 // Question ids must be derived from CONTENT, never from position in the bank.
 // Progress is stored per id (seen[id] drives spaced repetition), so an
 // id that moved when questions were inserted above it would silently discard
@@ -100,7 +123,9 @@ function parseLine(raw, file, lineNo) {
       lengthTells.push(`${where}: correct is ${four.length - five.length} chars longer`);
     }
     // Correct option is authored first; the app shuffles at runtime.
-    questions.push({ id, type: "binary", difficulty, topic, tags, q, options: [four, five], answer: 0, explain });
+    questions.push({ id, type: "binary", difficulty, topic, tags, q,
+      options: [four, five], answer: 0, explain,
+      ...(topicLeaks(topic, four, five) ? { hideTopic: true } : {}) });
   } else {
     if (!q.includes("___")) { errors.push(`${where}: gap missing ___`); return; }
     if (!four) { errors.push(`${where}: gap missing answer`); return; }
@@ -117,7 +142,8 @@ function parseLine(raw, file, lineNo) {
       errors.push(`${where}: stem gives away the answer "${four}"`);
       return;
     }
-    questions.push({ id, type: "gap", difficulty, topic, tags, q, answer: four, accept, explain });
+    questions.push({ id, type: "gap", difficulty, topic, tags, q, answer: four, accept, explain,
+      ...(topicLeaks(topic, four, null) ? { hideTopic: true } : {}) });
   }
 }
 
@@ -165,6 +191,7 @@ console.log(`  topics  : ${new Set(questions.map((q) => q.topic)).size}`);
 console.log(`  tags    : ${tags.size}`);
 console.log(`  skipped : ${dupes} verbatim + ${factDupes} same-fact duplicate(s)`);
 console.log(`  bytes   : ${(JSON.stringify(questions).length / 1024).toFixed(0)} KB`);
+console.log(`  topic hidden : ${questions.filter((x) => x.hideTopic).length} (topic would reveal the answer)`);
 if (lengthTells.length) {
   console.log(`
   WARNING: ${lengthTells.length} question(s) leak the answer by option length.`);

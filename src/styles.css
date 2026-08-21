@@ -207,6 +207,10 @@ input { font: inherit; }
   margin-bottom: 16px;
 }
 
+/* Placeholder that keeps the question from jumping when the topic chip is
+   suppressed, so a hidden topic is not itself a visible signal. */
+.q-topic-gap { height: 25px; margin-bottom: 16px; }
+
 .q-text {
   font-size: 25px;
   font-weight: 800;

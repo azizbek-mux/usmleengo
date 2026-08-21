@@ -14,7 +14,6 @@ G|Aortic stenosis pulse|cardio,exam|Aortic stenosis gives a slow-rising pulse, p
 B|Aortic regurgitation timing|cardio,exam|Aortic regurgitation gives a murmur that is|Early diastolic and decrescendo|Mid-systolic and crescendo|With a wide pulse pressure.
 B|Mitral valve prolapse sound|cardio,exam|Mitral valve prolapse produces|A mid-systolic click|An opening snap|Often entirely asymptomatic.
 G|Mitral prolapse pathology|cardio,path,genetics|Mitral valve prolapse follows ___ degeneration of the valve|myxomatous|myxomatous|Seen in Marfan and Ehlers-Danlos.
-B|Right-sided murmur maneuver|cardio,exam,physiology|Right-sided murmurs get louder on|Inspiration|Expiration|Venous return to the right heart rises.
 B|Tricuspid regurgitation sign|cardio,exam,liver|Tricuspid regurgitation can cause|A pulsatile liver|A palpable spleen tip|From regurgitant flow into the veins.
 B|Functional murmur nature|cardio,peds,exam|A functional flow murmur|Disappears as the heart rate falls|Persists whatever the heart rate|Seen with fever, anemia or pregnancy.
 

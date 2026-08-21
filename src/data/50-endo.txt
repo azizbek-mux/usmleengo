@@ -66,4 +66,4 @@ B|11-beta-hydroxylase deficiency|endocrine,adrenal,hypertension|11-beta-hydroxyl
 B|Growth hormone|endocrine,pituitary|Growth hormone raises blood glucose|Yes|No|A counter-regulatory hormone causing insulin resistance.
 B|Calcitonin|endocrine,calcium|Calcitonin acts to|Lower serum calcium|Raise serum calcium|Inhibits osteoclasts; minor role in humans.
 B|Vitamin D activation|endocrine,calcium,renal|The final activation of vitamin D occurs in the|Kidney|Liver|25-hydroxylation in liver, 1-alpha-hydroxylation in kidney.
-B|PTH actions|endocrine,calcium,renal|PTH increases calcium reabsorption in the|Distal convoluted tubule|The proximal convoluted tubule|And decreases phosphate reabsorption proximally.
+B|PTH actions|endocrine,calcium,renal|PTH increases calcium reabsorption in the|Distal convoluted tubule|Proximal convoluted tubule|And decreases phosphate reabsorption proximally.

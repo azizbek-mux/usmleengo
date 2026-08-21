@@ -26,7 +26,7 @@ B|Peritonsillar abscess|ENT,emergency|A peritonsillar abscess is treated with|Ne
 G|Retropharyngeal abscess|ENT,peds,emergency|Retropharyngeal abscess can spread to the ___, causing mediastinitis|mediastinum|mediastinum,chest|A danger space infection.
 B|Laryngeal cancer|ENT,oncology|Persistent hoarseness beyond three weeks in a smoker requires|Laryngoscopy|Reassurance|Glottic tumors present early with voice change.
 G|Recurrent laryngeal nerve|ENT,anatomy,surgery|The recurrent laryngeal nerve is at risk during ___ surgery|thyroid|thyroid,thyroidectomy|Bilateral injury causes stridor and needs urgent airway management.
-B|Vocal cord palsy|ENT,anatomy,oncology|A left recurrent laryngeal palsy should prompt imaging of the|Chest, including the aortopulmonary window|The neck and thyroid gland and no more|The left nerve loops under the aortic arch.
+B|Vocal cord palsy|ENT,anatomy,oncology|A left recurrent laryngeal palsy should prompt imaging of the|Chest, including the aortopulmonary window|Neck and thyroid gland and no more|The left nerve loops under the aortic arch.
 G|Salivary gland tumors|ENT,oncology|The commonest salivary gland tumor is the ___ adenoma|pleomorphic|pleomorphic|Benign but recurs if incompletely excised.
 B|Parotid surgery|ENT,anatomy,surgery|Parotidectomy risks injury to the|Facial nerve|Hypoglossal nerve|The nerve runs through the gland.
 G|Sialolithiasis|ENT|Salivary stones most often affect the ___ gland|submandibular|submandibular|Its duct runs uphill and its secretion is thicker.

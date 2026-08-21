@@ -26,7 +26,7 @@ B|OSA and polycythemia|resp,heme|Obstructive sleep apnea causes secondary polycy
 B|OSA bicarbonate|resp,acid base|Chronic obstructive sleep apnea raises the|Serum bicarbonate|Serum chloride|Renal compensation for CO2 retention.
 B|Goodpasture immunofluorescence pattern|renal,immuno,resp|Goodpasture syndrome shows immunofluorescence that is|Linear along the capillaries|Granular and lumpy-bumpy|Against type IV collagen.
 B|Horseshoe kidney embryology|renal,embryology|A horseshoe kidney forms by fusion of the|Inferior poles of the metanephros|Superior poles of the mesonephros|Caught under the inferior mesenteric artery.
-B|Horseshoe kidney complication|renal,micro|A horseshoe kidney predisposes to|Urinary tract infection|Renal cell carcinoma|From associated tract anomalies.
+B|Horseshoe kidney complication|renal,micro|A horseshoe kidney predisposes to|Urinary tract infection|Complete loss of one kidney|From associated tract anomalies.
 B|Rifampin and warfarin|pharm,liver,coagulation|Rifampin makes warfarin|Less effective, needing a higher dose|More effective, needing a lower dose|It induces cytochrome P450.
 B|Acute HIV presentation|micro,hiv,immuno|Primary HIV infection presents as|A mononucleosis-like illness|An isolated painless ulcer|Fever, pharyngitis and lymphadenopathy.
 B|AV nicking mechanism|eye,cardio,vascular|Arteriovenous nicking occurs when|An artery compresses a vein at a crossing|A vein compresses an artery there|A sign of chronic hypertension.
@@ -37,4 +37,4 @@ B|Methylmalonic acid enzyme|heme,vitamins,biochem|Methylmalonyl CoA mutase requi
 B|Colon cancer metastasis route|gi,oncology,anatomy|Right-sided colon cancer reaches the lungs by way of the|Portal vein, then liver, then vena cava|Thoracic duct, then subclavian vein|Liver metastases come first.
 B|Diabetes insipidus subtype test|endocrine,renal|Desmopressin raises urine osmolality in|Central diabetes insipidus|Nephrogenic diabetes insipidus|The nephrogenic kidney cannot respond.
 B|HCM sarcomere change|cardio,genetics|Hypertrophic cardiomyopathy results from|Excess contractile filament synthesis|Loss of contractile filaments|Thickening the left ventricle.
-B|Vitamin A deficiency skin|nutrition,vitamins,derm|Vitamin A deficiency causes|Dry, scaly skin, or xerosis|A greasy seborrhoeic rash|Alongside night blindness.
+B|Vitamin A deficiency skin|nutrition,vitamins,derm|Vitamin A deficiency causes|Dry, scaly skin, or xerosis|A greasy seborrheic rash|Alongside night blindness.

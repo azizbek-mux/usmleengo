@@ -9,7 +9,7 @@ B|Contrast-induced nephropathy|renal,AKI|Contrast nephropathy damages which stru
 B|Dialysis clearance|renal,physiology|Diffusion across a dialysis membrane increases most with|Greater membrane surface area|A thicker dialysis membrane|Fick's law — area up, thickness down.
 B|Poststreptococcal glomerulonephritis|renal,micro,immuno|PSGN shows what on electron microscopy?|Subepithelial humps|Linear deposits|Linear IgG suggests Goodpasture.
 B|Poststreptococcal glomerulonephritis|renal,immuno,peds|PSGN is the commonest cause of|Nephritic syndrome in children|Nephrotic syndrome in children|Periorbital edema, hypertension, cola urine, RBC casts.
-B|Renal cell carcinoma|renal,oncology,vascular|Renal cell carcinoma classically invades the|Renal vein and inferior vena cava|The ureter and renal pelvis|Left-sided tumors can cause a varicocele.
+B|Renal cell carcinoma|renal,oncology,vascular|Renal cell carcinoma classically invades the|Renal vein and inferior vena cava|Ureter and renal pelvis|Left-sided tumors can cause a varicocele.
 B|Renal cell carcinoma|renal,oncology,risk|The main risk factor for renal cell carcinoma is|Smoking|Analgesic use|Also obesity and hypertension; von Hippel-Lindau if familial.
 B|PTH and phosphate|renal,endocrine,calcium|PTH decreases phosphate reabsorption in the|Proximal tubule|Collecting duct|Raises calcium, lowers phosphate.
 B|Benign prostatic hyperplasia|renal,urology|BPH causes renal damage through|Parenchymal pressure atrophy|Direct tumor invasion|Back-pressure hydronephrosis from chronic obstruction.

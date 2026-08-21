@@ -4,12 +4,11 @@ B|Leg weakness localization|neuro,anatomy,stroke|Numbness of one leg after a str
 B|Tongue deviation localization|neuro,anatomy,stroke|The tongue deviates towards the side of|The hypoglossal lesion|The intact hypoglossal nerve|Medial medullary syndrome.
 B|Uvula deviation direction|neuro,anatomy,exam|With a vagus nerve lesion the uvula deviates|Away from the affected side|Towards the affected side|The opposite of the tongue.
 B|Substantia nigra location|neuro,anatomy,movement|The substantia nigra pars compacta sits in the|Midbrain|Medulla|Bilaterally, degenerating in Parkinson disease.
-B|Locked-in artery|neuro,anatomy,stroke|Locked-in syndrome follows occlusion of the|The basilar artery|Posterior cerebral|Only eye movement is spared.
-B|Internal capsule stroke site|neuro,anatomy,stroke|A pure motor hemiparesis localizes to the|Posterior limb of the internal capsule|Anterior limb of the internal capsule|Where corticospinal fibers run.
+B|Locked-in artery|neuro,anatomy,stroke|Locked-in syndrome follows occlusion of the|Basilar artery|Posterior cerebral|Only eye movement is spared.
 G|Colloid cyst site|neuro,anatomy,imaging|A colloid cyst blocks the foramen of ___, causing hydrocephalus|Monro|monro|At the roof of the third ventricle.
 B|Diffuse axonal injury cause|neuro,emergency,imaging|Diffuse axonal injury results from|Shearing forces in rapid deceleration|A direct penetrating skull injury|Cognitive impairment long afterwards.
 B|Node of Ranvier channels|neuro,physiology,cell biology|The node of Ranvier is dense in|Sodium channels|Potassium channels|Which is what makes saltatory conduction work.
 B|Quadrantanopia localization|neuro,eye,anatomy|An inferior quadrantanopia localizes to the contralateral|Parietal lobe|Temporal lobe|The temporal lobe gives a superior defect.
-B|Wilson disease in young parkinsonism|neuro,liver,genetics|Parkinsonism in a young patient suggests|Wilson disease|Idiopathic Parkinson|Copper deposits in the putamen.
+B|Wilson disease in young parkinsonism|neuro,liver,genetics|Parkinsonism in a young patient suggests|Wilson disease|Idiopathic parkinsonism|Copper deposits in the putamen.
 G|Basal ganglia labeling|neuro,anatomy|On MRI the caudate, ___ and globus pallidus form the basal ganglia|putamen|putamen|Ordered medial to lateral.
 B|PCOM aneurysm association|neuro,vascular,renal|Berry aneurysms are more common in|Polycystic kidney disease|Diabetes mellitus|At the anterior and posterior communicating arteries.

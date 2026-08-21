@@ -28,7 +28,6 @@ B|Drug-induced hyperprolactinemia|repro,pharm,psych|Hyperprolactinemia is caused
 G|Oxytocin storage|repro,ob,endocrine|Oxytocin is made in the hypothalamus and stored in the ___ pituitary|posterior|posterior|Alongside ADH.
 B|Ferguson reflex|repro,ob|Cervical distension by the fetus causes|More oxytocin, and more contraction|Less oxytocin, and slower labour|A positive feedback loop in labour.
 B|Oxytocin overdose|repro,ob,pharm|Too much oxytocin in labour risks|Tachysystole and uterine rupture|Arrest of labour and atony|Titrate it against contraction pattern.
-G|Inhibin action|repro,endocrine|Inhibin selectively suppresses ___ from the anterior pituitary|FSH|fsh|Made by granulosa and Sertoli cells.
 B|Quad screen inhibin|repro,ob,lab|The quad screen measures|Inhibin A, not inhibin B|Inhibin B, not inhibin A|A is the better predictor of aneuploidy.
 G|Strongest androgen|repro,endocrine|Testosterone is converted by 5-alpha-reductase into ___|DHT|dht,dihydrotestosterone|The most potent androgen at tissue.
 B|Finasteride target|repro,pharm,urology|Finasteride blocks|5-alpha-reductase|Aromatase|Lowering DHT, not testosterone.

@@ -17,7 +17,7 @@ B|Placenta accreta|repro,OB|The main risk factor for placenta accreta is|A prior
 B|Placenta percreta|repro,OB|Placenta percreta invades|Through the myometrium into adjacent organs|Only the superficial myometrial layer|Accreta attaches, increta invades, percreta penetrates.
 B|Placenta previa|repro,OB|Placenta previa presents with|Painless bright red bleeding|Painful bleeding with a rigid uterus|Abruption is painful; never do a digital exam in previa.
 B|Placental abruption|repro,OB,emergency|Placental abruption presents with|Painful bleeding and a tense uterus|Painless bright red bleeding|Risk factors: hypertension, trauma, cocaine, smoking.
-B|Subgaleal hemorrhage|repro,OB,peds|Subgaleal hemorrhage collects between the|Periosteum and galea aponeurotica|The skull and the dura mater|Crosses suture lines; can cause hypovolemic shock after vacuum delivery.
+B|Subgaleal hemorrhage|repro,OB,peds|Subgaleal hemorrhage collects between the|Periosteum and galea aponeurotica|Skull and the dura mater|Crosses suture lines; can cause hypovolemic shock after vacuum delivery.
 B|Cephalohematoma|repro,peds|A cephalohematoma|Does not cross suture lines|Crosses suture lines|Subperiosteal; caput succedaneum crosses sutures.
 B|Stress urinary incontinence|repro,gyn,urology|Stress incontinence is leakage with|Increased intra-abdominal pressure|A sudden overwhelming urgency|Pelvic floor weakness; treat with Kegel exercises first.
 B|Urge incontinence|repro,gyn,pharm|Urge incontinence is caused by|Detrusor overactivity|Sphincter weakness|Treat with antimuscarinics or mirabegron.

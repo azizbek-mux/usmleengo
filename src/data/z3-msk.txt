@@ -13,7 +13,7 @@ B|Deep peroneal nerve loss|msk,neuro,anatomy|Deep peroneal nerve injury loses|Do
 G|Deep peroneal gait|msk,neuro|Losing dorsiflexion produces a high-___ gait|steppage|steppage|The foot must be lifted clear of the ground.
 B|Superficial peroneal nerve|msk,neuro,anatomy|The superficial peroneal nerve performs|Eversion of the foot|Plantarflexion of the foot|Deep does dorsiflexion instead.
 B|Tibial nerve loss|msk,neuro,anatomy|Tibial nerve injury means the patient cannot|Stand on tiptoes|Lift the forefoot|Plantarflexion is lost.
-B|Meralgia paresthetica nerve|msk,neuro,anatomy|Meralgia paresthetica is entrapment of the|Lateral femoral cutaneous nerve|The common peroneal nerve|Giving lateral thigh paresthesia.
+B|Meralgia paresthetica nerve|msk,neuro,anatomy|Meralgia paresthetica is entrapment of the|Lateral femoral cutaneous nerve|Common peroneal nerve at the knee|Giving lateral thigh paresthesia.
 
 # ── Radiculopathy ────────────────────────────────────────────────────────
 B|L4 radiculopathy reflex|msk,neuro|An L4 radiculopathy abolishes the|Knee reflex|Ankle reflex|With weak knee extension.
@@ -31,7 +31,6 @@ B|Atlantoaxial subluxation risk|msk,rheum,surgery|Atlantoaxial subluxation is a 
 B|Spondylolisthesis sign|msk,ortho|A palpable step-off between vertebrae indicates|Spondylolisthesis|Spinal stenosis|One vertebra slips forward on another.
 
 # ── Arthritis ────────────────────────────────────────────────────────────
-B|Reactive arthritis triad|msk,rheum,micro|Reactive arthritis is urethritis, arthritis and|Conjunctivitis|Dermatitis|Cannot see, cannot pee, cannot climb a tree.
 B|Reactive arthritis organism|msk,rheum,micro|Reactive arthritis classically follows|Chlamydia infection|Gonococcal infection|Gonococcus causes septic, not reactive, arthritis.
 B|Toxic synovitis history|msk,peds|Transient synovitis of the hip follows|A recent viral illness|A fall onto the hip|In an otherwise well child.
 B|Toxic synovitis diagnosis|msk,peds,micro|Transient synovitis is diagnosed by|Excluding septic arthritis|A positive joint culture|Markers stay low and the child is well.

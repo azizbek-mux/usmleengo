@@ -87,7 +87,6 @@ B|Daptomycin|pharm,micro,resp|Daptomycin cannot be used for pneumonia because|Su
 # ── Anticoagulants ───────────────────────────────────────────────────────
 G|Heparin|pharm,coagulation|Heparin works by activating ___ III|antithrombin|antithrombin,at|Which then inactivates thrombin and factor Xa.
 G|Warfarin|pharm,coagulation|Warfarin inhibits vitamin K epoxide ___|reductase|reductase|Blocking factors II, VII, IX, X, and proteins C and S.
-B|Warfarin monitoring|pharm,coagulation,lab|Warfarin is monitored with the|Prothrombin time|Partial thromboplastin time|PT/INR follows the extrinsic pathway and factor VII.
 G|Direct oral anticoagulants|pharm,coagulation|Rivaroxaban and apixaban directly inhibit factor ___|Xa|xa,10a,x|Dabigatran inhibits thrombin directly instead.
 B|Dabigatran reversal|pharm,coagulation,toxicology|Dabigatran is reversed with|Idarucizumab|Andexanet alfa|Andexanet reverses the factor Xa inhibitors.
 BT|Heparin versus warfarin in pregnancy|pharm,OB,coagulation|Which is safe in pregnancy?|Heparin|Warfarin|Heparin is too large to cross the placenta; warfarin is teratogenic.

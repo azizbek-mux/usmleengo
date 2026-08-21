@@ -27,7 +27,7 @@ B|Sale of organs|ethics,surgery|Buying or selling organs is|Illegal, from living
 B|Sale of gametes|ethics,repro|Selling unfertilized eggs or sperm is|Legal, as donor compensation|Illegal, like organ sale|Selling embryos is not.
 
 # ── Safety and systems ───────────────────────────────────────────────────
-B|Surgical site marking|ethics,surgery,clinical|The surgical site is marked by|The person performing the surgery|The patient before entering theatre|The operator marks their own site.
+B|Surgical site marking|ethics,surgery,clinical|The surgical site is marked by|The person performing the surgery|The patient before entering the room|The operator marks their own site.
 B|Pharmacist on rounds|ethics,clinical,pharm|Having a pharmacist attend ward rounds|Reduces prescribing errors|Slows the round without benefit|An evidence-based safety measure.
 B|ICU nurse ratio|ethics,critical care,clinical|Outcomes improve when an ICU nurse cares for no more than|Two patients|Five patients|Alongside a dedicated intensivist.
 B|Inherited patient on haloperidol|ethics,psych,pharm|Taking over a patient on haloperidol from another doctor, first|Assess, then contact the previous physician|Stop the drug at once, without asking|It can cause extrapyramidal effects.

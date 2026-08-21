@@ -24,7 +24,7 @@ B|Neonatal respiratory distress|resp,peds,OB|Antenatal betamethasone improves fe
 G|Surfactant|resp,peds,physiology|Surfactant lowers alveolar surface ___|tension|tension|Preventing collapse. Lecithin-sphingomyelin ratio above 2 indicates maturity.
 B|Inhaled corticosteroids|resp,pharm,asthma|Inhaled corticosteroids in asthma are|Controllers, not rescuers|Rescue medication|Reduce inflammation over weeks; albuterol rescues.
 B|Corticosteroids|resp,pharm|Besides anti-inflammatory action, corticosteroids|Increase beta-2 receptor responsiveness|Cause direct bronchial smooth muscle relaxation|Which is why they are combined with beta agonists.
-B|Pertussis|resp,micro|Bordetella pertussis is a|Gram-negative coccobacillus|A gram-positive spore-forming rod|Consider it in prolonged cough in an unboosted adult.
+B|Pertussis|resp,micro|Bordetella pertussis is a|Gram-negative coccobacillus|Gram-positive spore-forming rod|Consider it in prolonged cough in an unboosted adult.
 B|Small cell lung cancer|resp,oncology,endocrine|Small cell lung cancer classically causes which paraneoplastic syndrome?|SIADH|Hypercalcemia|Also Lambert-Eaton and ectopic ACTH. Squamous cell causes hypercalcemia.
 B|Squamous cell lung cancer|resp,oncology,endocrine|Squamous cell lung cancer causes hypercalcemia via|PTH-related peptide|Bone metastasis alone|Central cavitating tumor in smokers.
 B|Croup|resp,virus,peds|Croup is caused by|Parainfluenza virus|Respiratory syncytial virus|Barking cough and steeple sign.

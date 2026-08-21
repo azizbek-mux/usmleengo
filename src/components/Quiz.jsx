@@ -77,7 +77,9 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
         <div className="combo">{combo >= 2 ? `🔥${combo}` : ""}</div>
       </div>
 
-      <div className="q-topic">{label && label !== q.topic ? `${q.topic}` : q.topic}</div>
+      {/* Suppressed where the topic would hand over the answer — see
+          topicLeaks() in tools/compile.mjs. */}
+      {q.hideTopic ? <div className="q-topic-gap" /> : <div className="q-topic">{q.topic}</div>}
 
       <div className="q-text">
         {q.type === "gap" ? <GapText text={q.q} /> : q.q}

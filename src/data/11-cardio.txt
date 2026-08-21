@@ -57,7 +57,7 @@ B|Nutcracker syndrome|cardio,vascular,repro|Compression of the left renal vein c
 G|Nutcracker syndrome|cardio,vascular|The left renal vein is compressed between the aorta and the ___ artery|superior mesenteric|superior mesenteric,sma|The nutcracker effect.
 B|Statin monitoring|cardio,pharm,lipids|Before starting a statin you should check|Liver transaminases|Serum amylase|Baseline transaminases; check CK if myopathy develops.
 B|Statin mechanism|cardio,pharm,lipids|Statins lower LDL by increasing hepatocyte|LDL receptor density|VLDL secretion|Less intracellular cholesterol upregulates LDL receptors.
-B|Atrial fibrillation rate|cardio,arrhythmia,physiology|Ventricular rate in atrial fibrillation is set by the|AV node refractory period|The sinus node discharge rate|The AV node filters chaotic atrial impulses.
+B|Atrial fibrillation rate|cardio,arrhythmia,physiology|Ventricular rate in atrial fibrillation is set by the|AV node refractory period|Sinus node discharge rate|The AV node filters chaotic atrial impulses.
 B|Aortic stenosis and atrial fibrillation|cardio,valve,arrhythmia|Losing atrial contraction in severe aortic stenosis causes|A sudden fall in preload|A rise in afterload|The atrial kick is critical to filling a stiff ventricle.
 B|Rheumatic fever|cardio,micro,valve|The most serious long-term sequela of rheumatic fever is|Valvular heart disease|Glomerulonephritis|Chronic rheumatic heart disease, especially mitral stenosis.
 G|Sydenham chorea|cardio,neuro,micro|In rheumatic fever, antibodies cross-react with the basal ___|ganglia|ganglia,ganglion|Molecular mimicry causing Sydenham chorea.
@@ -83,4 +83,4 @@ B|Beta blockers and renin|cardio,pharm,renal|Beta blockers lower blood pressure 
 B|Beta blockers in heart failure|cardio,pharm,heart failure|Carvedilol improves survival in heart failure by|Blocking sympathetic neurohormonal drive|Increasing myocardial contractility|Only carvedilol, metoprolol succinate and bisoprolol are proven.
 B|Cardiogenic pulmonary edema|cardio,resp,heart failure|Pleural fluid in heart failure is|A transudate with low LDH|An exudate with high LDH|Raised hydrostatic pressure, not inflammation.
 B|Alpha-1 agonists|cardio,pharm,physiology|Phenylephrine causes reflex|Bradycardia|Tachycardia|Vasoconstriction raises blood pressure, triggering baroreceptor slowing.
-B|Coronary dominance|cardio,anatomy|Coronary dominance is defined by which artery gives the|Posterior descending artery|The left circumflex artery|Right dominant in about 85% of people.
+B|Coronary dominance|cardio,anatomy|Coronary dominance is defined by which artery gives the|Posterior descending artery|Left circumflex artery|Right dominant in about 85% of people.
