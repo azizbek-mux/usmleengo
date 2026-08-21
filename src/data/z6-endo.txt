@@ -5,7 +5,7 @@ G|Thyroid origin|endocrine,embryology,ent|The thyroid begins at the foramen ___ 
 B|Thyroglossal duct cyst sign|endocrine,ent,peds|A thyroglossal duct cyst characteristically|Moves up on tongue protrusion|Stays fixed when swallowing|A midline neck lump in a child.
 B|Thyroglossal cyst germ layer|endocrine,embryology|A thyroglossal duct cyst arises from|Endoderm of the foramen cecum|Ectoderm of the branchial cleft|The exam wants that exact phrase.
 B|Lingual thyroid consequence|endocrine,ent|Ectopic lingual thyroid tissue matters because|It may be the only thyroid present|It reliably turns malignant|Removing it causes hypothyroidism.
-G|Thyroid blood supply|endocrine,anatomy,surgery|The parathyroids share their blood supply with the ___ gland|thyroid|thyroid|Which is why thyroidectomy risks hypocalcaemia.
+B|Parathyroid blood supply|endocrine,anatomy,surgery|The parathyroid glands are supplied by|The inferior and superior thyroid arteries|Branches direct from the carotid artery|Which is why thyroidectomy risks hypocalcaemia.
 
 # ── Thyroid physiology ───────────────────────────────────────────────────
 G|Iodide organification|endocrine,biochem|___ mediates the organification of iodide in the thyroid|Thyroperoxidase|thyroperoxidase,tpo|Blocked by the thionamides.
