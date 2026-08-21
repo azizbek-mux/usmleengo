@@ -1,0 +1,33 @@
+# Ethics and communication — from the Mehlman HY Communication/Ethics file.
+# Ethics is heavily tested and was thinly covered in this bank.
+
+# ── Consent and capacity ─────────────────────────────────────────────────
+B|Consent content|ethics,surgery,clinical|Consent must cover why, how, the risks and|The alternative options|The exact cost of care|Plus who is performing the procedure.
+B|Emergency consent|ethics,emergency|For an incapacitated patient needing life-saving care, the physician should|Treat under emergency consent|Telephone the family first|Delay costs the patient.
+B|Leaving a clinical trial|ethics,biostats|A participant may leave a trial|At any time, without giving a reason|Only after the current phase ends|Autonomy is absolute here.
+B|Consent for a minor in research|ethics,peds,biostats|Enrolling a minor in research requires consent from|Both parents where possible|One parent, always sufficient|One suffices if the other is unavailable.
+B|Prisoners in research|ethics,biostats|Prisoners may take part in research|On the same terms as anyone else|Never, under any circumstances|But coercion must be actively excluded.
+
+# ── Refusal of treatment ─────────────────────────────────────────────────
+B|Jehovah's Witness minor emergency|ethics,peds,heme|A child of Jehovah's Witness parents needing an emergency transfusion should|Be transfused despite refusal|Have the refusal respected|Parents cannot refuse life-saving care for a child.
+B|Non-emergency transfusion refusal|ethics,peds,heme|If a transfusion is NOT immediately life-saving, a parent|May refuse it for their child|May not refuse it at all|The urgency changes the answer.
+B|Involuntary admission grounds|ethics,psych,emergency|A patient may be admitted involuntarily when they are|A danger to themselves or others|Refusing recommended treatment|Refusal alone is not grounds.
+B|Competent refusal|ethics,clinical|A competent patient refusing a needed examination should have|Their wishes respected and documented|The examination performed anyway|Autonomy stands even when unwise.
+B|Chaperone for an examination|ethics,gyn,clinical|If a patient declines examination without her husband present, the physician should|Offer to have him stay throughout|Proceed without further discussion|Then respect a continued refusal.
+
+# ── Talking to patients ──────────────────────────────────────────────────
+B|Declining an inappropriate request|ethics,clinical|When a patient asks for a treatment that is not suitable, the physician should|Show empathy and state the position clearly|Agree, in order to preserve the rapport|Empathy without a clear stance is not enough.
+B|Interviewing an adolescent|ethics,peds,psych|To ask a teenager sensitive questions, first|Ask the parent to step out|Ask with the parent present|If refused, offer a staff chaperone.
+B|Parental refusal to leave|ethics,peds|If a parent refuses to leave the room, the physician should|Respect it and document it|Insist that they leave|Autonomy of the family is respected.
+B|Accepting patient gifts|ethics,clinical|Accepting a small gift from a patient is|Generally acceptable|Always prohibited|Refusing may shame the patient.
+
+# ── Organ donation ───────────────────────────────────────────────────────
+B|Transplant team separation|ethics,surgery|The team pronouncing death and the transplant team must be|Separate, to avoid conflict of interest|The same, for continuity of care|An AMA requirement.
+B|Sale of organs|ethics,surgery|Buying or selling organs is|Illegal, from living or dead donors|Legal with proper documentation|Since the National Organ Transplant Act.
+B|Sale of gametes|ethics,repro|Selling unfertilised eggs or sperm is|Legal, as donor compensation|Illegal, like organ sale|Selling embryos is not.
+
+# ── Safety and systems ───────────────────────────────────────────────────
+B|Surgical site marking|ethics,surgery,clinical|The surgical site is marked by|The person performing the surgery|The patient before entering theatre|The operator marks their own site.
+B|Pharmacist on rounds|ethics,clinical,pharm|Having a pharmacist attend ward rounds|Reduces prescribing errors|Slows the round without benefit|An evidence-based safety measure.
+B|ICU nurse ratio|ethics,critical care,clinical|Outcomes improve when an ICU nurse cares for no more than|Two patients|Five patients|Alongside a dedicated intensivist.
+B|Inherited patient on haloperidol|ethics,psych,pharm|Taking over a patient on haloperidol from another doctor, first|Assess, then contact the previous physician|Stop the drug at once, without asking|It can cause extrapyramidal effects.

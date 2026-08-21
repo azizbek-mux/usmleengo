@@ -1,0 +1,40 @@
+# From the official Free 120 practice-exam explanations (2022 and current).
+
+# ── Biostatistics ────────────────────────────────────────────────────────
+G|Confidence interval formula|biostats|A 95% confidence interval is the mean plus or minus ___ standard errors|1.96|1.96,1,96,2|Giving 120.2 to 139.8 for a mean of 130.
+B|Mean in a normal distribution|biostats|For normally distributed data, the best measure of central tendency is|The mean|The mode|Half the values fall on each side.
+B|Sample size and power|biostats,epidemiology|Increasing the sample size|Raises power and lowers type II error|Lowers power and raises type I error|Power is the chance of correctly rejecting the null.
+B|Absolute risk reduction formula|biostats,clinical|Absolute risk reduction is|The difference between the two risks|The ratio between the two risks|Not the relative reduction.
+
+# ── Clinical vignettes ───────────────────────────────────────────────────
+B|Candidal vaginitis smear|gyn,fungi,lab|Vaginal candidiasis on smear shows|Pseudohyphae with normal epithelium|Clue cells studded with bacteria|Clue cells indicate bacterial vaginosis.
+B|Bipolar I defining episode|psych|Bipolar I disorder requires at least one episode of|Mania|Depression|Seven or more days of elevated mood.
+B|Pancreatic insufficiency vitamins|gi,nutrition,vitamins|Exocrine pancreatic insufficiency depletes|The fat-soluble vitamins|The B group vitamins|Because lipase is needed to absorb them.
+B|Breaking bad news|ethics,clinical|When giving unexpected serious news, the physician should|Give a small amount, then pause|Give the full picture at once|People cannot absorb detail while shocked.
+B|Sickle cell gallstones|heme,gi,genetics|Gallstones in sickle cell disease are caused by|Chronic haemolysis|Chronic dehydration|Pigment stones from bilirubin.
+B|Familial hypercholesterolemia signs|cardio,genetics,lipids|Tendinous xanthomas with early family coronary disease indicate|Familial hypercholesterolaemia|Lipoprotein lipase deficiency|Autosomal dominant, affecting both sexes.
+B|Reactive gliosis cell|neuro,path|Repair of injured CNS tissue is carried out by|Astrocytes|Oligodendrocytes|The most abundant glial cell.
+B|Latex contact dermatitis type|derm,immuno|Occupational latex contact dermatitis is hypersensitivity type|IV|I|Delayed, and cell-mediated.
+B|Viral meningitis CSF|neuro,micro,lab|Viral meningitis gives CSF with|Lymphocytosis and normal glucose|Neutrophilia and low glucose|Enteroviruses are the usual cause.
+
+# ── From the current Free 120 ────────────────────────────────────────────
+B|SCFE demographics|msk,peds,ortho|Slipped capital femoral epiphysis occurs in|Obese adolescent males|Toddlers who are underweight|Ages ten to sixteen.
+B|SCFE examination|msk,peds,ortho|SCFE limits hip|Internal rotation and abduction|External rotation on its own|Often presenting as knee pain.
+G|Acanthosis nigricans meaning|derm,endocrine,diabetes|Thickened dark skin at the nape of the neck indicates ___ resistance|insulin|insulin|A marker of metabolic risk.
+B|Keratosis pilaris management|derm|Keratosis pilaris requires|No treatment; it is benign|Long-term topical steroid|Keratolytics only if it distresses the patient.
+B|OSA and polycythaemia|resp,heme|Obstructive sleep apnoea causes secondary polycythaemia through|Hypoxia raising erythropoietin|Direct marrow stimulation|Via hypoxia-inducible factor.
+B|OSA bicarbonate|resp,acid base|Chronic obstructive sleep apnoea raises the|Serum bicarbonate|Serum chloride|Renal compensation for CO2 retention.
+B|Goodpasture immunofluorescence pattern|renal,immuno,resp|Goodpasture syndrome shows immunofluorescence that is|Linear along the capillaries|Granular and lumpy-bumpy|Against type IV collagen.
+B|Horseshoe kidney embryology|renal,embryology|A horseshoe kidney forms by fusion of the|Inferior poles of the metanephros|Superior poles of the mesonephros|Caught under the inferior mesenteric artery.
+B|Horseshoe kidney complication|renal,micro|A horseshoe kidney predisposes to|Urinary tract infection|Renal cell carcinoma|From associated tract anomalies.
+B|Rifampin and warfarin|pharm,liver,coagulation|Rifampin makes warfarin|Less effective, needing a higher dose|More effective, needing a lower dose|It induces cytochrome P450.
+B|Acute HIV presentation|micro,hiv,immuno|Primary HIV infection presents as|A mononucleosis-like illness|An isolated painless ulcer|Fever, pharyngitis and lymphadenopathy.
+B|AV nicking mechanism|eye,cardio,vascular|Arteriovenous nicking occurs when|An artery compresses a vein at a crossing|A vein compresses an artery there|A sign of chronic hypertension.
+B|Left MCA stroke deficits|neuro,stroke|A left middle cerebral artery stroke causes|Right weakness with Broca aphasia|Left weakness with neglect|Broca area sits in the inferior frontal gyrus.
+B|Reflux and overeating|gi,clinical|Large meals worsen reflux by|Raising intragastric pressure|Slowing gastric emptying|Forcing the lower sphincter open.
+B|Alcohol and the lower sphincter|gi,pharm|Alcohol worsens reflux by|Relaxing the lower oesophageal sphincter|Increasing acid production directly|On top of the medication interaction.
+B|Methylmalonic acid enzyme|heme,vitamins,biochem|Methylmalonyl CoA mutase requires|Vitamin B12|Vitamin B9|Which is why B12 deficiency raises the acid.
+B|Colon cancer metastasis route|gi,oncology,anatomy|Right-sided colon cancer reaches the lungs by way of the|Portal vein, then liver, then vena cava|Thoracic duct, then subclavian vein|Liver metastases come first.
+B|Diabetes insipidus subtype test|endocrine,renal|Desmopressin raises urine osmolality in|Central diabetes insipidus|Nephrogenic diabetes insipidus|The nephrogenic kidney cannot respond.
+B|HCM sarcomere change|cardio,genetics|Hypertrophic cardiomyopathy results from|Excess contractile filament synthesis|Loss of contractile filaments|Thickening the left ventricle.
+B|Vitamin A deficiency skin|nutrition,vitamins,derm|Vitamin A deficiency causes|Dry, scaly skin, or xerosis|A greasy seborrhoeic rash|Alongside night blindness.
