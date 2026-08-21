@@ -1,0 +1,31 @@
+# Cardiology — from the Mehlman Cardio notes.
+
+# ── Heart failure ────────────────────────────────────────────────────────
+B|Left heart failure findings|cardio,resp|Left heart failure presents with|Orthopnoea and nocturnal dyspnoea|Raised JVP and ankle oedema|Pressure backs up into the lungs.
+B|Right heart failure findings|cardio|Right heart failure presents with|Raised JVP and peripheral oedema|Orthopnoea and pulmonary crackles|Pressure backs up into the body.
+B|Commonest cause of right heart failure|cardio|The commonest cause of right heart failure is|Left heart failure|Chronic lung disease|Which together make congestive failure.
+B|Wedge pressure equivalence|cardio,critical care|Pulmonary capillary wedge pressure is equal to|Left atrial pressure|Right atrial pressure|A measure of left-sided filling.
+B|Cor pulmonale definition|cardio,resp|Cor pulmonale is right heart failure caused by|A pulmonary disease|A left heart problem|The left heart is entirely normal.
+B|Cor pulmonale silhouette|cardio,resp,imaging|COPD gives a cardiac silhouette that is|Long and narrow|Broad and boot-shaped|Hyperinflated lungs push the heart medially.
+
+# ── Murmurs ──────────────────────────────────────────────────────────────
+B|Aortic stenosis radiation|cardio,exam|The murmur of aortic stenosis radiates to the|Carotids|Axilla|Radiation to the axilla suggests mitral regurgitation.
+G|Aortic stenosis pulse|cardio,exam|Aortic stenosis gives a slow-rising pulse, pulsus parvus et ___|tardus|tardus|The opposite of a collapsing pulse.
+B|Aortic regurgitation timing|cardio,exam|Aortic regurgitation gives a murmur that is|Early diastolic and decrescendo|Mid-systolic and crescendo|With a wide pulse pressure.
+B|Mitral valve prolapse sound|cardio,exam|Mitral valve prolapse produces|A mid-systolic click|An opening snap|Often entirely asymptomatic.
+G|Mitral prolapse pathology|cardio,path,genetics|Mitral valve prolapse follows ___ degeneration of the valve|myxomatous|myxomatous|Seen in Marfan and Ehlers-Danlos.
+B|Right-sided murmur manoeuvre|cardio,exam,physiology|Right-sided murmurs get louder on|Inspiration|Expiration|Venous return to the right heart rises.
+B|Tricuspid regurgitation sign|cardio,exam,liver|Tricuspid regurgitation can cause|A pulsatile liver|A palpable spleen tip|From regurgitant flow into the veins.
+B|Functional murmur nature|cardio,peds,exam|A functional flow murmur|Disappears as the heart rate falls|Persists whatever the heart rate|Seen with fever, anaemia or pregnancy.
+
+# ── Congenital ───────────────────────────────────────────────────────────
+B|Tetralogy prognosis determinant|cardio,peds|Prognosis in tetralogy of Fallot is set by|The degree of pulmonic stenosis|The size of the ventricular defect|It determines how much blood reaches the lung.
+B|Tetralogy cyanosis timing|cardio,peds|A child with tetralogy of Fallot is|Not cyanotic at birth|Deeply cyanotic at birth|Cyanosis follows as the shunt reverses.
+B|ASD and patent foramen ovale|cardio,peds|On exams, a patent foramen ovale is treated as|An atrial septal defect|A patent ductus arteriosus|Not to be confused with the ductus.
+B|Persistent fetal circulation|cardio,peds,resp|Persistent fetal circulation is caused by|Failure of pulmonary vasodilation|Failure of the ductus to open|Often after meconium aspiration.
+
+# ── Heart sounds ─────────────────────────────────────────────────────────
+B|S3 mechanism|cardio,exam|An S3 is caused by|High ventricular volume and preload|A stiff, poorly compliant ventricle|A stiff ventricle gives an S4.
+B|S3 physiological setting|cardio,exam,ob|An S3 can be entirely normal in|Pregnancy and endurance athletes|Elderly hypertensive patients|Both have high circulating volume.
+B|Loud P2 meaning|cardio,resp,exam|A loud P2 indicates|Pulmonary hypertension|Systemic hypertension|The pulmonic valve shuts against high pressure.
+B|Wide splitting of S2|cardio,exam|Wide splitting of the second sound indicates|Right ventricular hypertrophy|Left ventricular hypertrophy|Alongside right bundle branch block.

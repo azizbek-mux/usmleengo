@@ -1,0 +1,36 @@
+# Renal — from the Mehlman HY Renal notes.
+
+# ── Renal failure biochemistry ───────────────────────────────────────────
+G|Azotemia meaning|renal,lab|A high blood urea nitrogen is called ___|azotemia|azotemia,azotaemia|Uraemia adds the symptoms.
+B|Potassium in renal failure|renal,electrolytes|Potassium in renal failure is|Always raised|Variable, either way|Secretion at the collecting duct fails.
+B|Sodium in renal failure|renal,electrolytes|Sodium in renal failure is|Variable, not predictable|Always markedly low|Unlike potassium and phosphate.
+B|Phosphate in renal failure|renal,electrolytes,calcium|Phosphate in renal failure is|Always raised|Always reduced|It cannot be filtered out.
+B|CKD and parathyroid|renal,calcium,endocrine|Low calcium with high phosphate in CKD causes|Secondary hyperparathyroidism|Primary hyperparathyroidism|The gland responds to the calcium.
+B|Bicarbonate in renal failure|renal,acid base|Bicarbonate in renal failure is|Always reduced|Always elevated|Uraemia is the U in MUDPILES.
+
+# ── Renal haemodynamics ──────────────────────────────────────────────────
+B|Afferent arteriole patency|renal,pharm,physiology|The afferent arteriole is kept open by|Vasodilating prostaglandins|Circulating angiotensin II|Which is why NSAIDs are dangerous here.
+B|NSAID mechanism at kidney|renal,pharm|NSAIDs reduce renal blood flow by|Removing prostaglandin dilation|Actively constricting the vessel|The wording matters on exams.
+B|ACE inhibitor at efferent|renal,pharm,cardio|ACE inhibitors act on the efferent arteriole by|Reducing its constriction|Actively dilating it open|Angiotensin II normally constricts it.
+
+# ── Acute kidney injury ──────────────────────────────────────────────────
+B|Prerenal BUN to creatinine|renal,lab|Prerenal failure gives a BUN to creatinine ratio|Above 20|Below 20|Urea is avidly reabsorbed.
+B|Intrarenal BUN to creatinine|renal,lab|Acute tubular necrosis gives a BUN to creatinine ratio|Below 20|Above 20|The damaged tubule cannot reabsorb.
+B|Postrenal commonest cause|renal,urology|Postrenal failure in an older man is usually|Benign prostatic hyperplasia|Bilateral renal artery stenosis|High creatinine plus an old man.
+G|Postrenal mechanism|renal,physiology|Obstruction raises ___ capsule hydrostatic pressure, opposing filtration|Bowman|bowman,bowman's|The exam wants that exact phrase.
+B|ATN cell type|renal,path|Acute tubular necrosis sloughs cells from the|Proximal convoluted tubule|Distal convoluted tubule|Most ATPase transporters sit there.
+B|ATN casts|renal,lab|Acute tubular necrosis classically shows|Muddy brown granular casts|Red cell casts in the urine|Present in only about half of cases.
+B|ATN drug causes|renal,pharm,toxicology|Acute tubular necrosis is caused by|Aminoglycosides, cisplatin, contrast|Penicillins and cephalosporins|Any of these plus a rising creatinine.
+B|Rhabdomyolysis dipstick|renal,lab,msk|Rhabdomyolysis gives a urine dipstick that is|Positive for blood, with few red cells|Negative for blood, with many cells|Myoglobin cross-reacts with the pad.
+B|Rhabdomyolysis triggers|renal,msk,pharm|Rhabdomyolysis follows|A long fall, marathon or statin|A short viral illness at home|Also McArdle disease and alcohol.
+B|Tumour lysis prevention drug|renal,oncology,pharm|Renal failure in tumour lysis is prevented with|Allopurinol|Furosemide|A xanthine oxidase inhibitor.
+
+# ── Glomerular disease ───────────────────────────────────────────────────
+B|Nephritic versus nephrotic|renal,path|The feature separating nephritic from nephrotic disease is|Blood in the urine|Protein in the urine|Nephritic disease also has some protein.
+B|IgA nephropathy timing|renal,immuno,micro|IgA nephropathy causes red urine|One to three days after a sore throat|One to three weeks after the sore throat|Post-streptococcal disease takes weeks.
+B|IgA nephropathy trigger|renal,immuno,micro|IgA nephropathy is triggered by|A viral infection|Group A streptococcus|Unlike post-streptococcal nephritis.
+B|Goodpasture antigen|renal,immuno,resp|Goodpasture antibodies target|Collagen type IV|Collagen type I|In the glomerular basement membrane.
+B|Goodpasture immunofluorescence|renal,immuno,path|Goodpasture disease shows immunofluorescence that is|Linear|Granular|Along the basement membrane.
+B|Lupus nephritis pattern|renal,immuno,rheum|Red urine in lupus suggests|Diffuse proliferative glomerulonephritis|Minimal change nephrotic disease|With wire-loop capillary walls.
+B|RPGN biopsy|renal,path,immuno|Rapidly progressive glomerulonephritis shows|Fibrin crescents|Tram-track membranes|Across most glomeruli.
+B|FSGS associations|renal,path,heme|Focal segmental glomerulosclerosis is associated with|Sickle cell, HIV and heroin|Hepatitis B and malaria|Less steroid-responsive than minimal change.

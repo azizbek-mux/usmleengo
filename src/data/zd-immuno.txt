@@ -1,0 +1,21 @@
+# Immunology — from the Mehlman HY Immuno notes.
+
+# ── Antibody classes ─────────────────────────────────────────────────────
+B|IgM response timing|immuno,antibody,lab|IgM indicates|Acute, first-time infection|Chronic or repeat infection|The first antibody to appear.
+B|IgM avidity|immuno,antibody|IgM has the greatest avidity because it is|Pentameric, with ten binding sites|Dimeric, joined by a J chain|IgA is the dimer.
+B|Hyper-IgM defect|immuno,genetics,antibody|Hyper-IgM syndrome is deficiency of|CD40 ligand on T cells|CD40 itself on B cells|Class switching cannot occur.
+B|IgG affinity|immuno,antibody|IgG is the antibody of|Secondary and chronic responses|The very first exposure|With the highest affinity.
+B|IgG and the placenta|immuno,antibody,ob|The antibody crossing the placenta is|IgG|IgM|Which is why Rh disease harms the fetus.
+B|IgA location|immuno,antibody,gi|IgA is the dominant antibody in|Mucosal secretions|The bloodstream|Gut, respiratory tract and breast milk.
+G|IgA structure|immuno,antibody|Secreted IgA is a dimer joined by a ___ chain|J|j|A pedantic but high-yield detail.
+G|Gut lymphoid tissue|immuno,gi,anatomy|Aggregates of gut lymphoid tissue are called ___ patches|Peyer|peyer,peyer's|Where IgA responses are generated.
+
+# ── Cytokines ────────────────────────────────────────────────────────────
+B|Septic shock hypotension cytokine|immuno,micro,critical care|The cytokine most responsible for hypotension in sepsis is|TNF-alpha|Interleukin-2|It raises vascular permeability.
+G|Cachexia cytokine|immuno,oncology|TNF-alpha is also known as ___ factor, driving weight loss in cancer|cachexia|cachexia,cachectin|A high-yield association.
+B|Fever cytokines|immuno,micro|Fever in sepsis is driven by|TNF-alpha and interleukin-1|Interleukin-4 and interleukin-10|The latter pair are anti-inflammatory.
+B|NSAID antipyretic target|immuno,pharm|An NSAID lowers fever by reducing|Prostaglandin|Interleukin-1|The prostaglandin is the final mediator.
+G|Osteoclast-activating factor|immuno,bone,oncology|Interleukin-1 is also called ___-activating factor|osteoclast|osteoclast|Contributing to myeloma bone lesions.
+B|Interleukin-2 role|immuno|Interleukin-2 principally|Stimulates T cell proliferation|Drives antibody class switching|The broad T cell growth signal.
+B|Calcineurin inhibitor effect|immuno,pharm|Ciclosporin and tacrolimus work by|Reducing interleukin-2 transcription|Blocking the interleukin-2 receptor|Sirolimus blunts the response instead.
+B|Th2 cytokines|immuno|Interleukins 4 and 10 push T cells towards|Th2, suppressing Th1|Th1, suppressing Th2|The humoral arm.

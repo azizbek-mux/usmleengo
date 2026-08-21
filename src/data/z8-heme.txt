@@ -1,0 +1,32 @@
+# Haematology / oncology — from the Mehlman HY Heme_Onc notes.
+
+# ── Microcytic anaemia ───────────────────────────────────────────────────
+B|RDW in iron deficiency|heme,lab|A raised red cell distribution width points to|Iron deficiency|Thalassemia trait|Thalassemia keeps the RDW normal.
+B|Target cells meaning|heme,lab,genetics|Target cells on the film point strongly to|Thalassemia|Iron deficiency|Iron deficiency gives pale cells instead.
+B|Thalassemia defect|heme,genetics|Thalassemia is abnormal synthesis of|A globin chain|The haem group|Alpha or beta, depending on type.
+
+# ── Myeloproliferative disease ───────────────────────────────────────────
+B|Polycythemia vera mutation|heme,genetics,oncology|Polycythemia vera is driven by a mutation in|JAK2|BCR-ABL|Proliferation of haematopoietic stem cells.
+B|Polycythemia vera cell lines|heme,oncology,lab|Polycythemia vera characteristically raises|At least two cell lines|The red cells only|Red cells always, plus white cells or platelets.
+B|Myelofibrosis film|heme,oncology,lab|Myelofibrosis shows on the blood film|Tear-drop shaped red cells|Spherocytes and polychromasia|With a dry tap on aspiration.
+B|Myelofibrosis spleen|heme,oncology|Myelofibrosis features|Massive splenomegaly|A normal-sized spleen|From extramedullary haematopoiesis.
+B|Essential thrombocythemia symptoms|heme,oncology|Essential thrombocythemia causes|Fingertip pain and headache|Recurrent deep infections|Hyperviscosity symptoms.
+B|Waldenstrom paraprotein|heme,oncology,lab|Waldenstrom macroglobulinaemia produces an|IgM paraprotein|IgG paraprotein|Myeloma produces IgG instead.
+B|Waldenstrom cell|heme,oncology,path|Waldenstrom is a cancer of|Plasmacytoid lymphoid cells|True mature plasma cells|Cells that resemble plasma cells.
+
+# ── Coagulation ──────────────────────────────────────────────────────────
+B|Haemophilia clotting profile|heme,coagulation,genetics|Haemophilia gives an isolated rise in|The aPTT|The PT|Factors VIII and IX are intrinsic.
+B|Vitamin K profile|heme,coagulation,vitamins|Vitamin K deficiency raises|Both PT and aPTT|The bleeding time only|Platelets are unaffected.
+G|Vitamin K enzyme|heme,coagulation,biochem|Vitamin K is a cofactor for gamma-glutamyl ___|carboxylase|carboxylase|Activating factors II, VII, IX and X.
+B|DIC laboratory picture|heme,coagulation,emergency|Disseminated intravascular coagulation raises|Bleeding time, PT, aPTT and D-dimer|The aPTT alone, with normal PT|Everything is consumed at once.
+B|HUS triad|heme,renal,micro|Haemolytic uraemic syndrome is thrombocytopenia, renal failure and|Haemolysis with schistocytes|Haemolysis with spherocytes|A microangiopathic picture.
+B|TTP versus HUS|heme,neuro,renal|TTP differs from HUS by adding|Fever and neurological signs|Diarrhoea and abdominal pain|A pentad rather than a triad.
+B|Factor V Leiden mechanism|heme,coagulation,genetics|Factor V Leiden causes clotting because factor V is|Resistant to protein C|Produced in excess amounts|Activated protein C resistance.
+B|Antithrombin III role|heme,coagulation,pharm|Antithrombin III normally inactivates|Thrombin and factors Xa and IXa|Factors V and VIII directly|Protein C handles V and VIII.
+B|Antithrombin deficiency clue|heme,coagulation,pharm|Antithrombin III deficiency is suggested when heparin|Fails to prolong the aPTT|Prolongs the aPTT excessively|Heparin needs antithrombin to work.
+B|Hageman factor deficiency|heme,coagulation,lab|Factor XII deficiency presents as|A long aPTT with no bleeding|Severe spontaneous bleeding|Clinically silent, despite the number.
+B|PNH mechanism|heme,immuno,genetics|Paroxysmal nocturnal haemoglobinuria is|Complement lysis, lacking CD55 and CD59|Antibody-mediated red cell lysis|The GPI anchor is missing.
+B|PNH presentation|heme,renal|Paroxysmal nocturnal haemoglobinuria classically presents with|Dark urine in the morning|Dark urine after exercise|Complement is more active overnight.
+
+# ── Oncological emergency ────────────────────────────────────────────────
+B|Neutropenic fever action|heme,oncology,emergency|Fever in a neutropenic patient requires|Antibiotics before any workup|Cultures, then await results|Delay is what kills.

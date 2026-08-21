@@ -1,0 +1,32 @@
+# Neurology — from the Mehlman HY Neuro notes.
+
+# ── Stroke territories ───────────────────────────────────────────────────
+B|MCA stroke distribution|neuro,stroke,anatomy|A middle cerebral artery stroke affects the|Contralateral arm and face|Contralateral leg alone|The leg belongs to the anterior artery.
+B|Non-dominant MCA sign|neuro,stroke|A non-dominant MCA stroke causes|Hemispatial neglect|Broca aphasia|Tested by asking for a clock face.
+G|Lacunar vessel|neuro,stroke,vascular|Lacunar infarcts affect the small ___ arteries|lenticulostriate|lenticulostriate|Damaged by hypertensive lipohyalinosis.
+G|Microaneurysm name|neuro,stroke,vascular|Tiny ___-Bouchard aneurysms of lenticulostriate vessels bleed in hypertension|Charcot|charcot|Under one millimetre across.
+B|Subclavian steal mechanism|neuro,vascular|Subclavian steal reverses flow in the|Vertebral artery|Internal carotid artery|Blood is drawn back down to the arm.
+B|Subclavian steal sign|neuro,vascular,exam|Subclavian steal is distinguished by|Different pressures in each arm|Identical pressures in both arms|Vertebral stenosis has equal pressures.
+B|Vertebral artery dissection history|neuro,vascular|Vertebral artery dissection classically follows|Neck manipulation at a chiropractor|A prolonged episode of coughing|Creating a false lumen.
+B|Vertebral dissection treatment|neuro,vascular,pharm|Posterior stroke from vertebral dissection is treated with|Heparin|Thrombolysis|To prevent further embolism.
+
+# ── Aphasia ──────────────────────────────────────────────────────────────
+B|Wernicke aphasia speech|neuro,stroke|Wernicke aphasia gives speech that is|Fluent but meaningless|Halting and telegraphic|Comprehension is also lost.
+B|Broca aphasia speech|neuro,stroke|Broca aphasia gives speech that is|Non-fluent and telegraphic|Fluent but nonsensical|The patient is frustrated by it.
+B|Conduction aphasia|neuro,stroke|In conduction aphasia the isolated deficit is|Repetition|Comprehension|Fluency and understanding are intact.
+G|Broca lobe|neuro,anatomy,stroke|The Broca area sits in the ___ lobe|frontal|frontal|Supplied by the left middle cerebral artery.
+
+# ── Cord and myelin ──────────────────────────────────────────────────────
+B|Central pontine myelinolysis consequence|neuro,electrolytes|Correcting hyponatraemia too fast causes|Locked-in syndrome|Cerebral oedema and coning|Correcting too slowly causes the oedema.
+B|Tabes dorsalis columns|neuro,micro|Tabes dorsalis destroys the|Dorsal columns|Corticospinal tracts|From tertiary neurosyphilis.
+B|Tabes dorsalis deficit|neuro,micro,exam|Tabes dorsalis causes bilateral loss of|Vibration and proprioception|Pain and temperature|Dorsal column modalities.
+G|Syringomyelia tract|neuro,anatomy|Syringomyelia first damages the anterior white ___, crossing pain fibres|commissure|commissure|Giving a cape distribution.
+
+# ── Brachial plexus ──────────────────────────────────────────────────────
+B|Erb-Duchenne roots|neuro,anatomy,peds|Erb-Duchenne palsy involves roots|C5 and C6|C8 and T1|The upper brachial plexus.
+B|Klumpke roots|neuro,anatomy,peds|Klumpke palsy involves roots|C8 and T1|C5 and C6|The lower brachial plexus.
+B|Erb palsy arm position|neuro,anatomy,peds|In Erb-Duchenne palsy the arm is|Adducted, pronated, wrist flexed|Abducted with the elbow flexed|The waiter's tip posture.
+B|Brachial plexus injury cause|neuro,peds,ob|Neonatal brachial plexus injury follows|Breech or traumatic delivery|Routine caesarean delivery|Or grabbing a branch while falling.
+
+# ── Spine ────────────────────────────────────────────────────────────────
+B|Cervical foraminal stenosis|neuro,msk|Difficulty fastening buttons with hand weakness suggests|Cervical foraminal stenosis|Lumbar spinal canal stenosis|The nerve is trapped at its exit foramen.

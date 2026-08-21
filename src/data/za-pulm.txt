@@ -1,0 +1,35 @@
+# Respiratory — from the Mehlman HY Pulmonary notes.
+
+# ── Alveolar cell biology ────────────────────────────────────────────────
+B|Type I pneumocyte function|resp,path,physiology|Type I pneumocytes are responsible for|Gas exchange across the alveolus|Producing surfactant for the alveolus|They cover about 95 percent of the surface.
+B|Type II pneumocyte role|resp,path|Type II pneumocytes act as|The stem cells of the alveolus|The main gas-exchanging cell|They repopulate damaged type I cells.
+G|Surfactant organelle|resp,peds,path|Surfactant is made in ___ bodies of the type II pneumocyte|lamellar|lamellar|Reduced in neonatal respiratory distress.
+B|Emphysema cell loss|resp,path|Emphysema destroys mostly|Type I pneumocytes and surface area|Type II pneumocytes and surfactant|Reducing the area available for exchange.
+B|Smoking target cell|resp,path|Smoking chiefly damages|Ciliated pseudostratified epithelium|Alveolar type II pneumocytes|The mucociliary escalator fails.
+
+# ── Gas exchange ─────────────────────────────────────────────────────────
+B|Raised A-a gradient meaning|resp,physiology|A widened A-a gradient means|The lung itself is diseased|The patient is under-breathing|A normal gradient with high CO2 is hypoventilation.
+
+# ── Lung cancer ──────────────────────────────────────────────────────────
+B|Small cell location|resp,oncology|Small cell lung cancer arises|Centrally, near the hilum|Peripherally, in the periphery|Smoking is the dominant risk factor.
+B|Small cell paraneoplastic|resp,oncology,endocrine|Small cell lung cancer classically secretes|ADH or ACTH|PTH-related peptide|Also causing Lambert-Eaton syndrome.
+B|Adenocarcinoma population|resp,oncology|Lung adenocarcinoma is the answer for cancer in|A non-smoker|A heavy smoker|Classically a woman who never smoked.
+B|Radon and lung cancer|resp,oncology,clinical|Lung cancer in a non-smoker can be attributed to|Background radon exposure|Passive alcohol exposure|An accepted environmental cause.
+B|Bronchial carcinoid secretion|resp,oncology,endocrine|A bronchial carcinoid tumour secretes|Serotonin|Insulin|Causing flushing and diarrhoea.
+B|Mesothelioma cell of origin|resp,oncology,path|Mesothelioma arises from|Mesothelial cells|Alveolar epithelial cells|After asbestos exposure.
+B|Asbestos sequence|resp,oncology,path|After asbestos exposure|Asbestosis comes first, then mesothelioma|Mesothelioma comes first, then fibrosis|Separated by many years.
+
+# ── Occupational lung disease ────────────────────────────────────────────
+B|Asbestosis initiating cell|resp,path,immuno|Pulmonary fibrosis after asbestos is initiated by the|Macrophage|Neutrophil|Which ingests the fibre and signals.
+G|Asbestos body shape|resp,path|An asbestos ferruginous body is described as ___-shaped|dumbbell|dumbbell,dumb-bell|Golden-brown on histology.
+B|Silicosis occupation|resp,path|Silicosis occurs in|Foundry and stone quarry workers|Shipyard and insulation workers|Asbestos belongs to the shipyard.
+B|Silicosis lobe|resp,imaging|Silicosis calcifies in the|Upper lobes|Lower lobes|Egg-shell hilar calcification.
+B|Silicosis infection risk|resp,micro,path|Silicosis specifically raises the risk of|Tuberculosis|Aspergillosis|Silica impairs the macrophage.
+
+# ── Interstitial and obstructive disease ─────────────────────────────────
+B|IPF presentation|resp,path|Idiopathic pulmonary fibrosis presents as|Months of unexplained dry cough|Weeks of productive green sputum|In a patient over fifty.
+B|IPF next investigation|resp,imaging|After chest x-ray and spirometry in fibrosis, the next step is|High-resolution CT of the chest|Bronchoscopy with lavage|Then biopsy if still unclear.
+B|Fibrosis crackles|resp,clinical|Pulmonary fibrosis gives|Dry inspiratory crackles|Coarse expiratory wheeze|Often with a loud P2.
+B|Chronic bronchitis definition|resp,clinical|Chronic bronchitis is a productive cough for|Three months a year, for two years|Six weeks in a single winter|A clinical, not a radiological, definition.
+G|Reid index|resp,path|The ___ index above 0.5 defines chronic bronchitis histologically|Reid|reid|Gland thickness over bronchial wall thickness.
+B|Blue bloater mechanism|resp,path|Chronic bronchitis causes hypoxia because|Mucus fills the airways and alveoli|Alveolar walls are destroyed|Emphysema destroys surface area instead.

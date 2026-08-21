@@ -1,0 +1,35 @@
+# GI — from the Mehlman HY Gastrointestinal notes.
+
+# ── Mouth and oropharynx ─────────────────────────────────────────────────
+B|Peutz-Jeghers polyps|gi,genetics,oncology|Peutz-Jeghers syndrome features|Hamartomatous colonic polyps|Adenomatous colonic polyps|With perioral pigmentation.
+B|Osler-Weber-Rendu inheritance|gi,genetics,vascular|Hereditary haemorrhagic telangiectasia is|Autosomal dominant|Autosomal recessive|With nosebleeds and telangiectasia.
+B|Osler-Weber-Rendu cardiac|gi,vascular,cardio|Pulmonary AV fistulae in Osler-Weber-Rendu cause|High-output cardiac failure|Low-output cardiac failure|A right-to-left shunt with high flow.
+B|Plummer-Vinson triad|gi,heme|Plummer-Vinson syndrome is iron deficiency, angular cheilitis and|Oesophageal webs|Oesophageal varices|Causing dysphagia to solids.
+G|Pica meaning|gi,heme,psych|Eating ice, clay or starch is called ___|pica|pica|A sign of iron deficiency.
+B|Aphthous ulcer nature|gi,derm|An aphthous ulcer is|Idiopathic and self-resolving|Caused by herpes simplex|Painful, on the labial mucosa.
+B|Perioral impetigo organism|gi,derm,micro,peds|Crusted lip lesions in a child are usually|Staph aureus or group A strep|Herpes simplex virus type 1|Impetigo, not herpes.
+B|Herpes labialis latency|gi,virus,neuro|After primary infection, HSV lies latent in|Sensory nerve ganglia|Regional lymph nodes|Reactivating with stress or illness.
+B|Scarlet fever treatment|gi,micro,peds|Scarlet fever is treated with penicillin to prevent|Rheumatic fever|Scarring of the tongue|A type II hypersensitivity sequel.
+B|Hand-foot-mouth virus|gi,virus,peds|Hand, foot and mouth disease is caused by|Coxsackie A virus|Herpes simplex virus|An RNA picornavirus.
+B|Herpangina site|gi,virus,peds|Herpangina causes vesicles in the|Oropharynx|Palms and soles|Also from Coxsackie A.
+B|Measles versus rubella nodes|gi,virus,peds|Rubella is distinguished from measles by|Post-auricular lymphadenopathy|White buccal mucosal spots|Koplik spots belong to measles.
+G|Parotid duct name|gi,anatomy,ent|The parotid duct is the ___ duct, opening by the second upper molar|Stensen|stensen|Where a stone may lodge.
+B|Leukoplakia significance|gi,oncology,derm|Leukoplakia of the tongue is|A precursor to squamous carcinoma|A benign fungal overgrowth|Chief risk factor is tobacco.
+B|Oral candidiasis scraping|gi,fungi,immuno|Oral candidiasis is a white plaque that|Bleeds when it is scraped off|Cannot be scraped off at all|Leukoplakia cannot be scraped away.
+B|Inhaled steroid thrush|gi,fungi,resp,pharm|Inhaled corticosteroids cause thrush unless the patient|Rinses the mouth afterwards|Uses a lower dose at night|A spacer also helps.
+B|Commonest malignant salivary tumour|gi,oncology,ent|The commonest malignant salivary gland tumour is|Mucoepidermoid carcinoma|Pleomorphic adenoma|Pleomorphic adenoma is benign.
+
+# ── Oesophagus ───────────────────────────────────────────────────────────
+B|Sliding hiatal hernia|gi,anatomy,surgery|The commonest hiatal hernia is|Sliding, with the cardia rising|Rolling, beside the oesophagus|About 95 percent of cases.
+B|Barrett metaplasia|gi,path,oncology|Barrett oesophagus is a change from|Squamous to columnar epithelium|Columnar to squamous epithelium|An adaptation to chronic acid.
+B|Oesophageal adenocarcinoma site|gi,oncology|Oesophageal adenocarcinoma affects the|Lower third|Upper two-thirds|Following GERD and Barrett change.
+B|Oesophageal SCC risk|gi,oncology|Oesophageal squamous carcinoma is driven by|Heavy smoking and alcohol|Long-standing acid reflux|Reflux drives adenocarcinoma instead.
+B|Zenker diverticulum type|gi,anatomy,path|A Zenker diverticulum is|False, mucosa and submucosa only|True, including muscular layer|Meckel diverticulum is a true one.
+B|Achalasia neurons|gi,neuro,path|Achalasia is loss of the neurons that release|Nitric oxide, in the myenteric plexus|Acetylcholine, in the submucosa|Leaving the sphincter unable to relax.
+B|Achalasia barium|gi,imaging|Achalasia on barium shows|A dilated oesophagus, narrow at the base|A corkscrew oesophagus with spasm|The bird-beak appearance.
+B|Scleroderma oesophagus|gi,rheum|Systemic sclerosis lowers sphincter tone and|Reduces oesophageal peristalsis|Raises oesophageal peristalsis|Causing severe reflux.
+B|Boerhaave contrast|gi,imaging,emergency|Suspected oesophageal perforation is imaged with|Water-soluble contrast|Barium contrast|Barium in the mediastinum causes mediastinitis.
+B|Mallory-Weiss volume|gi,emergency|A Mallory-Weiss tear characteristically causes|Small-volume haematemesis|Torrential haematemesis|Large volumes suggest varices.
+G|Varix collateral vein|gi,liver,vascular|Oesophageal varices form via the left ___ vein in portal hypertension|gastric|gastric|Connecting portal to systemic circulation.
+B|Splenic vein thrombosis varices|gi,vascular|Splenic vein thrombosis causes varices that are|Gastric, not oesophageal|Oesophageal, not gastric|Collaterals route around the clot.
+B|Diffuse oesophageal spasm pain|gi,cardio|Diffuse oesophageal spasm produces pain that|Mimics angina, with normal cardiac tests|Is clearly worse on swallowing only|Corkscrew appearance on barium.
