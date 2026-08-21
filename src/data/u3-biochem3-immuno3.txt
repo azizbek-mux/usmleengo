@@ -44,7 +44,7 @@ G|Regulatory T cells|immuno,autoimmune|Regulatory T cells express CD4, CD25 and 
 G|Anaphylaxis biphasic|immuno,emergency|Observation after anaphylaxis is advised for at least ___ hours|4|4,four,6|Because of biphasic reactions.
 B|Allergy testing|immuno,lab|Skin prick testing is|More sensitive than specific IgE|Definitive for diagnosis|Clinical history remains essential.
 G|Desensitization|immuno,pharm|Allergen ___ gradually induces tolerance over years|immunotherapy|immunotherapy,desensitization,desensitization|Effective for venom and pollen allergy.
-B|Angiedema without urticaria|immuno,pharm|Angiedema WITHOUT urticaria suggests|Bradykinin-mediated causes|IgE-mediated allergy|ACE inhibitors or C1 inhibitor deficiency.
+B|Angioedema without urticaria|immuno,pharm|Angioedema WITHOUT urticaria suggests|Bradykinin-mediated causes|IgE-mediated allergy|ACE inhibitors or C1 inhibitor deficiency.
 G|Mast cell tryptase|immuno,lab,emergency|Serum ___ confirms mast cell degranulation retrospectively|tryptase|tryptase|Peaks 1 to 2 hours after anaphylaxis.
 B|Common variable immunodeficiency|immuno,genetics,GI|CVID is complicated by|Bronchiectasis, autoimmunity and lymphoma|Neutropenia and recurrent candidiasis|Recurrent sinopulmonary infection in adulthood.
 G|Immunoglobulin replacement|immuno,pharm|Immunoglobulin replacement is given every ___ weeks intravenously|4|4,four,3-4|Or weekly subcutaneously.

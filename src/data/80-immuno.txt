@@ -2,7 +2,7 @@
 B|Hyperacute rejection|immuno,transplant|Hyperacute rejection is which hypersensitivity type?|Type II|Type IV|Preformed IgG against donor HLA; occurs within minutes.
 B|Acute rejection|immuno,transplant|Acute cellular rejection is mediated by|Host T cells against graft MHC|Preformed anti-donor antibody|Occurs over weeks; responds to immunosuppression.
 B|Terminal complement deficiency|immuno,complement,micro|Deficiency of C5 to C9 causes recurrent infection with|Neisseria|Staphylococcus aureus|The membrane attack complex is needed to lyse Neisseria.
-B|Early complement deficiency|immuno,complement|C1 to C4 deficiency predisposes to|Lupus-like disease and encapsulated organisms|Neisseria meningitidis and gonorrheae only|Impaired immune complex clearance.
+B|Early complement deficiency|immuno,complement|C1 to C4 deficiency predisposes to|Lupus-like disease and encapsulated organisms|Neisseria meningitidis and gonorrhoeae only|Impaired immune complex clearance.
 B|Leukocytoclastic vasculitis|immuno,path|Palpable purpura shows which histology?|Perivascular neutrophils damaging small vessels|Lymphocytes sparing the vessel wall entirely|Nonthrombocytopenic purpura on dependent areas.
 B|Budesonide|immuno,pharm,GI|Budesonide is favoured in mild Crohn disease because it has|High first-pass metabolism|Greater potency than prednisone|Targeted ileal release.
 B|Anaphylaxis|immuno,emergency|Hypotension in anaphylaxis is caused by|Increased vascular permeability and vasodilation|Acute cardiac pump failure with low output|Mediators from mast cell degranulation.
@@ -23,9 +23,9 @@ B|Delayed hypersensitivity|immuno,hypersensitivity|T cell activation in a PPD re
 B|Leukocyte adhesion deficiency|immuno,genetics|LAD type 1 impairs neutrophil|Transmigration and adhesion|Phagocytosis and killing|CD18 integrin defect; delayed cord separation, no pus.
 B|Wheal and flare|immuno,hypersensitivity|The wheal-and-flare reaction is caused by|Histamine|Bradykinin|Increased permeability and vasodilation.
 B|Severe combined immunodeficiency|immuno,genetics|The second commonest cause of SCID is deficiency of|Adenosine deaminase|Bruton tyrosine kinase|Toxic metabolites kill lymphocytes; X-linked IL-2 receptor defect is commonest.
-B|ACE inhibitor angiedema|immuno,pharm|ACE inhibitor angiedema is caused by|Bradykinin accumulation|Histamine release|No urticaria or itching; switch to an ARB.
-B|Hereditary angiedema|immuno,genetics,pharm|In hereditary angiedema, which drug is contraindicated?|An ACE inhibitor|A beta blocker|C1 esterase inhibitor deficiency already raises bradykinin.
-B|Hereditary angiedema|immuno,genetics,complement|Hereditary angiedema shows low levels of|C4|C3|C1 inhibitor deficiency consumes C4.
+B|ACE inhibitor angioedema|immuno,pharm|ACE inhibitor angioedema is caused by|Bradykinin accumulation|Histamine release|No urticaria or itching; switch to an ARB.
+B|Hereditary angioedema|immuno,genetics,pharm|In hereditary angioedema, which drug is contraindicated?|An ACE inhibitor|A beta blocker|C1 esterase inhibitor deficiency already raises bradykinin.
+B|Hereditary angioedema|immuno,genetics,complement|Hereditary angioedema shows low levels of|C4|C3|C1 inhibitor deficiency consumes C4.
 B|Vancomycin infusion reaction|immuno,pharm|Vancomycin flushing is caused by|Direct mast cell activation|IgE-mediated allergy|Slow the infusion; not a contraindication.
 B|Interferon gamma|immuno,cytokines,micro|Impaired interferon-gamma signaling predisposes to|Mycobacterial infection|Encapsulated bacteria|IL-12 to IFN-gamma axis controls intracellular organisms.
 B|Glucocorticoid mechanism|immuno,pharm|Glucocorticoids reduce eosinophils by|Inducing their apoptosis|Blocking their production only|Also inhibit transcription of inflammatory genes.

@@ -15,13 +15,13 @@ BT|Radiculopathy vs peripheral neuropathy|neuro,msk|Which follows a dermatomal r
 BT|Myelopathy vs radiculopathy|neuro,spinal cord|Which has upper motor neuron signs BELOW the lesion?|Myelopathy|Radiculopathy|Radiculopathy gives lower motor neuron signs at that root only.
 BT|Functional vs organic weakness|neuro,psych|Which shows Hoover sign positivity?|Functional weakness|Organic hemiparesis|Involuntary hip extension when the other leg flexes.
 BT|Sepsis vs anaphylaxis|immuno,micro,emergency|Which develops over minutes with urticaria and wheeze?|Anaphylaxis|Septic shock|Both cause distributive shock.
-BT|Angiedema vs urticaria|immuno,derm|Which affects the deeper dermis and is non-pruritic?|Angiedema|Urticaria|Urticaria itches; angiedema stings or burns.
+BT|Angioedema vs urticaria|immuno,derm|Which affects the deeper dermis and is non-pruritic?|Angioedema|Urticaria|Urticaria itches; angioedema stings or burns.
 BT|Drug rash vs viral exanthem|derm,pharm,virus|Which typically starts on the trunk 7 to 10 days after a new drug?|Drug exanthem|Viral exanthem|Timing and drug history are key.
 BT|Fixed drug eruption vs erythema multiforme|derm,pharm|Which recurs in the SAME site with each exposure?|Fixed drug eruption|Erythema multiforme|Leaving post-inflammatory pigmentation.
 BT|Steroid acne vs acne vulgaris|derm,pharm|Which is monomorphic without comedones?|Steroid acne|Acne vulgaris|Uniform papules appearing after steroid use.
 BT|Tinea vs eczema|derm,fungi|Which has central clearing with an active scaly edge?|Tinea|Nummular eczema|Steroids alone worsen tinea incognito.
 BT|Scabies vs eczema|derm,parasite|Which itches most intensely at night and affects the whole household?|Scabies|Atopic eczema|Look for burrows in web spaces.
-BT|Cellulitis vs gout|derm,rheum,msk|Which causes redness centerd on a single joint with extreme tenderness?|Gout|Cellulitis|Both are red, hot and swollen.
+BT|Cellulitis vs gout|derm,rheum,msk|Which causes redness centered on a single joint with extreme tenderness?|Gout|Cellulitis|Both are red, hot and swollen.
 BT|Osteomyelitis vs bone infarct|msk,heme,imaging|In sickle cell disease, which is far more common?|Bone infarct|Osteomyelitis|Both cause bone pain and fever; imaging helps.
 BT|Fracture vs contusion|msk,ortho,imaging|Which shows a joint effusion with a fat-fluid level?|Occult intra-articular fracture|A simple soft tissue contusion|A lipohemarthrosis signals fracture.
 BT|Sprain vs strain|msk,ortho|Which is a ligament injury?|Sprain|Strain|Strain refers to muscle or tendon.

@@ -41,7 +41,7 @@ B|Systemic sclerosis|msk,rheum,resp|The leading cause of death in systemic scler
 B|Limited scleroderma|msk,rheum,immuno|CREST syndrome is associated with which antibody?|Anti-centromere|Anti-Scl-70|Calcinosis, Raynaud, esophageal dysmotility, sclerodactyly, telangiectasia.
 B|Sporotrichosis|msk,micro,derm|Sporothrix infection follows|Contact with soil and plant material|Scratches from an infected cat|Rose gardener's disease; nodules ascending along lymphatics.
 B|Osteoarthritis|msk,rheum|Morning stiffness in osteoarthritis lasts|Under 30 minutes|Over one hour|Prolonged stiffness suggests inflammatory arthritis.
-B|Septic arthritis|msk,micro,emergency|The commonest organism in septic arthritis is|Staphylococcus aureus|Neisseria gonorrheae|Gonococcus is commonest in young sexually active adults.
+B|Septic arthritis|msk,micro,emergency|The commonest organism in septic arthritis is|Staphylococcus aureus|Neisseria gonorrhoeae|Gonococcus is commonest in young sexually active adults.
 B|Osteosarcoma|msk,oncology|Osteosarcoma classically shows|Sunburst pattern with Codman triangle|Onion-skin periosteal layering|Metaphysis of long bones in adolescents.
 B|Ewing sarcoma|msk,oncology,genetics|Ewing sarcoma shows which translocation?|t(11;22)|t(9;22)|Onion-skin periosteal reaction; small round blue cells.
 B|Duchenne muscular dystrophy|msk,genetics|Duchenne dystrophy is caused by mutation in|Dystrophin|Fibrillin|X-linked; frameshift deletion. Becker preserves the reading frame.

@@ -3,7 +3,7 @@
 # ── Microcytic anemia ───────────────────────────────────────────────────
 B|RDW in iron deficiency|heme,lab|A raised red cell distribution width points to|Iron deficiency|Thalassemia trait|Thalassemia keeps the RDW normal.
 B|Target cells meaning|heme,lab,genetics|Target cells on the film point strongly to|Thalassemia|Iron deficiency|Iron deficiency gives pale cells instead.
-B|Thalassemia defect|heme,genetics|Thalassemia is abnormal synthesis of|A globin chain|The hem group|Alpha or beta, depending on type.
+B|Thalassemia defect|heme,genetics|Thalassemia is abnormal synthesis of|A globin chain|The heme group|Alpha or beta, depending on type.
 
 # ── Myeloproliferative disease ───────────────────────────────────────────
 B|Polycythemia vera mutation|heme,genetics,oncology|Polycythemia vera is driven by a mutation in|JAK2|BCR-ABL|Proliferation of hematopoietic stem cells.

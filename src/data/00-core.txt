@@ -73,7 +73,7 @@ B|Streptococcus pyogenes|micro,bacteria,gram positive|Streptococcus pyogenes sho
 G|Tuberculosis|micro,bacteria,TB|Mycobacterium tuberculosis is identified with the ___ stain|acid-fast|acid fast,ziehl-neelsen,ziehl neelsen,afb|Acid-fast (Ziehl-Neelsen) — because of mycolic acid in the cell wall.
 G|Cryptococcus|micro,fungi,HIV|Cryptococcus neoformans is visualized with ___ ink|India|india ink,indian|India ink shows the capsule. Also mucicarmine positive.
 B|Pseudomonas aeruginosa|micro,bacteria,gram negative|Pseudomonas aeruginosa is:|Gram negative|Gram positive|Gram negative rod, oxidase positive, grape-like odor, blue-green pigment.
-G|Neisseria|micro,bacteria,gram negative|Neisseria organisms are gram-negative ___ in shape|diplococci|diplococcus,cocci|Gram-negative diplococci. N. meningitidis ferments maltose; gonorrheae does not.
+G|Neisseria|micro,bacteria,gram negative|Neisseria organisms are gram-negative ___ in shape|diplococci|diplococcus,cocci|Gram-negative diplococci. N. meningitidis ferments maltose; gonorrhoeae does not.
 B|Clostridioides difficile|micro,bacteria,GI|C. difficile is treated first-line with:|Oral vancomycin|Metronidazole|Oral vancomycin or fidaxomicin is now first-line.
 G|Malaria|micro,parasite|The most dangerous species of malaria is Plasmodium ___|falciparum|p falciparum,p. falciparum|P. falciparum — cerebral malaria, irregular fever pattern.
 B|HIV|micro,virus,HIV|AIDS is defined by a CD4 count below:|200|500|CD4 under 200 cells/mm3, or an AIDS-defining illness.

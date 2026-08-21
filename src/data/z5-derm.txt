@@ -36,8 +36,8 @@ G|Venous pigmentation|derm,vascular,heme|Brown staining around a venous ulcer co
 # ── Drug eruptions and urticaria ─────────────────────────────────────────
 B|Urticaria hypersensitivity type|derm,immuno,pharm|Urticaria is a hypersensitivity reaction of type|I|IV|IgE-mediated, and often drug-triggered.
 B|Stevens-Johnson trigger|derm,pharm,immuno|Skin sloughing after trimethoprim-sulfamethoxazole suggests|Stevens-Johnson syndrome|Simple urticarial rash|Sulfonamides are a classic trigger.
-B|Hereditary angiedema defect|derm,immuno,genetics|Hereditary angiedema is deficiency of|C1 esterase inhibitor|C1 esterase itself|The inhibitor, not the enzyme.
-B|Hereditary angiedema drug|derm,immuno,pharm|Hereditary angiedema can be prevented with|Danazol|Prednisolone|Steroids and antihistamines do not work.
+B|Hereditary angioedema defect|derm,immuno,genetics|Hereditary angioedema is deficiency of|C1 esterase inhibitor|C1 esterase itself|The inhibitor, not the enzyme.
+B|Hereditary angioedema drug|derm,immuno,pharm|Hereditary angioedema can be prevented with|Danazol|Prednisolone|Steroids and antihistamines do not work.
 B|Lichen simplex chronicus|derm|Thickened excoriated skin from repeated scratching is|Lichen simplex chronicus|Lichen sclerosus|An itch-scratch cycle.
 B|Perniosis cause|derm,vascular|Chilblains follow|Cold exposure then rapid rewarming|A fungal infection of the toes|Antifungals do not help.
 

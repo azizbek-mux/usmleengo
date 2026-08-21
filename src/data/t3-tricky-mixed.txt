@@ -1,7 +1,7 @@
 # TRICKY — batch 4. Fills the subjects thin on tricky items, and adds tricky gaps.
 GT|Hunter syndrome|genetics,biochem|Hurler lacks alpha-L-iduronidase; Hunter lacks iduronate ___|sulfatase|sulfatase,sulfatase|One letter of difference, two different diseases. Hunter is X-linked with clear corneas.
 GT|Secondary adrenal insufficiency|endocrine,adrenal|In SECONDARY adrenal insufficiency the hormone that stays normal is ___|aldosterone|aldosterone|It is driven by the RAAS, not ACTH — which is why potassium stays normal.
-GT|ACE inhibitor cough|cardio,pharm|ACE inhibitors cause cough by letting ___ accumulate|bradykinin|bradykinin,bradykinins|The same peptide causes their angiedema. ARBs avoid both.
+GT|ACE inhibitor cough|cardio,pharm|ACE inhibitors cause cough by letting ___ accumulate|bradykinin|bradykinin,bradykinins|The same peptide causes their angioedema. ARBs avoid both.
 GT|Carcinoid and niacin|GI,oncology,vitamins|Carcinoid syndrome causes pellagra by diverting ___ to serotonin|tryptophan|tryptophan,trp|Niacin is made from tryptophan, so the tumor steals the precursor.
 GT|Folate versus B12|heme,vitamins,biochem|Both raise homocysteine, but only B12 deficiency raises ___ acid|methylmalonic|methylmalonic,mma|The single test that separates them. Folate leaves MMA normal.
 GT|Osmotic demyelination|renal,neuro,electrolytes|Correcting chronic hyponatremia too fast causes osmotic ___ syndrome|demyelination|demyelination,demyelinolysis|Formerly central pontine myelinolysis. Correct slowly.

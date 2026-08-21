@@ -35,7 +35,7 @@ B|Transudative effusion|resp,path|Low albumin causes effusion by|Reducing plasma
 B|Capacity in dementia|ethics|A diagnosis of Alzheimer disease means the patient|May still retain decision-making capacity|Automatically lacks capacity to consent|Capacity is decision-specific and must be assessed.
 B|Physician fatigue|ethics,safety|Cognitive impairment from sleep deprivation appears after about|17 hours awake|30 hours awake|Comparable to alcohol intoxication.
 B|Medical error disclosure|ethics|After a medical error causing harm you should|Disclose it fully with an apology|Wait for the family to ask|Disclosure is required even if the patient has died.
-B|Shared decision making|ethics|Involving patients in decisions tends to|Reduce overutilization|Increase testing|Patient-centerd care does not mean giving every request.
+B|Shared decision making|ethics|Involving patients in decisions tends to|Reduce overutilization|Increase testing|Patient-centered care does not mean giving every request.
 B|Medication nonadherence|ethics,pharm|The best first response to suspected nonadherence is|Explore barriers non-judgmentally|Check a serum drug level|Building partnership improves adherence more than testing.
 B|Polypharmacy|ethics,pharm,aging|In an elderly patient with confusion, first|Review and stop non-essential drugs|Order urgent brain imaging|Anticholinergics like diphenhydramine are common culprits.
 B|Against medical advice|ethics|A patient with capacity refusing admission should be|Informed of risks and allowed to leave|Detained until family can attend|Document the discussion and offer follow-up.

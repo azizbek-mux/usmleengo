@@ -1,7 +1,7 @@
 # Gastrointestinal and hepatology — depth pass. Gap-weighted.
 
 # ── Esophagus ───────────────────────────────────────────────────────────
-G|Barrett esophagus|GI,oncology,path|Barrett metaplasia is recognized by the presence of ___ cells|goblet|goblet|Intestinal-type mucosa above the gastro-esophageal junction.
+G|Barrett esophagus|GI,oncology,path|Barrett metaplasia is recognized by the presence of ___ cells|goblet|goblet|Intestinal-type mucosa above the gastroesophageal junction.
 B|Esophageal cancer|GI,oncology|Adenocarcinoma of the esophagus arises in the|Lower third|Upper third|Squamous cell carcinoma favours the upper two thirds.
 G|Esophageal varices|GI,liver,pharm|Bleeding varices are controlled acutely with ___, a somatostatin analogue|octreotide|octreotide|Plus banding and antibiotic prophylaxis.
 B|Mallory-Weiss tear|GI,emergency|A Mallory-Weiss tear involves|A mucosal laceration only|Full-thickness rupture|Boerhaave is the full-thickness rupture with mediastinitis.
@@ -75,5 +75,5 @@ G|Porcelain gallbladder|GI,oncology|A porcelain gallbladder raises the risk of g
 # ── Pediatric GI ────────────────────────────────────────────────────────
 G|Biliary atresia|GI,peds,liver|Biliary atresia causes ___ jaundice with pale stools|conjugated|conjugated,direct|Needs a Kasai portoenterostomy within weeks.
 B|Necrotizing enterocolitis|GI,peds,emergency|Necrotizing enterocolitis shows which radiographic sign?|Pneumatosis intestinalis|A double bubble sign|Gas in the bowel wall in a premature infant.
-G|Tracheesophageal fistula|GI,peds,embryology|The commonest tracheesophageal fistula has a blind upper ___|pouch|pouch,esophageal pouch|With a distal fistula. Coiled nasogastric tube on x-ray.
+G|Tracheoesophageal fistula|GI,peds,embryology|The commonest tracheoesophageal fistula has a blind upper ___|pouch|pouch,esophageal pouch|With a distal fistula. Coiled nasogastric tube on x-ray.
 B|Malrotation|GI,peds,emergency|Bilious vomiting in a newborn is|A surgical emergency|Usually benign reflux|Malrotation with volvulus until proven otherwise.
