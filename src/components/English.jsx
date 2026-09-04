@@ -2,19 +2,22 @@ import React, { useEffect, useMemo, useState } from "react";
 import cards, { findCards, loadGlossary } from "../data/glossary.js";
 import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import {
-  buildRound,
-  deckStats,
+  answerCard,
+  flushDeck,
   loadDeckLocal,
   loadDeckRemote,
-  rate,
+  nextCard,
+  queueCounts,
+  rollDay,
   saveDeck,
+  setConfig,
+  stateOf,
 } from "../lib/deck.js";
+import { GRADES, formatInterval, preview } from "../lib/srs.js";
+import { Sheet } from "./Sheet.jsx";
 import { haptic } from "../lib/telegram.js";
 
-// What each button does to the schedule, shown on the button itself so the
-// choice is informed rather than a guess — the one piece of Anki's interface
-// that genuinely teaches you how the system works.
-const NEXT_LABEL = { again: "today", good: "sooner", easy: "later" };
+const GRADE_NAME = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
 
 const Back = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
@@ -30,11 +33,86 @@ const SearchIcon = () => (
   </svg>
 );
 
-/** One card, front then back. */
-function Card({ card, shown, onShow, onRate }) {
+const Gear = () => (
+  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+       strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="3" />
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+  </svg>
+);
+
+const PRESET_NEW = [5, 10, 20, 40, 100];
+const PRESET_REV = [50, 100, 200, 500, 9999];
+
+function OptionsSheet({ config, counts, onChange, onReset, onClose }) {
   return (
-    <>
-      <div className={`card-face${shown ? " flipped" : ""}`} key={`${card.i}-${shown}`}>
+    <Sheet title="Deck options" onClose={onClose}>
+      <div className="section-label" style={{ marginTop: 4 }}>New cards per day</div>
+      <div className="count-presets">
+        {PRESET_NEW.map((n) => (
+          <button
+            key={n}
+            className={`preset${config.newPerDay === n ? " on" : ""}`}
+            onClick={() => { haptic("light"); onChange({ newPerDay: n }); }}
+          >
+            {n}
+          </button>
+        ))}
+      </div>
+      <div className="cta-note" style={{ textAlign: "left", marginTop: 8 }}>
+        How many words you meet for the first time each day. Every one comes
+        back several more times, so 20 new is closer to 60 cards of work.
+      </div>
+
+      <div className="section-label">Maximum reviews per day</div>
+      <div className="count-presets">
+        {PRESET_REV.map((n) => (
+          <button
+            key={n}
+            className={`preset${config.revPerDay === n ? " on" : ""}`}
+            onClick={() => { haptic("light"); onChange({ revPerDay: n }); }}
+          >
+            {n === 9999 ? "∞" : n}
+          </button>
+        ))}
+      </div>
+      <div className="cta-note" style={{ textAlign: "left", marginTop: 8 }}>
+        A ceiling for days when a backlog has built up.
+        {counts.reviewBacklog > 0 && ` You have ${counts.reviewBacklog.toLocaleString()} waiting.`}
+      </div>
+
+      <div className="section-label">This deck</div>
+      <div className="stat-grid">
+        <div className="mini"><b>{counts.seen.toLocaleString()}</b><span>studied</span></div>
+        <div className="mini"><b>{counts.known.toLocaleString()}</b><span>mature</span></div>
+        <div className="mini"><b>{counts.total.toLocaleString()}</b><span>in deck</span></div>
+      </div>
+
+      <button className="btn btn-danger" onClick={onReset}>Reset this deck</button>
+      <div className="cta-note">
+        Forgets every card’s schedule in Medical English. Your quiz progress is
+        untouched. Cannot be undone.
+      </div>
+    </Sheet>
+  );
+}
+
+/** One card, front then back, with Anki's four answer buttons. */
+function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
+  const ivls = useMemo(() => (shown ? preview(state) : null), [shown, state]);
+
+  return (
+    <div className="screen">
+      <div className="quiz-top">
+        <button className="close" onClick={onQuit} aria-label="Back to deck"><Back /></button>
+        <div className="lane-counts">
+          <span className="lane new">{counts.newCount}</span>
+          <span className="lane learn">{counts.learnCount}</span>
+          <span className="lane due">{counts.dueCount}</span>
+        </div>
+      </div>
+
+      <div className="card-face" key={`${card.i}-${shown}`}>
         {!shown ? (
           <button className="card-front" onClick={onShow}>
             {card.yield === "high" && (
@@ -62,10 +140,10 @@ function Card({ card, shown, onShow, onRate }) {
       <div className="card-foot">
         {shown ? (
           <div className="rate-row">
-            {["again", "good", "easy"].map((g) => (
+            {GRADES.map((g) => (
               <button key={g} className={`rate ${g}`} onClick={() => onRate(g)}>
-                <span className="rate-n">{g === "again" ? "Again" : g === "good" ? "Good" : "Easy"}</span>
-                <span className="rate-i">{NEXT_LABEL[g]}</span>
+                <span className="rate-i">{formatInterval(ivls[g])}</span>
+                <span className="rate-n">{GRADE_NAME[g]}</span>
               </button>
             ))}
           </div>
@@ -73,22 +151,22 @@ function Card({ card, shown, onShow, onRate }) {
           <button className="btn btn-primary" onClick={onShow}>Show meaning</button>
         )}
       </div>
-    </>
+    </div>
   );
 }
 
-export default function English({ count, onHome }) {
+export default function English({ onHome }) {
   const [status, setStatus] = useState(() => (cards.length ? "ready" : "loading"));
-  const [deck, setDeck] = useState(loadDeckLocal);
+  const [deck, setDeck] = useState(() => rollDay(loadDeckLocal()));
   const [highOnly, setHighOnly] = useState(false);
   const [query, setQuery] = useState("");
+  const [options, setOptions] = useState(false);
 
-  const [round, setRound] = useState(null);   // null = deck screen
-  const [at, setAt] = useState(0);
+  const [studying, setStudying] = useState(false);
+  const [current, setCurrent] = useState(null);
   const [shown, setShown] = useState(false);
   const [done, setDone] = useState(0);
 
-  // Fetch the glossary the first time this section is opened.
   useEffect(() => {
     let alive = true;
     loadGlossary()
@@ -97,20 +175,22 @@ export default function English({ count, onHome }) {
     return () => { alive = false; };
   }, []);
 
-  // Pull cloud progress once; the local copy was already painted.
   useEffect(() => {
     let alive = true;
-    loadDeckRemote(loadDeckLocal()).then((d) => alive && setDeck(d));
+    loadDeckRemote(loadDeckLocal()).then((d) => alive && setDeck(rollDay(d)));
     return () => { alive = false; };
   }, []);
+
+  // The cloud write is debounced, so leaving the section has to push it.
+  useEffect(() => () => { flushDeck(); }, []);
 
   const pool = useMemo(() => {
     if (status !== "ready") return [];
     return highOnly ? cards.filter((c) => c.yield === "high") : cards;
   }, [status, highOnly]);
 
-  const stats = useMemo(
-    () => (status === "ready" ? deckStats(pool, deck) : null),
+  const counts = useMemo(
+    () => (status === "ready" ? queueCounts(deck, pool) : null),
     [status, pool, deck],
   );
 
@@ -119,30 +199,42 @@ export default function English({ count, onHome }) {
     [status, query],
   );
 
-  // How many cards the next round can actually serve.
-  const take = stats ? Math.min(count, stats.available) : 0;
-
   function persist(next) {
     setDeck(next);
     saveDeck(next);
   }
 
-  function start() {
-    const next = buildRound(pool, deck, count);
-    if (!next.length) return;
-    haptic("medium");
-    setRound(next);
-    setAt(0);
+  function advance(fromDeck) {
+    const next = nextCard(fromDeck, pool);
+    if (!next) { setStudying(false); setCurrent(null); flushDeck(); return; }
+    setCurrent(next);
     setShown(false);
+  }
+
+  function start() {
+    const rolled = rollDay(deck);
+    const first = nextCard(rolled, pool);
+    if (!first) return;
+    haptic("medium");
+    setDeck(rolled);
     setDone(0);
+    setStudying(true);
+    setCurrent(first);
+    setShown(false);
   }
 
   function onRate(grade) {
     haptic(grade === "again" ? "warning" : "light");
-    persist(rate(deck, round[at].i, grade));
+    const next = answerCard(deck, current.i, grade);
+    persist(next);
     setDone((d) => d + 1);
-    if (at + 1 >= round.length) setRound(null);
-    else { setAt(at + 1); setShown(false); }
+    advance(next);
+  }
+
+  function quitStudy() {
+    setStudying(false);
+    setCurrent(null);
+    flushDeck();
   }
 
   /* ── loading and failure ─────────────────────────────────────────────── */
@@ -181,58 +273,65 @@ export default function English({ count, onHome }) {
 
   /* ── studying ────────────────────────────────────────────────────────── */
 
-  if (round) {
-    const card = round[at];
+  if (studying && current) {
     return (
-      <div className="screen">
-        <div className="quiz-top">
-          <button className="close" onClick={() => setRound(null)} aria-label="End session"><Back /></button>
-          <div className="bar">
-            <div className="bar-fill" style={{ width: `${(at / round.length) * 100}%` }} />
-          </div>
-          <div className="combo">{at + 1}/{round.length}</div>
-        </div>
-        <Card card={card} shown={shown} onShow={() => { haptic("light"); setShown(true); }} onRate={onRate} />
-      </div>
+      <Studying
+        card={current}
+        state={stateOf(deck, current.i)}
+        shown={shown}
+        counts={counts}
+        onShow={() => { haptic("light"); setShown(true); }}
+        onRate={onRate}
+        onQuit={quitStudy}
+      />
     );
   }
 
   /* ── deck screen ─────────────────────────────────────────────────────── */
+
+  // The counters can be non-zero while every learning card is still minutes
+  // away, so the button asks whether a card can be served right now.
+  const canStudy = counts.readyNow > 0;
+  const waiting = counts.newCount + counts.learnCount + counts.dueCount;
 
   return (
     <div className="screen">
       <div className="quiz-top">
         <button className="close" onClick={onHome} aria-label="Back"><Back /></button>
         <div className="sec-title">Medical English</div>
+        <button className="deck-gear" onClick={() => setOptions(true)} aria-label="Deck options">
+          <Gear />
+        </button>
       </div>
 
       {done > 0 && (
         <div className="done-note">
-          {done} card{done > 1 ? "s" : ""} reviewed. {take > 0 ? "More are waiting." : "That is everything for today."}
+          {done} card{done > 1 ? "s" : ""} answered.
+          {waiting > 0 ? " More are waiting." : " Nothing left due today."}
         </div>
       )}
 
       <div className="deck-stats">
         <div className="deck-stat">
-          <div className="deck-v accent">{stats.due.toLocaleString()}</div>
-          <div className="deck-l">to review</div>
+          <div className="deck-v new">{counts.newCount.toLocaleString()}</div>
+          <div className="deck-l">new</div>
         </div>
         <div className="deck-stat">
-          <div className="deck-v">{stats.learning.toLocaleString()}</div>
+          <div className="deck-v learn">{counts.learnCount.toLocaleString()}</div>
           <div className="deck-l">learning</div>
         </div>
         <div className="deck-stat">
-          <div className="deck-v gold">{stats.known.toLocaleString()}</div>
-          <div className="deck-l">known</div>
+          <div className="deck-v due">{counts.dueCount.toLocaleString()}</div>
+          <div className="deck-l">to review</div>
         </div>
       </div>
 
       <div className="deck-bar">
-        <div className="deck-bar-fill" style={{ width: `${(stats.studied / stats.total) * 100}%` }} />
+        <div className="deck-bar-fill" style={{ width: `${(counts.seen / counts.total) * 100}%` }} />
       </div>
       <div className="deck-bar-note">
-        {stats.studied.toLocaleString()} of {stats.total.toLocaleString()} seen
-        {highOnly ? " in high yield" : ""}
+        {counts.seen.toLocaleString()} of {counts.total.toLocaleString()} studied
+        {counts.known > 0 && ` · ${counts.known.toLocaleString()} mature`}
       </div>
 
       <div className="search" style={{ marginTop: 18 }}>
@@ -281,16 +380,33 @@ export default function English({ count, onHome }) {
       )}
 
       <div className="home-cta">
-        <button className="btn btn-primary" onClick={start} disabled={!take}>
-          {take ? `Study ${take} card${take > 1 ? "s" : ""}` : "Nothing due — come back tomorrow"}
+        <button className="btn btn-primary" onClick={start} disabled={!canStudy}>
+          {canStudy ? "Study now" : waiting > 0 ? "Next card in a few minutes" : "Finished for today"}
         </button>
         <div className="cta-note">
-          {stats.due > 0 && `${stats.due.toLocaleString()} to review`}
-          {stats.due > 0 && stats.fresh > 0 && " · "}
-          {stats.fresh > 0 && `${stats.fresh.toLocaleString()} new`}
-          {!take && "Every card here is scheduled for a later day"}
+          {waiting > 0
+            ? `${waiting.toLocaleString()} card${waiting > 1 ? "s" : ""} to go today`
+            : counts.newRemaining > 0
+              ? `${counts.newRemaining.toLocaleString()} new words waiting for tomorrow`
+              : "Every card here is scheduled for a later day"}
+          {counts.newLimited && waiting > 0 && ` · ${deck.config.newPerDay} new a day`}
         </div>
       </div>
+
+      {options && (
+        <OptionsSheet
+          config={deck.config}
+          counts={counts}
+          onChange={(patch) => persist(setConfig(deck, patch))}
+          onReset={() => {
+            const fresh = { ...deck, cards: {}, newDone: 0, revDone: 0, reviews: 0 };
+            persist(fresh);
+            flushDeck();
+            setOptions(false);
+          }}
+          onClose={() => { setOptions(false); flushDeck(); }}
+        />
+      )}
     </div>
   );
 }

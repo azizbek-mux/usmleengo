@@ -15,6 +15,9 @@
   --wrong: #ff6b6b;
   --wrong-dim: #4a2229;
   --gold: #ffc531;
+  /* Anki's three queues: new, learning, review. */
+  --new: #58a6ff;
+  --learn: #ff9142;
   --radius: 16px;
   --tap: cubic-bezier(0.2, 0.9, 0.3, 1);
 }
@@ -612,8 +615,9 @@ input { font: inherit; }
   text-align: center;
 }
 .deck-v { font-size: 22px; font-weight: 800; line-height: 1.1; letter-spacing: -0.5px; }
-.deck-v.accent { color: var(--accent); }
-.deck-v.gold { color: var(--gold); }
+.deck-v.new { color: var(--new); }
+.deck-v.learn { color: var(--learn); }
+.deck-v.due { color: var(--accent); }
 .deck-l { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 3px; }
 
 .deck-bar { height: 8px; background: var(--card-hi); border-radius: 100px; overflow: hidden; }
@@ -727,21 +731,41 @@ input { font: inherit; }
 .card-def { font-size: 15px; line-height: 1.55; margin-top: 12px; }
 .card-foot { margin-top: 20px; }
 
-.rate-row { display: flex; gap: 8px; }
+.rate-row { display: flex; gap: 6px; }
 .rate {
   flex: 1;
-  border-radius: 14px;
-  padding: 13px 6px;
+  min-width: 0;
+  border-radius: 13px;
+  padding: 11px 4px;
   background: var(--card);
   border: 1px solid var(--line);
   transition: transform 0.12s var(--tap);
 }
-.rate:active { transform: scale(0.96); }
-.rate-n { display: block; font-weight: 800; font-size: 15px; }
-.rate-i { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+.rate:active { transform: scale(0.95); }
+/* Interval sits above the label, the way Anki prints it — the number is what
+   you are actually choosing between. */
+.rate-i {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 3px;
+}
+.rate-n { display: block; font-weight: 800; font-size: 14px; }
 .rate.again { border-color: var(--wrong-dim); }
 .rate.again .rate-n { color: var(--wrong); }
+.rate.hard .rate-n { color: var(--learn); }
 .rate.easy .rate-n { color: var(--accent); }
+
+/* Remaining new / learning / review, carried into the study screen. */
+.lane-counts { display: flex; gap: 12px; margin-left: auto; font-size: 14px; font-weight: 800; }
+.lane { font-variant-numeric: tabular-nums; }
+.lane.new { color: var(--new); }
+.lane.learn { color: var(--learn); }
+.lane.due { color: var(--accent); }
+
+.deck-gear { margin-left: auto; color: var(--muted); display: flex; padding: 4px; }
 
 /* ── look-up results ── */
 

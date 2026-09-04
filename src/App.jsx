@@ -149,10 +149,10 @@ export default function App() {
     return <Onboarding onChoose={chooseQType} />;
   }
 
-  // Medical English owns its own data and progress; it needs nothing from the
-  // quiz state but the user's preferred session length.
+  // Medical English owns its own data, progress and scheduling — it shares
+  // nothing with the quiz but the storage plumbing.
   if (screen === "english") {
-    return <English count={state.count} onHome={() => setScreen("home")} />;
+    return <English onHome={() => setScreen("home")} />;
   }
 
   if (screen === "quiz") {

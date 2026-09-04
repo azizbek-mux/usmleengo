@@ -90,13 +90,20 @@ export function cloudRemove(keys) {
    error anywhere. */
 
 const CHUNK = 3800;
-// 64 chunks is ~240 KB — an order of magnitude more than the flashcard deck
-// can ever need. Past it we decline the cloud write rather than truncate:
-// localStorage still holds the whole thing.
-const MAX_CHUNKS = 64;
+// 200 chunks is ~740 KB, comfortably more than either the deck or the quiz can
+// produce, and well under CloudStorage's 1024-key budget shared between them.
+// Past it we decline the cloud write rather than truncate: localStorage still
+// holds the whole thing.
+const MAX_CHUNKS = 200;
 
 const chunkKey = (prefix, i) => `${prefix}__${i}`;
 const headKey = (prefix) => `${prefix}__n`;
+
+// What we last wrote, per prefix, so a save only sends the chunks that
+// actually changed. A flashcard answer edits a dozen characters in the middle
+// of a long string; rewriting all fifty chunks for that would be fifty round
+// trips per card.
+const written = new Map();
 
 export async function cloudSetChunked(prefix, value) {
   if (!cloudAvailable) return false;
@@ -106,20 +113,29 @@ export async function cloudSetChunked(prefix, value) {
   if (chunks.length > MAX_CHUNKS) return false;
 
   const head = await cloudGet([headKey(prefix)]);
-  const before = Number(String(head?.[headKey(prefix)] || "").split(".")[0]) || 0;
+  const headValue = String(head?.[headKey(prefix)] || "");
+  const before = Number(headValue.split(".")[0]) || 0;
+
+  // Only trust the cache if the store still holds the header we left behind;
+  // another device may have written since.
+  const cached = written.get(prefix);
+  const prev = cached && cached.head === headValue ? cached.chunks : null;
 
   for (let i = 0; i < chunks.length; i++) {
-    if (!(await cloudSet(chunkKey(prefix, i), chunks[i]))) return false;
+    if (prev && prev[i] === chunks[i]) continue;
+    if (!(await cloudSet(chunkKey(prefix, i), chunks[i]))) { written.delete(prefix); return false; }
   }
   // Written last, so an interrupted write leaves the previous header pointing
   // at a length the new chunks will not match — and the read rejects it.
-  if (!(await cloudSet(headKey(prefix), `${chunks.length}.${value.length}`))) return false;
+  const nextHead = `${chunks.length}.${value.length}`;
+  if (!(await cloudSet(headKey(prefix), nextHead))) { written.delete(prefix); return false; }
 
   if (before > chunks.length) {
     const stale = [];
     for (let i = chunks.length; i < before; i++) stale.push(chunkKey(prefix, i));
     await cloudRemove(stale);
   }
+  written.set(prefix, { head: nextHead, chunks });
   return true;
 }
 

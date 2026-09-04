@@ -1,90 +1,167 @@
-// Flashcard scheduling and persistence for the Medical English section.
+// The Medical English deck: daily limits, the study queue, and persistence.
 //
-// A Leitner box system: a card you get right moves up a box and comes back
-// later; a card you miss drops to the bottom and comes back today. It is what
-// Anki does, minus the per-card ease factor — which needs far more review
-// history than a vocabulary drill ever accumulates to mean anything.
-//
-// Progress lives under its own storage key. Keeping it out of the quiz state
-// means a glossary of 8,479 cards can never crowd out a user's XP and streak.
+// Scheduling itself lives in srs.js. This file owns everything around it —
+// how many new cards a day the user has asked for, what is due right now, and
+// getting that state onto disk and into the cloud without tripping over
+// Telegram's storage limits.
 
 import { cloudGetChunked, cloudSetChunked } from "./telegram.js";
+import {
+  DEFAULTS,
+  LEARNING,
+  NEW,
+  RELEARNING,
+  REVIEW,
+  answer as srsAnswer,
+  dayNumber,
+  freshCard,
+  isDue,
+  minuteNumber,
+} from "./srs.js";
 
 const KEY = "usmleengo_english_v1";
 
-// Days until a card in each box comes back. Box 0 is "seen it, got it wrong",
-// which is due immediately; box 5 is retired but never permanently — a word
-// you have not touched in five weeks is worth one more look.
-const INTERVALS = [0, 1, 3, 7, 16, 35];
-export const TOP_BOX = INTERVALS.length - 1;
-
-/** Whole days since the epoch, from the local calendar date. */
-export function dayNumber(date = new Date()) {
-  return Math.floor(
-    Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 86400000,
-  );
-}
-
 export const emptyDeck = {
-  // box[cardIndex] = [box, dueDay] — only cards the user has actually seen.
-  box: {},
+  config: { newPerDay: DEFAULTS.newPerDay, revPerDay: DEFAULTS.revPerDay },
+  // cards[glossaryIndex] = { state, step, ease, ivl, due, lapses, reps }
+  // Only cards the user has actually seen; everything else is implicitly new.
+  cards: {},
+  // Daily counters, reset when `day` no longer matches today.
+  day: null,
+  newDone: 0,
+  revDone: 0,
   reviews: 0,
-  lastDay: null,
 };
 
-/* ── compact encoding ──────────────────────────────────────────────────────
-   Telegram CloudStorage caps a value at 4096 characters, so JSON is not an
-   option past a few hundred cards. One card is "index:box:due", all in base
-   36 — about 11 characters — and the payload is chunked across keys. */
+/* ── daily counters ──────────────────────────────────────────────────────── */
+
+/** Roll the per-day counters over if the Anki day has changed since last time. */
+export function rollDay(deck, today = dayNumber()) {
+  if (deck.day === today) return deck;
+  return { ...deck, day: today, newDone: 0, revDone: 0 };
+}
+
+/* ── encoding ──────────────────────────────────────────────────────────────
+   Telegram CloudStorage caps a value at 4096 characters, so this is a compact
+   string rather than JSON. One card is
+       index : state : step : ease : interval : due : lapses
+   all base 36, joined by ";". Roughly 20 characters a card, against about 90
+   for the equivalent JSON. */
+
+const b36 = (n) => Math.round(n).toString(36);
+const from36 = (s) => parseInt(s, 36);
 
 function encode(deck) {
   const parts = [];
-  for (const [idx, [box, due]] of Object.entries(deck.box)) {
-    parts.push(`${Number(idx).toString(36)}:${box}:${due.toString(36)}`);
+  for (const [idx, c] of Object.entries(deck.cards)) {
+    parts.push([
+      b36(Number(idx)),
+      c.state,
+      c.step,
+      b36(Math.round(c.ease * 100)),
+      b36(c.ivl),
+      b36(c.due),
+      b36(c.lapses || 0),
+    ].join(":"));
   }
-  return `1|${deck.reviews}|${deck.lastDay || ""}|${parts.join(";")}`;
+  const { newPerDay, revPerDay } = deck.config;
+  return [
+    "2",
+    newPerDay,
+    revPerDay,
+    deck.day ?? "",
+    deck.newDone,
+    deck.revDone,
+    deck.reviews,
+    parts.join(";"),
+  ].join("|");
+}
+
+// Box intervals from the Leitner version this replaced, so a deck saved by the
+// previous build is carried over rather than thrown away.
+const V1_INTERVALS = [0, 1, 3, 7, 16, 35];
+
+function decodeV1(body, reviews) {
+  const cards = {};
+  for (const part of body ? body.split(";") : []) {
+    if (!part) continue;
+    const [i, b, d] = part.split(":");
+    const idx = from36(i);
+    const box = Number(b);
+    const due = from36(d);
+    if (Number.isNaN(idx) || Number.isNaN(box) || Number.isNaN(due)) continue;
+    // A box maps onto a review card with the interval that box represented.
+    const ivl = Math.max(1, V1_INTERVALS[Math.min(box, V1_INTERVALS.length - 1)] || 1);
+    cards[idx] = { state: REVIEW, step: 0, ease: DEFAULTS.startingEase, ivl, due, lapses: 0, reps: 1 };
+  }
+  return { ...emptyDeck, config: { ...emptyDeck.config }, cards, reviews: Number(reviews) || 0 };
 }
 
 function decode(raw) {
   if (!raw || typeof raw !== "string") return null;
-  const [version, reviews, lastDay, body] = raw.split("|");
-  if (version !== "1") return null;
+  const fields = raw.split("|");
 
-  const box = {};
-  if (body) {
-    for (const part of body.split(";")) {
-      if (!part) continue;
-      const [i, b, d] = part.split(":");
-      const idx = parseInt(i, 36);
-      const bx = Number(b);
-      const due = parseInt(d, 36);
-      if (Number.isNaN(idx) || Number.isNaN(bx) || Number.isNaN(due)) continue;
-      box[idx] = [Math.min(TOP_BOX, Math.max(0, bx)), due];
-    }
+  if (fields[0] === "1") {
+    // "1|reviews|lastDay|cards"
+    return decodeV1(fields[3], fields[1]);
   }
-  return { box, reviews: Number(reviews) || 0, lastDay: lastDay || null };
+  if (fields[0] !== "2") return null;
+
+  const [, newPerDay, revPerDay, day, newDone, revDone, reviews, body] = fields;
+  const cards = {};
+  for (const part of body ? body.split(";") : []) {
+    if (!part) continue;
+    const [i, st, step, ease, ivl, due, lapses] = part.split(":");
+    const idx = from36(i);
+    if (Number.isNaN(idx)) continue;
+    const state = Number(st);
+    if (![LEARNING, REVIEW, RELEARNING].includes(state)) continue;
+    cards[idx] = {
+      state,
+      step: Number(step) || 0,
+      ease: Math.max(DEFAULTS.minEase, (from36(ease) || 250) / 100),
+      ivl: from36(ivl) || 0,
+      due: from36(due) || 0,
+      lapses: from36(lapses) || 0,
+      reps: 1,
+    };
+  }
+  const clamp = (v, lo, hi, dflt) => Math.min(hi, Math.max(lo, Number(v) || dflt));
+  return {
+    config: {
+      newPerDay: clamp(newPerDay, 0, 500, DEFAULTS.newPerDay),
+      revPerDay: clamp(revPerDay, 0, 9999, DEFAULTS.revPerDay),
+    },
+    cards,
+    day: day === "" ? null : Number(day),
+    newDone: Number(newDone) || 0,
+    revDone: Number(revDone) || 0,
+    reviews: Number(reviews) || 0,
+  };
 }
 
-/** Synchronous read for first paint. */
+/* ── persistence ───────────────────────────────────────────────────────────
+   localStorage is written on every answer; the cloud write is debounced,
+   because a card is answered every few seconds and each cloud write is a
+   round trip per changed chunk. */
+
 export function loadDeckLocal() {
   try {
-    return decode(localStorage.getItem(KEY)) || { ...emptyDeck, box: {} };
+    return decode(localStorage.getItem(KEY)) || structuredClone(emptyDeck);
   } catch {
-    return { ...emptyDeck, box: {} };
+    return structuredClone(emptyDeck);
   }
 }
 
-/**
- * Async read that prefers whichever copy has seen more reviews — the same
- * "most progress wins" rule the quiz state uses, for the same reason: a user
- * who studied offline on a second device must not lose that work.
- */
 export async function loadDeckRemote(local) {
-  const raw = await cloudGetChunked(KEY);
-  const remote = decode(raw);
+  const remote = decode(await cloudGetChunked(KEY));
   if (!remote) return local;
+  // Most reviews wins, the same rule the quiz state uses.
   return remote.reviews >= local.reviews ? remote : local;
 }
+
+let cloudTimer = null;
+let cloudPending = null;
 
 export function saveDeck(deck) {
   const encoded = encode(deck);
@@ -93,121 +170,208 @@ export function saveDeck(deck) {
   } catch {
     /* private mode / quota — the cloud write may still land */
   }
-  cloudSetChunked(KEY, encoded);
+  cloudPending = encoded;
+  if (cloudTimer) clearTimeout(cloudTimer);
+  cloudTimer = setTimeout(() => {
+    cloudTimer = null;
+    const value = cloudPending;
+    cloudPending = null;
+    if (value != null) cloudSetChunked(KEY, value);
+  }, 2000);
+  return encoded;
+}
+
+/** Push any debounced write immediately — on leaving the section. */
+export function flushDeck() {
+  if (cloudTimer) {
+    clearTimeout(cloudTimer);
+    cloudTimer = null;
+  }
+  const value = cloudPending;
+  cloudPending = null;
+  if (value != null) return cloudSetChunked(KEY, value);
+  return Promise.resolve(false);
 }
 
 export function resetDeck() {
-  const fresh = { ...emptyDeck, box: {} };
+  const fresh = structuredClone(emptyDeck);
   saveDeck(fresh);
+  flushDeck();
   return fresh;
 }
 
-/* ── scheduling ─────────────────────────────────────────────────────────── */
+export function setConfig(deck, patch) {
+  return { ...deck, config: { ...deck.config, ...patch } };
+}
+
+/* ── the queue ─────────────────────────────────────────────────────────── */
+
+const cardOf = (deck, i) => deck.cards[i] || freshCard();
 
 /**
- * Record one answer.
+ * Split the pool into Anki's three counts, honouring the daily limits.
  *
- * "again" sends the card back to box 0 rather than down one step: a word you
- * could not recall is a word you do not know, whatever you knew last week.
+ * Learning cards are never limited — they are already in flight, and holding
+ * them back would strand a half-learned card overnight.
  */
-export function rate(deck, cardIndex, grade) {
-  const [box] = deck.box[cardIndex] || [0, 0];
-  const today = dayNumber();
+export function queueCounts(deck, pool, nowMs = Date.now()) {
+  const today = dayNumber(nowMs);
+  const nowMin = minuteNumber(nowMs);
 
-  let next;
-  if (grade === "again") next = 0;
-  else if (grade === "easy") next = Math.min(TOP_BOX, box + 2);
-  else next = Math.min(TOP_BOX, box + 1);
-
-  return {
-    ...deck,
-    reviews: deck.reviews + 1,
-    lastDay: today,
-    box: { ...deck.box, [cardIndex]: [next, today + INTERVALS[next]] },
-  };
-}
-
-/** Cards due now: everything unseen, plus everything whose interval elapsed. */
-export function due(cards, deck, today = dayNumber()) {
-  return cards.filter((c) => {
-    const entry = deck.box[c.i];
-    return !entry || entry[1] <= today;
-  });
-}
-
-/**
- * Build a study round.
- *
- * Cards already in circulation come first and unseen cards fill the rest, so
- * a user who keeps starting rounds finishes what they started rather than
- * being handed 8,479 new words.
- */
-export function buildRound(pool, deck, count, today = dayNumber()) {
-  const seen = [];
-  const fresh = [];
-  for (const c of pool) {
-    const entry = deck.box[c.i];
-    if (!entry) fresh.push(c);
-    else if (entry[1] <= today) seen.push(c);
-  }
-  // Lowest box first — the words being actively missed lead the round.
-  seen.sort((a, b) => deck.box[a.i][0] - deck.box[b.i][0]);
-
-  // Unseen cards enter high-yield first, randomised within a tier. The
-  // glossary is stored alphabetically, so taking it in order would open every
-  // new user's first session on 17-alpha-hydroxylase and 2,3-bisphosphoglycerate.
-  // Shuffle then sort: Array.sort is stable, so the tiers keep their shuffle.
-  const rank = { high: 0, medium: 1, low: 2 };
-  const queue = shuffle(fresh).sort((a, b) => rank[a.yield] - rank[b.yield]);
-
-  const round = [...seen.slice(0, count)];
-  for (const c of queue) {
-    if (round.length >= count) break;
-    round.push(c);
-  }
-  return shuffle(round);
-}
-
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-/**
- * Headline numbers for the deck screen.
- *
- * `due` counts only cards already in circulation whose interval has elapsed —
- * a real review debt. Unseen cards are counted separately as `fresh`: calling
- * all 8,479 of them "due" on day one is a number nobody can act on.
- */
-export function deckStats(cards, deck, today = dayNumber()) {
+  // Anki's red counter is every card in flight, not only the ones whose minute
+  // has arrived — a card due in eight minutes is still work you owe today.
   let learning = 0;
-  let known = 0;
-  let dueReview = 0;
+  // ...of which, the ones that can actually be put on screen right now.
+  let learnReady = 0;
+  let reviewDue = 0;
   let fresh = 0;
+  let seen = 0;
+  let known = 0;
 
-  for (const c of cards) {
-    const entry = deck.box[c.i];
-    if (!entry) { fresh++; continue; }
-    const [box, dueDay] = entry;
-    if (box >= TOP_BOX) known++;
-    else learning++;
-    if (dueDay <= today) dueReview++;
+  for (const c of pool) {
+    const card = deck.cards[c.i];
+    if (!card) { fresh++; continue; }
+    seen++;
+    if (card.state === REVIEW) {
+      if (card.due <= today) reviewDue++;
+      if (card.ivl >= 21) known++;            // Anki calls 21 days "mature"
+    } else {
+      learning++;
+      if (card.due - nowMin <= DEFAULTS.learnAheadMins) learnReady++;
+    }
   }
 
+  const newLeft = Math.max(0, deck.config.newPerDay - deck.newDone);
+  const revLeft = Math.max(0, deck.config.revPerDay - deck.revDone);
+  const newCount = Math.min(fresh, newLeft);
+  const dueCount = Math.min(reviewDue, revLeft);
+
   return {
-    total: cards.length,
-    studied: learning + known,
-    learning,
+    total: pool.length,
+    seen,
     known,
-    fresh,
-    due: dueReview,
-    // What a round can actually draw from right now.
-    available: dueReview + fresh,
-    reviews: deck.reviews,
+    // What the three counters on the deck screen show.
+    newCount,
+    learnCount: learning,
+    dueCount,
+    // Whether a card can be served this second — the counters can be non-zero
+    // while every learning card is still a few minutes out.
+    readyNow: newCount + dueCount + learnReady,
+    // Context the counters alone do not convey.
+    newRemaining: fresh,
+    reviewBacklog: reviewDue,
+    newLimited: fresh > newLeft,
+    revLimited: reviewDue > revLeft,
   };
 }
+
+/**
+ * The next card to show, or null when the deck is finished for now.
+ *
+ * Learning cards that are actually due come first. New and review cards are
+ * then interleaved in proportion to how many of each remain, which is what
+ * Anki's default "mix with reviews" does — studying all the reviews and then
+ * a wall of new cards is a much worse hour.
+ */
+export function nextCard(deck, pool, nowMs = Date.now(), rand = Math.random) {
+  const today = dayNumber(nowMs);
+  const nowMin = minuteNumber(nowMs);
+
+  const learning = [];
+  const reviews = [];
+  const fresh = [];
+
+  for (const c of pool) {
+    const card = deck.cards[c.i];
+    if (!card) { fresh.push(c); continue; }
+    if (card.state === REVIEW) {
+      if (card.due <= today) reviews.push(c);
+    } else {
+      learning.push(c);
+    }
+  }
+
+  const dueLearning = learning.filter((c) => deck.cards[c.i].due <= nowMin);
+  if (dueLearning.length) {
+    dueLearning.sort((a, b) => deck.cards[a.i].due - deck.cards[b.i].due);
+    return dueLearning[0];
+  }
+
+  const newLeft = Math.max(0, deck.config.newPerDay - deck.newDone);
+  const revLeft = Math.max(0, deck.config.revPerDay - deck.revDone);
+  const takeNew = Math.min(fresh.length, newLeft);
+  const takeRev = Math.min(reviews.length, revLeft);
+
+  if (takeNew && takeRev) {
+    return rand() < takeNew / (takeNew + takeRev) ? pickNew(fresh, rand) : pickReview(reviews, deck);
+  }
+  if (takeRev) return pickReview(reviews, deck);
+  if (takeNew) return pickNew(fresh, rand);
+
+  // Nothing left but a card that is about to come up — Anki shows it early
+  // rather than ending the session on a technicality.
+  const soon = learning
+    .filter((c) => deck.cards[c.i].due - nowMin <= DEFAULTS.learnAheadMins)
+    .sort((a, b) => deck.cards[a.i].due - deck.cards[b.i].due);
+  return soon[0] || null;
+}
+
+/**
+ * Unseen cards enter high-yield first, shuffled within a tier. The glossary is
+ * stored alphabetically, so taking it in order opens a first session on
+ * 17-alpha-hydroxylase and 2,3-bisphosphoglycerate.
+ */
+const YIELD_RANK = { high: 0, medium: 1, low: 2 };
+function pickNew(fresh, rand) {
+  let best = null;
+  let bestKey = Infinity;
+  for (const c of fresh) {
+    // Rank primarily by yield, then by a stable per-card jitter, so the order
+    // is varied but does not reshuffle on every render.
+    const key = YIELD_RANK[c.yield] * 1000 + ((Math.imul(c.i + 1, 2654435761) >>> 0) % 1000);
+    if (key < bestKey) { bestKey = key; best = c; }
+  }
+  return best;
+}
+
+/** Longest-overdue first, which is how Anki orders a review backlog. */
+function pickReview(reviews, deck) {
+  let best = reviews[0];
+  for (const c of reviews) if (deck.cards[c.i].due < deck.cards[best.i].due) best = c;
+  return best;
+}
+
+/* ── answering ─────────────────────────────────────────────────────────── */
+
+/** The card record for a glossary entry, with its index attached for fuzz. */
+export function stateOf(deck, i) {
+  return { ...cardOf(deck, i), key: i };
+}
+
+/**
+ * Apply an answer and move the daily counters.
+ *
+ * A card counts against the new limit the first time it is studied, and
+ * against the review limit when it was a review card — matching what Anki
+ * counts, so the numbers on the deck screen mean what an Anki user expects.
+ */
+export function answerCard(deck, i, grade, nowMs = Date.now()) {
+  const rolled = rollDay(deck, dayNumber(nowMs));
+  const before = deck.cards[i];
+  const card = stateOf(rolled, i);
+  const next = srsAnswer(card, grade, { now: nowMs, config: rolled.config });
+  delete next.key;
+
+  const wasNew = !before;
+  const wasReview = before && before.state === REVIEW;
+
+  return {
+    ...rolled,
+    cards: { ...rolled.cards, [i]: next },
+    newDone: rolled.newDone + (wasNew ? 1 : 0),
+    revDone: rolled.revDone + (wasReview ? 1 : 0),
+    reviews: rolled.reviews + 1,
+  };
+}
+
+export { NEW, LEARNING, REVIEW, RELEARNING, dayNumber };

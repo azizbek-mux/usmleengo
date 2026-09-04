@@ -137,16 +137,29 @@ check("reset also blanks the legacy copy so it cannot resurrect progress",
 
 store.clear(); local.clear();
 const D = await import(SRC + "deck.js");
-let deck = { ...D.emptyDeck, box: {} };
-for (let i = 0; i < 3000; i++) deck = D.rate(deck, i, "good");
-const encoded = D.saveDeck(deck);
-await sleep();
-const deckBack = await D.loadDeckRemote({ ...D.emptyDeck, box: {} });
+let deck = structuredClone(D.emptyDeck);
+for (let i = 0; i < 3000; i++) deck = D.answerCard(deck, i, ["again", "hard", "good", "easy"][i % 4]);
+D.saveDeck(deck);
+await D.flushDeck();                       // the cloud write is debounced
+const deckBack = await D.loadDeckRemote(structuredClone(D.emptyDeck));
 check("3,000 flashcards round-trip through the cloud",
-      Object.keys(deckBack.box).length === 3000, `${Object.keys(deckBack.box).length}`);
+      Object.keys(deckBack.cards).length === 3000, `${Object.keys(deckBack.cards).length}`);
 check("deck review count survives", deckBack.reviews === 3000, `${deckBack.reviews}`);
 console.log(`  deck stored in ${[...store.keys()].length} cloud keys ` +
             `(${localStorage.getItem("usmleengo_english_v1").length} characters)`);
+
+/* ── 7. a single answer must not rewrite every chunk ───────────────────── */
+
+let writes = 0;
+const realSet = window.Telegram.WebApp.CloudStorage.setItem;
+window.Telegram.WebApp.CloudStorage.setItem = function (k, v, cb) { writes++; return realSet(k, v, cb); };
+deck = D.answerCard(deck, 12, "good");
+D.saveDeck(deck);
+await D.flushDeck();
+window.Telegram.WebApp.CloudStorage.setItem = realSet;
+check("answering one card writes only the chunks that changed",
+      writes <= 4, `${writes} writes for a one-card change`);
+console.log(`  (a full rewrite would have been ${Math.ceil(localStorage.getItem("usmleengo_english_v1").length / 3800) + 1} writes)`);
 
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);
