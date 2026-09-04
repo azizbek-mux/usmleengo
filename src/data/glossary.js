@@ -34,11 +34,12 @@ export function loadGlossary() {
     })
     .then((data) => {
       const { rows, yields } = data;
-      // Index is the card's identity: it is what progress is stored against,
-      // and the compiler sorts alphabetically so it only moves when the
-      // glossary itself changes.
-      rows.forEach(([term, ipa, uz, def, yld], i) => {
-        cards.push({ i, term, ipa, uz, def, yield: yields[yld] });
+      // `id` is the card's identity — a hash of the English term, assigned by
+      // the compiler. Progress is stored against it, so editing the glossary
+      // cannot reassign anyone's schedule to a different word. `i` is only a
+      // position, useful for keys and ordering.
+      rows.forEach(([id, term, ipa, uz, def, yld], i) => {
+        cards.push({ id, i, term, ipa, uz, def, yield: yields[yld] });
       });
       return cards;
     })

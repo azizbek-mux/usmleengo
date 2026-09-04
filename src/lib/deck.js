@@ -23,8 +23,10 @@ const KEY = "usmleengo_english_v1";
 
 export const emptyDeck = {
   config: { newPerDay: DEFAULTS.newPerDay, revPerDay: DEFAULTS.revPerDay },
-  // cards[glossaryIndex] = { state, step, ease, ivl, due, lapses, reps }
-  // Only cards the user has actually seen; everything else is implicitly new.
+  // cards[cardId] = { state, step, ease, ivl, due, lapses, reps }
+  // Keyed by the glossary's content hash, never by row position: trimming the
+  // glossary shifts every index after the first change, which would silently
+  // hand every schedule to the wrong word.
   cards: {},
   // Daily counters, reset when `day` no longer matches today.
   day: null,
@@ -44,18 +46,18 @@ export function rollDay(deck, today = dayNumber()) {
 /* ── encoding ──────────────────────────────────────────────────────────────
    Telegram CloudStorage caps a value at 4096 characters, so this is a compact
    string rather than JSON. One card is
-       index : state : step : ease : interval : due : lapses
-   all base 36, joined by ";". Roughly 20 characters a card, against about 90
-   for the equivalent JSON. */
+       id : state : step : ease : interval : due : lapses
+   with the numbers in base 36, joined by ";". Roughly 25 characters a card,
+   against about 95 for the equivalent JSON. */
 
 const b36 = (n) => Math.round(n).toString(36);
 const from36 = (s) => parseInt(s, 36);
 
 function encode(deck) {
   const parts = [];
-  for (const [idx, c] of Object.entries(deck.cards)) {
+  for (const [id, c] of Object.entries(deck.cards)) {
     parts.push([
-      b36(Number(idx)),
+      id,
       c.state,
       c.step,
       b36(Math.round(c.ease * 100)),
@@ -66,7 +68,7 @@ function encode(deck) {
   }
   const { newPerDay, revPerDay } = deck.config;
   return [
-    "2",
+    "3",
     newPerDay,
     revPerDay,
     deck.day ?? "",
@@ -77,46 +79,25 @@ function encode(deck) {
   ].join("|");
 }
 
-// Box intervals from the Leitner version this replaced, so a deck saved by the
-// previous build is carried over rather than thrown away.
-const V1_INTERVALS = [0, 1, 3, 7, 16, 35];
-
-function decodeV1(body, reviews) {
-  const cards = {};
-  for (const part of body ? body.split(";") : []) {
-    if (!part) continue;
-    const [i, b, d] = part.split(":");
-    const idx = from36(i);
-    const box = Number(b);
-    const due = from36(d);
-    if (Number.isNaN(idx) || Number.isNaN(box) || Number.isNaN(due)) continue;
-    // A box maps onto a review card with the interval that box represented.
-    const ivl = Math.max(1, V1_INTERVALS[Math.min(box, V1_INTERVALS.length - 1)] || 1);
-    cards[idx] = { state: REVIEW, step: 0, ease: DEFAULTS.startingEase, ivl, due, lapses: 0, reps: 1 };
-  }
-  return { ...emptyDeck, config: { ...emptyDeck.config }, cards, reviews: Number(reviews) || 0 };
-}
-
 function decode(raw) {
   if (!raw || typeof raw !== "string") return null;
   const fields = raw.split("|");
 
-  if (fields[0] === "1") {
-    // "1|reviews|lastDay|cards"
-    return decodeV1(fields[3], fields[1]);
-  }
-  if (fields[0] !== "2") return null;
+  // Versions 1 and 2 keyed cards by their position in an 8,479-card glossary
+  // that no longer exists. Those positions cannot be mapped onto the trimmed
+  // deck, and guessing would attach real schedules to the wrong words — worse
+  // than starting over. They are discarded deliberately.
+  if (fields[0] !== "3") return null;
 
   const [, newPerDay, revPerDay, day, newDone, revDone, reviews, body] = fields;
   const cards = {};
   for (const part of body ? body.split(";") : []) {
     if (!part) continue;
-    const [i, st, step, ease, ivl, due, lapses] = part.split(":");
-    const idx = from36(i);
-    if (Number.isNaN(idx)) continue;
+    const [id, st, step, ease, ivl, due, lapses] = part.split(":");
+    if (!id) continue;
     const state = Number(st);
     if (![LEARNING, REVIEW, RELEARNING].includes(state)) continue;
-    cards[idx] = {
+    cards[id] = {
       state,
       step: Number(step) || 0,
       ease: Math.max(DEFAULTS.minEase, (from36(ease) || 250) / 100),
@@ -206,7 +187,17 @@ export function setConfig(deck, patch) {
 
 /* ── the queue ─────────────────────────────────────────────────────────── */
 
-const cardOf = (deck, i) => deck.cards[i] || freshCard();
+const cardOf = (deck, id) => deck.cards[id] || freshCard();
+
+/** A number derived from the card id, used only to seed the scheduler's fuzz. */
+function seedOf(id) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < id.length; i++) {
+    h ^= id.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h;
+}
 
 /**
  * Split the pool into Anki's three counts, honouring the daily limits.
@@ -229,7 +220,7 @@ export function queueCounts(deck, pool, nowMs = Date.now()) {
   let known = 0;
 
   for (const c of pool) {
-    const card = deck.cards[c.i];
+    const card = deck.cards[c.id];
     if (!card) { fresh++; continue; }
     seen++;
     if (card.state === REVIEW) {
@@ -282,7 +273,7 @@ export function nextCard(deck, pool, nowMs = Date.now(), rand = Math.random) {
   const fresh = [];
 
   for (const c of pool) {
-    const card = deck.cards[c.i];
+    const card = deck.cards[c.id];
     if (!card) { fresh.push(c); continue; }
     if (card.state === REVIEW) {
       if (card.due <= today) reviews.push(c);
@@ -291,9 +282,9 @@ export function nextCard(deck, pool, nowMs = Date.now(), rand = Math.random) {
     }
   }
 
-  const dueLearning = learning.filter((c) => deck.cards[c.i].due <= nowMin);
+  const dueLearning = learning.filter((c) => deck.cards[c.id].due <= nowMin);
   if (dueLearning.length) {
-    dueLearning.sort((a, b) => deck.cards[a.i].due - deck.cards[b.i].due);
+    dueLearning.sort((a, b) => deck.cards[a.id].due - deck.cards[b.id].due);
     return dueLearning[0];
   }
 
@@ -311,8 +302,8 @@ export function nextCard(deck, pool, nowMs = Date.now(), rand = Math.random) {
   // Nothing left but a card that is about to come up — Anki shows it early
   // rather than ending the session on a technicality.
   const soon = learning
-    .filter((c) => deck.cards[c.i].due - nowMin <= DEFAULTS.learnAheadMins)
-    .sort((a, b) => deck.cards[a.i].due - deck.cards[b.i].due);
+    .filter((c) => deck.cards[c.id].due - nowMin <= DEFAULTS.learnAheadMins)
+    .sort((a, b) => deck.cards[a.id].due - deck.cards[b.id].due);
   return soon[0] || null;
 }
 
@@ -328,7 +319,7 @@ function pickNew(fresh, rand) {
   for (const c of fresh) {
     // Rank primarily by yield, then by a stable per-card jitter, so the order
     // is varied but does not reshuffle on every render.
-    const key = YIELD_RANK[c.yield] * 1000 + ((Math.imul(c.i + 1, 2654435761) >>> 0) % 1000);
+    const key = YIELD_RANK[c.yield] * 1000 + (seedOf(c.id) % 1000);
     if (key < bestKey) { bestKey = key; best = c; }
   }
   return best;
@@ -337,15 +328,15 @@ function pickNew(fresh, rand) {
 /** Longest-overdue first, which is how Anki orders a review backlog. */
 function pickReview(reviews, deck) {
   let best = reviews[0];
-  for (const c of reviews) if (deck.cards[c.i].due < deck.cards[best.i].due) best = c;
+  for (const c of reviews) if (deck.cards[c.id].due < deck.cards[best.id].due) best = c;
   return best;
 }
 
 /* ── answering ─────────────────────────────────────────────────────────── */
 
-/** The card record for a glossary entry, with its index attached for fuzz. */
-export function stateOf(deck, i) {
-  return { ...cardOf(deck, i), key: i };
+/** The card record for a glossary entry, with its fuzz seed attached. */
+export function stateOf(deck, id) {
+  return { ...cardOf(deck, id), key: seedOf(id) };
 }
 
 /**
@@ -355,10 +346,10 @@ export function stateOf(deck, i) {
  * against the review limit when it was a review card — matching what Anki
  * counts, so the numbers on the deck screen mean what an Anki user expects.
  */
-export function answerCard(deck, i, grade, nowMs = Date.now()) {
+export function answerCard(deck, id, grade, nowMs = Date.now()) {
   const rolled = rollDay(deck, dayNumber(nowMs));
-  const before = deck.cards[i];
-  const card = stateOf(rolled, i);
+  const before = deck.cards[id];
+  const card = stateOf(rolled, id);
   const next = srsAnswer(card, grade, { now: nowMs, config: rolled.config });
   delete next.key;
 
@@ -367,7 +358,7 @@ export function answerCard(deck, i, grade, nowMs = Date.now()) {
 
   return {
     ...rolled,
-    cards: { ...rolled.cards, [i]: next },
+    cards: { ...rolled.cards, [id]: next },
     newDone: rolled.newDone + (wasNew ? 1 : 0),
     revDone: rolled.revDone + (wasReview ? 1 : 0),
     reviews: rolled.reviews + 1,

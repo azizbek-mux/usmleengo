@@ -112,7 +112,7 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
         </div>
       </div>
 
-      <div className="card-face" key={`${card.i}-${shown}`}>
+      <div className="card-face" key={`${card.id}-${shown}`}>
         {!shown ? (
           <button className="card-front" onClick={onShow}>
             {card.yield === "high" && (
@@ -225,7 +225,7 @@ export default function English({ onHome }) {
 
   function onRate(grade) {
     haptic(grade === "again" ? "warning" : "light");
-    const next = answerCard(deck, current.i, grade);
+    const next = answerCard(deck, current.id, grade);
     persist(next);
     setDone((d) => d + 1);
     advance(next);
@@ -277,7 +277,7 @@ export default function English({ onHome }) {
     return (
       <Studying
         card={current}
-        state={stateOf(deck, current.i)}
+        state={stateOf(deck, current.id)}
         shown={shown}
         counts={counts}
         onShow={() => { haptic("light"); setShown(true); }}
@@ -350,7 +350,7 @@ export default function English({ onHome }) {
         hits.length ? (
           <div className="results" style={{ marginTop: 14 }}>
             {hits.slice(0, 12).map((c) => (
-              <div key={c.i} className="look-row">
+              <div key={c.id} className="look-row">
                 <div className="look-en">{c.term}</div>
                 {c.ipa && <div className="look-ipa">{c.ipa}</div>}
                 <div className="look-uz">{c.uz}</div>

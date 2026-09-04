@@ -162,7 +162,8 @@ check("intervals print in Anki's units", !badLabel, badLabel || "");
 console.log("\ndaily limits");
 
 const D = await import(SRC + "deck.js");
-const pool = Array.from({ length: 200 }, (_, i) => ({ i, yield: i < 50 ? "high" : "medium" }));
+// Cards are identified by a content hash now, not a row position.
+const pool = Array.from({ length: 200 }, (_, i) => ({ id: `c${i.toString(36).padStart(5, "0")}`, i, yield: i < 50 ? "high" : "medium" }));
 let deck = D.rollDay(structuredClone(D.emptyDeck), dayNumber(T0));
 deck = D.setConfig(deck, { newPerDay: 5, revPerDay: 3 });
 
@@ -175,7 +176,7 @@ let introduced = 0;
 for (let n = 0; n < 5; n++) {
   const card = D.nextCard(deck, pool, T0);
   if (!card) break;
-  deck = D.answerCard(deck, card.i, "easy", T0);   // Easy graduates straight to review
+  deck = D.answerCard(deck, card.id, "easy", T0);   // Easy graduates straight to review
   introduced++;
 }
 check("five new cards can be introduced", introduced === 5, `${introduced}`);
@@ -195,16 +196,16 @@ check("new cards are available again the next day", counts.newCount === 5, `${co
 
 let deck2 = D.setConfig(D.rollDay(structuredClone(D.emptyDeck), dayNumber(T0)), { newPerDay: 1, revPerDay: 0 });
 const first = D.nextCard(deck2, pool, T0);
-deck2 = D.answerCard(deck2, first.i, "good", T0);        // now in learning, due in 1 minute
+deck2 = D.answerCard(deck2, first.id, "good", T0);        // now in learning, due in 1 minute
 const c2 = D.queueCounts(deck2, pool, T0 + 2 * MIN);
 check("a card in learning is counted even before its minute arrives",
       c2.learnCount === 1, `learnCount ${c2.learnCount}`);
 check("and it is servable, because Anki shows learning cards slightly early",
-      c2.readyNow === 1 && D.nextCard(deck2, pool, T0 + 2 * MIN)?.i === first.i,
+      c2.readyNow === 1 && D.nextCard(deck2, pool, T0 + 2 * MIN)?.id === first.id,
       `readyNow ${c2.readyNow}`);
 const c3 = D.queueCounts(deck2, pool, T0 + 11 * MIN);
 check("once due, it is still available past both daily limits",
-      c3.learnCount === 1 && D.nextCard(deck2, pool, T0 + 11 * MIN)?.i === first.i);
+      c3.learnCount === 1 && D.nextCard(deck2, pool, T0 + 11 * MIN)?.id === first.id);
 
 /* ── storage round trip, including the old Leitner format ───────────────── */
 
@@ -218,7 +219,7 @@ globalThis.localStorage = (() => {
 let rich = structuredClone(D.emptyDeck);
 rich = D.setConfig(rich, { newPerDay: 40, revPerDay: 500 });
 rich = D.rollDay(rich, dayNumber(T0));
-for (let i = 0; i < 300; i++) rich = D.answerCard(rich, i, ["again", "hard", "good", "easy"][i % 4], T0);
+for (let i = 0; i < 300; i++) rich = D.answerCard(rich, pool[i % pool.length].id, ["again", "hard", "good", "easy"][i % 4], T0);
 D.saveDeck(rich);
 const back = D.loadDeckLocal();
 check("every card survives the round trip",
@@ -235,16 +236,27 @@ check("a card's ease, interval, due and lapses all survive",
       back.cards[sample].lapses === rich.cards[sample].lapses,
       JSON.stringify(back.cards[sample]));
 
-// a deck written by the previous Leitner build
-localStorage.setItem("usmleengo_english_v1", "1|42|20700|0:1:fz1;5:4:fz9;9:0:fz0");
-const migrated = D.loadDeckLocal();
-check("a deck from the box system is carried over, not discarded",
-      Object.keys(migrated.cards).length === 3 && migrated.reviews === 42,
-      `${Object.keys(migrated.cards).length} cards, ${migrated.reviews} reviews`);
-check("boxes become review cards with the interval that box meant",
-      migrated.cards[0].state === REVIEW && migrated.cards[0].ivl === 1 &&
-      migrated.cards[5].ivl === 16,
-      JSON.stringify(migrated.cards[5]));
+// Decks from the index-keyed versions must be refused, not reinterpreted:
+// their card numbers point into a glossary that no longer exists.
+for (const [label, raw] of [
+  ["the Leitner build", "1|42|20700|0:1:fz1;5:4:fz9;9:0:fz0"],
+  ["the index-keyed SM-2 build", "2|20|200|20700|18|0|18|ir:1:0:6y:4:fz4:0"],
+]) {
+  localStorage.setItem("usmleengo_english_v1", raw);
+  const d = D.loadDeckLocal();
+  check(`a deck from ${label} is discarded rather than mis-mapped`,
+        Object.keys(d.cards).length === 0 && d.reviews === 0,
+        `${Object.keys(d.cards).length} cards, ${d.reviews} reviews`);
+}
+
+// Ids survive a glossary edit: the same term keeps the same schedule even
+// though its position moved.
+let byId = structuredClone(D.emptyDeck);
+byId = D.answerCard(byId, "abc1234", "good", T0);
+D.saveDeck(byId);
+const reloaded = D.loadDeckLocal();
+check("a card's schedule is stored against its id, not its position",
+      reloaded.cards["abc1234"] !== undefined, Object.keys(reloaded.cards).join(","));
 
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

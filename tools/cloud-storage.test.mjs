@@ -138,7 +138,8 @@ check("reset also blanks the legacy copy so it cannot resurrect progress",
 store.clear(); local.clear();
 const D = await import(SRC + "deck.js");
 let deck = structuredClone(D.emptyDeck);
-for (let i = 0; i < 3000; i++) deck = D.answerCard(deck, i, ["again", "hard", "good", "easy"][i % 4]);
+const cardId = (n) => `g${n.toString(36).padStart(6, "0")}`;
+for (let i = 0; i < 3000; i++) deck = D.answerCard(deck, cardId(i), ["again", "hard", "good", "easy"][i % 4]);
 D.saveDeck(deck);
 await D.flushDeck();                       // the cloud write is debounced
 const deckBack = await D.loadDeckRemote(structuredClone(D.emptyDeck));
@@ -153,7 +154,7 @@ console.log(`  deck stored in ${[...store.keys()].length} cloud keys ` +
 let writes = 0;
 const realSet = window.Telegram.WebApp.CloudStorage.setItem;
 window.Telegram.WebApp.CloudStorage.setItem = function (k, v, cb) { writes++; return realSet(k, v, cb); };
-deck = D.answerCard(deck, 12, "good");
+deck = D.answerCard(deck, cardId(12), "good");
 D.saveDeck(deck);
 await D.flushDeck();
 window.Telegram.WebApp.CloudStorage.setItem = realSet;
