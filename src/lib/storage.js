@@ -5,7 +5,7 @@
 // fallback and a synchronous cache so the first paint never waits on a
 // round-trip.
 
-import { cloudAvailable, cloudGet, cloudSet } from "./telegram.js";
+import { cloudAvailable, cloudGet, cloudGetChunked, cloudSet, cloudSetChunked } from "./telegram.js";
 
 const KEY = "usmle_drops_v1";
 
@@ -65,13 +65,29 @@ export function loadLocal() {
  * Async read that prefers whichever copy has more XP. Cloud and local can
  * diverge if the user played offline on one device, and "most progress wins"
  * is the behaviour that never loses a streak.
+ *
+ * There are three places progress can live: the local copy already painted,
+ * the chunked cloud copy, and the single-value cloud copy written by versions
+ * of the app from before chunking existed. All three are compared, so an
+ * upgrading user keeps what they had and a torn chunked read can never drag
+ * someone backwards.
  */
 export async function loadRemote(localState) {
   if (!cloudAvailable) return localState;
-  const res = await cloudGet([KEY]);
-  const remote = merge(res?.[KEY]);
-  if (!remote) return localState;
-  return remote.xp >= localState.xp ? remote : localState;
+
+  const [legacy, chunked] = await Promise.all([
+    cloudGet([KEY]).then((res) => res?.[KEY]),
+    cloudGetChunked(KEY),
+  ]);
+
+  let best = localState;
+  // Chunked is compared last so it wins a tie — it is the copy still being
+  // written, and the legacy key stops being updated after this version.
+  for (const raw of [legacy, chunked]) {
+    const candidate = merge(raw);
+    if (candidate && candidate.xp >= best.xp) best = candidate;
+  }
+  return best;
 }
 
 export function save(state) {
@@ -82,7 +98,12 @@ export function save(state) {
     /* private mode / quota — cloud may still succeed */
   }
   // Fire-and-forget: a failed cloud write must never block the UI.
-  cloudSet(KEY, json);
+  //
+  // Chunked, because `seen` gains an entry for every question answered and
+  // crosses CloudStorage's 4096-character ceiling at 125 of them (measured).
+  // Past that an unchunked write fails silently: nothing is lost on the
+  // device in use, but progress quietly stops following the user to another.
+  cloudSetChunked(KEY, json);
 }
 
 /**
@@ -128,7 +149,11 @@ export function reset() {
   } catch {
     /* ignore */
   }
-  cloudSet(KEY, JSON.stringify(emptyState));
+  const empty = JSON.stringify(emptyState);
+  cloudSetChunked(KEY, empty);
+  // The pre-chunking key is blanked too, or loadRemote's most-progress-wins
+  // comparison would find the old copy and resurrect what was just cleared.
+  cloudSet(KEY, empty);
   return { ...emptyState };
 }
 
