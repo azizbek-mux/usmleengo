@@ -11,17 +11,6 @@ import {
 } from "../lib/deck.js";
 import { haptic } from "../lib/telegram.js";
 
-const CATEGORIES = [
-  ["all", "Everything"],
-  ["finding", "Findings"],
-  ["mechanism", "Mechanisms"],
-  ["condition", "Conditions"],
-  ["lab", "Labs"],
-  ["anatomy", "Anatomy"],
-  ["imaging", "Imaging"],
-  ["idiom", "Idioms"],
-];
-
 // What each button does to the schedule, shown on the button itself so the
 // choice is informed rather than a guess — the one piece of Anki's interface
 // that genuinely teaches you how the system works.
@@ -48,26 +37,24 @@ function Card({ card, shown, onShow, onRate }) {
       <div className={`card-face${shown ? " flipped" : ""}`} key={`${card.i}-${shown}`}>
         {!shown ? (
           <button className="card-front" onClick={onShow}>
-            <div className="card-tags">
-              <span className="card-tag">{card.cat}</span>
-              {card.yield === "high" && <span className="card-tag hi">high yield</span>}
-            </div>
+            {card.yield === "high" && (
+              <div className="card-tags"><span className="card-tag hi">high yield</span></div>
+            )}
             <div className="card-term">{card.term}</div>
             {card.ipa && <div className="card-ipa">{card.ipa}</div>}
             <div className="card-hint">Tap to see the meaning</div>
           </button>
         ) : (
           <div className="card-back">
-            <div className="card-term small">{card.term}</div>
-            {card.ipa && <div className="card-ipa">{card.ipa}</div>}
-            <div className="card-uz">{card.uz}</div>
-            <div className="card-def">{card.def}</div>
-            {card.ety && (
-              <div className="card-ety">
-                <span className="card-ety-l">Word origin</span>
-                {card.ety}
-              </div>
-            )}
+            {/* Wrapped and centred with `margin: auto` rather than
+                justify-content: center — a centred flex column clips its own
+                top once the content is tall enough to scroll. */}
+            <div className="card-back-in">
+              <div className="card-term small">{card.term}</div>
+              {card.ipa && <div className="card-ipa">{card.ipa}</div>}
+              <div className="card-uz">{card.uz}</div>
+              <div className="card-def">{card.def}</div>
+            </div>
           </div>
         )}
       </div>
@@ -93,7 +80,6 @@ function Card({ card, shown, onShow, onRate }) {
 export default function English({ count, onHome }) {
   const [status, setStatus] = useState(() => (cards.length ? "ready" : "loading"));
   const [deck, setDeck] = useState(loadDeckLocal);
-  const [cat, setCat] = useState("all");
   const [highOnly, setHighOnly] = useState(false);
   const [query, setQuery] = useState("");
 
@@ -120,10 +106,8 @@ export default function English({ count, onHome }) {
 
   const pool = useMemo(() => {
     if (status !== "ready") return [];
-    return cards.filter(
-      (c) => (cat === "all" || c.cat === cat) && (!highOnly || c.yield === "high"),
-    );
-  }, [status, cat, highOnly]);
+    return highOnly ? cards.filter((c) => c.yield === "high") : cards;
+  }, [status, highOnly]);
 
   const stats = useMemo(
     () => (status === "ready" ? deckStats(pool, deck) : null),
@@ -248,7 +232,7 @@ export default function English({ count, onHome }) {
       </div>
       <div className="deck-bar-note">
         {stats.studied.toLocaleString()} of {stats.total.toLocaleString()} seen
-        {cat !== "all" || highOnly ? " in this filter" : ""}
+        {highOnly ? " in high yield" : ""}
       </div>
 
       <div className="search" style={{ marginTop: 18 }}>
@@ -279,26 +263,21 @@ export default function English({ count, onHome }) {
           <div className="empty"><div>Nothing for “{query.trim()}”.</div></div>
         )
       ) : (
-        <>
-          <div className="section-label">Filter</div>
-          <div className="chips">
-            {CATEGORIES.map(([id, name]) => (
-              <button
-                key={id}
-                className={`chip${cat === id ? " on" : ""}`}
-                onClick={() => { haptic("light"); setCat(id); }}
-              >
-                {name}
-              </button>
-            ))}
-            <button
-              className={`chip${highOnly ? " on" : ""}`}
-              onClick={() => { haptic("light"); setHighOnly((v) => !v); }}
-            >
-              high yield
-            </button>
-          </div>
-        </>
+        <button
+          className={`deck-toggle${highOnly ? " on" : ""}`}
+          onClick={() => { haptic("light"); setHighOnly((v) => !v); }}
+          aria-pressed={highOnly}
+        >
+          <span>
+            <span className="deck-toggle-t">High yield only</span>
+            <span className="deck-toggle-n">
+              {highOnly
+                ? `Showing the ${pool.length.toLocaleString()} highest-yield terms`
+                : `Studying all ${cards.length.toLocaleString()} terms`}
+            </span>
+          </span>
+          <span className="switch"><span className="knob" /></span>
+        </button>
       )}
 
       <div className="home-cta">

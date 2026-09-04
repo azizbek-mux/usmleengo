@@ -7,9 +7,13 @@
 // Run with `npm run compile:glossary` (or `npm run build`, which does both
 // this and the question bank).
 //
-// The payload is rows of arrays rather than objects: 8,479 repetitions of
-// eight key names is roughly 600 KB of nothing. Field order is emitted in the
-// header so the loader never has to hard-code it.
+// The payload is rows of arrays rather than objects: 8,479 repetitions of the
+// key names is hundreds of KB of nothing. Field order is emitted in the header
+// so the loader never has to hard-code it.
+//
+// The CSV also carries etymology, category, is_phrase and the Russian columns.
+// Nothing in the app reads them, so they are not shipped — the source file
+// keeps them, and restoring one is a line here plus a rebuild.
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -64,9 +68,8 @@ function parseCsv(text) {
   return rows;
 }
 
-// Categories and yields are emitted as indexes into these lists. Every row
-// carries both, so storing the words costs ~150 KB to say seven things.
-const CATEGORIES = ["finding", "mechanism", "condition", "lab", "anatomy", "idiom", "imaging"];
+// Yield is emitted as an index into this list — every row carries one, and
+// storing the word costs ~80 KB to say three things.
 const YIELDS = ["high", "medium", "low"];
 
 const text = readFileSync(SRC, "utf8").replace(/^﻿/, "");
@@ -82,10 +85,7 @@ const iTerm = col("term_en");
 const iIpa = col("ipa");
 const iUz = col("term_uz");
 const iDef = col("definition_uz");
-const iEty = col("etymology");
-const iCat = col("category");
 const iYld = col("yield");
-const iPhr = col("is_phrase");
 
 const rows = [];
 const seen = new Set();
@@ -107,21 +107,10 @@ for (const r of table) {
   if (seen.has(key)) { problems.push(`duplicate term: ${term}`); continue; }
   seen.add(key);
 
-  const cat = CATEGORIES.indexOf(r[iCat].trim());
   const yld = YIELDS.indexOf(r[iYld].trim());
-  if (cat === -1) { problems.push(`unknown category "${r[iCat]}" on ${term}`); continue; }
   if (yld === -1) { problems.push(`unknown yield "${r[iYld]}" on ${term}`); continue; }
 
-  rows.push([
-    term,
-    r[iIpa].trim(),
-    uz,
-    def,
-    r[iEty].trim(),
-    cat,
-    yld,
-    r[iPhr].trim() === "true" ? 1 : 0,
-  ]);
+  rows.push([term, r[iIpa].trim(), uz, def, yld]);
 }
 
 // Alphabetical, so the browse list is stable and a card's index only moves
@@ -129,8 +118,7 @@ for (const r of table) {
 rows.sort((a, b) => a[0].toLowerCase().localeCompare(b[0].toLowerCase()));
 
 const payload = JSON.stringify({
-  fields: ["term", "ipa", "uz", "def", "ety", "cat", "yld", "phr"],
-  categories: CATEGORIES,
+  fields: ["term", "ipa", "uz", "def", "yld"],
   yields: YIELDS,
   rows,
 });
@@ -144,12 +132,10 @@ writeFileSync(
   "utf8",
 );
 
-const byCat = CATEGORIES.map((c, i) => `${c} ${rows.filter((r) => r[5] === i).length}`);
-const byYld = YIELDS.map((y, i) => `${y} ${rows.filter((r) => r[6] === i).length}`);
+const byYld = YIELDS.map((y, i) => `${y} ${rows.filter((r) => r[4] === i).length}`);
 
 console.log(`glossary cards : ${rows.length}`);
 console.log(`payload        : ${(payload.length / 1048576).toFixed(2)} MB`);
-console.log(`by category    : ${byCat.join(", ")}`);
 console.log(`by yield       : ${byYld.join(", ")}`);
 if (problems.length) {
   console.log(`skipped        : ${problems.length}`);

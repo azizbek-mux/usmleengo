@@ -33,22 +33,12 @@ export function loadGlossary() {
       return res.json();
     })
     .then((data) => {
-      const { rows, categories, yields } = data;
+      const { rows, yields } = data;
       // Index is the card's identity: it is what progress is stored against,
       // and the compiler sorts alphabetically so it only moves when the
       // glossary itself changes.
-      rows.forEach(([term, ipa, uz, def, ety, cat, yld, phr], i) => {
-        cards.push({
-          i,
-          term,
-          ipa,
-          uz,
-          def,
-          ety,
-          cat: categories[cat],
-          yield: yields[yld],
-          phrase: Boolean(phr),
-        });
+      rows.forEach(([term, ipa, uz, def, yld], i) => {
+        cards.push({ i, term, ipa, uz, def, yield: yields[yld] });
       });
       return cards;
     })
