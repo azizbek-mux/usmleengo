@@ -21,8 +21,16 @@ import {
 
 const KEY = "usmleengo_english_v1";
 
+/** Bounds for the two numbers the user types. */
+export const NEW_MAX = 999;
+export const REV_MAX = 9999;
+
+
 export const emptyDeck = {
-  config: { newPerDay: DEFAULTS.newPerDay, revPerDay: DEFAULTS.revPerDay },
+  // newPerDay is null until the user has been asked. It rides in the same
+  // field as a number — an empty one on the wire — so decks written before
+  // the question existed still read back as already answered.
+  config: { newPerDay: null, revPerDay: DEFAULTS.revPerDay },
   // cards[cardId] = { state, step, ease, ivl, due, lapses, reps }
   // Keyed by the glossary's content hash, never by row position: trimming the
   // glossary shifts every index after the first change, which would silently
@@ -69,7 +77,7 @@ function encode(deck) {
   const { newPerDay, revPerDay } = deck.config;
   return [
     "3",
-    newPerDay,
+    newPerDay ?? "",
     revPerDay,
     deck.day ?? "",
     deck.newDone,
@@ -110,8 +118,8 @@ function decode(raw) {
   const clamp = (v, lo, hi, dflt) => Math.min(hi, Math.max(lo, Number(v) || dflt));
   return {
     config: {
-      newPerDay: clamp(newPerDay, 0, 500, DEFAULTS.newPerDay),
-      revPerDay: clamp(revPerDay, 0, 9999, DEFAULTS.revPerDay),
+      newPerDay: newPerDay === "" ? null : clamp(newPerDay, 0, NEW_MAX, DEFAULTS.newPerDay),
+      revPerDay: clamp(revPerDay, 0, REV_MAX, DEFAULTS.revPerDay),
     },
     cards,
     day: day === "" ? null : Number(day),
@@ -175,14 +183,29 @@ export function flushDeck() {
 }
 
 export function resetDeck() {
-  const fresh = structuredClone(emptyDeck);
+  // Keep the daily limits — a reset clears progress, not preferences, and
+  // re-asking "how many new cards a day?" would be a setup screen appearing
+  // out of nowhere long after setup.
+  const { config } = loadDeckLocal();
+  const fresh = { ...structuredClone(emptyDeck), config };
   saveDeck(fresh);
   flushDeck();
   return fresh;
 }
 
+/** False until the user has answered "how many new cards a day?". */
+export const isConfigured = (deck) => deck.config.newPerDay !== null;
+
+/** The limit to actually apply — the default stands in until they are asked. */
+const newLimit = (deck) => deck.config.newPerDay ?? DEFAULTS.newPerDay;
+
 export function setConfig(deck, patch) {
-  return { ...deck, config: { ...deck.config, ...patch } };
+  const next = { ...deck.config, ...patch };
+  if (next.newPerDay != null) {
+    next.newPerDay = Math.min(NEW_MAX, Math.max(0, Math.round(next.newPerDay)));
+  }
+  next.revPerDay = Math.min(REV_MAX, Math.max(0, Math.round(next.revPerDay)));
+  return { ...deck, config: next };
 }
 
 /* ── the queue ─────────────────────────────────────────────────────────── */
@@ -232,7 +255,7 @@ export function queueCounts(deck, pool, nowMs = Date.now()) {
     }
   }
 
-  const newLeft = Math.max(0, deck.config.newPerDay - deck.newDone);
+  const newLeft = Math.max(0, newLimit(deck) - deck.newDone);
   const revLeft = Math.max(0, deck.config.revPerDay - deck.revDone);
   const newCount = Math.min(fresh, newLeft);
   const dueCount = Math.min(reviewDue, revLeft);
@@ -288,7 +311,7 @@ export function nextCard(deck, pool, nowMs = Date.now(), rand = Math.random) {
     return dueLearning[0];
   }
 
-  const newLeft = Math.max(0, deck.config.newPerDay - deck.newDone);
+  const newLeft = Math.max(0, newLimit(deck) - deck.newDone);
   const revLeft = Math.max(0, deck.config.revPerDay - deck.revDone);
   const takeNew = Math.min(fresh.length, newLeft);
   const takeRev = Math.min(reviews.length, revLeft);

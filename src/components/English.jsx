@@ -2,8 +2,11 @@ import React, { useEffect, useMemo, useState } from "react";
 import cards, { findCards, loadGlossary } from "../data/glossary.js";
 import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import {
+  NEW_MAX,
+  REV_MAX,
   answerCard,
   flushDeck,
+  isConfigured,
   loadDeckLocal,
   loadDeckRemote,
   nextCard,
@@ -41,41 +44,119 @@ const Gear = () => (
   </svg>
 );
 
-const PRESET_NEW = [5, 10, 20, 40, 100];
-const PRESET_REV = [50, 100, 200, 500, 9999];
+/**
+ * A number the user types rather than picks from a list — any limit is
+ * legitimate, and a row of chips cannot offer 39.
+ *
+ * The field holds its own text while being edited so a half-typed "3" on the
+ * way to "39" is not clamped out from under the cursor; the value is only
+ * committed on blur or Enter.
+ */
+function NumberField({ label, value, min, max, unit, onCommit }) {
+  const [text, setText] = useState(String(value));
+  useEffect(() => { setText(String(value)); }, [value]);
+
+  // Read the field itself rather than the `text` this render closed over: a
+  // keystroke and the blur that follows it can land in the same task, before
+  // React has re-rendered, and the closure would then commit the old number.
+  const commit = (e) => {
+    const raw = e?.target?.value ?? text;
+    if (raw === "") { setText(String(value)); return; }
+    const clamped = Math.min(max, Math.max(min, Math.round(Number(raw))));
+    setText(String(clamped));
+    if (clamped !== value) onCommit(clamped);
+  };
+
+  return (
+    <div className="num-field">
+      <input
+        className="num-input"
+        type="text"
+        inputMode="numeric"
+        value={text}
+        aria-label={label}
+        onChange={(e) => setText(e.target.value.replace(/[^0-9]/g, "").slice(0, String(max).length))}
+        onFocus={(e) => e.target.select()}
+        onBlur={commit}
+        onKeyDown={(e) => { if (e.key === "Enter") e.currentTarget.blur(); }}
+      />
+      <span className="num-unit">{unit}</span>
+    </div>
+  );
+}
+
+/**
+ * Asked once, the first time Medical English is opened. The daily new-card
+ * limit is the single number that decides how much work this deck becomes, so
+ * it is worth one screen rather than being buried at a default.
+ */
+function DeckSetup({ onDone }) {
+  const [text, setText] = useState("20");
+  const n = Number(text);
+  const valid = text !== "" && n >= 0 && n <= NEW_MAX;
+
+  return (
+    <div className="screen onboard">
+      <div className="onboard-top">
+        <div className="setup-title">Medical English</div>
+        <p className="onboard-sub">How many new cards a day?</p>
+      </div>
+
+      <div className="num-hero">
+        <input
+          className="num-hero-input"
+          type="text"
+          inputMode="numeric"
+          value={text}
+          aria-label="New cards a day"
+          onChange={(e) => setText(e.target.value.replace(/[^0-9]/g, "").slice(0, 3))}
+          onFocus={(e) => e.target.select()}
+          onKeyDown={(e) => { if (e.key === "Enter") e.currentTarget.blur(); }}
+        />
+        <div className="num-hero-unit">cards a day</div>
+      </div>
+
+      <div className="setup-note">
+        Type any number. Each new word comes back several more times before it
+        sticks, so 20 new is closer to 60 cards of work in a day.
+      </div>
+
+      <div className="home-cta">
+        <button className="btn btn-primary" disabled={!valid} onClick={() => onDone(n)}>
+          Start studying
+        </button>
+        <div className="cta-note">You can change it anytime from settings.</div>
+      </div>
+    </div>
+  );
+}
 
 function OptionsSheet({ config, counts, onChange, onReset, onClose }) {
   return (
     <Sheet title="Deck options" onClose={onClose}>
       <div className="section-label" style={{ marginTop: 4 }}>New cards per day</div>
-      <div className="count-presets">
-        {PRESET_NEW.map((n) => (
-          <button
-            key={n}
-            className={`preset${config.newPerDay === n ? " on" : ""}`}
-            onClick={() => { haptic("light"); onChange({ newPerDay: n }); }}
-          >
-            {n}
-          </button>
-        ))}
-      </div>
+      <NumberField
+        label="New cards per day"
+        value={config.newPerDay ?? 20}
+        min={0}
+        max={NEW_MAX}
+        unit="cards a day"
+        onCommit={(n) => onChange({ newPerDay: n })}
+      />
       <div className="cta-note" style={{ textAlign: "left", marginTop: 8 }}>
         How many words you meet for the first time each day. Every one comes
         back several more times, so 20 new is closer to 60 cards of work.
       </div>
 
       <div className="section-label">Maximum reviews per day</div>
-      <div className="count-presets">
-        {PRESET_REV.map((n) => (
-          <button
-            key={n}
-            className={`preset${config.revPerDay === n ? " on" : ""}`}
-            onClick={() => { haptic("light"); onChange({ revPerDay: n }); }}
-          >
-            {n === 9999 ? "∞" : n}
-          </button>
-        ))}
-      </div>
+      <NumberField
+        label="Maximum reviews per day"
+        value={config.revPerDay}
+        min={0}
+        max={REV_MAX}
+        unit="reviews a day"
+        onCommit={(n) => onChange({ revPerDay: n })}
+      />
       <div className="cta-note" style={{ textAlign: "left", marginTop: 8 }}>
         A ceiling for days when a backlog has built up.
         {counts.reviewBacklog > 0 && ` You have ${counts.reviewBacklog.toLocaleString()} waiting.`}
@@ -162,6 +243,9 @@ export default function English({ onHome }) {
   const [query, setQuery] = useState("");
   const [options, setOptions] = useState(false);
 
+  // The cloud copy decides whether setup has already been answered on another
+  // device, so the setup screen must not be shown before it has been read.
+  const [remoteChecked, setRemoteChecked] = useState(false);
   const [studying, setStudying] = useState(false);
   const [current, setCurrent] = useState(null);
   const [shown, setShown] = useState(false);
@@ -177,7 +261,9 @@ export default function English({ onHome }) {
 
   useEffect(() => {
     let alive = true;
-    loadDeckRemote(loadDeckLocal()).then((d) => alive && setDeck(rollDay(d)));
+    loadDeckRemote(loadDeckLocal())
+      .then((d) => { if (alive) setDeck(rollDay(d)); })
+      .finally(() => { if (alive) setRemoteChecked(true); });
     return () => { alive = false; };
   }, []);
 
@@ -239,7 +325,7 @@ export default function English({ onHome }) {
 
   /* ── loading and failure ─────────────────────────────────────────────── */
 
-  if (status !== "ready") {
+  if (status !== "ready" || !remoteChecked) {
     return (
       <div className="screen">
         <div className="quiz-top">
@@ -247,7 +333,7 @@ export default function English({ onHome }) {
           <div className="sec-title">Medical English</div>
         </div>
         <div className="empty" style={{ marginTop: 60 }}>
-          {status === "loading" ? (
+          {status !== "error" ? (
             <>
               <div className="empty-big">📖</div>
               <div>Loading {GLOSSARY_COUNT.toLocaleString()} terms…</div>
@@ -268,6 +354,19 @@ export default function English({ onHome }) {
           )}
         </div>
       </div>
+    );
+  }
+
+  /* ── first run ───────────────────────────────────────────────────────── */
+
+  if (!isConfigured(deck)) {
+    return (
+      <DeckSetup
+        onDone={(newPerDay) => {
+          haptic("medium");
+          persist(setConfig(deck, { newPerDay }));
+        }}
+      />
     );
   }
 

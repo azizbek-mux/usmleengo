@@ -258,5 +258,42 @@ const reloaded = D.loadDeckLocal();
 check("a card's schedule is stored against its id, not its position",
       reloaded.cards["abc1234"] !== undefined, Object.keys(reloaded.cards).join(","));
 
+/* ── the first-run setup question ───────────────────────────────────────── */
+
+console.log("\nfirst-run setup");
+
+localStorage.removeItem("usmleengo_english_v1");
+const virgin = D.loadDeckLocal();
+check("a deck nobody has set up is not configured", !D.isConfigured(virgin));
+check("but it still serves the default allowance until asked",
+      D.queueCounts(virgin, pool, T0).newCount === 20,
+      `${D.queueCounts(virgin, pool, T0).newCount}`);
+
+D.saveDeck(virgin);
+check("and it survives a save without inventing an answer",
+      !D.isConfigured(D.loadDeckLocal()),
+      String(D.loadDeckLocal().config.newPerDay));
+
+const answered = D.setConfig(virgin, { newPerDay: 39 });
+D.saveDeck(answered);
+const reread = D.loadDeckLocal();
+check("an arbitrary number is accepted and kept",
+      D.isConfigured(reread) && reread.config.newPerDay === 39,
+      `${reread.config.newPerDay}`);
+check("it is the number actually applied",
+      D.queueCounts(reread, pool, T0).newCount === 39);
+
+check("an out-of-range number is clamped, not stored raw",
+      D.setConfig(virgin, { newPerDay: 99999 }).config.newPerDay === D.NEW_MAX);
+
+check("resetting the deck keeps the daily limits",
+      (() => {
+        D.saveDeck(D.setConfig(answered, { revPerDay: 137 }));
+        const after = D.resetDeck();
+        return after.config.newPerDay === 39 && after.config.revPerDay === 137 &&
+               Object.keys(after.cards).length === 0;
+      })(),
+      JSON.stringify(D.loadDeckLocal().config));
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);
