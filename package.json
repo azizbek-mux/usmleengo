@@ -4,10 +4,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node tools/compile.mjs && vite",
-    "build": "node tools/compile.mjs && vite build",
+    "dev": "npm run compile:all && vite",
+    "build": "npm run compile:all && vite build",
     "preview": "vite preview",
     "compile": "node tools/compile.mjs",
+    "compile:glossary": "node tools/compile-glossary.mjs",
+    "compile:all": "node tools/compile.mjs && node tools/compile-glossary.mjs",
     "build:single": "npm run build && node tools/build-single.mjs"
   },
   "dependencies": {

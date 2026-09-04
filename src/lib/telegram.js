@@ -70,6 +70,80 @@ export function cloudSet(key, value) {
   });
 }
 
+export function cloudRemove(keys) {
+  return new Promise((resolve) => {
+    if (!cloudAvailable || !keys.length) return resolve(false);
+    try {
+      tg.CloudStorage.removeItems(keys, (err) => resolve(!err));
+    } catch {
+      resolve(false);
+    }
+  });
+}
+
+/* ── chunked values ────────────────────────────────────────────────────────
+   CloudStorage caps a single value at 4096 characters. Anything that can
+   outgrow that is split across numbered keys with a header key holding the
+   chunk count and the total length; a value whose parts do not add back up to
+   that length is rejected rather than half-restored. Without this, an
+   oversized write just fails and cross-device progress stops syncing with no
+   error anywhere. */
+
+const CHUNK = 3800;
+// 64 chunks is ~240 KB — an order of magnitude more than the flashcard deck
+// can ever need. Past it we decline the cloud write rather than truncate:
+// localStorage still holds the whole thing.
+const MAX_CHUNKS = 64;
+
+const chunkKey = (prefix, i) => `${prefix}__${i}`;
+const headKey = (prefix) => `${prefix}__n`;
+
+export async function cloudSetChunked(prefix, value) {
+  if (!cloudAvailable) return false;
+
+  const chunks = [];
+  for (let i = 0; i < value.length; i += CHUNK) chunks.push(value.slice(i, i + CHUNK));
+  if (chunks.length > MAX_CHUNKS) return false;
+
+  const head = await cloudGet([headKey(prefix)]);
+  const before = Number(String(head?.[headKey(prefix)] || "").split(".")[0]) || 0;
+
+  for (let i = 0; i < chunks.length; i++) {
+    if (!(await cloudSet(chunkKey(prefix, i), chunks[i]))) return false;
+  }
+  // Written last, so an interrupted write leaves the previous header pointing
+  // at a length the new chunks will not match — and the read rejects it.
+  if (!(await cloudSet(headKey(prefix), `${chunks.length}.${value.length}`))) return false;
+
+  if (before > chunks.length) {
+    const stale = [];
+    for (let i = chunks.length; i < before; i++) stale.push(chunkKey(prefix, i));
+    await cloudRemove(stale);
+  }
+  return true;
+}
+
+export async function cloudGetChunked(prefix) {
+  if (!cloudAvailable) return null;
+
+  const head = await cloudGet([headKey(prefix)]);
+  const [countRaw, lengthRaw] = String(head?.[headKey(prefix)] || "").split(".");
+  const count = Number(countRaw) || 0;
+  const length = Number(lengthRaw) || 0;
+  if (!count) return null;
+
+  const keys = Array.from({ length: count }, (_, i) => chunkKey(prefix, i));
+  const res = await cloudGet(keys);
+  if (!res) return null;
+
+  let out = "";
+  for (const k of keys) {
+    if (typeof res[k] !== "string") return null; // a chunk went missing
+    out += res[k];
+  }
+  return out.length === length ? out : null;
+}
+
 /**
  * The Mini App's public link, exactly as BotFather issued it.
  *

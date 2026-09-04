@@ -5,7 +5,9 @@ import Onboarding from "./components/Onboarding.jsx";
 import { SettingsSheet, XpSheet } from "./components/Sheet.jsx";
 import Quiz from "./components/Quiz.jsx";
 import Result from "./components/Result.jsx";
+import English from "./components/English.jsx";
 import { loadBank } from "./data/bank.js";
+import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
 import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, touchStreak } from "./lib/storage.js";
 import { userName } from "./lib/telegram.js";
@@ -93,6 +95,9 @@ export default function App() {
 
   function resetAll() {
     reset();
+    // The flashcard deck lives under its own key, so it has to be told too —
+    // "start over" that leaves 8,479 cards scheduled is not starting over.
+    resetDeck();
     // Keep the format choice so the user is not asked to set up again.
     const fresh = { ...emptyState, qtype: stateRef.current.qtype };
     persist(fresh);
@@ -144,6 +149,12 @@ export default function App() {
     return <Onboarding onChoose={chooseQType} />;
   }
 
+  // Medical English owns its own data and progress; it needs nothing from the
+  // quiz state but the user's preferred session length.
+  if (screen === "english") {
+    return <English count={state.count} onHome={() => setScreen("home")} />;
+  }
+
   if (screen === "quiz") {
     return (
       <Quiz
@@ -179,6 +190,7 @@ export default function App() {
         onCount={changeCount}
         onSettings={() => setSheet("settings")}
         onXp={() => setSheet("xp")}
+        onEnglish={() => setScreen("english")}
       />
       {sheet === "settings" && (
         <SettingsSheet

@@ -1,0 +1,83 @@
+// The Medical English glossary the flashcard section reads.
+//
+// Do not edit glossary.json by hand — it is compiled from
+// clinical-english-glossary.csv by `npm run compile:glossary`.
+//
+// Fetched lazily, and only when the user opens Medical English. It is ~2 MB,
+// which is fine as a one-off for someone who wants it and pure waste for
+// someone who only ever does quizzes. The question bank loads on boot; this
+// does not.
+
+import { GLOSSARY_VERSION } from "./glossary-version.js";
+
+const cards = [];
+
+let pending = null;
+
+/** Populates the deck in place and resolves once ready. */
+export function loadGlossary() {
+  if (cards.length) return Promise.resolve(cards);
+
+  // Single-file builds inline the glossary, as they do the question bank.
+  if (typeof window !== "undefined" && Array.isArray(window.__GLOSSARY__)) {
+    cards.push(...window.__GLOSSARY__);
+    return Promise.resolve(cards);
+  }
+
+  if (pending) return pending;
+
+  const url = `${import.meta.env.BASE_URL}glossary.json?v=${GLOSSARY_VERSION}`;
+  pending = fetch(url)
+    .then((res) => {
+      if (!res.ok) throw new Error(`${res.status} loading glossary`);
+      return res.json();
+    })
+    .then((data) => {
+      const { rows, categories, yields } = data;
+      // Index is the card's identity: it is what progress is stored against,
+      // and the compiler sorts alphabetically so it only moves when the
+      // glossary itself changes.
+      rows.forEach(([term, ipa, uz, def, ety, cat, yld, phr], i) => {
+        cards.push({
+          i,
+          term,
+          ipa,
+          uz,
+          def,
+          ety,
+          cat: categories[cat],
+          yield: yields[yld],
+          phrase: Boolean(phr),
+        });
+      });
+      return cards;
+    })
+    .catch((err) => {
+      pending = null; // allow a retry
+      throw err;
+    });
+
+  return pending;
+}
+
+export const loaded = () => cards.length > 0;
+
+/**
+ * Substring search over the English term and the Uzbek translation, so a
+ * learner can look a word up from either side.
+ */
+export function findCards(query, limit = 40) {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const starts = [];
+  const contains = [];
+  for (const c of cards) {
+    const t = c.term.toLowerCase();
+    if (t.startsWith(q)) starts.push(c);
+    else if (t.includes(q) || c.uz.toLowerCase().includes(q)) contains.push(c);
+    if (starts.length >= limit) break;
+  }
+  return [...starts, ...contains].slice(0, limit);
+}
+
+export default cards;

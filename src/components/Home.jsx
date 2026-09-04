@@ -48,7 +48,15 @@ function byTopic(hits) {
   return [...map.entries()].map(([topic, questions]) => ({ topic, questions }));
 }
 
-export default function Home({ state, name, onStart, onCount, onSettings, onXp }) {
+const Book = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
+       strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+  </svg>
+);
+
+export default function Home({ state, name, onStart, onCount, onSettings, onXp, onEnglish }) {
   const [query, setQuery] = useState("");
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
@@ -96,6 +104,17 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp }
             <Gear />
           </button>
         </div>
+      </div>
+
+      {/* ── the other half of the app ──────────────────────────────────── */}
+      <div className="mode-row">
+        <button className="mode" onClick={() => { haptic("light"); onEnglish(); }}>
+          <span className="mode-ico"><Book /></span>
+          <span>
+            <span className="mode-t">Medical English</span>
+            <span className="mode-n">8,000+ clinical terms · flashcards</span>
+          </span>
+        </button>
       </div>
 
       {/* ── session length ─────────────────────────────────────────────── */}
