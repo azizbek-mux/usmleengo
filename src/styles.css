@@ -531,6 +531,26 @@ input { font: inherit; }
 .sheet-title { font-size: 19px; font-weight: 800; letter-spacing: -0.3px; }
 .sheet-x { color: var(--muted); font-size: 26px; line-height: 1; padding: 2px 6px; }
 
+.pick-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; }
+.pick {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 20px 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: left;
+  transition: transform 0.12s var(--tap), border-color 0.12s;
+}
+.pick:active { transform: scale(0.98); border-color: var(--accent); }
+.pick-ico { color: var(--accent); flex-shrink: 0; display: flex; }
+.pick-body { flex: 1; min-width: 0; }
+.pick-name { display: block; font-weight: 800; font-size: 17px; letter-spacing: -0.2px; }
+.pick-note { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
+.pick-go { color: var(--accent); flex-shrink: 0; display: flex; }
+
 .opt-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
 .opt-row {
   display: flex;

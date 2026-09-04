@@ -6,15 +6,18 @@ import { SettingsSheet, XpSheet } from "./components/Sheet.jsx";
 import Quiz from "./components/Quiz.jsx";
 import Result from "./components/Result.jsx";
 import English from "./components/English.jsx";
+import SectionPick from "./components/SectionPick.jsx";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
-import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, touchStreak } from "./lib/storage.js";
+import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, touchStreak } from "./lib/storage.js";
 import { userName } from "./lib/telegram.js";
 
 export default function App() {
   const [state, setState] = useState(loadLocal);
-  const [screen, setScreen] = useState("home");
+  // Reopen wherever they were last. Only the very first run has no answer.
+  const [screen, setScreen] = useState(() =>
+    loadLocal().section === "english" ? "english" : "home");
   // The bank is fetched, so nothing that reads it may render until it lands.
   const [bankStatus, setBankStatus] = useState("loading");
   const [questions, setQuestions] = useState([]);
@@ -93,13 +96,23 @@ export default function App() {
     persist(setQType(stateRef.current, qtype));
   }
 
+  /** Move between the two halves, remembering which one they are in. */
+  function goSection(section) {
+    persist(setSection(stateRef.current, section));
+    setScreen(section === "english" ? "english" : "home");
+  }
+
   function resetAll() {
     reset();
     // The flashcard deck lives under its own key, so it has to be told too —
     // "start over" that leaves 8,479 cards scheduled is not starting over.
     resetDeck();
-    // Keep the format choice so the user is not asked to set up again.
-    const fresh = { ...emptyState, qtype: stateRef.current.qtype };
+    // Keep the setup answers — reset clears progress, not preferences.
+    const fresh = {
+      ...emptyState,
+      qtype: stateRef.current.qtype,
+      section: stateRef.current.section,
+    };
     persist(fresh);
     setSheet(null);
   }
@@ -145,14 +158,22 @@ export default function App() {
     );
   }
 
-  if (!state.qtype) {
-    return <Onboarding onChoose={chooseQType} />;
+  // First run: which half of the app did they come for?
+  if (!state.section) {
+    return <SectionPick onChoose={goSection} />;
   }
 
   // Medical English owns its own data, progress and scheduling — it shares
   // nothing with the quiz but the storage plumbing.
   if (screen === "english") {
-    return <English onHome={() => setScreen("home")} />;
+    return <English onHome={() => goSection("quiz")} />;
+  }
+
+  // The quiz half needs a format before it can serve anything. Asked here
+  // rather than on launch, so someone who came for the flashcards is never
+  // made to answer it.
+  if (!state.qtype) {
+    return <Onboarding onChoose={chooseQType} />;
   }
 
   if (screen === "quiz") {
@@ -190,7 +211,7 @@ export default function App() {
         onCount={changeCount}
         onSettings={() => setSheet("settings")}
         onXp={() => setSheet("xp")}
-        onEnglish={() => setScreen("english")}
+        onEnglish={() => goSection("english")}
       />
       {sheet === "settings" && (
         <SettingsSheet

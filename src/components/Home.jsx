@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import bank, { bankBlurb } from "../data/bank.js";
+import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import { search, suggest, subjects } from "../lib/match.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
@@ -112,7 +113,7 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp, 
           <span className="mode-ico"><Book /></span>
           <span>
             <span className="mode-t">Medical English</span>
-            <span className="mode-n">8,000+ clinical terms · flashcards</span>
+            <span className="mode-n">{GLOSSARY_COUNT.toLocaleString()} clinical terms · flashcards</span>
           </span>
         </button>
       </div>

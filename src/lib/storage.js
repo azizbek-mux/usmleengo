@@ -10,6 +10,10 @@ import { cloudAvailable, cloudGet, cloudGetChunked, cloudSet, cloudSetChunked } 
 const KEY = "usmle_drops_v1";
 
 export const emptyState = {
+  // Which half of the app the user is in: "english" or "quiz". null means
+  // they have not been asked yet — it triggers the first-run section picker.
+  // Kept up to date as they move, so the app reopens where they left off.
+  section: null,
   // Which question formats to serve: "binary", "gap" or "random".
   // null means the user has not been asked yet — it triggers first-run setup.
   qtype: null,
@@ -46,6 +50,7 @@ function merge(raw) {
     // Guard against a corrupted or out-of-range stored value.
     merged.count = Math.min(100, Math.max(2, Number(merged.count) || 10));
     if (!["binary", "gap", "random"].includes(merged.qtype)) merged.qtype = null;
+    if (!["english", "quiz"].includes(merged.section)) merged.section = null;
     return merged;
   } catch {
     return null;
@@ -160,6 +165,11 @@ export function reset() {
 /** Persist the user's preferred session length. */
 export function setCount(state, count) {
   return { ...state, count: Math.min(100, Math.max(2, Math.round(count))) };
+}
+
+/** Persist which half of the app the user is in. */
+export function setSection(state, section) {
+  return { ...state, section: ["english", "quiz"].includes(section) ? section : null };
 }
 
 /** Persist the user's preferred question format. */
