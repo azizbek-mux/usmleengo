@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import cards, { findCards, loadGlossary } from "../data/glossary.js";
+import { bankBlurb } from "../data/bank.js";
 import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import {
   NEW_MAX,
@@ -26,6 +27,16 @@ const Back = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
        strokeLinecap="round" strokeLinejoin="round">
     <path d="M19 12H5M12 19l-7-7 7-7" />
+  </svg>
+);
+
+const Checklist = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
+       strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 5h10M9 12h10M9 19h10" />
+    <path d="m3 5 1.5 1.5L7 4" />
+    <path d="m3 12 1.5 1.5L7 11" />
+    <circle cx="4.5" cy="19" r="1.4" />
   </svg>
 );
 
@@ -236,7 +247,7 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
   );
 }
 
-export default function English({ onHome }) {
+export default function English({ name, streak, onHome, onStudied }) {
   const [status, setStatus] = useState(() => (cards.length ? "ready" : "loading"));
   const [deck, setDeck] = useState(() => rollDay(loadDeckLocal()));
   const [highOnly, setHighOnly] = useState(false);
@@ -313,6 +324,7 @@ export default function English({ onHome }) {
     haptic(grade === "again" ? "warning" : "light");
     const next = answerCard(deck, current.id, grade);
     persist(next);
+    onStudied();
     setDone((d) => d + 1);
     advance(next);
   }
@@ -329,7 +341,7 @@ export default function English({ onHome }) {
     return (
       <div className="screen">
         <div className="quiz-top">
-          <button className="close" onClick={onHome} aria-label="Back"><Back /></button>
+          <button className="close" onClick={onHome} aria-label="Back to quizzes"><Back /></button>
           <div className="sec-title">Medical English</div>
         </div>
         <div className="empty" style={{ marginTop: 60 }}>
@@ -395,11 +407,42 @@ export default function English({ onHome }) {
 
   return (
     <div className="screen">
-      <div className="quiz-top">
-        <button className="close" onClick={onHome} aria-label="Back"><Back /></button>
-        <div className="sec-title">Medical English</div>
-        <button className="deck-gear" onClick={() => setOptions(true)} aria-label="Deck options">
-          <Gear />
+      {/* The same head Home wears, so the two halves read as one app. XP is
+          left out on purpose: it is earned by answering quiz questions, and a
+          number that never moves while you study here would be noise. */}
+      <div className="home-head">
+        <div>
+          <div className="greet">
+            {name ? <>Hi, <span>{name}</span></> : "Medical English"}
+          </div>
+          {/* The section names itself in whichever line the greeting did not
+              already use, so it never says "Medical English" twice. */}
+          <div className="sub">
+            {name
+              ? `Medical English · ${cards.length.toLocaleString()} terms`
+              : `${cards.length.toLocaleString()} clinical terms`}
+          </div>
+        </div>
+        <div className="stats">
+          <div className="stat flame">
+            <div className="stat-v">{streak}</div>
+            <div className="stat-l">🔥 day</div>
+          </div>
+          <button className="stat gear" onClick={() => setOptions(true)} aria-label="Deck options">
+            <Gear />
+          </button>
+        </div>
+      </div>
+
+      {/* The way back to the other half — the mirror of Home's card, so
+          neither section is reachable only by a back arrow. */}
+      <div className="mode-row">
+        <button className="mode" onClick={() => { haptic("light"); onHome(); }}>
+          <span className="mode-ico"><Checklist /></span>
+          <span>
+            <span className="mode-t">USMLE quizzes</span>
+            <span className="mode-n">{bankBlurb()} · tap or type the answer</span>
+          </span>
         </button>
       </div>
 

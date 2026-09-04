@@ -96,6 +96,17 @@ export default function App() {
     persist(setQType(stateRef.current, qtype));
   }
 
+  /**
+   * Studying anything counts towards the daily streak — it is one habit, not
+   * one per section, so a day spent only on flashcards must not break it.
+   * touchStreak returns the same object when the day has already been
+   * counted, which makes this safe to call on every answer.
+   */
+  function markStudied() {
+    const { state: rolled } = touchStreak(stateRef.current);
+    if (rolled !== stateRef.current) persist(rolled);
+  }
+
   /** Move between the two halves, remembering which one they are in. */
   function goSection(section) {
     persist(setSection(stateRef.current, section));
@@ -166,7 +177,14 @@ export default function App() {
   // Medical English owns its own data, progress and scheduling — it shares
   // nothing with the quiz but the storage plumbing.
   if (screen === "english") {
-    return <English onHome={() => goSection("quiz")} />;
+    return (
+      <English
+        name={name}
+        streak={state.streak}
+        onHome={() => goSection("quiz")}
+        onStudied={markStudied}
+      />
+    );
   }
 
   // The quiz half needs a format before it can serve anything. Asked here
