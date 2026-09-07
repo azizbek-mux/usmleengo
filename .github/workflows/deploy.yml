@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Rebuild on a timer so a newly tagged channel post reaches the app without
+  # anyone touching the repository. GitHub disables scheduled workflows after
+  # 60 days of repository inactivity — any push re-enables them.
+  schedule:
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: read
@@ -24,6 +29,9 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      # Pulls the tagged channel post into public/announcement.json. Never
+      # fails the build: no announcement is a normal state.
+      - run: npm run announcement
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

@@ -7,10 +7,11 @@
     "dev": "npm run compile:all && vite",
     "build": "npm run compile:all && vite build",
     "preview": "vite preview",
-    "test": "node tools/srs.test.mjs && node tools/cloud-storage.test.mjs",
+    "test": "node tools/srs.test.mjs && node tools/cloud-storage.test.mjs && node tools/announcement.test.mjs",
     "compile": "node tools/compile.mjs",
     "compile:glossary": "node tools/compile-glossary.mjs",
     "compile:all": "node tools/compile.mjs && node tools/compile-glossary.mjs",
+    "announcement": "node tools/fetch-announcement.mjs",
     "build:single": "npm run build && node tools/build-single.mjs"
   },
   "dependencies": {

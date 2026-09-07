@@ -96,6 +96,48 @@ The compiler enforces the rules so bad questions cannot reach the app:
 
 Any violation fails the build with the offending `file:line`.
 
+## Announcing something in the app
+
+Post it on the channel with **`#usmleengo`** in the text. Within about an hour
+it shows as a card at the top of both home screens, linking back to the post.
+
+    New USMLE course 🎓 #usmleengo
+    Ten weeks, starts Monday. Message me to join.
+
+The first line becomes the card's title, the rest becomes the body, and the
+post's photo becomes the thumbnail. The `#usmleengo` tag itself is stripped
+from what people see.
+
+**To change it** — post a newer `#usmleengo` message. The most recent one
+always wins.
+
+**To take it down** — delete the post, or wait: a card stops showing 14 days
+after it was posted, so a forgotten ad cannot sit in the app forever. Each
+person can also dismiss it, and a dismissed card stays gone until you post a
+new one.
+
+**How it works.** A scheduled GitHub Action reads the channel's public page
+(`t.me/s/mukhtorov_md` — the same one anyone can open, no bot token involved),
+finds the newest tagged post, and rebuilds the site with it. Nothing needs a
+server, and the whole thing costs nothing: Actions minutes are free on public
+repositories.
+
+**Three things worth knowing:**
+
+- It is not instant. The timer runs every 30 minutes and the deploy takes
+  about a minute, so allow up to an hour. To publish immediately, open the
+  repository's **Actions** tab, pick **Deploy to GitHub Pages**, and press
+  **Run workflow**.
+- **GitHub switches off scheduled workflows after 60 days without a push to
+  the repository.** You get an email when it happens, and any push — or the
+  "Enable workflow" button on the Actions tab — turns them back on. If cards
+  ever stop updating, check this first.
+- Only public channels can be read this way, and only the recent posts on the
+  channel page are considered.
+
+To follow a different tag or change the 14-day window, edit `TAG` and
+`MAX_AGE_DAYS` at the top of `tools/fetch-announcement.mjs`.
+
 ## Where the questions came from
 
 The bank was derived from the reference PDFs and the extracted `bank.json` in

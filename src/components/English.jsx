@@ -18,6 +18,7 @@ import {
   stateOf,
 } from "../lib/deck.js";
 import { GRADES, formatInterval, preview } from "../lib/srs.js";
+import AdCard from "./AdCard.jsx";
 import { Sheet } from "./Sheet.jsx";
 import { haptic } from "../lib/telegram.js";
 
@@ -433,6 +434,8 @@ export default function English({ name, streak, onHome, onStudied }) {
           </button>
         </div>
       </div>
+
+      <AdCard />
 
       {/* The way back to the other half — the mirror of Home's card, so
           neither section is reachable only by a back arrow. */}
