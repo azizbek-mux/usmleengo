@@ -9,7 +9,7 @@ const KEY = "usmleengo_ad_seen";
 // Matches MAX_AGE_DAYS in the fetcher. Checked again here because a deploy can
 // sit unchanged for a long time — scheduled workflows are disabled after a
 // couple of months of repository quiet — and a stale card should still expire.
-const MAX_AGE_DAYS = 14;
+const MAX_AGE_DAYS = 10;
 
 let pending = null;
 

@@ -27,7 +27,7 @@ const CHANNEL = "mukhtorov_md";
 const TAG = "usmleengo";
 // A card older than this stops showing, so a forgotten post does not sit in
 // the app forever.
-const MAX_AGE_DAYS = 14;
+const MAX_AGE_DAYS = 10;
 
 const TITLE_MAX = 70;
 const BODY_MAX = 105;

@@ -111,7 +111,7 @@ from what people see.
 **To change it** — post a newer `#usmleengo` message. The most recent one
 always wins.
 
-**To take it down** — delete the post, or wait: a card stops showing 14 days
+**To take it down** — delete the post, or wait: a card stops showing 10 days
 after it was posted, so a forgotten ad cannot sit in the app forever. Each
 person can also dismiss it, and a dismissed card stays gone until you post a
 new one.
@@ -135,7 +135,7 @@ repositories.
 - Only public channels can be read this way, and only the recent posts on the
   channel page are considered.
 
-To follow a different tag or change the 14-day window, edit `TAG` and
+To follow a different tag or change the 10-day window, edit `TAG` and
 `MAX_AGE_DAYS` at the top of `tools/fetch-announcement.mjs`.
 
 ## Where the questions came from

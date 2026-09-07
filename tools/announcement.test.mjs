@@ -79,6 +79,26 @@ check("a tag that is only a prefix of another word does not match",
       pickAnnouncement(parseChannel(post({ id: "ch/7", date: ago(0), text: "See #usmleengobot now" })),
                        { now: NOW }) === null);
 
+console.log("\nthe expiry window");
+
+check("the default window is 10 days, not longer",
+      pickAnnouncement(parseChannel(post({ id: "ch/6", date: ago(11), text: "Old ad #usmleengo" })),
+                       { now: NOW }) === null);
+check("and not shorter",
+      pickAnnouncement(parseChannel(post({ id: "ch/5", date: ago(9), text: "Recent ad #usmleengo" })),
+                       { now: NOW })?.id === "ch/5");
+
+// The app re-checks expiry itself, because a deploy can sit unchanged for
+// months. The two copies of the number have to agree, or a card would linger
+// in the app after the build had already stopped publishing it.
+const { readFileSync } = await import("node:fs");
+const constOf = (rel) =>
+  readFileSync(new URL(rel, import.meta.url), "utf8").match(/MAX_AGE_DAYS = (\d+)/)[1];
+const inFetcher = constOf("./fetch-announcement.mjs");
+const inApp = constOf("../src/data/announcement.js");
+check("the fetcher and the app agree on the window",
+      inFetcher === inApp && inFetcher === "10", `fetcher ${inFetcher}, app ${inApp}`);
+
 console.log("\nresilience");
 check("markup it does not recognise yields no posts rather than junk",
       parseChannel("<html><body><div class='something-else'>hi</div></body></html>").length === 0);
