@@ -2,6 +2,29 @@ import React, { useEffect } from "react";
 import { QTYPES } from "../lib/qtypes.js";
 import { CHANNEL, haptic, openTelegram } from "../lib/telegram.js";
 
+/**
+ * The credit line, shared by every sheet that shows one.
+ *
+ * A real anchor, so it can be long-pressed and copied, but the click is
+ * intercepted: inside Telegram the webview must not navigate to t.me itself,
+ * or the Mini App is replaced by a web page and the only way back is
+ * reopening it from the bot.
+ */
+export function Byline() {
+  return (
+    <div className="byline">
+      designed by{" "}
+      <a
+        className="byline-link"
+        href={CHANNEL}
+        onClick={(e) => { e.preventDefault(); haptic("light"); openTelegram(CHANNEL); }}
+      >
+        mukhtorov
+      </a>
+    </div>
+  );
+}
+
 /** Bottom sheet. Closes on backdrop tap or Escape. */
 export function Sheet({ title, onClose, children }) {
   useEffect(() => {
@@ -54,19 +77,7 @@ export function SettingsSheet({ state, onQType, onReset, onClose }) {
       <button className="btn btn-danger" onClick={onReset}>Reset all progress</button>
       <div className="cta-note">Clears XP, streak and question history. Cannot be undone.</div>
 
-      <div className="byline">
-        designed by{" "}
-        {/* A real anchor, so it can be long-pressed and copied, but the click
-            is intercepted: inside Telegram the webview must not navigate to
-            t.me itself or the Mini App is replaced by a web page. */}
-        <a
-          className="byline-link"
-          href={CHANNEL}
-          onClick={(e) => { e.preventDefault(); haptic("light"); openTelegram(CHANNEL); }}
-        >
-          mukhtorov
-        </a>
-      </div>
+      <Byline />
     </Sheet>
   );
 }

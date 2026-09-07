@@ -19,7 +19,7 @@ import {
 } from "../lib/deck.js";
 import { GRADES, formatInterval, preview } from "../lib/srs.js";
 import AdCard from "./AdCard.jsx";
-import { Sheet } from "./Sheet.jsx";
+import { Byline, Sheet } from "./Sheet.jsx";
 import { haptic } from "../lib/telegram.js";
 
 const GRADE_NAME = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
@@ -186,6 +186,8 @@ function OptionsSheet({ config, counts, onChange, onReset, onClose }) {
         Forgets every card’s schedule in Medical English. Your quiz progress is
         untouched. Cannot be undone.
       </div>
+
+      <Byline />
     </Sheet>
   );
 }
