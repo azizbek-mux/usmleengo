@@ -420,6 +420,17 @@ input { font: inherit; }
 .btn-icon { display: flex; align-items: center; justify-content: center; gap: 9px; }
 .cta-note { text-align: center; font-size: 12px; color: var(--muted); margin-top: 9px; }
 
+.byline-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+  /* An existing token rather than color-mix: an older webview drops the
+     whole declaration on an unknown function, taking the underline with it. */
+  border-bottom: 1px solid var(--accent-dim);
+  padding-bottom: 1px;
+}
+.byline-link:active { opacity: 0.6; }
+
 .byline {
   margin-top: 26px;
   padding-top: 16px;

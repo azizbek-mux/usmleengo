@@ -169,13 +169,27 @@ export async function cloudGetChunked(prefix) {
  */
 export const APP_LINK = "https://t.me/usmleengo_bot/study";
 
+/** The author's channel, linked from the byline. */
+export const CHANNEL = "https://t.me/mukhtorov_md";
+
+/**
+ * Open a t.me link.
+ *
+ * Inside Telegram this must go through openTelegramLink: letting the webview
+ * navigate to t.me would replace the Mini App with a web page, and the user
+ * would have to reopen it from the bot to get back.
+ */
+export function openTelegram(url) {
+  if (tg?.openTelegramLink) tg.openTelegramLink(url);
+  else window.open(url, "_blank", "noopener,noreferrer");
+}
+
 /** Share the user's streak back into a Telegram chat, with a way in. */
 export function share(text) {
-  const url =
+  openTelegram(
     `https://t.me/share/url?url=${encodeURIComponent(APP_LINK)}` +
-    `&text=${encodeURIComponent(text)}`;
-  if (tg?.openTelegramLink) tg.openTelegramLink(url);
-  else window.open(url, "_blank");
+      `&text=${encodeURIComponent(text)}`,
+  );
 }
 
 export default tg;
