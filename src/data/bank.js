@@ -55,15 +55,16 @@ export function loadBank() {
 /**
  * How the bank's size is described in the UI.
  *
- * The exact count, grouped with thousands separators. Derived from the bank
- * itself, so adding questions updates every place this appears without anyone
- * remembering to edit a number.
+ * Rounded down to the nearest hundred and marked with a "+", so the figure is
+ * honest without reading as a target to finish. Derived from the bank itself,
+ * so adding questions moves it without anyone remembering to edit a number.
  */
 export function bankBlurb() {
   // Callers render this; an empty bank means it was read before loadBank()
-  // resolved. Say nothing rather than advertise "0 questions".
-  if (!bank.length) return "Thousands of questions";
-  return `${bank.length.toLocaleString("en-US")} questions`;
+  // resolved. Say nothing rather than advertise "0 quizzes".
+  if (!bank.length) return "Thousands of quizzes";
+  if (bank.length < 100) return `${bank.length} quizzes`;
+  return `${Math.floor(bank.length / 100) * 100}+ quizzes`;
 }
 
 export default bank;

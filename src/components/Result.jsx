@@ -118,7 +118,7 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, o
             share(
               `I scored ${correct}/${log.length} on usmleengo` +
               (streak > 1 ? ` — ${streak} day streak 🔥` : "") +
-              `\n\n${bank.length.toLocaleString("en-US")} USMLE micro-quizzes, free:`
+              `\n\n${Math.floor(bank.length / 100) * 100}+ USMLE micro-quizzes, free:`
             )
           }
         >
