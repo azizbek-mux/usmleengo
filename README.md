@@ -140,11 +140,17 @@ To follow a different tag or change the 10-day window, edit `TAG` and
 
 ## Where the questions came from
 
-The bank was derived from the reference PDFs and the extracted `bank.json` in
-this folder. Source vignettes were reduced to their underlying facts and
-rewritten as original one-line questions — no source stems, options or
-explanations are reproduced in the app. A 500-character clinical vignette
-could not become a five-second tap in any case.
+The bank was derived from the reference PDFs, the extracted `bank.json` and
+the UWorld Anki deck in this folder. Source vignettes and cloze cards were
+reduced to their underlying facts and rewritten as original one-line questions
+— no source stems, options or explanations are reproduced in the app. A
+500-character clinical vignette could not become a five-second tap in any case.
+
+Cloze cards do not convert mechanically: many hide a word the rest of the
+sentence gives away, and some blank half a word. Each fact was re-authored, and
+the format chosen per fact — fill-the-gap where one short answer is worth
+recalling cold, multiple choice where the answer is a phrase or where two
+things are genuinely confusable.
 
 `tools/` holds only the compiler. The extraction scripts were scratch work and
 are not part of the build.
@@ -176,7 +182,7 @@ must match exactly, since there one character is the whole answer.
 
 ## Roadmap ideas
 
-- More questions — the bank ships with 1,345 across 20 subject files
+- More questions — the bank ships with 6,251 across 99 subject files
 - Per-subject progress rings on the home screen
 - A daily reminder push via the bot (needs a tiny server or a free cron service)
 - Leaderboard among friends (needs a backend, so no longer free)

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { share } from "../lib/telegram.js";
+import bank from "../data/bank.js";
 
 const R = 74;
 const CIRC = 2 * Math.PI * R;
@@ -117,7 +118,7 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, o
             share(
               `I scored ${correct}/${log.length} on usmleengo` +
               (streak > 1 ? ` — ${streak} day streak 🔥` : "") +
-              `\n\n5000+ USMLE micro-quizzes, free:`
+              `\n\n${bank.length.toLocaleString("en-US")} USMLE micro-quizzes, free:`
             )
           }
         >
