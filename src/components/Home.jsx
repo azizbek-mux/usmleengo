@@ -8,6 +8,13 @@ import { today } from "../lib/storage.js";
 
 const PRESETS = [2, 5, 10, 20, 50, 100];
 
+// Named here rather than derived, because these two are the whole point of the
+// picture bank and should keep a fixed order and wording.
+const PICTURE_SETS = [
+  { tag: "histo", name: "histology" },
+  { tag: "radio", name: "radiology" },
+];
+
 const SearchIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
        strokeLinecap="round" strokeLinejoin="round">
@@ -65,6 +72,8 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp, 
   const groups = useMemo(() => byTopic(hits), [hits]);
   const tips = useMemo(() => (query.trim() && !hits.length ? suggest(query) : []), [query, hits]);
   const chips = useMemo(() => subjects().slice(0, 12), []);
+  // Every question that is a picture, filtered by tag below.
+  const pictures = useMemo(() => bank.filter((q) => q.img), []);
 
   const count = state.count;
   const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
@@ -212,6 +221,26 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp, 
         )
       ) : (
         <>
+          {/* Picture questions are a different axis from body system, and
+              there are far fewer of them, so they would never survive the
+              cut into the subject row. They get their own. */}
+          {pictures.length > 0 && (
+            <>
+              <div className="section-label">Or by picture</div>
+              <div className="chips">
+                {PICTURE_SETS.map(({ tag, name }) => {
+                  const pool = pictures.filter((q) => q.tags.includes(tag));
+                  if (!pool.length) return null;
+                  return (
+                    <button key={tag} className="chip" onClick={() => launch(pool, name)}>
+                      {name} <span className="chip-n">{pool.length}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
+
           <div className="section-label">Or pick a subject</div>
           <div className="chips">
             {chips.map(({ tag }) => (

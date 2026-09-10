@@ -21,6 +21,18 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "src", "data");
 const PUBLIC = join(ROOT, "public");
 
+// Pictures for image questions. Checked at compile time: a typo in a filename
+// would otherwise ship as a question with a blank where the picture should be,
+// and nothing downstream would notice.
+const IMG_DIR = "img";
+let images = new Set();
+try {
+  images = new Set(readdirSync(join(PUBLIC, IMG_DIR)));
+} catch {
+  /* no pictures yet — image questions will report themselves as missing */
+}
+const usedImages = new Set();
+
 const slug = (s) =>
   s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40);
 
@@ -86,8 +98,8 @@ function parseLine(raw, file, lineNo) {
   const where = `${file}:${lineNo}`;
   const kind = p[0].toUpperCase();
 
-  if (!["B", "G", "BT", "GT"].includes(kind)) {
-    errors.push(`${where}: unknown type "${p[0]}" (expected B, G, BT or GT)`);
+  if (!["B", "G", "BT", "GT", "I", "IT"].includes(kind)) {
+    errors.push(`${where}: unknown type "${p[0]}" (expected B, G, I, BT, GT or IT)`);
     return;
   }
   const base = kind[0];
@@ -103,6 +115,8 @@ function parseLine(raw, file, lineNo) {
   if (!topic || !q || !explain) { errors.push(`${where}: empty topic/question/explanation`); return; }
   if (!tags.length) { errors.push(`${where}: no tags`); return; }
 
+  // An image question's fourth field is a filename, not a stem — that file is
+  // the whole question, so identity and de-duplication key on it.
   const fp = fingerprint(q);
   if (seenFp.has(fp)) { dupes++; return; }
   seenFp.add(fp);
@@ -115,7 +129,24 @@ function parseLine(raw, file, lineNo) {
   while (seenId.has(id)) id = `${id}x`;
   seenId.add(id);
 
-  if (base === "B") {
+  if (base === "I") {
+    // The picture is the question: no stem, because a written hint is exactly
+    // what makes an image question too easy.
+    if (!images.has(q)) {
+      errors.push(`${where}: no such image "${q}" in public/${IMG_DIR}`);
+      return;
+    }
+    if (!four || !five) { errors.push(`${where}: image question needs both options`); return; }
+    if (four.toLowerCase() === five.toLowerCase()) { errors.push(`${where}: identical options`); return; }
+    if (four.length - five.length > 8) {
+      lengthTells.push(`${where}: correct is ${four.length - five.length} chars longer`);
+    }
+    usedImages.add(q);
+    // The topic is the disease, which is usually the answer, so the chip is
+    // always suppressed here rather than left to the leak heuristic.
+    questions.push({ id, type: "binary", difficulty, topic, tags, q: "", img: q,
+      options: [four, five], answer: 0, explain, hideTopic: true });
+  } else if (base === "B") {
     if (!four || !five) { errors.push(`${where}: binary needs both options`); return; }
     if (four.toLowerCase() === five.toLowerCase()) { errors.push(`${where}: identical options`); return; }
     if (q.includes("___")) { errors.push(`${where}: binary must not contain ___`); return; }
@@ -183,7 +214,8 @@ const byType = questions.reduce((a, q) => ((a[q.type] = (a[q.type] || 0) + 1), a
 const byDiff = questions.reduce((a, q) => ((a[q.difficulty] = (a[q.difficulty] || 0) + 1), a), {});
 const tags = new Set(questions.flatMap((q) => q.tags));
 console.log(`compiled ${questions.length} questions from ${files.length} file(s)`);
-console.log(`  binary  : ${byType.binary || 0}`);
+const withImg = questions.filter((x) => x.img).length;
+console.log(`  binary  : ${byType.binary || 0}  (${withImg} of them a picture)`);
 console.log(`  gap     : ${byType.gap || 0}`);
 console.log(`  easy    : ${byDiff.easy || 0}`);
 console.log(`  tricky  : ${byDiff.tricky || 0}  (${Math.round(100*(byDiff.tricky||0)/questions.length)}%)`);
@@ -192,6 +224,14 @@ console.log(`  tags    : ${tags.size}`);
 console.log(`  skipped : ${dupes} verbatim + ${factDupes} same-fact duplicate(s)`);
 console.log(`  bytes   : ${(JSON.stringify(questions).length / 1024).toFixed(0)} KB`);
 console.log(`  topic hidden : ${questions.filter((x) => x.hideTopic).length} (topic would reveal the answer)`);
+
+// Pictures that ship but no question uses are dead weight in the repository
+// and in every clone of it.
+if (images.size) {
+  const unused = [...images].filter((f) => !usedImages.has(f));
+  console.log(`  pictures : ${usedImages.size} used of ${images.size}` +
+              (unused.length ? `, ${unused.length} unused` : ""));
+}
 if (lengthTells.length) {
   console.log(`
   WARNING: ${lengthTells.length} question(s) leak the answer by option length.`);

@@ -155,6 +155,7 @@ input { font: inherit; }
   transition: transform 0.12s var(--tap), border-color 0.15s;
 }
 .chip:active { transform: scale(0.94); }
+.chip-n { color: var(--muted); font-weight: 600; font-size: 12px; margin-left: 3px; }
 
 .results { display: flex; flex-direction: column; gap: 8px; }
 
@@ -225,6 +226,68 @@ input { font: inherit; }
   color: var(--accent);
   border-bottom: 3px solid var(--accent);
   padding: 0 3px;
+}
+
+/* ── picture questions ── */
+
+.q-img {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.12s;
+}
+.q-img:active { border-color: var(--accent); }
+.q-img img {
+  display: block;
+  width: 100%;
+  /* Contain, never crop: the finding being asked about may sit at the edge.
+     Capped so the options stay on screen without scrolling. */
+  max-height: 46vh;
+  object-fit: contain;
+  background: #000;
+}
+.q-img-hint {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 100px;
+  padding: 3px 9px;
+  pointer-events: none;
+}
+.q-img.broken { display: none; }
+
+.zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(0, 0, 0, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  animation: fade 0.16s var(--tap);
+}
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+.zoom img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.zoom-x {
+  position: absolute;
+  top: calc(10px + env(safe-area-inset-top));
+  right: 14px;
+  font-size: 32px;
+  line-height: 1;
+  color: #fff;
+  opacity: 0.85;
+  padding: 4px 10px;
 }
 
 .options { display: flex; flex-direction: column; gap: 12px; }

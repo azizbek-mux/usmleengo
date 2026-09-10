@@ -22,10 +22,17 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
   const [typed, setTyped] = useState("");
   const [verdict, setVerdict] = useState(null); // null | { correct, chosen }
   const [combo, setCombo] = useState(0);
+  // Histology detail does not survive a phone-sized card, so the picture opens
+  // full screen on a tap.
+  const [zoom, setZoom] = useState(false);
   const inputRef = useRef(null);
 
   const q = questions[idx];
   const isLast = idx === questions.length - 1;
+
+  // Moving on closes the viewer — otherwise the next question opens behind an
+  // enlarged picture of the last one.
+  useEffect(() => { setZoom(false); }, [idx]);
 
   // Focus the text field for gap questions, but never while feedback is up —
   // the keyboard would cover the explanation.
@@ -81,9 +88,23 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
           topicLeaks() in tools/compile.mjs. */}
       {q.hideTopic ? <div className="q-topic-gap" /> : <div className="q-topic">{q.topic}</div>}
 
-      <div className="q-text">
-        {q.type === "gap" ? <GapText text={q.q} /> : q.q}
-      </div>
+      {/* An image question has no stem at all: the picture is the question,
+          and any words would narrow it down before the options do. */}
+      {q.img ? (
+        <button className="q-img" onClick={() => { haptic("light"); setZoom(true); }}
+                aria-label="Enlarge picture">
+          <img
+            src={`${import.meta.env.BASE_URL}img/${q.img}`}
+            alt=""
+            onError={(e) => { e.currentTarget.closest(".q-img").classList.add("broken"); }}
+          />
+          <span className="q-img-hint">tap to enlarge</span>
+        </button>
+      ) : (
+        <div className="q-text">
+          {q.type === "gap" ? <GapText text={q.q} /> : q.q}
+        </div>
+      )}
 
       {q.type === "binary" ? (
         <div className="options">
@@ -152,6 +173,13 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
           </button>
         )}
       </div>
+
+      {zoom && q.img && (
+        <div className="zoom" onClick={() => setZoom(false)} role="dialog" aria-label="Picture">
+          <img src={`${import.meta.env.BASE_URL}img/${q.img}`} alt="" />
+          <button className="zoom-x" aria-label="Close">×</button>
+        </div>
+      )}
     </div>
   );
 }
