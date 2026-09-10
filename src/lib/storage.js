@@ -19,6 +19,8 @@ export const emptyState = {
   qtype: null,
   // How many questions the user wants per session (2-100).
   count: 10,
+  // Category tags the user has selected. Empty means the whole bank.
+  subjects: [],
   xp: 0,
   streak: 0,
   best: 0,
@@ -51,6 +53,11 @@ function merge(raw) {
     merged.count = Math.min(100, Math.max(2, Number(merged.count) || 10));
     if (!["binary", "gap", "random"].includes(merged.qtype)) merged.qtype = null;
     if (!["english", "quiz"].includes(merged.section)) merged.section = null;
+    // Tags can disappear when the bank is re-authored, so anything unknown is
+    // dropped on read rather than left to filter a round down to nothing.
+    merged.subjects = Array.isArray(parsed.subjects)
+      ? [...new Set(parsed.subjects.filter((t) => typeof t === "string" && t))].slice(0, 24)
+      : [];
     return merged;
   } catch {
     return null;
@@ -165,6 +172,11 @@ export function reset() {
 /** Persist the user's preferred session length. */
 export function setCount(state, count) {
   return { ...state, count: Math.min(100, Math.max(2, Math.round(count))) };
+}
+
+/** Persist the chosen category tags. Empty means every subject. */
+export function setSubjects(state, subjects) {
+  return { ...state, subjects: [...new Set(subjects)].slice(0, 24) };
 }
 
 /** Persist which half of the app the user is in. */

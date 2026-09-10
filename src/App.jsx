@@ -10,7 +10,7 @@ import SectionPick from "./components/SectionPick.jsx";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
-import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, touchStreak } from "./lib/storage.js";
+import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, touchStreak } from "./lib/storage.js";
 import { userName } from "./lib/telegram.js";
 
 export default function App() {
@@ -132,6 +132,10 @@ export default function App() {
     persist(setCount(stateRef.current, n));
   }
 
+  function changeSubjects(tags) {
+    persist(setSubjects(stateRef.current, tags));
+  }
+
   function quit() {
     save(stateRef.current);
     setScreen("home");
@@ -227,6 +231,7 @@ export default function App() {
         name={name}
         onStart={start}
         onCount={changeCount}
+        onSubjects={changeSubjects}
         onSettings={() => setSheet("settings")}
         onXp={() => setSheet("xp")}
         onEnglish={() => goSection("english")}

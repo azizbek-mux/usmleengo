@@ -65,7 +65,7 @@ const Book = () => (
   </svg>
 );
 
-export default function Home({ state, name, onStart, onCount, onSettings, onXp, onEnglish }) {
+export default function Home({ state, name, onStart, onCount, onSubjects, onSettings, onXp, onEnglish }) {
   const [query, setQuery] = useState("");
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
@@ -74,6 +74,20 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp, 
   const chips = useMemo(() => subjects().slice(0, 12), []);
   // Every question that is a picture, filtered by tag below.
   const pictures = useMemo(() => bank.filter((q) => q.img), []);
+
+  // Chosen categories. Empty means the whole bank, which is why the button
+  // still says Random until something is picked.
+  const chosen = state.subjects || [];
+  const chosenSet = useMemo(() => new Set(chosen), [chosen]);
+  const pool = useMemo(
+    () => (chosen.length ? bank.filter((q) => q.tags.some((t) => chosenSet.has(t))) : null),
+    [chosen, chosenSet],
+  );
+
+  function toggle(tag) {
+    haptic("light");
+    onSubjects(chosenSet.has(tag) ? chosen.filter((t) => t !== tag) : [...chosen, tag]);
+  }
 
   const count = state.count;
   const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
@@ -223,17 +237,24 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp, 
         <>
           {/* Picture questions are a different axis from body system, and
               there are far fewer of them, so they would never survive the
-              cut into the subject row. They get their own. */}
+              cut into the subject row. They get their own row, but share one
+              selection with the subjects: picking peds and radiology together
+              is a perfectly reasonable way to study. */}
           {pictures.length > 0 && (
             <>
-              <div className="section-label">Or by picture</div>
+              <div className="section-label">By picture</div>
               <div className="chips">
                 {PICTURE_SETS.map(({ tag, name }) => {
-                  const pool = pictures.filter((q) => q.tags.includes(tag));
-                  if (!pool.length) return null;
+                  const n = pictures.filter((q) => q.tags.includes(tag)).length;
+                  if (!n) return null;
                   return (
-                    <button key={tag} className="chip" onClick={() => launch(pool, name)}>
-                      {name} <span className="chip-n">{pool.length}</span>
+                    <button
+                      key={tag}
+                      className={`chip${chosenSet.has(tag) ? " on" : ""}`}
+                      aria-pressed={chosenSet.has(tag)}
+                      onClick={() => toggle(tag)}
+                    >
+                      {name} <span className="chip-n">{n}</span>
                     </button>
                   );
                 })}
@@ -241,10 +262,22 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp, 
             </>
           )}
 
-          <div className="section-label">Or pick a subject</div>
+          <div className="chips-head">
+            <span className="section-label" style={{ margin: 0 }}>By subject</span>
+            {chosen.length > 0 && (
+              <button className="chips-clear" onClick={() => { haptic("light"); onSubjects([]); }}>
+                Clear {chosen.length}
+              </button>
+            )}
+          </div>
           <div className="chips">
             {chips.map(({ tag }) => (
-              <button key={tag} className="chip" onClick={() => launch(search(tag), tag)}>
+              <button
+                key={tag}
+                className={`chip${chosenSet.has(tag) ? " on" : ""}`}
+                aria-pressed={chosenSet.has(tag)}
+                onClick={() => toggle(tag)}
+              >
                 {tag}
               </button>
             ))}
@@ -252,17 +285,24 @@ export default function Home({ state, name, onStart, onCount, onSettings, onXp, 
         </>
       )}
 
-      {/* ── random ─────────────────────────────────────────────────────── */}
+      {/* ── start ──────────────────────────────────────────────────────── */}
       <div className="home-cta">
-        <button className="btn btn-primary btn-icon" onClick={() => launch(null, "Random")}>
+        <button
+          className="btn btn-primary btn-icon"
+          disabled={pool !== null && pool.length === 0}
+          onClick={() => launch(pool, chosen.length === 1 ? chosen[0] : chosen.length ? `${chosen.length} categories` : "Random")}
+        >
           <Dice />
-          Random · {count} question{count > 1 ? "s" : ""}
+          {chosen.length ? "Start" : "Random"} · {Math.min(count, pool ? pool.length : count)}
+          {" "}question{Math.min(count, pool ? pool.length : count) > 1 ? "s" : ""}
         </button>
         <div className="cta-note">
           {state.qtype === "binary" ? "Multiple choice"
             : state.qtype === "gap" ? "Fill the gap"
             : "Mixed question types"}
-          {state.lastDay === today() ? " · practised today ✓" : " · from every subject"}
+          {chosen.length
+            ? ` · ${chosen.length} of ${chips.length + PICTURE_SETS.length} categories, ${pool.length.toLocaleString()} questions`
+            : state.lastDay === today() ? " · practised today ✓" : " · from every subject"}
         </div>
       </div>
     </div>
