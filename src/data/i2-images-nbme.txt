@@ -1,0 +1,114 @@
+# Picture questions from two more books:
+#
+#   New NBME high-yield images.pdf              (60 of them)
+#   100 Concepts of Developmental and Gross Anatomy.pdf  (6)
+#
+# The NBME book is laid out as picture plus a one-line answer, which is exactly
+# the shape this file needs. The layout is not consistent — the NBME 25, 26 and
+# 28-30 sections put the caption under its picture and the NBME 27 section puts
+# it above — so every pairing here was read off the rendered page rather than
+# taken from the text order, which mispairs about a third of them.
+#
+# The anatomy book gives far less. It is a slide deck, and nearly every figure
+# is line art with the structure names printed on it: a picture that answers
+# itself is no question at all. Only the unlabelled clinical photographs were
+# taken, six of them.
+#
+# Also left out:
+#   - "which letter is X?" figures (A-F on a brainstem, spinal cord, knee MRI).
+#     This file's questions carry no stem, so a lettered figure has nothing to
+#     ask.
+#   - pictures where the finding was too subtle to see at phone size: a hairline
+#     distal radius fracture, a psoas abscess on CT, a subdural on a grainy
+#     scan, a pneumoperitoneum film.
+#   - duplicates. The staghorn calculus appears three times across the two
+#     books; it is here once.
+#
+# Every option pair was checked so the correct answer is not simply the longer
+# one, and every picture was looked at rather than trusted from its caption.
+
+# ── Microbiology ─────────────────────────────────────────────────────────────
+I|Cryptococcus neoformans|micro,histo|n03-b.webp|Cryptococcus neoformans|Histoplasma capsulatum|Narrow-based budding yeasts whose thick capsules take up mucicarmine. Histoplasma is smaller and sits inside macrophages.
+I|Cytomegalovirus|micro,histo,virus|n04-b.webp|Cytomegalovirus|Herpes simplex virus|The owl-eye inclusion: one large intranuclear body with a clear halo. HSV gives multinucleated cells with moulded nuclei instead.
+I|Malaria|micro,heme,histo|n08-a.webp|Malaria|Babesiosis|Parasites within red cells on a thick smear. Babesia forms a Maltese cross and never makes the pigment-laden schizonts of Plasmodium.
+I|Reactivation tuberculosis|micro,resp,radio|n11-a.webp|Reactivation tuberculosis|Primary tuberculosis|Upper lobe disease with cavitation. Primary infection sits in the middle or lower zones with hilar nodes. Anti-TNF therapy is a classic trigger.
+I|Cryptosporidium|micro,GI,histo|n38-b.webp|Cryptosporidium parvum|Entamoeba histolytica|Round basophilic oocysts along the brush border. An AIDS-defining cause of watery diarrhoea; acid-fast on stool stain.
+I|Giardia lamblia|micro,GI,histo|n42-b.webp|Giardia lamblia|Entamoeba histolytica|A pear-shaped trophozoite with two nuclei, the falling-leaf swimmer. Entamoeba has one nucleus and ingested red cells.
+I|Neisseria gonorrhoeae|micro,bacteria,urology|n56-a.webp|Neisseria gonorrhoeae|Chlamydia trachomatis|Gram-negative diplococci sitting inside neutrophils. Chlamydia has no useful Gram stain and needs a nucleic acid test.
+I|Erythema migrans|micro,derm|n58-a.webp|Erythema migrans of Lyme disease|Tinea corporis with central clearing|Expands over days from a tick bite and is not scaly. Tinea has a scaly advancing edge and is itchy.
+I|Candida albicans|micro,gyn|n67-b.webp|Candida albicans|Trichomonas vaginalis|Budding yeast with pseudohyphae. Trichomonas is a motile flagellate and gives a frothy green discharge with a strawberry cervix.
+I|Coccidioides immitis|micro,resp,histo|n75-b.webp|Coccidioides immitis|Histoplasma capsulatum|Barrel-shaped arthroconidia on silver stain; in tissue it forms spherules packed with endospores. Endemic to the southwestern United States.
+I|Actinomyces israelii|micro,bacteria,histo|n85-a.webp|Actinomyces israelii|Nocardia asteroides|A tangle of gram-positive branching filaments, the sulfur granule. Nocardia is partially acid-fast and Actinomyces is not.
+
+# ── Dermatology ──────────────────────────────────────────────────────────────
+I|Cryoglobulinemic vasculitis|derm,rheum|n06-b.webp|Cryoglobulinemic vasculitis|Henoch-Schonlein purpura|Palpable purpura over the legs from immune complexes, most often with hepatitis C. HSP is a childhood IgA vasculitis with abdominal pain and arthritis.
+I|Morbilliform drug eruption|derm,pharm|n07-a.webp|Morbilliform drug eruption|Stevens-Johnson syndrome|Confluent pink macules a week into an antibiotic, with no mucosal involvement. SJS blisters and takes the mucous membranes with it.
+I|Cholesterol embolism|derm,vascular,cardio|n13-a.webp|Cholesterol embolism|Septic embolism|Blue toes and livedo after an aortic procedure, with pulses preserved. Septic emboli come with fever and a murmur.
+I|Hereditary hemorrhagic telangiectasia|derm,heme|n25-b.webp|Hereditary hemorrhagic telangiectasia|CREST variant of systemic sclerosis|Telangiectasias on the tongue, lips and fingertips with recurrent nosebleeds. CREST adds sclerodactyly, calcinosis and Raynaud phenomenon.
+I|Tinea versicolor|derm,micro|n30-a.webp|Tinea versicolor|Vitiligo|Fine scaly patches that fail to tan, from Malassezia in the stratum corneum. Vitiligo is complete depigmentation with no scale.
+I|Mycosis fungoides|derm,oncology|n35-b.webp|Mycosis fungoides|Psoriasis|Persistent scaly plaques that outlast every steroid, a cutaneous T-cell lymphoma. Psoriasis favours extensor surfaces and responds to treatment.
+I|Actinic keratosis|derm,oncology|n40-c.webp|Actinic keratosis|Basal cell carcinoma|A rough, sandpapery red patch on sun-exposed skin; a precursor of squamous cell carcinoma. Basal cell carcinoma is a pearly papule with telangiectasias.
+I|Dermatomyositis|derm,rheum|n60-a.webp|Dermatomyositis|Systemic lupus erythematosus|Gottron papules over the knuckles and a heliotrope rash on the lids, with proximal weakness. The lupus rash spares the knuckles and crosses the cheeks.
+I|Trichotillomania|derm,psych|n64-a.webp|Trichotillomania|Alopecia areata|Irregular patches with broken hairs of differing lengths. Alopecia areata leaves smooth, completely bald circles with exclamation-mark hairs.
+I|Bullous pemphigoid|derm,immuno|n68-a.webp|Bullous pemphigoid|Pemphigus vulgaris|Tense blisters that resist rupture, from antibodies against hemidesmosomes. Pemphigus blisters are flaccid, painful and involve the mouth.
+I|Pityriasis rosea|derm|n73-c.webp|Pityriasis rosea|Secondary syphilis|Oval salmon plaques following the skin lines after a herald patch. Secondary syphilis takes in the palms and soles, which pityriasis does not.
+I|Peutz-Jeghers syndrome|derm,GI,genetics|n77-b.webp|Peutz-Jeghers syndrome|Addison disease|Pigmented macules on the lips and buccal mucosa with hamartomatous polyps. Addison disease also pigments the palmar creases and scars.
+I|Immune thrombocytopenic purpura|derm,heme|n81-a.webp|Petechiae of thrombocytopenia|Palpable purpura of vasculitis|Flat, non-palpable and non-blanching. Vasculitic purpura can be felt, because there is inflammation in the vessel wall.
+I|Cafe-au-lait macule|derm,genetics,peds|n82-b.webp|Cafe-au-lait macule|Congenital melanocytic nevus|A flat, uniformly tan patch. Six or more of them suggests neurofibromatosis type 1. A congenital nevus is darker, raised and often hairy.
+
+# ── Haematology ──────────────────────────────────────────────────────────────
+I|Anemia of chronic disease|heme,lab,histo|n19-a.webp|Anemia of chronic disease|Iron deficiency anemia|Prussian blue shows iron still stored in the marrow: the iron is present but withheld by hepcidin. In true deficiency the stain is empty.
+I|Immune thrombocytopenic purpura|heme,histo|n41-c.webp|Immune thrombocytopenic purpura|Aplastic anemia of the marrow|Marrow crowded with megakaryocytes: production is fine, the platelets are being destroyed peripherally. Aplastic marrow is empty and fatty.
+I|Microangiopathic hemolytic anemia|heme,lab|n44-b.webp|Microangiopathic hemolysis|Hereditary spherocytosis|Schistocytes and helmet cells, red cells sheared by fibrin strands, as in HUS, TTP and DIC. Spherocytes are round and dense, not fragmented.
+I|Blasts on a blood film|heme,oncology,histo|n61-b.webp|Acute myeloid leukemia|Chronic lymphocytic leukemia|Large blasts with fine chromatin and prominent nucleoli; look for Auer rods. CLL fills the film with small mature lymphocytes and smudge cells.
+I|Iron deficiency anemia|heme,lab|n65-b.webp|Iron deficiency anemia|Megaloblastic anemia|Small pale cells with widened central pallor. Megaloblastic anaemia gives large oval cells and hypersegmented neutrophils.
+I|Follicular lymphoma|heme,oncology,histo|n72-b.webp|Follicular lymphoma|Reactive follicular hyperplasia|Follicles crowding the node right to the capsule, all of a similar size and without mantles. Reactive follicles vary in size and keep their architecture.
+I|Lead poisoning|heme,toxicology|n78-b.webp|Lead poisoning|Iron deficiency anemia|Coarse basophilic stippling: ribosomes left behind because lead blocks pyrimidine 5-nucleotidase. Both anaemias are microcytic, only one stipples.
+I|Leukemoid reaction|heme,lab|n84-b.webp|Leukemoid reaction|Chronic myeloid leukemia|Mature neutrophils in great numbers with a high leukocyte alkaline phosphatase. CML scores low and carries the Philadelphia chromosome.
+
+# ── Cardiology ───────────────────────────────────────────────────────────────
+I|Fibromuscular dysplasia|cardio,radio,renal|n06-a.webp|Fibromuscular dysplasia|Polyarteritis nodosa|Beading and aneurysm of the renal artery in a young hypertensive woman. Polyarteritis nodosa gives microaneurysms in many organs and spares the lungs.
+I|Kawasaki disease|cardio,peds|n10-b.webp|Kawasaki disease|Scarlet fever|Strawberry tongue with cracked lips, conjunctival injection and a rash lasting over five days. Scarlet fever brings a sandpaper rash and answers to penicillin.
+I|Calcified bicuspid aortic valve|cardio|n26-a.webp|Calcified bicuspid aortic valve|Rheumatic mitral stenosis|Two cusps, heavily calcified decades before a normal valve would be. Rheumatic disease fuses the mitral commissures and gives a fish-mouth opening.
+I|Rheumatic valve disease|cardio,micro|n76-b.webp|Rheumatic valvulitis|Infective endocarditis|Small, firm, sterile verrucae in a neat row along the line of closure. Infective vegetations are bulky, friable and destroy the cusp.
+
+# ── Neurology ────────────────────────────────────────────────────────────────
+I|Multiple sclerosis|neuro,radio|n10-a.webp|Multiple sclerosis|Progressive multifocal leukoencephalopathy|Ovoid periventricular lesions lying at right angles to the ventricles. PML makes confluent subcortical white matter lesions in the immunosuppressed.
+I|Kernicterus|neuro,peds|n54-a.webp|Kernicterus|Germinal matrix hemorrhage|Yellow staining of the basal ganglia from unconjugated bilirubin crossing an immature barrier. Germinal matrix bleeds sit beside the lateral ventricles.
+I|Parkinson disease|neuro,path,histo|n64-b.webp|Parkinson disease|Huntington disease|A pale substantia nigra, and an eosinophilic Lewy body of alpha-synuclein in a surviving neuron. Huntington disease wastes the caudate instead.
+I|Meningioma|neuro,oncology|n75-a.webp|Meningioma|Glioblastoma multiforme|A firm, well-circumscribed mass outside the brain, pressing it rather than invading. Glioblastoma infiltrates and crosses the corpus callosum.
+
+# ── Gastroenterology ─────────────────────────────────────────────────────────
+I|Councilman body|GI,liver,histo|n07-b.webp|Councilman body of viral hepatitis|Mallory body of alcoholic hepatitis|A shrunken, deeply eosinophilic apoptotic hepatocyte. Mallory bodies are ropey intracytoplasmic tangles of damaged keratin.
+I|Zenker diverticulum|GI,radio,ENT|n12-a.webp|Zenker diverticulum|Esophageal web|An outpouching above the cricopharyngeus on barium swallow, with halitosis and regurgitation of old food. A web is a thin shelf, not a pouch.
+I|Hemochromatosis|GI,liver,histo|n41-b.webp|Hemochromatosis|Wilson disease|Coarse brown hemosiderin filling the hepatocytes, confirmed on Prussian blue. Wilson disease deposits copper and shows Kayser-Fleischer rings.
+I|Malrotation with volvulus|GI,peds,radio|n67-a.webp|Malrotation with midgut volvulus|Hirschsprung disease of the colon|Obstruction with the small bowel heaped on the right and the caecum out of place. Hirschsprung shows a transition zone in the distal colon.
+I|Ulcerative colitis|GI|n68-b.webp|Ulcerative colitis|Crohn disease|Continuous mucosal disease from the rectum upwards, with no skipped segments. Crohn disease skips, cobblestones and is transmural.
+I|Esophageal varices|GI,liver|n74-c.webp|Esophageal varices|Esophageal carcinoma|Dilated submucosal veins bulging under intact mucosa, from portal hypertension. Carcinoma forms an ulcerated, stenosing mass.
+
+# ── Renal and urology ────────────────────────────────────────────────────────
+I|Diabetic nephropathy|renal,histo,endocrine|n12-b.webp|Diabetic nephropathy|Renal amyloidosis|Nodular glomerulosclerosis, the Kimmelstiel-Wilson lesion, with hyaline arteriolosclerosis. Amyloid nodules stain with Congo red and go apple-green.
+I|Duplex collecting system|renal,embryology,peds|n13-b.webp|Duplex collecting system|Horseshoe kidney|One kidney draining through two ureters, prone to obstruction and reflux. A horseshoe kidney is two kidneys fused at the lower poles.
+I|Renal papillary necrosis|renal|n15-a.webp|Renal papillary necrosis|Chronic pyelonephritis|Sloughed, pale papillae in an analgesic user, diabetic or sickle cell patient. Chronic pyelonephritis scars the cortex and blunts the calyces.
+I|Hydronephrosis|renal,urology|n33-b.webp|Hydronephrosis|Polycystic kidney disease|Calyces ballooned into one cavity by back pressure, with the cortex thinned around them. Polycystic kidneys are studded with separate cysts.
+I|Staghorn calculus|renal,urology,micro|n38-c.webp|Staghorn calculus|Calcium oxalate stone|A struvite stone casting the whole renal pelvis, grown in alkaline urine by urease-producing Proteus. Oxalate stones are small and envelope-shaped.
+I|Testicular tumour|repro,oncology,radio|n81-b.webp|Testicular germ cell tumour|Acute epididymo-orchitis|A solid hypoechoic mass inside the testis on ultrasound, painless. Infection makes the epididymis swollen and tender, with increased flow.
+
+# ── Respiratory, rheumatology and bone ───────────────────────────────────────
+I|Diffuse alveolar damage|resp,histo,critical care|n33-a.webp|Diffuse alveolar damage|Cardiogenic pulmonary edema|Hyaline membranes lining the alveoli after ARDS. Cardiogenic oedema fills the alveoli with pale transudate and leaves no membranes.
+I|Sarcoidosis|immuno,resp,histo|n28-a.webp|Sarcoidosis|Tuberculosis|Tight non-caseating granulomas ringed by lymphocytes, with a negative acid-fast stain. Tuberculous granulomas caseate in the centre.
+I|Osteoporosis|msk,bone|n02-c.webp|Osteoporosis|Osteopetrosis|Vertebrae thinned and biconcave, the trabeculae stripped away. Osteopetrosis does the opposite and fills the marrow with dense, brittle bone.
+I|Chondrosarcoma|msk,oncology,histo|n22-a.webp|Chondrosarcoma|Enchondroma|Crowded, atypical chondrocytes, many binucleate, in a cartilage matrix. An enchondroma is bland, small and confined to the medulla.
+I|Gout|msk,rheum|n63-b.webp|Gout|Pseudogout|Tophi over the finger joints and needle-shaped, negatively birefringent urate crystals. Pseudogout crystals are rhomboid and positively birefringent.
+I|Osteoporotic compression fracture|msk,bone,radio|n83-b.webp|Osteoporotic compression fracture|Metastatic disease of the spine|Wedged vertebral bodies with the pedicles intact and no lytic lesion. Metastases destroy the pedicle, the winking owl sign.
+
+# ── Paediatrics and infection ────────────────────────────────────────────────
+I|Roseola|peds,micro,virus|n39-b.webp|Roseola|Measles|A rash appearing on the trunk just as three days of high fever break. Measles rashes while the fever is still climbing, and starts at the hairline.
+
+# ── From the anatomy book ────────────────────────────────────────────────────
+I|Hydrocele|repro,peds,anatomy|a168-c.webp|Hydrocele|Inguinal hernia|Fluid in the tunica vaginalis lights up when a torch is held against it. Bowel in a hernia does not transilluminate.
+I|Hypospadias|repro,peds,embryology|a178-c.webp|Hypospadias|Epispadias|The urethra opens on the underside of the penis, from failure of the urethral folds to fuse. Epispadias opens on the dorsum and goes with bladder exstrophy.
+I|Anterior cranial fossa fracture|anatomy,emergency,ENT|a203-b.webp|Anterior cranial fossa fracture|Petrous temporal bone fracture|Raccoon eyes with anosmia and clear rhinorrhoea point to the cribriform plate. A petrous fracture gives Battle sign behind the ear.
+I|Epidural hematoma|neuro,emergency,anatomy|a204-a.webp|Epidural hematoma|Subdural hematoma|Blood stripping the dura off the skull after a pterion fracture tore the middle meningeal artery. A subdural is venous and spreads over the surface.
+I|Horner syndrome|neuro,eye|a230-a.webp|Horner syndrome|Oculomotor nerve palsy|A small pupil with a slightly drooping lid on the same side. A third nerve palsy does the reverse: a blown pupil and an eye turned down and out.
+I|Branchial cleft cyst|ENT,embryology,peds|a239-c.webp|Branchial cleft cyst|Thyroglossal duct cyst|A painless swelling along the front edge of sternocleidomastoid, from a persistent second cleft. A thyroglossal cyst sits midline and rises on swallowing.

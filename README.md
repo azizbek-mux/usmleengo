@@ -182,7 +182,7 @@ must match exactly, since there one character is the whole answer.
 
 ## Roadmap ideas
 
-- More questions — the bank ships with 6,251 across 99 subject files
+- More questions — the bank ships with 6,317 across 100 subject files
 - Per-subject progress rings on the home screen
 - A daily reminder push via the bot (needs a tiny server or a free cron service)
 - Leaderboard among friends (needs a backend, so no longer free)
