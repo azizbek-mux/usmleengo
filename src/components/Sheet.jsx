@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { QTYPES } from "../lib/qtypes.js";
 import { CHANNEL, haptic, openTelegram } from "../lib/telegram.js";
+import { THEMES } from "../lib/theme.js";
 
 /**
  * The credit line, shared by every sheet that shows one.
@@ -22,6 +23,33 @@ export function Byline() {
         mukhtorov
       </a>
     </div>
+  );
+}
+
+/**
+ * Light or dark, offered in both halves of the app — someone who lives in
+ * Medical English should not have to go and find the quiz settings.
+ */
+export function ThemePicker({ theme, onTheme }) {
+  return (
+    <>
+      <div className="section-label">Appearance</div>
+      <div className="opt-list">
+        {THEMES.map((t) => (
+          <button
+            key={t.id}
+            className={`opt-row${(theme || "auto") === t.id ? " on" : ""}`}
+            onClick={() => { haptic("light"); onTheme(t.id); }}
+          >
+            <div>
+              <div className="opt-name">{t.name}</div>
+              <div className="opt-note">{t.note}</div>
+            </div>
+            <span className="tick">{(theme || "auto") === t.id ? "✓" : ""}</span>
+          </button>
+        ))}
+      </div>
+    </>
   );
 }
 
@@ -47,7 +75,7 @@ export function Sheet({ title, onClose, children }) {
   );
 }
 
-export function SettingsSheet({ state, onQType, onReset, onClose }) {
+export function SettingsSheet({ state, onQType, onTheme, onReset, onClose }) {
   return (
     <Sheet title="Settings" onClose={onClose}>
       <div className="section-label" style={{ marginTop: 4 }}>Question type</div>
@@ -66,6 +94,8 @@ export function SettingsSheet({ state, onQType, onReset, onClose }) {
           </button>
         ))}
       </div>
+
+      <ThemePicker theme={state.theme} onTheme={onTheme} />
 
       <div className="section-label">Your progress</div>
       <div className="stat-grid">

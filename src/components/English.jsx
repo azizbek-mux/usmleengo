@@ -19,7 +19,7 @@ import {
 } from "../lib/deck.js";
 import { GRADES, formatInterval, preview } from "../lib/srs.js";
 import AdCard from "./AdCard.jsx";
-import { Byline, Sheet } from "./Sheet.jsx";
+import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
 import { haptic } from "../lib/telegram.js";
 
 const GRADE_NAME = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
@@ -143,7 +143,7 @@ function DeckSetup({ onDone }) {
   );
 }
 
-function OptionsSheet({ config, counts, onChange, onReset, onClose }) {
+function OptionsSheet({ config, counts, theme, onChange, onTheme, onReset, onClose }) {
   return (
     <Sheet title="Deck options" onClose={onClose}>
       <div className="section-label" style={{ marginTop: 4 }}>New cards per day</div>
@@ -173,6 +173,8 @@ function OptionsSheet({ config, counts, onChange, onReset, onClose }) {
         A ceiling for days when a backlog has built up.
         {counts.reviewBacklog > 0 && ` You have ${counts.reviewBacklog.toLocaleString()} waiting.`}
       </div>
+
+      <ThemePicker theme={theme} onTheme={onTheme} />
 
       <div className="section-label">This deck</div>
       <div className="stat-grid">
@@ -250,7 +252,7 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
   );
 }
 
-export default function English({ name, streak, onHome, onStudied }) {
+export default function English({ name, streak, theme, onTheme, onHome, onStudied }) {
   const [status, setStatus] = useState(() => (cards.length ? "ready" : "loading"));
   const [deck, setDeck] = useState(() => rollDay(loadDeckLocal()));
   const [highOnly, setHighOnly] = useState(false);
@@ -544,6 +546,8 @@ export default function English({ name, streak, onHome, onStudied }) {
         <OptionsSheet
           config={deck.config}
           counts={counts}
+          theme={theme}
+          onTheme={onTheme}
           onChange={(patch) => persist(setConfig(deck, patch))}
           onReset={() => {
             const fresh = { ...deck, cards: {}, newDone: 0, revDone: 0, reviews: 0 };

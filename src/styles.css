@@ -1,3 +1,12 @@
+/* ───────────────────────────── palettes ──────────────────────────────
+   Two of them, and nothing below this block names a colour directly, so a
+   theme is a change to these tokens and nowhere else.
+
+   Dark is the default, because that is what the app has always been and what
+   most people study in at night. main.jsx stamps data-theme on <html> before
+   the first render; the media query below covers the frame before that and
+   the case where the script never runs. */
+
 :root {
   --bg: #0f1115;
   --card: #181c23;
@@ -5,21 +14,67 @@
   --line: #272d38;
   --text: #e8ecf1;
   --muted: #8b95a5;
-  /* Every accent-coloured surface reads from these four tokens — the fill, its
-     shadow/inactive pair, the dark text that sits on top of it, and the light
-     text used on the correct-answer state. Change them together, nowhere else. */
+  /* Every accent-coloured surface reads from these tokens — the fill, the
+     shadow under a raised button, the tinted background of a chosen or
+     correct row, the text that sits on the fill, and the text that sits on
+     the tint. Change them together, nowhere else. */
   --accent: #46d19e;
+  --accent-shadow: #1d4f3f;
   --accent-dim: #1d4f3f;
   --on-accent: #06231a;
   --accent-soft: #a8f0d5;
   --wrong: #ff6b6b;
   --wrong-dim: #4a2229;
+  --wrong-edge: #7a2f39;
+  --wrong-text: #ffb3b3;
   --gold: #ffc531;
   /* Anki's three queues: new, learning, review. */
   --new: #58a6ff;
   --learn: #ff9142;
+  /* The letterbox behind a picture that does not fill its frame, the dim
+     behind a bottom sheet, and the streak banner. */
+  --shade: #000;
+  --scrim: rgba(0, 0, 0, 0.55);
+  --streak-a: #3a2c05;
+  --streak-b: #241d08;
+  --streak-line: #5c4710;
+  --streak-label: #c9a94a;
   --radius: 16px;
   --tap: cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+/* Day colours. A cool off-white rather than pure white, so a phone at full
+   brightness is not a torch.
+
+   The accent is not the dark mint lightened — it is darkened, because these
+   same tokens carry text as well as fills. #46d19e on white is a 1.9:1
+   headache; every colour here clears 4.5:1 against the background it is
+   actually used on, checked rather than eyeballed. */
+:root[data-theme="light"] {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --card-hi: #e9eef4;
+  --line: #dbe2ea;
+  --text: #121821;
+  --muted: #5c6878;
+  --accent: #0b7f59;
+  --accent-shadow: #075c40;
+  --accent-dim: #d8f4e8;
+  --on-accent: #ffffff;
+  --accent-soft: #08543c;
+  --wrong: #d92d3f;
+  --wrong-dim: #fde3e6;
+  --wrong-edge: #f0a7b0;
+  --wrong-text: #9c1524;
+  --gold: #8a5f0c;
+  --new: #1a6ed8;
+  --learn: #b9540f;
+  --shade: #edf1f6;
+  --scrim: rgba(16, 21, 28, 0.38);
+  --streak-a: #fff4d6;
+  --streak-b: #ffe9ad;
+  --streak-line: #e6cc86;
+  --streak-label: #7d5a10;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -75,8 +130,8 @@ input { font: inherit; }
 .btn:active { transform: scale(0.975); }
 .btn:disabled { opacity: 0.45; cursor: default; }
 
-.btn-primary { background: var(--accent); color: var(--on-accent); box-shadow: 0 4px 0 var(--accent-dim); }
-.btn-primary:active { box-shadow: 0 2px 0 var(--accent-dim); }
+.btn-primary { background: var(--accent); color: var(--on-accent); box-shadow: 0 4px 0 var(--accent-shadow); }
+.btn-primary:active { box-shadow: 0 2px 0 var(--accent-shadow); }
 .btn-ghost { background: var(--card); color: var(--text); border: 1px solid var(--line); }
 
 .muted { color: var(--muted); }
@@ -270,7 +325,7 @@ input { font: inherit; }
      Capped so the options stay on screen without scrolling. */
   max-height: 46vh;
   object-fit: contain;
-  background: #000;
+  background: var(--shade);
 }
 .q-img-hint {
   position: absolute;
@@ -278,7 +333,8 @@ input { font: inherit; }
   bottom: 8px;
   font-size: 10px;
   letter-spacing: 0.4px;
-  color: var(--text);
+  /* Fixed, not themed: this pill sits on the picture itself. */
+  color: #fff;
   background: rgba(0, 0, 0, 0.55);
   border-radius: 100px;
   padding: 3px 9px;
@@ -290,6 +346,7 @@ input { font: inherit; }
   position: fixed;
   inset: 0;
   z-index: 60;
+  /* Fixed, not themed: a picture opened full screen reads best on black. */
   background: rgba(0, 0, 0, 0.94);
   display: flex;
   align-items: center;
@@ -324,7 +381,7 @@ input { font: inherit; }
 }
 .opt:active:not(:disabled) { transform: scale(0.98); }
 .opt.correct { background: var(--accent-dim); border-color: var(--accent); color: var(--accent-soft); }
-.opt.wrong { background: var(--wrong-dim); border-color: var(--wrong); color: #ffb3b3; }
+.opt.wrong { background: var(--wrong-dim); border-color: var(--wrong); color: var(--wrong-text); }
 .opt.faded { opacity: 0.4; }
 
 .gap-input {
@@ -356,7 +413,7 @@ input { font: inherit; }
 .feedback.no { background: var(--wrong-dim); }
 .fb-head { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 16px; margin-bottom: 5px; }
 .feedback.ok .fb-head { color: var(--accent-soft); }
-.feedback.no .fb-head { color: #ffb3b3; }
+.feedback.no .fb-head { color: var(--wrong-text); }
 .fb-body { font-size: 14px; line-height: 1.5; opacity: 0.9; }
 .fb-body b { font-weight: 800; }
 
@@ -398,8 +455,8 @@ input { font: inherit; }
 .result-actions { width: 100%; display: flex; flex-direction: column; gap: 10px; margin-top: auto; }
 
 .streak-pop {
-  background: linear-gradient(135deg, #3a2c05, #241d08);
-  border: 1px solid #5c4710;
+  background: linear-gradient(135deg, var(--streak-a), var(--streak-b));
+  border: 1px solid var(--streak-line);
   border-radius: 14px;
   padding: 14px;
   margin-bottom: 20px;
@@ -412,7 +469,7 @@ input { font: inherit; }
   100% { transform: scale(1); opacity: 1; }
 }
 .streak-pop .n { font-size: 22px; font-weight: 800; color: var(--gold); }
-.streak-pop .l { font-size: 12px; color: #c9a94a; }
+.streak-pop .l { font-size: 12px; color: var(--streak-label); }
 
 .review { width: 100%; text-align: left; margin-bottom: 22px; }
 .review-item {
@@ -509,7 +566,7 @@ input { font: inherit; }
   text-decoration: none;
   /* An existing token rather than color-mix: an older webview drops the
      whole declaration on an unknown function, taking the underline with it. */
-  border-bottom: 1px solid var(--accent-dim);
+  border-bottom: 1px solid var(--accent-shadow);
   padding-bottom: 1px;
 }
 .byline-link:active { opacity: 0.6; }
@@ -593,7 +650,7 @@ input { font: inherit; }
 .sheet-back {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: var(--scrim);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -662,7 +719,7 @@ input { font: inherit; }
 .opt-row.on { border-color: var(--accent); background: var(--accent-dim); }
 .opt-name { font-weight: 700; font-size: 15px; }
 .opt-note { font-size: 12px; color: var(--muted); margin-top: 2px; }
-.opt-row.on .opt-note { color: #8fd9bd; }
+.opt-row.on .opt-note { color: var(--accent-soft); }
 .tick { color: var(--accent); font-weight: 800; font-size: 16px; }
 
 .stat-grid { display: flex; gap: 8px; margin-bottom: 18px; }
@@ -684,7 +741,7 @@ input { font: inherit; }
   margin-top: 3px;
 }
 
-.btn-danger { background: var(--wrong-dim); color: #ffb3b3; border: 1px solid var(--wrong); }
+.btn-danger { background: var(--wrong-dim); color: var(--wrong-text); border: 1px solid var(--wrong); }
 
 .prose { font-size: 14.5px; line-height: 1.6; color: var(--text); margin: 0 0 14px; }
 .prose b { font-weight: 800; }
@@ -930,7 +987,7 @@ input { font: inherit; }
   margin-bottom: 3px;
 }
 .rate-n { display: block; font-weight: 800; font-size: 14px; }
-.rate.again { border-color: var(--wrong-dim); }
+.rate.again { border-color: var(--wrong-edge); }
 .rate.again .rate-n { color: var(--wrong); }
 .rate.hard .rate-n { color: var(--learn); }
 .rate.easy .rate-n { color: var(--accent); }

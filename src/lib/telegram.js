@@ -20,8 +20,44 @@ export function init() {
   tg.expand();
   // Stops a downward swipe from dismissing the app mid-quiz (Bot API 7.7+).
   tg.disableVerticalSwipes?.();
-  tg.setHeaderColor?.("#0f1115");
-  tg.setBackgroundColor?.("#0f1115");
+  // The header and background colours are not set here: they depend on which
+  // palette is painted, so theme.js sets them through setChrome() once it has
+  // resolved the user's preference.
+}
+
+/**
+ * Telegram's own light/dark setting, or null outside Telegram.
+ *
+ * This is what the user sees around the Mini App, and it does not always
+ * match the operating system — someone can run Telegram dark on a light
+ * phone — so it wins over the media query when we have it.
+ */
+export function colorScheme() {
+  // Gated on inTelegram, not just on the SDK being present. The script is
+  // loaded from index.html on the web too, and outside Telegram it answers
+  // "light" no matter what the machine is set to — trusting that would hand
+  // every browser visitor a light app and ignore their system setting.
+  if (!inTelegram) return null;
+  const scheme = tg?.colorScheme;
+  return scheme === "light" || scheme === "dark" ? scheme : null;
+}
+
+/** Paint Telegram's header and background to match the app's own. */
+export function setChrome(color) {
+  if (!tg) return;
+  try {
+    tg.setHeaderColor?.(color);
+    tg.setBackgroundColor?.(color);
+  } catch {
+    /* older clients reject a hex colour here; the app still renders */
+  }
+}
+
+/** Fires when the user changes their Telegram theme. Returns an unsubscribe. */
+export function onThemeChange(handler) {
+  if (!tg?.onEvent) return () => {};
+  tg.onEvent("themeChanged", handler);
+  return () => tg.offEvent?.("themeChanged", handler);
 }
 
 export function userName() {

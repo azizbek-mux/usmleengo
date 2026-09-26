@@ -17,6 +17,8 @@ export const emptyState = {
   // Which question formats to serve: "binary", "gap" or "random".
   // null means the user has not been asked yet — it triggers first-run setup.
   qtype: null,
+  // Which palette to paint: "auto" follows the phone, "light" and "dark" pin it.
+  theme: "auto",
   // How many questions the user wants per session (2-100).
   count: 10,
   // Category tags the user has selected. Empty means the whole bank.
@@ -52,6 +54,7 @@ function merge(raw) {
     // Guard against a corrupted or out-of-range stored value.
     merged.count = Math.min(100, Math.max(2, Number(merged.count) || 10));
     if (!["binary", "gap", "random"].includes(merged.qtype)) merged.qtype = null;
+    if (!["auto", "light", "dark"].includes(merged.theme)) merged.theme = "auto";
     if (!["english", "quiz"].includes(merged.section)) merged.section = null;
     // Tags can disappear when the bank is re-authored, so anything unknown is
     // dropped on read rather than left to filter a round down to nothing.
@@ -182,6 +185,11 @@ export function setSubjects(state, subjects) {
 /** Persist which half of the app the user is in. */
 export function setSection(state, section) {
   return { ...state, section: ["english", "quiz"].includes(section) ? section : null };
+}
+
+/** Persist the chosen palette. */
+export function setTheme(state, theme) {
+  return { ...state, theme: ["auto", "light", "dark"].includes(theme) ? theme : "auto" };
 }
 
 /** Persist the user's preferred question format. */

@@ -10,8 +10,9 @@ import SectionPick from "./components/SectionPick.jsx";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
-import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, touchStreak } from "./lib/storage.js";
+import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, touchStreak } from "./lib/storage.js";
 import { userName } from "./lib/telegram.js";
+import { applyTheme, watchSystemTheme } from "./lib/theme.js";
 
 export default function App() {
   const [state, setState] = useState(loadLocal);
@@ -44,6 +45,14 @@ export default function App() {
     });
     return () => { alive = false; };
   }, []);
+
+  // Repaint when the preference changes, and — while it is "auto" — when the
+  // phone's own setting changes under us. main.jsx did the first paint.
+  useEffect(() => {
+    applyTheme(state.theme);
+    if (state.theme !== "auto") return undefined;
+    return watchSystemTheme(() => applyTheme("auto"));
+  }, [state.theme]);
 
   // Fetch the question bank once on mount.
   useEffect(() => {
@@ -123,6 +132,7 @@ export default function App() {
       ...emptyState,
       qtype: stateRef.current.qtype,
       section: stateRef.current.section,
+      theme: stateRef.current.theme,
     };
     persist(fresh);
     setSheet(null);
@@ -134,6 +144,10 @@ export default function App() {
 
   function changeSubjects(tags) {
     persist(setSubjects(stateRef.current, tags));
+  }
+
+  function changeTheme(theme) {
+    persist(setTheme(stateRef.current, theme));
   }
 
   function quit() {
@@ -185,6 +199,8 @@ export default function App() {
       <English
         name={name}
         streak={state.streak}
+        theme={state.theme}
+        onTheme={changeTheme}
         onHome={() => goSection("quiz")}
         onStudied={markStudied}
       />
@@ -240,6 +256,7 @@ export default function App() {
         <SettingsSheet
           state={state}
           onQType={chooseQType}
+          onTheme={changeTheme}
           onReset={resetAll}
           onClose={() => setSheet(null)}
         />
