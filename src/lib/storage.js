@@ -6,6 +6,8 @@
 // round-trip.
 
 import { cloudAvailable, cloudGet, cloudGetChunked, cloudSet, cloudSetChunked } from "./telegram.js";
+import { dayIndex, xpFor } from "./rating.js";
+import { PACE_MAX_MS, PACE_MIN_MS } from "./scorecard.js";
 
 const KEY = "usmle_drops_v1";
 
@@ -31,6 +33,9 @@ export const emptyState = {
   correct: 0,
   // seen[id] = [timesCorrect, timesWrong] — drives the spaced-repetition weight
   seen: {},
+  // Time spent on correct answers, per question type: [total ms, count].
+  // Only correct answers, and each type kept apart — see rating.js for why.
+  timing: { binary: [0, 0], gap: [0, 0] },
 };
 
 export function today() {
@@ -58,6 +63,7 @@ function merge(raw) {
     if (!["english", "quiz"].includes(merged.section)) merged.section = null;
     // Tags can disappear when the bank is re-authored, so anything unknown is
     // dropped on read rather than left to filter a round down to nothing.
+    merged.timing = cleanTiming(parsed.timing);
     merged.subjects = Array.isArray(parsed.subjects)
       ? [...new Set(parsed.subjects.filter((t) => typeof t === "string" && t))].slice(0, 24)
       : [];
@@ -143,17 +149,58 @@ export function touchStreak(state) {
   };
 }
 
-/** Record one answer. XP rewards correctness, not volume. */
-export function record(state, question, wasCorrect) {
+const pair = (p) => (Array.isArray(p) && p.length === 2 && p.every((n) => Number.isFinite(n) && n >= 0)
+  ? [Math.round(p[0]), Math.round(p[1])] : [0, 0]);
+
+/** Timing read back from storage, reset to zero if it is not what we wrote. */
+function cleanTiming(raw) {
+  return { binary: pair(raw?.binary), gap: pair(raw?.gap) };
+}
+
+/**
+ * Record one answer. XP rewards correctness, and more for the harder format.
+ *
+ * `elapsedMs` is how long the question was on screen before it was answered.
+ * It is kept only for correct answers, and clamped: a question left open
+ * while the phone sat in a pocket would otherwise count as a ten-minute
+ * answer, and a stray double-tap as an impossible one.
+ */
+export function record(state, question, wasCorrect, elapsedMs) {
   const [c, w] = state.seen[question.id] || [0, 0];
+  const timing = cleanTiming(state.timing);
+  if (wasCorrect && Number.isFinite(elapsedMs) && elapsedMs > 0) {
+    const kind = question.type === "gap" ? "gap" : "binary";
+    const ms = Math.min(PACE_MAX_MS, Math.max(PACE_MIN_MS, elapsedMs));
+    timing[kind] = [timing[kind][0] + ms, timing[kind][1] + 1];
+  }
   return {
     ...state,
-    xp: state.xp + (wasCorrect ? 10 : 2),
+    xp: state.xp + xpFor(question, wasCorrect),
     answered: state.answered + 1,
     correct: state.correct + (wasCorrect ? 1 : 0),
+    timing,
     seen: {
       ...state.seen,
       [question.id]: wasCorrect ? [c + 1, w] : [c, w + 1],
+    },
+  };
+}
+
+/**
+ * The raw numbers the rating is built from, in the shape rating.rate() and
+ * scorecard.encodeScore() both take.
+ */
+export function ratingInput(state) {
+  const t = cleanTiming(state.timing);
+  const avg = ([total, n]) => (n ? Math.round(total / n) : 0);
+  return {
+    streak: state.streak || 0,
+    lastDay: dayIndex(state.lastDay),
+    xp: state.xp || 0,
+    answered: state.answered || 0,
+    timing: {
+      binaryMs: avg(t.binary), binaryN: t.binary[1],
+      gapMs: avg(t.gap), gapN: t.gap[1],
     },
   };
 }

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { QTYPES } from "../lib/qtypes.js";
 import { CHANNEL, haptic, openTelegram } from "../lib/telegram.js";
 import { THEMES } from "../lib/theme.js";
+import { XP } from "../lib/rating.js";
 
 /**
  * The credit line, shared by every sheet that shows one.
@@ -119,19 +120,30 @@ export function XpSheet({ state, onClose }) {
     <Sheet title="What is XP?" onClose={onClose}>
       <p className="prose">
         XP stands for <b>experience points</b>. It is a running total of the practice
-        you have done — not a grade, and not a score anyone else sees.
+        you have done — not a grade. Nobody else sees it unless you put yourself on
+        the rating board.
       </p>
 
       <div className="xp-rules">
         <div className="xp-rule">
-          <span className="xp-amt ok">+10</span>
-          <span>for every question you answer correctly</span>
+          <span className="xp-amt ok">+{XP.gapCorrect}</span>
+          <span>for a correct answer you <b>typed</b></span>
         </div>
         <div className="xp-rule">
-          <span className="xp-amt">+2</span>
+          <span className="xp-amt ok">+{XP.binaryCorrect}</span>
+          <span>for a correct answer you <b>tapped</b></span>
+        </div>
+        <div className="xp-rule">
+          <span className="xp-amt">+{XP.wrong}</span>
           <span>for every question you get wrong</span>
         </div>
       </div>
+
+      <p className="prose">
+        Typing pays more because it is harder: two options hand you the answer and
+        ask you to recognise it, and one of them is right by chance alone. Producing
+        it from nothing is the skill the exam tests.
+      </p>
 
       <p className="prose">
         You still earn XP for wrong answers on purpose. Getting something wrong and

@@ -32,6 +32,14 @@ jobs:
       # Pulls the tagged channel post into public/announcement.json. Never
       # fails the build: no announcement is a normal state.
       - run: npm run announcement
+      # Adds scores players sent to the bot since the last build, on top of
+      # the board already live, into public/leaderboard.json. Needs the
+      # BOT_TOKEN repository secret to read new scores; without it the live
+      # board is carried forward unchanged. Fails the build only if the live
+      # board exists but cannot be read — deploying without it would wipe it.
+      - run: npm run leaderboard
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

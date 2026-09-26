@@ -26,6 +26,10 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
   // full screen on a tap.
   const [zoom, setZoom] = useState(false);
   const inputRef = useRef(null);
+  // When the current question appeared, and whether the app left the screen
+  // while it was up. Feeds the speed rating; see record() in storage.js.
+  const shownAt = useRef(0);
+  const leftScreen = useRef(false);
 
   const q = questions[idx];
   const isLast = idx === questions.length - 1;
@@ -33,6 +37,21 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
   // Moving on closes the viewer — otherwise the next question opens behind an
   // enlarged picture of the last one.
   useEffect(() => { setZoom(false); }, [idx]);
+
+  // Start the clock for each question.
+  useEffect(() => {
+    shownAt.current = performance.now();
+    leftScreen.current = document.hidden;
+  }, [idx]);
+
+  // A phone call or a switch to another app mid-question is not thinking
+  // time. Rather than guess how much of the gap was away, that one answer is
+  // simply not timed.
+  useEffect(() => {
+    const onHide = () => { if (document.hidden) leftScreen.current = true; };
+    document.addEventListener("visibilitychange", onHide);
+    return () => document.removeEventListener("visibilitychange", onHide);
+  }, []);
 
   // Focus the text field for gap questions, but never while feedback is up —
   // the keyboard would cover the explanation.
@@ -46,10 +65,11 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
   if (!q) return null;
 
   function settle(correct, chosen) {
+    const elapsed = leftScreen.current ? null : performance.now() - shownAt.current;
     setVerdict({ correct, chosen });
     setCombo((c) => (correct ? c + 1 : 0));
     haptic(correct ? "success" : "error");
-    onAnswer(q, correct);
+    onAnswer(q, correct, elapsed);
   }
 
   function answerBinary(i) {

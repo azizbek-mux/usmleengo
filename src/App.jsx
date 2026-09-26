@@ -7,12 +7,15 @@ import Quiz from "./components/Quiz.jsx";
 import Result from "./components/Result.jsx";
 import English from "./components/English.jsx";
 import SectionPick from "./components/SectionPick.jsx";
+import Rating from "./components/Rating.jsx";
+import { loadLeaderboard } from "./data/leaderboard.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
 import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, touchStreak } from "./lib/storage.js";
 import { userName } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
+import { xpFor } from "./lib/rating.js";
 
 export default function App() {
   const [state, setState] = useState(loadLocal);
@@ -26,6 +29,10 @@ export default function App() {
   const [log, setLog] = useState([]);
   const [streakAdvanced, setStreakAdvanced] = useState(false);
   const [sheet, setSheet] = useState(null); // null | "settings" | "xp"
+  // The published leaderboard. Loaded once in the background, and again each
+  // time the rating screen opens, so Home can show a place without waiting.
+  const [board, setBoard] = useState(null);
+  const [boardLoading, setBoardLoading] = useState(false);
 
   // The pool a round was built from, so "Another round" can reshuffle the
   // same topic instead of dumping the user back to the daily mix.
@@ -54,6 +61,15 @@ export default function App() {
     return watchSystemTheme(() => applyTheme("auto"));
   }, [state.theme]);
 
+  function refreshBoard() {
+    setBoardLoading(true);
+    loadLeaderboard().then((b) => {
+      if (b) setBoard(b);
+      setBoardLoading(false);
+    });
+  }
+  useEffect(refreshBoard, []);
+
   // Fetch the question bank once on mount.
   useEffect(() => {
     let alive = true;
@@ -79,8 +95,8 @@ export default function App() {
     setScreen("quiz");
   }
 
-  function handleAnswer(question, correct) {
-    const updated = record(stateRef.current, question, correct);
+  function handleAnswer(question, correct, elapsedMs) {
+    const updated = record(stateRef.current, question, correct, elapsedMs);
     stateRef.current = updated;
     setState(updated);
     setLog((l) => [...l, { question, correct }]);
@@ -155,7 +171,7 @@ export default function App() {
     setScreen("home");
   }
 
-  const xpEarned = log.reduce((sum, l) => sum + (l.correct ? 10 : 2), 0);
+  const xpEarned = log.reduce((sum, l) => sum + xpFor(l.question, l.correct), 0);
 
   if (bankStatus !== "ready") {
     return (
@@ -214,6 +230,18 @@ export default function App() {
     return <Onboarding onChoose={chooseQType} />;
   }
 
+  if (screen === "rating") {
+    return (
+      <Rating
+        state={state}
+        board={board}
+        boardLoading={boardLoading}
+        onRefresh={refreshBoard}
+        onBack={() => setScreen("home")}
+      />
+    );
+  }
+
   if (screen === "quiz") {
     return (
       <Quiz
@@ -251,6 +279,8 @@ export default function App() {
         onSettings={() => setSheet("settings")}
         onXp={() => setSheet("xp")}
         onEnglish={() => goSection("english")}
+        onRating={() => setScreen("rating")}
+        board={board}
       />
       {sheet === "settings" && (
         <SettingsSheet

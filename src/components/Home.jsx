@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import bank, { bankBlurb } from "../data/bank.js";
 import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import AdCard from "./AdCard.jsx";
+import { Trophy, ratingSummary } from "./Rating.jsx";
 import { search, suggest, subjects } from "../lib/match.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
@@ -65,7 +66,7 @@ const Book = () => (
   </svg>
 );
 
-export default function Home({ state, name, onStart, onCount, onSubjects, onSettings, onXp, onEnglish }) {
+export default function Home({ state, name, board, onStart, onCount, onSubjects, onSettings, onXp, onEnglish, onRating }) {
   const [query, setQuery] = useState("");
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
@@ -74,6 +75,7 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
   const chips = useMemo(() => subjects().slice(0, 12), []);
   // Every question that is a picture, filtered by tag below.
   const pictures = useMemo(() => bank.filter((q) => q.img), []);
+  const rating = useMemo(() => ratingSummary(state, board), [state, board]);
 
   // Chosen categories. Empty means the whole bank, which is why the button
   // still says Random until something is picked.
@@ -133,13 +135,24 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
 
       <AdCard />
 
-      {/* ── the other half of the app ──────────────────────────────────── */}
+      {/* ── the other half of the app, and the rating ─────────────────── */}
       <div className="mode-row">
         <button className="mode" onClick={() => { haptic("light"); onEnglish(); }}>
           <span className="mode-ico"><Book /></span>
           <span>
             <span className="mode-t">Medical English</span>
             <span className="mode-n">{GLOSSARY_COUNT.toLocaleString()} clinical terms · flashcards</span>
+          </span>
+        </button>
+        <button className="mode" onClick={() => { haptic("light"); onRating(); }}>
+          <span className="mode-ico"><Trophy /></span>
+          <span>
+            <span className="mode-t">Rating</span>
+            <span className="mode-n">
+              {rating.others > 0
+                ? `#${rating.place} of ${rating.total} · score ${rating.score}`
+                : `Your score ${rating.score} · see the board`}
+            </span>
           </span>
         </button>
       </div>

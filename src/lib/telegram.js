@@ -66,6 +66,18 @@ export function userName() {
   return u.first_name || u.username || null;
 }
 
+/**
+ * The Telegram user id, or null outside Telegram.
+ *
+ * Only used to recognise the viewer's own row on the leaderboard, through
+ * scorecard.playerKey — it is never sent anywhere or written down raw.
+ */
+export function userId() {
+  if (!inTelegram) return null;
+  const id = tg?.initDataUnsafe?.user?.id;
+  return Number.isFinite(id) ? id : null;
+}
+
 /** Haptics: 'light' | 'medium' | 'heavy' for taps, or a notification type. */
 export function haptic(kind) {
   if (!supports("6.1")) return;
@@ -204,6 +216,9 @@ export async function cloudGetChunked(prefix) {
  * If the bot is ever renamed, change this line and nothing else.
  */
 export const APP_LINK = "https://t.me/usmleengo_bot/study";
+
+/** The bot's own chat, which is where leaderboard scores are sent. Same bot. */
+export const BOT_LINK = APP_LINK.split("/").slice(0, 4).join("/");
 
 /** The author's channel, linked from the byline. */
 export const CHANNEL = "https://t.me/mukhtorov_md";
