@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { QTYPES } from "../lib/qtypes.js";
 import { CHANNEL, haptic, openTelegram } from "../lib/telegram.js";
 import { THEMES, resolveTheme } from "../lib/theme.js";
-import { XP } from "../lib/rating.js";
 
 /**
  * The credit line, shared by every sheet that shows one.
@@ -114,70 +113,10 @@ export function SettingsSheet({ state, onQType, onTheme, onReset, onClose }) {
 
       <ThemePicker theme={state.theme} onTheme={onTheme} />
 
-      <div className="section-label">Your progress</div>
-      <div className="stat-grid">
-        <div className="mini"><b>{state.answered}</b><span>answered</span></div>
-        <div className="mini"><b>{state.answered ? Math.round((state.correct / state.answered) * 100) : 0}%</b><span>correct</span></div>
-        <div className="mini"><b>{state.best}</b><span>best streak</span></div>
-      </div>
-
-      <button className="btn btn-danger" onClick={onReset}>Reset all progress</button>
+      <button className="btn btn-danger settings-reset" onClick={onReset}>Reset all progress</button>
       <div className="cta-note">Clears XP, streak and question history. Cannot be undone.</div>
 
       <Byline />
-    </Sheet>
-  );
-}
-
-export function XpSheet({ state, onClose }) {
-  const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
-
-  return (
-    <Sheet title="What is XP?" onClose={onClose}>
-      <p className="prose">
-        XP stands for <b>experience points</b>. It is a running total of the practice
-        you have done — not a grade. Nobody else sees it unless you put yourself on
-        the rating board.
-      </p>
-
-      <div className="xp-rules">
-        <div className="xp-rule">
-          <span className="xp-amt ok">+{XP.gapCorrect}</span>
-          <span>for a correct answer you <b>typed</b></span>
-        </div>
-        <div className="xp-rule">
-          <span className="xp-amt ok">+{XP.binaryCorrect}</span>
-          <span>for a correct answer you <b>tapped</b></span>
-        </div>
-        <div className="xp-rule">
-          <span className="xp-amt">+{XP.wrong}</span>
-          <span>for every question you get wrong</span>
-        </div>
-      </div>
-
-      <p className="prose">
-        Typing pays more because it is harder: two options hand you the answer and
-        ask you to recognise it, and one of them is right by chance alone. Producing
-        it from nothing is the skill the exam tests.
-      </p>
-
-      <p className="prose">
-        You still earn XP for wrong answers on purpose. Getting something wrong and
-        reading why is how the practice works — the app should not punish you for
-        attempting the harder questions.
-      </p>
-      <p className="prose">
-        Because it only ever goes up, XP measures <b>effort over time</b>. If you want to
-        know how well you are actually doing, look at your accuracy instead.
-      </p>
-
-      <div className="stat-grid">
-        <div className="mini"><b>{state.xp.toLocaleString()}</b><span>total XP</span></div>
-        <div className="mini"><b>{accuracy}%</b><span>accuracy</span></div>
-        <div className="mini"><b>{state.streak}</b><span>day streak</span></div>
-      </div>
-
-      <button className="btn btn-primary" onClick={onClose}>Got it</button>
     </Sheet>
   );
 }

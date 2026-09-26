@@ -20,6 +20,7 @@ import {
 import { GRADES, formatInterval, preview } from "../lib/srs.js";
 import AdCard from "./AdCard.jsx";
 import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
+import MainMenu from "./Menu.jsx";
 import { haptic } from "../lib/telegram.js";
 
 const GRADE_NAME = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
@@ -48,13 +49,6 @@ const SearchIcon = () => (
   </svg>
 );
 
-const Gear = () => (
-  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-       strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="3" />
-    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
-  </svg>
-);
 
 /**
  * A number the user types rather than picks from a list — any limit is
@@ -252,7 +246,7 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
   );
 }
 
-export default function English({ name, streak, theme, onTheme, onHome, onStudied }) {
+export default function English({ name, theme, onTheme, onHome, onStudied, onRating, onPerformance }) {
   const [status, setStatus] = useState(() => (cards.length ? "ready" : "loading"));
   const [deck, setDeck] = useState(() => rollDay(loadDeckLocal()));
   const [highOnly, setHighOnly] = useState(false);
@@ -412,9 +406,8 @@ export default function English({ name, streak, theme, onTheme, onHome, onStudie
 
   return (
     <div className="screen">
-      {/* The same head Home wears, so the two halves read as one app. XP is
-          left out on purpose: it is earned by answering quiz questions, and a
-          number that never moves while you study here would be noise. */}
+      {/* The same head Home wears, so the two halves read as one app. The
+          menu is the same too, except that Settings here means the deck. */}
       <div className="home-head">
         <div>
           <div className="greet">
@@ -428,15 +421,7 @@ export default function English({ name, streak, theme, onTheme, onHome, onStudie
               : `${cards.length.toLocaleString()} clinical terms`}
           </div>
         </div>
-        <div className="stats">
-          <div className="stat flame">
-            <div className="stat-v">{streak}</div>
-            <div className="stat-l">🔥 day</div>
-          </div>
-          <button className="stat gear" onClick={() => setOptions(true)} aria-label="Deck options">
-            <Gear />
-          </button>
-        </div>
+        <MainMenu onRating={onRating} onPerformance={onPerformance} onSettings={() => setOptions(true)} />
       </div>
 
       <AdCard />

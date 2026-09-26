@@ -89,7 +89,14 @@ const players = [
 const meNow = { key: "me", name: "You", rating: rated(80, 30, 7000, 5000) };
 const s = R.standings("overall", players, meNow);
 check("the viewer is counted once, not twice", s.total === 3);
-check("and scored on their live numbers, not what they last sent", s.me.score === 80);
+check("and scored on their live numbers, not what they last sent", s.me.score === 800);
+check("points are the overall rating out of 1000", R.points(52.04) === 520 && R.points(100) === R.POINTS_MAX);
+const close = R.standings("overall", [
+  { key: "p", name: "P", rating: { overall: 52.04, raw: {} } },
+  { key: "q", name: "Q", rating: { overall: 52.01, raw: {} } },
+], null);
+check("two players showing the same points share a place",
+  close.rows[0].place === 1 && close.rows[1].place === 1, JSON.stringify(close.rows.map((r) => [r.score, r.place])));
 check("so they are second", s.me.place === 2);
 check("the board is sorted best first", s.rows.map((x) => x.key).join() === "b,me,a");
 const byXp = R.standings("xp", players, meNow);

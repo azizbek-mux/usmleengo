@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import bank, { bankBlurb } from "../data/bank.js";
 import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import AdCard from "./AdCard.jsx";
-import { Trophy, ratingSummary } from "./Rating.jsx";
+import MainMenu from "./Menu.jsx";
 import { search, suggest, subjects } from "../lib/match.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
@@ -30,13 +30,6 @@ const Arrow = () => (
   </svg>
 );
 
-const Gear = () => (
-  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-       strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="3" />
-    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
-  </svg>
-);
 
 const Dice = () => (
   <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
@@ -66,7 +59,7 @@ const Book = () => (
   </svg>
 );
 
-export default function Home({ state, name, board, onStart, onCount, onSubjects, onSettings, onXp, onEnglish, onRating }) {
+export default function Home({ state, name, onStart, onCount, onSubjects, onSettings, onEnglish, onRating, onPerformance }) {
   const [query, setQuery] = useState("");
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
@@ -75,7 +68,6 @@ export default function Home({ state, name, board, onStart, onCount, onSubjects,
   const chips = useMemo(() => subjects().slice(0, 12), []);
   // Every question that is a picture, filtered by tag below.
   const pictures = useMemo(() => bank.filter((q) => q.img), []);
-  const rating = useMemo(() => ratingSummary(state, board), [state, board]);
 
   // Chosen categories. Empty means the whole bank, which is why the button
   // still says Random until something is picked.
@@ -92,7 +84,6 @@ export default function Home({ state, name, board, onStart, onCount, onSubjects,
   }
 
   const count = state.count;
-  const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
 
   function launch(pool, label) {
     haptic("medium");
@@ -108,51 +99,24 @@ export default function Home({ state, name, board, onStart, onCount, onSubjects,
           <div className="greet">
             {name ? <>Hi, <span>{name}</span></> : "usmleengo"}
           </div>
-          {/* Bank size stays put once there is progress to show — it is what
-              the app offers, not a first-run greeting. Progress goes on its
-              own line beneath so neither has to be truncated on a phone. */}
+          {/* What the app offers. The user's own numbers are in My
+              performance, behind the menu. */}
           <div className="sub">{bankBlurb()}</div>
-          {state.answered > 0 && (
-            <div className="sub sub-progress">
-              {state.answered.toLocaleString()} answered · {accuracy}%
-            </div>
-          )}
         </div>
-        <div className="stats">
-          <div className="stat flame">
-            <div className="stat-v">{state.streak}</div>
-            <div className="stat-l">🔥 day</div>
-          </div>
-          <button className="stat xp tappable" onClick={onXp} aria-label="What is XP?">
-            <div className="stat-v">{state.xp}</div>
-            <div className="stat-l">XP <span className="qmark">?</span></div>
-          </button>
-          <button className="stat gear" onClick={onSettings} aria-label="Settings">
-            <Gear />
-          </button>
-        </div>
+        {/* Rating, performance and settings: everything about the user rather
+            than the studying, behind one button so this screen stays short. */}
+        <MainMenu onRating={onRating} onPerformance={onPerformance} onSettings={onSettings} />
       </div>
 
       <AdCard />
 
-      {/* ── the other half of the app, and the rating ─────────────────── */}
+      {/* ── the other half of the app ──────────────────────────────────── */}
       <div className="mode-row">
         <button className="mode" onClick={() => { haptic("light"); onEnglish(); }}>
           <span className="mode-ico"><Book /></span>
           <span>
             <span className="mode-t">Medical English</span>
             <span className="mode-n">{GLOSSARY_COUNT.toLocaleString()} clinical terms · flashcards</span>
-          </span>
-        </button>
-        <button className="mode" onClick={() => { haptic("light"); onRating(); }}>
-          <span className="mode-ico"><Trophy /></span>
-          <span>
-            <span className="mode-t">Rating</span>
-            <span className="mode-n">
-              {rating.others > 0
-                ? `#${rating.place} of ${rating.total} · score ${rating.score}`
-                : `Your score ${rating.score} · see the board`}
-            </span>
           </span>
         </button>
       </div>

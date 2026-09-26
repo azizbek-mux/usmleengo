@@ -48,19 +48,24 @@ console.log("\nwho a player is");
 check("the key is stable", S.playerKey(12345678) === S.playerKey("12345678"));
 check("different people get different keys", S.playerKey(12345678) !== S.playerKey(12345679));
 check("and the key does not contain the Telegram id", !S.playerKey(12345678).includes("12345678"));
-check("a name is first name and last initial", S.displayName({ first_name: "Aziz", last_name: "Mukhtorov" }) === "Aziz M.");
+check("a name is the full name as written on Telegram",
+  S.displayName({ first_name: "Azizbek", last_name: "Muxtorov" }) === "Azizbek Muxtorov");
 check("a first name alone is fine", S.displayName({ first_name: "Aziz" }) === "Aziz");
 check("no name at all becomes Player", S.displayName({}) === "Player");
 check("control and direction characters are stripped",
   S.displayName({ first_name: "A‮ziz\u0007" }) === "Aziz");
-check("a very long name is cut", [...S.displayName({ first_name: "x".repeat(80) })].length === 24);
+check("a very long name is cut", [...S.displayName({ first_name: "x".repeat(80) })].length === S.NAME_MAX);
+check("a username is kept", S.usernameOf({ username: "azizbek_muxtorov" }) === "azizbek_muxtorov");
+check("no username is simply none", S.usernameOf({ first_name: "Laylo" }) === null);
+check("and nothing that breaks Telegram's rules passes as one",
+  S.usernameOf({ username: "no spaces!" }) === null && S.usernameOf({ username: "ab" }) === null);
 
 console.log("\nthe build merging messages");
 const msg = (id, from, text, date, chat = "private") => ({
   update_id: id,
   message: { from, chat: { type: chat }, text, date },
 });
-const aziz = { id: 1001, first_name: "Aziz", last_name: "Mukhtorov", username: "mukhtorov_md" };
+const aziz = { id: 1001, first_name: "Azizbek", last_name: "Muxtorov", username: "azizbek_muxtorov" };
 const bek = { id: 1002, first_name: "Bek" };
 const t0 = Math.floor(Date.parse("2026-09-26T08:00:00Z") / 1000);
 
@@ -92,12 +97,16 @@ console.log("\nwhat gets published");
 F.applyUpdates(board, [msg(19, aziz, `/start ${code}`, t0 + 600)]);
 const published = JSON.stringify(board);
 check("no Telegram user id", !published.includes(String(aziz.id)));
-check("no username", !published.includes(aziz.username));
-check("the name is shortened", published.includes('"Aziz M."') && !published.includes("Mukhtorov"));
+check("the full name is shown", published.includes('"name":"Azizbek Muxtorov"'));
+check("with the username", published.includes('"username":"azizbek_muxtorov"'));
+F.applyUpdates(board, [msg(20, { id: 1004, first_name: "Laylo" }, `/start ${code}`, t0 + 700)]);
+const laylo = board.players[S.playerKey(1004)];
+check("someone without a username has no username field at all", laylo && !("username" in laylo));
+check("and still no Telegram id anywhere", !JSON.stringify(board).includes('"1004"') && !JSON.stringify(board).includes(":1004"));
 
 console.log("\nreading last build's board back");
 const round = F.sanitizeBoard(JSON.parse(published));
-check("a real board survives the round trip", JSON.stringify(round.players) === JSON.stringify(board.players));
+check("a real board survives the round trip", JSON.stringify(round.players) === JSON.stringify(JSON.parse(published).players));
 const junk = F.sanitizeBoard({
   lastUpdateId: 5,
   players: {
@@ -108,6 +117,10 @@ const junk = F.sanitizeBoard({
   },
 });
 check("malformed entries are dropped, not repaired", Object.keys(junk.players).join() === "ok");
+const badName = F.sanitizeBoard({ players: { ok: { ...board.players[azizKey], username: "x y", name: "A\u202eB" } } });
+check("a bad username read back is dropped, but the player kept",
+  badName.players.ok && !("username" in badName.players.ok));
+check("and a name read back is cleaned again", badName.players.ok.name === "AB");
 check("nonsense in place of a board is an empty board", Object.keys(F.sanitizeBoard("nope").players).length === 0);
 
 console.log("\nthe start command");

@@ -67,6 +67,17 @@ export function userName() {
 }
 
 /**
+ * The viewer's own Telegram profile — name and username — or null outside
+ * Telegram. Only used to label their own row on the rating board with the
+ * same name everyone else sees there.
+ */
+export function telegramUser() {
+  if (!inTelegram) return null;
+  const u = tg?.initDataUnsafe?.user;
+  return u ? { first_name: u.first_name, last_name: u.last_name, username: u.username } : null;
+}
+
+/**
  * The Telegram user id, or null outside Telegram.
  *
  * Only used to recognise the viewer's own row on the leaderboard, through

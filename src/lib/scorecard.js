@@ -58,18 +58,32 @@ export function playerKey(userId) {
   return fnv(s).toString(36) + fnv(`~${reversed}`).toString(36);
 }
 
+// Control characters, zero-width marks and bidirectional overrides. Names come
+// from other people's profiles and are shown to everyone, so none of these
+// may reach the page — an override character can make a name read backwards
+// or run into the next column.
+const INVISIBLE = /[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff]/g;
+const clean = (s) => String(s || "").replace(INVISIBLE, "").replace(/\s+/g, " ").trim();
+
+/** Longest name the board keeps. The screen shortens further with an ellipsis. */
+export const NAME_MAX = 40;
+
 /**
- * What the board shows for someone: a first name and a last initial.
- *
- * Never the username or the id. Control characters are stripped, since this
- * text came from another person's profile and will be shown to everyone.
+ * What the board shows for someone: the name exactly as they wrote it on
+ * Telegram, first and last. The id is never shown.
  */
 export function displayName(from) {
-  const clean = (s) => String(s || "").replace(/[\u0000-\u001f\u007f-\u009f​-‏‪-‮]/g, "").replace(/\s+/g, " ").trim();
-  const first = clean(from?.first_name);
-  const last = clean(from?.last_name);
-  const name = first ? (last ? `${first} ${[...last][0]}.` : first) : "Player";
-  return [...name].slice(0, 24).join("");
+  const name = [clean(from?.first_name), clean(from?.last_name)].filter(Boolean).join(" ") || "Player";
+  return [...name].slice(0, NAME_MAX).join("");
+}
+
+/** Telegram's own rule for a username, so nothing else can pass as one. */
+export const USERNAME = /^[A-Za-z0-9_]{4,32}$/;
+
+/** Their @username, or null if they have not set one. */
+export function usernameOf(from) {
+  const u = String(from?.username || "");
+  return USERNAME.test(u) ? u : null;
 }
 
 const FIELDS = ["streak", "lastDay", "xp", "answered", "binaryMs", "binaryN", "gapMs", "gapN"];
@@ -195,7 +209,8 @@ export function sanitizeBoard(raw) {
       t.binaryMs, t.binaryN, t.gapMs, t.gapN];
     if (!numbers.every(isCount) || typeof p.name !== "string") continue;
     board.players[key] = {
-      name: p.name.slice(0, 24),
+      name: [...clean(p.name)].slice(0, NAME_MAX).join("") || "Player",
+      ...(typeof p.username === "string" && USERNAME.test(p.username) ? { username: p.username } : {}),
       streak: p.streak, lastDay: p.lastDay, xp: p.xp, answered: p.answered,
       timing: { binaryMs: t.binaryMs, binaryN: t.binaryN, gapMs: t.gapMs, gapN: t.gapN },
       sentAt: p.sentAt,

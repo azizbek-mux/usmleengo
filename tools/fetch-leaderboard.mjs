@@ -33,7 +33,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { decodeScore, displayName, emptyBoard, playerKey, sanitizeBoard } from "../src/lib/scorecard.js";
+import { decodeScore, displayName, emptyBoard, playerKey, sanitizeBoard, usernameOf } from "../src/lib/scorecard.js";
 
 // Shared with the app, which checks the published board with the same code.
 export { emptyBoard, sanitizeBoard };
@@ -97,7 +97,13 @@ export function applyUpdates(board, updates) {
       continue;
     }
 
-    board.players[key] = { name: displayName(msg.from), ...result.score, sentAt };
+    const username = usernameOf(msg.from);
+    board.players[key] = {
+      name: displayName(msg.from),
+      ...(username ? { username } : {}),
+      ...result.score,
+      sentAt,
+    };
     log.accepted++;
   }
   return log;

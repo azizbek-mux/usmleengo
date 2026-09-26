@@ -176,12 +176,28 @@ export function rate({ streak = 0, lastDay = null, xp = 0, timing = {} } = {}, t
 
 /* ── standings ─────────────────────────────────────────────────────────── */
 
-/** The four boards, in the order they are offered. */
+/* ── points ────────────────────────────────────────────────────────────────
+   The overall rating shown as a whole number out of 1000. Out of 100, two
+   players on 52.04 and 52.01 would both show "52" while holding different
+   places — a board that does not read in order. Ten times the resolution
+   makes a shown tie rare, and the board ranks on the shown number anyway, so
+   equal points always share a place. */
+export const POINTS_MAX = 1000;
+
+export function points(overall) {
+  return Number.isFinite(overall) ? Math.round(overall * 10) : 0;
+}
+
+/**
+ * The four boards, in the order the filter offers them. "Points" is the main
+ * one: streak, XP and time mixed by the weights above. `column` heads the
+ * value column when that board is showing.
+ */
 export const BOARDS = [
-  { id: "overall", name: "Overall", note: "Streak first, then XP, then speed" },
-  { id: "streak", name: "Streak", note: "Days in a row, still going" },
-  { id: "xp", name: "XP", note: "Typed answers earn more than tapped ones" },
-  { id: "speed", name: "Speed", note: "Average time on a correct answer, fastest first" },
+  { id: "overall", name: "Points", column: "Points" },
+  { id: "streak", name: "Day streak", column: "Days" },
+  { id: "xp", name: "XP", column: "XP" },
+  { id: "speed", name: "Time", column: "Avg. time" },
 ];
 
 /**
@@ -204,7 +220,7 @@ export function boardValue(board, rating) {
     const pace = rating.raw?.pace;
     return Number.isFinite(pace) && pace > 0 ? -pace : null;
   }
-  return rating.overall ?? null;
+  return Number.isFinite(rating.overall) ? points(rating.overall) : null;
 }
 
 /**

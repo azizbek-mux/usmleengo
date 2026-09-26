@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import Logo from "./components/Logo.jsx";
 import Home from "./components/Home.jsx";
 import Onboarding from "./components/Onboarding.jsx";
-import { SettingsSheet, XpSheet } from "./components/Sheet.jsx";
+import { SettingsSheet } from "./components/Sheet.jsx";
 import Quiz from "./components/Quiz.jsx";
 import Result from "./components/Result.jsx";
 import English from "./components/English.jsx";
 import SectionPick from "./components/SectionPick.jsx";
 import Rating from "./components/Rating.jsx";
+import Performance from "./components/Performance.jsx";
 import { loadLeaderboard } from "./data/leaderboard.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
@@ -28,7 +29,10 @@ export default function App() {
   const [label, setLabel] = useState("");
   const [log, setLog] = useState([]);
   const [streakAdvanced, setStreakAdvanced] = useState(false);
-  const [sheet, setSheet] = useState(null); // null | "settings" | "xp"
+  const [sheet, setSheet] = useState(null); // null | "settings"
+  // Which home the menu was opened from, so Back returns there and not to
+  // the other half of the app.
+  const [returnTo, setReturnTo] = useState("home");
   // The published leaderboard. Loaded once in the background, and again each
   // time the rating screen opens, so Home can show a place without waiting.
   const [board, setBoard] = useState(null);
@@ -166,6 +170,12 @@ export default function App() {
     persist(setTheme(stateRef.current, theme));
   }
 
+  /** Open Rating or My performance from whichever home the menu was on. */
+  function openFromMenu(target, from) {
+    setReturnTo(from);
+    setScreen(target);
+  }
+
   function quit() {
     save(stateRef.current);
     setScreen("home");
@@ -210,15 +220,42 @@ export default function App() {
 
   // Medical English owns its own data, progress and scheduling — it shares
   // nothing with the quiz but the storage plumbing.
+  // Reached from the menu on either home. Checked before the question-format
+  // gate below, which only the quiz needs.
+  if (screen === "rating") {
+    return (
+      <Rating
+        state={state}
+        board={board}
+        boardLoading={boardLoading}
+        onRefresh={refreshBoard}
+        onBack={() => setScreen(returnTo)}
+      />
+    );
+  }
+
+  if (screen === "performance") {
+    return (
+      <Performance
+        state={state}
+        board={board}
+        onRefresh={refreshBoard}
+        onRating={() => setScreen("rating")}
+        onBack={() => setScreen(returnTo)}
+      />
+    );
+  }
+
   if (screen === "english") {
     return (
       <English
         name={name}
-        streak={state.streak}
         theme={state.theme}
         onTheme={changeTheme}
         onHome={() => goSection("quiz")}
         onStudied={markStudied}
+        onRating={() => openFromMenu("rating", "english")}
+        onPerformance={() => openFromMenu("performance", "english")}
       />
     );
   }
@@ -228,18 +265,6 @@ export default function App() {
   // made to answer it.
   if (!state.qtype) {
     return <Onboarding onChoose={chooseQType} />;
-  }
-
-  if (screen === "rating") {
-    return (
-      <Rating
-        state={state}
-        board={board}
-        boardLoading={boardLoading}
-        onRefresh={refreshBoard}
-        onBack={() => setScreen("home")}
-      />
-    );
   }
 
   if (screen === "quiz") {
@@ -277,10 +302,9 @@ export default function App() {
         onCount={changeCount}
         onSubjects={changeSubjects}
         onSettings={() => setSheet("settings")}
-        onXp={() => setSheet("xp")}
         onEnglish={() => goSection("english")}
-        onRating={() => setScreen("rating")}
-        board={board}
+        onRating={() => openFromMenu("rating", "home")}
+        onPerformance={() => openFromMenu("performance", "home")}
       />
       {sheet === "settings" && (
         <SettingsSheet
@@ -291,7 +315,6 @@ export default function App() {
           onClose={() => setSheet(null)}
         />
       )}
-      {sheet === "xp" && <XpSheet state={state} onClose={() => setSheet(null)} />}
     </>
   );
 }
