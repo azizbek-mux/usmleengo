@@ -16,8 +16,9 @@
 // Where the board is kept between builds: on the live site. There is no
 // database, so each build starts from the leaderboard.json it deployed last
 // time, adds whatever arrived since, and deploys the result. Telegram holds
-// unread bot messages for 24 hours and a build runs every 30 minutes, so
-// nothing is lost unless the site is down for a day.
+// unread bot messages for 24 hours and the board is checked every five
+// minutes (by the outside timer; GitHub's own timer alone was measured at
+// 2-7 hours), so nothing is lost unless checks stop for a whole day.
 //
 // Failure is almost never fatal. No token, Telegram unreachable, a webhook on
 // the bot, a malformed message — each of those costs at most the newest
@@ -46,7 +47,7 @@ const LIVE = process.env.LEADERBOARD_URL || "https://azizbek-mux.github.io/usmle
 
 const DAY_MS = 86400000;
 // getUpdates hands back at most 100 at a time; this many pages is 2,000
-// submissions in half an hour, far past anything this app will see.
+// submissions between two checks, far past anything this app will see.
 const MAX_PAGES = 20;
 
 /* ── the board ───────────────────────────────────────────────────────────── */

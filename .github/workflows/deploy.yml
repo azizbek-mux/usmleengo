@@ -3,12 +3,28 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+
+  # Two ways to run by hand or by timer:
+  #   - "Run workflow" on the Actions tab: force defaults to true, so it
+  #     always deploys — the way to publish something right now.
+  #   - the five-minute outside timer (cron-job.org, see the README) calls the
+  #     API with force=false, so it deploys only if a score or the
+  #     announcement actually changed.
   workflow_dispatch:
-  # Rebuild on a timer so a newly tagged channel post reaches the app without
-  # anyone touching the repository. GitHub disables scheduled workflows after
-  # 60 days of repository inactivity — any push re-enables them.
+    inputs:
+      force:
+        description: "Deploy even if nothing changed"
+        type: boolean
+        default: true
+
+  # GitHub's own timer, kept as a fallback only. It asks for every five
+  # minutes, but GitHub throttles scheduled runs on quiet free repositories:
+  # measured over a week at */30, runs came 2 to 7 hours apart, about 4 on
+  # average. The outside timer above is what makes five minutes real. GitHub
+  # also switches this timer off after 60 days without a push; the outside
+  # timer is unaffected.
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: read
@@ -22,13 +38,19 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.decide.outputs.deploy }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
+
+      # The two fetchers and the decision use only Node itself and plain
+      # files from src/lib, so they run before npm ci — a check that finds
+      # nothing new finishes in seconds instead of installing and building.
+
       # Pulls the tagged channel post into public/announcement.json. Never
       # fails the build: no announcement is a normal state.
       - run: npm run announcement
@@ -40,14 +62,28 @@ jobs:
       - run: npm run leaderboard
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-      - run: npm run build
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      # Pushes and manual runs always deploy. A routine check deploys only if
+      # one of the two files above differs from what is already live.
+      - id: decide
+        run: node tools/changed.mjs
+        env:
+          EVENT: ${{ github.event_name }}
+          FORCE: ${{ github.event.inputs.force }}
+
+      - if: steps.decide.outputs.deploy == 'true'
+        run: npm ci
+      - if: steps.decide.outputs.deploy == 'true'
+        run: npm run build
+      - if: steps.decide.outputs.deploy == 'true'
+        uses: actions/configure-pages@v5
+      - if: steps.decide.outputs.deploy == 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
     needs: build
+    if: needs.build.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

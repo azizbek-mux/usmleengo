@@ -53,6 +53,31 @@ export function valueOf(board, rating) {
   return String(points(rating.overall));
 }
 
+/**
+ * Keep the board fresh while a screen that shows it is open.
+ *
+ * The board itself is rebuilt at most every five minutes, so fetching it once
+ * a minute means a new score shows up within a minute of going live, for the
+ * cost of a small file. Nothing is fetched while the app is in the
+ * background, and coming back to it fetches straight away rather than
+ * waiting out the rest of the minute.
+ */
+export const REFRESH_MS = 60000;
+
+export function useLiveBoard(onRefresh) {
+  useEffect(() => {
+    if (!onRefresh) return undefined;
+    onRefresh();
+    const tick = () => { if (!document.hidden) onRefresh(); };
+    const id = setInterval(tick, REFRESH_MS);
+    document.addEventListener("visibilitychange", tick);
+    return () => {
+      clearInterval(id);
+      document.removeEventListener("visibilitychange", tick);
+    };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+}
+
 function readSent() {
   try { return Number(localStorage.getItem(SENT_KEY)) || 0; } catch { return 0; }
 }
@@ -82,8 +107,7 @@ export default function Rating({ state, board, boardLoading, onRefresh, onBack }
   const [tab, setTab] = useState("overall");
   const [sent, setSent] = useState(readSent);
 
-  // Always look at the newest board when the screen opens.
-  useEffect(() => { onRefresh?.(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useLiveBoard(onRefresh);
 
   const data = useMemo(() => ratingData(state, board), [state, board]);
   const { me, onBoard, others, input } = data;
@@ -187,7 +211,7 @@ export default function Rating({ state, board, boardLoading, onRefresh, onBack }
           <div className="cta-note">Open usmleengo inside Telegram to put yourself on the board.</div>
         ) : pending ? (
           <div className="rating-sent">
-            <b>Sent.</b> You go up on the board within about half an hour.
+            <b>Sent.</b> You go up on the board within about five minutes.
           </div>
         ) : joined ? (
           <>
@@ -222,6 +246,10 @@ export default function Rating({ state, board, boardLoading, onRefresh, onBack }
           Only correct answers are timed, so guessing fast never helps. Typing gets
           more time than tapping — {FREE_SECONDS.gap}s against {FREE_SECONDS.binary}s — so
           choosing the harder format never costs you points.
+        </p>
+        <p>
+          The board updates every five minutes, and this screen picks up the
+          new one on its own while it is open.
         </p>
         <p>
           Each part levels off as it grows, so the top stays within reach of someone

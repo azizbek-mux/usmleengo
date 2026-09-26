@@ -7,7 +7,7 @@
     "dev": "npm run compile:all && vite",
     "build": "npm run compile:all && vite build",
     "preview": "vite preview",
-    "test": "node tools/srs.test.mjs && node tools/cloud-storage.test.mjs && node tools/announcement.test.mjs && node tools/theme.test.mjs && node tools/rating.test.mjs && node tools/leaderboard.test.mjs",
+    "test": "node tools/srs.test.mjs && node tools/cloud-storage.test.mjs && node tools/announcement.test.mjs && node tools/theme.test.mjs && node tools/rating.test.mjs && node tools/leaderboard.test.mjs && node tools/changed.test.mjs",
     "compile": "node tools/compile.mjs",
     "compile:glossary": "node tools/compile-glossary.mjs",
     "compile:all": "node tools/compile.mjs && node tools/compile-glossary.mjs",

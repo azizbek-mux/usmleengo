@@ -1,7 +1,7 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import { POINTS_MAX, XP, formatPace, points } from "../lib/rating.js";
 import { haptic } from "../lib/telegram.js";
-import { ratingData } from "./Rating.jsx";
+import { ratingData, useLiveBoard } from "./Rating.jsx";
 
 /** "#6 of 14" when there is anyone to be placed against. */
 const placeOf = (standing) => (standing?.me && standing.total > 1 ? `#${standing.me.place} of ${standing.total}` : null);
@@ -12,7 +12,7 @@ const placeOf = (standing) => (standing?.me && standing.total > 1 ? `#${standing
  * to crowd the home screen's header lives here now.
  */
 export default function Performance({ state, board, onRefresh, onRating, onBack }) {
-  useEffect(() => { onRefresh?.(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useLiveBoard(onRefresh);
 
   const { me, boards, input } = useMemo(() => ratingData(state, board), [state, board]);
   const r = me.rating;

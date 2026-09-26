@@ -162,11 +162,27 @@ async function main() {
 }
 
 // Never fail the build over this. A broken fetch, a rate limit, or a change to
-// Telegram's markup should cost the app its announcement card, not its deploy.
-main().catch((err) => {
+// Telegram's markup should not cost the app its deploy — and since the
+// channel is now checked every five minutes, not its card either: a one-off
+// failure keeps whatever card is already live rather than pulling it, which
+// would take it down and put it back five minutes later. Only if the live
+// copy cannot be read either does it fall back to no card.
+main().catch(async (err) => {
   console.log(`announcement skipped: ${err.message}`);
+  let keep = "null";
   try {
-    writeFileSync(OUT, "null", "utf8");
+    const res = await fetch(`https://azizbek-mux.github.io/usmleengo/announcement.json?t=${Date.now()}`);
+    if (res.ok) {
+      const text = await res.text();
+      JSON.parse(text); // only keep it if it is still valid JSON
+      keep = text;
+      console.log("announcement       : kept the card already live");
+    }
+  } catch {
+    /* fall through to no card */
+  }
+  try {
+    writeFileSync(OUT, keep, "utf8");
   } catch {
     /* the app treats a missing file as "no announcement" anyway */
   }
