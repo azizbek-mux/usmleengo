@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { QTYPES } from "../lib/qtypes.js";
 import { CHANNEL, haptic, openTelegram } from "../lib/telegram.js";
-import { THEMES } from "../lib/theme.js";
+import { THEMES, resolveTheme } from "../lib/theme.js";
 import { XP } from "../lib/rating.js";
 
 /**
@@ -28,31 +28,47 @@ export function Byline() {
 }
 
 /**
- * Light or dark, offered in both halves of the app — someone who lives in
- * Medical English should not have to go and find the quiz settings.
+ * Light or dark, as a sun and a moon and nothing else, offered in both
+ * halves of the app — someone who lives in Medical English should not have
+ * to go and find the quiz settings.
+ *
+ * Before the user has chosen, the symbol lit is whichever palette "auto" is
+ * actually showing, so the switcher always tells the truth about the screen.
  */
 export function ThemePicker({ theme, onTheme }) {
+  const current = resolveTheme(theme);
   return (
-    <>
-      <div className="section-label">Appearance</div>
-      <div className="opt-list">
-        {THEMES.map((t) => (
-          <button
-            key={t.id}
-            className={`opt-row${(theme || "auto") === t.id ? " on" : ""}`}
-            onClick={() => { haptic("light"); onTheme(t.id); }}
-          >
-            <div>
-              <div className="opt-name">{t.name}</div>
-              <div className="opt-note">{t.note}</div>
-            </div>
-            <span className="tick">{(theme || "auto") === t.id ? "✓" : ""}</span>
-          </button>
-        ))}
-      </div>
-    </>
+    <div className="theme-toggle" role="radiogroup" aria-label="Appearance">
+      {THEMES.map((t) => (
+        <button
+          key={t.id}
+          role="radio"
+          aria-checked={current === t.id}
+          aria-label={t.label}
+          className={`theme-opt${current === t.id ? " on" : ""}`}
+          onClick={() => { haptic("light"); onTheme(t.id); }}
+        >
+          {t.id === "light" ? <Sun /> : <Moon />}
+        </button>
+      ))}
+    </div>
   );
 }
+
+const Sun = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+    strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4.2" />
+    <path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4" />
+  </svg>
+);
+
+const Moon = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+    strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z" />
+  </svg>
+);
 
 /** Bottom sheet. Closes on backdrop tap or Escape. */
 export function Sheet({ title, onClose, children }) {

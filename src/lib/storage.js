@@ -19,7 +19,8 @@ export const emptyState = {
   // Which question formats to serve: "binary", "gap" or "random".
   // null means the user has not been asked yet — it triggers first-run setup.
   qtype: null,
-  // Which palette to paint: "auto" follows the phone, "light" and "dark" pin it.
+  // Which palette to paint. "auto" follows Telegram until the user taps the
+  // sun or the moon, which pins "light" or "dark" for good.
   theme: "auto",
   // How many questions the user wants per session (2-100).
   count: 10,

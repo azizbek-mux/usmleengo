@@ -1,20 +1,21 @@
 // Which palette the app paints in.
 //
-// Three settings. "auto" follows whatever the user already chose elsewhere —
-// Telegram's own light/dark setting inside the Mini App, the operating
-// system's outside it — so most people never have to touch this. "light" and
-// "dark" pin it for the people who want the app to disagree with the rest of
-// their phone.
+// A new user starts on "auto", which follows Telegram's own light/dark
+// setting inside the Mini App (the operating system's outside it), so the app
+// opens looking like the rest of their Telegram. The switcher offers only the
+// two palettes, a sun and a moon: the first tap pins one, and from then on it
+// stays put whatever the phone does. There is deliberately no way back to
+// "auto" — two symbols read at a glance, a third needs explaining.
 //
 // The stylesheet holds both palettes; everything here does is decide which one
 // is active and keep the chrome around the app in step with it.
 
 import { colorScheme, onThemeChange, setChrome } from "./telegram.js";
 
+/** What the switcher offers. Labels are for screen readers; the screen shows only the symbol. */
 export const THEMES = [
-  { id: "auto", name: "Match my phone", note: "Follows your Telegram or system setting" },
-  { id: "light", name: "Light", note: "Day colours, whatever your phone is set to" },
-  { id: "dark", name: "Dark", note: "Night colours, whatever your phone is set to" },
+  { id: "light", label: "Light mode" },
+  { id: "dark", label: "Dark mode" },
 ];
 
 /** The background the chrome should match, per palette. Mirrors styles.css. */

@@ -1247,3 +1247,26 @@ input { font: inherit; }
 
 .rating-how p { font-size: 13.5px; line-height: 1.6; color: var(--muted); margin: 0 0 10px; }
 .rating-how b { color: var(--text); }
+
+/* ──────────────────────── light / dark switcher ─────────────────────── */
+
+.theme-toggle {
+  display: flex;
+  gap: 4px;
+  background: var(--card-hi);
+  border-radius: 12px;
+  padding: 4px;
+  margin: 20px 0 4px;
+}
+.theme-opt {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 9px;
+  color: var(--muted);
+  transition: background 0.15s, color 0.15s, transform 0.12s var(--tap);
+}
+.theme-opt:active { transform: scale(0.95); }
+.theme-opt.on { background: var(--card); color: var(--accent); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); }
