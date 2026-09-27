@@ -1,0 +1,15 @@
+# The rating server. Deployed from this folder with `npx wrangler deploy`.
+# See the README section "The rating server" for the one-time setup.
+
+name = "usmleengo-rating"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Filled in by `npx wrangler d1 create usmleengo-rating`, which prints the id.
+[[d1_databases]]
+binding = "DB"
+database_name = "usmleengo-rating"
+database_id = "REPLACE_WITH_DATABASE_ID"
+
+# BOT_TOKEN is a secret, never written here. Set it in the Cloudflare
+# dashboard (Workers → usmleengo-rating → Settings → Variables and Secrets).

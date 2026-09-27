@@ -15,7 +15,7 @@ const player = { name: "Laylo", streak: 4, lastDay: 20722, xp: 900, answered: 90
 const board = (patch = {}, players = { k1: player }) =>
   JSON.stringify({ version: 1, updatedAt: "2026-09-26T10:00:00Z", lastUpdateId: 7, players, ...patch });
 
-console.log("\nthe leaderboard");
+console.log("\nnested data (a board-shaped file, the hardest case)");
 check("the same board written at a different time is unchanged",
   !C.differs(board({ updatedAt: "2026-09-26T10:05:00Z" }), board()));
 check("one player's XP changing is a change — even though it is nested",

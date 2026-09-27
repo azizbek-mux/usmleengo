@@ -1,0 +1,109 @@
+// The rating server — a Cloudflare Worker with a D1 database, on the free
+// plan.
+//
+// It exists because a static site cannot rank people automatically: the app
+// has nowhere to send a score by itself, and Telegram does not let an app
+// send messages on the user's behalf. So every player's app posts its score
+// here whenever it changes, and asks here for the board.
+//
+//   POST /sync   { initData, score }  →  { top, me, ranked }
+//
+// With initData from Telegram, the score is checked, stored under that
+// player, and ranked. Without it — someone opening the site in a browser —
+// the score is ranked for them but never stored, so the web can look but not
+// join.
+//
+// The body is sent as text/plain, which browsers treat as a simple request:
+// no CORS preflight, so one round trip instead of two.
+//
+// Secrets and bindings (see wrangler.toml and the README):
+//   BOT_TOKEN — the bot's token, set as a Worker secret, to check signatures
+//   DB        — the D1 database
+
+import { checkScore, displayName, playerKey, usernameOf } from "../../src/lib/scorecard.js";
+import { savePlayer, serverToday, snapshotCache, standingsFor } from "./board.js";
+import { verifyInitData } from "./telegram.js";
+
+const ORIGINS = ["https://azizbek-mux.github.io", "http://localhost:5188"];
+const MAX_BODY = 8192;
+
+const snapshot = snapshotCache();
+
+function corsHeaders(request) {
+  const origin = request.headers.get("origin") || "";
+  return {
+    "access-control-allow-origin": ORIGINS.includes(origin) ? origin : ORIGINS[0],
+    "access-control-allow-methods": "POST, OPTIONS",
+    "access-control-allow-headers": "content-type",
+    "access-control-max-age": "86400",
+    vary: "origin",
+  };
+}
+
+const json = (body, status, headers) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { ...headers, "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
+  });
+
+/** The whole of /sync, separated from the Worker plumbing so the tests can call it. */
+export async function handleSync(request, env, cache = snapshot, now = Date.now()) {
+  const text = await request.text();
+  if (text.length > MAX_BODY) return { status: 413, body: { error: "too large" } };
+  let body;
+  try { body = JSON.parse(text); } catch { return { status: 400, body: { error: "not JSON" } }; }
+
+  const today = serverToday(now);
+  const checked = body?.score ? checkScore(body.score, today) : null;
+  const score = checked?.ok ? checked.score : null;
+
+  // Why a score was not stored, when it was not. The app still gets the
+  // board either way — a failed check must not leave someone looking at an
+  // error — but the reason is in the reply, so a misconfigured server (a
+  // wrong or missing BOT_TOKEN turns every player away) shows up at once in
+  // testing instead of as a board that quietly never fills.
+  let notStored = null;
+  let me = null;
+  if (body?.initData) {
+    const auth = env.BOT_TOKEN ? await verifyInitData(body.initData, env.BOT_TOKEN, now) : null;
+    if (!env.BOT_TOKEN) notStored = "the server has no BOT_TOKEN";
+    else if (!auth) notStored = "Telegram data did not verify";
+    else {
+      me = { key: playerKey(auth.user.id), name: displayName(auth.user), username: usernameOf(auth.user) };
+      if (score) {
+        await savePlayer(env.DB, me, score, now);
+        cache.patch(me, score);
+      } else if (checked) notStored = checked.reason;
+    }
+  } else if (score) {
+    notStored = "not opened from Telegram";
+  }
+
+  const players = await cache.get(env.DB, now);
+  return {
+    status: 200,
+    body: { ...standingsFor(players, me, score, today), ...(notStored ? { notStored } : {}) },
+  };
+}
+
+export default {
+  async fetch(request, env) {
+    const headers = corsHeaders(request);
+    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers });
+
+    const { pathname } = new URL(request.url);
+    if (pathname === "/sync" && request.method === "POST") {
+      try {
+        const { status, body } = await handleSync(request, env);
+        return json(body, status, headers);
+      } catch (err) {
+        // The message can mention SQL, never the token; still, keep it short.
+        return json({ error: "server error", kind: err?.name || "Error" }, 500, headers);
+      }
+    }
+    if (pathname === "/" || pathname === "/health") {
+      return json({ ok: true, service: "usmleengo rating" }, 200, headers);
+    }
+    return json({ error: "not found" }, 404, headers);
+  },
+};

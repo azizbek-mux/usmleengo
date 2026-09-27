@@ -1,20 +1,20 @@
 import React, { useMemo } from "react";
 import { POINTS_MAX, XP, formatPace, points } from "../lib/rating.js";
 import { haptic } from "../lib/telegram.js";
-import { ratingData, useLiveBoard } from "./Rating.jsx";
+import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
 
-/** "#6 of 14" when there is anyone to be placed against. */
-const placeOf = (standing) => (standing?.me && standing.total > 1 ? `#${standing.me.place} of ${standing.total}` : null);
+/** "#88 / 2,300" when there is anyone to be placed against. */
+const placeOf = (p) => (p?.place && p.total > 1 ? rankText(p) : null);
 
 /**
  * My performance: the three numbers the rating is built from, the points they
  * make, and where each one places the viewer. Everything personal that used
  * to crowd the home screen's header lives here now.
  */
-export default function Performance({ state, board, onRefresh, onRating, onBack }) {
+export default function Performance({ state, standings, onRefresh, onRating, onBack }) {
   useLiveBoard(onRefresh);
 
-  const { me, boards, input } = useMemo(() => ratingData(state, board), [state, board]);
+  const { me, places, input } = useMemo(() => ratingData(state, standings), [state, standings]);
   const r = me.rating;
   const t = input.timing;
   const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
@@ -60,7 +60,7 @@ export default function Performance({ state, board, onRefresh, onRating, onBack 
           {points(r.overall)}<small>/{POINTS_MAX}</small>
         </span>
         <span className="perf-points-place">
-          {placeOf(boards.overall) ? `${placeOf(boards.overall)} on the rating ›` : "See the rating ›"}
+          {placeOf(places?.overall) ? `${placeOf(places.overall)} on the rating ›` : "See the rating ›"}
         </span>
       </button>
 
@@ -74,7 +74,7 @@ export default function Performance({ state, board, onRefresh, onRating, onBack 
               </span>
               <span className="perf-detail">{c.detail}</span>
             </div>
-            {placeOf(boards[c.id]) && <span className="perf-place">{placeOf(boards[c.id])}</span>}
+            {placeOf(places?.[c.id]) && <span className="perf-place">{placeOf(places[c.id])}</span>}
           </div>
         ))}
       </div>

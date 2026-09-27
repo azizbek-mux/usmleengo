@@ -67,6 +67,16 @@ export function userName() {
 }
 
 /**
+ * Telegram's signed launch data, or null outside Telegram. Sent with every
+ * score so the rating server can check who it came from; see
+ * worker/src/telegram.js. It is never stored or shown.
+ */
+export function initData() {
+  if (!inTelegram) return null;
+  return typeof tg?.initData === "string" && tg.initData ? tg.initData : null;
+}
+
+/**
  * The viewer's own Telegram profile — name and username — or null outside
  * Telegram. Only used to label their own row on the rating board with the
  * same name everyone else sees there.
@@ -75,18 +85,6 @@ export function telegramUser() {
   if (!inTelegram) return null;
   const u = tg?.initDataUnsafe?.user;
   return u ? { first_name: u.first_name, last_name: u.last_name, username: u.username } : null;
-}
-
-/**
- * The Telegram user id, or null outside Telegram.
- *
- * Only used to recognise the viewer's own row on the leaderboard, through
- * scorecard.playerKey — it is never sent anywhere or written down raw.
- */
-export function userId() {
-  if (!inTelegram) return null;
-  const id = tg?.initDataUnsafe?.user?.id;
-  return Number.isFinite(id) ? id : null;
 }
 
 /** Haptics: 'light' | 'medium' | 'heavy' for taps, or a notification type. */
@@ -228,8 +226,6 @@ export async function cloudGetChunked(prefix) {
  */
 export const APP_LINK = "https://t.me/usmleengo_bot/study";
 
-/** The bot's own chat, which is where leaderboard scores are sent. Same bot. */
-export const BOT_LINK = APP_LINK.split("/").slice(0, 4).join("/");
 
 /** The author's channel, linked from the byline. */
 export const CHANNEL = "https://t.me/mukhtorov_md";

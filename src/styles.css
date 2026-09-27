@@ -1247,23 +1247,8 @@ input { font: inherit; }
 .board-gap { text-align: center; color: var(--muted); padding: 2px 0; border-top: 1px solid var(--line); letter-spacing: 3px; }
 .board-empty { padding: 18px 14px; text-align: center; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
 
-.rating-join { margin-bottom: 18px; }
-.rating-sent {
-  background: var(--accent-dim);
-  color: var(--accent-soft);
-  border-radius: 12px;
-  padding: 12px 14px;
-  font-size: 13px;
-  line-height: 1.5;
-}
-.text-link {
-  color: var(--accent);
-  font-weight: 700;
-  font-size: inherit;
-  padding: 0;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
+.rating-rank b { color: var(--text); font-size: 16px; font-variant-numeric: tabular-nums; }
+.rating-web { margin: -8px 0 16px; }
 
 .rating-how {
   border-top: 1px solid var(--line);

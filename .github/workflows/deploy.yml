@@ -8,8 +8,9 @@ on:
   #   - "Run workflow" on the Actions tab: force defaults to true, so it
   #     always deploys — the way to publish something right now.
   #   - the outside timer (cron-job.org, every minute; see the README) calls
-  #     the API with force=false, so it deploys only if a score or the
-  #     announcement actually changed.
+  #     the API with force=false, so it deploys only if the announcement
+  #     or the code actually changed. (Scores no longer go through here:
+  #     the rating server in worker/ ranks players directly.)
   workflow_dispatch:
     inputs:
       force:
@@ -58,23 +59,15 @@ jobs:
           node-version: 20
           cache: npm
 
-      # The two fetchers and the decision use only Node itself and plain
-      # files from src/lib, so they run before npm ci — a check that finds
-      # nothing new finishes in seconds instead of installing and building.
+      # The fetcher and the decision use only Node itself, so they run
+      # before npm ci — a check that finds nothing new finishes in seconds
+      # instead of installing and building.
 
       # Pulls the tagged channel post into public/announcement.json. Never
       # fails the build: no announcement is a normal state.
       - run: npm run announcement
-      # Adds scores players sent to the bot since the last build, on top of
-      # the board already live, into public/leaderboard.json. Needs the
-      # BOT_TOKEN repository secret to read new scores; without it the live
-      # board is carried forward unchanged. Fails the build only if the live
-      # board exists but cannot be read — deploying without it would wipe it.
-      - run: npm run leaderboard
-        env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       # Pushes and manual runs always deploy. A routine check deploys only if
-      # one of the two files above differs from what is already live.
+      # the announcement or the code differs from what is already live.
       - id: decide
         run: node tools/changed.mjs
         env:

@@ -189,7 +189,7 @@ export function record(state, question, wasCorrect, elapsedMs) {
 
 /**
  * The raw numbers the rating is built from, in the shape rating.rate() and
- * scorecard.encodeScore() both take.
+ * the rating server both take.
  */
 export function ratingInput(state) {
   const t = cleanTiming(state.timing);

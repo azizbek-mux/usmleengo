@@ -1,17 +1,15 @@
 // Decides whether this build needs to deploy at all.
 //
-// The board is checked every minute, and almost every check finds nothing
-// new. Rebuilding and redeploying the whole site 1,440 times a day to
+// The announcement is checked every minute, and almost every check finds
+// nothing new. Rebuilding and redeploying the whole site 1,440 times a day to
 // publish identical files would be slow, noisy in the deploy history, and
 // rude to GitHub. So a routine check deploys only when something the app
 // reads at runtime actually changed:
 //
-//   public/leaderboard.json   — a new score, someone leaving, or the read
-//                               position moving past rejected messages
 //   public/announcement.json  — a new tagged post, or the old one expiring
 //   public/build.json         — the commit the site was built from
 //
-// All three are compared with the copy already live, ignoring timestamps.
+// Both are compared with the copy already live, ignoring timestamps.
 //
 // build.json is what makes the whole thing self-correcting. It holds the
 // commit this run checked out, and the live copy holds the commit the live
@@ -35,7 +33,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const LIVE = process.env.SITE_URL || "https://azizbek-mux.github.io/usmleengo/";
-const FILES = ["leaderboard.json", "announcement.json", "build.json"];
+const FILES = ["announcement.json", "build.json"];
 
 /**
  * JSON with every object's keys sorted, all the way down, so two values that

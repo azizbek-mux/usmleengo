@@ -9,7 +9,7 @@ import English from "./components/English.jsx";
 import SectionPick from "./components/SectionPick.jsx";
 import Rating from "./components/Rating.jsx";
 import Performance from "./components/Performance.jsx";
-import { loadLeaderboard } from "./data/leaderboard.js";
+import { quietSync, syncRating } from "./lib/ratingApi.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
@@ -33,10 +33,11 @@ export default function App() {
   // Which home the menu was opened from, so Back returns there and not to
   // the other half of the app.
   const [returnTo, setReturnTo] = useState("home");
-  // The published leaderboard. Loaded once in the background, and again each
-  // time the rating screen opens, so Home can show a place without waiting.
-  const [board, setBoard] = useState(null);
-  const [boardLoading, setBoardLoading] = useState(false);
+  // The latest reply from the rating server: the top ten on each board and
+  // this player's place. Kept from whichever sync happened last, so the
+  // rating screens open with something to show while they fetch afresh.
+  const [standings, setStandings] = useState(null);
+  const [standingsLoading, setStandingsLoading] = useState(false);
 
   // The pool a round was built from, so "Another round" can reshuffle the
   // same topic instead of dumping the user back to the daily mix.
@@ -52,7 +53,11 @@ export default function App() {
   useEffect(() => {
     let alive = true;
     loadRemote(loadLocal()).then((s) => {
-      if (alive) setState(s);
+      if (!alive) return;
+      setState(s);
+      // Every player is ranked from their first open: send the score once
+      // the progress that will be sent is the settled one, local and cloud.
+      keepRanked(s);
     });
     return () => { alive = false; };
   }, []);
@@ -65,14 +70,23 @@ export default function App() {
     return watchSystemTheme(() => applyTheme("auto"));
   }, [state.theme]);
 
-  function refreshBoard() {
-    setBoardLoading(true);
-    loadLeaderboard().then((b) => {
-      if (b) setBoard(b);
-      setBoardLoading(false);
+  /** The rating screens, once a minute while open: send the score, show the board. */
+  function refreshStandings() {
+    setStandingsLoading(true);
+    syncRating(stateRef.current).then((reply) => {
+      if (reply) setStandings(reply);
+      setStandingsLoading(false);
     });
   }
-  useEffect(refreshBoard, []);
+
+  /**
+   * Keep this player's place on the board current without asking them —
+   * after a round, a study session, or opening the app. Sends nothing if the
+   * score has not changed.
+   */
+  function keepRanked(s) {
+    quietSync(s).then((reply) => { if (reply) setStandings(reply); });
+  }
 
   // Fetch the question bank once on mount.
   useEffect(() => {
@@ -112,6 +126,7 @@ export default function App() {
     setState(rolled);
     setStreakAdvanced(advanced);
     save(rolled);
+    keepRanked(rolled);
     setScreen("result");
   }
 
@@ -133,7 +148,10 @@ export default function App() {
    */
   function markStudied() {
     const { state: rolled } = touchStreak(stateRef.current);
-    if (rolled !== stateRef.current) persist(rolled);
+    if (rolled !== stateRef.current) {
+      persist(rolled);
+      keepRanked(rolled);
+    }
   }
 
   /** Move between the two halves, remembering which one they are in. */
@@ -226,9 +244,9 @@ export default function App() {
     return (
       <Rating
         state={state}
-        board={board}
-        boardLoading={boardLoading}
-        onRefresh={refreshBoard}
+        standings={standings}
+        loading={standingsLoading}
+        onRefresh={refreshStandings}
         onBack={() => setScreen(returnTo)}
       />
     );
@@ -238,8 +256,8 @@ export default function App() {
     return (
       <Performance
         state={state}
-        board={board}
-        onRefresh={refreshBoard}
+        standings={standings}
+        onRefresh={refreshStandings}
         onRating={() => setScreen("rating")}
         onBack={() => setScreen(returnTo)}
       />
