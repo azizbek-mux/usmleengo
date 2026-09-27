@@ -18,7 +18,7 @@ import { initData } from "./telegram.js";
  * server can be used instead during development by putting
  * VITE_RATING_API=http://localhost:8787 in .env.local.
  */
-export const RATING_API = import.meta.env?.VITE_RATING_API || "https://usmleengo-rating.REPLACE_ME.workers.dev";
+export const RATING_API = import.meta.env?.VITE_RATING_API || "https://usmleengo-rating.azizbekmuxtorlapt.workers.dev";
 
 const SENT_KEY = "usmle_rating_sent";
 // Even an unchanged score is re-sent after this long, so a player's name and

@@ -16,11 +16,16 @@ feel like rest rather than work.
 | Questions | Bundled JSON in the app | free |
 | Hosting | GitHub Pages (static build) | free |
 | Streaks / XP / progress | Telegram CloudStorage, localStorage fallback | free |
-| Backend, database | none — there isn't one | free |
+| Rating | Cloudflare Worker + D1 database, free plan (`worker/`) | free |
+| Announcement timer | cron-job.org, free plan | free |
 | Bot | BotFather | free |
 
-There is no API key and no server. Topic search runs client-side against the
-bundled bank, so it works instantly and offline once loaded.
+Everything about studying needs no server: topic search runs client-side
+against the bundled bank, so it works instantly and offline once loaded. The
+one server is the rating, which exists only because ranking every player
+automatically needs somewhere to send the scores; if it is ever down, the
+rest of the app carries on and only the rating screen says it cannot be
+reached.
 
 ## Develop
 
@@ -125,7 +130,7 @@ repositories.
 **Three things worth knowing:**
 
 - It is not instant. With the outside timer set up (see
-  [the rating board](#the-rating-board-and-the-outside-timer)), a new post
+  [the outside timer](#the-outside-timer)), a new post
   shows within a few minutes. Without it, it waits for GitHub's own
   timer, which on this repository has run only every 2–7 hours. To publish
   immediately either way, open the repository's **Actions** tab, pick
@@ -138,32 +143,72 @@ repositories.
 To follow a different tag or change the 10-day window, edit `TAG` and
 `MAX_AGE_DAYS` at the top of `tools/fetch-announcement.mjs`.
 
-## The rating board and the outside timer
+## The rating
 
-The ☰ menu's **Rating** screen ranks players on points out of 1000, made
-from their day streak (50%), XP (30%) and average time on correct answers
-(20%). Every player sees their own points and place. To appear on everyone
-else's board, a player taps **Put me on the board**, which opens the bot with
-their score in the link, and presses **Start**.
+The ☰ menu's **Rating** screen ranks every player on points out of 1000,
+made from their day streak (50%), XP (30%) and average time on correct
+answers (20%), with separate boards for each. The top ten on each board are
+shown by Telegram name and @username; everyone sees their own place, like
+**#88 / 2,300**.
 
-There is no server, so the board is built the same way as the announcement
-card. A GitHub Action reads new messages to the bot, adds them to the board
-already live, and publishes it. The live site is the database: each build
-starts from the board it published last time.
+Nobody joins. The app sends its score to a small rating server whenever it
+changes — on opening, after a round, after a Medical English session — and
+the server ranks everyone. The algorithm is `src/lib/rating.js`, used by the
+app and the server alike.
 
-**Two things to set up, once each.**
+### The rating server
 
-**1. Let the Action read the bot.** Add the bot's token from BotFather as a
-repository secret named `BOT_TOKEN`:
-[Settings → Secrets and variables → Actions → New repository secret](https://github.com/azizbek-mux/usmleengo/settings/secrets/actions/new).
-GitHub keeps it out of the logs and it never reaches the app. Without it,
-everything works except that nobody new gets onto the board.
+`worker/` is a [Cloudflare Worker](https://developers.cloudflare.com/workers/)
+with a D1 database, on Cloudflare's free plan, live at
+`https://usmleengo-rating.azizbekmuxtorlapt.workers.dev`. A static site
+could not do this on its own: the app had nowhere to send a score, and
+Telegram does not let an app message the bot for the user.
 
-**2. A timer that actually fires every minute.** GitHub's own
-scheduled runs cannot be relied on for this: asked for every 30 minutes,
-this repository's ran 2–7 hours apart over a whole week (about 4 on
-average). GitHub does not hold back a run that is *started* through its API
-the same way, so a free outside timer starts the workflow instead.
+- **Who sent a score cannot be faked.** Each score arrives with Telegram's
+  signed launch data, which the server checks against the bot token
+  ([Telegram's method](https://core.telegram.org/bots/webapps#validating-data-received-via-the-mini-app)).
+  The numbers are self-reported: impossible ones are refused (a streak older
+  than the app, more XP than the answers allow), but a determined person could
+  invent a plausible score.
+- **Names stay on the server** except for whoever is in a top ten. Raw
+  Telegram ids are never stored — players are kept under a hash.
+- **Someone opening the site in a browser** is shown where they would rank,
+  but never stored.
+- **Limits.** The whole field is read at most once a minute, which keeps
+  within D1's free 5 million rows a day for a few thousand players.
+
+**Set up once** (already done for this repository):
+
+```
+cd worker
+npx wrangler login                                   # opens Cloudflare; click Allow
+npx wrangler d1 create usmleengo-rating              # put the id it prints in wrangler.toml
+npx wrangler d1 execute usmleengo-rating --remote --file=schema.sql
+npx wrangler deploy                                  # prints the server's address
+```
+
+Then in the Cloudflare dashboard: **Workers & Pages → usmleengo-rating →
+Settings → Variables and Secrets → + Add**, type **Secret**, name
+`BOT_TOKEN`, value the bot's token from BotFather, **Deploy**. Without it
+every score is refused with "the server has no BOT_TOKEN". Put the server's
+address in `RATING_API` in `src/lib/ratingApi.js`.
+
+**To change the server later:** edit `worker/`, run `npm test`, then
+`cd worker && npx wrangler deploy`. The app's own code still deploys to
+GitHub Pages on push, as always.
+
+**To try it locally:** put `BOT_TOKEN=<any test value>` in `worker/.dev.vars`,
+run `npx wrangler d1 execute usmleengo-rating --local --file=schema.sql` and
+`npx wrangler dev` in `worker/`, and `VITE_RATING_API=http://localhost:8787`
+in `.env.local` at the top level. Both files are git-ignored.
+
+### The outside timer
+
+The announcement card is published by a GitHub Action, and GitHub's own
+scheduled runs cannot be relied on: asked for every 30 minutes, this
+repository's ran 2–7 hours apart over a whole week (about 4 on average).
+GitHub does not hold back a run that is *started* through its API the same
+way, so a free outside timer starts the workflow every minute.
 
 *a. A token that can only start this workflow.* Open
 [new fine-grained token](https://github.com/settings/personal-access-tokens/new):
@@ -199,30 +244,18 @@ and create a cron job:
 Save it and use its test run: a working setup answers **204**. Within a
 minute a run appears on the repository's **Actions** tab.
 
-`force: false` is what keeps this cheap. A routine check reads the channel
-and the bot, compares the result with what is live, and stops there if
-nothing changed — about twenty seconds, no deploy. Runs never cancel one
-another: a deploy takes about forty seconds, so at one-minute checks a
-cancelling setup would cut most of them off. It only rebuilds and
-publishes when a score, a player leaving, or the announcement actually
-changed (`tools/changed.mjs`). A push, or pressing **Run workflow** by hand,
-always deploys.
+`force: false` keeps this cheap: a routine check reads the channel,
+compares it with what is live, and stops if nothing changed — about twenty
+seconds, no deploy. It also deploys if the live site was built from an older
+commit than the latest, so a push whose own run was cut short still goes
+out. Runs never cancel one another. A push, or pressing **Run workflow** by
+hand, always deploys.
 
-**Worth knowing:**
-
-- The app's Rating and My performance screens fetch the board again every
-  minute while open, so a new score shows within about three minutes of
-  being sent.
-- Scores are self-reported. Telegram guarantees *who* sent one; the numbers
-  are checked for being possible (no streak older than the app, no more XP
-  than the answers allow) but a determined forger cannot be stopped without a
-  server.
-- The board shows each player's Telegram name and @username. Joining is
-  opt-in, and **Take me off the board** on the same screen removes them.
-- If the live board ever exists but cannot be read, the build stops rather
-  than publish a site without it — which would wipe every player.
 - GitHub switches its *own* timer off after 60 days without a push; the
   outside timer is not affected.
+- The token for the timer expires on the date chosen when it was made. When
+  GitHub emails about it, make a new one and replace it in the cron job's
+  `Authorization` header.
 
 ## Where the questions came from
 

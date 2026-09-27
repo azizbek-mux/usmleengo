@@ -5,11 +5,12 @@ name = "usmleengo-rating"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
 
-# Filled in by `npx wrangler d1 create usmleengo-rating`, which prints the id.
+# Created with `npx wrangler d1 create usmleengo-rating` (region EEUR). The id
+# is not a secret: it is useless without the account's own login.
 [[d1_databases]]
 binding = "DB"
 database_name = "usmleengo-rating"
-database_id = "REPLACE_WITH_DATABASE_ID"
+database_id = "e7670b05-973a-47e2-b0bc-721253e641b8"
 
 # BOT_TOKEN is a secret, never written here. Set it in the Cloudflare
 # dashboard (Workers → usmleengo-rating → Settings → Variables and Secrets).
