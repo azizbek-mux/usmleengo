@@ -4,6 +4,7 @@ import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import AdCard from "./AdCard.jsx";
 import MainMenu from "./Menu.jsx";
 import { search, suggest, subjects } from "../lib/match.js";
+import { byFormat } from "../lib/session.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
 
@@ -41,15 +42,17 @@ const Dice = () => (
   </svg>
 );
 
-/** Group flat question hits into one row per topic. */
-function byTopic(hits) {
+/** Every question in the bank under each topic name. */
+function topicIndex(questions) {
   const map = new Map();
-  for (const q of hits) {
+  for (const q of questions) {
     if (!map.has(q.topic)) map.set(q.topic, []);
     map.get(q.topic).push(q);
   }
-  return [...map.entries()].map(([topic, questions]) => ({ topic, questions }));
+  return map;
 }
+
+const questionsLabel = (n) => `${n.toLocaleString()} question${n === 1 ? "" : "s"}`;
 
 const Book = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
@@ -63,7 +66,12 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
   const [query, setQuery] = useState("");
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
-  const groups = useMemo(() => byTopic(hits), [hits]);
+  // The search keeps only its forty best matches, so a topic row cannot be
+  // built from the hits: a fourteen-question topic with five in the top
+  // forty would offer five. The hits choose which topics to list; each row
+  // then counts and plays the whole topic.
+  const topics = useMemo(() => topicIndex(bank), []);
+  const found = useMemo(() => [...new Set(hits.map((q) => q.topic))], [hits]);
   const tips = useMemo(() => (query.trim() && !hits.length ? suggest(query) : []), [query, hits]);
   const chips = useMemo(() => subjects().slice(0, 12), []);
   // Every question that is a picture, filtered by tag below.
@@ -90,7 +98,8 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
     onStart(pool, label);
   }
 
-  /** A topic may hold fewer questions than the chosen session length. */
+  /** How many questions a round from this pool can draw, in the chosen format. */
+  const usable = (p) => byFormat(p, state.qtype).length;
 
   return (
     <div className="screen">
@@ -170,28 +179,29 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
       </div>
 
       {query.trim() ? (
-        groups.length ? (
+        found.length ? (
           <>
             <div className="section-label">Results</div>
             <div className="results">
               <button className="result-row" onClick={() => launch(hits, query.trim())}>
                 <div>
                   <div className="t">Quiz me on “{query.trim()}”</div>
-                  <div className="n">Start a round on this</div>
+                  <div className="n">{questionsLabel(usable(hits))} matching</div>
                 </div>
                 <span className="go"><Arrow /></span>
               </button>
-              {groups.slice(0, 8).map((g) => (
-                <button key={g.topic} className="result-row" onClick={() => launch(g.questions, g.topic)}>
-                  <div>
-                    <div className="t">{g.topic}</div>
-                    <div className="n">
-                      Tap to practise
+              {found.slice(0, 8).map((topic) => {
+                const questions = topics.get(topic) || [];
+                return (
+                  <button key={topic} className="result-row" onClick={() => launch(questions, topic)}>
+                    <div>
+                      <div className="t">{topic}</div>
+                      <div className="n">{questionsLabel(usable(questions))}</div>
                     </div>
-                  </div>
-                  <span className="go"><Arrow /></span>
-                </button>
-              ))}
+                    <span className="go"><Arrow /></span>
+                  </button>
+                );
+              })}
             </div>
           </>
         ) : (
@@ -270,15 +280,14 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
           onClick={() => launch(pool, chosen.length === 1 ? chosen[0] : chosen.length ? `${chosen.length} categories` : "Random")}
         >
           <Dice />
-          {chosen.length ? "Start" : "Random"} · {Math.min(count, pool ? pool.length : count)}
-          {" "}question{Math.min(count, pool ? pool.length : count) > 1 ? "s" : ""}
+          {chosen.length ? "Start" : "Random"} · {questionsLabel(Math.min(count, pool ? usable(pool) : count))}
         </button>
         <div className="cta-note">
           {state.qtype === "binary" ? "Multiple choice"
             : state.qtype === "gap" ? "Fill the gap"
             : "Mixed question types"}
           {chosen.length
-            ? ` · ${chosen.length} of ${chips.length + PICTURE_SETS.length} categories, ${pool.length.toLocaleString()} questions`
+            ? ` · ${chosen.length} of ${chips.length + PICTURE_SETS.length} categories, ${questionsLabel(usable(pool))}`
             : state.lastDay === today() ? " · practised today ✓" : " · from every subject"}
         </div>
       </div>

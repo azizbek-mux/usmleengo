@@ -83,8 +83,10 @@ function drawBalanced(pool, count, seen) {
  *
  * Falls back to the full pool when the filter would empty it — a narrow topic
  * may hold no gap questions at all, and a short round beats no round.
+ * Exported so the home screen's counts are the questions a round can
+ * actually draw, not everything in the topic.
  */
-function byFormat(pool, qtype) {
+export function byFormat(pool, qtype) {
   if (!qtype || qtype === "random") return pool;
   const wanted = pool.filter((q) => q.type === qtype);
   return wanted.length ? wanted : pool;
