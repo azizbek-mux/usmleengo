@@ -305,6 +305,10 @@ export default function App() {
         xpEarned={xpEarned}
         streak={state.streak}
         streakAdvanced={streakAdvanced}
+        // The place on the overall board, once the post-round sync answers —
+        // usually well before anyone reaches the share button. Left out if
+        // this player is not ranked (outside Telegram, or the server is down).
+        rank={standings?.ranked ? standings.me?.overall : null}
         onAgain={() => start(poolRef.current, label)}
         onHome={() => setScreen("home")}
       />

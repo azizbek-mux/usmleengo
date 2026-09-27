@@ -242,12 +242,17 @@ export function openTelegram(url) {
   else window.open(url, "_blank", "noopener,noreferrer");
 }
 
-/** Share the user's streak back into a Telegram chat, with a way in. */
-export function share(text) {
-  openTelegram(
-    `https://t.me/share/url?url=${encodeURIComponent(APP_LINK)}` +
-      `&text=${encodeURIComponent(text)}`,
-  );
+/**
+ * Share a message into a Telegram chat.
+ *
+ * Telegram builds the shared message as the `url` parameter, a new line,
+ * then `text` — so a link passed as `url` always lands on top. The whole
+ * message goes in `url` instead, link included, which keeps it in the order
+ * it was written: the link last, under the "You can try now 👇" that points
+ * at it. See shareText.js for the message itself.
+ */
+export function share(message) {
+  openTelegram(`https://t.me/share/url?url=${encodeURIComponent(message)}`);
 }
 
 export default tg;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { share } from "../lib/telegram.js";
+import { APP_LINK, share } from "../lib/telegram.js";
+import { shareMessage } from "../lib/shareText.js";
 import bank from "../data/bank.js";
 
 const R = 74;
@@ -39,7 +40,7 @@ function title(pct) {
   return "Worth another pass";
 }
 
-export default function Result({ log, label, xpEarned, streak, streakAdvanced, onAgain, onHome }) {
+export default function Result({ log, label, xpEarned, streak, streakAdvanced, rank, onAgain, onHome }) {
   const correct = log.filter((l) => l.correct).length;
   const wrong = log.length - correct;
   const pct = log.length ? Math.round((correct / log.length) * 100) : 0;
@@ -115,11 +116,15 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, o
         <button
           className="btn btn-ghost"
           onClick={() =>
-            share(
-              `I scored ${correct}/${log.length} on usmleengo` +
-              (streak > 1 ? ` — ${streak} day streak 🔥` : "") +
-              `\n\n${Math.floor(bank.length / 100) * 100}+ USMLE micro-quizzes, free:`
-            )
+            share(shareMessage({
+              correct,
+              total: log.length,
+              label,
+              streak,
+              rank,
+              bankSize: bank.length,
+              link: APP_LINK,
+            }))
           }
         >
           Share score
