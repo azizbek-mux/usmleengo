@@ -1,4 +1,4 @@
-// When a routine five-minute check may skip deploying. The failure that
+// When a routine check may skip deploying. The failure that
 // matters is a false "unchanged": the new score sits unpublished. So most of
 // these make sure a real change is always seen.
 
@@ -36,6 +36,12 @@ check("a new post is a change", C.differs(ad, "null"));
 check("an old post expiring is a change", C.differs("null", ad));
 check("the same post is unchanged", !C.differs(ad, JSON.stringify({ id: 42, title: "Course", body: "Starts Monday" })));
 
+console.log("\nnew code");
+const built = (sha) => JSON.stringify({ sha });
+check("the live site built from an older commit is a change", C.differs(built("b2c3"), built("a1b2")));
+check("the same commit is not", !C.differs(built("a1b2"), built("a1b2")));
+check("a site with no record of its commit yet is a change", C.differs(built("a1b2"), null));
+
 console.log("\nwhen in doubt, deploy");
 check("no live copy", C.differs(board(), null));
 check("no local copy", C.differs(null, board()));
@@ -45,7 +51,7 @@ console.log("\nwho may skip");
 check("a push never skips", !C.mayskip("push", ""));
 check("Run workflow on GitHub never skips", !C.mayskip("workflow_dispatch", ""));
 check("nor does an explicit force", !C.mayskip("workflow_dispatch", "true"));
-check("the five-minute outside timer may", C.mayskip("workflow_dispatch", "false"));
+check("the outside timer may", C.mayskip("workflow_dispatch", "false"));
 check("so may GitHub's own timer", C.mayskip("schedule", ""));
 
 console.log(`\n${pass} passed, ${fail} failed`);

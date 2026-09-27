@@ -124,9 +124,9 @@ repositories.
 
 **Three things worth knowing:**
 
-- It is not instant. With the five-minute timer set up (see
-  [the rating board](#the-rating-board-and-the-five-minute-timer)), a new post
-  shows within about five minutes. Without it, it waits for GitHub's own
+- It is not instant. With the outside timer set up (see
+  [the rating board](#the-rating-board-and-the-outside-timer)), a new post
+  shows within a few minutes. Without it, it waits for GitHub's own
   timer, which on this repository has run only every 2–7 hours. To publish
   immediately either way, open the repository's **Actions** tab, pick
   **Deploy to GitHub Pages**, and press **Run workflow**.
@@ -138,7 +138,7 @@ repositories.
 To follow a different tag or change the 10-day window, edit `TAG` and
 `MAX_AGE_DAYS` at the top of `tools/fetch-announcement.mjs`.
 
-## The rating board and the five-minute timer
+## The rating board and the outside timer
 
 The ☰ menu's **Rating** screen ranks players on points out of 1000, made
 from their day streak (50%), XP (30%) and average time on correct answers
@@ -159,7 +159,7 @@ repository secret named `BOT_TOKEN`:
 GitHub keeps it out of the logs and it never reaches the app. Without it,
 everything works except that nobody new gets onto the board.
 
-**2. A timer that actually fires every five minutes.** GitHub's own
+**2. A timer that actually fires every minute.** GitHub's own
 scheduled runs cannot be relied on for this: asked for every 30 minutes,
 this repository's ran 2–7 hours apart over a whole week (about 4 on
 average). GitHub does not hold back a run that is *started* through its API
@@ -179,7 +179,7 @@ the same way, so a free outside timer starts the workflow instead.
 and create a cron job:
 
 - URL: `https://api.github.com/repos/azizbek-mux/usmleengo/actions/workflows/deploy.yml/dispatches`
-- Schedule: every 5 minutes.
+- Schedule: every minute. (Every 5 minutes also works, just more slowly.)
 - Under the advanced settings — request method **POST**, these headers:
 
   ```
@@ -201,7 +201,9 @@ minute a run appears on the repository's **Actions** tab.
 
 `force: false` is what keeps this cheap. A routine check reads the channel
 and the bot, compares the result with what is live, and stops there if
-nothing changed — about fifteen seconds, no deploy. It only rebuilds and
+nothing changed — about twenty seconds, no deploy. Runs never cancel one
+another: a deploy takes about forty seconds, so at one-minute checks a
+cancelling setup would cut most of them off. It only rebuilds and
 publishes when a score, a player leaving, or the announcement actually
 changed (`tools/changed.mjs`). A push, or pressing **Run workflow** by hand,
 always deploys.
@@ -209,8 +211,8 @@ always deploys.
 **Worth knowing:**
 
 - The app's Rating and My performance screens fetch the board again every
-  minute while open, so a new score shows within about six minutes of being
-  sent.
+  minute while open, so a new score shows within about three minutes of
+  being sent.
 - Scores are self-reported. Telegram guarantees *who* sent one; the numbers
   are checked for being possible (no streak older than the app, no more XP
   than the answers allow) but a determined forger cannot be stopped without a

@@ -56,9 +56,9 @@ export function valueOf(board, rating) {
 /**
  * Keep the board fresh while a screen that shows it is open.
  *
- * The board itself is rebuilt at most every five minutes, so fetching it once
- * a minute means a new score shows up within a minute of going live, for the
- * cost of a small file. Nothing is fetched while the app is in the
+ * The board is rebuilt within a minute or two of a new score, so fetching it
+ * once a minute means a score shows up within a minute of going live, for
+ * the cost of a small file. Nothing is fetched while the app is in the
  * background, and coming back to it fetches straight away rather than
  * waiting out the rest of the minute.
  */
@@ -211,7 +211,7 @@ export default function Rating({ state, board, boardLoading, onRefresh, onBack }
           <div className="cta-note">Open usmleengo inside Telegram to put yourself on the board.</div>
         ) : pending ? (
           <div className="rating-sent">
-            <b>Sent.</b> You go up on the board within about five minutes.
+            <b>Sent.</b> You go up on the board within a few minutes.
           </div>
         ) : joined ? (
           <>
@@ -248,8 +248,8 @@ export default function Rating({ state, board, boardLoading, onRefresh, onBack }
           choosing the harder format never costs you points.
         </p>
         <p>
-          The board updates every five minutes, and this screen picks up the
-          new one on its own while it is open.
+          The board is checked for new points every minute, and this screen
+          picks up the new one on its own while it is open.
         </p>
         <p>
           Each part levels off as it grows, so the top stays within reach of someone

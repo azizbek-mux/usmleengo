@@ -163,9 +163,9 @@ async function main() {
 
 // Never fail the build over this. A broken fetch, a rate limit, or a change to
 // Telegram's markup should not cost the app its deploy — and since the
-// channel is now checked every five minutes, not its card either: a one-off
+// channel is now checked every minute, not its card either: a one-off
 // failure keeps whatever card is already live rather than pulling it, which
-// would take it down and put it back five minutes later. Only if the live
+// would take it down and put it back a minute later. Only if the live
 // copy cannot be read either does it fall back to no card.
 main().catch(async (err) => {
   console.log(`announcement skipped: ${err.message}`);

@@ -1,7 +1,7 @@
 // Decides whether this build needs to deploy at all.
 //
-// The board is checked every five minutes, and almost every check finds
-// nothing new. Rebuilding and redeploying the whole site 288 times a day to
+// The board is checked every minute, and almost every check finds nothing
+// new. Rebuilding and redeploying the whole site 1,440 times a day to
 // publish identical files would be slow, noisy in the deploy history, and
 // rude to GitHub. So a routine check deploys only when something the app
 // reads at runtime actually changed:
@@ -9,25 +9,33 @@
 //   public/leaderboard.json   — a new score, someone leaving, or the read
 //                               position moving past rejected messages
 //   public/announcement.json  — a new tagged post, or the old one expiring
+//   public/build.json         — the commit the site was built from
 //
-// Both are compared with the copy already live, ignoring the timestamp.
+// All three are compared with the copy already live, ignoring timestamps.
+//
+// build.json is what makes the whole thing self-correcting. It holds the
+// commit this run checked out, and the live copy holds the commit the live
+// site was built from. If they differ, new code has not gone out yet, and
+// this run deploys it — whatever became of the run that should have. A push
+// whose run was cancelled, or discarded while waiting behind another, is
+// published by the next routine check a minute later rather than lost.
 //
 // A push always deploys (the code changed), and so does pressing "Run
-// workflow" on GitHub (someone wants a deploy). Only the routine five-minute
-// checks — GitHub's own timer, and the outside timer that calls the workflow
-// with force=false — are allowed to skip.
+// workflow" on GitHub (someone wants a deploy). Only the routine checks —
+// GitHub's own timer, and the outside timer that calls the workflow with
+// force=false — are allowed to skip.
 //
 // Writes deploy=true|false to $GITHUB_OUTPUT. Any doubt means deploy: a
 // missing file, an unreadable live copy. Deploying needlessly costs forty
 // seconds; wrongly skipping would leave the app behind.
 
-import { appendFileSync, existsSync, readFileSync } from "node:fs";
+import { appendFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const LIVE = process.env.SITE_URL || "https://azizbek-mux.github.io/usmleengo/";
-const FILES = ["leaderboard.json", "announcement.json"];
+const FILES = ["leaderboard.json", "announcement.json", "build.json"];
 
 /**
  * JSON with every object's keys sorted, all the way down, so two values that
@@ -72,7 +80,7 @@ export function differs(local, live) {
  * Is this run allowed to skip? Only the routine checks are.
  *   push                           → never
  *   workflow_dispatch, force unset → never (a person pressed Run workflow)
- *   workflow_dispatch, force=false → yes (the five-minute outside timer)
+ *   workflow_dispatch, force=false → yes (the outside timer)
  *   schedule                       → yes (GitHub's own timer)
  */
 export function mayskip(event, force) {
@@ -91,6 +99,12 @@ async function liveCopy(name) {
 }
 
 async function main() {
+  // Record which commit this run is building. Outside Actions there is no
+  // commit to name, so no file — and a missing file always means deploy.
+  if (process.env.GITHUB_SHA) {
+    writeFileSync(join(ROOT, "public", "build.json"), JSON.stringify({ sha: process.env.GITHUB_SHA }), "utf8");
+  }
+
   const event = process.env.EVENT || "";
   const force = process.env.FORCE ?? "";
   let deploy = true;

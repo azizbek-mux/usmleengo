@@ -7,8 +7,8 @@ on:
   # Two ways to run by hand or by timer:
   #   - "Run workflow" on the Actions tab: force defaults to true, so it
   #     always deploys — the way to publish something right now.
-  #   - the five-minute outside timer (cron-job.org, see the README) calls the
-  #     API with force=false, so it deploys only if a score or the
+  #   - the outside timer (cron-job.org, every minute; see the README) calls
+  #     the API with force=false, so it deploys only if a score or the
   #     announcement actually changed.
   workflow_dispatch:
     inputs:
@@ -20,7 +20,7 @@ on:
   # GitHub's own timer, kept as a fallback only. It asks for every five
   # minutes, but GitHub throttles scheduled runs on quiet free repositories:
   # measured over a week at */30, runs came 2 to 7 hours apart, about 4 on
-  # average. The outside timer above is what makes five minutes real. GitHub
+  # average. The outside timer above is what makes it fast. GitHub
   # also switches this timer off after 60 days without a push; the outside
   # timer is unaffected.
   schedule:
@@ -31,9 +31,20 @@ permissions:
   pages: write
   id-token: write
 
+# One run at a time, and a run in progress is never cancelled — a newer one
+# waits behind it. With the timer firing every minute and a deploy taking
+# about 40 seconds, cancelling would cut off two deploys in three. For a
+# push that is worse than slow: the timer run that replaced it compares only
+# the scores and the announcement, finds them unchanged, skips deploying,
+# and the new code never goes out. If several runs pile up behind one,
+# GitHub keeps just the newest and discards the rest — which could be a
+# push. That is safe because every run compares the commit it checked out
+# with the one the live site was built from (build.json, see
+# tools/changed.mjs) and deploys if they differ, so code that missed its own
+# run goes out with the next check.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -69,6 +80,7 @@ jobs:
         env:
           EVENT: ${{ github.event_name }}
           FORCE: ${{ github.event.inputs.force }}
+          GITHUB_SHA: ${{ github.sha }}
 
       - if: steps.decide.outputs.deploy == 'true'
         run: npm ci
