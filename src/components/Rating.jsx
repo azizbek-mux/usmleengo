@@ -65,12 +65,23 @@ export function useLiveBoard(onRefresh) {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 }
 
+/**
+ * The rating is points, and only points: that is the rank. Day streak, XP
+ * and time are filters — they re-sort the same people by one part of the
+ * points, to see who leads it, but a place there is not a rank.
+ */
+const FILTERS = BOARDS.filter((b) => b.id !== "overall");
+const FILTERED_BY = { streak: "day streak", xp: "XP", speed: "time" };
+
 function Row({ row, board, me }) {
   // The server never sends the viewer's own name back; it is filled in here.
   const name = row.isMe ? me.name : row.name;
   const username = row.isMe ? me.username : row.username;
+  // Gold and silver are for the rating. A filter's first place has not won
+  // anything.
+  const medal = board === "overall" && row.place <= 3 ? ` p${row.place}` : "";
   return (
-    <div className={`board-row${row.isMe ? " me" : ""}${row.place <= 3 ? ` p${row.place}` : ""}`}>
+    <div className={`board-row${row.isMe ? " me" : ""}${medal}`}>
       <span className="board-place">{row.place}</span>
       <span className="board-who">
         <span className="board-name">
@@ -85,15 +96,22 @@ function Row({ row, board, me }) {
   );
 }
 
-/** The leaderboard: the top ten on whichever board the filter is set to. */
+/** The rating: the top ten by points, or by one part of them while a filter is on. */
 export default function Rating({ state, standings, loading, onRefresh, onBack }) {
-  const [tab, setTab] = useState("overall");
+  // null is the rating itself.
+  const [filter, setFilter] = useState(null);
+  const board = filter || "overall";
   useLiveBoard(onRefresh);
 
   const { me, top, places, ranked } = useMemo(() => ratingData(state, standings), [state, standings]);
-  const rows = top?.[tab] || [];
-  const mine = places?.[tab];
-  const column = BOARDS.find((b) => b.id === tab).column;
+  const rows = top?.[board] || [];
+  const mine = places?.[board];
+  const column = BOARDS.find((b) => b.id === board).column;
+
+  function choose(id) {
+    haptic("light");
+    setFilter((f) => (f === id ? null : id));
+  }
 
   // Below the top ten, the viewer still sees their own row, after a gap.
   const meBelow = mine?.place > TOP
@@ -127,37 +145,49 @@ export default function Rating({ state, standings, loading, onRefresh, onBack })
       </div>
 
       {/* ── filter ────────────────────────────────────────────────────────── */}
-      <div className="rating-tabs" role="tablist" aria-label="Filter">
-        {BOARDS.map((b) => (
+      <div className="rating-filter" role="group" aria-label="Filter">
+        <span className="rating-filter-l">Filter</span>
+        {FILTERS.map((b) => (
           <button
             key={b.id}
-            role="tab"
-            aria-selected={tab === b.id}
-            className={`rating-tab${tab === b.id ? " on" : ""}`}
-            onClick={() => { haptic("light"); setTab(b.id); }}
+            aria-pressed={filter === b.id}
+            className={`chip${filter === b.id ? " on" : ""}`}
+            onClick={() => choose(b.id)}
           >
             {b.name}
+            {filter === b.id && <span className="chip-x" aria-hidden="true">×</span>}
           </button>
         ))}
       </div>
 
       {/* ── the table ─────────────────────────────────────────────────────── */}
+      <div className="chips-head board-title">
+        <span className="section-label" style={{ margin: 0 }}>
+          {filter ? `Filtered by ${FILTERED_BY[filter]} · not the rating` : "Rating · by points"}
+        </span>
+        {filter && (
+          <button className="chips-clear" onClick={() => { haptic("light"); setFilter(null); }}>
+            Show rating
+          </button>
+        )}
+      </div>
       <div className="board">
         <div className="board-head">
-          <span className="board-place">Rank</span>
+          {/* Only the rating has ranks; a filter just numbers its order. */}
+          <span className="board-place">{filter ? "#" : "Rank"}</span>
           <span className="board-who">Name</span>
           <span className="board-value">{column}</span>
         </div>
-        {rows.map((r) => <Row key={`${r.place}-${r.isMe ? "me" : r.name}-${r.username || ""}`} row={r} board={tab} me={me} />)}
+        {rows.map((r) => <Row key={`${r.place}-${r.isMe ? "me" : r.name}-${r.username || ""}`} row={r} board={board} me={me} />)}
         {meBelow && (
           <>
             <div className="board-gap" aria-hidden="true">⋯</div>
-            <Row row={meBelow} board={tab} me={me} />
+            <Row row={meBelow} board={board} me={me} />
           </>
         )}
         {standings && !rows.length && (
           <div className="board-empty">
-            {tab === "speed"
+            {board === "speed"
               ? "Answer a few questions correctly and your time appears here."
               : "Nothing to rank yet."}
           </div>
@@ -173,8 +203,12 @@ export default function Rating({ state, standings, loading, onRefresh, onBack })
         <summary>How points are counted</summary>
         <p>
           Everyone who uses usmleengo is ranked, automatically, and places update
-          within a minute. The top ten on each board are shown by their Telegram
-          name and username; everyone else sees only their own place.
+          within a minute. The top ten are shown by their Telegram name and
+          username; everyone else sees only their own place.
+        </p>
+        <p>
+          <b>Your rank is by points alone.</b> The day streak, XP and time filters
+          only show who leads each part of the points — they are not ranks.
         </p>
         <p>
           Points, out of {POINTS_MAX}, mix three things: <b>day streak</b> counts most

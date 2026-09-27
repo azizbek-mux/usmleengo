@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { POINTS_MAX, XP, formatPace, points } from "../lib/rating.js";
+import { POINTS_MAX, WEIGHTS, XP, formatPace, points } from "../lib/rating.js";
 import { haptic } from "../lib/telegram.js";
 import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
 
@@ -7,8 +7,10 @@ import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
 const placeOf = (p) => (p?.place && p.total > 1 ? rankText(p) : null);
 
 /**
- * My performance: the three numbers the rating is built from, the points they
- * make, and where each one places the viewer. Everything personal that used
+ * My performance: the points, the one rank they give, and the three numbers
+ * the points are made of. Those three carry their share of the points rather
+ * than places of their own: the rating is points, and a day streak or an XP
+ * total is part of it, not a rank beside it. Everything personal that used
  * to crowd the home screen's header lives here now.
  */
 export default function Performance({ state, standings, onRefresh, onRating, onBack }) {
@@ -60,10 +62,11 @@ export default function Performance({ state, standings, onRefresh, onRating, onB
           {points(r.overall)}<small>/{POINTS_MAX}</small>
         </span>
         <span className="perf-points-place">
-          {placeOf(places?.overall) ? `${placeOf(places.overall)} on the rating ›` : "See the rating ›"}
+          {placeOf(places?.overall) ? `Your rank ${placeOf(places.overall)} ›` : "See the rating ›"}
         </span>
       </button>
 
+      <div className="section-label">What your points are made of</div>
       <div className="perf-list">
         {cards.map((c) => (
           <div key={c.id} className="perf-card">
@@ -74,7 +77,7 @@ export default function Performance({ state, standings, onRefresh, onRating, onB
               </span>
               <span className="perf-detail">{c.detail}</span>
             </div>
-            {placeOf(places?.[c.id]) && <span className="perf-place">{placeOf(places[c.id])}</span>}
+            <span className="perf-weight">{Math.round(WEIGHTS[c.id] * 100)}% of points</span>
           </div>
         ))}
       </div>

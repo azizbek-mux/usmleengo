@@ -189,9 +189,11 @@ export function points(overall) {
 }
 
 /**
- * The four boards, in the order the filter offers them. "Points" is the main
- * one: streak, XP and time mixed by the weights above. `column` heads the
- * value column when that board is showing.
+ * The rating and its three filters. "overall" — points, the mix above — is
+ * the rating, and the only rank anyone holds. The other three re-sort the
+ * same players by one part of the points, to show who leads it; the app
+ * presents them as filters, never as ranks of their own. `column` heads the
+ * value column when that view is showing.
  */
 export const BOARDS = [
   { id: "overall", name: "Points", column: "Points" },

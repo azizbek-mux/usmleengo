@@ -1165,25 +1165,26 @@ input { font: inherit; }
 .rating-place b { color: var(--accent); font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .rating-place small { font-size: 12px; color: var(--muted); font-weight: 700; }
 
-.rating-tabs {
+/* The filters are a quiet row of chips, not tabs: tabs would put day
+   streak, XP and time on the same footing as the rating itself. */
+.rating-filter {
   display: flex;
-  gap: 4px;
-  background: var(--card-hi);
-  border-radius: 11px;
-  padding: 3px;
-  margin-bottom: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 4px;
 }
-.rating-tab {
-  flex: 1;
-  padding: 8px 0;
-  border-radius: 9px;
-  font-size: 13px;
+.rating-filter-l {
+  font-size: 11px;
   font-weight: 700;
   color: var(--muted);
-  white-space: nowrap;
-  transition: background 0.15s, color 0.15s;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-right: 4px;
 }
-.rating-tab.on { background: var(--card); color: var(--text); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); }
+.rating-filter .chip { padding: 6px 12px; font-size: 13px; }
+.chip-x { margin-left: 6px; font-weight: 800; opacity: 0.75; }
+.board-title { margin: 16px 0 8px; }
 
 .board {
   background: var(--card);
@@ -1326,12 +1327,13 @@ input { font: inherit; }
 .perf-value { font-size: 24px; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .perf-value small { font-size: 14px; font-weight: 700; color: var(--muted); }
 .perf-detail { font-size: 12.5px; color: var(--muted); }
-.perf-place {
+/* A share of the points, not a place: muted, so it never reads as a rank. */
+.perf-weight {
   flex-shrink: 0;
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--accent-soft);
-  background: var(--accent-dim);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--card-hi);
   padding: 5px 10px;
   border-radius: 100px;
   font-variant-numeric: tabular-nums;
