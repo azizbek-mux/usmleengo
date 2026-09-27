@@ -7,15 +7,15 @@ import {
 import { connectGame, createGame } from "../lib/gameApi.js";
 import { subjects } from "../lib/match.js";
 import { inviteMessage } from "../lib/shareText.js";
+import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
 import { APP_LINK, haptic, inTelegram, share } from "../lib/telegram.js";
-import { PICTURE_SETS } from "./Home.jsx";
+import { BackBar, ScreenHead } from "./Chrome.jsx";
 
 // The multiplayer game: a live round among friends. See lib/game.js for the
 // rules and worker/src/game.js for the server that runs each game. Nothing
 // here reads or writes the player's own progress — a game is only a game.
 
 const NICK_KEY = "usmle_game_nick";
-const TAG_NAMES = { histo: "histology", radio: "radiology" };
 const typeName = (id) => GAME_TYPES.find((t) => t.id === id)?.name || id;
 
 function readNick() {
@@ -28,7 +28,7 @@ function writeNick(name) {
 /** "10 questions · 15s · Tap · cardio, renal" */
 export function describe(settings, total = settings.count) {
   const topics = settings.tags?.length
-    ? settings.tags.map((t) => TAG_NAMES[t] || t).join(", ")
+    ? settings.tags.map(tagLabel).join(", ")
     : "all topics";
   return `${total} question${total === 1 ? "" : "s"} · ${settings.seconds}s · ${typeName(settings.qtype)} · ${topics}`;
 }
@@ -48,13 +48,15 @@ const REASONS = {
 
 /* ── the way in ──────────────────────────────────────────────────────── */
 
-export default function Game({ invite, onExit }) {
+export default function Game({ invite, onFocus }) {
   const [nickname, setNickname] = useState(readNick);
   // Inside Telegram the name comes from Telegram. On the web it is typed.
   const nameOk = inTelegram || nickname.trim().length > 0;
   // An invite opens the game directly — once there is a name to join with.
   const [stage, setStage] = useState(() => (invite && CODE_RE.test(invite) && nameOk ? "play" : "menu"));
   const [code, setCode] = useState(invite || "");
+  // Setting up and playing want the whole screen; only the menu keeps the tab bar.
+  useEffect(() => { onFocus?.(stage !== "menu"); }, [stage]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function play(nextCode) {
     if (!inTelegram) writeNick(nickname.trim());
@@ -81,26 +83,15 @@ export default function Game({ invite, onExit }) {
         setStage("setup");
       }}
       onJoin={() => play(code)}
-      onBack={onExit}
     />
   );
 }
 
-function TopBar({ title, onBack, backLabel = "‹ Back" }) {
-  return (
-    <div className="rating-top">
-      <button className="back-link" onClick={() => { haptic("light"); onBack(); }}>{backLabel}</button>
-      <span className="rating-title">{title}</span>
-      <span className="rating-spacer" />
-    </div>
-  );
-}
-
-function GameMenu({ code, setCode, nickname, setNickname, nameOk, invited, onCreate, onJoin, onBack }) {
+function GameMenu({ code, setCode, nickname, setNickname, nameOk, invited, onCreate, onJoin }) {
   const codeOk = CODE_RE.test(code);
   return (
     <div className="screen">
-      <TopBar title="Multiplayer" onBack={onBack} />
+      <ScreenHead title="Multiplayer" sub="Live game with friends" />
 
       <div className="game-hero">
         <div className="game-hero-t">Play live with friends</div>
@@ -206,7 +197,7 @@ function GameSetup({ onBack, onCreated }) {
 
   return (
     <div className="screen">
-      <TopBar title="New game" onBack={onBack} />
+      <BackBar title="New game" onBack={onBack} />
 
       <div className="section-label">Question type</div>
       <Presets values={GAME_TYPES} value={qtype} onPick={setQtype} />
@@ -224,7 +215,7 @@ function GameSetup({ onBack, onCreated }) {
         )}
       </div>
       <div className="chips">
-        {[...PICTURE_SETS.map((p) => ({ tag: p.tag, name: p.name })), ...chips.map(({ tag }) => ({ tag, name: tag }))]
+        {[...PICTURE_TAGS, ...chips.map(({ tag }) => tag)].map((tag) => ({ tag, name: tagLabel(tag) }))
           .map(({ tag, name }) => (
             <button
               key={tag}
@@ -311,7 +302,7 @@ function LiveGame({ code, nickname, onLeave }) {
     const [title, body] = REASONS[error] || ["Something went wrong", "Try joining again."];
     return (
       <div className="screen">
-        <TopBar title="Multiplayer" onBack={onLeave} />
+        <BackBar title="Multiplayer" onBack={onLeave} />
         <div className="empty" style={{ marginTop: 40 }}>
           <div className="empty-big">🎮</div>
           <div className="game-err-t">{title}</div>
@@ -327,7 +318,7 @@ function LiveGame({ code, nickname, onLeave }) {
   if (!game) {
     return (
       <div className="screen">
-        <TopBar title="Multiplayer" onBack={leave} />
+        <BackBar title="Multiplayer" onBack={leave} />
         <div className="empty" style={{ marginTop: 40 }}>
           <div className="empty-big">🎮</div>
           <div>{status === "reconnecting" ? "Reconnecting…" : `Joining game ${spaced(code)}…`}</div>

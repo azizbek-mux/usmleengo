@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { QTYPES } from "../lib/qtypes.js";
 import { CHANNEL, haptic, openTelegram } from "../lib/telegram.js";
 import { THEMES, resolveTheme } from "../lib/theme.js";
 
@@ -27,9 +26,8 @@ export function Byline() {
 }
 
 /**
- * Light or dark, as a sun and a moon and nothing else, offered in both
- * halves of the app — someone who lives in Medical English should not have
- * to go and find the quiz settings.
+ * Light or dark, as a sun and a moon and nothing else, in the Me tab's
+ * settings.
  *
  * Before the user has chosen, the symbol lit is whichever palette "auto" is
  * actually showing, so the switcher always tells the truth about the screen.
@@ -88,35 +86,5 @@ export function Sheet({ title, onClose, children }) {
         {children}
       </div>
     </div>
-  );
-}
-
-export function SettingsSheet({ state, onQType, onTheme, onReset, onClose }) {
-  return (
-    <Sheet title="Settings" onClose={onClose}>
-      <div className="section-label" style={{ marginTop: 4 }}>Question type</div>
-      <div className="opt-list">
-        {QTYPES.map((t) => (
-          <button
-            key={t.id}
-            className={`opt-row${state.qtype === t.id ? " on" : ""}`}
-            onClick={() => { haptic("light"); onQType(t.id); }}
-          >
-            <div>
-              <div className="opt-name">{t.name}</div>
-              <div className="opt-note">{t.note}</div>
-            </div>
-            <span className="tick">{state.qtype === t.id ? "✓" : ""}</span>
-          </button>
-        ))}
-      </div>
-
-      <ThemePicker theme={state.theme} onTheme={onTheme} />
-
-      <button className="btn btn-danger settings-reset" onClick={onReset}>Reset all progress</button>
-      <div className="cta-note">Clears XP, streak and question history. Cannot be undone.</div>
-
-      <Byline />
-    </Sheet>
   );
 }

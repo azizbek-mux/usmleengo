@@ -4,16 +4,41 @@ import React from "react";
 // throughout, and currentColor, so each takes the colour of wherever it sits
 // in either theme.
 
-const Line = ({ size = 20, children }) => (
+const Line = ({ size = 20, width = 2, children }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
-    strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    strokeWidth={width} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     {children}
   </svg>
 );
 
-/** Three lines: the menu. */
-export const Burger = ({ size = 22 }) => (
-  <Line size={size}><path d="M4 6.5h16M4 12h16M4 17.5h16" /></Line>
+/* ── the tab bar ── */
+
+/** A ticked list: the quizzes. */
+export const Checklist = ({ size = 22 }) => (
+  <Line size={size} width={2.2}>
+    <path d="M9 5h10M9 12h10M9 19h10" />
+    <path d="m3 5 1.5 1.5L7 4" />
+    <path d="m3 12 1.5 1.5L7 11" />
+    <circle cx="4.5" cy="19" r="1.4" />
+  </Line>
+);
+
+/** A book: Medical English. */
+export const Book = ({ size = 22 }) => (
+  <Line size={size} width={2.2}>
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+  </Line>
+);
+
+/** Two people: playing together. */
+export const Players = ({ size = 22 }) => (
+  <Line size={size} width={2.2}>
+    <circle cx="9" cy="8" r="3.2" />
+    <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+    <circle cx="17" cy="9" r="2.6" />
+    <path d="M16 14.2c2.8.3 5 2.6 5 5.8" />
+  </Line>
 );
 
 export const Trophy = ({ size = 20 }) => (
@@ -23,10 +48,15 @@ export const Trophy = ({ size = 20 }) => (
   </Line>
 );
 
-/** Rising bars: how you are doing. */
-export const Chart = ({ size = 20 }) => (
-  <Line size={size}><path d="M4 20h16M7 16v-4M12 16V7M17 16v-7" /></Line>
+/** One person: you. */
+export const User = ({ size = 22 }) => (
+  <Line size={size} width={2.2}>
+    <circle cx="12" cy="8" r="4" />
+    <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+  </Line>
 );
+
+/* ── elsewhere ── */
 
 export const Gear = ({ size = 19 }) => (
   <Line size={size}>
@@ -35,7 +65,16 @@ export const Gear = ({ size = 19 }) => (
   </Line>
 );
 
-/** For the menu rows: a small chevron pointing onward. */
+/** A small chevron pointing onward, for rows that open something. */
 export const Chevron = ({ size = 16 }) => (
   <Line size={size}><path d="M9 6l6 6-6 6" /></Line>
+);
+
+/** A small chevron pointing down, for buttons that open a picker. */
+export const ChevronDown = ({ size = 14 }) => (
+  <Line size={size} width={2.4}><path d="M6 9l6 6 6-6" /></Line>
+);
+
+export const SearchIcon = ({ size = 18 }) => (
+  <Line size={size} width={2.5}><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></Line>
 );

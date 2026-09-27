@@ -105,7 +105,7 @@ Any violation fails the build with the offending `file:line`.
 ## Announcing something in the app
 
 Post it on the channel with **`#usmleengo`** in the text. Within about an hour
-it shows as a card at the top of both home screens, linking back to the post.
+it shows as a thin bar at the top of the Quiz and English tabs, linking back to the post.
 
     New USMLE course 🎓 #usmleengo
     Ten weeks, starts Monday. Message me to join.
@@ -146,7 +146,7 @@ To follow a different tag or change the 10-day window, edit `TAG` and
 
 ## The rating
 
-The ☰ menu's **Rating** screen ranks every player on points out of 1000,
+The **Rating** tab ranks every player on points out of 1000,
 made from their day streak (50%), XP (30%) and average time on correct
 answers (20%). Points are the only rank; day streak, XP and time are filters
 that show who leads each part. The top ten are shown by Telegram name and
@@ -260,8 +260,8 @@ hand, always deploys.
 
 ## Multiplayer
 
-A live quiz among friends, the way Kahoot plays: **Multiplayer** on the home
-screen → **Create a game** → choose the question type (tap, typed or mixed),
+A live quiz among friends, the way Kahoot plays: the **Play** tab →
+**Create a game** → choose the question type (tap, typed or mixed),
 5–30 questions, 10–30 seconds each and the topics → **Share invite**. The
 invite is a Telegram link (`…/study?startapp=g482193`) that opens the app
 straight into the game; the six-digit code works too. Up to 50 players; the
@@ -287,6 +287,21 @@ plays again with the same people and fresh questions.
 - **Tests:** `npm test` plays whole games through the rules and the room.
   After deploying the Worker, `node tools/game-live.mjs` plays a real
   three-phone game against the live server.
+
+## How the app is laid out
+
+Five tabs along the bottom, each one tap away: **Quiz**, **English**,
+**Play** (multiplayer), **Rating** and **Me** (points, streak, XP, average
+time, and the settings). Every tab opens the same way — a big title, at most
+one small thing beside it (the day streak), and the main action pinned just
+above the tab bar. Screens opened from inside a tab use Telegram's own back
+arrow. A quiz round, a flashcard session and a live game hide the tab bar.
+
+The Quiz tab keeps the categories on screen, one tap each, under short even
+names (histo, radio, endo, gen, onco…, see `src/lib/tags.js`); how many
+questions and which kind sit as two small buttons beside **Start**. A new
+player lands straight on it, with mixed question types, and is asked
+nothing first.
 
 ## Where the questions came from
 

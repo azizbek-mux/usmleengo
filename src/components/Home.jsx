@@ -1,29 +1,26 @@
 import React, { useMemo, useState } from "react";
 import bank, { bankBlurb } from "../data/bank.js";
-import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import AdCard from "./AdCard.jsx";
-import MainMenu from "./Menu.jsx";
+import { ScreenHead, StreakPill } from "./Chrome.jsx";
+import { ChevronDown, SearchIcon } from "./Icons.jsx";
+import { Sheet } from "./Sheet.jsx";
 import { search, suggest, subjects } from "../lib/match.js";
+import { QTYPES } from "../lib/qtypes.js";
 import { byFormat } from "../lib/session.js";
+import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
 
+// The Quiz tab. Laid out the way people use it: find or pick what to study,
+// then start. The categories are right there, one tap each; the two
+// settings that shape a round — how many questions, and which kind — sit as
+// small buttons beside Start, which is pinned above the tab bar so it never
+// needs scrolling to.
+
 const PRESETS = [2, 5, 10, 20, 50, 100];
 
-// Named here rather than derived, because these two are the whole point of the
-// picture bank and should keep a fixed order and wording. The multiplayer
-// setup offers them the same way.
-export const PICTURE_SETS = [
-  { tag: "histo", name: "histology" },
-  { tag: "radio", name: "radiology" },
-];
-
-const SearchIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
-       strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
-  </svg>
-);
+/** How each question type reads on its button, short enough to share a row. */
+const SHORT_QTYPE = { random: "Mixed", binary: "Multiple choice", gap: "Fill the gap" };
 
 const Arrow = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
@@ -31,7 +28,6 @@ const Arrow = () => (
     <path d="M5 12h14M12 5l7 7-7 7" />
   </svg>
 );
-
 
 const Dice = () => (
   <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
@@ -55,26 +51,9 @@ function topicIndex(questions) {
 
 const questionsLabel = (n) => `${n.toLocaleString()} question${n === 1 ? "" : "s"}`;
 
-const Players = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
-       strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="9" cy="8" r="3.2" />
-    <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
-    <circle cx="17" cy="9" r="2.6" />
-    <path d="M16 14.2c2.8.3 5 2.6 5 5.8" />
-  </svg>
-);
-
-const Book = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
-       strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-  </svg>
-);
-
-export default function Home({ state, name, onStart, onCount, onSubjects, onSettings, onEnglish, onGame, onRating, onPerformance }) {
+export default function Home({ state, onStart, onCount, onQType, onSubjects }) {
   const [query, setQuery] = useState("");
+  const [picker, setPicker] = useState(null); // null | "count" | "type"
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
   // The search keeps only its forty best matches, so a topic row cannot be
@@ -85,8 +64,7 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
   const found = useMemo(() => [...new Set(hits.map((q) => q.topic))], [hits]);
   const tips = useMemo(() => (query.trim() && !hits.length ? suggest(query) : []), [query, hits]);
   const chips = useMemo(() => subjects().slice(0, 12), []);
-  // Every question that is a picture, filtered by tag below.
-  const pictures = useMemo(() => bank.filter((q) => q.img), []);
+  const pictureTags = useMemo(() => PICTURE_TAGS.filter((t) => bank.some((q) => q.img && q.tags.includes(t))), []);
 
   // Chosen categories. Empty means the whole bank, which is why the button
   // still says Random until something is picked.
@@ -96,87 +74,40 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
     () => (chosen.length ? bank.filter((q) => q.tags.some((t) => chosenSet.has(t))) : null),
     [chosen, chosenSet],
   );
+  const qtype = state.qtype || "random";
 
   function toggle(tag) {
     haptic("light");
     onSubjects(chosenSet.has(tag) ? chosen.filter((t) => t !== tag) : [...chosen, tag]);
   }
 
-  const count = state.count;
-
-  function launch(pool, label) {
+  function launch(p, label) {
     haptic("medium");
-    onStart(pool, label);
+    onStart(p, label);
   }
 
   /** How many questions a round from this pool can draw, in the chosen format. */
   const usable = (p) => byFormat(p, state.qtype).length;
+  const count = state.count;
+  const roundSize = Math.min(count, pool ? usable(pool) : count);
+
+  const chip = (tag) => (
+    <button
+      key={tag}
+      className={`chip${chosenSet.has(tag) ? " on" : ""}`}
+      aria-pressed={chosenSet.has(tag)}
+      onClick={() => toggle(tag)}
+    >
+      {tagLabel(tag)}
+    </button>
+  );
 
   return (
     <div className="screen">
-      <div className="home-head">
-        <div>
-          <div className="greet">
-            {name ? <>Hi, <span>{name}</span></> : "usmleengo"}
-          </div>
-          {/* What the app offers. The user's own numbers are in My
-              performance, behind the menu. */}
-          <div className="sub">{bankBlurb()}</div>
-        </div>
-        {/* Rating, performance and settings: everything about the user rather
-            than the studying, behind one button so this screen stays short. */}
-        <MainMenu onRating={onRating} onPerformance={onPerformance} onSettings={onSettings} />
-      </div>
+      <ScreenHead title="Quizzes" sub={bankBlurb()} right={<StreakPill days={state.streak} />} />
 
       <AdCard />
 
-      {/* ── the other half of the app ──────────────────────────────────── */}
-      <div className="mode-row">
-        <button className="mode" onClick={() => { haptic("light"); onEnglish(); }}>
-          <span className="mode-ico"><Book /></span>
-          <span>
-            <span className="mode-t">Medical English</span>
-            <span className="mode-n">{GLOSSARY_COUNT.toLocaleString()} clinical terms · flashcards</span>
-          </span>
-        </button>
-        <button className="mode" onClick={() => { haptic("light"); onGame(); }}>
-          <span className="mode-ico"><Players /></span>
-          <span>
-            <span className="mode-t">Multiplayer</span>
-            <span className="mode-n">Live game with friends</span>
-          </span>
-        </button>
-      </div>
-
-      {/* ── session length ─────────────────────────────────────────────── */}
-      <div className="count-box">
-        <div className="count-head">
-          <span className="section-label" style={{ margin: 0 }}>Questions per session</span>
-          <span className="count-value">{count}</span>
-        </div>
-        <input
-          className="count-slider"
-          type="range"
-          min="2"
-          max="100"
-          value={count}
-          onChange={(e) => onCount(Number(e.target.value))}
-          aria-label="Questions per session"
-        />
-        <div className="count-presets">
-          {PRESETS.map((n) => (
-            <button
-              key={n}
-              className={`preset${n === count ? " on" : ""}`}
-              onClick={() => { haptic("light"); onCount(n); }}
-            >
-              {n}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* ── pick a topic ───────────────────────────────────────────────── */}
       <div className="search">
         <span className="search-icon"><SearchIcon /></span>
         <input
@@ -243,26 +174,13 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
           {/* Picture questions are a different axis from body system, and
               there are far fewer of them, so they would never survive the
               cut into the subject row. They get their own row, but share one
-              selection with the subjects: picking peds and radiology together
+              selection with the subjects: picking peds and radio together
               is a perfectly reasonable way to study. */}
-          {pictures.length > 0 && (
+          {pictureTags.length > 0 && (
             <>
               <div className="section-label">By picture</div>
               <div className="chips">
-                {PICTURE_SETS.map(({ tag, name }) => {
-                  const n = pictures.filter((q) => q.tags.includes(tag)).length;
-                  if (!n) return null;
-                  return (
-                    <button
-                      key={tag}
-                      className={`chip${chosenSet.has(tag) ? " on" : ""}`}
-                      aria-pressed={chosenSet.has(tag)}
-                      onClick={() => toggle(tag)}
-                    >
-                      {name} <span className="chip-n">{n}</span>
-                    </button>
-                  );
-                })}
+                {pictureTags.map(chip)}
               </div>
             </>
           )}
@@ -276,39 +194,71 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
             )}
           </div>
           <div className="chips">
-            {chips.map(({ tag }) => (
-              <button
-                key={tag}
-                className={`chip${chosenSet.has(tag) ? " on" : ""}`}
-                aria-pressed={chosenSet.has(tag)}
-                onClick={() => toggle(tag)}
-              >
-                {tag}
-              </button>
-            ))}
+            {chips.map(({ tag }) => chip(tag))}
           </div>
         </>
       )}
 
-      {/* ── start ──────────────────────────────────────────────────────── */}
-      <div className="home-cta">
+      {/* ── start, pinned above the tab bar ─────────────────────────────── */}
+      <div className="pinned">
+        <div className="round-opts">
+          <button className="round-opt" onClick={() => { haptic("light"); setPicker("count"); }}>
+            {questionsLabel(count)} <ChevronDown />
+          </button>
+          <button className="round-opt" onClick={() => { haptic("light"); setPicker("type"); }}>
+            {SHORT_QTYPE[qtype]} <ChevronDown />
+          </button>
+        </div>
         <button
           className="btn btn-primary btn-icon"
           disabled={pool !== null && pool.length === 0}
           onClick={() => launch(pool, chosen.length === 1 ? chosen[0] : chosen.length ? `${chosen.length} categories` : "Random")}
         >
           <Dice />
-          {chosen.length ? "Start" : "Random"} · {questionsLabel(Math.min(count, pool ? usable(pool) : count))}
+          {chosen.length ? "Start" : "Random"} · {questionsLabel(roundSize)}
         </button>
         <div className="cta-note">
-          {state.qtype === "binary" ? "Multiple choice"
-            : state.qtype === "gap" ? "Fill the gap"
-            : "Mixed question types"}
           {chosen.length
-            ? ` · ${chosen.length} of ${chips.length + PICTURE_SETS.length} categories, ${questionsLabel(usable(pool))}`
-            : state.lastDay === today() ? " · practised today ✓" : " · from every subject"}
+            ? `${chosen.length} of ${chips.length + pictureTags.length} categories · ${questionsLabel(usable(pool))}`
+            : state.lastDay === today() ? "Practised today ✓" : "From every subject"}
         </div>
       </div>
+
+      {picker === "count" && (
+        <Sheet title="Questions per round" onClose={() => setPicker(null)}>
+          <div className="count-presets picker-grid">
+            {PRESETS.map((n) => (
+              <button
+                key={n}
+                className={`preset${n === count ? " on" : ""}`}
+                onClick={() => { haptic("light"); onCount(n); setPicker(null); }}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </Sheet>
+      )}
+
+      {picker === "type" && (
+        <Sheet title="Question type" onClose={() => setPicker(null)}>
+          <div className="opt-list">
+            {QTYPES.map((t) => (
+              <button
+                key={t.id}
+                className={`opt-row${qtype === t.id ? " on" : ""}`}
+                onClick={() => { haptic("light"); onQType(t.id); setPicker(null); }}
+              >
+                <div>
+                  <div className="opt-name">{t.name}</div>
+                  <div className="opt-note">{t.note}</div>
+                </div>
+                <span className="tick">{qtype === t.id ? "✓" : ""}</span>
+              </button>
+            ))}
+          </div>
+        </Sheet>
+      )}
     </div>
   );
 }

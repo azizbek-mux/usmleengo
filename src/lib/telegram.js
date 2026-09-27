@@ -102,6 +102,30 @@ export function startParam() {
   }
 }
 
+/** Telegram's own back arrow, in its top bar (Bot API 6.1+). */
+export const hasBackButton = inTelegram && supports("6.1") && Boolean(tg?.BackButton);
+
+/**
+ * Show Telegram's back arrow and route it to `handler` until the returned
+ * cleanup runs. Does nothing where there is no such arrow; the screen then
+ * draws its own (see BackBar).
+ */
+export function showBack(handler) {
+  if (!hasBackButton) return () => {};
+  try {
+    tg.BackButton.onClick(handler);
+    tg.BackButton.show();
+  } catch {
+    return () => {};
+  }
+  return () => {
+    try {
+      tg.BackButton.offClick(handler);
+      tg.BackButton.hide();
+    } catch { /* the app is closing */ }
+  };
+}
+
 /** Haptics: 'light' | 'medium' | 'heavy' for taps, or a notification type. */
 export function haptic(kind) {
   if (!supports("6.1")) return;

@@ -1,8 +1,8 @@
 /**
  * The three practice modes, worded once.
  *
- * Both the first-run screen and the settings sheet render this list, so the
- * names and notes cannot drift apart between the two places a user meets them.
+ * The Quiz tab's question-type picker renders this list. A new player who
+ * never opens it gets the mix of both.
  */
 export const QTYPES = [
   { id: "random", name: "Mix of both", note: "Tapping and typing together" },

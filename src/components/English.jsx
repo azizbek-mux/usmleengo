@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
 import cards, { findCards, loadGlossary } from "../data/glossary.js";
-import { bankBlurb } from "../data/bank.js";
 import { GLOSSARY_COUNT } from "../data/glossary-version.js";
 import {
   NEW_MAX,
@@ -19,8 +18,9 @@ import {
 } from "../lib/deck.js";
 import { GRADES, formatInterval, preview } from "../lib/srs.js";
 import AdCard from "./AdCard.jsx";
-import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
-import { Gear } from "./Icons.jsx";
+import { ScreenHead, StreakPill } from "./Chrome.jsx";
+import { Byline, Sheet } from "./Sheet.jsx";
+import { Gear, SearchIcon } from "./Icons.jsx";
 import { haptic } from "../lib/telegram.js";
 
 const GRADE_NAME = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
@@ -32,22 +32,11 @@ const Back = () => (
   </svg>
 );
 
-const Checklist = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
-       strokeLinecap="round" strokeLinejoin="round">
-    <path d="M9 5h10M9 12h10M9 19h10" />
-    <path d="m3 5 1.5 1.5L7 4" />
-    <path d="m3 12 1.5 1.5L7 11" />
-    <circle cx="4.5" cy="19" r="1.4" />
-  </svg>
-);
-
-const SearchIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
-       strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
-  </svg>
-);
+// "High yield only" is a standing choice about this deck, so it is kept on
+// this phone rather than asked again on every visit.
+const HIGH_KEY = "usmleengo_english_high";
+const readHigh = () => { try { return localStorage.getItem(HIGH_KEY) === "1"; } catch { return false; } };
+const writeHigh = (on) => { try { localStorage.setItem(HIGH_KEY, on ? "1" : "0"); } catch { /* a preference */ } };
 
 
 /**
@@ -127,19 +116,35 @@ function DeckSetup({ onDone }) {
         sticks, so 20 new is closer to 60 cards of work in a day.
       </div>
 
-      <div className="home-cta">
+      <div className="pinned">
         <button className="btn btn-primary" disabled={!valid} onClick={() => onDone(n)}>
           Start studying
         </button>
-        <div className="cta-note">You can change it anytime from settings.</div>
+        <div className="cta-note">You can change it anytime under the gear.</div>
       </div>
     </div>
   );
 }
 
-function OptionsSheet({ config, counts, theme, onChange, onTheme, onReset, onClose }) {
+function OptionsSheet({ config, counts, highOnly, highCount, onHighOnly, onChange, onReset, onClose }) {
   return (
     <Sheet title="Deck options" onClose={onClose}>
+      <button
+        className={`deck-toggle${highOnly ? " on" : ""}`}
+        onClick={() => { haptic("light"); onHighOnly(!highOnly); }}
+        aria-pressed={highOnly}
+      >
+        <span>
+          <span className="deck-toggle-t">High yield only</span>
+          <span className="deck-toggle-n">
+            {highOnly
+              ? `Studying the ${highCount.toLocaleString()} highest-yield terms`
+              : `Studying all ${counts.total.toLocaleString()} terms`}
+          </span>
+        </span>
+        <span className="switch"><span className="knob" /></span>
+      </button>
+
       <div className="section-label" style={{ marginTop: 4 }}>New cards per day</div>
       <NumberField
         label="New cards per day"
@@ -167,8 +172,6 @@ function OptionsSheet({ config, counts, theme, onChange, onTheme, onReset, onClo
         A ceiling for days when a backlog has built up.
         {counts.reviewBacklog > 0 && ` You have ${counts.reviewBacklog.toLocaleString()} waiting.`}
       </div>
-
-      <ThemePicker theme={theme} onTheme={onTheme} />
 
       <div className="section-label">This deck</div>
       <div className="stat-grid">
@@ -246,10 +249,10 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
   );
 }
 
-export default function English({ name, streak, theme, onTheme, onHome, onStudied }) {
+export default function English({ streak, onStudied, onFocus }) {
   const [status, setStatus] = useState(() => (cards.length ? "ready" : "loading"));
   const [deck, setDeck] = useState(() => rollDay(loadDeckLocal()));
-  const [highOnly, setHighOnly] = useState(false);
+  const [highOnly, setHighOnly] = useState(readHigh);
   const [query, setQuery] = useState("");
   const [options, setOptions] = useState(false);
 
@@ -276,6 +279,10 @@ export default function English({ name, streak, theme, onTheme, onHome, onStudie
       .finally(() => { if (alive) setRemoteChecked(true); });
     return () => { alive = false; };
   }, []);
+
+  // A flashcard session wants the whole screen; the tab bar steps aside.
+  const inSession = studying && Boolean(current);
+  useEffect(() => { onFocus?.(inSession); }, [inSession]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // The cloud write is debounced, so leaving the section has to push it.
   useEffect(() => () => { flushDeck(); }, []);
@@ -339,10 +346,7 @@ export default function English({ name, streak, theme, onTheme, onHome, onStudie
   if (status !== "ready" || !remoteChecked) {
     return (
       <div className="screen">
-        <div className="quiz-top">
-          <button className="close" onClick={onHome} aria-label="Back to quizzes"><Back /></button>
-          <div className="sec-title">Medical English</div>
-        </div>
+        <ScreenHead title="Medical English" />
         <div className="empty" style={{ marginTop: 60 }}>
           {status !== "error" ? (
             <>
@@ -411,43 +415,22 @@ export default function English({ name, streak, theme, onTheme, onHome, onStudie
           points, XP and time would only ever describe the quiz. The day
           streak is the one thing both halves share — a day of flashcards
           keeps it alive — so it is the one thing shown. */}
-      <div className="home-head">
-        <div>
-          <div className="greet">
-            {name ? <>Hi, <span>{name}</span></> : "Medical English"}
+      <ScreenHead
+        title="Medical English"
+        sub={highOnly
+          ? `High yield only · ${pool.length.toLocaleString()} terms`
+          : `${cards.length.toLocaleString()} clinical terms`}
+        right={
+          <div className="stats">
+            <StreakPill days={streak} />
+            <button className="stat gear" onClick={() => { haptic("light"); setOptions(true); }} aria-label="Deck options">
+              <Gear />
+            </button>
           </div>
-          {/* The section names itself in whichever line the greeting did not
-              already use, so it never says "Medical English" twice. */}
-          <div className="sub">
-            {name
-              ? `Medical English · ${cards.length.toLocaleString()} terms`
-              : `${cards.length.toLocaleString()} clinical terms`}
-          </div>
-        </div>
-        <div className="stats">
-          <div className="stat flame">
-            <div className="stat-v">{streak}</div>
-            <div className="stat-l">🔥 day</div>
-          </div>
-          <button className="stat gear" onClick={() => { haptic("light"); setOptions(true); }} aria-label="Deck options">
-            <Gear />
-          </button>
-        </div>
-      </div>
+        }
+      />
 
       <AdCard />
-
-      {/* The way back to the other half — the mirror of Home's card, so
-          neither section is reachable only by a back arrow. */}
-      <div className="mode-row">
-        <button className="mode" onClick={() => { haptic("light"); onHome(); }}>
-          <span className="mode-ico"><Checklist /></span>
-          <span>
-            <span className="mode-t">USMLE quizzes</span>
-            <span className="mode-n">{bankBlurb()} · tap or type the answer</span>
-          </span>
-        </button>
-      </div>
 
       {done > 0 && (
         <div className="done-note">
@@ -506,25 +489,9 @@ export default function English({ name, streak, theme, onTheme, onHome, onStudie
         ) : (
           <div className="empty"><div>Nothing for “{query.trim()}”.</div></div>
         )
-      ) : (
-        <button
-          className={`deck-toggle${highOnly ? " on" : ""}`}
-          onClick={() => { haptic("light"); setHighOnly((v) => !v); }}
-          aria-pressed={highOnly}
-        >
-          <span>
-            <span className="deck-toggle-t">High yield only</span>
-            <span className="deck-toggle-n">
-              {highOnly
-                ? `Showing the ${pool.length.toLocaleString()} highest-yield terms`
-                : `Studying all ${cards.length.toLocaleString()} terms`}
-            </span>
-          </span>
-          <span className="switch"><span className="knob" /></span>
-        </button>
-      )}
+      ) : null}
 
-      <div className="home-cta">
+      <div className="pinned">
         <button className="btn btn-primary" onClick={start} disabled={!canStudy}>
           {canStudy ? "Study now" : waiting > 0 ? "Next card in a few minutes" : "Finished for today"}
         </button>
@@ -542,8 +509,9 @@ export default function English({ name, streak, theme, onTheme, onHome, onStudie
         <OptionsSheet
           config={deck.config}
           counts={counts}
-          theme={theme}
-          onTheme={onTheme}
+          highOnly={highOnly}
+          highCount={cards.filter((c) => c.yield === "high").length}
+          onHighOnly={(on) => { setHighOnly(on); writeHigh(on); }}
           onChange={(patch) => persist(setConfig(deck, patch))}
           onReset={() => {
             const fresh = { ...deck, cards: {}, newDone: 0, revDone: 0, reviews: 0 };

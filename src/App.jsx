@@ -1,40 +1,43 @@
 import React, { useEffect, useRef, useState } from "react";
 import Logo from "./components/Logo.jsx";
 import Home from "./components/Home.jsx";
-import Onboarding from "./components/Onboarding.jsx";
-import { SettingsSheet } from "./components/Sheet.jsx";
 import Quiz from "./components/Quiz.jsx";
 import Result from "./components/Result.jsx";
 import English from "./components/English.jsx";
-import SectionPick from "./components/SectionPick.jsx";
 import Rating from "./components/Rating.jsx";
-import Performance from "./components/Performance.jsx";
+import Me from "./components/Me.jsx";
 import Game from "./components/Game.jsx";
+import { TabBar } from "./components/Chrome.jsx";
 import { codeFromParam } from "./lib/game.js";
 import { quietSync, syncRating } from "./lib/ratingApi.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
 import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, touchStreak } from "./lib/storage.js";
-import { startParam, userName } from "./lib/telegram.js";
+import { startParam } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
 import { xpFor } from "./lib/rating.js";
 
 export default function App() {
   const [state, setState] = useState(loadLocal);
-  // A multiplayer invite link opens the app on that game. Read once: after
-  // the game, the app is the app again.
+  // A multiplayer invite link opens the app on that game. Used once: after
+  // it, the Play tab opens on its own menu like any other time.
   const [invite, setInvite] = useState(() => codeFromParam(startParam()));
-  // Reopen wherever they were last. Only the very first run has no answer.
-  const [screen, setScreen] = useState(() =>
-    invite ? "game" : loadLocal().section === "english" ? "english" : "home");
+  // The section open along the bottom. Someone who was last in Medical
+  // English reopens there; everyone else starts on the quizzes.
+  const [tab, setTab] = useState(() =>
+    invite ? "play" : loadLocal().section === "english" ? "english" : "quiz");
+  // A quiz round and its result take the whole screen.
+  const [flow, setFlow] = useState(null); // null | "quiz" | "result"
+  // A section in the middle of something that wants the whole screen — a
+  // flashcard session, a live game — says so, and the tab bar steps aside.
+  const [focused, setFocused] = useState(false);
   // The bank is fetched, so nothing that reads it may render until it lands.
   const [bankStatus, setBankStatus] = useState("loading");
   const [questions, setQuestions] = useState([]);
   const [label, setLabel] = useState("");
   const [log, setLog] = useState([]);
   const [streakAdvanced, setStreakAdvanced] = useState(false);
-  const [sheet, setSheet] = useState(null); // null | "settings"
   // The latest reply from the rating server: the top ten on each board and
   // this player's place. Kept from whichever sync happened last, so the
   // rating screens open with something to show while they fetch afresh.
@@ -48,8 +51,6 @@ export default function App() {
   // would drop XP between renders.
   const stateRef = useRef(state);
   stateRef.current = state;
-
-  const name = userName();
 
   // Pull cloud progress once on mount; local was already painted.
   useEffect(() => {
@@ -112,7 +113,7 @@ export default function App() {
     setLabel(roundLabel || "");
     setLog([]);
     setStreakAdvanced(false);
-    setScreen("quiz");
+    setFlow("quiz");
   }
 
   function handleAnswer(question, correct, elapsedMs) {
@@ -129,17 +130,13 @@ export default function App() {
     setStreakAdvanced(advanced);
     save(rolled);
     keepRanked(rolled);
-    setScreen("result");
+    setFlow("result");
   }
 
   function persist(updated) {
     stateRef.current = updated;
     setState(updated);
     save(updated);
-  }
-
-  function chooseQType(qtype) {
-    persist(setQType(stateRef.current, qtype));
   }
 
   /**
@@ -156,10 +153,15 @@ export default function App() {
     }
   }
 
-  /** Move between the two halves, remembering which one they are in. */
-  function goSection(section) {
-    persist(setSection(stateRef.current, section));
-    setScreen(section === "english" ? "english" : "home");
+  function openTab(next) {
+    // Each section reports its own need for the whole screen as it opens.
+    setFocused(false);
+    // The two study sections are remembered, so the app reopens on the one
+    // last used.
+    if (next === "quiz" || next === "english") persist(setSection(stateRef.current, next));
+    // An invite is for one visit to the Play tab, not every one after it.
+    if (tab === "play") setInvite(null);
+    setTab(next);
   }
 
   function resetAll() {
@@ -167,32 +169,19 @@ export default function App() {
     // The flashcard deck lives under its own key, so it has to be told too —
     // "start over" that leaves 8,479 cards scheduled is not starting over.
     resetDeck();
-    // Keep the setup answers — reset clears progress, not preferences.
-    const fresh = {
+    // Keep the preferences — reset clears progress, not choices.
+    persist({
       ...emptyState,
       qtype: stateRef.current.qtype,
+      count: stateRef.current.count,
       section: stateRef.current.section,
       theme: stateRef.current.theme,
-    };
-    persist(fresh);
-    setSheet(null);
-  }
-
-  function changeCount(n) {
-    persist(setCount(stateRef.current, n));
-  }
-
-  function changeSubjects(tags) {
-    persist(setSubjects(stateRef.current, tags));
-  }
-
-  function changeTheme(theme) {
-    persist(setTheme(stateRef.current, theme));
+    });
   }
 
   function quit() {
     save(stateRef.current);
-    setScreen("home");
+    setFlow(null);
   }
 
   const xpEarned = log.reduce((sum, l) => sum + xpFor(l.question, l.correct), 0);
@@ -202,9 +191,7 @@ export default function App() {
       <div className="screen boot">
         <Logo size={92} className="boot-mark" />
         {bankStatus === "loading" ? (
-          <>
-            <div className="boot-sub">Loading questions…</div>
-          </>
+          <div className="boot-sub">Loading questions…</div>
         ) : (
           <>
             <div className="boot-title">Couldn’t load questions</div>
@@ -227,86 +214,11 @@ export default function App() {
     );
   }
 
-  // Before the first-run questions: someone arriving by invite link came to
-  // play, and nothing else should stand in the way.
-  if (screen === "game") {
-    return (
-      <Game
-        invite={invite}
-        onExit={() => {
-          setInvite(null);
-          setScreen("home");
-        }}
-      />
-    );
+  if (flow === "quiz") {
+    return <Quiz questions={questions} label={label} onAnswer={handleAnswer} onDone={finish} onQuit={quit} />;
   }
 
-  // First run: which half of the app did they come for?
-  if (!state.section) {
-    return <SectionPick onChoose={goSection} />;
-  }
-
-  // Reached from the menu on the quiz home only: the rating measures quiz
-  // work, so Medical English has no way in.
-  if (screen === "rating") {
-    return (
-      <Rating
-        state={state}
-        standings={standings}
-        loading={standingsLoading}
-        onRefresh={refreshStandings}
-        onBack={() => setScreen("home")}
-      />
-    );
-  }
-
-  if (screen === "performance") {
-    return (
-      <Performance
-        state={state}
-        standings={standings}
-        onRefresh={refreshStandings}
-        onRating={() => setScreen("rating")}
-        onBack={() => setScreen("home")}
-      />
-    );
-  }
-
-  // Medical English owns its own data, progress and scheduling — it shares
-  // nothing with the quiz but the storage plumbing and the day streak.
-  if (screen === "english") {
-    return (
-      <English
-        name={name}
-        streak={state.streak}
-        theme={state.theme}
-        onTheme={changeTheme}
-        onHome={() => goSection("quiz")}
-        onStudied={markStudied}
-      />
-    );
-  }
-
-  // The quiz half needs a format before it can serve anything. Asked here
-  // rather than on launch, so someone who came for the flashcards is never
-  // made to answer it.
-  if (!state.qtype) {
-    return <Onboarding onChoose={chooseQType} />;
-  }
-
-  if (screen === "quiz") {
-    return (
-      <Quiz
-        questions={questions}
-        label={label}
-        onAnswer={handleAnswer}
-        onDone={finish}
-        onQuit={quit}
-      />
-    );
-  }
-
-  if (screen === "result") {
+  if (flow === "result") {
     return (
       <Result
         log={log}
@@ -319,34 +231,49 @@ export default function App() {
         // this player is not ranked (outside Telegram, or the server is down).
         rank={standings?.ranked ? standings.me?.overall : null}
         onAgain={() => start(poolRef.current, label)}
-        onHome={() => setScreen("home")}
+        onHome={() => setFlow(null)}
+      />
+    );
+  }
+
+  let screen;
+  if (tab === "english") {
+    // Medical English owns its own data, progress and scheduling — it
+    // shares nothing with the quiz but the storage plumbing and the streak.
+    screen = <English streak={state.streak} onStudied={markStudied} onFocus={setFocused} />;
+  } else if (tab === "play") {
+    screen = <Game invite={invite} onFocus={setFocused} />;
+  } else if (tab === "rating") {
+    screen = (
+      <Rating state={state} standings={standings} loading={standingsLoading} onRefresh={refreshStandings} />
+    );
+  } else if (tab === "me") {
+    screen = (
+      <Me
+        state={state}
+        standings={standings}
+        onRefresh={refreshStandings}
+        onRating={() => openTab("rating")}
+        onTheme={(theme) => persist(setTheme(stateRef.current, theme))}
+        onReset={resetAll}
+      />
+    );
+  } else {
+    screen = (
+      <Home
+        state={state}
+        onStart={start}
+        onCount={(n) => persist(setCount(stateRef.current, n))}
+        onQType={(qtype) => persist(setQType(stateRef.current, qtype))}
+        onSubjects={(tags) => persist(setSubjects(stateRef.current, tags))}
       />
     );
   }
 
   return (
-    <>
-      <Home
-        state={state}
-        name={name}
-        onStart={start}
-        onCount={changeCount}
-        onSubjects={changeSubjects}
-        onSettings={() => setSheet("settings")}
-        onEnglish={() => goSection("english")}
-        onGame={() => setScreen("game")}
-        onRating={() => setScreen("rating")}
-        onPerformance={() => setScreen("performance")}
-      />
-      {sheet === "settings" && (
-        <SettingsSheet
-          state={state}
-          onQType={chooseQType}
-          onTheme={changeTheme}
-          onReset={resetAll}
-          onClose={() => setSheet(null)}
-        />
-      )}
-    </>
+    <div className={`shell${focused ? "" : " with-tabs"}`}>
+      {screen}
+      {!focused && <TabBar tab={tab} onTab={openTab} />}
+    </div>
   );
 }

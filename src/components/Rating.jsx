@@ -5,6 +5,7 @@ import {
 import { displayName, usernameOf } from "../lib/scorecard.js";
 import { ratingInput, today } from "../lib/storage.js";
 import { haptic, telegramUser } from "../lib/telegram.js";
+import { ScreenHead } from "./Chrome.jsx";
 
 const TOP = 10;
 
@@ -97,7 +98,7 @@ function Row({ row, board, me }) {
 }
 
 /** The rating: the top ten by points, or by one part of them while a filter is on. */
-export default function Rating({ state, standings, loading, onRefresh, onBack }) {
+export default function Rating({ state, standings, loading, onRefresh }) {
   // null is the rating itself.
   const [filter, setFilter] = useState(null);
   const board = filter || "overall";
@@ -133,11 +134,7 @@ export default function Rating({ state, standings, loading, onRefresh, onBack })
 
   return (
     <div className="screen rating">
-      <div className="rating-top">
-        <button className="back-link" onClick={() => { haptic("light"); onBack(); }}>‹ Back</button>
-        <span className="rating-title">Rating</span>
-        <span className="rating-spacer" />
-      </div>
+      <ScreenHead title="Rating" sub="Everyone who plays, ranked by points" />
 
       <div className="rating-place">
         {placeLine}

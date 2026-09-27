@@ -145,8 +145,6 @@ input { font: inherit; }
   margin-bottom: 22px;
 }
 
-.greet { font-size: 22px; font-weight: 800; letter-spacing: -0.4px; }
-.greet span { color: var(--accent); }
 .sub { font-size: 13px; color: var(--muted); margin-top: 2px; line-height: 1.35; }
 .sub-progress { margin-top: 0; opacity: 0.8; }
 
@@ -161,9 +159,6 @@ input { font: inherit; }
   text-align: center;
   min-width: 60px;
 }
-.stat-v { font-size: 17px; font-weight: 800; line-height: 1.1; }
-.stat-l { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 2px; }
-.stat.flame .stat-v { color: var(--gold); }
 
 .search {
   display: flex;
@@ -669,26 +664,6 @@ input { font: inherit; }
 .sheet-title { font-size: 19px; font-weight: 800; letter-spacing: -0.3px; }
 .sheet-x { color: var(--muted); font-size: 26px; line-height: 1; padding: 2px 6px; }
 
-.pick-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; }
-.pick {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-  padding: 20px 18px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  text-align: left;
-  transition: transform 0.12s var(--tap), border-color 0.12s;
-}
-.pick:active { transform: scale(0.98); border-color: var(--accent); }
-.pick-ico { color: var(--accent); flex-shrink: 0; display: flex; }
-.pick-body { flex: 1; min-width: 0; }
-.pick-name { display: block; font-weight: 800; font-size: 17px; letter-spacing: -0.2px; }
-.pick-note { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
-.pick-go { color: var(--accent); flex-shrink: 0; display: flex; }
-
 .opt-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
 .opt-row {
   display: flex;
@@ -760,8 +735,6 @@ input { font: inherit; }
 .xp-amt.ok { color: var(--accent); }
 
 /* ────────────────────────── medical english ─────────────────────────── */
-
-.sec-title { font-size: 18px; font-weight: 800; letter-spacing: -0.3px; }
 
 .deck-stats { display: flex; gap: 10px; margin-bottom: 16px; }
 .deck-stat {
@@ -1075,59 +1048,7 @@ input { font: inherit; }
 
 /* ── home entry ── */
 
-.mode-row { display: flex; gap: 10px; margin-bottom: 20px; }
-.mode {
-  flex: 1;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 14px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  transition: transform 0.12s var(--tap), border-color 0.12s;
-}
-.mode:active { transform: scale(0.98); border-color: var(--accent); }
-.mode-ico { color: var(--accent); flex-shrink: 0; display: flex; }
-.mode-t { display: block; font-weight: 700; font-size: 14px; line-height: 1.2; }
-.mode-n { display: block; font-size: 11px; color: var(--muted); margin-top: 3px; }
-
 /* ─────────────────────────────── menu ───────────────────────────────── */
-
-.menu-wrap { position: relative; }
-.menu-back { position: fixed; inset: 0; z-index: 40; }
-.menu {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  z-index: 41;
-  width: 230px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 6px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
-  transform-origin: top right;
-  animation: menu-in 0.16s var(--tap);
-}
-@keyframes menu-in { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: none; } }
-.menu-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  padding: 12px 10px;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 15px;
-  font-weight: 700;
-}
-.menu-item:active { background: var(--card-hi); }
-.menu-item + .menu-item { margin-top: 2px; }
-.menu-ico { color: var(--accent); display: flex; flex-shrink: 0; }
-.menu-label { flex: 1; }
-.menu-go { color: var(--muted); display: flex; }
 
 /* ─────────────────────────────── rating ─────────────────────────────── */
 
@@ -1557,3 +1478,119 @@ input { font: inherit; }
 .game-tally-t { position: relative; flex: 1; min-width: 0; }
 .game-tally-you { color: var(--muted); font-weight: 600; }
 .game-tally-n { position: relative; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+/* ─────────────────────────── the frame: tabs ─────────────────────────── */
+
+:root { --tabbar-h: 60px; }
+
+.shell { flex: 1; display: flex; flex-direction: column; }
+/* Room at the end of every page for the bar that sits over it. */
+.shell.with-tabs .screen { padding-bottom: calc(var(--tabbar-h) + 18px + env(safe-area-inset-bottom)); }
+
+.tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tabbar.typing { display: none; }
+.tabbar-in { max-width: 520px; margin: 0 auto; display: flex; }
+.tab-btn {
+  flex: 1;
+  min-height: var(--tabbar-h);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  transition: color 0.15s, transform 0.12s var(--tap);
+}
+.tab-btn:active { transform: scale(0.92); }
+.tab-btn.on { color: var(--accent); }
+
+/* A section's own heading: big title left, one small thing right. */
+.head-text { min-width: 0; }
+.page-title { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.15; }
+.home-head .stats { align-items: center; }
+.streak-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 7px 13px;
+  font-size: 15px;
+  line-height: 1;
+}
+.streak-pill b { color: var(--gold); font-weight: 800; font-variant-numeric: tabular-nums; }
+.home-head .stat.gear { min-height: 40px; padding: 0 10px; min-width: 42px; }
+
+/* The main action, pinned just above the tab bar. */
+.pinned {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+  margin-top: auto;
+  padding: 14px 0 2px;
+  background: var(--bg);
+}
+.shell.with-tabs .pinned { bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom)); }
+
+/* How many, and which kind: small buttons that open a picker. */
+.round-opts { display: flex; gap: 8px; margin-bottom: 10px; }
+.round-opt {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: transform 0.12s var(--tap), border-color 0.15s;
+}
+.round-opt:active { transform: scale(0.97); border-color: var(--accent); }
+.round-opt svg { color: var(--muted); flex-shrink: 0; }
+.picker-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 4px 0 8px; }
+.picker-grid .preset { padding: 14px 0; font-size: 17px; }
+
+/* Settings, as rows in the Me tab. */
+.set-list { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 6px; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px; min-height: 58px; }
+.set-row + .set-row { border-top: 1px solid var(--line); }
+.set-row-t { display: block; font-weight: 700; font-size: 15px; }
+.set-row-n { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+.set-row .theme-toggle { margin: 0; width: 128px; flex-shrink: 0; }
+.set-row .theme-opt { padding: 7px 0; }
+.set-btn {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  font-weight: 700;
+  font-size: 14px;
+}
+.set-btn.danger { background: var(--wrong-dim); color: var(--wrong-text); border-color: var(--wrong); }
+
+/* The announcement, as a thin bar: its title, one line, and a ×. */
+.ad { margin-bottom: 16px; }
+.ad-main { padding: 9px 34px 9px 10px; gap: 10px; }
+.ad-thumb { width: 34px; height: 34px; border-radius: 8px; }
+.ad-from { margin-bottom: 1px; }
+.ad-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ad-text { display: none; }
+.ad-x { top: 50%; transform: translateY(-50%); }
