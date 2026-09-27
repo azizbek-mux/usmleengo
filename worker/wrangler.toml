@@ -14,3 +14,13 @@ database_id = "e7670b05-973a-47e2-b0bc-721253e641b8"
 
 # BOT_TOKEN is a secret, never written here. Set it in the Cloudflare
 # dashboard (Workers → usmleengo-rating → Settings → Variables and Secrets).
+
+# The multiplayer game: one Durable Object per live game (src/room.js).
+# SQLite-backed, the kind the free plan offers.
+[[durable_objects.bindings]]
+name = "GAMES"
+class_name = "GameRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["GameRoom"]

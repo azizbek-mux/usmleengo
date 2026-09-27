@@ -16,16 +16,29 @@
 // The body is sent as text/plain, which browsers treat as a simple request:
 // no CORS preflight, so one round trip instead of two.
 //
+// It also hosts the multiplayer game (see room.js):
+//
+//   POST /game/create  { settings, questions }  →  { code, creatorToken }
+//   GET  /game/<code>/ws                         →  the game's WebSocket
+//
 // Secrets and bindings (see wrangler.toml and the README):
 //   BOT_TOKEN — the bot's token, set as a Worker secret, to check signatures
 //   DB        — the D1 database
+//   GAMES     — the game rooms, one Durable Object per live game
 
+import { CODE_RE } from "../../src/lib/game.js";
 import { checkScore, displayName, playerKey, usernameOf } from "../../src/lib/scorecard.js";
 import { savePlayer, serverToday, snapshotCache, standingsFor } from "./board.js";
+import { cleanQuestions, cleanSettings } from "./game.js";
 import { verifyInitData } from "./telegram.js";
+
+export { GameRoom } from "./room.js";
 
 const ORIGINS = ["https://azizbek-mux.github.io", "http://localhost:5188"];
 const MAX_BODY = 8192;
+// Thirty questions with their explanations come to about 18 KB.
+const MAX_GAME_BODY = 48 * 1024;
+const CODE_TRIES = 8;
 
 const snapshot = snapshotCache();
 
@@ -86,12 +99,64 @@ export async function handleSync(request, env, cache = snapshot, now = Date.now(
   };
 }
 
+/** A random six-digit code, never starting with 0 so it reads the same typed or spoken. */
+export function randomCode() {
+  const n = crypto.getRandomValues(new Uint32Array(1))[0];
+  return String(100000 + (n % 900000));
+}
+
+/**
+ * A new game: check what the creator's app sent, then find a free code.
+ * Each code is its own room, and a room refuses a new game while one is
+ * still running there, so trying codes until one accepts cannot collide.
+ */
+export async function handleCreate(request, env) {
+  if (!env.GAMES) return { status: 503, body: { error: "games are not set up" } };
+  const text = await request.text();
+  if (text.length > MAX_GAME_BODY) return { status: 413, body: { error: "too large" } };
+  let body;
+  try { body = JSON.parse(text); } catch { return { status: 400, body: { error: "not JSON" } }; }
+
+  const settings = cleanSettings(body?.settings);
+  const questions = cleanQuestions(body?.questions);
+  if (!settings || !questions) return { status: 400, body: { error: "bad game" } };
+
+  for (let i = 0; i < CODE_TRIES; i++) {
+    const code = randomCode();
+    const room = env.GAMES.get(env.GAMES.idFromName(code));
+    const res = await room.fetch("https://room/init", {
+      method: "POST",
+      body: JSON.stringify({ code, settings, questions }),
+    });
+    if (res.status === 409) continue;
+    if (!res.ok) return { status: 502, body: { error: "room failed" } };
+    const { creatorToken } = await res.json();
+    return { status: 200, body: { code, creatorToken } };
+  }
+  return { status: 503, body: { error: "no free code" } };
+}
+
 export default {
   async fetch(request, env) {
     const headers = corsHeaders(request);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers });
 
     const { pathname } = new URL(request.url);
+
+    if (pathname === "/game/create" && request.method === "POST") {
+      try {
+        const { status, body } = await handleCreate(request, env);
+        return json(body, status, headers);
+      } catch (err) {
+        return json({ error: "server error", kind: err?.name || "Error" }, 500, headers);
+      }
+    }
+    const ws = /^\/game\/(\d{6})\/ws$/.exec(pathname);
+    if (ws && CODE_RE.test(ws[1])) {
+      if (request.headers.get("Upgrade") !== "websocket") return json({ error: "expected a WebSocket" }, 426, headers);
+      if (!env.GAMES) return json({ error: "games are not set up" }, 503, headers);
+      return env.GAMES.get(env.GAMES.idFromName(ws[1])).fetch(request);
+    }
     if (pathname === "/sync" && request.method === "POST") {
       try {
         const { status, body } = await handleSync(request, env);

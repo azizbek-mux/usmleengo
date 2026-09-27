@@ -85,3 +85,22 @@ export function shareMessage({ correct, total, label, streak = 0, rank = null, b
   lines.push(link);
   return lines.join("\n");
 }
+
+/**
+ * The invitation to a multiplayer game. The link opens the app straight
+ * into the game; the code is there for anyone who would rather type it.
+ *
+ *   code  — the game's six digits
+ *   about — what the game covers, e.g. "10 questions · cardio, renal"
+ *   link  — the invite link (inviteLink in game.js), always the last line
+ */
+export function inviteMessage({ code, about, link }) {
+  return [
+    `🎮 Join my live ${boldText("usmleengo")} game!`,
+    ...(about ? [`🩺 ${about}`] : []),
+    `🔢 Code: ${code}`,
+    "",
+    "Tap to join 👇",
+    link,
+  ].join("\n");
+}

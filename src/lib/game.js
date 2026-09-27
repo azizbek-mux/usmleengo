@@ -1,0 +1,115 @@
+// The multiplayer game's rules, shared by the app and the game server.
+//
+// A game is a live round among friends: one player creates it, the others
+// join through an invite link or a six-digit code, and everybody answers the
+// same question at the same moment. It is only a game. Nothing that happens
+// in one touches the player's own XP, streak, rating or question history,
+// and nothing about it is kept once it ends.
+
+import { XP } from "./rating.js";
+
+export const MAX_PLAYERS = 50;
+export const MIN_PLAYERS = 2;
+
+/** What the creator can choose from. */
+export const QUESTION_COUNTS = [5, 10, 15, 20, 30];
+export const SECONDS = [10, 15, 20, 30];
+export const GAME_TYPES = [
+  { id: "binary", name: "Tap" },
+  { id: "gap", name: "Typed" },
+  { id: "mixed", name: "Mixed" },
+];
+export const DEFAULT_SETTINGS = { count: 10, seconds: 15, qtype: "binary" };
+
+export const CODE_RE = /^\d{6}$/;
+
+/**
+ * Points for one answer.
+ *
+ * A correct answer is worth its XP — the same 10 for a tapped answer and 15
+ * for a typed one that the app pays — times a hundred, so a game's numbers
+ * read like a game's, times how fast it came: twice as much for an instant
+ * answer, falling evenly to the plain amount at the last second. A wrong
+ * answer is worth nothing.
+ *
+ *   10 × 100 × (1 + 12s left / 15s)  =  1,800
+ */
+export function gamePoints(type, correct, remainingMs, limitMs) {
+  if (!correct) return 0;
+  const base = (type === "gap" ? XP.gapCorrect : XP.binaryCorrect) * 100;
+  const left = limitMs > 0 ? Math.min(1, Math.max(0, remainingMs / limitMs)) : 0;
+  return Math.round(base * (1 + left));
+}
+
+/** The best a question can pay: an instant correct answer. */
+export const maxPoints = (type) => gamePoints(type, true, 1, 1);
+
+/** Fisher-Yates. */
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/**
+ * The questions for one game, picked by the creator's app.
+ *
+ * Plain random, deliberately: the spaced repetition that steers a player's
+ * own rounds has no place here — every game starts from nothing, and any
+ * question in the chosen topics can come up, including ones the players
+ * have answered before.
+ *
+ *   tags  — chosen categories; empty means the whole bank
+ *   qtype — "binary" (tap), "gap" (typed) or "mixed"
+ */
+export function pickGameQuestions(bank, { tags = [], qtype = "binary", count = 10 } = {}) {
+  const chosen = new Set(tags);
+  const pool = bank.filter((q) =>
+    (!chosen.size || q.tags.some((t) => chosen.has(t))) &&
+    (qtype === "mixed" || q.type === qtype));
+  return shuffle(pool).slice(0, count).map(forGame);
+}
+
+/** Only what a game needs of a question. */
+export function forGame(q) {
+  const out = { id: q.id, type: q.type, topic: q.topic, q: q.q, explain: q.explain || "" };
+  if (q.hideTopic) out.hideTopic = true;
+  if (q.img) out.img = q.img;
+  if (q.type === "binary") {
+    out.options = q.options;
+    out.answer = q.answer;
+  } else {
+    out.answer = q.answer;
+    out.accept = q.accept;
+  }
+  return out;
+}
+
+/** How many questions a choice of topics and type can supply. */
+export function availableFor(bank, { tags = [], qtype = "binary" } = {}) {
+  const chosen = new Set(tags);
+  return bank.filter((q) =>
+    (!chosen.size || q.tags.some((t) => chosen.has(t))) &&
+    (qtype === "mixed" || q.type === qtype)).length;
+}
+
+/**
+ * The invite link. Telegram opens the Mini App straight into the game: the
+ * start parameter arrives as `start_param` in the launch data.
+ */
+export const inviteParam = (code) => `g${code}`;
+
+export function codeFromParam(param) {
+  const m = /^g(\d{6})$/.exec(String(param || ""));
+  return m ? m[1] : null;
+}
+
+export const inviteLink = (appLink, code) => `${appLink}?startapp=${inviteParam(code)}`;
+
+/** Places with ties shared, as on the rating: 1, 2, 2, 4. */
+export function placesOf(scores) {
+  return scores.map((s) => 1 + scores.filter((o) => o > s).length);
+}

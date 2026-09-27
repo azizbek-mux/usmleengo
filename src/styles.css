@@ -1363,3 +1363,197 @@ input { font: inherit; }
 }
 .theme-opt:active { transform: scale(0.95); }
 .theme-opt.on { background: var(--card); color: var(--accent); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); }
+
+/* ───────────────────────────── multiplayer ──────────────────────────── */
+
+.game-hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 18px;
+}
+.game-hero-t { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+.game-hero-n { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+
+.game-field { display: block; margin-bottom: 14px; }
+.game-field .gap-input { font-size: 16px; padding: 14px 16px; }
+.game-or { margin-top: 26px; }
+.game-join { display: flex; gap: 10px; }
+.game-join .game-code-input {
+  flex: 1;
+  min-width: 0;
+  font-size: 20px;
+  padding: 14px 16px;
+  letter-spacing: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.game-join-btn { width: auto; padding: 0 22px; }
+
+.game-warn {
+  background: var(--wrong-dim);
+  color: var(--wrong-text);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.game-presets { margin-bottom: 4px; }
+.game-err-t { color: var(--text); font-weight: 800; font-size: 17px; }
+
+/* In a game */
+.game-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; min-height: 36px; }
+.game-top-t { flex: 1; font-weight: 800; font-size: 15px; }
+.game-top-me { font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+.game-confirm {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.game-confirm span { flex: 1; }
+.game-confirm-go { color: var(--wrong-text); }
+
+.game-code-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.game-code {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+}
+.game-code-about { font-size: 12.5px; color: var(--muted); text-align: center; text-wrap: balance; }
+.game-share { margin-top: 12px; }
+.game-count { font-size: 12px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.game-host {
+  display: inline-block;
+  margin-left: 7px;
+  padding: 1px 6px;
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  vertical-align: 2px;
+  background: var(--card-hi);
+  color: var(--muted);
+}
+.board-row.away { opacity: 0.5; }
+.game-away { font-size: 12px; color: var(--muted); font-weight: 700; }
+.game-wait { text-align: center; font-weight: 700; color: var(--muted); padding: 14px 0; }
+
+/* Get ready */
+.game-ready { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+.game-ready-n { font-size: 18px; font-weight: 800; }
+.game-ready-c {
+  font-size: 88px;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  animation: rise 0.28s var(--tap);
+}
+
+/* The countdown */
+.game-timer { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.game-timer-fill { transition: width 0.1s linear; }
+.game-timer-fill.low { background: var(--wrong); }
+.game-timer-s { font-weight: 800; font-size: 17px; min-width: 24px; text-align: right; font-variant-numeric: tabular-nums; }
+
+/* A chosen answer: marked, but neither right nor wrong until the reveal. */
+.opt.picked { border-color: var(--muted); background: var(--card-hi); }
+.gap-input.picked { border-color: var(--muted); background: var(--card-hi); }
+.game-status { text-align: center; font-size: 13px; font-weight: 700; color: var(--muted); margin-top: 16px; }
+
+/* The reveal */
+.game-result {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+.game-result.ok { background: var(--accent-dim); color: var(--accent-soft); }
+.game-result.no { background: var(--wrong-dim); color: var(--wrong-text); }
+.game-result.none { background: var(--card-hi); color: var(--muted); }
+.game-result-t { font-size: 19px; font-weight: 800; }
+.game-result-p { font-size: 24px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.game-answer { font-size: 14.5px; line-height: 1.5; margin-bottom: 4px; }
+.game-explain { color: var(--muted); }
+.game-score { display: flex; align-items: baseline; gap: 8px; }
+.game-gain { font-size: 12px; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
+.board-row.me .game-gain { color: inherit; }
+
+/* The podium: second, first, third, with first the tallest. */
+.game-podium { display: flex; align-items: flex-end; gap: 8px; margin: 6px 0 16px; }
+.game-podium-step {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px 14px 8px 8px;
+  padding: 12px 8px;
+}
+.game-podium-step.s1 { order: 2; padding-top: 22px; padding-bottom: 26px; border-color: var(--gold); }
+.game-podium-step.s2 { order: 1; padding-bottom: 16px; }
+.game-podium-step.s3 { order: 3; }
+.game-podium-m { font-size: 28px; line-height: 1; }
+.game-podium-n {
+  max-width: 100%;
+  font-weight: 800;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.game-podium-s { font-size: 13px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.game-podium-step.s1 .game-podium-s { color: var(--gold); }
+.rating-place .game-place { color: var(--text); font-size: 16px; }
+.game-final-note { margin: -4px 0 14px; }
+
+/* How the room answered: one bar per option, the right one ticked. */
+.game-behind { text-align: center; font-size: 13.5px; font-weight: 700; color: var(--muted); margin: -4px 0 14px; }
+.game-tally { display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+.game-tally-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 10px 14px;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 14.5px;
+}
+.game-tally-row.right { border-color: var(--accent); }
+.game-tally-bar { position: absolute; inset: 0 auto 0 0; background: var(--card-hi); transition: width 0.5s var(--tap); }
+.game-tally-row.right .game-tally-bar { background: var(--accent-dim); }
+.game-tally-t { position: relative; flex: 1; min-width: 0; }
+.game-tally-you { color: var(--muted); font-weight: 600; }
+.game-tally-n { position: relative; font-weight: 800; font-variant-numeric: tabular-nums; }

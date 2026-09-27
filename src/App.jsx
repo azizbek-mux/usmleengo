@@ -9,20 +9,25 @@ import English from "./components/English.jsx";
 import SectionPick from "./components/SectionPick.jsx";
 import Rating from "./components/Rating.jsx";
 import Performance from "./components/Performance.jsx";
+import Game from "./components/Game.jsx";
+import { codeFromParam } from "./lib/game.js";
 import { quietSync, syncRating } from "./lib/ratingApi.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
 import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, touchStreak } from "./lib/storage.js";
-import { userName } from "./lib/telegram.js";
+import { startParam, userName } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
 import { xpFor } from "./lib/rating.js";
 
 export default function App() {
   const [state, setState] = useState(loadLocal);
+  // A multiplayer invite link opens the app on that game. Read once: after
+  // the game, the app is the app again.
+  const [invite, setInvite] = useState(() => codeFromParam(startParam()));
   // Reopen wherever they were last. Only the very first run has no answer.
   const [screen, setScreen] = useState(() =>
-    loadLocal().section === "english" ? "english" : "home");
+    invite ? "game" : loadLocal().section === "english" ? "english" : "home");
   // The bank is fetched, so nothing that reads it may render until it lands.
   const [bankStatus, setBankStatus] = useState("loading");
   const [questions, setQuestions] = useState([]);
@@ -222,6 +227,20 @@ export default function App() {
     );
   }
 
+  // Before the first-run questions: someone arriving by invite link came to
+  // play, and nothing else should stand in the way.
+  if (screen === "game") {
+    return (
+      <Game
+        invite={invite}
+        onExit={() => {
+          setInvite(null);
+          setScreen("home");
+        }}
+      />
+    );
+  }
+
   // First run: which half of the app did they come for?
   if (!state.section) {
     return <SectionPick onChoose={goSection} />;
@@ -315,6 +334,7 @@ export default function App() {
         onSubjects={changeSubjects}
         onSettings={() => setSheet("settings")}
         onEnglish={() => goSection("english")}
+        onGame={() => setScreen("game")}
         onRating={() => setScreen("rating")}
         onPerformance={() => setScreen("performance")}
       />

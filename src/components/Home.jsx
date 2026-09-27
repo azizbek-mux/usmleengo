@@ -11,8 +11,9 @@ import { today } from "../lib/storage.js";
 const PRESETS = [2, 5, 10, 20, 50, 100];
 
 // Named here rather than derived, because these two are the whole point of the
-// picture bank and should keep a fixed order and wording.
-const PICTURE_SETS = [
+// picture bank and should keep a fixed order and wording. The multiplayer
+// setup offers them the same way.
+export const PICTURE_SETS = [
   { tag: "histo", name: "histology" },
   { tag: "radio", name: "radiology" },
 ];
@@ -54,6 +55,16 @@ function topicIndex(questions) {
 
 const questionsLabel = (n) => `${n.toLocaleString()} question${n === 1 ? "" : "s"}`;
 
+const Players = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
+       strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="9" cy="8" r="3.2" />
+    <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+    <circle cx="17" cy="9" r="2.6" />
+    <path d="M16 14.2c2.8.3 5 2.6 5 5.8" />
+  </svg>
+);
+
 const Book = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"
        strokeLinecap="round" strokeLinejoin="round">
@@ -62,7 +73,7 @@ const Book = () => (
   </svg>
 );
 
-export default function Home({ state, name, onStart, onCount, onSubjects, onSettings, onEnglish, onRating, onPerformance }) {
+export default function Home({ state, name, onStart, onCount, onSubjects, onSettings, onEnglish, onGame, onRating, onPerformance }) {
   const [query, setQuery] = useState("");
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
@@ -126,6 +137,13 @@ export default function Home({ state, name, onStart, onCount, onSubjects, onSett
           <span>
             <span className="mode-t">Medical English</span>
             <span className="mode-n">{GLOSSARY_COUNT.toLocaleString()} clinical terms · flashcards</span>
+          </span>
+        </button>
+        <button className="mode" onClick={() => { haptic("light"); onGame(); }}>
+          <span className="mode-ico"><Players /></span>
+          <span>
+            <span className="mode-t">Multiplayer</span>
+            <span className="mode-n">Live game with friends</span>
           </span>
         </button>
       </div>

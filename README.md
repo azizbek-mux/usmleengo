@@ -17,15 +17,16 @@ feel like rest rather than work.
 | Hosting | GitHub Pages (static build) | free |
 | Streaks / XP / progress | Telegram CloudStorage, localStorage fallback | free |
 | Rating | Cloudflare Worker + D1 database, free plan (`worker/`) | free |
+| Multiplayer | Durable Objects on the same Worker, free plan | free |
 | Announcement timer | cron-job.org, free plan | free |
 | Bot | BotFather | free |
 
 Everything about studying needs no server: topic search runs client-side
 against the bundled bank, so it works instantly and offline once loaded. The
-one server is the rating, which exists only because ranking every player
-automatically needs somewhere to send the scores; if it is ever down, the
-rest of the app carries on and only the rating screen says it cannot be
-reached.
+one server holds the rating and the multiplayer games, which exist only
+because ranking every player, and playing live together, need somewhere to
+meet; if it is ever down, studying carries on and only those screens say it
+cannot be reached.
 
 ## Develop
 
@@ -147,9 +148,9 @@ To follow a different tag or change the 10-day window, edit `TAG` and
 
 The ☰ menu's **Rating** screen ranks every player on points out of 1000,
 made from their day streak (50%), XP (30%) and average time on correct
-answers (20%), with separate boards for each. The top ten on each board are
-shown by Telegram name and @username; everyone sees their own place, like
-**#88 / 2,300**.
+answers (20%). Points are the only rank; day streak, XP and time are filters
+that show who leads each part. The top ten are shown by Telegram name and
+@username; everyone sees their own place, like **#88 / 2,300**.
 
 Nobody joins. The app sends its score to a small rating server whenever it
 changes — on opening, after a round, after a Medical English session — and
@@ -256,6 +257,36 @@ hand, always deploys.
 - The token for the timer expires on the date chosen when it was made. When
   GitHub emails about it, make a new one and replace it in the cron job's
   `Authorization` header.
+
+## Multiplayer
+
+A live quiz among friends, the way Kahoot plays: **Multiplayer** on the home
+screen → **Create a game** → choose the question type (tap, typed or mixed),
+5–30 questions, 10–30 seconds each and the topics → **Share invite**. The
+invite is a Telegram link (`…/study?startapp=g482193`) that opens the app
+straight into the game; the six-digit code works too. Up to 50 players; the
+creator plays as well and presses **Start**.
+
+Everyone gets the same question at the same moment. When all have answered,
+or time is up, each phone shows the right answer, how many chose what, its
+own place and the top five; after the last question, a podium. **New round**
+plays again with the same people and fresh questions.
+
+- **Points:** a correct answer earns its XP (10 tapped, 15 typed) × 100 ×
+  speed — twice that for an instant answer, falling to once at the last
+  second (Kahoot's own curve). A wrong answer earns nothing.
+- **Only a game.** Nothing in it touches the player's XP, streak, rating or
+  question history. Questions are picked at random every time — anything in
+  the chosen topics can come up — and nothing is kept once a game ends.
+- **How:** each game is a Cloudflare Durable Object (`worker/src/room.js`)
+  that every phone holds a WebSocket open to; the rules are plain data in
+  `worker/src/game.js`, shared scoring in `src/lib/game.js`. The creator's
+  app picks the questions; the server shuffles and grades them, so a phone
+  never learns an answer before the reveal. Games left alone for half an hour
+  are deleted.
+- **Tests:** `npm test` plays whole games through the rules and the room.
+  After deploying the Worker, `node tools/game-live.mjs` plays a real
+  three-phone game against the live server.
 
 ## Where the questions came from
 

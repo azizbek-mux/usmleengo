@@ -87,6 +87,21 @@ export function telegramUser() {
   return u ? { first_name: u.first_name, last_name: u.last_name, username: u.username } : null;
 }
 
+/**
+ * What a direct link carried: …/study?startapp=<this>. Telegram hands it over
+ * as start_param; on the web the same ?startapp= in the address works, so an
+ * invite can be tried in a browser.
+ */
+export function startParam() {
+  const fromTelegram = tg?.initDataUnsafe?.start_param;
+  if (fromTelegram) return String(fromTelegram);
+  try {
+    return new URLSearchParams(window.location.search).get("startapp");
+  } catch {
+    return null;
+  }
+}
+
 /** Haptics: 'light' | 'medium' | 'heavy' for taps, or a notification type. */
 export function haptic(kind) {
   if (!supports("6.1")) return;
