@@ -30,9 +30,6 @@ export default function App() {
   const [log, setLog] = useState([]);
   const [streakAdvanced, setStreakAdvanced] = useState(false);
   const [sheet, setSheet] = useState(null); // null | "settings"
-  // Which home the menu was opened from, so Back returns there and not to
-  // the other half of the app.
-  const [returnTo, setReturnTo] = useState("home");
   // The latest reply from the rating server: the top ten on each board and
   // this player's place. Kept from whichever sync happened last, so the
   // rating screens open with something to show while they fetch afresh.
@@ -188,12 +185,6 @@ export default function App() {
     persist(setTheme(stateRef.current, theme));
   }
 
-  /** Open Rating or My performance from whichever home the menu was on. */
-  function openFromMenu(target, from) {
-    setReturnTo(from);
-    setScreen(target);
-  }
-
   function quit() {
     save(stateRef.current);
     setScreen("home");
@@ -236,10 +227,8 @@ export default function App() {
     return <SectionPick onChoose={goSection} />;
   }
 
-  // Medical English owns its own data, progress and scheduling — it shares
-  // nothing with the quiz but the storage plumbing.
-  // Reached from the menu on either home. Checked before the question-format
-  // gate below, which only the quiz needs.
+  // Reached from the menu on the quiz home only: the rating measures quiz
+  // work, so Medical English has no way in.
   if (screen === "rating") {
     return (
       <Rating
@@ -247,7 +236,7 @@ export default function App() {
         standings={standings}
         loading={standingsLoading}
         onRefresh={refreshStandings}
-        onBack={() => setScreen(returnTo)}
+        onBack={() => setScreen("home")}
       />
     );
   }
@@ -259,21 +248,22 @@ export default function App() {
         standings={standings}
         onRefresh={refreshStandings}
         onRating={() => setScreen("rating")}
-        onBack={() => setScreen(returnTo)}
+        onBack={() => setScreen("home")}
       />
     );
   }
 
+  // Medical English owns its own data, progress and scheduling — it shares
+  // nothing with the quiz but the storage plumbing and the day streak.
   if (screen === "english") {
     return (
       <English
         name={name}
+        streak={state.streak}
         theme={state.theme}
         onTheme={changeTheme}
         onHome={() => goSection("quiz")}
         onStudied={markStudied}
-        onRating={() => openFromMenu("rating", "english")}
-        onPerformance={() => openFromMenu("performance", "english")}
       />
     );
   }
@@ -325,8 +315,8 @@ export default function App() {
         onSubjects={changeSubjects}
         onSettings={() => setSheet("settings")}
         onEnglish={() => goSection("english")}
-        onRating={() => openFromMenu("rating", "home")}
-        onPerformance={() => openFromMenu("performance", "home")}
+        onRating={() => setScreen("rating")}
+        onPerformance={() => setScreen("performance")}
       />
       {sheet === "settings" && (
         <SettingsSheet

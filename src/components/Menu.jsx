@@ -3,15 +3,13 @@ import { haptic } from "../lib/telegram.js";
 import { Burger, Chart, Chevron, Gear, Trophy } from "./Icons.jsx";
 
 /**
- * The three-line menu in the top corner.
+ * The three-line menu in the top corner of the quiz home.
  *
  * Everything about the user that is not studying — where they rank, how they
- * are doing, and the settings — lives behind this one button, so both home
- * screens stay about the studying itself and there is room to add features
- * later without the header filling up again.
- *
- * `onSettings` is whatever settings mean on the screen it sits on: the quiz
- * settings on Home, the deck options in Medical English.
+ * are doing, and the settings — lives behind this one button, so the home
+ * screen stays about the studying itself and there is room to add features
+ * later without the header filling up again. Medical English has no rating
+ * and keeps a plain streak counter and gear instead.
  */
 export default function MainMenu({ onRating, onPerformance, onSettings }) {
   const [open, setOpen] = useState(false);

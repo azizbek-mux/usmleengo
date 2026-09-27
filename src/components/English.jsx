@@ -20,7 +20,7 @@ import {
 import { GRADES, formatInterval, preview } from "../lib/srs.js";
 import AdCard from "./AdCard.jsx";
 import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
-import MainMenu from "./Menu.jsx";
+import { Gear } from "./Icons.jsx";
 import { haptic } from "../lib/telegram.js";
 
 const GRADE_NAME = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
@@ -246,7 +246,7 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
   );
 }
 
-export default function English({ name, theme, onTheme, onHome, onStudied, onRating, onPerformance }) {
+export default function English({ name, streak, theme, onTheme, onHome, onStudied }) {
   const [status, setStatus] = useState(() => (cards.length ? "ready" : "loading"));
   const [deck, setDeck] = useState(() => rollDay(loadDeckLocal()));
   const [highOnly, setHighOnly] = useState(false);
@@ -406,8 +406,11 @@ export default function English({ name, theme, onTheme, onHome, onStudied, onRat
 
   return (
     <div className="screen">
-      {/* The same head Home wears, so the two halves read as one app. The
-          menu is the same too, except that Settings here means the deck. */}
+      {/* The same head Home wears, so the two halves read as one app. No
+          rating menu here: flashcards earn no XP and are not timed, so
+          points, XP and time would only ever describe the quiz. The day
+          streak is the one thing both halves share — a day of flashcards
+          keeps it alive — so it is the one thing shown. */}
       <div className="home-head">
         <div>
           <div className="greet">
@@ -421,7 +424,15 @@ export default function English({ name, theme, onTheme, onHome, onStudied, onRat
               : `${cards.length.toLocaleString()} clinical terms`}
           </div>
         </div>
-        <MainMenu onRating={onRating} onPerformance={onPerformance} onSettings={() => setOptions(true)} />
+        <div className="stats">
+          <div className="stat flame">
+            <div className="stat-v">{streak}</div>
+            <div className="stat-l">🔥 day</div>
+          </div>
+          <button className="stat gear" onClick={() => { haptic("light"); setOptions(true); }} aria-label="Deck options">
+            <Gear />
+          </button>
+        </div>
       </div>
 
       <AdCard />

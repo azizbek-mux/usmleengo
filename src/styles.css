@@ -150,6 +150,8 @@ input { font: inherit; }
 .sub { font-size: 13px; color: var(--muted); margin-top: 2px; line-height: 1.35; }
 .sub-progress { margin-top: 0; opacity: 0.8; }
 
+/* Medical English's header: the day streak beside the deck options. */
+.stats { display: flex; gap: 8px; }
 
 .stat {
   background: var(--card);
@@ -159,6 +161,9 @@ input { font: inherit; }
   text-align: center;
   min-width: 60px;
 }
+.stat-v { font-size: 17px; font-weight: 800; line-height: 1.1; }
+.stat-l { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 2px; }
+.stat.flame .stat-v { color: var(--gold); }
 
 .search {
   display: flex;
