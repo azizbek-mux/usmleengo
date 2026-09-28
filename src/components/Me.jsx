@@ -161,7 +161,7 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
           <button className="set-row set-link" onClick={() => { haptic("light"); openWeb(COFFEE_LINK); }}>
             <span>
               <span className="set-row-t">Buy me a coffee ☕</span>
-              <span className="set-row-n">Support usmleengo with any card, and leave a message</span>
+              <span className="set-row-n">Support usmleengo — Uzcard, Humo, Payme, Click or any card</span>
             </span>
             <Chevron />
           </button>

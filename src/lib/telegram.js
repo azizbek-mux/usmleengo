@@ -291,10 +291,11 @@ export const CHANNEL = "https://t.me/mukhtorov_md";
 export const DEVELOPER = "https://t.me/azizbek_muxtorov";
 
 /**
- * The page for "Buy me a coffee" (a Tirikchilik page: any Uzbek or foreign
- * card, with a message). Empty until there is one — the row stays hidden.
+ * The page for "Buy me a coffee": the author's taps page (Tirikchilik as
+ * was), which takes Uzcard, Humo, Payme, Uzum, Click, Visa and Mastercard.
+ * Empty hides the row.
  */
-export const COFFEE_LINK = "";
+export const COFFEE_LINK = "https://taps.uz/mukhtorov_md";
 
 /** Which Telegram, for a problem report: "android · Telegram 8.0". */
 export function platformText() {
