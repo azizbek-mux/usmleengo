@@ -1750,3 +1750,61 @@ input { font: inherit; }
 }
 .class-tile:first-child { grid-column: 1 / -1; }
 .class-tile-v { font-size: 24px; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; }
+
+
+/* ─────────────────────────── class packages ── */
+
+.pkg-list { display: flex; flex-direction: column; gap: 6px; }
+.pkg-q {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 11px 13px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-align: left;
+}
+.pkg-q:active { border-color: var(--accent); }
+.pkg-q.pick.on { border-color: var(--accent); background: var(--accent-dim); }
+.pkg-n { flex-shrink: 0; min-width: 22px; font-weight: 800; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pkg-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pkg-text small { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin-top: 3px; }
+.pkg-add { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.pkg-add .btn { padding: 13px 8px; font-size: 14px; }
+.qe-text { font-size: 15px; line-height: 1.45; resize: vertical; min-height: 64px; font-weight: 500; }
+.qe-picture { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 6px; }
+.qe-picture img { max-width: 100%; max-height: 220px; border-radius: 12px; border: 1px solid var(--line); }
+.qe-options { display: flex; flex-direction: column; gap: 8px; }
+.qe-option { display: flex; align-items: center; gap: 8px; }
+.qe-option .gap-input { flex: 1; min-width: 0; font-size: 15px; padding: 12px 14px; font-weight: 500; }
+.qe-option.right .gap-input { border-color: var(--accent); }
+.qe-radio {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: var(--on-accent);
+}
+.qe-option.right .qe-radio, .pkg-q.pick.on .qe-radio { background: var(--accent); border-color: var(--accent); }
+.qe-x { flex-shrink: 0; color: var(--muted); font-size: 22px; padding: 4px 6px; }
+.qe-more { margin-top: 10px; }
+.res-q { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.res-text { font-size: 12.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.result-class { width: 100%; text-align: center; margin: 4px 0 18px; }

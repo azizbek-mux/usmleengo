@@ -332,13 +332,25 @@ teacher, 10 classes a student.
   taken when they were let in. Never bookmarks.
 - **Students see the class ranking:** the top ten by points, and their own
   place.
+- **Question packages:** a teacher's own questions, only for their class.
+  Written in the app — options to tap (2 to 10, one right) or a typed
+  answer (with other spellings to accept), an explanation, a picture
+  (shrunk on the phone, stored in D1, served from `/class/img/<id>`) — or
+  picked from usmleengo's bank. Up to 300 questions a package, 50 packages a
+  class.
+- **Homework:** a package with a due date. Each student's first try is
+  handed in and graded on the server; later tries, and the Practice list,
+  are practice. The teacher sees each student's score (late ones marked)
+  and how the class did on each question. **Class questions count for
+  nothing** — no XP, streak, rating or question history — and can't be
+  bookmarked.
 - **What a student shares:** accuracy and weak topics are not part of the
   rating, so the app sends them (right answers, right/wrong per category)
   only once the player has asked to join a class, and stops when they leave
   every class. The join screen says so.
-- **How:** `worker/src/classroom.js` (tables `classes` and `members`,
-  `worker/classroom.sql`; players gained `correct` and `topics`,
-  `worker/detail.sql`), `src/components/Classroom.jsx`. Classes need
+- **How:** `worker/src/classroom.js` (tables `classes`, `members`, `packages`,
+  `assignments`, `attempts` and `images`, `worker/classroom.sql`; players gained `correct` and `topics`,
+  `worker/detail.sql`), `src/components/Classroom.jsx` and `ClassPackages.jsx`. Classes need
   Telegram: every call is signed. Tests: `tools/classroom.test.mjs`.
 - **Trying it locally:** run `wrangler dev --var BOT_TOKEN:<test token>`,
   sign launch data with that token (`signInitData` in

@@ -24,3 +24,39 @@ CREATE TABLE IF NOT EXISTS members (
   PRIMARY KEY (class_id, player)
 );
 CREATE INDEX IF NOT EXISTS members_player ON members (player);
+CREATE TABLE IF NOT EXISTS packages (
+  id         TEXT PRIMARY KEY,
+  class_id   TEXT NOT NULL,
+  name       TEXT NOT NULL,
+  questions  TEXT NOT NULL,
+  count      INTEGER NOT NULL,
+  created_at INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS packages_class ON packages (class_id);
+CREATE TABLE IF NOT EXISTS assignments (
+  id         TEXT PRIMARY KEY,
+  class_id   TEXT NOT NULL,
+  package_id TEXT NOT NULL,
+  title      TEXT NOT NULL,
+  due_at     INTEGER NOT NULL,
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS assignments_class ON assignments (class_id);
+CREATE TABLE IF NOT EXISTS attempts (
+  assignment_id TEXT NOT NULL,
+  player        TEXT NOT NULL,
+  score         INTEGER NOT NULL,
+  total         INTEGER NOT NULL,
+  answers       TEXT NOT NULL,
+  finished_at   INTEGER NOT NULL,
+  PRIMARY KEY (assignment_id, player)
+);
+CREATE TABLE IF NOT EXISTS images (
+  id         TEXT PRIMARY KEY,
+  class_id   TEXT NOT NULL,
+  mime       TEXT NOT NULL,
+  data       TEXT NOT NULL,
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS images_class ON images (class_id);

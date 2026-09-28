@@ -33,7 +33,7 @@
 import { CODE_RE } from "../../src/lib/game.js";
 import { checkDetail, checkScore, displayName, playerKey, usernameOf } from "../../src/lib/scorecard.js";
 import { savePlayer, serverToday, snapshotCache, standingsFor } from "./board.js";
-import { classAction } from "./classroom.js";
+import { classAction, servedImage } from "./classroom.js";
 import { cleanQuestions, cleanSettings } from "./game.js";
 import { verifyInitData } from "./telegram.js";
 
@@ -46,6 +46,9 @@ const MAX_BODY = 8192;
 // Thirty questions with their explanations come to about 18 KB.
 const MAX_GAME_BODY = 48 * 1024;
 const MAX_CLASS_BODY = 64 * 1024;
+// Bigger for the two calls that carry content: a whole package of questions,
+// and one picture (a phone-compressed picture is a few hundred KB as text).
+const MAX_CLASS_BODY_FOR = { savepackage: 900 * 1024, image: 520 * 1024 };
 const CODE_TRIES = 8;
 
 const snapshot = snapshotCache();
@@ -155,7 +158,7 @@ export async function handleCreate(request, env) {
  */
 export async function handleClass(action, request, env, cache = snapshot, now = Date.now()) {
   const text = await request.text();
-  if (text.length > MAX_CLASS_BODY) return { status: 413, body: { error: "too large" } };
+  if (text.length > (MAX_CLASS_BODY_FOR[action] || MAX_CLASS_BODY)) return { status: 413, body: { error: "too large" } };
   let body;
   try { body = JSON.parse(text); } catch { return { status: 400, body: { error: "not JSON" } }; }
   if (!env.BOT_TOKEN) return { status: 503, body: { error: "no-token" } };
@@ -186,6 +189,16 @@ export default {
       } catch (err) {
         return json({ error: "server error", kind: err?.name || "Error" }, 500, headers);
       }
+    }
+    // A class picture, as an <img> asks for it: no Telegram data can ride
+    // along, so the unguessable id is the key. Never changes, so cached for good.
+    const img = /^\/class\/img\/([0-9a-f]{16,40})$/.exec(pathname);
+    if (img && request.method === "GET") {
+      const found = await servedImage(env.DB, img[1]);
+      if (!found) return new Response("not found", { status: 404, headers });
+      return new Response(found.bytes, {
+        headers: { ...headers, "content-type": found.mime, "cache-control": "public, max-age=31536000, immutable" },
+      });
     }
     const cls = /^\/class\/([a-z]+)$/.exec(pathname);
     if (cls && request.method === "POST") {

@@ -142,6 +142,70 @@ check("the teacher closes it, and it is gone", (await call("teacher", "close", {
   (await call("teacher", "mine")).body.teaching.length === 0 &&
   d1.db.prepare("SELECT COUNT(*) n FROM members").get().n === 0);
 
+console.log("\nquestion packages");
+const c2 = (await call("teacher", "create", { name: "Renal group" })).body.class;
+await call("laylo", "join", { code: c2.code });
+const req = (await call("teacher", "view", { classId: c2.id })).body.requests[0];
+await call("teacher", "approve", { classId: c2.id, player: req.player, accept: true });
+const questions = [
+  { id: "q-acid", type: "choice", q: "Metabolic acidosis with a normal anion gap?", options: ["DKA", "Diarrhea", "Lactic acidosis", "Methanol"], answer: 1, explain: "Bicarbonate lost in stool." },
+  { id: "q-k", type: "typed", q: "Hyperkalemia ECG: peaked ___ waves", answer: "T", accept: ["t wave"] },
+  { id: "q-drug", type: "choice", q: "Loop diuretic?", options: ["Furosemide", "HCTZ"], answer: 0, topic: "Diuretics" },
+];
+r = await call("teacher", "savepackage", { classId: c2.id, package: { name: "Acid–base", questions } });
+check("a teacher saves a package of their own questions", r.status === 200 && r.body.package.count === 3);
+const pkgId = r.body.package.id;
+check("a question with a bad answer is refused, and which one is said",
+  (await call("teacher", "savepackage", { classId: c2.id, package: { name: "Bad", questions: [questions[0], { ...questions[2], answer: 5 }] } })).body.index === 1);
+check("up to ten options", (await call("teacher", "savepackage", { classId: c2.id, package: { name: "Ten", questions: [{ type: "choice", q: "?", options: "abcdefghij".split(""), answer: 9 }] } })).status === 200 &&
+  (await call("teacher", "savepackage", { classId: c2.id, package: { name: "Eleven", questions: [{ type: "choice", q: "?", options: "abcdefghijk".split(""), answer: 0 }] } })).status === 400);
+check("a student cannot save one", (await call("laylo", "savepackage", { classId: c2.id, package: { name: "Mine", questions } })).status === 403);
+r = await call("laylo", "package", { packageId: pkgId });
+check("a student of the class opens it", r.status === 200 && r.body.package.questions.length === 3 && r.body.package.questions[0].options.length === 4);
+check("an outsider cannot", (await call("stranger", "package", { packageId: pkgId })).status === 403);
+r = await call("teacher", "savepackage", { classId: c2.id, package: { id: pkgId, name: "Acid–base basics", questions } });
+check("saving again replaces it in place", r.body.package.id === pkgId && (await call("laylo", "view", { classId: c2.id })).body.packages.some((p) => p.name === "Acid–base basics"));
+
+console.log("\nassignments");
+check("a due date in the past is refused", (await call("teacher", "assign", { packageId: pkgId, dueAt: NOW - 1000 })).body.error === "due");
+r = await call("teacher", "assign", { packageId: pkgId, dueAt: NOW + 3 * 86400000, title: "For Friday" });
+check("the teacher sets it as homework", r.status === 200 && r.body.assignment.title === "For Friday");
+const asg = r.body.assignment.id;
+r = await call("laylo", "view", { classId: c2.id });
+check("the student sees it, not yet done", r.body.assignments[0].title === "For Friday" && r.body.assignments[0].mine === null);
+r = await call("laylo", "attempt", { assignmentId: asg, answers: { "q-acid": 1, "q-k": "t ", "q-drug": 1 } });
+check("handed in, it is graded on the server", r.status === 200 && r.body.first === true && r.body.score === 2 && r.body.total === 3, JSON.stringify(r.body));
+r = await call("laylo", "attempt", { assignmentId: asg, answers: { "q-acid": 1, "q-k": "t", "q-drug": 0 } });
+check("only the first attempt counts", r.body.first === false && r.body.score === 2);
+check("the teacher cannot hand one in", (await call("teacher", "attempt", { assignmentId: asg, answers: {} })).status === 403);
+r = await call("laylo", "view", { classId: c2.id });
+check("the student sees their score", r.body.assignments[0].mine.score === 2 && r.body.assignments[0].mine.late === false);
+r = await call("teacher", "results", { assignmentId: asg });
+check("the teacher sees who did it and their score", r.body.students[0].done && r.body.students[0].score === 2 && r.body.students[0].name === "Laylo");
+check("and how the class did on each question", r.body.questions.map((q) => q.pct).join() === "100,100,0", JSON.stringify(r.body.questions));
+check("the view counts hand-ins", (await call("teacher", "view", { classId: c2.id })).body.assignments[0].done === 1);
+const late = (await call("teacher", "assign", { packageId: pkgId, dueAt: NOW + 60000 })).body.assignment.id;
+r = await call("laylo", "attempt", { assignmentId: late, answers: { "q-acid": 1 } }, NOW + 120000);
+check("handed in after the deadline, it is marked late", r.body.late === true);
+
+console.log("\npictures");
+const png = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==", "base64").toString("base64");
+r = await call("teacher", "image", { classId: c2.id, mime: "image/png", data: png });
+check("a teacher uploads a picture and gets its reference", r.status === 200 && /^c:[0-9a-f]+$/.test(r.body.img));
+const served = await C.servedImage(d1, r.body.img.slice(2));
+check("which is served back byte for byte", served && served.mime === "image/png" && Buffer.from(served.bytes).toString("base64") === png);
+check("a question can use it", (await call("teacher", "savepackage", { classId: c2.id, package: { name: "With a picture", questions: [{ type: "choice", q: "", img: r.body.img, options: ["A", "B"], answer: 0 }] } })).status === 200);
+check("only pictures are taken", (await call("teacher", "image", { classId: c2.id, mime: "text/html", data: png })).body.error === "image-type");
+check("and only from the teacher", (await call("laylo", "image", { classId: c2.id, mime: "image/png", data: png })).status === 403);
+
+console.log("\nremoving");
+check("deleting a package takes its homework with it", (await call("teacher", "deletepackage", { packageId: pkgId })).status === 200 &&
+  (await call("teacher", "view", { classId: c2.id })).body.assignments.length === 0 &&
+  d1.db.prepare("SELECT COUNT(*) n FROM attempts").get().n === 0);
+await call("teacher", "close", { classId: c2.id });
+check("closing a class leaves nothing of it behind",
+  ["packages", "assignments", "images", "members"].every((t) => d1.db.prepare(`SELECT COUNT(*) n FROM ${t}`).get().n === 0));
+
 console.log("\nlimits");
 for (let i = 0; i < C.LIMITS.teaching; i++) await call("stranger", "create", { name: `Class ${i}` });
 check(`a teacher runs at most ${C.LIMITS.teaching} classes`, (await call("stranger", "create", { name: "One more" })).body.error === "too-many-classes");

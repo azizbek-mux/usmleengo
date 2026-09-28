@@ -65,12 +65,17 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
 
   if (!q) return null;
 
+  // The bank's pictures ship with the app; a class's are served by the server.
+  const imgSrc = q.img
+    ? (/^(https?:)?\/\//.test(q.img) || q.img.startsWith("/") ? q.img : `${import.meta.env.BASE_URL}img/${q.img}`)
+    : null;
+
   function settle(correct, chosen) {
     const elapsed = leftScreen.current ? null : performance.now() - shownAt.current;
     setVerdict({ correct, chosen });
     setCombo((c) => (correct ? c + 1 : 0));
     haptic(correct ? "success" : "error");
-    onAnswer(q, correct, elapsed);
+    onAnswer(q, correct, elapsed, chosen);
   }
 
   function answerBinary(i) {
@@ -103,34 +108,38 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
           <div className="bar-fill" style={{ width: `${progress}%` }} />
         </div>
         <div className="combo">{combo >= 2 ? `🔥${combo}` : ""}</div>
-        {/* Save for later: the question lands in Saved on the Quiz tab. */}
-        <button
-          className={`save-btn${saved.includes(q.id) ? " on" : ""}`}
-          onClick={() => { haptic("light"); onSave?.(q.id); }}
-          aria-pressed={saved.includes(q.id)}
-          aria-label={saved.includes(q.id) ? "Remove from saved" : "Save this question"}
-        >
-          <Bookmark filled={saved.includes(q.id)} />
-        </button>
+        {/* Save for later: the question lands in Saved on the Quiz tab.
+            Not offered in a class round, whose questions are the teacher's. */}
+        {onSave && (
+          <button
+            className={`save-btn${saved.includes(q.id) ? " on" : ""}`}
+            onClick={() => { haptic("light"); onSave(q.id); }}
+            aria-pressed={saved.includes(q.id)}
+            aria-label={saved.includes(q.id) ? "Remove from saved" : "Save this question"}
+          >
+            <Bookmark filled={saved.includes(q.id)} />
+          </button>
+        )}
       </div>
 
       {/* Suppressed where the topic would hand over the answer — see
           topicLeaks() in tools/compile.mjs. */}
       {q.hideTopic ? <div className="q-topic-gap" /> : <div className="q-topic">{q.topic}</div>}
 
-      {/* An image question has no stem at all: the picture is the question,
-          and any words would narrow it down before the options do. */}
-      {q.img ? (
+      {/* An image question from the bank has no stem at all: the picture is
+          the question. A teacher's question may have both. */}
+      {q.img && (
         <button className="q-img" onClick={() => { haptic("light"); setZoom(true); }}
                 aria-label="Enlarge picture">
           <img
-            src={`${import.meta.env.BASE_URL}img/${q.img}`}
+            src={imgSrc}
             alt=""
             onError={(e) => { e.currentTarget.closest(".q-img").classList.add("broken"); }}
           />
           <span className="q-img-hint">tap to enlarge</span>
         </button>
-      ) : (
+      )}
+      {(!q.img || q.q) && (
         <div className="q-text">
           {q.type === "gap" ? <GapText text={q.q} /> : q.q}
         </div>
@@ -206,7 +215,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
 
       {zoom && q.img && (
         <div className="zoom" onClick={() => setZoom(false)} role="dialog" aria-label="Picture">
-          <img src={`${import.meta.env.BASE_URL}img/${q.img}`} alt="" />
+          <img src={imgSrc} alt="" />
           <button className="zoom-x" aria-label="Close">×</button>
         </div>
       )}

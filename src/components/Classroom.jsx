@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { classCall, classInviteParam } from "../lib/classApi.js";
+import { AssignScreen, AssignmentResults, PackageEditor, dayText } from "./ClassPackages.jsx";
 import { formatPace } from "../lib/rating.js";
 import { setClassSharing } from "../lib/ratingApi.js";
 import { classInviteMessage } from "../lib/shareText.js";
@@ -65,8 +66,13 @@ function TwoTap({ label, confirm, onConfirm }) {
   );
 }
 
-export default function Classroom({ state, invite, onFocus }) {
-  const [route, setRoute] = useState({ name: "home" });
+// Where the tab was, kept while the app is open: a round started from a
+// class returns to that class, not to the list of classes.
+let lastRoute = { name: "home" };
+
+export default function Classroom({ state, invite, onFocus, onStartClass }) {
+  const [route, setRouteState] = useState(() => (invite ? { name: "home" } : lastRoute));
+  const setRoute = (r) => { lastRoute = r; setRouteState(r); };
   // Everything but the list of classes is a screen of its own, and wants the
   // whole of it.
   useEffect(() => {
@@ -90,6 +96,7 @@ export default function Classroom({ state, invite, onFocus }) {
   if (route.name === "create") {
     return <CreateClass onBack={home} onCreated={(id) => setRoute({ name: "class", id })} />;
   }
+  const toClass = () => setRoute({ name: "class", id: route.id });
   if (route.name === "class") {
     return (
       <ClassView
@@ -98,9 +105,16 @@ export default function Classroom({ state, invite, onFocus }) {
         id={route.id}
         onBack={home}
         onStudent={(student) => setRoute({ name: "student", id: route.id, student })}
+        onGo={(r) => setRoute({ ...r, id: route.id })}
+        onStartClass={onStartClass}
       />
     );
   }
+  if (route.name === "package") {
+    return <PackageEditor classId={route.id} packageId={route.packageId} onBack={toClass} onSaved={toClass} />;
+  }
+  if (route.name === "assign") return <AssignScreen packages={route.packages} onBack={toClass} onDone={toClass} />;
+  if (route.name === "results") return <AssignmentResults assignmentId={route.assignmentId} onBack={toClass} />;
   if (route.name === "student") {
     return (
       <StudentDetail
@@ -276,7 +290,7 @@ function CreateClass({ onBack, onCreated }) {
 
 /* ── one class ───────────────────────────────────────────────────────── */
 
-function ClassView({ state, id, onBack, onStudent }) {
+function ClassView({ state, id, onBack, onStudent, onGo, onStartClass }) {
   const { data, error, reload } = useServer(() => classCall("view", { classId: id }, state), [id]);
 
   if (!data) {
@@ -287,8 +301,8 @@ function ClassView({ state, id, onBack, onStudent }) {
       </div>
     );
   }
-  if (data.role === "teacher") return <TeacherView data={data} onBack={onBack} onStudent={onStudent} reload={reload} />;
-  return <StudentView data={data} onBack={onBack} />;
+  if (data.role === "teacher") return <TeacherView data={data} onBack={onBack} onStudent={onStudent} reload={reload} onGo={onGo} />;
+  return <StudentView data={data} onBack={onBack} onStartClass={onStartClass} />;
 }
 
 function Period({ value, onChange }) {
@@ -309,7 +323,7 @@ function Period({ value, onChange }) {
   );
 }
 
-function TeacherView({ data, onBack, onStudent, reload }) {
+function TeacherView({ data, onBack, onStudent, reload, onGo }) {
   const [period, setPeriod] = useState("all");
   const [renaming, setRenaming] = useState(false);
   const [newName, setNewName] = useState(data.class.name);
@@ -402,6 +416,51 @@ function TeacherView({ data, onBack, onStudent, reload }) {
       ) : (
         <div className="board"><div className="board-empty">No students yet. Share the invite, then let them in here.</div></div>
       )}
+
+      <div className="chips-head board-title">
+        <span className="section-label" style={{ margin: 0 }}>Question packages</span>
+        <span className="game-count">{data.packages.length}</span>
+      </div>
+      {data.packages.length ? (
+        <div className="class-list">
+          {data.packages.map((p) => (
+            <button key={p.id} className="class-card" onClick={() => { haptic("light"); onGo({ name: "package", packageId: p.id }); }}>
+              <span className="class-card-main">
+                <span className="class-card-t">{p.name}</span>
+                <span className="class-card-n">{p.count} question{p.count === 1 ? "" : "s"}</span>
+              </span>
+              <span className="class-go">›</span>
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="class-note">Your own sets of questions: write them, or pick them from usmleengo’s bank. Only this class sees them.</div>
+      )}
+      <button className="btn btn-ghost class-create" onClick={() => { haptic("light"); onGo({ name: "package" }); }}>New package</button>
+
+      <div className="section-label">Homework</div>
+      {data.assignments.length ? (
+        <div className="class-list">
+          {data.assignments.map((a) => (
+            <button key={a.id} className="class-card" onClick={() => { haptic("light"); onGo({ name: "results", assignmentId: a.id }); }}>
+              <span className="class-card-main">
+                <span className="class-card-t">{a.title}</span>
+                <span className="class-card-n">Due {dayText(a.dueAt)} · {a.done} of {data.students.length} handed in</span>
+              </span>
+              <span className="class-go">›</span>
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="class-note">Set a package as homework with a due date, and see each student’s score and each question’s.</div>
+      )}
+      <button
+        className="btn btn-ghost class-create"
+        disabled={!data.packages.length}
+        onClick={() => { haptic("light"); onGo({ name: "assign", packages: data.packages }); }}
+      >
+        Set homework
+      </button>
 
       <div className="section-label">This class</div>
       {renaming ? (
@@ -498,9 +557,26 @@ function StudentDetail({ classId, student, onBack }) {
   );
 }
 
-function StudentView({ data, onBack }) {
+function StudentView({ data, onBack, onStartClass }) {
   const [error, setError] = useState(null);
+  const [opening, setOpening] = useState(null);
   const cls = data.class;
+
+  /** Fetch a package and play it: as homework the first time, as practice after. */
+  async function play(packageId, title, assignmentId) {
+    if (opening) return;
+    haptic("medium");
+    setOpening(packageId);
+    setError(null);
+    try {
+      const r = await classCall("package", { packageId });
+      onStartClass({ questions: r.package.questions, label: title, assignmentId });
+    } catch (err) {
+      setError(reasonOf(err));
+    } finally {
+      setOpening(null);
+    }
+  }
 
   async function leave() {
     try {
@@ -574,6 +650,47 @@ function StudentView({ data, onBack }) {
           </>
         )}
       </div>
+
+      <div className="section-label">Homework</div>
+      {data.assignments.length ? (
+        <div className="class-list">
+          {data.assignments.map((a) => {
+            const overdue = !a.mine && a.dueAt < Date.now();
+            return (
+              <button key={a.id} className="class-card" onClick={() => play(a.packageId, a.title, a.mine ? null : a.id)}>
+                <span className="class-card-main">
+                  <span className="class-card-t">{a.title}</span>
+                  <span className="class-card-n">
+                    {a.mine
+                      ? `Handed in · ${a.mine.score}/${a.mine.total}${a.mine.late ? " · late" : ""}`
+                      : `Due ${dayText(a.dueAt)}${overdue ? " · overdue" : ""}`}
+                  </span>
+                </span>
+                <span className={`class-pill${a.mine ? "" : " on"}`}>{a.mine ? "Practise" : "Start"}</span>
+              </button>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="class-note">No homework yet.</div>
+      )}
+
+      {data.packages.length > 0 && (
+        <>
+          <div className="section-label">Practice</div>
+          <div className="class-list">
+            {data.packages.map((p) => (
+              <button key={p.id} className="class-card" onClick={() => play(p.id, p.name, null)}>
+                <span className="class-card-main">
+                  <span className="class-card-t">{p.name}</span>
+                  <span className="class-card-n">{p.count} question{p.count === 1 ? "" : "s"} · not counted anywhere</span>
+                </span>
+                <span className="class-go">{opening === p.id ? "…" : "›"}</span>
+              </button>
+            ))}
+          </div>
+        </>
+      )}
 
       {error && <div className="game-warn" style={{ marginTop: 12 }}>{error}</div>}
       <div className="home-cta">

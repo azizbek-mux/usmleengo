@@ -8,7 +8,7 @@ import Rating from "./components/Rating.jsx";
 import Me from "./components/Me.jsx";
 import Game from "./components/Game.jsx";
 import Classroom from "./components/Classroom.jsx";
-import { classCodeFromParam } from "./lib/classApi.js";
+import { classCall, classCodeFromParam, packageRound } from "./lib/classApi.js";
 import { TabBar } from "./components/Chrome.jsx";
 import { codeFromParam } from "./lib/game.js";
 import { quietSync, syncRating } from "./lib/ratingApi.js";
@@ -53,6 +53,11 @@ export default function App() {
   // a function that builds the pool: Mistakes is re-read each round, so
   // questions fixed in the last one are not served again.
   const poolRef = useRef(null);
+  // A round of a teacher's questions: what it was built from, the homework it
+  // hands in (if any), and the answers given. It counts for nothing — no XP,
+  // no streak, no rating, no question history.
+  const classRound = useRef(null);
+  const [classNote, setClassNote] = useState(null);
   // Live mirror of state — the quiz answers fast enough that a stale closure
   // would drop XP between renders.
   const stateRef = useRef(state);
@@ -125,11 +130,33 @@ export default function App() {
     return true;
   }
 
+  /** A round of a class package: homework (handed in at the end) or practice. */
+  function startClass({ questions: source, label: roundLabel, assignmentId = null }) {
+    const round = packageRound(source);
+    if (!round.length) return;
+    classRound.current = { source, assignmentId, answers: {} };
+    setQuestions(round);
+    setLabel(roundLabel || "");
+    setLog([]);
+    setStreakAdvanced(false);
+    setClassNote(null);
+    setFlow("quiz");
+  }
+
   function flipSaved(id) {
     persist(toggleSaved(stateRef.current, id));
   }
 
-  function handleAnswer(question, correct, elapsedMs) {
+  function handleAnswer(question, correct, elapsedMs, chosen) {
+    if (classRound.current) {
+      // Handed in as the teacher wrote it: the option's own index, not its
+      // shuffled place on this screen; or the text typed.
+      classRound.current.answers[question.id] = question.type === "gap"
+        ? String(chosen ?? "")
+        : question.order ? question.order[chosen] : chosen;
+      setLog((l) => [...l, { question, correct }]);
+      return;
+    }
     const updated = record(stateRef.current, question, correct, elapsedMs);
     stateRef.current = updated;
     setState(updated);
@@ -137,6 +164,23 @@ export default function App() {
   }
 
   function finish() {
+    if (classRound.current) {
+      const round = classRound.current;
+      if (round.assignmentId) {
+        setClassNote("Handing it in…");
+        classCall("attempt", { assignmentId: round.assignmentId, answers: round.answers })
+          .then((r) => setClassNote(r.first
+            ? `Handed in: ${r.score}/${r.total}${r.late ? " (late)" : ""}. Your teacher can see it.`
+            : `Your first try is the one that counts (${r.score}/${r.total}). This one was practice.`))
+          .catch(() => setClassNote("Couldn’t hand it in. Check your internet, then do it again from the class."));
+        // Anything after this, from the same screen, is practice.
+        round.assignmentId = null;
+      } else {
+        setClassNote("Practice — it isn’t counted anywhere.");
+      }
+      setFlow("result");
+      return;
+    }
     const { state: rolled, advanced } = touchStreak(stateRef.current);
     stateRef.current = rolled;
     setState(rolled);
@@ -196,7 +240,8 @@ export default function App() {
   }
 
   function quit() {
-    save(stateRef.current);
+    if (!classRound.current) save(stateRef.current);
+    classRound.current = null;
     setFlow(null);
   }
 
@@ -236,7 +281,7 @@ export default function App() {
         questions={questions}
         label={label}
         saved={state.saved}
-        onSave={flipSaved}
+        onSave={classRound.current ? undefined : flipSaved}
         onAnswer={handleAnswer}
         onDone={finish}
         onQuit={quit}
@@ -257,10 +302,14 @@ export default function App() {
         // this player is not ranked (outside Telegram, or the server is down).
         rank={standings?.ranked ? standings.me?.overall : null}
         saved={state.saved}
-        onSave={flipSaved}
+        onSave={classRound.current ? undefined : flipSaved}
+        classNote={classRound.current ? classNote || "" : null}
         // Nothing left to ask — every mistake fixed, say — goes back to the tab.
-        onAgain={() => { if (!start(poolRef.current, label)) setFlow(null); }}
-        onHome={() => setFlow(null)}
+        onAgain={() => {
+          if (classRound.current) startClass({ questions: classRound.current.source, label });
+          else if (!start(poolRef.current, label)) setFlow(null);
+        }}
+        onHome={() => { classRound.current = null; setFlow(null); }}
       />
     );
   }
@@ -273,7 +322,7 @@ export default function App() {
   } else if (tab === "play") {
     screen = <Game invite={invite} onFocus={setFocused} />;
   } else if (tab === "class") {
-    screen = <Classroom state={state} invite={classInvite} onFocus={setFocused} />;
+    screen = <Classroom state={state} invite={classInvite} onFocus={setFocused} onStartClass={startClass} />;
   } else if (tab === "rating") {
     screen = (
       <Rating state={state} standings={standings} loading={standingsLoading} onRefresh={refreshStandings} />

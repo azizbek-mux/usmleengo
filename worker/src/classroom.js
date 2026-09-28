@@ -15,6 +15,7 @@
 // sends them (players.correct and players.topics, see checkDetail) only once
 // it has asked to join a class.
 
+import { grade } from "../../src/lib/grade.js";
 import { points, rate, standings } from "../../src/lib/rating.js";
 import { NAME_MAX, clean } from "../../src/lib/scorecard.js";
 import { fromRow, serverToday } from "./board.js";
@@ -41,13 +42,54 @@ CREATE TABLE IF NOT EXISTS members (
   base         TEXT,
   PRIMARY KEY (class_id, player)
 );
-CREATE INDEX IF NOT EXISTS members_player ON members (player)`;
+CREATE INDEX IF NOT EXISTS members_player ON members (player);
+CREATE TABLE IF NOT EXISTS packages (
+  id         TEXT PRIMARY KEY,
+  class_id   TEXT NOT NULL,
+  name       TEXT NOT NULL,
+  questions  TEXT NOT NULL,
+  count      INTEGER NOT NULL,
+  created_at INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS packages_class ON packages (class_id);
+CREATE TABLE IF NOT EXISTS assignments (
+  id         TEXT PRIMARY KEY,
+  class_id   TEXT NOT NULL,
+  package_id TEXT NOT NULL,
+  title      TEXT NOT NULL,
+  due_at     INTEGER NOT NULL,
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS assignments_class ON assignments (class_id);
+CREATE TABLE IF NOT EXISTS attempts (
+  assignment_id TEXT NOT NULL,
+  player        TEXT NOT NULL,
+  score         INTEGER NOT NULL,
+  total         INTEGER NOT NULL,
+  answers       TEXT NOT NULL,
+  finished_at   INTEGER NOT NULL,
+  PRIMARY KEY (assignment_id, player)
+);
+CREATE TABLE IF NOT EXISTS images (
+  id         TEXT PRIMARY KEY,
+  class_id   TEXT NOT NULL,
+  mime       TEXT NOT NULL,
+  data       TEXT NOT NULL,
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS images_class ON images (class_id)`;
 
 export const LIMITS = {
   students: 100, // active in one class
   waiting: 50, // join requests waiting in one class
   teaching: 10, // classes one teacher runs
   learning: 10, // classes one student belongs to
+  packages: 50, // question packages in one class
+  questions: 300, // questions in one package
+  assignments: 100, // assignments in one class
+  images: 600, // pictures in one class
+  imageBytes: 350 * 1024, // one picture, after the phone has compressed it
 };
 /** Below this many answers a category's accuracy says more about luck than the student. */
 export const MIN_TOPIC_ANSWERS = 5;
@@ -288,6 +330,10 @@ async function close(db, me, body) {
   const cls = await classOf(db, body.classId);
   if (!cls || cls.teacher !== me.key) return fail(403, "not-teacher");
   for (const sql of [
+    `DELETE FROM attempts WHERE assignment_id IN (SELECT id FROM assignments WHERE class_id = ?1)`,
+    `DELETE FROM assignments WHERE class_id = ?1`,
+    `DELETE FROM packages WHERE class_id = ?1`,
+    `DELETE FROM images WHERE class_id = ?1`,
     `DELETE FROM members WHERE class_id = ?1`,
     `DELETE FROM classes WHERE id = ?1`,
   ]) await db.prepare(sql).bind(cls.id).run();
@@ -308,6 +354,16 @@ async function view(db, me, body, now, players) {
     FROM members m LEFT JOIN players p ON p.key = m.player
     WHERE m.class_id = ?1`).bind(cls.id).all()).results;
   const active = rows.filter((r) => r.status === "active");
+  const packages = (await db.prepare(`
+    SELECT id, name, count, updated_at FROM packages WHERE class_id = ?1 ORDER BY created_at`).bind(cls.id).all()).results
+    .map((p) => ({ id: p.id, name: p.name, count: p.count }));
+  const homework = (await db.prepare(`
+    SELECT a.id, a.title, a.package_id, a.due_at,
+      (SELECT COUNT(*) FROM attempts t WHERE t.assignment_id = a.id) AS done,
+      (SELECT score FROM attempts t WHERE t.assignment_id = a.id AND t.player = ?2) AS my_score,
+      (SELECT total FROM attempts t WHERE t.assignment_id = a.id AND t.player = ?2) AS my_total,
+      (SELECT finished_at FROM attempts t WHERE t.assignment_id = a.id AND t.player = ?2) AS my_at
+    FROM assignments a WHERE a.class_id = ?1 ORDER BY a.due_at`).bind(cls.id, me.key).all()).results;
 
   if (cls.teacher === me.key) {
     const { rankOf, total } = globalRanks(players, today);
@@ -325,7 +381,10 @@ async function view(db, me, body, now, players) {
     }).sort((a, b) => b.all.points - a.all.points);
     const requests = rows.filter((r) => r.status === "pending")
       .map((r) => ({ player: r.player, name: r.m_name, username: r.m_username, requestedAt: r.requested_at }));
-    return ok({ role: "teacher", class: info, students, requests, rankedOf: total, limits: LIMITS });
+    const assignments = homework.map((a) => ({
+      id: a.id, title: a.title, packageId: a.package_id, dueAt: a.due_at * 1000, done: a.done,
+    }));
+    return ok({ role: "teacher", class: info, students, requests, rankedOf: total, limits: LIMITS, packages, assignments });
   }
 
   const mine = rows.find((r) => r.player === me.key);
@@ -353,10 +412,288 @@ async function view(db, me, body, now, players) {
       me: s.me ? { place: s.me.place, total: s.total, points: points(s.me.rating.overall) } : null,
     },
     students: active.length,
+    packages,
+    assignments: homework.map((a) => ({
+      id: a.id,
+      title: a.title,
+      packageId: a.package_id,
+      dueAt: a.due_at * 1000,
+      mine: a.my_at ? { score: a.my_score, total: a.my_total, late: a.my_at > a.due_at } : null,
+    })),
   });
 }
 
-const ACTIONS = { mine, create, join, approve, remove, rename, close, view };
+/* ── question packages ───────────────────────────────────────────────────
+   A teacher's own questions, in named packages. A question is either
+   "choice" (2 to 10 options, one right) or "typed" (an answer, plus other
+   spellings to accept). Questions picked from the usmleengo bank are copied
+   in the same shape. Pictures are either the bank's own ("p01-a.webp") or
+   the class's ("c:<id>", see images below). */
+
+const QID = /^[A-Za-z0-9_-]{1,40}$/;
+const IMG = /^(c:[0-9a-f]{16,40}|[\w.-]{1,80})$/;
+
+/** Text a teacher wrote: line breaks kept, control characters dropped. */
+function qtext(v, max) {
+  if (typeof v !== "string") return "";
+  return v.replace(/[\u0000-\u0009\u000b-\u001f\u007f‪-‮⁦-⁩]/g, "").trim().slice(0, max);
+}
+
+/** One question as the teacher's app sent it, checked; or null. */
+export function cleanClassQuestion(raw) {
+  if (!raw || typeof raw !== "object") return null;
+  const q = {
+    id: QID.test(raw.id) ? raw.id : `q${hex(6)}`,
+    type: raw.type,
+    q: qtext(raw.q, 2000),
+    explain: qtext(raw.explain, 2000),
+  };
+  const topic = qtext(raw.topic, 120);
+  if (topic) q.topic = topic;
+  if (raw.img) {
+    if (typeof raw.img !== "string" || !IMG.test(raw.img)) return null;
+    q.img = raw.img;
+  }
+  if (!q.q && !q.img) return null;
+  if (raw.type === "choice") {
+    const options = Array.isArray(raw.options) ? raw.options.map((o) => qtext(o, 400)) : [];
+    if (options.length < 2 || options.length > 10 || options.some((o) => !o)) return null;
+    if (!Number.isInteger(raw.answer) || raw.answer < 0 || raw.answer >= options.length) return null;
+    q.options = options;
+    q.answer = raw.answer;
+  } else if (raw.type === "typed") {
+    const answer = qtext(raw.answer, 200);
+    if (!answer) return null;
+    const accept = [answer, ...(Array.isArray(raw.accept) ? raw.accept : [])]
+      .map((a) => qtext(a, 200)).filter(Boolean);
+    q.answer = answer;
+    q.accept = [...new Set(accept.map((a) => a.toLowerCase()))].slice(0, 12);
+  } else {
+    return null;
+  }
+  return q;
+}
+
+/** Is this person the class's teacher, or one of its let-in students? */
+async function roleIn(db, cls, me) {
+  if (cls.teacher === me.key) return "teacher";
+  const m = await memberOf(db, cls.id, me.key);
+  return m?.status === "active" ? "student" : null;
+}
+
+async function packageOf(db, id) {
+  const { results } = await db.prepare(`SELECT * FROM packages WHERE id = ?1`).bind(String(id || "")).all();
+  return results[0] || null;
+}
+
+async function assignmentOf(db, id) {
+  const { results } = await db.prepare(`SELECT * FROM assignments WHERE id = ?1`).bind(String(id || "")).all();
+  return results[0] || null;
+}
+
+/** Create or replace a package — its whole list of questions at once. */
+async function savepackage(db, me, body, now) {
+  const cls = await classOf(db, body.classId);
+  if (!cls || cls.teacher !== me.key) return fail(403, "not-teacher");
+  const p = body.package || {};
+  const name = [...clean(p.name)].slice(0, 60).join("");
+  if (!name) return fail(400, "name");
+  const list = Array.isArray(p.questions) ? p.questions : [];
+  if (!list.length || list.length > LIMITS.questions) return fail(400, "questions");
+  const questions = list.map(cleanClassQuestion);
+  const bad = questions.findIndex((q) => !q);
+  if (bad >= 0) return { status: 400, body: { error: "question", index: bad } };
+  // Ids must stay unique within the package: results are kept per question.
+  const seen = new Set();
+  for (const q of questions) {
+    while (seen.has(q.id)) q.id = `q${hex(6)}`;
+    seen.add(q.id);
+  }
+  const at = Math.floor(now / 1000);
+  const existing = p.id ? await packageOf(db, p.id) : null;
+  if (existing && existing.class_id !== cls.id) return fail(403, "not-teacher");
+  if (existing) {
+    await db.prepare(`UPDATE packages SET name = ?2, questions = ?3, count = ?4, updated_at = ?5 WHERE id = ?1`)
+      .bind(existing.id, name, JSON.stringify(questions), questions.length, at).run();
+    return ok({ package: { id: existing.id, name, count: questions.length } });
+  }
+  const { results } = await db.prepare(`SELECT COUNT(*) AS n FROM packages WHERE class_id = ?1`).bind(cls.id).all();
+  if (results[0].n >= LIMITS.packages) return fail(409, "too-many-packages");
+  const id = hex(8);
+  await db.prepare(`
+    INSERT INTO packages (id, class_id, name, questions, count, created_at, updated_at)
+    VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?6)`).bind(id, cls.id, name, JSON.stringify(questions), questions.length, at).run();
+  return ok({ package: { id, name, count: questions.length } });
+}
+
+/** A package's questions, for its teacher or a student of its class. */
+async function getpackage(db, me, body) {
+  const pkg = await packageOf(db, body.packageId);
+  if (!pkg) return fail(404, "no-package");
+  const cls = await classOf(db, pkg.class_id);
+  if (!cls || !(await roleIn(db, cls, me))) return fail(403, "not-member");
+  return ok({ package: { id: pkg.id, name: pkg.name, questions: JSON.parse(pkg.questions) } });
+}
+
+/** A package goes, and with it every assignment of it and every result. */
+async function deletepackage(db, me, body) {
+  const pkg = await packageOf(db, body.packageId);
+  if (!pkg) return fail(404, "no-package");
+  const cls = await classOf(db, pkg.class_id);
+  if (!cls || cls.teacher !== me.key) return fail(403, "not-teacher");
+  await db.prepare(`DELETE FROM attempts WHERE assignment_id IN (SELECT id FROM assignments WHERE package_id = ?1)`).bind(pkg.id).run();
+  await db.prepare(`DELETE FROM assignments WHERE package_id = ?1`).bind(pkg.id).run();
+  await db.prepare(`DELETE FROM packages WHERE id = ?1`).bind(pkg.id).run();
+  return ok({ ok: true });
+}
+
+/** Set a package as homework, due by a date. */
+async function assign(db, me, body, now) {
+  const pkg = await packageOf(db, body.packageId);
+  if (!pkg) return fail(404, "no-package");
+  const cls = await classOf(db, pkg.class_id);
+  if (!cls || cls.teacher !== me.key) return fail(403, "not-teacher");
+  const due = Math.floor(Number(body.dueAt) / 1000);
+  const at = Math.floor(now / 1000);
+  if (!Number.isFinite(due) || due <= at || due > at + 366 * 86400) return fail(400, "due");
+  const title = [...clean(body.title || pkg.name)].slice(0, 60).join("") || pkg.name;
+  const { results } = await db.prepare(`SELECT COUNT(*) AS n FROM assignments WHERE class_id = ?1`).bind(cls.id).all();
+  if (results[0].n >= LIMITS.assignments) return fail(409, "too-many-assignments");
+  const id = hex(8);
+  await db.prepare(`
+    INSERT INTO assignments (id, class_id, package_id, title, due_at, created_at)
+    VALUES (?1, ?2, ?3, ?4, ?5, ?6)`).bind(id, cls.id, pkg.id, title, due, at).run();
+  return ok({ assignment: { id, title, packageId: pkg.id, dueAt: due * 1000 } });
+}
+
+async function unassign(db, me, body) {
+  const a = await assignmentOf(db, body.assignmentId);
+  if (!a) return fail(404, "no-assignment");
+  const cls = await classOf(db, a.class_id);
+  if (!cls || cls.teacher !== me.key) return fail(403, "not-teacher");
+  await db.prepare(`DELETE FROM attempts WHERE assignment_id = ?1`).bind(a.id).run();
+  await db.prepare(`DELETE FROM assignments WHERE id = ?1`).bind(a.id).run();
+  return ok({ ok: true });
+}
+
+/** Is a given answer right? Choice by the option's index; typed as the app grades it. */
+function isRight(q, given) {
+  if (q.type === "choice") return Number.isInteger(given) && given === q.answer;
+  return typeof given === "string" && grade({ accept: q.accept }, given);
+}
+
+/**
+ * A student hands in an assignment. The server grades it against the
+ * package, so a score cannot be claimed; only the first attempt counts, and
+ * one handed in after the due date is marked late.
+ */
+async function attempt(db, me, body, now) {
+  const a = await assignmentOf(db, body.assignmentId);
+  if (!a) return fail(404, "no-assignment");
+  const cls = await classOf(db, a.class_id);
+  if (!cls || (await roleIn(db, cls, me)) !== "student") return fail(403, "not-member");
+  const pkg = await packageOf(db, a.package_id);
+  if (!pkg) return fail(404, "no-package");
+  const questions = JSON.parse(pkg.questions);
+  const given = body.answers && typeof body.answers === "object" ? body.answers : {};
+  const marks = {};
+  for (const q of questions) if (q.id in given) marks[q.id] = isRight(q, given[q.id]) ? 1 : 0;
+  const score = Object.values(marks).reduce((s, m) => s + m, 0);
+  const at = Math.floor(now / 1000);
+  const r = await db.prepare(`
+    INSERT OR IGNORE INTO attempts (assignment_id, player, score, total, answers, finished_at)
+    VALUES (?1, ?2, ?3, ?4, ?5, ?6)`).bind(a.id, me.key, score, questions.length, JSON.stringify(marks), at).run();
+  const first = (r?.meta?.changes ?? 0) > 0;
+  const kept = first ? { score, total: questions.length, finished_at: at }
+    : (await db.prepare(`SELECT * FROM attempts WHERE assignment_id = ?1 AND player = ?2`).bind(a.id, me.key).all()).results[0];
+  return ok({ first, score: kept.score, total: kept.total, late: kept.finished_at > a.due_at, marks: first ? marks : undefined });
+}
+
+/** How an assignment went: every student's score, and how the class did on each question. */
+async function results(db, me, body) {
+  const a = await assignmentOf(db, body.assignmentId);
+  if (!a) return fail(404, "no-assignment");
+  const cls = await classOf(db, a.class_id);
+  if (!cls || cls.teacher !== me.key) return fail(403, "not-teacher");
+  const pkg = await packageOf(db, a.package_id);
+  const questions = pkg ? JSON.parse(pkg.questions) : [];
+  const rows = (await db.prepare(`
+    SELECT m.player, m.name AS m_name, m.username AS m_username, p.name AS p_name, p.username AS p_username,
+           t.score, t.total, t.answers, t.finished_at
+    FROM members m
+    LEFT JOIN players p ON p.key = m.player
+    LEFT JOIN attempts t ON t.assignment_id = ?2 AND t.player = m.player
+    WHERE m.class_id = ?1 AND m.status = 'active'`).bind(cls.id, a.id).all()).results;
+  const tally = new Map(questions.map((q) => [q.id, { right: 0, answered: 0 }]));
+  const students = rows.map((r) => {
+    if (r.answers) {
+      for (const [qid, mark] of Object.entries(JSON.parse(r.answers))) {
+        const t = tally.get(qid);
+        if (t) { t.answered++; t.right += mark; }
+      }
+    }
+    return {
+      player: r.player,
+      name: r.p_name || r.m_name,
+      username: r.p_name ? r.p_username : r.m_username,
+      done: r.score !== null && r.score !== undefined,
+      score: r.score ?? null,
+      total: r.total ?? questions.length,
+      finishedAt: r.finished_at ? r.finished_at * 1000 : null,
+      late: r.finished_at ? r.finished_at > a.due_at : false,
+    };
+  }).sort((x, y) => (y.done - x.done) || ((y.score ?? 0) - (x.score ?? 0)));
+  return ok({
+    assignment: { id: a.id, title: a.title, dueAt: a.due_at * 1000, packageName: pkg?.name || "" },
+    students,
+    questions: questions.map((q, i) => {
+      const t = tally.get(q.id);
+      return {
+        n: i + 1,
+        id: q.id,
+        text: q.q ? q.q.slice(0, 140) : "(picture)",
+        answered: t.answered,
+        pct: t.answered ? Math.round((t.right / t.answered) * 100) : null,
+      };
+    }),
+  });
+}
+
+/* ── pictures ─────────────────────────────────────────────────────────── */
+
+const IMAGE_TYPES = ["image/webp", "image/jpeg", "image/png"];
+
+/** A picture for a question, already shrunk by the phone. Returns its reference, "c:<id>". */
+async function image(db, me, body, now) {
+  const cls = await classOf(db, body.classId);
+  if (!cls || cls.teacher !== me.key) return fail(403, "not-teacher");
+  if (!IMAGE_TYPES.includes(body.mime)) return fail(400, "image-type");
+  const data = typeof body.data === "string" ? body.data : "";
+  if (!/^[A-Za-z0-9+/]+={0,2}$/.test(data)) return fail(400, "image");
+  if (data.length * 0.75 > LIMITS.imageBytes) return fail(413, "image-too-large");
+  const { results } = await db.prepare(`SELECT COUNT(*) AS n FROM images WHERE class_id = ?1`).bind(cls.id).all();
+  if (results[0].n >= LIMITS.images) return fail(409, "too-many-images");
+  const id = hex(12);
+  await db.prepare(`INSERT INTO images (id, class_id, mime, data, created_at) VALUES (?1, ?2, ?3, ?4, ?5)`)
+    .bind(id, cls.id, body.mime, data, Math.floor(now / 1000)).run();
+  return ok({ img: `c:${id}` });
+}
+
+/** A class picture, by id. Anyone with the link may see it, as with any picture sent in a chat. */
+export async function servedImage(db, id) {
+  if (!/^[0-9a-f]{16,40}$/.test(id)) return null;
+  const { results } = await db.prepare(`SELECT mime, data FROM images WHERE id = ?1`).bind(id).all();
+  if (!results[0]) return null;
+  const bin = atob(results[0].data);
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return { mime: results[0].mime, bytes };
+}
+
+const ACTIONS = {
+  mine, create, join, approve, remove, rename, close, view,
+  savepackage, package: getpackage, deletepackage, assign, unassign, attempt, results, image,
+};
 
 /** Run one classroom action for a verified player. */
 export async function classAction(action, { db, me, body, now = Date.now(), players = new Map() }) {
