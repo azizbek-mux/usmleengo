@@ -2,9 +2,12 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import bank from "../data/bank.js";
 import { bankToClass, classCall, imageUrl, uploadImage } from "../lib/classApi.js";
 import { search, subjects } from "../lib/match.js";
+import { ACCEPTED, FILE_REASONS, readQuestionFile } from "../lib/qfiles.js";
+import { FORMAT_EXAMPLE, parseQuestions } from "../lib/qformat.js";
 import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
 import { haptic } from "../lib/telegram.js";
 import { BackBar } from "./Chrome.jsx";
+import { Sheet } from "./Sheet.jsx";
 
 // The teacher's side of question packages and homework: writing and picking
 // questions, setting a package as homework, and seeing how it went.
@@ -29,7 +32,7 @@ export const reasonOf = (err) => REASONS[err?.code] || "Something went wrong. Tr
 
 let seq = 0;
 const newId = () => `q${Date.now().toString(36)}${(seq++).toString(36)}`;
-const blankQuestion = () => ({ id: newId(), type: "choice", q: "", options: ["", ""], answer: 0, explain: "" });
+const blankQuestion = () => ({ id: newId(), type: "choice", q: "", options: ["", ""], answer: -1, explain: "" });
 
 /** "Fri 3 Oct". */
 export const dayText = (ms) => new Date(ms).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
@@ -40,6 +43,7 @@ function problemOf(q) {
   if (q.type === "choice") {
     if (q.options.some((o) => !o.trim())) return "Fill in every option, or remove the empty ones.";
     if (q.options.length < 2) return "A question needs at least two options.";
+    if (!(q.answer >= 0 && q.answer < q.options.length)) return "Tap the circle by the right option.";
   } else if (!String(q.answer || "").trim()) {
     return "Write the answer.";
   }
@@ -48,13 +52,17 @@ function problemOf(q) {
 
 /* ── a package ───────────────────────────────────────────────────────── */
 
-export function PackageEditor({ classId, packageId, onBack, onSaved }) {
+export function PackageEditor({ classId, packageId, incomingFile = null, onBack, onSaved }) {
   const [name, setName] = useState("");
   const [questions, setQuestions] = useState(packageId ? null : []);
   const [editing, setEditing] = useState(null); // index, or "new"
   const [picking, setPicking] = useState(false);
+  const [preview, setPreview] = useState(null); // { fileName, items, stray }
+  const [reading, setReading] = useState(false);
+  const [showFormat, setShowFormat] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(null);
+  const fileRef = useRef(null);
 
   useEffect(() => {
     if (!packageId) return;
@@ -62,6 +70,42 @@ export function PackageEditor({ classId, packageId, onBack, onSaved }) {
       .then((r) => { setName(r.package.name); setQuestions(r.package.questions); })
       .catch((err) => setError(reasonOf(err)));
   }, [packageId]);
+
+  /** Read a question file on the phone and show what was found in it. */
+  async function importFile(file) {
+    setReading(true);
+    setError(null);
+    try {
+      const { questions: found, stray } = parseQuestions(await readQuestionFile(file));
+      if (!found.length) {
+        setError("No questions found in that file. Number each question and put its options under it — see “How to write the file”.");
+      } else {
+        setPreview({ fileName: file.name, stray, items: found.map((parsed) => ({ parsed, fixed: null, skip: false })) });
+        // An unnamed package takes the file's name, which the teacher can change.
+        setName((n) => n || file.name.replace(/\.[^.]+$/, "").slice(0, 60));
+      }
+    } catch (err) {
+      setError(FILE_REASONS[err?.code] || "That file couldn’t be read.");
+    } finally {
+      setReading(false);
+    }
+  }
+
+  // A file sent to the bot arrives already chosen.
+  useEffect(() => { if (incomingFile) importFile(incomingFile); }, [incomingFile]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (preview) {
+    return (
+      <ImportPreview
+        classId={classId}
+        preview={preview}
+        room={MAX_QUESTIONS - (questions || []).length}
+        onChange={setPreview}
+        onCancel={() => setPreview(null)}
+        onAdd={(added) => { setQuestions((qs) => [...(qs || []), ...added]); setPreview(null); }}
+      />
+    );
+  }
 
   if (editing !== null) {
     const isNew = editing === "new";
@@ -162,7 +206,25 @@ export function PackageEditor({ classId, packageId, onBack, onSaved }) {
         <button className="btn btn-ghost" disabled={questions.length >= MAX_QUESTIONS} onClick={() => { haptic("light"); setPicking(true); }}>
           Add from usmleengo
         </button>
+        <button
+          className="btn btn-ghost pkg-import"
+          disabled={reading || questions.length >= MAX_QUESTIONS}
+          onClick={() => { haptic("light"); fileRef.current?.click(); }}
+        >
+          {reading ? "Reading the file…" : "Import a file — Word, PDF, web page or text"}
+        </button>
       </div>
+      <input
+        ref={fileRef}
+        type="file"
+        accept={ACCEPTED}
+        hidden
+        onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ""; if (f) importFile(f); }}
+      />
+      <button className="chips-clear pkg-format" onClick={() => { haptic("light"); setShowFormat(true); }}>
+        How to write the file
+      </button>
+      {showFormat && <FormatSheet onClose={() => setShowFormat(false)} />}
 
       {packageId && (
         <DeleteButton label="Delete this package" confirm="Tap again: delete it and its homework" onConfirm={remove} />
@@ -195,13 +257,181 @@ function DeleteButton({ label, confirm, onConfirm }) {
   );
 }
 
+/* ── importing a file ────────────────────────────────────────────────── */
+
+/** A question read from a file, in the shape a package keeps. */
+function fromParsed(p) {
+  const q = { id: newId(), type: p.type, q: p.q, explain: p.explain || "" };
+  if (p.topic) q.topic = p.topic;
+  if (p.type === "choice") {
+    q.options = p.options.slice(0, MAX_OPTIONS);
+    // No answer in the file stays no answer: the teacher taps the right one.
+    q.answer = p.answer >= 0 && p.answer < q.options.length ? p.answer : -1;
+  } else {
+    q.answer = p.answer;
+    q.accept = p.accept;
+  }
+  return q;
+}
+
+/**
+ * What a file turned into, before any of it is kept. Complete questions go
+ * straight in; one the reader could not finish is flagged, and tapping it
+ * opens it to fix. Pictures are uploaded only when the questions are added.
+ */
+function ImportPreview({ classId, preview, room, onChange, onCancel, onAdd }) {
+  const [fixing, setFixing] = useState(null); // { index, question }
+  const [adding, setAdding] = useState(null);
+  const [error, setError] = useState(null);
+  const urls = useMemo(
+    () => preview.items.map((it) => (it.parsed.image ? URL.createObjectURL(it.parsed.image) : null)),
+    [preview.items],
+  );
+  useEffect(() => () => urls.forEach((u) => u && URL.revokeObjectURL(u)), [urls]);
+
+  const items = preview.items;
+  const ready = items.filter((it) => !it.skip && (it.fixed || !it.parsed.problem));
+  const broken = items.filter((it) => !it.skip && !it.fixed && it.parsed.problem);
+  const update = (index, patch) => onChange({ ...preview, items: items.map((it, i) => (i === index ? { ...it, ...patch } : it)) });
+
+  async function openFix(index) {
+    const it = items[index];
+    haptic("light");
+    setError(null);
+    let question = it.fixed || fromParsed(it.parsed);
+    if (!it.fixed && it.parsed.image) {
+      try {
+        setAdding("Adding the picture…");
+        question = { ...question, img: await uploadImage(classId, it.parsed.image) };
+      } catch (err) {
+        setError(reasonOf(err));
+      } finally {
+        setAdding(null);
+      }
+    }
+    setFixing({ index, question });
+  }
+
+  if (fixing) {
+    return (
+      <QuestionEditor
+        classId={classId}
+        initial={fixing.question}
+        number={fixing.index + 1}
+        onCancel={() => setFixing(null)}
+        onDelete={() => { update(fixing.index, { skip: true }); setFixing(null); }}
+        onSave={(q) => { update(fixing.index, { fixed: q, skip: false }); setFixing(null); }}
+      />
+    );
+  }
+
+  async function add() {
+    haptic("medium");
+    setError(null);
+    const chosen = ready.slice(0, room);
+    const pictures = chosen.filter((it) => !it.fixed && it.parsed.image).length;
+    let done = 0;
+    const out = [];
+    try {
+      for (const it of chosen) {
+        if (it.fixed) { out.push(it.fixed); continue; }
+        const q = fromParsed(it.parsed);
+        if (it.parsed.image) {
+          setAdding(`Adding pictures ${++done} of ${pictures}…`);
+          q.img = await uploadImage(classId, it.parsed.image);
+        }
+        out.push(q);
+      }
+      onAdd(out);
+    } catch (err) {
+      setError(`${reasonOf(err)} ${out.length} of ${chosen.length} were ready; try again to add the rest.`);
+      setAdding(null);
+    }
+  }
+
+  return (
+    <div className="screen">
+      <BackBar title="Questions found" onBack={onCancel} />
+      <div className="sub class-user">
+        {preview.fileName} · {items.length} question{items.length === 1 ? "" : "s"}
+        {broken.length ? ` · ${broken.length} to fix` : ""}
+        {preview.stray ? ` · ${preview.stray} line${preview.stray === 1 ? "" : "s"} before the first question skipped` : ""}
+      </div>
+      {broken.length > 0 && (
+        <div className="class-note" style={{ marginTop: 0, marginBottom: 10 }}>
+          The ones in red couldn’t be read completely. Tap one to fix it — or leave it out.
+        </div>
+      )}
+
+      <div className="pkg-list">
+        {items.map((it, i) => {
+          const q = it.fixed || it.parsed;
+          return (
+            <button key={i} className={`pkg-q${it.skip ? " skipped" : ""}`} onClick={() => openFix(i)}>
+              <span className="pkg-n">{i + 1}</span>
+              <span className="pkg-text">
+                {q.q || "Picture question"}
+                <small>
+                  {q.type === "choice"
+                    ? `${q.options.length} options${q.answer >= 0 ? ` · ${String.fromCharCode(65 + q.answer)} right` : ""}`
+                    : `Typed: ${q.answer || "—"}`}
+                  {it.skip ? " · left out" : ""}
+                </small>
+                {!it.skip && !it.fixed && it.parsed.problem && <small className="pkg-problem">{it.parsed.problem}</small>}
+                {it.fixed && <small className="pkg-fixed">Fixed ✓</small>}
+              </span>
+              {urls[i] && !it.fixed && <img className="pkg-thumb" src={urls[i]} alt="" />}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="home-cta">
+        {error && <div className="game-warn">{error}</div>}
+        {ready.length > room && <div className="cta-note">Only {room} more fit in this package.</div>}
+        <button className="btn btn-primary" disabled={!ready.length || Boolean(adding)} onClick={add}>
+          {adding || `Add ${Math.min(ready.length, room)} question${Math.min(ready.length, room) === 1 ? "" : "s"}`}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/** How to write a question file, with an example to copy. */
+function FormatSheet({ onClose }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <Sheet title="How to write the file" onClose={onClose}>
+      <div className="class-note" style={{ marginTop: 0 }}>
+        Number each question. Put its options under it, one per line — up to ten, A to J — then the
+        answer. A question without options is typed; its answer is what the student must type.
+        Pictures in Word files and web pages are taken with the question they sit under.
+      </div>
+      <pre className="format-example">{FORMAT_EXAMPLE}</pre>
+      <div className="class-note">
+        Also understood: “Q1:”, “1)”, “(a)”, “a.”, “Correct: B”, “Ans B”, a * after the right option,
+        or the answer written out in full. Explanations and “Accept:” lines are optional.
+      </div>
+      <button
+        className="btn btn-ghost"
+        style={{ marginTop: 12 }}
+        onClick={async () => {
+          try { await navigator.clipboard.writeText(FORMAT_EXAMPLE); setCopied(true); haptic("success"); } catch { /* not allowed here */ }
+        }}
+      >
+        {copied ? "Copied ✓" : "Copy the example"}
+      </button>
+    </Sheet>
+  );
+}
+
 /* ── one question ────────────────────────────────────────────────────── */
 
 export function QuestionEditor({ classId, initial, number, onSave, onCancel, onDelete }) {
   const [q, setQ] = useState(() => ({
     ...initial,
     options: initial.type === "choice" ? [...initial.options] : ["", ""],
-    answer: initial.type === "choice" ? initial.answer : 0,
+    answer: initial.type === "choice" ? initial.answer : -1,
     typed: initial.type === "typed" ? initial.answer : "",
     also: initial.type === "typed" ? (initial.accept || []).filter((a) => a.toLowerCase() !== String(initial.answer).toLowerCase()).join(", ") : "",
   }));
@@ -292,7 +522,7 @@ export function QuestionEditor({ classId, initial, number, onSave, onCancel, onD
                   <button className="qe-x" aria-label={`Remove option ${i + 1}`}
                     onClick={() => set({
                       options: q.options.filter((_, j) => j !== i),
-                      answer: q.answer === i ? 0 : q.answer > i ? q.answer - 1 : q.answer,
+                      answer: q.answer === i ? -1 : q.answer > i ? q.answer - 1 : q.answer,
                     })}>
                     ×
                   </button>

@@ -206,6 +206,55 @@ await call("teacher", "close", { classId: c2.id });
 check("closing a class leaves nothing of it behind",
   ["packages", "assignments", "images", "members"].every((t) => d1.db.prepare(`SELECT COUNT(*) n FROM ${t}`).get().n === 0));
 
+console.log("\nthe bot");
+{
+  const BOT = await import(new URL("../worker/src/bot.js", import.meta.url).href);
+  const sent = [];
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = async (url, init) => {
+    const u = String(url);
+    if (u.includes("/getFile")) return new Response(JSON.stringify({ ok: true, result: { file_path: "documents/file_1.docx" } }));
+    if (u.includes("/file/bot")) return new Response("PK-file-bytes");
+    sent.push({ method: u.split("/").pop(), body: init?.body ? JSON.parse(init.body) : null });
+    return new Response(JSON.stringify({ ok: true, result: true }));
+  };
+  const benv = { DB: d1, BOT_TOKEN: TOKEN, WEBHOOK_SECRET: "hook-secret" };
+  const update = (message, secret = "hook-secret") => BOT.handleBot(new Request("https://w/bot", {
+    method: "POST", headers: { "x-telegram-bot-api-secret-token": secret }, body: JSON.stringify({ message }),
+  }), benv, NOW);
+  const from = { id: 1001, first_name: "Dr" };
+  const chat = { id: 1001, type: "private" };
+
+  check("a call without Telegram's secret is refused", (await update({ from, chat, text: "/start" }, "wrong")).status === 403);
+  await update({ from, chat, text: "/start" });
+  check("/start is welcomed, with a button into the app",
+    sent.at(-1).method === "sendMessage" && sent.at(-1).body.reply_markup.inline_keyboard[0][0].url === BOT.APP_LINK);
+  await update({ from, chat, text: "/format" });
+  check("/format sends the example", sent.at(-1).body.text.includes("Ethosuximide"));
+  await update({ from, chat, document: { file_id: "F1", file_name: "Cardio week 3.docx", file_size: 40000 } });
+  const link = sent.at(-1).body.reply_markup.inline_keyboard[0][0].url;
+  check("a question file is answered with a link that opens the app on it", /\?startapp=f[0-9a-f]{32}$/.test(link), link);
+  const token = link.split("startapp=f")[1];
+  await update({ from, chat, document: { file_id: "F2", file_name: "notes.xlsx", file_size: 100 } });
+  check("a file it cannot read gets an explanation, not a link", /Word \(\.docx\)/.test(sent.at(-1).body.text) && !sent.at(-1).body.reply_markup);
+  const before = sent.length;
+  await update({ from, chat: { id: -5, type: "group" }, text: "/start" });
+  check("in a group chat it stays quiet", sent.length === before);
+
+  const teacherMe = { key: S.playerKey(1001) };
+  const got = await BOT.fetchUpload(benv, teacherMe, token, NOW);
+  check("the sender gets the file back, streamed from Telegram", got.response && (await got.response.text()) === "PK-file-bytes" &&
+    decodeURIComponent(got.response.headers.get("x-file-name")) === "Cardio week 3.docx");
+  check("nobody else does", (await BOT.fetchUpload(benv, { key: S.playerKey(2001) }, token, NOW)).status === 403);
+  check("and not after two days", (await BOT.fetchUpload(benv, teacherMe, token, NOW + 3 * 86400000)).status === 404);
+  const setup = (key) => BOT.setupBot(new Request("https://rating.example/bot/setup", { method: "POST", headers: { "x-setup-key": key } }), benv);
+  check("setting the bot up needs the key", (await setup("nope")).status === 403);
+  await setup("hook-secret");
+  const hook = sent.find((s) => s.method === "setWebhook");
+  check("and points Telegram's webhook here, with the secret", hook.body.url === "https://rating.example/bot" && hook.body.secret_token === "hook-secret");
+  globalThis.fetch = realFetch;
+}
+
 console.log("\nlimits");
 for (let i = 0; i < C.LIMITS.teaching; i++) await call("stranger", "create", { name: `Class ${i}` });
 check(`a teacher runs at most ${C.LIMITS.teaching} classes`, (await call("stranger", "create", { name: "One more" })).body.error === "too-many-classes");

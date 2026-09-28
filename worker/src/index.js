@@ -33,6 +33,7 @@
 import { CODE_RE } from "../../src/lib/game.js";
 import { checkDetail, checkScore, displayName, playerKey, usernameOf } from "../../src/lib/scorecard.js";
 import { savePlayer, serverToday, snapshotCache, standingsFor } from "./board.js";
+import { fetchUpload, handleBot, setupBot } from "./bot.js";
 import { classAction, servedImage } from "./classroom.js";
 import { cleanQuestions, cleanSettings } from "./game.js";
 import { verifyInitData } from "./telegram.js";
@@ -171,6 +172,8 @@ export async function handleClass(action, request, env, cache = snapshot, now = 
     const detail = body.detail ? checkDetail(body.detail, checked.score.answered) : null;
     cache.patch(await savePlayer(env.DB, me, checked.score, now, detail));
   }
+  // A question file sent to the bot, handed back to its sender as a stream.
+  if (action === "fetchfile") return fetchUpload(env, me, body.token, now);
   const players = action === "view" ? await cache.get(env.DB, now) : undefined;
   return classAction(action, { db: env.DB, me, body, now, players });
 }
@@ -190,6 +193,14 @@ export default {
         return json({ error: "server error", kind: err?.name || "Error" }, 500, headers);
       }
     }
+    // The bot: Telegram's webhook, and the one-time setup that points it here.
+    if (pathname === "/bot" && request.method === "POST") {
+      try { return await handleBot(request, env); } catch { return new Response("ok"); }
+    }
+    if (pathname === "/bot/setup" && request.method === "POST") {
+      const { status, body } = await setupBot(request, env);
+      return json(body, status, headers);
+    }
     // A class picture, as an <img> asks for it: no Telegram data can ride
     // along, so the unguessable id is the key. Never changes, so cached for good.
     const img = /^\/class\/img\/([0-9a-f]{16,40})$/.exec(pathname);
@@ -203,7 +214,11 @@ export default {
     const cls = /^\/class\/([a-z]+)$/.exec(pathname);
     if (cls && request.method === "POST") {
       try {
-        const { status, body } = await handleClass(cls[1], request, env);
+        const { status, body, response } = await handleClass(cls[1], request, env);
+        if (response) {
+          for (const [k, v] of Object.entries(headers)) response.headers.set(k, v);
+          return response;
+        }
         return json(body, status, headers);
       } catch (err) {
         return json({ error: "server error", kind: err?.name || "Error" }, 500, headers);

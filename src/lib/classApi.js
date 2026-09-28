@@ -53,6 +53,37 @@ export function classCodeFromParam(param) {
   return m ? m[1] : null;
 }
 
+/* ── files sent to the bot ────────────────────────────────────────────── */
+
+/** The bot's link to a file it was sent: f + a 32-character token. */
+export function fileTokenFromParam(param) {
+  const m = /^f([0-9a-f]{32})$/.exec(String(param || ""));
+  return m ? m[1] : null;
+}
+
+/** The file itself, streamed back from Telegram — only to the person who sent it. */
+export async function fetchBotFile(token) {
+  const signed = initData();
+  if (!signed) throw new ClassError("telegram");
+  let res;
+  try {
+    res = await fetch(`${RATING_API}/class/fetchfile`, {
+      method: "POST",
+      headers: { "content-type": "text/plain;charset=UTF-8" },
+      body: JSON.stringify({ initData: signed, token }),
+    });
+  } catch {
+    throw new ClassError("offline");
+  }
+  if (!res.ok) {
+    let body = null;
+    try { body = await res.json(); } catch { /* not JSON */ }
+    throw new ClassError(body?.error || `http-${res.status}`);
+  }
+  const name = decodeURIComponent(res.headers.get("x-file-name") || "questions.txt");
+  return new File([await res.blob()], name);
+}
+
 /* ── pictures ─────────────────────────────────────────────────────────── */
 
 /** Where a question's picture lives: the class's own ("c:<id>") or the app's. */

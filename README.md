@@ -338,6 +338,27 @@ teacher, 10 classes a student.
   (shrunk on the phone, stored in D1, served from `/class/img/<id>`) — or
   picked from usmleengo's bank. Up to 300 questions a package, 50 packages a
   class.
+- **Questions from a file:** Word (.docx), PDF, a web page or plain text,
+  picked in the app or sent to @usmleengo_bot. The file is read on the phone
+  by a plain format reader — no AI: numbered questions, lettered options
+  (A–J), then `Answer:`, and optionally `Accept:`, `Explanation:` and
+  `Topic:` lines; a `*` or `(correct)` after an option also marks it right.
+  Word's own automatic numbering and its pictures are read too; PDF
+  pictures are added by hand. Anything the reader can't finish (no right
+  answer, a missing option) is shown in red to fix or leave out — never
+  guessed — and nothing is kept until the teacher adds it. The bot's
+  `/format` sends an example. `src/lib/qformat.js` (the format) and
+  `src/lib/qfiles.js` (the files; PDF via `pdfjs-dist`, loaded only when a
+  PDF is opened). Tests: `tools/qformat.test.mjs`.
+- **The bot** (`worker/src/bot.js`): Telegram posts messages to `/bot`.
+  `/start` answers with a button into the app; a question file is noted in
+  the `uploads` table (Telegram's file id, not the file) and answered with a
+  link that opens it in the Class tab (`…?startapp=f<token>`). Only the
+  sender can fetch it, for two days; the server streams it from Telegram.
+  Setup, once: a random `WEBHOOK_SECRET` Worker secret, then
+  `POST /bot/setup` with header `x-setup-key: <that secret>` points the
+  bot's webhook here and sets its commands. Telegram signs every webhook
+  call with the same secret, and anything else is refused.
 - **Homework:** a package with a due date. Each student's first try is
   handed in and graded on the server; later tries, and the Practice list,
   are practice. The teacher sees each student's score (late ones marked)
@@ -349,7 +370,7 @@ teacher, 10 classes a student.
   only once the player has asked to join a class, and stops when they leave
   every class. The join screen says so.
 - **How:** `worker/src/classroom.js` (tables `classes`, `members`, `packages`,
-  `assignments`, `attempts` and `images`, `worker/classroom.sql`; players gained `correct` and `topics`,
+  `assignments`, `attempts`, `images` and `uploads`, `worker/classroom.sql`; players gained `correct` and `topics`,
   `worker/detail.sql`), `src/components/Classroom.jsx` and `ClassPackages.jsx`. Classes need
   Telegram: every call is signed. Tests: `tools/classroom.test.mjs`.
 - **Trying it locally:** run `wrangler dev --var BOT_TOKEN:<test token>`,

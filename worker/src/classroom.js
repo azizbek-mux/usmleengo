@@ -78,7 +78,15 @@ CREATE TABLE IF NOT EXISTS images (
   data       TEXT NOT NULL,
   created_at INTEGER NOT NULL
 );
-CREATE INDEX IF NOT EXISTS images_class ON images (class_id)`;
+CREATE INDEX IF NOT EXISTS images_class ON images (class_id);
+CREATE TABLE IF NOT EXISTS uploads (
+  token      TEXT PRIMARY KEY,
+  owner      TEXT NOT NULL,
+  file_id    TEXT NOT NULL,
+  file_name  TEXT NOT NULL,
+  size       INTEGER NOT NULL,
+  created_at INTEGER NOT NULL
+)`;
 
 export const LIMITS = {
   students: 100, // active in one class

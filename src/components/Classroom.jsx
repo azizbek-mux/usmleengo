@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { classCall, classInviteParam } from "../lib/classApi.js";
+import { classCall, classInviteParam, fetchBotFile } from "../lib/classApi.js";
 import { AssignScreen, AssignmentResults, PackageEditor, dayText } from "./ClassPackages.jsx";
 import { formatPace } from "../lib/rating.js";
 import { setClassSharing } from "../lib/ratingApi.js";
@@ -23,6 +23,9 @@ const REASONS = {
   name: "Give the class a name.",
   "not-member": "You’re not in this class any more.",
   "not-teacher": "Only the teacher can do that.",
+  "not-yours": "That file was sent to the bot by someone else.",
+  "no-file": "That link has expired. Send the file to @usmleengo_bot again.",
+  "telegram-file": "Telegram didn’t hand the file over. Send it to the bot again.",
 };
 const reasonOf = (err) => REASONS[err?.code] || "Something went wrong. Try again.";
 
@@ -70,8 +73,9 @@ function TwoTap({ label, confirm, onConfirm }) {
 // class returns to that class, not to the list of classes.
 let lastRoute = { name: "home" };
 
-export default function Classroom({ state, invite, onFocus, onStartClass }) {
-  const [route, setRouteState] = useState(() => (invite ? { name: "home" } : lastRoute));
+export default function Classroom({ state, invite, botFile, onFocus, onStartClass }) {
+  const [route, setRouteState] = useState(() =>
+    botFile ? { name: "fromBot", token: botFile } : invite ? { name: "home" } : lastRoute);
   const setRoute = (r) => { lastRoute = r; setRouteState(r); };
   // Everything but the list of classes is a screen of its own, and wants the
   // whole of it.
@@ -111,7 +115,20 @@ export default function Classroom({ state, invite, onFocus, onStartClass }) {
     );
   }
   if (route.name === "package") {
-    return <PackageEditor classId={route.id} packageId={route.packageId} onBack={toClass} onSaved={toClass} />;
+    return (
+      <PackageEditor classId={route.id} packageId={route.packageId} incomingFile={route.file || null} onBack={toClass} onSaved={toClass} />
+    );
+  }
+  if (route.name === "fromBot") {
+    return (
+      <FromBot
+        state={state}
+        token={route.token}
+        onBack={home}
+        onCreate={() => setRoute({ name: "create" })}
+        onPick={(classId, file) => setRoute({ name: "package", id: classId, file })}
+      />
+    );
   }
   if (route.name === "assign") return <AssignScreen packages={route.packages} onBack={toClass} onDone={toClass} />;
   if (route.name === "results") return <AssignmentResults assignmentId={route.assignmentId} onBack={toClass} />;
@@ -131,6 +148,60 @@ export default function Classroom({ state, invite, onFocus, onStartClass }) {
       onOpen={(id) => setRoute({ name: "class", id })}
       onCreate={() => setRoute({ name: "create" })}
     />
+  );
+}
+
+/* ── a question file sent to the bot ─────────────────────────────────── */
+
+/**
+ * The bot's link lands here: the file is fetched from Telegram, and the
+ * teacher picks which of their classes it is for. It then opens as a new
+ * package, with the questions in the file shown before anything is kept.
+ */
+function FromBot({ state, token, onBack, onCreate, onPick }) {
+  const [file, setFile] = useState(null);
+  const [error, setError] = useState(null);
+  const { data } = useServer(() => classCall("mine", {}, state), []);
+  useEffect(() => {
+    fetchBotFile(token).then(setFile).catch((err) => setError(reasonOf(err)));
+  }, [token]);
+
+  return (
+    <div className="screen">
+      <BackBar title="Add questions" onBack={onBack} />
+      {error ? (
+        <div className="game-warn">{error}</div>
+      ) : !file ? (
+        <div className="empty">Fetching your file…</div>
+      ) : (
+        <>
+          <div className="class-note" style={{ marginTop: 0 }}>
+            <b>{file.name}</b> — which class is it for? It becomes a new package there; you’ll see the
+            questions in it before anything is kept.
+          </div>
+          {data?.teaching.length ? (
+            <div className="class-list" style={{ marginTop: 12 }}>
+              {data.teaching.map((c) => (
+                <button key={c.id} className="class-card" onClick={() => { haptic("medium"); onPick(c.id, file); }}>
+                  <span className="class-card-main">
+                    <span className="class-card-t">{c.name}</span>
+                    <span className="class-card-n">{c.students} student{c.students === 1 ? "" : "s"}</span>
+                  </span>
+                  <span className="class-go">›</span>
+                </button>
+              ))}
+            </div>
+          ) : data ? (
+            <>
+              <div className="class-note">You don’t teach a class yet. Create one, then send the file to the bot again.</div>
+              <button className="btn btn-primary class-create" onClick={onCreate}>Create a classroom</button>
+            </>
+          ) : (
+            <div className="empty">Loading your classes…</div>
+          )}
+        </>
+      )}
+    </div>
   );
 }
 

@@ -1808,3 +1808,21 @@ input { font: inherit; }
 .res-q { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .res-text { font-size: 12.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .result-class { width: 100%; text-align: center; margin: 4px 0 18px; }
+
+/* Importing a question file */
+.pkg-import { grid-column: 1 / -1; }
+.pkg-format { display: block; margin: 10px 0 0; }
+.pkg-q.skipped { opacity: 0.5; }
+.pkg-problem { color: var(--wrong-text) !important; }
+.pkg-fixed { color: var(--accent) !important; }
+.pkg-thumb { flex-shrink: 0; width: 48px; height: 48px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); }
+.format-example {
+  background: var(--card-hi);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  margin: 12px 0 0;
+}
