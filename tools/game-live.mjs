@@ -89,7 +89,9 @@ for (let i = 0; i < 3; i++) {
   if (i === 0) {
     B.send({ type: "answer", index: i, ...answerFor(s, true) }); // slower and right
     C.send({ type: "answer", index: i, ...answerFor(s, false) }); // wrong
-    const r = await A.until((x) => x.phase === "reveal" && x.index === 0, 3000);
+    // Under the 10 s timer, so a reveal here can only come from everyone answering;
+    // the slack is for a room just woken after a deploy.
+    const r = await A.until((x) => x.phase === "reveal" && x.index === 0, 8000);
     check("everyone answered: revealed at once", Boolean(r));
     const pts = Object.fromEntries(r.players.map((p) => [p.name, p.gained]));
     check("fast right beats slow right beats wrong", pts.Aziz > pts.Laylo && pts.Laylo > 0 && pts.Bek === 0, JSON.stringify(pts));

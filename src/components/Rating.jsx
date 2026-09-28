@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import {
-  BOARDS, FREE_SECONDS, POINTS_MAX, WEIGHTS, dayIndex, formatPace, points, rate,
+  BOARDS, FREE_SECONDS, POINTS_MAX, WEIGHTS, dayIndex, formatPace, medalFor, points, rate,
 } from "../lib/rating.js";
 import { displayName, usernameOf } from "../lib/scorecard.js";
 import { ratingInput, today } from "../lib/storage.js";
@@ -74,6 +74,16 @@ export function useLiveBoard(onRefresh) {
 const FILTERS = BOARDS.filter((b) => b.id !== "overall");
 const FILTERED_BY = { streak: "day streak", xp: "XP", speed: "time" };
 
+/**
+ * A place in the Rank column: the medal for the top three on the rating,
+ * the number for everyone else — and for everyone on a filter, where a first
+ * place has not won anything.
+ */
+export function PlaceMark({ place, medal = true }) {
+  const m = medal ? medalFor(place) : null;
+  return m ? <span className="board-medal" role="img" aria-label={`Place ${place}`}>{m}</span> : place;
+}
+
 function Row({ row, board, me }) {
   // The server never sends the viewer's own name back; it is filled in here.
   const name = row.isMe ? me.name : row.name;
@@ -83,7 +93,7 @@ function Row({ row, board, me }) {
   const medal = board === "overall" && row.place <= 3 ? ` p${row.place}` : "";
   return (
     <div className={`board-row${row.isMe ? " me" : ""}${medal}`}>
-      <span className="board-place">{row.place}</span>
+      <span className="board-place"><PlaceMark place={row.place} medal={Boolean(medal)} /></span>
       <span className="board-who">
         <span className="board-name">
           {name}
@@ -127,6 +137,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
   } else {
     placeLine = (
       <span className="rating-rank">
+        {medalFor(places.overall.place) && `${medalFor(places.overall.place)} `}
         {ranked ? "Your rank" : "You would be"} <b>{rankText(places.overall)}</b>
       </span>
     );

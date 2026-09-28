@@ -20,7 +20,11 @@ import {
   GAME_TYPES, MAX_PLAYERS, MIN_PLAYERS, QUESTION_COUNTS, SECONDS, gamePoints, placesOf,
 } from "../../src/lib/game.js";
 
-/** "Get ready" before each question: long enough to look up from the scoreboard. */
+/**
+ * "Get ready" before the first question only, so everyone starts together.
+ * After that the scoreboard is the pause, and the next question opens as
+ * soon as it ends.
+ */
 export const GET_READY_MS = 3000;
 /** The right answer and the scoreboard, between questions. */
 export const REVEAL_MS = 7000;
@@ -206,7 +210,7 @@ export function start(game, pid, now) {
 function openQuestion(game, index, now) {
   game.phase = "question";
   game.index = index;
-  game.opensAt = now + GET_READY_MS;
+  game.opensAt = now + (index === 0 ? GET_READY_MS : 0);
   game.endsAt = game.opensAt + game.settings.seconds * 1000;
   game.answers = {};
   game.touchedAt = now;

@@ -10,6 +10,7 @@ import { inviteMessage } from "../lib/shareText.js";
 import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
 import { APP_LINK, haptic, inTelegram, share } from "../lib/telegram.js";
 import { BackBar, ScreenHead } from "./Chrome.jsx";
+import { PlaceMark } from "./Rating.jsx";
 
 // The multiplayer game: a live round among friends. See lib/game.js for the
 // rules and worker/src/game.js for the server that runs each game. Nothing
@@ -450,7 +451,10 @@ function Question({ game, serverNow, send }) {
 
   const q = game.question;
   const now = serverNow();
-  const waiting = now < game.opensAt;
+  // Only the first question has a get-ready. The rest open the moment the
+  // scoreboard ends — gated on the index, not the clock, so a phone whose
+  // clock runs a hair behind the server's never flashes a countdown.
+  const waiting = game.index === 0 && now < game.opensAt;
   const limit = game.settings.seconds * 1000;
   const left = Math.max(0, game.endsAt - now);
   const timeUp = !waiting && left <= 0;
@@ -600,7 +604,7 @@ function Standings({ game, top = 5, showGain = false }) {
   const below = mine && !rows.includes(mine) ? mine : null;
   const Row = ({ p }) => (
     <div className={`board-row${p.pid === game.you ? " me" : ""}${p.place <= 3 ? ` p${p.place}` : ""}`}>
-      <span className="board-place">{p.place}</span>
+      <span className="board-place"><PlaceMark place={p.place} /></span>
       <PlayerName p={p} you={game.you} host={null} />
       <span className="game-score">
         {showGain && p.gained > 0 && <span className="game-gain">+{p.gained.toLocaleString()}</span>}

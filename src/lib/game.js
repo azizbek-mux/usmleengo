@@ -13,7 +13,7 @@ export const MIN_PLAYERS = 2;
 
 /** What the creator can choose from. */
 export const QUESTION_COUNTS = [5, 10, 15, 20, 30];
-export const SECONDS = [10, 15, 20, 30];
+export const SECONDS = [5, 10, 15, 20, 25, 30];
 export const GAME_TYPES = [
   { id: "binary", name: "Tap" },
   { id: "gap", name: "Typed" },

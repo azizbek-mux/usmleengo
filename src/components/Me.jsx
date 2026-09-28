@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { POINTS_MAX, WEIGHTS, XP, formatPace, points } from "../lib/rating.js";
+import { POINTS_MAX, WEIGHTS, XP, formatPace, medalFor, points } from "../lib/rating.js";
 import { haptic, inTelegram } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
 import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
@@ -74,7 +74,9 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
           {points(r.overall)}<small>/{POINTS_MAX}</small>
         </span>
         <span className="perf-points-place">
-          {placeOf(places?.overall) ? `Your rank ${placeOf(places.overall)} ›` : "See the rating ›"}
+          {placeOf(places?.overall)
+            ? `${medalFor(places.overall.place) ? `${medalFor(places.overall.place)} ` : ""}Your rank ${placeOf(places.overall)} ›`
+            : "See the rating ›"}
         </span>
       </button>
 

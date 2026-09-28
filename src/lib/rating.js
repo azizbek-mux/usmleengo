@@ -274,6 +274,11 @@ export function standings(board, players, me) {
   };
 }
 
+/** The medal for a place on the rating: gold, silver, bronze, or none. */
+export function medalFor(place) {
+  return { 1: "🥇", 2: "🥈", 3: "🥉" }[place] || null;
+}
+
 /** "4.8s", "12s", "1m 04s". */
 export function formatPace(ms) {
   if (!Number.isFinite(ms) || ms <= 0) return "—";

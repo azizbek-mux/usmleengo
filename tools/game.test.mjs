@@ -75,6 +75,8 @@ check("an unknown kind of question is refused", G.cleanQuestion({ ...forGame[0],
 const okSettings = G.cleanSettings({ seconds: 15, qtype: "mixed", count: 10, tags: ["cardio", "histo", "cardio"] });
 check("settings from the lists pass", okSettings?.seconds === 15 && okSettings.count === 10);
 check("with the topics, once each", okSettings?.tags.join() === "cardio,histo");
+check("5 and 25 seconds are choices too", G.cleanSettings({ seconds: 5, qtype: "binary", count: 10 })?.seconds === 5 &&
+  G.cleanSettings({ seconds: 25, qtype: "binary", count: 10 })?.seconds === 25);
 check("anything else does not", G.cleanSettings({ seconds: 7, qtype: "binary", count: 10 }) === null &&
   G.cleanSettings({ seconds: 15, qtype: "all", count: 10 }) === null &&
   G.cleanSettings({ seconds: 15, qtype: "binary", count: 12 }) === null);
@@ -129,7 +131,9 @@ check("and how the room split, as Kahoot shows it", v.solution.tally.options.joi
 check("counts only, never who chose what", !JSON.stringify(v.solution.tally).includes("p1"));
 check("the scoreboard leads with the leader", v.players[0].pid === host && v.players[0].score === 1800 && v.players[0].place === 1);
 
-check("the clock moves on after the scoreboard", G.tick(g, g.revealEndsAt) && g.phase === "question" && g.index === 1);
+const scoreboardEnds = g.revealEndsAt;
+check("the clock moves on after the scoreboard", G.tick(g, scoreboardEnds) && g.phase === "question" && g.index === 1);
+check("and the next question opens at once — only the first has a get-ready", g.opensAt === scoreboardEnds);
 const deadline = g.endsAt;
 check("nothing happens before time is up", !G.tick(g, deadline) && g.phase === "question");
 const late = G.answer(g, host, { index: 1, choice: 1 }, deadline + 500);

@@ -262,12 +262,13 @@ hand, always deploys.
 
 A live quiz among friends, the way Kahoot plays: the **Play** tab →
 **Create a game** → choose the question type (tap, typed or mixed),
-5–30 questions, 10–30 seconds each and the topics → **Share invite**. The
+5–30 questions, 5–30 seconds each and the topics → **Share invite**. The
 invite is a Telegram link (`…/study?startapp=g482193`) that opens the app
 straight into the game; the six-digit code works too. Up to 50 players; the
 creator plays as well and presses **Start**.
 
-Everyone gets the same question at the same moment. When all have answered,
+Everyone gets the same question at the same moment — a 3-2-1 before the
+first, then each next question opens as soon as the scoreboard ends. When all have answered,
 or time is up, each phone shows the right answer, how many chose what, its
 own place and the top five; after the last question, a podium. **New round**
 plays again with the same people and fresh questions.
