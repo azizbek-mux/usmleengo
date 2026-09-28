@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import {
-  BOARDS, FREE_SECONDS, POINTS_MAX, WEIGHTS, dayIndex, formatPace, medalFor, points, rate,
+  BOARDS, FREE_SECONDS, WEIGHTS, dayIndex, formatPace, medalFor, points, rate,
 } from "../lib/rating.js";
 import { displayName, usernameOf } from "../lib/scorecard.js";
 import { ratingInput, today } from "../lib/storage.js";
@@ -260,7 +260,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
           only show who leads each part of the points — they are not ranks.
         </p>
         <p>
-          Points, out of {POINTS_MAX}, mix three things: <b>day streak</b> counts most
+          Points mix three things: <b>day streak</b> counts most
           ({Math.round(WEIGHTS.streak * 100)}%), then <b>XP</b> ({Math.round(WEIGHTS.xp * 100)}%),
           then <b>average time</b> ({Math.round(WEIGHTS.speed * 100)}%).
         </p>

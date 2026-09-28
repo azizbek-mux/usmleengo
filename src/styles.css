@@ -1235,7 +1235,6 @@ input { font: inherit; }
   color: var(--accent);
   font-variant-numeric: tabular-nums;
 }
-.perf-points-v small { font-size: 16px; letter-spacing: 0; color: var(--muted); margin-left: 2px; }
 .perf-points-place { font-size: 14px; font-weight: 700; margin-top: 2px; }
 
 .perf-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 6px; }
