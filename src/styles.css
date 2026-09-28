@@ -1595,6 +1595,8 @@ input { font: inherit; }
 .coffee-card { display: flex; flex-direction: column; gap: 4px; margin: 12px 0; padding: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
 .coffee-num { font-size: 22px; font-weight: 800; letter-spacing: 1px; font-variant-numeric: tabular-nums; user-select: all; -webkit-user-select: all; }
 .coffee-holder { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.coffee-thanks { display: flex; flex-direction: column; gap: 8px; margin: 6px 0 16px; font-size: 17px; line-height: 1.45; }
+.coffee-sign { font-size: 14px; color: var(--muted); }
 .set-row .theme-opt { padding: 7px 0; }
 .set-btn {
   flex-shrink: 0;

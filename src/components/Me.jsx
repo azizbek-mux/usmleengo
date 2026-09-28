@@ -25,12 +25,35 @@ function reportProblem() {
  * "Buy me a coffee": the author's card, to send any amount to from Click,
  * Payme or a bank app. While the number is empty the row stays hidden.
  */
-const COFFEE_CARD = { number: "", holder: "" };
+const COFFEE_CARD = { number: "5614 6819 1007 3679", holder: "Azizbek Muxtorov" };
 const cardDigits = COFFEE_CARD.number.replace(/\D/g, "");
 
-/** The card, a copy button, and a way to say something with it. */
+/**
+ * The card and a copy button; then, once they say they've sent it, the
+ * author's thanks and a way to write to him. The app can't see a transfer,
+ * so "I've sent it" is the supporter's word.
+ */
 function CoffeeSheet({ onClose }) {
   const [copied, setCopied] = useState(false);
+  const [sent, setSent] = useState(false);
+
+  if (sent) {
+    return (
+      <Sheet title="Thank you ☕" onClose={onClose}>
+        <div className="coffee-thanks">
+          Thank you for your donation! I’m happy you enjoy my product.
+          <span className="coffee-sign">— Azizbek</span>
+        </div>
+        <button
+          className="btn btn-ghost"
+          onClick={() => { haptic("light"); openTelegram(`${DEVELOPER}?text=${encodeURIComponent("☕ Sent you a coffee for usmleengo! ")}`); }}
+        >
+          Send me a message
+        </button>
+        <button className="btn btn-primary" style={{ marginTop: 8 }} onClick={onClose}>Close</button>
+      </Sheet>
+    );
+  }
   return (
     <Sheet title="Buy me a coffee ☕" onClose={onClose}>
       <div className="class-note" style={{ marginTop: 0 }}>
@@ -49,12 +72,8 @@ function CoffeeSheet({ onClose }) {
       >
         {copied ? "Copied ✓" : "Copy card number"}
       </button>
-      <button
-        className="btn btn-ghost"
-        style={{ marginTop: 8 }}
-        onClick={() => { haptic("light"); openTelegram(`${DEVELOPER}?text=${encodeURIComponent("☕ Sent you a coffee for usmleengo! ")}`); }}
-      >
-        Send a message with it
+      <button className="btn btn-ghost" style={{ marginTop: 8 }} onClick={() => { haptic("success"); setSent(true); }}>
+        I’ve sent it
       </button>
     </Sheet>
   );
