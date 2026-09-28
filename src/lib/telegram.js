@@ -67,12 +67,22 @@ export function userName() {
 }
 
 /**
+ * Local development only: launch data signed with the local server's test
+ * token, put in localStorage by hand, so classrooms can be tried in a browser
+ * against `wrangler dev`. A production build leaves this out entirely.
+ */
+function devInitData() {
+  if (!import.meta.env?.DEV) return null;
+  try { return localStorage.getItem("usmle_dev_initdata"); } catch { return null; }
+}
+
+/**
  * Telegram's signed launch data, or null outside Telegram. Sent with every
  * score so the rating server can check who it came from; see
  * worker/src/telegram.js. It is never stored or shown.
  */
 export function initData() {
-  if (!inTelegram) return null;
+  if (!inTelegram) return devInitData();
   return typeof tg?.initData === "string" && tg.initData ? tg.initData : null;
 }
 
@@ -82,7 +92,15 @@ export function initData() {
  * same name everyone else sees there.
  */
 export function telegramUser() {
-  if (!inTelegram) return null;
+  if (!inTelegram) {
+    const dev = devInitData();
+    try {
+      const u = dev ? JSON.parse(new URLSearchParams(dev).get("user")) : null;
+      return u ? { first_name: u.first_name, last_name: u.last_name, username: u.username } : null;
+    } catch {
+      return null;
+    }
+  }
   const u = tg?.initDataUnsafe?.user;
   return u ? { first_name: u.first_name, last_name: u.last_name, username: u.username } : null;
 }

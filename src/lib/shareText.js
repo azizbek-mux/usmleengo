@@ -113,3 +113,14 @@ export function inviteMessage({ code, about, link }) {
     link,
   ].join("\n");
 }
+
+/** The invitation to a classroom: the code for typing, the link for tapping. */
+export function classInviteMessage({ name, code, link }) {
+  return [
+    `📚 Join my class “${name}” on ${boldText("usmleengo")}`,
+    `🔢 Class code: ${code}`,
+    "",
+    "Tap to join 👇",
+    link,
+  ].join("\n");
+}

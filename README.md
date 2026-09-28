@@ -300,8 +300,8 @@ plays again with the same people and fresh questions.
 
 ## How the app is laid out
 
-Five tabs along the bottom, each one tap away: **Quiz**, **English**,
-**Play** (multiplayer), **Rating** and **Me** (points, streak, XP, average
+Six tabs along the bottom, each one tap away: **Quiz**, **English**,
+**Play** (multiplayer), **Class**, **Rating** and **Me** (points, streak, XP, average
 time, and the settings). Every tab opens the same way — a big title, at most
 one small thing beside it (the day streak), and the main action pinned just
 above the tab bar. Screens opened from inside a tab use Telegram's own back
@@ -318,6 +318,32 @@ names (histo, radio, endo, gen, onco…, see `src/lib/tags.js`); how many
 questions and which kind sit as two small buttons beside **Start**. A new
 player lands straight on it, with mixed question types, and is asked
 nothing first.
+
+## Classrooms
+
+The **Class** tab. A teacher creates a classroom and shares its six-digit
+code or invite link (`…/study?startapp=c123456`); students ask to join and
+the teacher lets each one in. Up to 100 students a class, 10 classes a
+teacher, 10 classes a student.
+
+- **The teacher sees every student:** points and global rank, day streak,
+  XP, accuracy, weak topics and average time — **all time** and **since
+  joining**, the second measured from a snapshot of the student's numbers
+  taken when they were let in. Never bookmarks.
+- **Students see the class ranking:** the top ten by points, and their own
+  place.
+- **What a student shares:** accuracy and weak topics are not part of the
+  rating, so the app sends them (right answers, right/wrong per category)
+  only once the player has asked to join a class, and stops when they leave
+  every class. The join screen says so.
+- **How:** `worker/src/classroom.js` (tables `classes` and `members`,
+  `worker/classroom.sql`; players gained `correct` and `topics`,
+  `worker/detail.sql`), `src/components/Classroom.jsx`. Classes need
+  Telegram: every call is signed. Tests: `tools/classroom.test.mjs`.
+- **Trying it locally:** run `wrangler dev --var BOT_TOKEN:<test token>`,
+  sign launch data with that token (`signInitData` in
+  `worker/src/telegram.js`) and put it in the browser's localStorage as
+  `usmle_dev_initdata` — the development build treats it as Telegram's.
 
 ## Where the questions came from
 

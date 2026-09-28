@@ -49,7 +49,9 @@ CREATE TABLE IF NOT EXISTS players (
   base_bms   INTEGER NOT NULL DEFAULT 0,
   base_bn    INTEGER NOT NULL DEFAULT 0,
   base_gms   INTEGER NOT NULL DEFAULT 0,
-  base_gn    INTEGER NOT NULL DEFAULT 0
+  base_gn    INTEGER NOT NULL DEFAULT 0,
+  correct    INTEGER NOT NULL DEFAULT 0,
+  topics     TEXT    NOT NULL DEFAULT ''
 )`;
 
 /** Today's day index on the server — the only clock the ranking trusts. */
@@ -63,8 +65,11 @@ export const serverToday = (now = Date.now()) => dayIndex(new Date(now).toISOStr
  *
  * Every SET below reads the row as it was before this save, which is what
  * lets a new week's base be the old week's final numbers.
+ *
+ * `detail` — { correct, topics } from checkDetail — comes only from players
+ * in a classroom. Without it the stored values are left as they were.
  */
-export async function savePlayer(db, who, score, now = Date.now()) {
+export async function savePlayer(db, who, score, now = Date.now(), detail = null) {
   const t = score.timing;
   const today = serverToday(now);
   const week = weekOf(today);
@@ -73,8 +78,10 @@ export async function savePlayer(db, who, score, now = Date.now()) {
     ? 1 << weekdayOf(score.lastDay) : 0;
   const { results } = await db.prepare(`
     INSERT INTO players (key, name, username, streak, last_day, xp, answered,
-                         binary_ms, binary_n, gap_ms, gap_n, updated_at, week, week_days)
-    VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14)
+                         binary_ms, binary_n, gap_ms, gap_n, updated_at, week, week_days,
+                         correct, topics)
+    VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14,
+            COALESCE(?15, 0), COALESCE(?16, ''))
     ON CONFLICT(key) DO UPDATE SET
       name = excluded.name, username = excluded.username,
       streak = excluded.streak, last_day = excluded.last_day,
@@ -89,7 +96,9 @@ export async function savePlayer(db, who, score, now = Date.now()) {
       base_gn  = CASE WHEN players.week = excluded.week THEN players.base_gn  ELSE players.gap_n END,
       week_days = CASE WHEN players.week = excluded.week
                        THEN players.week_days | excluded.week_days ELSE excluded.week_days END,
-      week = excluded.week
+      week = excluded.week,
+      correct = COALESCE(?15, players.correct),
+      topics = COALESCE(?16, players.topics)
     WHERE players.name IS NOT excluded.name OR players.username IS NOT excluded.username
        OR players.streak != excluded.streak OR players.last_day != excluded.last_day
        OR players.xp != excluded.xp OR players.answered != excluded.answered
@@ -97,9 +106,12 @@ export async function savePlayer(db, who, score, now = Date.now()) {
        OR players.gap_ms != excluded.gap_ms OR players.gap_n != excluded.gap_n
        OR players.week != excluded.week
        OR (players.week_days | excluded.week_days) != players.week_days
+       OR (?15 IS NOT NULL AND players.correct != ?15)
+       OR (?16 IS NOT NULL AND players.topics != ?16)
     RETURNING *
   `).bind(who.key, who.name, who.username, score.streak, score.lastDay, score.xp, score.answered,
-    t.binaryMs, t.binaryN, t.gapMs, t.gapN, Math.floor(now / 1000), week, dayBit).all();
+    t.binaryMs, t.binaryN, t.gapMs, t.gapN, Math.floor(now / 1000), week, dayBit,
+    detail ? detail.correct : null, detail ? detail.topics : null).all();
   return results?.[0] || null;
 }
 
@@ -111,6 +123,8 @@ export const fromRow = (r) => ({
     streak: r.streak, lastDay: r.last_day, xp: r.xp, answered: r.answered,
     timing: { binaryMs: r.binary_ms, binaryN: r.binary_n, gapMs: r.gap_ms, gapN: r.gap_n },
   },
+  correct: r.correct ?? 0,
+  topics: r.topics || "",
   week: r.week ?? 0,
   weekDays: r.week_days ?? 0,
   base: {

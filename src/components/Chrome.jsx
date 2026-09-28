@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { hasBackButton, haptic, showBack } from "../lib/telegram.js";
-import { Book, Checklist, Players, Trophy, User } from "./Icons.jsx";
+import { Book, Checklist, Players, School, Trophy, User } from "./Icons.jsx";
 
 // The frame every screen shares.
 //
-//   - The five sections are tabs along the bottom, always one tap away.
+//   - The six sections are tabs along the bottom, always one tap away.
 //   - A section's own screen opens with a big title on the left and at most
 //     one small thing on the right (ScreenHead), and its main action is
 //     pinned just above the tab bar, reachable without scrolling.
@@ -18,6 +18,7 @@ export const TABS = [
   { id: "quiz", label: "Quiz", Icon: Checklist },
   { id: "english", label: "English", Icon: Book },
   { id: "play", label: "Play", Icon: Players },
+  { id: "class", label: "Class", Icon: School },
   { id: "rating", label: "Rating", Icon: Trophy },
   { id: "me", label: "Me", Icon: User },
 ];

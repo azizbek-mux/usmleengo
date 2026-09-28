@@ -7,6 +7,8 @@ import English from "./components/English.jsx";
 import Rating from "./components/Rating.jsx";
 import Me from "./components/Me.jsx";
 import Game from "./components/Game.jsx";
+import Classroom from "./components/Classroom.jsx";
+import { classCodeFromParam } from "./lib/classApi.js";
 import { TabBar } from "./components/Chrome.jsx";
 import { codeFromParam } from "./lib/game.js";
 import { quietSync, syncRating } from "./lib/ratingApi.js";
@@ -23,10 +25,12 @@ export default function App() {
   // A multiplayer invite link opens the app on that game. Used once: after
   // it, the Play tab opens on its own menu like any other time.
   const [invite, setInvite] = useState(() => codeFromParam(startParam()));
+  // A classroom invite link opens the Class tab with its code filled in.
+  const [classInvite, setClassInvite] = useState(() => classCodeFromParam(startParam()));
   // The section open along the bottom. Someone who was last in Medical
   // English reopens there; everyone else starts on the quizzes.
   const [tab, setTab] = useState(() =>
-    invite ? "play" : loadLocal().section === "english" ? "english" : "quiz");
+    invite ? "play" : classInvite ? "class" : loadLocal().section === "english" ? "english" : "quiz");
   // A quiz round and its result take the whole screen.
   const [flow, setFlow] = useState(null); // null | "quiz" | "result"
   // A section in the middle of something that wants the whole screen — a
@@ -170,6 +174,7 @@ export default function App() {
     if (next === "quiz" || next === "english") persist(setSection(stateRef.current, next));
     // An invite is for one visit to the Play tab, not every one after it.
     if (tab === "play") setInvite(null);
+    if (tab === "class") setClassInvite(null);
     setTab(next);
   }
 
@@ -267,6 +272,8 @@ export default function App() {
     screen = <English streak={state.streak} onStudied={markStudied} onFocus={setFocused} />;
   } else if (tab === "play") {
     screen = <Game invite={invite} onFocus={setFocused} />;
+  } else if (tab === "class") {
+    screen = <Classroom state={state} invite={classInvite} onFocus={setFocused} />;
   } else if (tab === "rating") {
     screen = (
       <Rating state={state} standings={standings} loading={standingsLoading} onRefresh={refreshStandings} />

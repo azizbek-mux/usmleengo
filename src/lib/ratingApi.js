@@ -10,8 +10,38 @@
 //   - syncRating(): the rating screens, once a minute while open, to show
 //     the latest board.
 
+import bank from "../data/bank.js";
+import { subjects } from "./match.js";
+import { topicAccuracy } from "./review.js";
 import { ratingInput } from "./storage.js";
+import { PICTURE_TAGS } from "./tags.js";
 import { initData } from "./telegram.js";
+
+/* ── for a student in a class ──────────────────────────────────────────
+   Accuracy and weak topics are not part of the rating. They go to the
+   server only once the player has asked to join a class, so that their
+   teacher can see them; bookmarks never do. */
+
+const CLASS_SHARE_KEY = "usmle_class_share";
+
+export function classSharing() {
+  try { return localStorage.getItem(CLASS_SHARE_KEY) === "1"; } catch { return false; }
+}
+
+export function setClassSharing(on) {
+  try {
+    if (on) localStorage.setItem(CLASS_SHARE_KEY, "1");
+    else localStorage.removeItem(CLASS_SHARE_KEY);
+  } catch { /* a preference */ }
+}
+
+/** Right answers, and right/wrong per category, in the shape checkDetail takes. */
+export function classDetail(state) {
+  const tags = [...PICTURE_TAGS, ...subjects().slice(0, 12).map((s) => s.tag)];
+  const topics = {};
+  for (const r of topicAccuracy(bank, state.seen, tags)) if (r.answered) topics[r.tag] = [r.right, r.wrong];
+  return { correct: state.correct || 0, topics };
+}
 
 /**
  * Where the rating server lives. Set once, when it is first deployed. A local
@@ -37,7 +67,11 @@ export async function syncRating(state) {
       // text/plain keeps this a "simple" request: no CORS preflight, so one
       // round trip instead of two on a phone connection.
       headers: { "content-type": "text/plain;charset=UTF-8" },
-      body: JSON.stringify({ initData: initData() || undefined, score: ratingInput(state) }),
+      body: JSON.stringify({
+        initData: initData() || undefined,
+        score: ratingInput(state),
+        ...(classSharing() ? { detail: classDetail(state) } : {}),
+      }),
     });
     if (!res.ok) return null;
     const reply = await res.json();
@@ -48,7 +82,7 @@ export async function syncRating(state) {
   }
 }
 
-const signature = (state) => JSON.stringify(ratingInput(state));
+const signature = (state) => JSON.stringify([ratingInput(state), classSharing() ? classDetail(state) : null]);
 
 function remember(state) {
   try { localStorage.setItem(SENT_KEY, JSON.stringify({ sig: signature(state), at: Date.now() })); } catch { /* cosmetic */ }

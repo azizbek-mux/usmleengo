@@ -126,3 +126,31 @@ export function checkScore(raw, today) {
     },
   };
 }
+
+/* ── what a student in a class also shares ─────────────────────────────────
+   A player in a classroom sends two more numbers, so their teacher can see
+   accuracy and weak topics: how many answers were right, and right/wrong
+   per category. Only while they belong to a class; never bookmarks. */
+
+const TAG = /^[A-Za-z0-9_-]{1,30}$/;
+export const TOPICS_MAX = 40;
+
+/**
+ * The shared detail, checked against the score it came with; or null if
+ * anything in it is impossible. Returns { correct, topics } with topics as
+ * the JSON text the server stores.
+ */
+export function checkDetail(raw, answered) {
+  if (!raw || typeof raw !== "object") return null;
+  if (!count(raw.correct) || raw.correct > answered) return null;
+  const topics = {};
+  const entries = raw.topics && typeof raw.topics === "object" ? Object.entries(raw.topics) : [];
+  if (entries.length > TOPICS_MAX) return null;
+  for (const [tag, v] of entries) {
+    // Every answer is counted in each category of its question, so no one
+    // category can hold more answers than there are in all.
+    if (!TAG.test(tag) || !Array.isArray(v) || v.length !== 2 || !v.every(count) || v[0] + v[1] > answered) return null;
+    topics[tag] = [v[0], v[1]];
+  }
+  return { correct: raw.correct, topics: JSON.stringify(topics) };
+}

@@ -83,6 +83,15 @@ export const Target = ({ size = 20 }) => (
   </Line>
 );
 
+/** A school building: the classroom. */
+export const School = ({ size = 22 }) => (
+  <Line size={size} width={2.2}>
+    <path d="M3 21h18M5 21V10l7-5 7 5v11" />
+    <path d="M10 21v-5h4v5" />
+    <circle cx="12" cy="11" r="1.6" />
+  </Line>
+);
+
 /* ── elsewhere ── */
 
 export const Gear = ({ size = 19 }) => (

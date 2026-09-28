@@ -21,23 +21,31 @@
 //   POST /game/create  { settings, questions }  →  { code, creatorToken }
 //   GET  /game/<code>/ws                         →  the game's WebSocket
 //
+// And the classrooms (see classroom.js), every call signed by Telegram:
+//
+//   POST /class/<action>  { initData, …, score?, detail? }
+//
 // Secrets and bindings (see wrangler.toml and the README):
 //   BOT_TOKEN — the bot's token, set as a Worker secret, to check signatures
 //   DB        — the D1 database
 //   GAMES     — the game rooms, one Durable Object per live game
 
 import { CODE_RE } from "../../src/lib/game.js";
-import { checkScore, displayName, playerKey, usernameOf } from "../../src/lib/scorecard.js";
+import { checkDetail, checkScore, displayName, playerKey, usernameOf } from "../../src/lib/scorecard.js";
 import { savePlayer, serverToday, snapshotCache, standingsFor } from "./board.js";
+import { classAction } from "./classroom.js";
 import { cleanQuestions, cleanSettings } from "./game.js";
 import { verifyInitData } from "./telegram.js";
 
 export { GameRoom } from "./room.js";
 
-const ORIGINS = ["https://azizbek-mux.github.io", "http://localhost:5188"];
+// The site, and the local dev server under both of its names (a second name
+// lets two "phones" with separate storage be tried side by side).
+const ORIGINS = ["https://azizbek-mux.github.io", "http://localhost:5188", "http://[::1]:5188"];
 const MAX_BODY = 8192;
 // Thirty questions with their explanations come to about 18 KB.
 const MAX_GAME_BODY = 48 * 1024;
+const MAX_CLASS_BODY = 64 * 1024;
 const CODE_TRIES = 8;
 
 const snapshot = snapshotCache();
@@ -84,9 +92,11 @@ export async function handleSync(request, env, cache = snapshot, now = Date.now(
     else {
       me = { key: playerKey(auth.user.id), name: displayName(auth.user), username: usernameOf(auth.user) };
       if (score) {
+        // A student in a class also sends accuracy and weak topics.
+        const detail = body.detail ? checkDetail(body.detail, score.answered) : null;
         // The stored row, week and all, goes straight into the snapshot, so
         // the sender sees both boards with what they have just done.
-        cache.patch(await savePlayer(env.DB, me, score, now));
+        cache.patch(await savePlayer(env.DB, me, score, now, detail));
       } else if (checked) notStored = checked.reason;
     }
   } else if (score) {
@@ -137,6 +147,31 @@ export async function handleCreate(request, env) {
   return { status: 503, body: { error: "no free code" } };
 }
 
+/**
+ * One classroom call. Every one must come from Telegram: a class is people
+ * who know each other by name, so nobody takes part without an identity.
+ * A call may carry the caller's score and detail too, which keeps what the
+ * teacher sees as fresh as the student's last visit to the Class tab.
+ */
+export async function handleClass(action, request, env, cache = snapshot, now = Date.now()) {
+  const text = await request.text();
+  if (text.length > MAX_CLASS_BODY) return { status: 413, body: { error: "too large" } };
+  let body;
+  try { body = JSON.parse(text); } catch { return { status: 400, body: { error: "not JSON" } }; }
+  if (!env.BOT_TOKEN) return { status: 503, body: { error: "no-token" } };
+  const auth = body?.initData ? await verifyInitData(body.initData, env.BOT_TOKEN, now) : null;
+  if (!auth) return { status: 401, body: { error: "telegram" } };
+  const me = { key: playerKey(auth.user.id), name: displayName(auth.user), username: usernameOf(auth.user) };
+
+  const checked = body.score ? checkScore(body.score, serverToday(now)) : null;
+  if (checked?.ok) {
+    const detail = body.detail ? checkDetail(body.detail, checked.score.answered) : null;
+    cache.patch(await savePlayer(env.DB, me, checked.score, now, detail));
+  }
+  const players = action === "view" ? await cache.get(env.DB, now) : undefined;
+  return classAction(action, { db: env.DB, me, body, now, players });
+}
+
 export default {
   async fetch(request, env) {
     const headers = corsHeaders(request);
@@ -147,6 +182,15 @@ export default {
     if (pathname === "/game/create" && request.method === "POST") {
       try {
         const { status, body } = await handleCreate(request, env);
+        return json(body, status, headers);
+      } catch (err) {
+        return json({ error: "server error", kind: err?.name || "Error" }, 500, headers);
+      }
+    }
+    const cls = /^\/class\/([a-z]+)$/.exec(pathname);
+    if (cls && request.method === "POST") {
+      try {
+        const { status, body } = await handleClass(cls[1], request, env);
         return json(body, status, headers);
       } catch (err) {
         return json({ error: "server error", kind: err?.name || "Error" }, 500, headers);
