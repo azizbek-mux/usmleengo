@@ -259,6 +259,7 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
           <div className="chips">
             {chips.map(({ tag }) => chip(tag))}
           </div>
+          <div className="bank-sources">Sources: UWorld, First Aid, Mehlman PDFs, NBMEs, Free 120s</div>
         </>
       )}
 
