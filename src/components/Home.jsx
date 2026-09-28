@@ -153,7 +153,7 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder={t("Search a topic — addison, niacin, murmur…", "Mavzu qidiring — Addison, niatsin, yurak shovqini…")}
+          placeholder={t("Search a topic — addison, niacin, murmur…", "Mavzu qidiring — Addison, niatsin…")}
           autoComplete="off"
           autoCorrect="off"
           spellCheck="false"
@@ -237,13 +237,14 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
               <span className="review-n">
                 {savedQs.length
                   ? t(`${savedQs.length.toLocaleString()} saved`, `${savedQs.length.toLocaleString()} ta saqlangan`)
-                  : t("Tap 🔖 in a quiz", "Testda 🔖 ni bosing")}
+                  : t("Tap 🔖 in a quiz", "🔖 ni bosing")}
               </span>
             </button>
             <button className="review-tile" onClick={() => { haptic("light"); setView("weak"); }}>
               <span className="review-ico"><Target /></span>
-              <span className="review-t">{t("Weak topics", "Yaxshi o'zlashtirilmagan mavzular")}</span>
-              <span className="review-n">{weakest ? `${tagLabel(weakest.tag)} · ${weakest.pct}%` : t("Answer more first", "Avval ko'proq javob bering")}</span>
+              {/* A soft hyphen lets the long Uzbek word break on a narrow phone. */}
+              <span className="review-t">{t("Weak topics", "Yaxshi o'zlashtiril­magan mavzular")}</span>
+              <span className="review-n">{weakest ? `${tagLabel(weakest.tag)} · ${weakest.pct}%` : t("Answer more first", "Javoblar kam")}</span>
             </button>
           </div>
 
