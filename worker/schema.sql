@@ -15,5 +15,12 @@ CREATE TABLE IF NOT EXISTS players (
   binary_n   INTEGER NOT NULL,
   gap_ms     INTEGER NOT NULL,
   gap_n      INTEGER NOT NULL,
-  updated_at INTEGER NOT NULL
+  updated_at INTEGER NOT NULL,
+  week       INTEGER NOT NULL DEFAULT 0,
+  week_days  INTEGER NOT NULL DEFAULT 0,
+  base_xp    INTEGER NOT NULL DEFAULT 0,
+  base_bms   INTEGER NOT NULL DEFAULT 0,
+  base_bn    INTEGER NOT NULL DEFAULT 0,
+  base_gms   INTEGER NOT NULL DEFAULT 0,
+  base_gn    INTEGER NOT NULL DEFAULT 0
 );

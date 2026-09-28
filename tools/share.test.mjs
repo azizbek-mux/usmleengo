@@ -22,6 +22,10 @@ check("no choice at all", S.roundScope("Random") === "from all categories" && S.
 check("one category", S.roundScope("cardio") === "in cardio");
 check("picture categories by their full names", S.roundScope("histo") === "in histology" && S.roundScope("radio") === "in radiology");
 check("a searched topic", S.roundScope("Addison disease") === "in Addison disease");
+check("the review rounds read as sentences",
+  S.roundScope("Mistakes") === "reviewing my mistakes" &&
+  S.roundScope("Saved") === "from my saved questions" &&
+  S.roundScope("Weak topics") === "in my weak topics");
 
 console.log("\nthe message");
 const m = S.shareMessage({ correct: 9, total: 10, label: "3 categories", streak: 5,

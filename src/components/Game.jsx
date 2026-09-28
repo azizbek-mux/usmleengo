@@ -57,7 +57,10 @@ export default function Game({ invite, onFocus }) {
   const [stage, setStage] = useState(() => (invite && CODE_RE.test(invite) && nameOk ? "play" : "menu"));
   const [code, setCode] = useState(invite || "");
   // Setting up and playing want the whole screen; only the menu keeps the tab bar.
-  useEffect(() => { onFocus?.(stage !== "menu"); }, [stage]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    onFocus?.(stage !== "menu");
+    return () => onFocus?.(false);
+  }, [stage]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function play(nextCode) {
     if (!inTelegram) writeNick(nickname.trim());

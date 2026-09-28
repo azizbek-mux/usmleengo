@@ -20,8 +20,15 @@ export function boldText(s) {
   }).join("");
 }
 
-// The picture categories have short tags; say them the way the chips do.
+// The picture categories have short tags; say them in full in a sentence.
 const TAG_NAMES = { histo: "histology", radio: "radiology" };
+
+// The Review rounds, as the end of "…on usmleengo ___".
+const REVIEW_SCOPES = {
+  mistakes: "reviewing my mistakes",
+  saved: "from my saved questions",
+  "weak topics": "in my weak topics",
+};
 
 /**
  * Where the round came from, as the end of "…on usmleengo ___":
@@ -33,6 +40,8 @@ const TAG_NAMES = { histo: "histology", radio: "radiology" };
 export function roundScope(label) {
   const l = String(label || "").trim();
   if (!l || /^random$/i.test(l)) return "from all categories";
+  const review = REVIEW_SCOPES[l.toLowerCase()];
+  if (review) return review;
   const many = l.match(/^(\d+) categories$/i);
   if (many) return `from ${many[1]} categories`;
   return `in ${TAG_NAMES[l.toLowerCase()] || l}`;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { APP_LINK, share } from "../lib/telegram.js";
 import { shareMessage } from "../lib/shareText.js";
 import bank from "../data/bank.js";
+import { Bookmark } from "./Icons.jsx";
 
 const R = 74;
 const CIRC = 2 * Math.PI * R;
@@ -40,7 +41,7 @@ function title(pct) {
   return "Worth another pass";
 }
 
-export default function Result({ log, label, xpEarned, streak, streakAdvanced, rank, onAgain, onHome }) {
+export default function Result({ log, label, xpEarned, streak, streakAdvanced, rank, saved = [], onSave, onAgain, onHome }) {
   const correct = log.filter((l) => l.correct).length;
   const wrong = log.length - correct;
   const pct = log.length ? Math.round((correct / log.length) * 100) : 0;
@@ -99,15 +100,29 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
 
       {missed.length > 0 && (
         <div className="review">
-          <div className="section-label">Review</div>
-          {missed.slice(0, 5).map((l, i) => (
-            <div className="review-item" key={i}>
-              <span className="review-mark no">✗</span>
-              <span className="review-q">
-                {l.question.topic} — <b>{l.question.type === "gap" ? l.question.answer : l.question.options[l.question.answer]}</b>
-              </span>
-            </div>
-          ))}
+          <div className="section-label">What you missed</div>
+          {missed.slice(0, 5).map((l, i) => {
+            const on = saved.includes(l.question.id);
+            return (
+              <div className="review-item" key={i}>
+                <span className="review-mark no">✗</span>
+                <span className="review-q">
+                  {l.question.topic} — <b>{l.question.type === "gap" ? l.question.answer : l.question.options[l.question.answer]}</b>
+                </span>
+                <button
+                  className={`save-btn small${on ? " on" : ""}`}
+                  onClick={() => onSave?.(l.question.id)}
+                  aria-pressed={on}
+                  aria-label={on ? "Remove from saved" : "Save this question"}
+                >
+                  <Bookmark size={18} filled={on} />
+                </button>
+              </div>
+            );
+          })}
+          <div className="review-note">
+            {missed.length === 1 ? "It waits" : "They wait"} in <b>Mistakes</b> on the Quiz tab until you get {missed.length === 1 ? "it" : "them"} right.
+          </div>
         </div>
       )}
 

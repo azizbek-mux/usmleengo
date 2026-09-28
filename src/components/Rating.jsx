@@ -17,6 +17,7 @@ const TOP = 10;
  *   top     — the server's top ten on each board, or null before it answers
  *   places  — the viewer's { place, total } on each board, from the server
  *   ranked  — whether the viewer is on the board (always, inside Telegram)
+ *   week    — this week's board from the server: { top, me, endsAt }
  */
 export function ratingData(state, standings) {
   const profile = telegramUser();
@@ -31,6 +32,7 @@ export function ratingData(state, standings) {
     top: standings?.top || null,
     places: standings?.me || null,
     ranked: Boolean(standings?.ranked),
+    week: standings?.week || null,
   };
 }
 
@@ -107,14 +109,26 @@ function Row({ row, board, me }) {
   );
 }
 
+/** "Resets in 3 days", "Resets tomorrow", "Resets in 5 h". */
+function resetsIn(endsAt, now = Date.now()) {
+  const ms = endsAt - now;
+  if (!(ms > 0)) return "Resets now";
+  const hours = Math.ceil(ms / 3600000);
+  if (hours < 24) return `Resets in ${hours} h`;
+  const days = Math.ceil(ms / 86400000);
+  return days === 1 ? "Resets tomorrow" : `Resets in ${days} days`;
+}
+
 /** The rating: the top ten by points, or by one part of them while a filter is on. */
 export default function Rating({ state, standings, loading, onRefresh }) {
+  // All time or this week. Both rank by points.
+  const [period, setPeriod] = useState("all");
   // null is the rating itself.
   const [filter, setFilter] = useState(null);
   const board = filter || "overall";
   useLiveBoard(onRefresh);
 
-  const { me, top, places, ranked } = useMemo(() => ratingData(state, standings), [state, standings]);
+  const { me, top, places, ranked, week } = useMemo(() => ratingData(state, standings), [state, standings]);
   const rows = top?.[board] || [];
   const mine = places?.[board];
   const column = BOARDS.find((b) => b.id === board).column;
@@ -143,9 +157,36 @@ export default function Rating({ state, standings, loading, onRefresh }) {
     );
   }
 
+  const periods = (
+    <div className="period" role="tablist" aria-label="Period">
+      {[["all", "All time"], ["week", "This week"]].map(([id, label]) => (
+        <button
+          key={id}
+          role="tab"
+          aria-selected={period === id}
+          className={`period-opt${period === id ? " on" : ""}`}
+          onClick={() => { if (period !== id) { haptic("light"); setPeriod(id); } }}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  );
+
+  if (period === "week") {
+    return (
+      <div className="screen rating">
+        <ScreenHead title="Rating" sub="Everyone who plays, ranked by points" />
+        {periods}
+        <WeekBoard week={week} me={me} ranked={ranked} standings={standings} loading={loading} />
+      </div>
+    );
+  }
+
   return (
     <div className="screen rating">
       <ScreenHead title="Rating" sub="Everyone who plays, ranked by points" />
+      {periods}
 
       <div className="rating-place">
         {placeLine}
@@ -235,5 +276,76 @@ export default function Rating({ state, standings, loading, onRefresh }) {
         </p>
       </details>
     </div>
+  );
+}
+
+/**
+ * This week: the same points, counted from Monday — days studied this week in
+ * place of the streak, this week's XP, this week's time — so everyone starts
+ * level each Monday and a newcomer can win a week. The top ten, the viewer's
+ * own place, and when it starts over.
+ */
+function WeekBoard({ week, me, ranked, standings, loading }) {
+  const rows = week?.top || [];
+  const mine = week?.me;
+  const meBelow = mine?.place > TOP ? { place: mine.place, isMe: true, points: mine.points, raw: mine.raw } : null;
+
+  let placeLine;
+  if (!standings) {
+    placeLine = <span>{loading ? "Loading the rating…" : "The rating cannot be reached right now"}</span>;
+  } else if (!ranked) {
+    placeLine = <span>Open usmleengo in Telegram to be ranked</span>;
+  } else if (!mine?.place) {
+    placeLine = <span>Study today to join this week’s board</span>;
+  } else {
+    placeLine = (
+      <span className="rating-rank">
+        {medalFor(mine.place) && `${medalFor(mine.place)} `}
+        This week <b>{rankText(mine)}</b>
+      </span>
+    );
+  }
+
+  return (
+    <>
+      <div className="rating-place">
+        {placeLine}
+        {mine?.place ? <b>{mine.points} <small>pts</small></b> : null}
+      </div>
+
+      <div className="chips-head board-title">
+        <span className="section-label" style={{ margin: 0 }}>This week · by points</span>
+        {week?.endsAt && <span className="game-count">{resetsIn(week.endsAt)}</span>}
+      </div>
+      <div className="board">
+        <div className="board-head">
+          <span className="board-place">Rank</span>
+          <span className="board-who">Name</span>
+          <span className="board-value">Points</span>
+        </div>
+        {rows.map((r) => <Row key={`${r.place}-${r.isMe ? "me" : r.name}-${r.username || ""}`} row={r} board="overall" me={me} />)}
+        {meBelow && (
+          <>
+            <div className="board-gap" aria-hidden="true">⋯</div>
+            <Row row={meBelow} board="overall" me={me} />
+          </>
+        )}
+        {standings && !rows.length && (
+          <div className="board-empty">Nobody has studied yet this week. The first round puts you on top.</div>
+        )}
+        {!standings && <div className="board-empty">{loading ? "Loading…" : "Try again in a moment."}</div>}
+      </div>
+
+      <details className="rating-how">
+        <summary>How this week is counted</summary>
+        <p>
+          The same points as the rating, from this week alone: the <b>days you study</b> between
+          Monday and Sunday count most, then the <b>XP</b> you earn this week, then your
+          <b> average time</b> this week. Everyone starts level on Monday, so a week can be won
+          by anyone — however long they have been playing.
+        </p>
+        <p>The top ten are shown; everyone else sees their own place.</p>
+      </details>
+    </>
   );
 }

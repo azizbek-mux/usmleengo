@@ -274,6 +274,26 @@ export function standings(board, players, me) {
   };
 }
 
+/* ── weeks ─────────────────────────────────────────────────────────────────
+   The weekly board runs Monday to Sunday. Day 0 (1970-01-01) was a
+   Thursday, so shifting by three makes weeks start on Mondays. */
+
+/** Which week a day index falls in. */
+export const weekOf = (day) => Math.floor((day + 3) / 7);
+
+/** 0 for Monday … 6 for Sunday. */
+export const weekdayOf = (day) => (((day + 3) % 7) + 7) % 7;
+
+/** The day index of a week's Monday. */
+export const weekStart = (week) => week * 7 - 3;
+
+/** How many days a bitmask of weekdays holds. */
+export function daysIn(mask) {
+  let n = 0;
+  for (let m = mask >>> 0; m; m >>>= 1) n += m & 1;
+  return n;
+}
+
 /** The medal for a place on the rating: gold, silver, bronze, or none. */
 export function medalFor(place) {
   return { 1: "🥇", 2: "🥈", 3: "🥉" }[place] || null;

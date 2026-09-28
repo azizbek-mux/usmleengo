@@ -6,7 +6,7 @@
 // send messages on the user's behalf. So every player's app posts its score
 // here whenever it changes, and asks here for the board.
 //
-//   POST /sync   { initData, score }  →  { top, me, ranked }
+//   POST /sync   { initData, score }  →  { top, me, ranked, week }
 //
 // With initData from Telegram, the score is checked, stored under that
 // player, and ranked. Without it — someone opening the site in a browser —
@@ -84,8 +84,9 @@ export async function handleSync(request, env, cache = snapshot, now = Date.now(
     else {
       me = { key: playerKey(auth.user.id), name: displayName(auth.user), username: usernameOf(auth.user) };
       if (score) {
-        await savePlayer(env.DB, me, score, now);
-        cache.patch(me, score);
+        // The stored row, week and all, goes straight into the snapshot, so
+        // the sender sees both boards with what they have just done.
+        cache.patch(await savePlayer(env.DB, me, score, now));
       } else if (checked) notStored = checked.reason;
     }
   } else if (score) {

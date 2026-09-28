@@ -1,21 +1,23 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import bank, { bankBlurb } from "../data/bank.js";
 import AdCard from "./AdCard.jsx";
-import { ScreenHead, StreakPill } from "./Chrome.jsx";
-import { ChevronDown, SearchIcon } from "./Icons.jsx";
+import { BackBar, ScreenHead, StreakPill } from "./Chrome.jsx";
+import { Bookmark, ChevronDown, Retry, SearchIcon, Target } from "./Icons.jsx";
 import { Sheet } from "./Sheet.jsx";
 import { search, suggest, subjects } from "../lib/match.js";
 import { QTYPES } from "../lib/qtypes.js";
+import { MIN_ANSWERS, mistakesIn, savedIn, topicAccuracy } from "../lib/review.js";
 import { byFormat } from "../lib/session.js";
 import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
 
 // The Quiz tab. Laid out the way people use it: find or pick what to study,
-// then start. The categories are right there, one tap each; the two
-// settings that shape a round — how many questions, and which kind — sit as
-// small buttons beside Start, which is pinned above the tab bar so it never
-// needs scrolling to.
+// then start. Under the search, Review offers the player's own material —
+// their mistakes, their saved questions, their weakest categories. Then the
+// categories, one tap each; the two settings that shape a round — how many
+// questions, and which kind — sit as small buttons beside Start, which is
+// pinned above the tab bar so it never needs scrolling to.
 
 const PRESETS = [2, 5, 10, 20, 50, 100];
 
@@ -51,9 +53,21 @@ function topicIndex(questions) {
 
 const questionsLabel = (n) => `${n.toLocaleString()} question${n === 1 ? "" : "s"}`;
 
-export default function Home({ state, onStart, onCount, onQType, onSubjects }) {
+/** Pool builders for the review rounds, read afresh each round (see App's start). */
+const mistakePool = (s) => mistakesIn(bank, s.seen);
+const savedPool = (s) => savedIn(bank, s.saved);
+
+export default function Home({ state, onStart, onFocus, onCount, onQType, onSubjects }) {
   const [query, setQuery] = useState("");
   const [picker, setPicker] = useState(null); // null | "count" | "type"
+  const [view, setView] = useState("main"); // main | weak
+
+  // Weak topics is a screen of its own and wants the whole of it. Handed
+  // back on the way out too — starting a round from it unmounts this tab.
+  useEffect(() => {
+    onFocus?.(view === "weak");
+    return () => onFocus?.(false);
+  }, [view]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const hits = useMemo(() => (query.trim() ? search(query) : []), [query]);
   // The search keeps only its forty best matches, so a topic row cannot be
@@ -75,6 +89,14 @@ export default function Home({ state, onStart, onCount, onQType, onSubjects }) {
     [chosen, chosenSet],
   );
   const qtype = state.qtype || "random";
+
+  const mistakes = useMemo(() => mistakesIn(bank, state.seen), [state.seen]);
+  const savedQs = useMemo(() => savedIn(bank, state.saved), [state.saved]);
+  const accuracy = useMemo(
+    () => topicAccuracy(bank, state.seen, [...pictureTags, ...chips.map((c) => c.tag)]),
+    [state.seen, pictureTags, chips],
+  );
+  const weakest = accuracy.find((r) => r.pct !== null);
 
   function toggle(tag) {
     haptic("light");
@@ -101,6 +123,19 @@ export default function Home({ state, onStart, onCount, onQType, onSubjects }) {
       {tagLabel(tag)}
     </button>
   );
+
+  if (view === "weak") {
+    return (
+      <WeakTopics
+        rows={accuracy}
+        onBack={() => setView("main")}
+        onPractise={(tags, label) => {
+          const wanted = new Set(tags);
+          launch(bank.filter((q) => q.tags.some((t) => wanted.has(t))), label);
+        }}
+      />
+    );
+  }
 
   return (
     <div className="screen">
@@ -171,6 +206,34 @@ export default function Home({ state, onStart, onCount, onQType, onSubjects }) {
         )
       ) : (
         <>
+          {/* ── review: the player's own material ─────────────────────── */}
+          <div className="section-label">Review</div>
+          <div className="review-row">
+            <button
+              className="review-tile"
+              disabled={!mistakes.length}
+              onClick={() => launch(mistakePool, "Mistakes")}
+            >
+              <span className="review-ico"><Retry /></span>
+              <span className="review-t">Mistakes</span>
+              <span className="review-n">{mistakes.length ? `${mistakes.length.toLocaleString()} to fix` : "None — nice"}</span>
+            </button>
+            <button
+              className="review-tile"
+              disabled={!savedQs.length}
+              onClick={() => launch(savedPool, "Saved")}
+            >
+              <span className="review-ico"><Bookmark /></span>
+              <span className="review-t">Saved</span>
+              <span className="review-n">{savedQs.length ? `${savedQs.length.toLocaleString()} saved` : "Tap 🔖 in a quiz"}</span>
+            </button>
+            <button className="review-tile" onClick={() => { haptic("light"); setView("weak"); }}>
+              <span className="review-ico"><Target /></span>
+              <span className="review-t">Weak topics</span>
+              <span className="review-n">{weakest ? `${tagLabel(weakest.tag)} · ${weakest.pct}%` : "Answer more first"}</span>
+            </button>
+          </div>
+
           {/* Picture questions are a different axis from body system, and
               there are far fewer of them, so they would never survive the
               cut into the subject row. They get their own row, but share one
@@ -258,6 +321,61 @@ export default function Home({ state, onStart, onCount, onQType, onSubjects }) {
             ))}
           </div>
         </Sheet>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Weak topics: accuracy in every category, weakest first, from every answer
+ * the player has given. Tapping a category practises it; the button
+ * practises the three weakest together. Categories with too few answers to
+ * judge are named at the end rather than ranked on luck.
+ */
+function WeakTopics({ rows, onBack, onPractise }) {
+  const judged = rows.filter((r) => r.pct !== null);
+  const unjudged = rows.filter((r) => r.pct === null);
+  const worst = judged.slice(0, 3);
+  const band = (pct) => (pct < 60 ? " low" : pct < 80 ? " mid" : "");
+
+  return (
+    <div className="screen">
+      <BackBar title="Weak topics" onBack={onBack} />
+      <p className="weak-intro">Your accuracy in each category, weakest first. Tap one to practise it.</p>
+
+      {judged.length ? (
+        <div className="weak-list">
+          {judged.map((r) => (
+            <button key={r.tag} className="weak-row" onClick={() => onPractise([r.tag], r.tag)}>
+              <span className="weak-name">
+                {tagLabel(r.tag)}
+                <small>{r.answered.toLocaleString()} answered</small>
+              </span>
+              <span className="weak-bar"><span className={`weak-fill${band(r.pct)}`} style={{ width: `${r.pct}%` }} /></span>
+              <span className={`weak-pct${band(r.pct)}`}>{r.pct}%</span>
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="empty">
+          <div className="empty-big">🎯</div>
+          <div>Answer at least {MIN_ANSWERS} questions in a category to see how you do in it.</div>
+        </div>
+      )}
+
+      {unjudged.length > 0 && (
+        <div className="cta-note weak-more">
+          Not enough answers yet: {unjudged.map((r) => tagLabel(r.tag)).join(", ")}
+        </div>
+      )}
+
+      {worst.length > 0 && (
+        <div className="home-cta">
+          <button className="btn btn-primary" onClick={() => onPractise(worst.map((r) => r.tag), "Weak topics")}>
+            Practise my {worst.length === 1 ? "weakest" : `${worst.length} weakest`}
+          </button>
+          <div className="cta-note">{worst.map((r) => tagLabel(r.tag)).join(", ")}</div>
+        </div>
       )}
     </div>
   );

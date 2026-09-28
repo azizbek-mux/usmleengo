@@ -11,13 +11,15 @@ import { PACE_MAX_MS, PACE_MIN_MS } from "./scorecard.js";
 
 const KEY = "usmle_drops_v1";
 
+/** Bookmarks kept. Generous, and a bound on what one list can cost in cloud storage. */
+export const SAVED_MAX = 500;
+
 export const emptyState = {
-  // Which half of the app the user is in: "english" or "quiz". null means
-  // they have not been asked yet — it triggers the first-run section picker.
-  // Kept up to date as they move, so the app reopens where they left off.
+  // The study tab last used, "english" or "quiz", so the app reopens there.
+  // null until one is chosen; the app then opens on the quizzes.
   section: null,
   // Which question formats to serve: "binary", "gap" or "random".
-  // null means the user has not been asked yet — it triggers first-run setup.
+  // null until chosen on the Quiz tab, which serves the mix meanwhile.
   qtype: null,
   // Which palette to paint. "auto" follows Telegram until the user taps the
   // sun or the moon, which pins "light" or "dark" for good.
@@ -32,8 +34,13 @@ export const emptyState = {
   lastDay: null,
   answered: 0,
   correct: 0,
-  // seen[id] = [timesCorrect, timesWrong] — drives the spaced-repetition weight
+  // seen[id] = [timesCorrect, timesWrong, last] — drives the spaced-repetition
+  // weight, and `last` (1 right, 0 wrong) says whether the question is still
+  // among the player's mistakes. Entries written before `last` existed have
+  // only the two counts; see isMistake in review.js.
   seen: {},
+  // Questions the player bookmarked, by id, newest first.
+  saved: [],
   // Time spent on correct answers, per question type: [total ms, count].
   // Only correct answers, and each type kept apart — see rating.js for why.
   timing: { binary: [0, 0], gap: [0, 0] },
@@ -67,6 +74,9 @@ function merge(raw) {
     merged.timing = cleanTiming(parsed.timing);
     merged.subjects = Array.isArray(parsed.subjects)
       ? [...new Set(parsed.subjects.filter((t) => typeof t === "string" && t))].slice(0, 24)
+      : [];
+    merged.saved = Array.isArray(parsed.saved)
+      ? [...new Set(parsed.saved.filter((id) => typeof id === "string" && id))].slice(0, SAVED_MAX)
       : [];
     return merged;
   } catch {
@@ -182,7 +192,7 @@ export function record(state, question, wasCorrect, elapsedMs) {
     timing,
     seen: {
       ...state.seen,
-      [question.id]: wasCorrect ? [c + 1, w] : [c, w + 1],
+      [question.id]: wasCorrect ? [c + 1, w, 1] : [c, w + 1, 0],
     },
   };
 }
@@ -218,6 +228,15 @@ export function reset() {
   // comparison would find the old copy and resurrect what was just cleared.
   cloudSet(KEY, empty);
   return { ...emptyState };
+}
+
+/** Bookmark a question, or take the bookmark off. */
+export function toggleSaved(state, id) {
+  const saved = state.saved || [];
+  return {
+    ...state,
+    saved: saved.includes(id) ? saved.filter((s) => s !== id) : [id, ...saved].slice(0, SAVED_MAX),
+  };
 }
 
 /** Persist the user's preferred session length. */

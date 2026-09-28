@@ -1605,3 +1605,79 @@ input { font: inherit; }
 .ad-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ad-text { display: none; }
 .ad-x { top: 50%; transform: translateY(-50%); }
+
+/* ──────────────────────────── review (Quiz tab) ─────────────────────── */
+
+.review-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 4px; }
+.review-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 0;
+  padding: 11px 11px 10px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  text-align: left;
+  transition: transform 0.12s var(--tap), border-color 0.15s;
+}
+.review-tile:active:not(:disabled) { transform: scale(0.97); border-color: var(--accent); }
+.review-tile:disabled { cursor: default; }
+.review-tile:disabled .review-ico { color: var(--muted); }
+.review-ico { color: var(--accent); display: flex; margin-bottom: 4px; }
+.review-t { font-weight: 800; font-size: 14px; }
+.review-n {
+  max-width: 100%;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The bookmark: in the quiz's top bar, and on each missed question after it. */
+.save-btn { display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--muted); padding: 4px; }
+.save-btn.on { color: var(--accent); }
+.save-btn:active { transform: scale(0.9); }
+.save-btn.small { margin-left: auto; padding: 2px 0 2px 8px; }
+.review-note { font-size: 12.5px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+.review-note b { color: var(--text); }
+
+/* Weak topics */
+.weak-intro { font-size: 13.5px; color: var(--muted); line-height: 1.5; margin: 0 0 14px; }
+.weak-list { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.weak-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 11px 14px;
+  text-align: left;
+}
+.weak-row + .weak-row { border-top: 1px solid var(--line); }
+.weak-row:active { background: var(--card-hi); }
+.weak-name { font-weight: 800; font-size: 15px; display: flex; flex-direction: column; min-width: 0; }
+.weak-name small { font-size: 11.5px; font-weight: 600; color: var(--muted); }
+.weak-bar { height: 8px; background: var(--card-hi); border-radius: 100px; overflow: hidden; }
+.weak-fill { display: block; height: 100%; background: var(--accent); border-radius: 100px; }
+.weak-fill.mid { background: var(--gold); }
+.weak-fill.low { background: var(--wrong); }
+.weak-pct { font-weight: 800; text-align: right; font-variant-numeric: tabular-nums; }
+.weak-pct.mid { color: var(--gold); }
+.weak-pct.low { color: var(--wrong-text); }
+.weak-more { margin-top: 12px; text-align: left; }
+
+/* All time | This week, at the top of the Rating tab. */
+.period { display: flex; gap: 4px; background: var(--card-hi); border-radius: 12px; padding: 4px; margin-bottom: 12px; }
+.period-opt {
+  flex: 1;
+  padding: 9px 0;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  transition: background 0.15s, color 0.15s;
+}
+.period-opt.on { background: var(--card); color: var(--text); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); }

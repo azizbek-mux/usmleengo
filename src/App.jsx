@@ -13,7 +13,7 @@ import { quietSync, syncRating } from "./lib/ratingApi.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
-import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, touchStreak } from "./lib/storage.js";
+import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
 import { startParam } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
 import { xpFor } from "./lib/rating.js";
@@ -45,7 +45,9 @@ export default function App() {
   const [standingsLoading, setStandingsLoading] = useState(false);
 
   // The pool a round was built from, so "Another round" can reshuffle the
-  // same topic instead of dumping the user back to the daily mix.
+  // same topic instead of dumping the user back to the daily mix. It may be
+  // a function that builds the pool: Mistakes is re-read each round, so
+  // questions fixed in the last one are not served again.
   const poolRef = useRef(null);
   // Live mirror of state — the quiz answers fast enough that a stale closure
   // would drop XP between renders.
@@ -100,20 +102,27 @@ export default function App() {
     return () => { alive = false; };
   }, []);
 
-  function start(pool, roundLabel) {
+  /** Start a round. Returns false when there was nothing to ask. */
+  function start(source, roundLabel) {
     const seen = stateRef.current.seen;
     const want = stateRef.current.count;
     const qtype = stateRef.current.qtype || "random";
+    const pool = typeof source === "function" ? source(stateRef.current) : source;
     const next = pool
       ? build(pool, Math.min(want, pool.length), seen, qtype)
       : daily(want, seen, qtype);
-    if (!next.length) return;
-    poolRef.current = pool;
+    if (!next.length) return false;
+    poolRef.current = source;
     setQuestions(next);
     setLabel(roundLabel || "");
     setLog([]);
     setStreakAdvanced(false);
     setFlow("quiz");
+    return true;
+  }
+
+  function flipSaved(id) {
+    persist(toggleSaved(stateRef.current, id));
   }
 
   function handleAnswer(question, correct, elapsedMs) {
@@ -169,9 +178,11 @@ export default function App() {
     // The flashcard deck lives under its own key, so it has to be told too —
     // "start over" that leaves 8,479 cards scheduled is not starting over.
     resetDeck();
-    // Keep the preferences — reset clears progress, not choices.
+    // Keep the preferences — reset clears progress, not choices. Saved
+    // questions are the player's own notes, not progress, and stay too.
     persist({
       ...emptyState,
+      saved: stateRef.current.saved,
       qtype: stateRef.current.qtype,
       count: stateRef.current.count,
       section: stateRef.current.section,
@@ -215,7 +226,17 @@ export default function App() {
   }
 
   if (flow === "quiz") {
-    return <Quiz questions={questions} label={label} onAnswer={handleAnswer} onDone={finish} onQuit={quit} />;
+    return (
+      <Quiz
+        questions={questions}
+        label={label}
+        saved={state.saved}
+        onSave={flipSaved}
+        onAnswer={handleAnswer}
+        onDone={finish}
+        onQuit={quit}
+      />
+    );
   }
 
   if (flow === "result") {
@@ -230,7 +251,10 @@ export default function App() {
         // usually well before anyone reaches the share button. Left out if
         // this player is not ranked (outside Telegram, or the server is down).
         rank={standings?.ranked ? standings.me?.overall : null}
-        onAgain={() => start(poolRef.current, label)}
+        saved={state.saved}
+        onSave={flipSaved}
+        // Nothing left to ask — every mistake fixed, say — goes back to the tab.
+        onAgain={() => { if (!start(poolRef.current, label)) setFlow(null); }}
         onHome={() => setFlow(null)}
       />
     );
@@ -263,6 +287,7 @@ export default function App() {
       <Home
         state={state}
         onStart={start}
+        onFocus={setFocused}
         onCount={(n) => persist(setCount(stateRef.current, n))}
         onQType={(qtype) => persist(setQType(stateRef.current, qtype))}
         onSubjects={(tags) => persist(setSubjects(stateRef.current, tags))}

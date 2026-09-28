@@ -56,6 +56,33 @@ export const User = ({ size = 22 }) => (
   </Line>
 );
 
+/* ── review ── */
+
+/** A bookmark; filled once the question is saved. */
+export const Bookmark = ({ size = 20, filled = false }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill={filled ? "currentColor" : "none"} stroke="currentColor"
+    strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M6 3h12v18l-6-4.5L6 21V3z" />
+  </svg>
+);
+
+/** Round the circle again: the mistakes, until they are right. */
+export const Retry = ({ size = 20 }) => (
+  <Line size={size} width={2.2}>
+    <path d="M3 12a9 9 0 1 0 3-6.7" />
+    <path d="M3 4v5h5" />
+  </Line>
+);
+
+/** A target: where to aim. */
+export const Target = ({ size = 20 }) => (
+  <Line size={size} width={2.2}>
+    <circle cx="12" cy="12" r="9" />
+    <circle cx="12" cy="12" r="5" />
+    <circle cx="12" cy="12" r="1.2" />
+  </Line>
+);
+
 /* ── elsewhere ── */
 
 export const Gear = ({ size = 19 }) => (

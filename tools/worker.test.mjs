@@ -34,7 +34,10 @@ function mockD1() {
         },
         async all() {
           const results = db.prepare(sql).all(...args);
-          stats.reads += results.length;
+          // An upsert … RETURNING hands back the rows it wrote, and D1 bills
+          // them as written, not read.
+          if (sql.toUpperCase().includes("RETURNING")) stats.writes += results.length;
+          else stats.reads += results.length;
           return { results };
         },
       };
@@ -103,7 +106,7 @@ await sync(env, cache, { initData: good, score: score() });
 check("sending the same numbers again writes nothing", d1.stats.writes === writesBefore);
 await sync(env, cache, { initData: good, score: score({ xp: 815, answered: 91 }) });
 check("new numbers are written", d1.stats.writes === writesBefore + 1 &&
-  d1.db.prepare("SELECT xp FROM players").get().xp === 815);
+  d1.db.prepare("SELECT xp FROM players").get().xp === 815, `writes +${d1.stats.writes - writesBefore}, xp ${d1.db.prepare("SELECT xp FROM players").get().xp}`);
 const stored = JSON.stringify(d1.db.prepare("SELECT * FROM players").all());
 check("the raw Telegram id is never stored", !stored.includes("70001"));
 check("the name and username are", stored.includes("Azizbek Muxtorov") && stored.includes("azizbek_muxtorov"));
@@ -191,6 +194,59 @@ console.log("\nthe schema");
 const squash = (s) => s.replace(/--.*$/gm, "").replace(/\s+/g, " ").replace(/;/g, "").trim();
 check("schema.sql matches the schema the code uses",
   squash(readFileSync(new URL("../worker/schema.sql", import.meta.url), "utf8")) === squash(B.SCHEMA));
+
+/* ── this week ─────────────────────────────────────────────────────────── */
+console.log("\nthis week");
+{
+  const R = await import(new URL("../src/lib/rating.js", import.meta.url).href);
+  const db = mockD1();
+  const MON = R.dayIndex("2026-09-28");
+  const at = (day, hour = 12) => (day * 86400 + hour * 3600) * 1000;
+  check("2026-09-28 is a Monday, the first day of its week", R.weekdayOf(MON) === 0 && R.weekOf(MON - 1) === R.weekOf(MON) - 1);
+  const who = (key, name) => ({ key, name, username: null });
+  const sc = (lastDay, xp, binaryMs, binaryN) => ({
+    streak: 3, lastDay, xp, answered: binaryN, timing: { binaryMs, binaryN, gapMs: 0, gapN: 0 },
+  });
+
+  // Aziz played last week, then Monday and Wednesday this week.
+  await B.savePlayer(db, who("a", "Aziz"), sc(MON - 1, 1000, 5000, 40), at(MON - 1));
+  const mon = await B.savePlayer(db, who("a", "Aziz"), sc(MON, 1100, 5000, 50), at(MON));
+  check("a new week starts from where the last one ended", mon.base_xp === 1000 && mon.base_bn === 40);
+  const wed = await B.savePlayer(db, who("a", "Aziz"), sc(MON + 2, 1300, 4800, 60), at(MON + 2));
+  check("and keeps that start all week", wed.base_xp === 1000);
+  check("each day studied is counted", R.daysIn(wed.week_days) === 2);
+  // Bek played only last week. Dilnoza is new this week.
+  await B.savePlayer(db, who("b", "Bek"), sc(MON - 2, 5000, 4000, 300), at(MON - 2));
+  await B.savePlayer(db, who("d", "Dilnoza"), sc(MON + 2, 50, 3000, 5), at(MON + 2));
+
+  const snap = B.snapshotCache();
+  const players = await snap.get(db, at(MON + 2));
+  const ws = B.weekScore(players.get("a"), R.weekOf(MON), MON + 2);
+  check("the week's XP is only this week's", ws.xp === 300);
+  check("its time is this week's answers alone", ws.timing.binaryN === 20 && ws.timing.binaryMs === (4800 * 60 - 5000 * 40) / 20,
+    JSON.stringify(ws.timing));
+  check("and days studied stand in for the streak", ws.streak === 2);
+
+  const wk = B.weekBoard(players, { key: "b" }, MON + 2);
+  check("the week ranks only those who studied in it", wk.top.map((r) => r.name).join() === "Aziz,Dilnoza" && wk.me.total === 2,
+    JSON.stringify(wk.top.map((r) => [r.name, r.points])));
+  check("by points", wk.top[0].points > wk.top[1].points);
+  check("someone idle this week has no place in it", wk.me.place === null);
+  check("the week ends next Monday at midnight UTC", wk.endsAt === Date.parse("2026-10-05T00:00:00Z"));
+  const mine = B.weekBoard(players, { key: "d" }, MON + 2);
+  check("a player sees their own week: place, points, numbers", mine.me.place === 2 && mine.me.points > 0 && mine.me.raw.xp === 50);
+  check("and not their own name from the server", mine.top.find((r) => r.isMe).name === null);
+
+  const next = await B.savePlayer(db, who("a", "Aziz"), sc(MON + 7, 1400, 4800, 61), at(MON + 7));
+  check("next Monday the week starts over", next.base_xp === 1300 && R.daysIn(next.week_days) === 1);
+  const later = await snap.get(db, at(MON + 7) + B.SNAPSHOT_MS);
+  check("and last week's players drop off it",
+    B.weekBoard(later, null, MON + 7).top.map((r) => r.name).join() === "Aziz");
+
+  const r2 = await sync({ DB: db, BOT_TOKEN: TOKEN }, B.snapshotCache(), { initData: good, score: score() });
+  check("the week comes back with every sync", Array.isArray(r2.body.week?.top) && typeof r2.body.week.endsAt === "number");
+}
+
 
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

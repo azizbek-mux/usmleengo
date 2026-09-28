@@ -74,6 +74,7 @@ const PAIRS = [
   ["--gold", "--card", 4.5, "first place's points on the rating"],
   ["--silver", "--card", 4.5, "second place's points"],
   ["--bronze", "--card", 4.5, "third place's points"],
+  ["--wrong-text", "--card", 4.5, "a weak topic's score"],
   ["--streak-label", "--streak-a", 4.5, "the streak banner's caption"],
   ["--new", "--card", 4.5, "Anki's new-card count"],
   ["--learn", "--card", 4.5, "Anki's learning count"],

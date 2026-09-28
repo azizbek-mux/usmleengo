@@ -282,7 +282,10 @@ export default function English({ streak, onStudied, onFocus }) {
 
   // A flashcard session wants the whole screen; the tab bar steps aside.
   const inSession = studying && Boolean(current);
-  useEffect(() => { onFocus?.(inSession); }, [inSession]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    onFocus?.(inSession);
+    return () => onFocus?.(false);
+  }, [inSession]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // The cloud write is debounced, so leaving the section has to push it.
   useEffect(() => () => { flushDeck(); }, []);

@@ -150,7 +150,15 @@ The **Rating** tab ranks every player on points out of 1000,
 made from their day streak (50%), XP (30%) and average time on correct
 answers (20%). Points are the only rank; day streak, XP and time are filters
 that show who leads each part. The top ten are shown by Telegram name and
-@username; everyone sees their own place, like **#88 / 2,300**.
+@username; everyone sees their own place, like **#88 / 2,300**. The top
+three wear gold, silver and bronze.
+
+**This week** is a second board, points only: the same formula fed with
+this week's numbers alone — days studied Monday to Sunday in place of the
+streak, the XP earned since Monday, and this week's average time — so
+everyone starts level each Monday (00:00 UTC). The server keeps where each
+player stood when the week began (`base_*` columns, `week_days` bitmask)
+and the week is the difference; see `worker/src/board.js`.
 
 Nobody joins. The app sends its score to a small rating server whenever it
 changes — on opening, after a round, after a Medical English session — and
@@ -185,6 +193,7 @@ cd worker
 npx wrangler login                                   # opens Cloudflare; click Allow
 npx wrangler d1 create usmleengo-rating              # put the id it prints in wrangler.toml
 npx wrangler d1 execute usmleengo-rating --remote --file=schema.sql
+npx wrangler d1 execute usmleengo-rating --remote --file=week.sql   # only for a database made before the weekly board
 npx wrangler deploy                                  # prints the server's address
 ```
 
@@ -297,6 +306,12 @@ time, and the settings). Every tab opens the same way — a big title, at most
 one small thing beside it (the day streak), and the main action pinned just
 above the tab bar. Screens opened from inside a tab use Telegram's own back
 arrow. A quiz round, a flashcard session and a live game hide the tab bar.
+
+Under the Quiz tab's search, **Review** holds the player's own material:
+**Mistakes** (every question whose last answer was wrong, until it is
+answered right), **Saved** (questions bookmarked with 🔖 in a quiz or on the
+result screen) and **Weak topics** (accuracy per category, weakest first,
+from 5 answers up; tap one to practise it). See `src/lib/review.js`.
 
 The Quiz tab keeps the categories on screen, one tap each, under short even
 names (histo, radio, endo, gen, onco…, see `src/lib/tags.js`); how many

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { grade } from "../lib/session.js";
 import { haptic } from "../lib/telegram.js";
+import { Bookmark } from "./Icons.jsx";
 
 /** Renders "… vitamin ___" with the blank styled rather than literal underscores. */
 function GapText({ text }) {
@@ -17,7 +18,7 @@ function GapText({ text }) {
   );
 }
 
-export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
+export default function Quiz({ questions, label, saved = [], onSave, onAnswer, onDone, onQuit }) {
   const [idx, setIdx] = useState(0);
   const [typed, setTyped] = useState("");
   const [verdict, setVerdict] = useState(null); // null | { correct, chosen }
@@ -102,6 +103,15 @@ export default function Quiz({ questions, label, onAnswer, onDone, onQuit }) {
           <div className="bar-fill" style={{ width: `${progress}%` }} />
         </div>
         <div className="combo">{combo >= 2 ? `🔥${combo}` : ""}</div>
+        {/* Save for later: the question lands in Saved on the Quiz tab. */}
+        <button
+          className={`save-btn${saved.includes(q.id) ? " on" : ""}`}
+          onClick={() => { haptic("light"); onSave?.(q.id); }}
+          aria-pressed={saved.includes(q.id)}
+          aria-label={saved.includes(q.id) ? "Remove from saved" : "Save this question"}
+        >
+          <Bookmark filled={saved.includes(q.id)} />
+        </button>
       </div>
 
       {/* Suppressed where the topic would hand over the answer — see
