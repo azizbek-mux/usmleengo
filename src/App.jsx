@@ -13,7 +13,7 @@ import { classCall, classCodeFromParam, fileTokenFromParam, packageRound } from 
 import { TabBar } from "./components/Chrome.jsx";
 import { codeFromParam } from "./lib/game.js";
 import { quietSync, syncRating } from "./lib/ratingApi.js";
-import { loadBank } from "./data/bank.js";
+import { loadBank, setBankLanguage } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
 import { emptyState, isNewPlayer, loadLocal, loadRemote, record, reset, save, setCount, setLanguage, setQType, setSection, setSubjects, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
@@ -42,6 +42,8 @@ export default function App() {
   const [focused, setFocused] = useState(false);
   // The bank is fetched, so nothing that reads it may render until it lands.
   const [bankStatus, setBankStatus] = useState("loading");
+  // The language the bank is showing, which catches up with state.lang.
+  const [bankLang, setBankLang] = useState("en");
   const [questions, setQuestions] = useState([]);
   const [label, setLabel] = useState("");
   const [log, setLog] = useState([]);
@@ -113,14 +115,29 @@ export default function App() {
     quietSync(s).then((reply) => { if (reply) setStandings(reply); });
   }
 
-  // Fetch the question bank once on mount.
+  // Fetch the question bank once on mount — in Uzbek straight away for a
+  // player who chose it, so the first screen is not English for a moment.
   useEffect(() => {
     let alive = true;
     loadBank()
+      .then(() => (loadLocal().lang === "uz" ? setBankLanguage("uz").then(() => alive && setBankLang("uz")).catch(() => {}) : null))
       .then(() => alive && setBankStatus("ready"))
       .catch(() => alive && setBankStatus("error"));
     return () => { alive = false; };
   }, []);
+
+  // A language chosen later — on the first how-to card, in Me, or arriving
+  // with the cloud copy of progress — turns the bank over too. If the Uzbek
+  // file can't be fetched the questions stay English, and it is tried again
+  // on the next change.
+  useEffect(() => {
+    if (bankStatus !== "ready") return;
+    const want = state.lang === "uz" ? "uz" : "en";
+    if (want === bankLang) return;
+    let alive = true;
+    setBankLanguage(want).then(() => alive && setBankLang(want)).catch(() => {});
+    return () => { alive = false; };
+  }, [bankStatus, state.lang, bankLang]);
 
   /** Start a round. Returns false when there was nothing to ask. */
   function start(source, roundLabel) {
@@ -384,7 +401,7 @@ export default function App() {
   return (
     <>
       {/* Keyed by language, so a switch redraws every screen in the new one. */}
-      <div key={state.lang || "en"} className={`shell${focused ? "" : " with-tabs"}`}>
+      <div key={`${state.lang || "en"}-${bankLang}`} className={`shell${focused ? "" : " with-tabs"}`}>
         {screen}
         {!focused && <TabBar tab={tab} onTab={openTab} />}
       </div>

@@ -9,12 +9,47 @@
 // paint for everyone. As a separate asset it is cached independently, so a
 // code change does not force users to re-download the whole bank.
 
-import { BANK_VERSION } from "./bank-version.js";
+import { BANK_UZ_VERSION, BANK_VERSION } from "./bank-version.js";
 import { t } from "../lib/i18n.js";
 
 const bank = [];
 
 let pending = null;
+
+// The bank as compiled, in English; `bank` shows it in the player's
+// language. Uzbek text comes from questions.uz.json, fetched the first time
+// Uzbek is chosen: { id: { t: topic, q, o: [right, wrong] | a: answer,
+// c: accepted, e: explanation } } — see the Uzbek section of compile.mjs.
+const english = [];
+let uzText = null;
+let showing = "en";
+
+function localize(q) {
+  const u = uzText[q.id];
+  if (!u) return q; // not translated yet: only while the translation is in progress
+  // An Uzbek topic can give the answer away where the English didn't (h).
+  const hideTopic = q.hideTopic || u.h === 1 || undefined;
+  if (q.type === "gap") return { ...q, topic: u.t, q: u.q, answer: u.a, accept: u.c, explain: u.e, hideTopic };
+  return { ...q, topic: u.t, q: q.img ? q.q : u.q, options: u.o, explain: u.e, hideTopic };
+}
+
+/**
+ * Show the bank in English or Uzbek. Refilled in place, like loadBank, so
+ * every module holding `bank` sees the change. Ids never change, so saved
+ * questions, mistakes and progress carry across languages.
+ */
+export async function setBankLanguage(lang) {
+  const want = lang === "uz" ? "uz" : "en";
+  if (want === showing || !english.length) return;
+  if (want === "uz" && !uzText) {
+    const res = await fetch(`${import.meta.env.BASE_URL}questions.uz.json?v=${BANK_UZ_VERSION}`);
+    if (!res.ok) throw new Error(`${res.status} loading the Uzbek questions`);
+    uzText = await res.json();
+  }
+  bank.length = 0;
+  bank.push(...(want === "uz" ? english.map(localize) : english));
+  showing = want;
+}
 
 /**
  * Populates the bank in place and resolves once ready.
@@ -27,6 +62,7 @@ export function loadBank() {
   // Single-file builds (the shareable demo) inline the bank on the page,
   // because a sandboxed artifact cannot fetch a sibling asset.
   if (typeof window !== "undefined" && Array.isArray(window.__QUESTIONS__)) {
+    english.push(...window.__QUESTIONS__);
     bank.push(...window.__QUESTIONS__);
     return Promise.resolve(bank);
   }
@@ -42,6 +78,7 @@ export function loadBank() {
       return res.json();
     })
     .then((questions) => {
+      english.push(...questions);
       bank.push(...questions);
       return bank;
     })

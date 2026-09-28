@@ -1,0 +1,137 @@
+# Asosiy to'plam — 00-core.txt ning o'zbekcha tarjimasi.
+# id|mavzu|savol|to'rtinchi maydon|beshinchi maydon|izoh  (qarang: TERMS.md)
+
+niacin-deficiency-0pjrkrs|Niatsin yetishmovchiligi|Demensiya, diareya va dermatit = ___ vitamini yetishmovchiligi|B3|niatsin, nikotin kislotasi, vitamin b3|Pellagra — uchta «D». Niatsin (B3).
+thiamine-deficiency-1jqg41f|Tiamin yetishmovchiligi|Vernike ensefalopatiyasi ___ vitamini yetishmovchiligidan kelib chiqadi|B1|tiamin, vitamin b1|B1 (tiamin). Ong chalkashligi + ataksiya + oftalmoplegiya.
+scurvy-0hsjzgl|Singa|Milklarning qonashi va yaralarning sekin bitishi = ___ vitamini yetishmovchiligi|C|askorbin kislotasi, vitamin c|C vitamini — kollagendagi prolin va lizinni gidroksillash uchun zarur.
+rickets-0crpkju|Raxit|Bolalardagi raxit ___ vitamini yetishmovchiligidan kelib chiqadi|D|vitamin d, xolekalsiferol|D vitamini — suyak mineralizatsiyasi buziladi. Kattalarda osteomalyatsiya rivojlanadi.
+vitamin-b12-deficiency-02v27ds|B12 vitamini yetishmovchiligi|B12 yetishmovchiligi nevrologik belgilarni keltirib chiqaradi:|Ha|Yo'q|Ha — orqa miyaning subakut kombinatsiyalangan degeneratsiyasi. Folat yetishmovchiligida bunday bo'lmaydi.
+folate-deficiency-021w62j|Folat yetishmovchiligi|Folat yetishmovchiligida metilmalon kislotasi:|Normada|Oshgan|Folat yetishmovchiligida normada, B12 yetishmovchiligida oshadi. Gomotsistein ikkalasida ham oshadi.
+vitamin-a-deficiency-1jm0yci|A vitamini yetishmovchiligi|Shabko'rlik ___ vitamini yetishmovchiligidan kelib chiqadi|A|vitamin a, retinol|A vitamini — rodopsin hosil bo'lishi uchun retinal zarur.
+vitamin-k-1g8vikx|K vitamini|K vitamini yetishmovchiligida protrombin vaqti FQTV dan oldin uzayadi:|To'g'ri|Noto'g'ri|To'g'ri — VII omilning yarim yemirilish davri eng qisqa, shuning uchun protrombin vaqti birinchi bo'lib uzayadi.
+biotin-deficiency-012d0tq|Biotin yetishmovchiligi|Ko'p miqdorda xom tuxum oqsili ___ yetishmovchiligiga olib keladi (avidin uni bog'lab oladi)|biotin|b7, vitamin b7|Xom tuxum oqsilidagi avidin biotinni (B7) bog'lab oladi.
+vitamin-b6-deficiency-1877pgg|B6 vitamini yetishmovchiligi|Izoniazid B6 vitamini yetishmovchiligiga olib keladi:|Ha|Yo'q|Ha — neyropatiyaning oldini olish uchun izoniazid bilan birga piridoksin beriladi.
+glycolysis-rate-limiting-enzyme-1pnh3zv|Glikolizning tezlikni cheklovchi fermenti|Glikolizning tezlikni cheklovchi fermenti — ___|fosfofruktokinaza-1|ffk-1, ffk, fosfofruktokinaza|FFK-1. Fruktoza-6-fosfat → fruktoza-1,6-bisfosfat.
+insulin-1rcpf2a|Insulin|Insulin glikolizni kuchaytiradi:|Ha|Yo'q|Ha — insulin ovqatdan keyingi holatning zaxiralovchi gormoni.
+g6pd-deficiency-13v5kmp|G6PD yetishmovchiligi|G6PD yetishmovchiligida periferik qon surtmasida ___ tanachalari ko'rinadi|Xayns|xayns tanachalari|Xayns tanachalari (denaturatsiyalangan gemoglobin), taloq ularni olib tashlagach — «tishlangan» hujayralar.
+von-gierke-disease-14haghw|Girke kasalligi|Girke kasalligida (I tip) qondagi glyukoza:|Past|Yuqori|Och qoringa og'ir gipoglikemiya — glyukoza-6-fosfataza yetishmovchiligi.
+phenylketonuria-0qudee4|Fenilketonuriya|Fenilketonuriya bilan og'rigan bemorlar ___ aminokislotasini iste'mol qilmasligi kerak|fenilalanin|fen|Fenilalaningidroksilaza yetishmovchiligi. Tirozin almashtirib bo'lmaydigan aminokislotaga aylanadi.
+essential-fructosuria-0nxm634|Essensial fruktozuriya|Essensial fruktozuriya — xavfsiz holat:|Ha|Yo'q|Ha — fruktokinaza yetishmovchiligi, belgisiz kechadi. Xavflisi — aldolaza B yetishmovchiligi.
+lead-poisoning-134al1f|Qo'rg'oshindan zaharlanish|Qo'rg'oshin ferroxelatazani va ___-degidratazani ingibitsiya qiladi|ALK|aminolevulin kislotasi, delta-alk|ALK-degidrataza va ferroxelataza. Qon surtmasida eritrotsitlarning bazofil punktuatsiyasi ko'rinadi.
+ketone-bodies-1x1hsjd|Keton tanachalari|Ochlik paytida bosh miya keton tanachalaridan foydalana oladi:|Ha|Yo'q|Ha. Eritrotsitlar esa foydalana olmaydi — ularda mitoxondriya yo'q.
+addison-disease-1lkwg6i|Addison kasalligi|Addison kasalligida qon zardobidagi K+:|Oshgan|Kamaygan|Aldosteron kam → K+ kam chiqariladi → giperkaliemiya.
+addison-disease-1w61m3q|Addison kasalligi|Addison kasalligida qon zardobidagi Na+:|Kamaygan|Oshgan|Giponatriemiya — aldosteron yetishmovchiligida natriy yo'qotiladi.
+cushing-syndrome-1rx3xoa|Kushing sindromi|Kushing sindromida qondagi glyukoza:|Oshgan|Kamaygan|Kortizol kontrinsulyar gormon — u glyukozani oshiradi.
+conn-syndrome-1a5jeif|Konn sindromi|Birlamchi giperaldosteronizmda qon zardobidagi K+:|Kamaygan|Oshgan|Aldosteron K+ ni chiqarib yuboradi. Gipokaliemiya + gipertenziya + metabolik alkaloz.
+graves-disease-1c4cgu1|Greyvs kasalligi|Greyvs kasalligida TTG:|Kamaygan|Oshgan|Yuqori T4 teskari aloqa orqali TTG ni bostiradi.
+hypothyroidism-0nkk96f|Gipotireoz|Birlamchi gipotireozda TTG:|Oshgan|Kamaygan|Qalqonsimon bez ishlamay qoladi → manfiy teskari aloqa yo'qoladi → TTG oshadi.
+hashimoto-thyroiditis-0330uaz|Xashimoto tireoiditi|Xashimoto tireoiditida tireoperoksidazaga va ___ga qarshi antitelolar bo'ladi|tireoglobulin|tg, anti-tg|Anti-TPO va anti-tireoglobulin antitelolari. Yod yetarli hududlarda gipotireozning eng ko'p uchraydigan sababi.
+diabetes-insipidus-0cjb6v2|Qandsiz diabet|Qandsiz diabetda siydik osmolyalligi:|Past|Yuqori|ADG ta'siri yo'q → siydik suyultirilgan, qon zardobi quyuqlashgan.
+siadh-171m4ss|ADG noadekvat sekretsiyasi sindromi|Antidiuretik gormonning noadekvat sekretsiyasi sindromida qon zardobidagi Na+:|Kamaygan|Oshgan|Suv ushlanib qolib, natriyni suyultiradi — evovolemik giponatriemiya.
+pheochromocytoma-1rtofxo|Feoxromotsitoma|Feoxromotsitoma qon plazmasi yoki siydikdagi ___ni o'lchash orqali tashxislanadi|metanefrinlar|metanefrin, plazma metanefrinlari, vma|Plazmadagi erkin metanefrinlar. «10 lar qoidasi» o'smasi.
+hyperparathyroidism-0mzl068|Giperparatireoz|Birlamchi giperparatireozda qon zardobidagi fosfat:|Kamaygan|Oshgan|PTG buyrakni fosfatni chiqarib yuborishga majbur qiladi. Kalsiy oshadi, fosfat kamayadi.
+dka-11av1od|DKA|DKA qanday kislota-ishqor buzilishini keltirib chiqaradi?|Yuqori anion farqli metabolik atsidoz|Gipoxloremiyali metabolik alkaloz|Ketokislotalar anion farqni oshiradi.
+acromegaly-1lsj0xt|Akromegaliya|Akromegaliyani aniqlash uchun eng yaxshi skrining — qon zardobidagi ___|IFR-1|ifr1, insulinsimon o'sish omili-1, somatomedin c|IFR-1 — o'sish gormonining o'zi to'lqinsimon ajraladi, uni o'lchash ishonchsiz.
+prolactinoma-1q6u51y|Prolaktinoma|Prolaktinomaning birlamchi davosi:|Dofamin agonisti|Transsfenoidal jarrohlik|Kabergolin yoki bromokriptin — dofamin prolaktin ajralishini tormozlaydi.
+aortic-stenosis-1sl1vjk|Aorta stenozi|Aorta stenozidagi shovqin qachon eshitiladi:|Sistolada|Diastolada|Uyqu arteriyalariga tarqaluvchi kuchayib-susayuvchi sistolik shovqin.
+mitral-stenosis-0ejd8ng|Mitral stenoz|Mitral stenozdagi shovqin qachon eshitiladi:|Diastolada|Sistolada|Ochilish qarsillashi va diastola o'rtasidagi gurillovchi shovqin. Odatda revmatik kelib chiqishga ega.
+mitral-regurgitation-0qmnr9v|Mitral regurgitatsiya|Mitral regurgitatsiya shovqini ___ga tarqaladi|qo'ltiq osti|chap qo'ltiq osti, qo'ltiq|Golosistolik, puflovchi shovqin, qo'ltiq ostiga tarqaladi.
+hypertrophic-cardiomyopathy-096wto9|Gipertrofik kardiomiopatiya|Gipertrofik obstruktiv kardiomiopatiyada Valsalva sinamasi paytida shovqin:|Kuchayadi|Susayadi|Oldingi yuklama kamayadi → qorincha bo'shlig'i kichrayadi → obstruksiya kuchayadi → shovqin kuchayadi. Aksariyat shovqinlarning aksi.
+beta-blockers-1yv8d91|Beta-blokatorlar|Beta-blokatorlar miokardning kislorodga ehtiyojini kamaytiradi:|Ha|Yo'q|Ha — ular yurak qisqarishlari sonini va qisqaruvchanlikni kamaytiradi.
+myocardial-infarction-16lzn41|Miokard infarkti|Miokard infarktining eng spetsifik markeri — ___|troponin|troponin i, yurak troponini, troponin t|Yurak troponini I — 3-4 soatda oshadi, 7-10 kun yuqori saqlanadi.
+atrial-fibrillation-10pp3wo|Bo'lmachalar fibrillatsiyasi|Bo'lmachalar fibrillatsiyasida P tishchalari:|Yo'q|Bor|Mutlaqo noritmik ritm, P tishchalari aniqlanmaydi.
+wolff-parkinson-white-0l8yvdt|Volf-Parkinson-Uayt sindromi|Volf-Parkinson-Uayt sindromida EKG da ___ to'lqini ko'rinadi|delta|delta to'lqini|Delta to'lqin — qo'shimcha o'tkazuvchi yo'l tufayli QRS ning yotiq boshlanishi.
+heart-failure-1pz35vd|Yurak yetishmovchiligi|AFF ingibitorlari yurak yetishmovchiligida o'lim ko'rsatkichini kamaytiradi:|Ha|Yo'q|Ha. AFF ingibitorlari, beta-blokatorlar, spironolakton va SGLT2 ingibitorlari o'lim ko'rsatkichini kamaytiradi.
+left-heart-failure-0dqd76m|Chap qorincha yetishmovchiligi|Chap tomonlama yurak yetishmovchiligi asosan nimaga olib keladi:|O'pka shishi|Periferik shishlar|Qon o'pkada dimlanadi. O'ng tomonlama yetishmovchilikda esa katta qon aylanish doirasida dimlanadi.
+nitroglycerin-0vd4up4|Nitroglitserin|Nitroglitserin stenokardiyani asosan ___ni kengaytirish orqali bartaraf etadi|venalar|vena, venoz, venulalar|Venalar kengayadi → oldingi yuklama kamayadi → devor tarangligi va kislorodga ehtiyoj kamayadi.
+pericarditis-1trnhr3|Perikardit|O'tkir perikarditda diffuz ST ko'tarilishi kuzatiladi:|Ha|Yo'q|Ha — diffuz ST ko'tarilishi va PR depressiyasi. Oldinga engashganda og'riq kamayadi.
+loop-diuretics-13ld2xb|Halqali diuretiklar|Furosemid qon zardobidagi kalsiyni:|Kamaytiradi|Oshiradi|Halqali diuretiklar kalsiyni yo'qotadi. Tiazidlar esa uni ushlab qoladi.
+thiazide-diuretics-1mgjzhu|Tiazid diuretiklar|Tiazidlar qon zardobidagi kalsiyni:|Oshiradi|Kamaytiradi|Tiazidlar kalsiyni ushlab qoladi — qaytalanuvchi kalsiy toshlarida foydali.
+loop-diuretics-1ljhjqa|Halqali diuretiklar|Halqali diuretiklar ___ halqasining yo'g'on ko'tariluvchi qismiga ta'sir qiladi|Genle|genle halqasi|Ular yo'g'on ko'tariluvchi qismdagi Na-K-2Cl kotransporterini bloklaydi.
+nephrotic-syndrome-1ledka6|Nefrotik sindrom|Nefrotik sindromda proteinuriya sutkasiga 3,5 g dan ortiq bo'ladi:|Ha|Yo'q|Ha — shuningdek gipoalbuminemiya, shishlar va giperlipidemiya.
+nephritic-syndrome-1nizwy4|Nefritik sindrom|Nefritik sindrom odatda nima bilan namoyon bo'ladi:|Gematuriya va gipertenziya|Massiv proteinuriya|Nefritik — yallig'lanish: gematuriya, eritrotsitar silindrlar, gipertenziya, yengil proteinuriya.
+minimal-change-disease-1ynp23v|Minimal o'zgarishlar kasalligi|Bolalardagi eng ko'p uchraydigan nefrotik sindrom — ___ o'zgarishlar kasalligi|minimal|minimal o'zgarishlar|Minimal o'zgarishlar kasalligi — elektron mikroskopda podotsitlar oyoqchalarining silliqlashishi, steroidlarga yaxshi javob beradi.
+hyperkalemia-0joxsqv|Giperkaliemiya|Giperkaliemiyada EKG da birinchi bo'lib qanday o'zgarish paydo bo'ladi?|Cho'qqisimon T tishchalari|Yaqqol U tishchalari|Cho'qqisimon T tishchalari. U tishchalari gipokaliemiyadan dalolat beradi.
+renal-blood-flow-0eq5hd6|Buyrak qon oqimi|Olib keluvchi arteriolani ___ kengaytiradi, shuning uchun NYaQV KFT ni pasaytiradi|prostaglandinlar|prostaglandin, pge2|Prostaglandinlar olib keluvchi arteriolani kengaytiradi. NYaQV ularni bloklaydi va KFT pasayadi.
+ace-inhibitors-063ufls|AFF ingibitorlari|AFF ingibitorlari olib ketuvchi arteriolani kengaytiradi va KFT ni pasaytiradi:|Ha|Yo'q|Ha — olib ketuvchi arteriola kengayishi filtratsiya bosimini tushiradi, shuning uchun kreatinin biroz oshishi mumkin.
+prerenal-azotemia-181nbsq|Prerenal azotemiya|Prerenal azotemiyada mochevina azoti/kreatinin nisbati:|20 dan yuqori|15 dan past|20 dan yuqori — mochevina natriy va suv bilan birga qayta so'riladi.
+acetaminophen-overdose-14eordk|Atsetaminofen dozasini oshirib yuborish|Atsetaminofen dozasini oshirib yuborishda antidot — ___|N-atsetilsistein|atsetilsistein, n atsetilsistein, nats|N-atsetilsistein glutationni qayta tiklaydi.
+warfarin-19oa56h|Varfarin|Varfarin dozasini oshirib yuborish ___ vitamini bilan bartaraf etiladi|K|vitamin k, fitomenadion|K vitamini, faol qon ketishda esa qo'shimcha protrombin kompleksi konsentrati yoki yangi muzlatilgan plazma.
+heparin-1aa81wb|Geparin|Geparin dozasini oshirib yuborish ___ bilan neytrallanadi|protamin sulfat|protamin|Protamin sulfat — geparinni bog'lovchi musbat zaryadli peptid.
+opioid-overdose-0nb4uz6|Opioidlar dozasini oshirib yuborish|Opioidlar dozasini oshirib yuborishda antidot — ___|nalokson|narkan|Nalokson — mu-retseptorlarning raqobatli antagonisti.
+benzodiazepine-overdose-0mb7pzs|Benzodiazepinlar dozasini oshirib yuborish|Benzodiazepinlar dozasini oshirib yuborishda antidot — ___|flumazenil||Flumazenil — lekin uzoq vaqt iste'mol qilganlarda tutqanoq xavfi bor.
+warfarin-0wdbems|Varfarin|Varfarin qaysi ko'rsatkich bilan nazorat qilinadi:|Protrombin vaqti/XNN|FQTV|Protrombin vaqti/XNN — koagulyatsiyaning tashqi yo'li. Geparin FQTV bilan nazorat qilinadi.
+heparin-0xos9b3|Geparin|Fraksiyalanmagan geparin qaysi ko'rsatkich bilan nazorat qilinadi:|FQTV|Protrombin vaqti/XNN|FQTV — koagulyatsiyaning ichki yo'li. Past molekulyar geparinlar odatda nazorat talab qilmaydi.
+aminoglycosides-0clvomd|Aminoglikozidlar|Aminoglikozidlar nefrotoksik va ___toksik|oto|ototoksik, quloq|Nefrotoksik va ototoksik. Halqali diuretiklar bilan birga qo'llash tavsiya etilmaydi.
+statins-0zd4b22|Statinlar|Statinlar GMG-KoA-reduktazani ingibitsiya qiladi:|Ha|Yo'q|Ha — xolesterin sintezining tezligini cheklovchi fermenti.
+statins-0swlh5j|Statinlar|Statinlarning mushaklarga oid klassik nojo'ya ta'siri — ___|miopatiya|miozit, rabdomioliz, mushak og'rig'i, mialgiya|Miopatiya va rabdomioliz — KFK ni tekshiring. Fibratlar bilan birga qo'llanganda xavf ortadi.
+beta-blockers-02vdafp|Beta-blokatorlar|Noselektiv beta-blokatorlar bronxial astmada xavfsiz:|Yo'q|Ha|Yo'q — beta-2 blokadasi bronxospazmga olib keladi. Zarur bo'lsa, kardioselektiv preparat qo'llanadi.
+ace-inhibitors-02vcxw1|AFF ingibitorlari|AFF ingibitorlari chaqiradigan quruq yo'talga to'plangan ___ sabab bo'ladi|bradikinin|bradikininlar|AFF odatda bradikininni parchalaydi. Bemorni angiotenzin retseptorlari blokatoriga o'tkazing.
+digoxin-1m16w0t|Digoksin|Gipokaliemiya digoksin toksikligini oshiradi:|Ha|Yo'q|Ha — Na/K-ATFazada K+ raqobati kamaygani sababli digoksin ko'proq bog'lanadi.
+methotrexate-1vx5o12|Metotreksat|Metotreksat toksikligi ___ bilan bartaraf etiladi|leykovorin|folin kislotasi|Leykovorin (folin kislotasi) bloklangan digidrofolatreduktazani chetlab o'tadi.
+cyclophosphamide-11j6r7k|Siklofosfamid|Siklofosfamid gemorragik sistitga olib keladi:|Ha|Yo'q|Ha — akrolein tufayli. Mesna va faol gidratatsiya bilan oldi olinadi.
+staphylococcus-aureus-0z77qov|Staphylococcus aureus|Staphylococcus aureus koagulaza bo'yicha:|Musbat|Manfiy|Koagulaza-musbat — aynan shu belgi uni S. epidermidis dan ajratadi.
+streptococcus-pyogenes-1vmwk5w|Streptococcus pyogenes|Streptococcus pyogenes qanday gemoliz beradi?|Beta|Alfa|Beta-gemolitik, A guruh, batsitratsinga sezgir.
+tuberculosis-1dd5r7p|Sil|Mycobacterium tuberculosis ___ bakteriyalarni bo'yash usulida aniqlanadi|kislotaga chidamli|tsil-nilsen, kislotaga chidamlilik|Kislotaga chidamli bo'yash (Tsil-Nilsen) — hujayra devoridagi mikol kislotasi sababli.
+cryptococcus-19jq1ls|Kriptokokk|Cryptococcus neoformans ___ bo'yog'i bilan ko'rinadi|tush|tush bo'yog'i|Tush bo'yog'i kapsulani ko'rsatadi. Mutsikarmin bilan ham musbat bo'yaladi.
+pseudomonas-aeruginosa-0waug5d|Pseudomonas aeruginosa|Pseudomonas aeruginosa:|Gram-manfiy|Gram-musbat|Gram-manfiy tayoqcha, oksidaza-musbat, uzum hidli, ko'k-yashil pigment hosil qiladi.
+neisseria-0qpl4lw|Neisseria|Neisseria mikroorganizmlari shakli bo'yicha gram-manfiy ___|diplokokklar|diplokokk, kokklar|Gram-manfiy diplokokklar. N. meningitidis maltozani fermentlaydi, N. gonorrhoeae esa yo'q.
+clostridioides-difficile-1d4vob7|Clostridioides difficile|C. difficile ning birlamchi davosi:|Og'iz orqali vankomitsin|Og'iz orqali metronidazol|Hozirda birlamchi davo — og'iz orqali vankomitsin yoki fidaksomitsin.
+malaria-0l8g0f8|Bezgak|Bezgakning eng xavfli turi — Plasmodium ___|falciparum|p falciparum|P. falciparum — miya bezgagi, isitmaning notekis kechishi.
+hiv-0ojgjo1|OIV|OITS CD4 soni qanchadan past bo'lganda tashxislanadi:|200|500|CD4 200 hujayra/mm3 dan past bo'lsa yoki OITSni belgilovchi kasallik bo'lsa.
+hepatitis-b-0o1d002|Gepatit B|Gepatit B ga qarshi emlashdan keyingi immunitetda faqat anti-___ bo'ladi|HBs|anti-hbs, hbsab|Emlash faqat anti-HBs beradi. O'tkazilgan infeksiyada anti-HBc ham bo'ladi.
+influenza-0qj933c|Gripp|Gripp virusining genomi:|RNK|DNK|Segmentli manfiy zanjirli RNK — segmentlar antigen shiftiga imkon beradi.
+candida-albicans-0h24ytn|Candida albicans|Candida albicans ___ °C da o'sish naychalarini hosil qiladi|37|37 c, o'ttiz yetti|37 °C da o'sish naychalarining hosil bo'lishi — klassik aniqlash belgisi.
+rabies-17dxo4d|Quturish|Quturishda neyronlarda Babesh-Negri tanachalari kuzatiladi:|Ha|Yo'q|Ha — eozinofil sitoplazmatik kiritmalar, klassik holda gippokampda.
+type-i-hypersensitivity-102yv9r|I turdagi o'ta yuqori sezuvchanlik|I turdagi o'ta yuqori sezuvchanlik qaysi antitelo orqali amalga oshadi:|IgE|IgG|Semiz hujayralardagi IgE — anafilaksiya va allergiya. Darhol rivojlanadi.
+type-iv-hypersensitivity-0vm75ty|IV turdagi o'ta yuqori sezuvchanlik|IV turdagi o'ta yuqori sezuvchanlik antitelolar emas, ___ hujayralar orqali amalga oshadi|T|t hujayralar, t-limfotsitlar|T hujayralar. Kechikkan tur — Mantu sinamasi va kontakt dermatit.
+anaphylaxis-06uc37d|Anafilaksiya|Anafilaksiyada birinchi beriladigan preparat:|Epinefrin|Antigistamin|Mushak ichiga epinefrin (adrenalin) — har doim birinchi. Qolganlari yordamchi.
+immunoglobulins-1ajhrh5|Immunoglobulinlar|Qon zardobida eng ko'p bo'lgan immunoglobulin — Ig___|G|igg, ig g|IgG — yo'ldosh orqali o'tadigan yagona immunoglobulin ham.
+immunoglobulins-0q6xrt7|Immunoglobulinlar|Sekretlar va ona sutidagi asosiy antitelo — Ig___|A|iga, sekretor iga|Sekretor IgA — J-zanjir bilan birikkan dimer.
+digeorge-syndrome-1ayorfy|Di Jorj sindromi|Di Jorj sindromida qaysi hujayralar yetishmaydi:|T hujayralar|B hujayralar|Timus aplaziyasi tufayli T hujayralar bo'lmaydi. Shuningdek gipokalsiemiya va yurak nuqsonlari.
+chronic-granulomatous-disease-1yxvihb|Surunkali granulyomatoz kasallik|Surunkali granulyomatoz kasallik qaysi fermentning nuqsoni tufayli yuzaga keladi:|NADFN-oksidaza|Mieloperoksidaza|NADFN-oksidaza — digidrorodamin testi patologik.
+transplant-rejection-13t81be|Transplantatning rad etilishi|Transplantatning o'ta o'tkir rad etilishi oldindan mavjud ___ tufayli yuzaga keladi|antitelolar|antitelo, oldindan mavjud antitelolar|Oldindan mavjud antitelolar, bir necha daqiqa ichida. Qonning mosligini tekshirish (kross-match) bilan oldi olinadi.
+iron-deficiency-anemia-0ml8g3x|Temir tanqisligi anemiyasi|Temir tanqisligi anemiyasida ferritin:|Kamaygan|Oshgan|Ferritinning pastligi zaxiralar kamligini bildiradi — eng spetsifik erta marker.
+iron-deficiency-anemia-1e9tjxv|Temir tanqisligi anemiyasi|Temir tanqisligida zardobning umumiy temir bog'lash qobiliyati:|Oshgan|Kamaygan|Temir bog'lash qobiliyati (transferrin) oshadi — organizm ko'proq temir tutishga harakat qiladi.
+anemia-of-chronic-disease-1unp2eb|Surunkali kasallik anemiyasi|Surunkali kasallik anemiyasida ferritin:|Oshgan|Kamaygan|Ferritin yuqori — gepsidin temirni zaxirada qamab qo'yadi.
+sickle-cell-disease-0lkhinf|O'roqsimon hujayrali anemiya|O'roqsimon hujayrali anemiyada 6-pozitsiyada ___ o'rniga valin keladi|glutamin kislotasi|glutamat, glu|Beta-zanjirning 6-pozitsiyasida glutamin kislotasi → valin.
+hemophilia-a-0nv6601|Gemofiliya A|Gemofiliya A — qaysi omil yetishmovchiligi:|VIII|IX|VIII omil. Gemofiliya B — IX omil. Ikkalasi ham X ga birikkan retsessiv.
+von-willebrand-disease-0plnjo6|Villebrand kasalligi|Villebrand kasalligida qon ketish vaqti uzayadi:|Ha|Yo'q|Ha — trombotsitlar adgeziyasi uchun Villebrand omili zarur. Eng ko'p uchraydigan irsiy qon ketish kasalligi.
+itp-03l5sq9|Immun trombotsitopeniya|Immun trombotsitopeniyada trombotsitlar glikoproteini ___ ga qarshi antitelolar bo'ladi|IIb/IIIa|gpiib/iiia, 2b/3a, iib iiia|GpIIb/IIIa ga qarshi antitelolar; trombotsitlar taloqda parchalanadi.
+dic-13eru7v|DVS-sindrom|DVS-sindromida fibrinogen:|Kamaygan|Oshgan|Sarflanadi. D-dimer oshadi, trombotsitlar kamayadi, protrombin vaqti ham, FQTV ham uzayadi.
+cml-1onfvap|Surunkali mieloleykoz|Surunkali mieloleykoz ___ xromosomasi bilan bog'liq|Filadelfiya|ph, filadelfiya xromosomasi, bcr-abl|Filadelfiya xromosomasi t(9;22), BCR-ABL. Imatinib bilan davolanadi.
+hodgkin-lymphoma-0pqqtr8|Xodjkin limfomasi|Xodjkin limfomasida biopsiyada ___ hujayralari ko'rinadi|Berezovskiy-Shternberg|rid-shternberg, berezovskiy-rid-shternberg, boyqush ko'zi|Berezovskiy-Shternberg hujayralari — «boyqush ko'zi» yadrolari, CD15 va CD30 musbat.
+multiple-myeloma-00x0bmc|Ko'p sonli mieloma|Ko'p sonli mielomada qon zardobidagi kalsiy:|Oshgan|Kamaygan|Suyak lizisi tufayli giperkalsiemiya. Asosiy belgilar: giperkalsiemiya, buyrak zararlanishi, anemiya, suyak zararlanishi.
+parkinson-disease-10pxb29|Parkinson kasalligi|Parkinson kasalligi — ___ moddadagi dofaminergik neyronlarning nobud bo'lishi|qora|qora modda|Qora moddaning zich qismi. Levi tanachalari — alfa-sinuklein.
+myasthenia-gravis-0pv4vqr|Miasteniya|Miasteniyada takroriy harakat bilan mushak kuchsizligi:|Kuchayadi|Kamayadi|Harakat bilan kuchayadi. Lambert-Iton sindromida esa kamayadi.
+myasthenia-gravis-066ouqu|Miasteniya|Miasteniyada ___ retseptorlariga qarshi antitelolar bo'ladi|atsetilxolin|atsetilxolin retseptori, nikotinli|Postsinaptik atsetilxolin retseptorlariga qarshi antitelolar. Timoma bilan bog'liq.
+multiple-sclerosis-1dufr5m|Tarqalgan skleroz|Tarqalgan skleroz qaysi asab tizimini zararlaydi?|Markaziy|Periferik|Markaziy asab tizimining demielinizatsiyasi. Likvorda oligoklonal chiziqlar, periventrikulyar blyashkalar.
+guillain-barre-syndrome-1ljdu7x|Giyen-Barre sindromi|Giyen-Barre sindromi oyoqlardan yuqoriga qarab ___ falajni keltirib chiqaradi|ko'tariluvchi|ko'tariluvchi falaj, yuqoriga|Ko'tariluvchi falaj, ko'pincha Campylobacter infeksiyasidan keyin. Nafas mushaklarini kuzatib boring.
+alzheimer-disease-1mjvptr|Altsgeymer kasalligi|Altsgeymer kasalligida beta-amiloid blyashkalari bo'ladi:|Ha|Yo'q|Ha — hujayradan tashqari beta-amiloid blyashkalari va hujayra ichidagi tau chigallari.
+broca-aphasia-0sp1qi5|Broka afaziyasi|Broka afaziyasida nutqni tushunish ___|saqlangan|saqlanadi, normal, yaxshi, buzilmagan|Broka — nutq «siniq», tushunish saqlangan; bemor bundan asabiylashadi.
+wernicke-aphasia-0dcncg9|Vernike afaziyasi|Vernike afaziyasida nutq ravon, ammo ma'nosiz:|Ha|Yo'q|Ha — ravon, ma'nosiz, tushunish buzilgan. Vernike — «so'zga boy».
+bacterial-meningitis-06bw5av|Bakterial meningit|Bakterial meningitda likvordagi glyukoza ___|past|kamaygan, pasaygan|Glyukoza past, oqsil yuqori, neytrofillar. Virusli meningitda glyukoza normada qoladi.
+horner-syndrome-0n76g3v|Xorner sindromi|Xorner sindromi ptoz, mioz va yana nimani o'z ichiga oladi:|Angidroz|Gipergidroz|Angidroz — simpatik innervatsiyaning yo'qolishi.
+upper-motor-neuron-lesion-15080h3|Yuqori motor neyron shikastlanishi|Yuqori motor neyron shikastlanishida reflekslar:|Kuchaygan|Susaygan|Giperrefleksiya, spastiklik, Babinski belgisi. Pastki motor neyron shikastlanishi esa aksini beradi.
+peptic-ulcer-disease-10rv1r3|Yara kasalligi|O'n ikki barmoqli ichak yarasining eng ko'p uchraydigan sababi — ___ pylori|Helicobacter|h, h pylori, helicobacter pylori|H. pylori — ureaza-musbat. Uch komponentli davo bilan davolanadi.
+crohn-disease-1xq4q21|Kron kasalligi|Kron kasalligida «sakrab o'tuvchi» zararlanishlar bo'ladi:|Ha|Yo'q|Ha — transmural, sakrab o'tuvchi zararlanishlar, og'izdan anusgacha istalgan joyda. Yarali kolitda esa zararlanish uzluksiz.
+ulcerative-colitis-130pal1|Yarali kolit|Yarali kolit faqat shilliq va shilliq osti qavat bilan cheklanadi:|Ha|Yo'q|Ha — uzluksiz, to'g'ri ichakdan boshlanadi, faqat yo'g'on ichakni zararlaydi.
+celiac-disease-1rgqqo8|Seliakiya|Seliakiya bug'doydagi ___ tomonidan qo'zg'atiladi|gluten|gliadin|Glutenning gliadin qismi. To'qima transglutaminazasiga qarshi antitelolar, vorsinkalar atrofiyasi.
+acute-pancreatitis-1nc0cf6|O'tkir pankreatit|O'tkir pankreatitda spetsifikroq ferment:|Lipaza|Amilaza|Lipaza — spetsifikroq va uzoqroq vaqt yuqori saqlanadi.
+gilbert-syndrome-1pjfp88|Gilbert sindromi|Gilbert sindromi ___ giperbilirubinemiyaga olib keladi|bilvosita|bog'lanmagan, konyugatsiyalanmagan|UGT ning yengil yetishmovchiligi — xavfsiz, stress yoki ochlikda kuchayadi.
+asthma-0b86cxn|Bronxial astma|O'tkir astma xurujida birinchi qo'llanadigan preparat:|Qisqa ta'sirli beta-2 agonist|Ingalyatsion kortikosteroid|Xurujda salbutamol. Steroidlar — nazorat qiluvchi vosita, xurujni to'xtatuvchi emas.
+copd-0vnruim|O'SOK|O'SOK da FEV1/FVC nisbati:|Kamaygan|Oshgan|Obstruktiv kasallikda nisbat 0,7 dan pastga tushadi. Restriktivda esa normal yoki yuqori.
+cystic-fibrosis-0ufjkb3|Mukovistsidoz|Mukovistsidoz ___ genidagi mutatsiya tufayli yuzaga keladi|CFTR||CFTR, odatda delta-F508. Ter xloridi testi bilan tashxislanadi.
+preeclampsia-07exa3u|Preeklampsiya|Preeklampsiya — 20 haftadan keyingi gipertenziya va:|Proteinuriya yoki a'zolar zararlanishi|Tutqanoq yoki o'choqli nevrologik defitsit|Tutqanoqlar qo'shilsa — eklampsiya. Magniy sulfat va tug'dirish bilan davolanadi.
+ectopic-pregnancy-1hyxp46|Bachadondan tashqari homiladorlik|Bachadondan tashqari homiladorlik ko'pincha ___ nayining ampulyar qismida bo'ladi|fallopiy|bachadon|Fallopiy (bachadon) nayining ampulyar qismi.
+pcos-1mdfqdm|Polikistoz tuxumdonlar sindromi|Polikistoz tuxumdonlar sindromida LG/FSG nisbati:|Oshgan|Kamaygan|LG/FSG 2 dan yuqori. Insulinrezistentlik, giperandrogeniya, oligoovulyatsiya.
+acute-inflammation-1yco5yl|O'tkir yallig'lanish|O'tkir yallig'lanishda birinchi bo'lib keladigan hujayra — ___|neytrofil|neytrofillar, segment yadroli|Avval neytrofillar, bir necha soat ichida. Makrofaglar 2-3 kundan keyin keladi.
+granuloma-07w9agz|Granulyoma|Granulyoma hosil bo'lishini qaysi sitokin boshqaradi?|Gamma-interferon|Th2 hujayralarining interleykin-4 i|Th1 hujayralarining gamma-interferoni makrofaglarni epiteliosimon hujayralarga aylantiradi.
+apoptosis-0zwuesy|Apoptoz|Apoptoz yallig'lanishga olib keladi:|Yo'q|Ha|Yo'q — hujayra membranasi butun qoladi. Yallig'lanishga nekroz olib keladi.
+caseous-necrosis-1g8kbic|Tvorogsimon nekroz|Tvorogsimon nekroz klassik holda ___ kasalligida kuzatiladi|sil|tuberkulyoz|Sil va ba'zi zamburug' infeksiyalari — tvorogsimon va granulyomatoz.
+metaplasia-1q3ghus|Metaplaziya|Metaplaziya qaytar jarayon:|Ha|Yo'q|Ha — bir yetuk hujayra turining boshqasiga qaytar almashinuvi.
+barrett-esophagus-0b449i0|Barrett qizilo'ngachi|Barrett qizilo'ngachi — ___ epiteliyga metaplaziya|silindrsimon|ichak tipidagi, bezli|Ko'p qavatli yassi epiteliy → qadahsimon hujayrali ichak tipidagi silindrsimon epiteliy. Adenokarsinoma xavfi.
+tumor-suppressor-genes-0lqgp02|O'sma supressor genlari|O'sma supressor genlari odatda nechta «zarba»ni talab qiladi?|Ikkita|Bitta|Knudsonning ikki zarba gipotezasi. Onkogenlarga bittasi yetarli.
+p53-0evcwsj|p53|p53 ___-xromosomada joylashgan|17|17p, o'n yetti|17p. Odam o'smalarida eng ko'p mutatsiyaga uchraydigan gen.
+amyloidosis-09u9j4b|Amiloidoz|Kongo qizili bilan bo'yalgan amiloid qutblangan nurda olma-yashil rangda tovlanadi:|Ha|Yo'q|Ha — ikki tomonlama nur sindirish tufayli. Beta-burmali qatlam tuzilishi.
+transudate-0dlr5u1|Transsudat|Transsudatda oqsil miqdori ___|past|kam, kamaygan|Oqsil kam — yurak yetishmovchiligi kabi bosim o'zgarishlari tufayli. Ekssudatlar oqsilga boy.

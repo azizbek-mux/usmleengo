@@ -66,6 +66,9 @@ const STOP = new Set([
 export function normalize(s) {
   return String(s || "")
     .toLowerCase()
+    // Uzbek o' and g' are single letters: the apostrophe, however typed, is
+    // dropped rather than splitting the word in two.
+    .replace(/['‘’ʻʼ`]/g, "")
     .replace(/[^a-z0-9+\s-]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
