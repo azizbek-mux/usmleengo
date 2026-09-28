@@ -338,8 +338,9 @@ teacher, 10 classes a student.
   (shrunk on the phone, stored in D1, served from `/class/img/<id>`) — or
   picked from usmleengo's bank. Up to 300 questions a package, 50 packages a
   class.
-- **Questions from a file:** Word (.docx), PDF, a web page or plain text,
-  picked in the app or sent to @usmleengo_bot. The file is read on the phone
+- **Questions from a file or a message:** Word (.docx), PDF, a web page or
+  plain text, picked in the app or sent to @usmleengo_bot — or typed or
+  pasted straight into the bot's chat. The file is read on the phone
   by a plain format reader — no AI: numbered questions, lettered options
   (A–J), then `Answer:`, and optionally `Accept:`, `Explanation:` and
   `Topic:` lines; a `*` or `(correct)` after an option also marks it right.
@@ -355,6 +356,12 @@ teacher, 10 classes a student.
   the `uploads` table (Telegram's file id, not the file) and answered with a
   link that opens it in the Class tab (`…?startapp=f<token>`). Only the
   sender can fetch it, for two days; the server streams it from Telegram.
+  Questions sent as messages gather in one list (stored as text in
+  `uploads`) until the teacher opens it; each reply counts the questions so
+  far with the same reader the app uses. A message with no question number
+  joins only as the next piece of a long paste (Telegram splits those), so
+  a "hello" gets the welcome instead. `worker/uploads-text.sql` added the
+  columns to the live table.
   Setup, once: a random `WEBHOOK_SECRET` Worker secret, then
   `POST /bot/setup` with header `x-setup-key: <that secret>` points the
   bot's webhook here and sets its commands. Telegram signs every webhook

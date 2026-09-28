@@ -219,9 +219,9 @@ console.log("\nthe bot");
     return new Response(JSON.stringify({ ok: true, result: true }));
   };
   const benv = { DB: d1, BOT_TOKEN: TOKEN, WEBHOOK_SECRET: "hook-secret" };
-  const update = (message, secret = "hook-secret") => BOT.handleBot(new Request("https://w/bot", {
+  const update = (message, secret = "hook-secret", now = NOW) => BOT.handleBot(new Request("https://w/bot", {
     method: "POST", headers: { "x-telegram-bot-api-secret-token": secret }, body: JSON.stringify({ message }),
-  }), benv, NOW);
+  }), benv, now);
   const from = { id: 1001, first_name: "Dr" };
   const chat = { id: 1001, type: "private" };
 
@@ -247,6 +247,40 @@ console.log("\nthe bot");
     decodeURIComponent(got.response.headers.get("x-file-name")) === "Cardio week 3.docx");
   check("nobody else does", (await BOT.fetchUpload(benv, { key: S.playerKey(2001) }, token, NOW)).status === 403);
   check("and not after two days", (await BOT.fetchUpload(benv, teacherMe, token, NOW + 3 * 86400000)).status === 404);
+
+  // Questions typed into the chat.
+  const say = (text, seconds = 0) => update({ from, chat, text }, "hook-secret", NOW + seconds * 1000);
+  const reply = () => sent.at(-1).body;
+  const linkOf = (body) => body.reply_markup?.inline_keyboard[0][0].url || "";
+  const lists = () => d1.db.prepare("SELECT COUNT(*) n FROM uploads WHERE text IS NOT NULL").get().n;
+  await say("hello");
+  check("a message with no questions gets the welcome, and starts no list", linkOf(reply()) === BOT.APP_LINK && lists() === 0);
+  await say("1. Which drug is a loop diuretic?\nA) Hydrochlorothiazide\nB) Furosemide\nAnswer: B\n\n2. Hyperkalemia ECG: peaked ___ waves\nAnswer: T");
+  const textLink = linkOf(reply());
+  check("typed questions are counted, with a link into the app",
+    /Got it/.test(reply().text) && /<b>2 questions<\/b>/.test(reply().text) && /\?startapp=f[0-9a-f]{32}$/.test(textLink), reply().text);
+  await say("3. Most common valve lesion in rheumatic heart disease?\nA) Aortic stenosis", 10);
+  check("the next message joins the same list, and a half-written question is flagged",
+    /Added/.test(reply().text) && /3 questions<\/b> — 1 to fix/.test(reply().text) && linkOf(reply()) === textLink, reply().text);
+  await say("B) Mitral stenosis\nAnswer: B", 20);
+  check("the rest of a long paste, a moment later, joins it too",
+    /3 questions<\/b>\./.test(reply().text) && !/to fix/.test(reply().text), reply().text);
+  await say("thanks!", 600);
+  check("a remark minutes later doesn't", linkOf(reply()) === BOT.APP_LINK && lists() === 1);
+  const textToken = textLink.split("startapp=f")[1];
+  check("nobody else can open the list", (await BOT.fetchUpload(benv, { key: S.playerKey(2001) }, textToken, NOW)).status === 403);
+  const list = await BOT.fetchUpload(benv, teacherMe, textToken, NOW);
+  const listText = await list.response.text();
+  check("the sender gets it as a text file, in the order sent",
+    decodeURIComponent(list.response.headers.get("x-file-name")) === BOT.TEXT_NAME &&
+    listText.indexOf("Furosemide") < listText.indexOf("Aortic") && listText.indexOf("Aortic") < listText.indexOf("Mitral"));
+  const P = await import(new URL("../src/lib/qformat.js", import.meta.url).href);
+  const read = P.parseQuestions([{ text: listText }]).questions;
+  check("and the app reads the same three questions from it", read.length === 3 && read.every((q) => !q.problem) && read[2].answer === 1);
+  await say("4. First-line drug for absence seizures?\nA) Phenytoin\nB) Ethosuximide *", 700);
+  check("once opened, the next message starts a new list", /Got it/.test(reply().text) && linkOf(reply()) !== textLink && lists() === 2);
+  await update({ from, chat, photo: [{ file_id: "P1" }] });
+  check("a photo is explained, not taken", /can't add photos/.test(reply().text) && !reply().reply_markup);
   const setup = (key) => BOT.setupBot(new Request("https://rating.example/bot/setup", { method: "POST", headers: { "x-setup-key": key } }), benv);
   check("setting the bot up needs the key", (await setup("nope")).status === 403);
   await setup("hook-secret");

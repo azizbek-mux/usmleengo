@@ -406,6 +406,7 @@ function FormatSheet({ onClose }) {
         Number each question. Put its options under it, one per line — up to ten, A to J — then the
         answer. A question without options is typed; its answer is what the student must type.
         Pictures in Word files and web pages are taken with the question they sit under.
+        No file? Type or paste the questions into a message to @usmleengo_bot, the same way.
       </div>
       <pre className="format-example">{FORMAT_EXAMPLE}</pre>
       <div className="class-note">

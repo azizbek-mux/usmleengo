@@ -85,8 +85,11 @@ CREATE TABLE IF NOT EXISTS uploads (
   file_id    TEXT NOT NULL,
   file_name  TEXT NOT NULL,
   size       INTEGER NOT NULL,
-  created_at INTEGER NOT NULL
-)`;
+  created_at INTEGER NOT NULL,
+  text       TEXT,
+  opened     INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS uploads_owner ON uploads (owner)`;
 
 export const LIMITS = {
   students: 100, // active in one class
