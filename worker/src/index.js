@@ -179,7 +179,7 @@ export async function handleClass(action, request, env, cache = snapshot, now = 
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const headers = corsHeaders(request);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers });
 
@@ -195,7 +195,7 @@ export default {
     }
     // The bot: Telegram's webhook, and the one-time setup that points it here.
     if (pathname === "/bot" && request.method === "POST") {
-      try { return await handleBot(request, env); } catch { return new Response("ok"); }
+      try { return await handleBot(request, env, Date.now(), ctx); } catch { return new Response("ok"); }
     }
     if (pathname === "/bot/setup" && request.method === "POST") {
       const { status, body } = await setupBot(request, env);

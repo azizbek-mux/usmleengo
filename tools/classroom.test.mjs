@@ -219,9 +219,16 @@ console.log("\nthe bot");
     return new Response(JSON.stringify({ ok: true, result: true }));
   };
   const benv = { DB: d1, BOT_TOKEN: TOKEN, WEBHOOK_SECRET: "hook-secret" };
+  // A list's reply waits for a quiet moment after the response; here the
+  // quiet moment comes when the test says so (flush).
+  const pending = [];
+  let gates = [];
+  const ctx = { waitUntil: (work) => pending.push(work) };
+  const quiet = () => new Promise((resolve) => gates.push(resolve));
+  const flush = async () => { const open = gates; gates = []; open.forEach((go) => go()); await Promise.all(pending.splice(0)); };
   const update = (message, secret = "hook-secret", now = NOW) => BOT.handleBot(new Request("https://w/bot", {
     method: "POST", headers: { "x-telegram-bot-api-secret-token": secret }, body: JSON.stringify({ message }),
-  }), benv, now);
+  }), benv, now, ctx, quiet);
   const from = { id: 1001, first_name: "Dr" };
   const chat = { id: 1001, type: "private" };
 
@@ -231,6 +238,8 @@ console.log("\nthe bot");
     sent.at(-1).method === "sendMessage" && sent.at(-1).body.reply_markup.inline_keyboard[0][0].url === BOT.APP_LINK);
   await update({ from, chat, text: "/format" });
   check("/format sends the example", sent.at(-1).body.text.includes("Ethosuximide"));
+  check("with a button that opens Telegram's quiz maker",
+    sent.at(-1).body.reply_markup.keyboard[0][0].request_poll.type === "quiz");
   await update({ from, chat, document: { file_id: "F1", file_name: "Cardio week 3.docx", file_size: 40000 } });
   const link = sent.at(-1).body.reply_markup.inline_keyboard[0][0].url;
   check("a question file is answered with a link that opens the app on it", /\?startapp=f[0-9a-f]{32}$/.test(link), link);
@@ -249,7 +258,8 @@ console.log("\nthe bot");
   check("and not after two days", (await BOT.fetchUpload(benv, teacherMe, token, NOW + 3 * 86400000)).status === 404);
 
   // Questions typed into the chat.
-  const say = (text, seconds = 0) => update({ from, chat, text }, "hook-secret", NOW + seconds * 1000);
+  const send = async (message, seconds = 0) => { await update({ from, chat, ...message }, "hook-secret", NOW + seconds * 1000); await flush(); };
+  const say = (text, seconds = 0) => send({ text }, seconds);
   const reply = () => sent.at(-1).body;
   const linkOf = (body) => body.reply_markup?.inline_keyboard[0][0].url || "";
   const lists = () => d1.db.prepare("SELECT COUNT(*) n FROM uploads WHERE text IS NOT NULL").get().n;
@@ -258,10 +268,10 @@ console.log("\nthe bot");
   await say("1. Which drug is a loop diuretic?\nA) Hydrochlorothiazide\nB) Furosemide\nAnswer: B\n\n2. Hyperkalemia ECG: peaked ___ waves\nAnswer: T");
   const textLink = linkOf(reply());
   check("typed questions are counted, with a link into the app",
-    /Got it/.test(reply().text) && /<b>2 questions<\/b>/.test(reply().text) && /\?startapp=f[0-9a-f]{32}$/.test(textLink), reply().text);
+    /<b>2 questions<\/b>\./.test(reply().text) && /\?startapp=f[0-9a-f]{32}$/.test(textLink), reply().text);
   await say("3. Most common valve lesion in rheumatic heart disease?\nA) Aortic stenosis", 10);
   check("the next message joins the same list, and a half-written question is flagged",
-    /Added/.test(reply().text) && /3 questions<\/b> — 1 to fix/.test(reply().text) && linkOf(reply()) === textLink, reply().text);
+    /3 questions<\/b> — 1 to fix/.test(reply().text) && linkOf(reply()) === textLink, reply().text);
   await say("B) Mitral stenosis\nAnswer: B", 20);
   check("the rest of a long paste, a moment later, joins it too",
     /3 questions<\/b>\./.test(reply().text) && !/to fix/.test(reply().text), reply().text);
@@ -278,9 +288,45 @@ console.log("\nthe bot");
   const read = P.parseQuestions([{ text: listText }]).questions;
   check("and the app reads the same three questions from it", read.length === 3 && read.every((q) => !q.problem) && read[2].answer === 1);
   await say("4. First-line drug for absence seizures?\nA) Phenytoin\nB) Ethosuximide *", 700);
-  check("once opened, the next message starts a new list", /Got it/.test(reply().text) && linkOf(reply()) !== textLink && lists() === 2);
+  check("once opened, the next message starts a new list", /<b>1 question<\/b>/.test(reply().text) && linkOf(reply()) !== textLink && lists() === 2);
   await update({ from, chat, photo: [{ file_id: "P1" }] });
   check("a photo is explained, not taken", /can't add photos/.test(reply().text) && !reply().reply_markup);
+
+  // Quizzes: Telegram polls, made in the chat or forwarded.
+  const tokenOf = (body) => linkOf(body).split("startapp=f")[1];
+  await BOT.fetchUpload(benv, teacherMe, tokenOf(sent.at(-2).body), NOW); // opening list 2 closes it (the last reply was the photo's)
+  const options = (...texts) => texts.map((text) => ({ text, voter_count: 0 }));
+  await send({ poll: {
+    type: "quiz", question: "Most common cause of\nnephrotic syndrome in children?",
+    options: options("FSGS", "Minimal change disease", "Membranous nephropathy"),
+    correct_option_id: 1, explanation: "Podocyte effacement\non electron microscopy.",
+  } }, 800);
+  check("a quiz made in the chat comes with its answer", /<b>1 question<\/b>\./.test(reply().text) && !/to fix/.test(reply().text) && lists() === 3, reply().text);
+  const forwarded = (question) => ({ forward_origin: { type: "channel" }, poll: { type: "quiz", question, options: options("Phenytoin", "Ethosuximide", "Valproate") } });
+  await send(forwarded("Drug of choice for absence seizures?"), 810);
+  check("a forwarded quiz whose answer Telegram hides is flagged, and the reply says why",
+    /2 questions<\/b> — 1 to fix/.test(reply().text) && /forwarded quiz/.test(reply().text), reply().text);
+  const beforeBurst = sent.length;
+  for (const q of ["Drug for trigeminal neuralgia?", "Drug causing gingival hyperplasia?", "Drug safest in pregnancy?"]) {
+    await update({ from, chat, ...forwarded(q) }, "hook-secret", NOW + 820 * 1000);
+  }
+  await flush();
+  check("thirty quizzes forwarded at once get one reply, not thirty",
+    sent.length === beforeBurst + 1 && /5 questions<\/b> — 4 to fix/.test(reply().text), `${sent.length - beforeBurst} replies: ${reply().text}`);
+  const quizList = await BOT.fetchUpload(benv, teacherMe, tokenOf(reply()), NOW);
+  const quizzes = P.parseQuestions([{ text: await quizList.response.text() }]).questions;
+  check("the app reads each quiz as a question: its options, its answer, its explanation",
+    quizzes.length === 5 && quizzes[0].q === "Most common cause of nephrotic syndrome in children?" &&
+    quizzes[0].options.length === 3 && quizzes[0].answer === 1 && quizzes[0].explain === "Podocyte effacement on electron microscopy." &&
+    quizzes[1].answer === -1 && quizzes[1].problem === "No right answer marked." && quizzes[4].q === "Drug safest in pregnancy?");
+  // Two arriving at the very same moment, with no list open: still one list.
+  const listsBefore = lists();
+  await Promise.all([forwarded("Mechanism of ethosuximide?"), forwarded("Mechanism of valproate?")]
+    .map((m) => update({ from, chat, ...m }, "hook-secret", NOW + 900 * 1000)));
+  await flush();
+  const both = d1.db.prepare("SELECT text FROM uploads WHERE text IS NOT NULL AND opened = 0").all();
+  check("quizzes arriving together land in one list, neither lost",
+    lists() === listsBefore + 1 && both.length === 1 && /ethosuximide\?/.test(both[0].text) && /valproate\?/.test(both[0].text));
   const setup = (key) => BOT.setupBot(new Request("https://rating.example/bot/setup", { method: "POST", headers: { "x-setup-key": key } }), benv);
   check("setting the bot up needs the key", (await setup("nope")).status === 403);
   await setup("hook-secret");

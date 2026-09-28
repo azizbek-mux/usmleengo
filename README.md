@@ -340,7 +340,7 @@ teacher, 10 classes a student.
   class.
 - **Questions from a file or a message:** Word (.docx), PDF, a web page or
   plain text, picked in the app or sent to @usmleengo_bot — or typed or
-  pasted straight into the bot's chat. The file is read on the phone
+  pasted straight into the bot's chat, or sent as Telegram quizzes. The file is read on the phone
   by a plain format reader — no AI: numbered questions, lettered options
   (A–J), then `Answer:`, and optionally `Accept:`, `Explanation:` and
   `Topic:` lines; a `*` or `(correct)` after an option also marks it right.
@@ -362,6 +362,15 @@ teacher, 10 classes a student.
   joins only as the next piece of a long paste (Telegram splits those), so
   a "hello" gets the welcome instead. `worker/uploads-text.sql` added the
   columns to the live table.
+  Quizzes (Telegram polls) are written into the list in the same format.
+  One made in the chat — /format shows a **Make a quiz** button, since a
+  private chat offers polls only through a bot's `request_poll` button —
+  carries its right answer and explanation. A forwarded one doesn't until
+  it's closed (Telegram keeps them from bots), so it arrives flagged for the
+  teacher to tap. Additions are single statements (insert-if-none, else
+  append), so a burst of forwards can't overwrite each other, and the reply
+  waits (`ctx.waitUntil`) until 3 s pass with nothing new — one reply per
+  burst.
   Setup, once: a random `WEBHOOK_SECRET` Worker secret, then
   `POST /bot/setup` with header `x-setup-key: <that secret>` points the
   bot's webhook here and sets its commands. Telegram signs every webhook
