@@ -22,6 +22,8 @@
 // Intervals are computed with the ease the card had BEFORE the answer, and the
 // ease is adjusted afterwards — the order Anki uses, and it changes results.
 
+import { isUz } from "./i18n.js";
+
 export const NEW = -1;
 export const LEARNING = 0;
 export const REVIEW = 1;
@@ -235,18 +237,20 @@ export function preview(card, opts = {}) {
 
 /** Anki's own compact unit labels: 10m, 1d, 2.3mo, 1.4y. */
 export function formatInterval(minutes) {
-  if (minutes < 1) return "<1m";
-  if (minutes < 60) return `${Math.round(minutes)}m`;
+  // Uzbek spells the unit out after a space: "10 daq", "4 kun", "1.5 oy".
+  const unit = (en, uz) => (isUz() ? ` ${uz}` : en);
+  if (minutes < 1) return isUz() ? "<1 daq" : "<1m";
+  if (minutes < 60) return `${Math.round(minutes)}${unit("m", "daq")}`;
   if (minutes < 1440) {
     const h = minutes / 60;
-    return `${h < 10 ? Math.round(h * 10) / 10 : Math.round(h)}h`;
+    return `${h < 10 ? Math.round(h * 10) / 10 : Math.round(h)}${unit("h", "soat")}`;
   }
   const days = minutes / 1440;
-  if (days < 30) return `${Math.round(days)}d`;
+  if (days < 30) return `${Math.round(days)}${unit("d", "kun")}`;
   if (days < 365) {
     const mo = days / 30.417;
-    return `${mo < 10 ? Math.round(mo * 10) / 10 : Math.round(mo)}mo`;
+    return `${mo < 10 ? Math.round(mo * 10) / 10 : Math.round(mo)}${unit("mo", "oy")}`;
   }
   const y = days / 365;
-  return `${y < 10 ? Math.round(y * 10) / 10 : Math.round(y)}y`;
+  return `${y < 10 ? Math.round(y * 10) / 10 : Math.round(y)}${unit("y", "yil")}`;
 }

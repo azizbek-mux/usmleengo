@@ -3,7 +3,8 @@ import bank from "../data/bank.js";
 import { bankToClass, classCall, imageUrl, uploadImage } from "../lib/classApi.js";
 import { search, subjects } from "../lib/match.js";
 import { ACCEPTED, FILE_REASONS, readQuestionFile } from "../lib/qfiles.js";
-import { FORMAT_EXAMPLE, parseQuestions } from "../lib/qformat.js";
+import { dayText, t } from "../lib/i18n.js";
+import { formatExample, parseQuestions } from "../lib/qformat.js";
 import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
 import { haptic } from "../lib/telegram.js";
 import { BackBar } from "./Chrome.jsx";
@@ -15,37 +16,36 @@ import { Sheet } from "./Sheet.jsx";
 export const MAX_OPTIONS = 10;
 const MAX_QUESTIONS = 300;
 
-const REASONS = {
-  offline: "Couldn’t reach the server. Check your internet and try again.",
-  name: "Give the package a name.",
-  questions: "Add at least one question.",
-  question: "One of the questions is incomplete.",
-  "too-many-packages": "This class has the most packages it can hold.",
-  "too-many-assignments": "This class has the most homework it can hold.",
-  due: "Pick a due date in the future, within a year.",
-  "image-too-large": "That picture is too large, even shrunk.",
-  "image-type": "Only pictures can be added.",
-  image: "That picture couldn’t be read.",
-  "too-many-images": "This class has the most pictures it can hold.",
-};
-export const reasonOf = (err) => REASONS[err?.code] || "Something went wrong. Try again.";
+const reasons = () => ({
+  offline: t("Couldn’t reach the server. Check your internet and try again.", "Serverga ulanib bo'lmadi. Internetni tekshirib, qayta urinib ko'ring."),
+  name: t("Give the package a name.", "To'plamga nom bering."),
+  questions: t("Add at least one question.", "Kamida bitta savol qo'shing."),
+  question: t("One of the questions is incomplete.", "Savollardan biri to'liq emas."),
+  "too-many-packages": t("This class has the most packages it can hold.", "Bu guruhda to'plamlar soni chegaraga yetgan."),
+  "too-many-assignments": t("This class has the most homework it can hold.", "Bu guruhda uy vazifalari soni chegaraga yetgan."),
+  due: t("Pick a due date in the future, within a year.", "Bir yil ichidagi kelgusi sanani tanlang."),
+  "image-too-large": t("That picture is too large, even shrunk.", "Rasm kichraytirilgandan keyin ham juda katta."),
+  "image-type": t("Only pictures can be added.", "Faqat rasm qo'shish mumkin."),
+  image: t("That picture couldn’t be read.", "Rasmni o'qib bo'lmadi."),
+  "too-many-images": t("This class has the most pictures it can hold.", "Bu guruhda rasmlar soni chegaraga yetgan."),
+});
+export const reasonOf = (err) => reasons()[err?.code] || t("Something went wrong. Try again.", "Nimadir xato ketdi. Qayta urinib ko'ring.");
+const questionsText = (n) => t(`${n} question${n === 1 ? "" : "s"}`, `${n} ta savol`);
+const optionsText = (n) => t(`${n} options`, `${n} ta variant`);
 
 let seq = 0;
 const newId = () => `q${Date.now().toString(36)}${(seq++).toString(36)}`;
 const blankQuestion = () => ({ id: newId(), type: "choice", q: "", options: ["", ""], answer: -1, explain: "" });
 
-/** "Fri 3 Oct". */
-export const dayText = (ms) => new Date(ms).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
-
 /** What is missing from a question, or null if it is complete. */
 function problemOf(q) {
-  if (!q.q.trim() && !q.img) return "Write the question, or add a picture.";
+  if (!q.q.trim() && !q.img) return t("Write the question, or add a picture.", "Savolni yozing yoki rasm qo'shing.");
   if (q.type === "choice") {
-    if (q.options.some((o) => !o.trim())) return "Fill in every option, or remove the empty ones.";
-    if (q.options.length < 2) return "A question needs at least two options.";
-    if (!(q.answer >= 0 && q.answer < q.options.length)) return "Tap the circle by the right option.";
+    if (q.options.some((o) => !o.trim())) return t("Fill in every option, or remove the empty ones.", "Barcha variantlarni to'ldiring yoki bo'shlarini olib tashlang.");
+    if (q.options.length < 2) return t("A question needs at least two options.", "Savolda kamida ikkita variant bo'lishi kerak.");
+    if (!(q.answer >= 0 && q.answer < q.options.length)) return t("Tap the circle by the right option.", "To'g'ri variant yonidagi doirachani bosing.");
   } else if (!String(q.answer || "").trim()) {
-    return "Write the answer.";
+    return t("Write the answer.", "Javobni yozing.");
   }
   return null;
 }
@@ -78,14 +78,15 @@ export function PackageEditor({ classId, packageId, incomingFile = null, onBack,
     try {
       const { questions: found, stray } = parseQuestions(await readQuestionFile(file));
       if (!found.length) {
-        setError("No questions found in that file. Number each question and put its options under it — see “How to write the file”.");
+        setError(t("No questions found in that file. Number each question and put its options under it — see “How to write the file”.",
+          "Faylda savol topilmadi. Har bir savolni raqamlang va variantlarini uning ostiga yozing — «Faylni qanday yozish kerak» bo'limiga qarang."));
       } else {
         setPreview({ fileName: file.name, stray, items: found.map((parsed) => ({ parsed, fixed: null, skip: false })) });
         // An unnamed package takes the file's name, which the teacher can change.
         setName((n) => n || file.name.replace(/\.[^.]+$/, "").slice(0, 60));
       }
     } catch (err) {
-      setError(FILE_REASONS[err?.code] || "That file couldn’t be read.");
+      setError(FILE_REASONS()[err?.code] || t("That file couldn’t be read.", "Faylni o'qib bo'lmadi."));
     } finally {
       setReading(false);
     }
@@ -143,7 +144,7 @@ export function PackageEditor({ classId, packageId, incomingFile = null, onBack,
       onSaved();
     } catch (err) {
       setError(err.code === "question" && Number.isInteger(err.index)
-        ? `Question ${err.index + 1} is incomplete.`
+        ? t(`Question ${err.index + 1} is incomplete.`, `${err.index + 1}-savol to'liq emas.`)
         : reasonOf(err));
       setBusy(false);
     }
@@ -161,22 +162,22 @@ export function PackageEditor({ classId, packageId, incomingFile = null, onBack,
   if (!questions) {
     return (
       <div className="screen">
-        <BackBar title="Package" onBack={onBack} />
-        <div className="empty">{error || "Loading…"}</div>
+        <BackBar title={t("Package", "To'plam")} onBack={onBack} />
+        <div className="empty">{error || t("Loading…", "Yuklanmoqda…")}</div>
       </div>
     );
   }
 
   return (
     <div className="screen">
-      <BackBar title={packageId ? "Edit package" : "New package"} onBack={onBack} />
+      <BackBar title={packageId ? t("Edit package", "To'plamni tahrirlash") : t("New package", "Yangi to'plam")} onBack={onBack} />
       <label className="game-field">
-        <span className="section-label">Package name</span>
-        <input className="gap-input" value={name} maxLength={60} onChange={(e) => setName(e.target.value)} placeholder="Acid–base, week 3…" />
+        <span className="section-label">{t("Package name", "To'plam nomi")}</span>
+        <input className="gap-input" value={name} maxLength={60} onChange={(e) => setName(e.target.value)} placeholder={t("Acid–base, week 3…", "Kislota-ishqor, 3-hafta…")} />
       </label>
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>Questions</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Questions", "Savollar")}</span>
         <span className="game-count">{questions.length} / {MAX_QUESTIONS}</span>
       </div>
       {questions.length ? (
@@ -185,33 +186,35 @@ export function PackageEditor({ classId, packageId, incomingFile = null, onBack,
             <button key={q.id} className="pkg-q" onClick={() => { haptic("light"); setEditing(i); }}>
               <span className="pkg-n">{i + 1}</span>
               <span className="pkg-text">
-                {q.q || (q.img ? "Picture question" : "—")}
+                {q.q || (q.img ? t("Picture question", "Rasmli savol") : "—")}
                 <small>
-                  {q.type === "choice" ? `${q.options.length} options` : "Typed answer"}
-                  {q.img ? " · picture" : ""}
-                  {q.id.startsWith("b-") ? " · from usmleengo" : ""}
+                  {q.type === "choice" ? optionsText(q.options.length) : t("Typed answer", "Yozma javob")}
+                  {q.img ? t(" · picture", " · rasm") : ""}
+                  {q.id.startsWith("b-") ? t(" · from usmleengo", " · usmleengodan") : ""}
                 </small>
               </span>
             </button>
           ))}
         </div>
       ) : (
-        <div className="class-note">No questions yet. Write your own, or add some from usmleengo’s bank.</div>
+        <div className="class-note">
+          {t("No questions yet. Write your own, or add some from usmleengo’s bank.", "Hali savollar yo'q. O'zingiz yozing yoki usmleengo bazasidan qo'shing.")}
+        </div>
       )}
 
       <div className="pkg-add">
         <button className="btn btn-ghost" disabled={questions.length >= MAX_QUESTIONS} onClick={() => { haptic("light"); setEditing("new"); }}>
-          Write a question
+          {t("Write a question", "Savol yozish")}
         </button>
         <button className="btn btn-ghost" disabled={questions.length >= MAX_QUESTIONS} onClick={() => { haptic("light"); setPicking(true); }}>
-          Add from usmleengo
+          {t("Add from usmleengo", "usmleengodan qo'shish")}
         </button>
         <button
           className="btn btn-ghost pkg-import"
           disabled={reading || questions.length >= MAX_QUESTIONS}
           onClick={() => { haptic("light"); fileRef.current?.click(); }}
         >
-          {reading ? "Reading the file…" : "Import a file — Word, PDF, web page or text"}
+          {reading ? t("Reading the file…", "Fayl o'qilmoqda…") : t("Import a file — Word, PDF, web page or text", "Fayldan yuklash — Word, PDF, veb-sahifa yoki matn")}
         </button>
       </div>
       <input
@@ -222,18 +225,19 @@ export function PackageEditor({ classId, packageId, incomingFile = null, onBack,
         onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ""; if (f) importFile(f); }}
       />
       <button className="chips-clear pkg-format" onClick={() => { haptic("light"); setShowFormat(true); }}>
-        How to write the file
+        {t("How to write the file", "Faylni qanday yozish kerak")}
       </button>
       {showFormat && <FormatSheet onClose={() => setShowFormat(false)} />}
 
       {packageId && (
-        <DeleteButton label="Delete this package" confirm="Tap again: delete it and its homework" onConfirm={remove} />
+        <DeleteButton label={t("Delete this package", "To'plamni o'chirish")}
+          confirm={t("Tap again: delete it and its homework", "Yana bosing: to'plam va uning uy vazifalari o'chiriladi")} onConfirm={remove} />
       )}
 
       <div className="home-cta">
         {error && <div className="game-warn">{error}</div>}
         <button className="btn btn-primary" disabled={busy || !name.trim() || !questions.length} onClick={save}>
-          {busy ? "Saving…" : "Save package"}
+          {busy ? t("Saving…", "Saqlanmoqda…") : t("Save package", "To'plamni saqlash")}
         </button>
       </div>
     </div>
@@ -301,7 +305,7 @@ function ImportPreview({ classId, preview, room, onChange, onCancel, onAdd }) {
     let question = it.fixed || fromParsed(it.parsed);
     if (!it.fixed && it.parsed.image) {
       try {
-        setAdding("Adding the picture…");
+        setAdding(t("Adding the picture…", "Rasm qo'shilmoqda…"));
         question = { ...question, img: await uploadImage(classId, it.parsed.image) };
       } catch (err) {
         setError(reasonOf(err));
@@ -337,29 +341,35 @@ function ImportPreview({ classId, preview, room, onChange, onCancel, onAdd }) {
         if (it.fixed) { out.push(it.fixed); continue; }
         const q = fromParsed(it.parsed);
         if (it.parsed.image) {
-          setAdding(`Adding pictures ${++done} of ${pictures}…`);
+          done += 1;
+          setAdding(t(`Adding pictures ${done} of ${pictures}…`, `Rasmlar qo'shilmoqda: ${pictures} tadan ${done}…`));
           q.img = await uploadImage(classId, it.parsed.image);
         }
         out.push(q);
       }
       onAdd(out);
     } catch (err) {
-      setError(`${reasonOf(err)} ${out.length} of ${chosen.length} were ready; try again to add the rest.`);
+      setError(t(`${reasonOf(err)} ${out.length} of ${chosen.length} were ready; try again to add the rest.`,
+        `${reasonOf(err)} ${chosen.length} tadan ${out.length} tasi tayyor edi; qolganini qo'shish uchun qayta urinib ko'ring.`));
       setAdding(null);
     }
   }
 
   return (
     <div className="screen">
-      <BackBar title="Questions found" onBack={onCancel} />
+      <BackBar title={t("Questions found", "Topilgan savollar")} onBack={onCancel} />
       <div className="sub class-user">
-        {preview.fileName} · {items.length} question{items.length === 1 ? "" : "s"}
-        {broken.length ? ` · ${broken.length} to fix` : ""}
-        {preview.stray ? ` · ${preview.stray} line${preview.stray === 1 ? "" : "s"} before the first question skipped` : ""}
+        {preview.fileName} · {questionsText(items.length)}
+        {broken.length ? t(` · ${broken.length} to fix`, ` · ${broken.length} tasini tuzatish kerak`) : ""}
+        {preview.stray
+          ? t(` · ${preview.stray} line${preview.stray === 1 ? "" : "s"} before the first question skipped`,
+            ` · birinchi savoldan oldingi ${preview.stray} qator o'tkazib yuborildi`)
+          : ""}
       </div>
       {broken.length > 0 && (
         <div className="class-note" style={{ marginTop: 0, marginBottom: 10 }}>
-          The ones in red couldn’t be read completely. Tap one to fix it — or leave it out.
+          {t("The ones in red couldn’t be read completely. Tap one to fix it — or leave it out.",
+            "Qizil rangdagilarni to'liq o'qib bo'lmadi. Tuzatish uchun ustiga bosing — yoki tashlab keting.")}
         </div>
       )}
 
@@ -370,15 +380,15 @@ function ImportPreview({ classId, preview, room, onChange, onCancel, onAdd }) {
             <button key={i} className={`pkg-q${it.skip ? " skipped" : ""}`} onClick={() => openFix(i)}>
               <span className="pkg-n">{i + 1}</span>
               <span className="pkg-text">
-                {q.q || "Picture question"}
+                {q.q || t("Picture question", "Rasmli savol")}
                 <small>
                   {q.type === "choice"
-                    ? `${q.options.length} options${q.answer >= 0 ? ` · ${String.fromCharCode(65 + q.answer)} right` : ""}`
-                    : `Typed: ${q.answer || "—"}`}
-                  {it.skip ? " · left out" : ""}
+                    ? `${optionsText(q.options.length)}${q.answer >= 0 ? t(` · ${String.fromCharCode(65 + q.answer)} right`, ` · to'g'risi: ${String.fromCharCode(65 + q.answer)}`) : ""}`
+                    : t(`Typed: ${q.answer || "—"}`, `Yozma: ${q.answer || "—"}`)}
+                  {it.skip ? t(" · left out", " · qo'shilmaydi") : ""}
                 </small>
                 {!it.skip && !it.fixed && it.parsed.problem && <small className="pkg-problem">{it.parsed.problem}</small>}
-                {it.fixed && <small className="pkg-fixed">Fixed ✓</small>}
+                {it.fixed && <small className="pkg-fixed">{t("Fixed ✓", "Tuzatildi ✓")}</small>}
               </span>
               {urls[i] && !it.fixed && <img className="pkg-thumb" src={urls[i]} alt="" />}
             </button>
@@ -388,9 +398,9 @@ function ImportPreview({ classId, preview, room, onChange, onCancel, onAdd }) {
 
       <div className="home-cta">
         {error && <div className="game-warn">{error}</div>}
-        {ready.length > room && <div className="cta-note">Only {room} more fit in this package.</div>}
+        {ready.length > room && <div className="cta-note">{t(`Only ${room} more fit in this package.`, `Bu to'plamga yana faqat ${room} ta savol sig'adi.`)}</div>}
         <button className="btn btn-primary" disabled={!ready.length || Boolean(adding)} onClick={add}>
-          {adding || `Add ${Math.min(ready.length, room)} question${Math.min(ready.length, room) === 1 ? "" : "s"}`}
+          {adding || t(`Add ${questionsText(Math.min(ready.length, room))}`, `${questionsText(Math.min(ready.length, room))} qo'shish`)}
         </button>
       </div>
     </div>
@@ -401,27 +411,24 @@ function ImportPreview({ classId, preview, room, onChange, onCancel, onAdd }) {
 function FormatSheet({ onClose }) {
   const [copied, setCopied] = useState(false);
   return (
-    <Sheet title="How to write the file" onClose={onClose}>
+    <Sheet title={t("How to write the file", "Faylni qanday yozish kerak")} onClose={onClose}>
       <div className="class-note" style={{ marginTop: 0 }}>
-        Number each question. Put its options under it, one per line — up to ten, A to J — then the
-        answer. A question without options is typed; its answer is what the student must type.
-        Pictures in Word files and web pages are taken with the question they sit under.
-        No file? Type or paste the questions into a message to @usmleengo_bot, the same way — or
-        forward it quizzes.
+        {t("Number each question. Put its options under it, one per line — up to ten, A to J — then the answer. A question without options is typed; its answer is what the student must type. Pictures in Word files and web pages are taken with the question they sit under. No file? Type or paste the questions into a message to @usmleengo_bot, the same way — or forward it quizzes.",
+          "Har bir savolni raqamlang. Variantlarini uning ostiga, har birini alohida qatorga yozing — o'ntagacha, A dan J gacha — keyin javobni. Varianti yo'q savol yozma bo'ladi: uning javobini talaba o'zi yozadi. Word fayllari va veb-sahifalardagi rasmlar ular ostida turgan savolga biriktiriladi. Fayl yo'qmi? Savollarni xuddi shunday @usmleengo_bot ga xabar qilib yozing yoki joylang — yoki unga viktorinalarni uzating.")}
       </div>
-      <pre className="format-example">{FORMAT_EXAMPLE}</pre>
+      <pre className="format-example">{formatExample()}</pre>
       <div className="class-note">
-        Also understood: “Q1:”, “1)”, “(a)”, “a.”, “Correct: B”, “Ans B”, a * after the right option,
-        or the answer written out in full. Explanations and “Accept:” lines are optional.
+        {t("Also understood: “Q1:”, “1)”, “(a)”, “a.”, “Correct: B”, “Ans B”, a * after the right option, or the answer written out in full. Explanations and “Accept:” lines are optional.",
+          "Shuningdek tushuniladi: «Savol 1:», «1)», «(a)», «a.», «To'g'ri javob: B», to'g'ri variantdan keyin * belgisi yoki javobning to'liq matni. «Izoh:» va «Qabul:» qatorlari ixtiyoriy. Inglizcha kalit so'zlar (Answer:, Explanation:) ham ishlaydi.")}
       </div>
       <button
         className="btn btn-ghost"
         style={{ marginTop: 12 }}
         onClick={async () => {
-          try { await navigator.clipboard.writeText(FORMAT_EXAMPLE); setCopied(true); haptic("success"); } catch { /* not allowed here */ }
+          try { await navigator.clipboard.writeText(formatExample()); setCopied(true); haptic("success"); } catch { /* not allowed here */ }
         }}
       >
-        {copied ? "Copied ✓" : "Copy the example"}
+        {copied ? t("Copied ✓", "Nusxalandi ✓") : t("Copy the example", "Namunani nusxalash")}
       </button>
     </Sheet>
   );
@@ -476,10 +483,10 @@ export function QuestionEditor({ classId, initial, number, onSave, onCancel, onD
 
   return (
     <div className="screen">
-      <BackBar title={`Question ${number}`} onBack={onCancel} />
+      <BackBar title={t(`Question ${number}`, `${number}-savol`)} onBack={onCancel} />
 
-      <div className="period" role="tablist" aria-label="Answer type">
-        {[["choice", "Options to tap"], ["typed", "Typed answer"]].map(([key, label]) => (
+      <div className="period" role="tablist" aria-label={t("Answer type", "Javob turi")}>
+        {[["choice", t("Options to tap", "Test")], ["typed", t("Typed answer", "Yozma javob")]].map(([key, label]) => (
           <button key={key} role="tab" aria-selected={q.type === key} className={`period-opt${q.type === key ? " on" : ""}`}
             onClick={() => { haptic("light"); set({ type: key }); }}>
             {label}
@@ -488,21 +495,24 @@ export function QuestionEditor({ classId, initial, number, onSave, onCancel, onD
       </div>
 
       <label className="game-field">
-        <span className="section-label">Question</span>
+        <span className="section-label">{t("Question", "Savol")}</span>
         <textarea className="gap-input qe-text" rows={4} value={q.q} maxLength={2000}
           onChange={(e) => set({ q: e.target.value })}
-          placeholder={q.type === "typed" ? "Dementia, diarrhea and dermatitis = deficiency of vitamin ___" : "A 25-year-old woman has fatigue and pale conjunctivae. Most likely deficiency?"} />
+          placeholder={q.type === "typed"
+            ? t("Dementia, diarrhea and dermatitis = deficiency of vitamin ___", "Demensiya, diareya va dermatit = ___ vitamini yetishmovchiligi")
+            : t("A 25-year-old woman has fatigue and pale conjunctivae. Most likely deficiency?",
+              "25 yoshli ayolda holsizlik va konyunktivalar rangparligi. Eng ehtimoliy yetishmovchilik?")} />
       </label>
 
       <div className="qe-picture">
         {q.img ? (
           <>
             <img src={imageUrl(q.img)} alt="" />
-            <button className="chips-clear" onClick={() => set({ img: undefined })}>Remove picture</button>
+            <button className="chips-clear" onClick={() => set({ img: undefined })}>{t("Remove picture", "Rasmni olib tashlash")}</button>
           </>
         ) : (
           <button className="btn btn-ghost" disabled={uploading} onClick={() => fileRef.current?.click()}>
-            {uploading ? "Adding the picture…" : "Add a picture"}
+            {uploading ? t("Adding the picture…", "Rasm qo'shilmoqda…") : t("Add a picture", "Rasm qo'shish")}
           </button>
         )}
         <input ref={fileRef} type="file" accept="image/*" hidden onChange={pickPicture} />
@@ -510,18 +520,18 @@ export function QuestionEditor({ classId, initial, number, onSave, onCancel, onD
 
       {q.type === "choice" ? (
         <>
-          <div className="section-label">Options — tap the circle by the right one</div>
+          <div className="section-label">{t("Options — tap the circle by the right one", "Variantlar — to'g'risi yonidagi doirachani bosing")}</div>
           <div className="qe-options">
             {q.options.map((o, i) => (
               <div key={i} className={`qe-option${q.answer === i ? " right" : ""}`}>
-                <button className="qe-radio" aria-label={`Option ${i + 1} is right`} aria-pressed={q.answer === i}
+                <button className="qe-radio" aria-label={t(`Option ${i + 1} is right`, `${i + 1}-variant to'g'ri`)} aria-pressed={q.answer === i}
                   onClick={() => { haptic("light"); set({ answer: i }); }}>
                   {q.answer === i ? "✓" : ""}
                 </button>
-                <input className="gap-input" value={o} maxLength={400} placeholder={`Option ${String.fromCharCode(65 + i)}`}
+                <input className="gap-input" value={o} maxLength={400} placeholder={t(`Option ${String.fromCharCode(65 + i)}`, `${String.fromCharCode(65 + i)} variant`)}
                   onChange={(e) => set({ options: q.options.map((x, j) => (j === i ? e.target.value : x)) })} />
                 {q.options.length > 2 && (
-                  <button className="qe-x" aria-label={`Remove option ${i + 1}`}
+                  <button className="qe-x" aria-label={t(`Remove option ${i + 1}`, `${i + 1}-variantni olib tashlash`)}
                     onClick={() => set({
                       options: q.options.filter((_, j) => j !== i),
                       answer: q.answer === i ? -1 : q.answer > i ? q.answer - 1 : q.answer,
@@ -533,34 +543,37 @@ export function QuestionEditor({ classId, initial, number, onSave, onCancel, onD
             ))}
           </div>
           {q.options.length < MAX_OPTIONS && (
-            <button className="chips-clear qe-more" onClick={() => set({ options: [...q.options, ""] })}>+ Add an option</button>
+            <button className="chips-clear qe-more" onClick={() => set({ options: [...q.options, ""] })}>{t("+ Add an option", "+ Variant qo'shish")}</button>
           )}
         </>
       ) : (
         <>
           <label className="game-field">
-            <span className="section-label">Answer</span>
+            <span className="section-label">{t("Answer", "Javob")}</span>
             <input className="gap-input" value={q.typed} maxLength={200} onChange={(e) => set({ typed: e.target.value })} placeholder="B3" />
           </label>
           <label className="game-field">
-            <span className="section-label">Also accept (optional, separated by commas)</span>
-            <input className="gap-input" value={q.also} onChange={(e) => set({ also: e.target.value })} placeholder="niacin, vitamin b3" />
+            <span className="section-label">{t("Also accept (optional, separated by commas)", "Boshqa to'g'ri javoblar (ixtiyoriy, vergul bilan)")}</span>
+            <input className="gap-input" value={q.also} onChange={(e) => set({ also: e.target.value })} placeholder={t("niacin, vitamin b3", "niatsin, vitamin b3")} />
           </label>
-          <div className="class-note" style={{ marginTop: -6 }}>Small typos in longer answers are forgiven, as in the app’s own questions.</div>
+          <div className="class-note" style={{ marginTop: -6 }}>
+            {t("Small typos in longer answers are forgiven, as in the app’s own questions.",
+              "Uzunroq javoblardagi kichik imlo xatolari kechiriladi, ilovaning o'z savollaridagi kabi.")}
+          </div>
         </>
       )}
 
       <label className="game-field" style={{ marginTop: 12 }}>
-        <span className="section-label">Explanation (optional)</span>
+        <span className="section-label">{t("Explanation (optional)", "Izoh (ixtiyoriy)")}</span>
         <textarea className="gap-input qe-text" rows={3} value={q.explain || ""} maxLength={2000}
-          onChange={(e) => set({ explain: e.target.value })} placeholder="Shown after the answer." />
+          onChange={(e) => set({ explain: e.target.value })} placeholder={t("Shown after the answer.", "Javobdan keyin ko'rsatiladi.")} />
       </label>
 
-      {onDelete && <DeleteButton label="Delete this question" confirm="Tap again to delete it" onConfirm={onDelete} />}
+      {onDelete && <DeleteButton label={t("Delete this question", "Savolni o'chirish")} confirm={t("Tap again to delete it", "O'chirish uchun yana bosing")} onConfirm={onDelete} />}
 
       <div className="home-cta">
         {problem && <div className="game-warn">{problem}</div>}
-        <button className="btn btn-primary" disabled={uploading} onClick={done}>Done</button>
+        <button className="btn btn-primary" disabled={uploading} onClick={done}>{t("Done", "Tayyor")}</button>
       </div>
     </div>
   );
@@ -590,15 +603,15 @@ function BankPicker({ have, room, onAdd, onCancel }) {
 
   return (
     <div className="screen">
-      <BackBar title="Add from usmleengo" onBack={onCancel} />
+      <BackBar title={t("Add from usmleengo", "usmleengodan qo'shish")} onBack={onCancel} />
       <div className="search">
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search a topic — addison, niacin…" autoComplete="off" />
+        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t("Search a topic — addison, niacin…", "Mavzu qidiring — Addison, niatsin…")} autoComplete="off" />
       </div>
       {!query.trim() && (
         <div className="chips" style={{ marginBottom: 12 }}>
-          {chips.map((t) => (
-            <button key={t} className={`chip${tag === t ? " on" : ""}`} onClick={() => { haptic("light"); setTag(tag === t ? null : t); }}>
-              {tagLabel(t)}
+          {chips.map((c) => (
+            <button key={c} className={`chip${tag === c ? " on" : ""}`} onClick={() => { haptic("light"); setTag(tag === c ? null : c); }}>
+              {tagLabel(c)}
             </button>
           ))}
         </div>
@@ -609,18 +622,24 @@ function BankPicker({ have, room, onAdd, onCancel }) {
             <button key={q.id} className={`pkg-q pick${picked.has(q.id) ? " on" : ""}`} onClick={() => toggle(q)} aria-pressed={picked.has(q.id)}>
               <span className="qe-radio">{picked.has(q.id) ? "✓" : ""}</span>
               <span className="pkg-text">
-                {q.q || "Picture question"}
-                <small>{q.topic} · {q.type === "gap" ? "typed" : `${q.options.length} options`}{q.img ? " · picture" : ""}</small>
+                {q.q || t("Picture question", "Rasmli savol")}
+                <small>
+                  {q.topic} · {q.type === "gap" ? t("typed", "yozma") : optionsText(q.options.length)}{q.img ? t(" · picture", " · rasm") : ""}
+                </small>
               </span>
             </button>
           ))}
         </div>
       ) : (
-        <div className="class-note">{query.trim() || tag ? "Nothing new to add here." : "Search, or pick a category."}</div>
+        <div className="class-note">
+          {query.trim() || tag ? t("Nothing new to add here.", "Bu yerda qo'shish uchun yangi savol yo'q.") : t("Search, or pick a category.", "Qidiring yoki fan tanlang.")}
+        </div>
       )}
       <div className="home-cta">
         <button className="btn btn-primary" disabled={!picked.size} onClick={() => { haptic("medium"); onAdd([...picked.values()]); }}>
-          {picked.size ? `Add ${picked.size} question${picked.size === 1 ? "" : "s"}` : "Pick questions to add"}
+          {picked.size
+            ? t(`Add ${questionsText(picked.size)}`, `${questionsText(picked.size)} qo'shish`)
+            : t("Pick questions to add", "Qo'shish uchun savollarni tanlang")}
         </button>
       </div>
     </div>
@@ -655,32 +674,35 @@ export function AssignScreen({ packages, onBack, onDone }) {
 
   return (
     <div className="screen">
-      <BackBar title="Set homework" onBack={onBack} />
-      <div className="section-label">Package</div>
+      <BackBar title={t("Set homework", "Uy vazifasi berish")} onBack={onBack} />
+      <div className="section-label">{t("Package", "To'plam")}</div>
       <div className="opt-list">
         {packages.map((p) => (
           <button key={p.id} className={`opt-row${p.id === packageId ? " on" : ""}`} onClick={() => { haptic("light"); setPackageId(p.id); }}>
             <div>
               <div className="opt-name">{p.name}</div>
-              <div className="opt-note">{p.count} question{p.count === 1 ? "" : "s"}</div>
+              <div className="opt-note">{questionsText(p.count)}</div>
             </div>
             <span className="tick">{p.id === packageId ? "✓" : ""}</span>
           </button>
         ))}
       </div>
       <label className="game-field" style={{ marginTop: 14 }}>
-        <span className="section-label">Title (optional)</span>
+        <span className="section-label">{t("Title (optional)", "Nomi (ixtiyoriy)")}</span>
         <input className="gap-input" value={title} maxLength={60} onChange={(e) => setTitle(e.target.value)} placeholder={chosen?.name || ""} />
       </label>
       <label className="game-field">
-        <span className="section-label">Due by the end of</span>
+        <span className="section-label">{t("Due by the end of", "Topshirish muddati (shu kun oxirigacha)")}</span>
         <input className="gap-input" type="date" value={date} min={new Date().toISOString().slice(0, 10)} onChange={(e) => setDate(e.target.value)} />
       </label>
-      <div className="class-note">Each student’s first try is the one that counts. Try-agains after that are practice.</div>
+      <div className="class-note">
+        {t("Each student’s first try is the one that counts. Try-agains after that are practice.",
+          "Har bir talabaning faqat birinchi urinishi hisoblanadi. Keyingi urinishlar — mashq.")}
+      </div>
       <div className="home-cta">
         {error && <div className="game-warn">{error}</div>}
         <button className="btn btn-primary" disabled={busy || !packageId || !date} onClick={assign}>
-          {busy ? "Setting it…" : "Set homework"}
+          {busy ? t("Setting it…", "Berilmoqda…") : t("Set homework", "Uy vazifasi berish")}
         </button>
       </div>
     </div>
@@ -706,8 +728,8 @@ export function AssignmentResults({ assignmentId, onBack }) {
   if (!data) {
     return (
       <div className="screen">
-        <BackBar title="Homework" onBack={onBack} />
-        <div className="empty">{error || "Loading…"}</div>
+        <BackBar title={t("Homework", "Uy vazifasi")} onBack={onBack} />
+        <div className="empty">{error || t("Loading…", "Yuklanmoqda…")}</div>
       </div>
     );
   }
@@ -718,32 +740,35 @@ export function AssignmentResults({ assignmentId, onBack }) {
     <div className="screen rating">
       <BackBar title={data.assignment.title} onBack={onBack} />
       <div className="sub class-user">
-        {data.assignment.packageName} · due {dayText(data.assignment.dueAt)} · {done.length} of {data.students.length} handed in
+        {t(`${data.assignment.packageName} · due ${dayText(data.assignment.dueAt)} · ${done.length} of ${data.students.length} handed in`,
+          `${data.assignment.packageName} · muddati: ${dayText(data.assignment.dueAt)} · ${data.students.length} tadan ${done.length} tasi topshirdi`)}
       </div>
 
-      <div className="section-label">Students</div>
+      <div className="section-label">{t("Students", "Talabalar")}</div>
       <div className="board">
         {data.students.map((s) => (
           <div key={s.player} className="board-row">
             <span className="board-who">
               <span className="board-name">{s.name}</span>
               <span className="board-user">
-                {s.done ? `Handed in ${dayText(s.finishedAt)}${s.late ? " · late" : ""}` : "Not yet"}
+                {s.done
+                  ? t(`Handed in ${dayText(s.finishedAt)}${s.late ? " · late" : ""}`, `Topshirdi: ${dayText(s.finishedAt)}${s.late ? " · kechikib" : ""}`)
+                  : t("Not yet", "Hali yo'q")}
               </span>
             </span>
             <span className="board-value">{s.done ? `${s.score}/${s.total}` : "—"}</span>
           </div>
         ))}
-        {!data.students.length && <div className="board-empty">No students in the class yet.</div>}
+        {!data.students.length && <div className="board-empty">{t("No students in the class yet.", "Guruhda hali talabalar yo'q.")}</div>}
       </div>
 
-      <div className="section-label">Each question</div>
+      <div className="section-label">{t("Each question", "Har bir savol")}</div>
       <div className="weak-list">
         {data.questions.map((q) => (
           <div key={q.id} className="weak-row">
             <span className="weak-name">
-              Q{q.n}
-              <small>{q.answered} answered</small>
+              {t(`Q${q.n}`, `${q.n}-savol`)}
+              <small>{t(`${q.answered} answered`, `${q.answered} ta javob`)}</small>
             </span>
             <span className="res-q">
               <span className="res-text">{q.text}</span>
@@ -755,7 +780,8 @@ export function AssignmentResults({ assignmentId, onBack }) {
       </div>
 
       {error && <div className="game-warn" style={{ marginTop: 12 }}>{error}</div>}
-      <DeleteButton label="Delete this homework" confirm="Tap again: delete it and its scores" onConfirm={remove} />
+      <DeleteButton label={t("Delete this homework", "Uy vazifasini o'chirish")}
+        confirm={t("Tap again: delete it and its scores", "Yana bosing: vazifa va uning natijalari o'chiriladi")} onConfirm={remove} />
     </div>
   );
 }

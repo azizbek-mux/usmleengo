@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import {
   BOARDS, FREE_SECONDS, WEIGHTS, dayIndex, formatPace, medalFor, points, rate,
 } from "../lib/rating.js";
+import { t } from "../lib/i18n.js";
 import { displayName, usernameOf } from "../lib/scorecard.js";
 import { ratingInput, today } from "../lib/storage.js";
 import { haptic, telegramUser } from "../lib/telegram.js";
@@ -24,7 +25,7 @@ export function ratingData(state, standings) {
   const input = ratingInput(state);
   return {
     me: {
-      name: profile ? displayName(profile) : "You",
+      name: profile ? displayName(profile) : t("You", "Siz"),
       username: profile ? usernameOf(profile) : null,
       rating: rate(input, dayIndex(today())),
     },
@@ -74,7 +75,15 @@ export function useLiveBoard(onRefresh) {
  * points, to see who leads it, but a place there is not a rank.
  */
 const FILTERS = BOARDS.filter((b) => b.id !== "overall");
-const FILTERED_BY = { streak: "day streak", xp: "XP", speed: "time" };
+const filteredBy = (id) => ({ streak: t("day streak", "kunlik intizom"), xp: "XP", speed: t("time", "vaqt") })[id];
+
+/** A board's name on its chip, and the heading of its value column. */
+const boardName = (id) => ({
+  overall: t("Points", "Ball"), streak: t("Day streak", "Kunlik intizom"), xp: "XP", speed: t("Time", "Vaqt"),
+})[id];
+const boardColumn = (id) => ({
+  overall: t("Points", "Ball"), streak: t("Days", "Kunlar"), xp: "XP", speed: t("Avg. time", "O'rt. vaqt"),
+})[id];
 
 /**
  * A place in the Rank column: the medal for the top three on the rating,
@@ -83,7 +92,7 @@ const FILTERED_BY = { streak: "day streak", xp: "XP", speed: "time" };
  */
 export function PlaceMark({ place, medal = true }) {
   const m = medal ? medalFor(place) : null;
-  return m ? <span className="board-medal" role="img" aria-label={`Place ${place}`}>{m}</span> : place;
+  return m ? <span className="board-medal" role="img" aria-label={t(`Place ${place}`, `${place}-o'rin`)}>{m}</span> : place;
 }
 
 function Row({ row, board, me }) {
@@ -100,7 +109,7 @@ function Row({ row, board, me }) {
         <span className="board-name">
           {name}
           {/* Beside a real name only — outside Telegram the name is already "You". */}
-          {row.isMe && name !== "You" && <span className="board-you">you</span>}
+          {row.isMe && name !== t("You", "Siz") && <span className="board-you">{t("you", "siz")}</span>}
         </span>
         {username && <span className="board-user">@{username}</span>}
       </span>
@@ -112,11 +121,11 @@ function Row({ row, board, me }) {
 /** "Resets in 3 days", "Resets tomorrow", "Resets in 5 h". */
 function resetsIn(endsAt, now = Date.now()) {
   const ms = endsAt - now;
-  if (!(ms > 0)) return "Resets now";
+  if (!(ms > 0)) return t("Resets now", "Hozir yangilanadi");
   const hours = Math.ceil(ms / 3600000);
-  if (hours < 24) return `Resets in ${hours} h`;
+  if (hours < 24) return t(`Resets in ${hours} h`, `${hours} soatdan keyin yangilanadi`);
   const days = Math.ceil(ms / 86400000);
-  return days === 1 ? "Resets tomorrow" : `Resets in ${days} days`;
+  return days === 1 ? t("Resets tomorrow", "Ertaga yangilanadi") : t(`Resets in ${days} days`, `${days} kundan keyin yangilanadi`);
 }
 
 /** The rating: the top ten by points, or by one part of them while a filter is on. */
@@ -131,7 +140,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
   const { me, top, places, ranked, week } = useMemo(() => ratingData(state, standings), [state, standings]);
   const rows = top?.[board] || [];
   const mine = places?.[board];
-  const column = BOARDS.find((b) => b.id === board).column;
+  const column = boardColumn(board);
 
   function choose(id) {
     haptic("light");
@@ -145,21 +154,21 @@ export default function Rating({ state, standings, loading, onRefresh }) {
 
   let placeLine;
   if (!standings) {
-    placeLine = <span>{loading ? "Loading the rating…" : "The rating cannot be reached right now"}</span>;
+    placeLine = <span>{loading ? t("Loading the rating…", "Reyting yuklanmoqda…") : t("The rating cannot be reached right now", "Reytingga hozir ulanib bo'lmayapti")}</span>;
   } else if (places.overall.total <= 1) {
-    placeLine = <span>You are the first on the board</span>;
+    placeLine = <span>{t("You are the first on the board", "Reytingda birinchi siz")}</span>;
   } else {
     placeLine = (
       <span className="rating-rank">
         {medalFor(places.overall.place) && `${medalFor(places.overall.place)} `}
-        {ranked ? "Your rank" : "You would be"} <b>{rankText(places.overall)}</b>
+        {ranked ? t("Your rank", "O'rningiz") : t("You would be", "O'rningiz bo'lardi")} <b>{rankText(places.overall)}</b>
       </span>
     );
   }
 
   const periods = (
-    <div className="period" role="tablist" aria-label="Period">
-      {[["all", "All time"], ["week", "This week"]].map(([id, label]) => (
+    <div className="period" role="tablist" aria-label={t("Period", "Davr")}>
+      {[["all", t("All time", "Barcha vaqt")], ["week", t("This week", "Shu hafta")]].map(([id, label]) => (
         <button
           key={id}
           role="tab"
@@ -176,7 +185,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
   if (period === "week") {
     return (
       <div className="screen rating">
-        <ScreenHead title="Rating" sub="Everyone who plays, ranked by points" />
+        <ScreenHead title={t("Rating", "Reyting")} sub={t("Everyone who plays, ranked by points", "Barcha o'yinchilar, ball bo'yicha")} />
         {periods}
         <WeekBoard week={week} me={me} ranked={ranked} standings={standings} loading={loading} />
       </div>
@@ -185,17 +194,17 @@ export default function Rating({ state, standings, loading, onRefresh }) {
 
   return (
     <div className="screen rating">
-      <ScreenHead title="Rating" sub="Everyone who plays, ranked by points" />
+      <ScreenHead title={t("Rating", "Reyting")} sub={t("Everyone who plays, ranked by points", "Barcha o'yinchilar, ball bo'yicha")} />
       {periods}
 
       <div className="rating-place">
         {placeLine}
-        <b>{points(me.rating.overall)} <small>pts</small></b>
+        <b>{points(me.rating.overall)} <small>{t("pts", "ball")}</small></b>
       </div>
 
       {/* ── filter ────────────────────────────────────────────────────────── */}
-      <div className="rating-filter" role="group" aria-label="Filter">
-        <span className="rating-filter-l">Filter</span>
+      <div className="rating-filter" role="group" aria-label={t("Filter", "Saralash")}>
+        <span className="rating-filter-l">{t("Filter", "Saralash")}</span>
         {FILTERS.map((b) => (
           <button
             key={b.id}
@@ -203,7 +212,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
             className={`chip${filter === b.id ? " on" : ""}`}
             onClick={() => choose(b.id)}
           >
-            {b.name}
+            {boardName(b.id)}
             {filter === b.id && <span className="chip-x" aria-hidden="true">×</span>}
           </button>
         ))}
@@ -212,19 +221,21 @@ export default function Rating({ state, standings, loading, onRefresh }) {
       {/* ── the table ─────────────────────────────────────────────────────── */}
       <div className="chips-head board-title">
         <span className="section-label" style={{ margin: 0 }}>
-          {filter ? `Filtered by ${FILTERED_BY[filter]} · not the rating` : "Rating · by points"}
+          {filter
+            ? t(`Filtered by ${filteredBy(filter)} · not the rating`, `Saralangan: ${filteredBy(filter)} · reyting emas`)
+            : t("Rating · by points", "Reyting · ball bo'yicha")}
         </span>
         {filter && (
           <button className="chips-clear" onClick={() => { haptic("light"); setFilter(null); }}>
-            Show rating
+            {t("Show rating", "Reytingni ko'rsatish")}
           </button>
         )}
       </div>
       <div className="board">
         <div className="board-head">
           {/* Only the rating has ranks; a filter just numbers its order. */}
-          <span className="board-place">{filter ? "#" : "Rank"}</span>
-          <span className="board-who">Name</span>
+          <span className="board-place">{filter ? "#" : t("Rank", "O'rin")}</span>
+          <span className="board-who">{t("Name", "Ism")}</span>
           <span className="board-value">{column}</span>
         </div>
         {rows.map((r) => <Row key={`${r.place}-${r.isMe ? "me" : r.name}-${r.username || ""}`} row={r} board={board} me={me} />)}
@@ -237,43 +248,73 @@ export default function Rating({ state, standings, loading, onRefresh }) {
         {standings && !rows.length && (
           <div className="board-empty">
             {board === "speed"
-              ? "Answer a few questions correctly and your time appears here."
-              : "Nothing to rank yet."}
+              ? t("Answer a few questions correctly and your time appears here.", "Bir nechta savolga to'g'ri javob bering — vaqtingiz shu yerda chiqadi.")
+              : t("Nothing to rank yet.", "Hozircha reytingda hech kim yo'q.")}
           </div>
         )}
-        {!standings && <div className="board-empty">{loading ? "Loading…" : "Try again in a moment."}</div>}
+        {!standings && <div className="board-empty">{loading ? t("Loading…", "Yuklanmoqda…") : t("Try again in a moment.", "Birozdan so'ng qayta urinib ko'ring.")}</div>}
       </div>
 
       {standings && !ranked && (
-        <div className="cta-note rating-web">Open usmleengo in Telegram to be ranked.</div>
+        <div className="cta-note rating-web">{t("Open usmleengo in Telegram to be ranked.", "Reytingga kirish uchun usmleengoni Telegramda oching.")}</div>
       )}
 
       <details className="rating-how">
-        <summary>How points are counted</summary>
-        <p>
-          Everyone who uses usmleengo is ranked, automatically, and places update
-          within a minute. The top ten are shown by their Telegram name and
-          username; everyone else sees only their own place.
-        </p>
-        <p>
-          <b>Your rank is by points alone.</b> The day streak, XP and time filters
-          only show who leads each part of the points — they are not ranks.
-        </p>
-        <p>
-          Points mix three things: <b>day streak</b> counts most
-          ({Math.round(WEIGHTS.streak * 100)}%), then <b>XP</b> ({Math.round(WEIGHTS.xp * 100)}%),
-          then <b>average time</b> ({Math.round(WEIGHTS.speed * 100)}%).
-        </p>
-        <p>
-          Only correct answers are timed, so guessing fast never helps. Typing gets
-          more time than tapping — {FREE_SECONDS.gap}s against {FREE_SECONDS.binary}s — so
-          choosing the harder format never costs you points.
-        </p>
-        <p>
-          Each part levels off as it grows, so the top stays within reach of someone
-          who started this month. A streak only counts while it is alive: miss two
-          days and it is back to zero.
-        </p>
+        <summary>{t("How points are counted", "Ballar qanday hisoblanadi")}</summary>
+        {t(
+          <>
+            <p>
+              Everyone who uses usmleengo is ranked, automatically, and places update
+              within a minute. The top ten are shown by their Telegram name and
+              username; everyone else sees only their own place.
+            </p>
+            <p>
+              <b>Your rank is by points alone.</b> The day streak, XP and time filters
+              only show who leads each part of the points — they are not ranks.
+            </p>
+            <p>
+              Points mix three things: <b>day streak</b> counts most
+              ({Math.round(WEIGHTS.streak * 100)}%), then <b>XP</b> ({Math.round(WEIGHTS.xp * 100)}%),
+              then <b>average time</b> ({Math.round(WEIGHTS.speed * 100)}%).
+            </p>
+            <p>
+              Only correct answers are timed, so guessing fast never helps. Typing gets
+              more time than tapping — {FREE_SECONDS.gap}s against {FREE_SECONDS.binary}s — so
+              choosing the harder format never costs you points.
+            </p>
+            <p>
+              Each part levels off as it grows, so the top stays within reach of someone
+              who started this month. A streak only counts while it is alive: miss two
+              days and it is back to zero.
+            </p>
+          </>,
+          <>
+            <p>
+              usmleengodan foydalanadigan har bir kishi avtomatik ravishda reytingga kiradi, o'rinlar
+              bir daqiqa ichida yangilanadi. Eng yaxshi o'ntalik Telegramdagi ismi va foydalanuvchi
+              nomi bilan ko'rsatiladi; qolganlar faqat o'z o'rnini ko'radi.
+            </p>
+            <p>
+              <b>O'rningiz faqat ball bo'yicha belgilanadi.</b> Kunlik intizom, XP va vaqt bo'yicha
+              saralash ballning har bir qismida kim oldinda ekanini ko'rsatadi, xolos — bular o'rin emas.
+            </p>
+            <p>
+              Ball uch narsadan iborat: eng katta ulush <b>kunlik intizom</b>da
+              ({Math.round(WEIGHTS.streak * 100)}%), keyin <b>XP</b> ({Math.round(WEIGHTS.xp * 100)}%),
+              keyin <b>o'rtacha vaqt</b> ({Math.round(WEIGHTS.speed * 100)}%).
+            </p>
+            <p>
+              Faqat to'g'ri javoblar vaqti o'lchanadi, shuning uchun tez taxmin qilish foyda bermaydi.
+              Yozma javobga testdan ko'ra ko'proq vaqt beriladi — {FREE_SECONDS.gap} soniya va
+              {" "}{FREE_SECONDS.binary} soniya — shuning uchun qiyinroq usulni tanlash ballingizni kamaytirmaydi.
+            </p>
+            <p>
+              Har bir qism o'sgan sari sekinlashadi, shuning uchun shu oy boshlagan kishi ham yuqoriga
+              chiqa oladi. Kunlik intizom faqat uzilmaguncha hisoblanadi: ikki kun o'tkazib yuborsangiz,
+              u nolga tushadi.
+            </p>
+          </>,
+        )}
       </details>
     </div>
   );
@@ -292,16 +333,16 @@ function WeekBoard({ week, me, ranked, standings, loading }) {
 
   let placeLine;
   if (!standings) {
-    placeLine = <span>{loading ? "Loading the rating…" : "The rating cannot be reached right now"}</span>;
+    placeLine = <span>{loading ? t("Loading the rating…", "Reyting yuklanmoqda…") : t("The rating cannot be reached right now", "Reytingga hozir ulanib bo'lmayapti")}</span>;
   } else if (!ranked) {
-    placeLine = <span>Open usmleengo in Telegram to be ranked</span>;
+    placeLine = <span>{t("Open usmleengo in Telegram to be ranked", "Reytingga kirish uchun usmleengoni Telegramda oching")}</span>;
   } else if (!mine?.place) {
-    placeLine = <span>Study today to join this week’s board</span>;
+    placeLine = <span>{t("Study today to join this week’s board", "Haftalik reytingga kirish uchun bugun shug'ullaning")}</span>;
   } else {
     placeLine = (
       <span className="rating-rank">
         {medalFor(mine.place) && `${medalFor(mine.place)} `}
-        This week <b>{rankText(mine)}</b>
+        {t("This week", "Shu hafta")} <b>{rankText(mine)}</b>
       </span>
     );
   }
@@ -310,18 +351,18 @@ function WeekBoard({ week, me, ranked, standings, loading }) {
     <>
       <div className="rating-place">
         {placeLine}
-        {mine?.place ? <b>{mine.points} <small>pts</small></b> : null}
+        {mine?.place ? <b>{mine.points} <small>{t("pts", "ball")}</small></b> : null}
       </div>
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>This week · by points</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("This week · by points", "Shu hafta · ball bo'yicha")}</span>
         {week?.endsAt && <span className="game-count">{resetsIn(week.endsAt)}</span>}
       </div>
       <div className="board">
         <div className="board-head">
-          <span className="board-place">Rank</span>
-          <span className="board-who">Name</span>
-          <span className="board-value">Points</span>
+          <span className="board-place">{t("Rank", "O'rin")}</span>
+          <span className="board-who">{t("Name", "Ism")}</span>
+          <span className="board-value">{t("Points", "Ball")}</span>
         </div>
         {rows.map((r) => <Row key={`${r.place}-${r.isMe ? "me" : r.name}-${r.username || ""}`} row={r} board="overall" me={me} />)}
         {meBelow && (
@@ -331,20 +372,36 @@ function WeekBoard({ week, me, ranked, standings, loading }) {
           </>
         )}
         {standings && !rows.length && (
-          <div className="board-empty">Nobody has studied yet this week. The first round puts you on top.</div>
+          <div className="board-empty">
+            {t("Nobody has studied yet this week. The first round puts you on top.",
+              "Bu hafta hali hech kim shug'ullanmadi. Birinchi testingiz sizni birinchi o'ringa chiqaradi.")}
+          </div>
         )}
-        {!standings && <div className="board-empty">{loading ? "Loading…" : "Try again in a moment."}</div>}
+        {!standings && <div className="board-empty">{loading ? t("Loading…", "Yuklanmoqda…") : t("Try again in a moment.", "Birozdan so'ng qayta urinib ko'ring.")}</div>}
       </div>
 
       <details className="rating-how">
-        <summary>How this week is counted</summary>
-        <p>
-          The same points as the rating, from this week alone: the <b>days you study</b> between
-          Monday and Sunday count most, then the <b>XP</b> you earn this week, then your
-          <b> average time</b> this week. Everyone starts level on Monday, so a week can be won
-          by anyone — however long they have been playing.
-        </p>
-        <p>The top ten are shown; everyone else sees their own place.</p>
+        <summary>{t("How this week is counted", "Haftalik reyting qanday hisoblanadi")}</summary>
+        {t(
+          <>
+            <p>
+              The same points as the rating, from this week alone: the <b>days you study</b> between
+              Monday and Sunday count most, then the <b>XP</b> you earn this week, then your
+              <b> average time</b> this week. Everyone starts level on Monday, so a week can be won
+              by anyone — however long they have been playing.
+            </p>
+            <p>The top ten are shown; everyone else sees their own place.</p>
+          </>,
+          <>
+            <p>
+              Reytingdagi ballar, faqat shu hafta bo'yicha: eng katta ulush dushanbadan yakshanbagacha
+              <b> shug'ullangan kunlaringiz</b>da, keyin shu hafta to'plagan <b>XP</b>ingizda, keyin shu
+              haftadagi <b>o'rtacha vaqtingiz</b>da. Dushanba kuni hamma teng boshlaydi, shuning uchun
+              haftani har kim — qancha vaqtdan beri o'ynashidan qat'i nazar — yutishi mumkin.
+            </p>
+            <p>Eng yaxshi o'ntalik ko'rsatiladi; qolganlar o'z o'rnini ko'radi.</p>
+          </>,
+        )}
       </details>
     </>
   );

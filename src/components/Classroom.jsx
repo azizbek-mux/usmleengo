@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { classCall, classInviteParam, fetchBotFile } from "../lib/classApi.js";
-import { AssignScreen, AssignmentResults, PackageEditor, dayText } from "./ClassPackages.jsx";
+import { AssignScreen, AssignmentResults, PackageEditor } from "./ClassPackages.jsx";
+import { dayText, t } from "../lib/i18n.js";
 import { formatPace } from "../lib/rating.js";
 import { setClassSharing } from "../lib/ratingApi.js";
 import { classInviteMessage } from "../lib/shareText.js";
@@ -13,21 +14,26 @@ import { PlaceMark } from "./Rating.jsx";
 // students join with a code or an invite link, once the teacher lets them in,
 // and see the class ranking. See worker/src/classroom.js for the rules.
 
-const REASONS = {
-  telegram: "Classes work inside Telegram. Open usmleengo from @usmleengo_bot.",
-  offline: "Couldn’t reach the server. Check your internet and try again.",
-  "no-class": "No class with that code. Check it with your teacher.",
-  "own-class": "That’s a class you teach.",
-  full: "That class is full.",
-  "too-many-classes": "That’s the most classes one person can have.",
-  name: "Give the class a name.",
-  "not-member": "You’re not in this class any more.",
-  "not-teacher": "Only the teacher can do that.",
-  "not-yours": "That file was sent to the bot by someone else.",
-  "no-file": "That link has expired. Send the file to @usmleengo_bot again.",
-  "telegram-file": "Telegram didn’t hand the file over. Send it to the bot again.",
-};
-const reasonOf = (err) => REASONS[err?.code] || "Something went wrong. Try again.";
+const reasons = () => ({
+  telegram: t("Classes work inside Telegram. Open usmleengo from @usmleengo_bot.",
+    "Guruhlar faqat Telegram ichida ishlaydi. usmleengoni @usmleengo_bot orqali oching."),
+  offline: t("Couldn’t reach the server. Check your internet and try again.",
+    "Serverga ulanib bo'lmadi. Internetni tekshirib, qayta urinib ko'ring."),
+  "no-class": t("No class with that code. Check it with your teacher.", "Bunday kodli guruh yo'q. Kodni o'qituvchingizdan so'rang."),
+  "own-class": t("That’s a class you teach.", "Bu siz dars beradigan guruh."),
+  full: t("That class is full.", "Bu guruh to'lgan."),
+  "too-many-classes": t("That’s the most classes one person can have.", "Bir kishida bundan ortiq guruh bo'lishi mumkin emas."),
+  name: t("Give the class a name.", "Guruhga nom bering."),
+  "not-member": t("You’re not in this class any more.", "Siz endi bu guruhda emassiz."),
+  "not-teacher": t("Only the teacher can do that.", "Buni faqat o'qituvchi qila oladi."),
+  "not-yours": t("That file was sent to the bot by someone else.", "Bu faylni botga boshqa kishi yuborgan."),
+  "no-file": t("That link has expired. Send the file to @usmleengo_bot again.",
+    "Havolaning muddati tugagan. Faylni @usmleengo_bot ga qayta yuboring."),
+  "telegram-file": t("Telegram didn’t hand the file over. Send it to the bot again.", "Telegram faylni bermadi. Uni botga qayta yuboring."),
+});
+const reasonOf = (err) => reasons()[err?.code] || t("Something went wrong. Try again.", "Nimadir xato ketdi. Qayta urinib ko'ring.");
+const studentsText = (n) => t(`${n} student${n === 1 ? "" : "s"}`, `${n} ta talaba`);
+const questionsText = (n) => t(`${n} question${n === 1 ? "" : "s"}`, `${n} ta savol`);
 
 const pct = (n) => (n === null || n === undefined ? "—" : `${n}%`);
 const signed = (n) => (n > 0 ? `+${n.toLocaleString()}` : n.toLocaleString());
@@ -87,10 +93,10 @@ export default function Classroom({ state, invite, botFile, onFocus, onStartClas
   if (!initData()) {
     return (
       <div className="screen">
-        <ScreenHead title="Class" sub="Learn with your teacher" />
+        <ScreenHead title={t("Class", "Guruh")} sub={t("Learn with your teacher", "O'qituvchingiz bilan o'rganing")} />
         <div className="empty">
           <div className="empty-big">🏫</div>
-          <div>{REASONS.telegram}</div>
+          <div>{reasons().telegram}</div>
         </div>
       </div>
     );
@@ -168,16 +174,17 @@ function FromBot({ state, token, onBack, onCreate, onPick }) {
 
   return (
     <div className="screen">
-      <BackBar title="Add questions" onBack={onBack} />
+      <BackBar title={t("Add questions", "Savollar qo'shish")} onBack={onBack} />
       {error ? (
         <div className="game-warn">{error}</div>
       ) : !file ? (
-        <div className="empty">Fetching your file…</div>
+        <div className="empty">{t("Fetching your file…", "Faylingiz olinmoqda…")}</div>
       ) : (
         <>
           <div className="class-note" style={{ marginTop: 0 }}>
-            <b>{file.name}</b> — which class is it for? It becomes a new package there; you’ll see the
-            questions in it before anything is kept.
+            <b>{file.name}</b>
+            {t(" — which class is it for? It becomes a new package there; you’ll see the questions in it before anything is kept.",
+              " — qaysi guruh uchun? U o'sha guruhda yangi savollar to'plamiga aylanadi; hech narsa saqlanishidan oldin ichidagi savollarni ko'rasiz.")}
           </div>
           {data?.teaching.length ? (
             <div className="class-list" style={{ marginTop: 12 }}>
@@ -185,7 +192,7 @@ function FromBot({ state, token, onBack, onCreate, onPick }) {
                 <button key={c.id} className="class-card" onClick={() => { haptic("medium"); onPick(c.id, file); }}>
                   <span className="class-card-main">
                     <span className="class-card-t">{c.name}</span>
-                    <span className="class-card-n">{c.students} student{c.students === 1 ? "" : "s"}</span>
+                    <span className="class-card-n">{studentsText(c.students)}</span>
                   </span>
                   <span className="class-go">›</span>
                 </button>
@@ -193,11 +200,14 @@ function FromBot({ state, token, onBack, onCreate, onPick }) {
             </div>
           ) : data ? (
             <>
-              <div className="class-note">You don’t teach a class yet. Create one, then send the file to the bot again.</div>
-              <button className="btn btn-primary class-create" onClick={onCreate}>Create a classroom</button>
+              <div className="class-note">
+                {t("You don’t teach a class yet. Create one, then send the file to the bot again.",
+                  "Sizda hali guruh yo'q. Guruh yarating, so'ng faylni botga qayta yuboring.")}
+              </div>
+              <button className="btn btn-primary class-create" onClick={onCreate}>{t("Create a classroom", "Guruh yaratish")}</button>
             </>
           ) : (
-            <div className="empty">Loading your classes…</div>
+            <div className="empty">{t("Loading your classes…", "Guruhlaringiz yuklanmoqda…")}</div>
           )}
         </>
       )}
@@ -231,8 +241,9 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
       setNote({
         ok: true,
         text: r.status === "active"
-          ? `You’re already in ${r.class.name}.`
-          : `Asked to join ${r.class.name}. You’re in as soon as ${r.class.teacher_name} lets you in.`,
+          ? t(`You’re already in ${r.class.name}.`, `Siz allaqachon «${r.class.name}» guruhidasiz.`)
+          : t(`Asked to join ${r.class.name}. You’re in as soon as ${r.class.teacher_name} lets you in.`,
+            `«${r.class.name}» guruhiga qo'shilish so'rovi yuborildi. ${r.class.teacher_name} tasdiqlashi bilan guruhga qo'shilasiz.`),
       });
       setCode("");
       reload();
@@ -245,25 +256,25 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
 
   return (
     <div className="screen">
-      <ScreenHead title="Class" sub="Learn with your teacher" />
+      <ScreenHead title={t("Class", "Guruh")} sub={t("Learn with your teacher", "O'qituvchingiz bilan o'rganing")} />
 
       <form className={`class-join${invite ? " invited" : ""}`} onSubmit={join}>
-        <div className="section-label" style={{ marginTop: 0 }}>{invite ? "You’re invited" : "Join a class"}</div>
+        <div className="section-label" style={{ marginTop: 0 }}>{invite ? t("You’re invited", "Sizni taklif qilishdi") : t("Join a class", "Guruhga qo'shilish")}</div>
         <div className="game-join">
           <input
             className="gap-input game-code-input"
             value={code}
             onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
-            placeholder="6-digit code"
+            placeholder={t("6-digit code", "6 xonali kod")}
             inputMode="numeric"
             autoComplete="off"
-            aria-label="Class code"
+            aria-label={t("Class code", "Guruh kodi")}
           />
-          <button className="btn btn-primary game-join-btn" disabled={!/^\d{6}$/.test(code) || busy}>Join</button>
+          <button className="btn btn-primary game-join-btn" disabled={!/^\d{6}$/.test(code) || busy}>{t("Join", "Qo'shilish")}</button>
         </div>
         <div className="class-note">
-          Your teacher will see your points, day streak, XP, accuracy, weak topics and average
-          time — never your saved questions. You can leave any time.
+          {t("Your teacher will see your points, day streak, XP, accuracy, weak topics and average time — never your saved questions. You can leave any time.",
+            "O'qituvchingiz ballaringiz, kunlik intizomingiz, XP, to'g'ri javoblar foizi, yaxshi o'zlashtirilmagan mavzularingiz va o'rtacha vaqtingizni ko'radi — saqlangan savollaringizni hech qachon ko'rmaydi. Istalgan vaqtda chiqib ketishingiz mumkin.")}
         </div>
         {note && <div className={note.ok ? "class-ok" : "game-warn"}>{note.text}</div>}
       </form>
@@ -272,7 +283,7 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
 
       {data?.learning.length > 0 && (
         <>
-          <div className="section-label">Your classes</div>
+          <div className="section-label">{t("Your classes", "Guruhlaringiz")}</div>
           <div className="class-list">
             {data.learning.map((c) => (
               <button key={c.id} className="class-card" onClick={() => { haptic("light"); onOpen(c.id); }}>
@@ -281,7 +292,7 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
                   <span className="class-card-n">{c.teacher_name}</span>
                 </span>
                 {c.status === "pending"
-                  ? <span className="class-pill">Waiting</span>
+                  ? <span className="class-pill">{t("Waiting", "Kutilmoqda")}</span>
                   : <span className="class-go">›</span>}
               </button>
             ))}
@@ -289,7 +300,7 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
         </>
       )}
 
-      <div className="section-label">Classes you teach</div>
+      <div className="section-label">{t("Classes you teach", "Siz dars beradigan guruhlar")}</div>
       {data?.teaching.length > 0 && (
         <div className="class-list">
           {data.teaching.map((c) => (
@@ -297,16 +308,16 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
               <span className="class-card-main">
                 <span className="class-card-t">{c.name}</span>
                 <span className="class-card-n">
-                  {c.students} student{c.students === 1 ? "" : "s"} · code {c.code}
+                  {studentsText(c.students)} · {t("code", "kod")} {c.code}
                 </span>
               </span>
-              {c.waiting > 0 ? <span className="class-pill on">{c.waiting} waiting</span> : <span className="class-go">›</span>}
+              {c.waiting > 0 ? <span className="class-pill on">{t(`${c.waiting} waiting`, `${c.waiting} ta kutmoqda`)}</span> : <span className="class-go">›</span>}
             </button>
           ))}
         </div>
       )}
       <button className="btn btn-ghost class-create" onClick={() => { haptic("light"); onCreate(); }}>
-        Create a classroom
+        {t("Create a classroom", "Guruh yaratish")}
       </button>
     </div>
   );
@@ -334,26 +345,25 @@ function CreateClass({ onBack, onCreated }) {
 
   return (
     <form className="screen" onSubmit={create}>
-      <BackBar title="New classroom" onBack={onBack} />
+      <BackBar title={t("New classroom", "Yangi guruh")} onBack={onBack} />
       <label className="game-field">
-        <span className="section-label">Class name</span>
+        <span className="section-label">{t("Class name", "Guruh nomi")}</span>
         <input
           className="gap-input"
           value={name}
           maxLength={40}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Cardio group, Step 1 — spring…"
+          placeholder={t("Cardio group, Step 1 — spring…", "Kardiologiya guruhi, Step 1 — bahor…")}
           autoFocus
         />
       </label>
       <div className="class-note">
-        Students join with a code or an invite link, and you let each one in. You’ll see their
-        points, day streak, XP, accuracy, weak topics and average time — all-time and since
-        they joined.
+        {t("Students join with a code or an invite link, and you let each one in. You’ll see their points, day streak, XP, accuracy, weak topics and average time — all-time and since they joined.",
+          "Talabalar kod yoki taklif havolasi orqali qo'shiladi, har birini siz tasdiqlaysiz. Ularning ballari, kunlik intizomi, XP, to'g'ri javoblar foizi, yaxshi o'zlashtirilmagan mavzulari va o'rtacha vaqtini ko'rasiz — barcha vaqt uchun va qo'shilgandan beri.")}
       </div>
       {error && <div className="game-warn">{error}</div>}
       <div className="home-cta">
-        <button className="btn btn-primary" disabled={!name.trim() || busy}>{busy ? "Creating…" : "Create classroom"}</button>
+        <button className="btn btn-primary" disabled={!name.trim() || busy}>{busy ? t("Creating…", "Yaratilmoqda…") : t("Create classroom", "Guruhni yaratish")}</button>
       </div>
     </form>
   );
@@ -367,8 +377,8 @@ function ClassView({ state, id, onBack, onStudent, onGo, onStartClass }) {
   if (!data) {
     return (
       <div className="screen">
-        <BackBar title="Class" onBack={onBack} />
-        <div className="empty">{error ? reasonOf(error) : "Loading…"}</div>
+        <BackBar title={t("Class", "Guruh")} onBack={onBack} />
+        <div className="empty">{error ? reasonOf(error) : t("Loading…", "Yuklanmoqda…")}</div>
       </div>
     );
   }
@@ -378,8 +388,8 @@ function ClassView({ state, id, onBack, onStudent, onGo, onStartClass }) {
 
 function Period({ value, onChange }) {
   return (
-    <div className="period" role="tablist" aria-label="Period">
-      {[["all", "All time"], ["since", "Since joining"]].map(([key, label]) => (
+    <div className="period" role="tablist" aria-label={t("Period", "Davr")}>
+      {[["all", t("All time", "Barcha vaqt")], ["since", t("Since joining", "Qo'shilgandan beri")]].map(([key, label]) => (
         <button
           key={key}
           role="tab"
@@ -418,16 +428,16 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
       <BackBar title={cls.name} onBack={onBack} />
 
       <div className="game-code-card">
-        <span className="perf-points-l">Class code</span>
+        <span className="perf-points-l">{t("Class code", "Guruh kodi")}</span>
         <span className="game-code">{cls.code.slice(0, 3)} {cls.code.slice(3)}</span>
         <span className="game-code-about">
-          {data.students.length} of {data.limits.students} students
+          {t(`${data.students.length} of ${data.limits.students} students`, `${data.students.length} / ${data.limits.students} talaba`)}
         </span>
         <button
           className="btn btn-primary game-share"
           onClick={() => { haptic("medium"); share(classInviteMessage({ name: cls.name, code: cls.code, link })); }}
         >
-          Share invite
+          {t("Share invite", "Taklifni ulashish")}
         </button>
       </div>
 
@@ -435,7 +445,7 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
 
       {data.requests.length > 0 && (
         <>
-          <div className="section-label">Waiting to join · {data.requests.length}</div>
+          <div className="section-label">{t("Waiting to join", "Qo'shilishni kutmoqda")} · {data.requests.length}</div>
           <div className="board">
             {data.requests.map((r) => (
               <div key={r.player} className="board-row">
@@ -445,10 +455,10 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
                 </span>
                 <span className="req-actions">
                   <button className="set-btn" onClick={async () => { haptic("light"); if (await act("approve", { player: r.player, accept: false })) reload(); }}>
-                    Decline
+                    {t("Decline", "Rad etish")}
                   </button>
                   <button className="set-btn yes" onClick={async () => { haptic("success"); if (await act("approve", { player: r.player, accept: true })) reload(); }}>
-                    Let in
+                    {t("Let in", "Qabul qilish")}
                   </button>
                 </span>
               </div>
@@ -458,8 +468,8 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
       )}
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>Students</span>
-        <span className="game-count">By points</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Students", "Talabalar")}</span>
+        <span className="game-count">{t("By points", "Ball bo'yicha")}</span>
       </div>
       <Period value={period} onChange={setPeriod} />
       {data.students.length ? (
@@ -474,9 +484,10 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
                   <span className="board-user">
                     {n
                       ? period === "since"
-                        ? `+${n.xp.toLocaleString()} XP · ${n.answered} answered · ${pct(n.accuracy)} · ${formatPace(n.pace)}`
+                        ? t(`+${n.xp.toLocaleString()} XP · ${n.answered} answered · ${pct(n.accuracy)} · ${formatPace(n.pace)}`,
+                          `+${n.xp.toLocaleString()} XP · ${n.answered} ta javob · ${pct(n.accuracy)} · ${formatPace(n.pace)}`)
                         : `🔥 ${n.streak} · ${n.xp.toLocaleString()} XP · ${pct(n.accuracy)} · ${formatPace(n.pace)}`
-                      : "Joined before this was kept"}
+                      : t("Joined before this was kept", "Bu ma'lumot saqlanishidan oldin qo'shilgan")}
                   </span>
                 </span>
                 <span className="board-value">{n ? (period === "since" ? signed(n.points) : n.points) : "—"}</span>
@@ -485,11 +496,15 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
           })}
         </div>
       ) : (
-        <div className="board"><div className="board-empty">No students yet. Share the invite, then let them in here.</div></div>
+        <div className="board">
+          <div className="board-empty">
+            {t("No students yet. Share the invite, then let them in here.", "Hali talabalar yo'q. Taklifni ulashing, keyin ularni shu yerda qabul qiling.")}
+          </div>
+        </div>
       )}
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>Question packages</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Question packages", "Savollar to'plamlari")}</span>
         <span className="game-count">{data.packages.length}</span>
       </div>
       {data.packages.length ? (
@@ -498,42 +513,51 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
             <button key={p.id} className="class-card" onClick={() => { haptic("light"); onGo({ name: "package", packageId: p.id }); }}>
               <span className="class-card-main">
                 <span className="class-card-t">{p.name}</span>
-                <span className="class-card-n">{p.count} question{p.count === 1 ? "" : "s"}</span>
+                <span className="class-card-n">{questionsText(p.count)}</span>
               </span>
               <span className="class-go">›</span>
             </button>
           ))}
         </div>
       ) : (
-        <div className="class-note">Your own sets of questions: write them, or pick them from usmleengo’s bank. Only this class sees them.</div>
+        <div className="class-note">
+          {t("Your own sets of questions: write them, or pick them from usmleengo’s bank. Only this class sees them.",
+            "O'zingizning savollar to'plamlaringiz: ularni yozing yoki usmleengo bazasidan tanlang. Ularni faqat shu guruh ko'radi.")}
+        </div>
       )}
-      <button className="btn btn-ghost class-create" onClick={() => { haptic("light"); onGo({ name: "package" }); }}>New package</button>
+      <button className="btn btn-ghost class-create" onClick={() => { haptic("light"); onGo({ name: "package" }); }}>{t("New package", "Yangi to'plam")}</button>
 
-      <div className="section-label">Homework</div>
+      <div className="section-label">{t("Homework", "Uy vazifasi")}</div>
       {data.assignments.length ? (
         <div className="class-list">
           {data.assignments.map((a) => (
             <button key={a.id} className="class-card" onClick={() => { haptic("light"); onGo({ name: "results", assignmentId: a.id }); }}>
               <span className="class-card-main">
                 <span className="class-card-t">{a.title}</span>
-                <span className="class-card-n">Due {dayText(a.dueAt)} · {a.done} of {data.students.length} handed in</span>
+                <span className="class-card-n">
+                  {t(`Due ${dayText(a.dueAt)} · ${a.done} of ${data.students.length} handed in`,
+                    `Muddati: ${dayText(a.dueAt)} · ${data.students.length} tadan ${a.done} tasi topshirdi`)}
+                </span>
               </span>
               <span className="class-go">›</span>
             </button>
           ))}
         </div>
       ) : (
-        <div className="class-note">Set a package as homework with a due date, and see each student’s score and each question’s.</div>
+        <div className="class-note">
+          {t("Set a package as homework with a due date, and see each student’s score and each question’s.",
+            "To'plamni muddat bilan uy vazifasi qilib bering va har bir talaba hamda har bir savol natijasini ko'ring.")}
+        </div>
       )}
       <button
         className="btn btn-ghost class-create"
         disabled={!data.packages.length}
         onClick={() => { haptic("light"); onGo({ name: "assign", packages: data.packages }); }}
       >
-        Set homework
+        {t("Set homework", "Uy vazifasi berish")}
       </button>
 
-      <div className="section-label">This class</div>
+      <div className="section-label">{t("This class", "Ushbu guruh")}</div>
       {renaming ? (
         <form
           className="game-join"
@@ -544,14 +568,14 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
           }}
         >
           <input className="gap-input" value={newName} maxLength={40} onChange={(e) => setNewName(e.target.value)} autoFocus />
-          <button className="btn btn-primary game-join-btn" disabled={!newName.trim()}>Save</button>
+          <button className="btn btn-primary game-join-btn" disabled={!newName.trim()}>{t("Save", "Saqlash")}</button>
         </form>
       ) : (
-        <button className="btn btn-ghost" onClick={() => { haptic("light"); setRenaming(true); }}>Rename</button>
+        <button className="btn btn-ghost" onClick={() => { haptic("light"); setRenaming(true); }}>{t("Rename", "Nomini o'zgartirish")}</button>
       )}
       <TwoTap
-        label="Close this class"
-        confirm="Tap again: close it for everyone"
+        label={t("Close this class", "Guruhni yopish")}
+        confirm={t("Tap again: close it for everyone", "Yana bosing: guruh hamma uchun yopiladi")}
         onConfirm={async () => { if (await act("close")) onBack(); }}
       />
     </div>
@@ -564,11 +588,15 @@ function StudentDetail({ classId, student, onBack }) {
   const n = period === "since" ? student.since : student.all;
 
   const tiles = n ? [
-    { label: period === "since" ? "Points gained" : "Points", value: period === "since" ? signed(n.points) : n.points, sub: period === "all" ? `Rank #${n.rank}` : "since joining" },
-    { label: "Day streak", value: n.streak, sub: n.streak === 1 ? "day" : "days" },
-    { label: "XP", value: n.xp.toLocaleString(), sub: `${n.answered.toLocaleString()} answered` },
-    { label: "Accuracy", value: pct(n.accuracy), sub: "right answers" },
-    { label: "Average time", value: formatPace(n.pace), sub: "per right answer" },
+    {
+      label: period === "since" ? t("Points gained", "Qo'shilgan ball") : t("Points", "Ball"),
+      value: period === "since" ? signed(n.points) : n.points,
+      sub: period === "all" ? t(`Rank #${n.rank}`, `O'rin #${n.rank}`) : t("since joining", "qo'shilgandan beri"),
+    },
+    { label: t("Day streak", "Kunlik intizom"), value: n.streak, sub: t(n.streak === 1 ? "day" : "days", "kun") },
+    { label: "XP", value: n.xp.toLocaleString(), sub: t(`${n.answered.toLocaleString()} answered`, `${n.answered.toLocaleString()} ta javob`) },
+    { label: t("Accuracy", "To'g'ri javoblar"), value: pct(n.accuracy), sub: t("right answers", "barcha javoblardan") },
+    { label: t("Average time", "O'rtacha vaqt"), value: formatPace(n.pace), sub: t("per right answer", "har bir to'g'ri javobga") },
   ] : [];
 
   return (
@@ -580,23 +608,23 @@ function StudentDetail({ classId, student, onBack }) {
       {n ? (
         <>
           <div className="class-tiles">
-            {tiles.map((t) => (
-              <div key={t.label} className="class-tile">
-                <span className="perf-label">{t.label}</span>
-                <span className="class-tile-v">{t.value}</span>
-                <span className="perf-detail">{t.sub}</span>
+            {tiles.map((tile) => (
+              <div key={tile.label} className="class-tile">
+                <span className="perf-label">{tile.label}</span>
+                <span className="class-tile-v">{tile.value}</span>
+                <span className="perf-detail">{tile.sub}</span>
               </div>
             ))}
           </div>
 
-          <div className="section-label">Weak topics</div>
+          <div className="section-label">{t("Weak topics", "Yaxshi o'zlashtirilmagan mavzular")}</div>
           {n.weak.length ? (
             <div className="weak-list">
               {n.weak.map((w) => (
                 <div key={w.tag} className="weak-row">
                   <span className="weak-name">
                     {tagLabel(w.tag)}
-                    <small>{w.answered} answered</small>
+                    <small>{t(`${w.answered} answered`, `${w.answered} ta javob`)}</small>
                   </span>
                   <span className="weak-bar">
                     <span className={`weak-fill${w.pct < 60 ? " low" : w.pct < 80 ? " mid" : ""}`} style={{ width: `${w.pct}%` }} />
@@ -606,18 +634,21 @@ function StudentDetail({ classId, student, onBack }) {
               ))}
             </div>
           ) : (
-            <div className="class-note">Not enough answers in any category yet — five are needed to judge one.</div>
+            <div className="class-note">
+              {t("Not enough answers in any category yet — five are needed to judge one.",
+                "Hali hech bir fan bo'yicha javoblar yetarli emas — baholash uchun kamida beshta kerak.")}
+            </div>
           )}
         </>
       ) : (
-        <div className="empty">Nothing to show since joining yet.</div>
+        <div className="empty">{t("Nothing to show since joining yet.", "Qo'shilgandan beri hali ko'rsatadigan narsa yo'q.")}</div>
       )}
 
       {error && <div className="game-warn" style={{ marginTop: 12 }}>{error}</div>}
       <div className="home-cta">
         <TwoTap
-          label="Remove from class"
-          confirm={`Tap again to remove ${student.name}`}
+          label={t("Remove from class", "Guruhdan chiqarish")}
+          confirm={t(`Tap again to remove ${student.name}`, `Yana bosing: ${student.name} guruhdan chiqariladi`)}
           onConfirm={async () => {
             try { await classCall("remove", { classId, player: student.player }); onBack(); }
             catch (err) { setError(reasonOf(err)); }
@@ -664,11 +695,11 @@ function StudentView({ data, onBack, onStartClass }) {
         <BackBar title={cls.name} onBack={onBack} />
         <div className="empty">
           <div className="empty-big">⏳</div>
-          <div>Waiting for {cls.teacherName} to let you in.</div>
+          <div>{t(`Waiting for ${cls.teacherName} to let you in.`, `${cls.teacherName} sizni qabul qilishini kutyapmiz.`)}</div>
         </div>
         {error && <div className="game-warn">{error}</div>}
         <div className="home-cta">
-          <TwoTap label="Cancel my request" confirm="Tap again to cancel" onConfirm={leave} />
+          <TwoTap label={t("Cancel my request", "So'rovimni bekor qilish")} confirm={t("Tap again to cancel", "Bekor qilish uchun yana bosing")} onConfirm={leave} />
         </div>
       </div>
     );
@@ -681,30 +712,30 @@ function StudentView({ data, onBack, onStartClass }) {
     <div className="screen rating">
       <BackBar title={cls.name} onBack={onBack} />
       <div className="sub class-user">
-        Teacher: {cls.teacherName}{cls.teacherUsername ? ` · @${cls.teacherUsername}` : ""} · {data.students} student{data.students === 1 ? "" : "s"}
+        {t("Teacher:", "O'qituvchi:")} {cls.teacherName}{cls.teacherUsername ? ` · @${cls.teacherUsername}` : ""} · {studentsText(data.students)}
       </div>
 
       {me && (
         <div className="rating-place">
-          <span className="rating-rank">Your place in class <b>#{me.place} / {me.total}</b></span>
-          <b>{me.points} <small>pts</small></b>
+          <span className="rating-rank">{t("Your place in class", "Guruhdagi o'rningiz")} <b>#{me.place} / {me.total}</b></span>
+          <b>{me.points} <small>{t("pts", "ball")}</small></b>
         </div>
       )}
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>Class ranking · by points</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Class ranking · by points", "Guruh reytingi · ball bo'yicha")}</span>
       </div>
       <div className="board">
         <div className="board-head">
-          <span className="board-place">Rank</span>
-          <span className="board-who">Name</span>
-          <span className="board-value">Points</span>
+          <span className="board-place">{t("Rank", "O'rin")}</span>
+          <span className="board-who">{t("Name", "Ism")}</span>
+          <span className="board-value">{t("Points", "Ball")}</span>
         </div>
         {top.map((r) => (
           <div key={`${r.place}-${r.name}`} className={`board-row${r.isMe ? " me" : ""}${r.place <= 3 ? ` p${r.place}` : ""}`}>
             <span className="board-place"><PlaceMark place={r.place} /></span>
             <span className="board-who">
-              <span className="board-name">{r.isMe ? "You" : r.name}</span>
+              <span className="board-name">{r.isMe ? t("You", "Siz") : r.name}</span>
               {!r.isMe && r.username && <span className="board-user">@{r.username}</span>}
             </span>
             <span className="board-value">{r.points}</span>
@@ -715,14 +746,14 @@ function StudentView({ data, onBack, onStartClass }) {
             <div className="board-gap" aria-hidden="true">⋯</div>
             <div className="board-row me">
               <span className="board-place">{meBelow.place}</span>
-              <span className="board-who"><span className="board-name">You</span></span>
+              <span className="board-who"><span className="board-name">{t("You", "Siz")}</span></span>
               <span className="board-value">{meBelow.points}</span>
             </div>
           </>
         )}
       </div>
 
-      <div className="section-label">Homework</div>
+      <div className="section-label">{t("Homework", "Uy vazifasi")}</div>
       {data.assignments.length ? (
         <div className="class-list">
           {data.assignments.map((a) => {
@@ -733,28 +764,30 @@ function StudentView({ data, onBack, onStartClass }) {
                   <span className="class-card-t">{a.title}</span>
                   <span className="class-card-n">
                     {a.mine
-                      ? `Handed in · ${a.mine.score}/${a.mine.total}${a.mine.late ? " · late" : ""}`
-                      : `Due ${dayText(a.dueAt)}${overdue ? " · overdue" : ""}`}
+                      ? t(`Handed in · ${a.mine.score}/${a.mine.total}${a.mine.late ? " · late" : ""}`,
+                        `Topshirildi · ${a.mine.score}/${a.mine.total}${a.mine.late ? " · kechikib" : ""}`)
+                      : t(`Due ${dayText(a.dueAt)}${overdue ? " · overdue" : ""}`,
+                        `Muddati: ${dayText(a.dueAt)}${overdue ? " · muddati o'tgan" : ""}`)}
                   </span>
                 </span>
-                <span className={`class-pill${a.mine ? "" : " on"}`}>{a.mine ? "Practise" : "Start"}</span>
+                <span className={`class-pill${a.mine ? "" : " on"}`}>{a.mine ? t("Practise", "Mashq") : t("Start", "Boshlash")}</span>
               </button>
             );
           })}
         </div>
       ) : (
-        <div className="class-note">No homework yet.</div>
+        <div className="class-note">{t("No homework yet.", "Hali uy vazifasi yo'q.")}</div>
       )}
 
       {data.packages.length > 0 && (
         <>
-          <div className="section-label">Practice</div>
+          <div className="section-label">{t("Practice", "Mashq")}</div>
           <div className="class-list">
             {data.packages.map((p) => (
               <button key={p.id} className="class-card" onClick={() => play(p.id, p.name, null)}>
                 <span className="class-card-main">
                   <span className="class-card-t">{p.name}</span>
-                  <span className="class-card-n">{p.count} question{p.count === 1 ? "" : "s"} · not counted anywhere</span>
+                  <span className="class-card-n">{questionsText(p.count)} · {t("not counted anywhere", "hech qayerda hisoblanmaydi")}</span>
                 </span>
                 <span className="class-go">{opening === p.id ? "…" : "›"}</span>
               </button>
@@ -765,7 +798,7 @@ function StudentView({ data, onBack, onStartClass }) {
 
       {error && <div className="game-warn" style={{ marginTop: 12 }}>{error}</div>}
       <div className="home-cta">
-        <TwoTap label="Leave this class" confirm="Tap again to leave" onConfirm={leave} />
+        <TwoTap label={t("Leave this class", "Guruhdan chiqish")} confirm={t("Tap again to leave", "Chiqish uchun yana bosing")} onConfirm={leave} />
       </div>
     </div>
   );
