@@ -307,6 +307,16 @@ one small thing beside it (the day streak), and the main action pinned just
 above the tab bar. Screens opened from inside a tab use Telegram's own back
 arrow. A quiz round, a flashcard session and a live game hide the tab bar.
 
+A first visit opens on **how-to cards**, one per tab, to swipe through or
+skip (`src/components/Intro.jsx`). "First" means no answers and no day
+studied, decided after the cloud copy of progress has loaded, so someone on
+a new phone isn't taken for a newcomer; a visit that came through a game or
+class invite skips them until next time. Seeing them sets `introSeen` in the
+saved progress, which a reset keeps. **Me → How to use usmleengo** shows
+them again. Help & support there also has **Report a problem** (a chat with
+the developer, the draft already carrying the version and platform) and
+**Buy me a coffee** (the developer's card, with a Copy button).
+
 Under the Quiz tab's search, **Review** holds the player's own material:
 **Mistakes** (every question whose last answer was wrong, until it is
 answered right), **Saved** (questions bookmarked with 🔖 in a quiz or on the

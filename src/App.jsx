@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import Intro from "./components/Intro.jsx";
 import Logo from "./components/Logo.jsx";
 import Home from "./components/Home.jsx";
 import Quiz from "./components/Quiz.jsx";
@@ -15,7 +16,7 @@ import { quietSync, syncRating } from "./lib/ratingApi.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
-import { emptyState, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
+import { emptyState, isNewPlayer, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
 import { startParam } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
 import { xpFor } from "./lib/rating.js";
@@ -49,6 +50,8 @@ export default function App() {
   // rating screens open with something to show while they fetch afresh.
   const [standings, setStandings] = useState(null);
   const [standingsLoading, setStandingsLoading] = useState(false);
+  // The how-to cards: over everything, for a first visit or from Me.
+  const [intro, setIntro] = useState(false);
 
   // The pool a round was built from, so "Another round" can reshuffle the
   // same topic instead of dumping the user back to the daily mix. It may be
@@ -71,6 +74,11 @@ export default function App() {
     loadRemote(loadLocal()).then((s) => {
       if (!alive) return;
       setState(s);
+      // A first visit gets the how-to cards — decided only now, once the
+      // cloud copy has had its say, so progress from another phone counts.
+      // Not when an invite brought them: that visit has a job to do, and the
+      // cards wait for the next one.
+      if (isNewPlayer(s) && !invite && !classInvite && !botFile) setIntro(true);
       // Every player is ranked from their first open: send the score once
       // the progress that will be sent is the settled one, local and cloud.
       keepRanked(s);
@@ -198,6 +206,12 @@ export default function App() {
     save(updated);
   }
 
+  // Skipped or finished, the cards are seen, on every phone (it rides in the saved progress).
+  const closeIntro = useCallback(() => {
+    setIntro(false);
+    if (!stateRef.current.introSeen) persist({ ...stateRef.current, introSeen: true });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   /**
    * Studying anything counts towards the daily streak — it is one habit, not
    * one per section, so a day spent only on flashcards must not break it.
@@ -238,6 +252,7 @@ export default function App() {
       count: stateRef.current.count,
       section: stateRef.current.section,
       theme: stateRef.current.theme,
+      introSeen: stateRef.current.introSeen,
     });
   }
 
@@ -340,6 +355,7 @@ export default function App() {
         onRating={() => openTab("rating")}
         onTheme={(theme) => persist(setTheme(stateRef.current, theme))}
         onReset={resetAll}
+        onHowTo={() => setIntro(true)}
       />
     );
   } else {
@@ -359,6 +375,7 @@ export default function App() {
     <div className={`shell${focused ? "" : " with-tabs"}`}>
       {screen}
       {!focused && <TabBar tab={tab} onTab={openTab} />}
+      {intro && <Intro onDone={closeIntro} />}
     </div>
   );
 }

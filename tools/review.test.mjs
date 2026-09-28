@@ -72,5 +72,15 @@ function localStorageShim(value) {
   globalThis.localStorage = { getItem: () => value, setItem() {}, removeItem() {} };
 }
 
+console.log("\nthe how-to cards");
+check("a brand-new player gets them", S.isNewPlayer({ ...S.emptyState }));
+check("not once they've been seen", !S.isNewPlayer({ ...S.emptyState, introSeen: true }));
+check("not someone who has answered questions", !S.isNewPlayer({ ...S.emptyState, answered: 12 }));
+check("nor someone who has only done flashcards (a day studied)", !S.isNewPlayer({ ...S.emptyState, lastDay: "2026-09-28" }));
+globalThis.localStorage = { getItem: () => JSON.stringify({ introSeen: true }), setItem() {}, removeItem() {} };
+check("having seen them is kept in the saved progress", S.loadLocal().introSeen === true);
+globalThis.localStorage = { getItem: () => JSON.stringify({ introSeen: "yes" }), setItem() {}, removeItem() {} };
+check("and only a real true counts", S.loadLocal().introSeen === false);
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

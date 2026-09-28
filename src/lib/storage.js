@@ -44,7 +44,15 @@ export const emptyState = {
   // Time spent on correct answers, per question type: [total ms, count].
   // Only correct answers, and each type kept apart — see rating.js for why.
   timing: { binary: [0, 0], gap: [0, 0] },
+  // The how-to cards have been seen (or skipped); they are shown once.
+  introSeen: false,
 };
+
+/**
+ * Someone who has never studied here: no answers and no day studied —
+ * a day of flashcards sets lastDay too. They get the how-to cards.
+ */
+export const isNewPlayer = (state) => !state.introSeen && !state.lastDay && !state.answered;
 
 export function today() {
   const d = new Date();
@@ -69,6 +77,7 @@ function merge(raw) {
     if (!["binary", "gap", "random"].includes(merged.qtype)) merged.qtype = null;
     if (!["auto", "light", "dark"].includes(merged.theme)) merged.theme = "auto";
     if (!["english", "quiz"].includes(merged.section)) merged.section = null;
+    merged.introSeen = parsed.introSeen === true;
     // Tags can disappear when the bank is re-authored, so anything unknown is
     // dropped on read rather than left to filter a round down to nothing.
     merged.timing = cleanTiming(parsed.timing);

@@ -87,7 +87,7 @@ function CoffeeSheet({ onClose }) {
  * it. The question type is not here: it shapes a round, so it sits by the
  * Start button.
  */
-export default function Me({ state, standings, onRefresh, onRating, onTheme, onReset }) {
+export default function Me({ state, standings, onRefresh, onRating, onTheme, onReset, onHowTo }) {
   useLiveBoard(onRefresh);
 
   const { me, places, input } = useMemo(() => ratingData(state, standings), [state, standings]);
@@ -209,6 +209,13 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
 
       <div className="section-label">Help &amp; support</div>
       <div className="set-list">
+        <button className="set-row set-link" onClick={() => { haptic("light"); onHowTo(); }}>
+          <span>
+            <span className="set-row-t">How to use usmleengo</span>
+            <span className="set-row-n">A quick tour of every tab</span>
+          </span>
+          <Chevron />
+        </button>
         <button className="set-row set-link" onClick={reportProblem}>
           <span>
             <span className="set-row-t">Report a problem</span>
