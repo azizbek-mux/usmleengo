@@ -1591,6 +1591,10 @@ input { font: inherit; }
 .set-link:last-child { border-radius: 0 0 var(--radius) var(--radius); }
 .set-link:only-child { border-radius: var(--radius); }
 .set-link > svg { flex-shrink: 0; color: var(--muted); }
+/* The coffee card: the number large and selectable, the name under it. */
+.coffee-card { display: flex; flex-direction: column; gap: 4px; margin: 12px 0; padding: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
+.coffee-num { font-size: 22px; font-weight: 800; letter-spacing: 1px; font-variant-numeric: tabular-nums; user-select: all; -webkit-user-select: all; }
+.coffee-holder { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
 .set-row .theme-opt { padding: 7px 0; }
 .set-btn {
   flex-shrink: 0;

@@ -1,10 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { WEIGHTS, XP, formatPace, medalFor, points } from "../lib/rating.js";
-import { COFFEE_LINK, DEVELOPER, haptic, inTelegram, openTelegram, openWeb, platformText } from "../lib/telegram.js";
+import { DEVELOPER, haptic, inTelegram, openTelegram, platformText } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
 import { Chevron } from "./Icons.jsx";
 import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
-import { Byline, ThemePicker } from "./Sheet.jsx";
+import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
 
 /** "#88 / 2,300" when there is anyone to be placed against. */
 const placeOf = (p) => (p?.place && p.total > 1 ? rankText(p) : null);
@@ -19,6 +19,45 @@ function reportProblem() {
   haptic("light");
   const draft = `usmleengo problem (version ${VERSION}, ${platformText()}):\n`;
   openTelegram(`${DEVELOPER}?text=${encodeURIComponent(draft)}`);
+}
+
+/**
+ * "Buy me a coffee": the author's card, to send any amount to from Click,
+ * Payme or a bank app. While the number is empty the row stays hidden.
+ */
+const COFFEE_CARD = { number: "", holder: "" };
+const cardDigits = COFFEE_CARD.number.replace(/\D/g, "");
+
+/** The card, a copy button, and a way to say something with it. */
+function CoffeeSheet({ onClose }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <Sheet title="Buy me a coffee ☕" onClose={onClose}>
+      <div className="class-note" style={{ marginTop: 0 }}>
+        usmleengo is free. If it helps you study, send any amount to this card — from Click, Payme or
+        your bank app.
+      </div>
+      <div className="coffee-card">
+        <span className="coffee-num">{cardDigits.replace(/(\d{4})(?=\d)/g, "$1 ")}</span>
+        {COFFEE_CARD.holder && <span className="coffee-holder">{COFFEE_CARD.holder}</span>}
+      </div>
+      <button
+        className="btn btn-primary"
+        onClick={async () => {
+          try { await navigator.clipboard.writeText(cardDigits); setCopied(true); haptic("success"); } catch { /* not allowed here; the number can be selected */ }
+        }}
+      >
+        {copied ? "Copied ✓" : "Copy card number"}
+      </button>
+      <button
+        className="btn btn-ghost"
+        style={{ marginTop: 8 }}
+        onClick={() => { haptic("light"); openTelegram(`${DEVELOPER}?text=${encodeURIComponent("☕ Sent you a coffee for usmleengo! ")}`); }}
+      >
+        Send a message with it
+      </button>
+    </Sheet>
+  );
 }
 
 /**
@@ -41,6 +80,7 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
   // Resetting everything is two taps apart, so a stray one while scrolling
   // cannot wipe months of progress.
   const [arming, setArming] = useState(false);
+  const [coffee, setCoffee] = useState(false);
   useEffect(() => {
     if (!arming) return undefined;
     const id = setTimeout(() => setArming(false), 4000);
@@ -157,16 +197,17 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
           </span>
           <Chevron />
         </button>
-        {COFFEE_LINK && (
-          <button className="set-row set-link" onClick={() => { haptic("light"); openWeb(COFFEE_LINK); }}>
+        {cardDigits && (
+          <button className="set-row set-link" onClick={() => { haptic("light"); setCoffee(true); }}>
             <span>
               <span className="set-row-t">Buy me a coffee ☕</span>
-              <span className="set-row-n">Support usmleengo — Uzcard, Humo, Payme, Click or any card</span>
+              <span className="set-row-n">Support usmleengo with a card transfer</span>
             </span>
             <Chevron />
           </button>
         )}
       </div>
+      {coffee && <CoffeeSheet onClose={() => setCoffee(false)} />}
 
       <Byline />
     </div>

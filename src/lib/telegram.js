@@ -287,15 +287,8 @@ export const APP_LINK = "https://t.me/usmleengo_bot/study";
 /** The author's channel, linked from the byline. */
 export const CHANNEL = "https://t.me/mukhtorov_md";
 
-/** The developer's own chat, where "Report a problem" goes. */
+/** The developer's own chat, where "Report a problem" and coffee notes go. */
 export const DEVELOPER = "https://t.me/azizbek_muxtorov";
-
-/**
- * The page for "Buy me a coffee": the author's taps page (Tirikchilik as
- * was), which takes Uzcard, Humo, Payme, Uzum, Click, Visa and Mastercard.
- * Empty hides the row.
- */
-export const COFFEE_LINK = "https://taps.uz/mukhtorov_md";
 
 /** Which Telegram, for a problem report: "android · Telegram 8.0". */
 export function platformText() {
@@ -311,12 +304,6 @@ export function platformText() {
  */
 export function openTelegram(url) {
   if (tg?.openTelegramLink) tg.openTelegramLink(url);
-  else window.open(url, "_blank", "noopener,noreferrer");
-}
-
-/** Open a web page (not t.me) in Telegram's browser, leaving the Mini App open. */
-export function openWeb(url) {
-  if (tg?.openLink) tg.openLink(url);
   else window.open(url, "_blank", "noopener,noreferrer");
 }
 
