@@ -10,6 +10,7 @@
 // code change does not force users to re-download the whole bank.
 
 import { BANK_VERSION } from "./bank-version.js";
+import { t } from "../lib/i18n.js";
 
 const bank = [];
 
@@ -62,9 +63,10 @@ export function loadBank() {
 export function bankBlurb() {
   // Callers render this; an empty bank means it was read before loadBank()
   // resolved. Say nothing rather than advertise "0 quizzes".
-  if (!bank.length) return "Thousands of quizzes";
-  if (bank.length < 100) return `${bank.length} quizzes`;
-  return `${Math.floor(bank.length / 100) * 100}+ quizzes`;
+  if (!bank.length) return t("Thousands of quizzes", "Minglab savollar");
+  if (bank.length < 100) return t(`${bank.length} quizzes`, `${bank.length} ta savol`);
+  const n = Math.floor(bank.length / 100) * 100;
+  return t(`${n}+ quizzes`, `${n.toLocaleString("en-US").replace(",", " ")}+ ta savol`);
 }
 
 export default bank;

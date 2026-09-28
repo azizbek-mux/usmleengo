@@ -16,7 +16,8 @@ import { quietSync, syncRating } from "./lib/ratingApi.js";
 import { loadBank } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
-import { emptyState, isNewPlayer, loadLocal, loadRemote, record, reset, save, setCount, setQType, setSection, setSubjects, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
+import { emptyState, isNewPlayer, loadLocal, loadRemote, record, reset, save, setCount, setLanguage, setQType, setSection, setSubjects, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
+import { setLang, t } from "./lib/i18n.js";
 import { startParam } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
 import { xpFor } from "./lib/rating.js";
@@ -177,16 +178,19 @@ export default function App() {
     if (classRound.current) {
       const round = classRound.current;
       if (round.assignmentId) {
-        setClassNote("Handing it in…");
+        setClassNote(t("Handing it in…", "Topshirilmoqda…"));
         classCall("attempt", { assignmentId: round.assignmentId, answers: round.answers })
           .then((r) => setClassNote(r.first
-            ? `Handed in: ${r.score}/${r.total}${r.late ? " (late)" : ""}. Your teacher can see it.`
-            : `Your first try is the one that counts (${r.score}/${r.total}). This one was practice.`))
-          .catch(() => setClassNote("Couldn’t hand it in. Check your internet, then do it again from the class."));
+            ? t(`Handed in: ${r.score}/${r.total}${r.late ? " (late)" : ""}. Your teacher can see it.`,
+              `Topshirildi: ${r.score}/${r.total}${r.late ? " (kechikib)" : ""}. O'qituvchingiz buni ko'ra oladi.`)
+            : t(`Your first try is the one that counts (${r.score}/${r.total}). This one was practice.`,
+              `Faqat birinchi urinish hisoblanadi (${r.score}/${r.total}). Bu safargisi mashq edi.`)))
+          .catch(() => setClassNote(t("Couldn’t hand it in. Check your internet, then do it again from the class.",
+            "Topshirib bo'lmadi. Internetni tekshiring va guruhdan qaytadan bajaring.")));
         // Anything after this, from the same screen, is practice.
         round.assignmentId = null;
       } else {
-        setClassNote("Practice — it isn’t counted anywhere.");
+        setClassNote(t("Practice — it isn’t counted anywhere.", "Mashq — hech qayerda hisoblanmaydi."));
       }
       setFlow("result");
       return;
@@ -253,6 +257,7 @@ export default function App() {
       section: stateRef.current.section,
       theme: stateRef.current.theme,
       introSeen: stateRef.current.introSeen,
+      lang: stateRef.current.lang,
     });
   }
 
@@ -262,6 +267,10 @@ export default function App() {
     setFlow(null);
   }
 
+  // Every screen below reads the language through t(); set it before they render.
+  setLang(state.lang);
+  const chooseLang = (next) => persist(setLanguage(stateRef.current, next));
+
   const xpEarned = log.reduce((sum, l) => sum + xpFor(l.question, l.correct), 0);
 
   if (bankStatus !== "ready") {
@@ -269,11 +278,11 @@ export default function App() {
       <div className="screen boot">
         <Logo size={92} className="boot-mark" />
         {bankStatus === "loading" ? (
-          <div className="boot-sub">Loading questions…</div>
+          <div className="boot-sub">{t("Loading questions…", "Savollar yuklanmoqda…")}</div>
         ) : (
           <>
-            <div className="boot-title">Couldn’t load questions</div>
-            <div className="boot-sub">Check your connection and try again.</div>
+            <div className="boot-title">{t("Couldn’t load questions", "Savollarni yuklab bo'lmadi")}</div>
+            <div className="boot-sub">{t("Check your connection and try again.", "Internetni tekshirib, qayta urinib ko'ring.")}</div>
             <button
               className="btn btn-primary"
               style={{ marginTop: 22, maxWidth: 240 }}
@@ -284,7 +293,7 @@ export default function App() {
                   .catch(() => setBankStatus("error"));
               }}
             >
-              Retry
+              {t("Retry", "Qayta urinish")}
             </button>
           </>
         )}
@@ -356,6 +365,7 @@ export default function App() {
         onTheme={(theme) => persist(setTheme(stateRef.current, theme))}
         onReset={resetAll}
         onHowTo={() => setIntro(true)}
+        onLang={chooseLang}
       />
     );
   } else {
@@ -372,10 +382,15 @@ export default function App() {
   }
 
   return (
-    <div className={`shell${focused ? "" : " with-tabs"}`}>
-      {screen}
-      {!focused && <TabBar tab={tab} onTab={openTab} />}
-      {intro && <Intro onDone={closeIntro} />}
-    </div>
+    <>
+      {/* Keyed by language, so a switch redraws every screen in the new one. */}
+      <div key={state.lang || "en"} className={`shell${focused ? "" : " with-tabs"}`}>
+        {screen}
+        {!focused && <TabBar tab={tab} onTab={openTab} />}
+      </div>
+      {/* Outside the keyed part: choosing a language on the first card
+          re-renders the cards in it without starting them over. */}
+      {intro && <Intro onDone={closeIntro} askLang={!state.introSeen} lang={state.lang} onLang={chooseLang} />}
+    </>
   );
 }

@@ -211,6 +211,10 @@ input { font: inherit; }
 .intro-eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; color: var(--muted); }
 .intro-title { margin: 0; font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
 .intro-text { margin: 0; max-width: 34ch; font-size: 16px; line-height: 1.5; color: var(--muted); text-wrap: pretty; }
+.intro-logo { margin-bottom: 10px; }
+.intro-langs { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 300px; margin-top: 18px; }
+.intro-lang { padding: 15px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); color: var(--text); font-weight: 800; font-size: 17px; }
+.intro-lang.on { border-color: var(--accent); background: var(--accent-dim); color: var(--accent-soft); }
 .intro-foot { display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: 520px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
 .intro-dots { display: flex; justify-content: center; gap: 8px; }
 .intro-dot { width: 8px; height: 8px; padding: 0; border-radius: 50%; background: var(--line); transition: width 0.2s var(--tap), background 0.2s; }
@@ -1619,6 +1623,9 @@ input { font: inherit; }
 .coffee-thanks { display: flex; flex-direction: column; gap: 8px; margin: 6px 0 16px; font-size: 17px; line-height: 1.45; }
 .coffee-sign { font-size: 14px; color: var(--muted); }
 .set-row .theme-opt { padding: 7px 0; }
+/* The language switch: two words rather than two symbols. */
+.set-row .lang-toggle { width: auto; }
+.lang-toggle .theme-opt { padding: 7px 12px; font-size: 13px; font-weight: 700; }
 .set-btn {
   flex-shrink: 0;
   padding: 8px 14px;

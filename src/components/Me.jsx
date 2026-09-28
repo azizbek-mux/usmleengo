@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { t } from "../lib/i18n.js";
 import { WEIGHTS, XP, formatPace, medalFor, points } from "../lib/rating.js";
 import { DEVELOPER, haptic, inTelegram, openTelegram, platformText } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
@@ -17,7 +18,10 @@ const VERSION = typeof __APP_VERSION__ === "undefined" ? "dev" : __APP_VERSION__
  */
 function reportProblem() {
   haptic("light");
-  const draft = `usmleengo problem (version ${VERSION}, ${platformText()}):\n`;
+  const draft = t(
+    `usmleengo problem (version ${VERSION}, ${platformText()}):\n`,
+    `usmleengoda muammo (versiya ${VERSION}, ${platformText()}):\n`,
+  );
   openTelegram(`${DEVELOPER}?text=${encodeURIComponent(draft)}`);
 }
 
@@ -39,26 +43,31 @@ function CoffeeSheet({ onClose }) {
 
   if (sent) {
     return (
-      <Sheet title="Thank you ☕" onClose={onClose}>
+      <Sheet title={t("Thank you ☕", "Rahmat ☕")} onClose={onClose}>
         <div className="coffee-thanks">
-          Thank you for your donation! I’m happy you enjoy my product.
+          {t("Thank you for your donation! I’m happy you enjoy my product.",
+            "Xayriyangiz uchun rahmat! Mahsulotim sizga yoqqanidan xursandman.")}
           <span className="coffee-sign">— Azizbek</span>
         </div>
         <button
           className="btn btn-ghost"
-          onClick={() => { haptic("light"); openTelegram(`${DEVELOPER}?text=${encodeURIComponent("☕ Sent you a coffee for usmleengo! ")}`); }}
+          onClick={() => {
+            haptic("light");
+            const note = t("☕ Sent you a coffee for usmleengo! ", "☕ usmleengo uchun sizga qahva yubordim! ");
+            openTelegram(`${DEVELOPER}?text=${encodeURIComponent(note)}`);
+          }}
         >
-          Send me a message
+          {t("Send me a message", "Menga xabar yozing")}
         </button>
-        <button className="btn btn-primary" style={{ marginTop: 8 }} onClick={onClose}>Close</button>
+        <button className="btn btn-primary" style={{ marginTop: 8 }} onClick={onClose}>{t("Close", "Yopish")}</button>
       </Sheet>
     );
   }
   return (
-    <Sheet title="Buy me a coffee ☕" onClose={onClose}>
+    <Sheet title={t("Buy me a coffee ☕", "Menga qahva olib bering ☕")} onClose={onClose}>
       <div className="class-note" style={{ marginTop: 0 }}>
-        usmleengo is free. If it helps you study, send any amount to this card — from Click, Payme or
-        your bank app.
+        {t("usmleengo is free. If it helps you study, send any amount to this card — from Click, Payme or your bank app.",
+          "usmleengo bepul. Agar u o'qishingizga yordam berayotgan bo'lsa, shu kartaga istalgan miqdorni yuboring — Click, Payme yoki bank ilovangiz orqali.")}
       </div>
       <div className="coffee-card">
         <span className="coffee-num">{cardDigits.replace(/(\d{4})(?=\d)/g, "$1 ")}</span>
@@ -70,12 +79,31 @@ function CoffeeSheet({ onClose }) {
           try { await navigator.clipboard.writeText(cardDigits); setCopied(true); haptic("success"); } catch { /* not allowed here; the number can be selected */ }
         }}
       >
-        {copied ? "Copied ✓" : "Copy card number"}
+        {copied ? t("Copied ✓", "Nusxalandi ✓") : t("Copy card number", "Karta raqamini nusxalash")}
       </button>
       <button className="btn btn-ghost" style={{ marginTop: 8 }} onClick={() => { haptic("success"); setSent(true); }}>
-        I’ve sent it
+        {t("I’ve sent it", "Yubordim")}
       </button>
     </Sheet>
+  );
+}
+
+/** O'zbekcha or English, as two words, in Settings. */
+function LangPicker({ lang, onLang }) {
+  return (
+    <div className="theme-toggle lang-toggle" role="radiogroup" aria-label={t("Language", "Til")}>
+      {[["uz", "O'zbekcha"], ["en", "English"]].map(([code, name]) => (
+        <button
+          key={code}
+          role="radio"
+          aria-checked={lang === code}
+          className={`theme-opt${lang === code ? " on" : ""}`}
+          onClick={() => { if (lang !== code) { haptic("light"); onLang(code); } }}
+        >
+          {name}
+        </button>
+      ))}
+    </div>
   );
 }
 
@@ -87,12 +115,12 @@ function CoffeeSheet({ onClose }) {
  * it. The question type is not here: it shapes a round, so it sits by the
  * Start button.
  */
-export default function Me({ state, standings, onRefresh, onRating, onTheme, onReset, onHowTo }) {
+export default function Me({ state, standings, onRefresh, onRating, onTheme, onReset, onHowTo, onLang }) {
   useLiveBoard(onRefresh);
 
   const { me, places, input } = useMemo(() => ratingData(state, standings), [state, standings]);
   const r = me.rating;
-  const t = input.timing;
+  const timing = input.timing;
   const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
   const best = Math.max(state.best || 0, r.raw.streak);
 
@@ -109,48 +137,53 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
   const cards = [
     {
       id: "streak",
-      label: "Day streak",
+      label: t("Day streak", "Kunlik intizom"),
       value: `${r.raw.streak}`,
-      unit: r.raw.streak === 1 ? "day" : "days",
-      detail: `Best ever: ${best} ${best === 1 ? "day" : "days"}`,
+      unit: t(r.raw.streak === 1 ? "day" : "days", "kun"),
+      detail: t(`Best ever: ${best} ${best === 1 ? "day" : "days"}`, `Eng yaxshi natija: ${best} kun`),
     },
     {
       id: "xp",
       label: "XP",
       value: r.raw.xp.toLocaleString(),
       unit: "",
-      detail: `${state.answered.toLocaleString()} answered · ${accuracy}% correct`,
+      detail: t(
+        `${state.answered.toLocaleString()} answered · ${accuracy}% correct`,
+        `${state.answered.toLocaleString()} ta javob · ${accuracy}% to'g'ri`,
+      ),
     },
     {
       id: "speed",
-      label: "Average time",
+      label: t("Average time", "O'rtacha vaqt"),
       value: formatPace(r.raw.pace),
       unit: "",
       detail: r.raw.pace
-        ? [t.binaryN ? `Tapped ${formatPace(t.binaryMs)}` : null, t.gapN ? `typed ${formatPace(t.gapMs)}` : null]
-          .filter(Boolean).join(" · ")
-        : "Timed on correct answers only",
+        ? [
+          timing.binaryN ? t(`Tapped ${formatPace(timing.binaryMs)}`, `Test ${formatPace(timing.binaryMs)}`) : null,
+          timing.gapN ? t(`typed ${formatPace(timing.gapMs)}`, `yozma ${formatPace(timing.gapMs)}`) : null,
+        ].filter(Boolean).join(" · ")
+        : t("Timed on correct answers only", "Faqat to'g'ri javoblar vaqti o'lchanadi"),
     },
   ];
 
   return (
     <div className="screen rating">
       <ScreenHead
-        title={inTelegram && me.name !== "Player" ? me.name : "Me"}
-        sub={me.username ? `@${me.username}` : "Your progress and settings"}
+        title={inTelegram && me.name !== "Player" ? me.name : t("Me", "Profil")}
+        sub={me.username ? `@${me.username}` : t("Your progress and settings", "Natijalaringiz va sozlamalar")}
       />
 
       <button className="perf-points" onClick={() => { haptic("light"); onRating(); }}>
-        <span className="perf-points-l">Your points</span>
+        <span className="perf-points-l">{t("Your points", "Ballaringiz")}</span>
         <span className="perf-points-v">{points(r.overall)}</span>
         <span className="perf-points-place">
           {placeOf(places?.overall)
-            ? `${medalFor(places.overall.place) ? `${medalFor(places.overall.place)} ` : ""}Your rank ${placeOf(places.overall)} ›`
-            : "See the rating ›"}
+            ? `${medalFor(places.overall.place) ? `${medalFor(places.overall.place)} ` : ""}${t("Your rank", "O'rningiz")} ${placeOf(places.overall)} ›`
+            : t("See the rating ›", "Reytingni ko'rish ›")}
         </span>
       </button>
 
-      <div className="section-label">What your points are made of</div>
+      <div className="section-label">{t("What your points are made of", "Ballaringiz nimalardan iborat")}</div>
       <div className="perf-list">
         {cards.map((c) => (
           <div key={c.id} className="perf-card">
@@ -161,22 +194,30 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
               </span>
               <span className="perf-detail">{c.detail}</span>
             </div>
-            <span className="perf-weight">{Math.round(WEIGHTS[c.id] * 100)}% of points</span>
+            <span className="perf-weight">
+              {t(`${Math.round(WEIGHTS[c.id] * 100)}% of points`, `ballning ${Math.round(WEIGHTS[c.id] * 100)}%i`)}
+            </span>
           </div>
         ))}
       </div>
 
-      <div className="section-label">Settings</div>
+      <div className="section-label">{t("Settings", "Sozlamalar")}</div>
       <div className="set-list">
         <div className="set-row">
-          <span className="set-row-t">Appearance</span>
+          <span className="set-row-t">{t("Language", "Til")}</span>
+          <LangPicker lang={state.lang || "en"} onLang={onLang} />
+        </div>
+        <div className="set-row">
+          <span className="set-row-t">{t("Appearance", "Ko'rinish")}</span>
           <ThemePicker theme={state.theme} onTheme={onTheme} />
         </div>
         <div className="set-row">
           <span>
-            <span className="set-row-t">Reset all progress</span>
+            <span className="set-row-t">{t("Reset all progress", "Barcha natijalarni o'chirish")}</span>
             <span className="set-row-n">
-              {arming ? "Tap again to confirm. It cannot be undone." : "XP, streak, question history and the flashcard deck"}
+              {arming
+                ? t("Tap again to confirm. It cannot be undone.", "Tasdiqlash uchun yana bosing. Buni qaytarib bo'lmaydi.")
+                : t("XP, streak, question history and the flashcard deck", "XP, kunlik intizom, savollar tarixi va kartochkalar")}
             </span>
           </span>
           <button
@@ -186,48 +227,50 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
               if (arming) { setArming(false); onReset(); } else setArming(true);
             }}
           >
-            {arming ? "Reset" : "Reset…"}
+            {arming ? t("Reset", "O'chirish") : t("Reset…", "O'chirish…")}
           </button>
         </div>
       </div>
 
-      <div className="section-label">What an answer earns</div>
+      <div className="section-label">{t("What an answer earns", "Har bir javob nima beradi")}</div>
       <div className="xp-rules">
         <div className="xp-rule">
           <span className="xp-amt ok">+{XP.gapCorrect}</span>
-          <span>for a correct answer you <b>typed</b></span>
+          <span>{t(<>for a correct answer you <b>typed</b></>, <><b>yozma</b> to'g'ri javob uchun</>)}</span>
         </div>
         <div className="xp-rule">
           <span className="xp-amt ok">+{XP.binaryCorrect}</span>
-          <span>for a correct answer you <b>tapped</b></span>
+          <span>{t(<>for a correct answer you <b>tapped</b></>, <><b>test</b> usulidagi to'g'ri javob uchun</>)}</span>
         </div>
         <div className="xp-rule">
           <span className="xp-amt">+{XP.wrong}</span>
-          <span>for a wrong answer — reading why is how it sticks</span>
+          <span>{t("for a wrong answer — reading why is how it sticks", "noto'g'ri javob uchun — sababini o'qish bilimni mustahkamlaydi")}</span>
         </div>
       </div>
 
-      <div className="section-label">Help &amp; support</div>
+      <div className="section-label">{t("Help & support", "Yordam va qo'llab-quvvatlash")}</div>
       <div className="set-list">
         <button className="set-row set-link" onClick={() => { haptic("light"); onHowTo(); }}>
           <span>
-            <span className="set-row-t">How to use usmleengo</span>
-            <span className="set-row-n">A quick tour of every tab</span>
+            <span className="set-row-t">{t("How to use usmleengo", "usmleengodan qanday foydalanish")}</span>
+            <span className="set-row-n">{t("A quick tour of every tab", "Barcha bo'limlar bilan qisqacha tanishuv")}</span>
           </span>
           <Chevron />
         </button>
         <button className="set-row set-link" onClick={reportProblem}>
           <span>
-            <span className="set-row-t">Report a problem</span>
-            <span className="set-row-n">Something broken or wrong? Tell the developer on Telegram</span>
+            <span className="set-row-t">{t("Report a problem", "Muammo haqida xabar berish")}</span>
+            <span className="set-row-n">
+              {t("Something broken or wrong? Tell the developer on Telegram", "Nimadir ishlamayaptimi yoki xato bormi? Dasturchiga Telegramda yozing")}
+            </span>
           </span>
           <Chevron />
         </button>
         {cardDigits && (
           <button className="set-row set-link" onClick={() => { haptic("light"); setCoffee(true); }}>
             <span>
-              <span className="set-row-t">Buy me a coffee ☕</span>
-              <span className="set-row-n">Support usmleengo with a card transfer</span>
+              <span className="set-row-t">{t("Buy me a coffee ☕", "Menga qahva olib bering ☕")}</span>
+              <span className="set-row-n">{t("Support usmleengo with a card transfer", "usmleengoni karta orqali qo'llab-quvvatlang")}</span>
             </span>
             <Chevron />
           </button>

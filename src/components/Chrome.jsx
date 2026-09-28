@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { t } from "../lib/i18n.js";
 import { hasBackButton, haptic, showBack } from "../lib/telegram.js";
 import { Book, Checklist, Players, School, Trophy, User } from "./Icons.jsx";
 
@@ -14,13 +15,13 @@ import { Book, Checklist, Players, School, Trophy, User } from "./Icons.jsx";
 //   - Anything that needs full attention — a quiz, a flashcard session, a
 //     live game — hides the tab bar.
 
-export const TABS = [
-  { id: "quiz", label: "Quiz", Icon: Checklist },
-  { id: "english", label: "English", Icon: Book },
-  { id: "play", label: "Play", Icon: Players },
-  { id: "class", label: "Class", Icon: School },
-  { id: "rating", label: "Rating", Icon: Trophy },
-  { id: "me", label: "Me", Icon: User },
+export const tabs = () => [
+  { id: "quiz", label: t("Quiz", "Testlar"), Icon: Checklist },
+  { id: "english", label: t("English", "Ingliz tili"), Icon: Book },
+  { id: "play", label: t("Play", "O'yin"), Icon: Players },
+  { id: "class", label: t("Class", "Guruh"), Icon: School },
+  { id: "rating", label: t("Rating", "Reyting"), Icon: Trophy },
+  { id: "me", label: t("Me", "Profil"), Icon: User },
 ];
 
 export function TabBar({ tab, onTab }) {
@@ -40,9 +41,9 @@ export function TabBar({ tab, onTab }) {
   }, []);
 
   return (
-    <nav className={`tabbar${typing ? " typing" : ""}`} aria-label="Sections">
+    <nav className={`tabbar${typing ? " typing" : ""}`} aria-label={t("Sections", "Bo'limlar")}>
       <div className="tabbar-in">
-        {TABS.map(({ id, label, Icon }) => (
+        {tabs().map(({ id, label, Icon }) => (
           <button
             key={id}
             className={`tab-btn${tab === id ? " on" : ""}`}
@@ -74,7 +75,7 @@ export function ScreenHead({ title, sub, right }) {
 /** The day streak, small, for the right of a heading. */
 export function StreakPill({ days }) {
   return (
-    <span className="streak-pill" aria-label={`${days}-day streak`}>
+    <span className="streak-pill" aria-label={t(`${days}-day streak`, `Kunlik intizom: ${days} kun`)}>
       🔥 <b>{days}</b>
     </span>
   );
@@ -95,7 +96,7 @@ export function BackBar({ title, onBack }) {
       {hasBackButton ? (
         <span className="rating-spacer" />
       ) : (
-        <button className="back-link" onClick={() => { haptic("light"); onBack(); }}>‹ Back</button>
+        <button className="back-link" onClick={() => { haptic("light"); onBack(); }}>‹ {t("Back", "Orqaga")}</button>
       )}
       <span className="rating-title">{title}</span>
       <span className="rating-spacer" />

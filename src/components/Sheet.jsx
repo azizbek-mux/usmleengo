@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { isUz, t } from "../lib/i18n.js";
 import { CHANNEL, haptic, openTelegram } from "../lib/telegram.js";
 import { THEMES, resolveTheme } from "../lib/theme.js";
 
@@ -11,18 +12,17 @@ import { THEMES, resolveTheme } from "../lib/theme.js";
  * reopening it from the bot.
  */
 export function Byline() {
-  return (
-    <div className="byline">
-      designed by{" "}
-      <a
-        className="byline-link"
-        href={CHANNEL}
-        onClick={(e) => { e.preventDefault(); haptic("light"); openTelegram(CHANNEL); }}
-      >
-        mukhtorov
-      </a>
-    </div>
+  const link = (
+    <a
+      className="byline-link"
+      href={CHANNEL}
+      onClick={(e) => { e.preventDefault(); haptic("light"); openTelegram(CHANNEL); }}
+    >
+      mukhtorov
+    </a>
   );
+  // The name comes first in Uzbek: "mukhtorov tomonidan yaratilgan".
+  return <div className="byline">{isUz() ? <>{link} tomonidan yaratilgan</> : <>designed by {link}</>}</div>;
 }
 
 /**
@@ -35,17 +35,17 @@ export function Byline() {
 export function ThemePicker({ theme, onTheme }) {
   const current = resolveTheme(theme);
   return (
-    <div className="theme-toggle" role="radiogroup" aria-label="Appearance">
-      {THEMES.map((t) => (
+    <div className="theme-toggle" role="radiogroup" aria-label={t("Appearance", "Ko'rinish")}>
+      {THEMES.map((theme) => (
         <button
-          key={t.id}
+          key={theme.id}
           role="radio"
-          aria-checked={current === t.id}
-          aria-label={t.label}
-          className={`theme-opt${current === t.id ? " on" : ""}`}
-          onClick={() => { haptic("light"); onTheme(t.id); }}
+          aria-checked={current === theme.id}
+          aria-label={theme.id === "light" ? t("Light", "Yorug'") : t("Dark", "Qorong'i")}
+          className={`theme-opt${current === theme.id ? " on" : ""}`}
+          onClick={() => { haptic("light"); onTheme(theme.id); }}
         >
-          {t.id === "light" ? <Sun /> : <Moon />}
+          {theme.id === "light" ? <Sun /> : <Moon />}
         </button>
       ))}
     </div>
@@ -81,7 +81,7 @@ export function Sheet({ title, onClose, children }) {
         <div className="sheet-grip" />
         <div className="sheet-head">
           <span className="sheet-title">{title}</span>
-          <button className="sheet-x" onClick={onClose} aria-label="Close">×</button>
+          <button className="sheet-x" onClick={onClose} aria-label={t("Close", "Yopish")}>×</button>
         </div>
         {children}
       </div>

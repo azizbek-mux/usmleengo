@@ -8,6 +8,11 @@
 //
 // A Telegram sticker is a message of its own and cannot sit inside a text
 // message, so the message leans on emoji instead.
+//
+// A player using the app in Uzbek shares in Uzbek. Suffixes join the name
+// directly — "usmleengoda", not "usmleengo'da", which reads as the letter o'.
+
+import { isUz } from "./i18n.js";
 
 /** "usmleengo" → "𝘂𝘀𝗺𝗹𝗲𝗲𝗻𝗴𝗼". Letters and digits only; anything else is left as is. */
 export function boldText(s) {
@@ -47,6 +52,24 @@ export function roundScope(label) {
   return `in ${TAG_NAMES[l.toLowerCase()] || l}`;
 }
 
+const UZ_TAG_NAMES = { gisto: "gistologiya", radio: "radiologiya" };
+const UZ_REVIEW_SCOPES = {
+  xatolar: "xatolarimni takrorlab",
+  saqlangan: "saqlangan savollarim bo'yicha",
+  "yaxshi o'zlashtirilmagan mavzular": "yaxshi o'zlashtirilmagan mavzularim bo'yicha",
+};
+
+/** The same, in Uzbek, for the middle of "…usmleengoda ___ 8/10 natija…". */
+export function roundScopeUz(label) {
+  const l = String(label || "").trim();
+  if (!l || /^tasodifiy$/i.test(l)) return "barcha fanlar bo'yicha";
+  const review = UZ_REVIEW_SCOPES[l.toLowerCase()];
+  if (review) return review;
+  const many = l.match(/^(\d+) ta fan$/i);
+  if (many) return `${many[1]} ta fan bo'yicha`;
+  return `«${UZ_TAG_NAMES[l.toLowerCase()] || l}» bo'yicha`;
+}
+
 /** The opening emoji, by how the round went. */
 function mood(pct) {
   if (pct === 100) return "💯";
@@ -74,6 +97,7 @@ function medal(place) {
  *   link           — the Mini App's link, always the last line
  */
 export function shareMessage({ correct, total, label, streak = 0, rank = null, bankSize = 0, link }) {
+  if (isUz()) return shareMessageUz({ correct, total, label, streak, rank, bankSize, link });
   const pct = total ? Math.round((correct / total) * 100) : 0;
   const lines = [];
 
@@ -95,6 +119,29 @@ export function shareMessage({ correct, total, label, streak = 0, rank = null, b
   return lines.join("\n");
 }
 
+/** The same message in Uzbek. */
+export function shareMessageUz({ correct, total, label, streak = 0, rank = null, bankSize = 0, link }) {
+  const pct = total ? Math.round((correct / total) * 100) : 0;
+  const lines = [];
+
+  const perfect = pct === 100 ? "Mukammal natija! " : "";
+  lines.push(`${mood(pct)} ${perfect}${boldText("usmleengo")}da ${roundScopeUz(label)} ${correct}/${total} — ${pct}% natija ko'rsatdim!`);
+
+  if (rank?.place && rank.total >= 2) {
+    const people = rank.total.toLocaleString("en-US").replace(/,/g, " ");
+    lines.push(rank.place === 1
+      ? `${medal(1)} Hozir reytingda ${people} kishi orasida 1-o'rindaman`
+      : `${medal(rank.place)} Hozir ${people} kishi orasida ${rank.place}-o'rindaman`);
+  }
+  if (streak >= 2) lines.push(`🔥 Kunlik intizom: ${streak} kun`);
+
+  lines.push("");
+  const bank = bankSize >= 100 ? `${(Math.floor(bankSize / 100) * 100).toLocaleString("en-US").replace(/,/g, " ")}+ ta` : String(bankSize || "");
+  lines.push(`🩺 ${bank ? `${bank} bepul` : "Bepul"} USMLE savollari. Hoziroq sinab ko'ring 👇`);
+  lines.push(link);
+  return lines.join("\n");
+}
+
 /**
  * The invitation to a multiplayer game. The link opens the app straight
  * into the game; the code is there for anyone who would rather type it.
@@ -104,6 +151,16 @@ export function shareMessage({ correct, total, label, streak = 0, rank = null, b
  *   link  — the invite link (inviteLink in game.js), always the last line
  */
 export function inviteMessage({ code, about, link }) {
+  if (isUz()) {
+    return [
+      `🎮 ${boldText("usmleengo")}dagi jonli o'yinimga qo'shiling!`,
+      ...(about ? [`🩺 ${about}`] : []),
+      `🔢 Kod: ${code}`,
+      "",
+      "Qo'shilish uchun bosing 👇",
+      link,
+    ].join("\n");
+  }
   return [
     `🎮 Join my live ${boldText("usmleengo")} game!`,
     ...(about ? [`🩺 ${about}`] : []),
@@ -116,6 +173,15 @@ export function inviteMessage({ code, about, link }) {
 
 /** The invitation to a classroom: the code for typing, the link for tapping. */
 export function classInviteMessage({ name, code, link }) {
+  if (isUz()) {
+    return [
+      `📚 ${boldText("usmleengo")}dagi «${name}» guruhimga qo'shiling`,
+      `🔢 Guruh kodi: ${code}`,
+      "",
+      "Qo'shilish uchun bosing 👇",
+      link,
+    ].join("\n");
+  }
   return [
     `📚 Join my class “${name}” on ${boldText("usmleengo")}`,
     `🔢 Class code: ${code}`,
