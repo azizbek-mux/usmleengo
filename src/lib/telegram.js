@@ -287,6 +287,20 @@ export const APP_LINK = "https://t.me/usmleengo_bot/study";
 /** The author's channel, linked from the byline. */
 export const CHANNEL = "https://t.me/mukhtorov_md";
 
+/** The developer's own chat, where "Report a problem" goes. */
+export const DEVELOPER = "https://t.me/azizbek_muxtorov";
+
+/**
+ * The page for "Buy me a coffee" (a Tirikchilik page: any Uzbek or foreign
+ * card, with a message). Empty until there is one — the row stays hidden.
+ */
+export const COFFEE_LINK = "";
+
+/** Which Telegram, for a problem report: "android · Telegram 8.0". */
+export function platformText() {
+  return tg?.platform && tg.platform !== "unknown" ? `${tg.platform} · Telegram ${tg.version}` : "browser";
+}
+
 /**
  * Open a t.me link.
  *
@@ -296,6 +310,12 @@ export const CHANNEL = "https://t.me/mukhtorov_md";
  */
 export function openTelegram(url) {
   if (tg?.openTelegramLink) tg.openTelegramLink(url);
+  else window.open(url, "_blank", "noopener,noreferrer");
+}
+
+/** Open a web page (not t.me) in Telegram's browser, leaving the Mini App open. */
+export function openWeb(url) {
+  if (tg?.openLink) tg.openLink(url);
   else window.open(url, "_blank", "noopener,noreferrer");
 }
 

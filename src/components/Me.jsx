@@ -1,12 +1,25 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { WEIGHTS, XP, formatPace, medalFor, points } from "../lib/rating.js";
-import { haptic, inTelegram } from "../lib/telegram.js";
+import { COFFEE_LINK, DEVELOPER, haptic, inTelegram, openTelegram, openWeb, platformText } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
+import { Chevron } from "./Icons.jsx";
 import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
 import { Byline, ThemePicker } from "./Sheet.jsx";
 
 /** "#88 / 2,300" when there is anyone to be placed against. */
 const placeOf = (p) => (p?.place && p.total > 1 ? rankText(p) : null);
+
+const VERSION = typeof __APP_VERSION__ === "undefined" ? "dev" : __APP_VERSION__;
+
+/**
+ * A chat with the developer, the message already started with what a report
+ * needs and people forget: which version, on which phone.
+ */
+function reportProblem() {
+  haptic("light");
+  const draft = `usmleengo problem (version ${VERSION}, ${platformText()}):\n`;
+  openTelegram(`${DEVELOPER}?text=${encodeURIComponent(draft)}`);
+}
 
 /**
  * The Me tab: the player's points and the one rank they give, the three
@@ -133,6 +146,26 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
           <span className="xp-amt">+{XP.wrong}</span>
           <span>for a wrong answer — reading why is how it sticks</span>
         </div>
+      </div>
+
+      <div className="section-label">Help &amp; support</div>
+      <div className="set-list">
+        <button className="set-row set-link" onClick={reportProblem}>
+          <span>
+            <span className="set-row-t">Report a problem</span>
+            <span className="set-row-n">Something broken or wrong? Tell the developer on Telegram</span>
+          </span>
+          <Chevron />
+        </button>
+        {COFFEE_LINK && (
+          <button className="set-row set-link" onClick={() => { haptic("light"); openWeb(COFFEE_LINK); }}>
+            <span>
+              <span className="set-row-t">Buy me a coffee ☕</span>
+              <span className="set-row-n">Support usmleengo with any card, and leave a message</span>
+            </span>
+            <Chevron />
+          </button>
+        )}
       </div>
 
       <Byline />
