@@ -15,7 +15,7 @@
 // A file itself stays on Telegram's servers; only its id is kept. Either
 // way, only the person who sent it can have it back (see fetchUpload).
 
-import { FORMAT_EXAMPLE, parseQuestions } from "../../src/lib/qformat.js";
+import { FORMAT_EXAMPLE, FORMAT_EXAMPLE_UZ, parseQuestions } from "../../src/lib/qformat.js";
 import { playerKey } from "../../src/lib/scorecard.js";
 
 export const APP_LINK = "https://t.me/usmleengo_bot/study";
@@ -46,12 +46,39 @@ export function telegramApi(env, method, body) {
 
 const openButton = (text, url = APP_LINK) => ({ inline_keyboard: [[{ text, url }]] });
 
-const WELCOME = [
+/* ── both languages ──────────────────────────────────────────────────────
+   The bot cannot know which language a person reads the app in: that lives
+   in their saved progress, not in Telegram. So every reply carries both,
+   with the language their phone is set to first. Nobody is handed a message
+   they cannot read, and nobody has to pick a language to be understood. */
+
+const RULE = "──────────";
+
+/** True when this person's Telegram is in Uzbek, so the Uzbek goes first. */
+export const uzFirst = (msg) => /^uz/i.test(String(msg?.from?.language_code || ""));
+
+/** One message in both languages, the reader's first. */
+const both = (en, uz, uzLead) => (uzLead ? [uz, RULE, en] : [en, RULE, uz]).join("\n\n");
+
+/** A button has room for one label, so it takes the leading language's. */
+const pick = (en, uz, uzLead) => (uzLead ? uz : en);
+
+const WELCOME_EN = [
   "<b>usmleengo</b> 🩺",
   "6,300+ USMLE quizzes, Medical English flashcards, live games with friends, and classrooms.",
   "",
   "<b>Teachers:</b> type or paste your questions here, forward me quizzes, or send a file — Word, PDF, web page or text — and I'll turn them into a package for your class. Send /format to see how to write them.",
 ].join("\n");
+
+const WELCOME_UZ = [
+  "<b>usmleengo</b> 🩺",
+  "6 300+ USMLE savoli, Tibbiy ingliz tili kartochkalari, do'stlar bilan jonli o'yinlar va sinflar.",
+  "",
+  "<b>O'qituvchilarga:</b> savollaringizni shu yerga yozing yoki nusxalab tashlang, viktorinalarni menga yuboring yoki fayl jo'nating — Word, PDF, veb-sahifa yoki matn — men ularni sinfingiz uchun to'plamga aylantiraman. Qanday yozilishini ko'rish uchun /format yuboring.",
+].join("\n");
+
+const OPEN_APP = ["Open usmleengo", "usmleengoni ochish"];
+const REVIEW = ["Review the questions", "Savollarni ko'rib chiqish"];
 
 /** Old tokens go as new ones come. */
 const prune = (env, now) =>
@@ -59,8 +86,13 @@ const prune = (env, now) =>
 
 const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
 
-function welcome(env, chat_id) {
-  return telegramApi(env, "sendMessage", { chat_id, parse_mode: "HTML", text: WELCOME, reply_markup: openButton("Open usmleengo") });
+function welcome(env, chat_id, uzLead) {
+  return telegramApi(env, "sendMessage", {
+    chat_id,
+    parse_mode: "HTML",
+    text: both(WELCOME_EN, WELCOME_UZ, uzLead),
+    reply_markup: openButton(pick(...OPEN_APP, uzLead)),
+  });
 }
 
 const oneLine = (s) => String(s || "").replace(/\s+/g, " ").trim();
@@ -92,6 +124,7 @@ const OPEN_LIST = "owner = ?1 AND text IS NOT NULL AND opened = 0 AND created_at
  */
 async function takeText(env, msg, now, { text: given, poll, later, sleep }) {
   const chat_id = msg.chat.id;
+  const uzLead = uzFirst(msg);
   const owner = playerKey(msg.from.id);
   const at = Math.floor(now / 1000);
   const { results } = await env.DB.prepare(`
@@ -103,13 +136,16 @@ async function takeText(env, msg, now, { text: given, poll, later, sleep }) {
   // A message with no question in it joins a list only as the next piece of
   // a long paste; anything else ("hello") gets the welcome.
   if (!poll && !parseQuestions([{ text }]).questions.length && !(open && at - open.created_at <= JOIN_SECONDS)) {
-    return welcome(env, chat_id);
+    return welcome(env, chat_id, uzLead);
   }
   if (open && open.size + 1 + text.length > MAX_TEXT) {
     return telegramApi(env, "sendMessage", {
       chat_id,
-      text: "This list is full. Open it and add its questions to a class — then send the rest, and they'll start a new list.",
-      reply_markup: openButton("Review the questions", `${APP_LINK}?startapp=f${open.token}`),
+      text: both(
+        "This list is full. Open it and add its questions to a class — then send the rest, and they'll start a new list.",
+        "Bu ro'yxat to'ldi. Uni ochib, savollarini sinfga qo'shing — keyin qolganini yuborsangiz, yangi ro'yxat boshlanadi.",
+        uzLead),
+      reply_markup: openButton(pick(...REVIEW, uzLead), `${APP_LINK}?startapp=f${open.token}`),
     });
   }
   // Start a list if none is open, or else add to the open one.
@@ -127,7 +163,7 @@ async function takeText(env, msg, now, { text: given, poll, later, sleep }) {
   }
   if (!rows.length) return; // the list was opened a moment ago; the next message starts a new one
   const hiddenAnswer = poll?.type === "quiz" && !Number.isInteger(poll.correct_option_id);
-  return later(answerWhenQuiet(env, chat_id, rows[0], hiddenAnswer, sleep));
+  return later(answerWhenQuiet(env, chat_id, rows[0], hiddenAnswer, sleep, uzLead));
 }
 
 /**
@@ -135,24 +171,32 @@ async function takeText(env, msg, now, { text: given, poll, later, sleep }) {
  * size changes with every addition, so if it has changed, a later message
  * is still arriving and will answer instead.
  */
-async function answerWhenQuiet(env, chat_id, { token, size }, hiddenAnswer, sleep) {
+async function answerWhenQuiet(env, chat_id, { token, size }, hiddenAnswer, sleep, uzLead) {
   await sleep(QUIET_MS);
   const { results } = await env.DB.prepare(`SELECT text, size FROM uploads WHERE token = ?1`).bind(token).all();
   const list = results[0];
   if (!list || list.size !== size) return;
   const { questions } = parseQuestions([{ text: list.text }]);
   const toFix = questions.filter((q) => q.problem).length;
+  const en = [
+    `This list has <b>${plural(questions.length, "question")}</b>${toFix ? ` — ${toFix} to fix in the app` : ""}.`,
+    ...(hiddenAnswer
+      ? ["Telegram doesn't show bots the right answer of a forwarded quiz until it's closed, so tap the right option in the app."]
+      : []),
+    "Send more and they'll join it, or tap below to add them to a class.",
+  ].join("\n");
+  const uz = [
+    `Bu ro'yxatda <b>${questions.length} ta savol</b> bor${toFix ? ` — ${toFix} tasini ilovada tuzatish kerak` : ""}.`,
+    ...(hiddenAnswer
+      ? ["Telegram yuborilgan viktorinaning to'g'ri javobini u yopilmaguncha botlarga ko'rsatmaydi, shuning uchun to'g'ri variantni ilovada belgilang."]
+      : []),
+    "Yana yuborsangiz, shu ro'yxatga qo'shiladi yoki pastdagi tugma bilan sinfga qo'shing.",
+  ].join("\n");
   await telegramApi(env, "sendMessage", {
     chat_id,
     parse_mode: "HTML",
-    text: [
-      `This list has <b>${plural(questions.length, "question")}</b>${toFix ? ` — ${toFix} to fix in the app` : ""}.`,
-      ...(hiddenAnswer
-        ? ["Telegram doesn't show bots the right answer of a forwarded quiz until it's closed, so tap the right option in the app."]
-        : []),
-      "Send more and they'll join it, or tap below to add them to a class.",
-    ].join("\n"),
-    reply_markup: openButton("Review the questions", `${APP_LINK}?startapp=f${token}`),
+    text: both(en, uz, uzLead),
+    reply_markup: openButton(pick(...REVIEW, uzLead), `${APP_LINK}?startapp=f${token}`),
   });
 }
 
@@ -172,16 +216,26 @@ export async function handleBot(request, env, now = Date.now(), ctx = null, slee
   // Only one-to-one chats: in a group the bot stays quiet.
   if (!msg || msg.chat?.type !== "private" || !msg.from) return new Response("ok");
   const chat_id = msg.chat.id;
+  const uzLead = uzFirst(msg);
 
   if (msg.document) {
     const name = String(msg.document.file_name || "questions.txt").slice(0, 120);
     if (!FILE_TYPES.test(name)) {
       await telegramApi(env, "sendMessage", {
         chat_id,
-        text: "I can read Word (.docx), PDF, web pages (.html) and text (.txt) files. An old Word file (.doc)? Save it as .docx first.",
+        text: both(
+          "I can read Word (.docx), PDF, web pages (.html) and text (.txt) files. An old Word file (.doc)? Save it as .docx first.",
+          "Men Word (.docx), PDF, veb-sahifa (.html) va matn (.txt) fayllarini o'qiy olaman. Eski Word fayli (.doc) bo'lsa, avval uni .docx ko'rinishida saqlang.",
+          uzLead),
       });
     } else if ((msg.document.file_size || 0) > MAX_FILE) {
-      await telegramApi(env, "sendMessage", { chat_id, text: "That file is over 20 MB — too large for me to fetch. Split it, or save it without pictures." });
+      await telegramApi(env, "sendMessage", {
+        chat_id,
+        text: both(
+          "That file is over 20 MB — too large for me to fetch. Split it, or save it without pictures.",
+          "Bu fayl 20 MB dan katta — men uni yuklab ola olmayman. Bo'lib yuboring yoki rasmlarsiz saqlang.",
+          uzLead),
+      });
     } else {
       const token = hex(16);
       await env.DB.prepare(`
@@ -192,25 +246,44 @@ export async function handleBot(request, env, now = Date.now(), ctx = null, slee
       await telegramApi(env, "sendMessage", {
         chat_id,
         parse_mode: "HTML",
-        text: `Got <b>${escapeHtml(name)}</b>. Tap below to see the questions in it and add them to one of your classes.`,
-        reply_markup: openButton("Review the questions", `${APP_LINK}?startapp=f${token}`),
+        text: both(
+          `Got <b>${escapeHtml(name)}</b>. Tap below to see the questions in it and add them to one of your classes.`,
+          `<b>${escapeHtml(name)}</b> qabul qilindi. Undagi savollarni ko'rib, sinflaringizdan biriga qo'shish uchun pastdagi tugmani bosing.`,
+          uzLead),
+        reply_markup: openButton(pick(...REVIEW, uzLead), `${APP_LINK}?startapp=f${token}`),
       });
     }
   } else if (/^\/format\b/.test(msg.text || "")) {
+    const formatEn = [
+      "Number each question, put its options under it (up to ten, A to J), then the answer. A question without options is typed.",
+      "",
+      `<pre>${escapeHtml(FORMAT_EXAMPLE)}</pre>`,
+      "",
+      "Type or paste them here as a message — as many messages as you like — or send them as a file. Pictures in Word files are taken with the question they sit under.",
+      "",
+      "Quizzes work too: forward them here, or tap <b>Make a quiz</b> below to write one. A forwarded quiz's right answer stays hidden from me until the quiz is closed — you'll tap it in the app.",
+    ].join("\n");
+    // The reader that takes these files understands the Uzbek words too
+    // (Javob:, Izoh:, Qabul:), so the Uzbek half shows an Uzbek example.
+    const formatUz = [
+      "Har bir savolni raqamlang, variantlarini ostiga yozing (o'ntagacha, A dan J gacha), keyin javobini. Variantsiz savol — javobi yozib beriladigan savol.",
+      "",
+      `<pre>${escapeHtml(FORMAT_EXAMPLE_UZ)}</pre>`,
+      "",
+      "Ularni shu yerga xabar qilib yozing yoki nusxalab tashlang — xohlagancha xabar bo'lishi mumkin — yoki fayl qilib yuboring. Word faylidagi rasmlar o'zi turgan savol bilan birga olinadi.",
+      "",
+      "Viktorinalar ham bo'ladi: ularni shu yerga yuboring yoki pastdagi <b>Viktorina tuzish</b> tugmasini bosing. Yuborilgan viktorinaning to'g'ri javobi u yopilmaguncha mendan yashirin turadi — uni ilovada belgilaysiz.",
+    ].join("\n");
     await telegramApi(env, "sendMessage", {
       chat_id,
       parse_mode: "HTML",
-      text: [
-        "Number each question, put its options under it (up to ten, A to J), then the answer. A question without options is typed.",
-        "",
-        `<pre>${escapeHtml(FORMAT_EXAMPLE)}</pre>`,
-        "",
-        "Type or paste them here as a message — as many messages as you like — or send them as a file. Pictures in Word files are taken with the question they sit under.",
-        "",
-        "Quizzes work too: forward them here, or tap <b>Make a quiz</b> below to write one. A forwarded quiz's right answer stays hidden from me until the quiz is closed — you'll tap it in the app.",
-      ].join("\n"),
+      text: both(formatEn, formatUz, uzLead),
       // Telegram's own quiz maker, which private chats only offer through a bot's button.
-      reply_markup: { keyboard: [[{ text: "Make a quiz", request_poll: { type: "quiz" } }]], resize_keyboard: true, is_persistent: true },
+      reply_markup: {
+        keyboard: [[{ text: pick("Make a quiz", "Viktorina tuzish", uzLead), request_poll: { type: "quiz" } }]],
+        resize_keyboard: true,
+        is_persistent: true,
+      },
     });
   } else if (msg.text && !msg.text.startsWith("/")) {
     await takeText(env, msg, now, { text: msg.text, later, sleep });
@@ -219,10 +292,13 @@ export async function handleBot(request, env, now = Date.now(), ctx = null, slee
   } else if (msg.photo) {
     await telegramApi(env, "sendMessage", {
       chat_id,
-      text: "I can't add photos sent here. Put the picture in a Word file with its question, or add it to the question in the app.",
+      text: both(
+        "I can't add photos sent here. Put the picture in a Word file with its question, or add it to the question in the app.",
+        "Shu yerga yuborilgan rasmlarni qo'sha olmayman. Rasmni savoli bilan birga Word fayliga joylang yoki ilovada savolga qo'shing.",
+        uzLead),
     });
   } else {
-    await welcome(env, chat_id);
+    await welcome(env, chat_id, uzLead);
   }
   return new Response("ok");
 }
@@ -283,5 +359,14 @@ export async function setupBot(request, env) {
       { command: "format", description: "How to write a question file" },
     ],
   })).json();
-  return { status: 200, body: { webhook: hook, commands } };
+  // Telegram keeps a command list per language and shows the Uzbek one to
+  // phones set to Uzbek, falling back to the list above for everyone else.
+  const commandsUz = await (await telegramApi(env, "setMyCommands", {
+    language_code: "uz",
+    commands: [
+      { command: "start", description: "usmleengoni ochish" },
+      { command: "format", description: "Savol faylini qanday yozish kerak" },
+    ],
+  })).json();
+  return { status: 200, body: { webhook: hook, commands, commandsUz } };
 }

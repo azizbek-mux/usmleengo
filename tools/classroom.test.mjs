@@ -240,12 +240,29 @@ console.log("\nthe bot");
   check("/format sends the example", sent.at(-1).body.text.includes("Ethosuximide"));
   check("with a button that opens Telegram's quiz maker",
     sent.at(-1).body.reply_markup.keyboard[0][0].request_poll.type === "quiz");
+  // Both languages, every time. The bot cannot see which one the person
+  // reads the app in, so it sends both and leads with their phone's.
+  check("/start comes in English and Uzbek",
+    /6,300\+ USMLE quizzes/.test(sent.at(-2).body.text) && /6 300\+ USMLE savoli/.test(sent.at(-2).body.text));
+  check("/format shows the example in both, with the Uzbek words",
+    /Ethosuximide/.test(sent.at(-1).body.text) && /Etosuksimid/.test(sent.at(-1).body.text) &&
+    /Javob:/.test(sent.at(-1).body.text));
+  await update({ from: { ...from, language_code: "uz" }, chat, text: "/start" });
+  const uzStart = sent.at(-1).body;
+  check("an Uzbek phone is answered in Uzbek first",
+    uzStart.text.indexOf("USMLE savoli") < uzStart.text.indexOf("USMLE quizzes") &&
+    uzStart.reply_markup.inline_keyboard[0][0].text === "usmleengoni ochish");
+  await update({ from: { ...from, language_code: "ru" }, chat, text: "/start" });
+  check("any other phone is answered in English first, and still gets the Uzbek",
+    sent.at(-1).body.text.indexOf("USMLE quizzes") < sent.at(-1).body.text.indexOf("USMLE savoli"));
+
   await update({ from, chat, document: { file_id: "F1", file_name: "Cardio week 3.docx", file_size: 40000 } });
   const link = sent.at(-1).body.reply_markup.inline_keyboard[0][0].url;
   check("a question file is answered with a link that opens the app on it", /\?startapp=f[0-9a-f]{32}$/.test(link), link);
   const token = link.split("startapp=f")[1];
   await update({ from, chat, document: { file_id: "F2", file_name: "notes.xlsx", file_size: 100 } });
   check("a file it cannot read gets an explanation, not a link", /Word \(\.docx\)/.test(sent.at(-1).body.text) && !sent.at(-1).body.reply_markup);
+  check("and the explanation is in both languages", /o'qiy olaman/.test(sent.at(-1).body.text));
   const before = sent.length;
   await update({ from, chat: { id: -5, type: "group" }, text: "/start" });
   check("in a group chat it stays quiet", sent.length === before);
@@ -269,9 +286,11 @@ console.log("\nthe bot");
   const textLink = linkOf(reply());
   check("typed questions are counted, with a link into the app",
     /<b>2 questions<\/b>\./.test(reply().text) && /\?startapp=f[0-9a-f]{32}$/.test(textLink), reply().text);
+  check("and counted in Uzbek as well", /<b>2 ta savol<\/b> bor\./.test(reply().text), reply().text);
   await say("3. Most common valve lesion in rheumatic heart disease?\nA) Aortic stenosis", 10);
   check("the next message joins the same list, and a half-written question is flagged",
     /3 questions<\/b> — 1 to fix/.test(reply().text) && linkOf(reply()) === textLink, reply().text);
+  check("the Uzbek half says the same", /3 ta savol<\/b> bor — 1 tasini ilovada tuzatish/.test(reply().text), reply().text);
   await say("B) Mitral stenosis\nAnswer: B", 20);
   check("the rest of a long paste, a moment later, joins it too",
     /3 questions<\/b>\./.test(reply().text) && !/to fix/.test(reply().text), reply().text);
