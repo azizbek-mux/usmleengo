@@ -11,7 +11,7 @@ baroreceptor-reflex-172kch1|Baroretseptor refleksi|Arterial bosim pasayganda bar
 starling-forces-0hf6z78|Starling kuchlari|Kapillyar ___ bosimi onkotik bosimdan oshganda shish paydo bo'ladi|gidrostatik|gidrostatik bosim|Yoki nefrotik sindromdagidek onkotik bosim pasayganda.
 vascular-resistance-0s7zrsa|Tomirlar qarshiligi|Qarshilik nimaning o'zgarishiga eng sezgir|Tomir radiusiga|Tomir uzunligiga|Qarshilik radiusning to'rtinchi darajasiga bog'liq.
 coronary-flow-1puq5oa|Toj qon oqimi|Toj qon oqimini diastolada ___ bosimi harakatga keltiradi|aorta diastolik|diastolik, aorta|Shuning uchun taxikardiya ishemiyani kuchaytiradi.
-cardiac-oxygen-demand-0a6ee86|Miokardning kislorodga ehtiyoji|Miokardning kislorodga ehtiyoji eng ko'p nima bilan oshadi|Yurak urishi soni va devor zo'riqishi|Faqat oldingi yuklama bilan|Chastota-bosim ko'paytmasi bilan baholanadi.
+cardiac-oxygen-demand-0a6ee86|Miokardning kislorodga ehtiyoji|Miokardning kislorodga ehtiyoji eng ko'p nima bilan oshadi|Yurak urishi soni va devor zo'riqishi|Faqat oldingi yuklama hisobiga|Chastota-bosim ko'paytmasi bilan baholanadi.
 oxygen-dissociation-1qzuds1|Kislorod dissotsiatsiyasi|Kislorod-gemoglobin egri chizig'i kooperativ bog'lanish tufayli ___ shaklida|sigmasimon|sigmoid, s|Mioglobin egri chizig'i esa giperbolik.
 fetal-hemoglobin-147xbyz|Homila gemoglobini|Homila gemoglobinining kislorodga moyilligi yuqoriroq, chunki u|2,3-BFG ni yomon biriktiradi|Ko'proq gem guruhlariga ega bo'lgani uchun|Bu yo'ldoshdan kislorod olishga imkon beradi.
 carbon-monoxide-05e3ucn|Is gazi|Is gazi kislorod egri chizig'ini ___ ga siljitadi|chapga|chap, chap tomonga|Tashish sig'imining kamayishidan tashqari to'qimaga yetkazishni ham yomonlashtiradi.
@@ -22,3 +22,24 @@ renin-release-0p65i4x|Renin ajralishi|Renin yukstaglomerulyar hujayralardan past
 macula-densa-1juw3yx|Zich dog'|Zich dog' nimani sezadi|Distal kanalchadagi natriy xloridni|Arterial bosimni bevosita o'lchash orqali|Kanalcha-koptokcha teskari aloqasini ta'minlaydi.
 angiotensin-ii-114qygp|Angiotenzin II|Angiotenzin II buyrak usti bezi po'stlog'idan ___ ajralishini qo'zg'atadi|aldosteron|aldosteronni|Shuningdek chanqoq, ADG va vazokonstriksiya.
 adh-00qgoub|ADG|ADG nimaga javoban ajraladi|Plazma osmolyalligining oshishiga|Plazma osmolyalligining pasayishiga|Hajm kamayishi kuchsizroq, ammo ustun turuvchi stimul.
+free-water-clearance-1sot16p|Erkin suv klirensi|Erkin suv klirensining manfiy bo'lishi buyrak suvni ___ ini bildiradi|ushlab qolayotgan|saqlayotgan, tejayotgan|Quyuq siydik ishlab chiqaradi.
+potassium-handling-13z0box|Kaliy almashinuvi|Kaliy asosan qayerda sekretsiya qilinadi|Distal kanalcha va yig'uvchi naychada|Proksimal kanalcha va Genle halqasida|Aldosteron nazorati ostida.
+gastric-acid-09xxnea|Oshqozon kislotasi|Oshqozon kislotasi ajralishini gastrin, atsetilxolin va ___ qo'zg'atadi|gistamin|gistamin moddasi|Enterokromaffinsimon hujayralardan ajraladigan gistamin — oxirgi umumiy kuchaytirgich.
+somatostatin-00hobif|Somatostatin|Somatostatin nima qiladi|Deyarli barcha oshqozon-ichak sekretsiyasini tormozlaydi|Kislota va oshqozon osti bezi sekretsiyasini qo'zg'atadi|Umumiy «o'chirish» tugmasi.
+bile-1r68n41|O't|O't tuzlari yog'ni ___ hosil qilib emulsiyalaydi|mitsellalar|mitsella|Yog'da eriydigan vitaminlar so'rilishi uchun zarur.
+secretin-072nnmh|Sekretin|Sekretin nimaga javoban ajraladi|O'n ikki barmoqli ichakdagi kislotaga|O'n ikki barmoqli ichakdagi yog'ga|Xoletsistokinin esa yog' va oqsilga javob beradi.
+migrating-motor-complex-0ajnwa6|Ko'chuvchi harakat kompleksi|Ovqatlar orasida ichakni tozalaydigan ko'chuvchi harakat kompleksini ___ boshqaradi|motilin|motilin gormoni|Eritromitsin unga taqlid qilib, gastroparezda yordam beradi.
+vitamin-absorption-1vovjmi|Vitaminlarning so'rilishi|Qaysi vitamin yonbosh ichakning oxirida ichki omil bilan so'riladi?|B12|Folat|Folat och ichakda so'riladi.
+second-messengers-1bqpgyz|Ikkilamchi messenjerlar|Glyukagon va PTG ikkalasi ham ___ orqali ta'sir qiladi|sAMF|siklik amf|Gs-oqsil bilan bog'langan retseptorlar.
+insulin-receptor-1yy8mfe|Insulin retseptori|Insulin retseptori qanday signal uzatadi|O'zining tirozinkinaza faolligi orqali|G-oqsil bilan bog'langan messenjer orqali|Avtofosforillanish, keyin IRS-1.
+thyroid-hormone-1n6p4se|Qalqonsimon bez gormoni|Retseptor darajasida faolroq gormon — ___|T3|triyodtironin|T4 — prohormon, periferiyada aylanadi.
+cortisol-rhythm-00snri9|Kortizol ritmi|Kortizol qachon eng yuqori bo'ladi|Erta tongda|Yarim tunda|Shuning uchun Kushing skriningida yarim tundagi kortizol o'lchanadi.
+calcium-regulation-1tm0rzn|Kalsiy boshqarilishi|PTG kalsiyni oshiradi, kalsitriol esa kalsiy bilan birga ___ ni ham oshiradi|fosfat|fosfatni|Ular orasidagi asosiy farq.
+growth-hormone-1h1davk|O'sish gormoni|O'sish gormoni eng ko'p qachon ajraladi|Chuqur uyqu davrida|Ovqatdan keyin|To'lqinsimon ajraladi, shuning uchun uning o'rniga IFR-1 o'lchanadi.
+fever-18if6vd|Isitma|Isitma gipotalamus sozlash nuqtasini ko'tarib, ___ va titroq beradi|vazokonstriksiya|tomirlar torayishi|Harorat ko'tarilayotganda bemor o'zini sovuq his qiladi.
+heat-stroke-versus-fever-15cl8la|Issiqlik urishi va isitma|Issiqlik urishida gipotalamus sozlash nuqtasi qanday|Normal|Ko'tarilgan|Shuning uchun isitma tushiruvchilar ta'sir qilmaydi.
+exercise-11on0vh|Jismoniy yuklama|Jismoniy yuklamada haydash hajmining eng katta oshishi ___ soni hisobiga bo'ladi|yurak urishlari|yurak urishi|Zarb hajmi ancha erta chegaraga yetadi.
+endurance-training-065vrn8|Chidamlilik mashqlari|Chidamlilik mashqlari tinch holatdagi yurak urishini qanday pasaytiradi|Vagus tonusi va zarb hajmini oshirib|Qisqaruvchanlik va hajmni kamaytirib|Fiziologik va qaytar moslashuv.
+ageing-1wkdxbz|Qarish|40 yoshdan keyin KFT yiliga taxminan ___ ml/daq ga pasayadi|1|bir|Shuning uchun dori dozalarini to'g'rilash kerak.
+ageing-0s8u4yv|Qarish|Yosh o'tishi bilan o'pkaning qaysi ko'rsatkichi oshadi?|Qoldiq hajm|Tiriklik sig'imi|Elastik tortishishning yo'qolishi havoni ushlab qoladi.
+ageing-0q546n7|Qarish|Sog'lom qarishda och qoringa glyukoza|Bir oz oshadi|Pasayadi|Yosh bilan insulinrezistentlik ortadi.
