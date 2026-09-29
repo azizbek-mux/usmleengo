@@ -1,0 +1,46 @@
+bursitis-versus-cuff-tendonitis-1rjrnri|Bursit va rotator manjeti tendoniti|Qarshilik bilan tekshirishda holsizlik nimani ajratadi|Rotator manjeti tendoniti|Akromion osti bursiti|Bursitda og'riq bor, haqiqiy holsizlik yo'q.
+impingement-syndrome-history-1vf9qen|Siqilish sindromi anamnezi|Siqilish sindromi klassik holda nimadan keyin bo'ladi|Bosh ustida takroriy harakatdan|Qo'lga bir marta yiqilishdan|Bo'yash, ta'mirlash, uloqtirish.
+adhesive-capsulitis-movement-0o9v6z9|Yopishqoq kapsulitda harakat|Yopishqoq kapsulit nimani cheklaydi|Faol va passiv harakatning ikkisini|Faqat faol harakatning o'zini|Manjet uzilishida passiv harakat saqlanadi.
+adhesive-capsulitis-risk-0km09wz|Yopishqoq kapsulit xavfi|Yopishqoq kapsulit kimlarda ko'p uchraydi|Diabetda|Podagrada|Qolgan holatlarda asosan idiopatik.
+adhesive-capsulitis-treatment-0hnjfvq|Yopishqoq kapsulitni davolash|«Muzlagan yelka» nima bilan davolanadi|Fizioterapiya va harakat mashqlari|Erta arthroskopik bo'shatish|Ko'pchiligi harakat bilan sekin tuzaladi.
+biceps-tendonitis-site-1jguaxg|Ikki boshli mushak tendoniti joyi|Ikki boshli mushak tendonitida og'riq qayerda bo'ladi|Yelkaning oldingi yuzasida|Yelkaning orqa yuzasida|Aynan pay ustida.
+deep-peroneal-nerve-loss-1hfzly7|Chuqur peroneal nerv shikasti|Chuqur peroneal nerv shikastida nima yo'qoladi|Yuqoriga bukish, yonga burish saqlanadi|Yonga burish, yuqoriga bukish saqlanadi|Chuqur nerv yuqoriga bukishni ta'minlaydi.
+deep-peroneal-gait-01zgd7x|Chuqur peroneal nervda yurish|Yuqoriga bukish yo'qolsa, baland ___ yurish paydo bo'ladi|qadamli|qadam tashlovchi|Oyoqni yerdan ko'tarib tashlash kerak bo'ladi.
+superficial-peroneal-nerve-1wbvyiy|Yuza peroneal nerv|Yuza peroneal nerv nimani bajaradi|Oyoqni yonga burishni|Oyoqni pastga bukishni|Yuqoriga bukishni esa chuqur nerv bajaradi.
+tibial-nerve-loss-04lh1ae|Boldir nervi shikasti|Boldir nervi shikastida bemor nima qila olmaydi|Barmoq uchida turolmaydi|Oyoq uchini ko'tara olmaydi|Pastga bukish yo'qoladi.
+meralgia-paresthetica-nerve-0ahzj27|Meralgiya paresthetica nervi|Meralgiya paresthetica qaysi nervning siqilishi|Sonning tashqi teri nervi|Tizzada umumiy peroneal nerv|Son tashqi yuzasida paresteziya beradi.
+l4-radiculopathy-reflex-0d52um1|L4 radikulopatiyasida refleks|L4 radikulopatiyasi qaysi refleksni yo'qotadi|Tizza refleksini|Tovon refleksini|Tizzani yozish susayadi.
+s1-radiculopathy-reflex-1lu0eqp|S1 radikulopatiyasida refleks|S1 radikulopatiyasi qaysi refleksni yo'qotadi|Tovon refleksini|Tizza refleksini|Pastga bukish susayadi.
+l5-radiculopathy-motor-1mteoml|L5 radikulopatiyasida harakat|L5 radikulopatiyasi nimani susaytiradi|Oyoqni yuqoriga bukishni|Tizzani yozishni|Boldir tashqi yuzasida uvishish bilan.
+s1-disc-level-15gws7v|S1 disk sathi|S1 radikulopatiyasi L5-___ sathidagi churradan kelib chiqadi|S1|s 1|L5 umurtqasi ostidagi disk.
+disc-herniation-material-0ocouzk|Disk churrasi materiali|Disk churrasi nimaning chiqib turishi|Pulpoz yadroning|Fibroz halqaning|Halqadagi yorilish orqali chiqadi.
+disc-herniation-imaging-00fpouo|Disk churrasida tasvir tekshiruvi|Oddiy disk churrasi gumonida nima kerak|Boshida tasvir tekshiruvi kerak emas|Barcha holatlarda shoshilinch MRT|Faqat harakat nuqsoni bo'lsa tekshiriladi.
+lumbar-spinal-stenosis-posture-1jah9ca|Bel kanali stenozida holat|Bel kanali stenozidagi og'riq nima bilan yengillashadi|Oldinga engashish bilan|Tik turish bilan|Bukilish kanalni kengaytiradi.
+neurogenic-claudication-03pwceu|Neyrogen oqsoqlik|Oyoq pulsi normal bo'lgan oqsoqlik nimadan dalolat beradi|Neyrogen oqsoqlikdan|Periferik arteriya kasalligidan|Arteriya emas, kanal aybdor.
+cervical-spondylosis-age-0cml0aq|Bo'yin spondilozi va yosh|Bo'yin spondilozi qanday bemorlarda ta'riflanadi|50 dan katta, MRT da degeneratsiya bilan|30 gacha, kichik jarohatdan keyin|Bo'yin umurtqasining degeneratsiyasi.
+atlantoaxial-subluxation-risk-1gnlims|Atlantoaksial subluksatsiya xavfi|Atlantoaksial subluksatsiya qachon xavfli|Operatsiyadan oldin revmatoid artritda|Qo'zigan ankilozlovchi spondilitda|Intubatsiyadan oldin bo'yinni tekshiring.
+spondylolisthesis-sign-110ef1k|Spondilolistez belgisi|Umurtqalar orasida paypaslanadigan pog'ona nimani bildiradi|Spondilolistezni|Kanal stenozini|Bir umurtqa boshqasining ustidan oldinga siljiydi.
+reactive-arthritis-organism-1kdpm3l|Reaktiv artrit qo'zg'atuvchisi|Reaktiv artrit klassik holda nimadan keyin bo'ladi|Xlamidiya infeksiyasidan|Gonokokk infeksiyasidan|Gonokokk septik artrit beradi, reaktiv emas.
+toxic-synovitis-history-1t0oyrb|Toksik sinovit anamnezi|Son bo'g'imining o'tkinchi sinoviti nimadan keyin bo'ladi|Yaqinda o'tgan virusli kasallikdan|Son bo'g'imiga yiqilishdan|Umumiy holati yaxshi bolada.
+toxic-synovitis-diagnosis-14t0eyy|Toksik sinovit tashxisi|O'tkinchi sinovit qanday aniqlanadi|Septik artritni inkor qilish bilan|Musbat bo'g'im ekmasi bilan|Markyorlar past qoladi, bola o'zini yaxshi sezadi.
+toxic-synovitis-treatment-01a2hb9|Toksik sinovitni davolash|O'tkinchi sinovit nima bilan davolanadi|Ibuprofen va kuzatuv bilan|Son bo'g'imini jarrohlik yuvish bilan|U o'z-o'zidan o'tib ketadi.
+nursemaid-elbow-history-0arymwf|«Enaga tirsagi» anamnezi|Bilak boshining chiqishi nimadan keyin bo'ladi|Qo'lni keskin tortishdan|Tirsakka yiqilishdan|Bola qo'lini ishlatishni to'xtatadi.
+nursemaid-elbow-position-0g6msln|«Enaga tirsagi»da holat|«Enaga tirsagi»da qo'l qanday holatda ushlanadi|Pronatsiyada va qismen bukilgan|Supinatsiyada va to'liq yozilgan|Kuchli pronatsiya yoki supinatsiya bilan tiklanadi.
+unhappy-triad-structures-1ab4lnx|«Baxtsiz uchlik» tuzilmalari|«Baxtsiz uchlik» oldingi kesishgan boylam, menisk va yana nimani qamraydi|Medial kollateral boylamni|Orqa kesishgan boylamni|Tizzaga yon tomondan zarbadan keyin.
+iliotibial-band-syndrome-01bi7og|Yonbosh-boldir tasmasi sindromi|Yuguruvchida tizzaning yon tomonidagi og'riq nimadan dalolat beradi|Yonbosh-boldir tasmasi sindromidan|Medial meniskning uzilishidan|Tasma tizzani kesib o'tgan joyda eng og'riqli.
+morton-neuroma-site-0oucw1m|Morton neyromasi joyi|Morton neyromasi qayerda joylashadi|Ikkinchi va uchinchi kaft suyaklari orasida|Birinchi va ikkinchi kaft suyaklari orasida|Tor yoki baland poshnali oyoq kiyimda kuchayadi.
+morton-neuroma-treatment-1ls0fvk|Morton neyromasini davolash|Morton neyromasi nima bilan davolanadi|Ortopedik taglik va steroid in'eksiyasi|Darhol jarrohlik yo'li bilan olib tashlash|Avval qulay oyoq kiyim tanlanadi.
+charcot-joint-cause-1f5imym|Sharko bo'g'imi sababi|Sharko bo'g'imi nimadan kelib chiqadi|Bo'g'im sezgisining yo'qolishidan|Bo'g'imning surunkali infeksiyasidan|Odatda diabetik neyropatiya.
+charcot-joint-x-ray-14sawzv|Sharko bo'g'imi rentgeni|Sharko oyog'ida rentgenda ___ bo'g'imlarining tartibsizlanishi ko'rinadi|tarzometatarzal|tarzo-metatarzal|Imtihonlar uchun klassik ta'rif.
+growing-pains-description-1jb4tfs|«O'sish og'riqlari» ta'rifi|«O'sish og'riqlari» klassik holda bolani nima bilan uyg'otadi|Ikki oyoqdagi sanchiqli og'riq bilan|Bitta bo'g'imning shishishi bilan|Uch yoshdan o'n ikki yoshgacha.
+tibia-vara-definition-1qhr9to|Tibia vara ta'rifi|Tibia vara — qaysi yoshdan keyin saqlangan qiyshiqlik|Ikki yoshdan keyin|Olti oydan keyin|Raxit inkor etilgandan keyin.
+legg-calve-perthes-age-1ueqp6u|Legg-Kalve-Pertes yoshi|Legg-Kalve-Pertes qaysi yoshdagi bolalarda uchraydi|Besh-sakkiz yoshda|O'n ikki-o'n besh yoshda|Bundan kattasi son boshi epifiziolizini bildiradi.
+legg-calve-perthes-nature-0qra5i4|Legg-Kalve-Pertesning tabiati|Legg-Kalve-Pertes nima hisoblanadi|Idiopatik avaskulyar nekroz|Bosh qismining septik nekrozi|Sabab ma'lum bo'lsa, oddiy avaskulyar nekroz bo'ladi.
+perthes-first-investigation-06sesar|Pertesda birinchi tekshiruv|Pertes gumonida birinchi tekshiruv qaysi|Son bo'g'imining oddiy rentgeni|Darhol MRT tekshiruvini o'tkazish|Son boshining yassilanishini ko'rsatadi.
+osteopetrosis-mechanism-08jd940|Osteopetroz mexanizmi|Osteopetroz nimadan kelib chiqadi|Osteoklastlar ishlamasligidan|Osteoblastlar ishlamasligidan|Suyak zich, ammo mo'rt bo'ladi.
+osteopetrosis-enzyme-1glv9xj|Osteopetrozdagi ferment|Osteopetroz karbo___ II yetishmovchiligidan keyin keladi|angidraza|angidrazasi|Osteoklastlar kislota ishlab chiqara olmaydi.
+osteopetrosis-fracture-paradox-02xoasm|Osteopetrozdagi sinish paradoksi|Osteopetrozda suyaklar nima uchun siniydi|Juda zich, shuning uchun mo'rt|Juda yumshoq, shuning uchun egiluvchan|Mustahkamlik uchun zichlik emas, almashinuv kerak.
+chondrosarcoma-appearance-0qh3lpq|Xondrosarkoma ko'rinishi|Xondrosarkoma qanday ta'riflanadi|Yaltiroq va porloq|Quruq va bo'rdek oq|Tog'ay matriksidagi o'sma xondrotsitlari.
+ewing-sarcoma-mimic-1pr36i6|Yuing sarkomasiga taqlid|Boladagi Yuing sarkomasi nimaga taqlid qiladi|Osteomiyelitga, isitma va og'riq bilan|Oddiy o'sish zonasi jarohatiga|Ikkalasi ham isitma va suyak og'rig'i beradi.
+ewing-sarcoma-site-07j68no|Yuing sarkomasining joyi|Yuing sarkomasi qayerda markyorni o'zlashtiradi|Diafizda|Epifizda|Osteomiyelit metafizda o'zlashtiradi.
+ewing-sarcoma-histology-0nkr0l4|Yuing sarkomasi gistologiyasi|Yuing sarkomasida mayda ko'k hujayralar va periostning «___ po'sti» ko'rinadi|piyoz|piyozning|Klassik radiologik ta'rif.
