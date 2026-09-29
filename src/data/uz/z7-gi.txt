@@ -1,0 +1,29 @@
+peutz-jeghers-polyps-0przire|Peyts-Yegers poliplari|Peyts-Yegers sindromiga nima xos|Yo'g'on ichakning gamartomatoz poliplari|Yo'g'on ichakning adenomatoz poliplari|Og'iz atrofidagi pigmentatsiya bilan.
+osler-weber-rendu-inheritance-01uyhkd|Osler-Veber-Randyu irsiylanishi|Irsiy gemorragik telangiektaziya qanday irsiylanadi|Autosom-dominant|Autosom-retsessiv|Burundan qon ketish va telangiektaziyalar bilan.
+osler-weber-rendu-cardiac-0yd5135|Osler-Veber-Randyuda yurak|Bu kasallikdagi o'pka arteriovenoz fistulalari nimani beradi|Yuqori chiqishli yurak yetishmovchiligini|Past chiqishli yurak yetishmovchiligini|Yuqori oqimli o'ngdan chapga shunt.
+plummer-vinson-triad-0vcmwr6|Plammer-Vinson uchligi|Plammer-Vinson sindromi — temir tanqisligi, burchak xeyliti va yana nima|Qizilo'ngach pardalari|Qizilo'ngach varikozi|Qattiq ovqatga disfagiya beradi.
+pica-meaning-07rz781|Pika ma'nosi|Muz, loy yoki kraxmal yeyish ___ deb ataladi|pika|pikadir|Temir tanqisligining belgisi.
+aphthous-ulcer-nature-1uenjf1|Aftoz yaraning tabiati|Aftoz yara qanday bo'ladi|Idiopatik va o'z-o'zidan o'tadi|Oddiy gerpes virusi keltiradi|Og'riqli, lab shilliq qavatida joylashadi.
+perioral-impetigo-organism-192b5dc|Og'iz atrofidagi impetigo qo'zg'atuvchisi|Boladagi qipiqli lab o'choqlari odatda nimadan|Oltin stafilokokk yoki A guruh streptokokkdan|Oddiy gerpes virusi 1-turining ta'siridan|Bu gerpes emas, impetigo.
+herpes-labialis-latency-12q5mo5|Lab gerpesining latentligi|Birlamchi infeksiyadan keyin OGV qayerda latent turadi|Sezuvchi nerv gangliyalarida|Mahalliy limfa tugunlarida|Stress yoki kasallikda qayta faollashadi.
+scarlet-fever-treatment-0rgyq9s|Skarlatinani davolash|Skarlatina penitsillin bilan nimaning oldini olish uchun davolanadi|Revmatizmning|Tilning chandiqlanishining|II tur yuqori sezgirlik asorati.
+herpangina-site-14jqmgq|Gerpangina joyi|Gerpangina qayerda pufakchalar beradi|Og'iz-halqumda|Kaft va tovonlarda|Bu ham Koksaki A virusidan.
+measles-versus-rubella-nodes-09p3xov|Qizamiq va qizilchada tugunlar|Qizilcha qizamiqdan nimasi bilan ajralib turadi|Quloq orqasi limfadenopatiyasi bilan|Lunj shilliq qavatidagi oq dog'lar bilan|Koplik dog'lari qizamiqqa xos.
+parotid-duct-name-0puejaq|Quloq oldi bezi yo'li nomi|Quloq oldi bezi yo'li — ___ yo'li, ikkinchi yuqori oziq tish yonida ochiladi|Stenson|stenzon|U yerda tosh tiqilib qolishi mumkin.
+leukoplakia-significance-0zorpxm|Leykoplakiyaning ahamiyati|Til leykoplakiyasi nima hisoblanadi|Yassi hujayrali karsinoma o'tmishdoshi|Xavfsiz zamburug'ning ko'payib ketishi|Asosiy xavf omili — tamaki.
+oral-candidiasis-scraping-03fnisb|Og'iz kandidozini qirib olish|Og'iz kandidozi — bu qanday oq pilakcha|Qirib olinganda qon chiqadi|Umuman qirib olinmaydi|Leykoplakiyani qirib olib bo'lmaydi.
+inhaled-steroid-thrush-1ircmug|Inhalatsion steroid va kandidoz|Inhalatsion kortikosteroidlar kandidoz beradi, agar bemor nima qilmasa|Keyin og'zini chaymasa|Kechqurun kichikroq doza ishlatmasa|Spanser ham yordam beradi.
+commonest-malignant-salivary-tumor-127blju|So'lak bezining eng ko'p xavfli o'smasi|So'lak bezining eng ko'p uchraydigan xavfli o'smasi qaysi|Mukoepidermoid karsinoma|Polimorf adenoma|Polimorf adenoma xavfsiz.
+sliding-hiatal-hernia-0rys0wv|Siljuvchi diafragma churrasi|Eng ko'p uchraydigan diafragma churrasi qaysi|Siljuvchi, kardial qism ko'tariladi|Aylanma, qizilo'ngach yonida|Holatlarning taxminan 95 foizi.
+barrett-metaplasia-16kpc1q|Barret metaplaziyasi|Barret qizilo'ngachi qanday o'zgarish|Yassidan silindrik epiteliyga|Silindrikdan yassi epiteliyga|Surunkali kislotaga moslashuv.
+esophageal-adenocarcinoma-site-0zhych5|Qizilo'ngach adenokarsinomasi joyi|Qizilo'ngach adenokarsinomasi qayerni zararlaydi|Pastki uchdan bir qismini|Yuqori uchdan ikki qismini|GERK va Barret o'zgarishidan keyin.
+esophageal-scc-risk-1msk5d7|Qizilo'ngach yassi hujayrali raki xavfi|Qizilo'ngachning yassi hujayrali karsinomasini nima keltiradi|Ko'p chekish va alkogol|Uzoq davom etgan kislota reflyuksi|Reflyuks esa adenokarsinomani keltiradi.
+zenker-diverticulum-type-1wcv0em|Senker divertikuli turi|Senker divertikuli qanday|Soxta, faqat shilliq va shilliq osti|Haqiqiy, mushak qavati bilan|Mekkel divertikuli haqiqiy divertikul.
+achalasia-neurons-17llvjq|Axalaziyadagi neyronlar|Axalaziya qaysi neyronlarning yo'qolishi|Miyenterik chigalda azot oksidi ajratuvchi|Shilliq ostida atsetilxolin ajratuvchi|Sfinkter bo'shasha olmay qoladi.
+achalasia-barium-1g8h06a|Axalaziyada bariy|Axalaziyada bariy tekshiruvi nimani ko'rsatadi|Kengaygan qizilo'ngach, asosida torayish|Spazm bilan «tiqin ochar» qizilo'ngach|«Qush tumshug'i» ko'rinishi.
+scleroderma-esophagus-1x6tldo|Sklerodermiyada qizilo'ngach|Sistemali skleroz sfinkter tonusini pasaytiradi va yana nima qiladi|Qizilo'ngach peristaltikasini kamaytiradi|Qizilo'ngach peristaltikasini oshiradi|Og'ir reflyuksga olib keladi.
+boerhaave-contrast-0xuuw75|Burxave sindromida kontrast|Qizilo'ngach teshilishi gumonida qanday kontrast ishlatiladi|Suvda eriydigan kontrast|Bariyli kontrast|Mediastinadagi bariy mediastinit beradi.
+mallory-weiss-volume-0i0agzt|Mellori-Veyss qon hajmi|Mellori-Veyss yorig'i xarakterli holda nima beradi|Kam hajmli qon qusish|Juda kuchli qon qusish|Katta hajm varikozni bildiradi.
+varix-collateral-vein-0btxopw|Varikozdagi kollateral vena|Portal gipertenziyada qizilo'ngach varikozi chap ___ venasi orqali hosil bo'ladi|oshqozon|me'da|Portal doirani sistemali doira bilan bog'laydi.
+splenic-vein-thrombosis-varices-08kx6yy|Taloq venasi trombozida varikoz|Taloq venasi trombozi qanday varikoz beradi|Oshqozon varikozini, qizilo'ngach emas|Qizilo'ngach varikozini, oshqozon emas|Kollaterallar laxtani chetlab o'tadi.
+diffuse-esophageal-spasm-pain-1tthvtj|Diffuz qizilo'ngach spazmidagi og'riq|Diffuz qizilo'ngach spazmi qanday og'riq beradi|Stenokardiyaga taqlid qiladi, yurak testlari normal|Faqat yutganda kuchayadigan o'tkir og'riq|Bariyda «tiqin ochar» ko'rinishi.
