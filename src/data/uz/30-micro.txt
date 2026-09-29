@@ -1,0 +1,14 @@
+# Mikrobiologiya, 1-qism — 30-micro.txt (qarang: TERMS.md)
+
+antigenic-shift-1tiseqe|Antigen shifti|Gripp pandemiyalari segmentli genomlarning genetik ___idan kelib chiqadi|reassortatsiya|reassortatsiyasi, shift|Ikki shtamm bitta hujayrani zararlab, butun segmentlarni almashadi.
+antigenic-shift-versus-drift-1v1hzwj|Antigen shifti va dreyfi|Antigen dreyfining sababi|Nuqtali mutatsiyalar|Segmentlar reassortatsiyasi|Dreyf — asta-sekin nuqtali mutatsiya; shift — reassortatsiya va pandemiyalarga olib keladi.
+segmented-viruses-01d18t3|Segmentli viruslar|Qaysi virus grippga o'xshab reassortatsiyaga uchrashi mumkin?|Rotavirus|Poliovirus|Faqat segmentli genomlar: gripp, rotavirus, bunyaviruslar, arenaviruslar.
+phenotypic-mixing-0d6axt4|Fenotipik aralashish|Fenotipik aralashishda virus avlodi qanday bo'ladi|Qobig'i o'zga, genomi o'zgarmagan|Genomi butunlay va doimiy o'zgargan|Keyingi avlod asl holiga qaytadi — genetik o'zgarish bo'lmagan.
+plasmodium-relapse-0po8gaf|Plazmodiy retsidivi|P. vivax va P. ovale ___ hosil qilgani uchun qaytalanadi|gipnozoitlar|gipnozoit|Jigardagi uyqudagi shakllar; primaxin bilan yo'q qilinadi.
+malaria-treatment-07u0jfo|Bezgakni davolash|Xloroxin vivax qaytalanishini oldini ololmaydi, chunki u nimani yo'qotmaydi|Jigardagi shizontlarni|Qonda aylanuvchi trofozoitlarni|Jigardagi gipnozoitlar uchun primaxin qo'shiladi.
+malaria-diagnosis-0nvchs1|Bezgak tashxisi|Bezgak qanday bo'yalgan qon surtmasida tashxislanadi|Gimza bo'yog'i bilan|Gram usulida|Eritrotsitlar ichida halqasimon trofozoitlar.
+malaria-fever-1bm5o0w|Bezgakdagi isitma|Bezgakdagi isitma xurujlariga nima sabab bo'ladi|Zararlangan eritrotsitlarning bir vaqtda yorilishi|Parazitning jigarga bevosita toksik ta'siri|Shizontlar yorilib, har 48-72 soatda pirogenlar chiqaradi.
+bacterial-transformation-17ncwtc|Bakterial transformatsiya|Hujayradan tashqaridagi erkin DNK ning qamrab olinishi ___ deyiladi|transformatsiya|transformatsiyasi|Griffitning pnevmokokk bilan tajribasi.
+bacterial-gene-transfer-085nqh6|Bakteriyalarda gen ko'chishi|DNK ning bakteriofag orqali ko'chishi nima deyiladi|Transduksiya|Konyugatsiya|Konyugatsiyada pilus, transduksiyada fag ishlatiladi.
+epstein-barr-virus-1dqwkn7|Epshteyn-Barr virusi|Epshteyn-Barr virusi B hujayralarga ___ retseptori orqali kiradi|CD21|cr2, komplement retseptori 2|CD21 — B limfotsitlardagi virus retseptori.
+hiv-entry-0fm5xja|OIV ning hujayraga kirishi|OIV membranasining qo'shilishi nima orqali amalga oshadi|gp41|gp120|gp120 CD4 va xemokin retseptoriga bog'lanadi; gp41 qo'shilishni ta'minlaydi.
