@@ -1,0 +1,59 @@
+# q3-path-genetics-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+reversible-cell-injury-0hl6z4i|Hujayraning qaytar shikastlanishi|Qaytar hujayra shikastlanishining eng erta belgisi — hujayraning ___|shishishi|shishi, bo'rtishi|Natriy-kaliy nasosining ishdan chiqishidan.
+irreversible-injury-183t95p|Qaytmas shikastlanish|Qaytmas hujayra shikastlanishining asosiy belgisi|Membrananing shikastlanishi|Ribosomalarning ajralishi|Shuningdek mitoxondriya vakuolizatsiyasi va lizosomalarning yorilishi.
+nuclear-changes-10d6cd7|Yadro o'zgarishlari|Hujayra o'limida yadroning kichrayishi ___ deyiladi|piknoz|piknozi|Keyin kariyoreksis, so'ng karioliz.
+ischemia-reperfusion-injury-1qz59f1|Ishemiya-reperfuzion shikastlanish|Reperfuzion shikastlanishning sababi|Kislorod erkin radikallari va kalsiy kirishi|Davom etayotgan gipoksiya va ATF tanqisligi|Shuning uchun reperfuziya shikastni vaqtincha kuchaytirishi mumkin.
+apoptosis-13zhp8z|Apoptoz|Apoptozning tashqi yo'lini ___ retseptorlari qo'zg'atadi|o'lim|fas, tnf|Fas ligandi va O'NO bog'lanib, kaspaza 8 ni faollashtiradi.
+caspases-1qpwox3|Kaspazalar|Kaspazalar — bu|Apoptozni amalga oshiruvchi proteazalar|DNK ni tiklovchi ligazalar|Ular sitoskelet va yadro oqsillarini parchalaydi.
+gangrene-003z9r1|Gangrena|Ho'l gangrena quruqdan ___ infeksiya borligi bilan farq qiladi|bakterial|bakteriya, qo'shilgan|Koagulyatsion nekroz ustiga kollikvatsion nekroz qo'shiladi.
+acute-inflammation-1cb4hab|O'tkir yallig'lanish|O'tkir yallig'lanishdagi vazodilatatsiyani gistamin va ___ amalga oshiradi|prostaglandinlar|prostaglandin, azot oksidi|Bu qizarish va isishni beradi.
+leukocyte-extravasation-0r0gcdj|Leykotsitlarning chiqishi|Leykotsitlarning «dumalashi» nima orqali amalga oshadi|Selektinlar|Integrinlar|Integrinlar keyin mustahkam yopishishni ta'minlaydi.
+chemotaxis-075zsl3|Xemotaksis|Neytrofil xemoattraktantlariga C5a, LTB4, IL-8 va bakterial ___ kiradi|mahsulotlar|peptidlar, formil peptidlar|Ular hujayralarni shikast joyiga yo'naltiradi.
+chronic-inflammation-0dznp8o|Surunkali yallig'lanish|Surunkali yallig'lanishning asosiy hujayrasi|Makrofag|Neytrofil|Limfotsitlar va plazmatik hujayralar bilan birga.
+granuloma-03ngojh|Granulyoma|Granulyomalarda epiteliosimon makrofaglar va ko'p yadroli ___ hujayralar bo'ladi|gigant|gigant, langans|Atrofida limfotsitar halqa.
+acute-phase-reactants-0l2yq4u|O'tkir faza oqsillari|Yallig'lanishda qaysi o'tkir faza oqsili PASAYADI?|Albumin|S-reaktiv oqsil|Transferrin bilan birga manfiy o'tkir faza oqsili.
+fever-0w9e7wu|Isitma|Endogen pirogenlar gipotalamus sozlash nuqtasini ___ orqali ko'taradi|prostaglandin E2|pge2, prostaglandinlar|Aspirin va paratsetamol buni bloklaydi.
+amyloid-1cxu9fx|Amiloid|Ikkilamchi amiloidozda qaysi oqsil to'planadi?|Zardob amiloidi A|Transtiretin|Surunkali yallig'lanish kasalligidan.
+wound-healing-0edonyr|Yara bitishi|Avval ___ tip kollagen hosil bo'lib, keyin I tipga almashadi|III|iii, 3, uch|Qayta qurilish oylar davomida davom etadi.
+primary-intention-104a28e|Birlamchi bitish|Birlamchi bitish qanday kechadi|Chetlari yaqin, chandiq minimal|Katta nuqson granulyatsiya bilan to'ladi|Ikkilamchi bitishda granulyatsiya va torayish bo'ladi.
+myofibroblasts-1jzbixo|Miofibroblastlar|Yaraning torayishini ___ amalga oshiradi|miofibroblastlar|miofibroblast|Ortiqcha torayish kontrakturaga olib keladi.
+vitamin-a-1ua6jun|A vitamini|Yara bitishida A vitamini nima qiladi|Steroidlar keltirgan buzilishni bartaraf etadi|Bitishga hech qanday sezilarli ta'sir ko'rsatmaydi|Steroid qabul qilayotgan bemorlarda foydali.
+zinc-deficiency-07xbuvz|Rux tanqisligi|Rux kollagenni qayta quruvchi ___ uchun zarur|metalloproteinazalar|mmp, kollagenaza|Tanqisligi bitishni sekinlashtiradi.
+carcinoma-versus-sarcoma-08qp0ll|Karsinoma va sarkoma|___ kelib chiqishli o'smalar karsinoma deyiladi|epitelial|epiteliy|Mezenximal o'smalar esa sarkoma.
+metastatic-spread-0yhr71x|Metastatik tarqalish|Karsinomalar odatda avval qaysi yo'l bilan tarqaladi|Limfa yo'llari orqali|Qon orqali|Sarkomalar gematogen tarqalishni afzal ko'radi.
+grade-versus-stage-0ftdekq|Daraja va bosqich|___ hujayralarning qanchalik o'zgarganini, bosqich esa tarqalishini ko'rsatadi|Daraja|darajasi|Bosqich prognoz uchun muhimroq.
+anaplasia-0kx9okn|Anaplaziya|Anaplaziya nimani anglatadi|Differensiatsiyaning butunlay yo'qolishi|Qaytar hujayra displaziyasi|Xavfli o'smaning asosiy belgisi.
+oncogenes-0lgs8zg|Onkogenlar|Onkogenlar bitta allelda funksiyaning ___ mutatsiyasini talab qiladi|kuchayishi|kuchayish, ortishi|O'sma supressorlariga ikkala allelning yo'qolishi kerak.
+tumor-suppressor-06mln7d|O'sma supressori|Geterozigotlikning yo'qolishi nimani anglatadi|Ikkinchi normal allelning yo'qolishini|Qo'shimcha gen nusxasi paydo bo'lishini|Knudson gipotezasidagi ikkinchi «zarba».
+warburg-effect-1r7trp7|Varburg effekti|Varburg effekti o'smaning nimaga tayanishini tavsiflaydi|Kislorod bor bo'lsa ham glikolizga|Yog' kislotalarining beta-oksidlanishiga|FDG-PET tasvirining asosi.
+angiogenesis-18v4q0o|Angiogenez|O'sma angiogenezini asosan ___ boshqaradi|VEGF|vegf omili|Bevatsizumab shunga qarshi yo'naltirilgan.
+cachexia-0sh6ccf|Kaxeksiya|Saraton kaxeksiyasi qanday holat|Kaloriyani oshirish bilan bartaraf etilmaydi|Yetarli oziqlanish bilan to'liq bartaraf etiladi|Sitokinlar boshqaradigan gipermetabolik holat.
+psammoma-bodies-0lepv00|Psammoma tanachalari|Psammoma tanachalari — qatlamli ___ to'planmalari|kalsiy|kalsiyli, kalsinat|Papillyar qalqonsimon bez, seroz tuxumdon, meningioma, mezotelioma.
+paraneoplastic-syndrome-045u4hf|Paraneoplastik sindrom|Anti-Hu antitelolari nimaga olib keladi|Paraneoplastik ensefalomiyelit|Timoma bilan kechuvchi miasteniya|Mayda hujayrali o'pka saratoni bilan bog'liq.
+autosomal-dominant-0uu901u|Autosom-dominant irsiylanish|Autosom-dominant kasalliklar ko'pincha turlicha ___ ko'rsatadi, og'irligi har xil|ekspressivlik|ekspressivligi, ifodalanish|Penetrantlik esa umuman namoyon bo'lishini bildiradi.
+incomplete-penetrance-0i0bgt9|To'liq bo'lmagan penetrantlik|To'liq bo'lmagan penetrantlik nimani anglatadi|Ba'zi tashuvchilarda fenotip yo'q|Kasallarda og'irlik darajasi har xil|Og'irlikning har xilligi — ekspressivlik.
+autosomal-recessive-0we85br|Autosom-retsessiv irsiylanish|Ikkala ota-ona tashuvchi bo'lsa, kasal bola tug'ilish ehtimoli ___ foiz|25|yigirma besh, 1/4|Va 50 foiz ehtimol bilan tashuvchi bo'ladi.
+x-linked-recessive-0i8hhzj|X ga birikkan retsessiv irsiylanish|X ga birikkan retsessiv kasallikda kasal ota|Hech bir o'g'liga o'tkazmaydi|Barcha o'g'illariga o'tkazadi|Barcha qizlari tashuvchi bo'ladi.
+mitochondrial-inheritance-0625v8d|Mitoxondrial irsiylanish|Mitoxondrial kasallikda ___ kuzatiladi — mutant genomlarning turlicha aralashmasi|geteroplazmiya|geteroplazmiyasi|Bu aka-ukalar orasidagi og'irlik farqini tushuntiradi.
+genomic-imprinting-0ynxh0b|Genomik imprinting|Prader-Villi sindromiga olib keluvchi uniparental disomiyada ikkala xromosoma kimdan keladi|Onadan|Otadan|Prader-Villi sindromida otadan kelgan ishlaydigan nusxa kerak.
+anticipation-1mqdggq|Antitsipatsiya|Trinukleotid takrorlari kasalliklari avlodlar bo'ylab takrorlarning ___ hisobiga og'irlashadi|ko'payishi|kengayishi, ortishi|Xantington, miotonik distrofiya, mo'rt X-xromosoma.
+locus-heterogeneity-1m5zzch|Lokus geterogenligi|Lokus geterogenligi nimani anglatadi|Turli genlar bir xil fenotip beradi|Bitta gen ko'p fenotip beradi|Bitta gen, ko'p ta'sir — pleyotropiya.
+mosaicism-1uj3fxx|Mozaiklik|Mozaiklik — bitta ___ dan kelib chiqqan ikki hujayra liniyasi|zigota|urug'langan tuxum hujayra|Ximerizm esa ikki zigotadan kelib chiqadi.
+missense-mutation-0piagsy|Missens-mutatsiya|Missens-mutatsiya bitta ___ ni boshqasiga almashtiradi|aminokislota|aminokislotani|Yangi aminokislota kimyoviy o'xshash bo'lsa, konservativ deyiladi.
+silent-mutation-1qu43e0|Jim mutatsiya|Jim mutatsiya nima uchun mumkin — genetik kod qanday|Degenerativ|Ustma-ust joylashgan|Bir necha kodon bir xil aminokislotani kodlaydi.
+splice-site-mutation-13x1qb3|Splaysing joyi mutatsiyasi|Splaysing joyi mutatsiyasi ___ ning saqlanib qolishiga olib keladi|intron|intronlar|Yoki ekzonning tushib qolishiga.
+trinucleotide-repeat-0vkl5ah|Trinukleotid takrorlari|Mo'rt X-xromosomada takrorlar ko'payishi nimaga olib keladi|Gipermetillanish va genning o'chishi|Toksik oqsil ishlab chiqarilishi|Xantington kasalligida esa toksik oqsil hosil bo'ladi.
+lyonization-14c97vs|Lionizatsiya|Ayol hujayrasidagi bitta X-xromosoma tasodifiy ravishda ___|faolsizlanadi|o'chiriladi, inaktivatsiyalanadi|Barr tanachasini hosil qiladi.
+nondisjunction-0uyw88d|Nondisyunksiya|21-trisomiya ko'pincha nimadan kelib chiqadi|Ona meyozining I bo'linishidagi nondisyunksiya|Ota meyozining II bo'linishidagi nondisyunksiya|Xavf ona yoshi bilan keskin ortadi.
+robertsonian-translocation-15r0mqh|Robertson translokatsiyasi|Robertson translokatsiyalari ___ xromosomalarni qamrab oladi|akrotsentrik|akrotsentrik xromosomalarni|13, 14, 15, 21 va 22.
+hardy-weinberg-0o3zhrk|Xardi-Vaynberg qonuni|Xardi-Vaynberg qonunida tashuvchilar chastotasini nima ifodalaydi|2pq|p kvadrat|q kvadrat — kasal gomozigotalar chastotasi.
+rough-endoplasmic-reticulum-05yiugx|Donador endoplazmatik to'r|Donador endoplazmatik to'r ___ va membrana oqsillarini sintez qiladi|sekretor|ajraladigan, eksport qilinadigan|Plazmatik va qadahsimon hujayralarda ko'p.
+smooth-endoplasmic-reticulum-1y5trrl|Silliq endoplazmatik to'r|Silliq endoplazmatik to'r qaysi hujayralarda ko'p|Steroid ishlab chiqaruvchi va zararsizlantiruvchi|Plazmatik va oshqozon osti bezi atsinar hujayralarida|Jigar, buyrak usti bezi po'stlog'i va jinsiy bezlar.
+golgi-apparatus-0gsq8kp|Goldji apparati|Goldji apparati fermentlarni lizosomaga yo'naltirish uchun mannoza-6-___ qo'shadi|fosfat|fosfatni|Uning ishdan chiqishi I-hujayra kasalligiga olib keladi.
+peroxisomes-18zadev|Peroksisomalar|Peroksisomalar nima bilan shug'ullanadi|O'ta uzun zanjirli yog' kislotalari beta-oksidlanishi|Anaerob glikoliz va laktat hosil bo'lishi|Tsellveger va adrenoleykodistrofiya — peroksisomal kasalliklar.
+microtubules-06ptob8|Mikronaychalar|Mikronaychalar ___ dimerlarining polimerlari|tubulin|tubulinning|Kolxitsin, vinkristin va taksanlar shunga ta'sir qiladi.
+kartagener-syndrome-1cw83ys|Kartagener sindromi|Kartagener sindromi nimaning nuqsoni|Dinein «qo'llari»|Aktin iplari|Kiprikchalar va spermatozoidlar harakatsiz.
+collagen-synthesis-0mmv5e4|Kollagen sintezi|Kollagen uch qavat spirali hosil bo'lishi uchun prolin va ___ gidroksillanishi kerak|lizin|lizinning|C vitaminiga bog'liq.
+elastin-0gv21e4|Elastin|Elastin nimaga boy|Desmozin bilan bog'langan prolin va glitsin|Kollagen spiralidagi gidroksiprolin|Elastaza uni parchalaydi, alfa-1-antitripsin qarshilik qiladi.
+osteogenesis-imperfecta-04pwwpg|Mukammal bo'lmagan osteogenez|I tip mukammal bo'lmagan osteogenezda nima bo'ladi|Normal I tip kollagen miqdorining kamayishi|IV tip kollagen tuzilishining buzilishi|Biriktiruvchi to'qima yarim shaffof bo'lgani uchun sklera ko'k ko'rinadi.
