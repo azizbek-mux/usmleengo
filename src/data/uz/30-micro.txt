@@ -54,3 +54,17 @@ syphilitic-aneurysm-0j35ufq|Zaxm anevrizmasi|Zaxm klassik holda aortaning qaysi 
 bronchiolitis-14fs2gm|Bronxiolit|Ikki yoshgacha bolada bronxiolitning odatiy qo'zg'atuvchisi|Respirator sinsitial virus|Adenovirus yoki rinovirus|Kuz va qishda xirillash bilan kechadi.
 hiv-2-09syi7n|OIV-2|OIV-2 qaysi hududda endemik|G'arbiy Afrikada|Janubi-sharqiy Osiyoda|Sekinroq rivojlanadi; ba'zi testlar uni aniqlamasligi mumkin.
 neutropenic-fever-1cm7ce2|Neytropenik isitma|Chuqur neytropeniyada infeksiyaning mahalliy belgilari qanday bo'ladi|Yo'q yoki juda kam|Kuchaygan bo'ladi|Neytrofil bo'lmasa, yiring ham bo'lmaydi. Isitma yagona belgi bo'lishi mumkin.
+chemotherapy-nadir-13bnogo|Kimyoterapiyadan keyingi nadir|Kimyoterapiya chaqirgan pansitopeniya qachon eng chuqur bo'ladi|10-14 kunda|24 soatda|Sitotoksik davodan keyingi ko'mik nadiri.
+cephalosporins-169xtjo|Sefalosporinlar|Sefalosporinlar nimani ingibitsiya qiladi|Devorning ko'ndalang bog'lanishini|Ribosomada oqsil sintezini|Beta-laktamlar penitsillin bog'lovchi oqsillarga bog'lanadi.
+cephalosporin-gaps-095gq9t|Sefalosporinlar qamrovidagi bo'shliqlar|Qaysi mikroorganizm barcha sefalosporinlarga tabiatan chidamli?|Listeria monocytogenes|Streptococcus pneumoniae|Listeriya, atipiklar, MRSA va enterokokklar.
+salmonella-0kc2yul|Salmonella|Salmonellali osteomiyelit klassik holda kimlarda uchraydi|O'roqsimon hujayrali anemiyada|Qandli diabet bilan og'riganlarda|Funksional taloqsizlik; umuman esa eng ko'p S. aureus sabab bo'ladi.
+toxoplasmosis-treatment-0ph3jvw|Toksoplazmozni davolash|Miya toksoplazmozi nima bilan davolanadi|Pirimetamin va sulfadiazin|Amfoteritsin B va flusitozin|Amfoteritsin kriptokokkli meningitni davolaydi.
+primary-cns-lymphoma-1j6yj0g|Markaziy nerv sistemasining birlamchi limfomasi|OIV da bu limfoma qanday hujayralardan iborat|B limfotsitlar|T limfotsitlar|Epshteyn-Barr virusi qo'zgatgan diffuz yirik B hujayrali limfoma; yakka halqasimon o'choq.
+acyclovir-1yzikeg|Atsiklovir|Atsiklovir nima orqali faollashadi|Virus timidinkinazasi orqali|Faqat xo'jayin kinazalari orqali|Shuning uchun u oddiy gerpes va suvchechak virusiga tanlab ta'sir qiladi, Epshteyn-Barr va sitomegalovirusga esa yo'q.
+treponema-pallidum-19s4jp1|Treponema pallidum|Treponema pallidum qanday ko'riladi|Qorong'i maydon mikroskopiyasida|Yara surtmasini Gram usulida bo'yashda|Gram usuli uchun juda ingichka va oziq muhitda o'smaydi.
+pinworm-1b145xj|Bolalar gijjasi|Enterobius qanday tashxislanadi|Yopishqoq tasma sinamasi bilan|Najasni tuxum va parazitga tekshirish bilan|Kechasi anus atrofida qichishish; tuxumlar yopishqoq tasmada.
+dna-polymerase-i-1hdn544|I DNK-polimeraza|I DNK-polimeraza nimani olib tashlaydi|RNK boshlagichlarini|Supero'ramlarni|5'→3' ekzonukleaza faolligi boshlagichni kesib, bo'shliqni to'ldiradi.
+group-b-streptococcus-1jtrr5g|B guruh streptokokki|Streptococcus agalactiae qanday aniqlanadi|CAMP testi musbat bo'lishi bilan|Batsitratsinga sezgirligi bilan|Gippuratga musbat; homiladorlarni 35-37 haftada skrining qilinadi.
+dengue-1ddtk8p|Dengue isitmasi|Dengue isitmasi qanday yuqadi|Aedes chivinlari orqali|Anopheles chivinlari orqali|Chikungunya, Zika va sariq isitma bilan bir xil tashuvchi.
+botulism-1apuop7|Botulizm|Botulinik toksin presinaptik ravishda nimaning ajralishini bloklaydi|Atsetilxolin|Norepinefrin|Noto'g'ri konservalangan ovqatdan kelib chiqqan tushuvchi sust falaj.
+infant-botulism-1lm4hsl|Chaqaloqlar botulizmi|Chaqaloqlar botulizmi klassik holda nima bilan bog'liq|Asal|Yaxshi pishmagan tuxum|Sporalar yetilmagan ichakda o'sadi. «Shalvirab qolgan chaqaloq».
