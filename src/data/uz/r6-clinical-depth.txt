@@ -39,7 +39,7 @@ normal-saline-1ivpc4x|Fiziologik eritma|Katta hajmdagi fiziologik eritma nimaga 
 refeeding-syndrome-15ny1tq|Qayta oziqlantirish sindromi|Bu sindromning oldini olish uchun oziqlantirish ___ boshlanadi va elektrolitlar to'ldiriladi|sekin|ehtiyotkorlik bilan, kam|Shuningdek oziqlantirishdan oldin tiamin beriladi.
 parenteral-nutrition-1xv9xne|Parenteral oziqlantirish|Uzoq muddatli parenteral oziqlantirish qanday xavf tug'diradi|Xolestaz va kateter sepsisi|Temir ortiqchaligi va jigar sirrozi|Ichak ishlayotgan bo'lsa, enteral oziqlantirish afzal.
 preoperative-fasting-19h386x|Operatsiyadan oldin ovqatlanmaslik|Tiniq suyuqlik operatsiyadan ___ soat oldingacha ichilishi mumkin|2|ikki|Qattiq ovqat uchun olti soat kerak.
-venous-thromboembolism-prophylaxis-1fxyj7v|Venoz tromboemboliya profilaktikasi|Shifoxonadagi oldini olish mumkin bo'lgan o'limning eng ko'p sababi|O'pka arteriyasi emboliyasi|Og'ir sepsis|Shuning uchun xavfni baholash muntazam o'tkaziladi.
+venous-thromboembolism-prophylaxis-1fxyj7v|Venoz tromboemboliya profilaktikasi|Shifoxonadagi oldini olish mumkin bo'lgan o'limning eng ko'p sababi|O'pka emboliyasi|Og'ir kechuvchi sepsis|Shuning uchun xavfni baholash muntazam o'tkaziladi.
 wound-infection-11hgele|Yara infeksiyasi|Jarrohlik profilaktikasi kesishdan ___ soat oldin berilishi kerak|1|bir|Uzoq operatsiyalarda qayta beriladi.
 delirium-prevention-0p2ikh4|Deliriumning oldini olish|Deliriumning oldini olishda eng samarali chora|Mo'ljal, uyqu va erta harakatlanish|Profilaktik past dozadagi galoperidol|Ko'p komponentli parvarish majmuasi.
 polypharmacy-1g9i1nv|Polipragmaziya|___ mezonlari ro'yxatidagi dorilar keksalarda maqbul emas|Beers|beers mezonlari|Xolinolitiklar, benzodiazepinlar va NYaQV ko'p uchraydi.
