@@ -1,0 +1,18 @@
+# Mikrobiologiya — chuqurlashtirilgan qism (qarang: TERMS.md)
+
+staphylococcus-aureus-19pw6j8|Staphylococcus aureus|S. aureus chaqirgan ovqatdan zaharlanish oldindan hosil bo'lgan ___ tufayli yuzaga keladi|enterotoksin|toksin|6 soat ichida qusish; ovqatni isitish yordam bermaydi.
+staphylococcus-aureus-18gfhvn|Staphylococcus aureus|Toksik shok sindromi toksini ___ sifatida ta'sir qiladi|superantigen|superantigen sifatida|Nospetsifik T hujayra faollashuvi va sitokin bo'roni.
+staphylococcus-aureus-0g2zrg3|Staphylococcus aureus|Vena ichiga giyohvand modda yuboruvchilarda S. aureus endokarditi qaysi qopqoqni zararlaydi?|Trikuspidal|Mitral|O'ng tomonda bo'lib, o'pkaga septik emboliyalar beradi.
+mrsa-06kf1rp|MRSA|MRSA rezistentligi nimadan kelib chiqadi|O'zgargan penitsillin bog'lovchi oqsildan|Faqat beta-laktamaza ishlab chiqarishdan|mecA geni PBP2a ni kodlaydi; beta-laktamlar bog'lana olmaydi.
+staphylococcus-saprophyticus-1iwgc6p|Staphylococcus saprophyticus|S. saprophyticus siydik yo'li infeksiyasini yosh, ___ ayollarda chaqiradi|jinsiy faol|jinsiy hayot kechiradigan|E. coli dan keyin ikkinchi eng ko'p uchraydigan sabab.
+streptococcus-pyogenes-1syrn5h|Streptococcus pyogenes|Streptokokkdan keyingi glomerulonefrit ___ yoki teri infeksiyasidan keyin rivojlanadi|faringit|tomoq, angina|Revmatik isitmadan farqli, antibiotiklar uning oldini olmaydi.
+rheumatic-fever-0l47dvy|Revmatik isitma|Revmatik isitma qaysi joy infeksiyasidan keyin rivojlanadi|Faqat tomoq|Faqat teri|Teri infeksiyasi glomerulonefrit chaqirishi mumkin, ammo revmatik isitma chaqirmaydi.
+rheumatic-fever-10trf52|Revmatik isitma|Revmatik isitma M oqsili bilan molekulyar ___ tufayli yuzaga keladi|mimikriya|mimikriyasi|Antitelolar miozin va qopqoq to'qimasi bilan kesishgan reaksiyaga kirishadi.
+streptococcus-pneumoniae-07f3pdf|Streptococcus pneumoniae|Pnevmokokkli pnevmoniyada klassik holda qanday balg'am bo'ladi|Zang rangli balg'am|Smorodina jelesi kabi balg'am|Smorodina jelesi Klebsiella dan dalolat beradi.
+streptococcus-pneumoniae-1i17yuq|Streptococcus pneumoniae|Taloqsiz bemorlar pnevmokokkka nega ayniqsa moyil|Taloq kapsulali mikroblarni tozalaydi|Taloq antitelolarning ko'p qismini ishlaydi|Pnevmokokk, meningokokk va Hib ga qarshi emlang.
+viridans-streptococci-0043fkh|Yashil streptokokklar|Yashil streptokokklar qopqoqlarga ___ yordamida yopishadi|dekstranlar|dekstran, glikokaliks|Saxarozadan hosil bo'ladi; ular tish kariesini ham chaqiradi.
+escherichia-coli-02krkp1|Escherichia coli|Chaqaloqlar meningitini chaqiruvchi E. coli ___ kapsula antigeniga ega|K1|k-1|Chaqaloqlar meningitining uchta asosiy qo'zg'atuvchisidan biri.
+klebsiella-0x4on9j|Klebsiella|Klebsiella pnevmoniyasi klassik holda kimlarda uchraydi|Alkogolizm va diabet bilan og'riganlarda|Butunlay sog'lom yosh kattalarda|Quyuq smorodina jelesi kabi balg'am va yuqori bo'lak kavernalari.
+pseudomonas-aeruginosa-1wyinw5|Pseudomonas aeruginosa|Pseudomonas ___ deb ataladigan ko'k-yashil pigment hosil qiladi|piotsianin|piosianin|Uzum hidi ham bor. Oksidaza-musbat.
+pseudomonas-aeruginosa-0m78w1o|Pseudomonas aeruginosa|Gangrenoz ektima nimadan dalolat beradi|Pseudomonas bakteriemiyasidan|Stafilokokkli abssessdan|Neytropenik bemorda qora nekrotik teri o'choqlari.
+haemophilus-influenzae-17q1b6v|Haemophilus influenzae|H. influenzae o'sishi uchun ___ va V omillari kerak|X|x omili|X — gematin, V — NAD. Qonli agarda S. aureus yonida o'sadi.
