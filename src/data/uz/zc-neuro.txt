@@ -1,0 +1,21 @@
+mca-stroke-distribution-0kilox8|O'rta miya arteriyasi insultining tarqalishi|O'rta miya arteriyasi insulti nimani zararlaydi|Qarshi tomon qo'li va yuzini|Faqat qarshi tomon oyog'ini|Oyoq oldingi arteriyaga tegishli.
+non-dominant-mca-sign-138wwpn|Dominant bo'lmagan o'rta miya arteriyasi belgisi|Dominant bo'lmagan yarim shar insulti nimani beradi|Fazoviy e'tiborsizlikni|Broka afaziyasini|Soat sifatini chizishni so'rab tekshiriladi.
+lacunar-vessel-1s8os3m|Lakunar infarkt tomiri|Lakunar infarktlar mayda ___ arteriyalarni zararlaydi|lentikulostriar|lentikulostriat|Gipertonik lipogialinozdan zararlanadi.
+microaneurysm-name-0zaob75|Mikroanevrizmaning nomi|Lentikulostriar tomirlarning mayda ___-Bushar anevrizmalari gipertoniyada yoriladi|Sharko|sharko|Diametri bir millimetrdan kichik.
+subclavian-steal-mechanism-07zipsl|O'mrov osti o'g'irlash mexanizmi|O'mrov osti o'g'irlash sindromi qaysi tomirda oqimni teskarilaydi|Umurtqa arteriyasida|Ichki uyqu arteriyasida|Qon qo'lga qarab pastga tortiladi.
+subclavian-steal-sign-15m9yrb|O'mrov osti o'g'irlash belgisi|O'mrov osti o'g'irlash sindromini nima ajratib turadi|Har bir qo'lda bosimning farq qilishi|Ikki qo'lda bosimning bir xilligi|Umurtqa stenozida bosimlar teng bo'ladi.
+vertebral-artery-dissection-history-054rv2z|Umurtqa arteriyasi qatlamlanishi anamnezi|Umurtqa arteriyasi qatlamlanishi klassik holda nimadan keyin bo'ladi|Bo'yinni qo'l bilan to'g'rilashdan keyin|Uzoq davom etgan yo'tal xurujidan keyin|Soxta naycha hosil bo'ladi.
+vertebral-dissection-treatment-02p7dxf|Umurtqa arteriyasi qatlamlanishini davolash|Umurtqa qatlamlanishidan kelgan orqa insult nima bilan davolanadi|Geparin bilan|Trombolizis bilan|Keyingi emboliyaning oldini olish uchun.
+wernicke-aphasia-speech-0g8hvr6|Vernike afaziyasidagi nutq|Vernike afaziyasida nutq qanday bo'ladi|Ravon, lekin ma'nosiz|To'xtab-to'xtab, telegraf uslubida|Tushunish ham yo'qoladi.
+broca-aphasia-speech-109d6ja|Broka afaziyasidagi nutq|Broka afaziyasida nutq qanday bo'ladi|Ravon emas, telegraf uslubida|Ravon, lekin mutlaqo bema'ni|Bemor bundan iztirob chekadi.
+conduction-aphasia-0fxkus4|Konduktiv afaziya|Konduktiv afaziyada yakka nuqson nima|Takrorlash|Tushunish|Ravonlik va tushunish saqlanadi.
+broca-lobe-000pqtf|Broka bo'lagi|Broka sohasi ___ bo'lagida joylashadi|peshona|peshonaning|Chap o'rta miya arteriyasidan qon oladi.
+central-pontine-myelinolysis-consequence-1fwh25y|Markaziy pontin mielinoliz oqibati|Giponatriemiyani juda tez to'g'rilash nimaga olib keladi|«Qamalgan odam» sindromiga|Miya shishi va uning siqilishiga|Juda sekin to'g'rilash esa shish beradi.
+tabes-dorsalis-columns-0l9k2vq|Orqa miya quruqshog'ida ustunlar|Orqa miya quruqshog'i nimani yemiradi|Orqa ustunlarni|Kortikospinal yo'llarni|Uchlamchi neyrosifilisdan.
+tabes-dorsalis-deficit-0z3piiv|Orqa miya quruqshog'idagi nuqson|Orqa miya quruqshog'i ikki tomonlama nimani yo'qotadi|Vibratsiya va proprioseptiv sezgini|Og'riq va harorat sezgisini|Orqa ustunlarning sezgi turlari.
+syringomyelia-tract-1hvsl0n|Siringomieliyadagi yo'l|Siringomieliya avval oldingi oq ___ ni, kesib o'tuvchi og'riq tolalarini zararlaydi|bitishma|komissura|«Plash» shaklida tarqaladi.
+erb-duchenne-roots-11i4vzo|Erb-Dyushen ildizlari|Erb-Dyushen falaji qaysi ildizlarni tutadi|C5 va C6|C8 va T1|Yelka chigalining yuqori qismi.
+klumpke-roots-0czw6p2|Klumpke ildizlari|Klumpke falaji qaysi ildizlarni tutadi|C8 va T1|C5 va C6|Yelka chigalining pastki qismi.
+erb-palsy-arm-position-00isl9t|Erb falajida qo'l holati|Erb-Dyushen falajida qo'l qanday holatda bo'ladi|Tanaga yopilgan, pronatsiyada, kaft bukilgan|Yon tomonga ochilgan, tirsak bukilgan|«Ofitsiant choychaqasi» holati.
+brachial-plexus-injury-cause-03m5vio|Yelka chigali shikastlanishining sababi|Chaqaloqda yelka chigali shikastlanishi nimadan keyin bo'ladi|Dumba bilan yoki jarohatli tug'ruqdan|Odatiy kesar kesish yo'li bilan tug'ruqdan|Yoki yiqilayotib shoxdan ushlab qolishdan.
+cervical-foraminal-stenosis-0e26jyp|Bo'yin teshigi stenozi|Qo'l holsizligi bilan tugma qadashning qiyinlashuvi nimadan dalolat beradi|Bo'yin umurtqasi teshigi stenozidan|Bel umurtqasi kanali stenozidan|Nerv chiqish teshigida qisiladi.
