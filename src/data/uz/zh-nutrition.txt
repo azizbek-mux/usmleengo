@@ -1,0 +1,47 @@
+failure-to-thrive-definition-0j5bkdo|Rivojlanmaslikning ta'rifi|Rivojlanmaslik — vazn qanday bo'lishi|3-sentildan past yoki ikki chiziqni kesib o'tgan|50-sentil chizig'idan pastdagi har qanday|Past sentilda barqaror borish normal.
+growth-parameter-order-1x4sxne|O'sish ko'rsatkichlarining tartibi|To'yib ovqatlanmaslikda birinchi qaysi ko'rsatkich tushadi|Vazn, keyin bo'y, keyin bosh|Bosh aylanasi, keyin vazn|Bosh eng oxirida zararlanadi.
+elderly-weight-loss-workup-0oh6wja|Keksada vazn yo'qotishni tekshirish|Tahlillari normal keksa odamdagi sababsiz vazn yo'qotish nimani talab qiladi|Depressiya va bilish faoliyati skriningini|Ko'krak va qorinning darhol KT sini|Ikkisi ham ko'p uchraydi va davolanadi.
+marasmus-versus-kwashiorkor-0isdwv0|Marazm va Kvashiorkor|Kvashiorkorni marazmdan nima ajratib turadi|Shish|Mushaklarning ozib ketishi|Albumin va onkotik bosimning pastligidan.
+kwashiorkor-liver-0w1d54j|Kvashiorkorda jigar|Kvashiorkor nima uchun yog'li jigar beradi|Lipoprotein chiqarilishi buzilgani uchun|Ovqatdan ortiqcha yog' kelgani uchun|Yog'ni chiqarish uchun oqsil kerak.
+nitrogen-balance-in-burns-1s15jk9|Kuyishda azot balansi|Kaloriyasi yetarli, oqsili kam kuygan bemorda nima bo'ladi|Manfiy azot balansi|Manfiy energiya balansi|Vazn barqaror bo'lib, mushak yo'qolishi mumkin.
+burns-protein-requirement-1xc56p6|Kuyishda oqsil talabi|Giperkatabolik bemorga kuniga 1,5-2,5 g/kg ___ kerak|oqsil|oqsilning|Katexolaminlar va kortizol tufayli.
+anorexia-versus-bulimia-bmi-05fbe99|Anoreksiya va bulimiyada TVI|Bulimiya anoreksiyadan nimasi bilan farq qiladi|Normal yoki oshgan TVI bilan|Yaqqol pasaygan TVI bilan|Ko'p yeb, keyin chiqarib tashlash sikllari bilan.
+russell-sign-184ew4y|Rassel belgisi|O'zini qustirishdan barmoq bo'g'imlaridagi qadoqlar — ___ belgisi|Rassel|rassel|Tish emirilishi va quloq oldi bezi shishi bilan.
+bupropion-in-eating-disorders-0mmuoi3|Ovqatlanish buzilishlarida bupropion|Anoreksiya yoki bulimiyada bupropion qanday|Qarshi ko'rsatilgan|Birinchi qator davo|U tutqanoq chegarasini pasaytiradi.
+refeeding-electrolyte-0pfk7xx|Qayta oziqlantirishdagi elektrolit|Qayta oziqlantirish sindromi birinchi qaysi ionni hujayraga kiritadi|Fosfatni|Natriyni|Kaliy va magniy bilan birga.
+fasting-fuel-after-24-hours-0z1mq0q|24 soatdan keyingi yoqilg'i|Glikogen tugagandan keyin glyukoza qayerdan keladi|Jigardagi glyukoneogenezdan|Davom etayotgan glikogenolizdan|Aminokislotalar, glitserin va laktatdan.
+calorie-value-of-fat-1ak2u0i|Yog'ning kaloriya qiymati|Yog' bir grammda ___ kilokaloriya beradi|9|to'qqiz|Uglevod va oqsil 4, alkogol 7 beradi.
+metabolic-syndrome-mechanism-1scbcuh|Metabolik sindrom mexanizmi|Metabolik sindromni nima haydaydi|Visseral yog'dan kelgan insulinga chidamlilik|Teri osti yog' massasining ortiqchaligi|Visseral yog' jigarga sitokin chiqaradi.
+metabolic-syndrome-criteria-count-0e9gcpw|Metabolik sindrom mezonlari soni|Metabolik sindrom uchun beshta mezondan ___ tasi kerak|3|uch|Hammasi beshtasi emas.
+bariatric-surgery-threshold-0swqpgl|Bariatrik jarrohlik chegarasi|Bariatrik jarrohlik qanday TVI da ko'rib chiqiladi|35, yoki metabolik kasallik bilan 30|25, qo'shimcha kasallikdan qat'i nazar|Turmush tarzi choralari samara bermagach.
+dumping-syndrome-timing-09aj9en|Demping-sindromning vaqti|Demping-sindrom qachon boshlanadi|Ovqatdan o'n-o'ttiz daqiqa keyin|Ovqatdan olti-sakkiz soat keyin|Shirin ovqat qo'zg'atadi.
+hereditary-fructose-intolerance-enzyme-1kh4m1t|Irsiy fruktozani ko'tarolmaslik fermenti|Irsiy fruktozani ko'tarolmaslik nimaning yetishmovchiligi|Aldolaza B|Galaktokinaza|Fruktoza-1-fosfat to'planadi.
+fructose-versus-galactose-timing-130rjdw|Fruktoza va galaktoza vaqti|7 oylikda meva va asaldan keyin boshlangan belgilar nimani ko'rsatadi|Fruktoza buzilishini|Galaktoza buzilishini|Galaktoza kasalligi tug'ilgandan sut bilan boshlanadi.
+galactosemia-eye-sign-1tgq9gi|Galaktozemiyada ko'z belgisi|Galaktozemiyani nima ajratib turadi|Katarakta|Bito dog'lari|Fruktozani ko'tarolmaslikda bo'lmaydi.
+bitot-spots-0cox053|Bito dog'lari|Konyunktivadagi ko'pikli ___ dog'lari A vitamini tanqisligiga patognomonik|Bito|bito|Konyunktivaning yassi hujayrali metaplaziyasi.
+vitamin-a-deficiency-progression-0h9aakq|A vitamini tanqisligining kechishi|A vitamini tanqisligi shabko'rlikdan keyin nimaga o'tadi|Kseroftalmiya va keratomalyatsiyaga|Katarakta va o'tkir glaukomaga|Oxiri ko'rlik bilan tugaydi.
+isotretinoin-toxicity-0yay4i7|Izotretinoin toksikligi|Izotretinoin nimaga olib kelishi mumkin|Ko'ruv nervi diski shishi va alopetsiya|Periferik neyropatiya va ataksiya|A gipervitaminozi kalla ichi bosimini oshiradi.
+vitamin-e-deficiency-anemia-01gynv8|E vitamini tanqisligidagi anemiya|E vitamini tanqisligi qanday anemiya beradi|Gemolitik|Megaloblastik|U eritrotsit membranasini himoya qiladi.
+vitamin-e-versus-b12-0ok3g5u|E vitamini va B12|E vitamini tanqisligi B12 ga taqlid qiladi, lekin nimasi bilan|Metilmalon kislotasi normada|Metilmalon kislotasi oshgan|Makrotsitoz emas, gemoliz bo'ladi.
+korsakoff-features-10b5btt|Korsakov belgilari|Korsakov sindromi — anterograd amneziya va yana nima|Konfabulyatsiya|Oftalmoplegiya|So'rg'ichsimon tanachalar zararlanishidan.
+korsakoff-reversibility-1lomllu|Korsakovning qaytarilishi|Tiamin berilgandan keyin Korsakov sindromi qanday|Asosan qaytarilmaydi|To'liq qaytariladi|Vernike ensefalopatiyasidan farqli.
+wet-versus-dry-beriberi-05rvvrx|Nam va quruq beriberi|Nam beriberi quruq beriberidan nimasi bilan farq qiladi|Yuqori chiqishli yurak yetishmovchiligi bilan|Simmetrik periferik neyropatiya bilan|Ikkisi ham tiamin tanqisligidan.
+niacin-flushing-mediator-0214c6j|Niatsindan qizarishning vositachisi|Niatsindan qizarishni nima vositalaydi|Prostaglandinlar|Gistamin ajralishi|Oldindan aspirin berish kamaytiradi.
+niacin-lipid-effect-03853ys|Niatsinning lipidga ta'siri|Niatsin nimani ko'tarishda eng samarali|ZYuLP|ZPLP|Shu bilan birga triglitseridlarni tushiradi.
+vitamin-b5-deficiency-09fzkkn|B5 vitamini tanqisligi|Pantoten kislotasi tanqisligi dermatit va yana nima beradi|«Kuyayotgan oyoq» sindromi|Tunda ko'rishning yo'qolishi|B5 koenzim A ni tashkil qiladi.
+folate-and-neural-tube-0rjla0m|Folat va nerv naychasi|Nerv naychasi qachon yopiladi|Homila qolgandan 21-28 kunlarda|Homiladorlikning 12-16 haftalarida|Ko'pincha homiladorlik bilinmasdan oldin.
+folate-dose-on-antiepileptics-1kiysjh|Epilepsiyaga qarshi dorida folat dozasi|Valproat qabul qiladigan ayollarga kuniga ___ mg folat kerak|4|to'rt|Odatdagi 400 mikrogramm o'rniga.
+folate-versus-b12-neurology-0wusyjy|Folat va B12 nevrologiyasi|Folat tanqisligi B12 tanqisligidan nimasi bilan farq qiladi|Nevrologik belgilar bo'lmaydi|Orqa ustunlar belgilari yaqqol|Ikkisi ham megaloblastik anemiya beradi.
+methylmalonic-acid-discriminator-0viwmc4|Metilmalon kislotasi ajratuvchi sifatida|Metilmalon kislotasi qachon oshadi|Faqat B12 tanqisligida|B12 va folat tanqisligida|Gomotsistein ikkisida ham oshadi.
+folate-store-duration-04g9kea|Folat zaxirasining muddati|Folat zaxirasi qancha vaqtda tugaydi|Haftalar ichida|Yillar ichida|B12 zaxirasi yillarga yetadi.
+vitamin-c-excess-stones-0wzwzor|C vitamini ortiqchaligida toshlar|Yuqori dozada C vitamini nimani keltiradi|Kalsiy oksalat toshlarini|Siydik kislotasi toshlarini|Ortiqcha oksalat hosil bo'lishidan.
+hypocalcemia-signs-0bunllp|Gipokalsiemiya belgilari|Gipokalsiemiya karpopedal spazm va yana nimani beradi|Uzaygan QT oralig'ini|Qisqargan QT oralig'ini|Xvostek va Trusso belgilari bilan.
+refractory-hypokalemia-cause-10svg0u|Chidamli gipokaliemiyaning sababi|To'g'rilanmaydigan gipokaliemiya nimadan dalolat beradi|Magniy tanqisligidan|Natriy kamayishidan|Avval magniyni to'ldirish kerak.
+magnesium-and-pth-15aco52|Magniy va PTG|Magniy tanqisligi kalsiyni qanday tushiradi|PTG ajralishini buzib|Kalsiyni bevosita bog'lab|Shuning uchun yolg'iz kalsiy yordam bermaydi.
+hypokalemia-ecg-14yg46k|Gipokaliemiyada EKG|Gipokaliemiya EKG da qanday ko'rinadi|U to'lqinlari va yassilangan T to'lqinlari|Cho'qqili T to'lqinlari va keng QRS|Cho'qqili T to'lqinlari giperkaliemiyani bildiradi.
+zinc-deficiency-features-0tfrm2d|Rux tanqisligi belgilari|Rux tanqisligi og'iz atrofi dermatiti, alopetsiya va yana nimani beradi|Ta'm va hid sezgisining yo'qolishini|Shabko'rlik va ko'zning qurishini|Ko'krakdan ajratgandan keyin kuchayadi.
+acrodermatitis-enteropathica-0oe3f7n|Enteropatik akrodermatit|Irsiy rux so'rilmasligi akrodermatit ___ deb ataladi|enteropatika|enteropatica|Ko'krakdan ajratish davrida namoyon bo'ladi.
+chromium-deficiency-clue-04jqqnj|Xrom tanqisligi ishorasi|Parenteral oziqlanayotgan bemorda sababsiz giperglikemiya nimani ko'rsatadi|Xrom tanqisligini|Selen tanqisligini|U insulin retseptorini kuchaytiradi.
+zinc-excess-consequence-05q5q5h|Rux ortiqchaligining oqibati|Uzoq vaqt yuqori dozada rux nimaning tanqisligini beradi|Mis|Temir|Ichakda metallotioneinni induksiya qilib.
+copper-deficiency-picture-0ny0s3f|Mis tanqisligi manzarasi|Mis tanqisligi anemiya, neytropeniya va yana nimani beradi|B12 ga taqlid qiluvchi miyeloneyropatiyani|Sariqlik bilan kechuvchi gemolitik anemiyani|Lekin metilmalon kislotasi normada qoladi.
+selenium-deficiency-context-01ycg2c|Selen tanqisligi sharoiti|Selen tanqisligi klassik holda nimadan keyin bo'ladi|Mikroelementsiz uzoq parenteral oziqlantirishdan|Uyda uzoq davom etgan qattiq vegetarian dietadan|Keshan kardiomiopatiyasini beradi.
