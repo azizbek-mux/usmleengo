@@ -1,0 +1,48 @@
+ecological-study-09n4plo|Ekologik tadqiqot|Ekologik tadqiqot alohida shaxs emas, ___ darajasidagi ma'lumotdan foydalanadi|populyatsiya|guruh, yig'ma|Ekologik xato xavfi bor.
+ecological-fallacy-1iy46sy|Ekologik xato|Ekologik xato nima|Guruh ma'lumotidan shaxs xavfini chiqarish|Kogort tadqiqotida aralashtiruvchilarni e'tiborsiz qoldirish|Populyatsiyalarni taqqoslashda klassik xato.
+nested-case-control-1npajrz|Ichki holat-nazorat tadqiqoti|___ holat-nazorat tadqiqoti holat va nazoratni kogort ichidan oladi|Ichki|ichma-ich, nested|Namunalar allaqachon saqlanganda samarali.
+crossover-trial-limitation-1oxhgpu|Kesishuvchi sinovning cheklovi|Kesishuvchi sinovlar qachon mos kelmaydi|Holat davolanadigan yoki zo'rayuvchi bo'lsa|Kasallik surunkali va barqaror bo'lsa|Qoldiq ta'sir ham ularni cheklaydi.
+cluster-randomization-1gxkwbz|Klasterli randomizatsiya|___ randomizatsiya shaxslarni emas, guruhlarni taqsimlaydi|Klasterli|klaster|Shaxslar orasida ta'sir o'tishi ehtimoli bo'lganda qo'llanadi.
+pragmatic-trial-15jz5gy|Pragmatik sinov|Pragmatik sinov nimani ustun qo'yadi|Haqiqiy amaliyotga tatbiq etilishini|Juda qat'iy ichki validlikni ta'minlashni|Tushuntiruvchi sinovlar teskarisini qiladi.
+external-validity-0c32pze|Tashqi validlik|___ validlik natijalar tadqiqot namunasidan tashqarida qanchalik amal qilishini bildiradi|Tashqi|tashqi validlik|Umumlashtirish qobiliyati deb ham ataladi.
+surrogate-endpoint-0p21qse|O'rinbosar yakuniy nuqta|O'rinbosar yakuniy nuqta nima uchun xavfli|Klinik foydani bashorat qilmasligi mumkin|Ishonchli o'lchash qiyinroq bo'lgani uchun|Ekstrasistolani bostirgan antiaritmiklar o'limni oshirgan.
+composite-endpoint-1mszxwu|Qo'shma yakuniy nuqta|___ yakuniy nuqta bir necha natijani birlashtirib, asosiy omilni yashiradi|qo'shma|kompozit|Ko'pincha eng kam ahamiyatli komponent yetakchi bo'ladi.
+number-needed-to-screen-0f8xfm0|Skrining qilish uchun kerak son|Skrining qilish uchun kerak son odatda qanday|Davolash uchun kerak sondan ancha katta|Davolash uchun kerak songa o'xshash|Chunki skrining qilinganlarning ko'pchiligi sog'lom.
+normal-distribution-1e24r85|Normal taqsimot|Normal taqsimotda o'rta arifmetik, median va moda ___|teng|bir xil, aynan teng|Nosimmetriklik ularni ajratadi.
+skewed-data-1g4nxt4|Nosimmetrik ma'lumot|Nosimmetrik ma'lumot nima bilan yaxshi ifodalanadi|Median va kvartillararo oraliq bilan|O'rta arifmetik va standart tafovut|Va noparametrik testlar bilan tahlil qilinadi.
+non-parametric-test-1m3lr5g|Noparametrik test|___ -Uitni U testi ikki mustaqil, normal bo'lmagan guruhni taqqoslaydi|Mann|man|Juftlashgan varianti — Vilkokson testi.
+paired-data-1axzgff|Juftlashgan ma'lumot|Bir xil shaxslarda oldin va keyin o'lchash nimani talab qiladi|Juftlashgan testni|Juftlashmagan testni|Juftlikni e'tiborsiz qoldirish statistik quvvatni yo'qotadi.
+regression-0bi9zo1|Regressiya|Natija binar bo'lganda ___ regressiya ishlatiladi|logistik|logistika|Chiziqli regressiya uzluksiz natijalarga mos.
+multivariable-analysis-0acm2ic|Ko'p o'zgaruvchili tahlil|Ko'p o'zgaruvchili regressiya asosan nima uchun ishlatiladi|Aralashtiruvchi ta'sirni to'g'rilash uchun|Sababiy bog'liqlikni isbotlash uchun|Qoldiq aralashtiruvchi ta'sir doim qolishi mumkin.
+survival-analysis-0y7tydu|Yashash tahlili|___ -Meyer egri chizig'i yashashni vaqt bo'yicha, senzuralash bilan ko'rsatadi|Kaplan|kaplan|Log-rank testi bilan taqqoslanadi.
+hazard-ratio-0b332g6|Xavf nisbati|Xavf nisbati nimani bildiradi|Vaqt bo'yicha nisbiy hodisa tezligini|Guruhlar orasidagi mutlaq yashash farqini|Proporsional xavf faraziga asoslanadi.
+interim-analysis-07o83f4|Oraliq tahlil|Sinov foyda, zarar yoki ___ tufayli erta to'xtatilishi mumkin|befoydalik|samarasizlik, futillik|Mustaqil monitoring komiteti qaror qiladi.
+multiple-testing-0ukqtmj|Ko'p sonli tekshirish|Ko'p natijalarni tuzatishsiz tekshirish nima qiladi|Soxta musbat topilmalarni ko'paytiradi|Faqat statistik quvvatni kamaytiradi|Bonferroni — tuzatish usullaridan biri.
+outbreak-investigation-18z4oce|Epidemiyani tekshirish|Epidemiyani tekshirish ___ va holat ta'rifini tasdiqlashdan boshlanadi|tashxis|tashxisni, epidemiya|Keyin shaxs, joy va vaqt tavsiflanadi.
+epidemic-curve-1b947pv|Epidemik egri chiziq|Bitta o'tkir cho'qqili epidemik egri chiziq nimadan dalolat beradi|Bitta manbadan tarqalishdan|Odamdan odamga tarqalishdan|Uzluksiz epidemiyalarda ketma-ket to'lqinlar bo'ladi.
+basic-reproduction-number-0ln276g|Asosiy reproduktiv son|Epidemiya R ___ dan yuqori bo'lganda o'sadi|1|bir|Nazorat choralari uni birdan pastga tushirishga qaratilgan.
+case-fatality-versus-mortality-rate-0blv3as|Halok bo'lish va o'lim ko'rsatkichi|Halok bo'lish ko'rsatkichi qaysi maxrajdan foydalanadi?|Kasal bo'lgan odamlardan|Butun populyatsiyadan|O'lim ko'rsatkichi populyatsiyadan foydalanadi.
+standardization-0ncgkxa|Standartlashtirish|Yosh bo'yicha ___ turli yosh tarkibidagi populyatsiyalarni solishtirishga imkon beradi|standartlashtirish|to'g'rilash|Xom ko'rsatkichlar qattiq chalg'itishi mumkin.
+life-expectancy-0cl2174|Kutilayotgan umr davomiyligi|Tug'ilishda kutilayotgan umr davomiyligiga nima eng ko'p ta'sir qiladi|Chaqaloq va bolalar o'limi|Juda keksalarga g'amxo'rlik|Shuning uchun u tarixda shunday keskin oshgan.
+years-of-life-lost-1lg7fli|Yo'qotilgan umr yillari|DALY yo'qotilgan umr yillarini ___ bilan yashalgan yillar bilan birlashtiradi|nogironlik|nogironlikda|O'lim va kasallikni birga qamrab oladi.
+herd-immunity-limits-0jvfyk1|Jamoaviy immunitet chegaralari|Jamoaviy immunitet nimadan himoya qilmaydi|Qoqsholdan|Qizamiqdan|Qoqshol odamdan emas, atrof-muhitdan yuqadi.
+levels-of-evidence-0e9zna4|Dalil darajalari|Randomizatsiyalangan sinovlarning sistematik sharhi dalillar iyerarxiyasining ___ da turadi|cho'qqisi|eng yuqorisi|Ekspert fikri eng pastda turadi.
+systematic-review-versus-narrative-0efqgld|Sistematik va tavsifiy sharh|Sistematik sharh nimasi bilan farq qiladi|Oldindan belgilangan protokol va qidiruv strategiyasi|Hissa qo'shgan mualliflar sonining ko'p bo'lishi|Tanlov xatosini kamaytiradi.
+heterogeneity-12esqev|Geterogenlik|Metatahlildagi statistik ___ I-kvadrat bilan o'lchanadi|geterogenlik|geterogenligi|Yuqori qiymatlar natijalarni birlashtirishni shubha ostiga qo'yadi.
+forest-plot-0yekult|«O'rmon» diagrammasi|Diagrammada ishonch oralig'i ta'sirsizlik chizig'ini kesib o'tsa, bu nima|O'sha tadqiqot ahamiyatli emas|O'sha tadqiqot yaroqsiz edi|Rombcha birlashtirilgan baholashni ko'rsatadi.
+grade-1hi6p8k|GRADE|___ tizimi dalillar ishonchliligini yuqoridan juda pastgacha baholaydi|GRADE|greyd|Xato xavfi, aniqsizlik va bilvositalikni hisobga oladi.
+critical-appraisal-0a31gg6|Tanqidiy baholash|Har qanday tadqiqotni baholashdagi birinchi savol qaysi|Savol aniq va tegishli ekanligi|p-qiymat ahamiyatga yetgani|Usul savoldan keyin keladi.
+four-principles-0p7oddh|To'rt tamoyil|To'rt tamoyil: muxtoriyat, xayrixohlik, zarar yetkazmaslik va ___|adolat|adolatlilik|Bu algoritm emas, yondashuv asosi.
+best-interests-1hmqm0l|Eng yaxshi manfaatlar|Layoqati yo'q kattaga qarorlar qanday qabul qilinadi|Oldingi istaklarini hisobga olib, manfaati uchun|Davolovchi shifokor o'z bilganicha qaror qiladi|Oila va vakil ham jalb qilinadi.
+lasting-power-of-attorney-0y4vf7p|Doimiy ishonchnoma|Salomatlik bo'yicha ___ layoqat yo'qolganda qaror qabul qila oladi|ishonchli vakil|ishonchnoma, vakil|Agar shu maqsadda qonuniy ro'yxatga olingan bo'lsa.
+gillick-competence-1bk92gv|Gillik layoqati|Gillik layoqati nimaga imkon beradi|Yetuk o'smirning davolashga rozilik berishiga|Ota-onaning layoqatli o'smirni bekor qilishiga|Har bir aniq qaror uchun alohida baholanadi.
+duty-of-candour-0msx2tv|Ochiqlik burchi|___ burchi biror narsa noto'g'ri ketganda ochiq aytishni talab qiladi|Ochiqlik|ochiq bo'lish, halollik|Kechirim so'rash va tushuntirish ham kiradi.
+whistleblowing-0anl6xv|Xavf haqida xabar berish|Bemor xavfsizligi bo'yicha jiddiy xavotiri bor shifokor nima qilishi kerak|To'g'ri kanallar orqali yuqoriga xabar qilishi|Hamkasblarni himoya qilish uchun jim turishi|Vijdonan xabar berish uchun himoya mavjud.
+organ-donation-15b7nso|Organ donorligi|Marhumdan organ olish ___ o'limi yoki qon aylanish o'limini tasdiqlashni talab qiladi|miya|miya ustuni|Qat'iy mustaqil tekshiruv bilan.
+living-donation-0esy0ns|Tirik donorlik|Tirik organ donorligi nimani talab qiladi|Majburlash va mukofot bo'yicha mustaqil baholash|Faqat donor va retsipiyentning roziligini olish|Organ uchun to'lov taqiqlangan.
+resource-allocation-17y7xjb|Resurslarni taqsimlash|Cheklash bo'yicha qarorlar shaffof, izchil va ___ bo'lishi kerak|hisobdor|adolatli, asoslangan|Asoslilik uchun javobgarlik tamoyili.
+triage-in-disaster-1rc0i1s|Ofatda triaj|Ofat triaji maqsadni nimaga o'zgartiradi|Eng ko'p odam uchun eng katta foydaga|Avval eng og'ir bemorlarni davolashga|Odatdagi amaliyotdan ataylab chekinish.
+cultural-competence-1dtby98|Madaniy kompetentlik|Madaniy kamtarlik o'z ___ ning chegaralarini tan olishni bildiradi|nuqtai nazari|bilimi, farazlari|Va taxmin qilish emas, so'rash kerak.
+interpreters-1rw5652|Tarjimonlar|Bolani tarjimon sifatida ishlatish qanday|Shoshilinch holatlardan tashqari nomaqbul|Oila shunday xohlasa, maqbul hisoblanadi|Bu bolaga yuk bo'lib, xato xavfini beradi.
+truth-telling-13k7zis|Haqiqatni aytish|Bemor bevosita so'rasa, ma'lumot ___ kerak emas|yashirilishi|berkitilishi, yashirish|Terapevtik imtiyoz kamdan-kam asoslanadi.
+refusal-of-blood-products-1v7ulod|Qon preparatlaridan voz kechish|Qondan voz kechgan layoqatli Yahova shohidi bilan nima qilinadi|Uning rad etishi hurmat qilinishi shart|Shoshilinch holatda qon quyish mumkin|Hatto o'lim bilan tugasa ham.
