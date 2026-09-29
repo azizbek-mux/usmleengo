@@ -1,0 +1,44 @@
+delta-gap-1m203gr|Delta tafovut|Anion tafovutli atsidoz bilan kelgan aralash buzilish ___ nisbati bilan aniqlanadi|delta|delta-delta|Anion tafovutining oshishi bikarbonatning tushishi bilan taqqoslanadi.
+mixed-disorder-1x0jiiu|Aralash buzilish|pH normal, bikarbonat va CO2 o'zgargan bo'lsa, bu nima|Aralash buzilish|To'liq kompensatsiya|Kompensatsiya pH ni hech qachon to'liq normallashtirmaydi.
+respiratory-acidosis-0y6e30g|Nafas atsidozi|Surunkali nafas atsidozi buyrak orqali ___ ushlanishi bilan kompensatsiyalanadi|bikarbonat|hco3|Bu uch-besh kun oladi.
+metabolic-alkalosis-159eqyg|Metabolik alkaloz|Xlorga javob beradigan metabolik alkaloz nimadan kelib chiqadi|Qusish yoki diuretiklardan|Giperaldosteronizmdan|Xlorga chidamli sabablarda siydik xlori yuqori bo'ladi.
+lactic-acidosis-01kall2|Laktat atsidozi|A tur laktat atsidozi to'qima ___ dan kelib chiqadi|gipoperfuziyasi|gipoksiya, ishemiya|B tur gipoperfuziyasiz, masalan metformindan bo'ladi.
+ketoacidosis-causes-112nj62|Ketoatsidoz sabablari|Diabetdan tashqari ketoatsidoz qachon bo'ladi|Ochlik va alkogolda|Buyrak yetishmovchiligida|Alkogolli ketoatsidozda glyukoza deyarli normal.
+total-body-water-01d9v4r|Tanadagi umumiy suv|Tanadagi umumiy suv yog'siz tana vaznining taxminan ___ foizini tashkil qiladi|60|oltmish|Uchdan ikkisi hujayra ichida, uchdan biri tashqarisida.
+third-spacing-0hwx9w5|«Uchinchi bo'shliq»|«Uchinchi bo'shliqqa» o'tish nimaga olib keladi|Umumiy suyuqlik ortiq bo'lsa ham tomir ichi tanqisligiga|Kuchli chanqoq bilan butun tananing suvsizlanishiga|Yirik operatsiyadan keyin va sepsisda ko'p uchraydi.
+osmotic-diuresis-1q6ukwv|Osmotik diurez|Glyukoza, mannitol va siydikchil ___ diurez beradi|osmotik|osmotik turdagi|Ular suv va elektrolitlarni o'zi bilan olib ketadi.
+pseudohyponatremia-15spedy|Soxta giponatriemiya|Soxta giponatriemiya qachon bo'ladi|Og'ir giperlipidemiya yoki paraproteinemiyada|Glyukozuriya bilan yaqqol giperglikemiyada|Giperglikemiya esa haqiqiy suyultirish giponatriemiyasini beradi.
+potassium-shift-1uxiep9|Kaliyning siljishi|Beta-2 agonistlar, insulin va alkaloz kaliyni hujayra ___ kiritadi|ichiga|ichkarisiga|Umumiy zaxirani o'zgartirmasdan zardob darajasini pasaytiradi.
+renal-potassium-handling-0laxgrt|Buyrakda kaliy almashinuvi|Amilorid va triamteren nimani bloklaydi|Epitelial natriy kanalini|Aldosteron retseptorlarini|Spironolakton esa retseptorni bloklaydi.
+proteinuria-quantification-0wjd0sa|Proteinuriyani o'lchash|Proteinuriya siydikdagi oqsil va ___ nisbati bilan o'lchanadi|kreatinin|kreatininga|Bu 24 soatlik yig'ishni almashtiradi.
+orthostatic-proteinuria-0xk2x89|Ortostatik proteinuriya|Ortostatik proteinuriya qanday hisoblanadi|Xavfsiz va erta tongdagi siydikda yo'q|Koptokchali kasallikning erta belgisi|Baland bo'yli o'smirlarda ko'p uchraydi.
+post-infectious-gn-1ptfgvl|Infeksiyadan keyingi glomerulonefrit|Streptokokkdan keyingi glomerulonefritda zardobdagi ___ PAST bo'ladi|C3|komplement|8 hafta ichida tiklanadi.
+membranous-nephropathy-0wvucya|Membranoz nefropatiya|Ikkilamchi membranoz nefropatiya nimani qidirishga undaydi|Xavfli o'sma, B gepatiti va lupusni|Diabet va surunkali gipertoniyani|Ayniqsa keksa bemorlarda.
+lupus-nephritis-0c38kz3|Lupus nefriti|___ sinf lupus nefriti diffuz proliferativ va eng og'ir hisoblanadi|IV|4, to'rtinchi|Agressiv immunosupressiya talab qiladi.
+amyloidosis-type-1i44zlk|Amiloidoz turi|AL amiloidoz nimadan kelib chiqadi|Immunoglobulin yengil zanjirlaridan|Zardobdagi amiloid A oqsilidan|AA amiloid surunkali yallig'lanishdan keyin keladi.
+diabetic-nephropathy-prevention-0ugxc1z|Diabetik nefropatiya profilaktikasi|Asosiy choralar — qand va bosimni nazorat qilish hamda ___ blokadasi|RAAS|renin-angiotenzin, aff|Shuningdek SGLT2 ingibitorlari.
+hematuria-1dkk81y|Gematuriya|45 yoshdan katta kattalarda ko'rinadigan gematuriya ___ yo'llanmani talab qiladi|shoshilinch|ikki haftalik|Siydik yo'llari xavfli o'smasini inkor qilish uchun.
+microscopic-hematuria-1dnb473|Mikroskopik gematuriya|Proteinuriya bilan doimiy mikroskopik gematuriya nimadan dalolat beradi|Koptokchali sababdan|Urologik sababdan|Dismorf eritrotsitlar va silindrlar buni tasdiqlaydi.
+prostate-specific-antigen-00m3cxg|Prostata spetsifik antigeni|PSA ejakulyatsiya yoki aralashuvdan keyin ___ kun ichida o'lchanmasligi kerak|2|ikki, 48 soat|Soxta oshishdan saqlanish uchun.
+bph-medical-therapy-0cqdlx4|Prostata giperplaziyasining dorivor davosi|Prostata xavfsiz giperplaziyasida kombinatsiyalangan davo nimadan iborat|Alfa-blokator va 5-alfa reduktaza ingibitori|Maksimal dozada ikkita alfa-blokator birga|Tez yengillik va uzoq muddatda bezni kichraytirish.
+urinary-retention-0wvo908|Siydik tutilishi|Surunkali tutilish bartaraf etilgach, obstruksiyadan keyingi ___ ga e'tibor bering|diurez|diurezga|U chuqur suyuqlik va elektrolit yo'qotishiga olib kelishi mumkin.
+neurogenic-bladder-1lhnf1k|Neyrogen qovuq|Dumg'aza siyish markazidan yuqorida orqa miya shikasti nima beradi|Spastik giperaktiv qovuq|Atonik, bo'shashgan qovuq|Dumg'aza shikastlari esa atoniya va toshib ketishni beradi.
+testicular-tumor-markers-10apkkb|Moyak o'smasi markerlari|Xoriokarsinoma ___ ni yaqqol oshiradi|hCG|beta-hcg|AFP esa sariqlik xaltasi o'smasini bildiradi.
+priapism-09mtyv1|Priapizm|To'rt soatdan ortiq davom etgan ishemik priapizm nimani talab qiladi|Shoshilinch aspiratsiya va fenilefrin|Kuzatuv va oddiy og'riq qoldiruvchi|Doimiy erektil disfunksiya xavfi bor.
+fracture-healing-15fdzu8|Sinishning bitishi|Sinish bitishi sinish joyida ___ hosil bo'lishidan boshlanadi|gematoma|qon laxtasi|Keyin yumshoq kallus, qattiq kallus va remodellanish.
+non-union-0jnhl5a|Bitmagan sinish|Sinishning bitmasligiga nima yo'l ochadi|Qon ta'minotining yomonligi va harakat|Gipsda qattiq immobilizatsiya qilish|Chekish va NYaQV ham bitishni buzadi.
+osteomyelitis-1wkth6g|Osteomiyelit|Osteomiyelitni erta aniqlash uchun eng sezgir tasvir usuli — ___|MRT|mri|Oddiy rentgen ikki hafta orqada qoladi.
+chronic-osteomyelitis-1mpdbq8|Surunkali osteomiyelit|Sekvestr nima|Infeksiyalangan to'qima ichidagi o'lik suyak|Yangi periostal suyakning hosil bo'lishi|Involyukrum esa uning atrofidagi yangi suyak.
+septic-arthritis-organism-0ur3s7c|Septik artrit qo'zg'atuvchisi|Jinsiy faol yosh kattada ___ septik artritini o'ylash kerak|gonokokk|gonoreya, neysseriya|Ko'pincha ko'chib yuruvchi, tenosinovit va toshma bilan.
+prosthetic-joint-infection-12767o4|Sun'iy bo'g'im infeksiyasi|Sun'iy bo'g'imning kechki infeksiyasi odatda nimadan bo'ladi|Koagulaza-manfiy stafilokokklardan|Streptococcus pyogenes dan|Implant yuzasidagi bioplyonka.
+bone-tumors-1cuacfs|Suyak o'smalari|Umuman eng ko'p uchraydigan xavfli suyak o'chog'i — ___|metastaz|metastazlar, ikkilamchi|Birlamchi suyak o'smalari ancha kam uchraydi.
+osteoid-osteoma-07vnbqj|Osteoid osteoma|Osteoid osteoma klassik holda nima beradi|NYaQV bilan yengillashadigan tungi og'riq|Suyakning og'riqsiz shishib chiqishi|Sklerotik halqa bilan o'ralgan kichik nidus.
+giant-cell-tumor-19wblk5|Gigant hujayrali o'sma|Suyakning gigant hujayrali o'smasi epifizda «___ pufaklari» ko'rinishini beradi|sovun|sovun pufagi|Mahalliy agressiv, ammo kamdan-kam metastaz beradi.
+tendinopathy-0cnf7ia|Tendinopatiya|Surunkali tendinopatiyada yallig'lanish emas, ___ kuzatiladi|degeneratsiya|degenerativ o'zgarish|Shuning uchun steroid in'eksiyasi payni zaiflashtirishi mumkin.
+achilles-rupture-1hr4i65|Axilles payining uzilishi|Axilles payi uzilishi nima bilan tasdiqlanadi|Musbat Simmonds boldirni qisish sinamasi|To'piqni yuqoriga buka olmaslik bilan|Ftorxinolonlar xavfni oshiradi.
+plantar-fasciitis-0uwj57q|Tovon fastsiiti|Tovon fastsiiti kunning ___ qadamlarida eng kuchli og'riq beradi|birinchi|dastlabki|Cho'zish mashqlari va ortopedik taglik bilan yaxshilanadi.
+frozen-shoulder-stages-0o1f9ti|«Muzlagan yelka» bosqichlari|Yopishqoq kapsulit qanday bosqichlardan o'tadi|Muzlash, muzlagan va erish|O'tkir, keyin surunkali|Ko'pincha o'tishi 18 oy oladi.
+rotator-cuff-tear-1wizb7o|Rotator manjeti uzilishi|Musbat «qo'lning tushishi» sinamasi ___ uzilishidan dalolat beradi|supraspinatus|rotator manjeti, kurak usti mushagi|Qo'l yonga ko'tarilgan holatdan birdan tushib ketadi.
+carpal-tunnel-treatment-13kjz5w|Karpal kanal sindromini davolash|Yengil karpal kanal sindromining birinchi qator davosi qaysi|Tungi lonjeta|Darhol operatsiya|Yordam bermasa, steroid in'eksiyasi qilinadi.
+ganglion-cyst-1n9h3k0|Gigroma|Gangliy kistasi ichida ___ suyuqlik bo'ladi va yorug'likni o'tkazadi|sinovial|jelesimon, musinli|Ko'pincha davolashsiz o'z-o'zidan yo'qoladi.
+de-quervain-tenosynovitis-1o8n9lt|De Kerven tenosinoviti|De Kerven tenosinoviti nima bilan tasdiqlanadi|Finkelshteyn sinamasi|Tinel belgisi|Bosh barmoqni yozuvchi va yonga ochuvchi paylar zararlanadi.
