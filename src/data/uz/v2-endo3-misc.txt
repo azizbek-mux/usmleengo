@@ -1,0 +1,43 @@
+body-mass-index-0lad828|Tana vazni indeksi|Semizlik TVI ___ va undan yuqori bo'lishi deb belgilanadi|30|o'ttiz|Ortiqcha vazn — 25 dan 29,9 gacha.
+metabolic-syndrome-167non4|Metabolik sindrom|Metabolik sindrom beshtadan uchta belgini talab qiladi, jumladan|Markaziy semizlik va triglitseridlarning oshishi|ZPLP oshgan, triglitseridlar esa normada|Shuningdek ZYuLP pastligi, gipertoniya va giperglikemiya.
+bariatric-surgery-0w5gzov|Bariatrik jarrohlik|Bariatrik operatsiyadan keyin umrbod ___ qo'shimchalari kerak|vitamin|vitaminlar, mikronutriyent|Ayniqsa B12, temir, kalsiy va D vitamini.
+gastric-bypass-17jo5vq|Oshqozon shuntlash|Ru-en-Y shuntlash vazn kamayishini qanday beradi|Cheklash va gormonal o'zgarish orqali|Faqat yog' so'rilmasligi orqali|GLP-1 va PYY o'zgarishlari sezilarli.
+leptin-0egszqf|Leptin|Yetishmovchilik emas, leptinga chidamlilik odamdagi ko'p ___ ni tushuntiradi|semizlik|semizlikni|Tug'ma leptin yetishmovchiligi juda kam uchraydi.
+orlistat-04vtbcm|Orlistat|Orlistat qanday ishlaydi|Oshqozon osti bezi lipazasini bloklab|Markazda ishtahani bostirib qo'yib|Yog' iste'moli ko'p bo'lsa, steatoreya beradi.
+insulin-resistance-0b26dyc|Insulinga chidamlilik|Insulinga chidamlilik qo'ltiq ostida akantoz ___ shaklida namoyon bo'lishi mumkin|nigrikans|nigricans|Baxmalsimon, qoraygan teri.
+polycystic-ovary-metabolic-risk-0t4oek9|Polikistoz tuxumdonda metabolik xavf|Polikistoz tuxumdon sindromi uzoq muddatda nima xavfini oshiradi|2-tur diabet va yurak-qon tomir kasalligi|Osteoporoz va mo'rt suyak sinishi xavfini|Og'iz orqali glyukoza tolerantligi sinamasi bilan skrining qiling.
+hypoglycemia-in-the-newborn-1bwf5rd|Chaqaloqda gipoglikemiya|Diabetli onalarning chaqaloqlarida gipoglikemiya homila ___ dan kelib chiqadi|giperinsulinemiyasi|giperinsulinizm|Ona glyukozasi to'xtagandan keyin ham davom etadi.
+thyroid-function-in-pregnancy-044yucc|Homiladorlikda qalqonsimon bez funksiyasi|Homiladorlikda levotiroksin ehtiyoji odatda ___|ortadi|oshadi, ko'payadi|Taxminan 25-50 foizga.
+postpartum-thyroiditis-0yxylj8|Tug'ruqdan keyingi tireoidit|Tug'ruqdan keyingi tireoidit odatda qanday kechadi|Bir yil ichida o'tib ketadi|Umrbod davolashni talab qiladi|Ba'zilarida esa doimiy gipotireoz qoladi.
+thyroid-eye-disease-0v1vlap|Qalqonsimon bez ko'z kasalligi|Og'ir qalqonsimon bez ko'z kasalligi steroidlar va ___ bilan davolanadi|nur terapiyasi|dekompressiya, teprotumumab|Chekishni tashlash shart.
+radioiodine-0yxhpue|Radioaktiv yod|Radioaktiv yod qachon qo'llanmaydi|Homiladorlik va emizishda|Bo'lmachalar fibrillatsiyasida|Shuningdek faol ko'z kasalligini yomonlashtirishi mumkin.
+protein-energy-malnutrition-103jlkj|Oqsil-energiya yetishmovchiligi|Og'ir o'tkir to'yib ovqatlanmaslik yelkaning o'rta qismi ___ bilan baholanadi|aylanasi|aylanma o'lchami|Shuningdek bo'yga nisbatan vazn va shish.
+vitamin-c-sources-0zyppij|C vitamini manbalari|Skorbut qancha vaqtdan keyin rivojlanadi|Uch oy yetishmovchilikdan keyin|Uch hafta yetishmovchilikdan keyin|Tanadagi zaxira cheklangan, ammo unchalik kam ham emas.
+fat-soluble-vitamins-1q1mkiy|Yog'da eriydigan vitaminlar|A, D, E va ___ vitaminlari so'rilishi uchun o't kerak|K|k vitamini|Xolestaz va yog' so'rilmasligida yetishmaydi.
+vitamin-toxicity-14uthsx|Vitamin toksikligi|Qaysi vitamin ortiqcha miqdorda eng xavfli?|A vitamini|C vitamini|Teratogen, gepatotoksik va kalla ichi bosimini oshiradi.
+iodine-0iht4xh|Yod|Ortiqcha yod paradoksal tarzda gipotireoz berishi mumkin — ___ -Chaykoff effekti|Volf|wolff|Organifikatsiyaning o'tkinchi blokadasi.
+fluoride-1n2v5vl|Ftor|Bolalikda ortiqcha ftor nimaga olib keladi|Tish flyuorozi|Suyak raxiti|Emalning dog'-dog' bo'lishi.
+alcohol-02qx1g9|Alkogol|Alkogol grammiga ___ kilokaloriya beradi va oziq moddalarni siqib chiqaradi|7|yetti|Kaloriya ortiqchaligiga qaramay to'yib ovqatlanmaslikka hissa qo'shadi.
+lead-exposure-0o23tsa|Qo'rg'oshin ta'siri|Qo'rg'oshinning so'rilishi ___ yetishmovchiligida ortadi|temir|temirning|Shuning uchun kambag'al sharoitdagi bolalar ikki karra xavf ostida.
+mercury-0oueoa0|Simob|Organik simob ta'siri asosan qayerdan keladi|Yirik yirtqich baliqlardan|Tish plombalaridan|Homilada nerv rivojlanishiga zarar yetkazadi.
+carbon-monoxide-0j3scw8|Is gazi|Is gazi gemoglobinga kisloroddan taxminan ___ marta kuchli bog'lanadi|240|200, 250|PaO2 normal bo'lgan holda to'qima gipoksiyasini beradi.
+asbestos-latency-1dovwxl|Asbestning latent davri|Asbest ta'siridan keyin mezoteliomaning latent davri qancha|20-40 yil|1-2 yil|Shuning uchun holatlar hozir ham uchraydi.
+silica-1yigue4|Kremniy|Silikoz ___ xavfini yaqqol oshiradi|sil|sil kasalligi|Makrofaglar funksiyasining buzilishi.
+noise-exposure-0f1tkhy|Shovqin ta'siri|Kasbiy shovqindan eshitishning pasayishi qanday|Oldini olish mumkin, ammo qaytmas|Dam olish bilan to'liq qaytadi|Eshitishni himoya qilish — yagona yo'l.
+heat-illness-06vfru3|Issiqlik kasalligi|Issiqlik urishi holdan toyishdan ___ funksiyasining buzilishi bilan farqlanadi|MNS|nevrologik, markaziy nerv sistemasi|Chalkashlik, tutqanoq yoki koma.
+altitude-illness-0n9sote|Baland tog' kasalligi|Baland tog'dagi miya shishi nima bilan davolanadi|Pastga tushish, kislorod va deksametazon|Faqat atsetazolamid va dam olish bilan|Pastga tushish — yakuniy davo.
+consanguinity-05p2leb|Qarindoshlar nikohi|Qarindoshlar o'rtasidagi nikoh ___ -retsessiv holatlar xavfini oshiradi|autosom|autosomal|Umumiy ajdodlardan kelgan allellar.
+founder-effect-0vickx2|«Asoschi effekti»|«Asoschi effekti» nimani tushuntiradi|Izolyatsiyalangan guruhda bir mutatsiyaning ko'pligini|Populyatsiyada yangi mutatsiyalarning ko'pligini|Ashkenazi yahudiylarida Tey-Saks kasalligi.
+genetic-counseling-1t86xp8|Genetik maslahat|Genetik maslahat yo'naltiruvchi emas, ___ bo'lishi kerak|yo'naltirmaydigan|bitaraf, qo'llab-quvvatlovchi|Mustaqil qarorlarni qo'llab-quvvatlash.
+predictive-testing-1nja58g|Bashoratlovchi test|Sog'lom voyaga yetmagan bolada Xantington uchun bashoratlovchi test|Odatda kattalikka qoldiriladi|Imkon qadar erta rag'batlantiriladi|Bolaning kelajakdagi muxtoriyati saqlanadi.
+incidental-findings-1jtjb00|Tasodifiy topilmalar|Genomik tekshiruv asosiy savolga aloqasi yo'q ___ topilmalarni ochishi mumkin|tasodifiy|ikkilamchi|Rozilikda bu oldindan ko'rsatilishi kerak.
+medical-error-0mnubhj|Tibbiy xato|Bemorga yetib bormasdan ushlab qolingan xato «___ sodir bo'lgan» hodisa deb ataladi|deyarli|yaqin|Ularni qayd etish kelgusi zararning oldini oladi.
+root-cause-analysis-0gjv5ps|Ildiz sabab tahlili|Ildiz sabab tahlili nimaga qaratilgan|Shaxsni ayblash emas, tizim nuqsonlariga|Qaysi shaxs aybdor ekanini aniqlashga|Baxtsiz hodisalarning «shveysar pishlog'i» modeli.
+never-events-1yg8ps9|«Hech qachon bo'lmasligi kerak» hodisalar|Noto'g'ri joyda operatsiya «___ bo'lmasligi kerak» hodisalar qatoriga kiradi|hech qachon|never|To'g'ri tekshiruvlar bilan butunlay oldini olish mumkin.
+surgical-checklist-1t9t3e0|Jarrohlik nazorat ro'yxati|JSST jarrohlik xavfsizligi ro'yxatida nima bor|Operatsiya atrofida uch bosqich|Bitta operatsiyadan oldingi bosqich|Kirish, tanaffus va chiqish bosqichlari.
+informed-consent-for-research-1jjz2iw|Tadqiqot uchun rozilik|Tadqiqot roziligi istalgan vaqtda ___ huquqini tushuntirishni ham talab qiladi|voz kechish|chiqib ketish, to'xtatish|Bu ularning davolanishiga ta'sir qilmaydi.
+equipoise-0ffct7u|Ekvipoyz|Klinik ekvipoyz nimani bildiradi|Qaysi guruh yaxshiroq ekani chindan noaniq|Har bir guruhga teng son taqsimlanishi|Randomizatsiya uchun axloqiy shart.
+placebo-05cjm87|Platsebo|Platsebo nazoratli sinov samarali ___ mavjud bo'lganda axloqsiz hisoblanadi|davo|terapiya, standart|Unda taqqoslovchi faol bo'lishi kerak.
+conflict-of-interest-1e0gi4x|Manfaatlar to'qnashuvi|Shifokorlarga sanoat tomonidan berilgan to'lovlar|E'lon qilinishi shart|Kichik bo'lsa ahamiyatsiz|Kichik sovg'alar ham dori tayinlashga ta'sir qiladi.
+health-inequality-0a2k123|Salomatlikdagi tengsizlik|Salomatlikning ijtimoiy ___ lari daromad, ta'lim va uy-joyni o'z ichiga oladi|belgilovchilari|determinantlari, omillari|Ta'siri bo'yicha ko'pincha klinik yordamdan ustun keladi.
+screening-ethics-04gprs2|Skrining etikasi|Sog'lom populyatsiyani skrining qilish nega alohida mas'uliyat yuklaydi|Aralashuv sog'lom odamlarga taklif qilinadi|Unda qatnashish qonun bo'yicha majburiy|Soxta musbat natijalarning zarari asoslanishi kerak.
