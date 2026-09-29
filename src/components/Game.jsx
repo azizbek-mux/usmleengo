@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import bank from "../data/bank.js";
+import bank, { bilingualBank } from "../data/bank.js";
 import {
   CODE_RE, DEFAULT_SETTINGS, GAME_TYPES, MAX_PLAYERS, MIN_PLAYERS, QUESTION_COUNTS, SECONDS,
   availableFor, inviteLink, maxPoints, pickGameQuestions,
@@ -200,7 +200,9 @@ function GameSetup({ onBack, onCreated }) {
     setFailed(false);
     const settings = { qtype, count, seconds, tags };
     try {
-      const code = await createGame(settings, pickGameQuestions(bank, settings));
+      // Both languages go up with the questions, so a game can be shared
+      // with a friend who reads the app in the other one.
+      const code = await createGame(settings, pickGameQuestions(await bilingualBank(), settings));
       onCreated(code);
     } catch {
       setFailed(true);
@@ -717,10 +719,11 @@ function Final({ game, send, onLeave }) {
 
   useEffect(() => { haptic(mine?.place === 1 ? "success" : "light"); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  function again() {
+  async function again() {
     haptic("medium");
     const s = game.settings;
-    send({ type: "again", questions: pickGameQuestions(bank, { tags: s.tags, qtype: s.qtype, count: s.count }) });
+    const pool = await bilingualBank();
+    send({ type: "again", questions: pickGameQuestions(pool, { tags: s.tags, qtype: s.qtype, count: s.count }) });
   }
 
   return (

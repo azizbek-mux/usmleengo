@@ -5,6 +5,7 @@
 // it plays. The room sends the whole game as that phone should see it
 // whenever anything changes; the phone sends only its own moves.
 
+import { lang } from "./i18n.js";
 import { RATING_API } from "./ratingApi.js";
 import { initData } from "./telegram.js";
 
@@ -92,6 +93,9 @@ export function connectGame(code, { nickname, onState, onStatus, onError, onNoti
         creatorToken: seat.creatorToken,
         initData: initData() || undefined,
         nickname,
+        // Sent on every join, so the room can put each question to this
+        // phone in the language its owner reads.
+        lang: lang(),
       }));
       onStatus?.("open");
     };

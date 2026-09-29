@@ -41,14 +41,33 @@ function localize(q) {
 export async function setBankLanguage(lang) {
   const want = lang === "uz" ? "uz" : "en";
   if (want === showing || !english.length) return;
-  if (want === "uz" && !uzText) {
-    const res = await fetch(`${import.meta.env.BASE_URL}questions.uz.json?v=${BANK_UZ_VERSION}`);
-    if (!res.ok) throw new Error(`${res.status} loading the Uzbek questions`);
-    uzText = await res.json();
-  }
+  if (want === "uz") await loadUzText();
   bank.length = 0;
   bank.push(...(want === "uz" ? english.map(localize) : english));
   showing = want;
+}
+
+/** The Uzbek text, fetched the first time anything needs it. */
+async function loadUzText() {
+  if (uzText) return uzText;
+  const res = await fetch(`${import.meta.env.BASE_URL}questions.uz.json?v=${BANK_UZ_VERSION}`);
+  if (!res.ok) throw new Error(`${res.status} loading the Uzbek questions`);
+  uzText = await res.json();
+  return uzText;
+}
+
+/**
+ * The bank in English with each question's Uzbek text attached as `uzt`,
+ * for the multiplayer game.
+ *
+ * A game is played by people who may not read the same language, so the
+ * creator sends both languages of every question and each phone shows the
+ * one its owner reads. If the Uzbek file cannot be fetched the game still
+ * goes ahead in English alone — a lost round is worse than a lost language.
+ */
+export async function bilingualBank() {
+  try { await loadUzText(); } catch { return english; }
+  return english.map((q) => (uzText[q.id] ? { ...q, uzt: uzText[q.id] } : q));
 }
 
 /**

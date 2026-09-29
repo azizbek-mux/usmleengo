@@ -112,7 +112,7 @@ export class GameRoom {
         return settle(false);
       }
       const who = await this.identify(msg);
-      const res = G.join(game, { clientId: msg.clientId, ...who, creatorToken: msg.creatorToken }, now);
+      const res = G.join(game, { clientId: msg.clientId, ...who, creatorToken: msg.creatorToken, lang: msg.lang }, now);
       if (res.error) {
         this.refuse(ws, res.error);
         return settle(false);
