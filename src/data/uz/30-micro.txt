@@ -26,3 +26,17 @@ protein-a-0xlehod|A oqsili|Staphylococcus aureus ning A oqsili IgG ning ___ qism
 shiga-toxin-1kxfsap|Shiga toksini|Shiga toksini nimani ishdan chiqarib ta'sir qiladi|Ribosomaning 60S subbirligini|Ribosomaning 30S subbirligini|Oqsil sintezini bloklaydi; qonli diareya va gemolitik-uremik sindrom beradi.
 ehec-0ueio9t|Enterogemorragik E. coli|E. coli O157:H7 boshqa E. coli dan nimasi bilan farq qiladi|Sorbitolni fermentlamaydi|Gram-musbat tayoqcha ekani bilan|Shiga kabi toksin; antibiotiklar berilmaydi, ular gemolitik-uremik sindrom xavfini oshiradi.
 infective-endocarditis-1xgk2as|Infeksion endokardit|Bakteriyalar shikastlangan qopqoqlarga nima orqali yopishadi|Fibrin-trombotsit to'plamlari orqali|Shikastlanmagan butun endoteliy orqali|Bakteriemiya paytida steril vegetatsiyalarga o'tiradi.
+enterococcus-0jq11bk|Enterokokk|Enterokokklar qanday gemoliz beradi?|Gamma (gemolizsiz)|Beta-gemoliz|6,5% NaCl va o't muhitida o'sadi.
+lac-operon-10g00bu|Laktoza operoni|___ lokusidagi mutatsiya laktoza operonining doimiy ifodalanishiga olib keladi|operator|operator lokusi|Repressor bog'lana olmaydi, shuning uchun transkripsiya to'xtovsiz davom etadi.
+lac-operon-1e8uh0c|Laktoza operoni|Glyukoza ko'p bo'lsa, laktoza operoni nimaning pasayishi hisobiga bostiriladi|sAMF|Laktoza|sAMF kam bo'lsa, CAP kam bog'lanadi va transkripsiya kuchsiz bo'ladi.
+influenza-host-range-0lu1lij|Gripp virusining xo'jayinlari|Grippning turlararo yuqishi uchun nima o'zgarishi kerak|Gemagglutinin|Faqat neyraminidaza|Gemagglutinin odam sial kislotasi retseptorlariga bog'lanishi kerak.
+staphylococcus-epidermidis-0zwqpzu|Staphylococcus epidermidis|S. epidermidis koagulaza bo'yicha qanday|Manfiy|Musbat|Protezlarda bioparda hosil qiladi; novobiotsinga sezgir.
+campylobacter-jejuni-1g1u5br|Campylobacter jejuni|Kampilobakter ko'pincha nimadan yuqadi|Yaxshi pishmagan parranda go'shtidan|Konservalangan oziq-ovqat mahsulotlaridan|Qonli diareya; Giyen-Barre sindromi va reaktiv artritdan oldin keladi.
+human-papillomavirus-0w3ty5j|Odam papilloma virusi|OPV nafas yo'llarining qaysi tuzilmasiga moyillik ko'rsatadi?|Haqiqiy tovush burmalari|Alveolalar va mayda nafas yo'llari|6 va 11 tiplaridan qaytalanuvchi respirator papillomatoz.
+cryptosporidium-0xz79ff|Kriptosporidiya|OITS da kriptosporidiya qanday diareya beradi?|Surunkali suvsimon|Qonli dizenteriyasimon|Kislotaga chidamli ootsistalar; CD4 past bo'lsa og'ir kechadi.
+hepatitis-b-serology-1q0q8t2|B gepatiti serologiyasi|Anti-HBs musbat, anti-HBc manfiy bo'lsa, bu nimani bildiradi|Emlangan|O'tkazilgan infeksiya|Vaksinada faqat HBsAg bor, shuning uchun yadroga qarshi antitelo hosil bo'lmaydi.
+pelvic-inflammatory-disease-1hbztl9|Chanoq a'zolari yallig'lanishi|Bu holat seftriakson va yana nima bilan davolanadi|Doksitsiklin|Vankomitsin|Gonokokk va xlamidiyani birga qoplaydi.
+clindamycin-0kmddxt|Klindamitsin|Klindamitsin ribosomaning qaysi subbirligiga bog'lanadi?|50S|30S|Bakteriostatik; diafragmadan yuqoridagi anaeroblarni qoplaydi.
+clindamycin-0hbm7mo|Klindamitsin|Klindamitsinning klassik nojo'ya ta'siri|Clostridioides difficile koliti|Nefrotoksiklik va eshitish pasayishi|Yo'g'on ichak mikroflorasini buzadi.
+hookworm-0a3ncgj|Ilonbosh chuvalchang|Ilonbosh chuvalchang qanday anemiya chaqiradi?|Mikrositar temir tanqisligi|Makrositar megaloblastik|Ichakdan surunkali qon yo'qotish.
+hookworm-02xwf9q|Ilonbosh chuvalchang|Ilonbosh chuvalchang lichinkalari organizmga ___ orqali kiradi|teri|oyoq, tovon|Ko'pincha yalangoyoq yurganda teri orqali kirib boradi.
