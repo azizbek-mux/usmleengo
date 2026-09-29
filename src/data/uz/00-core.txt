@@ -79,7 +79,7 @@ neisseria-0qpl4lw|Neisseria|Neisseria mikroorganizmlari shakli bo'yicha gram-man
 clostridioides-difficile-1d4vob7|Clostridioides difficile|C. difficile ning birlamchi davosi:|Og'iz orqali vankomitsin|Og'iz orqali metronidazol|Hozirda birlamchi davo — og'iz orqali vankomitsin yoki fidaksomitsin.
 malaria-0l8g0f8|Bezgak|Bezgakning eng xavfli turi — Plasmodium ___|falciparum|p falciparum|P. falciparum — miya bezgagi, isitmaning notekis kechishi.
 hiv-0ojgjo1|OIV|OITS CD4 soni qanchadan past bo'lganda tashxislanadi:|200|500|CD4 200 hujayra/mm3 dan past bo'lsa yoki OITSni belgilovchi kasallik bo'lsa.
-hepatitis-b-0o1d002|Gepatit B|Gepatit B ga qarshi emlashdan keyingi immunitetda faqat anti-___ bo'ladi|HBs|anti-hbs, hbsab|Emlash faqat anti-HBs beradi. O'tkazilgan infeksiyada anti-HBc ham bo'ladi.
+hepatitis-b-0o1d002|B gepatiti|Gepatit B ga qarshi emlashdan keyingi immunitetda faqat anti-___ bo'ladi|HBs|anti-hbs, hbsab|Emlash faqat anti-HBs beradi. O'tkazilgan infeksiyada anti-HBc ham bo'ladi.
 influenza-0qj933c|Gripp|Gripp virusining genomi:|RNK|DNK|Segmentli manfiy zanjirli RNK — segmentlar antigen shiftiga imkon beradi.
 candida-albicans-0h24ytn|Candida albicans|Candida albicans ___ °C da o'sish naychalarini hosil qiladi|37|37 c, o'ttiz yetti|37 °C da o'sish naychalarining hosil bo'lishi — klassik aniqlash belgisi.
 rabies-17dxo4d|Quturish|Quturishda neyronlarda Babesh-Negri tanachalari kuzatiladi:|Ha|Yo'q|Ha — eozinofil sitoplazmatik kiritmalar, klassik holda gippokampda.

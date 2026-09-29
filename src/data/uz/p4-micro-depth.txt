@@ -32,3 +32,20 @@ mycoplasma-13vq23z|Mikoplazma|Mikoplazmada ___ yo'q, shuning uchun beta-laktamla
 legionella-0glibcb|Legionella|Legionella qanday tashxislanadi|Siydikda antigen testi bilan|Qonni ekib tekshirish bilan|Gram usulida yomon bo'yaladi; ko'mir-xamirturush ekstrakti agari kerak.
 legionella-06am1x6|Legionella|Legionella pnevmoniyasi klassik holda nima bilan birga keladi|Diareya va giponatriemiya|Qabziyat va natriy yuqoriligi|Suv tizimlari va konditsionerlardan yuqadi.
 chlamydia-trachomatis-0s6klwi|Chlamydia trachomatis|Xlamidiyaning A-C serotiplari ko'rlikning asosiy sabablaridan biri — ___ ni chaqiradi|traxoma|traxomani|D-K jinsiy infeksiya, L1-L3 esa venerik limfogranulyoma beradi.
+chlamydia-1chao5i|Xlamidiya|Xlamidiya nimani o'zi hosil qila olmaydi|ATF|Oqsil|Hujayra ichida yashovchi majburiy energiya paraziti.
+lyme-disease-1gkoqw4|Laym kasalligi|Erta Laym kasalligi ___ eritemani chaqiradi|ko'chuvchi|surunkali ko'chuvchi|Ixodes kanasi chaqqandan keyin nishonsimon toshma.
+lyme-disease-137jbb4|Laym kasalligi|Kechki Laym kasalligi nimaga olib kelishi mumkin|Atrioventrikulyar blokada|Aorta stenozi|Shuningdek artrit va yuz nervi falaji.
+syphilis-1pquel8|Zaxm|Birlamchi zaxm og'riqsiz ___ beradi|shankr|qattiq shankr|Og'riqli yaralar esa yumshoq shankrdan dalolat beradi.
+secondary-syphilis-0kvzssf|Ikkilamchi zaxm|Ikkilamchi zaxm klassik holda qayerni zararlaydi|Kaft va tovonni|Faqat bosh terisi sohasini|Kondilomalar bilan dog'li-papulali toshma.
+neurosyphilis-1y4cine|Neyrosifilis|Argayl Robertson qorachiqlari akkomodatsiya qiladi, ammo ___|reaksiya bermaydi|torayadi, yorug'likka javob beradi|Bunday qorachiq neyrosifilisga xos.
+jarisch-herxheimer-reaction-0lkpzce|Yarish-Gerksgeymer reaksiyasi|Yarish-Gerksgeymer reaksiyasi nimadan keyin yuzaga keladi|Zaxmni penitsillin bilan davolashdan|Davolanmagan ikkilamchi zaxmdan|Parchalangan spiroxetalardan isitma va mushak og'rig'i.
+rocky-mountain-spotted-fever-1075rwd|Toshli tog'lar dog'li isitmasi|Bu isitmadagi toshma ___ dan boshlanadi|bilak va to'piqlar|bilaklar, to'piqlar|Keyin markazga tarqaladi. Rickettsia rickettsii.
+herpes-simplex-0hhvo3y|Oddiy gerpes|1-tip gerpes ensefaliti ___ bo'lagini afzal ko'radi|chakka|chakka bo'lagi|Gemorragik nekroz; darhol atsiklovir bilan davolanadi.
+cytomegalovirus-15ykybo|Sitomegalovirus|Sitomegalovirus zararlagan hujayralarda nima ko'rinadi|«Boyqush ko'zi» yadro ichi kiritmalari|Babesh-Negri sitoplazmatik tanachalari|Babesh-Negri tanachalari quturishga xos.
+epstein-barr-virus-0fy14b7|Epshteyn-Barr virusi|Epshteyn-Barr virusi burun-halqum karsinomasi va ___ limfomasi bilan bog'liq|Berkitt|burkitt|Shuningdek Xodjkin limfomasi va transplantatsiyadan keyingi limfoproliferativ kasallik.
+infectious-mononucleosis-0uom41k|Infeksion mononukleoz|Mononukleozda amoksitsillin berish nimaga olib keladi|Dog'li-papulali toshma|Anafilaktik reaksiya|Klassik ishora, haqiqiy penitsillin allergiyasi emas.
+infectious-mononucleosis-1iytcru|Infeksion mononukleoz|Mononukleoz bilan og'rigan bemorlar nimadan saqlanishi kerak|Kontaktli sport turlaridan|Sut mahsulotlaridan|Bir necha hafta taloq yorilishi xavfi bor.
+varicella-zoster-0ki7zxt|Suvchechak va o'rab oluvchi temiratki|Suvchechak virusi orqa ildiz ___ ida latent holda saqlanadi|gangliyalari|gangliya, gangliy|Dermatom bo'ylab temiratki sifatida qayta faollashadi.
+hepatitis-b-05p17bv|B gepatiti|HBeAg yuqori ___ va yuqumlilikni bildiradi|replikatsiya|virus replikatsiyasi, yuqumlilik|Virusning faol ko'payishini belgilaydi.
+hepatitis-d-0nh86eu|D gepatiti|D gepatiti ko'payish uchun qaysi virusga muhtoj?|B gepatiti|C gepatiti|U HBsAg qobig'idan foydalanadi.
+hepatitis-e-0r80mlh|E gepatiti|E gepatiti ayniqsa qachon xavfli|Homiladorlikda|Bolalikda|Uchinchi trimestrda fulminant gepatitdan o'lim yuqori.
