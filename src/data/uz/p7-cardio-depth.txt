@@ -1,0 +1,66 @@
+# p7-cardio-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+cardiac-cycle-1fgd0mt|Yurak sikli|Birinchi yurak toni mitral va ___ qopqoqlarning yopilishi|trikuspidal|uch tavaqali|Sistolaning boshlanishini bildiradi.
+cardiac-cycle-18jn0us|Yurak sikli|Ikkinchi yurak toni aorta va ___ qopqoqlarining yopilishi|o'pka arteriyasi|pulmonal|Nafas olganda bo'linish kengayadi.
+isovolumetric-contraction-1lu1pmi|Izovolumetrik qisqarish|Izovolumetrik qisqarish paytida barcha qopqoqlar|Yopiq|Ochiq|Hajm o'zgarmagan holda bosim oshadi.
+ejection-fraction-1fl20u4|Otilib chiqish fraksiyasi|Otilib chiqish fraksiyasi = zarb hajmi / oxirgi ___ hajm|diastolik|diastolik hajm|Normada 55 foizdan yuqori.
+cardiac-output-1oedi17|Yurakdan qon haydash hajmi|Haydash hajmi = zarb hajmi × ___ soni|yurak urishlari|yurak urishi|Fik: kislorod iste'moli / arteriovenoz farq.
+preload-1xhzzn0|Oldingi yuklama|Oldingi yuklama nimaga eng yaqin mos keladi|Oxirgi diastolik hajmga|Tizimli tomirlar qarshiligiga|Keyingi yuklama aortadagi bosimga mos keladi.
+frank-starling-0vnyhjv|Frank-Starling qonuni|Frank-Starling qonuni zarb hajmini ___ uzunligi bilan bog'laydi|sarkomer|mushak tolasi, tola|Ko'proq cho'zilish — ko'proq kuch, ma'lum chegaragacha.
+pulse-pressure-0tindu3|Puls bosimi|Puls bosimini asosan nima belgilaydi|Zarb hajmi va arteriyalar cho'ziluvchanligi|Yurak urishi soni va tizimli qarshilik|Aorta regurgitatsiyasida kengayadi, tamponadada torayadi.
+jugular-venous-pulse-1dsc0vl|Bo'yinturuq vena pulsi|Bo'yinturuq vena pulsining a to'lqini — bo'lmacha ___|qisqarishi|sistolasi|Bo'lmachalar fibrillatsiyasida yo'qoladi; trikuspidal stenozda gigant bo'ladi.
+cannon-a-waves-0bvutr6|«To'p» a to'lqinlari|«To'p» a to'lqinlari nimadan dalolat beradi|Bo'lmachalar yopiq qopqoqqa qarshi qisqarayotganidan|Trikuspidal qopqoq orqali regurgitatsiya borligidan|To'liq yurak blokadasi va qorincha taxikardiyasida kuzatiladi.
+ecg-intervals-1j0d3d9|EKG intervallari|PR interval normada ___ soniyadan kam davom etadi|0,2|0.2, 200, 0,20|Undan uzun bo'lsa — birinchi darajali blokada.
+mobitz-type-i-0t9renp|Mobitz I tip|Venkebax blokadasida nima kuzatiladi|PR asta-sekin uzayib, keyin bitta qisqarish tushib qoladi|PR o'zgarmagan holda to'satdan qisqarishlar tushib qoladi|Odatda xavfsiz va AV tugun darajasida.
+mobitz-type-ii-1cqm11o|Mobitz II tip|Mobitz II tip blokadada nima kerak|Kardiostimulyator|Faqat kuzatuv|U tugundan pastda va to'satdan to'liq blokadaga o'tishi mumkin.
+complete-heart-block-03itd3v|To'liq yurak blokadasi|Uchinchi darajali blokadada P to'lqinlari va QRS komplekslari ___|dissotsiatsiyalangan|bir-biridan mustaqil|Bo'lmacha va qorincha chastotalari bir-biriga bog'liq emas.
+ventricular-tachycardia-09cff3a|Qorincha taxikardiyasi|Keng kompleksli taxikardiyani nima deb hisoblash kerak|Qorincha taxikardiyasi|Aberrant o'tkazuvchanlikli supraventrikulyar|Qorincha taxikardiyasini supraventrikulyar deb davolash o'limga olib kelishi mumkin.
+torsades-de-pointes-0t9kt45|«Piruet» taxikardiyasi|«Piruet» taxikardiyasi vena ichiga ___ bilan davolanadi|magniy|magniy sulfat|Shuningdek kaliyni tuzatish va aybdor preparatni to'xtatish.
+atrial-flutter-17khvm1|Bo'lmachalar titrashi|Bo'lmachalar titrashida klassik holda nima ko'rinadi|Daqiqada 300 ga yaqin arrasimon to'lqinlar|Noritmik ritm, P to'lqinlari aniqlanmaydi|Ko'pincha 2:1 blokada bilan, chastota 150 ga yaqin.
+hyperkalemia-07fcnp9|Giperkaliemiya|Og'ir giperkaliemiya QRS ni kengaytirib, ___ to'lqin ko'rinishini beradi|sinusoidal|sinus, sinusoida|Yurak to'xtashi oldidan keladigan ritm, darhol kalsiy kerak.
+hypokalemia-0pv7hgu|Gipokaliemiya|Gipokaliemiya klassik holda nimani beradi|U to'lqinlarini|Cho'qqisimon T to'lqinlarini|Cho'qqisimon T to'lqinlari giperkaliemiyaga xos.
+pericarditis-1jc2n9y|Perikardit|O'tkir perikarditda diffuz ST ko'tarilishi va ___ depressiyasi kuzatiladi|PR|pr segmenti|ST ko'tarilishli infarktdan ajratishda foydali belgi.
+myocardial-infarction-16ewqri|Miokard infarkti|Infarktdan keyin koagulyatsion nekroz ___ soatda shakllanadi|4|4-12, to'rt|To'lqinsimon tolalar bundan oldin paydo bo'ladi.
+myocardial-infarction-0mrhpsw|Miokard infarkti|Infarktdan keyin yorilish xavfi qachon eng yuqori|3-7 kunda|24 soat ichida|Makrofaglar kollagenning katta qismini parchalagan payt.
+dressler-syndrome-0jerrmi|Dressler sindromi|Dressler sindromi — infarktdan haftalar keyin rivojlanadigan ___ perikardit|autoimmun|immun|Isitma, plevral og'riq va yallig'lanish markerlarining oshishi.
+inferior-myocardial-infarction-17ss4hr|Pastki devor miokard infarkti|Pastki devor infarktida qaysi tarmoqlarda o'zgarish bo'ladi|II, III va aVF|V1 dan V4 gacha|Odatda o'ng toj arteriya.
+anterior-myocardial-infarction-1vferxz|Oldingi devor miokard infarkti|Oldingi devor infarktida qaysi tarmoqlarda o'zgarish bo'ladi|V1-V4|II, III va aVF|Chap oldingi pastga tushuvchi arteriya; prognozi eng yomon.
+troponin-1jznydc|Troponin|Troponin infarktdan keyin ___ soatda ko'tarila boshlaydi|3|3-4, 4, uch|24 soatda avjiga chiqadi va bir hafta yuqori turadi.
+reinfarction-1ky6zfs|Qayta infarkt|Bir necha kun ichida qayta infarktni aniqlash uchun eng yaxshi marker|KFK-MB|Troponin|KFK-MB 48 soatda normallashadi, shuning uchun qaytadan oshishi mumkin.
+coronary-steal-12u1dvj|Toj qon «o'g'irlash»|Dipiridamol sog'lom tomirlarni kengaytirib, toj qon ___ ga olib keladi|o'g'irlanishi|o'g'irlash|Qon torayib qolgan sohadan boshqa tomonga burib yuboriladi.
+heart-failure-0ieykm1|Yurak yetishmovchiligi|Normal ___ yurak yetishmovchiligini ishonchli inkor qiladi|BNP|nt-probnp, natriyuretik peptid|Yuqori manfiy prognostik qiymat.
+heart-failure-0zplaqb|Yurak yetishmovchiligi|Qaysi guruh belgilarni yaxshilaydi, ammo o'limni KAMAYTIRMAYDI?|Halqali diuretiklar|AFF ingibitorlari|Diuretiklar dimlanishni yengillashtiradi, yashovchanlikka ta'sir qilmaydi.
+heart-failure-1mne018|Yurak yetishmovchiligi|___ ingibitorlari otilib chiqish fraksiyasi pasaygan va saqlangan holatlarda ham o'limni kamaytiradi|SGLT2|sglt-2|Dapagliflozin va empagliflozin.
+digoxin-in-heart-failure-0bhrkqh|Yurak yetishmovchiligida digoksin|Yurak yetishmovchiligida digoksin nima beradi|Yotqizishni kamaytiradi, o'limni esa yo'q|Belgilarni ham, yashovchanlikni ham yaxshilaydi|Belgilarni va chastotani nazorat qilishda foydali.
+orthopnea-04vtbo2|Ortopnoe|Ortopnoe — ___ yotganda paydo bo'ladigan hansirash|tekis|chalqancha, yotgan holatda|Venoz qaytish ortib, ishdan chiqqan qorincha bardosh bera olmaydi.
+cor-pulmonale-0772ppr|O'pka yuragi|O'pka yuragi — nima tufayli yuzaga kelgan o'ng qorincha yetishmovchiligi|O'pka kasalligi|Chap qorincha yetishmovchiligi|Chap yetishmovchilikdan kelib chiqqan o'ng yetishmovchilik o'pka yuragi emas.
+aortic-stenosis-0603vp2|Aorta stenozi|Aorta stenozida puls sekin ko'tariladi, bu pulsus ___ et tardus deyiladi|parvus|parvus et tardus|Shuningdek ikkinchi ton kuchsizlanadi.
+aortic-stenosis-06xaaj8|Aorta stenozi|Ichakdan qon ketishi bilan kechuvchi aorta stenozi nimadan dalolat beradi|Xeyde sindromidan|Zollinger-Ellison sindromidan|Orttirilgan Villebrand kasalligi va angiodisplaziya.
+aortic-regurgitation-0nl0xkz|Aorta regurgitatsiyasi|Aorta regurgitatsiyasida boshning qimirlab turishi ___ belgisi deyiladi|de Musse|de musset, musset|Keng puls bosimining ko'plab nom bilan atalgan belgilaridan biri.
+mitral-valve-prolapse-08p6c7s|Mitral qopqoq prolapsi|Mitral qopqoq prolapsi nimani beradi|Mezosistolik «klik»|Ochilish qarsillashi|Eng ko'p uchraydigan qopqoq nuqsoni; odatda xavfsiz.
+infective-endocarditis-01l96wm|Infeksion endokardit|Endokarditda barmoqlardagi og'riqli tugunchalar ___ tugunchalari deyiladi|Osler|osler tugunchalari|Osler — og'riqli. Janevey o'choqlari og'riqsiz.
+endocarditis-prophylaxis-0ljija0|Endokardit profilaktikasi|Stomatologik muolajadan oldin antibiotik profilaktikasi kimlarga beriladi|Protez qopqoq yoki oldin endokardit bo'lganlarga|Shovqini eshitiladigan har qanday bemorga|Ko'rsatmalar ancha toraytirilgan.
+culture-negative-endocarditis-18ko3hm|Ekmada o'smaydigan endokardit|Ekmada o'smaydigan endokardit nimadan dalolat beradi|HACEK yoki Coxiella mikroorganizmlaridan|Staphylococcus aureus infeksiyasidan|Talabchan, oziq muhitda yomon o'sadigan mikroorganizmlar.
+abdominal-aortic-aneurysm-12x698p|Qorin aortasi anevrizmasi|Anevrizmani operatsiya qilish diametri ___ sm dan oshganda ko'rib chiqiladi|5,5|5.5, 55|Yoki tez kengayganda, yoki belgilar paydo bo'lganda.
+aortic-dissection-0lfcyxn|Aorta qatlamlanishi|Stenford bo'yicha A tipdagi qatlamlanishda nima kerak|Shoshilinch operatsiya|Konservativ davolash|B tipi asoratlanmasa, konservativ davolanadi.
+peripheral-arterial-disease-0542szc|Periferik arteriyalar kasalligi|Periferik arteriyalar kasalligi to'piq-___ indeksi bilan skrining qilinadi|bilak|brachial, yelka|0,9 dan past bo'lsa — patologiya.
+deep-vein-thrombosis-1sw16ih|Chuqur vena trombozi|Eng ko'p uchraydigan irsiy trombofiliya|V Leyden omili|Antitrombin yetishmovchiligi|Faollashgan C oqsiliga rezistentlik.
+superior-vena-cava-syndrome-0itnwo3|Yuqori kovak vena sindromi|Yuqori kovak vena sindromi ko'pincha ___ saratoni tufayli yuzaga keladi|o'pka|o'pka saratoni|Yuz shishi va bo'yin venalarining kengayishi.
+giant-cell-arteritis-19v89i7|Gigant hujayrali arteriit|Gigant hujayrali arteriit uchun qaysi ko'rsatkichning oshishi xos|EChT ning yaqqol oshishi|Kreatinkinazaning oshishi|Ko'pincha soatiga 100 mm dan yuqori.
+kawasaki-disease-01x5s0i|Kavasaki kasalligi|Kavasaki kasalligi ___ arteriyalarni zararlaydi|toj|toj arteriyalari|Davolanmasa, chorak qismigacha holatda anevrizma paydo bo'ladi.
+takayasu-arteritis-191s6fy|Takayasu arteriiti|Takayasu arteriiti «pulssiz kasallik» deyiladi, chunki u nimani zararlaydi|Aorta ravog'i tarmoqlarini|Terining mayda tomirlarini|Yosh osiyolik ayollar; qo'llarda puls yo'q.
+eisenmenger-syndrome-0zx7e2p|Eyzenmenger sindromi|Eyzenmenger sindromi — chapdan o'ngga shuntning ___|teskari burilishi|teskarisiga o'zgarishi|O'pka tomirlari kasalligi o'ng tomon bosimini chapdan oshirib yuboradi.
+eisenmenger-syndrome-0wgsmbt|Eyzenmenger sindromi|Eyzenmenger fiziologiyasi rivojlangach, shuntni yopish|Mumkin emas|Shoshilinch bajariladi|Uni yopish yagona dekompressiya yo'lini olib tashlaydi.
+coarctation-of-the-aorta-0w0j20k|Aorta koarktatsiyasi|Koarktatsiya ko'krak rentgenogrammasida qovurg'alarning ___ chetida o'yiqlar hosil qiladi|pastki|pastki qismida|Kengaygan kollateral qovurg'alararo arteriyalar tufayli.
+tetralogy-of-fallot-0747bzo|Fallo tetradasi|Fallo xuruji nima bilan yengillashadi|Cho'kkalab o'tirish|O'rnidan turish|Cho'kkalash tizimli qarshilikni oshirib, o'ngdan chapga shuntni kamaytiradi.
+transposition-of-the-great-arteries-19b21uc|Magistral arteriyalar transpozitsiyasi|Transpozitsiya ko'krak rentgenogrammasida «ipdagi ___» ko'rinishini beradi|tuxum|tuxumcha|Ko'ks oralig'i tor, magistral tomirlar ustma-ust joylashadi.
+ventricular-septal-defect-1tl24um|Qorinchalararo to'siq nuqsoni|Umuman eng ko'p uchraydigan tug'ma yurak nuqsoni|Qorinchalararo to'siq nuqsoni|Bo'lmachalararo to'siq nuqsoni|Kichiklarining ko'pchiligi o'z-o'zidan bitib ketadi.
+truncus-arteriosus-0gwlub8|Umumiy arterial poya|Umumiy arterial poya nimaning bo'lmasligidan kelib chiqadi|Aortopulmonal to'siq hosil bo'lmasligidan|Endokardial yostiqchalar qo'shilmasligidan|Qorinchalararo nuqson ustida yagona chiqish tomiri.
+class-ia-antiarrhythmics-142fzgo|IA sinf antiaritmiklari|Kinidin va prokainamid QT intervalni ___|uzaytiradi|cho'zadi|«Piruet» xavfi. Kinidin sinxonizm ham chaqiradi.
+amiodarone-0fja76v|Amiodaron|Amiodaronning eng xavfli uzoq muddatli nojo'ya ta'siri|O'pka fibrozi|Buyrak yetishmovchiligi|Shuningdek qalqonsimon bez, jigar, shox parda va teriga ta'sir.
+adenosine-1wc31ln|Adenozin|Adenozin ___ tugunni vaqtincha bloklab, supraventrikulyar taxikardiyani to'xtatadi|AV|av tugun, atrioventrikulyar|Qisqa, ammo qo'rqinchli «halokat hissi» beradi.
+verapamil-and-beta-blockers-0cfk4qs|Verapamil va beta-blokatorlar|Verapamilni beta-blokator bilan birga qo'llash nima xavfini tug'diradi|Chuqur bradikardiya va yurak blokadasi|Rikoshet gipertenziya va taxikardiya|AV tugunning qo'shilib bostirilishi.
+hydralazine-0bnp40n|Gidralazin|Gidralazin venalardan ko'ra ___ ni kuchliroq kengaytiradi|arteriolalar|arteriyalar|Reflektor taxikardiya beradi; beta-blokator bilan birga qo'llanadi.
+clonidine-withdrawal-18duart|Klonidinni to'xtatish|Klonidinni keskin to'xtatish nimaga olib keladi|Rikoshet gipertenziya|Uzoq davom etuvchi gipotoniya|Dozani asta-sekin kamaytirish kerak.
+ivabradine-1l6ydu9|Ivabradin|Ivabradin «g'alati» ___ tokini bloklab yurakni sekinlashtiradi|If|if toki, i-f|Faqat sinus tugunga ta'sir qiladi, qisqaruvchanlikka tegmaydi.
+sacubitril-009eqt3|Sakubitril|Sakubitril nimani ingibitsiya qilib ta'sir ko'rsatadi|Neprilizin|AFF|Uni AFF ingibitori bilan birga qo'llash mumkin emas.
