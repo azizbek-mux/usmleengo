@@ -229,6 +229,9 @@ const uzLengthTells = [];
 let uzFiles = [];
 try { uzFiles = readdirSync(UZ).filter((f) => f.endsWith(".txt")).sort(); } catch { /* none yet */ }
 const CURLY = /[‘’ʻʼ`]/;
+// Uzbek here is Latin script. A Cyrillic or Turkish letter is a typo that
+// reads as a different letter, so it must never reach the bank.
+const FOREIGN = /[Ѐ-ӿİıŞşĞğ]/;
 for (const f of uzFiles) {
   readFileSync(join(UZ, f), "utf8").split(/\r?\n/).forEach((raw, i) => {
     const line = raw.trim();
@@ -242,6 +245,8 @@ for (const f of uzFiles) {
     if (uz[id]) { uzErrors.push(`${where}: ${id} translated twice`); return; }
     if (!topic || !explain) { uzErrors.push(`${where}: empty topic or explanation`); return; }
     if (CURLY.test(line)) { uzErrors.push(`${where}: write o' and g' with the plain apostrophe`); return; }
+    const foreign = line.match(FOREIGN);
+    if (foreign) { uzErrors.push(`${where}: "${foreign[0]}" is a Cyrillic or Turkish letter, not Uzbek Latin`); return; }
     if (en.type === "gap") {
       if (!q.includes("___")) { uzErrors.push(`${where}: a typed question needs ___`); return; }
       if (!four) { uzErrors.push(`${where}: no answer`); return; }

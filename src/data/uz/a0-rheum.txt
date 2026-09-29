@@ -5,8 +5,8 @@ teriparatide-0zrmqkf|Teriparatid|Teriparatid suyakni qanday mustahkamlaydi|Osteo
 bisphosphonates-0qwgzq1|Bisfosfonatlar|Bisfosfonatlar qanday ta'sir qiladi|Osteoklastlar apoptozini oshirib|Osteoblastlarni qo'zg'atish orqali|Jag' osteonekrozi va sonning atipik sinishi xavfi.
 osteoporosis-histology-0hgmq17|Osteoporoz gistologiyasi|Osteoporozda nima kuzatiladi|Trabekulalar yupqalashadi va bog'lanishlari kamayadi|Suyakda mineralsizlangan osteoid to'planib qoladi|Suyak miqdori va sifati pasayadi; mineralizatsiya normada.
 osteomalacia-1ncmzv9|Osteomalyatsiya|Osteomalyatsiya nima bilan tavsiflanadi|Suyakda mineralsizlangan osteoidning ko'pligi|Massa kam, mineralizatsiya esa normada|Kattalarda D vitamini yetishmovchiligi.
-ankylosing-spondylitis-1l2854p|Anlikozlovchi spondilit|Ankilozlovchi spondilit ___ birikkan joylarini yallig'lantiradi|payning|pay, entezis|Entezit; O'NO-alfa va IL-17 boshqaradi. HLA-B27 bilan bog'liq.
-ankylosing-spondylitis-16ml3dn|Anlikozlovchi spondilit|Ankilozlovchi spondilitda rentgenda nima ko'rinadi|Eroziyalar va yangi suyak hosil bo'lishi|Yangi suyaksiz sof suyak yo'qotilishi|«Bambuk tayoq» va sakroileit.
+ankylosing-spondylitis-1l2854p|Ankilozlovchi spondilit|Ankilozlovchi spondilit ___ birikkan joylarini yallig'lantiradi|payning|pay, entezis|Entezit; O'NO-alfa va IL-17 boshqaradi. HLA-B27 bilan bog'liq.
+ankylosing-spondylitis-16ml3dn|Ankilozlovchi spondilit|Ankilozlovchi spondilitda rentgenda nima ko'rinadi|Eroziyalar va yangi suyak hosil bo'lishi|Yangi suyaksiz sof suyak yo'qotilishi|«Bambuk tayoq» va sakroileit.
 muscle-contraction-0lqzdri|Mushak qisqarishi|Kalsiy ___ ga bog'lanib, miozin bog'lanish joylarini ochadi|troponin|troponin c|Troponin C tropomiozinni aktin bog'lanish joyidan siljitadi.
 sarcomere-0vbli20|Sarkomer|Qaysi diskda faqat yo'g'on iplar bo'ladi?|H zonasi|I disk|I diskda faqat ingichka iplar; qisqarishda ikkalasi ham qisqaradi.
 sarcomere-109fihk|Sarkomer|Qisqarish paytida qaysi disk o'zgarmaydi?|A disk|I disk|A disk yo'g'on ipning uzunligi, u hech qachon o'zgarmaydi.
