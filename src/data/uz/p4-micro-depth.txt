@@ -16,3 +16,19 @@ klebsiella-0x4on9j|Klebsiella|Klebsiella pnevmoniyasi klassik holda kimlarda uch
 pseudomonas-aeruginosa-1wyinw5|Pseudomonas aeruginosa|Pseudomonas ___ deb ataladigan ko'k-yashil pigment hosil qiladi|piotsianin|piosianin|Uzum hidi ham bor. Oksidaza-musbat.
 pseudomonas-aeruginosa-0m78w1o|Pseudomonas aeruginosa|Gangrenoz ektima nimadan dalolat beradi|Pseudomonas bakteriemiyasidan|Stafilokokkli abssessdan|Neytropenik bemorda qora nekrotik teri o'choqlari.
 haemophilus-influenzae-17q1b6v|Haemophilus influenzae|H. influenzae o'sishi uchun ___ va V omillari kerak|X|x omili|X — gematin, V — NAD. Qonli agarda S. aureus yonida o'sadi.
+bordetella-pertussis-0vclfb6|Bordetella pertussis|Ko'kyo'tal uchun nima xos|Yaqqol limfotsitoz|Neytrofiliya|Ko'kyo'tal toksini limfotsitlarning qondan chiqishiga to'sqinlik qiladi.
+vibrio-cholerae-0jzx81j|Vibrio cholerae|Vabo toksini ___ ni doimiy faollashtirib, sAMF ni oshiradi|Gs|g-s, adenilatsiklaza|Xlorid ajralishi tufayli «guruch suvi» kabi ko'p diareya.
+salmonella-versus-shigella-0bgq8fw|Salmonella va Shigella|Qaysi biri harakatchan va vodorod sulfid hosil qiladi?|Salmonella|Shigella|Shigella harakatsiz. Salmonellada xivchinlar bor.
+salmonella-versus-shigella-1snmj7a|Salmonella va Shigella|Qaysi birida antibiotiklar tashuvchilikni UZAYTIRADI?|Salmonella|Shigella|Antibiotiklar faqat og'ir salmonellyozda beriladi.
+helicobacter-pylori-0i8d5n6|Helicobacter pylori|H. pylori oshqozon kislotasidan ___ ishlab chiqarib saqlanadi|ureaza|ureaza fermenti|Mochevina bilan nafas testining asosi.
+helicobacter-pylori-01ii1ri|Helicobacter pylori|H. pylori qaysi kasalliklar xavfini oshiradi|Oshqozon adenokarsinomasi va MALT limfoma|Qizilo'ngach adenokarsinomasi va Barrett|Barrett qizilo'ngachi esa qizilo'ngach adenokarsinomasiga olib keladi.
+mycobacterium-tuberculosis-0alvm1q|Mycobacterium tuberculosis|Mikobakteriyalarning kislotaga chidamliligi ___ kislotasidan kelib chiqadi|mikol|mikol kislotasi|Mumsimon devor Gram bo'yog'i va rangsizlantirishga chidamli.
+tuberculosis-0srlplg|Sil|Birlamchi sil odatda qayerni zararlaydi|Pastki bo'laklarni|Cho'qqilarni|Qayta faollashuv kislorodga boy cho'qqilarni afzal ko'radi.
+tuberculosis-1phfpay|Sil|Kalsinatlangan birlamchi o'choq va o'pka darvozasi tuguni birga ___ kompleksi deyiladi|Gon|ghon|Kalsinatlangach, Ranke kompleksiga aylanadi.
+latent-tuberculosis-0f0qy3o|Yashirin sil|Yashirin sil nima bilan davolanadi|Bir necha oy yolg'iz izoniazid|Olti oy to'rt preparatli davo|Yoki rifampitsin. To'rt preparat faol kasallik uchun.
+antituberculous-drugs-0dglcfk|Silga qarshi preparatlar|Etambutol klassik holda ___ nervni shikastlaydi|ko'rish|ko'rish nervi|Qizil-yashil rangni ajratmaslik; boshlashdan oldin ko'rishni tekshiring.
+leprosy-1aeceav|Moxov|Mycobacterium leprae qayerda yaxshi o'sadi|Teri va nervlar kabi salqin joylarda|Tananing iliq markazi va jigarda|Shuning uchun u oyoq-qo'llar va yuzni zararlaydi.
+mycoplasma-13vq23z|Mikoplazma|Mikoplazmada ___ yo'q, shuning uchun beta-laktamlar ta'sir qilmaydi|hujayra devori|devor, peptidoglikan|Uning membranasida sterinlar bo'ladi.
+legionella-0glibcb|Legionella|Legionella qanday tashxislanadi|Siydikda antigen testi bilan|Qonni ekib tekshirish bilan|Gram usulida yomon bo'yaladi; ko'mir-xamirturush ekstrakti agari kerak.
+legionella-06am1x6|Legionella|Legionella pnevmoniyasi klassik holda nima bilan birga keladi|Diareya va giponatriemiya|Qabziyat va natriy yuqoriligi|Suv tizimlari va konditsionerlardan yuqadi.
+chlamydia-trachomatis-0s6klwi|Chlamydia trachomatis|Xlamidiyaning A-C serotiplari ko'rlikning asosiy sabablaridan biri — ___ ni chaqiradi|traxoma|traxomani|D-K jinsiy infeksiya, L1-L3 esa venerik limfogranulyoma beradi.
