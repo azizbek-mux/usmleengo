@@ -1,0 +1,64 @@
+# p9-renal-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+glomerular-filtration-1y6ec2l|Koptokcha filtratsiyasi|KFT klinik jihatdan qon zardobidagi ___ orqali baholanadi|kreatinin|kreatinin miqdori|Inulin klirensi — «oltin standart», ammo amalda qulay emas.
+creatinine-0s9f5fq|Kreatinin|Kreatinin KFT ni biroz yuqori ko'rsatadi, chunki u|Proksimal kanalchada sekretsiya qilinadi|Distal kanalchada qayta so'riladi|Shuning uchun ba'zan sistatin C afzal ko'riladi.
+filtration-fraction-0gd90jt|Filtratsiya fraksiyasi|Filtratsiya fraksiyasi = KFT / buyrak ___ oqimi|plazma|plazma oqimi|Normada taxminan 20 foiz.
+afferent-constriction-1o5nz0z|Olib keluvchi arteriola torayishi|Olib keluvchi arteriolaning torayishi KFT ni|Pasaytiradi|Oshiradi|Olib ketuvchi arteriola torayishi esa KFT ni oshiradi.
+renal-clearance-0cmccwm|Buyrak klirensi|Filtrlanadigan va to'liq sekretsiya qilinadigan modda buyrak ___ oqimini o'lchaydi|plazma|plazma oqimi|Para-aminogippur kislotasi klirensi shunga yaqin.
+glucose-reabsorption-1jt5trt|Glyukozaning qayta so'rilishi|Glyukozuriya plazmadagi glyukoza taxminan qanchadan oshganda boshlanadi|200 mg/dl|100 mg/dl|SGLT2 ning transport maksimumi oshib ketadi.
+proximal-tubule-0be8d7l|Proksimal kanalcha|Proksimal kanalcha filtrlangan barcha glyukoza va amino___ ni qayta so'radi|kislotalarni|kislota, kislotalar|Shuningdek bikarbonat, natriy va suvning ko'p qismini.
+fanconi-syndrome-0iyg89f|Fankoni sindromi|Fankoni sindromi nimalarning yo'qolishiga olib keladi|Glyukoza, aminokislotalar, fosfat va bikarbonat|Faqat kaliy, magniy va kalsiyning yo'qolishi|Proksimal kanalchaning umumiy disfunksiyasi; raxitga olib keladi.
+loop-of-henle-0vts6tp|Genle halqasi|Ingichka tushuvchi qism faqat ___ uchun o'tkazuvchan|suv|suvga|Yo'g'on ko'tariluvchi qism eritmani o'tkazadi, suvni esa yo'q.
+thick-ascending-limb-1h8fx20|Yo'g'on ko'tariluvchi qism|Yo'g'on ko'tariluvchi qism qanday|Suv uchun o'tkazmaydigan|Suv uchun erkin o'tkazuvchan|Shu tariqa kanalcha suyuqligini suyultiradi.
+distal-convoluted-tubule-01xdici|Distal buralma kanalcha|Distal kanalcha natriyni Na-Cl ___ orqali qayta so'radi|kotransporter|simporter, tashuvchi|Tiazidlar buni bloklaydi.
+collecting-duct-1r6xcjv|Yig'uvchi naycha|Aldosteron yig'uvchi naychaning qaysi hujayrasiga ta'sir qiladi?|Asosiy hujayralar|Oraliq hujayralar|Alfa-oraliq hujayralar kislota ajratadi.
+countercurrent-multiplier-13h4qq1|Qarama-qarshi oqim mexanizmi|Genle halqasi mag'iz qavatda ___ gradient yaratadi|osmotik|konsentratsion|Bu ADG ta'sirida siydikni quyuqlashtirish imkonini beradi.
+anion-gap-03e51r2|Anion farq|Anion farq = natriy − xlorid − ___|bikarbonat|hco3|Normada 8 dan 12 gacha.
+anion-gap-acidosis-0vjqk8l|Anion farqi oshgan atsidoz|Metanol, uremiya, DKA, propilenglikol, temir, laktat, etilenglikol va ___|salitsilatlar|salitsilat, aspirin|Anion farqi oshishining klassik sabablari.
+normal-gap-acidosis-0cimhuk|Anion farqi normal atsidoz|Anion farqi normal atsidoz nimadan dalolat beradi|Diareya yoki buyrak kanalchalari atsidozi|Laktatatsidoz yoki ketoatsidoz holati|Bikarbonat yo'qoladi va uning o'rnini xlorid egallaydi.
+winter-formula-0iy15v5|Uinter formulasi|Uinter formulasi metabolik atsidozda kutilayotgan ___ ni bashorat qiladi|PCO2|paco2, co2|1,5 × bikarbonat + 8, ± 2.
+type-1-rta-0eqrqf4|1-tip buyrak kanalchalari atsidozi|Distal buyrak kanalchalari atsidozida siydik pH si qanday|Atsidozga qaramay 5,5 dan yuqori|Atsidozga qaramay 5,5 dan past|Distal kanalcha vodorod ionlarini ajrata olmaydi.
+type-2-rta-1iit5mu|2-tip buyrak kanalchalari atsidozi|Proksimal buyrak kanalchalari atsidozining sababi|Bikarbonatni qayta so'ra olmaslik|Kislotani ajrata olmaslik|Fankoni sindromi va atsetazolamid bilan bog'liq.
+type-4-rta-1a42m2u|4-tip buyrak kanalchalari atsidozi|4-tip buyrak kanalchalari atsidozi ___kaliemiya bilan kechuvchi yagona tur|giper|giperkaliemiya|Aldosteron yetishmovchiligi yoki unga rezistentlik.
+respiratory-compensation-068uo89|Respirator kompensatsiya|Metabolik atsidozda respirator kompensatsiya qachon boshlanadi|Bir necha daqiqada|Uch kundan keyin|Respirator buzilishda buyrak kompensatsiyasi kunlar oladi.
+hyponatremia-0o7o31p|Giponatriemiya|Giponatriemiyani baholashda birinchi qadam — qon zardobidagi ___ ni o'lchash|osmolyallik|osmolyarlik, osmolyalligi|Soxta giponatriemiya va giperglikemiyani inkor qilish uchun.
+hypovolemic-hyponatremia-0287mgv|Gipovolemik giponatriemiya|Siydikdagi natriy 20 dan past bo'lgan giponatriemiya nimadan dalolat beradi|Buyrakdan tashqari yo'qotishlardan|Diuretik qabul qilishdan|Buyrak natriyni to'g'ri ushlab qolayotgan bo'ladi.
+siadh-0fwrzxo|ADG noadekvat sekretsiyasi sindromi|Bu sindromda siydik osmolyalligi noo'rin ravishda ___ bo'ladi|yuqori|quyuq, oshgan|Zardob osmolyalligi past bo'lsa ham 100 dan yuqori.
+siadh-treatment-0mvig5y|ADG noadekvat sekretsiyasi sindromi|Surunkali holat nima bilan davolanadi|Suyuqlikni cheklash|Faol tarzda tuzli eritma|Cheklash yordam bermasa, tolvaptan yoki demeklotsiklin qo'shiladi.
+hypernatremia-0mic31v|Gipernatriemiya|Gipernatriemiya deyarli har doim ___ tanqisligini bildiradi|suv|erkin suv|Odatda chanqoq hissi buzilgan yoki suvga yetib bora olmaydi.
+correcting-hypernatremia-1j763k5|Gipernatriemiyani tuzatish|Gipernatriemiyani juda tez tuzatish nimaga olib keladi|Miya shishiga|Osmotik demielinizatsiyaga|Giponatriemiyani juda tez tuzatishning aksi.
+hyperkalemia-0vm51p6|Giperkaliemiya|Atsidoz kaliyni hujayradan ___ chiqarib, uning zardobdagi darajasini oshiradi|tashqariga|tashqari, hujayradan tashqariga|Vodorod ionlariga almashinib.
+pseudohyperkalemia-1hhqdp3|Soxta giperkaliemiya|EKG o'zgarmagan va namuna gemolizlangan holda kaliyning yuqoriligi nimadan dalolat beradi|Soxta giperkaliemiyadan|Haqiqiy giperkaliemiyadan|Davolashdan oldin namunani qayta oling.
+hypokalemia-1htbxg6|Gipokaliemiya|Davoga chidamli gipokaliemiyada qon zardobidagi ___ ni tekshirish kerak|magniy|magniy miqdori|Magniy past bo'lsa, kaliyni tuzatib bo'lmaydi.
+hypomagnesemia-032z7ws|Gipomagniemiya|Gipomagniemiya yana nimaga olib keladi|PTG ga rezistentlik orqali gipokalsiemiya|PTG oshishi orqali giperkalsiemiya|Davoga chidamli elektrolit buzilishining ko'p uchraydigan sababi.
+hypercalcemia-1t9jn1q|Giperkalsiemiya|Og'ir giperkalsiemiyaning birinchi davosi — vena ichiga ___|fiziologik eritma|tuzli eritma, suyuqlik|Keyin bisfosfonatlar va kalsitonin.
+hypercalcemia-causes-06e882a|Giperkalsiemiya sabablari|Giperkalsiemiyaning eng ko'p uchraydigan ikki sababi|Giperparatireoz va xavfli o'sma|Sarkoidoz va litiy bilan davolash|Ambulatoriyada — qalqonsimon oldi bezi, statsionarda — saraton.
+phosphate-1ewa5tb|Fosfat|FGF-23 fosfatning ___ qayta so'rilishini kamaytirib, uni pasaytiradi|buyrakda|kanalchada, proksimal|Surunkali buyrak kasalligida erta oshadi.
+nephrotic-syndrome-0u6qoxm|Nefrotik sindrom|Nefrotik sindrom uchun proteinuriya sutkasiga ___ grammdan ortiq bo'lishi kerak|3,5|3.5, 35|Shuningdek gipoalbuminemiya, shish va giperlipidemiya.
+membranoproliferative-glomerulonephritis-0ptyfj9|Membranoproliferativ glomerulonefrit|Bu kasallikda qanday gistologik manzara bo'ladi?|«Tramvay izlari» kabi bazal membranalar|Subepitelial «tikansimon» to'planishlar|Mezangiyning oraliqqa kirib borishidan.
+diabetic-nephropathy-0m34r9r|Diabetik nefropatiya|Diabetik nefropatiyada ___-Vilson tugunlari ko'rinadi|Kimmelstil|kimmelstiel|Tugunli glomeruloskleroz.
+amyloid-nephropathy-1uwtu6l|Buyrak amiloidozi|Buyrak amiloidozi qanday namoyon bo'ladi|Nefrotik sindrom|Nefritik sindrom|Kongo qizili bilan olma-yashil tovlanish.
+rapidly-progressive-glomerulonephritis-1e3dpzq|Tez rivojlanuvchi glomerulonefrit|Bu kasallikda yorug'lik mikroskopiyasida ___ ko'rinadi|yarimoysimonlar|yarimoy, yarimoysimon|Boumen bo'shlig'ida parietal hujayralar ko'payishi va fibrin.
+anti-gbm-disease-16q3kei|Anti-GBM kasalligi|Gudpaster kasalligi nima bilan davolanadi|Plazmaferez va immunosupressiya|Almashtirishsiz yuqori dozadagi steroid|Qonda aylanuvchi anti-GBM antitelosini olib tashlash zarur.
+alport-syndrome-0hb0ziw|Alport sindromi|Alport sindromi odatda X ga ___ tipda irsiylanadi|birikkan|birikkan dominant|Gematuriya, karlik va lentikonus.
+thin-basement-membrane-disease-0kqgibr|Yupqa bazal membrana kasalligi|Yupqa bazal membrana kasalligi nimaga olib keladi|Xavfsiz oilaviy gematuriya|Rivojlanuvchi buyrak yetishmovchiligi|Buyrak funksiyasi normal, karlik yo'q.
+acute-kidney-injury-14siz49|O'tkir buyrak shikastlanishi|Postrenal shikastlanish buyrak ___ bilan inkor qilinadi|ultratovushi|ultratovush tekshiruvi|Gidronefroz bor-yo'qligini aniqlash uchun.
+contrast-nephropathy-1209kxy|Kontrast nefropatiyasi|Kontrast nefropatiyasida kreatinin qachon eng yuqori bo'ladi|3-5 kunda|24 soatda|Gidratatsiya va nefrotoksinlarni to'xtatish bilan oldi olinadi.
+rhabdomyolysis-0473f72|Rabdomioliz|Rabdomioliz kanalchalarga ___ toksik ta'siri orqali buyrak shikastlanishiga olib keladi|mioglobin|mioglobinning|Siydik test-chizig'i qonga musbat, ammo eritrotsit yo'q.
+rhabdomyolysis-0gswtga|Rabdomioliz|Rabdomioliz qon zardobidagi kalsiyni|Boshida pasaytiradi|Boshida oshiradi|Kalsiy shikastlangan mushakda cho'kadi, keyin qaytadan oshadi.
+hepatorenal-syndrome-1a0fsni|Gepatorenal sindrom|Gepatorenal sindromda siydikdagi natriy juda ___ bo'ladi|past|kam, pasaygan|Buyrak tuzilishi normal, ammo natriy jadal ushlanadi.
+abdominal-compartment-syndrome-1bmj76e|Qorin kompartment sindromi|Qorin ichi bosimining oshishi buyrakni qanday shikastlaydi|Buyrak perfuziyasini kamaytirib|Kanalchalarga bevosita toksik ta'sir qilib|Qovuq bosimi orqali o'lchanadi.
+chronic-kidney-disease-06qla2g|Surunkali buyrak kasalligi|5-bosqich surunkali buyrak kasalligi — KFT daqiqada ___ ml dan past|15|o'n besh|Dializ yoki transplantatsiya ko'rib chiqiladigan bosqich.
+ckd-mineral-bone-disease-1cye4j6|Buyrak-suyak-mineral buzilishi|Surunkali buyrak kasalligi suyak kasalligini qanday chaqiradi|Kalsitriol pastligi va fosfat ushlanishi orqali|Ortiqcha D vitamini va fosfat yo'qotish orqali|Bu ikkilamchi giperparatireozga olib keladi.
+ckd-anemia-0qkzeto|Buyrak anemiyasi|Buyrak anemiyasi temir va eritropoezni ___ vosita bilan davolanadi|rag'batlantiruvchi|qo'zg'atuvchi|Maqsad — gemoglobin 10-11 atrofida.
+dialysis-indications-1e6ke1i|Dializ ko'rsatmalari|Dializ ko'rsatmalari: atsidoz, elektrolitlar, zaharlanish, ortiqcha suyuqlik va yana nima|Uremiya|Siydik kislotasi|Uremiyadan kelib chiqqan perikardit yoki ensefalopatiya.
+peritoneal-dialysis-1xt6xcc|Peritoneal dializ|Peritoneal dializning eng ko'p uchraydigan asorati|Peritonit|Havo emboliyasi|Qorin og'rig'i bilan loyqa suyuqlik chiqishi.
+kidney-stones-1ab02q8|Buyrak toshlari|Buyrak sanchig'ida eng yaxshi tasviriy tekshiruv — kontrastsiz ___|KT|kt tekshiruvi|Rentgenda ko'rinmaydigan urat toshlarini ham aniqlaydi.
+stone-passage-13onfg1|Toshning chiqishi|5 mm dan kichik toshlar|Odatda o'z-o'zidan chiqib ketadi|Har doim aralashuvni talab qiladi|Tamsulozin chiqishga yordam berishi mumkin.
+cystinuria-1m4nxsv|Sistinuriya|Sistin toshlari ___ shaklidagi kristallar hosil qiladi|olti burchakli|olti qirrali, geksagonal|Ikki asosli aminokislotalar transportining nuqsoni.
+renal-cell-carcinoma-0qzhwon|Buyrak hujayrali karsinomasi|Fon Gippel-Lindau kasalligi nimaga olib keladi|Ikki tomonlama tiniq hujayrali karsinoma|O'tuvchi hujayrali karsinoma rivojlanishi|Shuningdek gemangioblastomalar va feoxromotsitoma.
+renal-cell-carcinoma-0o5hy9p|Buyrak hujayrali karsinomasi|Buyrak hujayrali karsinomasi eritropoetin ajratib, ___ chaqirishi mumkin|politsitemiya|eritrotsitoz|Shuningdek renin, PTG ga o'xshash peptid va AKTG.
+bladder-cancer-00c5rft|Qovuq saratoni|Chekadigan keksa odamda og'riqsiz yaqqol gematuriya nimani talab qiladi|Sistoskopiya va yuqori yo'llar tasviri|Tinchlantirish va siydikni qayta tahlil qilish|Isbotlanmaguncha qovuq saratoni deb qaraladi.
+wilms-tumor-1ite5s3|Vilms o'smasi|Vilms o'smasi 11-xromosomadagi ___ geni bilan bog'liq|WT1|wt-1|WAGR va Bekvit-Videman sindromlari.
+posterior-urethral-valves-06wp3cc|Siydik chiqarish kanali orqa klapanlari|Siydik chiqarish kanalining orqa klapanlari nimaga olib keladi|O'g'il chaqaloqda ikki tomonlama gidronefroz|O'g'il bolada yakka mikroskopik gematuriya|O'g'il bolalarda qovuq chiqish yo'li obstruksiyasining eng ko'p uchraydigan sababi.
+vesicoureteral-reflux-1wwgun2|Puffak-siydik nayi reflyuksi|Puffak-siydik nayi reflyuksi buyrakda ___ paydo bo'lishiga moyillik tug'diradi|chandiqlar|chandiq, chandiqlanish|Qaytalanuvchi piyelonefritdan; siydik chiqarish sistouretrografiyasida aniqlanadi.
