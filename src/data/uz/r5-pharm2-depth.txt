@@ -28,3 +28,31 @@ adenosine-contraindication-0e8hlql|Adenozin qo'llanmaydigan holat|Adenozin qaysi
 glucocorticoid-potency-1hdya5u|Glyukokortikoidlar kuchi|Keng qo'llanadigan steroidlar ichida mineralokortikoid faolligi eng yuqori bo'lgani — ___|Fludrokortizon|fludrokortizon preparati|Deksametazonda bu faollik deyarli yo'q.
 steroid-equivalence-1flr7c4|Steroidlar ekvivalenti|Gidrokortizonga nisbatan deksametazon qanday|Ancha kuchli va uzoq ta'sir qiladi|Kuchsizroq va qisqa ta'sir qiladi|Glyukokortikoid kuchi taxminan 25 baravar ko'p.
 insulin-types-1i00llw|Insulin turlari|Eng tez ta'sir qiluvchi insulin analogi — ___|Lizpro|aspart, glulizin|Ta'siri 15 daqiqa ichida boshlanadi.
+insulin-glargine-13pvt3u|Insulin glargin|Glargin NPH dan nimasi bilan farq qiladi|Yaqqol cho'qqisi yo'q|Cho'qqisi o'tkirroq|Tungi gipoglikemiyani kamaytiradi.
+thionamides-0zlyn17|Tionamidlar|Metimazol va propiltiouratsil ikkalasi ham ___ chaqirishi mumkin|agranulotsitoz|agranulotsitozni|Tomoq og'rig'i yoki isitmada shoshilinch qon tahlili kerak.
+bromocriptine-versus-cabergoline-0325i0k|Bromokriptin va kabergolin|Prolaktinomada kabergolin nega afzal|Yaxshi ko'tariladi va uzoq ta'sir qiladi|Arzonroq va kengroq mavjud|Ikkalasi ham dofamin agonisti.
+desmopressin-1loxi73|Desmopressin|Desmopressin VIII omil va ___ omilini ham oshiradi|Villebrand|villebrand omili|Yengil gemofiliya A va Villebrand kasalligida foydali.
+proton-pump-inhibitors-1fqyio9|Proton pompasi ingibitorlari|Uzoq muddatli qo'llash qon zardobidagi ___ ni pasaytiradi|magniy|magniyni, mg|Shuningdek B12 va temir so'rilishi buziladi, C. difficile xavfi ortadi.
+h2-blockers-0y4eqb2|H2 blokatorlari|Simetidin ranitidindan nimasi bilan farq qiladi|CYP450 ni bloklaydi va ginekomastiya beradi|H2 retseptoriga ancha kuchli ta'sir qiladi|Antiandrogen ta'siri bor.
+ondansetron-1i24cgv|Ondansetron|Ondansetron xemoretseptor zonasida ___ retseptorlarini bloklaydi|5-HT3|serotonin, 5ht3|QT intervalini kuzatib boring.
+metoclopramide-0n3z6ph|Metoklopramid|Metoklopramid qanday xavf tug'diradi|Ekstrapiramidal ta'sir va kechikkan diskineziya|Gepatotoksiklik va xolestatik sariqlik|Uzoq qo'llashdan saqlaning, ayniqsa yoshlarda.
+loperamide-14gjpv0|Loperamid|Loperamid dozasi oshsa, ___ uzayishi va aritmiya beradi|QT|qt intervalining|Opioidlarni suiiste'mol qilishda ko'proq uchraydi.
+mesalamine-0wzjbbx|Mesalazin|Mesalazin qanday ta'sir qiladi|Yo'g'on ichak shilliq qavatiga mahalliy|So'rilgandan keyin tizimli ravishda|Shuning uchun dori shakli va ajralish joyi muhim.
+infliximab-005v5rc|Infliksimab|O'NO ingibitorini boshlashdan oldin yashirin ___ ni tekshiring|sil|silni, tb|Shuningdek B gepatitini.
+levetiracetam-16zvf37|Levetiratsetam|Levetiratsetam yaxshi ko'tariladi, ammo ___ o'zgarishlarini berishi mumkin|xulq|kayfiyat, xulq-atvor|Jizzakilik va agressiya, ayniqsa bolalarda.
+topiramate-07f3i5a|Topiramat|Topiramat uchun xos nojo'ya ta'sirlar|Vazn kamayishi, so'z topishning qiyinlashishi, toshlar|Vazn ortishi, uyquchanlik, tremor va toshma|Shuningdek o'tkir yopiq burchakli glaukoma.
+gabapentin-14w0cnb|Gabapentin|Gabapentin butunlay ___ orqali chiqariladi, shuning uchun doza KFT ga qarab beriladi|buyrak|buyraklar|Jigarda metabolizmga uchramaydi.
+donepezil-1htwaqi|Donepezil|Xolinesteraza ingibitorlari ko'pincha nimaga olib keladi|Bradikardiya va oshqozon-ichak buzilishi|Taxikardiya va og'iz qurishi|Yurak blokadasida ehtiyot bo'ling.
+memantine-1v6acao|Memantin|Memantin — o'rta va og'ir demensiyada qo'llanadigan ___ retseptori antagonisti|NMDA|nmda|Eksaytotoksiklikni kamaytiradi.
+triptans-0y4w4l4|Triptanlar|Triptanlar qaysi holatda qo'llanmaydi|Toj arteriyalar ishemik kasalligida|Aura bilan kechuvchi migrenda|Ular tomirlarni toraytiradi.
+sumatriptan-1yl0vdi|Sumatriptan|Sumatriptan 5-HT1B va 5-HT1___ retseptorlarini qo'zg'atadi|D|1d|Kalla tomirlarini toraytiradi va CGRP ajralishini tormozlaydi.
+toxic-alcohols-1eraprx|Toksik spirtlar|Metanol va etilenglikol ikkalasi ham ___ farqni oshiradi|osmolyar|osmolyal|Keyinroq metabolizm hisobiga anion farq ham oshadi.
+methanol-02een0w|Metanol|Metanol bilan zaharlanish klassik holda nimani shikastlaydi|Ko'rish nervini|Buyrakni|Chumoli kislotasi; etilenglikol esa buyrakni shikastlaydi.
+isopropyl-alcohol-19asy80|Izopropil spirti|Izopropil spirti ___ siz ketoz beradi|atsidoz|metabolik atsidoz|U atsetonga aylanadi, kislotaga emas.
+salicylate-toxicity-1efwcfo|Salitsilat toksikligi|Erta salitsilat toksikligi nimaga olib keladi|Quloq shovqini va giperventilyatsiya|Bradikardiya va gipoventilyatsiya|Keyin aralash kislota-ishqor manzarasi.
+iron-poisoning-1x1s5v0|Temir bilan zaharlanish|Temir bilan zaharlanish haftalar o'tib klassik holda ___ chandiqlanishiga olib keladi|pilorus|piloroz, chiqish yo'li|Avval oshqozon-ichak, keyin yashirin, so'ng shok fazasi.
+digoxin-visual-effect-0cuv503|Digoksinning ko'zga ta'siri|Digoksin toksikligi klassik holda nimani beradi|Sariq-yashil halqalar ko'rinishi|Ko'kimtir tusda ko'rish|Ko'kimtir ko'rish sildenafilga xos.
+theophylline-05bv398|Teofillin|Teofillin toksikligi tutqanoq va ___ chaqiradi|aritmiya|aritmiyalar, taxiaritmiya|Terapevtik indeksi juda tor.
+serotonin-syndrome-onset-1n59px1|Serotonin sindromining boshlanishi|Serotonin sindromi odatda qachon boshlanadi|Bir necha soat ichida|Kunlar yoki haftalar davomida|Xavfli neyroleptik sindrom esa sekin rivojlanadi.
+anticholinergic-toxidrome-1k90up7|Xolinolitik toksiklik|Xolinolitik toksiklik siydik ___ va ichak shovqinlarining yo'qolishiga olib keladi|tutilishi|tutilishiga|Issiq, quruq, qizil, ko'rmaydigan, alahsiragan va to'lgan.
+sympathomimetic-versus-anticholinergic-0jesgnn|Simpatomimetik va xolinolitik|Qaysi toksiklikda TERLASH bo'ladi?|Simpatomimetik|Xolinolitik|Xolinolitikda teri quruq; bu asosiy farqlovchi belgi.
