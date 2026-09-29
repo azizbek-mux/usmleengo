@@ -116,5 +116,80 @@ Yes/No → Ha/Yo'q · True/False → To'g'ri/Noto'g'ri · Increased/Decreased �
 - GABA → GAMK (Russian ГАМК); REM sleep → REM uyqusi
 - HGPRT → GGFRT; HSV → OGV (as agreed); tabes dorsalis → orqa miya quruqshog'i; shingles → o'rab oluvchi temiratki
 
+## Settled while finishing the bank, 2026-09-30
+Chosen to match what the already-translated files use, so nothing reads two
+ways. Anything genuinely open was left for the owner (see the bottom of this
+file).
+
+| English | Uzbek |
+|---|---|
+| zinc | rux (not "ruh") |
+| valve | qopqoq — mitral qopqoq prolapsi, o'pka qopqog'i |
+| mitral valve prolapse | mitral qopqoq prolapsi |
+| tricuspid regurgitation | trikuspidal regurgitatsiya |
+| cor pulmonale | o'pka yuragi |
+| PCWP / wedge pressure | PCWP; o'pka kapillyarlarining tiqilma bosimi |
+| berry (saccular) aneurysm | xaltasimon anevrizma |
+| bundle branch block | tutam blokadasi (o'ng / chap tutam blokadasi) |
+| ASD / VSD / PDA / PFO | bo'lmachalararo / qorinchalararo to'siq nuqsoni; ochiq arterial oqim yo'li; ochiq oval teshik |
+| dumping syndrome | Demping-sindrom |
+| duodenum | o'n ikki barmoqli ichak |
+| mesenteric artery | tutqich arteriyasi (yuqori / pastki) |
+| ileocolic artery | yonbosh-chambar arteriyasi |
+| sigmoid colon | sigmasimon ichak |
+| urinary casts | silindrlar (loyqa-jigarrang donador silindrlar) |
+| ureter | siydik nayi |
+| Bowman capsule | Boumen kapsulasi |
+| mismatch repair | mos kelmaslikni tuzatish |
+| HNPCC | Linch sindromi |
+| Wilms tumour | Vilms o'smasi |
+| Duchenne | Dyushenn |
+| putamen / globus pallidus / caudate | po'stloq tanasi / oqargan shar / dumli yadro |
+| basal ganglia | bazal yadrolar |
+| anterior white commissure | oldingi oq bitishma |
+| saltatory conduction | sakrovchi o'tkazish |
+| locked-in syndrome | «Qamalgan odam» sindromi |
+| uvula | tilcha |
+| hypoglossal / vagus nerve | til osti nervi / adashgan nerv |
+| subclavian steal | o'mrov osti o'g'irlash sindromi |
+| vertebral artery | umurtqa arteriyasi |
+| dissection | qatlamlanish |
+| conduction aphasia | konduktiv afaziya |
+| target cells / bite cells | nishon hujayralar / «tishlangan» hujayralar |
+| Heinz bodies | Geyns tanachalari |
+| thalassemia trait | talassemiya tashuvchiligi |
+| polycythemia vera | haqiqiy politsitemiya |
+| essential thrombocythemia | essensial trombotsitemiya |
+| Waldenström | Valdenstrem |
+| Peyer patches | Peyer pilakchalari |
+| Reid index | Reyd indeksi |
+| mesothelioma | mezotelioma |
+| high-resolution CT | yuqori aniqlikdagi KT |
+| ATPase / GTPase | ATFaza / GTFaza |
+| percentile | sentil |
+| median / mode | mediana / moda |
+| odds ratio | shanslar nisbati |
+| confidence interval | ishonch oralig'i |
+| absolute risk reduction | mutlaq xavf kamayishi |
+| null hypothesis | nol gipoteza |
+| total parenteral nutrition | parenteral oziqlantirish |
+| Jehovah's Witness | Yahova shohidi |
+| ICU | reanimatsiya bo'limi |
+| informed consent | xabardor rozilik |
+
+## To ask the owner
+Chosen for now to keep the bank consistent, but worth his word:
+- **Zinc**: `rux` is used throughout, from the glossary. Confirm it is what a
+  student expects over `sink`.
+- **G6PD**: the bank has both `G6PD` (14) and `G6FD` (10). One of them should
+  win; `G6PD` is used in the newest files because the neighbouring questions
+  use it.
+- **Duchenne**: `Dyushenn` (10) against `Dyushen` (4) — `Dyushenn` was kept.
+- **The bot's language.** It cannot see the app's language, so it now replies
+  in **both**, leading with whatever the phone's Telegram is set to. An
+  Uzbek student with Telegram in Russian therefore reads the English half
+  first. If that is the common case, leading with Uzbek for `ru` phones too
+  is a one-line change (`uzFirst` in `worker/src/bot.js`).
+
 ## Workflow note
 - Write at most ~40 questions per batch. A long unbroken block of microbiology (toxins, organisms) can trip a safety filter mid-write; smaller batches go through cleanly. Nothing is lost when one is stopped — the file on disk is untouched.

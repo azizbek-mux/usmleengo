@@ -2,7 +2,7 @@ left-heart-failure-findings-0k3q133|Chap yurak yetishmovchiligi topilmalari|Chap
 right-heart-failure-findings-12zuc6j|O'ng yurak yetishmovchiligi topilmalari|O'ng yurak yetishmovchiligi nima bilan namoyon bo'ladi|Bo'yin venalari bosimi oshgan va periferik shish|Ortopnoe va o'pkada nam xirillashlar eshitilishi|Bosim tanaga orqaga uriladi.
 commonest-cause-of-right-heart-failure-0qx7rg8|O'ng yurak yetishmovchiligining eng ko'p sababi|O'ng yurak yetishmovchiligining eng ko'p sababi nima|Chap yurak yetishmovchiligi|Surunkali o'pka kasalligi|Ikkisi birga dimlanishli yetishmovchilikni beradi.
 wedge-pressure-equivalence-0k5uw7y|Tiqilma bosimi nimaga teng|O'pka kapillyarlarining tiqilma bosimi (PCWP) nimaga teng|Chap bo'lmacha bosimiga|O'ng bo'lmacha bosimiga|Chap tomon to'lishining o'lchovi.
-cor-pulmonale-silhouette-0exwk1x|O'pka yuragining soyasi|Surunkali obstruktiv o'pka kasalligi yurak soyasini qanday qiladi|Uzun va tor|Keng va etik shaklida|Shishgan o'pkalar yurakni ichkariga suradi.
+cor-pulmonale-silhouette-0exwk1x|O'pka yuragining soyasi|O'SOK yurak soyasini qanday qiladi|Uzun va tor|Keng va etik shaklida|Shishgan o'pkalar yurakni ichkariga suradi.
 aortic-stenosis-radiation-1j12lit|Aorta stenozi shovqinining uzatilishi|Aorta stenozi shovqini qayerga uzatiladi|Uyqu arteriyalariga|Qo'ltiq osti sohasiga|Qo'ltiqqa uzatilsa, mitral regurgitatsiya.
 aortic-stenosis-pulse-14nt3dl|Aorta stenozidagi tomir urishi|Aorta stenozi sekin ko'tariluvchi tomir urishini beradi — pulsus parvus et ___|tardus|tardusdir|Kollapslanuvchi tomir urishining teskarisi.
 aortic-regurgitation-timing-1w27hm5|Aorta regurgitatsiyasining vaqti|Aorta regurgitatsiyasi qanday shovqin beradi|Erta diastolik, pasayib boruvchi|O'rta sistolik, kuchayib boruvchi|Keng puls bosimi bilan birga.

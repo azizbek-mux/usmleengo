@@ -9,6 +9,9 @@ types, both answerable in about five seconds:
 The point is not to teach heavy concepts. It is to make one small daily habit
 feel like rest rather than work.
 
+The whole app reads in **English or Uzbek** — every screen, all 6,317
+questions, the multiplayer game and the bot. See [Uzbek](#uzbek).
+
 ## Running cost: $0
 
 | Piece | How | Cost |
@@ -101,6 +104,80 @@ The compiler enforces the rules so bad questions cannot reach the app:
 - near-duplicate questions are detected and skipped automatically
 
 Any violation fails the build with the offending `file:line`.
+
+## Uzbek
+
+The app is bilingual. The language is chosen in the app, lives in the
+player's saved progress (`state.lang`), and changes everything: the screens,
+the questions, the invite text the bot sends and the game a phone plays.
+Question ids never change with the language, so streaks, saved questions,
+mistakes and rating carry straight across.
+
+**The screens.** Interface text is written as a pair where it is used —
+`t("Start", "Boshlash")` from `src/lib/i18n.js` — so the Uzbek sits beside
+the English it translates and the two are read and corrected together.
+Dates are built by hand for Uzbek (`dayText`), because browsers' own Uzbek
+dates differ from phone to phone.
+
+**The questions.** Each `src/data/<file>.txt` has a twin under
+`src/data/uz/` with the same name, one line per question:
+
+```
+id|topic|question|four|five|explanation
+```
+
+`four` and `five` mean what they mean in the English line — the correct
+option and the wrong one, or the answer and the other accepted spellings.
+A picture question leaves the question field empty. The agreed terms are in
+[`src/data/uz/TERMS.md`](src/data/uz/TERMS.md); ARB, for instance, is
+*Angiotenzin retseptor blokatorlari*, never *sartanlar*.
+
+`npm run compile` writes them to `public/questions.uz.json`, which the app
+fetches the first time Uzbek is chosen — the English bank is not paid for
+twice. It enforces, and fails the build on:
+
+- exactly 6 fields, an id that exists, no id translated twice, a non-empty
+  topic and explanation
+- **Latin script only** — a Cyrillic or Turkish letter (`н`, `İ`, `ş`, `ğ`)
+  is a typo that reads as a different letter
+- the **plain apostrophe** in `o'` and `g'`, never a curly one
+- a gap question needs `___` and an answer, and the stem may not give the
+  answer away
+- a two-option question needs two different options and no `___`
+- **one Uzbek name per English topic** — two names would split a topic in
+  the search and in "Quiz me on…" into two halves
+- a question missing its Uzbek line is named, with the file it is in. It
+  still ships: the app falls back to the English for that one question
+  rather than hide it.
+
+And it reports, without failing, any pair where the right option is more
+than 8 characters longer than the wrong one — a length tell a student can
+read without knowing the medicine. Even them up by lengthening the
+distractor, never by weakening the correct answer.
+
+Two tools help while translating:
+
+```bash
+node tools/uz-worklist.mjs z8-heme.txt   # what is still untranslated in one file
+node tools/uz-tells.mjs                  # every option pair that gives itself away
+```
+
+`uz-tells.mjs` reads the *compiled* bank, so run `node tools/compile.mjs`
+after editing before trusting it.
+
+**Two languages in one game.** Friends do not all read the app in the same
+language, so the creator's app sends *both* languages of every question
+(`bilingualBank()` in `src/data/bank.js`) and each phone says which it reads
+when it joins. The room shows and grades every player in their own language:
+the option shuffle moves both languages together so the single answer index
+still fits, and a typed answer is marked against that player's own accepted
+spellings — the Uzbek list includes the English ones, so typing the English
+word is never wrong.
+
+**The bot** cannot see the app's language — that lives in saved progress,
+not in Telegram — so it replies in both, leading with the language the
+phone is set to (`language_code`). Telegram is also given an Uzbek command
+list, which it shows to phones set to Uzbek.
 
 ## Announcing something in the app
 
@@ -285,6 +362,9 @@ plays again with the same people and fresh questions.
 - **Points:** a correct answer earns its XP (10 tapped, 15 typed) × 100 ×
   speed — twice that for an instant answer, falling to once at the last
   second (Kahoot's own curve). A wrong answer earns nothing.
+- **Either language.** Each phone reads the game in the language its owner
+  reads the app in, and a typed answer is marked against that language. See
+  [Uzbek](#uzbek).
 - **Only a game.** Nothing in it touches the player's XP, streak, rating or
   question history. Questions are picked at random every time — anything in
   the chosen topics can come up — and nothing is kept once a game ends.
