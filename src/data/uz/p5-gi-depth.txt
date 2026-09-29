@@ -1,0 +1,54 @@
+# p5-gi-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+barrett-esophagus-1dj0cdt|Barrett qizilo'ngachi|Barrett metaplaziyasi ___ hujayralar mavjudligi bilan aniqlanadi|qadahsimon|qadahsimon hujayralar|Qizilo'ngach-oshqozon tutashmasidan yuqorida ichak tipidagi shilliq qavat.
+esophageal-cancer-1l0sqds|Qizilo'ngach saratoni|Qizilo'ngach adenokarsinomasi qayerda rivojlanadi|Pastki uchdan birida|Yuqori uchdan birida|Yassi hujayrali karsinoma yuqori uchdan ikki qismini afzal ko'radi.
+esophageal-varices-156vhy5|Qizilo'ngach venalarining varikoz kengayishi|Qonayotgan varikoz venalar somatostatin analogi — ___ bilan shoshilinch to'xtatiladi|oktreotid|oktreotid preparati|Shuningdek bog'lash va antibiotik profilaktikasi.
+mallory-weiss-tear-0bipxm4|Mellori-Veys yirtilishi|Mellori-Veys yirtilishida nima kuzatiladi|Faqat shilliq qavat yirtilishi|To'liq qalinlikdagi yorilish|Burxave sindromi — mediastinit bilan kechuvchi to'liq qalinlikdagi yorilish.
+boerhaave-syndrome-0xqnroi|Burxave sindromi|Burxave sindromi bo'yinda teri osti ___ ga olib keladi|emfizemasi|emfizema, krepitatsiya|Kuchli qusishdan keyin havo ko'ks oralig'iga o'tadi.
+eosinophilic-esophagitis-0oc9xif|Eozinofil ezofagit|Eozinofil ezofagitda klassik holda nima ko'rinadi|Endoskopiyada konsentrik halqalar|Endoskopiyada yakka distal torayish|Atopik yosh bemorda ovqat tiqilib qolishi.
+plummer-vinson-syndrome-0mui6kp|Plammer-Vinson sindromi|Plammer-Vinson sindromi qizilo'ngach pardalari va ___ tanqisligi anemiyasini birga beradi|temir|temir tanqisligi|Shuningdek atrofik glossit va disfagiya.
+parietal-cells-0yam8mm|Qoplovchi hujayralar|Qoplovchi hujayralar kislota va ichki ___ ajratadi|omil|kasl omili|Ularning yo'qolishi axlorgidriya va B12 yetishmovchiligiga olib keladi.
+chief-cells-18sa6gj|Bosh hujayralar|Bosh hujayralar pepsinning o'tmishdoshi — ___ ni ajratadi|pepsinogen|pepsinogen fermenti|Oshqozon kislotasi ta'sirida faollashadi.
+gastrin-035timq|Gastrin|Gastrin ajralishini nima qo'zg'atadi|Oshqozon cho'zilishi va aminokislotalar|Oshqozon kislotasi va somatostatin|Kislota teskari aloqa bilan uni tormozlaydi.
+proton-pump-1feveol|Proton pompasi|Qoplovchi hujayra nasosi H+ ni ___ ga almashtiradi|K+|k, kaliy|Omeprazolning nishoni.
+type-a-chronic-gastritis-0w85b0r|A tip surunkali gastrit|Autoimmun gastrit oshqozonning qaysi qismini zararlaydi|Tana va tub qismini|Antral qismini|Antral gastrit odatda H. pylori tufayli. Autoimmun gastrit pernitsioz anemiyaga olib keladi.
+gastric-ulcer-versus-duodenal-0pa4w08|Oshqozon va o'n ikki barmoqli ichak yarasi|Ovqatdan keyin KUCHAYADIGAN og'riq nimadan dalolat beradi|Oshqozon yarasidan|O'n ikki barmoqli ichak yarasidan|O'n ikki barmoqli ichak yarasida og'riq ovqatdan yengillashadi va bir necha soatdan keyin qaytadi.
+gastric-cancer-12c0qmx|Oshqozon saratoni|Diffuz oshqozon saratonida ___ hujayralar ko'rinadi|uzuksimon|uzuk|«Charm butilka» — qalinlashgan, qattiq oshqozon devori.
+virchow-node-1f7nv9x|Virxov tuguni|Oshqozon saratonida chap o'mrov usti limfa tuguni nima deyiladi|Virxov tuguni|Meri Jozef opa tugunchasi|Kindikdagi metastaz Meri Jozef opa tugunchasi deyiladi.
+celiac-disease-004m2z0|Seliakiya|Seliakiyada skrining antitelosi — to'qima ___ ga qarshi|transglutaminaza|ttg|IgA darajasini ham tekshiring, chunki IgA yetishmovchiligi soxta manfiy natija beradi.
+celiac-disease-0p9dhql|Seliakiya|Seliakiya ingichka ichakning qaysi qismini ko'proq zararlaydi?|O'n ikki barmoqli va och ichak boshlanishi|Yonbosh ichak oxiri va ko'richak sohasi|Shuning uchun avval temir va folat yetishmaydi.
+whipple-disease-05xlm06|Uippl kasalligi|Uippl kasalligida ___-musbat ko'pikli makrofaglar ko'rinadi|PAS|shik|Tropheryma whipplei. Bo'g'im og'rig'i, diareya, nevrologik belgilar.
+tropical-sprue-0mz0kzg|Tropik spru|Tropik spru seliakiyadan nimasi bilan farq qiladi|Antibiotiklarga javob beradi|Glutensiz parhezga javob beradi|U butun ingichka ichakni, jumladan yonbosh ichakni ham zararlaydi.
+lactose-intolerance-1j6tdvj|Laktozani ko'tara olmaslik|Laktozani ko'tara olmaslik ochlikda to'xtaydigan ___ diareyaga olib keladi|osmotik|osmotik diareya|Najasning osmotik farqi yuqori, pH esa past.
+carcinoid-tumor-0xnsga3|Karsinoid o'sma|Oshqozon-ichak karsinoidining eng ko'p uchraydigan joyi|Ingichka ichak|Oshqozon|Ayniqsa yonbosh ichakning oxiri va chuvalchangsimon o'simta.
+abetalipoproteinemia-1g9eq9h|Abetalipoproteinemiya|Abetalipoproteinemiyada periferik surtmada ___ ko'rinadi|akantotsitlar|akantotsit|Mikrosomal triglitserid tashuvchi oqsil yo'q; yog' so'rilishi buziladi.
+familial-adenomatous-polyposis-1szuce0|Oilaviy adenomatoz polipoz|Oilaviy adenomatoz polipoz 5-xromosomadagi ___ geni mutatsiyasidan kelib chiqadi|APC|apc|Yuzlab poliplar; kolektomiya muqarrar.
+gardner-syndrome-13j03we|Gardner sindromi|Gardner sindromi — oilaviy adenomatoz polipoz va yana nima|Osteomalar va yumshoq to'qima o'smalari|Miya o'smalari va teri pigmentatsiyasi|Turko sindromida esa MNS o'smalari qo'shiladi.
+lynch-syndrome-1negx6u|Linch sindromi|Linch sindromi o'smalarida mikrosatellit ___ kuzatiladi|beqarorligi|beqarorlik|Yosh odamda yo'g'on ichakning o'ng qismi saratoni.
+colorectal-screening-0plxs4u|Kolorektal skrining|O'rtacha xavfli odamlarda kolonoskopiya skriningi hozir necha yoshdan boshlanadi|45|60|Oilaviy anamnez yoki ichak yallig'lanish kasalligi bo'lsa, ertaroq.
+diverticulosis-0lxtbu6|Divertikulyoz|Yo'g'on ichak divertikullari qayerda hosil bo'ladi|To'g'ri tomirlar mushak devoridan o'tgan joyda|Yo'g'on ichak tasmalari eng qalin bo'lgan joyda|Tuzilishi zaif nuqtalar; soxta divertikullar.
+diverticulitis-1re69w7|Divertikulit|Divertikulit ichakdagi ___ ga ta'sir qiluvchi antibiotiklar bilan davolanadi|anaeroblar|anaerob|Metronidazol va ftorxinolon yoki amoksitsillin-klavulanat.
+angiodysplasia-17sv1l7|Angiodisplaziya|Angiodisplaziya klassik holda nimaga olib keladi|Og'riqsiz pastki ichakdan qon ketishi|Kuchli, to'satdan boshlanuvchi qorin og'rig'i|Aorta stenozi va Villebrand kasalligi bilan bog'liq.
+ischemic-colitis-1c76r08|Ishemik kolit|Ishemik kolitda nomutanosib kuchli og'riq ___ burchagida bo'ladi|taloq|taloq burchagi|Yuqori va pastki tutqich arteriyalari havzalari chegarasi.
+toxic-megacolon-09pf8ax|Toksik megakolon|Toksik megakolon qaysi kasalliklarning asorati|Yarali kolit va C. difficile|Kron kasalligi va seliakiya|Ichak harakatini sekinlashtiruvchilar mumkin emas; teshilish xavfi.
+volvulus-0qzfv7b|Ichak burilishi|Sigmasimon ichak burilishi qorin rentgenogrammasida «___ doni» belgisini beradi|qahva|kofe|Ko'pincha keksa va qabziyatli bemorlarda.
+acute-pancreatitis-0evpwwh|O'tkir pankreatit|O'tkir pankreatit qon zardobidagi nimani pasaytiradi|Kalsiyni|Kaliyni|Yog'ning sovunlanishi kalsiyni sarflaydi.
+pancreatic-pseudocyst-1iaawtl|Oshqozon osti bezi psevdokistasi|Oshqozon osti bezi psevdokistasida haqiqiy ___ qoplama yo'q|epitelial|epiteliy|Shuning uchun u «psevdo» deyiladi.
+chronic-pancreatitis-0rs77lz|Surunkali pankreatit|Surunkali pankreatitda nima kuzatiladi|Oshqozon osti bezi kalsinatlari|Aniq chegarali solid hosila|Bez ishdan chiqqach, steatoreya va diabet ham qo'shiladi.
+pancreatic-cancer-16ygesj|Oshqozon osti bezi saratoni|Oshqozon osti bezi saratonining o'sma markeri — CA ___|19-9|19 9, 199|Skrining uchun emas, nazorat uchun ishlatiladi.
+courvoisier-sign-0nmelim|Kurvuazye belgisi|Sariqlik bilan paypaslanadigan og'riqsiz o't pufagi nimadan dalolat beradi|Oshqozon osti bezi boshi saratonidan|Surunkali o't tosh kasalligidan|Toshlar o't pufagini chandiqlab, cho'zilmaydigan qiladi.
+trousseau-sign-of-malignancy-1hsr6ts|Xavfli o'smada Trusso belgisi|Ko'chib yuruvchi ___ ichki a'zolar adenokarsinomasidan dalolat beradi|tromboflebit|flebit|Klassik holda oshqozon osti bezi saratoni.
+alcoholic-hepatitis-1nrbd32|Alkogolli gepatit|Alkogolli gepatitda AST/ALT nisbati ___ dan yuqori|2|ikki, 2:1|AST ALT dan ikki baravar ko'p.
+nonalcoholic-fatty-liver-1u140af|Noalkogol yog'li jigar kasalligi|Noalkogol yog'li jigar kasalligida nisbat qanday|ALT AST dan yuqori|AST ALT dan yuqori|Alkogolli kasallikning aksi.
+cirrhosis-0mpwh3e|Jigar sirrozi|Portal gipertenziya — portal bosim gradienti ___ mm sim. ust. dan yuqori bo'lishi|5|besh|10 dan yuqorida varikoz venalar hosil bo'ladi, 12 dan yuqorida qonaydi.
+spontaneous-bacterial-peritonitis-0m3crur|Spontan bakterial peritonit|Spontan bakterial peritonit astsitdagi neytrofillar qanchadan oshganda tashxislanadi|Mikrolitrda 250 dan ortiq|Mikrolitrda 1000 dan ortiq|Sefotaksim bilan davolanadi; eng ko'p uchraydigan qo'zg'atuvchi — E. coli.
+hepatorenal-syndrome-1vuj09u|Gepatorenal sindrom|Gepatorenal sindromda biopsiyada buyraklar ___ bo'ladi|normal|gistologik normal|Ichki a'zolar tomirlari kengayishidan kelib chiqqan funksional yetishmovchilik.
+hepatic-encephalopathy-1at77qf|Jigar ensefalopatiyasi|Rifaksimin ensefalopatiyaga qanday yordam beradi|Ammiak ishlovchi ichak bakteriyalarini o'ldirib|Ichak bo'shlig'ida ammiakni bog'lab olish orqali|Laktuloza bilan birga qo'llanadi.
+primary-biliary-cholangitis-0jkymuj|Birlamchi biliar xolangit|Birlamchi biliar xolangitda anti-___ antitelolar bo'ladi|mitoxondrial|ama|Qichishish va holsizlik bilan o'rta yoshli ayollar.
+primary-sclerosing-cholangitis-1b9veqj|Birlamchi sklerozlovchi xolangit|Birlamchi sklerozlovchi xolangit nima bilan bog'liq|Yarali kolit|Kron kasalligi|O't yo'llari tasbehsimon; xolangiokarsinoma xavfi.
+hemochromatosis-0ymf5la|Gemoxromatoz|Oshqozon osti bezidagi temir gemoxromatozga «bronza ___» nomini beradi|diabet|qandli diabet|Teri pigmentatsiyasi va oshqozon osti bezi orolchalarining yemirilishi.
+hemochromatosis-0jhb7o8|Gemoxromatoz|Gemoxromatoz nima bilan davolanadi|Takroriy qon chiqarish|Avval temirni xelatlash|Xelatlash qon chiqarib bo'lmaydiganlar uchun saqlanadi.
+alpha-1-antitrypsin-deficiency-1ct2iav|Alfa-1-antitripsin yetishmovchiligi|Alfa-1-antitripsin yetishmovchiligida gepatotsitlarda ___-musbat globulalar ko'rinadi|PAS|shik|Noto'g'ri buklangan oqsil endoplazmatik to'rda to'planadi.
+budd-chiari-syndrome-0jedufw|Badd-Kiari sindromi|Badd-Kiari sindromi qaysi tomirlarning bekilishi|Jigar venalari|Darvoza venasi|Og'riqli gepatomegaliya va astsit; giperkoagulyatsiya holatini qidiring.
+hepatocellular-carcinoma-0yf167d|Gepatotsellyulyar karsinoma|Gepatotsellyulyar karsinoma ultratovush va qon zardobidagi ___ bilan skrining qilinadi|AFP|alfa-fetoprotein|Sirrozda har olti oyda.
+liver-abscess-1wavpj9|Jigar abssessi|Amyobali jigar abssessi nima bilan davolanadi|Faqat metronidazol|Avval jarrohlik drenaji|Ichidagi «ansovus pastasi»; drenaj kamdan kam kerak bo'ladi.
