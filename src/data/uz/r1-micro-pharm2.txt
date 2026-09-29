@@ -1,0 +1,30 @@
+# Mikrobiologiya va farmakologiya, 2-qism (qarang: TERMS.md)
+
+bacterial-capsule-1c3tmtw|Bakteriya kapsulasi|Bakteriya kapsulasi odatda ___ dan tuzilgan|polisaxarid|polisaxaridlar|Istisno — Bacillus anthracis, u poli-D-glutamatdan foydalanadi.
+encapsulated-organisms-17kmsz8|Kapsulali mikroorganizmlar|Qaysi biri klassik kapsulali mikroorganizm EMAS?|Listeria monocytogenes|Neisseria meningitidis|Taloqsiz bemorlar kapsulali mikroblardan xavf ostida.
+endotoxin-0eioxne|Endotoksin|Endotoksin faolligi lipopolisaxaridning ___ A qismida joylashgan|lipid|lipid a|O'NO, IL-1 va azot oksidi ajralishini qo'zg'atadi.
+spores-1fe86q4|Sporalar|Bakteriya sporalarida nima bo'ladi|Dipikolin kislotasi, qaynoq suvda tirik qoladi|Erkin suv bor, qaynatishda nobud bo'ladi|Bacillus va Clostridium turlari.
+plasmids-0axsvi9|Plazmidlar|Rezistentlik genlari ko'pincha ___ da joylashadi|plazmidlar|plazmid, plazmidlarda|Turlar orasida konyugatsiya orqali ko'chadi.
+transposons-1b2619h|Transpozonlar|Transpozonlar rezistentlik genlarini qayerga ko'chirishi mumkin|Plazmid va xromosoma orasida|Faqat bakteriya turlari orasida|«Sakrovchi genlar».
+biofilm-1qyqndv|Bioparda|Protez materialida bioparda klassik holda Staphylococcus ___ tomonidan hosil qilinadi|epidermidis|epidermidis turi|Shuningdek qopqoqlarda yashil streptokokklar.
+obligate-aerobes-1n2l5a5|Majburiy aeroblar|Qaysi biri majburiy aerob?|Mycobacterium tuberculosis|Clostridium tetani|Nokardiya, psevdomonas, mikobakteriyalar, batsillalar.
+obligate-anaerobes-0pkg33b|Majburiy anaeroblar|Anaeroblar ___ ga chidamli, chunki ular kirishi uchun kislorod kerak|aminoglikozidlar|aminoglikozid, aminoglikozidlarga|Qamrab olinishi kislorodga bog'liq.
+corynebacterium-diphtheriae-03ubun6|Corynebacterium diphtheriae|Difteriya toksini ___-cho'zilish omilini ingibitsiya qiladi|2|ikki, ef-2|ADF-ribozillash orqali; Pseudomonas ekzotoksin A ham shunday ta'sir qiladi.
+diphtheria-0j3k4nv|Difteriya|Difteriyada o'limning asosiy sabablari|Nafas yo'li bekilishi va miokardit|Buyrak yetishmovchiligi va jigar nekrozi|Halqumda kulrang psevdomembrana.
+clostridium-tetani-0hubc6m|Clostridium tetani|Qoqshol toksini glitsin va ___ ning ajralishini bloklaydi|GAMK|gamk mediatorining|Tormozlanish yo'qolib, spastik falaj yuzaga keladi.
+tetanus-versus-botulism-0zebvcx|Qoqshol va botulizm|Qaysi biri SPASTIK falaj beradi?|Qoqshol|Botulizm|Botulinik toksin atsetilxolin ajralishini bloklab, sust falaj beradi.
+clostridium-perfringens-0ut2n8f|Clostridium perfringens|C. perfringens alfa toksini membranalarni yemiruvchi ___|letsitinaza|fosfolipaza|Gazli gangrena va ikki zonali gemoliz beradi.
+bacillus-cereus-19qh5oz|Bacillus cereus|Bacillus cereus chaqirgan zaharlanish klassik holda nima bilan bog'liq|Qayta isitilgan guruch|Yaxshi pishmagan tovuq go'shti|Oldindan hosil bo'lgan toksin; tez qusish.
+listeria-monocytogenes-1b3d5jn|Listeria monocytogenes|Listeriya pasterizatsiya qilinmagan sut mahsulotlari va sovuq ___ dan yuqadi|go'sht mahsulotlari|tayyor go'sht, kolbasa|Homiladorlik va immuniteti pasayganlarda xavfli.
+actinomyces-israelii-1pcq4u5|Actinomyces israelii|Aktinomikoz klassik holda nimadan keyin boshlanadi|Stomatologik muolaja yoki jag' jarohatidan|It yoki mushuk tishlagan yara sohasidan|Bo'yin-yuz sohasida oqmali abssess.
+beta-lactamase-01vinyb|Beta-laktamaza|Beta-laktamazalar beta-laktam ___ ini gidrolizlaydi|halqa|halqasini|Klavulanat, sulbaktam va tazobaktam uni bloklaydi.
+esbl-organisms-19ntqdv|Keng spektrli beta-laktamaza ishlab chiqaruvchilar|Bu mikroorganizmlar nima bilan davolanadi|Meropenem kabi karbapenem|Uchinchi avlod sefalosporini|Ular ko'p penitsillin va sefalosporinlarni ishdan chiqaradi.
+vancomycin-resistance-1q0jwp1|Vankomitsinga rezistentlik|Rezistent enterokokkda D-alanin D-___ ga almashadi|laktat|laktatga|Vankomitsinning bog'lanishi ming baravar kamayadi.
+aminoglycoside-resistance-1d3vi9m|Aminoglikozidlarga rezistentlik|Aminoglikozidlarga rezistentlikning odatiy sababi|Bakteriya transferaza fermentlari|Faqat o'zgargan ribosomalar|Preparatni o'zgartiradi va u bog'lana olmaydi.
+efflux-pumps-023sv9a|Chiqaruvchi nasoslar|___ nasoslari tetratsiklin va ftorxinolonlarni bakteriyadan chiqarib tashlaydi|Chiqaruvchi|efflyuks|Ko'p dorili rezistentlikning keng tarqalgan mexanizmi.
+methicillin-resistance-0gfyjqa|Metitsillinga rezistentlik|MRSA infeksiyalari nima bilan davolanadi|Vankomitsin yoki linezolid|Nafsillin yoki sefazolin|O'zgargan PBP2a seftarolindan boshqa beta-laktam bilan bog'lanmaydi.
+amphotericin-b-0x92btv|Amfoteritsin B|Amfoteritsin zamburug' membranasidagi ___ ga bog'lanib, teshiklar hosil qiladi|ergosterin|ergosterol|Xolesteringa o'xshashligi uning toksikligini tushuntiradi.
+amphotericin-b-0mrm5mn|Amfoteritsin B|Amfoteritsin klassik holda nimaga olib keladi|Nefrotoksiklik, kaliy va magniy yo'qotilishi|Gepatotoksiklik va xolestatik sariqlik|Shuningdek infuziya paytida isitma va qaltirash.
+azoles-0ui4vkd|Azollar|Azollar 14-alfa-___ fermentini ingibitsiya qiladi|demetilaza|demetilazani|Lanosterinning ergosteringa aylanishini bloklaydi.
+fluconazole-0k503wq|Flukonazol|Kriptokokkli meningit qo'llab-quvvatlovchi davosida flukonazol nega afzal|Likvorga yaxshi o'tadi|Fungitsid ta'sirga ega|Boshlanish davosida amfoteritsin va flusitozin qo'llanadi.
+caspofungin-0fjdd0v|Kaspofungin|Exinokandinlar zamburug' ___ ida beta-glyukan sintezini bloklaydi|devor|devori, hujayra devori|Kandidalarga, jumladan rezistent turlarga ham samarali.
