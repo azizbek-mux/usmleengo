@@ -1,0 +1,44 @@
+peritonitis-132hseq|Peritonit|Taxtaday qattiq qorin va qaytma og'riq ___ peritonitdan dalolat beradi|tarqalgan|umumiy, diffuz|Shoshilinch laparotomiya uchun ko'rsatma.
+appendicitis-1ok2946|Appendisit|Appendisit og'rig'i qanday kechadi|Markazdan boshlanib, o'ng yonbosh sohasiga ko'chadi|O'ng yonbosh sohasida boshlanib, shu yerda qoladi|Avval visseral, keyin parietal qorin pardasi ta'sirlanadi.
+appendicitis-1dxw7k3|Appendisit|Homiladorlikda appendisit gumon qilinsa, avval ___ tekshiruvi qilinadi|ultratovush|uzi, ultratovush tekshiruvi|Keyin nurlanishdan saqlanib, MRT qilinadi.
+bowel-obstruction-1i02y74|Ichak tutilishi|Rivojlangan davlatlarda ingichka ichak tutilishining eng ko'p sababi nima|Bitishmalar|Churra|Keyin churra va xavfli o'sma turadi.
+strangulated-obstruction-1bewt9i|Qisilgan ichak tutilishi|Ichak tutilishida ___ ning oshishi ishemiyadan dalolat beradi|laktat|laktatning, sut kislotasi|Isitma, taxikardiya va peritonizm bilan birga.
+sigmoid-volvulus-1tn0ehu|Sigma ichak volvulusi|Asoratlanmagan sigma ichak volvulusi avval qanday davolanadi|Endoskopik dekompressiya|Darhol laparotomiya|Peritonit bo'lsa yoki dekompressiya natija bermasa — operatsiya.
+mesenteric-ischemia-188q8lf|Mezenterial ishemiya|O'tkir mezenterial ishemiyada og'riq ko'rik natijalariga ___ kelmaydigan darajada kuchli|mos|mutanosib, to'g'ri|Qorin yumshoq, ammo og'riq juda kuchli.
+perforated-viscus-060wpdh|Ichak teshilishi|Qorin bo'shlig'idagi erkin havo eng yaxshi qanday ko'rinadi|Tik holatdagi ko'krak rentgenida|Yotgan holatdagi qorin rentgenida|Yoki KT da — u ancha sezgir.
+ruptured-aortic-aneurysm-1dlvy69|Aorta anevrizmasining yorilishi|Pulsatsiyalanuvchi shish, bel og'rig'i va gipotoniya darhol ___ talab qiladi|operatsiya|laparotomiya, jarrohlik|Bemor barqaror bo'lsagina tasvir tekshiruvi qilinadi.
+strangulated-hernia-1gx0iaj|Qisilgan churra|Og'riqli, qaytmaydigan va teri o'zgarishi bo'lgan churra ___ hisoblanadi|qisilgan|bo'g'ilgan|Qon ta'minoti buzilgan; shoshilinch operatsiya kerak.
+femoral-hernia-1wvhqmo|Son churrasi|Son churralari qanday xususiyatga ega|Qisilish ehtimoli yuqori|Qisilish ehtimoli past|Bo'yni tor va qattiq; ayollarda ko'proq uchraydi.
+incisional-hernia-0tyyv4s|Operatsiyadan keyingi churra|Operatsiyadan keyingi churraning asosiy xavf omili — yara ___|infeksiyasi|infeksiya|Shuningdek semizlik, chekish va noto'g'ri texnika.
+richter-hernia-0vh4awo|Rixter churrasi|Rixter churrasiga nima xos|Ichak devorining faqat bir qismi qisiladi|Butun halqa chambar bilan birga qisiladi|Ichakni tutib qo'ymasdan ham qisilishi mumkin.
+tension-pneumothorax-1cbtcoe|Klapanli pnevmotoraks|Zo'riqish pnevmotoraksi ___ tashxis; tasvir tekshiruvidan oldin davolanadi|klinik||Igna bilan dekompressiya, keyin ko'krak drenaji.
+massive-hemothorax-05siqc6|Massiv gemotoraks|Ko'krak drenajidan qancha chiqsa, darhol torakotomiya ko'rsatiladi|Darhol 1500 ml|Darhol 200 ml|Yoki soatiga 200 ml davom etsa.
+cardiac-tamponade-in-trauma-0qs2sqr|Jarohatdagi yurak tamponadasi|Jarohatdagi tamponada ___ tekshiruvida aniqlanadi|FAST|efast, fast uzi|Jarohatda yo'naltirilgan ultratovush baholash.
+flail-chest-1ee8feo|Suzuvchi ko'krak qafasi|Suzuvchi ko'krak qafasida asosiy xavf nima|Ostidagi o'pka kontuziyasi|Paradoksal harakatning o'zi|Og'riqni qoldirish va nafasni qo'llab-quvvatlash.
+pelvic-fracture-0p0ut3c|Tos suyagi sinishi|Beqaror tos suyagi sinishi avval tos ___ bilan mustahkamlanadi|bog'ichi|bog'ich, bandaji|Hajmni kamaytirib, vena qon ketishini to'xtatadi.
+damage-control-surgery-1wamo5q|Shikastni cheklovchi jarrohlik|Shikastni cheklovchi jarrohlikning maqsadi nima|Qon ketish va ifloslanishni to'xtatib, reanimatsiya|Bitta operatsiyada to'liq yakuniy tiklashni bajarish|O'limga olib keluvchi uchlikdan saqlanish.
+lethal-triad-1y46hjt|O'limga olib keluvchi uchlik|O'limga olib keluvchi uchlik — gipotermiya, atsidoz va ___|koagulopatiya|ivish buzilishi|Har biri boshqasini yomonlashtiradi.
+head-injury-imaging-1uxd233|Bosh jarohatida tasvir tekshiruvi|Bir soat ichida bosh KT si qachon ko'rsatiladi|Kelganda Glazgo shkalasi 13 dan past bo'lsa|Har qanday bosh og'rig'i bo'lgan har bir holatda|Shuningdek o'choqli nuqson, tutqanoq yoki kalla sinishi belgilari.
+spinal-injury-07dbhpz|Orqa miya jarohati|Neyrogen shok gipotoniya bilan birga ___ beradi|bradikardiya||Bu uni gipovolemik shokdan ajratadi.
+compartment-syndrome-0pve901|Kompartment sindromi|Fastsiotomiya talab qiladigan bosim odatda qanchadan yuqori|30 mm sim. ust.|10 mm sim. ust.|Yoki delta bosim 30 dan past bo'lganda.
+asa-grading-01utoqf|ASA sinflari|ASA ___-sinf og'ir sistemali kasalligi bo'lgan bemorni bildiradi|3|uch, iii|4-sinf — hayot uchun doimiy xavf.
+postoperative-fever-day-1-1u99754|Operatsiyadan keyingi 1-kun isitmasi|Operatsiyadan keyingi birinchi kunda isitma odatda nimadan bo'ladi|Atelektaz yoki yallig'lanish javobidan|Antibiotik talab qiluvchi yara infeksiyasidan|Yara infeksiyasi 5-7-kunlari paydo bo'ladi.
+postoperative-fever-15c73xk|Operatsiyadan keyingi isitma|Operatsiyadan keyingi isitma sabablari: o'pka, siydik, venalar, yara va ___|dorilar|dori, preparatlar|Vaqtga asoslangan tekshiruv tizimi.
+anastomotic-leak-1mn17ga|Anastomoz yetishmovchiligi|Anastomoz yetishmovchiligi odatda qachon namoyon bo'ladi|5-7-kunlari isitma va taxikardiya bilan|Operatsiyadan keyingi birinchi 24 soat ichida|Taxikardiya ko'pincha eng erta belgi.
+ileus-0hvcn6a|Ileus|Operatsiyadan keyingi ichak falaji ___ va elektrolit buzilishidan yomonlashadi|opioidlar|opioid, morfin|Harakatni rag'batlantirib, kaliyni to'g'rilash kerak.
+wound-dehiscence-0id0bh8|Yaraning ochilishi|Laparotomiyadan keyin yaradan sarg'ish-qonli suyuqlik chiqishi nimadan dalolat|Yaqinlashib kelayotgan ochilishdan|Yaraning normal bitish jarayonidan|Ichak tashqariga chiqsa, shoshilinch holat.
+surgical-site-infection-05qsjn8|Operatsiya sohasi infeksiyasi|Profilaktik antibiotik kesishdan ___ soat ichida beriladi|1|bir|Va odatda 24 soat ichida to'xtatiladi.
+critical-limb-ischemia-0qrgh3f|Oyoq-qo'lning kritik ishemiyasi|O'tkir ishemiyaning belgilari: og'riq, oqarish, pulsning yo'qligi, paresteziya, falaj va ___|muzdek sovuqlik|sovuqlik, poykilotermiya|Falaj va paresteziya oyoq-qo'l xavf ostida ekanini bildiradi.
+varicose-veins-125yqva|Venalarning varikoz kengayishi|Varikoz venalar nimadan kelib chiqadi|Vena klapanlari yetishmovchiligidan|Arterial qon ta'minoti yetishmovchiligidan|Belgilar bo'lsa ablatsiya yoki olib tashlash qilinadi.
+carotid-endarterectomy-0cuzgv0|Karotid endarterektomiya|Karotid endarterektomiya belgili stenoz ___ foizdan yuqori bo'lsa taklif qilinadi|70|yetmish, 50|Hodisadan keyin ikki hafta ichida.
+breast-lump-0fuc6gt|Ko'krak bezidagi shish|Ko'krak bezidagi shishning uchlik baholashi nima|Klinik ko'rik, tasvir tekshiruvi va biopsiya|Faqat tasvir tekshiruvi va keyin kuzatib borish|Har qanday aniq shish uchun standart yondashuv.
+breast-cancer-1foujeg|Ko'krak bezi raki|Qorovul limfa tuguni biopsiyasida ko'k bo'yoq va ___ markyor ishlatiladi|radioizotop|radioaktiv, texnetsiy|Butun ko'ltiq osti tugunlarini olib tashlashdan saqlaydi.
+nipple-discharge-0nuwt36|So'rg'ichdan ajralma|Bir tomonlama qonli ajralma nimadan dalolat beradi|Duktal papilloma yoki karsinomadan|Duktal ektaziya yoki mastitdan|Tasvir tekshiruvi va ko'pincha yo'lni olib tashlash kerak.
+radiation-1gknhhy|Nurlanish|___ da ionlashtiruvchi nurlanish yo'q va homiladorlikda xavfsiz|Ultratovush|uzi, mrt|MRT da ham nurlanish yo'q.
+contrast-nephropathy-1412uf0|Kontrast nefropatiyasi|Yodli kontrast KFT qanchadan past bo'lganda ehtiyotkorlik bilan qo'llanadi|30|90|Asosiy profilaktika — gidratatsiya.
+gadolinium-1asv4ds|Gadoliniy|Og'ir buyrak yetishmovchiligida gadoliniy nefrogen sistemali ___ xavfini tug'diradi|fibroz|fibrozi|Ilgarilagan surunkali buyrak kasalligida qo'llanmaydi.
+ct-versus-mri-1n8rlz7|KT va MRT|O'tkir kalla ichi qon quyilishida birinchi qator tekshiruv qaysi|Kontrastsiz KT|Bosh miya MRT si|Tez, hammaga ochiq va yangi qonga sezgir.
+ultrasound-03e7jyy|Ultratovush|Ultratovush ___ yoki havo orqali yaxshi tasvir bermaydi|suyak|suyakdan|Shu sabab o'pka va ichak gazi ko'rinishni to'sadi.
+chest-x-ray-1ubkaxs|Ko'krak rentgeni|Yon tomondan olingan ko'krak rentgeni nima uchun eng foydali|Yurak orqasi va orqa o'choqlar uchun|Qovurg'a sinishi va plevra qalinlashuvi uchun|To'g'ri ko'rinishda yashiringan sohalar uchun.
+nuclear-medicine-1fb7m42|Nuklear meditsina|FDG-PET o'smalarni ularning yuqori ___ o'zlashtirishi orqali aniqlaydi|glyukoza|fdg, qand|Varburg effektini aks ettiradi.
+mammography-1gvn3ve|Mammografiya|Mammografiyadagi mikrokalsinatlar qanday bo'lsa xavotirli|Mayda, polimorf va to'da holda|Yirik, dumaloq va sochilgan|Joyida qolgan duktal karsinomadan dalolat beradi.
