@@ -12,7 +12,7 @@ melanoma-prognosis-0rlog7r|Melanoma prognozi|Melanomada eng kuchli prognostik om
 terbinafine-1kc3whs|Terbinafin|Terbinafin ___ epoksidazani ingibitsiya qiladi|skvalen|skvalen fermentini|Ergosterin sintezini bloklaydi. Azollar esa 14-alfa-demetilazani bloklaydi.
 accessory-nipple-0wq5zkm|Qo'shimcha so'rg'ich|Qo'shimcha so'rg'ich nimadan kelib chiqadi|Sut yo'lining to'liq yo'qolmasligidan|Sut bezi to'qimasining ektopik metastazidan|Embrional sut chizig'i bo'ylab joylashadi.
 tuberculoid-leprosy-10iuho5|Tuberkuloid moxov|Tuberkuloid moxov nima bilan tavsiflanadi|Kuchli Th1 javob, gamma-interferon yuqori|Th2 javob, bakteriyalar soni yuqori|Mikroorganizm kam, granulyomalar yaxshi shakllangan, o'choqlar cheklangan.
-lepromatous-leprosy-0nxry1z|Lepromatoz moxov|Lepromatoz moxov nimani aks ettiradi|Hujayraviy immunitetning kuchsizligini|Kuchli Th1 hujayraviy javobni|Bakteriyalar ko'p, «sher yuzi», simmetrik o'choqlar.
+lepromatous-leprosy-0nxry1z|Lepromatoz moxov|Lepromatoz moxov nimani aks ettiradi|Hujayraviy immunitetning kuchsizligini|Kuchli Th1 tipidagi hujayraviy javobni|Bakteriyalar ko'p, «sher yuzi», simmetrik o'choqlar.
 wound-remodeling-03er4k0|Yara remodellanishi|Kollagenning qayta qurilishi uchun ruxga bog'liq ___ kerak|metalloproteinazalar|matriks metalloproteinazalari, mmp|Rux yetishmasa, yara bitishi buziladi.
 wound-healing-0ndx2qe|Yara bitishi|Chandiqning mustahkamligi ko'pi bilan qanchaga yetadi|Normaning taxminan 80 foiziga|Normaning to'liq 100 foiziga|III tip kollagen oylar davomida I tipga almashadi.
 epidermolysis-bullosa-0h160vr|Bullyoz epidermoliz|Oddiy bullyoz epidermolizda ___ iplarining yig'ilishi buziladi|keratin|keratin oqsili|Kichik shikastdan keyin pufaklar paydo bo'ladi.
