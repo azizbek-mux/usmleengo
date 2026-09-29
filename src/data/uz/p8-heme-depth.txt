@@ -1,0 +1,66 @@
+# p8-heme-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+erythropoiesis-197l2tt|Eritropoez|Eritropoetin to'qima ___ siga javoban ajraladi|gipoksiya|kislorod tanqisligi|Buyrak po'stlog'idagi kanalchalar atrofi fibroblastlaridan.
+hemoglobin-020ldqe|Gemoglobin|Katta odam gemoglobini A ikkita alfa va ikkita ___ zanjirdan tuzilgan|beta|b|Homila gemoglobini — ikkita alfa va ikkita gamma.
+reticulocyte-count-1qnodv8|Retikulotsitlar soni|Anemiyada retikulotsitlar sonining YUQORILIGI nimadan dalolat beradi|Gemoliz yoki qon yo'qotishdan|Suyak ko'migi yetishmovchiligidan|Soni past bo'lsa, ko'mik javob bermayotganini bildiradi.
+red-cell-lifespan-1ooyyeu|Eritrotsitning yashash muddati|Eritrotsit taxminan ___ kun yashaydi|120|bir yuz yigirma|Gemolizda qisqaradi, shuning uchun HbA1c pasayadi.
+howell-jolly-bodies-1ht0cnu|Xauell-Jolli tanachalari|Xauell-Jolli tanachalari nimadan dalolat beradi|Taloq funksiyasining yo'qligidan|Temir ortiqchaligi holatlaridan|Taloq odatda olib tashlaydigan yadro qoldiqlari.
+iron-deficiency-1bik28k|Temir tanqisligi|Temir tanqisligidagi eng erta o'zgarish — qon zardobidagi ___ ning pasayishi|ferritin|ferritin oqsili|Gemoglobin va eritrotsit hajmi o'zgarishidan oldin.
+iron-deficiency-in-men-0eqx32i|Erkaklarda temir tanqisligi|Katta yoshli erkakda temir tanqisligi nimani talab qiladi|Ichakdan qon ketishini tekshirishni|Faqat parhez bo'yicha maslahat berishni|Isbotlanmaguncha yo'g'on ichak saratoni deb qaraladi.
+sideroblastic-anemia-0o64bdx|Sideroblastik anemiya|Sideroblastik anemiyada ko'mikda halqasimon ___ ko'rinadi|sideroblastlar|sideroblast|Temir yadro atrofidagi mitoxondriyalarda to'planadi.
+sideroblastic-anemia-0k5wdxm|Sideroblastik anemiya|Sideroblastik anemiya nimaga javob berishi mumkin|B6 vitamini|B12 vitamini|B6 — ALK-sintaza uchun kofaktor.
+megaloblastic-anemia-1c90lya|Megaloblastik anemiya|Megaloblastik anemiyada gipersegmentlangan ___ ko'rinadi|neytrofillar|neytrofil|Beshdan ortiq bo'lakli.
+pernicious-anemia-06qxsju|Pernitsioz anemiya|Pernitsioz anemiya nimaga qarshi antitelolar tufayli yuzaga keladi|Ichki omil va qoplovchi hujayralarga|Eritrotsit membranasi va spektringa|Tana va tub qismning autoimmun atrofik gastriti.
+aplastic-anemia-1wef8qa|Aplastik anemiya|Aplastik anemiyada biopsiyada ko'mik ___ bo'ladi|gipotsellyulyar|bo'sh, yog'li|Pansitopeniya, patologik hujayralar yo'q.
+hereditary-spherocytosis-1qwq2sd|Irsiy sferotsitoz|Irsiy sferotsitoz nima bilan tasdiqlanadi|Eozin-5-maleimid bilan bog'lanish testi|To'g'ridan-to'g'ri Kumbs antiglobulin testi|Osmotik mo'rtlik — eski test. Kumbs manfiy bo'ladi.
+hereditary-spherocytosis-1fcmgvl|Irsiy sferotsitoz|Irsiy sferotsitozda gemoglobinning o'rtacha ___ i oshadi|konsentratsiyasi|konsentratsiya, mchc|Hujayralar kichik, yumaloq va zich to'lgan.
+g6pd-deficiency-15i6pan|G6PD yetishmovchiligi|G6PD qachon tekshirilishi kerak|Gemolitik epizoddan haftalar keyin|O'tkir gemolitik krizning o'zida|Yosh hujayralarda ferment ko'proq, bu soxta normal natija beradi.
+sickle-cell-disease-0ci6sx6|O'roqsimon hujayrali anemiya|O'roqsimon hujayrali anemiyada penitsillin profilaktikasi funksional ___ tufayli kerak|taloqsizlik|gipoplenizm|Bolalikdan boshlab taloqning takroriy infarkti.
+sickle-cell-crisis-0hsfnm4|O'roqsimon hujayrali kriz|O'tkir ko'krak sindromi nima bilan davolanadi|Kislorod, antibiotik va qon quyish|Vena ichiga suyuqlik va og'riq qoldiruvchi|O'roqsimon hujayrali anemiyada o'limning asosiy sababi.
+beta-thalassemia-major-1x2481u|Beta-talassemiyaning og'ir shakli|Bu holat ___ qon yaratilishga olib keladi, kalla suyagida «cho'tka» ko'rinishi|ekstramedullyar|ko'mikdan tashqari|Shuningdek «olmaxon yuzi» va gepatosplenomegaliya.
+thalassemia-0mt2qpa|Talassemiya|Talassemiyada surunkali qon quyish nimani talab qiladi|Temirni xelatlashni|Folatni cheklashni|Temir ortiqchaligining oldini olish uchun deferaziroks yoki deferoksamin.
+autoimmune-hemolytic-anemia-0tsdyhe|Autoimmun gemolitik anemiya|Autoimmun gemoliz to'g'ridan-to'g'ri ___ testi bilan tasdiqlanadi|Kumbs|coombs, antiglobulin|Eritrotsitlarga allaqachon bog'langan antiteloni aniqlaydi.
+primary-hemostasis-1nvgcu5|Birlamchi gemostaz|Trombotsitlar kollagenga Villebrand omili va ___ glikoproteini orqali yopishadi|Ib|gp1b, 1b|Bernar-Sulye sindromida GpIb yo'q.
+glanzmann-thrombasthenia-11elope|Glansman trombasteniyasi|Glansman trombasteniyasi qaysi glikoprotein nuqsoni|GpIIb/IIIa|GpIb|Trombotsitlar bir-biri bilan agregatsiyalana olmaydi.
+bernard-soulier-syndrome-1t6j8ay|Bernar-Sulye sindromi|Bernar-Sulye sindromida surtmada ___ trombotsitlar ko'rinadi|yirik|katta, gigant|Adgeziya buzilgan.
+platelet-count-and-bleeding-0abi8nr|Trombotsitlar soni va qon ketishi|O'z-o'zidan qon ketishi trombotsitlar soni qanchadan pastda boshlanadi|20 000|100 000|Operatsiya uchun odatda 50 000 dan yuqori kerak.
+hemophilia-0w1r0ov|Gemofiliya|Gemofiliya ___ ni uzaytiradi, protrombin vaqti esa normal qoladi|AChTV|fqtv, ptt, aptt|VIII va IX omillar ichki yo'l omillari.
+mixing-study-1kss364|Aralashtirish sinamasi|Uzaygan AChTV aralashtirishda normallashsa, sabab nima|Omil yetishmovchiligi|Ingibitor mavjudligi|Normallashmasa, qizil yuguruk antikoagulyanti kabi ingibitordan dalolat beradi.
+vitamin-k-1xgadi6|K vitamini|K vitamini ivish omillaridagi ___ qoldiqlarini karboksillaydi|glutamat|glutamin kislotasi, glu|Bu kalsiy bilan bog'lanish imkonini beradi.
+newborn-vitamin-k-01peb7h|Chaqaloqlarda K vitamini|Chaqaloqlarga tug'ilganda K vitamini nega beriladi|Ichak mikroflorasi hali shakllanmagan|Faqat jigar yetilmagani uchun|Chaqaloqlarning gemorragik kasalligi oldini oladi.
+disseminated-intravascular-coagulation-0eyvx6u|DVS-sindrom|DVS-sindromda fibrin parchalanish mahsuloti — ___ oshadi|D-dimer|d dimer, ddimer|Fibrinogen va trombotsitlar esa pasayadi.
+heparin-induced-thrombocytopenia-05y4xdc|Geparin chaqirgan trombotsitopeniya|Bu holatdagi antitelolar nimaga qarshi yo'nalgan|Geparinga bog'langan 4-trombotsitar omilga|Villebrand omiliga bog'langan VIII omilga|Trombotsitlar 5-10 kundan keyin pasayadi, qon ketishi emas, tromboz bo'ladi.
+thrombotic-thrombocytopenic-purpura-013vosr|Trombotik trombotsitopenik purpura|Bu holat ___ yetishmovchiligidan kelib chiqadi|ADAMTS13|adamts-13|O'ta yirik Villebrand multimerlari mikrotromblar hosil qiladi.
+hemolytic-uremic-syndrome-044q6qh|Gemolitik-uremik sindrom|Bolalarda bu sindrom klassik holda nimadan keyin rivojlanadi|E. coli O157:H7 infeksiyasidan|Streptokokkli faringitdan|Shiga toksini endoteliyni shikastlaydi.
+factor-v-leiden-1yunj90|V Leyden omili|V Leyden omili V omilni faollashgan ___ oqsiliga chidamli qiladi|C|c oqsili|Eng ko'p uchraydigan irsiy trombofiliya.
+protein-c-deficiency-1wuhqct|C oqsili yetishmovchiligi|C oqsili yetishmovchiligi nima xavfini oshiradi|Varfarin chaqirgan teri nekrozi|Geparinga rezistentlik va samarasizlik|Varfarin boshlanganda C oqsili eng tez pasayadi.
+acute-lymphoblastic-leukemia-0t00m83|O'tkir limfoblastik leykoz|Bu leykozning blastlari terminal dezoksinukleotidil-___ ga musbat|transferaza|transferazaga, tdt|Yetilmagan limfoid hujayralar markeri.
+acute-lymphoblastic-leukemia-0i1nxul|O'tkir limfoblastik leykoz|Bu leykoz qaysi «boshpana» joylarga tarqaladi?|Markaziy nerv sistemasi va moyaklarga|Faqat jigar, taloq va limfa tugunlariga|Shuning uchun profilaktik intratekal davo beriladi.
+acute-promyelocytic-leukemia-13rpqwh|O'tkir promielotsitar leykoz|Bu leykoz t(15;17) translokatsiyasiga ega va butun-trans-retinoy ___ ga javob beradi|kislota|kislotasiga|Differensiatsiya davosi. DVS-sindrom va differensiatsiya sindromidan ehtiyot bo'ling.
+acute-myeloid-leukemia-0fxwek7|O'tkir mieloblastik leykoz|Auer tayoqchalari nimadan dalolat beradi|O'tkir mieloblastik leykozdan|Surunkali limfoleykozdan|Ignasimon azurofil granulalar.
+chronic-lymphocytic-leukemia-1iipmn5|Surunkali limfoleykoz|Surunkali limfoleykozda periferik surtmada ___ hujayralar ko'rinadi|yoyilgan|yoyilib ketgan, smudge|Surtma tayyorlash paytida ezilib ketadigan mo'rt limfotsitlar.
+chronic-lymphocytic-leukemia-17v4m68|Surunkali limfoleykoz|Surunkali limfoleykoz nima bilan asoratlanadi|Autoimmun gemolitik anemiya|Tashxis paytida o'sma lizisi|Shuningdek gipogammaglobulinemiya va infeksiyalar.
+hairy-cell-leukemia-0nzxzjp|Sochsimon hujayrali leykoz|Sochsimon hujayrali leykoz qaysi markerga musbat bo'yaladi|TRAP|Mieloperoksidaza|Tartratga chidamli kislotali fosfataza; kladribin bilan davolanadi.
+chronic-myeloid-leukemia-0a5wbry|Surunkali mieloleykoz|Surunkali mieloleykoz tirozinkinaza ingibitori — ___ bilan davolanadi|imatinib|imatinib preparati|BCR-ABL sintez oqsiliga qarshi yo'naltirilgan.
+leukemoid-reaction-1j09jr7|Leykemoid reaksiya|Leykemoid reaksiya surunkali mieloleykozdan nimasi bilan farq qiladi|Leykotsitar ishqoriy fosfataza yuqori|Leykotsitar ishqoriy fosfataza past|Surunkali mieloleykozda bu ko'rsatkich past bo'ladi.
+hodgkin-lymphoma-1r9bb0q|Xodjkin limfomasi|Berezovskiy-Shternberg hujayralari CD15 va CD___ ga musbat|30|cd30|Reaktiv fonda «boyqush ko'zi» kabi ikki yadroli hujayralar.
+hodgkin-lymphoma-1doydtm|Xodjkin limfomasi|Limfomadagi B belgilari — isitma, tunda terlash va yana nima|Vazn yo'qotish|Terining qichishishi|Olti oyda o'n foiz vazn yo'qotish.
+burkitt-lymphoma-01jz680|Berkitt limfomasi|Berkitt limfomasi ___ genini qamrab olgan t(8;14) translokatsiyasiga ega|MYC|c-myc|Tingibil makrofaglar tufayli «yulduzli osmon» ko'rinishi.
+follicular-lymphoma-1rk8cu0|Follikulyar limfoma|Follikulyar limfoma qanday o'zgarishga ega|BCL-2 ortiqcha ekspressiyasi bilan t(14;18)|BCR-ABL sintez oqsili bilan t(9;22)|BCL-2 apoptozni bloklaydi.
+mantle-cell-lymphoma-1fyj9iw|Mantiya hujayrali limfoma|Mantiya hujayrali limfoma siklin ___ ni ortiqcha ekspressiya qiladi|D1|d-1|t(11;14) dan. Agressiv, prognozi yomon.
+multiple-myeloma-1lgd6sp|Ko'p sonli mieloma|Mielomada siydikdagi yengil zanjirlar ___-Jons oqsili deyiladi|Bens|bence, bens-jons|Oddiy siydik test-chizig'i uni aniqlamaydi.
+multiple-myeloma-10txc5t|Ko'p sonli mieloma|Mielomada suyak ko'migida nima bo'ladi|10 foizdan ortiq klonal plazmatik hujayra|20 foizdan ortiq mieloid blastlar|Shuningdek elektroforezda monoklonal cho'qqi.
+waldenstrom-macroglobulinemia-08d4xcx|Valdenstrem makroglobulinemiyasi|Valdenstrem kasalligida ortiqcha Ig___ hosil bo'lib, qon quyuqlashadi|M|igm|O'tkir holatda plazmaferez bilan davolanadi.
+polycythemia-vera-1dtjf97|Haqiqiy politsitemiya|Haqiqiy politsitemiya ___ mutatsiyasiga ega|JAK2|jak-2|Deyarli barcha holatlarda; essensial trombotsitemiya va miyelofibrozda ham.
+polycythemia-vera-0ouh3x3|Haqiqiy politsitemiya|Haqiqiy politsitemiya klassik holda nimaga olib keladi|Issiq dushdan keyin qichishish|Sovuqni ko'tara olmaslik va rangparlik|Gistamin ajralishidan kelib chiqqan suv bilan bog'liq qichishish.
+essential-thrombocythemia-1xqaly3|Essensial trombotsitemiya|Essensial trombotsitemiyada qanday xavf bor|Ham tromboz, ham qon ketishi|Tromboz, ammo hech qachon qon ketishi yo'q|Juda yuqori sonda orttirilgan Villebrand kasalligi rivojlanadi.
+myelofibrosis-0fqz74h|Miyelofibroz|Miyelofibrozda surtmada ___ shaklidagi eritrotsitlar ko'rinadi|tomchi|tomchisimon, dakriotsitlar|Ko'mik punksiyasi «quruq», taloq juda katta.
+tumor-lysis-syndrome-0urugxd|O'sma lizisi sindromi|O'sma lizisi gidratatsiya va ___ bilan oldi olinadi|allopurinol|rasburikaza|Yuqori xavfli bemorlarda rasburikaza.
+superior-vena-cava-syndrome-0u262f5|Yuqori kovak vena sindromi|Yuqori kovak vena sindromi nimaning asorati|Ko'ks oralig'i o'smalarining|Suyak metastazlarining|Mayda hujayrali o'pka saratoni va limfoma.
+spinal-cord-compression-06sivhd|Orqa miyaning siqilishi|Xavfli o'sma orqa miyani siqqanda darhol ___ beriladi|deksametazon|steroidlar, kortikosteroidlar|Keyin shoshilinch tasviriy tekshiruv va nurlanish.
+paraneoplastic-hypercalcemia-12f4s2t|Paraneoplastik giperkalsiemiya|Xavfli o'smadagi giperkalsiemiyaning eng ko'p uchraydigan mexanizmi|PTG ga o'xshash peptid|Suyak metastazlari|Ayniqsa yassi hujayrali karsinomalarda.
+anthracyclines-13t3lyc|Antratsiklinlar|Doksorubitsinning yurakka toksik ta'siri ___ bilan kamaytiriladi|deksrazoksan|deksrazoksan preparati|Erkin radikal shikastini cheklovchi temir xelatori.
+bleomycin-1d1vggt|Bleomitsin|Bleomitsinning toksik ta'siri qayerga tegadi|O'pkaga|Buyraklarga|O'pka fibrozi; nafas funksiyasini kuzatib boring.
+vincristine-0w6zsaf|Vinkristin|Vinkristinning xarakterli toksik ta'siri|Periferik neyropatiya|Suyak ko'migining bostirilishi|Vinblastin esa ko'mikni bostiradi.
+cisplatin-1lfbi9r|Sisplatin|Sisplatin nefrotoksiklik va ___toksiklik chaqiradi|oto|ototoksiklik, quloq|Gidratatsiya va amifostin bilan oldi olinadi.
+tamoxifen-versus-aromatase-inhibitors-006v9di|Tamoksifen va aromataza ingibitorlari|Aromataza ingibitorlari kimlarda qo'llanadi|Menopauzadan keyingi ayollarda|Menopauzadan oldingi ayollarda|Ular tuxumdon estrogen ishlab chiqarishini yenga olmaydi.
