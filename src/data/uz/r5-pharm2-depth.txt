@@ -1,0 +1,30 @@
+# Farmakologiya, 2-qism — chuqurlashtirilgan (qarang: TERMS.md)
+
+muscarinic-antagonists-0l3vbes|Muskarin antagonistlari|Atropin akkomodatsiya falaji — ___ ga olib keladi|sikloplegiya|sikloplegiyaga|Shuningdek midriaz, og'iz qurishi va siydik tutilishi.
+glycopyrrolate-09kg09y|Glikopirrolat|Glikopirrolat atropindan qachon afzal|Markaziy ta'sirdan saqlanmoqchi bo'lsak|Bradikardiyani tezroq davolash uchun|U gematoensefalik to'siqdan o'tmaydi.
+bethanechol-0zd5fyc|Betanexol|Betanexol — siydik ___ ida qo'llanadigan muskarin agonisti|tutilishi|tutilishida|Operatsiyadan keyingi yoki neyrogen qovuqda.
+pilocarpine-1rxfx3k|Pilokarpin|Pilokarpin o'tkir yopiq burchakli glaukomada nega qo'llanadi|Qorachiqni toraytirib burchakni ochadi|Qorachiqni kengaytirib bosimni pasaytiradi|Muskarin agonisti.
+beta-3-agonists-135ns12|Beta-3 agonistlari|Mirabegron o'ta faol qovuqni davolash uchun ___ ni bo'shashtiradi|detruzor|qovuq, detruzorni|Keksalarda antimuskarin preparatlarga muqobil.
+alpha-2-agonists-0tnlakb|Alfa-2 agonistlari|Klonidin va deksmedetomidin nima qiladi|Markaziy simpatik ta'sirni kamaytiradi|Periferik alfa-1 ni qo'zg'atadi|Nafas depressiyasisiz sedatsiya beradi.
+inhaled-anesthetics-11cwazi|Ingalyatsion anestetiklar|Anestetik kuchi ___ alveolyar konsentratsiya bilan ifodalanadi|minimal|eng kichik, mac|MAC past bo'lsa, preparat kuchliroq.
+nitrous-oxide-1jodc63|Azot oksidi|Azot oksidi qanday xususiyatga ega|MAC yuqori, kuchi past|MAC past, kuchi yuqori|Qo'shimcha vosita sifatida ishlatiladi, yolg'iz kamdan kam.
+malignant-hyperthermia-01y8adn|Xavfli gipertermiya|Xavfli gipertermiyada ___ retseptori ishtirok etadi|rianodin|ryr1|Autosom-dominant; dantrolen bilan davolanadi.
+propofol-1tmpp3o|Propofol|Propofol uchun xos nojo'ya ta'sir|Gipotoniya va in'eksiya joyida og'riq|Gipertenziya va uzoq hushga kelish|Tez boshlanadi va tez tugaydi; og'riq qoldirmaydi.
+ketamine-0cg31w0|Ketamin|Ketamin ___ retseptorini bloklab, dissotsiativ anesteziya beradi|NMDA|nmda retseptorini|Nafas yo'li reflekslarini saqlaydi va bosimni oshiradi.
+ketamine-1l55d7b|Ketamin|Ketamin shokda nega foydali|Arterial bosimni saqlab turadi|Yurak ishini kamaytiradi|Simpatomimetik; og'ir gipertenziyada qo'llanmaydi.
+local-anesthetic-toxicity-1nte9ky|Mahalliy anestetik toksikligi|Mahalliy anestetikning tizimli toksikligi ___ emulsiyasi bilan davolanadi|lipid|intralipid, yog'|Preparat uchun «lipid tuzoq».
+bupivacaine-1sm168i|Bupivakain|Bupivakain lidokaindan nega xavfliroq|Yurakka toksik ta'siri tufayli|Neyrotoksikligi tufayli|Tomirga tushsa, davoga chidamli aritmiyalar beradi.
+opioid-conversion-1teeurp|Opioidlarni almashtirish|Opioidni almashtirganda to'liq bo'lmagan kesishgan ___ uchun dozani kamaytirish kerak|chidamlilik|tolerantlik|Odatda 25-50 foizga.
+codeine-16jme6g|Kodein|Kodein qaysi fermentning sekin metabolizatorlarida ta'sir qilmaydi|CYP2D6|CYP3A4|Juda tez metabolizatorlarda esa xavfli.
+tramadol-1bzt9k5|Tramadol|Tramadol ___ bo'sag'asini pasaytiradi va serotonin sindromi xavfini tug'diradi|tutqanoq|talvasa|Ayniqsa SSRI bilan birga.
+nitrate-tolerance-0sqmutm|Nitratlarga chidamlilik|Nitratlarga chidamlilikning oldini olish uchun kunlik nitratsiz ___ qoldiriladi|oraliq|davr, tanaffus|Odatda tunda.
+ranolazine-1isbsuh|Ranolazin|Ranolazin stenokardiyani qanday davolaydi|Kechki natriy tokini ingibitsiya qilib|Tinch holatdagi yurak urishini sekinlashtirib|Yurak urishi va arterial bosimga ta'sir qilmaydi.
+dihydropyridines-0x2nm17|Digidropiridinlar|Amlodipin asosan ___ silliq mushagiga ta'sir qiladi|tomir|arteriya, tomirlar|Nodigidropiridinlar esa yurakka ta'sir qiladi.
+verapamil-1wkyh1t|Verapamil|Verapamil ko'pincha nimaga olib keladi|Qabziyat|Diareya|Shuningdek bradikardiya va milk giperplaziyasi.
+loop-diuretic-0yhvn4w|Halqali diuretik|Furosemidni venaga tez yuborish ___ chaqirishi mumkin|ototoksiklik|karlik, eshitish pasayishi|Sekin yuboring, ayniqsa aminoglikozidlar bilan birga.
+spironolactone-versus-eplerenone-0gfjmsq|Spironolakton va eplerenon|Bemorda nima paydo bo'lsa, eplerenon afzal ko'riladi|Ginekomastiya|Giperkaliemiya|Ikkalasi ham kaliyni bir xil ushlab qoladi.
+hydralazine-and-nitrate-0bp3t51|Gidralazin va nitrat|Gidralazin izosorbid dinitrat bilan yurak yetishmovchiligida ___ bemorlarga foyda beradi|afroamerikalik|qora tanli, afrikalik|Bu guruhda o'limni kamaytirishi isbotlangan.
+adenosine-contraindication-0e8hlql|Adenozin qo'llanmaydigan holat|Adenozin qaysi holatda qo'llanmaydi|Og'ir bronxial astmada|Qandli diabetda|U bronxospazm chaqirishi mumkin.
+glucocorticoid-potency-1hdya5u|Glyukokortikoidlar kuchi|Keng qo'llanadigan steroidlar ichida mineralokortikoid faolligi eng yuqori bo'lgani — ___|Fludrokortizon|fludrokortizon preparati|Deksametazonda bu faollik deyarli yo'q.
+steroid-equivalence-1flr7c4|Steroidlar ekvivalenti|Gidrokortizonga nisbatan deksametazon qanday|Ancha kuchli va uzoq ta'sir qiladi|Kuchsizroq va qisqa ta'sir qiladi|Glyukokortikoid kuchi taxminan 25 baravar ko'p.
+insulin-types-1i00llw|Insulin turlari|Eng tez ta'sir qiluvchi insulin analogi — ___|Lizpro|aspart, glulizin|Ta'siri 15 daqiqa ichida boshlanadi.
