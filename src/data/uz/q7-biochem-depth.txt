@@ -43,7 +43,7 @@ orotic-aciduria-0dhzndi|Orot atsiduriyasi|Irsiy orot atsiduriyasi nimaga olib ke
 methotrexate-05y76yc|Metotreksat|Metotreksat ___reduktazani ingibitsiya qilib, timidin sintezini bloklaydi|digidrofolat|digidrofolatreduktaza, dhfr|Leykovorin bilan bartaraf etiladi.
 5-fluorouracil-0llsqi7|5-ftoruratsil|5-ftoruratsil nimani ingibitsiya qiladi|Timidilatsintazani|Digidrofolatreduktazani|Leykovorin emas, timidin bilan bartaraf etiladi.
 transcription-1pmafgg|Transkripsiya|Eukariotlarda ___ RNK-polimeraza xabarchi RNK ni hosil qiladi|II|ii, 2|Zaharli qo'ziqorindagi alfa-amanitin uni tormozlaydi.
-promoter-1vqrtct|Promotor|TATA-boks qayerda joylashgan|Transkripsiya boshlanish nuqtasidan yuqorida|Genning birinchi introni o'rtasida|Transkripsiya kompleksi yig'iladigan joy.
+promoter-1vqrtct|Promotor|TATA-boks qayerda joylashgan|Transkripsiya boshlanish nuqtasidan yuqorida|Genning birinchi introni o'rtalarida|Transkripsiya kompleksi yig'iladigan joy.
 rna-processing-15qofvz|RNK ning yetilishi|Eukariot mRNK si 5-uchida qalpoqcha va poli-___ dumini oladi|A|a, adenin, adenozin|Shuningdek intronlarni olib tashlash uchun splaysing.
 spliceosome-19mqqtd|Splaysosoma|Splaysosoma snRNP lariga qarshi antitelolar qaysi kasallikda topiladi|Tizimli qizil yuguruk|Revmatoid artrit|Anti-Smit antitelolari.
 translation-1swo7ik|Translyatsiya|Translyatsiya AUG ___ kodonidan boshlanadi|start|boshlovchi, initsiator|Metioninni kodlaydi.
@@ -56,7 +56,7 @@ folate-1v9lrgi|Folat|Homiladorlikdan oldin folat qabul qilish ___ nayi nuqsonlar
 vitamin-a-toxicity-0a87g57|A vitamini toksikligi|A vitamini ortiqchaligi nimaga olib keladi|Psevdotumor va teratogen ta'sir|Periferik neyropatiya va ataksiya|Izotretinoin ham xuddi shu xavflarni tug'diradi.
 vitamin-e-0akapdx|E vitamini|Yuqori dozadagi E vitamini nima qiladi|Varfarin ta'sirini kuchaytiradi|Varfarin ta'siriga qarshi turadi|U K vitaminiga bog'liq ivish omillariga xalal beradi.
 vitamin-k-1y1ypxz|K vitamini|K vitaminining ko'p qismi ___ mikroflorasidan keladi|ichak|ichak mikroflorasi|Shuning uchun keng spektrli antibiotiklar protrombin vaqtini uzaytiradi.
-zinc-deficiency-02fsrix|Rux tanqisligi|Rux tanqisligi nimaga olib keladi|Og'iz atrofi toshmasi, gipogonadizm, yara bitmasligi|Shabko'rlik va konyunktivaning quruqshashi|Irsiy shakli — enteropatik akrodermatit.
+zinc-deficiency-02fsrix|Rux tanqisligi|Rux tanqisligi nimaga olib keladi|Og'iz atrofi toshmasi, gipogonadizm, yara bitmasligi|Shabko'rlik va konyunktivaning qurib qolishi|Irsiy shakli — enteropatik akrodermatit.
 copper-deficiency-1s77osy|Mis tanqisligi|Mis tanqisligi anemiya va ___ ga olib keladi, B12 yetishmovchiligiga o'xshab|miyelopatiya|miyelopatiyaga, neyropatiya|Oshqozon shuntlashdan yoki ortiqcha ruxdan keyin bo'lishi mumkin.
 selenium-0iq2tr8|Selen|Selen tanqisligi nimaga olib keladi|Keshan kardiomiopatiyasi|Shabko'rlik va terining qurishi|Selen kam hududlarda endemik muammo.
 iodine-deficiency-1p42qbb|Yod tanqisligi|Yod tanqisligi dunyo bo'yicha ___ nuqsonning oldini olish mumkin bo'lgan eng ko'p sababi|aqliy|kognitiv|Tug'ma gipotireoz orqali.

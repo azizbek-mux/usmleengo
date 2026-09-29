@@ -1,0 +1,67 @@
+# q8-psych-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+dopamine-11yx8vf|Dofamin|Katexolaminlar sintezining tezlikni cheklovchi fermenti — tirozin___|gidroksilaza|gidroksilazasi|Tirozindan L-DOFA hosil qiladi.
+schizophrenia-0d1dexr|Shizofreniya|Shizofreniyada dofamin qanday taqsimlangan|Mezolimbikda yuqori, mezokortikalda past|Barcha yo'llarda bir tekis yuqori|Shuning uchun manfiy belgilar D2 blokadasiga chidamli.
+serotonin-1piy070|Serotonin|Serotonin ___ dan hosil bo'lib, 5-GIUK gacha parchalanadi|triptofan|trp|Karsinoid skriningi uchun siydikda o'lchanadi.
+depression-038yr2x|Depressiya|Depressiya nimaning kamayishi bilan bog'liq|Serotonin, norepinefrin va dofamin|Atsetilxolin va gistamin darajasi|Shuningdek gippokamp hajmi va BDNF kamayadi.
+gaba-148l7t9|GAMK|GAMK — bosh miyaning asosiy ___ neyromediatori|tormozlovchi|tormozlovchi mediator|Glutamat esa asosiy qo'zg'atuvchi mediator.
+anxiety-0zcgy7v|Xavotir|Xavotir nima bilan bog'liq|GAMK kamayishi va norepinefrin oshishi|GAMK oshishi va norepinefrin pastligi|Shuning uchun benzodiazepinlar va beta-blokatorlar yordam beradi.
+acetylcholine-056wc11|Atsetilxolin|Altsgeymer kasalligi Meynertning ___ yadrosidan atsetilxolin ajralishini kamaytiradi|bazal|bazalis|Xolinesteraza ingibitorlarining asosi.
+ssris-0yutoni|SSRI|SSRI to'liq antidepressant ta'sir berish uchun taxminan ___ hafta talab qiladi|4|to'rt, 4-6, 6|Nojo'ya ta'sirlar darhol, foyda esa keyin paydo bo'ladi.
+ssri-side-effects-1ah7fa1|SSRI nojo'ya ta'sirlari|SSRI ning eng ko'p saqlanadigan nojo'ya ta'siri|Jinsiy funksiya buzilishi|Tana vaznining kamayishi|Ko'ngil aynishi va uyqusizlik odatda o'tib ketadi.
+ssri-in-the-elderly-1mt3bgx|Keksalarda SSRI|Keksalarda SSRI ADG noadekvat sekretsiyasi orqali ___ chaqiradi|giponatriemiya|giponatriemiyani, past natriy|Boshlagandan keyin natriyni tekshiring.
+mirtazapine-16azme0|Mirtazapin|Mirtazapin depressiya qanday belgilar bilan kechganda foydali|Uyqusizlik va ishtahaning pastligi|Qo'zg'aluvchanlik va ko'p ovqatlanish|U uyquchanlik va vazn ortishiga olib keladi.
+venlafaxine-0zamhdk|Venlafaksin|Venlafaksin yuqori dozada arterial ___ ni oshirishi mumkin|bosim|bosimni|Noradrenalinning qayta qamrab olinishini bloklashi orqali.
+tricyclic-antidepressants-0w3xsz1|Uch halqali antidepressantlar|Uch halqali antidepressantlar dozasi oshganda nega xavfli|Yurakdagi natriy kanallarini bloklaydi|Serotonin sindromi va rigidlik beradi|QRS kengayadi; bikarbonat bilan davolanadi.
+trazodone-0g1cosy|Trazodon|Trazodon kamdan kam urologik shoshilinch holat — ___ chaqiradi|priapizm|priapizmni|Ko'pincha uyqusizlikda past dozada qo'llanadi.
+antidepressants-in-bipolar-0qxrmaw|Bipolyar buzilishda antidepressantlar|Bipolyar buzilishda yolg'iz antidepressant nima xavfini tug'diradi|Maniyani qo'zg'atish|Depressiyani kuchaytirish|Har doim kayfiyat barqarorlashtiruvchi bilan birga bering.
+typical-antipsychotics-1as7tej|Tipik antipsixotiklar|Tipik antipsixotiklar asosan ___ retseptorlarini bloklab ta'sir qiladi|D2|d2, dofamin|Yuqori faollikdagi preparatlar ko'proq ekstrapiramidal ta'sir beradi.
+extrapyramidal-symptoms-1evdbv0|Ekstrapiramidal belgilar|Vaqt bo'yicha ekstrapiramidal ta'sirlar tartibi qanday|Distoniya, akatiziya, parkinsonizm, keyin kechikkan|Avval kechikkan diskineziya, keyin distoniya|Soatlar, kunlar, haftalar, keyin oylar va yillar.
+atypical-antipsychotics-118q8ld|Atipik antipsixotiklar|Atipik antipsixotiklar ko'pincha vazn ortishi bilan ___ sindromini chaqiradi|metabolik|metabolik sindrom|Vazn, lipidlar va glyukozani kuzatib boring.
+olanzapine-07fgvrl|Olanzapin|Olanzapin nimasi bilan ajralib turadi|Metabolik yuklamasi eng katta|Metabolik yuklamasi juda kichik|Aripiprazol va ziprazidon vaznga kamroq ta'sir qiladi.
+risperidone-14cn4lb|Risperidon|Risperidon boshqa atipiklardan ko'ra ___ ni ko'proq oshiradi|prolaktin|prolaktinni|Galaktoreya va amenoreyaga olib keladi.
+ziprasidone-1qpt2gx|Ziprazidon|Ziprazidon nima sababdan ehtiyotkorlik talab qiladi|QT uzayishi|Agranulotsitoz|Agranulotsitoz xavfi klozapinga xos.
+clozapine-1slnvr2|Klozapin|Klozapin ___ larning absolyut sonini muntazam nazorat qilishni talab qiladi|neytrofil|neytrofillar|Agranulotsitoz xavfi tufayli avval har hafta.
+clozapine-1omc81e|Klozapin|Klozapinning kam e'tibor beriladigan xavfi|Og'ir qabziyat va ichak tutilishi|Ko'p diareya va vazn yo'qotish|O'limga olib kelishi mumkin; profilaktika qiling.
+lithium-1oybtn6|Litiy|Litiyning tor terapevtik oralig'i taxminan ___ mmol/l|1|1.0, 0.6-1.2|1,5 dan yuqorida toksiklik.
+lithium-toxicity-0ohzb92|Litiy toksikligi|Og'ir litiy toksikligi nima bilan davolanadi|Gemodializ|Faollashtirilgan ko'mir|Ko'mir litiyni bog'lamaydi.
+lithium-in-pregnancy-01jakzg|Homiladorlikda litiy|Birinchi trimestrda litiy ___ anomaliyasiga olib keladi|Ebshteyn|ebstein|Trikuspidal qopqoq nuqsoni.
+valproate-0pxstzk|Valproat|Tug'ish yoshidagi ayollarda valproat|Umuman qo'llanmasligi kerak|Birinchi tanlov hisoblanadi|Nerv nayi nuqsonlari va intellekt pasayishi.
+lamotrigine-1qxbyuw|Lamotridjin|Lamotridjin bipolyar ___ da ayniqsa foydali|depressiya|depressiyada|O'tkir maniyaga kamroq ta'sir qiladi.
+carbamazepine-16so227|Karbamazepin|Karbamazepin o'z metabolizmini kuchaytiradi, bu nima deyiladi|Avtoinduksiya|Nol tartibli kinetika|Birinchi haftalarda darajasi pasayadi.
+benzodiazepine-choice-0bdcadn|Benzodiazepin tanlash|Jigar kasalligida eng xavfsiz benzodiazepinlar|Lorazepam, oksazepam va temazepam|Diazepam va xlordiazepoksid|Ular faqat glyukuronlanish orqali parchalanadi.
+benzodiazepine-withdrawal-17lbzc9|Benzodiazepinni to'xtatish|Benzodiazepinni keskin to'xtatish ___ chaqirishi mumkin|tutqanoq|tutqanoqlar|Alkogol kabi, bu ham o'limga olib kelishi mumkin.
+zolpidem-0clel0v|Zolpidem|Zolpidem benzodiazepinlardan nimasi bilan farq qiladi|BZ1 kichik turiga tanlab ta'sir qiladi|Qaramlik xavfi butunlay yo'q|Mushakni kamroq bo'shashtiradi; uyquda g'alati xatti-harakatlar qayd etilgan.
+buspirone-1ltygyi|Buspiron|Buspiron 5-HT1___ retseptorining qisman agonisti|A|1a|Qaramlik yo'q, ammo ta'siri haftalar ichida boshlanadi.
+alcohol-withdrawal-0irvx3r|Alkogol abstinensiyasi|Alkogolli delirium odatda oxirgi ichishdan ___ soat keyin boshlanadi|48|48-96, 72|Oddiy abstinensiya va tutqanoqlardan keyinroq.
+alcohol-withdrawal-seizures-00tzecf|Abstinensiya tutqanoqlari|Abstinensiya tutqanoqlari odatda qachon bo'ladi|12-48 soatda|Bir haftada|Alkogolli deliriumdan oldin.
+disulfiram-1mmfw7b|Disulfiram|Disulfiram aldegid___ ni bloklab, alkogol bilan og'ir reaksiya beradi|degidrogenaza|degidrogenazani|Atsetaldegid to'planadi.
+naltrexone-09e0cn4|Naltrekson|Naltrekson alkogolga chanqoqni nimani bloklab kamaytiradi|Opioid retseptorlarini|Dofamin retseptorlarini|Opioid qabul qiladiganlarda mumkin emas.
+acamprosate-0k9edai|Akamprosat|Akamprosat ___ uzatilishini boshqarib, tiyilishni saqlaydi|glutamat|nmda, glutamatergik|Naltreksondan farqli, jigar kasalligida xavfsiz.
+opioid-withdrawal-0yvoszt|Opioid abstinensiyasi|Opioid abstinensiyasi qanday|Juda og'ir, ammo kamdan kam o'limga olib keladi|Statsionar yordamsiz ko'pincha o'limga olib keladi|Alkogol va benzodiazepin abstinensiyasi o'ldirishi mumkin.
+cocaine-intoxication-0hen970|Kokain bilan zaharlanish|Kokain bilan zaharlanish qorachiqlarni ___ va gipertenziya beradi|kengaytiradi|kengaygan, midriaz|Shuningdek qo'zg'aluvchanlik va ko'krak og'rig'i.
+opioid-intoxication-1e13pvl|Opioid bilan zaharlanish|Opioid bilan zaharlanish nimaga olib keladi|Nuqtadek qorachiqlar va nafas depressiyasi|Kengaygan qorachiq, qo'zg'aluvchanlik va terlash|Eng ishonchli klinik belgi.
+phencyclidine-0ddahj6|Fensiklidin|Fensiklidin bilan zaharlanish klassik holda ___ nistagm va zo'ravonlik beradi|vertikal|vertikal nistagm, rotator|Zaharlovchi moddalar orasida o'ziga xos belgi.
+cannabis-12xxxe1|Nasha|Nashani surunkali ko'p iste'mol qilish nima bilan bog'liq|Amotivatsion sindrom va psixoz xavfi|Jismoniy qaramlik va o'limga olib keluvchi abstinensiya|Kuchli qusish va issiq suvda ko'p yuvinish majburiyati.
+major-depression-1sza57s|Katta depressiya|Katta depressiya uchun belgilar kamida ___ hafta davom etishi kerak|2|ikki|Kayfiyat pastligi yoki angedoniya bilan.
+persistent-depressive-disorder-0okizhf|Uzoq davom etuvchi depressiv buzilish|Distimiya uchun tushkun kayfiyat kamida qancha davom etishi kerak|Ikki yil|Olti oy|Surunkali, ammo kamroq og'ir.
+bipolar-mania-1fxtija|Maniakal epizod|Maniakal epizod kamida ___ hafta davom etishi kerak|1|bir, 7 kun|Yoki shifoxonaga yotqizish kerak bo'lsa, istalgan davomiylik.
+schizoaffective-disorder-17inzeq|Shizoaffektiv buzilish|Shizoaffektiv buzilish uchun psixoz qanday bo'lishi kerak|Kayfiyat belgilarisiz ikki hafta davom etishi|Faqat kayfiyat epizodlari davomida bo'lishi|Aks holda bu psixotik belgili kayfiyat buzilishi.
+brief-psychotic-disorder-0a8b7sx|Qisqa psixotik buzilish|Qisqa psixotik buzilish bir ___ dan kam davom etadi|oy|oydan|Bir oydan olti oygacha — shizofreniyasimon buzilish.
+generalized-anxiety-disorder-1a9kydg|Generallashgan xavotir buzilishi|Bu buzilish uchun ortiqcha xavotir kamida qancha davom etishi kerak|Olti oy|Bir oy|Ko'p kunlar, bir necha sohada.
+obsessive-compulsive-disorder-0yx2yl2|Obsessiv-kompulsiv buzilish|Obsessiv-kompulsiv buzilishda SSRI dozalari depressiyadagidan ko'pincha ___ bo'ladi|yuqori|yuqoriroq, kattaroq|Shuningdek ta'sirlash va javobni ushlab turish terapiyasi.
+body-dysmorphic-disorder-0nueub0|Tana dismorfik buzilishi|Tana dismorfik buzilishi nima bilan davolanadi|SSRI va kognitiv terapiya|Kosmetik jarrohlik yo'li bilan tuzatish|Operatsiya bu holatni kuchaytiradi.
+ptsd-11d29gl|Travmadan keyingi stress buzilishi|Bu buzilishda birinchi tanlov dori davosi — ___|SSRI|ssri preparatlari|Travmaga yo'naltirilgan psixoterapiya bilan birga.
+acute-stress-disorder-0u9ii1m|O'tkir stress buzilishi|O'tkir stress buzilishi qancha davom etadi|Uch kundan bir oygacha|Olti oydan ortiq|Bir oydan oshsa, travmadan keyingi stress buzilishiga o'tadi.
+borderline-personality-disorder-1yofjci|Chegaraviy shaxs buzilishi|Chegaraviy shaxs buzilishi ___ xulqiy terapiyaga eng yaxshi javob beradi|dialektik|dbt, dialektik-xulqiy|Emotsiyalarni boshqarishga yo'naltirilgan.
+antisocial-personality-disorder-0jylr29|Antisotsial shaxs buzilishi|Antisotsial shaxs buzilishi uchun nima kerak|15 yoshgacha xulq buzilishi belgilari|Belgilar faqat kattalikda boshlangani|Bemor kamida 18 yoshda bo'lishi kerak.
+narcissistic-personality-0pykhf7|Nartsisstik shaxs buzilishi|Nartsisstik shaxs buzilishi ulug'vorlik va ___ yo'qligi bilan kechadi|empatiya|empatiyaning|Ichkarida o'z-o'zini hurmat esa mo'rt.
+somatization-1b9efgk|Somatizatsiya|Somatik belgilar buzilishi kasallik xavotiri buzilishidan nimasi bilan farq qiladi|Haqiqiy jismoniy belgilar bo'lishi bilan|Ataylab uydirib ko'rsatilishi bilan|Kasallik xavotirida belgilarsiz kasallikdan qo'rquv bo'ladi.
+attachment-1c2hhf5|Bog'lanish|Ajralish xavotiri normada taxminan ___ oyda avjiga chiqadi|12|o'n ikki, 9-18|Uch yoshgacha o'tib ketadi.
+object-permanence-0a9gwc1|Obyekt doimiyligi|Obyekt doimiyligi taxminan qachon rivojlanadi|9 oyda|3 yoshda|Piaje bo'yicha sensomotor bosqich belgisi.
+erikson-1wqbmle|Erikson bosqichlari|Erikson bo'yicha o'smirlik bosqichi — o'zlik va rol ___ si|chalkashligi|chalkashlik, diffuziyasi|Keyin yoshlikda yaqinlik va yolg'izlik bosqichi keladi.
+grief-0lxt1rx|Motam|Uzoq davom etgan motam buzilishi qachon tashxislanadi|Kattalarda o'n ikki oydan keyin|Kattalarda ikki haftadan keyin|Doimiy, faoliyatni buzuvchi sog'inch.
+defense-mechanisms-15ei24a|Himoya mexanizmlari|O'zining nomaqbul hislarini boshqaga o'tkazish — ___|proyeksiya|proyeksiyasi|Yetuk bo'lmagan himoya mexanizmi.
+sublimation-05klw0d|Sublimatsiya|Sublimatsiya — bu|Impulslarni foydali yo'naltiruvchi yetuk himoya|Hisdan qochuvchi yetuk bo'lmagan himoya|Hazil, altruizm va bostirish bilan bir qatorda.
+sleep-architecture-09w99vc|Uyqu tuzilishi|Sekin to'lqinli uyquning ko'p qismi kechaning ___ yarmida bo'ladi|birinchi|birinchi yarmida|REM uyqusi ikkinchi yarmida ustunlik qiladi.
+rem-sleep-0e14e7k|REM uyqusi|REM uyqusida skelet mushaklari tonusi|Yo'q|Oshgan|Bu atoniyaning yo'qolishi REM xulqiy buzilishiga olib keladi.
