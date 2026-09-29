@@ -313,6 +313,14 @@ const uzCount = Object.keys(uz).length;
 console.log(`  uzbek   : ${uzCount} of ${questions.length} translated (${Math.floor((100 * uzCount) / questions.length)}%)` +
             (uzOrphans.length ? `, ${uzOrphans.length} line(s) for questions that no longer exist` : ""));
 for (const o of uzOrphans.slice(0, 10)) console.log(`    orphan ${o}`);
+// The whole bank is translated. A question added without its Uzbek line
+// still ships — the app falls back to English for that one question rather
+// than hide it — but it is named here so it does not slip out unnoticed.
+const untranslated = questions.filter((q) => !uz[q.id]);
+if (untranslated.length) {
+  console.log(`  uzbek missing: ${untranslated.length} question(s) would show English to an Uzbek reader`);
+  for (const q of untranslated.slice(0, 10)) console.log(`    ${sourceOf[q.id] || "?"}  ${q.id}`);
+}
 if (uzSplitTopics.length) {
   console.log(`  uzbek topics with two names: ${uzSplitTopics.length}`);
   for (const [en, names] of uzSplitTopics.slice(0, 10)) console.log(`    ${en}: ${[...names].join(" / ")}`);
