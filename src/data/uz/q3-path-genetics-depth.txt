@@ -5,7 +5,7 @@ irreversible-injury-183t95p|Qaytmas shikastlanish|Qaytmas hujayra shikastlanishi
 nuclear-changes-10d6cd7|Yadro o'zgarishlari|Hujayra o'limida yadroning kichrayishi ___ deyiladi|piknoz|piknozi|Keyin kariyoreksis, so'ng karioliz.
 ischemia-reperfusion-injury-1qz59f1|Ishemiya-reperfuzion shikastlanish|Reperfuzion shikastlanishning sababi|Kislorod erkin radikallari va kalsiy kirishi|Davom etayotgan gipoksiya va ATF tanqisligi|Shuning uchun reperfuziya shikastni vaqtincha kuchaytirishi mumkin.
 apoptosis-13zhp8z|Apoptoz|Apoptozning tashqi yo'lini ___ retseptorlari qo'zg'atadi|o'lim|fas, tnf|Fas ligandi va O'NO bog'lanib, kaspaza 8 ni faollashtiradi.
-caspases-1qpwox3|Kaspazalar|Kaspazalar — bu|Apoptozni amalga oshiruvchi proteazalar|DNK ni tiklovchi ligazalar|Ular sitoskelet va yadro oqsillarini parchalaydi.
+caspases-1qpwox3|Kaspazalar|Kaspazalar — bu|Apoptozni amalga oshiruvchi proteazalar|DNK ni tiklaydigan ligaza fermentlari|Ular sitoskelet va yadro oqsillarini parchalaydi.
 gangrene-003z9r1|Gangrena|Ho'l gangrena quruqdan ___ infeksiya borligi bilan farq qiladi|bakterial|bakteriya, qo'shilgan|Koagulyatsion nekroz ustiga kollikvatsion nekroz qo'shiladi.
 acute-inflammation-1cb4hab|O'tkir yallig'lanish|O'tkir yallig'lanishdagi vazodilatatsiyani gistamin va ___ amalga oshiradi|prostaglandinlar|prostaglandin, azot oksidi|Bu qizarish va isishni beradi.
 leukocyte-extravasation-0r0gcdj|Leykotsitlarning chiqishi|Leykotsitlarning «dumalashi» nima orqali amalga oshadi|Selektinlar|Integrinlar|Integrinlar keyin mustahkam yopishishni ta'minlaydi.
@@ -21,9 +21,9 @@ myofibroblasts-1jzbixo|Miofibroblastlar|Yaraning torayishini ___ amalga oshiradi
 vitamin-a-1ua6jun|A vitamini|Yara bitishida A vitamini nima qiladi|Steroidlar keltirgan buzilishni bartaraf etadi|Bitishga hech qanday sezilarli ta'sir ko'rsatmaydi|Steroid qabul qilayotgan bemorlarda foydali.
 zinc-deficiency-07xbuvz|Rux tanqisligi|Rux kollagenni qayta quruvchi ___ uchun zarur|metalloproteinazalar|mmp, kollagenaza|Tanqisligi bitishni sekinlashtiradi.
 carcinoma-versus-sarcoma-08qp0ll|Karsinoma va sarkoma|___ kelib chiqishli o'smalar karsinoma deyiladi|epitelial|epiteliy|Mezenximal o'smalar esa sarkoma.
-metastatic-spread-0yhr71x|Metastatik tarqalish|Karsinomalar odatda avval qaysi yo'l bilan tarqaladi|Limfa yo'llari orqali|Qon orqali|Sarkomalar gematogen tarqalishni afzal ko'radi.
+metastatic-spread-0yhr71x|Metastatik tarqalish|Karsinomalar odatda avval qaysi yo'l bilan tarqaladi|Limfa yo'llari orqali|Qon tomirlari orqali|Sarkomalar gematogen tarqalishni afzal ko'radi.
 grade-versus-stage-0ftdekq|Daraja va bosqich|___ hujayralarning qanchalik o'zgarganini, bosqich esa tarqalishini ko'rsatadi|Daraja|darajasi|Bosqich prognoz uchun muhimroq.
-anaplasia-0kx9okn|Anaplaziya|Anaplaziya nimani anglatadi|Differensiatsiyaning butunlay yo'qolishi|Qaytar hujayra displaziyasi|Xavfli o'smaning asosiy belgisi.
+anaplasia-0kx9okn|Anaplaziya|Anaplaziya nimani anglatadi|Differensiatsiyaning butunlay yo'qolishi|Qaytar bo'lgan hujayra displaziyasi|Xavfli o'smaning asosiy belgisi.
 oncogenes-0lgs8zg|Onkogenlar|Onkogenlar bitta allelda funksiyaning ___ mutatsiyasini talab qiladi|kuchayishi|kuchayish, ortishi|O'sma supressorlariga ikkala allelning yo'qolishi kerak.
 tumor-suppressor-06mln7d|O'sma supressori|Geterozigotlikning yo'qolishi nimani anglatadi|Ikkinchi normal allelning yo'qolishini|Qo'shimcha gen nusxasi paydo bo'lishini|Knudson gipotezasidagi ikkinchi «zarba».
 warburg-effect-1r7trp7|Varburg effekti|Varburg effekti o'smaning nimaga tayanishini tavsiflaydi|Kislorod bor bo'lsa ham glikolizga|Yog' kislotalarining beta-oksidlanishiga|FDG-PET tasvirining asosi.
@@ -51,7 +51,7 @@ hardy-weinberg-0o3zhrk|Xardi-Vaynberg qonuni|Xardi-Vaynberg qonunida tashuvchila
 rough-endoplasmic-reticulum-05yiugx|Donador endoplazmatik to'r|Donador endoplazmatik to'r ___ va membrana oqsillarini sintez qiladi|sekretor|ajraladigan, eksport qilinadigan|Plazmatik va qadahsimon hujayralarda ko'p.
 smooth-endoplasmic-reticulum-1y5trrl|Silliq endoplazmatik to'r|Silliq endoplazmatik to'r qaysi hujayralarda ko'p|Steroid ishlab chiqaruvchi va zararsizlantiruvchi|Plazmatik va oshqozon osti bezi atsinar hujayralarida|Jigar, buyrak usti bezi po'stlog'i va jinsiy bezlar.
 golgi-apparatus-0gsq8kp|Goldji apparati|Goldji apparati fermentlarni lizosomaga yo'naltirish uchun mannoza-6-___ qo'shadi|fosfat|fosfatni|Uning ishdan chiqishi I-hujayra kasalligiga olib keladi.
-peroxisomes-18zadev|Peroksisomalar|Peroksisomalar nima bilan shug'ullanadi|O'ta uzun zanjirli yog' kislotalari beta-oksidlanishi|Anaerob glikoliz va laktat hosil bo'lishi|Tsellveger va adrenoleykodistrofiya — peroksisomal kasalliklar.
+peroxisomes-18zadev|Peroksisomalar|Peroksisomalar nima bilan shug'ullanadi|O'ta uzun zanjirli yog' kislotalari beta-oksidlanishi|Anaerob glikoliz va laktat kislotasi hosil bo'lishi|Tsellveger va adrenoleykodistrofiya — peroksisomal kasalliklar.
 microtubules-06ptob8|Mikronaychalar|Mikronaychalar ___ dimerlarining polimerlari|tubulin|tubulinning|Kolxitsin, vinkristin va taksanlar shunga ta'sir qiladi.
 kartagener-syndrome-1cw83ys|Kartagener sindromi|Kartagener sindromi nimaning nuqsoni|Dinein «qo'llari»|Aktin iplari|Kiprikchalar va spermatozoidlar harakatsiz.
 collagen-synthesis-0mmv5e4|Kollagen sintezi|Kollagen uch qavat spirali hosil bo'lishi uchun prolin va ___ gidroksillanishi kerak|lizin|lizinning|C vitaminiga bog'liq.
