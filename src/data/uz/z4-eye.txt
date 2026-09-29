@@ -1,0 +1,50 @@
+open-angle-glaucoma-vision-loss-010nzmu|Ochiq burchakli glaukomada ko'rish yo'qolishi|Ochiq burchakli glaukoma nimani oladi|Periferik ko'rishni, og'riqsiz|Markaziy ko'rishni, og'riq bilan|Oylar davomida «tunnel ko'rish»ga o'tadi.
+optic-disc-in-glaucoma-0kjmeep|Glaukomada ko'ruv nervi diski|Glaukoma ko'ruv nervi diskining ___ ni, kosa-disk nisbati oshishini beradi|chuqurlashuvi|kosalanishi|Oftalmoskopiyada ko'rinadi.
+glaucoma-first-step-05hs1kr|Glaukomada birinchi qadam|Glaukoma gumonida birinchi qadam qaysi|Tonometriya|Oftalmoskopiya|Ko'z ichi bosimini o'lchash.
+closed-angle-glaucoma-pupil-0nbupot|Yopiq burchakli glaukomada qorachiq|O'tkir yopiq burchakli glaukomada qorachiq qanday bo'ladi|Qo'zg'almas va o'rtacha kengaygan|Kichik va yorug'likka javob beradi|Qizil, og'riqli, yoshlanadigan ko'zda.
+closed-angle-systemic-symptoms-1vq210t|Yopiq burchakda umumiy belgilar|O'tkir burchak yopilishi ko'pincha nima bilan birga bo'ladi|Bosh og'rig'i, ko'ngil aynishi va qusish|Isitma va bo'yinning qotib qolishi bilan|Bemor noto'g'ri shifokorga borib qolishi mumkin.
+halos-in-angle-closure-01am82g|Burchak yopilishida halqalar|O'tkir burchak yopilishida bemorlar chiroq atrofida rangli ___ ni ko'radi|halqalar|halqa|Shox parda shishi tufayli.
+pilocarpine-mechanism-1aopxvp|Pilokarpin mexanizmi|Pilokarpin burchak yopilishida qanday yordam beradi|Qorachiqni toraytirib|Qorachiqni kengaytirib|Suyuqlik chiqish burchagini ochadi.
+drainage-structure-0nqrts0|Chiqarish tuzilmasi|Ko'z ichi suyuqligi ___ kanali orqali chiqadi|Shlemm|shlemm|Shox parda va rangdor parda orasida.
+macular-degeneration-vision-0zfp7yp|Makula degeneratsiyasida ko'rish|Makula degeneratsiyasi nimani oladi|Markaziy ko'rishni|Periferik ko'rishni|Glaukomaning teskarisi.
+amsler-grid-finding-1uths0w|Amsler to'ri topilmasi|Amsler to'rida to'g'ri chiziqlar ___ ko'rinsa, bu makula degeneratsiyasi|to'lqinsimon|qiyshiq, egilgan|Oddiy, to'shak yonidagi sinov.
+drusen-appearance-03mspja|Druzalar ko'rinishi|Oftalmoskopiyadagi druzalar nima|Sariq lipoproteinli cho'kmalar|Oq, ipsimon aksoplazmatik dog'lar|Makula degeneratsiyasining asosiy belgisi.
+hard-exudates-1sey3t2|Qattiq ekssudatlar|To'r pardadagi qattiq ekssudatlar nimadan kelib chiqadi|Diabetda oqib turuvchi tomirlardan|Makula ostidagi eski cho'kmalardan|Makula ostida esa druzalar joylashadi.
+retinitis-pigmentosa-symptoms-0czzks0|Pigmentli retinit belgilari|Pigmentli retinit shabko'rlik va yana nimani beradi|Periferik ko'rishning yo'qolishini|Markaziy ko'rishning yo'qolishini|Ko'pincha oilaviy anamnez bilan.
+night-blindness-term-152nv23|Shabko'rlik atamasi|Tunda ko'rishning yo'qolishi ___ deb ataladi|niktalopiya|niktalopiyadir|Pigmentli retinitning asosiy belgisi.
+central-retinal-artery-occlusion-1uy1sgh|To'r pardaning markaziy arteriyasi okklyuziyasi|To'r parda markaziy arteriyasi okklyuziyasi nimani beradi|Birdan, og'riqsiz ko'rishning yo'qolishini|Sekin, og'riq bilan ko'rishning yo'qolishini|Parda tushgandek bo'ladi.
+crao-fundoscopy-1mzfhm9|Arteriya okklyuziyasida oftalmoskopiya|To'r parda markaziy arteriyasi okklyuziyasida ko'z tubi qanday|Rangsiz to'r parda, «gilos danagi» dog'i|Buralgan venalar va qon quyilishlar|Xorioidea hamon foveani ta'minlaydi.
+central-retinal-vein-occlusion-11fg0rf|To'r pardaning markaziy venasi okklyuziyasi|To'r parda markaziy venasi okklyuziyasida nima ko'rinadi|Buralgan venalar va qon quyilishlar|Rangsiz to'r parda va qizil dog'|Diabetli yoki gipertoniyali bemorda.
+vitreous-hemorrhage-risks-1qwd5kp|Shishasimon tanaga qon quyilishi xavfi|Shishasimon tanaga qon quyilishi qachon ko'proq bo'ladi|Diabet va gipertoniyada|Glaukoma va kataraktada|Ko'z oldida suzuvchi dog'lar va chaqnashlar bilan.
+retinal-detachment-history-1qx4mmr|To'r parda ko'chishi anamnezi|To'r parda ko'chishi klassik holda nimadan keyin bo'ladi|Ko'z jarohati yoki og'ir miyopiyadan|Ko'z bosimining sekin oshishidan|Suzuvchi dog'lar, chaqnashlar va soya bilan.
+amaurosis-fugax-0ofqxmc|O'tkinchi ko'rlik|Og'riqsiz, o'tkinchi, bir ko'zda ko'rishning yo'qolishi amaurosis ___ deb ataladi|fugax|fugaks|Uyqu arteriyasidan ateroemboliya tufayli.
+amaurosis-fugax-first-test-0tltdd2|O'tkinchi ko'rlikda birinchi tekshiruv|O'tkinchi ko'rlik avval nima bilan tekshiriladi|Uyqu arteriyasining dupleks ultratovushi|Uyqu arteriyasining angiografiyasi|Davolash mumkin bo'lgan stenoz qidiriladi.
+refractile-body-composition-17ocisa|Nur sindiruvchi tanacha tarkibi|To'r parda tomirida ko'rinadigan nur sindiruvchi tanacha nimadan tuzilgan|Xolesterindan|Kalsiydan|Uyqu arteriyasidan kelgan Hollenxorst pilakchasi.
+av-nicking-meaning-13je6ki|Arteriovenoz kesishuv ma'nosi|Oftalmoskopiyada arteriovenoz kesishuv nimani bildiradi|Gipertonik retinopatiyani|Diabetik retinopatiyani|Qattiq arteriya venani bosib qo'yadi.
+hsv-keratitis-pattern-02ik1gl|Gerpetik keratit manzarasi|Oddiy gerpes keratiti qanday bo'yaladi|Shoxlangan, daraxtsimon manzarada|Dumaloq, chetlari tik yara shaklida|Flyuoressein tomizilganda ko'rinadi.
+herpesvirus-genome-1cp31w9|Gerpesvirus genomi|Herpesviridae, jumladan OGV va suvchechak virusi, qanday|DNK li, qobiqli va chiziqli|RNK li, qobiqli va segmentli|Muhim tuzilish xususiyati.
+cmv-retinitis-setting-0ll8543|Sitomegalovirus retiniti sharoiti|Sitomegalovirus retiniti qachon yuz beradi|Ilgarilagan OIV infeksiyasida|Immuniteti sog'lom kattalarda|Kechki opportunistik infeksiya.
+allergic-conjunctivitis-sign-05h4oca|Allergik konyunktivit belgisi|Konyunktivaning «toshko'cha» ko'rinishi nimani bildiradi|Allergik konyunktivitni|Bakterial konyunktivitni|Xuddi shu atama burun uchun ham qo'llanadi.
+chlamydial-conjunctivitis-timing-1d2isj4|Xlamidiyali konyunktivit vaqti|Chaqaloqda xlamidiyali konyunktivit qachon paydo bo'ladi|Hayotning birinchi haftasidan keyin|Tug'ilgandan soatlar ichida|Gonokokkli konyunktivit ancha tezroq paydo bo'ladi.
+neonatal-gonococcal-prophylaxis-1m6pd2e|Chaqaloqda gonokokk profilaktikasi|Chaqaloq ko'zi profilaktikasida hozir nima ishlatiladi|Eritromitsinli malham|Kumush nitrat tomchilari|Kumush nitrat kimyoviy konyunktivit bergan.
+orbital-cellulitis-features-0lmqyzp|Ko'z kosasi sellyuliti xususiyatlari|Ko'z kosasi sellyuliti nimasi bilan ajralib turadi|Ekzoftalm va oftalmoplegiya bilan|Qichishish va suvli ajralma bilan|Ko'pincha yuqori nafas yo'llari infeksiyasidan keyin.
+orbital-cellulitis-treatment-1t8ahlz|Ko'z kosasi sellyulitini davolash|Ko'z kosasi sellyuliti nimani talab qiladi|Vena ichiga antibiotik|Mahalliy antibiotik tomchilari|Bu ko'rish uchun xavfli shoshilinch holat.
+chalazion-versus-hordeolum-01bkc7c|Xalazion va arpacha|Qovoqdagi OG'RIQSIZ shish — bu nima|Xalazion|Arpacha|Arpacha og'riqli bo'ladi.
+hordeolum-organism-10odg3i|Arpacha qo'zg'atuvchisi|Arpachani nima keltiradi|Staphylococcus aureus|Streptococcus pyogenes|Ikkalasi ham avval iliq kompress bilan davolanadi.
+hyphema-definition-0nj5jqh|Gifema ta'rifi|Gifema — ko'zning ___ kamerasidagi qon|oldingi|old|Odatda yopiq jarohatdan keyin.
+optic-neuritis-association-0e5iz2q|Optik nevrit bilan bog'liqlik|Optik nevrit klassik holda nima bilan bog'liq|Tarqoq skleroz bilan|Myasteniya gravis bilan|Ko'pincha birinchi namoyon bo'ladigan belgi.
+marcus-gunn-pupil-155i1sc|Markus Gunn qorachig'i|Optik nevrit nisbiy ___ qorachiq nuqsonini beradi|afferent|afferentli|Markus Gunn qorachig'i.
+internuclear-ophthalmoplegia-lesion-1f8um89|Yadrolararo oftalmoplegiyada o'choq|Yadrolararo oftalmoplegiyada o'choq qaysi tomonda bo'ladi|Ichkariga bura olmaydigan tomonda|Tashqariga bura olmaydigan tomonda|Medial uzunchoq tutamda joylashadi.
+ino-convergence-1c82u1y|Yadrolararo oftalmoplegiyada konvergensiya|Yadrolararo oftalmoplegiyada konvergensiya qanday|Saqlanadi|U ham yo'qoladi|Bu III nerv butunligini isbotlaydi.
+third-nerve-palsy-eye-position-1johql5|III nerv falajida ko'z holati|To'liq III nerv falajida ko'z qanday holatda qoladi|Pastga va tashqariga|Ichkariga burilgan|Ptoz va kengaygan qorachiq bilan.
+pcom-aneurysm-pupil-0vfsfwt|Orqa biriktiruvchi arteriya anevrizmasida qorachiq|Orqa biriktiruvchi arteriya anevrizmasi nimani beradi|Shu tomonda kengaygan qorachiqni|Kichik, javob beruvchi qorachiqni|U yuza joylashgan parasimpatik tolalarni siqadi.
+fourth-nerve-palsy-head-position-1j8ke9m|IV nerv falajida bosh holati|G'altaksimon nerv falaji bemorni nima qilishga majbur qiladi|Boshni undan teskari tomonga egishga|Boshni o'sha tomonga burishga|Yuqoriga siljishni qoplash uchun.
+sixth-nerve-palsy-eye-position-0ry1fdd|VI nerv falajida ko'z holati|Uzoqlashtiruvchi nerv falajida ko'z qanday qoladi|Ichkariga burilgan|Tashqariga burilgan|Tashqariga burish yo'qoladi.
+bitemporal-hemianopsia-lesion-17wml1r|Bitemporal gemianopsiyada o'choq|Bitemporal gemianopsiya qayerda joylashadi|Ko'rish kesishmasida|Ko'rish yo'lida|Klassik holda gipofiz o'smasidan.
+cavernous-sinus-thrombosis-triad-03ndt8a|Kavernoz sinus trombozi uchligi|Kavernoz sinus trombozi bosh og'rig'i, ekzoftalm va yana nimani beradi|Oftalmoplegiyani|Faqat ko'rishning yo'qolishini|Sinusitdan klapansiz venalar orqali tarqaladi.
+cavernous-sinus-nerve-0whti5w|Kavernoz sinusdagi nerv|Kavernoz sinus trombozida klassik holda qaysi nerv zararlanadi|Uzoqlashtiruvchi nerv|G'altaksimon nerv|U sinus ichida erkin o'tadi.
+horner-syndrome-triad-0ir44d6|Gorner sindromi uchligi|Gorner sindromi — mioz, angidroz va yana nima|Qismiy ptoz|To'liq ptoz|To'liq ptoz III nerv falajini bildiradi.
+wallenberg-and-horner-0l47721|Vallenberg va Gorner|Uzunchoq miyaning yon sindromi Gorner sindromi va yana nimani beradi|Disfagiya va xirillashni|Qarshi tomon gemiplegiyasini|Orqa pastki miyacha arteriyasi hududidagi insultdan.
+leukocoria-1q2nfu3|Leykokoriya|Qorachiqning oq refleksi ___ deb ataladi|leykokoriya|leykokoriyadir|Retinoblastomaning birinchi belgisi.
+retinoblastoma-later-cancer-1n7u8hg|Retinoblastomadan keyingi rak|Irsiy retinoblastoma keyinchalik nima xavfini oshiradi|Osteosarkoma|Yuing sarkomasi|Ikkalasini ham bir xil Rb mutatsiyasi keltiradi.
+rb-gene-inheritance-1ck6yni|Rb genining irsiylanishi|Retinoblastoma qanday yo'l tutadi|Autosom-dominant, ikki zarba kerak|Autosom-retsessiv, bitta zarba kerak|Ikkinchi zarba bolalikda deyarli muqarrar.
