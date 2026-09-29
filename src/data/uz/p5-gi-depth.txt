@@ -2,7 +2,7 @@
 
 barrett-esophagus-1dj0cdt|Barrett qizilo'ngachi|Barrett metaplaziyasi ___ hujayralar mavjudligi bilan aniqlanadi|qadahsimon|qadahsimon hujayralar|Qizilo'ngach-oshqozon tutashmasidan yuqorida ichak tipidagi shilliq qavat.
 esophageal-cancer-1l0sqds|Qizilo'ngach saratoni|Qizilo'ngach adenokarsinomasi qayerda rivojlanadi|Pastki uchdan birida|Yuqori uchdan birida|Yassi hujayrali karsinoma yuqori uchdan ikki qismini afzal ko'radi.
-esophageal-varices-156vhy5|Qizilo'ngach venalarining varikoz kengayishi|Qonayotgan varikoz venalar somatostatin analogi — ___ bilan shoshilinch to'xtatiladi|oktreotid|oktreotid preparati|Shuningdek bog'lash va antibiotik profilaktikasi.
+esophageal-varices-156vhy5|Qizilo'ngach venalari varikozi|Qonayotgan varikoz venalar somatostatin analogi — ___ bilan shoshilinch to'xtatiladi|oktreotid|oktreotid preparati|Shuningdek bog'lash va antibiotik profilaktikasi.
 mallory-weiss-tear-0bipxm4|Mellori-Veys yirtilishi|Mellori-Veys yirtilishida nima kuzatiladi|Faqat shilliq qavat yirtilishi|To'liq qalinlikdagi yorilish|Burxave sindromi — mediastinit bilan kechuvchi to'liq qalinlikdagi yorilish.
 boerhaave-syndrome-0xqnroi|Burxave sindromi|Burxave sindromi bo'yinda teri osti ___ ga olib keladi|emfizemasi|emfizema, krepitatsiya|Kuchli qusishdan keyin havo ko'ks oralig'iga o'tadi.
 eosinophilic-esophagitis-0oc9xif|Eozinofil ezofagit|Eozinofil ezofagitda klassik holda nima ko'rinadi|Endoskopiyada konsentrik halqalar|Endoskopiyada yakka distal torayish|Atopik yosh bemorda ovqat tiqilib qolishi.
