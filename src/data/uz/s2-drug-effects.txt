@@ -24,3 +24,27 @@ methyldopa-1f6u9vt|Metildopa|Metildopa to'g'ridan-to'g'ri ___ testini musbat qil
 dapsone-14t0idn|Dapson|Dapson ___ va G6PD yetishmovchiligida gemoliz chaqiradi|metgemoglobinemiya|metgemoglobinemiyani|Qon shokolad rangida; metilen ko'ki bilan davolanadi.
 linezolid-0irto0h|Linezolid|Uzoq muddatli linezolid nimaga olib keladi|Trombotsitopeniya va ko'rish nervi neyropatiyasi|Nefrotoksiklik va elektrolitlar yo'qotilishi|Ikki haftadan ortiq kurslarni cheklang.
 aminoglycosides-1vur19y|Aminoglikozidlar|Aminoglikozidlar proksimal ___ da to'planib, oliguriyasiz yetishmovchilik beradi|kanalcha|kanalchalar, kanalcha hujayralari|Dori darajasi va buyrak funksiyasini kuzatib boring.
+nsaids-1n0nodx|NYaQV|NYaQV ___ chaqiradigan vazodilatatsiyani yo'qotib, o'tkir buyrak shikastini beradi|prostaglandin|prostaglandinlar|Hajm kamayganda, AFF ingibitori va diuretiklar bilan birga xavfli.
+lithium-02nqhna|Litiy|Litiy yig'uvchi naychada ADG ni bloklab, ___ qandsiz diabet chaqiradi|nefrogen|nefrogen turdagi|Amilorid yordam berishi mumkin.
+amphotericin-b-03hvzp8|Amfoteritsin B|Amfoteritsin siydik bilan kaliy va ___ ni yo'qotadi|magniy|magniyni, mg|Shuningdek buyrak kanalchalari atsidozi.
+cyclosporine-0nxgw9y|Siklosporin|Siklosporin dozaga bog'liq ___ va gipertenziya beradi|nefrotoksiklik|buyrak shikasti|Shuningdek milk giperplaziyasi va girsutizm.
+tenofovir-14axslx|Tenofovir|Tenofovir dizoproksil nimaga olib kelishi mumkin|Fankoni sindromi va suyak massasi kamayishi|Jigar steatozi va laktat to'planishi|Alafenamid shakli xavfsizroq.
+isoniazid-0wfq159|Izoniazid|Izoniazid gepatiti xavfi ___ va alkogol bilan ortadi|yosh|yoshi, keksalik|Keksa bemorlarda transaminazalarni kuzatib boring.
+statins-1kogrh5|Statinlar|Statinlar ___ ni oshirishi mumkin, ammo klinik ahamiyatli shikast kam uchraydi|transaminazalar|alt, jigar fermentlari|Boshlashdan oldin boshlang'ich darajani tekshiring.
+valproate-06p16nn|Valproat|Valproat o'limga olib keluvchi ___ va pankreatit chaqirishi mumkin|gepatotoksiklik|jigar yetishmovchiligi, gepatit|Xavf kichik yoshdagi bolalarda eng yuqori.
+halothane-07apc56|Galotan|Galotan nimaga olib kelishi mumkin|Takroriy qo'llashda fulminant gepatit|Bir dozadan keyin o'tkir buyrak yetishmovchiligi|Shuning uchun u deyarli qo'llanmay qoldi.
+amoxicillin-clavulanate-1j8nmuw|Amoksitsillin-klavulanat|Amoksitsillin-klavulanat klassik holda ___ sariqlik beradi|xolestatik|xolestaz|Ko'pincha kurs tugagandan haftalar keyin.
+metronidazole-1u0ob0c|Metronidazol|Uzoq muddatli metronidazol periferik ___ va metall ta'mini beradi|neyropatiya|neyropatiyani|Shuningdek alkogol bilan disulfiramga o'xshash reaksiya.
+isoniazid-09drqhd|Izoniazid|Izoniazid neyropatiyasi ___ bilan oldi olinadi|piridoksin|b6, b6 vitamini|U B6 vitaminini kamaytiradi.
+vigabatrin-0qnsjzb|Vigabatrin|Vigabatrin qaytmas ___ maydoni torayishiga olib keladi|ko'rish|ko'rish maydoni|Muntazam perimetriya talab qiladi.
+mefloquine-1oq5uaa|Mefloxin|Mefloxin yorqin tushlar va ___ buzilishlarini berishi mumkin|neyropsixiatrik|psixiatrik, kayfiyat|Psixiatrik anamnezi bo'lganlarda qo'llanmaydi.
+steroid-psychosis-0izmav1|Steroid psixozi|Yuqori dozadagi kortikosteroidlar nimaga olib kelishi mumkin|Maniya va psixoz|Faqat uyquchanlik|Odatda erta va dozaga bog'liq.
+anticholinergic-burden-14tw2yl|Xolinolitik yuklama|Keksalarda yuqori xolinolitik yuklama ___ ni kuchaytiradi|chalkashlik|delirium, kognitiv buzilish|Difengidramin va oksibutinin ko'p uchraydigan aybdorlar.
+cyp450-inducers-1m93usg|CYP450 ni faollashtiruvchilar|Rifampitsin, fenitoin, karbamazepin va dalachoy ___ ni faollashtiradi|CYP450|cyp 450, sitoxrom|Birga berilgan dorilar darajasini pasaytiradi.
+cyp450-inhibitors-1bx1g6k|CYP450 ingibitorlari|Makrolidlar, azollar va greypfrut sharbati CYP450 ni ___|ingibitsiya qiladi|bloklaydi, tormozlaydi|Dori darajasi va toksiklik xavfi oshadi.
+warfarin-and-amiodarone-09fl3cc|Varfarin va amiodaron|Varfaringa amiodaron qo'shish nima qiladi|XNN ni oshiradi|XNN ni pasaytiradi|Varfarin dozasini kamaytirib, diqqat bilan kuzatib boring.
+maoi-and-tyramine-069soah|MAO ingibitori va tiramin|MAO ingibitorlari eskirgan pishloq bilan nimaga olib keladi|Gipertonik kriz|Serotonin sindromi|Tiramin zaxiradagi noradrenalinni siqib chiqaradi.
+serotonin-syndrome-triggers-0j2pcdg|Serotonin sindromini qo'zg'atuvchilar|SSRI ni tramadol, linezolid yoki ___ bilan birga qo'llash serotonin sindromi xavfini tug'diradi|MAO ingibitori|maoi, triptan, triptanlar|Shuningdek dalachoy va ondansetron.
+potassium-sparing-combinations-1eitxog|Kaliyni saqlovchi birikmalar|AFF ingibitori, spironolakton va trimetoprimni birga qo'llash nima xavfini tug'diradi|Og'ir giperkaliemiya|Gipokaliemiya|Uchalasi ham kaliyni ushlab qoladi.
+qt-prolonging-drugs-02pnr8g|QT ni uzaytiruvchi dorilar|Makrolidlar, antipsixotiklar, ondansetron va ___ QT ni uzaytiradi|metadon|ftorxinolonlar, xinolonlar|Birga qo'llanganda xavf qo'shiladi.
+grapefruit-juice-0197r9j|Greypfrut sharbati|Greypfrut sharbati qanday dorilarga eng ko'p ta'sir qiladi|Birlamchi o'tishda ko'p parchalanadiganlarga|Buyrak orqali ko'p chiqariladiganlarga|Ichakdagi CYP3A4 ni ingibitsiya qilish orqali.
