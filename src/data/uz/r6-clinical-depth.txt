@@ -1,0 +1,27 @@
+# Klinik amaliyot — chuqurlashtirilgan qism (qarang: TERMS.md)
+
+anaphylaxis-0xfu23h|Anafilaksiya|Anafilaksiyada adrenalin songa ___ mushak yuboriladi|ichiga|mushak ichiga, im|Kattalarda 1:1000 eritmadan 0,5 mg.
+anaphylaxis-0gmrhoq|Anafilaksiya|Ikki fazali anafilaksiya nimani anglatadi|Sog'aygandek bo'lgach, soatlar o'tib qaytadi|Bir vaqtda ikkita a'zo tizimi zararlanadi|4-6 soat kuzatib turiladi.
+cardiac-arrest-01q1p4u|Yurak to'xtashi|Defibrillatsiya qilinadigan ikki ritm — pulssiz qorincha taxikardiyasi va ___ fibrillatsiyasi|qorinchalar|qorincha, vf|Asistoliya va pulssiz elektr faollik defibrillatsiya qilinmaydi.
+cardiac-arrest-0k2b60q|Yurak to'xtashi|Yurak to'xtashida adrenalin qanday beriladi|Har 3-5 daqiqada|Faqat boshida bir marta|Defibrillatsiya qilinmaydigan ritmlarda darhol beriladi.
+reversible-causes-0uas56o|Qaytar sabablar|To'rt «H» ga gipoksiya, gipovolemiya, gipotermiya va ___ yoki metabolik buzilish kiradi|giperkaliemiya|gipokaliemiya, vodorod ioni|To'rt «T»: klapanli pnevmotoraks, tamponada, toksinlar va tromboz.
+sepsis-0ea5qli|Sepsis|Sepsisda vaqt jihatidan eng muhim chora|Erta antibiotik berish|Markaziy kateter qo'yish|Har bir soat kechikish o'limni oshiradi.
+sepsis-0e8suvp|Sepsis|Sepsisda qon zardobidagi ___ ning oshishi to'qima gipoperfuziyasini bildiradi|laktat|laktatning|4 mmol/l dan yuqori bo'lsa, holat og'ir.
+trauma-primary-survey-1lpumpu|Jarohatda birlamchi ko'rik|Birlamchi ko'rik tartibi qanday|Nafas yo'li, nafas, qon aylanishi, ong, ko'rik|Avval qon aylanishi, keyin nafas yo'li va nafas|Ba'zi protokollarda halokatli qon ketishi nafas yo'lidan oldin turadi.
+head-injury-1pyg625|Bosh jarohati|Glazgo shkalasi ___ yoki undan past bo'lsa, intubatsiya majburiy|8|sakkiz|Bundan past bo'lsa, nafas yo'li himoyalanmagan bo'ladi.
+burns-0pd7k2s|Kuyish|Kuyishda suyuqlik hajmi nimaga qarab hisoblanadi|Kuygan tana yuzasi va vazn bo'yicha|Kuyish chuqurligi va bemor yoshi bo'yicha|Parkland formulasi.
+hypothermia-1j4ac3n|Gipotermiya|Gipotermiya EKG da ___ to'lqinini beradi|J|osborn, osborn j|Osborn to'lqini deb ham ataladi.
+drowning-0c7pw3s|Suvga cho'kish|Sho'r va chuchuk suvda cho'kish qanday olib boriladi|Bir xil|Turli suyuqliklar bilan|Umumiy mexanizm — gipoksiya.
+elevated-alkaline-phosphatase-0p2e3p3|Ishqoriy fosfatazaning oshishi|Ishqoriy fosfataza jigardan ekanini aniqlash uchun ___ ni tekshiring|GGT|gamma-gt, gamma-glutamiltransferaza|GGT oshgan bo'lsa, manba jigar ekani tasdiqlanadi.
+isolated-raised-bilirubin-0bk2m7e|Yakka bilirubin oshishi|Fermentlar normal holda yakka bilvosita giperbilirubinemiya nimadan dalolat beradi|Gilbert sindromi yoki gemoliz|O't yo'llari obstruksiyasi|Retikulotsitlar va gaptoglobinni tekshiring.
+raised-amylase-1qfrmig|Amilazaning oshishi|Amilaza ichak teshilishi, so'lak bezi kasalligi va ___ homiladorlikda ham oshadi|bachadondan tashqari|ektopik|Lipaza oshqozon osti bezi uchun spetsifikroq.
+troponin-elevation-1hiezrh|Troponinning oshishi|Troponin infarktsiz ham qaysi holatlarda oshadi|Buyrak yetishmovchiligi, sepsis yoki emboliyada|Faqat anemiya va suvsizlanish holatlarida|Belgilar bilan birga oshib, keyin pasayishini kuzating.
+d-dimer-0hs61g9|D-dimer|D-dimer asosan past xavfli bemorlarda tromboemboliyani ___ qilish uchun foydali|inkor|inkor etish|Spetsifikligi past.
+raised-ck-09b9vhu|KFK ning oshishi|Statin qabul qilayotgan bemorda jismoniy yuklamadan keyin KFK ning keskin oshishi nimadan dalolat beradi|Rabdomiolizdan|Miokard infarktidan|Buyrak funksiyasi va siydikdagi mioglobinni tekshiring.
+erythrocyte-sedimentation-rate-0r9o5f8|Eritrotsitlar cho'kish tezligi|EChT yallig'lanishdan qat'i nazar yosh va ___ bilan oshadi|anemiya|anemiya bilan|S-reaktiv oqsil bevositaroq marker.
+procalcitonin-1aidd5h|Prokalsitonin|Prokalsitonin nima uchun eng foydali|Antibiotikni to'xtatish haqida qaror qilishda|Virusli infeksiyani tashxislab berishda|Bakterial infeksiya bosilgach, u pasayadi.
+serum-osmolality-0vljhy9|Zardob osmolyalligi|Hisoblangan osmolyallik = 2 × natriy + glyukoza + ___|mochevina|mochevina azoti|Farq bo'lsa, o'lchanmagan osmotik moddalar borligini bildiradi.
+urinalysis-1b8q9tl|Siydik tahlili|Test-chiziqdagi nitritlar nimani ko'rsatadi|Gram-manfiy bakteriyalarni|Har qanday infeksiyani|Gram-musbatlarda nitratreduktaza yo'q.
+urine-casts-1avllgo|Siydik silindrlari|___ silindrlari glomerulonefrit uchun patognomonik|Eritrotsitar|eritrotsit, qizil qon tanachali|Leykotsitar silindrlar piyelonefrit yoki interstitsial nefritdan dalolat beradi.
+blood-film-0xuhxkh|Qon surtmasi|Nishonsimon hujayralar qaysi holatlarda ko'rinadi|Jigar kasalligi, talassemiya va taloqsizlikda|Temir ortiqchaligi va qo'rg'oshin zaharlanishida|Hajmga nisbatan membrana ortiqchaligi.
+blood-pressure-1g0nhp6|Arterial bosim|Gipertenziya klinikada ___/90 va undan yuqori qiymatda tashxislanadi|140|140/90|Ambulator yoki uydagi o'lchovlar bilan tasdiqlanadi.
