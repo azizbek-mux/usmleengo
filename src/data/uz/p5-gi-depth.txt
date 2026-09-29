@@ -52,3 +52,12 @@ alpha-1-antitrypsin-deficiency-1ct2iav|Alfa-1-antitripsin yetishmovchiligi|Alfa-
 budd-chiari-syndrome-0jedufw|Badd-Kiari sindromi|Badd-Kiari sindromi qaysi tomirlarning bekilishi|Jigar venalari|Darvoza venasi|Og'riqli gepatomegaliya va astsit; giperkoagulyatsiya holatini qidiring.
 hepatocellular-carcinoma-0yf167d|Gepatotsellyulyar karsinoma|Gepatotsellyulyar karsinoma ultratovush va qon zardobidagi ___ bilan skrining qilinadi|AFP|alfa-fetoprotein|Sirrozda har olti oyda.
 liver-abscess-1wavpj9|Jigar abssessi|Amyobali jigar abssessi nima bilan davolanadi|Faqat metronidazol|Avval jarrohlik drenaji|Ichidagi «ansovus pastasi»; drenaj kamdan kam kerak bo'ladi.
+gallstones-1o5681p|O't toshlari|O't toshlarining eng ko'p uchraydigan turi — ___|xolesterin|xolesterinli|Rentgenda ko'rinmaydi. Pigmentli toshlar gemoliz yoki infeksiyada hosil bo'ladi.
+pigment-stones-1ay4vx6|Pigmentli toshlar|Qora pigmentli toshlar nima bilan bog'liq|Surunkali gemoliz|Yog'ga boy parhez|Bilirubin ortiqchaligi, masalan o'roqsimon hujayrali anemiyada.
+cholangitis-03wpf17|Xolangit|Sharko triadasi — isitma, sariqlik va o'ng qovurg'a osti ___|og'rig'i|og'riq|Gipotoniya va ong chalkashligi qo'shilsa, Reynolds pentadasi bo'ladi.
+biliary-colic-1ur9ocb|O't sanchig'i|O't sanchig'i og'rig'i odatda qancha davom etadi|Olti soatdan kam|Bir necha kun|Uzoq og'riq va isitma xoletsistitdan dalolat beradi.
+porcelain-gallbladder-15jenj3|«Chinni» o't pufagi|«Chinni» o't pufagi o't pufagi ___ xavfini oshiradi|karsinomasi|saratoni|Xoletsistektomiya uchun ko'rsatma.
+biliary-atresia-1x93blp|O't yo'llari atreziyasi|O't yo'llari atreziyasi ___ sariqlik va rangsiz najas beradi|bevosita|to'g'ri|Bir necha hafta ichida Kasai portoenterostomiyasi kerak.
+necrotizing-enterocolitis-0rdmktj|Nekrozlovchi enterokolit|Nekrozlovchi enterokolitda rentgenda qanday belgi bo'ladi?|Ichak devorida gaz|«Ikki pufak» belgisi|Chala tug'ilgan chaqaloqda ichak devori ichidagi gaz.
+tracheoesophageal-fistula-18sdr8k|Traxeya-qizilo'ngach oqmasi|Eng ko'p uchraydigan traxeya-qizilo'ngach oqmasida yuqori qism berk ___ bo'ladi|xalta|cho'ntak, qizilo'ngach xaltasi|Pastda oqma bo'ladi. Rentgenda nazogastral zond o'ralib qoladi.
+malrotation-1bsoq1a|Malrotatsiya|Chaqaloqda o't aralash qusish — bu|Shoshilinch jarrohlik holati|Odatda xavfsiz reflyuks|Isbotlanmaguncha malrotatsiya va ichak burilishi deb qaraladi.
