@@ -28,3 +28,29 @@ amphotericin-b-0mrm5mn|Amfoteritsin B|Amfoteritsin klassik holda nimaga olib kel
 azoles-0ui4vkd|Azollar|Azollar 14-alfa-___ fermentini ingibitsiya qiladi|demetilaza|demetilazani|Lanosterinning ergosteringa aylanishini bloklaydi.
 fluconazole-0k503wq|Flukonazol|Kriptokokkli meningit qo'llab-quvvatlovchi davosida flukonazol nega afzal|Likvorga yaxshi o'tadi|Fungitsid ta'sirga ega|Boshlanish davosida amfoteritsin va flusitozin qo'llanadi.
 caspofungin-0fjdd0v|Kaspofungin|Exinokandinlar zamburug' ___ ida beta-glyukan sintezini bloklaydi|devor|devori, hujayra devori|Kandidalarga, jumladan rezistent turlarga ham samarali.
+aciclovir-0cgilbb|Atsiklovir|Atsiklovir virus timidin___ tomonidan monofosforillanadi|kinaza|kinazasi|Shuning uchun u zararlanmagan hujayralarga tegmaydi.
+ganciclovir-0rn2q9e|Gantsiklovir|Gantsiklovirning asosiy toksik ta'siri|Suyak ko'migining bostirilishi|Nefrotoksiklik|Foskarnet esa nefrotoksik muqobil.
+oseltamivir-0blfab8|Oseltamivir|Oseltamivir gripp ___ ni ingibitsiya qiladi|neyraminidaza|neyraminidazasini|Yangi virionlar chiqishiga to'sqinlik qiladi; 48 soat ichida bering.
+hiv-therapy-1nhdp86|OIV ni davolash|Hozirgi birinchi tanlov OIV davosi odatda qanday|Integraza ingibitori va ikkita NRTI|Uchta nukleozid teskari transkriptaza dorisi|Dolutegravir yoki biktegravir asosida.
+zidovudine-0ik2kyt|Zidovudin|Zidovudin klassik holda ___ anemiya chaqiradi|megaloblastik|makrositar|Shuningdek miopatiya va lipodistrofiya.
+protease-inhibitors-1668fmt|Proteaza ingibitorlari|Proteaza ingibitorlari uchun xos nojo'ya ta'sir|Lipodistrofiya va giperglikemiya|Periferik neyropatiya va toshma|Ritonavir kuchaytiruvchi sifatida ishlatiladi.
+praziquantel-0enzvgl|Prazikvantel|Prazikvantel ___ va boshqa trematodalarda qo'llanadi|shistosomoz|shistosoma, so'rg'ichlilar|Membrananing kalsiyga o'tkazuvchanligini oshiradi.
+albendazole-1xh27ry|Albendazol|Albendazol qanday ta'sir qiladi|Mikronaychalar polimerlanishini bloklab|Folat sintezini ingibitsiya qilib|Nematodalar va neyrotsistiserkozda qo'llanadi.
+ivermectin-1l4jy9l|Ivermektin|Ivermektin onxoserkoz va ___ ni davolaydi|strongiloidoz|strongiloides, qo'tir|Parazitda glutamat bilan boshqariladigan xlor kanallarini ochadi.
+chloroquine-resistance-1n30ots|Xloroxinga rezistentlik|Xloroxinga chidamli falciparum bezgagi nima bilan davolanadi|Artemizinin asosidagi kombinatsiya|Yuqori dozadagi xloroxin|Xalqaro standart davo.
+primaquine-15m44kn|Primaxin|Primaxin ___ yetishmovchiligida gemoliz chaqiradi|G6PD|g6pd fermenti|Buyurishdan oldin har doim tekshiring.
+standard-precautions-0s1p106|Standart ehtiyot choralari|Spirtli antiseptik qaysi qo'zg'atuvchiga ta'sir qilmaydi|Clostridioides difficile sporalari|Gripp va rinovirus zarrachalari|Sovun va suv bilan yuvish kerak.
+airborne-precautions-0mlvf5g|Havo-tomchi ehtiyot choralari|Sil manfiy bosimli xona va N___ respiratorini talab qiladi|95|n95|Qizamiq va suvchechak ham shunday.
+needlestick-05bo5fc|Igna bilan shikastlanish|Igna bilan shikastlanishda yuqish xavfi eng yuqori bo'lgani|B gepatiti|OIV|Taxminan 30 foiz, OIV uchun esa 0,3 foiz.
+post-exposure-prophylaxis-1ayit36|Ta'sirdan keyingi profilaktika|OIV bo'yicha profilaktika ___ soat ichida boshlanishi kerak|72|yetmish ikki|Qancha tez bo'lsa, shuncha yaxshi; to'rt hafta davom etiladi.
+sterilization-1tunwxw|Sterilizatsiya|Avtoklavlash qanday sharoitda ishlaydi|Bosim ostida 121 darajada|Atmosfera bosimida 100 darajada|Faqat bosim haroratni sporalarni o'ldiradigan darajaga ko'taradi.
+penicillin-allergy-1awn44v|Penitsillinga allergiya|Haqiqiy tezkor penitsillin allergiyasi ___ orqali amalga oshadi|IgE|ige antitelosi|Kechikkan toshma esa odatda haqiqiy allergiya emas.
+cephalosporins-0dv7nti|Sefalosporinlar|Metiltiotetrazol guruhli sefalosporinlar alkogol bilan ___ ga o'xshash reaksiya beradi|disulfiram|teturam|Shuningdek protrombin vaqtini uzaytirishi mumkin.
+carbapenems-0a20z1o|Karbapenemlar|Imipenem ___ bo'sag'asini pasaytirishi mumkin|tutqanoq|talvasa|Meropenem kamroq epileptogen.
+fluoroquinolones-1wo3qt2|Ftorxinolonlar|Ftorxinolonlar doimiy bo'lib qolishi mumkin bo'lgan periferik ___ chaqirishi mumkin|neyropatiya|neyropatiyani|Shuningdek pay uzilishi va QT uzayishi.
+sulfonamides-0r2nkb4|Sulfanilamidlar|Sulfanilamidlar ___ yetishmovchiligida gemoliz chaqiradi|G6PD|g6pd fermenti|Shuningdek Stivens-Jonson sindromi va kristalluriya.
+nitrofurantoin-0o8fdzh|Nitrofurantoin|Nitrofurantoinni uzoq qabul qilish o'pka ___ ga olib kelishi mumkin|fibrozi|fibroziga|Shuningdek G6PD yetishmovchiligida gemoliz.
+clindamycin-versus-metronidazole-0kedqqc|Klindamitsin va metronidazol|Diafragmadan PASTDAGI anaeroblarni qaysi biri yaxshiroq qoplaydi?|Metronidazol|Klindamitsin|Klindamitsin diafragmadan yuqorida kuchliroq.
+doxycycline-0karr5r|Doksitsiklin|Doksitsiklin boshqa tetratsiklinlardan qaysi holatda afzal|Buyrak yetishmovchiligida|Homiladorlik davrida|U asosan ichak orqali chiqariladi.
+macrolides-00ui3bh|Makrolidlar|Makrolidlar ___ intervalni uzaytiradi va CYP3A4 ni ingibitsiya qiladi|QT|qt intervalini|Azitromitsinda o'zaro ta'sir eng kam.
+trimethoprim-sulfamethoxazole-1diicb9|Trimetoprim-sulfametoksazol|Bu preparat qon zardobidagi kreatininni qanday oshiradi|Kanalchadan kreatinin sekretsiyasini bloklab|Buyrak kanalchalarini haqiqatan shikastlab|KFT ko'pincha o'zgarmaydi.
