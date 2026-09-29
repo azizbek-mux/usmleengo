@@ -1,0 +1,33 @@
+# Klassik belgilar va bog'lanishlar (qarang: TERMS.md)
+
+auer-rods-06b776c|Auer tayoqchalari|___ tayoqchalari o'tkir mieloblastik leykozdan dalolat beradi|Auer|auer tayoqchalari|Ayniqsa promielotsitar turida.
+reed-sternberg-cells-14k7452|Berezovskiy-Shternberg hujayralari|«Boyqush ko'zi» kabi ikki yadroli hujayralar Berezovskiy-___ hujayralari deyiladi|Shternberg|shternberg hujayralari|Xodjkin limfomasi uchun tashxisiy belgi.
+starry-sky-1puqha9|«Yulduzli osmon»|Limfa tuguni biopsiyasida «yulduzli osmon» ko'rinishi ___ limfomasidan dalolat beradi|Berkitt|burkitt|O'sma hujayralari orasida tingibil makrofaglar.
+bence-jones-01dst2y|Bens-Jons oqsillari|Siydikdagi ___-Jons oqsillari ko'p sonli mielomani bildiradi|Bens|bence|Erkin immunoglobulin yengil zanjirlari.
+smudge-cells-1ndxnwf|Yoyilgan hujayralar|Qon surtmasidagi yoyilgan hujayralar surunkali ___ leykozdan dalolat beradi|limfotsitar|limfoid, limfoleykoz|Surtma tayyorlashda ezilib ketadigan mo'rt limfotsitlar.
+heinz-bodies-14lk4pp|Geyns tanachalari|___ tanachalari — G6PD yetishmovchiligidagi denaturatsiyalangan gemoglobin|Geyns|heinz|Taloq ularni olib tashlagach, «tishlangan» hujayralar qoladi.
+howell-jolly-bodies-08h0bmc|Xauell-Jolli tanachalari|Xauell-Jolli tanachalari ___ funksiyasi yo'qligini bildiradi|taloq|taloqning|Odatda olib tashlanadigan yadro qoldiqlari.
+basophilic-stippling-1llidho|Bazofil punktuatsiya|Bazofil punktuatsiya ___ dan zaharlanish yoki talassemiyadan dalolat beradi|qo'rg'oshin|qo'rg'oshindan|Eritrotsit ichidagi ribosoma to'plamlari.
+schistocytes-1tm3urs|Shistotsitlar|___ deb ataladigan parchalangan eritrotsitlar mikroangiopatiyani bildiradi|shistotsitlar|shistotsit, dubulg'a hujayralari|DVS-sindrom, TTP, gemolitik-uremik sindrom yoki mexanik qopqoq.
+rouleaux-formation-1nlajl6|«Tanga ustuni» hosil bo'lishi|Surtmada «tanga ustuni» hosil bo'lishi mieloma kabi yuqori ___ dan dalolat beradi|paraprotein|oqsil, immunoglobulin|Eritrotsitlar tangalar kabi ustma-ust taxlanadi.
+psammoma-bodies-0dmzho4|Psammoma tanachalari|___ tanachalari — papillyar qalqonsimon bez va seroz tuxumdon saratonidagi qatlamli kalsinatlar|Psammoma|psammoma tanachalari|Shuningdek meningioma va mezotelioma.
+negri-bodies-1rcxmyc|Babesh-Negri tanachalari|Babesh-___ tanachalari — quturishning sitoplazmatik kiritmalari|Negri|negri|Klassik holda gippokamp neyronlarida.
+councilman-bodies-0toea4x|Kaunsilmen tanachalari|___ tanachalari — virusli gepatitdagi apoptotik gepatotsitlar|Kaunsilmen|councilman|Sariq isitmada ham ko'rinadi.
+mallory-bodies-1v7fvji|Mellori tanachalari|___ tanachalari — alkogolli gepatitdagi shikastlangan keratin iplari|Mellori|mallory|Sitoplazma ichidagi eozinofil kiritmalar.
+lewy-bodies-1t1rm5y|Levi tanachalari|___ tanachalari — Parkinson kasalligidagi alfa-sinuklein agregatlari|Levi|lewy|Shuningdek Levi tanachali demensiyada.
+rosenthal-fibers-1nwaqkc|Rozental tolalari|___ tolalari pilotsitar astrotsitomada ko'rinadi|Rozental|rosenthal|Parmasimon eozinofil tolalar.
+curschmann-spirals-0dbdyb1|Kurshman spirallari|___ spirallari — astma balg'amidagi ko'chgan epiteliy|Kurshman|curschmann|Sharko-Leyden kristallari bilan birga.
+ferruginous-bodies-0sgg9jt|Temirli tanachalar|Tilla-jigarrang ___ tanachalar asbest ta'sirini bildiradi|temirli|ferruginoz|Temir va oqsil bilan qoplangan asbest tolalari.
+birbeck-granules-011qdbl|Birbek granulalari|«Tennis raketkasi» shaklidagi ___ granulalari Langergans hujayrali gistiotsitozni aniqlaydi|Birbek|birbeck|CD1a va S-100 musbat.
+double-bubble-0ez47hu|«Ikki pufak» belgisi|Chaqaloqda qorin rentgenogrammasidagi «___ pufak» belgisi duodenal atreziyani bildiradi|ikki|ikkita|Daun sindromi bilan bog'liq.
+coffee-bean-sign-1n4kg74|«Qahva doni» belgisi|«Qahva ___» belgisi sigmasimon ichak burilishidan dalolat beradi|doni|don|Juda kengaygan yopiq halqa.
+thumbprint-sign-05i9wxp|«Bosh barmoq izi» belgisi|Bo'yin yon rentgenogrammasidagi «___ barmoq izi» belgisi epiglottitni bildiradi|bosh|bosh barmoq|Krupda esa «cherkov minorasi» belgisi bo'ladi.
+steeple-sign-025mz9m|«Cherkov minorasi» belgisi|Bo'yin rentgenogrammasidagi «___ minorasi» belgisi krupni bildiradi|cherkov|minora|Tovush yorig'i ostida torayish.
+bamboo-spine-1fm17kc|«Bambuk umurtqa»|«___ umurtqa» ankilozlovchi spondilitni bildiradi|bambuk|bambuksimon|Sindesmofitlar bilan qo'shilib ketgan umurtqalar.
+sunburst-pattern-0u542pf|«Quyosh nurlari» ko'rinishi|Suyak usti pardasining «quyosh nurlari» reaksiyasi ___ dan dalolat beradi|osteosarkoma|osteosarkomadan|Chetida Kodman uchburchagi bilan.
+onion-skin-18fnzj5|«Piyoz po'sti»|Suyak usti pardasining «piyoz ___» reaksiyasi Yuing sarkomasidan dalolat beradi|po'sti|po'stloq, po'st|Qatlamli yangi suyak hosil bo'lishi.
+egg-on-a-string-1i5qjmh|«Ipdagi tuxum»|«___ dagi tuxum» ko'rinishi magistral arteriyalar transpozitsiyasini bildiradi|ip|ipda, ipdagi|Magistral tomirlar ustma-ust joylashib, ko'ks oralig'i torayadi.
+boot-shaped-heart-0b20ol0|«Etiksimon yurak»|«___simon yurak» Fallo tetradasidan dalolat beradi|etik|etiksimon|O'ng qorincha gipertrofiyasi hisobiga.
+rib-notching-11jorpr|Qovurg'alarda o'yiqlar|Qovurg'alarning pastki chetidagi ___ aorta koarktatsiyasidan dalolat beradi|o'yiqlar|o'yiq, o'yilish|Kengaygan kollateral qovurg'alararo arteriyalar hisobiga.
+water-bottle-heart-085tz4h|«Grafinsimon yurak»|«Suv ___ » shaklidagi yurak perikardda ko'p suyuqlik borligini bildiradi|grafini|idishi, grafin|Yurak soyasi sharsimon bo'ladi.
+honeycomb-lung-0xgau74|«Asalari uyasi» o'pkasi|Yuqori aniqlikdagi KT da «___ uyasi» o'pkasi oxirgi bosqich fibrozni bildiradi|asalari|asalarichasimon|Odatiy interstitsial pnevmoniyada asosida va plevra ostida.
