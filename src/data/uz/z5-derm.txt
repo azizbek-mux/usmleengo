@@ -1,0 +1,37 @@
+tinea-versicolor-treatment-0mrqbph|Rangli temiratkini davolash|Rangli temiratki mahalliy ___ sulfidi bilan davolanadi|selen|selenli|Yoki mahalliy azol bilan.
+tinea-versicolor-pigment-17frt67|Rangli temiratkida pigment|Rangli temiratki terini nima uchun oqartiradi|Zamburug' teridagi yog' kislotalarini parchalaydi|Zamburug' melanotsitlarni butunlay nobud qiladi|Dog'lar quyoshda qoraygandan keyin ko'rinadi.
+erythrasma-wood-lamp-0gvu666|Eritrazmada Vud lampasi|Vud lampasi ostida eritrazma qanday tovlanadi|Marjon-qizil|Olma-yashil|Corynebacterium minutissimum tufayli.
+erythrasma-site-02gsrgi|Eritrazma joyi|Eritrazma qayerni zararlaydi|Teri burmalarini|Kaft va tovonlarni|Diabetda ko'p uchraydi.
+cutaneous-anthrax-lesion-0rp2spy|Teri kuydirgisi o'chog'i|Teri kuydirgisi nima beradi|Shish bilan qora nekrotik qobiq|Tarqaluvchi qizil sellyulit|Grammusbat tayoqchadan.
+anthrax-toxin-1r4fan3|Kuydirgi toksini|Kuydirgining shish faktori hujayrada ___ ni oshirib ishlaydi|sAMF|camp|Atrofdagi yaqqol shishni beradi.
+mycobacterium-marinum-exposure-0lezdhr|Mycobacterium marinum ta'siri|Akvarium ishchisining qo'lidagi yaralar nimadan dalolat beradi|Mycobacterium marinum dan|Staphylococcus aureus dan|Ta'sir anamnezi asosiy ishora.
+herpetic-whitlow-1y17zmj|Gerpetik panaritsiy|Tish shifokori barmog'idagi og'riqli pufakchali o'choq — bu nima|Gerpetik panaritsiy|Bakterial paronixiya|Bemor og'zidan yuqqan OGV.
+eczema-herpeticum-1191wn6|Gerpetik ekzema|Ekzema ustiga qo'shilgan OGV nima deb ataladi|Gerpetik ekzema|Gerpetiform dermatit|Og'riqli, isitmali, tarqaluvchi toshma.
+eczema-herpeticum-treatment-0mz078w|Gerpetik ekzemani davolash|Gerpetik ekzema nima bilan davolanadi|Og'iz orqali atsiklovir|Mahalliy steroid bilan|Kuchliroq steroid emas, antivirus dori kerak.
+koplik-spots-1mh87m3|Koplik dog'lari|Qizamiqda lunj shilliq qavatidagi oq dog'lar — ___ dog'lari|Koplik|koplikning|Patognomonik va toshmadan oldin paydo bo'ladi.
+measles-treatment-0q8uhi4|Qizamiqni davolash|Qizamiq nima bilan davolanadi|Qo'llab-quvvatlovchi davo va A vitamini|Darhol og'iz orqali atsiklovir berish|Maxsus antivirus dori yo'q.
+pityriasis-rosea-cause-17g8482|Pushti pityriaz sababi|Pushti pityriaz nima bilan bog'liq|Odam gerpesvirusi 6 yoki 7 bilan|Odam papilloma virusi 6 bilan|«Xabarchi» dog'dan keyin boshlanadi.
+dermatitis-herpetiformis-association-00b7blv|Gerpetiform dermatit bilan bog'liqlik|Gerpetiform dermatit nima bilan birga uchraydi|Seliakiya bilan|Yarali kolit bilan|Tirsak va tizzada qichishuvchi pufakchalar.
+dermatitis-herpetiformis-biopsy-0cdrc2l|Gerpetiform dermatit biopsiyasi|Gerpetiform dermatitda biopsiya derma so'rg'ichlarida ___ cho'kmalarini ko'rsatadi|IgA|iga|Nomiga qaramay, gerpes emas.
+pyoderma-gangrenosum-association-0o4copq|Gangrenoz piodermiya bilan bog'liqlik|Gangrenoz piodermiya nima bilan bog'liq|Yarali kolit bilan|Seliakiya bilan|Chetlari binafsha, ostidan o'yilgan yara.
+lupus-pernio-meaning-1kkzf9w|Lupus pernio ma'nosi|Lupus pernio qaysi kasallikning teri belgisi|Sarkoidozning|Sistemali lupusning|Nomi chalg'ituvchi bo'lsa ham.
+leishmaniasis-vector-163jgtv|Leyshmanioz tashuvchisi|Teri leyshmaniozi nima orqali yuqadi|Iskabtopar orqali|Tsetse pashshasi orqali|Bu bakteriya emas, protozoa.
+visceral-leishmaniasis-05ej4vo|Visseral leyshmanioz|Visseral leyshmanioz kala-___ deb ataladi|azar|azor|Jigar fermentlari oshgan va pantsitopeniya bilan.
+cryoglobulinemia-association-0xjfpsh|Krioglobulinemiya bilan bog'liqlik|Krioglobulinemiya klassik holda nimaning asorati|C gepatiti infeksiyasining|A gepatiti infeksiyasining|C4 past va livedo reticularis bilan.
+buerger-disease-population-1obfuha|Byurger kasalligi qaysi guruhda|Obliteratsiyalovchi tromboangiit kimlarda uchraydi|Ko'p chekuvchi yosh erkaklarda|Keksa diabetli bemorlarda|Oyoq emas, barmoq gangrenasini beradi.
+buerger-disease-treatment-1n8bv8f|Byurger kasalligini davolash|Byurger kasalligining davosi qanday|Chekishni butunlay tashlash|Uzoq muddatli antikoagulyatsiya|Boshqa hech narsa kechishni o'zgartirmaydi.
+venous-ulcer-site-111g000|Vena yarasining joyi|Vena yarasi klassik holda qayerda joylashadi|Ichki to'piq ustida|Tashqi barmoqlar ustida|Katta, yiringli, atrofida pigmentatsiya bilan.
+venous-pigmentation-05v06aa|Venoz pigmentatsiya|Vena yarasi atrofidagi jigarrang bo'yalish ___ cho'kishidan|gemosiderin|temir|Surunkali dimlanish tufayli.
+urticaria-hypersensitivity-type-1vvbrhw|Eshakemida yuqori sezgirlik turi|Eshakemi qaysi tur yuqori sezgirlik reaksiyasi|I|IV|IgE orqali kechadi va ko'pincha dori qo'zg'atadi.
+stevens-johnson-trigger-0hat02b|Stivens-Jonsonni qo'zg'atuvchi|Trimetoprim-sulfametoksazoldan keyin teri ko'chishi nimadan dalolat beradi|Stivens-Jonson sindromidan|Oddiy eshakemi toshmasidan|Sulfonamidlar klassik qo'zg'atuvchi.
+hereditary-angioedema-defect-1qel3kw|Irsiy angioshishdagi nuqson|Irsiy angioshish nimaning yetishmovchiligi|C1 esteraza ingibitorining|C1 esterazaning o'zining|Ferment emas, ingibitor yetishmaydi.
+hereditary-angioedema-drug-0682wv9|Irsiy angioshishda dori|Irsiy angioshishning oldini nima oladi|Danazol|Prednizolon|Steroid va antihistaminlar ishlamaydi.
+lichen-simplex-chronicus-1kcokpq|Surunkali oddiy temiratki|Takroriy qashishdan qalinlashgan, tirnalgan teri — bu nima|Surunkali oddiy temiratki|Sklerozlovchi temiratki|Qichishish-qashish halqasi.
+perniosis-cause-0gmb9hy|Perniozning sababi|Sovuq shikastlanishi nimadan keyin bo'ladi|Sovuqda bo'lib, keyin tez isitishdan|Barmoqlarning zamburug'li infeksiyasidan|Zamburug'ga qarshi dorilar yordam bermaydi.
+strawberry-hemangioma-management-0gtmycg|«Qulupnay» gemangiomasini olib borish|«Qulupnay» gemangiomasi qanday olib boriladi|Kuzatuv bilan, chunki o'z-o'zidan ketadi|Erta jarrohlik yo'li bilan olib tashlanadi|Ko'rish yoki ovqatlanishga to'sqinlik qilmasa.
+aplasia-cutis-teratogen-0vxdlww|Teri aplaziyasi teratogeni|Tug'ma teri aplaziyasi onadagi qaysi dori bilan bog'liq|Metimazol bilan|Propiltiouratsil bilan|Bosh terisining bir qismida teri yo'q bo'ladi.
+keloid-versus-hypertrophic-scar-0yfm61n|Keloid va gipertrofik chandiq|Keloid gipertrofik chandiqdan nimasi bilan farq qiladi|Yara chegarasidan tashqariga o'sadi|Yara chegarasi ichida qoladi|Tartibsiz I va III tur kollagen.
+pseudofolliculitis-barbae-treatment-1ah2k2l|Soqol psevdofollikuliti davosi|Soqol psevdofollikuliti qanday davolanadi|Soqolni o'sishiga qo'yib berish bilan|Yaqinroq va tez-tez soqol olish bilan|Jingalak soch teriga qayta kirib ketadi.
+chalazion-nature-0uq1699|Xalazionning tabiati|Xalazion nima|Yog' yo'lining bekilishi, infeksiyasiz|Stafilokokk keltirgan infeksiya o'chog'i|Iliq kompress bilan davolanadi.
+suspicious-nevus-next-step-1cexl78|Shubhali nevusda keyingi qadam|Shubhali pigmentli o'choq nimani talab qiladi|Kesib olib biopsiya qilishni|Yuza qirib olib biopsiya qilishni|Chuqurlik bosqichni belgilaydi.
+pemberton-sign-meaning-0htmc67|Pemberton belgisi ma'nosi|Qo'llar ko'tarilganda yuzning qizarishi nimani bildiradi|Yuqori kovak vena obstruksiyasini|Oddiy yuz qizarishi holatini|Musbat Pemberton belgisi.
