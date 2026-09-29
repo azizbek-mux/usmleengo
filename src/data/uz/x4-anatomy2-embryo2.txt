@@ -1,7 +1,7 @@
 brachial-plexus-1384wgo|Yelka chigali|Yelka chigali C5 dan T___ gacha ildizlardan hosil bo'ladi|1|bir, t1|Ildizlar, tutamlar, bo'linmalar, tortmalar, shoxlar.
 axillary-nerve-1el2qdd|Qo'ltiq nervi|Yelka chiqqandan keyin qo'ltiq nervi shikasti nimani beradi|Deltasimon mushak holsizligi va o'sha sohada uvishish|Osilgan panja va qo'l usti sohasida uvishish bo'ladi|Repozitsiyadan oldin va keyin deltasimon soha sezgisini tekshiring.
 musculocutaneous-nerve-13jpwtr|Mushak-teri nervi|Mushak-teri nervi tirsakni ___ ni ta'minlaydi|bukish|bukuvchilar|Ikki boshli, yelka va tumshuq-yelka mushaklari.
-median-nerve-at-the-elbow-058m2z0|Tirsakda o'rta nerv|Oldingi suyaklararo nerv shikasti nimani beradi|Bosh va ko'rsatkich barmoq bukilishi susayadi, sezgi saqlanadi|Teniar sohasi ozadi va kaft terisida uvishish bo'ladi|«OK» belgisini ko'rsata olmaydi.
+median-nerve-at-the-elbow-058m2z0|Tirsakda o'rta nerv|Oldingi suyaklararo nerv shikasti nimani beradi|Bosh va ko'rsatkich bukilishi susayadi, sezgi saqlanadi|Teniar sohasi ozadi va kaft terisida uvishish bo'ladi|«OK» belgisini ko'rsata olmaydi.
 ulnar-paradox-0y0s6wg|Tirsak nervi paradoksi|Tirsak nervining ___ shikasti panjasimon holatni kuchliroq beradi|distal|distaldagi|Chunki butun uzun bukuvchilar ishlashda davom etadi.
 radial-nerve-in-the-axilla-197yje3|Qo'ltiqda bilak nervi|Qo'ltiq siqilishidan «tayanch falaji» nimani beradi|Osilgan panja va uch boshli mushak holsizligi|Uch boshli mushak normal, faqat osilgan panja|Spiral egatdagi shikast uch boshli mushakni saqlaydi.
 carpal-bones-01ww4x6|Kaft usti suyaklari|___ — eng ko'p siniydigan kaft usti suyagi|qayiqsimon|skafoid|Anatomik tamaki chuqurchasida og'riq beradi.
