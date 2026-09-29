@@ -1,0 +1,50 @@
+diabetes-targets-0ooa2uu|Diabet maqsadlari|2-tur qandli diabetda odatiy HbA1c maqsadi ___ foizdan past|7|yetti, 7%|Nimjon keksalarda bu talab yumshatiladi.
+metformin-1mwst3b|Metformin|Metformin KFT (koptokchali filtratsiya tezligi) qaysi ko'rsatkichdan pastga tushganda to'xtatiladi|30|60|30 va 45 orasida doza kamaytiriladi.
+metformin-15t95e3|Metformin|Uzoq muddatli metformin ___ yetishmovchiligini chaqirishi mumkin|B12|b12 vitamini, vitamin b12|Darajasini vaqti-vaqti bilan tekshirib turing.
+glp-1-agonists-1nshk6n|GLP-1 agonistlari|GLP-1 agonistlari nimaga isbotlangan foyda beradi|Yurak-qon tomir hodisalari va vaznga|Diabetik retinopatiya va neyropatiyaga|SGLT2 ingibitorlari bilan bir qatorda.
+sglt2-inhibitors-0lg0yoq|SGLT2 ingibitorlari|SGLT2 ingibitorlari diabetik ___ kasalligining zo'rayishini sekinlashtiradi|buyrak|nefropatiya, buyraklar|Qandni pasaytirishdan mustaqil ravishda.
+euglycemic-ketoacidosis-0u81a1n|Evglikemik ketoatsidoz|Evglikemik DKA nima bilan bog'liq|SGLT2 ingibitorlari bilan|Metformin qabul qilish bilan|Glyukoza deyarli normal bo'lsa ham ketonlar yuqori bo'ladi.
+hypoglycemia-0kq6neq|Gipoglikemiya|Ongi saqlangan gipoglikemik bemorga tez ta'sir qiluvchi ___ ichiriladi|glyukoza|uglevod, shakar|Keyin uzoq ta'sir qiluvchi uglevod beriladi.
+somogyi-versus-dawn-15ccey4|Somoji effekti va tong hodisasi|Ertalabki giperglikemiyadan oldin tunda soat 3 da pasayish bo'lsa, bu nima|Somoji effekti|Tong hodisasi|Tong hodisasida tungi pasayish bo'lmaydi.
+diabetic-foot-1cq29iz|Diabetik oyoq|Diabetik oyoq yarasida qon ta'minoti, infeksiya va ___ baholanadi|neyropatiya|sezgi, neyropatiyani|Shuningdek bosimni kamaytirish kerak.
+subclinical-hypothyroidism-0urgm9w|Subklinik gipotireoz|Subklinik gipotireozda TTG oshgan, erkin ___ esa normada bo'ladi|T4|tiroksin, t 4|TTG 10 dan yuqori bo'lsa yoki belgilar bo'lsa davolanadi.
+thyroid-nodule-036btco|Qalqonsimon bez tuguni|TTG normal bo'lgan qalqonsimon bez tugunida eng yaxshi bitta tekshiruv qaysi|Nozik igna bilan aspiratsiya|Radioaktiv yod bilan skanlash|Skanlash TTG bostirilgan holatlar uchun.
+thyroid-cancer-00teaxv|Qalqonsimon bez raki|___ karsinoma limfa yo'llari bilan tarqaladi va prognozi eng yaxshi|Papillyar|papilyar|Follikulyar esa qon orqali tarqaladi.
+thyroglobulin-01fid85|Tireoglobulin|Zardobdagi tireoglobulin nimani kuzatishda ishlatiladi|Operatsiyadan keyin differensiallashgan o'smani|Rezeksiyadan keyin medullyar karsinomani|Medullyarda kalsitonin va KEA ishlatiladi.
+amiodarone-thyrotoxicosis-1035jgw|Amiodaron tireotoksikozi|Amiodaron tireotoksikozining ___-turi destruktiv va steroidlarga javob beradi|2|ikki, ii|1-tur esa yod ta'sirida sintez ortishi.
+levothyroxine-absorption-0h4jaj3|Levotiroksinning so'rilishi|Levotiroksin qanday qabul qilinadi|Nahorda, kalsiy va temirdan alohida|Nonushta va kalsiy tabletkasi bilan|Aks holda so'rilish sezilarli kamayadi.
+adrenal-incidentaloma-1yv0mk9|Buyrak usti bezining tasodifiy shishi|Har qanday tasodifiy buyrak usti bezi shishida ___ va gormon ortiqchaligi tekshiriladi|xavfli o'sma|rak, saraton, malignizatsiya|Ayniqsa biopsiyadan oldin feoxromotsitoma inkor etiladi.
+adrenal-mass-biopsy-1atfsel|Buyrak usti bezi shishining biopsiyasi|Feoxromotsitoma inkor etilmasdan biopsiya qilish nimaga olib keladi|Gipertonik krizga|Faqat o'sma ekilishiga|Avval metanefrinlar o'lchanadi.
+congenital-adrenal-hyperplasia-0w6rj77|Buyrak usti bezining tug'ma giperplaziyasi|21-gidroksilaza yetishmovchiligi zardobda 17-gidroksi___ ni oshiradi|progesteron||Noaniq jinsiy a'zolarda skrining tekshiruvi.
+adrenal-crisis-prevention-0waqgpw|Buyrak usti krizining oldini olish|Uzoq muddat steroid qabul qiluvchilarga nima kerak|Kasal kunlarda doza oshirish va steroid kartasi|Odatdagi kunlik tartibga hech qanday o'zgarish|Kasallik davrida doza ikki baravar oshiriladi.
+acromegaly-0g0dp8h|Akromegaliya|Akromegaliya og'iz orqali ___ yuklamasidan keyin o'sish gormoni bostirilmasligi bilan tasdiqlanadi|glyukoza||Skrining uchun IFR-1 ishlatiladi.
+hypopituitarism-0go3ec0|Gipopituitarizm|Gipopituitarizmda qaysi gormon BIRINCHI o'rniga qo'yiladi|Gidrokortizon|Levotiroksin|Avval qalqonsimon gormon berilsa, buyrak usti krizi kelib chiqadi.
+diabetes-insipidus-0vbpem1|Qandsiz diabet|Suvdan tiyilish sinamasi markaziy qandsiz diabetni ___ turidan ajratadi|nefrogen||Sinama oxirida desmopressin beriladi.
+hypercalcemia-0rrr6sv|Giperkalsiemiya|Giperkalsiemiya EKG da ___ oralig'ini qisqartiradi|QT||Gipokalsiemiya esa uni uzaytiradi.
+parathyroidectomy-0wlcw1r|Paratireoidektomiya|Paratireoidektomiyadan keyin nimaga e'tibor beriladi|Gipokalsiemiya bilan «och suyak» sindromiga|Saqlanib qolgan giperkalsiemiya va toshlarga|Tez mineralizatsiya kalsiyni sarflaydi.
+osteomalacia-0nztd41|Osteomalyatsiya|Osteomalyatsiyada Luzer zonalari, ya'ni soxta ___ ko'rinadi|sinishlar|sinish, sinishi|Suyakda lenta shaklidagi yorug' chiziqlar.
+vitamin-d-resistant-rickets-0sampdb|D vitaminiga chidamli raxit|X-ga bog'liq gipofosfatemik raxit nimadan kelib chiqadi|Buyrak orqali fosfat yo'qotilishidan|D vitamini yetishmovchiligidan|FGF-23 ortiqchaligi; kalsiy va PTG normada.
+gerd-0s9oram|GERK|Davolashga chidamli reflyuks 24 soatlik qizilo'ngach ___ monitoringi bilan tekshiriladi|pH|ph metriya, kislotalilik|Operatsiyadan oldin manometriya ham qilinadi.
+barrett-surveillance-17as4ny|Barret qizilo'ngachini kuzatish|Yuqori darajali displaziyali Barret qizilo'ngachi qanday davolanadi|Endoskopik ablatsiya yoki rezeksiya|Faqat har yili kuzatib borish bilan|Zo'rayish xavfi yuqori.
+h-pylori-testing-1jhw2pw|H. pylori tekshiruvi|H. pylori tekshiruvidan ___ hafta oldin proton nasosi ingibitorlari to'xtatiladi|2|ikki|Ular soxta manfiy natija beradi.
+h-pylori-eradication-13fwyfk|H. pylori eradikatsiyasi|H. pylori ga qarshi birinchi qator davo qanday|PNI va ikkita antibiotik|Faqat PNI ning o'zi|Chidamlilik yuqori bo'lgan joyda to'rtlik sxema.
+gastroparesis-17cmrlw|Gastroparez|Diabetik gastroparez ___ kabi prokinetiklar bilan davolanadi|metoklopramid|eritromitsin, domperidon|Shuningdek kichik, tez-tez, kam yog'li ovqat.
+upper-gi-bleed-0p0s8nq|Yuqori oshqozon-ichak qon ketishi|Yuqori oshqozon-ichak qon ketishida birinchi ustuvor vazifa nima|Endoskopiyadan oldin reanimatsiya|Avvalo darhol endoskopiya qilish|Barqarorlashtirib, 24 soat ichida endoskopiya.
+variceal-prophylaxis-1w1k5tl|Varikoz qon ketishining profilaktikasi|___ kabi noselektiv beta-blokatorlar varikoz qon ketishining oldini oladi|propranolol|karvedilol, nadolol|Yoki endoskopik ligaturalash qilinadi.
+inflammatory-bowel-disease-0eh8185|Yallig'lanishli ichak kasalligi|Najasdagi ___ yallig'lanishli ichak kasalligini funksional kasallikdan ajratadi|kalprotektin||Foydali noinvaziv skrining.
+crohn-disease-1np33i2|Kron kasalligi|Perianal fistula bilan kechuvchi Kron kasalligi nimaga yaxshi javob beradi|Anti-TNF davosiga|Mesalazin davosiga|Ko'pincha jarrohlik drenaji bilan birga.
+ulcerative-colitis-1nk6alq|Yarali kolit|Yarali kolitda kolonoskopik kuzatuv tashxisdan ___ yil keyin boshlanadi|8|sakkiz, 8-10|Displaziya xavfi tufayli.
+irritable-bowel-syndrome-1oijrd3|Tirnash ichak sindromi|Qaysi belgi tirnash ichak sindromiga QARSHI dalil|Tungi belgilar va vazn yo'qotish|Defekatsiyadan keyin yengillashuv|«Qizil bayroqlar» tekshiruv talab qiladi.
+celiac-crisis-1ewwhrp|Seliakiya krizi|Davolanmagan og'ir seliakiya chuqur ___ va suvsizlanishga olib keladi|gipokaliemiya|elektrolit buzilishi|Kam uchraydigan, ammo xavfli ko'rinish.
+bile-acid-diarrhea-1k8u3ql|O't kislotali diareya|Yonbosh ichak rezeksiyasidan keyingi diareya nima bilan davolanadi|Xolestiramin bilan|Faqat loperamid bilan|O't kislotalarini bog'lovchi vosita.
+clostridioides-difficile-recurrence-1xqhvk5|C. difficile ning qaytalanishi|Qaytalanuvchi C. difficile najas ___ transplantatsiyasi bilan davolanishi mumkin|mikrobiotasi|mikrobiota, flora, mikrobiom|Ko'p qaytalanishlarda juda samarali.
+colonic-polyps-0xl3rxs|Yo'g'on ichak poliplari|Qaysi polip turida xavfli o'smaga aylanish ehtimoli eng yuqori|Vilyoz adenoma|Giperplastik polip|Vilyoz, katta va keng asosli eng xavflisi.
+ascites-05m6qpf|Astsit|Zardob-astsit albumin gradiyenti ___ dan yuqori bo'lsa, portal gipertenziyadan dalolat|1,1|1.1, 11|Undan past bo'lsa, o'sma yoki infeksiyani bildiradi.
+ascites-management-1t1orm1|Astsitni olib borish|Sirrozdagi astsitda birinchi qator diuretiklar qaysi|Spironolakton va furosemid|Faqat yuqori dozada furosemid|Suyuqlik ushlanishini aldosteron ortiqchaligi keltiradi.
+hepatic-encephalopathy-grading-1pwnhtg|Jigar ensefalopatiyasining darajalari|___ — jigar ensefalopatiyasidagi qanot qoqqanga o'xshash tremor|Asteriksis|asteriks|Uremiya va CO2 to'planishida ham uchraydi.
+paracetamol-overdose-14valid|Paratsetamol bilan zaharlanish|King's College transplantatsiya mezonlariga nima kiradi|Reanimatsiyadan keyin pH 7,3 dan past|Transaminazaning har qanday oshishi|Shuningdek kreatinin, XNN va ensefalopatiya darajasi.
+alcoholic-hepatitis-0nuzvgw|Alkogolli gepatit|Og'ir alkogolli gepatit ___ diskriminant funksiyasi bilan baholanadi|Maddrey|meddri, maddri|32 dan yuqori bo'lsa, steroid foyda beradi.
+wilson-disease-treatment-0jmm9hc|Vilson kasalligini davolash|Vilson kasalligida saqlovchi davo sifatida nima beriladi|Misning so'rilishini bloklovchi rux|Mis bilan raqobatlashuvchi temir|Dastlabki xelatlashdan keyin.
+pancreatic-insufficiency-0qpmuti|Oshqozon osti bezi yetishmovchiligi|Najasdagi ___ ekzokrin yetishmovchilikning skrining tekshiruvi|elastaza||Past daraja yetishmovchilikni bildiradi.
+severe-pancreatitis-11cb64o|Og'ir pankreatit|Og'ir pankreatitda ovqatlantirish qanday bo'lishi kerak|Iloji bo'lsa enteral|Qat'iy og'iz orqali hech narsa|Enteral ovqatlantirish ichak to'sig'ini saqlaydi.
+autoimmune-pancreatitis-115j477|Autoimmun pankreatit|Autoimmun pankreatit IgG___ ning oshishi bilan bog'liq|4|to'rt, igg4|«Kolbasa shaklidagi» bez; steroidlarga javob beradi.
