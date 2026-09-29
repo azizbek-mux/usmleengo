@@ -1,0 +1,42 @@
+# b0-derm — o'zbekcha tarjima (qarang: TERMS.md)
+
+contact-inhibition-0bu16lr|Kontakt tormozlanishi|Keratinotsitlar bir-biriga tegganda bo'linishdan to'xtaydi — bu kontakt ___|tormozlanishi|ingibitsiyasi|Xavfli o'smaga aylanishda yo'qoladi.
+cellulitis-094e4ph|Sellyulit|Yiringsiz sellyulitning odatiy qo'zg'atuvchisi|Beta-gemolitik streptokokklar|Staphylococcus aureus|Yiringli sellyulit va abssess S. aureus dan dalolat beradi.
+atopic-dermatitis-0g07l1c|Atopik dermatit|Atopik dermatit «atopik yurish»ning bir qismi bo'lib, nimaga olib boradi|Astma va allergik rinitga|Psoriaz va artritga|Avval ekzema, keyin oziq-ovqat allergiyasi, so'ng astma.
+atopic-dermatitis-1695kd5|Atopik dermatit|Atopik dermatit ___ genidagi mutatsiyalar bilan bog'liq|filaggrin|filagrin|Teri to'sig'i buzilib, suv chiqadi, allergenlar kiradi.
+irritant-diaper-dermatitis-0f29q66|Taglik dermatiti|Ta'sirlovchi taglik dermatiti klassik holda|Teri burmalarini zararlamaydi|Teri burmalarini ham zararlaydi|Kandidozli dermatit burmalarni va atrofdagi mayda o'choqlarni zararlaydi.
+varicella-zoster-0ue5c2w|Suvchechak va o'rab oluvchi temiratki|Gerpes infeksiyasida Tsank surtmasida nima ko'rinadi|Kiritmali ko'p yadroli gigant hujayralar|Kiritmasiz akantolitik hujayralar|Oddiy gerpes va suvchechak viruslarida kuzatiladi.
+melanoma-histology-07dkfwh|Melanoma gistologiyasi|Melanoma hujayralari qaysi markerlarga musbat bo'yaladi|S-100 va HMB-45|Sitokeratin|S-100 nerv tojisidan kelib chiqqanini ko'rsatadi.
+melanoma-genetics-1ftkex8|Melanoma genetikasi|Melanomada eng ko'p uchraydigan boshlovchi mutatsiya ___ genida|BRAF|b-raf|V600E; vemurafenib unga qarshi yo'naltirilgan.
+melanoma-prognosis-0rlog7r|Melanoma prognozi|Melanomada eng kuchli prognostik omil|Breslou bo'yicha chuqurlik|O'choqning diametri|Vertikal o'sish bosqichi metastaz xavfini belgilaydi.
+terbinafine-1kc3whs|Terbinafin|Terbinafin ___ epoksidazani ingibitsiya qiladi|skvalen|skvalen fermentini|Ergosterin sintezini bloklaydi. Azollar esa 14-alfa-demetilazani bloklaydi.
+accessory-nipple-0wq5zkm|Qo'shimcha so'rg'ich|Qo'shimcha so'rg'ich nimadan kelib chiqadi|Sut yo'lining to'liq yo'qolmasligidan|Sut bezi to'qimasining ektopik metastazidan|Embrional sut chizig'i bo'ylab joylashadi.
+tuberculoid-leprosy-10iuho5|Tuberkuloid moxov|Tuberkuloid moxov nima bilan tavsiflanadi|Kuchli Th1 javob, gamma-interferon yuqori|Th2 javob, bakteriyalar soni yuqori|Mikroorganizm kam, granulyomalar yaxshi shakllangan, o'choqlar cheklangan.
+lepromatous-leprosy-0nxry1z|Lepromatoz moxov|Lepromatoz moxov nimani aks ettiradi|Hujayraviy immunitetning kuchsizligini|Kuchli Th1 hujayraviy javobni|Bakteriyalar ko'p, «sher yuzi», simmetrik o'choqlar.
+wound-remodeling-03er4k0|Yara remodellanishi|Kollagenning qayta qurilishi uchun ruxga bog'liq ___ kerak|metalloproteinazalar|matriks metalloproteinazalari, mmp|Rux yetishmasa, yara bitishi buziladi.
+wound-healing-0ndx2qe|Yara bitishi|Chandiqning mustahkamligi ko'pi bilan qanchaga yetadi|Normaning taxminan 80 foiziga|Normaning to'liq 100 foiziga|III tip kollagen oylar davomida I tipga almashadi.
+epidermolysis-bullosa-0h160vr|Bullyoz epidermoliz|Oddiy bullyoz epidermolizda ___ iplarining yig'ilishi buziladi|keratin|keratin oqsili|Kichik shikastdan keyin pufaklar paydo bo'ladi.
+immune-checkpoint-inhibitors-04vvoe2|Immun nazorat nuqtasi ingibitorlari|PD-1 ingibitorlari qanday ta'sir qiladi|Sitotoksik T hujayralar faolligini tiklab|O'sma hujayralarini bevosita eritib|Aks holda o'smadagi PD-L1 T hujayralarni bostiradi.
+immune-checkpoint-inhibitors-0f721ho|Immun nazorat nuqtasi ingibitorlari|Bu preparatlarning xarakterli nojo'ya ta'siri|Har qanday a'zoning autoimmun yallig'lanishi|Suyak ko'migining chuqur bostirilishi|Kolit, tireoidit, gepatit, pnevmonit.
+psoriasis-0nzlmmz|Psoriaz|Psoriazning sababi|Keratinotsitlarning haddan tashqari ko'payishi|Keratinotsitlar yangilanishining sekinlashishi|Akantoz, parakeratoz, Munro mikroabssesslari.
+psoriasis-0296mhd|Psoriaz|Psoriaz tangachalari olinganda nuqtali qon chiqadi — bu ___ belgisi|Auspits|auspitz|Kengaygan kapillyarlar ustidagi yupqalashgan epidermis tufayli.
+il-10-in-wound-healing-0zluj1r|Yara bitishida IL-10|IL-10 yara bitishiga qanday yordam beradi|Yallig'lanishni to'xtatib|Neytrofillar kelishini uzaytirib|Ortiqcha yallig'lanish qayta epitelizatsiyaga to'sqinlik qiladi.
+acne-mechanics-0w248mv|Akne mexanikasi|Mexanik akne nimadan kuchayadi|Tor kiyim va ishqalanishdan|Shokolad va yog'li ovqatdan|Follikullarning bekilishi va bosim ta'siri.
+acne-0vx8nxz|Akne|Aknega qaysi mikroorganizm aloqador|Cutibacterium acnes|Staphylococcus epidermidis|Yog' sekretini parchalab, yallig'lanish mediatorlarini chiqaradi.
+isotretinoin-19ocpqj|Izotretinoin|Izotretinoin nima talab qiladi|Ikki xil kontratseptsiya va homiladorlik testi|Davodan oldin va davomida jigar biopsiyasi|Kuchli teratogen; shuningdek teri qurishi va triglitseridlar oshishi.
+infantile-hemangioma-0tgee64|Chaqaloqlar gemangiomasi|Chaqaloqlar gemangiomasi qanday hujayralardan iborat|Endoteliy hujayralari|Melanotsitlar|Tez o'sadi, keyin yillar davomida o'z-o'zidan yo'qoladi.
+infantile-hemangioma-1v3ftxl|Chaqaloqlar gemangiomasi|Davolashni talab qiladigan gemangiomaga nima beriladi|Propranolol|Tizimli steroidlar|Ko'rish yoki nafas yo'liga xavf tug'ilganda birinchi tanlov.
+contact-dermatitis-0spldp2|Kontakt dermatit|Allergik kontakt dermatit uchun nima kerak|Gapten faollashtirgan Langergans hujayralari limfa tuguniga borishi|Semiz hujayralarga oldindan biriktirilgan IgE antitelolari bo'lishi|IV tur kechikkan sezuvchanlik.
+hand-foot-and-mouth-disease-0zfml8f|Qo'l-oyoq-og'iz kasalligi|Qo'l-oyoq-og'iz kasalligining qo'zg'atuvchisi|A guruh Koksaki virusi|Parvovirus B19|Og'izda yaralar, kaft va tovonda pufakchalar.
+staphylococcal-scalded-skin-syndrome-010dvd6|Stafilokokkli «kuygan teri» sindromi|Bu sindromning sababi|Eksfoliativ ekzotoksin|Bakteriyaning teriga bevosita kirishi|Donador qavatni ajratadi; Nikolskiy musbat, shilliq qavat saqlanadi.
+toxic-epidermal-necrolysis-13tx859|Toksik epidermal nekroliz|Toksik epidermal nekroliz «kuygan teri» sindromidan nimasi bilan farq qiladi|Shilliq qavat zararlanadi, nekroz to'liq chuqurlikda|Shilliq qavat saqlanadi, ajralish yuzaki bo'ladi|Odatda dori chaqiradi; ajralish derma va epidermis chegarasida.
+pemphigus-vulgaris-0iutpuk|Oddiy pufakchali kasallik|Oddiy pufakchali kasallikda antitelolar nimaga qarshi|Desmosomalardagi desmogleinga|Gemidesmosoma antigenlariga|Bo'sh pufaklar, og'iz zararlanadi, Nikolskiy musbat.
+bullous-pemphigoid-0a9zoah|Bullyoz pemfigoid|Bullyoz pemfigoid nimaga qarshi yo'nalgan|Bazal membranadagi gemidesmosomalarga|Keratinotsitlar orasidagi desmosomalarga|Tarang pufaklar, shilliq qavat odatda saqlanadi, Nikolskiy manfiy.
+dermatitis-herpetiformis-0gmxt2h|Gerpetiform dermatit|Gerpetiform dermatit nima bilan bog'liq|Seliakiya|Kron kasalligi|Derma so'rg'ichlarida donador IgA; dapson bilan davolanadi.
+basal-cell-carcinoma-0hq64w5|Bazal hujayrali karsinoma|Bazal hujayrali karsinoma klassik holda qanday ko'rinadi|Telangiektaziyali marvaridsimon papula|Tangachali, yaralangan, qobiqli plakka|Kamdan kam metastaz beradi; gistologiyada palisadsimon yadrolar.
+squamous-cell-carcinoma-0oearir|Yassi hujayrali karsinoma|Terining yassi hujayrali karsinomasidan oldin nima bo'ladi|Aktinik keratoz|Seboreyali keratoz|Gistologiyada keratin «marvaridlari».
+seborrheic-keratosis-0z2nhaf|Seboreyali keratoz|Seboreyali keratozlar qanday|Xavfsiz, «yopishtirib qo'yilgan» ko'rinishda|Xavfli o'sma oldi holati, ko'pincha invaziv|To'satdan ko'p paydo bo'lishi (Lezer-Trela) ichki o'smadan dalolat berishi mumkin.
+erythema-multiforme-0vlj8r6|Ko'p shaklli eritema|Ko'p shaklli eritemani ko'pincha nima qo'zg'atadi|Oddiy gerpes virusi|Staphylococcus aureus|Kaft va tovonda nishonsimon o'choqlar.
+tinea-versicolor-05p3gsh|Rangli temiratki|Rangli temiratkining qo'zg'atuvchisi|Malassezia|Trichophyton|Ishqorli surtmada «spagetti va kotletlar»; rangsizlangan dog'lar.
+scabies-0kmb5e8|Qo'tir|Qo'tir uchun xos qichishish qanday|Kechasi kuchayadi, barmoqlar orasida yo'llar bor|Faqat uzoq quyoshda yurgandan keyin paydo bo'ladi|Permetrin bilan va barcha yaqin kontaktlar bilan birga davolanadi.
+vitiligo-1ntb49t|Vitiligo|Vitiligoning sababi|Melanotsitlarning autoimmun yemirilishi|Melanotsitlar bor, ammo tirozinaza yo'q|Albinizmda melanotsitlar soni normal, ammo pigment ishlab chiqarilmaydi.
