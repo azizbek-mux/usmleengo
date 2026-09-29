@@ -1,0 +1,24 @@
+# Fiziologiya — chuqurlashtirilgan qism (qarang: TERMS.md)
+
+resting-membrane-potential-1l4esud|Tinch holat membrana potensiali|Tinch holat membrana potensiali ___ ning muvozanat potensialiga eng yaqin|kaliy|k, k+|Chunki tinch holatda membrana unga eng ko'p o'tkazuvchan.
+sodium-potassium-pump-16o0tci|Na/K nasosi|Na/K-ATFaza nimani tashiydi|3 natriyni tashqariga, 2 kaliyni ichkariga|2 natriyni tashqariga, 3 kaliyni ichkariga|Elektrogen va digoksin bilan bloklanadi.
+action-potential-1ugupcw|Harakat potensiali|Neyronning repolyarizatsiyasi ___ chiqishi tufayli yuzaga keladi|kaliy|k, k+|Natriy kanallari faolsizlangandan keyin.
+saltatory-conduction-1mzo0j1|Sakrovchi o'tkazish|Mielin o'tkazishni qanday tezlashtiradi|Depolyarizatsiyani tugunlar orasida sakratib|Membrana elektr sig'imini oshirish orqali|Demielinizatsiya o'tkazishni sekinlashtiradi yoki to'xtatadi.
+neuromuscular-junction-0vag98u|Nerv-mushak sinapsi|Nerv oxirida atsetilxolin ajralishi uchun ___ kirishi kerak|kalsiy|ca, ca2+|Lambert-Iton sindromida bloklanadi.
+skeletal-versus-cardiac-muscle-06q10az|Skelet va yurak mushagi|Qaysi biri qisqarish uchun hujayradan tashqaridagi kalsiyga bog'liq?|Yurak mushagi|Skelet mushagi|Skelet mushagi o'z sarkoplazmatik retikulumidagi zaxiradan foydalanadi.
+baroreceptors-0je7pxg|Baroretseptorlar|Uyqu sinusi baroretseptorlari ___ juft bosh miya nervi orqali signal beradi|IX|9, to'qqiz, til-halqum|Aorta ravog'i retseptorlari adashgan nervdan foydalanadi.
+baroreceptor-reflex-172kch1|Baroretseptor refleksi|Arterial bosim pasayganda baroretseptorlar impulsi|Kamayadi|Ko'payadi|Tormozlanish kamayib, simpatik ta'sir kuchayadi.
+starling-forces-0hf6z78|Starling kuchlari|Kapillyar ___ bosimi onkotik bosimdan oshganda shish paydo bo'ladi|gidrostatik|gidrostatik bosim|Yoki nefrotik sindromdagidek onkotik bosim pasayganda.
+vascular-resistance-0s7zrsa|Tomirlar qarshiligi|Qarshilik nimaning o'zgarishiga eng sezgir|Tomir radiusiga|Tomir uzunligiga|Qarshilik radiusning to'rtinchi darajasiga bog'liq.
+coronary-flow-1puq5oa|Toj qon oqimi|Toj qon oqimini diastolada ___ bosimi harakatga keltiradi|aorta diastolik|diastolik, aorta|Shuning uchun taxikardiya ishemiyani kuchaytiradi.
+cardiac-oxygen-demand-0a6ee86|Miokardning kislorodga ehtiyoji|Miokardning kislorodga ehtiyoji eng ko'p nima bilan oshadi|Yurak urishi soni va devor zo'riqishi|Faqat oldingi yuklama bilan|Chastota-bosim ko'paytmasi bilan baholanadi.
+oxygen-dissociation-1qzuds1|Kislorod dissotsiatsiyasi|Kislorod-gemoglobin egri chizig'i kooperativ bog'lanish tufayli ___ shaklida|sigmasimon|sigmoid, s|Mioglobin egri chizig'i esa giperbolik.
+fetal-hemoglobin-147xbyz|Homila gemoglobini|Homila gemoglobinining kislorodga moyilligi yuqoriroq, chunki u|2,3-BFG ni yomon biriktiradi|Ko'proq gem guruhlariga ega bo'lgani uchun|Bu yo'ldoshdan kislorod olishga imkon beradi.
+carbon-monoxide-05e3ucn|Is gazi|Is gazi kislorod egri chizig'ini ___ ga siljitadi|chapga|chap, chap tomonga|Tashish sig'imining kamayishidan tashqari to'qimaga yetkazishni ham yomonlashtiradi.
+high-altitude-0rj1qud|Baland tog'|Baland tog'da dastlabki kompensatsiya nima|Giperventilyatsiya va respirator alkaloz|2,3-BFG oshishi va metabolik atsidoz|Buyrak orqali bikarbonat chiqarilishi kunlar davomida qo'shiladi.
+pulmonary-circulation-1o067br|O'pka qon aylanishi|Alveolar gipoksiya o'pka tomirlarini ___|toraytiradi|torayishga, vazokonstriksiya|Tizimli tomirlarning aksi.
+zones-of-the-lung-0r8dkix|O'pka zonalari|O'pkaning 1-zonasida ventilyatsiya perfuziyadan ortiq, chunki|Alveolar bosim arterial bosimdan yuqori|Gravitatsiya cho'qqida oqimni oshiradi|Gipovolemiyada 1-zona kengayadi.
+renin-release-0p65i4x|Renin ajralishi|Renin yukstaglomerulyar hujayralardan past ___ ga javoban ajraladi|perfuziya|perfuziyaga, arterial bosim|Shuningdek simpatik tonus va distal natriy kamligi.
+macula-densa-1juw3yx|Zich dog'|Zich dog' nimani sezadi|Distal kanalchadagi natriy xloridni|Arterial bosimni bevosita o'lchash orqali|Kanalcha-koptokcha teskari aloqasini ta'minlaydi.
+angiotensin-ii-114qygp|Angiotenzin II|Angiotenzin II buyrak usti bezi po'stlog'idan ___ ajralishini qo'zg'atadi|aldosteron|aldosteronni|Shuningdek chanqoq, ADG va vazokonstriksiya.
+adh-00qgoub|ADG|ADG nimaga javoban ajraladi|Plazma osmolyalligining oshishiga|Plazma osmolyalligining pasayishiga|Hajm kamayishi kuchsizroq, ammo ustun turuvchi stimul.
