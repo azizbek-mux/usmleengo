@@ -1,0 +1,62 @@
+# p2-endo-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+addison-disease-1rgtxkk|Addison kasalligi|Addison kasalligidagi giperpigmentatsiya ortiqcha ___ dan kelib chiqadi|AKTG|akth, pomk, aktg va msg|AKTG melanotsitlarni qo'zg'atuvchi gormon bilan umumiy POMK o'tmishdoshiga ega.
+addison-disease-1j6kwbv|Addison kasalligi|Addison kasalligida yetishmaydigan mineralokortikoid — ___|aldosteron|aldosteron gormoni|Uning yo'qligi giperkaliemiya va giponatriemiyaga olib keladi.
+addison-disease-0mkcok4|Addison kasalligi|Addison kasalligida plazmadagi AKTG|Yuqori|Past|Buyrak usti bezi ishlamaydi, teskari aloqa yo'qolib, AKTG oshadi.
+addison-disease-1d7nrzb|Addison kasalligi|Addison kasalligida arterial bosim|Past|Yuqori|Aldosteron yo'qligi tuz yo'qotish va hajm kamayishiga olib keladi.
+addison-disease-09wtv0c|Addison kasalligi|Addison kasalligi qanday tasdiqlanadi|Kozintropin bilan stimulyatsiya testi|Deksametazon bilan supressiya testi|Sintetik AKTG dan keyin kortizol oshmaydi.
+addison-disease-16fdsry|Addison kasalligi|Aldosteron yetishmovchiligi metabolik ___ ga olib keladi|atsidoz|atsidozga|Kaliy bilan birga H+ ham ushlanib qoladi.
+adrenal-crisis-0a4lc46|Buyrak usti bezi krizi|Buyrak usti bezi krizining eng ko'p uchraydigan qo'zg'atuvchisi|Hamroh kasallik yoki operatsiya|Ovqatda tuzning ortiqcha bo'lishi|Stress paytida steroid dozasini oshirish kerak.
+cushing-syndrome-1c1thxk|Kushing sindromi|Umuman olganda Kushing sindromining eng ko'p uchraydigan sababi|Tashqaridan kiritilgan glyukokortikoidlar|Gipofizning AKTG ishlab chiqaruvchi adenomasi|Asosan yatrogen. Kushing KASALLIGI esa gipofiz sababi.
+cushing-syndrome-1yb183b|Kushing sindromi|Yuqori darajada kortizol ___ retseptoriga ham ta'sir qilib, gipokaliemiya chaqiradi|mineralokortikoid|aldosteron|Kortizol aldosteron retseptoriga «to'kilib» o'tadi.
+cushing-syndrome-19tyyo4|Kushing sindromi|Kushing sindromidagi mushak kuchsizligi qanday|Proksimal|Distal|Steroid miopatiyasi proksimal kamar mushaklarini zararlaydi.
+cushing-syndrome-0xumio0|Kushing sindromi|Surunkali kortizol ortiqchaligida suyak|Yupqalashadi, suyak hosil bo'lishi kamayadi|Qalinlashadi, suyak hosil bo'lishi oshadi|Osteoblastlar bostiriladi va kalsiy so'rilishi kamayadi.
+ectopic-acth-0o3an2n|Ektopik AKTG|Ektopik AKTG ni ko'pincha nima ishlab chiqaradi|Mayda hujayrali o'pka saratoni|Buyrak hujayrali karsinomasi|Tez boshlanadi, gipokaliemiya yaqqol, vazn kam ortadi.
+cushing-localization-153e6la|Kushing sindromida manbani aniqlash|YUQORI dozali deksametazon kortizolni bostirmasa, bu nimadan dalolat beradi|Ektopik AKTG|Gipofiz adenomasi|Gipofiz adenomalari qisman teskari aloqani saqlaydi va bostiriladi.
+thyroid-hormone-synthesis-068b2wx|Qalqonsimon bez gormoni sintezi|Tireoperoksidaza ___ ni oksidlab, tireoglobulinga biriktiradi|yodid|yod|Propiltiouratsil va metimazol buni bloklaydi.
+propylthiouracil-14w6h35|Propiltiouratsil|Propiltiouratsil metimazoldan nimasi bilan farq qiladi|Periferiyada T4 → T3 aylanishini bloklaydi|Gipofizdan TTG ajralishini bloklaydi|Tireotoksik krizda foydali.
+thyroid-hormone-0wexb4h|Qalqonsimon bez gormoni|Qondagi qalqonsimon bez gormonining ko'p qismi tiroksin bog'lovchi ___ ga bog'langan|globulin|tbg, tsg|Homiladorlikda TBG oshadi: umumiy T4 oshadi, erkin T4 normada.
+sick-euthyroid-syndrome-0qgwxlw|Evtireoid kasallik sindromi|Og'ir kasallikda T3 odatda|Pasayadi|Oshadi|Past T3 sindromi. O'tkir kasallikda qalqonsimon bez funksiyasini tekshirmang.
+thyroid-storm-19yc8a7|Tireotoksik kriz|Tireotoksik krizda yod qachon berilishi kerak|Antitireoid preparatdan keyin|Antitireoid preparatdan oldin|Avval berilsa, yod yangi gormon sintezi uchun material bo'ladi.
+thyroid-storm-1byb4oh|Tireotoksik kriz|Tireotoksik krizning adrenergik belgilarini ___-blokator nazorat qiladi|beta|beta-1|Propranolol T4 ning T3 ga aylanishini ham bloklaydi.
+myxedema-coma-07hyc2j|Miksedematoz koma|Miksedematoz koma qalqonsimon bez gormoni va yana nima bilan davolanadi|Glyukokortikoidlar|Insulin preparatlari|Avval hamroh buyrak usti bezi yetishmovchiligi qoplanishi kerak.
+congenital-hypothyroidism-0qqo9bq|Tug'ma gipotireoz|Davolanmagan tug'ma gipotireoz qaytmas ___ nuqsonga olib keladi|aqliy|kognitiv|Chaqaloqlar skriningida aniqlanadi; ikki hafta ichida davolang.
+thyroid-nodule-1hsmfue|Qalqonsimon bez tuguni|TTG PAST bo'lgan qalqonsimon bez tuguniga avval nima qilinadi|Radioaktiv yod to'planishi skaneri|Ingichka ignali punksiya biopsiyasi|«Issiq» tugun deyarli hech qachon xavfli bo'lmaydi.
+anaplastic-thyroid-carcinoma-0ao3jib|Anaplastik qalqonsimon bez karsinomasi|Anaplastik qalqonsimon bez karsinomasi kimlarda uchraydi|Keksalarda, tez o'sish bilan|Yosh ayollarda, sekin o'sish bilan|Barcha qalqonsimon bez saratonlari ichida prognozi eng yomon.
+parathyroid-hormone-005b2ob|Qalqonsimon oldi bezi gormoni|PTG osteoklastlarni osteoblastlardagi ___ ligandi orqali bilvosita qo'zg'atadi|RANK|rankl, rank-l|Osteoklastlarda PTG retseptori yo'q.
+primary-hyperparathyroidism-15v009z|Birlamchi giperparatireoz|Birlamchi giperparatireozning eng ko'p uchraydigan sababi|Yakka adenoma|To'rtala bez giperplaziyasi|Taxminan 85% holatlar.
+hyperparathyroidism-0pa0b94|Giperparatireoz|Og'ir giperparatireoz fibroz-___ osteitga olib keladi|kistoz|kistali|Kuchli suyak rezorbsiyasidan «jigarrang o'smalar» hosil bo'ladi.
+familial-hypocalciuric-hypercalcemia-1c3r1np|Oilaviy gipokalsiuriyali giperkalsiemiya|Bu holat giperparatireozdan nima bilan farqlanadi|Siydikda kalsiy pastligi|Siydikda kalsiy yuqoriligi|Kalsiyni sezuvchi retseptor mutatsiyasi. Operatsiya kerak emas.
+hypocalcemia-16wasek|Gipokalsiemiya|Qon bosimi manjetini shishirganda qo'l panjasi tortishishi — bu|Trusso belgisi|Xvostek belgisi|Xvostek — yuz nervi ustiga urganda yuz mushaklarining tortishishi.
+pseudohypoparathyroidism-01iqj50|Psevdogipoparatireoz|Psevdogipoparatireozda to'qimalar ___ ga rezistent|PTG|qalqonsimon oldi bezi gormoni|PTG yuqori, ammo kalsiy past qoladi. Olbrayt irsiy osteodistrofiyasi.
+vitamin-d-deficiency-0hf3jqs|D vitamini yetishmovchiligi|D vitamini yetishmovchiligida PTG|Oshgan|Bostirilgan|Past kalsiyni kompensatsiya qiluvchi ikkilamchi giperparatireoz.
+type-1-diabetes-1ym342s|1-tip qandli diabet|1-tip diabet oshqozon osti bezining ___ hujayralarini yemiradi|beta|b|Autoimmun; GAD va orolcha hujayralariga qarshi antitelolar.
+type-1-diabetes-0cym6gr|1-tip qandli diabet|1-tip diabet nima bilan bog'liq|HLA-DR3 va DR4|HLA-B27|2-tipda oilaviy moyillik kuchliroq, ammo HLA bilan bog'liqlik yo'q.
+insulin-secretion-0yok8lx|Insulin sekretsiyasi|Glyukoza ATF ga sezgir ___ kanalini yopib, insulin ajralishini boshlaydi|kaliy|k, k+|Sulfonilmochevinalar shu kanalni bevosita yopadi.
+sulfonylureas-0kcu553|Sulfonilmochevinalar|Sulfonilmochevinalarning asosiy xavfi|Gipoglikemiya|Laktatatsidoz|Glyukoza darajasidan qat'i nazar insulin ajralishini majburlaydi.
+glp-1-agonists-0m93psw|GLP-1 agonistlari|GLP-1 agonistlari oshqozonning ___ ini sekinlashtiradi va vazn kamayishiga yordam beradi|bo'shalish|bo'shalishi|Semaglutid va liraglutid. Pankreatit xavfi.
+sglt2-inhibitors-0lcj5iv|SGLT2 ingibitorlari|SGLT2 ingibitorlari uchun xarakterli nojo'ya ta'sir|Jinsiy a'zolarning zamburug'li infeksiyasi|Vazn ortishi, shishlar va suyuqlik ushlanishi|Glyukozuriya zamburug'ni oziqlantiradi. Shuningdek euglikemik ketoatsidoz.
+dka-versus-hhs-0k7zmy1|DKA va giperosmolyar holat|Qaysi holatda keton tanachalari bo'lmaydi|Giperosmolyar giperglikemik holatda|Diabetik ketoatsidozning boshida|2-tipda qolgan insulin ketogenezni bostiradi.
+diabetic-nephropathy-1oey3ay|Diabetik nefropatiya|Diabetik nefropatiyaning eng erta belgisi — ___|mikroalbuminuriya|albuminuriya|Har yili tekshiriladi; AFF ingibitori yoki angiotenzin retseptor blokatori bilan davolanadi.
+diabetic-retinopathy-0t5wecb|Diabetik retinopatiya|Proliferativ diabetik retinopatiya nima bilan belgilanadi|Yangi tomirlar hosil bo'lishi|«Paxta o'choqlari» paydo bo'lishi|Neovaskulyarizatsiya; lazer yoki VEGF ga qarshi preparat bilan davolanadi.
+glycation-02cln8l|Glikatsiya|HbA1c oldingi ___ oydagi o'rtacha glyukozani aks ettiradi|3|uch, 2-3|Eritrotsitning yashash muddati.
+pituitary-adenoma-1mn1pxo|Gipofiz adenomasi|Gipofiz makroadenomasi klassik holda nimaga olib keladi|Bitemporal gemianopsiya|Gomonim gemianopsiya|Ko'rish nervlari kesishmasida kesishuvchi burun tomondagi tolalarni bosadi.
+prolactinoma-15sj1sw|Prolaktinoma|Prolaktin ___ ni bostirib, bepushtlik va amenoreyaga olib keladi|GnRG|gonadotropin-rilizing gormon|Shuning uchun galaktoreya oligomenoreya bilan birga keladi.
+stalk-compression-1vjue6r|Oyoqcha siqilishi|Gipofiz oyoqchasi siqilganda qaysi gormon oshadi?|Prolaktin|O'sish gormoni|Faqat prolaktin doimiy tormozlanadi, shuning uchun oyoqcha kesilsa, u oshadi.
+sheehan-syndrome-0aulbtk|Shixan sindromi|Shixan sindromi — tug'ruqdan keyingi qon ketishidan so'ng gipofiz ___|infarkti|nekrozi, ishemiyasi|Ko'pincha birinchi belgi — sut kelmasligi.
+pituitary-apoplexy-0xbej3w|Gipofiz apopleksiyasi|Gipofiz apopleksiyasida shoshilinch nima kerak|Glyukokortikoid o'rnini to'ldirish|Qalqonsimon bez gormoni o'rnini to'ldirish|To'satdan bosh og'rig'i, ko'rish yo'qolishi va buyrak usti bezi kollapsi.
+acromegaly-0of20cd|Akromegaliya|Akromegaliyada o'limning eng ko'p uchraydigan sababi — ___ kasalliklari|yurak-qon tomir|yurak, kardiovaskulyar|Kardiomiopatiya, gipertenziya va diabet.
+growth-hormone-deficiency-05a71l5|O'sish gormoni yetishmovchiligi|Past bo'yli bolada o'sish gormoni yetishmovchiligi nimani ko'rsatadi|Suyak yoshi kechikkan|Suyak yoshi ilgarilagan|Konstitutsional kechikishda ham suyak yoshi kechikadi, ammo oilaviy anamnez bor.
+pheochromocytoma-061s2mx|Feoxromotsitoma|Feoxromotsitoma ___ foiz qoidasiga bo'ysunadi|10|o'n|10% — ikki tomonlama, buyrak usti bezidan tashqarida, xavfli, oilaviy va bolalarda.
+paraganglioma-09a1sja|Paraganglioma|Buyrak usti bezidan tashqaridagi feoxromotsitoma nima deyiladi|Paraganglioma|Neyroblastoma|Ko'pincha Tsukerkandl a'zosida uchraydi.
+men-1-1toxc55|MEN 1|MEN 1 qalqonsimon oldi bezi, gipofiz va ___ o'smalarini o'z ichiga oladi|oshqozon osti bezi|pankreas|Autosom-dominant, MEN1 o'sma supressori.
+men-2b-0gn4nb7|MEN 2B|MEN 2B 2A dan nimasi bilan farq qiladi|Shilliq qavat neyromalari va marfanoid tana tuzilishi|Qalqonsimon oldi bezi giperplaziyasi va toshlar|Ikkalasida ham medullyar qalqonsimon bez saratoni va feoxromotsitoma bor.
+precocious-puberty-0381ing|Erta jinsiy yetilish|Markaziy erta jinsiy yetilishda gonadotropinlar|Oshgan|Bostirilgan|Periferik sabablarda LG va FSG bostiriladi.
+kallmann-syndrome-15fdlri|Kalman sindromi|Kalman sindromi gipogonadizm va ___ yo'qolishini birga beradi|hid bilish|anosmiya, hid|GnRG neyronlari hid plakodasi bilan birga ko'cha olmaydi.
+klinefelter-syndrome-1oujlzd|Klaynfelter sindromi|Klaynfelter sindromida testosteron|Past, FSG va LG yuqori|Yuqori, LG past|Birlamchi moyak yetishmovchiligi; 47,XXY.
+turner-syndrome-1frrh95|Terner sindromi|Terner sindromi ___ gonadalar va birlamchi amenoreyaga olib keladi|tasmasimon|tasma|45,XO. Past bo'y, qanotsimon bo'yin, koarktatsiya.
+anabolic-steroid-use-1o36qz8|Anabolik steroidlar|Tashqaridan kiritilgan testosteron spermatozoidlar sonini|Kamaytiradi|Oshiradi|Manfiy teskari aloqa LG, FSG va moyak ichidagi testosteronni o'chiradi.
+osteoporosis-1nhcb8s|Osteoporoz|Osteoporoz T-ball minus ___ yoki undan past bo'lganda tashxislanadi|2,5|2.5, -2,5, -2.5|Minus 1 dan minus 2,5 gacha — osteopeniya.
+bisphosphonate-1wav9cj|Bisfosfonatlar|Bisfosfonatlarni qanday qabul qilish kerak|Tik turib, och qoringa, suv bilan|Kechqurun kech, ovqat bilan birga|Ezofagitning oldini olish va so'rilishni yaxshilash uchun.
+paget-disease-07ysabb|Pedjet kasalligi|Pedjet kasalligida kalsiy va fosfat|Normada|Ikkalasi ham oshgan|Faqat ishqoriy fosfataza yuqori.
+rickets-0eawc0x|Raxit|Raxitda kattalashgan qovurg'a-tog'ay ___ «tasbeh» hosil qiladi|birikmalari|birikmasi|Raxitik «tasbeh», qiyshiq oyoqlar va kraniotabes.
