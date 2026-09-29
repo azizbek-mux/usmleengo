@@ -33,8 +33,15 @@ if (!mine.length) {
   process.exit(1);
 }
 
+// The compiler drops a question that repeats a fact from an earlier file, so
+// it is in the English source but not in the bank. A staged line for one of
+// those is skipped with a note rather than failing the whole file.
+const sourceQuestions = readFileSync(join(ROOT, "src/data", basename(englishFile)), "utf8")
+  .split(/\r?\n/).filter((l) => /^[A-Z]+\|/.test(l)).map((l) => l.split("|")[3] ?? "");
+
 const out = [];
 const problems = [];
+const skipped = [];
 const used = new Set();
 for (const [i, raw] of readFileSync(resolve(staged), "utf8").replace(/\r\n/g, "\n").split("\n").entries()) {
   const line = raw.trim();
@@ -46,6 +53,7 @@ for (const [i, raw] of readFileSync(resolve(staged), "utf8").replace(/\r\n/g, "\
   if (uz.split("|").length !== 5) { problems.push(`line ${i + 1}: expected 5 Uzbek fields, got ${uz.split("|").length}`); continue; }
   // An image question's "question" is its filename; the topic identifies it instead.
   const hits = mine.filter((q) => (q.img ? q.topic : q.q).startsWith(prefix));
+  if (!hits.length && sourceQuestions.some((q) => q.startsWith(prefix))) { skipped.push(prefix.slice(0, 50)); continue; }
   if (!hits.length) { problems.push(`line ${i + 1}: nothing in ${englishFile} starts with "${prefix.slice(0, 50)}"`); continue; }
   if (hits.length > 1) { problems.push(`line ${i + 1}: "${prefix.slice(0, 40)}" matches ${hits.length} questions — use a longer prefix`); continue; }
   if (used.has(hits[0].id)) { problems.push(`line ${i + 1}: ${hits[0].id} was already staged above`); continue; }
@@ -64,3 +72,4 @@ const header = `# ${basename(englishFile, ".txt")} — o'zbekcha tarjima (qarang
 if (existsSync(target)) appendFileSync(target, out.join("\n") + "\n", "utf8");
 else writeFileSync(target, header + "\n" + out.join("\n") + "\n", "utf8");
 console.log(`${out.length} line(s) → src/data/uz/${basename(englishFile)}`);
+for (const s of skipped) console.log(`  skipped, a duplicate the bank already dropped: "${s}"`);
