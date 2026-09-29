@@ -1,0 +1,26 @@
+# Dorilarning nojo'ya ta'sirlari (qarang: TERMS.md)
+
+amiodarone-0i8fb3c|Amiodaron|Amiodaron o'pka ___ ga olib kelishi mumkin, shuning uchun boshida nafas funksiyasi tekshiriladi|fibrozi|fibroziga|Shuningdek qalqonsimon bez, jigar va shox parda o'zgarishlari.
+amiodarone-0zqf3ci|Amiodaron|Amiodaron ___ da to'planib, halqalar ko'rinishini beradi|shox parda|shox pardada|Odatda qaytar va kamdan kam davoni to'xtatishga majbur qiladi.
+bleomycin-1wmiuul|Bleomitsin|Bleomitsin o'pka ___ ga olib keladi, yuqori kislorod uni kuchaytiradi|fibrozi|fibroziga|Bu anesteziya paytida muhim ahamiyatga ega.
+cyclophosphamide-15hyz2c|Siklofosfamid|Siklofosfamid akrolein tufayli gemorragik ___ chaqiradi|sistit|sistitni|Mesna va ko'p suyuqlik bilan oldi olinadi.
+cisplatin-06zu0c2|Sisplatin|Sisplatin klassik holda siydik bilan ___ ni yo'qotadi|magniy|magniyni, mg|Shuningdek nefrotoksiklik va ototoksiklik.
+vincristine-1rvlg6g|Vinkristin|Vinkristin ko'mikni bostirmasdan, periferik ___ chaqiradi|neyropatiya|neyropatiyani|Vinblastin esa ko'mikni bostiradi.
+doxorubicin-1lurlyj|Doksorubitsin|Doksorubitsin dozaga bog'liq ravishda dilatatsion ___ chaqiradi|kardiomiopatiya|kardiomiopatiyani|Otilib chiqish fraksiyasini kuzatib boring; deksrazoksan himoya qiladi.
+methotrexate-1k6dsc7|Metotreksat|Uzoq muddatli metotreksat ___ va qon tahlilini nazorat qilishni talab qiladi|jigar|jigar funksiyasi|Shuningdek folat kislotasi qo'shiladi.
+tamoxifen-05i4shl|Tamoksifen|Tamoksifen ___ karsinomasi va tromboemboliya xavfini oshiradi|endometriy|endometriyning|Bachadonda estrogen agonisti sifatida ta'sir qiladi.
+trastuzumab-1mrmmee|Trastuzumab|Trastuzumabning yurakka toksik ta'siri antratsiklinlardan farqli odatda ___|qaytar|qaytadigan|Davo davomida otilib chiqish fraksiyasini kuzatib boring.
+thiazides-0ftnmv6|Tiazidlar|Tiazidlar kalsiy, glyukoza, urat va ___ ni oshiradi|lipidlar|xolesterin, triglitseridlar|Natriy, kaliy va magniyni esa pasaytiradi.
+corticosteroids-1giv7p8|Kortikosteroidlar|Surunkali steroidlar ___, osteoporoz va immunosupressiyaga olib keladi|giperglikemiya|diabet, qand oshishi|Shuningdek to'xtatilganda buyrak usti bezi yetishmovchiligi.
+atypical-antipsychotics-19z51qf|Atipik antipsixotiklar|Olanzapin va klozapin eng ko'p vazn ortishi va ___ ga olib keladi|diabet|giperglikemiya, metabolik sindrom|Vazn, lipidlar va glyukozani kuzatib boring.
+protease-inhibitors-0lnju5t|Proteaza ingibitorlari|Proteaza ingibitorlari ___ va insulinrezistentlik chaqiradi|lipodistrofiya|lipodistrofiyani|Yog' qayta taqsimlanadi va giperlipidemiya qo'shiladi.
+thionamides-0ah3574|Tionamidlar|Propiltiouratsil ___ yetishmovchiligi bo'yicha qora ramkali ogohlantirishga ega|jigar|jigarning|Birinchi trimestrdan tashqari metimazol afzal ko'riladi.
+lithium-0zti5gl|Litiy|Litiy nimaga olib keladi|Gipotireoz va giperkalsiemiya|Gipertireoz va gipokalsiemiya|Shuningdek nefrogen qandsiz diabet.
+phenytoin-1u9cdi5|Fenitoin|Fenitoin klassik holda ___ giperplaziyasi va girsutizm beradi|milk|milklar|Shuningdek ataksiya, nistagm va megaloblastik anemiya.
+chloramphenicol-1cw4dm4|Xloramfenikol|Xloramfenikol qaytmas ___ anemiya chaqirishi mumkin|aplastik|aplastik anemiya|Shuningdek dozaga bog'liq ko'mik bostirilishi va «kulrang chaqaloq» sindromi.
+clozapine-1o83e3d|Klozapin|Klozapin ___ chaqirishi mumkin, shuning uchun neytrofillar muntazam tekshiriladi|agranulotsitoz|agranulotsitozni|Xavfi taxminan 1 foiz.
+heparin-0e4h8lb|Geparin|___ ga bog'langan 4-trombotsitar omilga qarshi antitelolar HIT ni keltirib chiqaradi|Geparin|geparinga|Trombotsitlar 5-10 kundan keyin pasayadi, qon ketishi emas, tromboz bo'ladi.
+methyldopa-1f6u9vt|Metildopa|Metildopa to'g'ridan-to'g'ri ___ testini musbat qiladi|Kumbs|coombs, antiglobulin|Odatda klinik gemolizsiz kechadi.
+dapsone-14t0idn|Dapson|Dapson ___ va G6PD yetishmovchiligida gemoliz chaqiradi|metgemoglobinemiya|metgemoglobinemiyani|Qon shokolad rangida; metilen ko'ki bilan davolanadi.
+linezolid-0irto0h|Linezolid|Uzoq muddatli linezolid nimaga olib keladi|Trombotsitopeniya va ko'rish nervi neyropatiyasi|Nefrotoksiklik va elektrolitlar yo'qotilishi|Ikki haftadan ortiq kurslarni cheklang.
+aminoglycosides-1vur19y|Aminoglikozidlar|Aminoglikozidlar proksimal ___ da to'planib, oliguriyasiz yetishmovchilik beradi|kanalcha|kanalchalar, kanalcha hujayralari|Dori darajasi va buyrak funksiyasini kuzatib boring.
