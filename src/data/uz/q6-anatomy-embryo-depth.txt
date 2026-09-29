@@ -1,0 +1,62 @@
+# q6-anatomy-embryo-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+implantation-1a7inex|Implantatsiya|Implantatsiya urug'lanishdan taxminan ___ kun keyin sodir bo'ladi|6|olti, 6-7|Shu vaqtda xorionik gonadotropin birinchi marta aniqlanadi.
+gastrulation-05lisow|Gastrulyatsiya|Gastrulyatsiya nechanchi haftada boshlanadi|3|8|Birlamchi tasmadan uchta murtak varaqasi hosil bo'ladi.
+neurulation-1tbhele|Neyrulyatsiya|Nerv nayi ___ektodermadan hosil bo'ladi|neyro|neyroektoderma, nerv|Rostral neyropora 25-kunda, kaudal neyropora 27-kunda yopiladi.
+neural-crest-0nm0x7s|Nerv tojisi|Qaysi biri nerv tojisi hosilasi EMAS?|Gipofizning oldingi bo'lagi|Buyrak usti bezi mag'iz qavati|Gipofizning oldingi bo'lagi Ratke cho'ntagi ektodermasidan kelib chiqadi.
+teratogens-0lujcig|Teratogenlar|Teratogen xavf eng yuqori bo'lgan embrional davr — ___ dan 8-haftagacha|3|uch, 3-hafta|3-haftagacha «hammasi yoki hech nima» qoidasi ishlaydi.
+placental-exchange-0fygz2a|Yo'ldosh orqali almashinuv|Qaysi biri yo'ldoshdan yomon o'tadi?|Geparin|Varfarin|Yirik o'lchami va zaryadi o'tishga to'sqinlik qiladi.
+pharyngeal-arches-0fbzynz|Halqum ravoqlari|Birinchi halqum ravog'i ___ mushaklarini beradi|chaynash|chaynov, chaynash mushaklari|Uch shoxli nerv innervatsiya qiladi.
+second-pharyngeal-arch-0g86zxw|Ikkinchi halqum ravog'i|Ikkinchi ravoq qaysi mushaklarni ta'minlaydi|Mimika mushaklarini|Chaynov mushaklarini|Yuz nervi; uzangi suyakcha va bigizsimon o'simta.
+third-pharyngeal-pouch-05jc6l1|Uchinchi halqum cho'ntagi|Uchinchi cho'ntak timus va pastki ___ ni hosil qiladi|qalqonsimon oldi bezlari|qalqonsimon oldi bezi|To'rtinchisi yuqori qalqonsimon oldi bezlarini hosil qiladi.
+thyroid-descent-0ka1ktt|Qalqonsimon bezning tushishi|Til-qalqonsimon yo'l kistasi nima bilan harakatlanadi|Tilni chiqarganda|Yelkani qisganda|Bu uning ko'r teshik sohasidagi kelib chiqishini aks ettiradi.
+foregut-0lf4vbd|Oldingi ichak|Oldingi ichakni ___ poyasi ta'minlaydi|qorin|qorin poyasi|O'rta ichakni yuqori, orqa ichakni pastki tutqich arteriyasi ta'minlaydi.
+midgut-rotation-0z9fqry|O'rta ichakning burilishi|O'rta ichak qanday buriladi|270 daraja soat yo'nalishiga teskari|90 daraja soat yo'nalishi bo'yicha|Buzilsa, malrotatsiya va burilish xavfi paydo bo'ladi.
+ductus-venosus-1g9o87m|Venoz yo'l|Venoz yo'l tug'ilgandan keyin ligamentum ___ ga aylanadi|venosum|venozum|Kindik venasi esa ligamentum teres ga aylanadi.
+foramen-ovale-0dh2av7|Oval teshik|Oval teshik tug'ilganda nega yopiladi|Chap bo'lmacha bosimi o'ngdan oshadi|O'ng bo'lmacha bosimi ko'tariladi|O'pka kengayib, o'pka tomirlari qarshiligi pasayadi.
+kidney-development-0k93vwe|Buyrak rivojlanishi|Yakuniy buyrak ___ dan rivojlanadi|metanefros|metanefrosdan|Pronefros regressiyaga uchraydi; mezonefros Volf yo'lini hosil qiladi.
+urachus-0l8z2hc|Uraxus|Bitmagan uraxus nimaga olib keladi|Kindikdan siydik chiqishiga|Ikki tomonlama gidronefrozga|Allantoisning qoldig'i.
+gonadal-descent-1lp0p0f|Jinsiy bezlarning tushishi|Moyakni yorg'oqqa ___ yo'naltiradi|gubernakulum|gubernaculum|U keyinchalik yorg'oq boylami sifatida saqlanadi.
+diaphragm-openings-0i8gpgz|Diafragma teshiklari|Pastki kovak vena diafragmadan T___ darajasida o'tadi|8|sakkiz, t8|Qizilo'ngach T10, aorta T12 darajasida.
+phrenic-nerve-0thbf2x|Diafragma nervi|Diafragma nervi qaysi segmentlardan chiqadi|C3, C4 va C5|C5, C6 va C7|C3, C4, C5 diafragmani harakatlantiradi.
+referred-pain-0d48pox|Uzatilgan og'riq|Diafragmaning ta'sirlanishi og'riqni ___ ga uzatadi|yelka|yelkaga, yelka uchiga|C3-C5 dermatomlari orqali; Ker belgisi.
+inguinal-canal-0038zp9|Chov kanali|Urug' tizimchasi qayerdan o'tadi|Chuqur va yuza chov halqalaridan|Son kanali va yashirin teshikdan|Son churrasi chov boylami ostidan o'tadi.
+portosystemic-anastomoses-1ibpurn|Portosistem anastomozlar|«Meduza boshi» ___ venasining qayta ochilishidan kelib chiqadi|kindik|kindik venasi, paraumbilikal|Portal gipertenziya homila kanallarini qayta ochadi.
+retroperitoneal-organs-1unv60f|Retroperitoneal a'zolar|Qaysi biri retroperitoneal joylashgan?|Pastga tushuvchi chambar ichak|Ko'ndalang chambar ichak|Ko'ndalang chambar ichak intraperitoneal joylashgan.
+femoral-triangle-0bypln9|Son uchburchagi|Son uchburchagida tashqidan ichkariga: nerv, arteriya, vena va ___|limfa tomirlari|limfa tugunlari, kanal|NAVEL tartibi.
+carpal-tunnel-contents-1on6ed7|Karpal kanal tarkibi|Karpal kanalda o'rta nerv va yana nima bor|To'qqizta bukuvchi pay|Tirsak nervi ham o'tadi|Tirsak nervi Gyuyon kanalida o'tadi.
+circle-of-willis-0vrhqdt|Villizi halqasi|Oldingi biriktiruvchi arteriya xaltasimon ___ ning eng ko'p uchraydigan joyi|anevrizma|anevrizmasi|Yorilishi subaraxnoidal qon quyilishiga olib keladi.
+middle-meningeal-artery-11w0wih|O'rta miya pardasi arteriyasi|O'rta miya pardasi arteriyasi qaysi arteriyaning tarmog'i|Yuqori jag' arteriyasi|Ichki uyqu arteriyasi|Epidural gematomada pterion sohasida yiriladi.
+cavernous-sinus-1nx4lkk|G'orsimon sinus|Qaysi nerv g'orsimon sinus devorida EMAS?|Ko'rish nervi|Uzoqlashtiruvchi nerv|III, IV, V1, V2 va VI juftlar u orqali yoki yonidan o'tadi.
+spinal-cord-termination-019l9kc|Orqa miyaning tugashi|Kattalarda orqa miya L___ darajasida tugaydi|1|bir, l1, l1-l2|Shuning uchun lyumbal punksiya L3-L4 da bajariladi.
+corticospinal-tract-16azcui|Kortikospinal yo'l|Kortikospinal yo'l qayerda kesishadi|Uzunchoq miya piramidalarida|Orqa miyaga kirgan darajasida|Spinotalamik yo'l esa orqa miyada kesishadi.
+dorsal-columns-1qcp7pa|Orqa ustunlar|Orqa ustunlar vibratsiya, proprioseptiv sezgi va nozik ___ ni o'tkazadi|teginish|teginish sezgisini|Uzunchoq miyada medial lemniska sifatida kesishadi.
+broca-area-1twtsy9|Broka sohasi|Broka sohasini qaysi arteriya ta'minlaydi|O'rta miya arteriyasi|Oldingi miya arteriyasi|Dominant peshona bo'lagi, pastki peshona burmasi.
+randomization-1wcuszk|Tasodifiylashtirish|Tasodifiylashtirish ma'lum va noma'lum ___ chalkashtiruvchi omillarni nazorat qiladi|barcha|hammasi, noma'lum|Kuzatuv tadqiqotlaridan ustunligi shunda.
+blinding-0ulx270|Ko'r usul|Ikki tomonlama ko'r usul nimani anglatadi|Na ishtirokchi, na tadqiqotchi bilmaydi|Faqat ishtirokchi bexabar qoldiriladi|Kuzatuvchi va hisobot xatolarini kamaytiradi.
+meta-analysis-1jkj8wy|Metatahlil|Metatahlil natijalarni birlashtirib statistik ___ ni oshiradi|quvvat|quvvatni|Nashr xatosiga moyil.
+funnel-plot-1yfc6pb|Voronka grafigi|Asimmetrik voronka grafigi nimadan dalolat beradi|Nashr xatosidan|Effekt modifikatsiyasidan|Kichik manfiy tadqiqotlar yo'q.
+number-needed-to-harm-17vbmc5|Zarar uchun zarur bemorlar soni|Bu ko'rsatkich 1 ni tegishli ___ ga bo'lishga teng|xavf|xavfga, xavf ortishiga|Qancha yuqori bo'lsa, shuncha xavfsiz.
+non-inferiority-trial-0u27h0f|Kam samarali emaslik sinovi|Bu sinov yangi davo haqida nimani ko'rsatishga qaratilgan|Sezilarli yomon emasligini|Aniq yaxshiroq ekanini|Yangi variantning boshqa afzalliklari bo'lganda qo'llanadi.
+intention-to-treat-0m1fhm0|Davolash niyati bo'yicha tahlil|Bu tahlil ___ ning afzalligini saqlab qoladi|tasodifiylashtirish|tasodifiylashtirishning|Protokol bo'yicha tahlil esa uni buzadi.
+case-series-0qmxoxs|Holatlar seriyasi|Holatlar seriyasi qanday|Sabab-oqibatni aniqlay olmaydi|Sabab-oqibatni yaxshi aniqlaydi|Solishtirish guruhi yo'q.
+standard-error-1hyufa0|Standart xato|Standart xato = standart chetlanish / ___ ning kvadrat ildizi|n|tanlama hajmi|Tanlama kattalashgani sari kichrayadi.
+correlation-coefficient-1lg5spk|Korrelyatsiya koeffitsienti|Minus 0,9 ga teng korrelyatsiya koeffitsienti nimani ko'rsatadi|Kuchli manfiy bog'liqlik|Kuchsiz teskari bog'liqlik|Kuchi mutlaq qiymat bilan belgilanadi.
+p-value-0k69zm7|p qiymati|p qiymati — ___ gipoteza to'g'ri bo'lganda shu natija chiqishi ehtimoli|nol|nol gipoteza|Bu gipoteza noto'g'ri bo'lish ehtimoli emas.
+confidence-interval-width-05dv75r|Ishonch oralig'ining kengligi|Kengroq ishonch oralig'i nimani ko'rsatadi|Aniqlik kamroq ekanini|Effekt kattaroq ekanini|Tanlama hajmini oshirish orqali toraytiriladi.
+odds-ratio-044k9kg|Shanslar nisbati|Shanslar nisbati kasallik ___ bo'lganda nisbiy xavfga yaqin bo'ladi|kam uchraydigan|kam tarqalgan|«Kam uchraydigan kasallik» farazi.
+attributable-risk-0t0c6i9|Tegishli xavf|Tegishli xavf nima|Ta'sir ostidagi xavfdan ta'sirsiz xavfni ayirish|Ta'sir ostidagi va ta'sirsiz xavf nisbati|Nisbat esa nisbiy xavf hisoblanadi.
+sensitivity-0405vht|Sezgirlik|Sezgirlik = haqiqiy musbatlar / ___ i bo'lgan barcha odamlar|kasallik|kasalligi|Haqiqiy musbatlar va soxta manfiylar yig'indisi.
+likelihood-ratio-0xh866f|Ehtimollik nisbati|Musbat ehtimollik nisbati 10 dan yuqori bo'lsa|Kasallikni kuchli tasdiqlaydi|Kasallikni inkor qiladi|0,1 dan past bo'lsa, kuchli inkor qiladi.
+screening-17qp78m|Skrining|Ideal skrining testi kasallikni o'tkazib yubormaslik uchun yuqori ___ ga ega|sezgirlik|sezgirlikka|Keyin spetsifikroq test bilan tasdiqlanadi.
+autonomy-08qzuyw|Avtonomiya|Muomalaga layoqatli katta odam davodan bosh tortishi mumkin, hatto bu ___ ga olib kelsa ham|o'lim|o'limga|Avtonomiya ezgulikdan ustun turadi.
+advance-directive-0wmhl7e|Oldindan bildirilgan iroda|Haqiqiy oldindan bildirilgan iroda nima qiladi|Bemor layoqatini yo'qotganda shifokorni majburlaydi|Qarindoshlar uchun faqat maslahat bo'lib qoladi|Oila aniq irodani rad eta olmaydi.
+assent-1p7c5wd|Rozilik so'rash|Yoshi yetmagan bolalardan ham ___ so'rash kerak, ya'ni ularning ham xohishini bilish|rozilik|roziligini|Ota-ona ruxsati bilan bir qatorda.
+emancipated-minor-010accu|Emansipatsiya qilingan voyaga yetmagan|Emansipatsiya qilingan voyaga yetmagan nima qila oladi|O'z tibbiy yordamiga rozilik beradi|Baribir ota-ona hozir bo'lishini talab qiladi|Turmush, harbiy xizmat yoki moliyaviy mustaqillik.
+confidentiality-04og56t|Sir saqlash|Sir aniq bir ___ shaxsni himoya qilish uchun oshkor qilinishi mumkin|uchinchi|3-, uchinchi shaxs|Tarasoff bo'yicha ogohlantirish va himoya qilish majburiyati.
+reportable-conditions-0d4vflk|Xabar berish majburiy holatlar|Qaysi biri majburiy xabar berishni talab qiladi?|Sil kasalligi|Gipertenziya|Ba'zi boshqa yuqumli kasalliklar bilan bir qatorda.
+therapeutic-privilege-1lp710o|Terapevtik imtiyoz|Bemorni xafa qilishi mumkin deb ma'lumotni yashirish|Kamdan kam oqlanadi|Odatiy amaliyot|Bemorlar bilish huquqiga ega.
+futility-0dyyi3f|Befoyda davo|Shifokorlar tibbiy jihatdan ___ davoni berishga majbur emas|befoyda|befoyda bo'lgan|Ammo shunchaki rad etmasdan, tushuntirib berishi kerak.
+impaired-colleague-0ih6b8b|Layoqatsiz hamkasb|Mast holatdagi hamkasbni ko'rsangiz nima qilish kerak|Rahbar yoki litsenziya organiga xabar berish|Yolg'iz gaplashib, hech kimga aytmaslik|Bemor xavfsizligi birinchi o'rinda.
+beneficence-versus-nonmaleficence-1hd34yp|Ezgulik va zarar yetkazmaslik|«Primum non nocere» ___ tamoyilini ifodalaydi|zarar yetkazmaslik|zarar yetkazmaslikning|Eng avvalo, zarar yetkazmang.
+justice-1xzakv0|Adolat|Adolat tamoyili nima bilan bog'liq|Resurslarning adolatli taqsimlanishi|Bemor tanlovini hurmat qilish|Tanlov — avtonomiya tamoyili.
