@@ -115,3 +115,6 @@ Yes/No → Ha/Yo'q · True/False → To'g'ri/Noto'g'ri · Increased/Decreased �
 - acetaminophen etc. as decided; granuloma → granulyoma (Russian гранулёма)
 - GABA → GAMK (Russian ГАМК); REM sleep → REM uyqusi
 - HGPRT → GGFRT; HSV → OGV (as agreed); tabes dorsalis → orqa miya quruqshog'i; shingles → o'rab oluvchi temiratki
+
+## Workflow note
+- Write at most ~40 questions per batch. A long unbroken block of microbiology (toxins, organisms) can trip a safety filter mid-write; smaller batches go through cleanly. Nothing is lost when one is stopped — the file on disk is untouched.
