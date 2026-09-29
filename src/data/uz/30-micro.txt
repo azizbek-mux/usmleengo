@@ -40,3 +40,17 @@ clindamycin-0kmddxt|Klindamitsin|Klindamitsin ribosomaning qaysi subbirligiga bo
 clindamycin-0hbm7mo|Klindamitsin|Klindamitsinning klassik nojo'ya ta'siri|Clostridioides difficile koliti|Nefrotoksiklik va eshitish pasayishi|Yo'g'on ichak mikroflorasini buzadi.
 hookworm-0a3ncgj|Ilonbosh chuvalchang|Ilonbosh chuvalchang qanday anemiya chaqiradi?|Mikrositar temir tanqisligi|Makrositar megaloblastik|Ichakdan surunkali qon yo'qotish.
 hookworm-02xwf9q|Ilonbosh chuvalchang|Ilonbosh chuvalchang lichinkalari organizmga ___ orqali kiradi|teri|oyoq, tovon|Ko'pincha yalangoyoq yurganda teri orqali kirib boradi.
+urine-dipstick-nitrites-1jjwust|Siydikdagi nitritlar|Siydikda nitritning musbat bo'lishi nimani ko'rsatadi|Nitratni qaytaruvchi gram-manfiy bakteriyalar|Har qanday bakteriya, gram-musbatlar ham|Siydik qovuqda bir necha soat turishi kerak.
+mycobacterium-avium-complex-1a9fvgg|Mycobacterium avium kompleksi|Bu infeksiya profilaktikasi CD4 qanchadan pastga tushganda boshlanadi|50|200|50 hujayradan past bo'lganda azitromitsin profilaktikasi.
+congenital-syphilis-1wqptz7|Tug'ma zaxm|Tug'ma zaxmning oldini olish uchun ona nima bilan davolanadi|Penitsillin|Doksitsiklin|Doksitsiklin homiladorlikda mumkin emas.
+hiv-entry-inhibitors-1oen4fy|OIV ning kirishini bloklovchilar|Enfuvirtid nimani bloklaydi|Virus yadrosining sitoplazmaga qo'shilishini|RNK genomining teskari transkripsiyasini|gp41 ning qo'shilishini bloklovchi preparat.
+fluoroquinolones-0prpaw0|Ftorxinolonlar|Ftorxinolonlar nimani ingibitsiya qiladi|DNK-giraza va IV tip topoizomerazani|Ribosomaning 30S subbirligini|DNK ning yozilishi va o'ralishini bloklaydi.
+fluoroquinolones-0skhho3|Ftorxinolonlar|Ftorxinolonlarning tayanch-harakat tizimiga klassik xavfi|Payning uzilishi|Rabdomioliz|Bolalar va homiladorlikda qo'llanmaydi; tog'ayni shikastlaydi.
+beta-lactamase-inhibitors-0an26dk|Beta-laktamaza ingibitorlari|Tazobaktam piperatsillin bilan nima uchun birga beriladi|Bakteriya piperatsillinni ishdan chiqarmasligi uchun|Ribosomani bloklab qamrovni kengaytirish uchun|Beta-laktamaza ingibitori penitsillinni himoya qiladi.
+foscarnet-0fczxq1|Foskarnet|Foskarnet virus DNK-polimerazasini qanday ingibitsiya qiladi|Fosforillanishni talab qilmasdan|Faqat timidinkinaza faollashtirgandan keyin|Atsiklovirga chidamli gerpes va gantsiklovirga chidamli sitomegalovirusda qo'llanadi.
+foscarnet-15rytnj|Foskarnet|Foskarnetning asosiy toksik ta'siri|Nefrotoksiklik va elektrolitlar yo'qotilishi|Suyak ko'migining bostirilishi va neytropeniya|Gipokalsiemiya, gipomagniemiya, tutqanoq. Gantsiklovir esa ko'mikni bostiradi.
+tertiary-syphilis-1ckyiml|Uchlamchi zaxm|Zaxm aortiti vasa ___ ning bitib ketishidan boshlanadi|vasorum|vazorum|Vasa vasorum endarteriiti ko'tariluvchi aortani zaiflashtiradi.
+syphilitic-aneurysm-0j35ufq|Zaxm anevrizmasi|Zaxm klassik holda aortaning qaysi qismini zararlaydi?|Ko'tariluvchi aortani|Qorin aortasini|Intima «daraxt po'sti» kabi. Ateroskleroz esa qorin aortasini afzal ko'radi.
+bronchiolitis-14fs2gm|Bronxiolit|Ikki yoshgacha bolada bronxiolitning odatiy qo'zg'atuvchisi|Respirator sinsitial virus|Adenovirus yoki rinovirus|Kuz va qishda xirillash bilan kechadi.
+hiv-2-09syi7n|OIV-2|OIV-2 qaysi hududda endemik|G'arbiy Afrikada|Janubi-sharqiy Osiyoda|Sekinroq rivojlanadi; ba'zi testlar uni aniqlamasligi mumkin.
+neutropenic-fever-1cm7ce2|Neytropenik isitma|Chuqur neytropeniyada infeksiyaning mahalliy belgilari qanday bo'ladi|Yo'q yoki juda kam|Kuchaygan bo'ladi|Neytrofil bo'lmasa, yiring ham bo'lmaydi. Isitma yagona belgi bo'lishi mumkin.
