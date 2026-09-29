@@ -1,0 +1,23 @@
+rdw-in-iron-deficiency-1a5t1t8|Temir tanqisligida RDW|Eritrotsitlar taqsimlanish kengligining oshishi nimani ko'rsatadi|Temir tanqisligini|Talassemiya tashuvchiligini|Talassemiyada RDW normada qoladi.
+target-cells-meaning-100zn2h|Nishon hujayralarning ma'nosi|Surtmadagi nishon hujayralar nimani kuchli ko'rsatadi|Talassemiyani|Temir tanqisligini|Temir tanqisligida esa rangpar hujayralar bo'ladi.
+thalassemia-defect-0jln32z|Talassemiyadagi nuqson|Talassemiya nimaning noto'g'ri sintezi|Globin zanjirining|Gem guruhining|Turiga qarab alfa yoki beta.
+polycythemia-vera-mutation-0kocllw|Haqiqiy politsitemiya mutatsiyasi|Haqiqiy politsitemiyani qaysi gen mutatsiyasi keltiradi|JAK2|BCR-ABL|Qon yaratuvchi o'zak hujayralarning ko'payishi.
+polycythemia-vera-cell-lines-0ztgpiu|Haqiqiy politsitemiyada hujayra qatorlari|Haqiqiy politsitemiya xarakterli holda nimani oshiradi|Kamida ikki hujayra qatorini|Faqat eritrotsitlar qatorini|Eritrotsitlar doim, ustiga leykotsit yoki trombotsit.
+myelofibrosis-film-01jqyj7|Miyelofibrozda qon surtmasi|Miyelofibroz qon surtmasida nimani ko'rsatadi|Tomchisimon eritrotsitlarni|Sferotsitlar va polixromaziyani|Punksiyada «quruq» natija bilan.
+myelofibrosis-spleen-0yqvgfr|Miyelofibrozda taloq|Miyelofibrozga nima xos|Juda katta splenomegaliya|Normal o'lchamdagi taloq|Ko'mikdan tashqari qon yaratilish hisobiga.
+essential-thrombocythemia-symptoms-0gsygjp|Essensial trombotsitemiya belgilari|Essensial trombotsitemiya nima beradi|Barmoq uchlari og'rig'i va bosh og'rig'i|Takrorlanuvchi chuqur infeksiyalar|Qon quyuqlashuvi belgilari.
+waldenstrom-paraprotein-0u6xfy2|Valdenstrem paraproteini|Valdenstrem makroglobulinemiyasi qanday paraprotein ishlab chiqaradi|IgM paraproteinini|IgG paraproteinini|Miyeloma esa IgG ishlab chiqaradi.
+waldenstrom-cell-0qah2yp|Valdenstremdagi hujayra|Valdenstrem qanday hujayralar raki|Plazmatsitoid limfoid hujayralar|Haqiqiy yetilgan plazmatik hujayralar|Plazmatik hujayralarga o'xshash hujayralar.
+hemophilia-clotting-profile-0wr9t36|Gemofiliyada laxtalanish manzarasi|Gemofiliya faqat nimani uzaytiradi|AChTVni|PVni|VIII va IX omillar ichki yo'lga tegishli.
+vitamin-k-profile-1dfboqc|K vitamini manzarasi|K vitamini tanqisligi nimani uzaytiradi|PV va AChTV ikkalasini ham|Faqat qon ketish vaqtini|Trombotsitlarga ta'sir qilmaydi.
+vitamin-k-enzyme-142xevy|K vitamini fermenti|K vitamini gamma-glutamil ___ uchun kofaktor|karboksilaza|karboksilazaning|II, VII, IX va X omillarni faollashtiradi.
+dic-laboratory-picture-11hxpec|DVS-sindromda laboratoriya manzarasi|Tomir ichida tarqalgan qon ivishi nimani oshiradi|Qon ketish vaqti, PV, AChTV va D-dimer|Faqat AChTVni, PV esa normada qolib|Hammasi bir vaqtda sarflanib ketadi.
+hus-triad-1oohy35|Gemolitik-uremik sindrom uchligi|Gemolitik-uremik sindrom — trombotsitopeniya, buyrak yetishmovchiligi va yana nima|Shistotsitlar bilan gemoliz|Sferotsitlar bilan gemoliz|Mikroangiopatik manzara.
+ttp-versus-hus-02s2z7o|TTP va gemolitik-uremik sindrom farqi|TTP gemolitik-uremik sindromdan nimani qo'shishi bilan farq qiladi|Isitma va nevrologik belgilarni|Diareya va qorin og'rig'ini|Uchlik emas, beshlik bo'ladi.
+factor-v-leiden-mechanism-0grnxul|V Leyden omili mexanizmi|V Leyden omilida laxtalanish kuchayadi, chunki V omil qanday|C oqsiliga chidamli|Ortiqcha miqdorda ishlab chiqarilgan|Faollashgan C oqsiliga chidamlilik.
+antithrombin-iii-role-1mmq5r0|Antitrombin III vazifasi|Antitrombin III normada nimani faolsizlantiradi|Trombin va Xa, IXa omillarni|V va VIII omillarni bevosita|V va VIII bilan C oqsili shug'ullanadi.
+antithrombin-deficiency-clue-0aztw6v|Antitrombin tanqisligi ishorasi|Antitrombin III tanqisligi qachon gumon qilinadi|Geparin AChTVni uzaytirmasa|Geparin AChTVni haddan tashqari uzaytirsa|Geparin ishlashi uchun antitrombin kerak.
+hageman-factor-deficiency-08a3bj0|Xageman omili tanqisligi|XII omil tanqisligi qanday namoyon bo'ladi|Uzun AChTV, qon ketishsiz|Og'ir, o'z-o'zidan qon ketish|Raqamiga qaramay, klinik jihatdan jim.
+pnh-mechanism-13up4ih|Paroksizmal tungi gemoglobinuriya mexanizmi|Paroksizmal tungi gemoglobinuriya nima|CD55 va CD59 yo'qligidan komplement lizisi|Antitelo orqali eritrotsitlar lizisi|GPI-langar yetishmaydi.
+pnh-presentation-0i7ub3y|Paroksizmal tungi gemoglobinuriya namoyoni|Paroksizmal tungi gemoglobinuriya klassik holda nima bilan namoyon bo'ladi|Ertalab to'q rangli siydik|Jismoniy yuklamadan keyin to'q siydik|Kechasi komplement faolroq bo'ladi.
+neutropenic-fever-action-0erjb9s|Neytropenik isitmada harakat|Neytropeniyali bemordagi isitma nimani talab qiladi|Tekshiruvdan oldin antibiotik berishni|Avval ekma olib, natijalarni kutishni|Kechikish o'ldiradi.
