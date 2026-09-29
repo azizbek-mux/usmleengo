@@ -2,7 +2,7 @@
 
 hereditary-hemochromatosis-009onnt|Irsiy gemoxromatoz|Gemoxromatoz qanday kardiomiopatiyaga olib keladi?|Avval restriktiv, keyin dilatatsion|Avval gipertrofik, keyin obstruktiv|Temir miokardda to'planadi — avval restriktiv, keyin dilatatsion.
 hereditary-hemochromatosis-1l3p2ai|Irsiy gemoxromatoz|Gemoxromatoz autosom-___ tipda irsiylanadi|retsessiv|ar|HFE geni mutatsiyasi, ichakda temirning haddan tashqari so'rilishi.
-diabetic-nephropathy-0ct96a3|Diabetik nefropatiya|Diabetik nefropatiyada birlamchi antigipertenziv preparat|Sartan yoki AFF ingibitori|Tiazid guruhidagi diuretik|Renin-angiotenzin-aldosteron tizimini bloklash proteinuriyali buyrak kasalligining rivojlanishini sekinlashtiradi.
+diabetic-nephropathy-0ct96a3|Diabetik nefropatiya|Diabetik nefropatiyada birlamchi antigipertenziv preparat|Angiotenzin retseptor blokatori yoki AFF ingibitori|Tiazid diuretigi yoki kalsiy kanallari blokatori|Renin-angiotenzin-aldosteron tizimini bloklash proteinuriyali buyrak kasalligining rivojlanishini sekinlashtiradi.
 atrial-fibrillation-1ivnsqs|Bo'lmachalar fibrillatsiyasi|Bo'lmachalar fibrillatsiyasining eng kuchli xavf omili|Keksa yosh|Erkak jinsi|Yoshga bog'liq bo'lmachalar remodellanishi va kengayishi.
 atrial-fibrillation-0twx81c|Bo'lmachalar fibrillatsiyasi|Bo'lmachalar fibrillatsiyasi bo'lmachalarning tuzilmaviy va elektr ___idan kelib chiqadi|remodellanish|remodellanishi|Remodellanish qayta kirish halqalari uchun substrat yaratadi.
 hfpef-0graxd8|Otilib chiqish fraksiyasi saqlangan yurak yetishmovchiligi|Otilib chiqish fraksiyasi saqlangan yurak yetishmovchiligi ko'pincha nima bilan bog'liq|Chap qorincha keyingi yuklamasining oshishi|Qorincha qisqarish zaxirasining kamayishi|Surunkali gipertenziya diastolik disfunksiyaga olib keladi.

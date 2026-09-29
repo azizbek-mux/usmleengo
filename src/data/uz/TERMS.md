@@ -103,8 +103,8 @@ peds pediatr · histo gisto · radio radio
 ## Answer words used everywhere
 Yes/No → Ha/Yo'q · True/False → To'g'ri/Noto'g'ri · Increased/Decreased → Oshgan/Kamaygan (as a verb: Oshiradi/Kamaytiradi) · High/Low → Yuqori/Past · Normal → Normada · Positive/Negative → Musbat/Manfiy · Present/Absent → Bor/Yo'q · Louder/Softer → Kuchayadi/Susayadi.
 
-## Awaiting the owner's confirmation (used meanwhile)
-- ARB (angiotensin receptor blockers) → sartanlar ("Sartan yoki AFF ingibitori")
+## Confirmed by the owner 2026-09-29 (second round)
+- ARB → angiotenzin retseptor blokatorlari (the full form, never "sartanlar") — owner, 2026-09-29
 - VLDL → ZJPLP (zichligi juda past lipoproteinlar), by the ZPLP pattern
 - cAMP / cGMP → sAMF / sGMF (like ATP → ATF)
 - LDH → LDG; CK → KFK
