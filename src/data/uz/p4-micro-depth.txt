@@ -34,9 +34,9 @@ legionella-06am1x6|Legionella|Legionella pnevmoniyasi klassik holda nima bilan b
 chlamydia-trachomatis-0s6klwi|Chlamydia trachomatis|Xlamidiyaning A-C serotiplari ko'rlikning asosiy sabablaridan biri — ___ ni chaqiradi|traxoma|traxomani|D-K jinsiy infeksiya, L1-L3 esa venerik limfogranulyoma beradi.
 chlamydia-1chao5i|Xlamidiya|Xlamidiya nimani o'zi hosil qila olmaydi|ATF|Oqsil|Hujayra ichida yashovchi majburiy energiya paraziti.
 lyme-disease-1gkoqw4|Laym kasalligi|Erta Laym kasalligi ___ eritemani chaqiradi|ko'chuvchi|surunkali ko'chuvchi|Ixodes kanasi chaqqandan keyin nishonsimon toshma.
-lyme-disease-137jbb4|Laym kasalligi|Kechki Laym kasalligi nimaga olib kelishi mumkin|Atrioventrikulyar blokada|Aorta stenozi|Shuningdek artrit va yuz nervi falaji.
+lyme-disease-137jbb4|Laym kasalligi|Kechki Laym kasalligi nimaga olib kelishi mumkin|Atrioventrikulyar blokada|Aorta qopqog'i stenozi|Shuningdek artrit va yuz nervi falaji.
 syphilis-1pquel8|Zaxm|Birlamchi zaxm og'riqsiz ___ beradi|shankr|qattiq shankr|Og'riqli yaralar esa yumshoq shankrdan dalolat beradi.
-secondary-syphilis-0kvzssf|Ikkilamchi zaxm|Ikkilamchi zaxm klassik holda qayerni zararlaydi|Kaft va tovonni|Faqat bosh terisi sohasini|Kondilomalar bilan dog'li-papulali toshma.
+secondary-syphilis-0kvzssf|Ikkilamchi zaxm|Ikkilamchi zaxm klassik holda qayerni zararlaydi|Kaft va tovonni|Faqat bosh terisini butunlay|Kondilomalar bilan dog'li-papulali toshma.
 neurosyphilis-1y4cine|Neyrosifilis|Argayl Robertson qorachiqlari akkomodatsiya qiladi, ammo ___|reaksiya bermaydi|torayadi, yorug'likka javob beradi|Bunday qorachiq neyrosifilisga xos.
 jarisch-herxheimer-reaction-0lkpzce|Yarish-Gerksgeymer reaksiyasi|Yarish-Gerksgeymer reaksiyasi nimadan keyin yuzaga keladi|Zaxmni penitsillin bilan davolashdan|Davolanmagan ikkilamchi zaxmdan|Parchalangan spiroxetalardan isitma va mushak og'rig'i.
 rocky-mountain-spotted-fever-1075rwd|Toshli tog'lar dog'li isitmasi|Bu isitmadagi toshma ___ dan boshlanadi|bilak va to'piqlar|bilaklar, to'piqlar|Keyin markazga tarqaladi. Rickettsia rickettsii.
@@ -49,3 +49,19 @@ varicella-zoster-0ki7zxt|Suvchechak va o'rab oluvchi temiratki|Suvchechak virusi
 hepatitis-b-05p17bv|B gepatiti|HBeAg yuqori ___ va yuqumlilikni bildiradi|replikatsiya|virus replikatsiyasi, yuqumlilik|Virusning faol ko'payishini belgilaydi.
 hepatitis-d-0nh86eu|D gepatiti|D gepatiti ko'payish uchun qaysi virusga muhtoj?|B gepatiti|C gepatiti|U HBsAg qobig'idan foydalanadi.
 hepatitis-e-0r80mlh|E gepatiti|E gepatiti ayniqsa qachon xavfli|Homiladorlikda|Bolalikda|Uchinchi trimestrda fulminant gepatitdan o'lim yuqori.
+hiv-13d04gi|OIV|OIV xo'jayin DNK siga ___ fermenti yordamida integratsiyalanadi|integraza|integraza fermenti|Raltegravir va dolutegravir shunga qarshi yo'naltirilgan.
+hiv-1287tkt|OIV|OIV infeksiyasi nima bilan tasdiqlanadi|To'rtinchi avlod antigen-antitelo testi bilan|Boshlang'ich skrining sifatida immunoblot bilan|To'rtinchi avlod testi p24 antigenini erta aniqlaydi.
+measles-1n7shmv|Qizamiq|Qizamiqda Koplik dog'lari lunj ___ ida paydo bo'ladi|shilliq qavati|shilliq qavat, shilliq pardasi|Toshmadan oldin chiqadigan mayda oq dog'lar.
+rabies-0sih7rp|Quturish|Quturish virusi markaziy nerv sistemasiga qanday yetib boradi|Retrograd aksonal transport orqali|Qon orqali tarqalish yo'li bilan|Shuning uchun ta'sirdan keyingi profilaktika erta bosqichda ishlaydi.
+poliovirus-087gpt1|Poliovirus|Poliovirus orqa miyaning oldingi ___ ini yemiradi|shoxi|shox hujayralari|Faqat pastki motor neyron falaji, sezgi saqlanadi.
+parvovirus-b19-0ad7607|Parvovirus B19|O'roqsimon hujayrali anemiyada parvovirus B19 nimaga olib keladi|Aplastik kriz|Vazo-okklyuziv kriz|U eritroid o'tmishdosh hujayralarni bevosita zararlaydi.
+parvovirus-b19-1eb3f59|Parvovirus B19|Homiladorlikda parvovirus B19 nimaga olib keladi|Homilaning umumiy shishi|Oyoq-qo'l nuqsonlari|Homilada og'ir anemiya va yuqori haydash hajmli yetishmovchilik.
+aspergillus-1w35vo1|Aspergillus|Aspergillusda septali gifalar ___ daraja ostida shoxlanadi|45|45 daraja, o'tkir|Mucor septasiz va 90 daraja ostida shoxlanadi.
+mucormycosis-0lal13n|Mukormikoz|Mukormikoz klassik holda qachon uchraydi|Diabetik ketoatsidozda|Sog'lom kattalarda|Burun-ko'z-miya sohasiga o'sadi; shoshilinch nekrektomiya kerak.
+pneumocystis-jirovecii-01wbgqo|Pneumocystis jirovecii|Pnevmotsista ___ bo'yicha metenamin kumush bilan ko'riladi|Gomori|gms|«Matoviy shisha» infiltratlari va LDG oshishi.
+candida-08ht9rw|Kandida|Ishqorli surtmada kandida qanday ko'rinadi|Psevdogifalar va kurtaklanuvchi zamburug'|Keng asosli kurtaklanuvchi zamburug'|Keng asosli kurtaklanish — blastomitsetlarga xos.
+toxoplasma-gondii-0smk7k9|Toxoplasma gondii|Homilador ayollar toksoplazmozning oldini olish uchun ___ axlatidan saqlanishi kerak|mushuk|mushuklar|Shuningdek yaxshi pishmagan go'shtdan.
+entamoeba-histolytica-0doptvs|Entamoeba histolytica|Entamoeba klassik holda nimaga olib keladi|Yo'g'on ichakda ko'zasimon yaralar|Vorsinkalar atrofiyasi va to'mtoqlashuvi|Shuningdek «ansovus pastasi» kabi jigar abssessi.
+schistosoma-hematobium-133qu6x|Schistosoma hematobium|S. hematobium qovuqning ___ hujayrali karsinomasi xavfini oshiradi|yassi|yassi hujayrali|Odatdagi uroteliy karsinomasidan farqli.
+taenia-solium-0vamfv5|Taenia solium|Taenia solium TUXUMLARINI yutish nimaga olib keladi|Neyrotsistiserkoz|Ichak lentasimon chuvalchangi|Cho'chqa go'shtidagi lichinkalarni yesa, ichak chuvalchangi rivojlanadi.
+ascaris-0z6375i|Askarida|Askarida lichinkalari ___ orqali ko'chib, o'tkinchi xirillash beradi|o'pka|o'pkalar|Eozinofiliya bilan Lyoffler sindromi.
