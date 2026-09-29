@@ -31,7 +31,7 @@ lamotrigine-1qxbyuw|Lamotridjin|Lamotridjin bipolyar ___ da ayniqsa foydali|depr
 carbamazepine-16so227|Karbamazepin|Karbamazepin o'z metabolizmini kuchaytiradi, bu nima deyiladi|Avtoinduksiya|Nol tartibli kinetika|Birinchi haftalarda darajasi pasayadi.
 benzodiazepine-choice-0bdcadn|Benzodiazepin tanlash|Jigar kasalligida eng xavfsiz benzodiazepinlar|Lorazepam, oksazepam va temazepam|Diazepam va xlordiazepoksid|Ular faqat glyukuronlanish orqali parchalanadi.
 benzodiazepine-withdrawal-17lbzc9|Benzodiazepinni to'xtatish|Benzodiazepinni keskin to'xtatish ___ chaqirishi mumkin|tutqanoq|tutqanoqlar|Alkogol kabi, bu ham o'limga olib kelishi mumkin.
-zolpidem-0clel0v|Zolpidem|Zolpidem benzodiazepinlardan nimasi bilan farq qiladi|BZ1 kichik turiga tanlab ta'sir qiladi|Qaramlik xavfi butunlay yo'q|Mushakni kamroq bo'shashtiradi; uyquda g'alati xatti-harakatlar qayd etilgan.
+zolpidem-0clel0v|Zolpidem|Zolpidem benzodiazepinlardan nimasi bilan farq qiladi|BZ1 kichik turiga tanlab ta'sir qiladi|Qaramlik xavfi umuman kuzatilmaydi|Mushakni kamroq bo'shashtiradi; uyquda g'alati xatti-harakatlar qayd etilgan.
 buspirone-1ltygyi|Buspiron|Buspiron 5-HT1___ retseptorining qisman agonisti|A|1a|Qaramlik yo'q, ammo ta'siri haftalar ichida boshlanadi.
 alcohol-withdrawal-0irvx3r|Alkogol abstinensiyasi|Alkogolli delirium odatda oxirgi ichishdan ___ soat keyin boshlanadi|48|48-96, 72|Oddiy abstinensiya va tutqanoqlardan keyinroq.
 alcohol-withdrawal-seizures-00tzecf|Abstinensiya tutqanoqlari|Abstinensiya tutqanoqlari odatda qachon bo'ladi|12-48 soatda|Bir haftada|Alkogolli deliriumdan oldin.
