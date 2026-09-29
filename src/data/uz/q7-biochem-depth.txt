@@ -1,0 +1,62 @@
+# q7-biochem-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+glycolysis-1rpl4fv|Glikoliz|Glikoliz bir glyukozadan sof ___ ATF beradi|2|ikki|Shuningdek 2 NADN.
+hexokinase-versus-glucokinase-0pww9ek|Geksokinaza va glyukokinaza|Glyukokinaza geksokinazadan nimasi bilan farq qiladi|Km yuqori, mahsulot bilan tormozlanmaydi|Km past, mahsulot bilan kuchli tormozlanadi|U jigarda glyukoza sezgichi vazifasini bajaradi.
+pyruvate-kinase-0wa4coq|Piruvatkinaza|Piruvatkinazani fruktoza-1,6-___ faollashtiradi|bisfosfat|bifosfat, bf|Yuqori bosqichdan keladigan oldindan faollashtirish.
+anaerobic-glycolysis-0lk7nkn|Anaerob glikoliz|Laktat hosil bo'lishi nimani qayta tiklaydi|NAD+|ATF|Kislorodsiz ham glikoliz davom etishiga imkon beradi.
+cori-cycle-01vzhrc|Kori sikli|Kori sikli mushakdan jigarga glyukoneogenez uchun ___ ni tashiydi|laktat|laktat kislotasi|Jigarga har bir glyukoza uchun 6 ATF sarflanadi.
+gluconeogenesis-substrates-0l24z8j|Glyukoneogenez substratlari|Qaysi biri glyukoneogenez uchun ISHLATILA OLMAYDI?|Yog' kislotalaridan olingan atsetil-KoA|Anaerob mushakdan kelgan laktat|Shuning uchun yog' glyukozaga aylana olmaydi.
+gluconeogenesis-0jv1ddi|Glyukoneogenez|Piruvatkarboksilaza ___ vitaminini talab qiladi|biotin|b7|Mitoxondriyada piruvatni oksaloatsetatga aylantiradi.
+citric-acid-cycle-1rt5flx|Uch karbon kislotalar sikli|Siklning bir aylanishi 3 NADN, 1 FADN2 va 1 ___ beradi|GTF|gtp|Shuningdek 2 CO2.
+rate-limiting-tca-enzyme-1vd779m|Siklning tezlikni cheklovchi fermenti|Uch karbon kislotalar siklining tezlikni cheklovchi fermenti|Izotsitratdegidrogenaza|Sitratsintaza fermenti|ATF va NADN uni tormozlaydi.
+electron-transport-048lj5m|Elektron tashish zanjiri|Nafas zanjiridagi oxirgi elektron qabul qiluvchi — ___|kislorod|o2|IV kompleksda suv hosil bo'ladi.
+cyanide-10mbgnn|Siyanid|Siyanid nimani bloklaydi|IV kompleksni|I kompleksni|Shuningdek is gazi va azid ham bloklaydi.
+uncouplers-02i6nw7|Ajratuvchi moddalar|Dinitrofenol kabi ajratuvchilar proton ___ ini tarqatib yuboradi|gradient|gradientini|ATF o'rniga issiqlik hosil bo'ladi.
+brown-fat-00iny9m|Qo'ng'ir yog'|Qo'ng'ir yog' to'qimasi issiqlikni nima yordamida hosil qiladi|Termogenin (UCP1)|ATF-sintaza|Chaqaloqlardagi fiziologik ajratuvchi.
+atp-yield-1ivyzdf|ATF unumi|Bir glyukozaning to'liq oksidlanishi taxminan ___ ATF beradi|32|30, 30-32|Qaysi tashuvchi ishlatilganiga qarab.
+glycogen-synthesis-0n2gggq|Glikogen sintezi|Glikogensintaza alfa-1,___ glikozid bog'larini hosil qiladi|4|to'rt|Shoxlantiruvchi ferment alfa-1,6 bog'larini hosil qiladi.
+glycogen-phosphorylase-1c5npx5|Glikogenfosforilaza|Glikogenfosforilazani nima faollashtiradi|Glyukagon va epinefrin|Insulin va somatostatin|sAMF va protein kinaza A orqali.
+mcardle-disease-0h719qx|Mak-Ardl kasalligi|Mak-Ardl kasalligida mushak glikogen___ yetishmaydi|fosforilaza|fosforilazasi|Jismoniy yuklamani ko'tara olmaslik, laktat oshmaydi.
+von-gierke-disease-0razzz9|Girke kasalligi|Girke kasalligi nimaga olib keladi|Och qoringa og'ir gipoglikemiya va laktatatsidoz|Yuklamada mushak tortishishi, glyukoza normal|Glyukoza-6-fosfataza yetishmovchiligi; gepatomegaliya.
+pompe-disease-1b4smcs|Pompe kasalligi|Pompe kasalligi ___ ga va yurak yetishmovchiligidan erta o'limga olib keladi|kardiomegaliya|kardiomiopatiya|Lizosomal kislotali alfa-glyukozidaza yetishmovchiligi.
+fatty-acid-synthesis-02417gz|Yog' kislotalari sintezi|Yog' kislotalari sintezi ___ da kechadi va NADFN talab qiladi|sitoplazma|sitozol|Beta-oksidlanish esa mitoxondriyada bo'ladi.
+acetyl-coa-carboxylase-13cbwm3|Atsetil-KoA-karboksilaza|Atsetil-KoA-karboksilaza nimaning tezlikni cheklovchi bosqichi|Yog' kislotalari sintezi|Beta-oksidlanish|Malonil-KoA hosil qiladi, u karnitin tashuvchisini bloklaydi.
+beta-oxidation-0gz2xho|Beta-oksidlanish|Uzun zanjirli yog' kislotalari mitoxondriyaga ___ tashuvchisi orqali kiradi|karnitin|karnitin tashuvchisi|Yetishmovchiligi ketonsiz gipoglikemiyaga olib keladi.
+mcad-deficiency-1ga9k7f|MCAD yetishmovchiligi|MCAD yetishmovchiligi nima bilan namoyon bo'ladi|Ochlikdan keyin ketonsiz gipoglikemiya|Anion farqi oshgan ketoatsidoz|Chaqaloqlar skriningida aniqlanadi.
+ketogenesis-03z0dxf|Ketogenez|Keton tanachalari ___ da sintezlanadi|jigar|jigarda|Ammo jigar ularni ishlata olmaydi, tioforaza yo'q.
+lipoproteins-1n3hp4v|Lipoproteinlar|Xilomikronlar asosan nimani tashiydi|Ovqatdagi triglitseridni|Xolesterinni to'qimalarga|ZPLP xolesterinni yetkazadi; ZYuLP uni qaytaradi.
+lipoprotein-lipase-0eqqnnv|Lipoproteinlipaza|Lipoproteinlipazani apolipoprotein C-___ faollashtiradi|II|ii, 2, c2|Yetishmovchiligi og'ir gipertriglitseridemiyaga olib keladi.
+familial-hypercholesterolemia-1d1ggtq|Oilaviy giperxolesterinemiya|Oilaviy giperxolesterinemiya nimaning nuqsonidan kelib chiqadi|ZPLP retseptorlari|Lipoproteinlipaza|Paylardagi ksantomalar va erta toj arteriyalar kasalligi.
+cholesterol-18yamiz|Xolesterin|Xolesterin o't kislotalari, D vitamini va ___ gormonlarning o'tmishdoshi|steroid|steroid gormonlar|Halqa tuzilishi energiya uchun parchalanmaydi.
+urea-cycle-1orargi|Mochevina sikli|Mochevina siklining tezlikni cheklovchi fermenti — karbamoilfosfat___ I|sintetaza|sintaza|N-atsetilglutamat uni faollashtiradi.
+ornithine-transcarbamylase-deficiency-17cujf3|Ornitintranskarbamilaza yetishmovchiligi|Bu yetishmovchilik qanday tipda irsiylanadi|X ga birikkan tipda|Autosom-retsessiv tipda|Mochevina siklining eng ko'p uchraydigan buzilishi.
+hyperammonemia-0i9vuoc|Giperammoniemiya|Ammiak qisman ___-ketoglutaratni tugatib neyrotoksik ta'sir ko'rsatadi|alfa|alfa-ketoglutarat|Miyada uch karbon kislotalar siklini buzadi.
+essential-amino-acids-00tseol|Almashtirib bo'lmaydigan aminokislotalar|Qaysi biri almashtirib bo'lmaydigan aminokislota?|Lizin|Alanin|Alanin organizmda oson sintezlanadi.
+homocystinuria-0rhqq0n|Gomotsistinuriya|Gomotsistinuriya erta ___ va gavharning siljishiga olib keladi|tromboz|trombozga, ateroskleroz|Marfan sindromidan farqli, gavhar pastga siljiydi.
+homocystinuria-02c1tbw|Gomotsistinuriya|Gomotsistinuriyaning ba'zi shakllari yuqori dozadagi nimaga javob beradi|B6 vitamini|B12 vitamini|Sistationinsintaza piridoksalfosfatdan foydalanadi.
+alkaptonuria-159f8oc|Alkaptonuriya|Alkaptonuriya to'q rangli siydik va ___ ga — tog'ayning ko'k-qora pigmentatsiyasiga olib keladi|oxronoz|oxronozga|Gomogentizat oksidaza yetishmovchiligi.
+maple-syrup-urine-disease-1dbnan5|Klyon siropi hidli siydik kasalligi|Bu kasallik nimani cheklash bilan davolanadi|Tarmoqlangan zanjirli aminokislotalarni|Barcha oqsilni butunlay va doimiy|Javob beruvchi shakllarda tiamin ham qo'shiladi.
+purine-synthesis-0a3s5xb|Purin sintezi|De novo purin sintezining tezlikni cheklovchi fermenti — ___-amidotransferaza|PRPP|prpp, glutamin-prpp|Oxirgi mahsulotlar AMF va GMF uni tormozlaydi.
+adenosine-deaminase-deficiency-0cr1r9i|Adenozindezaminaza yetishmovchiligi|Adenozindezaminaza yetishmovchiligi nimaga olib keladi|Og'ir kombinatsiyalangan immun tanqislik|Urat nefropatiyasi bilan podagra|Toksik dATF to'planib, limfotsitlarni o'ldiradi.
+lesch-nyhan-syndrome-1vfv8ze|Lesh-Nayxan sindromi|Lesh-Nayxan sindromi o'z-o'ziga ___ va giperurikemiyaga olib keladi|shikast yetkazish|shikast, zarar yetkazish|GGFRT yetishmovchiligi; X ga birikkan retsessiv.
+orotic-aciduria-0dhzndi|Orot atsiduriyasi|Irsiy orot atsiduriyasi nimaga olib keladi|B12 bilan tuzatilmaydigan megaloblastik anemiya|Bilirubin oshishi bilan gemolitik anemiya|Uridin bilan davolanadi.
+methotrexate-05y76yc|Metotreksat|Metotreksat ___reduktazani ingibitsiya qilib, timidin sintezini bloklaydi|digidrofolat|digidrofolatreduktaza, dhfr|Leykovorin bilan bartaraf etiladi.
+5-fluorouracil-0llsqi7|5-ftoruratsil|5-ftoruratsil nimani ingibitsiya qiladi|Timidilatsintazani|Digidrofolatreduktazani|Leykovorin emas, timidin bilan bartaraf etiladi.
+transcription-1pmafgg|Transkripsiya|Eukariotlarda ___ RNK-polimeraza xabarchi RNK ni hosil qiladi|II|ii, 2|Zaharli qo'ziqorindagi alfa-amanitin uni tormozlaydi.
+promoter-1vqrtct|Promotor|TATA-boks qayerda joylashgan|Transkripsiya boshlanish nuqtasidan yuqorida|Genning birinchi introni o'rtasida|Transkripsiya kompleksi yig'iladigan joy.
+rna-processing-15qofvz|RNK ning yetilishi|Eukariot mRNK si 5-uchida qalpoqcha va poli-___ dumini oladi|A|a, adenin, adenozin|Shuningdek intronlarni olib tashlash uchun splaysing.
+spliceosome-19mqqtd|Splaysosoma|Splaysosoma snRNP lariga qarshi antitelolar qaysi kasallikda topiladi|Tizimli qizil yuguruk|Revmatoid artrit|Anti-Smit antitelolari.
+translation-1swo7ik|Translyatsiya|Translyatsiya AUG ___ kodonidan boshlanadi|start|boshlovchi, initsiator|Metioninni kodlaydi.
+ribosome-0h4atq3|Ribosoma|Prokariot ribosomasi qanday|70S, 50S va 30S dan iborat|80S, 60S va 40S dan iborat|Shuning uchun antibiotiklar unga tanlab ta'sir qiladi.
+chaperones-0daoez9|Chaperonlar|___ oqsillari to'g'ri buklanishga yordam beradi, ko'pincha ATF ishlatib|Chaperon|chaperonlar, issiqlik shoki|Issiqlik shoki oqsillari klassik namuna.
+proteasome-1vjmsl8|Proteasoma|Bortezomib mielomani nimani ingibitsiya qilib davolaydi|Proteasomani|Ribosomani|Noto'g'ri buklangan oqsillar to'planib, hujayrani o'ldiradi.
+vitamin-b12-absorption-1w98mz6|B12 vitaminining so'rilishi|B12 vitamini ichki omilga bog'lanib, yonbosh ichakning oxirgi ___ ida so'riladi|qismi|qism, bo'limi|Shuning uchun bu sohaning rezeksiyasi yetishmovchilikka olib keladi.
+vitamin-b12-stores-0y8vsxf|B12 vitamini zaxirasi|Organizmdagi B12 vitamini zaxirasi taxminan qancha vaqtga yetadi|Uch-besh yilga|Uch haftaga|Shuning uchun yetishmovchilik sekin rivojlanadi.
+folate-1v9lrgi|Folat|Homiladorlikdan oldin folat qabul qilish ___ nayi nuqsonlarining oldini oladi|nerv|nerv nayi|Kuniga 400 mkg, oldin holat bo'lgan bo'lsa ko'proq.
+vitamin-a-toxicity-0a87g57|A vitamini toksikligi|A vitamini ortiqchaligi nimaga olib keladi|Psevdotumor va teratogen ta'sir|Periferik neyropatiya va ataksiya|Izotretinoin ham xuddi shu xavflarni tug'diradi.
+vitamin-e-0akapdx|E vitamini|Yuqori dozadagi E vitamini nima qiladi|Varfarin ta'sirini kuchaytiradi|Varfarin ta'siriga qarshi turadi|U K vitaminiga bog'liq ivish omillariga xalal beradi.
+vitamin-k-1y1ypxz|K vitamini|K vitaminining ko'p qismi ___ mikroflorasidan keladi|ichak|ichak mikroflorasi|Shuning uchun keng spektrli antibiotiklar protrombin vaqtini uzaytiradi.
+zinc-deficiency-02fsrix|Rux tanqisligi|Rux tanqisligi nimaga olib keladi|Og'iz atrofi toshmasi, gipogonadizm, yara bitmasligi|Shabko'rlik va konyunktivaning quruqshashi|Irsiy shakli — enteropatik akrodermatit.
+copper-deficiency-1s77osy|Mis tanqisligi|Mis tanqisligi anemiya va ___ ga olib keladi, B12 yetishmovchiligiga o'xshab|miyelopatiya|miyelopatiyaga, neyropatiya|Oshqozon shuntlashdan yoki ortiqcha ruxdan keyin bo'lishi mumkin.
+selenium-0iq2tr8|Selen|Selen tanqisligi nimaga olib keladi|Keshan kardiomiopatiyasi|Shabko'rlik va terining qurishi|Selen kam hududlarda endemik muammo.
+iodine-deficiency-1p42qbb|Yod tanqisligi|Yod tanqisligi dunyo bo'yicha ___ nuqsonning oldini olish mumkin bo'lgan eng ko'p sababi|aqliy|kognitiv|Tug'ma gipotireoz orqali.
