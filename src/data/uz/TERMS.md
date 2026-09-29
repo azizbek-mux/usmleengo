@@ -102,3 +102,16 @@ peds pediatr · histo gisto · radio radio
 
 ## Answer words used everywhere
 Yes/No → Ha/Yo'q · True/False → To'g'ri/Noto'g'ri · Increased/Decreased → Oshgan/Kamaygan (as a verb: Oshiradi/Kamaytiradi) · High/Low → Yuqori/Past · Normal → Normada · Positive/Negative → Musbat/Manfiy · Present/Absent → Bor/Yo'q · Louder/Softer → Kuchayadi/Susayadi.
+
+## Awaiting the owner's confirmation (used meanwhile)
+- ARB (angiotensin receptor blockers) → sartanlar ("Sartan yoki AFF ingibitori")
+- VLDL → ZJPLP (zichligi juda past lipoproteinlar), by the ZPLP pattern
+- cAMP / cGMP → sAMF / sGMF (like ATP → ATF)
+- LDH → LDG; CK → KFK
+- S3 / S4 heart sounds → S3 toni / S4 toni (the glossary writes "S2 tonining")
+- SA node → sinus tuguni; AV node → AV tugun
+- GPA → poliangiitli granulyomatoz; SLE → tizimli qizil yuguruk (TQY)
+- Nutcracker syndrome → «Yong'oqchaqar» sindromi; Prinzmetal → Prinsmetal
+- acetaminophen etc. as decided; granuloma → granulyoma (Russian гранулёма)
+- GABA → GAMK (Russian ГАМК); REM sleep → REM uyqusi
+- HGPRT → GGFRT; HSV → OGV (as agreed); tabes dorsalis → orqa miya quruqshog'i; shingles → o'rab oluvchi temiratki
