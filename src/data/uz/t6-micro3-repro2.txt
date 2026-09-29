@@ -1,0 +1,50 @@
+gonorrhea-1oceygx|Gonoreya|Gonoreya mushak ichiga ___ yuborish bilan davolanadi|seftriakson|seftriaksonni|Chidamlilik og'iz orqali variantlarni yo'q qildi.
+chlamydia-0070hw4|Xlamidiya|Asoratsiz xlamidiya nima bilan davolanadi|Yetti kun doksitsiklin|Bir marta azitromitsin|Samaradorligi uchun endi doksitsiklin afzal.
+syphilis-staging-0q47qrq|Sifilis bosqichlari|Bir yildan ortiq belgisiz sifilis ___ latent deb tasniflanadi|kechki|uchlamchi|Uch hafta davomida haftada bir marta penitsillin talab qiladi.
+syphilis-serology-0gyo2f9|Sifilis serologiyasi|VDRL va RPR nima|Davoni kuzatish uchun notreponemal testlar|Umr bo'yi musbat qoladigan tasdiqlovchi test|Treponemal testlar umr bo'yi musbat qoladi.
+trichomoniasis-0di4sf5|Trixomoniaz|Trixomonada ko'pikli ajralma va ___ bachadon bo'yni bo'ladi|qulupnaysimon|qulupnay|Sherigini ham metronidazol bilan davolang.
+bacterial-vaginosis-10vbon5|Bakterial vaginoz|Bakterial vaginozda nima ko'rinadi|«Kalit» hujayralar va musbat hid sinamasi|Ishqorli surtmada mitseliylar va sporalar|Gardnerella ko'payishi; pH 4,5 dan yuqori.
+genital-herpes-11p8cr0|Jinsiy a'zolar gerpesi|Birlamchi genital gerpes umumiy belgilar bilan og'riqli ___ beradi|yaralar|pufakchalar, yara|Bostiruvchi davo qaytalanish va virus ajralishini kamaytiradi.
+chancroid-1nd840p|Yumshoq shankr|Yumshoq shankr nima beradi|Og'riqli yara va og'riqli tugunlar|Og'riqsiz yara va qattiq tugunlar|Haemophilus ducreyi; «ducreyi» da yig'laysiz.
+lymphogranuloma-venereum-1nldqbn|Venerik limfogranulema|LGV Chlamydia ning L1-L___ serotiplaridan kelib chiqadi|3|uch, l3|Avval og'riqsiz yara, keyin og'riqli bubonlar.
+pelvic-inflammatory-disease-0fkjg3y|Chanoq a'zolari yallig'lanishi|Perigepatit bilan asoratlangan holat nima deb ataladi|Fits-Xyu-Kertis sindromi|Tuxumdonning Meygs sindromi|Jigar atrofida «skripka torlari» kabi bitishmalar.
+hiv-monitoring-09d0893|OIV ni kuzatish|OIV davosiga javob ___ yuklamasi bilan kuzatiladi|virus|virusli|CD4 soni immunitet tiklanishini ko'rsatadi.
+hiv-in-pregnancy-11cbodx|Homiladorlikda OIV|Homiladorlikda antiretrovirus davo yuqishni qanchagacha kamaytiradi|1 foizdan kamga|Taxminan 10 foizga|Shuningdek akusherlik taktikasi va chaqaloq profilaktikasi.
+pneumocystis-prophylaxis-166cqgy|Pnevmotsistoz profilaktikasi|Pnevmotsistoz profilaktikasida ___ ishlatiladi|TMP-SMK|ko-trimoksazol, biseptol, trimetoprim-sulfametoksazol|CD4 200 dan pastga tushganda boshlanadi.
+immune-reconstitution-1w1y598|Immunitetning tiklanishi|Immunitet tiklanishining yallig'lanish sindromi qachon yuz beradi|Antiretrovirus davo boshlangandan keyin|Antiretrovirus davo boshlanishidan oldin|Immunitet tiklanganda paradoksal yomonlashish.
+cryptococcal-meningitis-18b2e22|Kriptokokkli meningit|Kriptokokkli meningit likvorning ___ bosimini keskin oshiradi|boshlang'ich|ochilish|Ketma-ket lyumbal punksiyalar uni kamaytiradi.
+cmv-retinitis-0s3glvy|Sitomegalovirusli retinit|Sitomegalovirus retiniti CD4 qanchadan pastga tushganda yuz beradi|50|350|To'r pardada «pitsa» ko'rinishi.
+toxoplasmosis-prophylaxis-06fe1tt|Toksoplazmoz profilaktikasi|Toksoplazma profilaktikasi CD4 ___ dan pastga tushganda boshlanadi|100|yuz|TMP-SMK uni ham, pnevmotsistozni ham qoplaydi.
+catheter-associated-infection-0brbu0j|Kateter bilan bog'liq infeksiya|Kateter infeksiyasining oldini olishning eng yaxshi usuli — uni erta ___|olib tashlash|chiqarish, olish|Keraksiz kateterlashdan saqlaning.
+central-line-infection-0wk8yn4|Markaziy kateter infeksiyasi|Markaziy kateter infeksiyasining oldini olish nimaga urg'u beradi|Aseptik qo'yish va kunlik ko'rikka|Har hafta kateterni almashtirishga|Rejali almashtirish yordam bermaydi.
+ventilator-associated-pneumonia-0fsk59z|Ventilyator bilan bog'liq pnevmoniya|Profilaktika bosh tomonni ko'tarish va kunlik sedatsiyani ___ ni o'z ichiga oladi|to'xtatish|uzish, tanaffus|Shuningdek og'izni xlorgeksidin bilan tozalash.
+surgical-site-infection-1yhho0v|Operatsiya sohasi infeksiyasi|Operatsiyadan oldin sochni olishda nima ishlatiladi|Ustara emas, mashinka|Palatada oddiy ustara|Ustara mikroshikastlar qoldirib, infeksiya kirishiga yo'l ochadi.
+malaria-prophylaxis-17g70s7|Bezgak profilaktikasi|Bezgak profilaktikasi endemik hududdan chiqqandan keyin ___ hafta davom etadi|4|to'rt|Atovakvon-proguanildan tashqari — unga bir hafta yetarli.
+traveler-s-diarrhea-13invqq|Sayohatchilar diareyasi|Sayohatchilar diareyasi eng ko'p nimadan kelib chiqadi|Enterotoksigen E. coli|Salmonella enteritidis|Odatda suyuqlik bilan o'z-o'zidan o'tadi.
+typhoid-128ozvc|Qorin tifi|Qorin tifi klassik holda ___ dog'lar va nisbiy bradikardiya beradi|atirgul|pushti, atirgulsimon|Faje belgisi; azitromitsin yoki seftriakson bilan davolanadi.
+dengue-warning-signs-1l8m8en|Denge kasalligining xavotirli belgilari|Denge kasalligining xavotirli belgilari nimalar|Gematokrit oshib, trombotsitlarning kamayishi|Isitma va yengil makulopapulyoz toshma|Plazma oqib chiqishi shokdan oldin keladi.
+herd-immunity-11erryv|Jamoaviy immunitet|Jamoaviy immunitet chegarasi asosiy reproduktiv son ___ bilan ortadi|R0|r nol, r0|Qizamiq uchun taxminan 95 foiz qamrov kerak.
+cold-chain-1o553b8|Sovuq zanjir|Vaksina sovuq zanjirining uzilishi|Vaksinalarni samarasiz qilishi mumkin|Vaksina kuchiga ta'sir qilmasligi mumkin|Dozalar yo'q qilinadi yoki qayta tekshiriladi.
+post-exposure-prophylaxis-0wmops5|Ta'sirdan keyingi profilaktika|Quturishda ta'sirdan keyin vaksina va yaraga ___ kerak|immunoglobulin|antitelo, immunoglobulin yuborish|Ilgari emlanmagan odamlar uchun.
+measles-contact-0yyjdh2|Qizamiq bilan kontakt|Qizamiqqa moyil bola kasal bilan kontaktda bo'lsa, nima beriladi|72 soat ichida vaksina|Bir hafta antibiotik|Yoki olti kun ichida immunoglobulin.
+notifiable-disease-1abom1e|Xabar qilinadigan kasallik|Gumon qilingan ___ laboratoriya tasdig'idan oldin xabar qilinishi shart|sil|sil kasalligi, meningit|Jamoat salomatligi chorasi ekma natijasini kutolmaydi.
+antenatal-screening-1tzw0bs|Homiladorlik skriningi|Birlashgan test ensa burmasi shaffofligini, hCG va PAPP-___ ni o'lchaydi|A||O'n bir va o'n to'rt haftalar orasida.
+cell-free-dna-0sg19ou|Erkin DNK|Noinvaziv prenatal test nimani tahlil qiladi|Ona qonidagi homila DNK sini|Amnion suyuqligi hujayralarini|Bu skrining testi, tasdiqlash talab qiladi.
+amniocentesis-007l639|Amniotsentez|Amniotsentez ___ haftadan keyin bajariladi|15|o'n besh|Xorion bo'rtmalari biopsiyasi ertaroq qilinishi mumkin.
+rhesus-disease-0zqslxt|Rezus kasalligi|Rezus kasalligi qaysi homiladorlikka ta'sir qiladi|Ikkinchi va keyingi homiladorliklarga|Faqat eng birinchi homiladorlikka|Sensibilizatsiya birinchi tug'ruqda yuz beradi.
+fetal-monitoring-0zxynmi|Homila holatini kuzatish|Kardiotokografiyadagi kechki desselerasiyalar bachadon-yo'ldosh ___ dan dalolat|yetishmovchiligi|yetishmovchiligidan|O'zgaruvchan desselerasiyalar kindik siqilganini bildiradi.
+shoulder-dystocia-1xaqigi|Yelka distotsiyasi|Yelka distotsiyasida birinchi manyovr qaysi|Qorin usti bosim bilan Mak-Roberts|Tortish bilan bachadon tubiga bosim|Bachadon tubiga bosim siqilishni yomonlashtiradi.
+postpartum-hemorrhage-1mdxpy4|Tug'ruqdan keyingi qon ketishi|Tug'ruqdan keyingi qon ketishda birinchi qator uterotonik — ___|oksitotsin||Keyin ergometrin, karboprost va mizoprostol.
+retained-placenta-173tq4k|Yo'ldoshning ushlanib qolishi|Yo'ldosh tug'ilgach, yumshoq bachadon bilan qon ketishi nimadan dalolat|Bachadon atoniyasidan|Qolgan to'qimalardan|To'rt «T»: tonus, to'qima, travma, trombin.
+puerperal-sepsis-16f322j|Tug'ruqdan keyingi sepsis|Tug'ruqdan keyingi sepsis eng ko'p ___ guruh streptokokkidan kelib chiqadi|A||Tez zo'rayuvchi va tarixda o'limga olib keluvchi infeksiya.
+lactation-0nkt7y0|Laktatsiya|Sut chiqishini nima qo'zg'atadi|Oksitotsin|Prolaktin|Prolaktin sut ishlab chiqaradi; oksitotsin uni chiqaradi.
+primary-amenorrhea-1aswr4z|Birlamchi amenoreya|Rivojlanishi normal bo'lib, hayz bo'lmasa, amenoreya ___ yoshda tekshiriladi|15|o'n besh, 16|Yoki ikkilamchi jinsiy belgilar bo'lmasa, 13 yoshda.
+asherman-syndrome-0jsqc0m|Asherman sindromi|Asherman sindromi amenoreyani nima orqali beradi|Bachadon ichidagi bitishmalar|Tuxumdon yetishmovchiligi|Odatda instrumental aralashuv yoki infeksiyadan keyin.
+premature-ovarian-insufficiency-0tvphfq|Erta tuxumdon yetishmovchiligi|Erta tuxumdon yetishmovchiligi FSG yuqori bo'lib, ___ yoshdan oldin aniqlanadi|40|qirq|Suyakni asrash uchun gormon o'rnini bosuvchi davo kerak.
+fibroid-degeneration-13zo5mz|Mioma degeneratsiyasi|Mioma tugunining qizil degeneratsiyasi klassik holda qachon bo'ladi|Homiladorlik davrida|Menopauzadan keyin|Tugun qon ta'minotidan tez o'sib, o'tkir og'riq beradi.
+ovarian-cyst-0obg4sb|Tuxumdon kistasi|Tuxumdon kistasining yorilishi birdan og'riq va chanoqda erkin ___ beradi|suyuqlik||Holati barqaror bo'lsa, odatda konservativ olib boriladi.
+cervical-cancer-risk-1ag9iqh|Bachadon bo'yni raki xavfi|OPV dan tashqari bachadon bo'yni raki uchun eng kuchli xavf omili qaysi|Chekish|Semizlik|Shuningdek immun bostirilishi va jinsiy aloqaning erta boshlanishi.
+endometrial-hyperplasia-0140l8s|Endometriy giperplaziyasi|Atipiyasiz endometriy giperplaziyasi ___ bilan davolanadi|progestogen|progestin, progesteron|Ko'pincha levonorgestrelli bachadon ichi tizimi bilan.
+menopause-hormone-therapy-0q53zal|Menopauzada gormon davosi|Menopauzadan keyin o'n yil ichida boshlangan gormon davosi|Qulay xavf-foyda nisbatiga ega|Barcha ayollarda qo'llanmaydi|Yurak-qon tomir xavfi uchun boshlash vaqti muhim.
+contraception-1piqek7|Kontratseptsiya|Eng samarali qaytadigan kontratseptsiya — ___ implant yoki bachadon ichi vositasi|teri osti|progestogenli, etonogestrelli|Uzoq ta'sirli va rejimga rioya qilishga bog'liq emas.
+emergency-contraception-1qvs9mq|Shoshilinch kontratseptsiya|Eng samarali shoshilinch kontratseptsiya qaysi|Mis bachadon ichi vositasi|Levonorgestrel tabletkalari|Jinsiy aloqadan keyin besh kungacha samarali.
