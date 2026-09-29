@@ -66,3 +66,39 @@ peds pediatr · histo gisto · radio radio
 | deficiency | yetishmovchiligi |
 | presents with… | …bilan murojaat qildi |
 - Brand + suffix: write it joined — usmleengoda, usmleengoga, usmleengodan (never usmleengo'da: o' is a letter).
+
+## Decided 2026-09-29 (owner's answers)
+| English | Uzbek |
+|---|---|
+| PT / INR / PTT (aPTT) | PV / MNO / AChTV — Russian-style lab abbreviations |
+| IGF-1 | IFR-1 (insulinsimon o'sish omili-1) |
+| Reed-Sternberg cells | Berezovskiy-Shternberg hujayralari |
+| eponyms | as Russian textbooks spell them: Горнер → Gorner, Гейнц (Heinz) → Geyns; Хашимото → Xashimoto, Ходжкин → Xodjkin (Russian uses Х there) |
+| unconjugated / conjugated bilirubin | bilvosita / bevosita bilirubin |
+| CNS / PNS | markaziy nerv sistemasi (MNS) / periferik nerv sistemasi |
+| acetaminophen | atsetaminofen (the glossary's form) |
+| epinephrine / norepinephrine | epinefrin / norepinefrin (the glossary's form) |
+| rate-limiting enzyme | tezlikni cheklovchi ferment |
+| NADPH / NADH / FAD | NADFN / NADN / FAD |
+| PPD (tuberculin skin test) | Mantu sinamasi |
+| Negri bodies | Babesh-Negri tanachalari |
+
+## Glossary spellings to follow (checked in clinical-english-glossary.csv)
+- -emia after a consonant: giperkaliemiya, gipokaliemiya, giponatriemiya, gipokalsiemiya, giperkalsiemiya, gipoalbuminemiya; but gipoglikemiya.
+- antibody → antitelo (antitelolar); antigen → antigen.
+- preload / afterload → oldingi yuklama / keyingi yuklama.
+- anion gap → anion farq ("yuqori anion farqli metabolik atsidoz").
+- murmur → shovqin; crescendo-decrescendo → kuchayib-susayuvchi; holosystolic → golosistolik; opening snap → ochilish qarsillashi.
+- gram-positive / gram-negative → gram-musbat / gram-manfiy; coagulase-negative → koagulaza-manfiy; acid-fast → kislotaga chidamli; India ink → tush bo'yog'i.
+- BUN → mochevina azoti; ESR → eritrotsitlar cho'kish tezligi (EChT).
+- SIADH → antidiuretik gormonning noadekvat sekretsiyasi sindromi; euvolemic → evovolemik.
+- loop of Henle → Genle halqasi; loop diuretic → halqali diuretik; ACE → AFF (angiotenzinga aylantiruvchi ferment), ACE inhibitors → AFF ingibitorlari.
+- multiple sclerosis → tarqalgan skleroz; Guillain-Barré → Giyen-Barre sindromi; Lewy bodies → Levi tanachalari; Philadelphia chromosome → Filadelfiya xromosomasi.
+- atrial fibrillation → bo'lmachalar fibrillatsiyasi; angina pectoris → stenokardiya; ectopic pregnancy → bachadondan tashqari homiladorlik.
+- caseous necrosis → tvorogsimon nekroz; goblet cells → qadahsimon hujayralar; mast cells → semiz hujayralar; epithelioid → epiteliosimon.
+- type I hypersensitivity → I turdagi o'ta yuqori sezuvchanlik; celiac disease → seliakiya; sickle cell anemia → o'roqsimon hujayrali anemiya.
+- upper motor neuron → yuqori motor neyron; demyelination → demielinizatsiya; night blindness → shabko'rlik; basophilic stippling → bazofil punktuatsiya.
+- overdose → dozasini oshirib yuborish; cross-match → qonning mosligini tekshirish (kross-match); edema → shish.
+
+## Answer words used everywhere
+Yes/No → Ha/Yo'q · True/False → To'g'ri/Noto'g'ri · Increased/Decreased → Oshgan/Kamaygan (as a verb: Oshiradi/Kamaytiradi) · High/Low → Yuqori/Past · Normal → Normada · Positive/Negative → Musbat/Manfiy · Present/Absent → Bor/Yo'q · Louder/Softer → Kuchayadi/Susayadi.

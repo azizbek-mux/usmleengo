@@ -8,12 +8,12 @@ rickets-0crpkju|Raxit|Bolalardagi raxit ___ vitamini yetishmovchiligidan kelib c
 vitamin-b12-deficiency-02v27ds|B12 vitamini yetishmovchiligi|B12 yetishmovchiligi nevrologik belgilarni keltirib chiqaradi:|Ha|Yo'q|Ha — orqa miyaning subakut kombinatsiyalangan degeneratsiyasi. Folat yetishmovchiligida bunday bo'lmaydi.
 folate-deficiency-021w62j|Folat yetishmovchiligi|Folat yetishmovchiligida metilmalon kislotasi:|Normada|Oshgan|Folat yetishmovchiligida normada, B12 yetishmovchiligida oshadi. Gomotsistein ikkalasida ham oshadi.
 vitamin-a-deficiency-1jm0yci|A vitamini yetishmovchiligi|Shabko'rlik ___ vitamini yetishmovchiligidan kelib chiqadi|A|vitamin a, retinol|A vitamini — rodopsin hosil bo'lishi uchun retinal zarur.
-vitamin-k-1g8vikx|K vitamini|K vitamini yetishmovchiligida protrombin vaqti FQTV dan oldin uzayadi:|To'g'ri|Noto'g'ri|To'g'ri — VII omilning yarim yemirilish davri eng qisqa, shuning uchun protrombin vaqti birinchi bo'lib uzayadi.
+vitamin-k-1g8vikx|K vitamini|K vitamini yetishmovchiligida PV AChTV dan oldin uzayadi:|To'g'ri|Noto'g'ri|To'g'ri — VII omilning yarim yemirilish davri eng qisqa, shuning uchun PV birinchi bo'lib uzayadi.
 biotin-deficiency-012d0tq|Biotin yetishmovchiligi|Ko'p miqdorda xom tuxum oqsili ___ yetishmovchiligiga olib keladi (avidin uni bog'lab oladi)|biotin|b7, vitamin b7|Xom tuxum oqsilidagi avidin biotinni (B7) bog'lab oladi.
 vitamin-b6-deficiency-1877pgg|B6 vitamini yetishmovchiligi|Izoniazid B6 vitamini yetishmovchiligiga olib keladi:|Ha|Yo'q|Ha — neyropatiyaning oldini olish uchun izoniazid bilan birga piridoksin beriladi.
 glycolysis-rate-limiting-enzyme-1pnh3zv|Glikolizning tezlikni cheklovchi fermenti|Glikolizning tezlikni cheklovchi fermenti — ___|fosfofruktokinaza-1|ffk-1, ffk, fosfofruktokinaza|FFK-1. Fruktoza-6-fosfat → fruktoza-1,6-bisfosfat.
 insulin-1rcpf2a|Insulin|Insulin glikolizni kuchaytiradi:|Ha|Yo'q|Ha — insulin ovqatdan keyingi holatning zaxiralovchi gormoni.
-g6pd-deficiency-13v5kmp|G6PD yetishmovchiligi|G6PD yetishmovchiligida periferik qon surtmasida ___ tanachalari ko'rinadi|Xayns|xayns tanachalari|Xayns tanachalari (denaturatsiyalangan gemoglobin), taloq ularni olib tashlagach — «tishlangan» hujayralar.
+g6pd-deficiency-13v5kmp|G6PD yetishmovchiligi|G6PD yetishmovchiligida periferik qon surtmasida ___ tanachalari ko'rinadi|Geyns|geyns tanachalari|Geyns tanachalari (denaturatsiyalangan gemoglobin), taloq ularni olib tashlagach — «tishlangan» hujayralar.
 von-gierke-disease-14haghw|Girke kasalligi|Girke kasalligida (I tip) qondagi glyukoza:|Past|Yuqori|Och qoringa og'ir gipoglikemiya — glyukoza-6-fosfataza yetishmovchiligi.
 phenylketonuria-0qudee4|Fenilketonuriya|Fenilketonuriya bilan og'rigan bemorlar ___ aminokislotasini iste'mol qilmasligi kerak|fenilalanin|fen|Fenilalaningidroksilaza yetishmovchiligi. Tirozin almashtirib bo'lmaydigan aminokislotaga aylanadi.
 essential-fructosuria-0nxm634|Essensial fruktozuriya|Essensial fruktozuriya — xavfsiz holat:|Ha|Yo'q|Ha — fruktokinaza yetishmovchiligi, belgisiz kechadi. Xavflisi — aldolaza B yetishmovchiligi.
@@ -60,8 +60,8 @@ warfarin-19oa56h|Varfarin|Varfarin dozasini oshirib yuborish ___ vitamini bilan 
 heparin-1aa81wb|Geparin|Geparin dozasini oshirib yuborish ___ bilan neytrallanadi|protamin sulfat|protamin|Protamin sulfat — geparinni bog'lovchi musbat zaryadli peptid.
 opioid-overdose-0nb4uz6|Opioidlar dozasini oshirib yuborish|Opioidlar dozasini oshirib yuborishda antidot — ___|nalokson|narkan|Nalokson — mu-retseptorlarning raqobatli antagonisti.
 benzodiazepine-overdose-0mb7pzs|Benzodiazepinlar dozasini oshirib yuborish|Benzodiazepinlar dozasini oshirib yuborishda antidot — ___|flumazenil||Flumazenil — lekin uzoq vaqt iste'mol qilganlarda tutqanoq xavfi bor.
-warfarin-0wdbems|Varfarin|Varfarin qaysi ko'rsatkich bilan nazorat qilinadi:|Protrombin vaqti/XNN|FQTV|Protrombin vaqti/XNN — koagulyatsiyaning tashqi yo'li. Geparin FQTV bilan nazorat qilinadi.
-heparin-0xos9b3|Geparin|Fraksiyalanmagan geparin qaysi ko'rsatkich bilan nazorat qilinadi:|FQTV|Protrombin vaqti/XNN|FQTV — koagulyatsiyaning ichki yo'li. Past molekulyar geparinlar odatda nazorat talab qilmaydi.
+warfarin-0wdbems|Varfarin|Varfarin qaysi ko'rsatkich bilan nazorat qilinadi:|PV/MNO|AChTV|PV/MNO — koagulyatsiyaning tashqi yo'li. Geparin AChTV bilan nazorat qilinadi.
+heparin-0xos9b3|Geparin|Fraksiyalanmagan geparin qaysi ko'rsatkich bilan nazorat qilinadi:|AChTV|PV/MNO|AChTV — koagulyatsiyaning ichki yo'li. Past molekulyar geparinlar odatda nazorat talab qilmaydi.
 aminoglycosides-0clvomd|Aminoglikozidlar|Aminoglikozidlar nefrotoksik va ___toksik|oto|ototoksik, quloq|Nefrotoksik va ototoksik. Halqali diuretiklar bilan birga qo'llash tavsiya etilmaydi.
 statins-0zd4b22|Statinlar|Statinlar GMG-KoA-reduktazani ingibitsiya qiladi:|Ha|Yo'q|Ha — xolesterin sintezining tezligini cheklovchi fermenti.
 statins-0swlh5j|Statinlar|Statinlarning mushaklarga oid klassik nojo'ya ta'siri — ___|miopatiya|miozit, rabdomioliz, mushak og'rig'i, mialgiya|Miopatiya va rabdomioliz — KFK ni tekshiring. Fibratlar bilan birga qo'llanganda xavf ortadi.
@@ -98,20 +98,20 @@ sickle-cell-disease-0lkhinf|O'roqsimon hujayrali anemiya|O'roqsimon hujayrali an
 hemophilia-a-0nv6601|Gemofiliya A|Gemofiliya A — qaysi omil yetishmovchiligi:|VIII|IX|VIII omil. Gemofiliya B — IX omil. Ikkalasi ham X ga birikkan retsessiv.
 von-willebrand-disease-0plnjo6|Villebrand kasalligi|Villebrand kasalligida qon ketish vaqti uzayadi:|Ha|Yo'q|Ha — trombotsitlar adgeziyasi uchun Villebrand omili zarur. Eng ko'p uchraydigan irsiy qon ketish kasalligi.
 itp-03l5sq9|Immun trombotsitopeniya|Immun trombotsitopeniyada trombotsitlar glikoproteini ___ ga qarshi antitelolar bo'ladi|IIb/IIIa|gpiib/iiia, 2b/3a, iib iiia|GpIIb/IIIa ga qarshi antitelolar; trombotsitlar taloqda parchalanadi.
-dic-13eru7v|DVS-sindrom|DVS-sindromida fibrinogen:|Kamaygan|Oshgan|Sarflanadi. D-dimer oshadi, trombotsitlar kamayadi, protrombin vaqti ham, FQTV ham uzayadi.
+dic-13eru7v|DVS-sindrom|DVS-sindromida fibrinogen:|Kamaygan|Oshgan|Sarflanadi. D-dimer oshadi, trombotsitlar kamayadi, PV ham, AChTV ham uzayadi.
 cml-1onfvap|Surunkali mieloleykoz|Surunkali mieloleykoz ___ xromosomasi bilan bog'liq|Filadelfiya|ph, filadelfiya xromosomasi, bcr-abl|Filadelfiya xromosomasi t(9;22), BCR-ABL. Imatinib bilan davolanadi.
 hodgkin-lymphoma-0pqqtr8|Xodjkin limfomasi|Xodjkin limfomasida biopsiyada ___ hujayralari ko'rinadi|Berezovskiy-Shternberg|rid-shternberg, berezovskiy-rid-shternberg, boyqush ko'zi|Berezovskiy-Shternberg hujayralari — «boyqush ko'zi» yadrolari, CD15 va CD30 musbat.
 multiple-myeloma-00x0bmc|Ko'p sonli mieloma|Ko'p sonli mielomada qon zardobidagi kalsiy:|Oshgan|Kamaygan|Suyak lizisi tufayli giperkalsiemiya. Asosiy belgilar: giperkalsiemiya, buyrak zararlanishi, anemiya, suyak zararlanishi.
 parkinson-disease-10pxb29|Parkinson kasalligi|Parkinson kasalligi — ___ moddadagi dofaminergik neyronlarning nobud bo'lishi|qora|qora modda|Qora moddaning zich qismi. Levi tanachalari — alfa-sinuklein.
 myasthenia-gravis-0pv4vqr|Miasteniya|Miasteniyada takroriy harakat bilan mushak kuchsizligi:|Kuchayadi|Kamayadi|Harakat bilan kuchayadi. Lambert-Iton sindromida esa kamayadi.
 myasthenia-gravis-066ouqu|Miasteniya|Miasteniyada ___ retseptorlariga qarshi antitelolar bo'ladi|atsetilxolin|atsetilxolin retseptori, nikotinli|Postsinaptik atsetilxolin retseptorlariga qarshi antitelolar. Timoma bilan bog'liq.
-multiple-sclerosis-1dufr5m|Tarqalgan skleroz|Tarqalgan skleroz qaysi asab tizimini zararlaydi?|Markaziy|Periferik|Markaziy asab tizimining demielinizatsiyasi. Likvorda oligoklonal chiziqlar, periventrikulyar blyashkalar.
+multiple-sclerosis-1dufr5m|Tarqalgan skleroz|Tarqalgan skleroz qaysi nerv sistemasini zararlaydi?|Markaziy|Periferik|Markaziy nerv sistemasining demielinizatsiyasi. Likvorda oligoklonal chiziqlar, periventrikulyar blyashkalar.
 guillain-barre-syndrome-1ljdu7x|Giyen-Barre sindromi|Giyen-Barre sindromi oyoqlardan yuqoriga qarab ___ falajni keltirib chiqaradi|ko'tariluvchi|ko'tariluvchi falaj, yuqoriga|Ko'tariluvchi falaj, ko'pincha Campylobacter infeksiyasidan keyin. Nafas mushaklarini kuzatib boring.
 alzheimer-disease-1mjvptr|Altsgeymer kasalligi|Altsgeymer kasalligida beta-amiloid blyashkalari bo'ladi:|Ha|Yo'q|Ha — hujayradan tashqari beta-amiloid blyashkalari va hujayra ichidagi tau chigallari.
 broca-aphasia-0sp1qi5|Broka afaziyasi|Broka afaziyasida nutqni tushunish ___|saqlangan|saqlanadi, normal, yaxshi, buzilmagan|Broka — nutq «siniq», tushunish saqlangan; bemor bundan asabiylashadi.
 wernicke-aphasia-0dcncg9|Vernike afaziyasi|Vernike afaziyasida nutq ravon, ammo ma'nosiz:|Ha|Yo'q|Ha — ravon, ma'nosiz, tushunish buzilgan. Vernike — «so'zga boy».
 bacterial-meningitis-06bw5av|Bakterial meningit|Bakterial meningitda likvordagi glyukoza ___|past|kamaygan, pasaygan|Glyukoza past, oqsil yuqori, neytrofillar. Virusli meningitda glyukoza normada qoladi.
-horner-syndrome-0n76g3v|Xorner sindromi|Xorner sindromi ptoz, mioz va yana nimani o'z ichiga oladi:|Angidroz|Gipergidroz|Angidroz — simpatik innervatsiyaning yo'qolishi.
+horner-syndrome-0n76g3v|Gorner sindromi|Gorner sindromi ptoz, mioz va yana nimani o'z ichiga oladi:|Angidroz|Gipergidroz|Angidroz — simpatik innervatsiyaning yo'qolishi.
 upper-motor-neuron-lesion-15080h3|Yuqori motor neyron shikastlanishi|Yuqori motor neyron shikastlanishida reflekslar:|Kuchaygan|Susaygan|Giperrefleksiya, spastiklik, Babinski belgisi. Pastki motor neyron shikastlanishi esa aksini beradi.
 peptic-ulcer-disease-10rv1r3|Yara kasalligi|O'n ikki barmoqli ichak yarasining eng ko'p uchraydigan sababi — ___ pylori|Helicobacter|h, h pylori, helicobacter pylori|H. pylori — ureaza-musbat. Uch komponentli davo bilan davolanadi.
 crohn-disease-1xq4q21|Kron kasalligi|Kron kasalligida «sakrab o'tuvchi» zararlanishlar bo'ladi:|Ha|Yo'q|Ha — transmural, sakrab o'tuvchi zararlanishlar, og'izdan anusgacha istalgan joyda. Yarali kolitda esa zararlanish uzluksiz.
