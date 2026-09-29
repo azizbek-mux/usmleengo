@@ -37,7 +37,7 @@ acute-intermittent-porphyria-0bmgvx1|O'tkir intermittirlovchi porfiriya|Bu porfi
 acute-intermittent-porphyria-17h0rni|O'tkir intermittirlovchi porfiriya|O'tkir porfiriya xuruji nima bilan davolanadi|Vena ichiga glyukoza va gem|Fenobarbital va fenitoin|Ikkalasi ham ALK-sintazani bostiradi.
 septic-arthritis-07umf1t|Septik artrit|Septik artritda nima talab qilinadi|Shoshilinch bo'g'im punksiyasi|Og'iz orqali empirik antibiotik|Bo'g'im bir necha kun ichida yemiriladi.
 aging-kidney-1uvadur|Buyrakning qarishi|Yosh o'tishi bilan buyrak kanalchalarining ADG ga javobi|Pasayadi|Kuchayadi|Siydik kam quyuqlashadi va suvsizlanish xavfi ortadi.
-trichotillomania-1n0wn5e|Trixotillomaniya|Trixotillomaniya qaysi guruhga kiradi|Impulslarni nazorat qilish buzilishi|Psixotik doiradagi buzilish|Sochni takroran yulish, to'xtatish urinishlari samarasiz.
+trichotillomania-1n0wn5e|Trixotillomaniya|Trixotillomaniya qaysi guruhga kiradi|Impulslarni nazorat qilish buzilishi|Psixotik doiradagi ruhiy buzilish|Sochni takroran yulish, to'xtatish urinishlari samarasiz.
 pelvic-splanchnic-nerves-010b573|Chanoq ichki a'zolar nervlari|Chanoq ichki a'zolar nervining shikastlanishi nimaga olib keladi|Erektil disfunksiya|Faqat eyakulyatsiya buzilishi|S2-S4 parasimpatik tolalar erektsiyani ta'minlaydi.
 retinopathy-of-prematurity-1ri6vnn|Chala tug'ilganlar retinopatiyasi|Chala tug'ilganlar retinopatiyasining sababi|Ortiqcha kislorod berilishi|Faqat uzoq davom etgan gipoksiya|VEGF gradientini yo'qotadi, keyin patologik neovaskulyarizatsiya boshlanadi.
 fluoroquinolones-0czcs2i|Ftorxinolonlar|Siprofloksatsin qaysi mikroorganizmga ayniqsa yaxshi ta'sir qiladi?|Pseudomonas aeruginosa|Streptococcus pneumoniae|Levofloksatsin kabi respirator xinolonlar pnevmokokkka yaxshiroq ta'sir qiladi.
