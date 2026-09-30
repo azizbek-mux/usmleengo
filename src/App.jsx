@@ -276,6 +276,9 @@ export default function App() {
       introSeen: stateRef.current.introSeen,
       lang: stateRef.current.lang,
     });
+    // The board follows straight away, rather than showing the old score
+    // until the next time the app is opened.
+    keepRanked(stateRef.current);
   }
 
   function quit() {

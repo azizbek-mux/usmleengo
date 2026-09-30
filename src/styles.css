@@ -762,6 +762,15 @@ input { font: inherit; }
   font-variant-numeric: tabular-nums;
 }
 .xp-amt.ok { color: var(--accent); }
+/* The rules, opened under the XP card: one block with it, not a second one. */
+.perf-list .xp-rules { margin: -2px 0 0; padding-top: 10px; }
+.xp-rules-t {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+}
 
 /* ────────────────────────── medical english ─────────────────────────── */
 
@@ -1273,6 +1282,9 @@ input { font: inherit; }
   padding: 13px 15px;
 }
 .perf-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+/* The XP card opens the rules beneath it, so it is a button that reads as a card. */
+.perf-tap { width: 100%; text-align: left; color: inherit; font: inherit; }
+.perf-tap:active { background: var(--card-hi); }
 .perf-label {
   font-size: 11px;
   color: var(--muted);
@@ -2006,3 +2018,6 @@ input { font: inherit; }
   border-radius: 100px;
 }
 .cat-row.on .cat-n { color: var(--accent-soft); border-color: var(--accent); }
+
+/* The bank picker: how many questions are in view, and a way to take them all. */
+.pick-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0 8px; }

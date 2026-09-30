@@ -5,7 +5,8 @@
 // getting that state onto disk and into the cloud without tripping over
 // Telegram's storage limits.
 
-import { cloudGetChunked, cloudSetChunked } from "./telegram.js";
+import { readOwn, scoped, unlabelledStart } from "./account.js";
+import { cloudAnswered, cloudGetChunked, cloudSetChunked } from "./telegram.js";
 import {
   DEFAULTS,
   LEARNING,
@@ -134,9 +135,17 @@ function decode(raw) {
    because a card is answered every few seconds and each cloud write is a
    round trip per changed chunk. */
 
+// The deck is kept per Telegram account, like the quiz progress (account.js).
+// An account with nothing on the phone yet starts blank, and stays off the
+// cloud until the cloud has been looked at: a blank deck written over the real
+// one would erase it. Decided once, on the first read.
+let blankStart = null;
+let cloudRead = false;
+
 export function loadDeckLocal() {
   try {
-    return decode(localStorage.getItem(KEY)) || structuredClone(emptyDeck);
+    if (blankStart === null) blankStart = unlabelledStart(KEY);
+    return decode(readOwn(KEY)) || structuredClone(emptyDeck);
   } catch {
     return structuredClone(emptyDeck);
   }
@@ -144,6 +153,7 @@ export function loadDeckLocal() {
 
 export async function loadDeckRemote(local) {
   const remote = decode(await cloudGetChunked(KEY));
+  if (remote || (await cloudAnswered(KEY))) cloudRead = true;
   if (!remote) return local;
   // Most reviews wins, the same rule the quiz state uses.
   return remote.reviews >= local.reviews ? remote : local;
@@ -155,10 +165,11 @@ let cloudPending = null;
 export function saveDeck(deck) {
   const encoded = encode(deck);
   try {
-    localStorage.setItem(KEY, encoded);
+    localStorage.setItem(scoped(KEY), encoded);
   } catch {
     /* private mode / quota — the cloud write may still land */
   }
+  if (blankStart && !cloudRead) return encoded;
   cloudPending = encoded;
   if (cloudTimer) clearTimeout(cloudTimer);
   cloudTimer = setTimeout(() => {

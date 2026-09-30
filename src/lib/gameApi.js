@@ -5,6 +5,7 @@
 // it plays. The room sends the whole game as that phone should see it
 // whenever anything changes; the phone sends only its own moves.
 
+import { scoped } from "./account.js";
 import { lang } from "./i18n.js";
 import { RATING_API } from "./ratingApi.js";
 import { initData } from "./telegram.js";
@@ -20,7 +21,7 @@ const SEAT_DAYS = 1;
  */
 function readSeats() {
   try {
-    const all = JSON.parse(localStorage.getItem(SEATS_KEY) || "{}");
+    const all = JSON.parse(localStorage.getItem(scoped(SEATS_KEY)) || "{}");
     const cutoff = Date.now() - SEAT_DAYS * 86400000;
     return Object.fromEntries(Object.entries(all).filter(([, s]) => s?.at > cutoff));
   } catch {
@@ -29,7 +30,7 @@ function readSeats() {
 }
 
 function writeSeats(seats) {
-  try { localStorage.setItem(SEATS_KEY, JSON.stringify(seats)); } catch { /* a seat is a convenience */ }
+  try { localStorage.setItem(scoped(SEATS_KEY), JSON.stringify(seats)); } catch { /* a seat is a convenience */ }
 }
 
 function randomId() {

@@ -21,6 +21,7 @@ import AdCard from "./AdCard.jsx";
 import { ScreenHead, StreakPill } from "./Chrome.jsx";
 import { Byline, Sheet } from "./Sheet.jsx";
 import { Gear, SearchIcon } from "./Icons.jsx";
+import { scoped } from "../lib/account.js";
 import { t } from "../lib/i18n.js";
 import { haptic } from "../lib/telegram.js";
 
@@ -38,8 +39,8 @@ const Back = () => (
 // "High yield only" is a standing choice about this deck, so it is kept on
 // this phone rather than asked again on every visit.
 const HIGH_KEY = "usmleengo_english_high";
-const readHigh = () => { try { return localStorage.getItem(HIGH_KEY) === "1"; } catch { return false; } };
-const writeHigh = (on) => { try { localStorage.setItem(HIGH_KEY, on ? "1" : "0"); } catch { /* a preference */ } };
+const readHigh = () => { try { return localStorage.getItem(scoped(HIGH_KEY)) === "1"; } catch { return false; } };
+const writeHigh = (on) => { try { localStorage.setItem(scoped(HIGH_KEY), on ? "1" : "0"); } catch { /* a preference */ } };
 
 
 /**

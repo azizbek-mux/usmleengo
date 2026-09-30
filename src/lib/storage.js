@@ -5,6 +5,7 @@
 // fallback and a synchronous cache so the first paint never waits on a
 // round-trip.
 
+import { readOwn, scoped, unlabelledStart } from "./account.js";
 import { cloudAvailable, cloudGet, cloudGetChunked, cloudSet, cloudSetChunked } from "./telegram.js";
 import { dayIndex, xpFor } from "./rating.js";
 import { PACE_MAX_MS, PACE_MIN_MS } from "./scorecard.js";
@@ -104,10 +105,22 @@ function merge(raw) {
   }
 }
 
-/** Synchronous read for first paint. */
+// A blank first paint - this account has nothing on the phone yet - lasts
+// until the cloud copy has been read. Saves in that window stay local: the
+// account's real progress is in the cloud, and a blank state sent up there
+// would replace it. Decided once, on the first read: loadLocal runs again
+// later, when a save has long since made the phone's copy exist.
+let blankStart = null;
+let cloudRead = false;
+
+/**
+ * Synchronous read for first paint. It reads this Telegram account's own copy
+ * - see account.js for why the key carries the account.
+ */
 export function loadLocal() {
   try {
-    return merge(localStorage.getItem(KEY)) || { ...emptyState };
+    if (blankStart === null) blankStart = unlabelledStart(KEY);
+    return merge(readOwn(KEY)) || { ...emptyState };
   } catch {
     return { ...emptyState };
   }
@@ -127,28 +140,37 @@ export function loadLocal() {
 export async function loadRemote(localState) {
   if (!cloudAvailable) return localState;
 
-  const [legacy, chunked] = await Promise.all([
-    cloudGet([KEY]).then((res) => res?.[KEY]),
-    cloudGetChunked(KEY),
-  ]);
+  // Only a reply counts as having read the cloud. If it never came, a blank
+  // start stays off the cloud for the rest of the session rather than
+  // overwriting a copy that could not be looked at.
+  let replied = false;
+  try {
+    const [legacy, chunked] = await Promise.all([
+      cloudGet([KEY]).then((res) => { replied = res !== null; return res?.[KEY]; }),
+      cloudGetChunked(KEY),
+    ]);
 
-  let best = localState;
-  // Chunked is compared last so it wins a tie — it is the copy still being
-  // written, and the legacy key stops being updated after this version.
-  for (const raw of [legacy, chunked]) {
-    const candidate = merge(raw);
-    if (candidate && candidate.xp >= best.xp) best = candidate;
+    let best = localState;
+    // Chunked is compared last so it wins a tie — it is the copy still being
+    // written, and the legacy key stops being updated after this version.
+    for (const raw of [legacy, chunked]) {
+      const candidate = merge(raw);
+      if (candidate && candidate.xp >= best.xp) best = candidate;
+    }
+    return best;
+  } finally {
+    if (replied) cloudRead = true;
   }
-  return best;
 }
 
 export function save(state) {
   const json = JSON.stringify(state);
   try {
-    localStorage.setItem(KEY, json);
+    localStorage.setItem(scoped(KEY), json);
   } catch {
     /* private mode / quota — cloud may still succeed */
   }
+  if (blankStart && !cloudRead) return;
   // Fire-and-forget: a failed cloud write must never block the UI.
   //
   // Chunked, because `seen` gains an entry for every question answered and
@@ -238,7 +260,7 @@ export function ratingInput(state) {
 
 export function reset() {
   try {
-    localStorage.removeItem(KEY);
+    localStorage.removeItem(scoped(KEY));
   } catch {
     /* ignore */
   }

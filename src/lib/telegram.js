@@ -106,6 +106,29 @@ export function telegramUser() {
 }
 
 /**
+ * The Telegram account using the app, or null outside Telegram.
+ *
+ * Several accounts can be signed in to one Telegram app, and they all open
+ * the Mini App in the same webview - so they share one localStorage. Anything
+ * kept there has to be labelled with this id, or the second account starts
+ * from the first one's progress (see account.js).
+ */
+export function userId() {
+  let id;
+  if (inTelegram) {
+    id = tg?.initDataUnsafe?.user?.id;
+  } else {
+    try {
+      const dev = devInitData();
+      id = dev ? JSON.parse(new URLSearchParams(dev).get("user"))?.id : null;
+    } catch {
+      id = null;
+    }
+  }
+  return Number.isSafeInteger(id) && id > 0 ? id : null;
+}
+
+/**
  * What a direct link carried: …/study?startapp=<this>. Telegram hands it over
  * as start_param; on the web the same ?startapp= in the address works, so an
  * invite can be tried in a browser.
@@ -251,6 +274,15 @@ export async function cloudSetChunked(prefix, value) {
   }
   written.set(prefix, { head: nextHead, chunks });
   return true;
+}
+
+/**
+ * Whether the cloud replied at all about a chunked value - which tells
+ * "nothing is stored there" from "it could not be looked at". Both come back
+ * from cloudGetChunked as null.
+ */
+export async function cloudAnswered(prefix) {
+  return (await cloudGet([headKey(prefix)])) !== null;
 }
 
 export async function cloudGetChunked(prefix) {

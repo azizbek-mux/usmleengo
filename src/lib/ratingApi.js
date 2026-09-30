@@ -15,6 +15,7 @@ import { subjects } from "./match.js";
 import { topicAccuracy } from "./review.js";
 import { ratingInput } from "./storage.js";
 import { PICTURE_TAGS } from "./tags.js";
+import { scoped } from "./account.js";
 import { initData } from "./telegram.js";
 
 /* ── for a student in a class ──────────────────────────────────────────
@@ -25,13 +26,13 @@ import { initData } from "./telegram.js";
 const CLASS_SHARE_KEY = "usmle_class_share";
 
 export function classSharing() {
-  try { return localStorage.getItem(CLASS_SHARE_KEY) === "1"; } catch { return false; }
+  try { return localStorage.getItem(scoped(CLASS_SHARE_KEY)) === "1"; } catch { return false; }
 }
 
 export function setClassSharing(on) {
   try {
-    if (on) localStorage.setItem(CLASS_SHARE_KEY, "1");
-    else localStorage.removeItem(CLASS_SHARE_KEY);
+    if (on) localStorage.setItem(scoped(CLASS_SHARE_KEY), "1");
+    else localStorage.removeItem(scoped(CLASS_SHARE_KEY));
   } catch { /* a preference */ }
 }
 
@@ -85,7 +86,7 @@ export async function syncRating(state) {
 const signature = (state) => JSON.stringify([ratingInput(state), classSharing() ? classDetail(state) : null]);
 
 function remember(state) {
-  try { localStorage.setItem(SENT_KEY, JSON.stringify({ sig: signature(state), at: Date.now() })); } catch { /* cosmetic */ }
+  try { localStorage.setItem(scoped(SENT_KEY), JSON.stringify({ sig: signature(state), at: Date.now() })); } catch { /* cosmetic */ }
 }
 
 /**
@@ -96,7 +97,7 @@ function remember(state) {
 export function quietSync(state) {
   if (!initData()) return Promise.resolve(null);
   let last = null;
-  try { last = JSON.parse(localStorage.getItem(SENT_KEY) || "null"); } catch { /* treat as never sent */ }
+  try { last = JSON.parse(localStorage.getItem(scoped(SENT_KEY)) || "null"); } catch { /* treat as never sent */ }
   if (last && last.sig === signature(state) && Date.now() - last.at < RESEND_MS) return Promise.resolve(null);
   return syncRating(state);
 }

@@ -1,13 +1,13 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import bank from "../data/bank.js";
 import { bankToClass, classCall, imageUrl, uploadImage } from "../lib/classApi.js";
-import { search, subjects } from "../lib/match.js";
+import { search } from "../lib/match.js";
 import { ACCEPTED, FILE_REASONS, readQuestionFile } from "../lib/qfiles.js";
-import { dayText, t } from "../lib/i18n.js";
+import { dayText, lang, t } from "../lib/i18n.js";
 import { formatExample, parseQuestions } from "../lib/qformat.js";
-import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
 import { haptic } from "../lib/telegram.js";
 import { BackBar } from "./Chrome.jsx";
+import CategoryGroup, { narrow, useCategories } from "./CategoryGroup.jsx";
 import { Sheet } from "./Sheet.jsx";
 
 // The teacher's side of question packages and homework: writing and picking
@@ -15,6 +15,8 @@ import { Sheet } from "./Sheet.jsx";
 
 export const MAX_OPTIONS = 10;
 const MAX_QUESTIONS = 300;
+// How many matches the bank picker lists at once; narrowing shows the rest.
+const SHOWN_MAX = 80;
 
 const reasons = () => ({
   offline: t("Couldn’t reach the server. Check your internet and try again.", "Serverga ulanib bo'lmadi. Internetni tekshirib, qayta urinib ko'ring."),
@@ -583,13 +585,27 @@ export function QuestionEditor({ classId, initial, number, onSave, onCancel, onD
 
 function BankPicker({ have, room, onAdd, onCancel }) {
   const [query, setQuery] = useState("");
-  const [tag, setTag] = useState(null);
+  const [systems, setSystems] = useState([]);
+  const [subjects, setSubjects] = useState([]);
   const [picked, setPicked] = useState(() => new Map());
-  const chips = useMemo(() => [...PICTURE_TAGS, ...subjects().slice(0, 12).map((s) => s.tag)], []);
-  const shown = useMemo(() => {
-    const list = query.trim() ? search(query, 80) : tag ? bank.filter((q) => q.tags.includes(tag)).slice(0, 80) : [];
-    return list.filter((q) => !have.has(`b-${q.id}`.slice(0, 40)));
-  }, [query, tag, have]);
+  // The same two lists the Quiz tab narrows the bank with, and combined the
+  // same way: "and" across them, "or" within one.
+  const groups = useCategories(lang());
+  const systemSet = useMemo(() => new Set(systems), [systems]);
+  const subjectSet = useMemo(() => new Set(subjects), [subjects]);
+  const narrowed = systems.length + subjects.length > 0;
+  const matches = useMemo(() => {
+    // A search keeps its best few hundred, so narrowing it still leaves a full list.
+    const base = query.trim() ? search(query, 400) : narrowed ? bank : [];
+    return narrow(base, systems, subjects).filter((q) => !have.has(`b-${q.id}`.slice(0, 40)));
+  }, [query, systems, subjects, narrowed, have]);
+  const shown = useMemo(() => matches.slice(0, SHOWN_MAX), [matches]);
+  const allPicked = shown.length > 0 && shown.every((q) => picked.has(q.id));
+
+  const flip = (set) => (id) => {
+    haptic("light");
+    set((now) => (now.includes(id) ? now.filter((x) => x !== id) : [...now, id]));
+  };
 
   function toggle(q) {
     haptic("light");
@@ -601,38 +617,75 @@ function BankPicker({ have, room, onAdd, onCancel }) {
     });
   }
 
+  /** Every question in view, as far as the package has room; or take them off again. */
+  function toggleShown() {
+    haptic("light");
+    setPicked((m) => {
+      const next = new Map(m);
+      if (allPicked) {
+        for (const q of shown) next.delete(q.id);
+      } else {
+        for (const q of shown) if (next.size < room) next.set(q.id, q);
+      }
+      return next;
+    });
+  }
+
   return (
     <div className="screen">
       <BackBar title={t("Add from usmleengo", "usmleengodan qo'shish")} onBack={onCancel} />
       <div className="search">
         <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t("Search a topic — addison, niacin…", "Mavzu qidiring — Addison, niatsin…")} autoComplete="off" />
       </div>
-      {!query.trim() && (
-        <div className="chips" style={{ marginBottom: 12 }}>
-          {chips.map((c) => (
-            <button key={c} className={`chip${tag === c ? " on" : ""}`} onClick={() => { haptic("light"); setTag(tag === c ? null : c); }}>
-              {tagLabel(c)}
-            </button>
-          ))}
-        </div>
-      )}
+
+      <CategoryGroup
+        label={t("Systems", "Tizimlar")}
+        rows={groups.systems}
+        chosen={systemSet}
+        onToggle={flip(setSystems)}
+        onAll={() => { haptic("light"); setSystems(groups.systems.map((r) => r.id)); }}
+        onNone={() => { haptic("light"); setSystems([]); }}
+      />
+      <CategoryGroup
+        label={t("Subjects", "Fanlar")}
+        rows={groups.subjects}
+        chosen={subjectSet}
+        onToggle={flip(setSubjects)}
+        onAll={() => { haptic("light"); setSubjects(groups.subjects.map((r) => r.id)); }}
+        onNone={() => { haptic("light"); setSubjects([]); }}
+      />
+
       {shown.length ? (
-        <div className="pkg-list">
-          {shown.map((q) => (
-            <button key={q.id} className={`pkg-q pick${picked.has(q.id) ? " on" : ""}`} onClick={() => toggle(q)} aria-pressed={picked.has(q.id)}>
-              <span className="qe-radio">{picked.has(q.id) ? "✓" : ""}</span>
-              <span className="pkg-text">
-                {q.q || t("Picture question", "Rasmli savol")}
-                <small>
-                  {q.topic} · {q.type === "gap" ? t("typed", "yozma") : optionsText(q.options.length)}{q.img ? t(" · picture", " · rasm") : ""}
-                </small>
-              </span>
+        <>
+          <div className="pick-head">
+            <span className="section-label" style={{ margin: 0 }}>
+              {matches.length > shown.length
+                ? t(`First ${shown.length} of ${matches.length} questions`, `${matches.length} ta savoldan dastlabki ${shown.length} tasi`)
+                : questionsText(matches.length)}
+            </span>
+            <button className="chips-clear" onClick={toggleShown}>
+              {allPicked ? t("Clear these", "Bularni olib tashlash") : t("Select these", "Bularni tanlash")}
             </button>
-          ))}
-        </div>
+          </div>
+          <div className="pkg-list">
+            {shown.map((q) => (
+              <button key={q.id} className={`pkg-q pick${picked.has(q.id) ? " on" : ""}`} onClick={() => toggle(q)} aria-pressed={picked.has(q.id)}>
+                <span className="qe-radio">{picked.has(q.id) ? "✓" : ""}</span>
+                <span className="pkg-text">
+                  {q.q || t("Picture question", "Rasmli savol")}
+                  <small>
+                    {q.topic} · {q.type === "gap" ? t("typed", "yozma") : optionsText(q.options.length)}{q.img ? t(" · picture", " · rasm") : ""}
+                  </small>
+                </span>
+              </button>
+            ))}
+          </div>
+        </>
       ) : (
         <div className="class-note">
-          {query.trim() || tag ? t("Nothing new to add here.", "Bu yerda qo'shish uchun yangi savol yo'q.") : t("Search, or pick a category.", "Qidiring yoki fan tanlang.")}
+          {query.trim() || narrowed
+            ? t("Nothing new to add here.", "Bu yerda qo'shish uchun yangi savol yo'q.")
+            : t("Search, or pick a system or a subject.", "Qidiring yoki tizim yoki fan tanlang.")}
         </div>
       )}
       <div className="home-cta">

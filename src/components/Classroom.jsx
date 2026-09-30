@@ -54,8 +54,11 @@ function useServer(load, deps) {
   return { data, error, reload: run };
 }
 
-/** A button that needs a second tap within four seconds. */
-function TwoTap({ label, confirm, onConfirm }) {
+/**
+ * A button that needs a second tap within four seconds. It turns red when
+ * armed; `danger` has it red from the start, for what cannot be undone.
+ */
+function TwoTap({ label, confirm, onConfirm, danger = false }) {
   const [armed, setArmed] = useState(false);
   useEffect(() => {
     if (!armed) return undefined;
@@ -64,7 +67,7 @@ function TwoTap({ label, confirm, onConfirm }) {
   }, [armed]);
   return (
     <button
-      className={`btn ${armed ? "btn-danger" : "btn-ghost"} class-two-tap`}
+      className={`btn ${armed || danger ? "btn-danger" : "btn-ghost"} class-two-tap`}
       onClick={() => {
         haptic(armed ? "warning" : "light");
         if (armed) { setArmed(false); onConfirm(); } else setArmed(true);
@@ -574,6 +577,7 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
         <button className="btn btn-ghost" onClick={() => { haptic("light"); setRenaming(true); }}>{t("Rename", "Nomini o'zgartirish")}</button>
       )}
       <TwoTap
+        danger
         label={t("Close this class", "Guruhni yopish")}
         confirm={t("Tap again: close it for everyone", "Yana bosing: guruh hamma uchun yopiladi")}
         onConfirm={async () => { if (await act("close")) onBack(); }}

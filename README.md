@@ -44,6 +44,13 @@ npm run dev
 Open the printed URL in a browser. Outside Telegram everything still works —
 progress falls back to `localStorage` and haptics become no-ops.
 
+Inside Telegram, every `localStorage` key carries the Telegram user id
+(`usmle_drops_v1:123456`). A Telegram app can hold several accounts and they
+all open the Mini App in one webview, so unlabelled keys were shared: the
+second account started from the first one's XP and the rating board ranked
+it under both names. New per-phone state goes through `scoped()` in
+`src/lib/account.js`; `tools/accounts.test.mjs` covers it.
+
 ## Deploy free, in three steps
 
 **1. Push to GitHub.** Create a repo and push this folder.
@@ -525,6 +532,7 @@ are not part of the build.
 | `src/lib/match.js` | Free-text topic search — aliases, stemming, scoring, suggestions. |
 | `src/lib/session.js` | Round building, option shuffling, spaced repetition, answer grading. |
 | `src/lib/storage.js` | Streak, XP and progress across CloudStorage + localStorage. |
+| `src/lib/account.js` | Labels every localStorage key with the Telegram user id, so two accounts in one Telegram app never share progress. |
 | `src/lib/telegram.js` | WebApp SDK wrapper; every call degrades outside Telegram. |
 
 Three details worth knowing:

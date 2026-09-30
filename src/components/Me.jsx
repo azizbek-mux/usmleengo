@@ -3,7 +3,7 @@ import { t } from "../lib/i18n.js";
 import { WEIGHTS, XP, formatPace, medalFor, points } from "../lib/rating.js";
 import { DEVELOPER, haptic, inTelegram, openTelegram, platformText } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
-import { Chevron } from "./Icons.jsx";
+import { Chevron, ChevronDown } from "./Icons.jsx";
 import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
 import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
 
@@ -128,6 +128,8 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
   // cannot wipe months of progress.
   const [arming, setArming] = useState(false);
   const [coffee, setCoffee] = useState(false);
+  // How XP is earned is one tap under the XP number, not a section of its own.
+  const [xpOpen, setXpOpen] = useState(false);
   useEffect(() => {
     if (!arming) return undefined;
     const id = setTimeout(() => setArming(false), 4000);
@@ -185,20 +187,53 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
 
       <div className="section-label">{t("What your points are made of", "Ballaringiz nimalardan iborat")}</div>
       <div className="perf-list">
-        {cards.map((c) => (
-          <div key={c.id} className="perf-card">
-            <div className="perf-main">
-              <span className="perf-label">{c.label}</span>
-              <span className="perf-value">
-                {c.value}{c.unit && <small> {c.unit}</small>}
+        {cards.map((c) => {
+          const body = (
+            <>
+              <div className="perf-main">
+                <span className="perf-label">{c.label}</span>
+                <span className="perf-value">
+                  {c.value}{c.unit && <small> {c.unit}</small>}
+                </span>
+                <span className="perf-detail">{c.detail}</span>
+              </div>
+              <span className="perf-weight">
+                {t(`${Math.round(WEIGHTS[c.id] * 100)}% of points`, `ballning ${Math.round(WEIGHTS[c.id] * 100)}%i`)}
               </span>
-              <span className="perf-detail">{c.detail}</span>
-            </div>
-            <span className="perf-weight">
-              {t(`${Math.round(WEIGHTS[c.id] * 100)}% of points`, `ballning ${Math.round(WEIGHTS[c.id] * 100)}%i`)}
-            </span>
-          </div>
-        ))}
+            </>
+          );
+          if (c.id !== "xp") return <div key={c.id} className="perf-card">{body}</div>;
+          return (
+            <React.Fragment key={c.id}>
+              <button
+                className="perf-card perf-tap"
+                aria-expanded={xpOpen}
+                aria-label={t("XP - how an answer earns it", "XP - har bir javob qancha beradi")}
+                onClick={() => { haptic("light"); setXpOpen(!xpOpen); }}
+              >
+                {body}
+                <span className={`cat-chevron${xpOpen ? " open" : ""}`}><ChevronDown /></span>
+              </button>
+              {xpOpen && (
+                <div className="xp-rules">
+                  <div className="xp-rules-t">{t("What an answer earns", "Har bir javob nima beradi")}</div>
+                  <div className="xp-rule">
+                    <span className="xp-amt ok">+{XP.gapCorrect}</span>
+                    <span>{t(<>for a correct answer you <b>typed</b></>, <><b>yozma</b> to'g'ri javob uchun</>)}</span>
+                  </div>
+                  <div className="xp-rule">
+                    <span className="xp-amt ok">+{XP.binaryCorrect}</span>
+                    <span>{t(<>for a correct answer you <b>tapped</b></>, <><b>test</b> usulidagi to'g'ri javob uchun</>)}</span>
+                  </div>
+                  <div className="xp-rule">
+                    <span className="xp-amt">+{XP.wrong}</span>
+                    <span>{t("for a wrong answer — reading why is how it sticks", "noto'g'ri javob uchun — sababini o'qish bilimni mustahkamlaydi")}</span>
+                  </div>
+                </div>
+              )}
+            </React.Fragment>
+          );
+        })}
       </div>
 
       <div className="section-label">{t("Settings", "Sozlamalar")}</div>
@@ -229,22 +264,6 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
           >
             {arming ? t("Reset", "O'chirish") : t("Reset…", "O'chirish…")}
           </button>
-        </div>
-      </div>
-
-      <div className="section-label">{t("What an answer earns", "Har bir javob nima beradi")}</div>
-      <div className="xp-rules">
-        <div className="xp-rule">
-          <span className="xp-amt ok">+{XP.gapCorrect}</span>
-          <span>{t(<>for a correct answer you <b>typed</b></>, <><b>yozma</b> to'g'ri javob uchun</>)}</span>
-        </div>
-        <div className="xp-rule">
-          <span className="xp-amt ok">+{XP.binaryCorrect}</span>
-          <span>{t(<>for a correct answer you <b>tapped</b></>, <><b>test</b> usulidagi to'g'ri javob uchun</>)}</span>
-        </div>
-        <div className="xp-rule">
-          <span className="xp-amt">+{XP.wrong}</span>
-          <span>{t("for a wrong answer — reading why is how it sticks", "noto'g'ri javob uchun — sababini o'qish bilimni mustahkamlaydi")}</span>
         </div>
       </div>
 

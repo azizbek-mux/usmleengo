@@ -5,6 +5,7 @@ import {
   availableFor, inviteLink, maxPoints, pickGameQuestions,
 } from "../lib/game.js";
 import { connectGame, createGame } from "../lib/gameApi.js";
+import { scoped } from "../lib/account.js";
 import { lang, t } from "../lib/i18n.js";
 import CategoryGroup, { useCategories } from "./CategoryGroup.jsx";
 import { inviteMessage } from "../lib/shareText.js";
@@ -22,10 +23,10 @@ const typeName = (id) => ({ binary: t("Tap", "Test"), gap: t("Typed", "Yozma"), 
 const gameTypes = () => GAME_TYPES.map((type) => ({ id: type.id, name: typeName(type.id) }));
 
 function readNick() {
-  try { return localStorage.getItem(NICK_KEY) || ""; } catch { return ""; }
+  try { return localStorage.getItem(scoped(NICK_KEY)) || ""; } catch { return ""; }
 }
 function writeNick(name) {
-  try { localStorage.setItem(NICK_KEY, name); } catch { /* typed again next time */ }
+  try { localStorage.setItem(scoped(NICK_KEY), name); } catch { /* typed again next time */ }
 }
 
 /** "10 questions · 15s · Tap · Cardiovascular System, Pharmacology" */
