@@ -50,12 +50,12 @@ B|Scarlet fever features|derm,micro,peds|Scarlet fever gives a sore throat with|
 I|Erythema marginatum|derm,micro,cardio|hdp08a.webp|Erythema marginatum|Erythema migrans|Pink rings snaking across the skin in rheumatic fever. Erythema migrans is one expanding ring.
 B|Rash before red urine|derm,micro,renal|Crusted sores followed by red urine point to|Post-streptococcal glomerulonephritis|IgA nephropathy|Written as "proliferative glomerulonephritis" too.
 B|Burn wound colour|derm,micro|A yellow burn wound infection is caused by|Staphylococcus aureus|Pseudomonas aeruginosa|Pseudomonas turns it blue-green with pyocyanin.
-B|Mastitis versus abscess|derm,micro,ob|A warm, tender, non-fluctuant breast mass is|Mastitis|A breast abscess|An abscess is fluctuant; mastitis is not.
-B|Mastitis treatment|derm,micro,ob|Mastitis is treated with dicloxacillin and|Continued breastfeeding|Stopping breastfeeding|Feed through the affected breast.
-B|Galactocele|derm,ob|A painless, fluctuant breast lump after weaning, with no fever, is|A galactocele|A breast abscess|An abscess would be red, warm, often febrile.
-B|Nipple inversion|derm,ob,oncology|A newly inverted nipple with no mass is usually|Duct ectasia|Paget disease|Simply a widened lactiferous duct.
-B|Paget disease of the breast|derm,ob,oncology|An eczema-like nipple over a palpable mass is|Paget disease|Simple eczema|Usually over ductal carcinoma in situ.
-B|Peau d'orange|derm,ob,oncology|Dimpled, orange-peel skin over a red breast means|Inflammatory breast cancer|Mastitis|Cooper ligaments tether the swollen skin.
+B|Mastitis versus abscess|derm,micro,gyn|A warm, tender, non-fluctuant breast mass is|Mastitis|A breast abscess|An abscess is fluctuant; mastitis is not.
+B|Mastitis treatment|derm,micro,gyn|Mastitis is treated with dicloxacillin and|Continued breastfeeding|Stopping breastfeeding|Feed through the affected breast.
+B|Galactocele|derm,gyn|A painless, fluctuant breast lump after weaning, with no fever, is|A galactocele|A breast abscess|An abscess would be red, warm, often febrile.
+B|Nipple inversion|derm,gyn,oncology|A newly inverted nipple with no mass is usually|Duct ectasia|Paget disease|Simply a widened lactiferous duct.
+B|Paget disease of the breast|derm,gyn,oncology|An eczema-like nipple over a palpable mass is|Paget disease|Simple eczema|Usually over ductal carcinoma in situ.
+B|Peau d'orange|derm,gyn,oncology|Dimpled, orange-peel skin over a red breast means|Inflammatory breast cancer|Mastitis|Cooper ligaments tether the swollen skin.
 
 # -- acne ----------------------------------------------------------------
 I|Acne vulgaris|derm|hdp10a.webp|Acne vulgaris|Tinea faciei|Papules and pustules scattered over the face. Tinea faciei is one annular scaly patch.
@@ -63,7 +63,7 @@ B|Acne first-line treatment|derm,pharm|First-line treatment for acne is|A topica
 B|Topical retinoid effect|derm,pharm|A topical retinoid works on acne by|Cutting sebum production|Killing the bacteria|Benzoyl peroxide is what kills bacteria.
 I|Retinoid photosensitivity|derm,pharm|hdp10b.webp|A photosensitivity rash|Honey-crusted impetigo|Diffuse redness over sun-exposed skin in someone treated for acne.
 B|Acne photosensitivity advice|derm,pharm|A rash on the forehead of a patient on acne treatment calls for|Avoiding sun exposure|Avoiding sweet foods|Diet advice is never the answer in acne questions.
-B|Isotretinoin before starting|derm,pharm,ob|Before oral isotretinoin a woman needs|A pregnancy test|A liver biopsy|It is a potent teratogen.
+B|Isotretinoin before starting|derm,pharm|Before oral isotretinoin a woman needs|A pregnancy test|A liver biopsy|It is a potent teratogen.
 I|Tinea faciei|derm,micro|hdp11a.webp|Tinea faciei|Acne vulgaris|A scaly ring on the cheek, treated with a topical azole.
 
 # -- rashes that mean something systemic ---------------------------------
