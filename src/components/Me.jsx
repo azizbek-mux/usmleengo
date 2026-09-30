@@ -190,7 +190,7 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
                 <span className="perf-detail">{c.detail}</span>
               </div>
               <span className="perf-weight">
-                {t(`${earned} of ${max}`, `${max} balldan ${earned}`)}
+                {t(`${earned} / ${max} pts`, `${earned} / ${max} ball`)}
               </span>
             </>
           );
