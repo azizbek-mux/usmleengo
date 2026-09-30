@@ -3,7 +3,8 @@
 // Telegram sends every message the bot receives here (a webhook, set up
 // once through /bot/setup). These are understood:
 //
-//   /start      a welcome and a button that opens the app
+//   /start      a welcome (what usmleengo is, and a list of everything in it)
+//               with a button that opens the app, then the two guide PDFs
 //   /format     how to write questions, with an example
 //   a document  a teacher's question file: kept for two days under a
 //               random token, with a button that opens the app on it —
@@ -71,19 +72,53 @@ const both = (en, uz, uzLead) => (uzLead ? [uz, RULE, en] : [en, RULE, uz]).join
 /** A button has room for one label, so it takes the leading language's. */
 const pick = (en, uz, uzLead) => (uzLead ? uz : en);
 
+// What usmleengo is, and everything in it, as a short list. Kept in step with
+// the app: when a feature is added or goes, this list and the guide
+// (tools/guide/content.mjs) change with it.
 export const WELCOME_EN = [
   "<b>usmleengo</b> 🩺",
-  `${COUNT_EN} USMLE quizzes, Medical English flashcards, live games with friends, and classrooms.`,
+  "Your USMLE study partner inside Telegram. Free, and nothing to install.",
+  "",
+  "<b>What's inside</b>",
+  `• <b>${COUNT_EN} USMLE quizzes</b> — two-option, typed and picture questions, with an explanation for every answer, by organ system and subject`,
+  "• <b>Search and review</b> — find any topic, and come back to your Mistakes, Saved questions and Weak topics",
+  "• <b>NBME lab values</b> — the full reference table, one tap away, even in the middle of a question",
+  "• <b>Medical English</b> — 8,000 clinical terms as flashcards with Uzbek meanings, scheduled for you",
+  "• <b>Live games</b> — race your friends on the same questions, Kahoot-style",
+  "• <b>Classes</b> — join your teacher's class, or run your own with question packages and homework",
+  "• <b>Rating</b> — points, a weekly board and your day streak",
+  "• <b>English and Uzbek</b> — the whole app and every question, one tap to switch",
   "",
   "<b>Teachers:</b> type or paste your questions here, forward me quizzes, or send a file — Word, PDF, web page or text — and I'll turn them into a package for your class. Send /format to see how to write them.",
+  "",
+  "📘 The illustrated guide is right below.",
 ].join("\n");
 
 export const WELCOME_UZ = [
   "<b>usmleengo</b> 🩺",
-  `${COUNT_UZ} USMLE savoli, Tibbiy ingliz tili kartochkalari, do'stlar bilan jonli o'yinlar va guruhlar.`,
+  "Telegram ichidagi USMLE bo'yicha o'qish yordamchingiz. Bepul, hech narsa o'rnatish shart emas.",
+  "",
+  "<b>Ichida nimalar bor</b>",
+  `• <b>${COUNT_UZ} USMLE savoli</b> — test, yozma va rasmli savollar, har bir javobga izoh bilan; a'zolar tizimi va fanlar bo'yicha`,
+  "• <b>Qidiruv va takrorlash</b> — istalgan mavzuni toping, «Xatolar», «Saqlangan» va «Zaif mavzular» ga qayting",
+  "• <b>NBME laboratoriya me'yorlari</b> — to'liq jadval bir bosishda, savol paytida ham",
+  "• <b>Tibbiy ingliz tili</b> — 8 000 ta klinik atama o'zbekcha ma'nosi bilan kartochkalarda, navbatini ilova o'zi belgilaydi",
+  "• <b>Jonli o'yinlar</b> — do'stlaringiz bilan bir xil savollarda bellashing, Kahoot uslubida",
+  "• <b>Guruhlar</b> — o'qituvchingiz guruhiga qo'shiling yoki savollar to'plami va uy vazifasi bilan o'zingiz guruh yarating",
+  "• <b>Reyting</b> — ballar, haftalik jadval va kunlik intizomingiz",
+  "• <b>Ingliz va o'zbek tili</b> — butun ilova va barcha savollar, bir bosishda almashtiriladi",
   "",
   "<b>O'qituvchilarga:</b> savollaringizni shu yerga yozing yoki nusxalab tashlang, viktorinalarni menga yuboring yoki fayl jo'nating — Word, PDF, veb-sahifa yoki matn — men ularni guruhingiz uchun to'plamga aylantiraman. Qanday yozilishini ko'rish uchun /format yuboring.",
+  "",
+  "📘 Rasmli qo'llanma pastda.",
 ].join("\n");
+
+// The guide, as two PDFs served with the app (public/guide, made by
+// tools/guide). Telegram fetches them by address, so nothing is stored here.
+export const GUIDES = {
+  uz: { url: `${APP_URL}guide/usmleengo-qollanma-uz.pdf`, caption: "📘 usmleengo qo'llanmasi (o'zbekcha): har bir bo'lim rasmlar va ko'rsatkichlar bilan, bosqichma-bosqich." },
+  en: { url: `${APP_URL}guide/usmleengo-guide-en.pdf`, caption: "📘 usmleengo guide (English): every tab, step by step, with annotated screenshots." },
+};
 
 const OPEN_APP = ["Open usmleengo", "usmleengoni ochish"];
 const REVIEW = ["Review the questions", "Savollarni ko'rib chiqish"];
@@ -101,6 +136,19 @@ function welcome(env, chat_id, uzLead) {
     text: both(WELCOME_EN, WELCOME_UZ, uzLead),
     reply_markup: openButton(pick(...OPEN_APP, uzLead)),
   });
+}
+
+/**
+ * The two guides, one after the other, the reader's language first. The
+ * welcome has already gone, so a guide that fails to arrive (Telegram could
+ * not fetch it) costs nothing but the file.
+ */
+async function sendGuides(env, chat_id, uzLead) {
+  for (const guide of uzLead ? [GUIDES.uz, GUIDES.en] : [GUIDES.en, GUIDES.uz]) {
+    try {
+      await telegramApi(env, "sendDocument", { chat_id, document: guide.url, caption: guide.caption });
+    } catch { /* the message is what matters; the next /start tries again */ }
+  }
 }
 
 const oneLine = (s) => String(s || "").replace(/\s+/g, " ").trim();
@@ -293,6 +341,11 @@ export async function handleBot(request, env, now = Date.now(), ctx = null, slee
         is_persistent: true,
       },
     });
+  } else if (/^\/start\b/.test(msg.text || "")) {
+    // Only /start brings the guides: any other stray message is welcomed
+    // with the text alone, so nobody is sent two big files by mistake.
+    await welcome(env, chat_id, uzLead);
+    await later(sendGuides(env, chat_id, uzLead));
   } else if (msg.text && !msg.text.startsWith("/")) {
     await takeText(env, msg, now, { text: msg.text, later, sleep });
   } else if (msg.poll?.question && msg.poll.options?.length) {
@@ -390,10 +443,34 @@ export async function setupBot(request, env) {
   });
   const description = await describe("setMyDescription", {
     en: {
-      description: `USMLE practice in your pocket: ${COUNT_EN} five-second questions by system and subject, 8,000 Medical English flashcards, live games with friends, and classrooms for teachers. Free. Tap the usmleengo button below to start.`,
+      description: [
+        "Your USMLE study partner inside Telegram. Free.",
+        "",
+        `• ${COUNT_EN} USMLE quizzes with explanations`,
+        "• NBME lab values",
+        "• 8,000 Medical English flashcards",
+        "• Live games with friends",
+        "• Classes and homework for teachers",
+        "• Rating and day streak",
+        "• English and Uzbek",
+        "",
+        "Tap the usmleengo button below to start.",
+      ].join("\n"),
     },
     uz: {
-      description: `Cho'ntagingizdagi USMLE mashqi: tizim va fanlar bo'yicha ${COUNT_UZ} ta besh soniyalik savol, 8 000 ta Tibbiy ingliz tili kartochkasi, do'stlar bilan jonli o'yinlar va o'qituvchilar uchun guruhlar. Bepul. Boshlash uchun pastdagi «usmleengo» tugmasini bosing.`,
+      description: [
+        "Telegram ichidagi USMLE bo'yicha o'qish yordamchingiz. Bepul.",
+        "",
+        `• ${COUNT_UZ} USMLE savoli, izohlar bilan`,
+        "• NBME laboratoriya me'yorlari",
+        "• 8 000 ta Tibbiy ingliz tili kartochkasi",
+        "• Do'stlar bilan jonli o'yinlar",
+        "• O'qituvchilar uchun guruhlar va uy vazifasi",
+        "• Reyting va kunlik intizom",
+        "• Ingliz va o'zbek tili",
+        "",
+        "Boshlash uchun pastdagi «usmleengo» tugmasini bosing.",
+      ].join("\n"),
     },
   });
   const short = await describe("setMyShortDescription", {

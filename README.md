@@ -516,7 +516,11 @@ teacher, 10 classes a student.
   `src/lib/qfiles.js` (the files; PDF via `pdfjs-dist`, loaded only when a
   PDF is opened). Tests: `tools/qformat.test.mjs`.
 - **The bot** (`worker/src/bot.js`): Telegram posts messages to `/bot`.
-  `/start` answers with a button into the app; a question file is noted in
+  `/start` answers with what usmleengo is and a bulleted list of everything
+  in it, in both languages (`WELCOME_EN`/`WELCOME_UZ`), with a button into the
+  app, and then sends the two guide PDFs (`GUIDES`, served by Pages from
+  `public/guide/`, made by `tools/guide`; Telegram fetches them by address, and
+  only `/start` sends them). A question file is noted in
   the `uploads` table (Telegram's file id, not the file) and answered with a
   link that opens it in the Class tab (`…?startapp=f<token>`). Only the
   sender can fetch it, for two days; the server streams it from Telegram.
@@ -621,6 +625,31 @@ roughly 66% of rounds against a 25% baseline.
 **Typos are forgiven in proportion to length.** `grade()` allows one edit for
 answers of 6+ characters and two for 10+, but short answers like `B3` or `17`
 must match exactly, since there one character is the whole answer.
+
+## Backups and safety
+
+What lives where, and what protects it:
+
+| What | Where | Protected by |
+|---|---|---|
+| The code, and its whole history | GitHub (public repo) | GitHub; `worker/backup.ps1` also writes a git bundle |
+| Players, classes, uploads | Cloudflare D1 `usmleengo-rating` | Cloudflare's 30-day point-in-time history; `worker/backup.ps1` exports it |
+| The bot token and the setup key | Cloudflare Worker secrets (the token also a GitHub Actions secret) | never in a file: the token can be replaced in @BotFather, the key is any long random text |
+| Compiled bank, Uzbek sources list, glossary | this computer only (git-ignored) | `worker/backup.ps1` zips the small ones |
+| The source books (`Uworld2024`, `USMLE RESS`, `nbmes`, `Free120s`, about 7.5 GB) | this computer only | nothing: copy them to an external drive or a private cloud folder |
+
+```powershell
+powershell -ExecutionPolicy Bypass -File workerackup.ps1
+```
+
+writes `database-DATE.sql`, `code-DATE.bundle`, `local-only-DATE.zip` and a
+`MANIFEST.txt` (how to restore each) into `usmleengo-backup` on the Desktop.
+The database file holds names and @usernames: keep it out of GitHub and out of
+any shared folder. Players are stored under a hashed id, never the raw Telegram
+id; every call to the server is checked against Telegram's signature (at most
+seven days old) and the bot's webhook against its secret. GitHub's secret
+scanning and push protection are on. Run the backup after big changes and at
+least monthly.
 
 ## Roadmap ideas
 

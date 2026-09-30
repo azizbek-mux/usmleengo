@@ -222,6 +222,7 @@ check("closing a class leaves nothing of it behind",
   ["packages", "assignments", "images", "members"].every((t) => d1.db.prepare(`SELECT COUNT(*) n FROM ${t}`).get().n === 0));
 
 console.log("\nthe bot");
+const NL = String.fromCharCode(10);
 {
   const BOT = await import(new URL("../worker/src/bot.js", import.meta.url).href);
   const sent = [];
@@ -248,9 +249,21 @@ console.log("\nthe bot");
   const chat = { id: 1001, type: "private" };
 
   check("a call without Telegram's secret is refused", (await update({ from, chat, text: "/start" }, "wrong")).status === 403);
-  await update({ from, chat, text: "/start" });
+  // /start: the welcome first, then the two guides, one after the other.
+  const start = async (who) => { const at = sent.length; await update({ from: who, chat, text: "/start" }); await flush(); return sent.slice(at); };
+  const enRun = await start(from);
   check("/start is welcomed, with a button into the app",
-    sent.at(-1).method === "sendMessage" && sent.at(-1).body.reply_markup.inline_keyboard[0][0].url === BOT.APP_LINK);
+    enRun[0].method === "sendMessage" && enRun[0].body.reply_markup.inline_keyboard[0][0].url === BOT.APP_LINK);
+  check("and then sends both guides, as PDFs served with the app, English first for an English phone",
+    enRun.length === 3 && enRun[1].method === "sendDocument" && enRun[2].method === "sendDocument" &&
+    enRun[1].body.document === `${BOT.APP_URL}guide/usmleengo-guide-en.pdf` &&
+    enRun[2].body.document === `${BOT.APP_URL}guide/usmleengo-qollanma-uz.pdf` &&
+    enRun.slice(1).every((d) => d.body.chat_id === 1001 && d.body.caption.length > 20 && d.body.caption.length <= 1024));
+  check("the welcome says what usmleengo is and lists what is in it",
+    /study partner/.test(enRun[0].body.text) && enRun[0].body.text.split(NL).filter((l) => l.startsWith("• ")).length >= 16 &&
+    ["quizzes", "lab values", "Medical English", "Live games", "Classes", "Rating", "Uzbek"].every((w) => enRun[0].body.text.includes(w)) &&
+    /guide/.test(enRun[0].body.text) && /qo'llanma/.test(enRun[0].body.text));
+  check("the welcome fits in one message", enRun[0].body.text.length < 4096, `${enRun[0].body.text.length}`);
   await update({ from, chat, text: "/format" });
   check("/format sends the example", sent.at(-1).body.text.includes("Ethosuximide"));
   check("with a button that opens Telegram's quiz maker",
@@ -258,18 +271,28 @@ console.log("\nthe bot");
   // Both languages, every time. The bot cannot see which one the person
   // reads the app in, so it sends both and leads with their phone's.
   check("/start comes in English and Uzbek",
-    /6,600\+ USMLE quizzes/.test(sent.at(-2).body.text) && /6 600\+ USMLE savoli/.test(sent.at(-2).body.text));
+    /6,600\+ USMLE quizzes/.test(enRun[0].body.text) && /6 600\+ USMLE savoli/.test(enRun[0].body.text));
   check("/format shows the example in both, with the Uzbek words",
     /Ethosuximide/.test(sent.at(-1).body.text) && /Etosuksimid/.test(sent.at(-1).body.text) &&
     /Javob:/.test(sent.at(-1).body.text));
-  await update({ from: { ...from, language_code: "uz" }, chat, text: "/start" });
-  const uzStart = sent.at(-1).body;
+  const uzRun = await start({ ...from, language_code: "uz" });
+  const uzStart = uzRun[0].body;
   check("an Uzbek phone is answered in Uzbek first",
     uzStart.text.indexOf("USMLE savoli") < uzStart.text.indexOf("USMLE quizzes") &&
     uzStart.reply_markup.inline_keyboard[0][0].text === "usmleengoni ochish");
-  await update({ from: { ...from, language_code: "ru" }, chat, text: "/start" });
+  check("and gets the Uzbek guide first", uzRun[1].body.document.endsWith("usmleengo-qollanma-uz.pdf") && uzRun[2].body.document.endsWith("usmleengo-guide-en.pdf"));
+  const ruRun = await start({ ...from, language_code: "ru" });
   check("any other phone is answered in English first, and still gets the Uzbek",
-    sent.at(-1).body.text.indexOf("USMLE quizzes") < sent.at(-1).body.text.indexOf("USMLE savoli"));
+    ruRun[0].body.text.indexOf("USMLE quizzes") < ruRun[0].body.text.indexOf("USMLE savoli"));
+  // A guide Telegram cannot fetch must not break the welcome or the second guide.
+  {
+    const good = globalThis.fetch;
+    globalThis.fetch = async (url, init) => { if (String(url).endsWith("/sendDocument")) throw new Error("fetch failed"); return good(url, init); };
+    const at = sent.length;
+    const r = await update({ from, chat, text: "/start" }); await flush();
+    globalThis.fetch = good;
+    check("if a guide cannot be sent, the welcome still went and nothing throws", r.status === 200 && sent[at]?.method === "sendMessage");
+  }
 
   await update({ from, chat, document: { file_id: "F1", file_name: "Cardio week 3.docx", file_size: 40000 } });
   const link = sent.at(-1).body.reply_markup.inline_keyboard[0][0].url;
@@ -295,8 +318,10 @@ console.log("\nthe bot");
   const reply = () => sent.at(-1).body;
   const linkOf = (body) => body.reply_markup?.inline_keyboard[0][0].url || "";
   const lists = () => d1.db.prepare("SELECT COUNT(*) n FROM uploads WHERE text IS NOT NULL").get().n;
+  const docsBefore = sent.filter((x) => x.method === "sendDocument").length;
   await say("hello");
   check("a message with no questions gets the welcome, and starts no list", linkOf(reply()) === BOT.APP_LINK && lists() === 0);
+  check("and no guides: only /start sends them", sent.filter((x) => x.method === "sendDocument").length === docsBefore);
   await say("1. Which drug is a loop diuretic?\nA) Hydrochlorothiazide\nB) Furosemide\nAnswer: B\n\n2. Hyperkalemia ECG: peaked ___ waves\nAnswer: T");
   const textLink = linkOf(reply());
   check("typed questions are counted, with a link into the app",
@@ -382,6 +407,8 @@ console.log("\nthe bot");
     described("setMyShortDescription").every((d) => d.body.short_description.length > 20 && d.body.short_description.length <= 120));
   check("the Uzbek text is Uzbek",
     described("setMyDescription").find((d) => d.body.language_code === "uz").body.description.includes("Bepul"));
+  check("the descriptions list the features as bullets",
+    described("setMyDescription").every((d) => d.body.description.split(NL).filter((l) => l.startsWith("• ")).length >= 7));
   check("the command lists are set too, in both languages",
     sent.filter((s) => s.method === "setMyCommands").length === 2);
 

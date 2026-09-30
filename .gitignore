@@ -12,6 +12,8 @@ Uworld2024/
 nbmes/
 *.pdf
 *.PDF
+# ...except the user guide, which the app serves and the bot sends
+!public/guide/*.pdf
 
 # Extracted vignettes, also an authoring input rather than app content.
 bank.json
