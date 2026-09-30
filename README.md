@@ -651,6 +651,12 @@ seven days old) and the bot's webhook against its secret. GitHub's secret
 scanning and push protection are on. Run the backup after big changes and at
 least monthly.
 
+`worker\clear-users.ps1` deletes every player's data from the live database
+(players, classes and their contents, uploads) and leaves the tables: `-DryRun`
+only counts, otherwise it backs up, then waits for you to type DELETE. Phones
+keep their own progress and send it back when the app is next opened, so it is
+a reset of the board, not of anyone's own history.
+
 ## Roadmap ideas
 
 - More questions — the bank ships with 6,317 across 100 subject files
