@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import {
-  BOARDS, TIME, WEIGHTS, dayIndex, formatPace, medalFor, points, rate,
+  BOARDS, POINTS_MAX, WEIGHTS, dayIndex, formatPace, medalFor, points, rate, streakScore,
 } from "../lib/rating.js";
 import { t } from "../lib/i18n.js";
 import { displayName, usernameOf } from "../lib/scorecard.js";
@@ -9,6 +9,9 @@ import { haptic, telegramUser } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
 
 const TOP = 10;
+
+/** What a run of days is worth in points, read from the rating itself. */
+const streakPoints = (days) => Math.round(WEIGHTS.streak * POINTS_MAX * streakScore(days) / 100);
 
 /**
  * What the rating and performance screens show.
@@ -264,73 +267,60 @@ export default function Rating({ state, standings, loading, onRefresh }) {
         {t(
           <>
             <p>
-              Everyone who uses usmleengo is ranked, automatically, and places update
-              within a minute. The top ten are shown by their Telegram name and
-              username; everyone else sees only their own place.
+              Everyone who uses usmleengo is on the board automatically. The top ten are shown
+              with their Telegram name; everyone else sees only their own place.
             </p>
             <p>
-              <b>Your rank is by points alone.</b> The day streak, XP and time filters
-              only show who leads each part of the points — they are not ranks.
+              <b>Your place depends on points only</b> — {POINTS_MAX} at most. The day streak, XP
+              and time buttons above just show who leads each of those.
+            </p>
+            <p>Points come from three parts:</p>
+            <p>
+              <b>1. Every day — up to {Math.round(WEIGHTS.streak * POINTS_MAX)}.</b> Study each day
+              without missing. 30 days in a row is about {streakPoints(30)} points, 60 days about {streakPoints(60)}.
+              Miss two days and it starts again from zero.
             </p>
             <p>
-              Points mix three things, in this order of weight: <b>day streak</b>
-              ({Math.round(WEIGHTS.streak * 100)}%), turning up day after day; <b>right and wrong
-              answers</b> ({Math.round(WEIGHTS.mastery * 100)}%), how much you have shown you know;
-              and <b>speed</b> ({Math.round(WEIGHTS.speed * 100)}%), how quickly you answer what you know.
+              <b>2. Right answers — up to {Math.round(WEIGHTS.mastery * POINTS_MAX)}.</b> Answer
+              questions correctly and quickly. Guessing earns nothing, and an answer that took a
+              long time — like looking it up — earns very little.
             </p>
             <p>
-              An answer counts for what it shows. A wrong tap takes away what a right one adds,
-              so guessing earns nothing. A right answer counts in full when it is quick and less
-              the longer it takes: a long wait looks like a look-up. An answer faster than the
-              question can be read is a reflex and earns nothing. The clock stops the moment you
-              answer, so reading the explanation is never counted. The same question again is
-              worth half as much each time.
+              <b>3. Speed — up to {Math.round(WEIGHTS.speed * POINTS_MAX)}.</b> How fast your right
+              answers are. It counts only once you have answered enough questions correctly.
             </p>
             <p>
-              Typing gets more time than tapping — {TIME.gap.free}s against {TIME.binary.free}s
-              before the clock starts to cost you — and counts one and a half times, because a
-              typed answer cannot be guessed.
-            </p>
-            <p>
-              Each part levels off as it grows, so the top stays within reach of someone
-              who started this month. A streak only counts while it is alive: miss two
-              days and it is back to zero.
+              Timing starts when the question appears and stops when you answer, so reading the
+              explanation never costs you. Typing gets more time than tapping.
             </p>
           </>,
           <>
             <p>
-              usmleengodan foydalanadigan har bir kishi avtomatik ravishda reytingga kiradi, o'rinlar
-              bir daqiqa ichida yangilanadi. Eng yaxshi o'ntalik Telegramdagi ismi va foydalanuvchi
-              nomi bilan ko'rsatiladi; qolganlar faqat o'z o'rnini ko'radi.
+              usmleengodan foydalanadigan har bir kishi avtomatik ravishda reytingga kiradi. Eng yaxshi
+              o'ntalik Telegramdagi ismi bilan ko'rsatiladi; qolganlar faqat o'z o'rnini ko'radi.
             </p>
             <p>
-              <b>O'rningiz faqat ball bo'yicha belgilanadi.</b> Kunlik intizom, XP va vaqt bo'yicha
-              saralash ballning har bir qismida kim oldinda ekanini ko'rsatadi, xolos — bular o'rin emas.
+              <b>O'rningiz faqat ball bo'yicha belgilanadi</b> — ko'pi bilan {POINTS_MAX}. Tepadagi
+              kunlik intizom, XP va vaqt tugmalari ulardan har birida kim oldinda ekanini ko'rsatadi, xolos.
+            </p>
+            <p>Ball uch qismdan iborat:</p>
+            <p>
+              <b>1. Har kuni — {Math.round(WEIGHTS.streak * POINTS_MAX)} gacha.</b> Har kuni o'tkazmasdan
+              shug'ullaning. Ketma-ket 30 kun taxminan {streakPoints(30)} ball, 60 kun taxminan {streakPoints(60)} ball
+              beradi. Ikki kun o'tkazsangiz, noldan qaytadan boshlanadi.
             </p>
             <p>
-              Ball uch narsadan iborat, ulushi kattadan kichikka: <b>kunlik intizom</b>
-              ({Math.round(WEIGHTS.streak * 100)}%) — har kuni shug'ullanish; <b>to'g'ri va noto'g'ri
-              javoblar</b> ({Math.round(WEIGHTS.mastery * 100)}%) — bilimingizni qanchalik ko'rsatganingiz;
-              <b> tezlik</b> ({Math.round(WEIGHTS.speed * 100)}%) — biladigan savolingizga qanchalik tez javob berishingiz.
+              <b>2. To'g'ri javoblar — {Math.round(WEIGHTS.mastery * POINTS_MAX)} gacha.</b> Savollarga
+              to'g'ri va tez javob bering. Taxmin qilish ball bermaydi, uzoq o'ylab (masalan, qidirib
+              topib) berilgan javob juda kam ball beradi.
             </p>
             <p>
-              Har bir javob o'zi ko'rsatgan narsa uchun hisoblanadi. Noto'g'ri bosish to'g'ri javob
-              qo'shganini qaytarib oladi, shuning uchun taxmin qilishdan foyda yo'q. To'g'ri javob tez
-              berilsa to'liq hisoblanadi, uzoq o'ylansa kamayadi — uzoq kutish ko'pincha qidirib
-              topilganini bildiradi. Savolni o'qishga ulgurmay bosilgan javob refleks hisoblanadi va
-              hech narsa bermaydi. Vaqt javob bergan zahotingiz to'xtaydi, shuning uchun izohni o'qish
-              vaqti hech qachon hisoblanmaydi. Bir xil savolga qayta to'g'ri javob har safar yarmiga
-              kam hisoblanadi.
+              <b>3. Tezlik — {Math.round(WEIGHTS.speed * POINTS_MAX)} gacha.</b> To'g'ri javoblaringiz
+              qanchalik tez ekani. Yetarlicha savolga to'g'ri javob berganingizdan keyingina hisoblanadi.
             </p>
             <p>
-              Yozma javobga test javobidan ko'ra ko'proq vaqt beriladi — vaqt hisobga ta'sir qila
-              boshlaguncha {TIME.gap.free} soniya va {TIME.binary.free} soniya — va u bir yarim baravar
-              hisoblanadi, chunki yozma javobni tasodifan topib bo'lmaydi.
-            </p>
-            <p>
-              Har bir qism o'sgan sari sekinlashadi, shuning uchun shu oy boshlagan kishi ham yuqoriga
-              chiqa oladi. Kunlik intizom faqat uzilmaguncha hisoblanadi: ikki kun o'tkazib yuborsangiz,
-              u nolga tushadi.
+              Vaqt savol chiqqanda boshlanadi va javob berganingizda to'xtaydi, shuning uchun izohni
+              o'qish sizga zarar qilmaydi. Yozma javobga test javobidan ko'ra ko'proq vaqt beriladi.
             </p>
           </>,
         )}
