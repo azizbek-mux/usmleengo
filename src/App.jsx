@@ -203,7 +203,7 @@ export default function App() {
             : t(`Your first try is the one that counts (${r.score}/${r.total}). This one was practice.`,
               `Faqat birinchi urinish hisoblanadi (${r.score}/${r.total}). Bu safargisi mashq edi.`)))
           .catch(() => setClassNote(t("Couldn’t hand it in. Check your internet, then do it again from the class.",
-            "Topshirib bo'lmadi. Internetni tekshiring va guruhdan qaytadan bajaring.")));
+            "Topshirib bo'lmadi. Internetni tekshiring va sinfdan qaytadan bajaring.")));
         // Anything after this, from the same screen, is practice.
         round.assignmentId = null;
       } else {

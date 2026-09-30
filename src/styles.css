@@ -1865,3 +1865,69 @@ input { font: inherit; }
   overflow-x: auto;
   margin: 12px 0 0;
 }
+
+/* ─────────────── roomy screens: tablet, and a desktop browser ───────────
+   Telegram hands the app a phone-shaped window on iOS, on Android and in
+   its own desktop client, and everything above is written for that. A
+   tablet, or a browser on a laptop, hands it far more room than it has
+   anything to do with: the 520px column would stand alone in the middle of
+   an empty screen, and every page that pins its action to the bottom — the
+   quiz, the game lobby, the class sheets — would leave a void above it.
+
+   So past a point the app stops stretching. Same column, same layout, same
+   everything; bounded, and sitting on the page rather than filling it.
+
+   The transform earns its place: it makes #root the containing block for
+   the position:fixed elements inside it — the tab bar, the pinned action,
+   the bottom sheets, the picture zoom, the how-to cards — so they land on
+   the card's edges instead of the window's, without a line of change to
+   any of them. */
+
+@media (min-width: 600px) and (min-height: 760px) {
+  body {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+  }
+
+  #root {
+    width: 520px;
+    height: min(880px, calc(100dvh - 48px));
+    min-height: 0;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+
+  /* The card is the viewport now. It cannot grow, so the screen inside it
+     scrolls instead of the page — thinly, because a desktop scrollbar at
+     full width inside a rounded card is all anyone would look at. */
+  .shell { min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+}
+
+/* ──────────────────────── a mouse, not a thumb ─────────────────────────
+   Everything tappable answers a press, through the :active rules above. A
+   pointer hovers before it presses, and a control that never acknowledges
+   the cursor reads as dead on a laptop or a tablet with a trackpad. These
+   say what :active says, quieter, and only where there is a real pointer —
+   a touchscreen sees none of it, and no colour is any different. */
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:not(:disabled):hover { box-shadow: 0 6px 0 var(--accent-shadow); transform: translateY(-2px); }
+  .btn-primary:not(:disabled):active { transform: scale(0.975); }
+  .btn-ghost:not(:disabled):hover,
+  .chip:hover,
+  .opt:not(:disabled):hover,
+  .opt-row:hover,
+  .result-row:hover,
+  .preset:hover,
+  .stat.gear:hover,
+  .q-img:hover { border-color: var(--accent); }
+  .tab-btn:not(.on):hover { color: var(--text); }
+  .back-link:hover,
+  .byline-link:hover,
+  .chips-clear:hover,
+  .ad-x:hover { opacity: 0.7; }
+}

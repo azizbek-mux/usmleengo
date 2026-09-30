@@ -14,7 +14,7 @@ fully in Uzbek (no English in brackets, no English terms kept).
 | Quiz (tab) | Testlar |
 | English (tab) | Ingliz tili |
 | Play | O'yin |
-| Class | Guruh |
+| Class | Sinf (owner, 2026-09-30 - was Guruh; the bot already said sinf) |
 | Rating | Reyting |
 | Me | Profil |
 | points | ball |

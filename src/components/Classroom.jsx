@@ -16,15 +16,15 @@ import { PlaceMark } from "./Rating.jsx";
 
 const reasons = () => ({
   telegram: t("Classes work inside Telegram. Open usmleengo from @usmleengo_bot.",
-    "Guruhlar faqat Telegram ichida ishlaydi. usmleengoni @usmleengo_bot orqali oching."),
+    "Sinflar faqat Telegram ichida ishlaydi. usmleengoni @usmleengo_bot orqali oching."),
   offline: t("Couldn’t reach the server. Check your internet and try again.",
     "Serverga ulanib bo'lmadi. Internetni tekshirib, qayta urinib ko'ring."),
-  "no-class": t("No class with that code. Check it with your teacher.", "Bunday kodli guruh yo'q. Kodni o'qituvchingizdan so'rang."),
-  "own-class": t("That’s a class you teach.", "Bu siz dars beradigan guruh."),
-  full: t("That class is full.", "Bu guruh to'lgan."),
-  "too-many-classes": t("That’s the most classes one person can have.", "Bir kishida bundan ortiq guruh bo'lishi mumkin emas."),
-  name: t("Give the class a name.", "Guruhga nom bering."),
-  "not-member": t("You’re not in this class any more.", "Siz endi bu guruhda emassiz."),
+  "no-class": t("No class with that code. Check it with your teacher.", "Bunday kodli sinf yo'q. Kodni o'qituvchingizdan so'rang."),
+  "own-class": t("That’s a class you teach.", "Bu siz dars beradigan sinf."),
+  full: t("That class is full.", "Bu sinf to'lgan."),
+  "too-many-classes": t("That’s the most classes one person can have.", "Bir kishida bundan ortiq sinf bo'lishi mumkin emas."),
+  name: t("Give the class a name.", "Sinfga nom bering."),
+  "not-member": t("You’re not in this class any more.", "Siz endi bu sinfda emassiz."),
   "not-teacher": t("Only the teacher can do that.", "Buni faqat o'qituvchi qila oladi."),
   "not-yours": t("That file was sent to the bot by someone else.", "Bu faylni botga boshqa kishi yuborgan."),
   "no-file": t("That link has expired. Send the file to @usmleengo_bot again.",
@@ -93,7 +93,7 @@ export default function Classroom({ state, invite, botFile, onFocus, onStartClas
   if (!initData()) {
     return (
       <div className="screen">
-        <ScreenHead title={t("Class", "Guruh")} sub={t("Learn with your teacher", "O'qituvchingiz bilan o'rganing")} />
+        <ScreenHead title={t("Class", "Sinf")} sub={t("Learn with your teacher", "O'qituvchingiz bilan o'rganing")} />
         <div className="empty">
           <div className="empty-big">🏫</div>
           <div>{reasons().telegram}</div>
@@ -184,7 +184,7 @@ function FromBot({ state, token, onBack, onCreate, onPick }) {
           <div className="class-note" style={{ marginTop: 0 }}>
             <b>{file.name}</b>
             {t(" — which class is it for? It becomes a new package there; you’ll see the questions in it before anything is kept.",
-              " — qaysi guruh uchun? U o'sha guruhda yangi savollar to'plamiga aylanadi; hech narsa saqlanishidan oldin ichidagi savollarni ko'rasiz.")}
+              " — qaysi sinf uchun? U o'sha sinfda yangi savollar to'plamiga aylanadi; hech narsa saqlanishidan oldin ichidagi savollarni ko'rasiz.")}
           </div>
           {data?.teaching.length ? (
             <div className="class-list" style={{ marginTop: 12 }}>
@@ -202,12 +202,12 @@ function FromBot({ state, token, onBack, onCreate, onPick }) {
             <>
               <div className="class-note">
                 {t("You don’t teach a class yet. Create one, then send the file to the bot again.",
-                  "Sizda hali guruh yo'q. Guruh yarating, so'ng faylni botga qayta yuboring.")}
+                  "Sizda hali sinf yo'q. Sinf yarating, so'ng faylni botga qayta yuboring.")}
               </div>
-              <button className="btn btn-primary class-create" onClick={onCreate}>{t("Create a classroom", "Guruh yaratish")}</button>
+              <button className="btn btn-primary class-create" onClick={onCreate}>{t("Create a classroom", "Sinf yaratish")}</button>
             </>
           ) : (
-            <div className="empty">{t("Loading your classes…", "Guruhlaringiz yuklanmoqda…")}</div>
+            <div className="empty">{t("Loading your classes…", "Sinflaringiz yuklanmoqda…")}</div>
           )}
         </>
       )}
@@ -241,9 +241,9 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
       setNote({
         ok: true,
         text: r.status === "active"
-          ? t(`You’re already in ${r.class.name}.`, `Siz allaqachon «${r.class.name}» guruhidasiz.`)
+          ? t(`You’re already in ${r.class.name}.`, `Siz allaqachon «${r.class.name}» sinfidasiz.`)
           : t(`Asked to join ${r.class.name}. You’re in as soon as ${r.class.teacher_name} lets you in.`,
-            `«${r.class.name}» guruhiga qo'shilish so'rovi yuborildi. ${r.class.teacher_name} tasdiqlashi bilan guruhga qo'shilasiz.`),
+            `«${r.class.name}» sinfiga qo'shilish so'rovi yuborildi. ${r.class.teacher_name} tasdiqlashi bilan sinfga qo'shilasiz.`),
       });
       setCode("");
       reload();
@@ -256,10 +256,10 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
 
   return (
     <div className="screen">
-      <ScreenHead title={t("Class", "Guruh")} sub={t("Learn with your teacher", "O'qituvchingiz bilan o'rganing")} />
+      <ScreenHead title={t("Class", "Sinf")} sub={t("Learn with your teacher", "O'qituvchingiz bilan o'rganing")} />
 
       <form className={`class-join${invite ? " invited" : ""}`} onSubmit={join}>
-        <div className="section-label" style={{ marginTop: 0 }}>{invite ? t("You’re invited", "Sizni taklif qilishdi") : t("Join a class", "Guruhga qo'shilish")}</div>
+        <div className="section-label" style={{ marginTop: 0 }}>{invite ? t("You’re invited", "Sizni taklif qilishdi") : t("Join a class", "Sinfga qo'shilish")}</div>
         <div className="game-join">
           <input
             className="gap-input game-code-input"
@@ -268,7 +268,7 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
             placeholder={t("6-digit code", "6 xonali kod")}
             inputMode="numeric"
             autoComplete="off"
-            aria-label={t("Class code", "Guruh kodi")}
+            aria-label={t("Class code", "Sinf kodi")}
           />
           <button className="btn btn-primary game-join-btn" disabled={!/^\d{6}$/.test(code) || busy}>{t("Join", "Qo'shilish")}</button>
         </div>
@@ -283,7 +283,7 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
 
       {data?.learning.length > 0 && (
         <>
-          <div className="section-label">{t("Your classes", "Guruhlaringiz")}</div>
+          <div className="section-label">{t("Your classes", "Sinflaringiz")}</div>
           <div className="class-list">
             {data.learning.map((c) => (
               <button key={c.id} className="class-card" onClick={() => { haptic("light"); onOpen(c.id); }}>
@@ -300,7 +300,7 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
         </>
       )}
 
-      <div className="section-label">{t("Classes you teach", "Siz dars beradigan guruhlar")}</div>
+      <div className="section-label">{t("Classes you teach", "Siz dars beradigan sinflar")}</div>
       {data?.teaching.length > 0 && (
         <div className="class-list">
           {data.teaching.map((c) => (
@@ -317,7 +317,7 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
         </div>
       )}
       <button className="btn btn-ghost class-create" onClick={() => { haptic("light"); onCreate(); }}>
-        {t("Create a classroom", "Guruh yaratish")}
+        {t("Create a classroom", "Sinf yaratish")}
       </button>
     </div>
   );
@@ -345,15 +345,15 @@ function CreateClass({ onBack, onCreated }) {
 
   return (
     <form className="screen" onSubmit={create}>
-      <BackBar title={t("New classroom", "Yangi guruh")} onBack={onBack} />
+      <BackBar title={t("New classroom", "Yangi sinf")} onBack={onBack} />
       <label className="game-field">
-        <span className="section-label">{t("Class name", "Guruh nomi")}</span>
+        <span className="section-label">{t("Class name", "Sinf nomi")}</span>
         <input
           className="gap-input"
           value={name}
           maxLength={40}
           onChange={(e) => setName(e.target.value)}
-          placeholder={t("Cardio group, Step 1 — spring…", "Kardiologiya guruhi, Step 1 — bahor…")}
+          placeholder={t("Cardio group, Step 1 — spring…", "Kardiologiya sinfi, Step 1 — bahor…")}
           autoFocus
         />
       </label>
@@ -363,7 +363,7 @@ function CreateClass({ onBack, onCreated }) {
       </div>
       {error && <div className="game-warn">{error}</div>}
       <div className="home-cta">
-        <button className="btn btn-primary" disabled={!name.trim() || busy}>{busy ? t("Creating…", "Yaratilmoqda…") : t("Create classroom", "Guruhni yaratish")}</button>
+        <button className="btn btn-primary" disabled={!name.trim() || busy}>{busy ? t("Creating…", "Yaratilmoqda…") : t("Create classroom", "Sinfni yaratish")}</button>
       </div>
     </form>
   );
@@ -377,7 +377,7 @@ function ClassView({ state, id, onBack, onStudent, onGo, onStartClass }) {
   if (!data) {
     return (
       <div className="screen">
-        <BackBar title={t("Class", "Guruh")} onBack={onBack} />
+        <BackBar title={t("Class", "Sinf")} onBack={onBack} />
         <div className="empty">{error ? reasonOf(error) : t("Loading…", "Yuklanmoqda…")}</div>
       </div>
     );
@@ -428,7 +428,7 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
       <BackBar title={cls.name} onBack={onBack} />
 
       <div className="game-code-card">
-        <span className="perf-points-l">{t("Class code", "Guruh kodi")}</span>
+        <span className="perf-points-l">{t("Class code", "Sinf kodi")}</span>
         <span className="game-code">{cls.code.slice(0, 3)} {cls.code.slice(3)}</span>
         <span className="game-code-about">
           {t(`${data.students.length} of ${data.limits.students} students`, `${data.students.length} / ${data.limits.students} talaba`)}
@@ -522,7 +522,7 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
       ) : (
         <div className="class-note">
           {t("Your own sets of questions: write them, or pick them from usmleengo’s bank. Only this class sees them.",
-            "O'zingizning savollar to'plamlaringiz: ularni yozing yoki usmleengo bazasidan tanlang. Ularni faqat shu guruh ko'radi.")}
+            "O'zingizning savollar to'plamlaringiz: ularni yozing yoki usmleengo bazasidan tanlang. Ularni faqat shu sinf ko'radi.")}
         </div>
       )}
       <button className="btn btn-ghost class-create" onClick={() => { haptic("light"); onGo({ name: "package" }); }}>{t("New package", "Yangi to'plam")}</button>
@@ -557,7 +557,7 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
         {t("Set homework", "Uy vazifasi berish")}
       </button>
 
-      <div className="section-label">{t("This class", "Ushbu guruh")}</div>
+      <div className="section-label">{t("This class", "Ushbu sinf")}</div>
       {renaming ? (
         <form
           className="game-join"
@@ -574,8 +574,8 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
         <button className="btn btn-ghost" onClick={() => { haptic("light"); setRenaming(true); }}>{t("Rename", "Nomini o'zgartirish")}</button>
       )}
       <TwoTap
-        label={t("Close this class", "Guruhni yopish")}
-        confirm={t("Tap again: close it for everyone", "Yana bosing: guruh hamma uchun yopiladi")}
+        label={t("Close this class", "Sinfni yopish")}
+        confirm={t("Tap again: close it for everyone", "Yana bosing: sinf hamma uchun yopiladi")}
         onConfirm={async () => { if (await act("close")) onBack(); }}
       />
     </div>
@@ -647,8 +647,8 @@ function StudentDetail({ classId, student, onBack }) {
       {error && <div className="game-warn" style={{ marginTop: 12 }}>{error}</div>}
       <div className="home-cta">
         <TwoTap
-          label={t("Remove from class", "Guruhdan chiqarish")}
-          confirm={t(`Tap again to remove ${student.name}`, `Yana bosing: ${student.name} guruhdan chiqariladi`)}
+          label={t("Remove from class", "Sinfdan chiqarish")}
+          confirm={t(`Tap again to remove ${student.name}`, `Yana bosing: ${student.name} sinfdan chiqariladi`)}
           onConfirm={async () => {
             try { await classCall("remove", { classId, player: student.player }); onBack(); }
             catch (err) { setError(reasonOf(err)); }
@@ -717,13 +717,13 @@ function StudentView({ data, onBack, onStartClass }) {
 
       {me && (
         <div className="rating-place">
-          <span className="rating-rank">{t("Your place in class", "Guruhdagi o'rningiz")} <b>#{me.place} / {me.total}</b></span>
+          <span className="rating-rank">{t("Your place in class", "Sinfdagi o'rningiz")} <b>#{me.place} / {me.total}</b></span>
           <b>{me.points} <small>{t("pts", "ball")}</small></b>
         </div>
       )}
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>{t("Class ranking · by points", "Guruh reytingi · ball bo'yicha")}</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Class ranking · by points", "Sinf reytingi · ball bo'yicha")}</span>
       </div>
       <div className="board">
         <div className="board-head">
@@ -798,7 +798,7 @@ function StudentView({ data, onBack, onStartClass }) {
 
       {error && <div className="game-warn" style={{ marginTop: 12 }}>{error}</div>}
       <div className="home-cta">
-        <TwoTap label={t("Leave this class", "Guruhdan chiqish")} confirm={t("Tap again to leave", "Chiqish uchun yana bosing")} onConfirm={leave} />
+        <TwoTap label={t("Leave this class", "Sinfdan chiqish")} confirm={t("Tap again to leave", "Chiqish uchun yana bosing")} onConfirm={leave} />
       </div>
     </div>
   );
