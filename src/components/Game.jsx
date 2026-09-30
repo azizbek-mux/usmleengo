@@ -112,8 +112,8 @@ function GameMenu({ code, setCode, nickname, setNickname, nameOk, invited, onCre
       <div className="game-hero">
         <div className="game-hero-t">{t("Play live with friends", "Do'stlaringiz bilan jonli o'ynang")}</div>
         <div className="game-hero-n">
-          {t("Everyone gets the same question at the same moment. Right and fast wins. Nothing here changes your XP, streak or rating.",
-            "Hamma bir xil savolni bir vaqtda oladi. To'g'ri va tez javob bergan yutadi. Bu yerda XP, kunlik intizom va reytingingiz o'zgarmaydi.")}
+          {t("Everyone gets the same question at the same moment. Right and fast wins. Nothing here changes your points or streak.",
+            "Hamma bir xil savolni bir vaqtda oladi. To'g'ri va tez javob bergan yutadi. Bu yerda ballaringiz va kunlik intizomingiz o'zgarmaydi.")}
         </div>
       </div>
 

@@ -186,11 +186,11 @@ export default function App() {
     }
     const updated = record(stateRef.current, question, correct, elapsedMs);
     // What the answer earned is what was recorded for it, not a guess made
-    // again later: XP depends on how long the answer took.
-    const xp = updated.xp - stateRef.current.xp;
+    // again later: points depend on how long the answer took.
+    const gained = updated.points - stateRef.current.points;
     stateRef.current = updated;
     setState(updated);
-    setLog((l) => [...l, { question, correct, xp }]);
+    setLog((l) => [...l, { question, correct, gained }]);
   }
 
   function finish() {
@@ -293,7 +293,7 @@ export default function App() {
   setLang(state.lang);
   const chooseLang = (next) => persist(setLanguage(stateRef.current, next));
 
-  const xpEarned = log.reduce((sum, l) => sum + (l.xp || 0), 0);
+  const pointsEarned = Math.round(log.reduce((sum, l) => sum + (l.gained || 0), 0) / 100);
 
   if (bankStatus !== "ready") {
     return (
@@ -342,7 +342,7 @@ export default function App() {
       <Result
         log={log}
         label={label}
-        xpEarned={xpEarned}
+        points={pointsEarned}
         streak={state.streak}
         streakAdvanced={streakAdvanced}
         // The place on the overall board, once the post-round sync answers —

@@ -71,18 +71,18 @@ check("nothing was rejected for size", rejected === 0);
 const restored = await loadRemote({ ...emptyState });
 check("all 500 answers came back", Object.keys(restored.seen).length === 500,
       `got ${Object.keys(restored.seen).length}`);
-check("xp came back", restored.xp === state.xp, `${restored.xp} vs ${state.xp}`);
+check("the answer count came back", restored.answered === state.answered, `${restored.answered} vs ${state.answered}`);
 check("streak/count/qtype came back",
       restored.qtype === "random" && restored.count === state.count);
 
 /* ── 2. the old unchunked copy is still honoured (upgrading user) ──────── */
 
 store.clear(); local.clear();
-const oldState = { ...emptyState, xp: 640, streak: 7, qtype: "binary", seen: { "a-1": [3, 1] } };
+const oldState = { ...emptyState, answered: 640, streak: 7, qtype: "binary", seen: { "a-1": [3, 1] } };
 store.set(KEY, JSON.stringify(oldState));                 // written by the old app
 const migrated = await loadRemote({ ...emptyState });
-check("pre-chunking cloud copy is found", migrated.xp === 640 && migrated.streak === 7,
-      `xp ${migrated.xp}`);
+check("pre-chunking cloud copy is found", migrated.answered === 640 && migrated.streak === 7,
+      `answered ${migrated.answered}`);
 
 // and once the new app saves, the chunked copy takes over
 let grown = migrated;
@@ -91,8 +91,8 @@ save(grown);
 await sleep();
 const afterUpgrade = await loadRemote({ ...emptyState });
 check("chunked copy wins after the first new save",
-      afterUpgrade.xp === grown.xp && Object.keys(afterUpgrade.seen).length === 301,
-      `xp ${afterUpgrade.xp}, seen ${Object.keys(afterUpgrade.seen).length}`);
+      afterUpgrade.answered === grown.answered && Object.keys(afterUpgrade.seen).length === 301,
+      `answered ${afterUpgrade.answered}, seen ${Object.keys(afterUpgrade.seen).length}`);
 
 /* ── 3. a torn write must not drag a user backwards ────────────────────── */
 
@@ -101,9 +101,9 @@ console.log(`  (chunked copy occupies ${chunkKeys.length} chunk key(s); dropping
 store.delete(chunkKeys[chunkKeys.length - 1]);             // lose a real chunk
 const torn = await loadRemote({ ...emptyState });
 check("torn chunked read is rejected, not half-restored",
-      torn.xp !== grown.xp || Object.keys(torn.seen).length !== 301);
+      torn.answered !== grown.answered || Object.keys(torn.seen).length !== 301);
 check("torn read still falls back to the legacy copy rather than zero",
-      torn.xp >= 640, `xp ${torn.xp}`);
+      torn.answered >= 640, `answered ${torn.answered}`);
 
 /* ── 4. a shrinking payload leaves no stale chunks behind ──────────────── */
 
@@ -112,12 +112,12 @@ let big = { ...emptyState };
 for (let i = 0; i < 800; i++) big = record(big, q(i), true);
 save(big); await sleep();
 const manyChunks = [...store.keys()].filter((k) => k.startsWith(`${KEY}__`) && k !== `${KEY}__n`).length;
-save({ ...emptyState, xp: 5 }); await sleep();
+save({ ...emptyState, answered: 5 }); await sleep();
 const fewChunks = [...store.keys()].filter((k) => k.startsWith(`${KEY}__`) && k !== `${KEY}__n`).length;
 check("stale chunks are cleaned up when progress shrinks",
       fewChunks < manyChunks, `${manyChunks} -> ${fewChunks}`);
 const small = await loadRemote({ ...emptyState });
-check("the shrunk copy reads back correctly", small.xp === 5, `xp ${small.xp}`);
+check("the shrunk copy reads back correctly", small.answered === 5, `answered ${small.answered}`);
 
 /* ── 5. reset clears both copies ───────────────────────────────────────── */
 
@@ -125,13 +125,13 @@ store.clear(); local.clear();
 let played = { ...emptyState };
 for (let i = 0; i < 400; i++) played = record(played, q(i), true);
 save(played); await sleep();
-store.set(KEY, JSON.stringify({ ...emptyState, xp: 9999 }));   // an old copy lurking
+store.set(KEY, JSON.stringify({ ...emptyState, answered: 9999 }));   // an old copy lurking
 reset(); await sleep();
 const afterReset = await loadRemote({ ...emptyState });
 check("reset clears the chunked copy", Object.keys(afterReset.seen).length === 0,
       `seen ${Object.keys(afterReset.seen).length}`);
 check("reset also blanks the legacy copy so it cannot resurrect progress",
-      afterReset.xp === 0, `xp ${afterReset.xp}`);
+      afterReset.answered === 0, `answered ${afterReset.answered}`);
 
 /* ── 6. the same, for the flashcard deck ───────────────────────────────── */
 

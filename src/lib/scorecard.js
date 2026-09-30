@@ -5,7 +5,7 @@
 // signed launch data. The server checks that signature, so *who* sent a score
 // cannot be faked. The numbers themselves come from the player's own app, so
 // checkScore rejects anything impossible — a streak older than the app, more
-// XP than the answers could earn — which stops junk and casual editing. It
+// points than the answers could earn — which stops junk and casual editing. It
 // cannot stop a determined person from inventing a plausible score, and
 // nothing short of replaying every answer on the server could. The board is a
 // friendly ranking, not an exam.
@@ -13,7 +13,7 @@
 // Imported by the app and by the server, so it must stay plain JS with no
 // browser or Node APIs.
 
-import { XP, dayIndex } from "./rating.js";
+import { SCORE, dayIndex } from "./rating.js";
 
 /** The first day the app existed. No streak can be longer than it has been around. */
 export const LAUNCH_DAY = dayIndex("2026-08-20");
@@ -80,15 +80,21 @@ export function usernameOf(from) {
 const count = (n) => Number.isInteger(n) && n >= 0;
 
 /**
+ * The most a single answer can add to the total, in hundredths: a typed
+ * answer given at once, the first time it is answered right.
+ */
+const MOST_PER_ANSWER = Math.round(100 * SCORE.typed * (SCORE.base + SCORE.bonus));
+
+/**
  * Take a score as the app sent it and decide whether it is possible.
  *
- *   { streak, lastDay, xp, answered, timing: { binaryMs, binaryN, gapMs, gapN },
- *     credit, fluent }
+ *   { streak, lastDay, answered, timing: { binaryMs, binaryN, gapMs, gapN },
+ *     points }
  *
- * credit and fluent are the two running totals the rating is built from (see
- * rating.js), in hundredths; credit can be negative, for someone who has
- * answered worse than chance. An app from before they existed sends neither,
- * and is stored with the totals it already had.
+ * points is the running total the rating is built from (see rating.js), in
+ * hundredths. An app from before it existed sends none, and is stored with
+ * the total it already had. Anything else an older app sends - XP, credit -
+ * is ignored.
  *
  * lastDay is a day index (see rating.dayIndex), or null for someone who has
  * never studied. `today` is the server's own day index — never the app's,
@@ -101,7 +107,7 @@ export function checkScore(raw, today) {
   if (!raw || typeof raw !== "object") return { ok: false, reason: "no score" };
   const t = raw.timing && typeof raw.timing === "object" ? raw.timing : {};
   const n = {
-    streak: raw.streak, lastDay: raw.lastDay ?? 0, xp: raw.xp, answered: raw.answered,
+    streak: raw.streak, lastDay: raw.lastDay ?? 0, answered: raw.answered,
     binaryMs: t.binaryMs ?? 0, binaryN: t.binaryN ?? 0, gapMs: t.gapMs ?? 0, gapN: t.gapN ?? 0,
   };
   for (const [field, value] of Object.entries(n)) {
@@ -114,35 +120,28 @@ export function checkScore(raw, today) {
     return { ok: false, reason: "last study day out of range" };
   }
 
-  // XP is earned per answer, and no answer is worth more than a typed one.
-  if (n.xp > n.answered * XP.gapCorrect) return { ok: false, reason: "more XP than answers allow" };
   // Only correct answers are timed, so there cannot be more timings than answers.
   if (n.binaryN + n.gapN > n.answered) return { ok: false, reason: "more timings than answers" };
   if (n.answered > 1_000_000) return { ok: false, reason: "implausible answer count" };
-
-  // Net credit is at most 1.5 an answer (a typed answer, given quickly, the
-  // first time) and at least -1 (a wrong tap); the time credits it averages
-  // are at most 1 each, one for every timed answer.
-  let credit = null;
-  let fluent = null;
-  if (raw.credit !== undefined || raw.fluent !== undefined) {
-    if (!Number.isInteger(raw.credit) || !Number.isInteger(raw.fluent)) return { ok: false, reason: "bad credit" };
-    if (raw.credit < -100 * n.answered || raw.credit > 150 * n.answered) return { ok: false, reason: "credit out of range" };
-    if (raw.fluent < 0 || raw.fluent > 100 * (n.binaryN + n.gapN)) return { ok: false, reason: "fluency out of range" };
-    credit = raw.credit;
-    fluent = raw.fluent;
-  }
 
   for (const [ms, c, label] of [[n.binaryMs, n.binaryN, "tapped"], [n.gapMs, n.gapN, "typed"]]) {
     if (c > 0 && (ms < PACE_MIN_MS || ms > PACE_MAX_MS)) return { ok: false, reason: `${label} pace out of range` };
   }
 
+  // The total is never negative, and no answer adds more than the best one.
+  let points = null;
+  if (raw.points !== undefined) {
+    if (!count(raw.points)) return { ok: false, reason: "bad points" };
+    if (raw.points > MOST_PER_ANSWER * n.answered) return { ok: false, reason: "more points than answers allow" };
+    points = raw.points;
+  }
+
   return {
     ok: true,
     score: {
-      streak: n.streak, lastDay: n.lastDay, xp: n.xp, answered: n.answered,
+      streak: n.streak, lastDay: n.lastDay, answered: n.answered,
       timing: { binaryMs: n.binaryMs, binaryN: n.binaryN, gapMs: n.gapMs, gapN: n.gapN },
-      credit, fluent,
+      points,
     },
   };
 }

@@ -1,17 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react";
-import {
-  BOARDS, POINTS_MAX, WEIGHTS, dayIndex, formatPace, medalFor, points, rate, streakScore,
-} from "../lib/rating.js";
+import { BOARDS, dayIndex, medalFor, rate } from "../lib/rating.js";
 import { t } from "../lib/i18n.js";
 import { displayName, usernameOf } from "../lib/scorecard.js";
 import { ratingInput, today } from "../lib/storage.js";
 import { haptic, telegramUser } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
+import PointsRules from "./PointsRules.jsx";
 
 const TOP = 10;
-
-/** What a run of days is worth in points, read from the rating itself. */
-const streakPoints = (days) => Math.round(WEIGHTS.streak * POINTS_MAX * streakScore(days) / 100);
 
 /**
  * What the rating and performance screens show.
@@ -43,9 +39,7 @@ export function ratingData(state, standings) {
 /** How a row's value reads on each board. Rows carry { points, raw }. */
 export function valueOf(board, row) {
   if (board === "streak") return String(row.raw.streak);
-  if (board === "xp") return row.raw.xp.toLocaleString();
-  if (board === "speed") return formatPace(row.raw.pace);
-  return String(row.points);
+  return row.points.toLocaleString();
 }
 
 /** "#88 / 2,300". */
@@ -73,20 +67,16 @@ export function useLiveBoard(onRefresh) {
 }
 
 /**
- * The rating is points, and only points: that is the rank. Day streak, XP
- * and time are filters — they re-sort the same people by one part of the
- * points, to see who leads it, but a place there is not a rank.
+ * The rating is points, and only points: that is the rank. The day streak is
+ * a filter — it re-sorts the same people by their run of days, for interest,
+ * but a place there is not a rank and it adds nothing to the points.
  */
 const FILTERS = BOARDS.filter((b) => b.id !== "overall");
-const filteredBy = (id) => ({ streak: t("day streak", "kunlik intizom"), xp: "XP", speed: t("time", "vaqt") })[id];
+const filteredBy = (id) => ({ streak: t("day streak", "kunlik intizom") })[id];
 
 /** A board's name on its chip, and the heading of its value column. */
-const boardName = (id) => ({
-  overall: t("Points", "Ball"), streak: t("Day streak", "Kunlik intizom"), xp: "XP", speed: t("Time", "Vaqt"),
-})[id];
-const boardColumn = (id) => ({
-  overall: t("Points", "Ball"), streak: t("Days", "Kunlar"), xp: "XP", speed: t("Avg. time", "O'rt. vaqt"),
-})[id];
+const boardName = (id) => ({ overall: t("Points", "Ball"), streak: t("Day streak", "Kunlik intizom") })[id];
+const boardColumn = (id) => ({ overall: t("Points", "Ball"), streak: t("Days", "Kunlar") })[id];
 
 /**
  * A place in the Rank column: the medal for the top three on the rating,
@@ -152,7 +142,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
 
   // Below the top ten, the viewer still sees their own row, after a gap.
   const meBelow = mine?.place > TOP
-    ? { place: mine.place, isMe: true, points: points(me.rating.overall), raw: me.rating.raw }
+    ? { place: mine.place, isMe: true, points: me.rating.points, raw: me.rating.raw }
     : null;
 
   let placeLine;
@@ -202,7 +192,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
 
       <div className="rating-place">
         {placeLine}
-        <b>{points(me.rating.overall)} <small>{t("pts", "ball")}</small></b>
+        <b>{me.rating.points.toLocaleString()} <small>{t("pts", "ball")}</small></b>
       </div>
 
       {/* ── filter ────────────────────────────────────────────────────────── */}
@@ -250,9 +240,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
         )}
         {standings && !rows.length && (
           <div className="board-empty">
-            {board === "speed"
-              ? t("Answer a few questions correctly and your time appears here.", "Bir nechta savolga to'g'ri javob bering — vaqtingiz shu yerda chiqadi.")
-              : t("Nothing to rank yet.", "Hozircha reytingda hech kim yo'q.")}
+            {t("Nothing to rank yet.", "Hozircha reytingda hech kim yo'q.")}
           </div>
         )}
         {!standings && <div className="board-empty">{loading ? t("Loading…", "Yuklanmoqda…") : t("Try again in a moment.", "Birozdan so'ng qayta urinib ko'ring.")}</div>}
@@ -264,76 +252,22 @@ export default function Rating({ state, standings, loading, onRefresh }) {
 
       <details className="rating-how">
         <summary>{t("How points are counted", "Ballar qanday hisoblanadi")}</summary>
-        {t(
-          <>
-            <p>
-              Everyone who uses usmleengo is on the board automatically. The top ten are shown
-              with their Telegram name; everyone else sees only their own place.
-            </p>
-            <p>
-              <b>Your place depends on points only</b> — {POINTS_MAX} at most. The day streak, XP
-              and time buttons above just show who leads each of those.
-            </p>
-            <p>Points come from three parts:</p>
-            <p>
-              <b>1. Every day — up to {Math.round(WEIGHTS.streak * POINTS_MAX)}.</b> Study each day
-              without missing. 30 days in a row is about {streakPoints(30)} points, 60 days about {streakPoints(60)}.
-              Miss two days and it starts again from zero.
-            </p>
-            <p>
-              <b>2. Right answers — up to {Math.round(WEIGHTS.mastery * POINTS_MAX)}.</b> Answer
-              questions correctly and quickly. Guessing earns nothing, and an answer that took a
-              long time — like looking it up — earns very little.
-            </p>
-            <p>
-              <b>3. Speed — up to {Math.round(WEIGHTS.speed * POINTS_MAX)}.</b> How fast your right
-              answers are. It counts only once you have answered enough questions correctly.
-            </p>
-            <p>
-              Timing starts when the question appears and stops when you answer, so reading the
-              explanation never costs you. Typing gets more time than tapping.
-            </p>
-          </>,
-          <>
-            <p>
-              usmleengodan foydalanadigan har bir kishi avtomatik ravishda reytingga kiradi. Eng yaxshi
-              o'ntalik Telegramdagi ismi bilan ko'rsatiladi; qolganlar faqat o'z o'rnini ko'radi.
-            </p>
-            <p>
-              <b>O'rningiz faqat ball bo'yicha belgilanadi</b> — ko'pi bilan {POINTS_MAX}. Tepadagi
-              kunlik intizom, XP va vaqt tugmalari ulardan har birida kim oldinda ekanini ko'rsatadi, xolos.
-            </p>
-            <p>Ball uch qismdan iborat:</p>
-            <p>
-              <b>1. Har kuni — {Math.round(WEIGHTS.streak * POINTS_MAX)} gacha.</b> Har kuni o'tkazmasdan
-              shug'ullaning. Ketma-ket 30 kun taxminan {streakPoints(30)} ball, 60 kun taxminan {streakPoints(60)} ball
-              beradi. Ikki kun o'tkazsangiz, noldan qaytadan boshlanadi.
-            </p>
-            <p>
-              <b>2. To'g'ri javoblar — {Math.round(WEIGHTS.mastery * POINTS_MAX)} gacha.</b> Savollarga
-              to'g'ri va tez javob bering. Taxmin qilish ball bermaydi, uzoq o'ylab (masalan, qidirib
-              topib) berilgan javob juda kam ball beradi.
-            </p>
-            <p>
-              <b>3. Tezlik — {Math.round(WEIGHTS.speed * POINTS_MAX)} gacha.</b> To'g'ri javoblaringiz
-              qanchalik tez ekani. Yetarlicha savolga to'g'ri javob berganingizdan keyingina hisoblanadi.
-            </p>
-            <p>
-              Vaqt savol chiqqanda boshlanadi va javob berganingizda to'xtaydi, shuning uchun izohni
-              o'qish sizga zarar qilmaydi. Yozma javobga test javobidan ko'ra ko'proq vaqt beriladi.
-            </p>
-          </>,
-        )}
+        <PointsRules />
+        <p>
+          {t(
+            "Your place is by points alone. The top ten are shown with their Telegram name; everyone else sees only their own place.",
+            "O'rningiz faqat ball bo'yicha belgilanadi. Eng yaxshi o'ntalik Telegramdagi ismi bilan ko'rsatiladi; qolganlar faqat o'z o'rnini ko'radi.",
+          )}
+        </p>
       </details>
     </div>
   );
 }
 
 /**
- * This week: the same points, counted from Monday — days studied this week in
- * place of the streak, this week's XP, this week's time — so everyone starts
- * level each Monday and a newcomer can win a week. The top ten, the viewer's
- * own place, and when it starts over.
+ * This week: the points earned since Monday, so everyone starts level each
+ * Monday and a newcomer can win a week. The top ten, the viewer's own place,
+ * and when it starts over.
  */
 function WeekBoard({ week, me, ranked, standings, loading }) {
   const rows = week?.top || [];
@@ -360,7 +294,7 @@ function WeekBoard({ week, me, ranked, standings, loading }) {
     <>
       <div className="rating-place">
         {placeLine}
-        {mine?.place ? <b>{mine.points} <small>{t("pts", "ball")}</small></b> : null}
+        {mine?.place ? <b>{mine.points.toLocaleString()} <small>{t("pts", "ball")}</small></b> : null}
       </div>
 
       <div className="chips-head board-title">
@@ -391,26 +325,12 @@ function WeekBoard({ week, me, ranked, standings, loading }) {
 
       <details className="rating-how">
         <summary>{t("How this week is counted", "Haftalik reyting qanday hisoblanadi")}</summary>
-        {t(
-          <>
-            <p>
-              The same points as the rating, from this week alone: the <b>days you study</b> between
-              Monday and Sunday count most, then the <b>XP</b> you earn this week, then your
-              <b> average time</b> this week. Everyone starts level on Monday, so a week can be won
-              by anyone — however long they have been playing.
-            </p>
-            <p>The top ten are shown; everyone else sees their own place.</p>
-          </>,
-          <>
-            <p>
-              Reytingdagi ballar, faqat shu hafta bo'yicha: eng katta ulush dushanbadan yakshanbagacha
-              <b> shug'ullangan kunlaringiz</b>da, keyin shu hafta to'plagan <b>XP</b>ingizda, keyin shu
-              haftadagi <b>o'rtacha vaqtingiz</b>da. Dushanba kuni hamma teng boshlaydi, shuning uchun
-              haftani har kim — qancha vaqtdan beri o'ynashidan qat'i nazar — yutishi mumkin.
-            </p>
-            <p>Eng yaxshi o'ntalik ko'rsatiladi; qolganlar o'z o'rnini ko'radi.</p>
-          </>,
-        )}
+        <p>
+          {t(
+            "The points you earn from Monday to Sunday, counted the same way as the rating. Everyone starts level on Monday, so anyone can win a week, however long they have been playing. The top ten are shown; everyone else sees their own place.",
+            "Dushanbadan yakshanbagacha to'plagan ballaringiz, reytingdagidek hisoblanadi. Dushanba kuni hamma teng boshlaydi, shuning uchun haftani har kim — qancha vaqtdan beri o'ynashidan qat'i nazar — yutishi mumkin. Eng yaxshi o'ntalik ko'rsatiladi; qolganlar o'z o'rnini ko'radi.",
+          )}
+        </p>
       </details>
     </>
   );

@@ -741,40 +741,6 @@ input { font: inherit; }
 .prose { font-size: 14.5px; line-height: 1.6; color: var(--text); margin: 0 0 14px; }
 .prose b { font-weight: 800; }
 
-.xp-rules {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 4px 14px;
-  margin-bottom: 14px;
-}
-.xp-rule {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 11px 0;
-  font-size: 14px;
-  color: var(--muted);
-  border-bottom: 1px solid var(--line);
-}
-.xp-rule:last-child { border-bottom: none; }
-.xp-amt {
-  font-weight: 800;
-  font-size: 16px;
-  min-width: 38px;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-}
-.xp-amt.ok { color: var(--accent); }
-/* The rules, opened under the XP card: one block with it, not a second one. */
-.perf-list .xp-rules { margin: -2px 0 0; padding-top: 10px; }
-.xp-rules-t {
-  font-size: 12px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  font-weight: 700;
-}
 
 /* ────────────────────────── medical english ─────────────────────────── */
 
@@ -1286,22 +1252,9 @@ input { font: inherit; }
   padding: 13px 15px;
 }
 .perf-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
-/* The XP card opens the rules beneath it, so it is a button that reads as a card. */
-.perf-tap { width: 100%; text-align: left; color: inherit; font: inherit; }
-/* A part of the points: what it earned big, its bar with 0 and the limit
-   under it, and one plain line about what it is. */
 .perf-card { flex-direction: column; align-items: stretch; gap: 0; }
-.perf-top { display: flex; align-items: center; gap: 12px; }
-.perf-earn { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.1; }
-.perf-earn b { font-size: 24px; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
-.perf-earn small { font-size: 12px; font-weight: 700; color: var(--muted); }
-.perf-bar { height: 8px; background: var(--card-hi); border-radius: 100px; overflow: hidden; margin-top: 12px; }
-.perf-bar span { display: block; height: 100%; min-width: 3px; background: var(--accent); border-radius: 100px; }
-.perf-scale { display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; color: var(--muted); margin-top: 4px; font-variant-numeric: tabular-nums; }
-.perf-hint { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin-top: 8px; text-align: left; }
 .perf-intro { font-size: 13.5px; line-height: 1.5; color: var(--muted); margin: 0 0 12px; }
 
-.perf-tap:active { background: var(--card-hi); }
 .perf-label {
   font-size: 12px;
   color: var(--muted);
@@ -1312,17 +1265,6 @@ input { font: inherit; }
 .perf-value { font-size: 24px; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .perf-value small { font-size: 14px; font-weight: 700; color: var(--muted); }
 .perf-detail { font-size: 12.5px; color: var(--muted); }
-/* A share of the points, not a place: muted, so it never reads as a rank. */
-.perf-weight {
-  flex-shrink: 0;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--muted);
-  background: var(--card-hi);
-  padding: 5px 10px;
-  border-radius: 100px;
-  font-variant-numeric: tabular-nums;
-}
 
 .settings-reset { margin-top: 22px; }
 
@@ -2086,8 +2028,14 @@ input { font: inherit; }
 }
 .fb-report:active { opacity: 0.6; }
 
-/* The last line of the answers card's rules: what the rules add up to. */
-.xp-note { font-size: 12.5px; line-height: 1.5; color: var(--muted); padding: 11px 0 9px; }
 
 /* Kahoot's answer streak, under the result: how many in a row, and the bonus. */
 .game-streak { text-align: center; font-size: 13.5px; font-weight: 700; color: var(--gold); margin: -6px 0 10px; }
+
+/* How points are earned: a few short rows and one note. */
+.points-rules { margin: 12px 0 0; }
+.pr-row { display: flex; gap: 12px; padding: 10px 0; font-size: 14px; line-height: 1.5; border-bottom: 1px solid var(--line); }
+.pr-row b { color: var(--text); }
+.pr-mark { flex-shrink: 0; width: 22px; text-align: center; font-weight: 800; font-size: 16px; color: var(--muted); }
+.pr-mark.ok { color: var(--accent); }
+.pr-note { font-size: 13px; line-height: 1.55; color: var(--muted); margin: 10px 0 0; }

@@ -7,7 +7,7 @@
 
 import { readOwn, scoped, unlabelledStart } from "./account.js";
 import { cloudAvailable, cloudGet, cloudGetChunked, cloudSet, cloudSetChunked } from "./telegram.js";
-import { dayIndex, knowledgeFor, timeCredit, xpFor } from "./rating.js";
+import { answerPoints, dayIndex, tappedPoints } from "./rating.js";
 import { PACE_MAX_MS, PACE_MIN_MS } from "./scorecard.js";
 import { SUBJECTS, SYSTEMS } from "./taxonomy.js";
 
@@ -36,11 +36,9 @@ export const emptyState = {
   // Cardiovascular + Pharmacology is heart drugs and nothing else.
   systems: [],
   subjects: [],
-  xp: 0,
-  // The two running totals the rating is built from, in hundredths: net
-  // knowledge credit and the time credits of the right answers. See rating.js.
-  credit: 0,
-  fluent: 0,
+  // The rating: the running total of points, in hundredths so that answers
+  // add exactly. It never goes below 0. See rating.js.
+  points: 0,
   streak: 0,
   best: 0,
   lastDay: null,
@@ -97,13 +95,13 @@ function merge(raw) {
     // Tags can disappear when the bank is re-authored, so anything unknown is
     // dropped on read rather than left to filter a round down to nothing.
     merged.timing = cleanTiming(parsed.timing);
-    // Progress saved before the rating measured credit has none; it is
-    // estimated once from what was kept, and counted from there.
-    const know = Number.isInteger(parsed.credit) && Number.isInteger(parsed.fluent)
-      ? { credit: parsed.credit, fluent: parsed.fluent }
-      : legacyKnowledge(merged);
-    merged.credit = know.credit;
-    merged.fluent = know.fluent;
+    // Progress saved before points were kept has none; they are estimated once
+    // from what was kept, and counted exactly from there. Fields the app no
+    // longer keeps (XP, and the credit that briefly replaced it) are dropped.
+    merged.points = Number.isInteger(parsed.points) && parsed.points >= 0 ? parsed.points : legacyPoints(merged);
+    delete merged.xp;
+    delete merged.credit;
+    delete merged.fluent;
     merged.subjects = Array.isArray(parsed.subjects)
       ? [...new Set(parsed.subjects.filter((t) => typeof t === "string" && t))].slice(0, 24)
       : [];
@@ -117,13 +115,13 @@ function merge(raw) {
 }
 
 /**
- * Credit for progress made before credit was kept, from what was: how many
+ * Points for progress made before points were kept, from what was: how many
  * answers were right, how many were timed as tapped and as typed, and how
  * long they took on average. Every wrong answer is taken as a tapped one, and
  * the typed ones as being in the proportion the timings show. It is an
  * estimate, made once; the very next answer is counted exactly.
  */
-export function legacyKnowledge(state) {
+export function legacyPoints(state) {
   const answered = Math.max(0, Number(state.answered) || 0);
   const correct = Math.min(answered, Math.max(0, Number(state.correct) || 0));
   const t = cleanTiming(state.timing);
@@ -132,15 +130,11 @@ export function legacyKnowledge(state) {
   const rightGap = Math.round(correct * gapShare);
   const rightTap = correct - rightGap;
   const wrongTap = (answered - correct) * (1 - gapShare);
-  // The credit of an average answer: the average time, as the average question.
-  const typical = ([ms, n], type) => (n ? timeCredit({ type }, ms / n / 1000) : 0.6);
-  const fTap = typical(t.binary, "binary");
-  const fGap = typical(t.gap, "gap");
-  return {
-    credit: Math.round(100 * (rightTap * fTap + 1.5 * rightGap * fGap - wrongTap)),
-    // No more than one time credit for each timing that was kept.
-    fluent: Math.round(100 * (Math.min(rightTap, t.binary[1]) * fTap + Math.min(rightGap, t.gap[1]) * fGap)),
-  };
+  // A right answer at the average time, as the average answer; with no time
+  // kept, at ten seconds.
+  const avg = ([ms, n]) => (n ? ms / n / 1000 : 10);
+  const total = rightTap * tappedPoints(avg(t.binary)) + rightGap * 1.5 * tappedPoints(avg(t.gap)) - wrongTap * 8;
+  return Math.max(0, Math.round(100 * total));
 }
 
 // A blank first paint - this account has nothing on the phone yet - lasts
@@ -165,7 +159,7 @@ export function loadLocal() {
 }
 
 /**
- * Async read that prefers whichever copy has more XP. Cloud and local can
+ * Async read that prefers whichever copy has more answers. Cloud and local can
  * diverge if the user played offline on one device, and "most progress wins"
  * is the behaviour that never loses a streak.
  *
@@ -193,7 +187,7 @@ export async function loadRemote(localState) {
     // written, and the legacy key stops being updated after this version.
     for (const raw of [legacy, chunked]) {
       const candidate = merge(raw);
-      if (candidate && candidate.xp >= best.xp) best = candidate;
+      if (candidate && candidate.answered >= best.answered) best = candidate;
     }
     return best;
   } finally {
@@ -249,7 +243,8 @@ function cleanTiming(raw) {
 }
 
 /**
- * Record one answer. XP rewards correctness, and more for the harder format.
+ * Record one answer: what it earns goes into the points, and never takes the
+ * total below 0 (see rating.answerPoints).
  *
  * `elapsedMs` is how long the question was on screen before it was answered.
  * It is kept only for correct answers, and clamped: a question left open
@@ -268,12 +263,10 @@ export function record(state, question, wasCorrect, elapsedMs) {
     const kind = question.type === "gap" ? "gap" : "binary";
     timing[kind] = [timing[kind][0] + ms, timing[kind][1] + 1];
   }
-  const gain = knowledgeFor(question, wasCorrect, ms / 1000, c);
+  const gain = Math.round(100 * answerPoints(question, wasCorrect, ms / 1000, c));
   return {
     ...state,
-    xp: state.xp + xpFor(question, wasCorrect, ms / 1000),
-    credit: (state.credit || 0) + Math.round(gain.credit * 100),
-    fluent: (state.fluent || 0) + Math.round(gain.fluent * 100),
+    points: Math.max(0, (state.points || 0) + gain),
     answered: state.answered + 1,
     correct: state.correct + (wasCorrect ? 1 : 0),
     timing,
@@ -294,10 +287,8 @@ export function ratingInput(state) {
   return {
     streak: state.streak || 0,
     lastDay: dayIndex(state.lastDay),
-    xp: state.xp || 0,
     answered: state.answered || 0,
-    credit: state.credit || 0,
-    fluent: state.fluent || 0,
+    points: state.points || 0,
     timing: {
       binaryMs: avg(t.binary), binaryN: t.binary[1],
       gapMs: avg(t.gap), gapN: t.gap[1],

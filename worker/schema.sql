@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS players (
   username   TEXT,
   streak     INTEGER NOT NULL,
   last_day   INTEGER NOT NULL,
-  xp         INTEGER NOT NULL,
+  xp         INTEGER NOT NULL DEFAULT 0,
   answered   INTEGER NOT NULL,
   binary_ms  INTEGER NOT NULL,
   binary_n   INTEGER NOT NULL,
@@ -18,15 +18,8 @@ CREATE TABLE IF NOT EXISTS players (
   updated_at INTEGER NOT NULL,
   week       INTEGER NOT NULL DEFAULT 0,
   week_days  INTEGER NOT NULL DEFAULT 0,
-  base_xp    INTEGER NOT NULL DEFAULT 0,
-  base_bms   INTEGER NOT NULL DEFAULT 0,
-  base_bn    INTEGER NOT NULL DEFAULT 0,
-  base_gms   INTEGER NOT NULL DEFAULT 0,
-  base_gn    INTEGER NOT NULL DEFAULT 0,
   correct    INTEGER NOT NULL DEFAULT 0,
   topics     TEXT    NOT NULL DEFAULT '',
-  credit     INTEGER NOT NULL DEFAULT 0,
-  fluent     INTEGER NOT NULL DEFAULT 0,
-  base_credit INTEGER NOT NULL DEFAULT 0,
-  base_fluent INTEGER NOT NULL DEFAULT 0
+  points     INTEGER NOT NULL DEFAULT 0,
+  base_points INTEGER NOT NULL DEFAULT 0
 );

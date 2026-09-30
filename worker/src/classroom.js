@@ -5,7 +5,7 @@
 // hundred students a class.
 //
 // The teacher sees every student's numbers — points and global rank, day
-// streak, XP, accuracy, weak topics, average time — both all-time and since
+// streak, accuracy, weak topics, average time — both all-time and since
 // the student joined. "Since joining" is measured against a snapshot of the
 // student's numbers taken the moment the teacher approved them (members.base).
 // Students see the class ranking: the top ten by points and their own place.
@@ -16,7 +16,7 @@
 // it has asked to join a class.
 
 import { grade } from "../../src/lib/grade.js";
-import { points, rate, standings } from "../../src/lib/rating.js";
+import { rate, standings } from "../../src/lib/rating.js";
 import { NAME_MAX, clean } from "../../src/lib/scorecard.js";
 import { fromRow, serverToday } from "./board.js";
 
@@ -139,15 +139,14 @@ export function weakest(topics, n = 3) {
  * both came from the same formula; a base without this is from before the
  * rating changed, and its points are not comparable.
  */
-export const RATING_VERSION = 2;
+export const RATING_VERSION = 3;
 
 /** Totals behind a player row: what "since joining" subtracts from. */
 function totalsOf(p, today) {
   const s = p.score;
   return {
     v: RATING_VERSION,
-    points: points(rate(s, today).overall),
-    xp: s.xp,
+    points: rate(s, today).points,
     answered: s.answered,
     correct: p.correct,
     bms: s.timing.binaryMs * s.timing.binaryN,
@@ -166,9 +165,9 @@ function playerOf(r) {
     key: r.player,
     name: r.p_name || r.m_name,
     username: r.p_name ? r.p_username : r.m_username,
-    streak: r.streak ?? 0, last_day: r.last_day ?? 0, xp: r.xp ?? 0, answered: r.answered ?? 0,
+    streak: r.streak ?? 0, last_day: r.last_day ?? 0, answered: r.answered ?? 0,
     binary_ms: r.binary_ms ?? 0, binary_n: r.binary_n ?? 0, gap_ms: r.gap_ms ?? 0, gap_n: r.gap_n ?? 0,
-    correct: r.correct ?? 0, topics: r.topics ?? "", credit: r.credit ?? 0, fluent: r.fluent ?? 0,
+    correct: r.correct ?? 0, topics: r.topics ?? "", points: r.points ?? 0,
   });
 }
 
@@ -184,7 +183,6 @@ export function studentStats(p, base, today, rankOf) {
     points: now.points,
     rank: rankOf(now.points),
     streak: rating.raw.streak,
-    xp: now.xp,
     answered: now.answered,
     accuracy: accuracy(now.correct, now.answered),
     pace: rating.raw.pace,
@@ -205,7 +203,6 @@ export function studentStats(p, base, today, rankOf) {
     since = {
       points: base.v === RATING_VERSION ? now.points - base.points : null,
       streak: rating.raw.streak,
-      xp: Math.max(0, now.xp - base.xp),
       answered,
       accuracy: accuracy(correct, answered),
       pace: bn + gn ? Math.round(ms / (bn + gn)) : null,
@@ -217,7 +214,7 @@ export function studentStats(p, base, today, rankOf) {
 
 /** Everyone's points, sorted, for a player's place on the whole rating. */
 export function globalRanks(players, today) {
-  const all = [...players.values()].map((p) => points(rate(p.score, today).overall)).sort((a, b) => b - a);
+  const all = [...players.values()].map((p) => rate(p.score, today).points).sort((a, b) => b - a);
   const rankOf = (pts) => {
     let lo = 0;
     let hi = all.length;
@@ -319,7 +316,7 @@ async function approve(db, me, body, now) {
   const today = serverToday(now);
   const base = results[0]
     ? totalsOf(fromRow(results[0]), today)
-    : { v: RATING_VERSION, points: 0, xp: 0, answered: 0, correct: 0, bms: 0, bn: 0, gms: 0, gn: 0, topics: {} };
+    : { v: RATING_VERSION, points: 0, answered: 0, correct: 0, bms: 0, bn: 0, gms: 0, gn: 0, topics: {} };
   await db.prepare(`
     UPDATE members SET status = 'active', joined_at = ?3, base = ?4
     WHERE class_id = ?1 AND player = ?2`).bind(cls.id, m.player, Math.floor(now / 1000), JSON.stringify(base)).run();
@@ -369,8 +366,8 @@ async function view(db, me, body, now, players) {
 
   const rows = (await db.prepare(`
     SELECT m.player, m.status, m.name AS m_name, m.username AS m_username, m.requested_at, m.joined_at, m.base,
-           p.name AS p_name, p.username AS p_username, p.streak, p.last_day, p.xp, p.answered,
-           p.binary_ms, p.binary_n, p.gap_ms, p.gap_n, p.correct, p.topics, p.credit, p.fluent
+           p.name AS p_name, p.username AS p_username, p.streak, p.last_day, p.answered,
+           p.binary_ms, p.binary_n, p.gap_ms, p.gap_n, p.correct, p.topics, p.points
     FROM members m LEFT JOIN players p ON p.key = m.player
     WHERE m.class_id = ?1`).bind(cls.id).all()).results;
   const active = rows.filter((r) => r.status === "active");
@@ -421,7 +418,7 @@ async function view(db, me, body, now, players) {
   const s = standings("overall", field, { key: me.key, name: null, rating: rate(self.score, today) });
   const row = (x) => ({
     place: x.place, name: x.isMe ? null : x.name, username: x.isMe ? null : x.username,
-    isMe: Boolean(x.isMe), points: points(x.rating.overall),
+    isMe: Boolean(x.isMe), points: x.rating.points,
   });
   return ok({
     role: "student",
@@ -429,7 +426,7 @@ async function view(db, me, body, now, players) {
     class: studentInfo,
     ranking: {
       top: s.rows.slice(0, 10).map(row),
-      me: s.me ? { place: s.me.place, total: s.total, points: points(s.me.rating.overall) } : null,
+      me: s.me ? { place: s.me.place, total: s.total, points: s.me.rating.points } : null,
     },
     students: active.length,
     packages,

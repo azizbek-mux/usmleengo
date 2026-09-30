@@ -42,7 +42,7 @@ function title(pct) {
   return t("Worth another pass", "Yana bir bor takrorlang");
 }
 
-export default function Result({ log, label, xpEarned, streak, streakAdvanced, rank, saved = [], onSave, onAgain, onHome, classNote = null }) {
+export default function Result({ log, label, points, streak, streakAdvanced, rank, saved = [], onSave, onAgain, onHome, classNote = null }) {
   // A class round earns no XP, keeps no streak and is not shared: it only
   // says what happened to it (handed in, or practice).
   const inClass = classNote !== null;
@@ -92,8 +92,8 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
       ) : (
         <div className="reward-row">
           <div className="reward mint">
-            <div className="reward-v">+{xpEarned}</div>
-            <div className="reward-l">XP</div>
+            <div className="reward-v">{points < 0 ? "−" : "+"}{Math.abs(points)}</div>
+            <div className="reward-l">{t("Points", "Ball")}</div>
           </div>
           <div className="reward">
             <div className="reward-v">{correct}/{log.length}</div>

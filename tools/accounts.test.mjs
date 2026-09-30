@@ -62,7 +62,7 @@ let mine = await a.S.loadRemote(a.S.loadLocal());
 mine = play(a.S, mine, 27);
 a.S.save(mine);
 await sleep();
-check("it earned XP", mine.xp > 0, `${mine.xp}`);
+check("it earned points", mine.points > 0, `${mine.points}`);
 check("saved under its own key", phone.has("usmle_drops_v1:111"));
 check("and not under the shared one", !phone.has("usmle_drops_v1"));
 
@@ -72,10 +72,10 @@ console.log("\nthe second account opens the app on the same phone");
 const cloudOf111 = JSON.stringify([...clouds[111]]);
 const b = await open(222, "b");
 const bLocal = b.S.loadLocal();
-check("first paint is its own, empty", bLocal.xp === 0 && bLocal.answered === 0, `xp ${bLocal.xp}`);
+check("first paint is its own, empty", bLocal.points === 0 && bLocal.answered === 0, `points ${bLocal.points}`);
 const bSettled = await b.S.loadRemote(bLocal);
-check("after the cloud read it is still empty", bSettled.xp === 0 && bSettled.answered === 0, `xp ${bSettled.xp}`);
-check("the first account's local copy was left alone", JSON.parse(phone.get("usmle_drops_v1:111")).xp === mine.xp);
+check("after the cloud read it is still empty", bSettled.points === 0 && bSettled.answered === 0, `points ${bSettled.points}`);
+check("the first account's local copy was left alone", JSON.parse(phone.get("usmle_drops_v1:111")).points === mine.points);
 
 let theirs = play(b.S, bSettled, 2);
 b.S.save(theirs);
@@ -90,7 +90,7 @@ check("the second account's cloud copy holds its two answers, not 27",
 console.log("\nthe first account comes back");
 const a2 = await open(111, "a2");
 const back = await a2.S.loadRemote(a2.S.loadLocal());
-check("its progress is intact", back.xp === mine.xp && back.answered === 27, `xp ${back.xp} answered ${back.answered}`);
+check("its progress is intact", back.points === mine.points && back.answered === 27, `points ${back.points} answered ${back.answered}`);
 
 /* ── 4. progress written before keys carried an account ─────────────────── */
 
@@ -107,9 +107,9 @@ clouds[333].clear();
   await new Promise((resolve) => WebApp.CloudStorage.setItem("usmle_drops_v1", JSON.stringify(real), resolve));
   const c = await open(333, "c");
   const first = c.S.loadLocal();
-  check("the shared copy is not handed to an account that can ask the cloud", first.xp === 0, `xp ${first.xp}`);
+  check("the shared copy is not handed to an account that can ask the cloud", first.points === 0, `points ${first.points}`);
   const settled = await c.S.loadRemote(first);
-  check("the cloud copy is the account's own", settled.xp === real.xp && settled.answered === 12, `xp ${settled.xp}`);
+  check("the cloud copy is the account's own", settled.points === real.points && settled.answered === 12, `points ${settled.points}`);
 }
 
 /* ── 5. a blank start never writes over the cloud ────────────────────────── */

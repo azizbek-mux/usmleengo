@@ -1,10 +1,12 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { t } from "../lib/i18n.js";
-import { POINTS_MAX, WEIGHTS, XP, formatPace, medalFor, points, streakScore, xpFor } from "../lib/rating.js";
+import bank from "../data/bank.js";
+import { medalFor } from "../lib/rating.js";
 import { reportProblem } from "../lib/report.js";
 import { DEVELOPER, haptic, inTelegram, openTelegram } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
-import { Chevron, ChevronDown } from "./Icons.jsx";
+import { Chevron } from "./Icons.jsx";
+import PointsRules from "./PointsRules.jsx";
 import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
 import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
 
@@ -94,80 +96,57 @@ function LangPicker({ lang, onLang }) {
 }
 
 /**
- * The Me tab: the player's points and the one rank they give, the three
- * numbers the points are made of, and the app's settings. The three carry
- * their share of the points rather than places of their own — the rating is
- * points, and a day streak or an XP total is part of it, not a rank beside
- * it. The question type is not here: it shapes a round, so it sits by the
- * Start button.
+ * The Me tab: the player's points and the one rank they give, how points are
+ * earned, some numbers about their studying, and the app's settings. The
+ * numbers - the day streak, accuracy, the questions used - are there for
+ * interest and add nothing to the points, which come from answers alone. The
+ * question type is not here: it shapes a round, so it sits by the Start button.
  */
 export default function Me({ state, standings, onRefresh, onRating, onTheme, onReset, onHowTo, onLang }) {
   useLiveBoard(onRefresh);
 
-  const { me, places, input } = useMemo(() => ratingData(state, standings), [state, standings]);
+  const { me, places } = useMemo(() => ratingData(state, standings), [state, standings]);
   const r = me.rating;
-  const timing = input.timing;
-  const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
+  const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : null;
   const best = Math.max(state.best || 0, r.raw.streak);
-  // A right answer that took a minute, for the line that says what a slow one earns.
-  const slowXp = xpFor({ type: "binary" }, true, 60);
-  // What a run of days is worth, for the hint under the streak: read from the
-  // rating itself, so it can never disagree with it.
-  const streakPoints = (days) => Math.round(WEIGHTS.streak * POINTS_MAX * streakScore(days) / 100);
+  // Questions answered at least once, out of all of them.
+  const used = useMemo(() => bank.filter((q) => state.seen[q.id]).length, [state.seen, state.lang]);
+  const unused = Math.max(0, bank.length - used);
 
   // Resetting everything is two taps apart, so a stray one while scrolling
   // cannot wipe months of progress.
   const [arming, setArming] = useState(false);
   const [coffee, setCoffee] = useState(false);
-  // How answers are counted is one tap under the answers card, not a section of its own.
-  const [howOpen, setHowOpen] = useState(false);
   useEffect(() => {
     if (!arming) return undefined;
     const id = setTimeout(() => setArming(false), 4000);
     return () => clearTimeout(id);
   }, [arming]);
 
-  const cards = [
+  const stats = [
     {
       id: "streak",
       label: t("Day streak", "Kunlik intizom"),
       value: `${r.raw.streak}`,
       unit: t(r.raw.streak === 1 ? "day" : "days", "kun"),
       detail: t(`Best ever: ${best} ${best === 1 ? "day" : "days"}`, `Eng yaxshi natija: ${best} kun`),
-      hint: t(
-        `Study every day without missing. 30 days in a row is worth about ${streakPoints(30)} points. Miss two days and it starts again.`,
-        `Har kuni bir marta ham o'tkazmasdan shug'ullaning. Ketma-ket 30 kun taxminan ${streakPoints(30)} ball beradi. Ikki kun o'tkazsangiz, qaytadan boshlanadi.`,
-      ),
     },
     {
-      id: "mastery",
-      label: t("Right answers", "To'g'ri javoblar"),
-      value: `${accuracy}%`,
+      id: "accuracy",
+      label: t("Accuracy", "To'g'ri javoblar"),
+      value: accuracy === null ? "—" : `${accuracy}%`,
       unit: "",
       detail: t(
-        `${state.answered.toLocaleString()} answered · ${r.raw.xp.toLocaleString()} XP`,
-        `${state.answered.toLocaleString()} ta javob · ${r.raw.xp.toLocaleString()} XP`,
-      ),
-      hint: t(
-        "Answer questions correctly and quickly. Guessing and looking answers up earn almost nothing. Tap to see how.",
-        "Savollarga to'g'ri va tez javob bering. Taxmin qilish va qidirib topish deyarli ball bermaydi. Batafsil ko'rish uchun bosing.",
+        `${state.correct.toLocaleString()} of ${state.answered.toLocaleString()} answers right`,
+        `${state.answered.toLocaleString()} ta javobdan ${state.correct.toLocaleString()} tasi to'g'ri`,
       ),
     },
     {
-      id: "speed",
-      label: t("Average time", "O'rtacha vaqt"),
-      value: formatPace(r.raw.pace),
-      unit: "",
-      detail: r.raw.pace
-        ? [
-          timing.binaryN ? t(`Tapped ${formatPace(timing.binaryMs)}`, `Test ${formatPace(timing.binaryMs)}`) : null,
-          timing.gapN ? t(`typed ${formatPace(timing.gapMs)}`, `yozma ${formatPace(timing.gapMs)}`) : null,
-        ].filter(Boolean).join(" · ")
-        : t("Right answers only — reading the explanation isn't timed", "Faqat to'g'ri javoblar — izohni o'qish vaqti hisoblanmaydi"),
-      hint: t(
-        "How fast your right answers are. It counts only after you have answered enough questions correctly.",
-        "To'g'ri javoblaringiz qanchalik tez ekani. Yetarlicha savolga to'g'ri javob berganingizdan keyingina hisoblanadi.",
-      ),
+      id: "questions",
+      label: t("Questions", "Savollar"),
+      value: used.toLocaleString(),
+      unit: t("used", "ishlatilgan"),
+      detail: t(`${unused.toLocaleString()} not used yet`, `${unused.toLocaleString()} tasi hali ishlatilmagan`),
     },
   ];
 
@@ -180,7 +159,7 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
 
       <button className="perf-points" onClick={() => { haptic("light"); onRating(); }}>
         <span className="perf-points-l">{t("Your points", "Ballaringiz")}</span>
-        <span className="perf-points-v">{points(r.overall)}</span>
+        <span className="perf-points-v">{r.points.toLocaleString()}</span>
         <span className="perf-points-place">
           {placeOf(places?.overall)
             ? `${medalFor(places.overall.place) ? `${medalFor(places.overall.place)} ` : ""}${t("Your rank", "O'rningiz")} ${placeOf(places.overall)} ›`
@@ -188,85 +167,27 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
         </span>
       </button>
 
-      <div className="section-label">{t("What your points are made of", "Ballaringiz nimalardan iborat")}</div>
+      <details className="rating-how points-how">
+        <summary>{t("How points are counted", "Ballar qanday hisoblanadi")}</summary>
+        <PointsRules />
+      </details>
+
+      <div className="section-label">{t("Your numbers", "Sizning ko'rsatkichlaringiz")}</div>
       <p className="perf-intro">
-        {t(
-          "Your points (1000 at most) add up from three parts. Each has its own limit, the end of its bar.",
-          "Ballaringiz (ko'pi bilan 1000) uch qismdan yig'iladi. Har birining o'z chegarasi bor — chiziqning oxiri.",
-        )}
+        {t("Just for you to see. They don't add to your points.", "Faqat ma'lumot uchun. Ular ballingizga qo'shilmaydi.")}
       </p>
       <div className="perf-list">
-        {cards.map((c) => {
-          // What this part has earned, and the most it can: the bar shows both.
-          const max = Math.round(WEIGHTS[c.id] * POINTS_MAX);
-          const earned = Math.round(r[c.id] * WEIGHTS[c.id] * (POINTS_MAX / 100));
-          const expandable = c.id === "mastery";
-          const body = (
-            <>
-              <div className="perf-top">
-                <div className="perf-main">
-                  <span className="perf-label">{c.label}</span>
-                  <span className="perf-value">
-                    {c.value}{c.unit && <small> {c.unit}</small>}
-                  </span>
-                  <span className="perf-detail">{c.detail}</span>
-                </div>
-                <span className="perf-earn">
-                  <b>{earned}</b>
-                  <small>{t("points", "ball")}</small>
-                </span>
-                {expandable && <span className={`cat-chevron${howOpen ? " open" : ""}`}><ChevronDown /></span>}
-              </div>
-              <div className="perf-bar" role="img" aria-label={t(`${earned} of ${max} points`, `${max} balldan ${earned}`)}>
-                <span style={{ width: `${Math.min(100, (earned / max) * 100)}%` }} />
-              </div>
-              <div className="perf-scale" aria-hidden="true"><span>0</span><span>{max}</span></div>
-              <div className="perf-hint">{c.hint}</div>
-            </>
-          );
-          if (!expandable) return <div key={c.id} className="perf-card">{body}</div>;
-          return (
-            <React.Fragment key={c.id}>
-              <button
-                className="perf-card perf-tap"
-                aria-expanded={howOpen}
-                aria-label={t("How answers are counted", "Javoblar qanday hisoblanadi")}
-                onClick={() => { haptic("light"); setHowOpen(!howOpen); }}
-              >
-                {body}
-              </button>
-              {howOpen && (
-                <div className="xp-rules">
-                  <div className="xp-rules-t">{t("How your answers count", "Javoblaringiz qanday hisoblanadi")}</div>
-                  <div className="xp-rule">
-                    <span className="xp-amt ok">✓</span>
-                    <span>{t(<><b>Right and quick</b> — full points.</>, <><b>To'g'ri va tez</b> — to'liq ball.</>)}</span>
-                  </div>
-                  <div className="xp-rule">
-                    <span className="xp-amt ok">~</span>
-                    <span>{t(<><b>Right but slow</b> — fewer points. A long wait looks like looking it up.</>, <><b>To'g'ri, lekin uzoq o'ylangan</b> — kamroq ball. Uzoq kutish qidirib topishga o'xshaydi.</>)}</span>
-                  </div>
-                  <div className="xp-rule">
-                    <span className="xp-amt">✗</span>
-                    <span>{t(<><b>Wrong tap</b> — takes points back, so guessing doesn't pay.</>, <><b>Noto'g'ri bosish</b> — ballni kamaytiradi, shuning uchun taxmin qilishdan foyda yo'q.</>)}</span>
-                  </div>
-                  <div className="xp-rule">
-                    <span className="xp-amt">½</span>
-                    <span>{t(<><b>The same question again</b> — half as much each time.</>, <><b>Bir xil savol qayta chiqsa</b> — har safar yarmiga kam.</>)}</span>
-                  </div>
-                  <div className="xp-note">
-                    {t("The clock starts when the question appears and stops when you answer. Reading the explanation is never counted.",
-                      "Vaqt savol chiqqanda boshlanadi va javob berganingizda to'xtaydi. Izohni o'qish vaqti hech qachon hisoblanmaydi.")}
-                  </div>
-                  <div className="xp-note">
-                    {t(`XP is a separate counter of how much you have done: right and quick +${XP.binaryCorrect} (typed +${XP.gapCorrect}), right but slow +${slowXp}, wrong +${XP.wrong}. It is not part of your points.`,
-                      `XP — alohida hisoblagich, qancha shug'ullanganingizni ko'rsatadi: to'g'ri va tez +${XP.binaryCorrect} (yozma +${XP.gapCorrect}), to'g'ri lekin sekin +${slowXp}, noto'g'ri +${XP.wrong}. U ballaringizga kirmaydi.`)}
-                  </div>
-                </div>
-              )}
-            </React.Fragment>
-          );
-        })}
+        {stats.map((c) => (
+          <div key={c.id} className="perf-card">
+            <div className="perf-main">
+              <span className="perf-label">{c.label}</span>
+              <span className="perf-value">
+                {c.value}{c.unit && <small> {c.unit}</small>}
+              </span>
+              <span className="perf-detail">{c.detail}</span>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="section-label">{t("Settings", "Sozlamalar")}</div>
@@ -285,7 +206,7 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
             <span className="set-row-n">
               {arming
                 ? t("Tap again to confirm. It cannot be undone.", "Tasdiqlash uchun yana bosing. Buni qaytarib bo'lmaydi.")
-                : t("XP, streak, question history and the flashcard deck", "XP, kunlik intizom, savollar tarixi va kartochkalar")}
+                : t("Points, streak, question history and the flashcard deck", "Ballar, kunlik intizom, savollar tarixi va kartochkalar")}
             </span>
           </span>
           <button

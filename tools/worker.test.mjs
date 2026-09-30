@@ -52,16 +52,12 @@ const TODAY = B.serverToday(NOW);
 const sign = (user, { token = TOKEN, authDate = Math.floor(NOW / 1000) - 60, extra = {} } = {}) =>
   T.signInitData({ user: JSON.stringify(user), auth_date: String(authDate), query_id: "AAE1", ...extra }, token);
 
-// A score as the app sends it. Credit and fluency (see rating.js) follow XP,
-// so the players in these tests differ on every board, and are always within
-// what the answers behind them allow.
-const score = (patch = {}) => {
-  const s = {
-    streak: 5, lastDay: TODAY, xp: 800, answered: 90,
-    timing: { binaryMs: 5200, binaryN: 40, gapMs: 11000, gapN: 20 }, ...patch,
-  };
-  return { credit: Math.round(s.xp * 0.8), fluent: ((s.timing.binaryN || 0) + (s.timing.gapN || 0)) * 70, ...s };
-};
+// A score as the app sends it. Points (hundredths, see rating.js) are given
+// per player, so that the players in these tests differ on the board.
+const score = (patch = {}) => ({
+  streak: 5, lastDay: TODAY, answered: 90, points: 80000,
+  timing: { binaryMs: 5200, binaryN: 40, gapMs: 11000, gapN: 20 }, ...patch,
+});
 const sync = (env, cache, body) =>
   W.handleSync(new Request("https://rating.test/sync", { method: "POST", body: JSON.stringify(body) }), env, cache, NOW);
 
@@ -88,29 +84,23 @@ check("rubbish is refused", (await T.verifyInitData("not init data", TOKEN, NOW)
 /* ── possible scores ───────────────────────────────────────────────────── */
 console.log("\npossible scores");
 check("an ordinary score passes", S.checkScore(score(), TODAY).ok);
-check("someone who never studied passes", S.checkScore(score({ streak: 0, lastDay: null, xp: 0, answered: 0,
+check("someone who never studied passes", S.checkScore(score({ streak: 0, lastDay: null, points: 0, answered: 0,
   timing: {} }), TODAY).ok);
 check("a streak older than the app does not", !S.checkScore(score({ streak: 500 }), TODAY).ok);
-check("more XP than the answers allow does not", !S.checkScore(score({ xp: 90 * 15 + 1 }), TODAY).ok);
+check("more points than the answers allow does not", !S.checkScore(score({ points: 3000 * 90 + 1 }), TODAY).ok && S.checkScore(score({ points: 3000 * 90 }), TODAY).ok);
 check("more timings than answers does not", !S.checkScore(score({ answered: 50 }), TODAY).ok);
 check("an impossible pace does not", !S.checkScore(score({ timing: { binaryMs: 100, binaryN: 5, gapMs: 0, gapN: 0 } }), TODAY).ok);
-check("fractions and negatives do not", !S.checkScore(score({ xp: 10.5 }), TODAY).ok && !S.checkScore(score({ xp: -1 }), TODAY).ok);
-check("text where a number belongs does not", !S.checkScore(score({ xp: "800" }), TODAY).ok);
-check("credit and fluency come through as they were sent",
-  S.checkScore(score({ credit: 4200, fluent: 3100 }), TODAY).score.credit === 4200 && S.checkScore(score({ credit: 4200, fluent: 3100 }), TODAY).score.fluent === 3100);
-check("credit can be below zero: someone who answers worse than chance", S.checkScore(score({ credit: -900 }), TODAY).ok);
-check("but not below a wrong tap on every answer", !S.checkScore(score({ credit: -100 * 90 - 1 }), TODAY).ok);
-check("nor above a quick typed answer every time", !S.checkScore(score({ credit: 150 * 90 + 1 }), TODAY).ok);
-check("nor fractions", !S.checkScore(score({ credit: 10.5 }), TODAY).ok && !S.checkScore(score({ fluent: 10.5 }), TODAY).ok);
-check("fluency cannot exceed one full credit for each timed answer", !S.checkScore(score({ fluent: 100 * 60 + 1 }), TODAY).ok && S.checkScore(score({ fluent: 100 * 60 }), TODAY).ok);
-check("one without the other does not pass", !S.checkScore({ ...score(), credit: 100, fluent: undefined }, TODAY).ok);
+check("fractions and negatives do not", !S.checkScore(score({ points: 10.5 }), TODAY).ok && !S.checkScore(score({ points: -1 }), TODAY).ok);
+check("text where a number belongs does not", !S.checkScore(score({ points: "800" }), TODAY).ok);
+check("points come through as they were sent", S.checkScore(score({ points: 4200 }), TODAY).score.points === 4200);
 {
   const old = score();
-  delete old.credit; delete old.fluent;
+  delete old.points;
   const c = S.checkScore(old, TODAY);
-  check("an app from before credit sends neither, and passes with none", c.ok && c.score.credit === null && c.score.fluent === null);
+  check("an app from before points sends none, and passes with none", c.ok && c.score.points === null);
+  const older = S.checkScore({ ...score(), xp: 999999, credit: 5, fluent: 5 }, TODAY);
+  check("what an older app sent - XP, credit - is ignored", older.ok && !("xp" in older.score) && !("credit" in older.score) && older.score.points === 80000);
 }
-
 /* ── syncing ───────────────────────────────────────────────────────────── */
 console.log("\nsyncing");
 const d1 = mockD1();
@@ -124,9 +114,9 @@ check("and ranked", r.body.ranked === true && r.body.me.overall.place === 1 && r
 const writesBefore = d1.stats.writes;
 await sync(env, cache, { initData: good, score: score() });
 check("sending the same numbers again writes nothing", d1.stats.writes === writesBefore);
-await sync(env, cache, { initData: good, score: score({ xp: 815, answered: 91 }) });
+await sync(env, cache, { initData: good, score: score({ points: 81500, answered: 91 }) });
 check("new numbers are written", d1.stats.writes === writesBefore + 1 &&
-  d1.db.prepare("SELECT xp FROM players").get().xp === 815, `writes +${d1.stats.writes - writesBefore}, xp ${d1.db.prepare("SELECT xp FROM players").get().xp}`);
+  d1.db.prepare("SELECT points FROM players").get().points === 81500, `writes +${d1.stats.writes - writesBefore}, points ${d1.db.prepare("SELECT points FROM players").get().points}`);
 const stored = JSON.stringify(d1.db.prepare("SELECT * FROM players").all());
 check("the raw Telegram id is never stored", !stored.includes("70001"));
 check("the name and username are", stored.includes("Azizbek Muxtorov") && stored.includes("azizbek_muxtorov"));
@@ -134,15 +124,23 @@ check("the name and username are", stored.includes("Azizbek Muxtorov") && stored
 // Eleven more players, each better than the last.
 for (let i = 1; i <= 11; i++) {
   const u = { id: 80000 + i, first_name: `Player${i}`, ...(i % 2 ? { username: `player_${i}` } : {}) };
-  await sync(env, cache, { initData: await sign(u), score: score({ streak: 5 + i, xp: 800 + i * 50, answered: 100 + i * 10 }) });
+  await sync(env, cache, { initData: await sign(u), score: score({ streak: 5 + i, points: 80000 + i * 5000, answered: 100 + i * 10 }) });
 }
-// And one who is last on every board at once: fewest days, least XP, slowest.
+// And one who is last on every board at once: fewest days, fewest points.
 await sync(env, cache, { initData: await sign({ id: 89999, first_name: "Laggard", username: "laggard_md" }),
-  score: score({ streak: 1, xp: 100, answered: 100, timing: { binaryMs: 20000, binaryN: 10, gapMs: 0, gapN: 0 } }) });
+  score: score({ streak: 1, points: 10000, answered: 100, timing: { binaryMs: 20000, binaryN: 10, gapMs: 0, gapN: 0 } }) });
+// Each then earns a little more, in proportion, so that this week's board is
+// not all ties; the last one earns the least.
+for (let i = 1; i <= 11; i++) {
+  const u = { id: 80000 + i, first_name: `Player${i}`, ...(i % 2 ? { username: `player_${i}` } : {}) };
+  await sync(env, cache, { initData: await sign(u), score: score({ streak: 5 + i, points: 80000 + i * 5000 + i * 300, answered: 100 + i * 10 }) });
+}
+await sync(env, cache, { initData: await sign({ id: 89999, first_name: "Laggard", username: "laggard_md" }),
+  score: score({ streak: 1, points: 10050, answered: 100, timing: { binaryMs: 20000, binaryN: 10, gapMs: 0, gapN: 0 } }) });
 check("everyone who opens the app is on the board", count() === 13);
 
 cache.clear();
-r = await sync(env, cache, { initData: good, score: score({ xp: 815, answered: 91 }) });
+r = await sync(env, cache, { initData: good, score: score({ points: 81500, answered: 91 }) });
 check("each person sees their place out of everyone", r.body.me.overall.total === 13 && r.body.me.overall.place === 12,
   JSON.stringify(r.body.me.overall));
 check("only ten are listed", r.body.top.overall.length === 10);
@@ -164,21 +162,21 @@ check("the viewer's own row, when listed, carries no name from the server",
   r.body.top.overall.filter((x) => x.isMe).every((x) => x.name === null));
 
 // The viewer is ranked on the score they just sent, not the stored one.
-r = await sync(env, cache, { initData: good, score: score({ streak: 30, xp: 9000, answered: 900 }) });
+r = await sync(env, cache, { initData: good, score: score({ streak: 30, points: 900000, answered: 900 }) });
 check("a player's own place moves the moment they send a better score", r.body.me.overall.place === 1);
 check("and they appear in the top ten, marked as themselves", r.body.top.overall[0].isMe === true);
 
 /* ── the web, and bad requests ─────────────────────────────────────────── */
 console.log("\nthe web, and bad requests");
 const before = count();
-r = await sync(env, cache, { score: score({ streak: 9, xp: 1200, answered: 150 }) });
+r = await sync(env, cache, { score: score({ streak: 9, points: 120000, answered: 150 }) });
 check("a browser visitor is shown where they would be", r.body.ranked === false && Number.isInteger(r.body.me.overall.place));
 check("but never stored", count() === before && r.body.notStored === "not opened from Telegram");
 r = await sync(env, cache, { initData: tampered, score: score() });
 check("forged Telegram data is not stored", count() === before && r.body.notStored === "Telegram data did not verify");
 check("but still gets the board rather than an error", r.status === 200 && r.body.top.overall.length === 10);
-r = await sync(env, cache, { initData: await sign({ id: 90001, first_name: "Cheat" }), score: score({ xp: 999999 }) });
-check("an impossible score from a real player is not stored", count() === before && /XP/.test(r.body.notStored));
+r = await sync(env, cache, { initData: await sign({ id: 90001, first_name: "Cheat" }), score: score({ points: 9999999 }) });
+check("an impossible score from a real player is not stored", count() === before && /points/.test(r.body.notStored));
 r = await sync({ DB: d1 }, cache, { initData: good, score: score() });
 check("a server missing its token says so", r.body.notStored === "the server has no BOT_TOKEN");
 r = await sync(env, cache, {});
@@ -224,62 +222,59 @@ console.log("\nthis week");
   const at = (day, hour = 12) => (day * 86400 + hour * 3600) * 1000;
   check("2026-09-28 is a Monday, the first day of its week", R.weekdayOf(MON) === 0 && R.weekOf(MON - 1) === R.weekOf(MON) - 1);
   const who = (key, name) => ({ key, name, username: null });
-  const sc = (lastDay, xp, binaryMs, binaryN, credit = 0, fluent = 0) => ({
-    streak: 3, lastDay, xp, answered: binaryN, timing: { binaryMs, binaryN, gapMs: 0, gapN: 0 }, credit, fluent,
+  const sc = (lastDay, points, binaryMs, binaryN) => ({
+    streak: 3, lastDay, answered: binaryN, timing: { binaryMs, binaryN, gapMs: 0, gapN: 0 }, points,
   });
 
   // Aziz played last week, then Monday and Wednesday this week.
-  await B.savePlayer(db, who("a", "Aziz"), sc(MON - 1, 1000, 5000, 40), at(MON - 1));
-  const mon = await B.savePlayer(db, who("a", "Aziz"), sc(MON, 1100, 5000, 50), at(MON));
-  check("a new week starts from where the last one ended", mon.base_xp === 1000 && mon.base_bn === 40);
-  const wed = await B.savePlayer(db, who("a", "Aziz"), sc(MON + 2, 1300, 4800, 60), at(MON + 2));
-  check("and keeps that start all week", wed.base_xp === 1000);
+  await B.savePlayer(db, who("a", "Aziz"), sc(MON - 1, 100000, 5000, 40), at(MON - 1));
+  const mon = await B.savePlayer(db, who("a", "Aziz"), sc(MON, 110000, 5000, 50), at(MON));
+  check("a new week starts from where the last one ended", mon.base_points === 100000, String(mon.base_points));
+  const wed = await B.savePlayer(db, who("a", "Aziz"), sc(MON + 2, 130000, 4800, 60), at(MON + 2));
+  check("and keeps that start all week", wed.base_points === 100000);
   check("each day studied is counted", R.daysIn(wed.week_days) === 2);
-  // Bek played only last week. Dilnoza is new this week.
-  await B.savePlayer(db, who("b", "Bek"), sc(MON - 2, 5000, 4000, 300), at(MON - 2));
-  await B.savePlayer(db, who("d", "Dilnoza"), sc(MON + 2, 50, 3000, 5), at(MON + 2));
+  // Bek played only last week. Dilnoza is new this week, and earns a little.
+  await B.savePlayer(db, who("b", "Bek"), sc(MON - 2, 500000, 4000, 300), at(MON - 2));
+  await B.savePlayer(db, who("d", "Dilnoza"), sc(MON + 2, 5000, 3000, 5), at(MON + 2));
+  await B.savePlayer(db, who("d", "Dilnoza"), sc(MON + 2, 10000, 3000, 9), at(MON + 2, 18));
 
   const snap = B.snapshotCache();
-  const players = await snap.get(db, at(MON + 2));
+  const players = await snap.get(db, at(MON + 2, 18));
   const ws = B.weekScore(players.get("a"), R.weekOf(MON), MON + 2);
-  check("the week's XP is only this week's", ws.xp === 300);
-  check("its time is this week's answers alone", ws.timing.binaryN === 20 && ws.timing.binaryMs === (4800 * 60 - 5000 * 40) / 20,
-    JSON.stringify(ws.timing));
+  check("the week's points are only this week's", ws.points === 30000, JSON.stringify(ws));
   check("and days studied stand in for the streak", ws.streak === 2);
 
   const wk = B.weekBoard(players, { key: "b" }, MON + 2);
   check("the week ranks only those who studied in it", wk.top.map((r) => r.name).join() === "Aziz,Dilnoza" && wk.me.total === 2,
     JSON.stringify(wk.top.map((r) => [r.name, r.points])));
-  check("by points", wk.top[0].points > wk.top[1].points);
+  check("by points: 300 against 100 (a new player's first points are all this week's)", wk.top[0].points === 300 && wk.top[1].points === 100, JSON.stringify(wk.top.map((r) => r.points)));
   check("someone idle this week has no place in it", wk.me.place === null);
   check("the week ends next Monday at midnight UTC", wk.endsAt === Date.parse("2026-10-05T00:00:00Z"));
   const mine = B.weekBoard(players, { key: "d" }, MON + 2);
-  check("a player sees their own week: place, points, numbers", mine.me.place === 2 && mine.me.points > 0 && mine.me.raw.xp === 50);
+  check("a player sees their own week: place, points, days", mine.me.place === 2 && mine.me.points === 100 && mine.me.raw.streak === 1);
   check("and not their own name from the server", mine.top.find((r) => r.isMe).name === null);
 
-  // Credit is a week's difference too, and it can fall.
-  await B.savePlayer(db, who("c", "Cem"), sc(MON - 1, 100, 5000, 10, 4000, 700), at(MON - 1));
-  const cMon = await B.savePlayer(db, who("c", "Cem"), sc(MON, 200, 5000, 20, 9000, 1500), at(MON));
-  check("a new week's credit starts from where the last one ended", cMon.base_credit === 4000 && cMon.base_fluent === 700, JSON.stringify([cMon.base_credit, cMon.base_fluent]));
-  const cWed = await B.savePlayer(db, who("c", "Cem"), sc(MON + 2, 260, 5000, 26, 12000, 2100), at(MON + 2));
-  check("and keeps that start all week", cWed.base_credit === 4000 && cWed.credit === 12000 && cWed.fluent === 2100);
-  const snap2 = await B.snapshotCache().get(db, at(MON + 2));
-  const cWeek = B.weekScore(snap2.get("c"), R.weekOf(MON), MON + 2);
-  check("the week's credit is only this week's", cWeek.credit === 8000 && cWeek.fluent === 1400, JSON.stringify([cWeek.credit, cWeek.fluent]));
-  await B.savePlayer(db, who("c", "Cem"), { ...sc(MON + 2, 300, 5000, 30), credit: null, fluent: null }, at(MON + 2, 20));
+  // A week's points can fall as well as rise, and are read as nothing below zero.
+  await B.savePlayer(db, who("c", "Cem"), sc(MON - 1, 4000, 5000, 10), at(MON - 1));
+  const cMon = await B.savePlayer(db, who("c", "Cem"), sc(MON, 9000, 5000, 20), at(MON));
+  check("a new week's points start from where the last one ended", cMon.base_points === 4000);
+  const cWed = await B.savePlayer(db, who("c", "Cem"), sc(MON + 2, 12000, 5000, 26), at(MON + 2));
+  check("and keep that start all week", cWed.base_points === 4000 && cWed.points === 12000);
+  const cWeek = B.weekScore((await B.snapshotCache().get(db, at(MON + 2))).get("c"), R.weekOf(MON), MON + 2);
+  check("the week's points are the difference", cWeek.points === 8000);
+  await B.savePlayer(db, who("c", "Cem"), { ...sc(MON + 2, 0, 5000, 30), points: null }, at(MON + 2, 20));
   const cOld = (await B.snapshotCache().get(db, at(MON + 2, 20) + B.SNAPSHOT_MS)).get("c");
-  check("an app that sends no credit leaves what is stored alone", cOld.score.credit === 12000 && cOld.score.fluent === 2100 && cOld.score.xp === 300,
-    JSON.stringify(cOld.score));
-  // Elyor had no credit at all until midweek; his whole history must not become one week's work.
-  await B.savePlayer(db, who("e", "Elyor"), sc(MON + 1, 50, 5000, 5), at(MON + 1));
-  const eFirst = await B.savePlayer(db, who("e", "Elyor"), sc(MON + 1, 80, 5000, 8, 30000, 5000), at(MON + 1, 15));
-  check("the first credit a player sends starts the week level", eFirst.base_credit === 30000 && eFirst.base_fluent === 5000, JSON.stringify([eFirst.base_credit, eFirst.base_fluent]));
-  const eLater = await B.savePlayer(db, who("e", "Elyor"), sc(MON + 2, 120, 5000, 12, 30600, 5300), at(MON + 2));
-  check("and what he does after counts", eLater.credit - eLater.base_credit === 600);
+  check("an app that sends no points leaves what is stored alone", cOld.score.points === 12000 && cOld.score.answered === 30, JSON.stringify(cOld.score));
+  // Elyor had no points at all until midweek; his whole history must not become one week's work.
+  await B.savePlayer(db, who("e", "Elyor"), sc(MON + 1, 0, 5000, 5), at(MON + 1));
+  const eFirst = await B.savePlayer(db, who("e", "Elyor"), sc(MON + 1, 30000, 5000, 8), at(MON + 1, 15));
+  check("the first points a player sends start the week level", eFirst.base_points === 30000, String(eFirst.base_points));
+  const eLater = await B.savePlayer(db, who("e", "Elyor"), sc(MON + 2, 30600, 5000, 12), at(MON + 2));
+  check("and what he does after counts", eLater.points - eLater.base_points === 600);
   await B.snapshotCache().get(db, at(MON + 2));
 
-  const next = await B.savePlayer(db, who("a", "Aziz"), sc(MON + 7, 1400, 4800, 61), at(MON + 7));
-  check("next Monday the week starts over", next.base_xp === 1300 && R.daysIn(next.week_days) === 1);
+  const next = await B.savePlayer(db, who("a", "Aziz"), sc(MON + 7, 140000, 4800, 61), at(MON + 7));
+  check("next Monday the week starts over", next.base_points === 130000 && R.daysIn(next.week_days) === 1);
   const later = await snap.get(db, at(MON + 7) + B.SNAPSHOT_MS);
   check("and last week's players drop off it",
     B.weekBoard(later, null, MON + 7).top.map((r) => r.name).join() === "Aziz");

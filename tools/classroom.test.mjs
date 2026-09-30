@@ -52,7 +52,7 @@ for (const [k, u] of Object.entries(people)) {
   signed[k] = await T.signInitData({ user: JSON.stringify(u), auth_date: String(Math.floor(NOW / 1000) - 60) }, TOKEN);
 }
 const score = (patch = {}) => ({
-  streak: 5, lastDay: TODAY, xp: 800, answered: 90,
+  streak: 5, lastDay: TODAY, points: 80000, answered: 90,
   timing: { binaryMs: 5000, binaryN: 50, gapMs: 0, gapN: 0 }, ...patch,
 });
 const call = (who, action, body = {}, now = NOW) =>
@@ -82,7 +82,7 @@ check("joining carries their numbers to the server", d1.db.prepare("SELECT corre
 check("asking twice changes nothing", (await call("laylo", "join", { code: cls.code })).body.status === "pending");
 r = await call("laylo", "view", { classId: cls.id });
 check("while waiting they see only that they are waiting", r.body.status === "pending" && !r.body.ranking);
-await call("bek", "join", { code: cls.code, score: score({ xp: 300, answered: 40 }), detail: { correct: 30 } });
+await call("bek", "join", { code: cls.code, score: score({ points: 30000, answered: 40 }), detail: { correct: 30 } });
 r = await call("teacher", "view", { classId: cls.id });
 check("the teacher sees the requests", r.body.role === "teacher" && r.body.requests.map((x) => x.name).sort().join() === "Bek,Laylo");
 check("and no students yet", r.body.students.length === 0);
@@ -102,17 +102,17 @@ check("and can ask again", (await call("bek", "join", { code: cls.code })).body.
 console.log("\nwhat the teacher sees");
 // Laylo studies after joining: 20 more answers, 18 right, all renal; faster.
 await call("laylo", "mine", {
-  score: score({ xp: 990, answered: 110, timing: { binaryMs: 4500, binaryN: 70, gapMs: 0, gapN: 0 } }),
+  score: score({ points: 99000, answered: 110, timing: { binaryMs: 4500, binaryN: 70, gapMs: 0, gapN: 0 } }),
   detail: { correct: 78, topics: { renal: [28, 12], pharm: [30, 5] } },
 });
 cache.clear();
 r = await call("teacher", "view", { classId: cls.id });
 const st = r.body.students[0];
 check("each student with their name", st.name === "Laylo");
-check("all-time: points, rank, streak, XP, answered", st.all.points > 0 && st.all.rank >= 1 && st.all.streak === 5 && st.all.xp === 990 && st.all.answered === 110);
+check("all-time: points, rank, streak, answered", st.all.points === 990 && st.all.rank >= 1 && st.all.streak === 5 && st.all.answered === 110 && !("xp" in st.all), JSON.stringify(st.all));
 check("accuracy", st.all.accuracy === Math.round((78 / 110) * 100));
 check("weak topics, weakest first", st.all.weak[0].tag === "renal" && st.all.weak[0].pct === 70, JSON.stringify(st.all.weak));
-check("since joining: only what came after", st.since.xp === 190 && st.since.answered === 20, JSON.stringify(st.since));
+check("since joining: only what came after - 190 points, 20 answers", st.since.points === 190 && st.since.answered === 20 && !("xp" in st.since), JSON.stringify(st.since));
 check("with its own accuracy", st.since.accuracy === 90);
 check("its own weak topics", st.since.weak[0]?.tag === "renal" && st.since.weak[0].pct === 90 && st.since.weak.length === 1,
   JSON.stringify(st.since.weak));
@@ -128,7 +128,7 @@ check("points since joining are today's less the joining base's", typeof st.sinc
   cache.clear();
   const legacy = (await call("teacher", "view", { classId: cls.id })).body.students[0];
   check("a base from before the rating changed gives no points figure, not a wrong one",
-    legacy.since.points === null && legacy.since.xp === 190, JSON.stringify(legacy.since));
+    legacy.since.points === null && legacy.since.answered === 20, JSON.stringify(legacy.since));
   d1.db.prepare("UPDATE members SET base = ?1 WHERE player = ?2 AND class_id = ?3").run(baseJson, lay, cls.id);
   cache.clear();
 }

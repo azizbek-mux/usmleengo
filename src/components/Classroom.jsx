@@ -285,8 +285,8 @@ function ClassHome({ state, invite, onOpen, onCreate }) {
           <button className="btn btn-primary game-join-btn" disabled={!/^\d{6}$/.test(code) || busy}>{t("Join", "Qo'shilish")}</button>
         </div>
         <div className="class-note">
-          {t("Your teacher will see your points, day streak, XP, accuracy, weak topics and average time — never your saved questions. You can leave any time.",
-            "O'qituvchingiz ballaringiz, kunlik intizomingiz, XP, to'g'ri javoblar foizi, yaxshi o'zlashtirilmagan mavzularingiz va o'rtacha vaqtingizni ko'radi — saqlangan savollaringizni hech qachon ko'rmaydi. Istalgan vaqtda chiqib ketishingiz mumkin.")}
+          {t("Your teacher will see your points, day streak, accuracy, weak topics and average time — never your saved questions. You can leave any time.",
+            "O'qituvchingiz ballaringiz, kunlik intizomingiz, to'g'ri javoblar foizi, zaif mavzularingiz va o'rtacha vaqtingizni ko'radi — saqlangan savollaringizni hech qachon ko'rmaydi. Istalgan vaqtda chiqib ketishingiz mumkin.")}
         </div>
         {note && <div className={note.ok ? "class-ok" : "game-warn"}>{note.text}</div>}
       </form>
@@ -370,8 +370,8 @@ function CreateClass({ onBack, onCreated }) {
         />
       </label>
       <div className="class-note">
-        {t("Students join with a code or an invite link, and you let each one in. You’ll see their points, day streak, XP, accuracy, weak topics and average time — all-time and since they joined.",
-          "Talabalar kod yoki taklif havolasi orqali qo'shiladi, har birini siz tasdiqlaysiz. Ularning ballari, kunlik intizomi, XP, to'g'ri javoblar foizi, yaxshi o'zlashtirilmagan mavzulari va o'rtacha vaqtini ko'rasiz — barcha vaqt uchun va qo'shilgandan beri.")}
+        {t("Students join with a code or an invite link, and you let each one in. You’ll see their points, day streak, accuracy, weak topics and average time — all-time and since they joined.",
+          "Talabalar kod yoki taklif havolasi orqali qo'shiladi, har birini siz tasdiqlaysiz. Ularning ballari, kunlik intizomi, to'g'ri javoblar foizi, zaif mavzulari va o'rtacha vaqtini ko'rasiz — barcha vaqt uchun va qo'shilgandan beri.")}
       </div>
       {error && <div className="game-warn">{error}</div>}
       <div className="home-cta">
@@ -496,9 +496,9 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
                   <span className="board-user">
                     {n
                       ? period === "since"
-                        ? t(`+${n.xp.toLocaleString()} XP · ${n.answered} answered · ${pct(n.accuracy)} · ${formatPace(n.pace)}`,
-                          `+${n.xp.toLocaleString()} XP · ${n.answered} ta javob · ${pct(n.accuracy)} · ${formatPace(n.pace)}`)
-                        : `🔥 ${n.streak} · ${n.xp.toLocaleString()} XP · ${pct(n.accuracy)} · ${formatPace(n.pace)}`
+                        ? t(`${n.answered} answered · ${pct(n.accuracy)} · ${formatPace(n.pace)}`,
+                          `${n.answered} ta javob · ${pct(n.accuracy)} · ${formatPace(n.pace)}`)
+                        : `🔥 ${n.streak} · ${n.answered.toLocaleString()} · ${pct(n.accuracy)} · ${formatPace(n.pace)}`
                       : t("Joined before this was kept", "Bu ma'lumot saqlanishidan oldin qo'shilgan")}
                   </span>
                 </span>
@@ -607,7 +607,7 @@ function StudentDetail({ classId, student, onBack }) {
       sub: period === "all" ? t(`Rank #${n.rank}`, `O'rin #${n.rank}`) : t("since joining", "qo'shilgandan beri"),
     },
     { label: t("Day streak", "Kunlik intizom"), value: n.streak, sub: t(n.streak === 1 ? "day" : "days", "kun") },
-    { label: "XP", value: n.xp.toLocaleString(), sub: t(`${n.answered.toLocaleString()} answered`, `${n.answered.toLocaleString()} ta javob`) },
+    { label: t("Answered", "Javoblar"), value: n.answered.toLocaleString(), sub: t("questions", "ta savol") },
     { label: t("Accuracy", "To'g'ri javoblar"), value: pct(n.accuracy), sub: t("right answers", "barcha javoblardan") },
     { label: t("Average time", "O'rtacha vaqt"), value: formatPace(n.pace), sub: t("per right answer", "har bir to'g'ri javobga") },
   ] : [];

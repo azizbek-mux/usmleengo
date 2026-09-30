@@ -13,9 +13,8 @@
 // Two boards come out of it:
 //
 //   - the rating, all time: points from each player's whole record;
-//   - this week: points from this week alone, Monday to Sunday — the same
-//     formula, fed with the days studied, the credit earned and the time taken
-//     since Monday, so everyone starts the week level.
+//   - this week: the points earned since Monday, so everyone starts the
+//     week level.
 //
 // A week is measured against where the player stood when it began: the
 // first save of a new week moves their numbers so far into base_* columns,
@@ -23,7 +22,7 @@
 // per weekday, set from the lastDay each save carries.
 
 import {
-  BOARDS, dayIndex, daysIn, points, rate, standings, weekOf, weekStart, weekdayOf,
+  BOARDS, dayIndex, daysIn, rate, standings, weekOf, weekStart, weekdayOf,
 } from "../../src/lib/rating.js";
 
 export const SNAPSHOT_MS = 60000;
@@ -36,7 +35,7 @@ CREATE TABLE IF NOT EXISTS players (
   username   TEXT,
   streak     INTEGER NOT NULL,
   last_day   INTEGER NOT NULL,
-  xp         INTEGER NOT NULL,
+  xp         INTEGER NOT NULL DEFAULT 0,
   answered   INTEGER NOT NULL,
   binary_ms  INTEGER NOT NULL,
   binary_n   INTEGER NOT NULL,
@@ -45,17 +44,10 @@ CREATE TABLE IF NOT EXISTS players (
   updated_at INTEGER NOT NULL,
   week       INTEGER NOT NULL DEFAULT 0,
   week_days  INTEGER NOT NULL DEFAULT 0,
-  base_xp    INTEGER NOT NULL DEFAULT 0,
-  base_bms   INTEGER NOT NULL DEFAULT 0,
-  base_bn    INTEGER NOT NULL DEFAULT 0,
-  base_gms   INTEGER NOT NULL DEFAULT 0,
-  base_gn    INTEGER NOT NULL DEFAULT 0,
   correct    INTEGER NOT NULL DEFAULT 0,
   topics     TEXT    NOT NULL DEFAULT '',
-  credit     INTEGER NOT NULL DEFAULT 0,
-  fluent     INTEGER NOT NULL DEFAULT 0,
-  base_credit INTEGER NOT NULL DEFAULT 0,
-  base_fluent INTEGER NOT NULL DEFAULT 0
+  points     INTEGER NOT NULL DEFAULT 0,
+  base_points INTEGER NOT NULL DEFAULT 0
 )`;
 
 /** Today's day index on the server — the only clock the ranking trusts. */
@@ -73,10 +65,13 @@ export const serverToday = (now = Date.now()) => dayIndex(new Date(now).toISOStr
  * `detail` — { correct, topics } from checkDetail — comes only from players
  * in a classroom. Without it the stored values are left as they were.
  *
- * `score.credit` and `score.fluent` (see rating.js) are null from an app that
- * predates them, and the stored totals are then left alone. The first time
- * they arrive for a player who had none, this week's base is set to them, so
- * a whole history of credit is not counted as one week's work.
+ * `score.points` (see rating.js) is null from an app that predates it, and
+ * the stored total is then left alone. The first time it arrives for a player
+ * who had none, this week's base is set to it, so a whole history of points
+ * is not counted as one week's work.
+ *
+ * The `xp` column is no longer used: nothing is scored on it, and every row
+ * keeps 0. It stays only because a database made before points cannot drop it.
  */
 export async function savePlayer(db, who, score, now = Date.now(), detail = null) {
   const t = score.timing;
@@ -88,54 +83,41 @@ export async function savePlayer(db, who, score, now = Date.now(), detail = null
   const { results } = await db.prepare(`
     INSERT INTO players (key, name, username, streak, last_day, xp, answered,
                          binary_ms, binary_n, gap_ms, gap_n, updated_at, week, week_days,
-                         correct, topics, credit, fluent)
-    VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14,
-            COALESCE(?15, 0), COALESCE(?16, ''), COALESCE(?17, 0), COALESCE(?18, 0))
+                         correct, topics, points)
+    VALUES (?1, ?2, ?3, ?4, ?5, 0, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13,
+            COALESCE(?14, 0), COALESCE(?15, ''), COALESCE(?16, 0))
     ON CONFLICT(key) DO UPDATE SET
       name = excluded.name, username = excluded.username,
       streak = excluded.streak, last_day = excluded.last_day,
-      xp = excluded.xp, answered = excluded.answered,
+      answered = excluded.answered,
       binary_ms = excluded.binary_ms, binary_n = excluded.binary_n,
       gap_ms = excluded.gap_ms, gap_n = excluded.gap_n,
       updated_at = excluded.updated_at,
-      base_xp  = CASE WHEN players.week = excluded.week THEN players.base_xp  ELSE players.xp END,
-      base_bms = CASE WHEN players.week = excluded.week THEN players.base_bms ELSE players.binary_ms * players.binary_n END,
-      base_bn  = CASE WHEN players.week = excluded.week THEN players.base_bn  ELSE players.binary_n END,
-      base_gms = CASE WHEN players.week = excluded.week THEN players.base_gms ELSE players.gap_ms * players.gap_n END,
-      base_gn  = CASE WHEN players.week = excluded.week THEN players.base_gn  ELSE players.gap_n END,
       week_days = CASE WHEN players.week = excluded.week
                        THEN players.week_days | excluded.week_days ELSE excluded.week_days END,
       week = excluded.week,
-      base_credit = CASE
-        WHEN players.week != excluded.week THEN players.credit
-        WHEN players.credit = 0 AND players.fluent = 0 AND players.base_credit = 0 AND players.base_fluent = 0
-             AND (COALESCE(?17, 0) != 0 OR COALESCE(?18, 0) != 0) THEN COALESCE(?17, 0)
-        ELSE players.base_credit END,
-      base_fluent = CASE
-        WHEN players.week != excluded.week THEN players.fluent
-        WHEN players.credit = 0 AND players.fluent = 0 AND players.base_credit = 0 AND players.base_fluent = 0
-             AND (COALESCE(?17, 0) != 0 OR COALESCE(?18, 0) != 0) THEN COALESCE(?18, 0)
-        ELSE players.base_fluent END,
-      credit = COALESCE(?17, players.credit),
-      fluent = COALESCE(?18, players.fluent),
-      correct = COALESCE(?15, players.correct),
-      topics = COALESCE(?16, players.topics)
+      base_points = CASE
+        WHEN players.week != excluded.week THEN players.points
+        WHEN players.points = 0 AND players.base_points = 0 AND COALESCE(?16, 0) != 0 THEN COALESCE(?16, 0)
+        ELSE players.base_points END,
+      points = COALESCE(?16, players.points),
+      correct = COALESCE(?14, players.correct),
+      topics = COALESCE(?15, players.topics)
     WHERE players.name IS NOT excluded.name OR players.username IS NOT excluded.username
        OR players.streak != excluded.streak OR players.last_day != excluded.last_day
-       OR players.xp != excluded.xp OR players.answered != excluded.answered
+       OR players.answered != excluded.answered
        OR players.binary_ms != excluded.binary_ms OR players.binary_n != excluded.binary_n
        OR players.gap_ms != excluded.gap_ms OR players.gap_n != excluded.gap_n
        OR players.week != excluded.week
        OR (players.week_days | excluded.week_days) != players.week_days
-       OR (?15 IS NOT NULL AND players.correct != ?15)
-       OR (?16 IS NOT NULL AND players.topics != ?16)
-       OR (?17 IS NOT NULL AND players.credit != ?17)
-       OR (?18 IS NOT NULL AND players.fluent != ?18)
+       OR (?14 IS NOT NULL AND players.correct != ?14)
+       OR (?15 IS NOT NULL AND players.topics != ?15)
+       OR (?16 IS NOT NULL AND players.points != ?16)
     RETURNING *
-  `).bind(who.key, who.name, who.username, score.streak, score.lastDay, score.xp, score.answered,
+  `).bind(who.key, who.name, who.username, score.streak, score.lastDay, score.answered,
     t.binaryMs, t.binaryN, t.gapMs, t.gapN, Math.floor(now / 1000), week, dayBit,
     detail ? detail.correct : null, detail ? detail.topics : null,
-    score.credit ?? null, score.fluent ?? null).all();
+    score.points ?? null).all();
   return results?.[0] || null;
 }
 
@@ -144,51 +126,32 @@ export const fromRow = (r) => ({
   name: r.name,
   username: r.username || null,
   score: {
-    streak: r.streak, lastDay: r.last_day, xp: r.xp, answered: r.answered,
+    streak: r.streak, lastDay: r.last_day, answered: r.answered,
     timing: { binaryMs: r.binary_ms, binaryN: r.binary_n, gapMs: r.gap_ms, gapN: r.gap_n },
-    credit: r.credit ?? 0, fluent: r.fluent ?? 0,
+    points: r.points ?? 0,
   },
   correct: r.correct ?? 0,
   topics: r.topics || "",
   week: r.week ?? 0,
   weekDays: r.week_days ?? 0,
-  base: {
-    xp: r.base_xp ?? 0, bms: r.base_bms ?? 0, bn: r.base_bn ?? 0, gms: r.base_gms ?? 0, gn: r.base_gn ?? 0,
-    credit: r.base_credit ?? 0, fluent: r.base_fluent ?? 0,
-  },
+  base: { points: r.base_points ?? 0 },
 });
 
 /**
  * A player's week as a score rate() can take, or null if they have done
- * nothing this week. The days studied stand in for the streak — up to seven
- * — and lastDay is set to today so the streak rule, which zeroes a streak not
- * kept up to yesterday, does not apply to a week in progress.
+ * nothing this week: the points earned since Monday. The days studied stand
+ * in for the streak — up to seven — and lastDay is set to today so the streak
+ * rule, which zeroes a streak not kept up to yesterday, does not apply to a
+ * week in progress.
  */
 export function weekScore(p, week, today) {
   if (p.week !== week) return null;
   const days = daysIn(p.weekDays);
-  const s = p.score;
-  const xp = Math.max(0, s.xp - p.base.xp);
-  const bn = Math.max(0, s.timing.binaryN - p.base.bn);
-  const gn = Math.max(0, s.timing.gapN - p.base.gn);
-  const bms = Math.max(0, s.timing.binaryMs * s.timing.binaryN - p.base.bms);
-  const gms = Math.max(0, s.timing.gapMs * s.timing.gapN - p.base.gms);
-  // Net credit can fall as well as rise: a week of wrong answers is a week
-  // below zero, which the rating then reads as nothing.
-  const credit = s.credit - p.base.credit;
-  const fluent = Math.max(0, s.fluent - p.base.fluent);
-  if (!days && !xp) return null;
-  return {
-    streak: days,
-    lastDay: today,
-    xp,
-    credit,
-    fluent,
-    timing: {
-      binaryMs: bn ? Math.round(bms / bn) : 0, binaryN: bn,
-      gapMs: gn ? Math.round(gms / gn) : 0, gapN: gn,
-    },
-  };
+  // Points can fall as well as rise: a week of wrong answers is a week of
+  // nothing, which the rating reads as 0.
+  const points = Math.max(0, p.score.points - p.base.points);
+  if (!days && !points) return null;
+  return { streak: days, lastDay: today, points, timing: {} };
 }
 
 /**
@@ -219,7 +182,7 @@ function shown(row) {
     name: row.isMe ? null : row.name,
     username: row.isMe ? null : row.username,
     isMe: Boolean(row.isMe),
-    points: points(row.rating.overall),
+    points: row.rating.points,
     raw: row.rating.raw,
   };
 }
@@ -272,7 +235,7 @@ export function weekBoard(players, me, today) {
   return {
     top: s.rows.slice(0, TOP).map(shown),
     me: s.me
-      ? { place: s.me.place, total: s.total, points: points(s.me.rating.overall), raw: s.me.rating.raw }
+      ? { place: s.me.place, total: s.total, points: s.me.rating.points, raw: s.me.rating.raw }
       : { place: null, total: s.total },
     // When this week ends: next Monday, 00:00 UTC.
     endsAt: weekStart(week + 1) * 86400000,

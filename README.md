@@ -18,7 +18,7 @@ questions, the multiplayer game and the bot. See [Uzbek](#uzbek).
 |---|---|---|
 | Questions | Bundled JSON in the app | free |
 | Hosting | GitHub Pages (static build) | free |
-| Streaks / XP / progress | Telegram CloudStorage, localStorage fallback | free |
+| Streaks / points / progress | Telegram CloudStorage, localStorage fallback | free |
 | Rating | Cloudflare Worker + D1 database, free plan (`worker/`) | free |
 | Multiplayer | Durable Objects on the same Worker, free plan | free |
 | Announcement timer | cron-job.org, free plan | free |
@@ -230,62 +230,64 @@ To follow a different tag or change the 10-day window, edit `TAG` and
 
 ## The rating
 
-The **Rating** tab ranks every player on points out of 1000, from three
-things in their order of weight: **discipline**, the day streak (50%);
-**mastery**, what right and wrong answers prove (30%); and **speed**, how
-quickly the right ones came (20%). Points are the only rank; day streak, XP
-and time are filters that show who leads each part. The top ten are shown by
-Telegram name and @username; everyone sees their own place, like
-**#88 / 2,300**. The top three wear gold, silver and bronze.
+The **Rating** tab ranks every player on **points**, the running total of what
+their answers have earned. Nothing else counts: the day streak, accuracy and
+the questions used are shown on the Me tab for interest and add nothing to the
+points, and there is no XP. The top ten are shown by Telegram name and
+@username; everyone sees their own place, like **#88 / 2,300**. The top three
+wear gold, silver and bronze. A second board, the day streak, lists who has the
+longest run; it is a filter, not a rank.
 
 ### How answers are scored
 
-The aim is that points say what is in someone's head. There are three ways
-to be right without it being there, and each is closed:
+The owner's design (2026-09-30); the constants are `SCORE` in
+`src/lib/rating.js`.
 
-- **Guessing.** Half the questions have two options, so a random tap is
-  right half the time. A wrong tap takes 1 credit away and a right one adds
-  at most 1, so guessing is worth nothing on average. A typed answer adds 1.5
-  and a wrong typed one takes nothing, because a typed guess is never right
-  by luck.
-- **Looking it up.** It takes time. A right answer is worth its full credit
-  up to 4 s (typed: 12 s, plus a few seconds for a long stem or a picture),
-  then less and less by a factor of e every 8 s (typed: 16 s), down to 15%.
-  The clock is wall-clock from the question appearing to the answer, so
-  leaving the app to search counts, and it stops at the answer, so reading
-  the explanation never does. An answer faster than the stem can be read
-  (0.7 s + 1 s per 60 characters) is a reflex tap and earns nothing.
-  XP follows the same clock: a quick right answer earns its full 10 (15
-  typed), a slow one 4 (6), a wrong one 2.
-- **Grinding.** The second right answer to a question earns half of the
-  first, the third a quarter, so a handful of questions cannot be farmed.
+| Answer | Points |
+|---|---|
+| Tapped, right | `5 + 15 × 0.5^(seconds ÷ 5)`: the bonus halves every 5 s. 20 if instant, 15 at 3 s, 9 at 10 s, never under 5 |
+| Tapped, wrong | **−8** |
+| Typed, right | 1.5 × the tapped formula at the same seconds |
+| Typed, wrong | 0: a typed answer cannot be guessed |
 
-Two running totals, both in hundredths, carry all of it: `credit` (net credit
-above) and `fluent` (the time credits of the right answers). From them:
-mastery is `100 (1 - e^(-credit/1200))`; speed is the mean time credit rescaled
-to 0-100, multiplied by `1 - e^(-credit/400)`, so it counts only as far as the
-mastery behind it, and one lucky quick tap or a run of fast random taps scores
-nothing; discipline is `100 (1 - e^(-days/30))` as before. A streak alone can
-never pass half the points. The time board (Vaqt) lists only players with 100
-credit, for the same reason. `tools/rating.test.mjs` runs simulated players -
-one who knows it, one who looks it up, a random tapper, someone who only turns
-up, a repeat farmer, a newcomer - and holds the ordering they must land in.
+The total never goes below 0 (it is clamped after every answer). It is kept in
+hundredths so that answers add exactly. The clock is wall-clock from the
+question appearing to the answer and stops there, so the explanation is never
+counted; leaving the app to search counts, which is the point. Three rules keep
+a rating built on volume from being farmed:
 
-Progress saved before credit existed is given an estimate once, on first
-open, from the answers, accuracy and timings it kept
-(`legacyKnowledge` in `src/lib/storage.js`). The server holds `credit`,
-`fluent` and their weekly bases (`worker/credit.sql` added the columns); an
-older app that sends neither leaves the stored totals alone. Classes store a
-`v` in each student's joining base, and "points since joining" is shown only
-when it matches (`RATING_VERSION`), since a difference between two formulas
-means nothing.
+- **Guessing.** Half of the questions have two options, and a wrong tap costs
+  more than a guess earns on average once it is quick enough to count.
+- **Looking it up.** It takes time, and the bonus is time: a slow right answer
+  earns the plain 5.
+- **Repeats and reflexes.** The second right answer to a question is worth
+  half, the third a quarter; a tapped answer faster than the stem can be read
+  (0.7 s + 1 s per 60 characters) earns nothing.
 
-**This week** is a second board, points only: the same formula fed with
-this week's numbers alone — days studied Monday to Sunday in place of the
-streak, the credit earned since Monday, and this week's time credits — so
-everyone starts level each Monday (00:00 UTC). The server keeps where each
-player stood when the week began (`base_*` columns, `week_days` bitmask)
-and the week is the difference; see `worker/src/board.js`.
+Deliberately not there: a daily cap (the owner wants more answers to earn more,
+so there is none), and any penalty for wrong typed answers. The trade-offs were
+simulated before the owner chose -8 (`tools/rating.test.mjs` runs simulated
+players: one who knows it, one who looks it up, a random tapper, a repeat
+farmer). A tapper who waits two seconds between guesses would still earn
+something at -8, and someone who looks answers up quickly earns nearly what an
+honest player does; -16 would make guessing worth zero. That is the known cost
+of the owner's choice.
+
+The app keeps the total in `state.points`. Progress saved before points existed
+is given an estimate once, on first read, from the answers, accuracy and
+timings it kept (`legacyPoints` in `src/lib/storage.js`); XP and the credit that
+briefly replaced it are dropped. Cloud and local copies are compared by number
+of answers. `checkScore` accepts `points` (whole, never negative, at most 30 an
+answer) and ignores anything else an older app sends. The server holds `points`
+and `base_points` (`worker/points.sql`); the `xp`, `credit` and `fluent`
+columns are unused. Classes store a `v` in each student's joining base, and
+"points since joining" is shown only when it matches (`RATING_VERSION`).
+
+**This week** is a second board, points only: the points earned since Monday
+(00:00 UTC), so everyone starts level. The server keeps the total at the start
+of the week (`base_points`, and the `week_days` bitmask) and the week is the
+difference; see `worker/src/board.js`. A player's first points ever sent do not
+count as a week's work.
 
 Nobody joins. The app sends its score to a small rating server whenever it
 changes — on opening, after a round, after a Medical English session — and
@@ -304,7 +306,7 @@ Telegram does not let an app message the bot for the user.
   signed launch data, which the server checks against the bot token
   ([Telegram's method](https://core.telegram.org/bots/webapps#validating-data-received-via-the-mini-app)).
   The numbers are self-reported: impossible ones are refused (a streak older
-  than the app, more XP than the answers allow), but a determined person could
+  than the app, more points than the answers allow), but a determined person could
   invent a plausible score.
 - **Names stay on the server** except for whoever is in a top ten. Raw
   Telegram ids are never stored — players are kept under a hash.
@@ -423,7 +425,7 @@ plays again with the same people and fresh questions.
 - **Either language.** Each phone reads the game in the language its owner
   reads the app in, and a typed answer is marked against that language. See
   [Uzbek](#uzbek).
-- **Only a game.** Nothing in it touches the player's XP, streak, rating or
+- **Only a game.** Nothing in it touches the player's points, streak or
   question history. Questions are picked at random every time — anything in
   the chosen topics can come up — and nothing is kept once a game ends.
 - **How:** each game is a Cloudflare Durable Object (`worker/src/room.js`)
@@ -439,8 +441,8 @@ plays again with the same people and fresh questions.
 ## How the app is laid out
 
 Six tabs along the bottom, each one tap away: **Quiz**, **English**,
-**Play** (multiplayer), **Class**, **Rating** and **Me** (points, streak, XP, average
-time, and the settings). Every tab opens the same way — a big title, at most
+**Play** (multiplayer), **Class**, **Rating** and **Me** (points, then the day streak,
+accuracy and questions used - for interest only - and the settings). Every tab opens the same way — a big title, at most
 one small thing beside it (the day streak), and the main action pinned just
 above the tab bar. Screens opened from inside a tab use Telegram's own back
 arrow. A quiz round, a flashcard session and a live game hide the tab bar.
@@ -487,7 +489,7 @@ the teacher lets each one in. Up to 100 students a class, 10 classes a
 teacher, 10 classes a student.
 
 - **The teacher sees every student:** points and global rank, day streak,
-  XP, accuracy, weak topics and average time — **all time** and **since
+  answers, accuracy, weak topics and average time — **all time** and **since
   joining**, the second measured from a snapshot of the student's numbers
   taken when they were let in. Never bookmarks.
 - **Students see the class ranking:** the top ten by points, and their own
@@ -558,7 +560,7 @@ teacher, 10 classes a student.
   handed in and graded on the server; later tries, and the Practice list,
   are practice. The teacher sees each student's score (late ones marked)
   and how the class did on each question. **Class questions count for
-  nothing** — no XP, streak, rating or question history — and can't be
+  nothing** — no points, streak or question history — and can't be
   bookmarked.
 - **What a student shares:** accuracy and weak topics are not part of the
   rating, so the app sends them (right answers, right/wrong per category)
@@ -598,7 +600,7 @@ are not part of the build.
 | `tools/compile.mjs` | Validates and compiles the `.txt` files into `questions.json`. |
 | `src/lib/match.js` | Free-text topic search — aliases, stemming, scoring, suggestions. |
 | `src/lib/session.js` | Round building, option shuffling, spaced repetition, answer grading. |
-| `src/lib/storage.js` | Streak, XP and progress across CloudStorage + localStorage. |
+| `src/lib/storage.js` | Streak, points and progress across CloudStorage + localStorage. |
 | `src/lib/account.js` | Labels every localStorage key with the Telegram user id, so two accounts in one Telegram app never share progress. |
 | `src/lib/telegram.js` | WebApp SDK wrapper; every call degrades outside Telegram. |
 

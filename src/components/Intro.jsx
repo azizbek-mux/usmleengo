@@ -53,8 +53,8 @@ export const introCards = () => [
     Icon: Trophy,
     title: t("Rating", "Reyting"),
     text: t(
-      "Every player is ranked by points: turning up every day counts most, then right answers, then how fast you give them. Answers looked up earn little. Top 10 all time and this week.",
-      "Har bir o'yinchi ball bo'yicha saralanadi: eng katta ulush har kuni shug'ullanishda, keyin to'g'ri javoblarda, keyin ularni qanchalik tez berishingizda. Qidirib topilgan javoblar kam ball beradi. Barcha vaqtlar va shu haftaning eng yaxshi 10 talik ro'yxati.",
+      "Every player is ranked by points. A right answer earns points, the quicker the more; a wrong tap loses some. The more you answer, the more you collect. Top 10 all time and this week.",
+      "Har bir o'yinchi ball bo'yicha saralanadi. To'g'ri javob ball beradi — qanchalik tez bo'lsa, shunchalik ko'p; noto'g'ri bosish esa ball olib qo'yadi. Qanchalik ko'p javob bersangiz, shunchalik ko'p ball to'playsiz. Barcha vaqtlar va shu haftaning eng yaxshi 10 talik ro'yxati.",
     ),
   },
   {
@@ -62,8 +62,8 @@ export const introCards = () => [
     Icon: User,
     title: t("Me", "Profil"),
     text: t(
-      "Your points, streak and stats, settings, and help. Study a little every day to keep your streak alive.",
-      "Ballaringiz, kunlik intizomingiz, statistikangiz, sozlamalar va yordam. Kunlik intizomni saqlab qolish uchun har kuni ozgina shug'ullaning.",
+      "Your points, day streak, accuracy and questions used, settings, and help.",
+      "Ballaringiz, kunlik intizomingiz, to'g'ri javoblar foizi va ishlatilgan savollar, sozlamalar va yordam.",
     ),
   },
 ];
