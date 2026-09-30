@@ -62,15 +62,25 @@ function shuffle(arr) {
  * question in the chosen topics can come up, including ones the players
  * have answered before.
  *
- *   tags  — chosen categories; empty means the whole bank
- *   qtype — "binary" (tap), "gap" (typed) or "mixed"
+ *   systems  - chosen organ systems; empty means every one of them
+ *   subjects - chosen disciplines; empty means every one of them
+ *   qtype    - "binary" (tap), "gap" (typed) or "mixed"
+ *
+ * The two lists narrow with "and", as they do on the Quiz tab: a game set
+ * to Cardiovascular and Pharmacology asks about heart drugs.
  */
-export function pickGameQuestions(bank, { tags = [], qtype = "binary", count = 10 } = {}) {
-  const chosen = new Set(tags);
-  const pool = bank.filter((q) =>
-    (!chosen.size || q.tags.some((t) => chosen.has(t))) &&
-    (qtype === "mixed" || q.type === qtype));
+export function pickGameQuestions(bank, { systems = [], subjects = [], qtype = "binary", count = 10 } = {}) {
+  const pool = inCategories(bank, systems, subjects)
+    .filter((q) => qtype === "mixed" || q.type === qtype);
   return shuffle(pool).slice(0, count).map(forGame);
+}
+
+/** The questions left once both axes have been narrowed. */
+function inCategories(list, systems, subjects) {
+  const sys = new Set(systems);
+  const sub = new Set(subjects);
+  if (!sys.size && !sub.size) return list;
+  return list.filter((q) => (!sys.size || sys.has(q.system)) && (!sub.size || sub.has(q.subject)));
 }
 
 /**
@@ -116,12 +126,10 @@ function uzOf(q) {
   return out;
 }
 
-/** How many questions a choice of topics and type can supply. */
-export function availableFor(bank, { tags = [], qtype = "binary" } = {}) {
-  const chosen = new Set(tags);
-  return bank.filter((q) =>
-    (!chosen.size || q.tags.some((t) => chosen.has(t))) &&
-    (qtype === "mixed" || q.type === qtype)).length;
+/** How many questions a choice of categories and type can supply. */
+export function availableFor(bank, { systems = [], subjects = [], qtype = "binary" } = {}) {
+  return inCategories(bank, systems, subjects)
+    .filter((q) => qtype === "mixed" || q.type === qtype).length;
 }
 
 /**

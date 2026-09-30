@@ -29,24 +29,35 @@ check("late or early never goes outside the range",
 console.log("\npicking questions");
 const bank = [];
 for (let i = 0; i < 40; i++) bank.push({ id: `b${i}`, type: "binary", topic: `Topic ${i}`, tags: [i % 2 ? "cardio" : "renal"],
+  system: i % 2 ? "cardiovascular" : "renal", subject: i % 4 ? "pathophysiology" : "pharmacology",
   q: `Question ${i}?`, options: ["Right", "Wrong"], answer: 0, explain: "Because." });
 for (let i = 0; i < 10; i++) bank.push({ id: `g${i}`, type: "gap", topic: `Gap ${i}`, tags: ["cardio"],
+  system: "cardiovascular", subject: "biochemistry",
   q: `Blank ___ ${i}`, answer: "B3", accept: ["b3", "niacin"], explain: "Pellagra." });
-bank.push({ id: "img1", type: "binary", topic: "Picture", tags: ["histo"], q: "", img: "p01-a.webp",
-  options: ["A", "B"], answer: 0, explain: "", hideTopic: true });
+bank.push({ id: "img1", type: "binary", topic: "Picture", tags: ["histo"], system: "dermatology", subject: "histology",
+  q: "", img: "p01-a.webp", options: ["A", "B"], answer: 0, explain: "", hideTopic: true });
 
 const tapped = L.pickGameQuestions(bank, { qtype: "binary", count: 10 });
 check("ten questions when ten are asked for", tapped.length === 10);
 check("tap only means no typed ones", tapped.every((q) => q.type === "binary"));
 check("no question twice in one game", new Set(tapped.map((q) => q.id)).size === 10);
 check("typed only means typed only", L.pickGameQuestions(bank, { qtype: "gap", count: 30 }).every((q) => q.type === "gap"));
-check("topics narrow it", L.pickGameQuestions(bank, { tags: ["renal"], qtype: "binary", count: 30 })
-  .every((q) => bank.find((b) => b.id === q.id).tags.includes("renal")));
-check("a narrow topic gives what it has", L.pickGameQuestions(bank, { tags: ["histo"], qtype: "binary", count: 10 }).length === 1);
-check("and says so beforehand", L.availableFor(bank, { tags: ["histo"], qtype: "binary" }) === 1);
+const idsOf = (list) => list.map((q) => bank.find((b) => b.id === q.id));
+check("a system narrows it", idsOf(L.pickGameQuestions(bank, { systems: ["renal"], qtype: "binary", count: 30 }))
+  .every((q) => q.system === "renal"));
+check("a subject narrows it", idsOf(L.pickGameQuestions(bank, { subjects: ["pharmacology"], qtype: "binary", count: 30 }))
+  .every((q) => q.subject === "pharmacology"));
+// The two are an "and", the same as on the Quiz tab.
+check("both together narrow to the overlap",
+  L.availableFor(bank, { systems: ["renal"], qtype: "binary" }) === 20 &&
+  L.availableFor(bank, { subjects: ["pharmacology"], qtype: "binary" }) === 10 &&
+  L.availableFor(bank, { systems: ["renal"], subjects: ["pharmacology"], qtype: "binary" }) === 10,
+  `${L.availableFor(bank, { systems: ["renal"], subjects: ["pharmacology"], qtype: "binary" })}`);
+check("a narrow category gives what it has", L.pickGameQuestions(bank, { systems: ["dermatology"], qtype: "binary", count: 10 }).length === 1);
+check("and says so beforehand", L.availableFor(bank, { systems: ["dermatology"], qtype: "binary" }) === 1);
 const seen = new Set();
-for (let i = 0; i < 30; i++) for (const q of L.pickGameQuestions(bank, { tags: ["renal"], qtype: "binary", count: 5 })) seen.add(q.id);
-check("no history: across games every question in the topic comes up", seen.size === 20, `${seen.size} of 20`);
+for (let i = 0; i < 30; i++) for (const q of L.pickGameQuestions(bank, { systems: ["renal"], qtype: "binary", count: 5 })) seen.add(q.id);
+check("no history: across games every question in the category comes up", seen.size === 20, `${seen.size} of 20`);
 const trimmed = L.forGame(bank.find((q) => q.id === "img1"));
 check("a picture question keeps its picture and hidden topic", trimmed.img === "p01-a.webp" && trimmed.hideTopic === true);
 check("and carries nothing a game does not need", !("tags" in trimmed) && !("difficulty" in trimmed));
@@ -72,15 +83,16 @@ check("a typed question needs answers to accept", G.cleanQuestion({ ...forGame[4
 check("a picture name cannot reach outside the picture folder",
   G.cleanQuestion({ ...forGame[50], img: "../../secret" }) === null);
 check("an unknown kind of question is refused", G.cleanQuestion({ ...forGame[0], type: "essay" }) === null);
-const okSettings = G.cleanSettings({ seconds: 15, qtype: "mixed", count: 10, tags: ["cardio", "histo", "cardio"] });
+const okSettings = G.cleanSettings({ seconds: 15, qtype: "mixed", count: 10, systems: ["renal", "cardiovascular", "renal"], subjects: ["pharmacology"] });
 check("settings from the lists pass", okSettings?.seconds === 15 && okSettings.count === 10);
-check("with the topics, once each", okSettings?.tags.join() === "cardio,histo");
+check("with the categories, once each", okSettings?.systems.join() === "renal,cardiovascular" && okSettings.subjects.join() === "pharmacology");
+check("and an absent axis is an empty one, not missing", G.cleanSettings({ seconds: 15, qtype: "mixed", count: 10 })?.systems.length === 0);
 check("5 and 25 seconds are choices too", G.cleanSettings({ seconds: 5, qtype: "binary", count: 10 })?.seconds === 5 &&
   G.cleanSettings({ seconds: 25, qtype: "binary", count: 10 })?.seconds === 25);
 check("anything else does not", G.cleanSettings({ seconds: 7, qtype: "binary", count: 10 }) === null &&
   G.cleanSettings({ seconds: 15, qtype: "all", count: 10 }) === null &&
   G.cleanSettings({ seconds: 15, qtype: "binary", count: 12 }) === null);
-check("a topic that is not a tag is dropped", G.cleanSettings({ seconds: 15, qtype: "binary", count: 5, tags: ["<b>", "renal"] }).tags.join() === "renal");
+check("a category that is not an id is dropped", G.cleanSettings({ seconds: 15, qtype: "binary", count: 5, systems: ["<b>", "renal"] }).systems.join() === "renal");
 
 /* ── a whole game ──────────────────────────────────────────────────────── */
 console.log("\na whole game");

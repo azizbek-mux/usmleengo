@@ -21,7 +21,7 @@ const check = (name, cond, detail = "") => {
 };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const settings = { qtype: "mixed", count: 5, seconds: 10, tags: ["cardio"] };
+const settings = { qtype: "mixed", count: 5, seconds: 10, systems: ["cardiovascular"] };
 const questions = pickGameQuestions(bank, settings).slice(0, 3);
 const res = await fetch(`${BASE}/game/create`, { method: "POST", headers: { "content-type": "text/plain" }, body: JSON.stringify({ settings, questions }) });
 const { code, creatorToken } = await res.json();

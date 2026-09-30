@@ -122,10 +122,19 @@ export function cleanQuestions(list) {
 export function cleanSettings(raw) {
   if (!SECONDS.includes(raw?.seconds) || !GAME_TYPES.some((t) => t.id === raw?.qtype)) return null;
   if (!QUESTION_COUNTS.includes(raw?.count)) return null;
-  const tags = Array.isArray(raw.tags)
-    ? [...new Set(raw.tags.filter((t) => typeof t === "string" && /^[\w-]{1,30}$/.test(t)))].slice(0, 30)
-    : [];
-  return { seconds: raw.seconds, qtype: raw.qtype, count: raw.count, tags };
+  // The room never picks questions itself — the creator's app does, and
+  // sends them. These are kept only so a new round can be picked the same
+  // way, and shown to everyone as what the game is about.
+  const ids = (list) => (Array.isArray(list)
+    ? [...new Set(list.filter((x) => typeof x === "string" && /^[\w-]{1,30}$/.test(x)))].slice(0, 40)
+    : []);
+  return {
+    seconds: raw.seconds,
+    qtype: raw.qtype,
+    count: raw.count,
+    systems: ids(raw.systems),
+    subjects: ids(raw.subjects),
+  };
 }
 
 /**

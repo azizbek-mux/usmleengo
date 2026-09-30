@@ -5,10 +5,10 @@ import {
   availableFor, inviteLink, maxPoints, pickGameQuestions,
 } from "../lib/game.js";
 import { connectGame, createGame } from "../lib/gameApi.js";
-import { t } from "../lib/i18n.js";
-import { subjects } from "../lib/match.js";
+import { lang, t } from "../lib/i18n.js";
+import CategoryGroup, { useCategories } from "./CategoryGroup.jsx";
 import { inviteMessage } from "../lib/shareText.js";
-import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
+import { subjectName, systemName } from "../lib/taxonomy.js";
 import { APP_LINK, haptic, inTelegram, share } from "../lib/telegram.js";
 import { BackBar, ScreenHead } from "./Chrome.jsx";
 import { PlaceMark } from "./Rating.jsx";
@@ -28,11 +28,13 @@ function writeNick(name) {
   try { localStorage.setItem(NICK_KEY, name); } catch { /* typed again next time */ }
 }
 
-/** "10 questions · 15s · Tap · cardio, renal" */
+/** "10 questions · 15s · Tap · Cardiovascular System, Pharmacology" */
 export function describe(settings, total = settings.count) {
-  const topics = settings.tags?.length
-    ? settings.tags.map(tagLabel).join(", ")
-    : t("all topics", "barcha mavzular");
+  const chosen = [
+    ...(settings.systems || []).map(systemName),
+    ...(settings.subjects || []).map(subjectName),
+  ];
+  const topics = chosen.length ? chosen.join(", ") : t("all topics", "barcha mavzular");
   return t(
     `${total} question${total === 1 ? "" : "s"} · ${settings.seconds}s · ${typeName(settings.qtype)} · ${topics}`,
     `${total} ta savol · ${settings.seconds} soniya · ${typeName(settings.qtype)} · ${topics}`,
@@ -182,23 +184,27 @@ function GameSetup({ onBack, onCreated }) {
   const [qtype, setQtype] = useState(DEFAULT_SETTINGS.qtype);
   const [count, setCount] = useState(DEFAULT_SETTINGS.count);
   const [seconds, setSeconds] = useState(DEFAULT_SETTINGS.seconds);
-  const [tags, setTags] = useState([]);
+  const [systems, setSystems] = useState([]);
+  const [subjects, setSubjects] = useState([]);
   const [busy, setBusy] = useState(false);
   const [failed, setFailed] = useState(false);
 
-  const chips = useMemo(() => subjects().slice(0, 12), []);
-  const available = useMemo(() => availableFor(bank, { tags, qtype }), [tags, qtype]);
+  const groups = useCategories(lang());
+  const systemSet = useMemo(() => new Set(systems), [systems]);
+  const subjectSet = useMemo(() => new Set(subjects), [subjects]);
+  const available = useMemo(() => availableFor(bank, { systems, subjects, qtype }), [systems, subjects, qtype]);
+  const picked = systems.length + subjects.length;
 
-  function toggle(tag) {
+  const flip = (set) => (id) => {
     haptic("light");
-    setTags((now) => (now.includes(tag) ? now.filter((x) => x !== tag) : [...now, tag]));
-  }
+    set((now) => (now.includes(id) ? now.filter((x) => x !== id) : [...now, id]));
+  };
 
   async function create() {
     haptic("medium");
     setBusy(true);
     setFailed(false);
-    const settings = { qtype, count, seconds, tags };
+    const settings = { qtype, count, seconds, systems, subjects };
     try {
       // Both languages go up with the questions, so a game can be shared
       // with a friend who reads the app in the other one.
@@ -223,25 +229,22 @@ function GameSetup({ onBack, onCreated }) {
       <div className="section-label">{t("Time for each question", "Har bir savolga vaqt")}</div>
       <Presets values={SECONDS} value={seconds} onPick={setSeconds} label="s" />
 
-      <div className="chips-head">
-        <span className="section-label" style={{ margin: 0 }}>{t("Topics", "Mavzular")}</span>
-        {tags.length > 0 && (
-          <button className="chips-clear" onClick={() => { haptic("light"); setTags([]); }}>{t(`Clear ${tags.length}`, `Tozalash (${tags.length})`)}</button>
-        )}
-      </div>
-      <div className="chips">
-        {[...PICTURE_TAGS, ...chips.map(({ tag }) => tag)].map((tag) => ({ tag, name: tagLabel(tag) }))
-          .map(({ tag, name }) => (
-            <button
-              key={tag}
-              className={`chip${tags.includes(tag) ? " on" : ""}`}
-              aria-pressed={tags.includes(tag)}
-              onClick={() => toggle(tag)}
-            >
-              {name}
-            </button>
-          ))}
-      </div>
+      <CategoryGroup
+        label={t("Systems", "Tizimlar")}
+        rows={groups.systems}
+        chosen={systemSet}
+        onToggle={flip(setSystems)}
+        onAll={() => { haptic("light"); setSystems(groups.systems.map((r) => r.id)); }}
+        onNone={() => { haptic("light"); setSystems([]); }}
+      />
+      <CategoryGroup
+        label={t("Subjects", "Fanlar")}
+        rows={groups.subjects}
+        chosen={subjectSet}
+        onToggle={flip(setSubjects)}
+        onAll={() => { haptic("light"); setSubjects(groups.subjects.map((r) => r.id)); }}
+        onNone={() => { haptic("light"); setSubjects([]); }}
+      />
 
       <div className="home-cta">
         {failed && <div className="game-warn">{reasons().create[0]}. {reasons().create[1]}</div>}
@@ -254,8 +257,8 @@ function GameSetup({ onBack, onCreated }) {
             : available < count
               ? t(`Only ${available} question${available === 1 ? "" : "s"} match — the game will have ${available}.`,
                 `Faqat ${available} ta savol mos keladi — o'yinda ${available} ta savol bo'ladi.`)
-              : t(`${tags.length ? "Chosen topics" : "All topics"} · ${available.toLocaleString()} questions to pick from, at random`,
-                `${tags.length ? "Tanlangan mavzular" : "Barcha mavzular"} · ${available.toLocaleString()} ta savoldan tasodifiy tanlanadi`)}
+              : t(`${picked ? "Chosen categories" : "All categories"} · ${available.toLocaleString()} questions to pick from, at random`,
+                `${picked ? "Tanlangan yo'nalishlar" : "Barcha yo'nalishlar"} · ${available.toLocaleString()} ta savoldan tasodifiy tanlanadi`)}
         </div>
       </div>
     </div>
@@ -723,7 +726,7 @@ function Final({ game, send, onLeave }) {
     haptic("medium");
     const s = game.settings;
     const pool = await bilingualBank();
-    send({ type: "again", questions: pickGameQuestions(pool, { tags: s.tags, qtype: s.qtype, count: s.count }) });
+    send({ type: "again", questions: pickGameQuestions(pool, { systems: s.systems, subjects: s.subjects, qtype: s.qtype, count: s.count }) });
   }
 
   return (
