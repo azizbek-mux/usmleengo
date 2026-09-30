@@ -9,7 +9,7 @@
 # back: a fresh random value is generated, saved as the Worker's secret, and
 # used once to call /bot/setup. The value is never printed and never written
 # to a file. Telegram signs every webhook call with that secret, so the bot
-# is deaf for the second between the two steps - run this at a quiet moment.
+# is deaf between the two steps (a few seconds) - run this at a quiet moment.
 
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
@@ -24,15 +24,25 @@ if ($LASTEXITCODE -ne 0) { throw "wrangler secret put failed (exit $LASTEXITCODE
 
 Write-Host ""
 Write-Host "2/2  Pointing Telegram at the Worker..."
+# The Worker takes a few seconds to start using a new secret: until it does,
+# /bot/setup refuses the key, Telegram keeps the OLD secret, and every update
+# is turned away with a 403 - the bot answers nobody. So try again, waiting a
+# little longer each time, until all eight calls come back ok.
 $url = "https://usmleengo-rating.azizbekmuxtorlapt.workers.dev/bot/setup"
-$reply = (& curl.exe -s -X POST $url -H "x-setup-key: $secret") -join ""
+$ok = 0
+$reply = ""
+for ($try = 1; $try -le 10 -and $ok -lt 8; $try++) {
+  Start-Sleep -Seconds (3 + 2 * $try)
+  $reply = (& curl.exe -s -X POST $url -H "x-setup-key: $secret") -join ""
+  $ok = ([regex]::Matches($reply, '"ok":true')).Count
+  if ($ok -lt 8) { Write-Host "  attempt $try of 10: not yet ($reply)" }
+}
 Write-Host $reply
-
-$ok = ([regex]::Matches($reply, '"ok":true')).Count
 Write-Host ""
 if ($ok -ge 8) {
   Write-Host "Done - webhook, commands, menu button and descriptions are set." -ForegroundColor Green
   Write-Host "Send /start to @usmleengo_bot to check it answers." -ForegroundColor Green
 } else {
-  Write-Host "Not finished - the reply above should hold eight ok:true." -ForegroundColor Yellow
+  Write-Host "Not finished - the bot is still deaf. Run this script again." -ForegroundColor Red
+  exit 1
 }
