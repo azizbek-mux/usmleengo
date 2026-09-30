@@ -250,3 +250,38 @@ cafe-au-lait-spot-1olvcur|«Sutli kofe» dog'i||«Sutli kofe» dog'i|Oddiy lenti
 neurofibromatosis-inheritance-02zscxc|Neyrofibromatozning irsiylanishi|1-tur neyrofibromatoz qanday irsiylanadi|Autosom-dominant|X ga bog'langan retsessiv|«Sutli kofe» dog'lari, qo'ltiqdagi sepkillar, neyrofibromalar.
 adenoma-sebaceum-0we6r55|Yog' bezi adenomasi||Tuberoz skleroz|Oddiy akne|Burun va yonoqlar bo'ylab zich papulalar — angiofibromalar, akne emas.
 tuberous-sclerosis-features-0q3fr7a|Tuberoz skleroz belgilari|Tuberoz skleroz yuz angiofibromalari bilan birga nima beradi|Yurak rabdomiomasini|Yurak miksomasini|Va buyrak angiomiolipomasi, tirnoq osti fibromalari.
+port-wine-stain-1rxb850|«Sharob dog'i»||Sterj-Veber sindromi|«Qulupnay» gemangiomasi|Peshona va qovoq ustidagi yassi binafsha dog', uch shoxli nerv hududida.
+sturge-weber-associations-1ffou36|Sterj-Veber bilan bog'liqliklar|Uch shoxli nerv hududidagi «sharob dog'i» nima bilan birga yuradi|Yumshoq parda angiomasi va glaukoma|Buyrakning angiomiolipomasi|Somatik mozaiklik, ya'ni irsiy emas.
+angiokeratomas-1jq53hb|Angiokeratomalar||Fabri kasalligi|«Gilos» gemangiomalari|Tana va chov bo'ylab to'p-to'p mayda to'q qizil papulalar.
+fabry-enzyme-0rrgykz|Fabri fermenti|Fabri kasalligi qaysi ferment yetishmovchiligi|Alfa-galaktozidaza A|Beta-glyukoserebrozidaza|Keramid trigeksozid to'planadi; X ga bog'langan retsessiv.
+mccune-albright-spots-048lase|Mak-Kyun-Olbrayt dog'lari||Mak-Kyun-Olbrayt sindromi|1-tur neyrofibromatoz|Chetlari notekis, yirik jigarrang dog'lar.
+mccune-albright-triad-19rwvtw|Mak-Kyun-Olbrayt uchligi|Mak-Kyun-Olbrayt sindromi bu dog'lar bilan birga nima beradi|Fibroz displaziya va erta balog'at|Ko'ruv nervi gliomasi va feoxromotsitoma|Uchinchisi — endokrin gipersekretsiya.
+hyper-ige-syndrome-00ib3xj|Giper-IgE sindromi|Sut tishlari tushmasligi, ekzema va stafilokokk abssesslari nima|Giper-IgE sindromi|Surunkali granulematoz kasallik|Yuzi ham dag'al bo'ladi.
+mongolian-spot-1kcrbnf|Mo'g'ul dog'i||Mo'g'ul dog'i|Jarohatdan qolgan ko'karish|Chaqaloq belining ko'k-kulrang dog'i. Dermada to'xtab qolgan melanotsitlar.
+mongolian-spot-management-1ua11lw|Mo'g'ul dog'ini olib borish|Chaqaloq belidagi ko'k-kulrang dog' nimani talab qiladi|Odatiy kuzatuvni|Bolalar himoyasiga xabar berishni|Bu tug'ma dog', uni zo'ravonlik deb xato qilishadi.
+acanthosis-nigricans-picture-1a00fhu|Qora akantoz rasmi||Qora akantoz|Mo'g'ul dog'i|Bo'yin orqasidagi baxmalsimon to'q qalinlashuv.
+acanthosis-nigricans-meaning-1xmlxga|Qora akantozning ma'nosi|Bo'yin orqasidagi baxmalsimon to'q teri nimani ko'rsatadi|Giperinsulinemiyani|Buyrak usti yetishmovchiligini|Yoki birdan chiqsa, ostidagi oshqozon rakini.
+skin-tags-193j0b6|Teri o'simtalari||Teri o'simtalari|So'gallar|Bo'yindagi mayda yumshoq o'simtalar, insulinga rezistentlik ularni ko'paytiradi.
+diagnosing-acromegaly-1y4vy6v|Akromegaliyani aniqlash|Akromegaliya nimani o'lchash bilan tasdiqlanadi|Insulinsimon o'sish omili-1 ni|Qondagi o'sish gormonini|O'sish gormoni to'lqin bilan chiqadi, u qo'zg'atgan omil esa yo'q.
+charge-ear-00222l7|CHARGE dagi quloq||CHARGE sindromi|Daun sindromi|Koloboma va yurak nuqsoni bor boladagi solinchoqsiz, turtib chiqqan quloq.
+charge-atresia-1g80frg|CHARGE dagi atreziya|CHARGE sindromidagi A harfi nimaning atreziyasini bildiradi|Xoanalarning|Qizilo'ngachning|Bola emganda ko'karadi, yig'laganda qizaradi.
+preauricular-pit-1d9i9xe|Quloq oldi chuqurchasi||Quloq oldi chuqurchasi|Jabra yorig'i kistasi|Quloq oldidagi mayda teshikcha.
+preauricular-pit-management-0k8906v|Quloq oldi chuqurchasini olib borish|Bezovta qilmaydigan quloq oldi chuqurchasi nimani talab qiladi|Hech qanday davo kerak emas|Hoziroq jarrohlik yo'li bilan yopish|Tez-tez yallig'lansagina jarrohlik.
+strawberry-haemangioma-0dc49xd|«Qulupnay» gemangiomasi||«Qulupnay» gemangiomasi|Yassi «sharob dog'i»|Chaqaloqdagi ko'tarilgan, bo'lakli qizil tugun. «Sharob dog'i» yassi va o'tib ketmaydi.
+strawberry-haemangioma-management-1r6r3bn|«Qulupnay» gemangiomasini olib borish|«Qulupnay» gemangiomasi qanday olib boriladi|Kuzatib turiladi|Erta kesib olinadi|Biroz o'sadi, keyin o'z-o'zidan ketadi.
+cherry-haemangiomas-1m5btiv|«Gilos» gemangiomalari||«Gilos» gemangiomalari|Petexial toshma|Yosh o'tgan sari ko'payadigan mayda yorqin qizil gumbazlar.
+spina-bifida-occulta-1fdqsqb|Yashirin spina bifida|Chaqaloq belining ustidagi soch dastasi nimani bildiradi|Yashirin spina bifidani|Mo'g'ul dog'ini|Imtihonda «spinal disrafizm» deb yoziladi.
+cushing-striae-05nzlek|Kushing striyalari||Kushing sindromi|Homiladorlik chandiq izlari|Qorin bo'ylab keng binafsha striyalar. Oddiy chandiq izlari oqish va ingichka.
+cushing-striae-mechanism-031t3lt|Kushing striyalarining mexanizmi|Kushing sindromidagi striyalar nega binafsha|Kollagen va kapillyarlar zaiflashadi|Teri tezroq cho'zilib ketadi|Yupqalashgan teriga qon sizib chiqadi.
+cushing-and-bone-1m7znhz|Kushing va suyak|Uzoq vaqt prednizolon olayotgan bemorda nima xavfi bor|Osteoporoz|Osteopetroz|Striyalar aynan shundan ogohlantiradi.
+bronze-diabetes-0o7g89u|«Bronza diabeti»|Diabet va og'riyotgan qo'l bilan kechgan qoraygan bilak nimani talab qiladi|Zardob ferritinini|Zardob misini|Gemoxromatoz, osteoartrit emas, psevdopodagra bilan.
+addison-pigmentation-1imjgo5|Addison kasalligidagi pigmentatsiya|Addison kasalligida teri nega qorayadi|AKTG va alfa-MSG birga oshadi|Kortizol terini bo'yaydi|Ikkisi ham bitta o'tmishdoshdan, POMK dan chiqadi.
+addison-diagnosis-130x7q0|Addison kasalligini aniqlash|Holsizlik, yuqori kaliy, eozinofiliya va qoraygan bilak nimani talab qiladi|AKTG bilan stimulyatsiya testini|Najasni gijjaga tekshirishni|Eozinofiliya buyrak usti bezidan, gijjadan emas.
+kasabach-merritt-syndrome-11aw82r|Kazabax-Merritt sindromi||Kazabax-Merritt sindromi|«Qulupnay» gemangiomasi|Chaqaloqdagi yirik binafsha tomir shishi va past trombotsit.
+kasabach-merritt-mechanism-1e279bq|Kazabax-Merritt mexanizmi|Kazabax-Merritt sindromida trombotsitlar nega kamayadi|O'choq ichida ushlanib qoladi|Antitelolar ularni yemiradi|Davosi — jarrohlik.
+cigarette-burn-05xcvk6|Sigaret kuydirgan joy||Sigaret kuydirgan joy|Qobiqli impetigo|Bola qo'lidagi dumaloq, chetlari tik, chuqurligi bir xil kuyish.
+cigarette-burn-next-step-0664eh3|Sigaret kuyishida keyingi qadam|Sababsiz yelka suyagi sinishi bor boladagi dumaloq kuyish nimani talab qiladi|Bolalar himoyasiga xabar berishni|Tinchlantirib uyga yuborishni|Spiralsimon sinish ham bo'ladi, lekin bu yerda kuyish hal qiladi.
+keloid-picture-0hxuv93|Keloid rasmi||Keloid|Gipertrofik chandiq|Quloqdagi chandiq to'qimasi teshik chegarasidan tashqariga o'sgan.
+keloid-collagen-0v2bplh|Keloid kollageni|Keloid qaysi tur kollagenning tartibsiz o'sishi|I va III|II va IV|Gipertrofik chandiq yara ichida qoladi, keloid esa chiqib ketadi.
+pseudofolliculitis-barbae-0u7255c|Soqol psevdofollikuliti||Soqol psevdofollikuliti|Yuzdagi oddiy akne|Soqol sohasidagi papulalar, jingalak soch teriga qayta kirib ketgan.
+pseudofolliculitis-treatment-0k8ueov|Soqol psevdofollikulitini davolash|Soqoldagi «ustara bo'rtmalari» qanday davolanadi|Soqolni o'sishiga qo'yib berish bilan|Yanada yaqinroq soqol olish bilan|Soch teriga qayta kirishdan to'xtashi kerak.

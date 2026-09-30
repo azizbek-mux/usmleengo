@@ -301,3 +301,45 @@ I|Cafe au lait spot|derm,genetics|hdp51a.webp|A cafe au lait spot|A lentigo|A la
 B|Neurofibromatosis inheritance|derm,genetics|Neurofibromatosis type 1 is inherited|Autosomal dominantly|X-linked recessively|Cafe au lait spots, freckling in the armpits, neurofibromas.
 I|Adenoma sebaceum|derm,genetics,neuro|hdp51b.webp|Tuberous sclerosis|Acne vulgaris|Firm papules spreading over the nose and cheeks - angiofibromas, not acne.
 B|Tuberous sclerosis features|derm,genetics,neuro|Tuberous sclerosis pairs facial angiofibromas with|Cardiac rhabdomyoma|Cardiac myxoma|And renal angiomyolipoma, and subungual fibromas.
+
+# -- birthmarks and the syndromes behind them ---------------------------
+I|Port wine stain|derm,genetics,neuro|hdp52a.webp|Sturge-Weber syndrome|A strawberry haemangioma|A flat violet stain over the forehead and eyelid, in the trigeminal territory.
+B|Sturge-Weber associations|derm,genetics,neuro|A port wine stain in the trigeminal area goes with|Leptomeningeal angioma and glaucoma|Renal angiomyolipoma|Somatic mosaicism, so it is not inherited.
+I|Angiokeratomas|derm,genetics|hdp52b.webp|Fabry disease|Cherry haemangiomas|Small dark red papules clustered over the trunk and groin.
+B|Fabry enzyme|derm,genetics,biochem|Fabry disease is deficiency of|Alpha-galactosidase A|Beta-glucocerebrosidase|Ceramide trihexoside builds up; X-linked recessive.
+I|McCune-Albright spots|derm,genetics,endocrine|hdp53a.webp|McCune-Albright syndrome|Neurofibromatosis type 1|Large brown patches with ragged coast-of-Maine edges.
+B|McCune-Albright triad|derm,genetics,endocrine|McCune-Albright syndrome pairs those patches with|Fibrous dysplasia and precocious puberty|Optic glioma and pheochromocytoma|Endocrine hypersecretion is the third leg.
+B|Hyper-IgE syndrome|derm,immuno,peds|Retained baby teeth with eczema and staphylococcal abscesses is|Hyper-IgE syndrome|Chronic granulomatous disease|Coarse facies too - the FATED mnemonic.
+B|Leukocyte adhesion deficiency|derm,immuno,peds|A delayed umbilical cord with skin infections that make no pus is|Leukocyte adhesion deficiency|Chronic granulomatous disease|The CD18 integrin is defective.
+I|Mongolian spot|derm,peds|hdp53b.webp|A Mongolian spot|A bruise from injury|A blue-grey patch over a baby's lower back. Melanocytes that stopped short in the dermis.
+B|Mongolian spot management|derm,peds,ethics|A blue-grey patch on a newborn's back needs|Routine follow-up|A call to child protection|It is a birthmark, and it is mistaken for abuse.
+I|Acanthosis nigricans picture|derm,endocrine|hdp54a.webp|Acanthosis nigricans|A Mongolian spot|Velvety dark thickening at the nape of the neck.
+B|Acanthosis nigricans meaning|derm,endocrine|Velvety dark skin at the nape of the neck points to|Hyperinsulinaemia|Adrenal insufficiency|Or, if it erupts suddenly, a stomach cancer underneath.
+I|Skin tags|derm,endocrine|hdp54b.webp|Skin tags|Warts|Small soft outgrowths on the neck, which insulin resistance encourages.
+B|Diagnosing acromegaly|derm,endocrine|Acromegaly is confirmed by measuring|Insulin-like growth factor 1|Growth hormone|Growth hormone pulses; the factor it drives does not.
+I|CHARGE ear|derm,genetics,peds|hdp54c.webp|CHARGE syndrome|Down syndrome|A protruding ear with no lobe, in a child with a coloboma and a heart defect.
+B|CHARGE atresia|derm,genetics,peds|The A in CHARGE syndrome stands for atresia of|The choanae|The oesophagus|The baby goes blue feeding and pink crying.
+I|Preauricular pit|derm,peds|hdp55a.webp|A preauricular pit|A branchial cleft cyst|A small hole just in front of the ear.
+B|Preauricular pit management|derm,peds|An asymptomatic preauricular pit needs|No treatment|Surgical closure now|Surgery only if it keeps getting infected.
+I|Strawberry haemangioma|derm,peds|hdp55b.webp|A strawberry haemangioma|A port wine stain|A raised, lobulated red lump on a baby. A port wine stain is flat and stays.
+B|Strawberry haemangioma management|derm,peds|A strawberry haemangioma is managed by|Watching it|Excising it early|It grows a little, then goes by itself.
+I|Cherry haemangiomas|derm,geriatrics|hdp55c.webp|Cherry haemangiomas|A petechial rash|Small bright red domes that multiply with age.
+B|Spina bifida occulta|derm,neuro,peds|A tuft of hair over the lower back of a newborn means|Spina bifida occulta|A Mongolian spot|Written as spinal dysraphism on the exam.
+
+# -- the endocrine skin --------------------------------------------------
+I|Cushing striae|derm,endocrine|hdp56a.webp|Cushing syndrome|Stretch marks of pregnancy|Wide purple striae across the abdomen. Ordinary stretch marks are pale and thin.
+B|Cushing striae mechanism|derm,endocrine|The striae of Cushing syndrome are purple because|Collagen and capillaries are weakened|The skin is stretched faster|Blood leaks into the thinned skin.
+B|Cushing and bone|derm,endocrine,bone|A patient on long-term prednisone is at risk of|Osteoporosis|Osteopetrosis|Which is what the striae are warning about.
+B|Bronze diabetes|derm,endocrine,liver|Dark forearms with diabetes and sore hands calls for|Serum ferritin|Serum copper|Haemochromatosis, with pseudogout rather than osteoarthritis.
+B|Addison pigmentation|derm,endocrine|The skin darkens in Addison disease because|ACTH and alpha-MSH rise together|Cortisol stains the skin|Both come from the same precursor, POMC.
+B|Addison diagnosis|derm,endocrine|Fatigue with a high potassium, eosinophilia and dark forearms needs|An ACTH stimulation test|A stool sample for parasites|The eosinophilia is the adrenal, not a worm.
+I|Kasabach-Merritt syndrome|derm,peds,heme|hdp57a.webp|Kasabach-Merritt syndrome|A strawberry haemangioma|A large violet vascular swelling on a baby, with a low platelet count.
+B|Kasabach-Merritt mechanism|derm,peds,heme|The platelets fall in Kasabach-Merritt syndrome because they are|Trapped inside the lesion|Destroyed by antibodies|Treatment is surgical.
+
+# -- injury, scars and the last of the skin ------------------------------
+I|Cigarette burn|derm,peds,ethics|hdp57b.webp|A cigarette burn|Impetigo|A round, punched-out burn of even depth on a child's hand.
+B|Cigarette burn next step|derm,peds,ethics|A round burn on a child with an unexplained humerus fracture needs|A call to child protection|Reassurance and discharge|Spiral fractures too, but the burn is the giveaway.
+I|Keloid picture|derm|hdp58a.webp|A keloid|A hypertrophic scar|Lumpy scar tissue on the ear that has grown past the piercing that started it.
+B|Keloid collagen|derm,histo|A keloid is disorganised growth of collagen types|I and III|II and IV|A hypertrophic scar stays inside the wound; a keloid does not.
+I|Pseudofolliculitis barbae|derm|hdp58b.webp|Pseudofolliculitis barbae|Acne vulgaris|Papules through the beard area where curly hairs have grown back into the skin.
+B|Pseudofolliculitis treatment|derm|Razor bumps in the beard are treated by|Letting the beard grow|Shaving closer|The hair has to stop re-entering the skin.
