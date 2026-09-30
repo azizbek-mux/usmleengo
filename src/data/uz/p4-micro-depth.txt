@@ -1,0 +1,67 @@
+# Mikrobiologiya — chuqurlashtirilgan qism (qarang: TERMS.md)
+
+staphylococcus-aureus-19pw6j8|Staphylococcus aureus|S. aureus chaqirgan ovqatdan zaharlanish oldindan hosil bo'lgan ___ tufayli yuzaga keladi|enterotoksin|toksin|6 soat ichida qusish; ovqatni isitish yordam bermaydi.
+staphylococcus-aureus-18gfhvn|Staphylococcus aureus|Toksik shok sindromi toksini ___ sifatida ta'sir qiladi|superantigen|superantigen sifatida|Nospetsifik T hujayra faollashuvi va sitokin bo'roni.
+staphylococcus-aureus-0g2zrg3|Staphylococcus aureus|Vena ichiga giyohvand modda yuboruvchilarda S. aureus endokarditi qaysi qopqoqni zararlaydi?|Trikuspidal|Mitral|O'ng tomonda bo'lib, o'pkaga septik emboliyalar beradi.
+mrsa-06kf1rp|MRSA|MRSA rezistentligi nimadan kelib chiqadi|O'zgargan penitsillin bog'lovchi oqsildan|Faqat beta-laktamaza ishlab chiqarishdan|mecA geni PBP2a ni kodlaydi; beta-laktamlar bog'lana olmaydi.
+staphylococcus-saprophyticus-1iwgc6p|Staphylococcus saprophyticus|S. saprophyticus siydik yo'li infeksiyasini yosh, ___ ayollarda chaqiradi|jinsiy faol|jinsiy hayot kechiradigan|E. coli dan keyin ikkinchi eng ko'p uchraydigan sabab.
+streptococcus-pyogenes-1syrn5h|Streptococcus pyogenes|Streptokokkdan keyingi glomerulonefrit ___ yoki teri infeksiyasidan keyin rivojlanadi|faringit|tomoq, angina|Revmatik isitmadan farqli, antibiotiklar uning oldini olmaydi.
+rheumatic-fever-0l47dvy|Revmatik isitma|Revmatik isitma qaysi joy infeksiyasidan keyin rivojlanadi|Faqat tomoq|Faqat teri|Teri infeksiyasi glomerulonefrit chaqirishi mumkin, ammo revmatik isitma chaqirmaydi.
+rheumatic-fever-10trf52|Revmatik isitma|Revmatik isitma M oqsili bilan molekulyar ___ tufayli yuzaga keladi|mimikriya|mimikriyasi|Antitelolar miozin va qopqoq to'qimasi bilan kesishgan reaksiyaga kirishadi.
+streptococcus-pneumoniae-07f3pdf|Streptococcus pneumoniae|Pnevmokokkli pnevmoniyada klassik holda qanday balg'am bo'ladi|Zang rangli balg'am|Smorodina jelesi kabi balg'am|Smorodina jelesi Klebsiella dan dalolat beradi.
+streptococcus-pneumoniae-1i17yuq|Streptococcus pneumoniae|Taloqsiz bemorlar pnevmokokkka nega ayniqsa moyil|Taloq kapsulali mikroblarni tozalaydi|Taloq antitelolarning ko'p qismini ishlaydi|Pnevmokokk, meningokokk va Hib ga qarshi emlang.
+viridans-streptococci-0043fkh|Yashil streptokokklar|Yashil streptokokklar qopqoqlarga ___ yordamida yopishadi|dekstranlar|dekstran, glikokaliks|Saxarozadan hosil bo'ladi; ular tish kariesini ham chaqiradi.
+escherichia-coli-02krkp1|Escherichia coli|Chaqaloqlar meningitini chaqiruvchi E. coli ___ kapsula antigeniga ega|K1|k-1|Chaqaloqlar meningitining uchta asosiy qo'zg'atuvchisidan biri.
+klebsiella-0x4on9j|Klebsiella|Klebsiella pnevmoniyasi klassik holda kimlarda uchraydi|Alkogolizm va diabet bilan og'riganlarda|Butunlay sog'lom yosh kattalarda|Quyuq smorodina jelesi kabi balg'am va yuqori bo'lak kavernalari.
+pseudomonas-aeruginosa-1wyinw5|Pseudomonas aeruginosa|Pseudomonas ___ deb ataladigan ko'k-yashil pigment hosil qiladi|piotsianin|piosianin|Uzum hidi ham bor. Oksidaza-musbat.
+pseudomonas-aeruginosa-0m78w1o|Pseudomonas aeruginosa|Gangrenoz ektima nimadan dalolat beradi|Pseudomonas bakteriemiyasidan|Stafilokokkli abssessdan|Neytropenik bemorda qora nekrotik teri o'choqlari.
+haemophilus-influenzae-17q1b6v|Haemophilus influenzae|H. influenzae o'sishi uchun ___ va V omillari kerak|X|x omili|X — gematin, V — NAD. Qonli agarda S. aureus yonida o'sadi.
+bordetella-pertussis-0vclfb6|Bordetella pertussis|Ko'kyo'tal uchun nima xos|Yaqqol limfotsitoz|Neytrofiliya|Ko'kyo'tal toksini limfotsitlarning qondan chiqishiga to'sqinlik qiladi.
+vibrio-cholerae-0jzx81j|Vibrio cholerae|Vabo toksini ___ ni doimiy faollashtirib, sAMF ni oshiradi|Gs|g-s, adenilatsiklaza|Xlorid ajralishi tufayli «guruch suvi» kabi ko'p diareya.
+salmonella-versus-shigella-0bgq8fw|Salmonella va Shigella|Qaysi biri harakatchan va vodorod sulfid hosil qiladi?|Salmonella|Shigella|Shigella harakatsiz. Salmonellada xivchinlar bor.
+salmonella-versus-shigella-1snmj7a|Salmonella va Shigella|Qaysi birida antibiotiklar tashuvchilikni UZAYTIRADI?|Salmonella|Shigella|Antibiotiklar faqat og'ir salmonellyozda beriladi.
+helicobacter-pylori-0i8d5n6|Helicobacter pylori|H. pylori oshqozon kislotasidan ___ ishlab chiqarib saqlanadi|ureaza|ureaza fermenti|Mochevina bilan nafas testining asosi.
+helicobacter-pylori-01ii1ri|Helicobacter pylori|H. pylori qaysi kasalliklar xavfini oshiradi|Oshqozon adenokarsinomasi va MALT limfoma|Qizilo'ngach adenokarsinomasi va Barrett|Barrett qizilo'ngachi esa qizilo'ngach adenokarsinomasiga olib keladi.
+mycobacterium-tuberculosis-0alvm1q|Mycobacterium tuberculosis|Mikobakteriyalarning kislotaga chidamliligi ___ kislotasidan kelib chiqadi|mikol|mikol kislotasi|Mumsimon devor Gram bo'yog'i va rangsizlantirishga chidamli.
+tuberculosis-0srlplg|Sil|Birlamchi sil odatda qayerni zararlaydi|Pastki bo'laklarni|Cho'qqilarni|Qayta faollashuv kislorodga boy cho'qqilarni afzal ko'radi.
+tuberculosis-1phfpay|Sil|Kalsinatlangan birlamchi o'choq va o'pka darvozasi tuguni birga ___ kompleksi deyiladi|Gon|ghon|Kalsinatlangach, Ranke kompleksiga aylanadi.
+latent-tuberculosis-0f0qy3o|Yashirin sil|Yashirin sil nima bilan davolanadi|Bir necha oy yolg'iz izoniazid|Olti oy to'rt preparatli davo|Yoki rifampitsin. To'rt preparat faol kasallik uchun.
+antituberculous-drugs-0dglcfk|Silga qarshi preparatlar|Etambutol klassik holda ___ nervni shikastlaydi|ko'rish|ko'rish nervi|Qizil-yashil rangni ajratmaslik; boshlashdan oldin ko'rishni tekshiring.
+leprosy-1aeceav|Moxov|Mycobacterium leprae qayerda yaxshi o'sadi|Teri va nervlar kabi salqin joylarda|Tananing iliq markazi va jigarda|Shuning uchun u oyoq-qo'llar va yuzni zararlaydi.
+mycoplasma-13vq23z|Mikoplazma|Mikoplazmada ___ yo'q, shuning uchun beta-laktamlar ta'sir qilmaydi|hujayra devori|devor, peptidoglikan|Uning membranasida sterinlar bo'ladi.
+legionella-0glibcb|Legionella|Legionella qanday tashxislanadi|Siydikda antigen testi bilan|Qonni ekib tekshirish bilan|Gram usulida yomon bo'yaladi; ko'mir-xamirturush ekstrakti agari kerak.
+legionella-06am1x6|Legionella|Legionella pnevmoniyasi klassik holda nima bilan birga keladi|Diareya va giponatriemiya|Qabziyat va natriy yuqoriligi|Suv tizimlari va konditsionerlardan yuqadi.
+chlamydia-trachomatis-0s6klwi|Chlamydia trachomatis|Xlamidiyaning A-C serotiplari ko'rlikning asosiy sabablaridan biri — ___ ni chaqiradi|traxoma|traxomani|D-K jinsiy infeksiya, L1-L3 esa venerik limfogranulyoma beradi.
+chlamydia-1chao5i|Xlamidiya|Xlamidiya nimani o'zi hosil qila olmaydi|ATF|Oqsil|Hujayra ichida yashovchi majburiy energiya paraziti.
+lyme-disease-1gkoqw4|Laym kasalligi|Erta Laym kasalligi ___ eritemani chaqiradi|ko'chuvchi|surunkali ko'chuvchi|Ixodes kanasi chaqqandan keyin nishonsimon toshma.
+lyme-disease-137jbb4|Laym kasalligi|Kechki Laym kasalligi nimaga olib kelishi mumkin|Atrioventrikulyar blokada|Aorta qopqog'i stenozi|Shuningdek artrit va yuz nervi falaji.
+syphilis-1pquel8|Zaxm|Birlamchi zaxm og'riqsiz ___ beradi|shankr|qattiq shankr|Og'riqli yaralar esa yumshoq shankrdan dalolat beradi.
+secondary-syphilis-0kvzssf|Ikkilamchi zaxm|Ikkilamchi zaxm klassik holda qayerni zararlaydi|Kaft va tovonni|Faqat bosh terisini butunlay|Kondilomalar bilan dog'li-papulali toshma.
+neurosyphilis-1y4cine|Neyrosifilis|Argayl Robertson qorachiqlari akkomodatsiya qiladi, ammo ___|reaksiya bermaydi|torayadi, yorug'likka javob beradi|Bunday qorachiq neyrosifilisga xos.
+jarisch-herxheimer-reaction-0lkpzce|Yarish-Gerksgeymer reaksiyasi|Yarish-Gerksgeymer reaksiyasi nimadan keyin yuzaga keladi|Zaxmni penitsillin bilan davolashdan|Davolanmagan ikkilamchi zaxmdan|Parchalangan spiroxetalardan isitma va mushak og'rig'i.
+rocky-mountain-spotted-fever-1075rwd|Toshli tog'lar dog'li isitmasi|Bu isitmadagi toshma ___ dan boshlanadi|bilak va to'piqlar|bilaklar, to'piqlar|Keyin markazga tarqaladi. Rickettsia rickettsii.
+herpes-simplex-0hhvo3y|Oddiy gerpes|1-tip gerpes ensefaliti ___ bo'lagini afzal ko'radi|chakka|chakka bo'lagi|Gemorragik nekroz; darhol atsiklovir bilan davolanadi.
+cytomegalovirus-15ykybo|Sitomegalovirus|Sitomegalovirus zararlagan hujayralarda nima ko'rinadi|«Boyqush ko'zi» yadro ichi kiritmalari|Babesh-Negri sitoplazmatik tanachalari|Babesh-Negri tanachalari quturishga xos.
+epstein-barr-virus-0fy14b7|Epshteyn-Barr virusi|Epshteyn-Barr virusi burun-halqum karsinomasi va ___ limfomasi bilan bog'liq|Berkitt|burkitt|Shuningdek Xodjkin limfomasi va transplantatsiyadan keyingi limfoproliferativ kasallik.
+infectious-mononucleosis-0uom41k|Infeksion mononukleoz|Mononukleozda amoksitsillin berish nimaga olib keladi|Dog'li-papulali toshma|Anafilaktik reaksiya|Klassik ishora, haqiqiy penitsillin allergiyasi emas.
+infectious-mononucleosis-1iytcru|Infeksion mononukleoz|Mononukleoz bilan og'rigan bemorlar nimadan saqlanishi kerak|Kontaktli sport turlaridan|Sut mahsulotlaridan|Bir necha hafta taloq yorilishi xavfi bor.
+varicella-zoster-0ki7zxt|Suvchechak va o'rab oluvchi temiratki|Suvchechak virusi orqa ildiz ___ ida latent holda saqlanadi|gangliyalari|gangliya, gangliy|Dermatom bo'ylab temiratki sifatida qayta faollashadi.
+hepatitis-b-05p17bv|B gepatiti|HBeAg yuqori ___ va yuqumlilikni bildiradi|replikatsiya|virus replikatsiyasi, yuqumlilik|Virusning faol ko'payishini belgilaydi.
+hepatitis-d-0nh86eu|D gepatiti|D gepatiti ko'payish uchun qaysi virusga muhtoj?|B gepatiti|C gepatiti|U HBsAg qobig'idan foydalanadi.
+hepatitis-e-0r80mlh|E gepatiti|E gepatiti ayniqsa qachon xavfli|Homiladorlikda|Bolalikda|Uchinchi trimestrda fulminant gepatitdan o'lim yuqori.
+hiv-13d04gi|OIV|OIV xo'jayin DNK siga ___ fermenti yordamida integratsiyalanadi|integraza|integraza fermenti|Raltegravir va dolutegravir shunga qarshi yo'naltirilgan.
+hiv-1287tkt|OIV|OIV infeksiyasi nima bilan tasdiqlanadi|To'rtinchi avlod antigen-antitelo testi bilan|Boshlang'ich skrining sifatida immunoblot bilan|To'rtinchi avlod testi p24 antigenini erta aniqlaydi.
+measles-1n7shmv|Qizamiq|Qizamiqda Koplik dog'lari lunj ___ ida paydo bo'ladi|shilliq qavati|shilliq qavat, shilliq pardasi|Toshmadan oldin chiqadigan mayda oq dog'lar.
+rabies-0sih7rp|Quturish|Quturish virusi markaziy nerv sistemasiga qanday yetib boradi|Retrograd aksonal transport orqali|Qon orqali tarqalish yo'li bilan|Shuning uchun ta'sirdan keyingi profilaktika erta bosqichda ishlaydi.
+poliovirus-087gpt1|Poliovirus|Poliovirus orqa miyaning oldingi ___ ini yemiradi|shoxi|shox hujayralari|Faqat pastki motor neyron falaji, sezgi saqlanadi.
+parvovirus-b19-0ad7607|Parvovirus B19|O'roqsimon hujayrali anemiyada parvovirus B19 nimaga olib keladi|Aplastik kriz|Vazo-okklyuziv kriz|U eritroid o'tmishdosh hujayralarni bevosita zararlaydi.
+parvovirus-b19-1eb3f59|Parvovirus B19|Homiladorlikda parvovirus B19 nimaga olib keladi|Homilaning umumiy shishi|Oyoq-qo'l nuqsonlari|Homilada og'ir anemiya va yuqori haydash hajmli yetishmovchilik.
+aspergillus-1w35vo1|Aspergillus|Aspergillusda septali gifalar ___ daraja ostida shoxlanadi|45|45 daraja, o'tkir|Mucor septasiz va 90 daraja ostida shoxlanadi.
+mucormycosis-0lal13n|Mukormikoz|Mukormikoz klassik holda qachon uchraydi|Diabetik ketoatsidozda|Sog'lom kattalarda|Burun-ko'z-miya sohasiga o'sadi; shoshilinch nekrektomiya kerak.
+pneumocystis-jirovecii-01wbgqo|Pneumocystis jirovecii|Pnevmotsista ___ bo'yicha metenamin kumush bilan ko'riladi|Gomori|gms|«Matoviy shisha» infiltratlari va LDG oshishi.
+candida-08ht9rw|Kandida|Ishqorli surtmada kandida qanday ko'rinadi|Psevdogifalar va kurtaklanuvchi zamburug'|Keng asosli kurtaklanuvchi zamburug'|Keng asosli kurtaklanish — blastomitsetlarga xos.
+toxoplasma-gondii-0smk7k9|Toxoplasma gondii|Homilador ayollar toksoplazmozning oldini olish uchun ___ axlatidan saqlanishi kerak|mushuk|mushuklar|Shuningdek yaxshi pishmagan go'shtdan.
+entamoeba-histolytica-0doptvs|Entamoeba histolytica|Entamoeba klassik holda nimaga olib keladi|Yo'g'on ichakda ko'zasimon yaralar|Vorsinkalar atrofiyasi va to'mtoqlashuvi|Shuningdek «ansovus pastasi» kabi jigar abssessi.
+schistosoma-hematobium-133qu6x|Schistosoma hematobium|S. hematobium qovuqning ___ hujayrali karsinomasi xavfini oshiradi|yassi|yassi hujayrali|Odatdagi uroteliy karsinomasidan farqli.
+taenia-solium-0vamfv5|Taenia solium|Taenia solium TUXUMLARINI yutish nimaga olib keladi|Neyrotsistiserkoz|Ichak lentasimon chuvalchangi|Cho'chqa go'shtidagi lichinkalarni yesa, ichak chuvalchangi rivojlanadi.
+ascaris-0z6375i|Askarida|Askarida lichinkalari ___ orqali ko'chib, o'tkinchi xirillash beradi|o'pka|o'pkalar|Eozinofiliya bilan Lyoffler sindromi.

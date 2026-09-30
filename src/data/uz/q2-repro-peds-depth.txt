@@ -1,0 +1,66 @@
+# q2-repro-peds-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+menstrual-cycle-11bytpa|Hayz sikli|Ovulyatsiyani ___ ning keskin ko'tarilishi qo'zg'atadi|LG|lg, lyuteinlovchi gormon|Tuxum hujayra chiqishidan taxminan 36 soat oldin.
+luteal-phase-0jkdr82|Lyuteal faza|Lyuteal faza qanday|Doimiy 14 kun|Juda o'zgaruvchan|O'zgaruvchan bo'lgani — follikulyar faza.
+corpus-luteum-1b44m2x|Sariq tana|Sariq tana endometriyni saqlash uchun ___ ajratadi|progesteron|progesteron gormonini|Homiladorlik bo'lsa, xorionik gonadotropin uni saqlab qoladi.
+estrogen-1tfgbk5|Estrogen|Estrogen LG ga musbat teskari aloqa qachon ko'rsatadi|Ovulyatsiyadan sal oldin|Sikl davomida doimo|Qolgan vaqtda u tormozlovchi ta'sir qiladi.
+inhibin-1oo40za|Ingibin|Ingibin tanlab ___ ni bostiradi|FSG|fsg gormonini|Granulyoza hujayralaridan; menopauzada pasayadi.
+granulosa-cells-0x2wla1|Granulyoza hujayralari|Granulyoza hujayralari androgenlarni estrogenga nima yordamida aylantiradi|Aromataza|5-alfa-reduktaza|Teka hujayralari androgen o'tmishdoshini yetkazib beradi.
+hcg-1qvouuo|Xorionik gonadotropin|Xorionik gonadotropin qon zardobida homila urug'langanidan taxminan ___ kun keyin aniqlanadi|8|sakkiz, 8-11|Boshida har 48 soatda taxminan ikki baravar oshadi.
+hcg-1up5klw|Xorionik gonadotropin|Muddatga nisbatan juda yuqori gonadotropin nimadan dalolat beradi|Puffak skarlanish yoki egizaklardan|Bachadondan tashqari homiladorlikdan|Bachadondan tashqari homiladorlikda u juda sekin ko'tariladi.
+pregnancy-cardiovascular-1tjdlb6|Homiladorlikda yurak-qon tomir tizimi|Homiladorlikda plazma hajmi taxminan ___ foizga oshadi|50|ellik, 40-50|Bu suyultirilishdan kelib chiqqan fiziologik anemiyaga olib keladi.
+pregnancy-respiratory-1lhve6u|Homiladorlikda nafas tizimi|Homiladorlikda nafas hajmi|Oshadi|Kamayadi|Qoldiq hajm kamayadi; kompensatsiyalangan respirator alkaloz yuzaga keladi.
+placenta-0xgni66|Yo'ldosh|Yo'ldoshning homila tomoni ___ dan rivojlanadi|xorion|trofoblast, xorion frondozum|Ona tomoni esa bazal detsidua.
+ectopic-pregnancy-0vqdgqr|Bachadondan tashqari homiladorlik|Gonadotropin chegara darajasidan yuqori bo'lib, ___ homiladorlik ko'rinmasa, shubha qilinadi|bachadon ichi|bachadondagi, intrauterin|Taxminan 1500-3500 mXB/ml.
+ectopic-pregnancy-00u1982|Bachadondan tashqari homiladorlik|Metotreksat qo'llash uchun nima kerak|Yorilmagan kichik holat va barqaror hayotiy ko'rsatkichlar|Tashxis qo'yilgan har qanday holat bo'lishi kifoya|Yorilish bo'lsa, operatsiya kerak.
+gestational-diabetes-0fasxmp|Gestatsion diabet|Gestatsion diabet ___ haftada skrining qilinadi|24|24-28, 28|Glyukoza bilan sinov testi yordamida.
+gestational-diabetes-1st6ger|Gestatsion diabet|Diabet bilan og'rigan onadan tug'ilgan chaqaloqda qanday xavf bor|Tug'ilgandan keyin gipoglikemiya|Tug'ilganda giperglikemiya|Glyukoza kelishi to'xtasa ham homiladagi giperinsulinemiya saqlanadi.
+preeclampsia-09h9uze|Preeklampsiya|Ikkinchi trimestrdan past dozadagi ___ preeklampsiya xavfini kamaytiradi|aspirin|aspirin preparati|Yuqori xavfli ayollarga 12-haftadan beriladi.
+hellp-syndrome-0be3ozp|HELLP sindromi|HELLP sindromi gemoliz, jigar fermentlari oshishi va yana nimadan iborat|Trombotsitlarning kamayishi|Kaliyning kamayishi|Preeklampsiyaning og'ir turi.
+magnesium-toxicity-12rc18d|Magniy toksikligi|Magniy toksikligining birinchi belgisi — chuqur pay ___ ning yo'qolishi|reflekslari|refleks, reflekslarining|Keyin nafas depressiyasi. Kalsiy glyukonat bilan bartaraf etiladi.
+rh-isoimmunization-19acqly|Rezus izoimmunizatsiyasi|Anti-D immunoglobulin kimlarga beriladi|Rezus-manfiy onalarga|Rezus-musbat onalarga|28-haftada va tug'ruqdan yoki sensibilizatsiya holatidan keyin.
+postpartum-hemorrhage-00te35y|Tug'ruqdan keyingi qon ketishi|Tug'ruqdan keyingi qon ketishining eng ko'p uchraydigan sababi — bachadon ___|atoniyasi|atoniya|Massaj, oksitotsin, keyin boshqa uterotoniklar.
+amniotic-fluid-1wbx4td|Amniotik suyuqlik|Mekoniy bilan bo'yalgan suyuqlik nima xavfini oshiradi|Mekoniy aspiratsiyasi sindromi|Nerv nayining ochiq nuqsonlari|Ayniqsa muddatidan keyingi tug'ruqlarda.
+preterm-labour-1yx8av6|Muddatidan oldin tug'ruq|34-haftagacha homila o'pkasini yetiltirish uchun ___ beriladi|kortikosteroidlar|steroidlar, betametazon|Respirator distress va qorincha ichiga qon quyilishini kamaytiradi.
+endometriosis-08wfor5|Endometrioz|Endometriozning eng ko'p uchraydigan joyi — ___|tuxumdon|tuxumdonlar|«Shokolad» kistalari hosil bo'ladi.
+adenomyosis-0bpqwh5|Adenomioz|Adenomioz nimaga olib keladi|Bir tekis kattalashgan, og'riqli bachadon|Aniq chegarali, qattiq, harakatchan hosilalar|Aniq chegarali hosilalarni mioma beradi.
+leiomyoma-0stsffp|Mioma|Mioma ko'pincha menorragiya va ___ tanqisligi anemiyasiga olib keladi|temir|temir tanqisligi|Estrogenga sezgir; menopauzadan keyin kichrayadi.
+polycystic-ovary-syndrome-1oxn11t|Polikistoz tuxumdonlar sindromi|Homiladorlikni istamagan ayolda birinchi tanlov davo|Kombinatsiyalangan og'zaki kontratseptiv|Klomifen sitrat bilan davo sikllari|Ovulyatsiyani qo'zg'atish uchun klomifen yoki letrozol ishlatiladi.
+ovarian-cancer-1mflefb|Tuxumdon saratoni|Epitelial tuxumdon saratonining o'sma markeri — CA-___|125|ca125|Skrining uchun yaroqsiz; nazorat uchun ishlatiladi.
+ovarian-cancer-17sorre|Tuxumdon saratoni|BRCA mutatsiyalari sut bezi va qaysi saraton xavfini oshiradi|Tuxumdon saratoni|Bachadon bo'yni saratoni|Xavfni kamaytiruvchi salpingo-ooforektomiya taklif qilinadi.
+cervical-cancer-1b4aor9|Bachadon bo'yni saratoni|Bachadon bo'yni saratonini OPV ning 16 va ___ tiplari chaqiradi|18|o'n sakkiz|6 va 11 tiplari so'gal chaqiradi.
+cervical-screening-04j24zd|Bachadon bo'yni skriningi|Bachadon bo'yni skriningi hozir asosan nimaga tayanadi|OPV testiga|Faqat sitologiyaga|Sezgirroq; sitologiya saralash uchun ishlatiladi.
+endometrial-cancer-1c2egfw|Endometriy saratoni|Endometriy saratonining eng ko'p uchraydigan belgisi — menopauzadan keyingi ___|qon ketishi|qon ketish|Har doim biopsiya talab qiladi.
+menopause-0z7y9un|Menopauza|Menopauza qancha vaqtdan keyin tashxislanadi|12 oy amenoreyadan keyin|6 oy amenoreyadan keyin|Klinik tasdiqlanadi; FSG odatda kerak emas.
+hormone-therapy-0ua02qi|Gormonal davo|Bachadoni bor ayolda qarshiliksiz estrogen endometriy ___ xavfini tug'diradi|karsinomasi|saratoni, giperplaziyasi|Shuning uchun progestogen qo'shiladi.
+apgar-score-1q87w4c|Apgar shkalasi|Apgar shkalasi 1 va ___ daqiqada baholanadi|5|besh|Tashqi ko'rinish, puls, reaksiya, faollik, nafas.
+neonatal-jaundice-18tpa5t|Chaqaloqlar sariqligi|Ona suti sariqligi qachon paydo bo'ladi|Ikkinchi haftada, xavfsiz kechadi|Hayotning birinchi 24 soatida|Emizish yetishmovchiligi sariqligi suvsizlanishdan erta paydo bo'ladi.
+kernicterus-0s0vrjb|Kernikterus|Bilvosita bilirubin bazal ___ ga cho'kib, kernikterus chaqiradi|gangliyalar|gangliya, yadrolar|Xoreoatetoid miya falaji va karlik.
+respiratory-distress-syndrome-1nxzk6y|Respirator distress-sindrom|Chaqaloqlar respirator distress-sindromida rentgenda qanday manzara bo'ladi?|Havo bronxogrammalari bilan «matoviy shisha»|Yassilanish va o'choqli atelektazlar|Chala tug'ilgan o'pkada surfaktant yetishmovchiligi.
+transient-tachypnea-0pmb6fw|O'tkinchi taxipnoe|Chaqaloqlarning o'tkinchi taxipnoesi o'pka ___ ning kech chiqishidan kelib chiqadi|suyuqligi|suyuqlik|Kesar kesishdan keyin ko'proq; 48 soatda o'tib ketadi.
+neonatal-sepsis-1pbw9gb|Chaqaloqlar sepsisi|Erta boshlangan chaqaloqlar sepsisining eng ko'p uchraydigan qo'zg'atuvchisi|B guruh streptokokki|Staphylococcus aureus|Shuningdek E. coli va Listeria.
+congenital-hypothyroidism-0ajpndh|Tug'ma gipotireoz|Tug'ma gipotireoz uzoq davom etgan sariqlik va kindik ___ ga olib keladi|churrasi|churra|Shuningdek til kattalashadi va bola yomon emadi.
+developmental-dysplasia-of-the-hip-0l420vd|Chanoq-son bo'g'imi displaziyasi|Chanoq-son bo'g'imi displaziyasi qanday skrining qilinadi|Barlou va Ortolani sinamalari bilan|Tug'ilganda chanoq rentgenogrammasi bilan|Ultratovush tasdiqlaydi; suyaklanish hali to'liq emas.
+growth-0iphrt2|O'sish|Tug'ilgandagi vazn ___ oyda ikki baravar oshadi|4|to'rt, 4-5|Bir yilda esa uch baravar bo'ladi.
+milestones-0r7gh0o|Rivojlanish bosqichlari|Ijtimoiy tabassum taxminan qachon paydo bo'ladi|2 oyda|6 oyda|6 oyda tayanmasdan o'tiradi, 12 oyda yuradi.
+anterior-fontanelle-1ev977g|Oldingi liqildoq|Oldingi liqildoq ___ oyda yopiladi|18|o'n sakkiz, 18-24|Kech yopilishi gipotireoz yoki raxitdan dalolat beradi.
+failure-to-thrive-0zbkph0|Vazn ortmasligi|Dunyo bo'yicha vazn ortmasligining eng ko'p uchraydigan sababi|Kaloriyaning yetarli emasligi|Ichakda so'rilishning buzilishi|Tekshiruvdan oldin har doim ovqatlanishni baholang.
+bronchiolitis-1jqydk0|Bronxiolit|Bronxiolit asosan ___ va kislorod bilan olib boriladi|so'rish|aspiratsiya, qo'llab-quvvatlovchi davo|Bronxodilatatorlar va steroidlar yordam bermaydi.
+croup-04qrodo|Krup|Krup nima bilan davolanadi|Deksametazon|Antibiotiklar|Og'ir stridorda nebulayzer orqali adrenalin.
+epiglottitis-1fa2c94|Epiglottit|Epiglottitda bo'yin yon rentgenogrammasida «___» belgisi ko'rinadi|bosh barmoq|barmoq izi, bosh barmoq izi|Tomoqni ko'rikdan o'tkazmang; avval nafas yo'lini ta'minlang.
+intussusception-1wjgyut|Invaginatsiya|Invaginatsiya nima bilan ham tashxislanadi, ham davolanadi|Havo yoki kontrast klizma bilan|Darhol operatsiya bilan|Klizma samarasiz bo'lsa yoki teshilish bo'lsa — operatsiya.
+pyloric-stenosis-0s48wqc|Pilorostenoz|Pilorostenozda ultratovushda «___» belgisi ko'rinadi|nishon|nishonsimon, halqa|Epigastriyda paypaslanadigan «zaytun».
+henoch-schonlein-purpura-1r1nmnd|Shenlyayn-Genox purpurasi|Bu purpura nima bilan asoratlanishi mumkin|Invaginatsiya|Ichak burilishi|Ichak devori shishi boshlovchi nuqta bo'lib xizmat qiladi.
+kawasaki-disease-0puf0x1|Kavasaki kasalligi|Kavasaki kasalligi uchun kamida ___ kun isitma va to'rtta mezon kerak|5|besh|Konyunktivit, toshma, limfadenopatiya, shilliq qavat va oyoq-qo'l o'zgarishlari.
+juvenile-idiopathic-arthritis-0gnf0cf|Yuvenil idiopatik artrit|Oligoartikulyar yuvenil artritda nimani skrining qilish kerak|Uveit|Nefrit|Ko'pincha belgisiz kechadi; ANA musbat bo'lsa xavf ortadi.
+cystic-fibrosis-1omvs1p|Mukovistsidoz|Chaqaloqda mekoniy ___ i mukovistsidozdan kuchli dalolat beradi|ileus|ileusi|48 soat ichida mekoniy ajralmasligi.
+duchenne-muscular-dystrophy-0vqip1x|Dyushenn mushak distrofiyasi|Dyushenn distrofiyasi qon zardobida nimaning oshishi bilan skrining qilinadi|Kreatinkinaza|Faqat aldolaza|Genetik tekshiruv bilan tasdiqlanadi.
+retinoblastoma-09n1vyw|Retinoblastoma|Retinoblastoma klassik holda oq qorachiq refleksi — ___ bilan namoyon bo'ladi|leykokoriya|leykokoria|Shoshilinch yo'llanma; irsiy bo'lsa, ikki tomonlama bo'lishi mumkin.
+neuroblastoma-0yo5hk8|Neyroblastoma|Opsoklonus-mioklonus sindromi qaysi o'smaning paraneoplastik belgisi|Neyroblastoma|Vilms o'smasi|«Raqs tushuvchi ko'zlar, raqs tushuvchi oyoqlar».
+sudden-infant-death-02huetm|Chaqaloqning to'satdan o'limi|Bu holatning bartaraf etiladigan asosiy xavf omili — ___ yotish|qorinda|qorin bilan, yuzi pastga|«Chalqancha uxlash» kampaniyalari o'limni keskin kamaytirdi.
+child-immunization-02loctt|Bolalarni emlash|Qizamiq-tepki-qizilcha vaksinasi birinchi marta qachon beriladi|12-15 oylikda|Tug'ilganda|Undan oldin ona antitelolari uni neytrallab qo'yardi.
+benign-prostatic-hyperplasia-073ds07|Prostata bezining xavfsiz giperplaziyasi|Alfa-blokatorlar prostata silliq ___ ini bo'shashtirib yengillik beradi|mushagi|mushak, mushaklarini|Tez yengillik beradi; 5-alfa-reduktaza ingibitorlari bezni sekin kichraytiradi.
+prostate-cancer-1jjy2ck|Prostata saratoni|Prostata saratoni ko'pincha qayerga metastaz beradi|Suyakka, osteoblastik ko'rinishda|O'pkaga, «to'p» shaklidagi o'choqlar bilan|Ishqoriy fosfataza oshgan va sklerotik o'choqlar.
+varicocele-1rdia1x|Varikotsele|Varikotsele paypaslaganda «___ xaltasi» kabi seziladi|chuvalchanglar|chuvalchang|Chap tomonda bo'ladi; o'ngda yangi paydo bo'lsa, tekshiruv kerak.
+testicular-cancer-09sndyg|Moyak saratoni|Og'riqsiz moyak hosilasi nima bilan baholanadi|Ultratovush va o'sma markerlari bilan|Ingichka ignali punksion biopsiya bilan|Biopsiya tarqalish xavfini tug'diradi; orxektomiya ham tashxis, ham davo.
+hydrocele-06qxvyb|Gidrotsele|Gidrotsele ko'rikda ___, qattiq hosiladan farqli|nur o'tkazadi|yorug'lik o'tkazadi, transilluminatsiya|Moyak pardasi ichidagi suyuqlik.

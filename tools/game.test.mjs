@@ -182,6 +182,88 @@ check("with how many got a typed one right", G.view(t, t2, t.opensAt).solution.t
   G.view(t, t2, t.opensAt).solution.tally.answered === 2);
 check("a one-question game ends after it", G.tick(t, t.revealEndsAt) && t.phase === "final");
 
+/* ── two languages in one game ─────────────────────────────────────────── */
+// A game is played by friends, and friends do not all read the app in the
+// same language. The creator sends both; the room puts each question to each
+// phone in the language that phone asked for, and marks it the same way.
+console.log("\ntwo languages in one game");
+const uzBank = [
+  { id: "ub", type: "binary", topic: "Aortic stenosis", tags: ["cardio"], q: "Where does it radiate?",
+    options: ["Carotids", "Axilla"], answer: 0, explain: "Axilla means mitral.",
+    uzt: { t: "Aorta stenozi", q: "Shovqin qayerga uzatiladi?", o: ["Uyqu arteriyalariga", "Qo'ltiq osti sohasiga"], e: "Qo'ltiqqa — mitral." } },
+  { id: "ug", type: "gap", topic: "Cachexia cytokine", tags: ["immuno"], q: "TNF-alpha is also ___ factor",
+    answer: "cachexia", accept: ["cachexia", "cachectin"], explain: "High-yield.",
+    uzt: { t: "Kaxeksiya sitokini", q: "TNF-alfa ___ omili ham", a: "kaxeksiya", c: ["kaxeksiya", "kaxektin", "cachexia", "cachectin"], e: "Muhim." } },
+  { id: "uimg", type: "binary", topic: "Picture", tags: ["histo"], q: "", img: "p01-a.webp",
+    options: ["A", "B"], answer: 0, explain: "", hideTopic: true,
+    uzt: { t: "Rasm", q: "", o: ["A", "B"], e: "", h: 1 } },
+  { id: "uonly", type: "binary", topic: "Untranslated", tags: ["cardio"], q: "Only English?",
+    options: ["Yes", "No"], answer: 0, explain: "Not translated yet." },
+];
+const uzForGame = uzBank.map(L.forGame);
+check("the creator sends the Uzbek beside the English",
+  uzForGame[0].q === "Where does it radiate?" && uzForGame[0].uz.q === "Shovqin qayerga uzatiladi?" &&
+  uzForGame[0].uz.topic === "Aorta stenozi" && uzForGame[0].uz.options[0] === "Uyqu arteriyalariga");
+check("a typed question sends its Uzbek spellings too",
+  uzForGame[1].uz.answer === "kaxeksiya" && uzForGame[1].uz.accept.includes("kaxektin"));
+check("an Uzbek topic that gives the answer away is marked", uzForGame[2].uz.hideTopic === true);
+check("a picture question has no second wording", uzForGame[2].uz.q === "");
+check("a question with no translation sends English alone", !("uz" in uzForGame[3]));
+check("both halves reach the server", G.cleanQuestions(uzForGame) !== null &&
+  G.cleanQuestion(uzForGame[0]).uz.topic === "Aorta stenozi");
+const halfBroken = G.cleanQuestion({ ...uzForGame[0], uz: { topic: "", options: ["a"] } });
+check("a broken Uzbek half is dropped, the question kept",
+  halfBroken?.q === "Where does it radiate?" && !("uz" in halfBroken));
+
+// random: () => 0.9 swaps the options, so this also proves the two languages
+// are swapped together and the one answer index still fits both.
+const twoLangGame = (questions, settings = { seconds: 15, qtype: "binary", count: 5, tags: [] }, code = "482194") =>
+  G.newGame({ code, settings, questions, creatorToken: "tok", now: T0, random: () => 0.9 });
+
+let two = twoLangGame([uzForGame[0], uzForGame[3]]);
+const en1 = G.join(two, { clientId: id(1), name: "Aziz", creatorToken: "tok", lang: "en" }, T0).pid;
+const uz1 = G.join(two, { clientId: id(2), name: "Laylo", lang: "uz" }, T0).pid;
+G.start(two, en1, T0);
+const enQ = G.view(two, en1, two.opensAt).question;
+const uzQ = G.view(two, uz1, two.opensAt).question;
+check("each player is shown their own language",
+  enQ.q === "Where does it radiate?" && uzQ.q === "Shovqin qayerga uzatiladi?" &&
+  enQ.topic === "Aortic stenosis" && uzQ.topic === "Aorta stenozi");
+check("the options are shuffled, and in step",
+  enQ.options[1] === "Carotids" && uzQ.options[1] === "Uyqu arteriyalariga" &&
+  enQ.options[0] === "Axilla" && uzQ.options[0] === "Qo'ltiq osti sohasiga");
+check("so the right answer is the same tap in either language",
+  G.answer(two, en1, { index: 0, choice: 1 }, two.opensAt).correct &&
+  G.answer(two, uz1, { index: 0, choice: 1 }, two.opensAt).correct);
+check("and the explanation comes in their language too",
+  G.view(two, uz1, two.opensAt).solution.explain === "Qo'ltiqqa — mitral." &&
+  G.view(two, en1, two.opensAt).solution.explain === "Axilla means mitral.");
+G.tick(two, two.revealEndsAt);
+check("an untranslated question falls back to English for everyone",
+  G.view(two, uz1, two.opensAt).question.q === "Only English?" &&
+  G.view(two, uz1, two.opensAt).question.topic === "Untranslated");
+
+let typedTwo = twoLangGame([uzForGame[1]], { seconds: 30, qtype: "gap", count: 5, tags: [] }, "482195");
+const te = G.join(typedTwo, { clientId: id(1), name: "Aziz", creatorToken: "tok", lang: "en" }, T0).pid;
+const tu = G.join(typedTwo, { clientId: id(2), name: "Laylo", lang: "uz" }, T0).pid;
+G.start(typedTwo, te, T0);
+check("a typed answer is marked against the player's own spellings",
+  G.answer(typedTwo, tu, { index: 0, text: "kaxektin" }, typedTwo.opensAt).correct &&
+  G.answer(typedTwo, te, { index: 0, text: "cachectin" }, typedTwo.opensAt).correct);
+check("and each is told their own answer afterwards",
+  G.view(typedTwo, tu, typedTwo.opensAt).solution.answer === "kaxeksiya" &&
+  G.view(typedTwo, te, typedTwo.opensAt).solution.answer === "cachexia");
+
+let switching = twoLangGame([uzForGame[0]], undefined, "482196");
+const sw = G.join(switching, { clientId: id(4), name: "Aziz", creatorToken: "tok" }, T0).pid;
+G.join(switching, { clientId: id(5), name: "Laylo" }, T0);
+G.start(switching, sw, T0);
+check("no language asked for means English",
+  G.view(switching, sw, switching.opensAt).question.topic === "Aortic stenosis");
+G.join(switching, { clientId: id(4), name: "Aziz", creatorToken: "tok", lang: "uz" }, switching.opensAt);
+check("changing language in the app and coming back changes the questions",
+  G.view(switching, sw, switching.opensAt).question.topic === "Aorta stenozi");
+
 console.log("\nlimits");
 let big = makeGame();
 for (let i = 1; i <= L.MAX_PLAYERS; i++) G.join(big, { clientId: id(i), name: `P${i}` }, T0);

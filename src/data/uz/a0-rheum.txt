@@ -1,0 +1,53 @@
+# a0-rheum — o'zbekcha tarjima (qarang: TERMS.md)
+
+ganglion-cyst-0fzapc0|Gigroma|Belgisiz kechuvchi gigroma odatda qanday olib boriladi|Kuzatuv|Jarrohlik yo'li bilan olib tashlash|Ko'pchiligi o'z-o'zidan o'tib ketadi; ko'pincha bilakning orqa yuzasida.
+teriparatide-0zrmqkf|Teriparatid|Teriparatid suyakni qanday mustahkamlaydi|Osteoblastlar yetilishini qo'zg'atib|Osteoklastlar rezorbsiyasini bloklab|Oraliq PTG anabolik ta'sir qiladi; uzluksiz PTG esa suyakni yemiradi.
+bisphosphonates-0qwgzq1|Bisfosfonatlar|Bisfosfonatlar qanday ta'sir qiladi|Osteoklastlar apoptozini oshirib|Osteoblastlarni qo'zg'atish orqali|Jag' osteonekrozi va sonning atipik sinishi xavfi.
+osteoporosis-histology-0hgmq17|Osteoporoz gistologiyasi|Osteoporozda nima kuzatiladi|Trabekulalar yupqalashadi va bog'lanishlari kamayadi|Suyakda mineralsizlangan osteoid to'planib qoladi|Suyak miqdori va sifati pasayadi; mineralizatsiya normada.
+osteomalacia-1ncmzv9|Osteomalyatsiya|Osteomalyatsiya nima bilan tavsiflanadi|Suyakda mineralsizlangan osteoidning ko'pligi|Massa kam, mineralizatsiya esa normada|Kattalarda D vitamini yetishmovchiligi.
+ankylosing-spondylitis-1l2854p|Ankilozlovchi spondilit|Ankilozlovchi spondilit ___ birikkan joylarini yallig'lantiradi|payning|pay, entezis|Entezit; O'NO-alfa va IL-17 boshqaradi. HLA-B27 bilan bog'liq.
+ankylosing-spondylitis-16ml3dn|Ankilozlovchi spondilit|Ankilozlovchi spondilitda rentgenda nima ko'rinadi|Eroziyalar va yangi suyak hosil bo'lishi|Yangi suyaksiz sof suyak yo'qotilishi|«Bambuk tayoq» va sakroileit.
+muscle-contraction-0lqzdri|Mushak qisqarishi|Kalsiy ___ ga bog'lanib, miozin bog'lanish joylarini ochadi|troponin|troponin c|Troponin C tropomiozinni aktin bog'lanish joyidan siljitadi.
+sarcomere-0vbli20|Sarkomer|Qaysi diskda faqat yo'g'on iplar bo'ladi?|H zonasi|I disk|I diskda faqat ingichka iplar; qisqarishda ikkalasi ham qisqaradi.
+sarcomere-109fihk|Sarkomer|Qisqarish paytida qaysi disk o'zgarmaydi?|A disk|I disk|A disk yo'g'on ipning uzunligi, u hech qachon o'zgarmaydi.
+mitochondrial-disease-1egyf51|Mitoxondrial kasallik|Mitoxondrial kasallikning turlicha og'irligi ___ bilan tushuntiriladi|geteroplazmiya|geteroplazmiyasi|Har bir hujayrada mutant mitoxondriyalar ulushi har xil.
+osteogenesis-imperfecta-0bncwtk|Mukammal bo'lmagan osteogenez|Mukammal bo'lmagan osteogenez nimani buzadi|Osteoblastlarning osteoid ishlab chiqarishini|Osteoklastlarning suyakni yemirishini|I tip kollagen nuqsoni; ko'k sklera va suyak sinishlari.
+hypertrophic-osteoarthropathy-1o1zemb|Gipertrofik osteoartropatiya|Gipertrofik osteoartropatiyada nima kuzatiladi|Suyak usti pardasida yangi suyak hosil bo'lishi|Suyak minerallarining umumiy yo'qotilishi|«Baraban tayoqchasi» va og'riqli periostoz; ko'pincha o'pka saratonida.
+hamstring-injury-060uk9i|Son orqa mushaklari shikasti|Sonning ikki boshli mushagi sonni yozadi va tizzani ___|bukadi|bukuvchi, bukilish|Son orqa mushaklari cho'zilsa, sonni yozish va tizzani bukish cheklanadi.
+myasthenia-gravis-1nieb43|Miasteniya|Miasteniya qaysi a'zo patologiyasi bilan bog'liq|Timus|Qalqonsimon bez|Timoma yoki timus giperplaziyasi; timektomiya yordam berishi mumkin.
+rheumatoid-factor-1nw0rn3|Revmatoid omil|Revmatoid omil nimaga qarshi antitelo|IgG ning Fc qismiga|Siklik sitrullinlangan peptidga|Anti-CCP revmatoid artrit uchun spetsifikroq.
+rheumatoid-arthritis-139rarh|Revmatoid artrit|Revmatoid artrit qaysi bo'g'imlarni odatda zararlamaydi|Distal falangalararo bo'g'imlarni|Kaft-falanga bo'g'imlarini|Osteoartrit esa distal bo'g'imlarni zararlaydi — Geberden tugunchalari.
+rheumatoid-arthritis-075033s|Revmatoid artrit|Revmatoid artritda birinchi tanlov bazis preparati|Metotreksat|Gidroksixloroxin|Bazis preparatlari ta'sir qilguncha steroidlar tez yengillik beradi.
+paget-disease-of-bone-17iksbp|Suyak Pedjet kasalligi|Suyak Pedjet kasalligi qaysi hujayralarning haddan tashqari faolligidan boshlanadi|Osteoklastlar|Osteoblastlar|Keyin tartibsiz osteoblastik suyak; ishqoriy fosfataza oshgan, kalsiy normada.
+paget-disease-of-bone-0ubwzn3|Suyak Pedjet kasalligi|Suyak Pedjet kasalligining eng xavfli asorati|Osteosarkoma|Ko'p sonli mieloma|Zararlangan suyakda to'satdan yangi og'riq paydo bo'lishi.
+azathioprine-and-allopurinol-1n9kpbi|Azatioprin va allopurinol|Allopurinol qaysi preparat darajasini xavfli oshiradi|Azatioprin|Metotreksat|Ksantinoksidaza blokadasi 6-merkaptopurin parchalanishiga to'sqinlik qiladi.
+achondroplasia-06ynbhl|Axondroplaziya|Axondroplaziyada FGFR3 mutatsiyasi qaysi hujayralarga ta'sir qiladi|Xondrotsitlarga|Osteoblastlarga|Endoxondral suyaklanish buziladi; membranali suyaklanish normada.
+proton-pump-inhibitors-1uyreir|Proton pompasi ingibitorlari|Proton pompasi ingibitorlarini uzoq qabul qilish nima xavfini oshiradi|Osteoporotik sinish|Suyak osteosarkomasi|Kislotalik pasayib, kalsiy so'rilishi kamayadi.
+acute-gout-0srv0wm|O'tkir podagra|O'tkir podagra xurujida asosiy effektor hujayra|Neytrofil|Semiz hujayra|Urat kristallarining fagotsitozi yallig'lanishni kuchaytiradi.
+gout-crystals-1xncbcd|Podagra kristallari|Podagra kristallari qanday bo'ladi|Ignasimon, manfiy nur sindiruvchi|Romb shaklli, musbat nur sindiruvchi|Psevdopodagrada kalsiy pirofosfat bo'lib, u musbat nur sindiradi.
+colchicine-0o3n34v|Kolxitsin|Kolxitsin podagrani nimaga bog'lanib davolaydi|Mikronaychalarga|Siklooksigenazaga|Neytrofillar xemotaksisi va fagotsitozini bloklaydi.
+thiazides-and-gout-0i9ny28|Tiazidlar va podagra|Qaysi antigipertenziv preparat podagrani qo'zg'atadi?|Gidroxlorotiazid|Lozartan kaliy tuzi|Tiazidlar urat chiqarilishini kamaytiradi; lozartan esa urikozurik.
+giant-cell-arteritis-0fmp1t5|Gigant hujayrali arteriit|Gigant hujayrali arteriitda nima ko'rinadi|O'rta qavatning granulyomatoz yallig'lanishi|Ichki qavatning fibrinoid nekrozi va shishi|Jag' oqsoqlanishi va ko'rish yo'qolishi; biopsiyadan oldin steroid boshlanadi.
+giant-cell-arteritis-0w02683|Gigant hujayrali arteriit|Gigant hujayrali arteriit nima bilan bog'liq|Revmatik polimialgiya|Ankilozlovchi spondilit|Proksimal qotishlik va EChT ning yuqoriligi.
+polyarteritis-nodosa-18tecff|Tugunli poliarteriit|Tugunli poliarteriit odatda qaysi a'zoni zararlamaydi|O'pkani|Buyraklarni|Transmural nekrozlovchi yallig'lanish; B gepatiti bilan bog'liq.
+polyarteritis-nodosa-0uoj5n8|Tugunli poliarteriit|Tugunli poliarteriitdagi o'choqlar qanday|Segmentar va turli yoshda|Bir xil va bir vaqtda paydo bo'lgan|Angiografiyada «tasbeh donalari» kabi mikroanevrizmalar.
+supraspinatus-1djtqyz|Qirra usti mushagi|Qirra usti mushagi tendinopatiyasida og'riq qachon paydo bo'ladi|Yonga uzoqlashtirishda|Ichkariga burishda|Uzoqlashtirishning dastlabki 15 darajasida; «bo'sh banka» sinamasi.
+dupuytren-contracture-06i1pwj|Dyupyuitren kontrakturasi|Dyupyuitren kontrakturasining sababi|Kaft fassiyasi fibroblastlarining ko'payishi|Bukuvchi pay uzilishi va tortilib qolishi|Nomsiz va jimjiloq barmoqlarni zararlaydi.
+hemochromatosis-arthropathy-1ukixjw|Gemoxromatoz artropatiyasi|Gemoxromatoz artropatiyasi klassik holda qaysi bo'g'imlarni zararlaydi|Ikkinchi va uchinchi kaft-falanga bo'g'imlarini|Qo'lning distal falangalararo bo'g'imlarini|Temir to'planishi va kalsiy pirofosfat cho'kishi.
+shoulder-dislocation-0xe34h1|Yelka chiqishi|Yelka bo'g'imi eng ko'p qaysi tomonga chiqadi|Old tomonga|Orqa tomonga|Bo'g'im chuqurchasi sayoz; qo'ltiq nervi xavf ostida.
+posterior-shoulder-dislocation-1dqamvf|Yelkaning orqaga chiqishi|Yelkaning orqaga chiqishi klassik holda nimadan keyin bo'ladi|Tutqanoq yoki elektr toki urishidan|Yozilgan qo'lga yiqilishdan|Ichkariga buruvchi mushaklar tashqariga buruvchilardan kuchli keladi.
+osteoclast-differentiation-0kqcsnp|Osteoklast differensiatsiyasi|RANK ligandi RANK ga bog'lanib, ___ differensiatsiyasini boshqaradi|osteoklast|osteoklastlar|Osteoprotegerin — uni bloklovchi aldamchi retseptor.
+denosumab-039hezl|Denosumab|Denosumab nimaga qarshi monoklonal antitelo|RANK ligandiga|Sklerostinga|Osteoprotegeringa taqlid qilib, osteoklastlarni tormozlaydi.
+systemic-sclerosis-1qhvub5|Tizimli skleroz|Tizimli sklerozda o'limning asosiy sababi|Interstitsial o'pka kasalligi|O'tkir sklerodermik buyrak krizi|Kollagenning tarqoq to'planishi; anti-Scl-70 antitelolari.
+limited-scleroderma-0p1l1ny|Cheklangan sklerodermiya|CREST sindromi qaysi antitelo bilan bog'liq?|Antitsentromer|Anti-Scl-70|Kalsinoz, Reyno, qizilo'ngach harakatchanligi buzilishi, sklerodaktiliya, telangiektaziya.
+sporotrichosis-0ux7ex5|Sporotrixoz|Sporotrix infeksiyasi nimadan keyin yuzaga keladi|Tuproq va o'simlik bilan kontaktdan|Zararlangan mushuk tirnashidan|«Bog'bonlar kasalligi»; limfa yo'llari bo'ylab ko'tariluvchi tugunlar.
+osteoarthritis-0l3kyd4|Osteoartrit|Osteoartritda ertalabki qotishlik qancha davom etadi|30 daqiqadan kam|Bir soatdan ko'p|Uzoq qotishlik yallig'lanishli artritdan dalolat beradi.
+septic-arthritis-1na7242|Septik artrit|Septik artritning eng ko'p uchraydigan qo'zg'atuvchisi|Staphylococcus aureus|Neisseria gonorrhoeae|Yosh, jinsiy faol kattalarda gonokokk birinchi o'rinda.
+osteosarcoma-18ffu77|Osteosarkoma|Osteosarkomada klassik holda nima ko'rinadi|«Quyosh nurlari» va Kodman uchburchagi|«Piyoz po'sti» ko'rinishidagi qatlamlar|O'smirlarda uzun suyaklar metafizida.
+ewing-sarcoma-0zobmqm|Yuing sarkomasi|Yuing sarkomasida qanday translokatsiya bo'ladi?|t(11;22)|t(9;22)|«Piyoz po'sti» periostal reaksiyasi; mayda yumaloq ko'k hujayralar.
+duchenne-muscular-dystrophy-00ifp89|Dyushenn mushak distrofiyasi|Dyushenn distrofiyasi qaysi oqsil mutatsiyasidan kelib chiqadi|Distrofin|Fibrillin|X ga birikkan; ramka siljishli delesiya. Bekker kasalligida ramka saqlanadi.
+gower-sign-0d373rz|Gauers belgisi|Gauers belgisi qaysi mushaklar kuchsizligidan dalolat beradi|Proksimal mushaklar|Distal mushaklar|Bola turish uchun qo'llari bilan oyoqlariga tayanib ko'tariladi.
+polymyositis-197g53a|Polimiozit|Polimiozitda qanday yallig'lanish manzarasi bo'ladi?|Endomiziyda CD8 infiltratsiyasi|Perimiziyda CD4 infiltratsiyasi|Dermatomiozitda perimizial infiltrat va perifassikulyar atrofiya bo'ladi.
+dermatomyositis-0nc2o08|Dermatomiozit|Dermatomiozitda nimani qidirish kerak|Yashirin xavfli o'sma|Buyrak kasalligi|Gottron papulalari va geliotrop toshma.
+carpal-tunnel-syndrome-1e2qy1u|Karpal kanal sindromi|Karpal kanal sindromida qaysi nerv siqiladi|O'rta nerv|Tirsak nervi|Tenar atrofiyasi; kaft sezgisi saqlanadi, chunki u tarmoq kanal ustidan o'tadi.
+osteomyelitis-in-children-1vftnz9|Bolalardagi osteomiyelit|Bolalardagi osteomiyelit odatda qayerni zararlaydi|Uzun suyaklar metafizini|Bo'g'imga yaqin epifizni|Qon oqimi sekin va boy bo'lgan joyga bakteriyalar o'tiradi.

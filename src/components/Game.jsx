@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import bank from "../data/bank.js";
+import bank, { bilingualBank } from "../data/bank.js";
 import {
   CODE_RE, DEFAULT_SETTINGS, GAME_TYPES, MAX_PLAYERS, MIN_PLAYERS, QUESTION_COUNTS, SECONDS,
   availableFor, inviteLink, maxPoints, pickGameQuestions,
 } from "../lib/game.js";
 import { connectGame, createGame } from "../lib/gameApi.js";
+import { t } from "../lib/i18n.js";
 import { subjects } from "../lib/match.js";
 import { inviteMessage } from "../lib/shareText.js";
 import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
@@ -17,7 +18,8 @@ import { PlaceMark } from "./Rating.jsx";
 // here reads or writes the player's own progress — a game is only a game.
 
 const NICK_KEY = "usmle_game_nick";
-const typeName = (id) => GAME_TYPES.find((t) => t.id === id)?.name || id;
+const typeName = (id) => ({ binary: t("Tap", "Test"), gap: t("Typed", "Yozma"), mixed: t("Mixed", "Aralash") })[id] || id;
+const gameTypes = () => GAME_TYPES.map((type) => ({ id: type.id, name: typeName(type.id) }));
 
 function readNick() {
   try { return localStorage.getItem(NICK_KEY) || ""; } catch { return ""; }
@@ -30,22 +32,29 @@ function writeNick(name) {
 export function describe(settings, total = settings.count) {
   const topics = settings.tags?.length
     ? settings.tags.map(tagLabel).join(", ")
-    : "all topics";
-  return `${total} question${total === 1 ? "" : "s"} · ${settings.seconds}s · ${typeName(settings.qtype)} · ${topics}`;
+    : t("all topics", "barcha mavzular");
+  return t(
+    `${total} question${total === 1 ? "" : "s"} · ${settings.seconds}s · ${typeName(settings.qtype)} · ${topics}`,
+    `${total} ta savol · ${settings.seconds} soniya · ${typeName(settings.qtype)} · ${topics}`,
+  );
 }
 
 /** "482 193", easier to read out. */
 const spaced = (code) => `${code.slice(0, 3)} ${code.slice(3)}`;
 
 /** What went wrong, in words a player can act on. */
-const REASONS = {
-  missing: ["No game with that code", "It may have ended, or the code has a typo."],
-  started: ["This game has already started", "Wait for the round to end — the host can start a new one, and you can join then."],
-  full: ["This game is full", `A game holds ${MAX_PLAYERS} players.`],
-  closed: ["This game was closed", "Nobody played for half an hour."],
-  offline: ["Lost the connection", "Check your internet, then join again with the same code."],
-  create: ["Couldn’t create the game", "Check your internet and try again."],
-};
+const reasons = () => ({
+  missing: [t("No game with that code", "Bunday kodli o'yin yo'q"),
+    t("It may have ended, or the code has a typo.", "U tugagan bo'lishi yoki kodda xato bo'lishi mumkin.")],
+  started: [t("This game has already started", "Bu o'yin allaqachon boshlangan"),
+    t("Wait for the round to end — the host can start a new one, and you can join then.",
+      "Raund tugashini kuting — boshlovchi yangisini boshlaganda qo'shila olasiz.")],
+  full: [t("This game is full", "Bu o'yin to'lgan"), t(`A game holds ${MAX_PLAYERS} players.`, `O'yinda ${MAX_PLAYERS} kishigacha bo'lishi mumkin.`)],
+  closed: [t("This game was closed", "Bu o'yin yopilgan"), t("Nobody played for half an hour.", "Yarim soat davomida hech kim o'ynamadi.")],
+  offline: [t("Lost the connection", "Aloqa uzildi"),
+    t("Check your internet, then join again with the same code.", "Internetni tekshiring va o'sha kod bilan qayta qo'shiling.")],
+  create: [t("Couldn’t create the game", "O'yinni yaratib bo'lmadi"), t("Check your internet and try again.", "Internetni tekshirib, qayta urinib ko'ring.")],
+});
 
 /* ── the way in ──────────────────────────────────────────────────────── */
 
@@ -95,35 +104,35 @@ function GameMenu({ code, setCode, nickname, setNickname, nameOk, invited, onCre
   const codeOk = CODE_RE.test(code);
   return (
     <div className="screen">
-      <ScreenHead title="Multiplayer" sub="Live game with friends" />
+      <ScreenHead title={t("Multiplayer", "O'yin")} sub={t("Live game with friends", "Do'stlar bilan jonli o'yin")} />
 
       <div className="game-hero">
-        <div className="game-hero-t">Play live with friends</div>
+        <div className="game-hero-t">{t("Play live with friends", "Do'stlaringiz bilan jonli o'ynang")}</div>
         <div className="game-hero-n">
-          Everyone gets the same question at the same moment. Right and fast wins.
-          Nothing here changes your XP, streak or rating.
+          {t("Everyone gets the same question at the same moment. Right and fast wins. Nothing here changes your XP, streak or rating.",
+            "Hamma bir xil savolni bir vaqtda oladi. To'g'ri va tez javob bergan yutadi. Bu yerda XP, kunlik intizom va reytingingiz o'zgarmaydi.")}
         </div>
       </div>
 
       {!inTelegram && (
         <label className="game-field">
-          <span className="section-label">Your name</span>
+          <span className="section-label">{t("Your name", "Ismingiz")}</span>
           <input
             className="gap-input"
             value={nickname}
             maxLength={40}
             onChange={(e) => setNickname(e.target.value)}
-            placeholder="How friends will see you"
+            placeholder={t("How friends will see you", "Do'stlaringiz sizni shu nom bilan ko'radi")}
             autoComplete="nickname"
           />
         </label>
       )}
 
       <button className="btn btn-primary" disabled={!nameOk} onClick={() => { haptic("medium"); onCreate(); }}>
-        Create a game
+        {t("Create a game", "O'yin yaratish")}
       </button>
 
-      <div className="section-label game-or">{invited ? "Your invite" : "Or join one"}</div>
+      <div className="section-label game-or">{invited ? t("Your invite", "Sizga taklif") : t("Or join one", "Yoki o'yinga qo'shiling")}</div>
       <form
         className="game-join"
         onSubmit={(e) => {
@@ -135,14 +144,14 @@ function GameMenu({ code, setCode, nickname, setNickname, nameOk, invited, onCre
           className="gap-input game-code-input"
           value={code}
           onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
-          placeholder="6-digit code"
+          placeholder={t("6-digit code", "6 xonali kod")}
           inputMode="numeric"
           autoComplete="off"
-          aria-label="Game code"
+          aria-label={t("Game code", "O'yin kodi")}
         />
-        <button className="btn btn-ghost game-join-btn" disabled={!codeOk || !nameOk}>Join</button>
+        <button className="btn btn-ghost game-join-btn" disabled={!codeOk || !nameOk}>{t("Join", "Qo'shilish")}</button>
       </form>
-      {!nameOk && <div className="cta-note">Type your name first.</div>}
+      {!nameOk && <div className="cta-note">{t("Type your name first.", "Avval ismingizni yozing.")}</div>}
     </div>
   );
 }
@@ -182,7 +191,7 @@ function GameSetup({ onBack, onCreated }) {
 
   function toggle(tag) {
     haptic("light");
-    setTags((t) => (t.includes(tag) ? t.filter((x) => x !== tag) : [...t, tag]));
+    setTags((now) => (now.includes(tag) ? now.filter((x) => x !== tag) : [...now, tag]));
   }
 
   async function create() {
@@ -191,7 +200,9 @@ function GameSetup({ onBack, onCreated }) {
     setFailed(false);
     const settings = { qtype, count, seconds, tags };
     try {
-      const code = await createGame(settings, pickGameQuestions(bank, settings));
+      // Both languages go up with the questions, so a game can be shared
+      // with a friend who reads the app in the other one.
+      const code = await createGame(settings, pickGameQuestions(await bilingualBank(), settings));
       onCreated(code);
     } catch {
       setFailed(true);
@@ -201,21 +212,21 @@ function GameSetup({ onBack, onCreated }) {
 
   return (
     <div className="screen">
-      <BackBar title="New game" onBack={onBack} />
+      <BackBar title={t("New game", "Yangi o'yin")} onBack={onBack} />
 
-      <div className="section-label">Question type</div>
-      <Presets values={GAME_TYPES} value={qtype} onPick={setQtype} />
+      <div className="section-label">{t("Question type", "Savol turi")}</div>
+      <Presets values={gameTypes()} value={qtype} onPick={setQtype} />
 
-      <div className="section-label">Questions</div>
+      <div className="section-label">{t("Questions", "Savollar soni")}</div>
       <Presets values={QUESTION_COUNTS} value={count} onPick={setCount} />
 
-      <div className="section-label">Time for each question</div>
+      <div className="section-label">{t("Time for each question", "Har bir savolga vaqt")}</div>
       <Presets values={SECONDS} value={seconds} onPick={setSeconds} label="s" />
 
       <div className="chips-head">
-        <span className="section-label" style={{ margin: 0 }}>Topics</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Topics", "Mavzular")}</span>
         {tags.length > 0 && (
-          <button className="chips-clear" onClick={() => { haptic("light"); setTags([]); }}>Clear {tags.length}</button>
+          <button className="chips-clear" onClick={() => { haptic("light"); setTags([]); }}>{t(`Clear ${tags.length}`, `Tozalash (${tags.length})`)}</button>
         )}
       </div>
       <div className="chips">
@@ -233,16 +244,18 @@ function GameSetup({ onBack, onCreated }) {
       </div>
 
       <div className="home-cta">
-        {failed && <div className="game-warn">{REASONS.create[0]}. {REASONS.create[1]}</div>}
+        {failed && <div className="game-warn">{reasons().create[0]}. {reasons().create[1]}</div>}
         <button className="btn btn-primary" disabled={busy || !available} onClick={create}>
-          {busy ? "Creating…" : "Create game"}
+          {busy ? t("Creating…", "Yaratilmoqda…") : t("Create game", "O'yinni yaratish")}
         </button>
         <div className="cta-note">
           {!available
-            ? "No questions match these choices."
+            ? t("No questions match these choices.", "Bu tanlovga mos savol yo'q.")
             : available < count
-              ? `Only ${available} question${available === 1 ? "" : "s"} match — the game will have ${available}.`
-              : `${tags.length ? "Chosen topics" : "All topics"} · ${available.toLocaleString()} questions to pick from, at random`}
+              ? t(`Only ${available} question${available === 1 ? "" : "s"} match — the game will have ${available}.`,
+                `Faqat ${available} ta savol mos keladi — o'yinda ${available} ta savol bo'ladi.`)
+              : t(`${tags.length ? "Chosen topics" : "All topics"} · ${available.toLocaleString()} questions to pick from, at random`,
+                `${tags.length ? "Tanlangan mavzular" : "Barcha mavzular"} · ${available.toLocaleString()} ta savoldan tasodifiy tanlanadi`)}
         </div>
       </div>
     </div>
@@ -303,17 +316,17 @@ function LiveGame({ code, nickname, onLeave }) {
   }
 
   if (error) {
-    const [title, body] = REASONS[error] || ["Something went wrong", "Try joining again."];
+    const [title, body] = reasons()[error] || [t("Something went wrong", "Nimadir xato ketdi"), t("Try joining again.", "Qayta qo'shilib ko'ring.")];
     return (
       <div className="screen">
-        <BackBar title="Multiplayer" onBack={onLeave} />
+        <BackBar title={t("Multiplayer", "O'yin")} onBack={onLeave} />
         <div className="empty" style={{ marginTop: 40 }}>
           <div className="empty-big">🎮</div>
           <div className="game-err-t">{title}</div>
           <div className="sub" style={{ marginTop: 6 }}>{body}</div>
         </div>
         <div className="home-cta">
-          <button className="btn btn-primary" onClick={onLeave}>Back</button>
+          <button className="btn btn-primary" onClick={onLeave}>{t("Back", "Orqaga")}</button>
         </div>
       </div>
     );
@@ -322,10 +335,10 @@ function LiveGame({ code, nickname, onLeave }) {
   if (!game) {
     return (
       <div className="screen">
-        <BackBar title="Multiplayer" onBack={leave} />
+        <BackBar title={t("Multiplayer", "O'yin")} onBack={leave} />
         <div className="empty" style={{ marginTop: 40 }}>
           <div className="empty-big">🎮</div>
-          <div>{status === "reconnecting" ? "Reconnecting…" : `Joining game ${spaced(code)}…`}</div>
+          <div>{status === "reconnecting" ? t("Reconnecting…", "Qayta ulanmoqda…") : t(`Joining game ${spaced(code)}…`, `${spaced(code)} o'yiniga qo'shilinmoqda…`)}</div>
         </div>
       </div>
     );
@@ -337,26 +350,28 @@ function LiveGame({ code, nickname, onLeave }) {
   return (
     <div className="screen game">
       <div className="game-top">
-        <button className="close" onClick={() => { haptic("light"); setConfirmLeave(true); }} aria-label="Leave the game">×</button>
+        <button className="close" onClick={() => { haptic("light"); setConfirmLeave(true); }} aria-label={t("Leave the game", "O'yindan chiqish")}>×</button>
         <span className="game-top-t">
-          {inPlay ? `Question ${game.index + 1} of ${game.total}` : game.phase === "final" ? "Results" : "Game lobby"}
+          {inPlay
+            ? t(`Question ${game.index + 1} of ${game.total}`, `${game.total} tadan ${game.index + 1}-savol`)
+            : game.phase === "final" ? t("Results", "Natijalar") : t("Game lobby", "Kutish xonasi")}
         </span>
-        <span className="game-top-me">{me && game.phase !== "lobby" ? `${me.score.toLocaleString()} pts` : ""}</span>
+        <span className="game-top-me">{me && game.phase !== "lobby" ? t(`${me.score.toLocaleString()} pts`, `${me.score.toLocaleString()} ball`) : ""}</span>
       </div>
 
       {confirmLeave && (
-        <div className="game-confirm" role="alertdialog" aria-label="Leave the game?">
+        <div className="game-confirm" role="alertdialog" aria-label={t("Leave the game?", "O'yindan chiqasizmi?")}>
           <span>
             {game.phase === "lobby" || game.phase === "final"
-              ? "Leave this game?"
-              : "Leave? Your points stay on the board."}
+              ? t("Leave this game?", "O'yindan chiqasizmi?")
+              : t("Leave? Your points stay on the board.", "Chiqasizmi? Ballaringiz jadvalda qoladi.")}
           </span>
-          <button className="chips-clear" onClick={() => setConfirmLeave(false)}>Stay</button>
-          <button className="chips-clear game-confirm-go" onClick={leave}>Leave</button>
+          <button className="chips-clear" onClick={() => setConfirmLeave(false)}>{t("Stay", "Qolish")}</button>
+          <button className="chips-clear game-confirm-go" onClick={leave}>{t("Leave", "Chiqish")}</button>
         </div>
       )}
-      {status === "reconnecting" && <div className="game-warn">Reconnecting…</div>}
-      {notice === "too-few" && <div className="game-warn">At least {MIN_PLAYERS} players are needed to start.</div>}
+      {status === "reconnecting" && <div className="game-warn">{t("Reconnecting…", "Qayta ulanmoqda…")}</div>}
+      {notice === "too-few" && <div className="game-warn">{t(`At least ${MIN_PLAYERS} players are needed to start.`, `Boshlash uchun kamida ${MIN_PLAYERS} kishi kerak.`)}</div>}
 
       {game.phase === "lobby" && <Lobby game={game} send={send} />}
       {game.phase === "question" && (
@@ -375,8 +390,8 @@ function PlayerName({ p, you, host }) {
     <span className="board-who">
       <span className="board-name">
         {p.name}
-        {p.pid === you && <span className="board-you">you</span>}
-        {p.pid === host && <span className="game-host">host</span>}
+        {p.pid === you && <span className="board-you">{t("you", "siz")}</span>}
+        {p.pid === host && <span className="game-host">{t("host", "boshlovchi")}</span>}
       </span>
       {p.username && <span className="board-user">@{p.username}</span>}
     </span>
@@ -392,7 +407,7 @@ function Lobby({ game, send }) {
   return (
     <>
       <div className="game-code-card">
-        <span className="perf-points-l">Game code</span>
+        <span className="perf-points-l">{t("Game code", "O'yin kodi")}</span>
         <span className="game-code">{spaced(game.code)}</span>
         <span className="game-code-about">{describe(game.settings, game.total)}</span>
         <button
@@ -402,19 +417,19 @@ function Lobby({ game, send }) {
             share(inviteMessage({ code: game.code, about: describe(game.settings, game.total), link }));
           }}
         >
-          Share invite
+          {t("Share invite", "Taklifni ulashish")}
         </button>
       </div>
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>Players</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Players", "O'yinchilar")}</span>
         <span className="game-count">{here.length} / {MAX_PLAYERS}</span>
       </div>
       <div className="board">
         {game.players.map((p) => (
           <div key={p.pid} className={`board-row${p.pid === game.you ? " me" : ""}${p.connected ? "" : " away"}`}>
             <PlayerName p={p} you={game.you} host={game.host} />
-            {!p.connected && <span className="game-away">away</span>}
+            {!p.connected && <span className="game-away">{t("away", "chiqib ketgan")}</span>}
           </div>
         ))}
       </div>
@@ -427,18 +442,22 @@ function Lobby({ game, send }) {
               disabled={here.length < MIN_PLAYERS}
               onClick={() => { haptic("medium"); send({ type: "start" }); }}
             >
-              Start game
+              {t("Start game", "O'yinni boshlash")}
             </button>
             <div className="cta-note">
               {here.length < MIN_PLAYERS
-                ? "Waiting for at least one more player — share the invite."
+                ? t("Waiting for at least one more player — share the invite.", "Yana kamida bitta o'yinchi kerak — taklifni ulashing.")
                 : game.settings.qtype === "binary"
-                  ? `Right and fast earns up to ${maxPoints("binary").toLocaleString()} a question. Wrong earns 0.`
-                  : `Right and fast earns up to ${maxPoints("binary").toLocaleString()} tapped, ${maxPoints("gap").toLocaleString()} typed. Wrong earns 0.`}
+                  ? t(`Right and fast earns up to ${maxPoints("binary").toLocaleString()} a question. Wrong earns 0.`,
+                    `Tez va to'g'ri javob har bir savolga ${maxPoints("binary").toLocaleString()} ballgacha beradi. Noto'g'ri javob — 0.`)
+                  : t(`Right and fast earns up to ${maxPoints("binary").toLocaleString()} tapped, ${maxPoints("gap").toLocaleString()} typed. Wrong earns 0.`,
+                    `Tez va to'g'ri javob: testda ${maxPoints("binary").toLocaleString()} ballgacha, yozma javobda ${maxPoints("gap").toLocaleString()} ballgacha. Noto'g'ri javob — 0.`)}
             </div>
           </>
         ) : (
-          <div className="game-wait">Waiting for {host?.name || "the host"} to start…</div>
+          <div className="game-wait">
+            {t(`Waiting for ${host?.name || "the host"} to start…`, `${host?.name || "Boshlovchi"} o'yinni boshlashini kutyapmiz…`)}
+          </div>
         )}
       </div>
     </>
@@ -495,9 +514,9 @@ function Question({ game, serverNow, send }) {
   if (waiting) {
     return (
       <div className="game-ready">
-        <div className="game-ready-n">Question {game.index + 1}</div>
+        <div className="game-ready-n">{t(`Question ${game.index + 1}`, `${game.index + 1}-savol`)}</div>
         <div className="game-ready-c">{Math.ceil((game.opensAt - now) / 1000)}</div>
-        <div className="sub">{typeName(q.type === "gap" ? "gap" : "binary")} · {game.settings.seconds} seconds</div>
+        <div className="sub">{typeName(q.type === "gap" ? "gap" : "binary")} · {t(`${game.settings.seconds} seconds`, `${game.settings.seconds} soniya`)}</div>
       </div>
     );
   }
@@ -514,9 +533,9 @@ function Question({ game, serverNow, send }) {
       {q.topic ? <div className="q-topic">{q.topic}</div> : <div className="q-topic-gap" />}
 
       {q.img ? (
-        <button className="q-img" onClick={() => setZoom(true)} aria-label="Enlarge picture">
+        <button className="q-img" onClick={() => setZoom(true)} aria-label={t("Enlarge picture", "Rasmni kattalashtirish")}>
           <img src={`${import.meta.env.BASE_URL}img/${q.img}`} alt="" />
-          <span className="q-img-hint">tap to enlarge</span>
+          <span className="q-img-hint">{t("tap to enlarge", "kattalashtirish uchun bosing")}</span>
         </button>
       ) : (
         <div className="q-text">
@@ -551,7 +570,7 @@ function Question({ game, serverNow, send }) {
             className={`gap-input${answered ? " picked" : ""}`}
             value={answered ? String(given) : typed}
             onChange={(e) => setTyped(e.target.value)}
-            placeholder="Type your answer…"
+            placeholder={t("Type your answer…", "Javobingizni yozing…")}
             disabled={answered || timeUp}
             autoComplete="off"
             autoCorrect="off"
@@ -560,23 +579,23 @@ function Question({ game, serverNow, send }) {
             enterKeyHint="send"
           />
           {!answered && !timeUp && (
-            <button className="btn btn-primary" style={{ marginTop: 12 }} disabled={!typed.trim()}>Answer</button>
+            <button className="btn btn-primary" style={{ marginTop: 12 }} disabled={!typed.trim()}>{t("Answer", "Javob berish")}</button>
           )}
         </form>
       )}
 
       <div className="game-status">
         {answered
-          ? `✓ Answer in · ${answeredCount} of ${here} answered`
+          ? t(`✓ Answer in · ${answeredCount} of ${here} answered`, `✓ Javobingiz qabul qilindi · ${here} tadan ${answeredCount} tasi javob berdi`)
           : timeUp
-            ? "⏱ Time’s up"
-            : `${answeredCount} of ${here} answered`}
+            ? t("⏱ Time’s up", "⏱ Vaqt tugadi")
+            : t(`${answeredCount} of ${here} answered`, `${here} tadan ${answeredCount} tasi javob berdi`)}
       </div>
 
       {zoom && q.img && (
-        <div className="zoom" onClick={() => setZoom(false)} role="dialog" aria-label="Picture">
+        <div className="zoom" onClick={() => setZoom(false)} role="dialog" aria-label={t("Picture", "Rasm")}>
           <img src={`${import.meta.env.BASE_URL}img/${q.img}`} alt="" />
-          <button className="zoom-x" aria-label="Close">×</button>
+          <button className="zoom-x" aria-label={t("Close", "Yopish")}>×</button>
         </div>
       )}
     </>
@@ -593,11 +612,13 @@ const ordinal = (n) => {
 function standingLine(game) {
   const me = game.players.find((p) => p.pid === game.you);
   if (!me) return null;
-  if (me.place === 1) return "🏆 You’re in the lead";
+  if (me.place === 1) return t("🏆 You’re in the lead", "🏆 Siz oldindasiz");
   // Players arrive sorted by score, so the last one ahead is the one to catch.
   const ahead = game.players.filter((p) => p.score > me.score);
   const next = ahead[ahead.length - 1];
-  return `You’re ${ordinal(me.place)} · ${(next.score - me.score).toLocaleString()} behind ${next.name}`;
+  const gap = (next.score - me.score).toLocaleString();
+  // The Uzbek names the one ahead without a case ending, which a name can't always take.
+  return t(`You’re ${ordinal(me.place)} · ${gap} behind ${next.name}`, `Siz ${me.place}-o'rindasiz · ${next.name} ${gap} ball oldinda`);
 }
 
 /** The top few, and this player below them if they are further down. */
@@ -644,7 +665,7 @@ function Reveal({ game, serverNow }) {
     <>
       <div className={`game-result ${verdict}`}>
         <span className="game-result-t">
-          {verdict === "ok" ? "✓ Correct" : verdict === "no" ? "✗ Wrong" : "⏱ No answer"}
+          {verdict === "ok" ? t("✓ Correct", "✓ To'g'ri") : verdict === "no" ? t("✗ Wrong", "✗ Noto'g'ri") : t("⏱ No answer", "⏱ Javob berilmadi")}
         </span>
         <span className="game-result-p">+{(mine?.points || 0).toLocaleString()}</span>
       </div>
@@ -661,7 +682,7 @@ function Reveal({ game, serverNow }) {
                 <span className="game-tally-bar" style={{ width: `${tally.answered ? (n / tally.answered) * 100 : 0}%` }} />
                 <span className="game-tally-t">
                   {right ? "✓ " : ""}{opt}
-                  {mine?.given === i && <span className="game-tally-you"> · you</span>}
+                  {mine?.given === i && <span className="game-tally-you"> · {t("you", "siz")}</span>}
                 </span>
                 <span className="game-tally-n">{n}</span>
               </div>
@@ -670,15 +691,19 @@ function Reveal({ game, serverNow }) {
         </div>
       ) : (
         <div className="game-answer">
-          Answer: <b>{answer}</b>
-          {tally && <span className="game-explain"> · {tally.right} of {tally.answered} got it</span>}
+          {t("Answer:", "Javob:")} <b>{answer}</b>
+          {tally && <span className="game-explain"> · {t(`${tally.right} of ${tally.answered} got it`, `${tally.answered} tadan ${tally.right} tasi topdi`)}</span>}
         </div>
       )}
       {game.solution.explain && <div className="game-answer game-explain">{game.solution.explain}</div>}
 
       <div className="chips-head board-title">
-        <span className="section-label" style={{ margin: 0 }}>Scoreboard</span>
-        <span className="game-count">{last ? "Final results" : "Next question"} in {left}</span>
+        <span className="section-label" style={{ margin: 0 }}>{t("Scoreboard", "Natijalar jadvali")}</span>
+        <span className="game-count">
+          {last
+            ? t(`Final results in ${left}`, `Yakuniy natijalar ${left} soniyadan keyin`)
+            : t(`Next question in ${left}`, `Keyingi savol ${left} soniyadan keyin`)}
+        </span>
       </div>
       <Standings game={game} showGain />
     </>
@@ -694,10 +719,11 @@ function Final({ game, send, onLeave }) {
 
   useEffect(() => { haptic(mine?.place === 1 ? "success" : "light"); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  function again() {
+  async function again() {
     haptic("medium");
     const s = game.settings;
-    send({ type: "again", questions: pickGameQuestions(bank, { tags: s.tags, qtype: s.qtype, count: s.count }) });
+    const pool = await bilingualBank();
+    send({ type: "again", questions: pickGameQuestions(pool, { tags: s.tags, qtype: s.qtype, count: s.count }) });
   }
 
   return (
@@ -714,26 +740,29 @@ function Final({ game, send, onLeave }) {
 
       {mine && (
         <div className="rating-place">
-          <span>You finished <b className="game-place">#{mine.place} of {game.players.length}</b></span>
-          <b>{mine.score.toLocaleString()} <small>pts</small></b>
+          <span>{t("You finished", "Yakuniy o'rningiz")} <b className="game-place">{t(`#${mine.place} of ${game.players.length}`, `#${mine.place} / ${game.players.length}`)}</b></span>
+          <b>{mine.score.toLocaleString()} <small>{t("pts", "ball")}</small></b>
         </div>
       )}
       {mine && (
         <div className="cta-note game-final-note">
-          {mine.correct} of {game.total} right{game.round > 1 ? ` · round ${game.round}` : ""}
+          {t(`${mine.correct} of ${game.total} right`, `${game.total} tadan ${mine.correct} tasi to'g'ri`)}
+          {game.round > 1 ? t(` · round ${game.round}`, ` · ${game.round}-raund`) : ""}
         </div>
       )}
 
-      <div className="section-label">Everyone</div>
+      <div className="section-label">{t("Everyone", "Barcha o'yinchilar")}</div>
       <Standings game={game} top={MAX_PLAYERS} />
 
       <div className="home-cta">
         {isHost ? (
-          <button className="btn btn-primary" onClick={again}>New round</button>
+          <button className="btn btn-primary" onClick={again}>{t("New round", "Yangi raund")}</button>
         ) : (
-          <div className="game-wait">Waiting for {host?.name || "the host"} to start a new round…</div>
+          <div className="game-wait">
+            {t(`Waiting for ${host?.name || "the host"} to start a new round…`, `${host?.name || "Boshlovchi"} yangi raund boshlashini kutyapmiz…`)}
+          </div>
         )}
-        <button className="btn btn-ghost" style={{ marginTop: 10 }} onClick={onLeave}>Leave game</button>
+        <button className="btn btn-ghost" style={{ marginTop: 10 }} onClick={onLeave}>{t("Leave game", "O'yindan chiqish")}</button>
       </div>
     </>
   );

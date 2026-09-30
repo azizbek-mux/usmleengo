@@ -1,0 +1,33 @@
+metaplasia-definition-1khlua0|Metaplaziya ta'rifi|Metaplaziya — bir yetilgan hujayra turining nimaga aylanishi|Boshqa yetilgan hujayra turiga|Yetilmagan o'zak hujayraga|Qaytariladi, masalan Barret qizilo'ngachida.
+anaplasia-grade-1xsdbm7|Anaplaziya darajasi|O'smadagi anaplaziya nimani ko'rsatadi|Yuqori daraja va yomon prognozni|Past daraja va yaxshi prognozni|Yetilmagan hujayraga qaytishi.
+endometrial-hyperplasia-driver-0ypdj3r|Endometriy giperplaziyasining sababi|Endometriy giperplaziyasini nima keltiradi|Qarshiliksiz estrogen|Qarshiliksiz progesteron|Ovulyatsiyasiz sikllardan kelib chiqadi.
+concentric-hypertrophy-cause-1dbtj45|Konsentrik gipertrofiyaning sababi|Qorinchaning konsentrik gipertrofiyasi nimadan keyin bo'ladi|Yuqori keyingi yuklamadan|Yuqori oldingi yuklamadan|Hajm yuklamasi esa kengaytiradi.
+testicular-atrophy-cause-1y1z4m1|Moyak atrofiyasining sababi|Anabolik steroid moyak atrofiyasini qanday keltiradi|Teskari aloqa bilan LG ni bostirib|Moyakka bevosita zaharli ta'sir qilib|Gonadotropin turtkisi yo'qoladi.
+apoptosis-energy-10dumpb|Apoptoz energiyasi|Apoptoz qanday jarayon|Faol jarayon, ATF sarflaydi|Passiv jarayon, ATFsiz kechadi|Nekrozdan farqli.
+intrinsic-apoptosis-proteins-1gmo1is|Ichki apoptoz oqsillari|Ichki apoptoz yo'lini nima qo'zg'atadi|BAX va BAK|Fas va TNF|Tashqi yo'lni o'lim retseptorlari boshqaradi.
+apc-gene-syndrome-049f0m0|APC geni sindromi|APC mutatsiyalari nimani keltiradi|Oilaviy adenomatoz polipozni|Irsiy polipozsiz ichak saratonini|Saraton xavfi yuz foiz.
+gardner-syndrome-0z5bwr0|Gardner sindromi|Oilaviy adenomatoz polipoz ustiga suyak va yumshoq to'qima o'smalari — bu nima|Gardner sindromi|Tyurko sindromi|Osteomalar va lipomalar.
+bcl-2-function-004pnrz|BCL-2 ning vazifasi|BCL-2 qanday oqsilni kodlaydi|Apoptozga qarshi|Apoptozni qo'zg'atuvchi|Follikulyar limfomada ortiqcha ekspressiyalanadi.
+follicular-lymphoma-translocation-1lrrzoz|Follikulyar limfoma translokatsiyasi|Follikulyar limfoma t(14;___) translokatsiyasiga ega|18|o'n sakkiz|BCL-2 ni antitelo promotori ostiga qo'yadi.
+kras-product-1ezj1tl|KRAS mahsuloti|KRAS nimani kodlaydi|Doim yoniq qolgan GTFazani|Tirozinkinaza retseptorini|Ichak neoplaziyasida birinchi mutatsiyalanadigan gen.
+hnpcc-genes-0ns4cf0|Linch sindromi genlari|Irsiy polipozsiz ichak-to'g'ri ichak saratoni qaysi genlarni tutadi|Mos kelmaslikni tuzatish genlari|Nukleotidni kesib tuzatish genlari|Mikrosatellit beqarorligini beradi.
+tp53-function-1q09jlx|TP53 ning vazifasi|p53 oqsili normada nima qiladi|DNK ni tuzatish uchun siklni to'xtatadi|Hujayra siklini oldinga surib boradi|Yo'qolsa, zararlangan hujayralar bo'linadi.
+li-fraumeni-gene-1b1regh|Li-Fraumeni geni|Li-Fraumeni sindromi qaysi gendagi germinal mutatsiya|TP53|RB1|Ko'p organ tizimlarida saraton.
+men-1-components-0pho240|MEN 1 tarkibi|MEN 1 gipofiz, qalqonsimon oldi bezi va yana nimani tutadi|Oshqozon osti bezi o'smalarini|Buyrak usti bezi o'smalarini|Uchta «P» harfi.
+men-2-shared-features-0l7prqc|MEN 2 ning umumiy xususiyatlari|MEN 2A ham, 2B ham nimani o'z ichiga oladi|Medullyar qalqonsimon karsinoma va feoxromotsitoma|Qalqonsimon oldi bezi adenomasi va prolaktinoma|RET protoonkogenida joylashgan.
+vhl-tumors-13rmtin|Fon Gippel-Lindau o'smalari|Fon Gippel-Lindau buyrak hujayrali karsinoma ustiga nimani beradi|To'r parda va miyacha gemangioblastomalarini|Bo'yindagi medullyar qalqonsimon karsinomani|Autosom-dominant, 3-xromosoma.
+wt1-tumor-124ot5t|WT1 o'smasi|WT1 mutatsiyasi nimani keltiradi|Buyrakning Vilms o'smasini|Buyrak usti bezining neyroblastomasini|Boladagi og'riqsiz yon tomon massasi.
+wagr-syndrome-129o1np|WAGR sindromi|WAGR — Vilms o'smasi, ___, siydik-tanosil anomaliyalari va aqliy zaiflik|aniridiya|iris yo'qligi|WT1 bilan bog'liq.
+nf1-chromosome-15833qe|NF1 xromosomasi|1-tur neyrofibromatoz qaysi xromosomada joylashgan|17|22|2-tur 22-xromosomada joylashgan.
+nf1-expressivity-0hvhe18|NF1 ekspressivligi|1-tur neyrofibromatoz klassik holda nimani ko'rsatadi|O'zgaruvchan ekspressivlikni|To'liq bo'lmagan penetrantlikni|Og'irlik darajasi bemorlarda farq qiladi.
+tuberous-sclerosis-proteins-1tqo0e9|Tuberoz skleroz oqsillari|Tuberoz sklerozda gamartin va ___ qatnashadi|tuberin|tuberinning|TSC1 va TSC2 genlaridan.
+duchenne-protein-1s0rjlf|Dyushenn oqsili|Dyushenn mushak distrofiyasi qaysi gendagi mutatsiya|Distrofin|Fibrillin|Distroglikan kompleksini buzadi.
+duchenne-pseudohypertrophy-1nslwfc|Dyushennda soxta gipertrofiya|Dyushennda boldirning soxta gipertrofiyasi nima|Mushakning fibroz-yog' bilan almashinishi|Mushak to'qimasining haqiqiy o'sib ketishi|Mushak katta ko'rinadi, lekin kuchsiz.
+marfan-protein-1rkpzfk|Marfan oqsili|Marfan sindromi qaysi gendagi mutatsiya|Fibrillin|Distrofin|Elastin atrofidagi qobiq.
+fragile-x-repeat-06lahu9|Mo'rt X takrori|Mo'rt X sindromi nimaning ko'payishidan kelib chiqadi|CGG trinukleotid takrorining|CAG trinukleotid takrorining|Gipermetillanish FMR1 ni o'chiradi.
+fragile-x-features-1f13glu|Mo'rt X belgilari|Mo'rt X sindromi qanday namoyon bo'ladi|Katta quloqlar, uzun jag', makroorxidizm|Bo'yning pastligi va qanotsimon bo'yin|Aqliy zaiflik bilan birga.
+g6pd-film-findings-1965e2o|G6FD da surtma topilmalari|G6FD tanqisligi nimani ko'rsatadi|Geyns tanachalari va «tishlangan» hujayralar|Nishon hujayralar va parchalangan shistotsitlar|Oksidlovchi dorini qabul qilgandan keyin.
+elastin-cross-link-0roq1i2|Elastinning ko'ndalang bog'i|Elastin ___ bilan ko'ndalang bog'lanadi va lizinga boy|desmozin|desmozinlar|Fibrillin uni qoplab turadi.
+collagen-primary-sequence-1ebakgw|Kollagenning birlamchi ketma-ketligi|Kollagen takrorlanuvchi Gli-X-___ birlamchi tuzilishiga ega|Y|y|Har uchinchi qoldiqda glitsin.
+alport-collagen-0nl1db3|Alport kollageni|Alport sindromi qaysi tur kollagendagi nuqson|IV|I|Ko'z, quloq va buyrak kasalligi bilan.
+mitochondrial-inheritance-0v5okxo|Mitoxondrial irsiylanish|Mitoxondrial kasalliklar qanday irsiylanadi|Onadan|Otadan|Biopsiyada «yirtilgan qizil tolalar».

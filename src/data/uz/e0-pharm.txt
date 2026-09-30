@@ -1,0 +1,54 @@
+# e0-pharm — o'zbekcha tarjima (qarang: TERMS.md)
+
+protein-binding-0158jnw|Oqsil bilan bog'lanish|Preparatning faqat ___ ulushi farmakologik faol bo'ladi|erkin|bog'lanmagan|Oqsil bilan kuchli bog'lanadigan preparatlar yuqoriroq doza talab qiladi.
+probenecid-16qahqj|Probenetsid|Probenetsid penitsillin darajasini qanday oshiradi|Buyrak kanalchalari sekretsiyasini bloklab|Jigardagi metabolizmni tormozlash orqali|Ilgari penitsillin ta'sirini uzaytirish uchun qo'llangan.
+drug-allergy-09mn9bj|Doriga allergiya|Kichik molekulali preparatlar ___-tashuvchi kompleksini hosil qilib immunogen bo'ladi|gapten|xapten|Penitsillin — klassik gapten.
+aspirin-and-gi-bleeding-0icn8vs|Aspirin va oshqozon-ichakdan qon ketishi|Aspirin qon ketishini nimani bloklab chaqiradi|SOG-1|SOG-2|Shilliq qavat prostaglandinlari yo'qoladi va trombotsitlar qaytmas bloklanadi.
+type-a-adverse-reactions-1e5zks6|A tipdagi nojo'ya reaksiyalar|Dozaga bog'liq, oldindan aytish mumkin bo'lgan nojo'ya ta'sirlar — bu|A tipdagi reaksiyalar|B tipdagi reaksiyalar|B tipi idiosinkratik yoki immunologik bo'ladi.
+enterohepatic-cycling-0q9huef|Enterogepatik aylanish|Enterogepatik qayta aylanishning kuchayishi nimaga olib keladi|Yarim yemirilish uzayadi, ikkinchi cho'qqi paydo bo'ladi|Boshlang'ich plazma cho'qqisi ancha yuqoriroq bo'ladi|Preparat o't bilan chiqarilib, keyin qayta so'riladi.
+cyp3a4-inhibitors-0ah9bq5|CYP3A4 ingibitorlari|Qaysi preparat statin miopatiyasini qo'zg'atadi?|Klaritromitsin|Azitromitsin|Shuningdek ketokonazol, diltiazem, amiodaron va greypfrut sharbati.
+efficacy-versus-potency-0x2m35v|Samaradorlik va faollik|Samaradorlik nimani anglatadi|Erishish mumkin bo'lgan eng katta ta'sir|Ta'sirga erishish uchun zarur doza|Faollik — kerakli doza; samaradorlik — yuqori chegara.
+competitive-antagonist-0czmzpu|Raqobatli antagonist|Raqobatli antagonist doza-javob egri chizig'ini qanday siljitadi|O'ngga, maksimumni o'zgartirmay|Pastga, maksimumni kamaytirib|Raqobatsiz antagonistlar samaradorlikni pasaytiradi.
+bile-acid-sequestrants-1si9tsi|O't kislotalarini bog'lovchilar|Xolestiramin nimaning so'rilishini buzadi|Boshqa dorilar va yog'da eriydigan vitaminlar|Faqat ovqatdagi xolesterinning o'zini|Boshqa preparatlardan alohida vaqtda qabul qilinadi.
+p-glycoprotein-0y51rgb|P-glikoprotein|___ — preparatning miyaga kirishini cheklovchi chiqaruvchi nasos|p-glikoprotein|pgp|Shuningdek o'smalarda ko'p dorili rezistentlikni yuzaga keltiradi.
+volume-of-distribution-04kqkgm|Taqsimlanish hajmi|Oqsil bilan kuchli bog'langan va zaryadli preparat qanday bo'ladi|Taqsimlanish hajmi past|Taqsimlanish hajmi yuqori|U plazma bo'shlig'ida qoladi.
+volume-of-distribution-0j7l0qx|Taqsimlanish hajmi|Taqsimlanish hajmining yuqoriligi preparat haqida nima deydi|Yog'da eriydi va to'qimalarga bog'lanadi|Faqat plazma bo'shlig'ida saqlanadi|Yuklama dozasi taqsimlanish hajmiga bog'liq.
+hepatic-clearance-0vtz1pd|Jigar klirensi|Jigar orqali chiqariladigan preparatlar odatda qanday|Yog'da eriydigan|Suvda eriydigan|Suvda eriydiganlari buyrak orqali chiqariladi.
+maintenance-dose-099v5th|Saqlovchi doza|Saqlovchi doza nimaga bog'liq|Klirensga|Taqsimlanish hajmiga|Yuklama dozasi esa taqsimlanish hajmiga bog'liq.
+isoniazid-metabolism-1s9jwym|Izoniazid metabolizmi|Izoniazid ___ orqali ikki xil tezlikda faolsizlantiriladi|atsetillanish|n-atsetillanish|Tez va sekin atsetillovchilar; sekinlarida neyropatiya va gepatit rivojlanadi.
+acetaminophen-hepatotoxicity-1imyz9r|Atsetaminofen gepatotoksikligi|Atsetaminofen jigarni qanday shikastlaydi|Glutationni tugatuvchi toksik metabolit orqali|Preparatning o'zining bevosita toksikligi orqali|NAPXI; N-atsetilsistein bilan davolanadi.
+methotrexate-toxicity-1men60l|Metotreksat toksikligi|Metotreksat chaqirgan pansitopeniya nima bilan davolanadi|Folin kislotasi|Folat kislotasi|Leykovorin bloklangan digidrofolatreduktazani chetlab o'tadi.
+neostigmine-1npzgh2|Neostigmin|Neostigmin nimani bartaraf etadi|Nodepolyarizatsiyalovchi miorelaksatsiyani|Depolyarizatsiyalovchi miorelaksatsiyani|Atsetilxolinesteraza ingibitori; glikopirrolat bilan birga beriladi.
+zero-order-kinetics-1f2spnq|Nol tartibli kinetika|Nol tartibli chiqarilish nimani anglatadi|Vaqt birligida doimiy miqdor chiqariladi|Soatiga doimiy ulush chiqarilib turadi|Fenitoin, etanol va yuqori dozadagi aspirin.
+zero-order-drugs-02fifma|Nol tartibli preparatlar|Fenitoin, etanol va ___ nol tartibli kinetikaga bo'ysunadi|aspirin|salitsilatlar|Fermentlar to'yingan; dozani biroz oshirish darajani keskin ko'taradi.
+half-life-08kvbnd|Yarim yemirilish davri|Barqaror daraja taxminan qanchadan keyin yuzaga keladi|To'rt-besh yarim yemirilish davridan keyin|Bitta yarim yemirilish davridan keyin|Qabul chastotasiga bog'liq emas.
+first-pass-metabolism-0l90qhc|Birlamchi o'tish metabolizmi|Birlamchi o'tishda ko'p parchalanadigan preparat qanday bo'ladi|Og'iz orqali bioo'zlashtirilishi past|Og'iz orqali bioo'zlashtirilishi yuqori|Til ostiga, to'g'ri ichakka yoki venaga yuborish uni chetlab o'tadi.
+nitroglycerin-1ajrzi8|Nitroglitserin|Nitroglitserin nima uchun til ostiga beriladi|Birlamchi o'tish metabolizmini chetlab o'tish uchun|So'rilish va ta'sir boshlanishini sekinlashtirish uchun|Aks holda jigarda ko'p qismi parchalanadi.
+weak-base-overdose-0zsp9fc|Kuchsiz asos dozasining oshib ketishi|Amfetamin chiqarilishini nima kuchaytiradi|Siydikni kislotali qilish|Siydikni ishqorli qilish|Ionlarni ushlab qolish. Aspirin kabi kuchsiz kislotalarda esa ishqorlantiriladi.
+salicylate-overdose-0u7sawr|Salitsilat dozasining oshib ketishi|Aspirin dozasining oshib ketishi nima bilan davolanadi|Bikarbonat bilan siydikni ishqorlantirish|C vitamini bilan siydikni kislotalantirish|Ionlashgan kuchsiz kislota kanalchada ushlanib qoladi.
+carbon-monoxide-poisoning-0r9skqp|Is gazidan zaharlanish|Is gazidan zaharlanishda nima kuzatiladi|PaO2 normal, ko-oksimetriyada to'yinish past|PaO2 past va o'lchangan to'yinish ham past|Puls-oksimetr soxta normal ko'rsatadi; 100 foizli kislorod beriladi.
+cyanide-poisoning-1pfaig8|Siyaniddan zaharlanish|Siyaniddan zaharlanish nima bilan davolanadi|Gidroksikobalamin|Metilen ko'ki|Sitoxrom c oksidazani bloklaydi; shuningdek natriy tiosulfat.
+methemoglobinemia-1ckdyws|Metgemoglobinemiya|Metgemoglobinemiya nima bilan davolanadi|Metilen ko'ki|Gidroksikobalamin|Qon shokolad rangida; nitritlar, dapson va mahalliy anestetiklar chaqiradi.
+organophosphate-poisoning-1434pa4|Fosfororganik moddalardan zaharlanish|Bu zaharlanish nima bilan davolanadi|Atropin va pralidoksim|Fizostigmin va atropin|Xolinergik ortiqchalik belgilari to'plami.
+anticholinergic-toxicity-0mm8bid|Xolinolitik toksiklik|Xolinolitik toksiklik qanday namoyon bo'ladi|Issiq, quruq, qizargan va alahsiragan|Sovuq, nam va ko'p terlagan holatda|«Telbadek jinni, suyakdek quruq, lavlagidek qizil».
+lead-poisoning-0hhshs6|Qo'rg'oshindan zaharlanish|Bolalarda qo'rg'oshindan zaharlanish nima bilan davolanadi|Suktsimer|Deferoksamin|Deferoksamin temir uchun; og'ir holatda EDTA va dimerkaprol.
+iron-overdose-0wie6c4|Temir dozasining oshib ketishi|Temir dozasining oshib ketishi nima bilan davolanadi|Deferoksamin|Penitsillamin|Penitsillamin Vilson kasalligida misni bog'laydi.
+copper-overload-1ljg9mz|Mis ortiqchaligi|Vilson kasalligi nima bilan davolanadi|Penitsillamin yoki trientin|Deferoksamin yoki deferaziroks|Shuningdek so'rilishni bloklash uchun rux.
+methanol-poisoning-11di4bg|Metanoldan zaharlanish|Metanoldan zaharlanish nima bilan davolanadi|Fomepizol|Nalokson|Alkogoldegidrogenazani bloklaydi; metanol ko'rlikka olib keladi.
+ethylene-glycol-poisoning-1wk1mxy|Etilenglikoldan zaharlanish|Etilenglikoldan zaharlanishda siydikda qanday kristallar bo'ladi?|Kalsiy oksalat|Siydik kislotasi|Anion farqi oshgan atsidoz va buyrak yetishmovchiligi; fomepizol bilan davolanadi.
+tricyclic-overdose-1kj788r|Uch halqali antidepressantlar|Uch halqali antidepressant dozasining oshib ketishi nima bilan davolanadi|Natriy bikarbonat|Flumazenil|Natriy kanallari blokadasi tufayli QRS kengayadi.
+digoxin-toxicity-1dpuzli|Digoksin toksikligi|Og'ir digoksin toksikligi nima bilan davolanadi|Digoksinga xos antitelo fragmentlari|Vena ichiga kalsiy glyukonat|Kalsiy berilmaydi, u aritmiyani kuchaytiradi.
+apoptosis-versus-necrosis-0c1nnvh|Apoptoz va nekroz|Apoptoz nima bilan tavsiflanadi|Hujayra kichrayadi, membrana butun qoladi|Hujayra shishadi, membrana yorilib ketadi|Apoptoz ATF talab qiladi va yallig'lanish bermaydi.
+coagulative-necrosis-1xrgb7y|Koagulyatsion nekroz|Koagulyatsion nekroz nima uchun xos|Ko'pchilik a'zolardagi ishemik infarkt uchun|Faqat bosh miya infarkti holatlari uchun|Bosh miyada esa kollikvatsion nekroz bo'ladi.
+liquefactive-necrosis-1p60pdf|Kollikvatsion nekroz|Kollikvatsion nekroz qayerda uchraydi|Miya infarktlari va abssesslarda|Miokard va buyrak infarktlarida|Fermentativ parchalanish ustunlik qiladi.
+fat-necrosis-1qlk4o6|Yog' nekrozi|Sovunlanish bilan kechuvchi yog' nekrozi qayerda uchraydi|O'tkir pankreatitda|Sil kasalligida|Ajralgan lipazalar; kalsiy sovunlari hosil bo'ladi.
+fibrinoid-necrosis-0zsz0ln|Fibrinoid nekroz|Fibrinoid nekroz qayerda kuzatiladi|Vaskulit va xavfli gipertenziyada|Sil va zamburug' infeksiyasida|Immun komplekslar va plazma oqsillari tomir devoriga o'tadi.
+hypertrophy-0wuoz29|Gipertrofiya|Gipertrofiya — bu|Hujayra o'lchamining kattalashishi|Hujayralar sonining ko'payishi|Giperplaziya — hujayralar ko'payishi; doimiy to'qimalar faqat gipertrofiyaga uchraydi.
+dysplasia-0yoz22d|Displaziya|Displaziya — bu|Qaytar, tartibsiz o'sish|Qaytmas xavfli o'sma|To'liq qalinlikni egallagach, o'z joyidagi karsinomaga aylanadi.
+free-radical-injury-12tovd9|Erkin radikal shikastlanishi|Erkin radikal shikastlanishining sababi|Reperfuziya, radiatsiya va metallar|Reperfuziyasiz sof gipoksiya|Lipidlar peroksidlanishi va DNK shikastlanishi.
+granulation-tissue-0junogg|Granulyatsion to'qima|Granulyatsion to'qima nimadan iborat|Fibroblastlar, kapillyarlar va miofibroblastlar|Neytrofillar va zich fibrin iplari to'plami|Shikastlanishdan 3-5 kun keyin paydo bo'ladi.
+wound-healing-0466kna|Yara bitishi|Qaysi vitamin yetishmovchiligi yara bitishini eng ko'p buzadi?|C vitamini|K vitamini|Kollagen bog'lanishlari hosil bo'lishi uchun zarur.
+keloid-1d5v5l1|Keloid|Keloid gipertrofik chandiqdan nimasi bilan farq qiladi|Dastlabki yara chegarasidan chiqib ketadi|Yara chegarasi ichida qolib ketadi|III tip kollagen ortiqcha hosil bo'ladi.
+tumor-markers-1fc633r|O'sma markerlari|Qaysi marker gepatotsellyulyar karsinoma bilan bog'liq?|Alfa-fetoprotein|CA 19-9 antigeni|CA 19-9 — oshqozon osti bezi, SEA — kolorektal saraton markeri.
+metastasis-0v6t997|Metastaz|Bosh miya metastazlarining eng ko'p uchraydigan manbai|O'pka saratoni|Prostata saratoni|Shuningdek sut bezi va melanoma; metastazlar birlamchi o'smalardan ko'proq.
+cachexia-1wmwh1r|Kaxeksiya|Saraton kaxeksiyasini asosan nima keltirib chiqaradi|O'NO-alfa va IL-6|Insulin va IFR-1|Iste'mol yetarli bo'lsa ham ozib ketish kuzatiladi.

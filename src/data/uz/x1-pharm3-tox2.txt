@@ -1,0 +1,45 @@
+therapeutic-drug-monitoring-0wv2djw|Dori darajasini kuzatish|Dorilar terapevtik ___ tor bo'lganda kuzatiladi|indeks|oyna, oraliq|Digoksin, litiy, fenitoin, aminoglikozidlar.
+trough-levels-05w74on|Eng past daraja|Vankomitsin va aminoglikozidning eng past darajasi qachon olinadi|Keyingi dozadan darhol oldin|Dozadan bir soat keyin|Cho'qqi samaradorlikni, eng past daraja toksiklikni baholaydi.
+prodrug-00c1m3k|Prodori|___ faol bo'lishi uchun almashinuvda o'zgarishni talab qiladi|Prodori|prodorilar|Kodein, klopidogrel va enalapril misol bo'ladi.
+bioequivalence-12c7mk0|Bioekvivalentlik|Generik almashtirish odatda xavfsiz, lekin qanday dorilarda emas|Terapevtik indeksi tor dorilarda|Sotib olish narxi yuqori dorilarda|Levotiroksin va antiepileptiklarda barqarorlik muhim.
+polypharmacy-1cjlbob|Polipragmaziya|Dorilarni muntazam ___ noto'g'ri tayinlashni kamaytiradi|ko'rib chiqish|tekshirish, qayta ko'rish|Ayniqsa bemor bir bo'limdan boshqasiga o'tganda.
+deprescribing-1opmf03|Dorini bekor qilish|Dorini bekor qilish qanday bo'lishi kerak|Rejali, asta-sekin va nazorat ostida|Ta'sirni cho'zmaslik uchun keskin tarzda|Ba'zi dorilarni abstinensiyadan saqlash uchun sekin kamaytirish kerak.
+medication-reconciliation-0i657gp|Dorilarni solishtirish|Yotqizishda dorilarni ___ tushib qolish va takrorlanish xatolarining oldini oladi|solishtirish|muvofiqlashtirish, taqqoslash|Xavfsizlik bo'yicha eng samarali choralardan biri.
+prescribing-in-pregnancy-07cwac0|Homiladorlikda dori tayinlash|Homiladorlikda eng xavfsiz yondashuv qaysi|Sinalgan dorilarni eng kichik samarali dozada|Tug'ruqqacha barcha dorilarni to'xtatib turish|Davolanmagan kasallik ko'pincha ko'proq zarar qiladi.
+dobutamine-16rh1fr|Dobutamin|Dobutamin — inotrop sifatida qo'llanadigan beta-___ agonisti|1|bir, beta-1|Qisqarish kuchini oshirib, yengil vazodilatatsiya beradi.
+noradrenaline-versus-adrenaline-0k24xxu|Noradrenalin va adrenalin|Noradrenalin asosan nimaga ta'sir qiladi|Alfa-1 retseptorlarga|Beta-2 retseptorlarga|Tomir qarshiligini oshiradi.
+digoxin-0ai7a4m|Digoksin|Digoksin vagus tonusini oshirib, ___ tugunni sekinlashtiradi|AV|atrioventrikulyar|Tinch holatda tezlikni nazorat qilish uchun foydali.
+ivabradine-limitation-0jxy9qu|Ivabradinning cheklovi|Ivabradin qaysi holatda samarasiz|Bo'lmachalar fibrillatsiyasida|Sinus taxikardiyasi holatida|U faqat sinus tuguniga ta'sir qiladi.
+nitroprusside-1oc6p6e|Natriy nitroprussid|Uzoq davom etgan nitroprussid ___ toksikligini berishi mumkin|sianid|tiosianat|Kuzatib boring va muddatni cheklang.
+alpha-blocker-first-dose-1qrvlfg|Alfa-blokatorning birinchi dozasi|Alfa-blokatorlar nima uchun kechqurun boshlanadi|Birinchi doza gipotoniyasi tufayli|Tungi siyish va shoshilinchlik tufayli|Yiqilish xavfini kamaytiradi.
+ipratropium-00e3b1c|Ipratropiy|Ipratropiy — qisqa ta'sirli ___ antagonisti|muskarin|antimuskarin, xolinolitik|Tiotropiy uzoq ta'sirli variant.
+theophylline-0bw26rz|Teofillin|Teofillin darajasini nima oshiradi|Siprofloksatsin va eritromitsin|Rifampitsin va karbamazepin|Ferment blokadasi; darajani diqqat bilan kuzatib boring.
+montelukast-1deisli|Montelukast|Montelukast dahshatli tushlar va kayfiyat o'zgarishi kabi ___ ta'sirlarni beradi|neyropsixiatrik|psixiatrik, xulqiy|Tan olingan xavfsizlik ogohlantirishi.
+antimuscarinic-bronchodilators-0bd4p2s|Antimuskarin bronxodilatatorlar|Nebulayzer orqali ipratropiy nimani keltirishi mumkin|O'tkir burchak yopilishi glaukomasini|Katarakta va shox parda yarasini|Ayniqsa niqob ko'zga qarab sizib chiqsa.
+antiemetic-choice-0gyofhv|Qusishga qarshi dori tanlash|___ Parkinson kasalligida afzal, chunki miyaga o'tmaydi|Domperidon|domperidonni|Metoklopramid parkinsonizmni yomonlashtiradi.
+proton-pump-inhibitor-timing-1td8t9k|Proton nasosi ingibitorining vaqti|Proton nasosi ingibitorlari qachon eng yaxshi ishlaydi|Ovqatdan 30 daqiqa oldin|Yotishdan oldin, nahorda|Ular faol ishlayotgan nasoslarni bloklaydi.
+laxative-types-0oqp3mq|Surgilarning turlari|Senna kabi ___ surgilar ichak harakatini rag'batlantiradi|Stimulyator|qo'zg'atuvchi, stimullovchi|Osmotik surgilar esa suv tortadi.
+bisphosphonate-holiday-1lb1kli|Bisfosfonatga tanaffus|Taxminan ___ yildan keyin bisfosfonatga tanaffus berish mumkin|5|besh|Atipik sinish xavfini hisobga olib.
+denosumab-discontinuation-1f2210b|Denosumabni to'xtatish|Denosumabni keskin to'xtatish nimaga olib keladi|Umurtqa suyagining qaytma sinishiga|Hech qanday nojo'ya ta'sirga olib kelmaydi|Bisfosfonatga o'tkazish kerak.
+colchicine-toxicity-0q9xu02|Kolxitsin toksikligi|Kolxitsin toksikligi avval ___ bilan namoyon bo'ladi|diareya|ichak buzilishi|Dozani cheklaydi va buyrak yetishmovchiligida xavfli.
+allopurinol-dosing-0o1asj0|Allopurinol dozasi|Allopurinol qanday boshlanishi kerak|Past dozada, urat maqsadiga titrlab|Birinchi kundanoq to'liq dozada|Yuqori sezgirlik xavfini kamaytiradi.
+febuxostat-1t834ha|Febuksostat|Febuksostat yurak kasalligida ___ o'lim haqida ogohlantirishga ega|yurak-qon tomir|yurak|Allopurinol mos kelmaganda muqobil vosita.
+methotrexate-dosing-1e0kyfj|Metotreksat dozasi|Revmatoid artritda metotreksat qanday beriladi|Haftada bir marta|Kunda bir marta|Har kuni berish o'limga olib keluvchi xatolarga sabab bo'lgan.
+toxidrome-assessment-18f6lp3|Toksidromni baholash|Toksidromni aniqlash qorachiq, teri, ichak tovushi va ___ ga asoslanadi|hayotiy ko'rsatkichlar|harorat, ko'rsatkichlar|Ko'rikdan yaxlit manzara tuziladi.
+sympathomimetic-toxidrome-04srptb|Simpatomimetik toksidrom|Simpatomimetik toksiklikda nima bo'ladi|Kengaygan qorachiq va terlash|Kengaygan qorachiq va quruq teri|Quruq teri xolinolitiklarni bildiradi.
+opioid-overdose-0f4uii7|Opioidlar dozasini oshirib yuborish|Opioid bilan zaharlanishda darhol xavf — ___ tormozlanishi|nafas|nafasning|Hamma narsadan oldin nafasni qo'llab-quvvatlang.
+naloxone-dosing-0ez01pw|Nalokson dozasi|Qaram bemorga nalokson qanday berilishi kerak|Kichik, titrlangan dozalarda|Bitta katta bolyus shaklida|O'tkir abstinensiya va qo'zg'alishdan saqlaydi.
+paracetamol-nomogram-1baa5q4|Paratsetamol nomogrammasi|Davolash chizig'i ___ qabul qilishdan o'tgan vaqtga nisbatan chiziladi|bir martalik|o'tkir, bir vaqtli|Bo'lib-bo'lib qabul qilishda baribir davolanadi.
+acetylcysteine-reaction-0vs7t7k|Atsetilsisteinga reaksiya|Atsetilsisteinga anafilaktoid reaksiya qanday olib boriladi|Infuziyani sekinlashtirish bilan|Dorini butunlay to'xtatish bilan|U tezlikka bog'liq, haqiqiy allergiya emas.
+salicylate-elimination-0artcws|Salitsilatlarning chiqarilishi|Og'ir salitsilat zaharlanishida daraja juda yuqori bo'lsa ___ kerak bo'ladi|dializ|gemodializ|Shuningdek ishqorlash.
+beta-blocker-versus-calcium-blocker-over-0itmioz|Beta- va kalsiy blokatoridan zaharlanish|Qaysi biri yuqori dozadagi insulin-evglikemiya davosi bilan davolanadi?|Ikkalasi ham|Hech biri ham|Og'ir kardiodepressiv zaharlanishning asosiy davosi.
+digoxin-antibody-0m9huwy|Digoksinga qarshi antitelo|Digoksinga xos antitelo hayot uchun xavfli ___ yoki giperkaliemiyada ko'rsatiladi|aritmiya|aritmiyalar|Daqiqalar ichida ta'sir qiladi.
+lithium-toxicity-precipitants-0vrxfi8|Litiy toksikligini qo'zg'atuvchilar|Litiy toksikligini nima qo'zg'atadi|Suvsizlanish, NYaQV va AFF ingibitorlari|Ko'p tuz iste'moli va teofillin qabul qilish|Natriy kamayishi qayta so'rilishni oshiradi.
+iron-overdose-stages-0elzv6q|Temir bilan zaharlanish bosqichlari|Temir bilan zaharlanishda shokdan oldin aldamchi ___ faza bo'ladi|latent|tinch, yashirin|Shifokorni soxta xotirjamlikka soladi.
+button-battery-ingestion-14yz5rl|Tugma batareyani yutish|Qizilo'ngachdagi tugma batareya nimani talab qiladi|Shoshilinch olib tashlashni|Kuzatuv va takroriy rentgenni|Soatlar ichida kimyoviy kuyish beradi.
+caustic-ingestion-1i7mt0a|Kuydiruvchi modda yutish|Kuydiruvchi modda yutilgandan keyin ___ qo'llanmaydi|qusishni chaqirish|emesis, neytrallash|Qizilo'ngachni yana shikastga duchor qiladi.
+organophosphate-decontamination-0ptm424|Fosfororganik moddalardan tozalash|Fosfororganik zaharlanish nimani talab qiladi|Xodimni himoyalash va bemorni tozalash|Faqat darhol intubatsiya qilish, boshqa hech nima|Qutqaruvchilarning ikkilamchi ifloslanishi haqiqiy xavf.
+carbon-monoxide-treatment-0i8fa3k|Is gazi bilan zaharlanishni davolash|Giperbarik kislorod is gazi zaharlanishida ___ belgilar bo'lsa ko'rib chiqiladi|nevrologik|mns, nevrologik belgilar|Yoki homiladorlik va og'ir ta'sirda.
+snake-envenomation-023pny3|Ilon zahari|Ilon chaqqanda birinchi yordam nimani o'z ichiga oladi|Immobilizatsiya va shoshilinch olib ketish|Jgut qo'yish va yara o'rnini kesish|Sistemali zaharlanishda zardob beriladi.
+alcohol-withdrawal-scoring-1l280nr|Alkogol abstinensiyasini baholash|Alkogol abstinensiyasining og'irligi ___ shkalasi bilan baholanadi|CIWA|ciwa-ar|Belgilarga qarab benzodiazepin dozasini tanlashga yo'l ko'rsatadi.
+wernicke-prophylaxis-1ckfy8m|Vernike profilaktikasi|Xavf ostidagi ichuvchilarga parenteral tiamin qachon berilishi kerak|Glyukozadan oldin yoki u bilan birga|Faqat belgilar paydo bo'lganda|Oldini olish davolashdan ancha yaxshi.

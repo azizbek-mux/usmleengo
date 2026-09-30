@@ -1,0 +1,58 @@
+# p3-immuno-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+complement-activation-1riar6u|Komplement faollashuvi|___ yo'l antigen-antitelo komplekslari bilan faollashadi|klassik|klassik yo'l|IgG va IgM klassik yo'lni faollashtiradi.
+complement-activation-0n5jjgi|Komplement faollashuvi|Muqobil yo'lni bevosita mikroblarning ___ i qo'zg'atadi|yuzasi|hujayra devori, yuza|Antitelo kerak emas, shuning uchun erta ishlaydi.
+complement-01d2d8t|Komplement|C3b — komplement tizimining asosiy ___|opsonini|opsonin, opsonizatsiya|U mikroblarni fagotsitoz uchun qoplaydi.
+complement-02as38b|Komplement|Qaysi komplement fragmenti anafilaksiya va xemotaksisga sabab bo'ladi?|C5a|C3b|C3a va C5a — anafilatoksinlar; C5a — eng kuchli xemoattraktant.
+membrane-attack-complex-1xxn3yx|Membranaga hujum qiluvchi kompleks|Membranaga hujum qiluvchi kompleksni C5b dan C___ gacha bo'lgan komponentlar hosil qiladi|9|to'qqiz|Yetishmovchiligida Neisseria bilan qayta infeksiyalar bo'ladi.
+paroxysmal-nocturnal-hemoglobinuria-12qee9k|Paroksizmal tungi gemoglobinuriya|Paroksizmal tungi gemoglobinuriya nimaning yo'qolishidan kelib chiqadi|GPI-langarli CD55 va CD59|C3 konvertaza faolligining|Komplement himoyasiz eritrotsitlarni eritadi; ekulizumab bilan davolanadi.
+interferon-alpha-and-beta-105gtbf|Alfa va beta interferonlar|Alfa va beta interferonlar qo'shni hujayralarni ___ ga chidamli qiladi|viruslar|virus, virusli infeksiya|Zararlangan hujayralarda oqsil sintezini to'xtatadi.
+natural-killer-cells-1qzpxv4|Tabiiy killer hujayralar|NK hujayralarning o'ldirish qobiliyatini nima kuchaytiradi|IL-12 va gamma-interferon|Th2 hujayralarining IL-4 va IL-10 i|Ular I sinf MHC ni kamaytirgan hujayralarni o'ldiradi.
+macrophage-activation-06jm8v3|Makrofaglar faollashuvi|Makrofaglar klassik yo'l bilan ___-interferon orqali faollashadi|gamma|γ|Th1 hujayralar va NK hujayralardan.
+t-cell-receptor-0slpotn|T hujayra retseptori|T hujayra retseptori antigenni faqat ___ da taqdim etilganda taniydi|MHC|hla, mhc molekulalari|MHC cheklovi — erkin antigenga bog'lanadigan antitelodan farqli.
+cd4-t-cells-0qqunky|CD4 T hujayralar|CD4 T hujayralar antigenni nimada taniydi|II sinf MHC da|I sinf MHC da|«8 qoidasi»: CD4 × MHC II = 8; CD8 × MHC I = 8.
+costimulation-02nu4nb|Kostimulyatsiya|To'liq T hujayra faollashuvi uchun CD28 antigen taqdim etuvchi hujayradagi ___ ga bog'lanishi kerak|B7|cd80, cd86, cd80/86|Faqat birinchi signal anergiyaga olib keladi.
+ctla-4-0n3mpiv|CTLA-4|CTLA-4 odatda nima qiladi|T hujayra faollashuvini susaytiradi|T hujayra faollashuvini kuchaytiradi|Shuning uchun uni ipilimumab bilan bloklash o'smaga qarshi immunitetni bo'shatadi.
+class-switching-17qk78g|Sinf almashinuvi|Sinf almashinuvi uchun T hujayradagi CD40 ligandi B hujayradagi CD___ ga bog'lanishi kerak|40|cd40|Uning yo'qligi giper-IgM sindromiga olib keladi.
+antibody-diversity-1j1t1nx|Antitelolar xilma-xilligi|Antitelolar xilma-xilligi V(D)J ___ orqali hosil bo'ladi|rekombinatsiyasi|rekombinatsiya, qayta tuzilish|Shuningdek birikma xilma-xilligi va somatik gipermutatsiya.
+somatic-hypermutation-0sukc0k|Somatik gipermutatsiya|Somatik gipermutatsiya qayerda va qachon sodir bo'ladi|Antigen ta'siridan keyin german markazlarda|Antigen ta'siridan oldin suyak ko'migida|Vaqt o'tishi bilan antitelo moyilligini oshiradi.
+igm-1rhlcep|IgM|Ajraladigan IgM ___ bo'lib, yuqori avidlikka ega|pentamer|pentamerik|Birlamchi javobda birinchi hosil bo'ladigan antitelo.
+igg-1j06arz|IgG|Qaysi antitelo yo'ldoshdan o'tadi?|IgG|IgM|Chaqaloqqa bir necha oylik passiv himoya beradi.
+ige-0j39lg0|IgE|IgE ___ dan himoya qiladi va allergiyani yuzaga keltiradi|parazitlar|gelmintlar, gijjalar|Semiz hujayralar va eozinofillarga bog'lanadi.
+secondary-immune-response-1fulmgu|Ikkilamchi immun javob|Birlamchi javobga nisbatan ikkilamchi javob|Tezroq, IgG ko'proq|Sekinroq, IgM ko'proq|Xotira hujayralari sinfni almashtirib, bir necha kunda javob beradi.
+type-i-hypersensitivity-0fhmz94|I turdagi o'ta yuqori sezuvchanlik|I tur reaksiyalarda semiz hujayra granulalaridan tayyor ___ chiqadi|gistamin|gistamin moddasi|Shuningdek triptaza, keyin yangi hosil bo'lgan leykotrienlar.
+type-i-hypersensitivity-0hmi3zx|I turdagi o'ta yuqori sezuvchanlik|Anafilaksiyani keyinchalik qondagi qaysi ko'rsatkich bilan tasdiqlash mumkin|Triptaza|S-reaktiv oqsil|Reaksiyadan 1-2 soat keyin avjiga chiqadi.
+type-ii-hypersensitivity-04o012c|II turdagi o'ta yuqori sezuvchanlik|Qaysi biri II tur reaksiya?|Autoimmun gemolitik anemiya|Zardob kasalligidagi nefrit|Hujayra yuzasidagi qat'iy antigenga qarshi antitelo.
+type-iii-hypersensitivity-13b8gho|III turdagi o'ta yuqori sezuvchanlik|III tur reaksiyaning teridagi mahalliy shakli — ___ reaksiyasi|Artyus|arthus|In'eksiya joyidagi immun komplekslar.
+type-iv-hypersensitivity-0z7mpe8|IV turdagi o'ta yuqori sezuvchanlik|Qaysi biri IV tur reaksiya?|Kontakt dermatit|Eshakemi|T hujayralar orqali, 48-72 soat kechikib rivojlanadi.
+hypersensitivity-types-1wqj44g|O'ta yuqori sezuvchanlik turlari|Qaysi turda antitelo umuman ISHTIROK ETMAYDI?|IV tur|II tur|I, II va III turlar antitelolar orqali amalga oshadi.
+bruton-agammaglobulinemia-0qb8bw1|Bruton agammaglobulinemiyasi|X ga birikkan agammaglobulinemiya — ___ tirozinkinazasining nuqsoni|Bruton|btk|Nomi shundan. Faqat o'g'il bolalarda uchraydi.
+bruton-agammaglobulinemia-00pcjx7|Bruton agammaglobulinemiyasi|Bruton agammaglobulinemiyasida infeksiyalar qachon boshlanadi|Olti oylikdan keyin|Tug'ilgandan so'ng birinchi kunlarda|Shu vaqtgacha onaning IgG si himoya qiladi.
+bruton-agammaglobulinemia-02o8gt2|Bruton agammaglobulinemiyasi|Bruton agammaglobulinemiyasida tirik vaksinalar|Mumkin emas|Tavsiya etiladi|Ayniqsa og'iz orqali poliomiyelit vaksinasi.
+chronic-granulomatous-disease-1o3w9wf|Surunkali granulyomatoz kasallik|Surunkali granulyomatoz kasallik — ___-oksidaza nuqsoni|NADFN|nadph|Respirator portlash yo'q, shuning uchun katalaza-musbat mikroorganizmlar tirik qoladi.
+chronic-granulomatous-disease-1yc1nrm|Surunkali granulyomatoz kasallik|Bu bemorlarni qaysi mikroorganizm klassik holda zararlaydi?|Staphylococcus aureus|Neisseria meningitidis|Katalaza-musbat: stafilokokk, Serratia, Burkholderia, Aspergillus, Nocardia.
+hyper-ige-syndrome-0mocn6y|Giper-IgE sindromi|Jov sindromida ekzema, abssesslar va tushmay qolgan sut ___ bo'ladi|tishlari|tish|Yuz qo'pol, IgE yuqori. STAT3 nuqsoni.
+ataxia-telangiectasia-048y0xr|Ataksiya-telangiektaziya|Ataksiya-telangiektaziyada qon zardobidagi ___ oshadi|AFP|alfa-fetoprotein|Shuningdek IgA yetishmovchiligi va limfoma xavfi. ATM geni.
+scid-0gmdaf0|Og'ir kombinatsiyalangan immun tanqislik|Bu holatning yakuniy davosi qaysi?|Suyak ko'migini ko'chirib o'tkazish|Faqat immunoglobulin yuborish|T va B hujayralar ishlamaydi; busiz o'limga olib keladi.
+digeorge-syndrome-1tqp57j|Di Jorj sindromi|Di Jorj sindromida tetaniya past ___ tufayli yuzaga keladi|kalsiy|ca|Uchinchi va to'rtinchi cho'ntaklar rivojlanmay, qalqonsimon oldi bezlari bo'lmaydi.
+complement-deficiency-1q2z6o8|Komplement yetishmovchiligi|Qaytalanuvchi Neisseria infeksiyasi nimaning yetishmovchiligidan dalolat beradi|C5-C9 komponentlari|C1-esteraza ingibitori|Neisseriyani eritish uchun membranaga hujum qiluvchi kompleks kerak.
+systemic-lupus-erythematosus-1mxvq76|Tizimli qizil yuguruk|Qizil yugurukdagi eng SPETSIFIK antitelolar — anti-Smit va ikki zanjirli ___ ga qarshi|DNK|dnk|ANA sezgir, ammo spetsifik emas.
+lupus-1h4myv2|Qizil yuguruk|Qizil yuguruk nefriti nima bilan nazorat qilinadi|C3, C4 va anti-dsDNK titrlari|ANA titri va revmatoid omil|Kasallik kuchayganda komplement pasayadi.
+drug-induced-lupus-05j07vn|Dori chaqirgan qizil yuguruk|Dori chaqirgan qizil yuguruk nima bilan bog'liq|Antigiston antitelolari|Anti-Smit antitelolari|Gidralazin, prokainamid va izoniazid. Buyrakka tegmaydi.
+antiphospholipid-syndrome-0wegb8x|Antifosfolipid sindrom|Antifosfolipid sindrom probirkada paradoksal ravishda ___ ni uzaytiradi|AChTV|fqtv, ptt, aptt|Ammo organizmda tromboz chaqiradi.
+antiphospholipid-syndrome-1n952z7|Antifosfolipid sindrom|Antifosfolipid sindrom klassik holda nimaga olib keladi|Qaytalanuvchi homila tushishi|Birlamchi ayol bepushtligi|Shuningdek arterial va venoz tromboz.
+rheumatoid-arthritis-0e6ypqx|Revmatoid artrit|Revmatoid artritdagi eng spetsifik antitelo — ___ sitrullinlangan peptidga qarshi|siklik|ccp, anti-ccp|Revmatoid omil kamroq spetsifik.
+sjogren-syndrome-1d5gl5q|Shegren sindromi|Shegren sindromi antitelolari — anti-Ro va anti-___|La|ssb|SSA va SSB. Ko'z va og'iz qurishi, quloq oldi bezi kattalashuvi.
+sjogren-syndrome-1fuk5qh|Shegren sindromi|Homiladorlikda anti-Ro antitelolari nima xavfini tug'diradi|Chaqaloqda yurak blokadasi|Nerv nayi nuqsonlari|Ular yo'ldoshdan o'tib, o'tkazuvchi tizimni shikastlaydi.
+goodpasture-syndrome-13pzzq5|Gudpaster sindromi|Gudpaster antitelolari bazal membranadagi ___ tip kollagenga qarshi|IV|4, to'rt|Immunofluoressensiyada chiziqli IgG.
+mixed-connective-tissue-disease-1e3f17k|Aralash biriktiruvchi to'qima kasalligi|Aralash biriktiruvchi to'qima kasalligi nima bilan belgilanadi|Anti-U1 RNP antitelolari|Antitsentromer antitelolari|Qizil yuguruk, sklerodermiya va miozit belgilari aralashadi.
+transplant-matching-18hs8zo|Transplantatsiyada moslik|Donor va retsipiyent ___ antigenlari bo'yicha moslashtiriladi|HLA|odam leykotsitar|Shuningdek ABO mosligi va kross-match.
+chronic-rejection-0r52t31|Surunkali rad etilish|Surunkali rad etilish nima bilan tavsiflanadi|Tomirlar fibrozi va transplantat atrofiyasi|Transplantatning zich neytrofil infiltratsiyasi|Oylar yoki yillar davomida; asosan qaytmas.
+graft-versus-host-disease-077fowb|«Transplantat xo'jayinga qarshi» kasalligi|Bu kasallik klassik holda qaysi a'zolarni zararlaydi|Teri, jigar va ichak|Buyrak va o'pka|Donor T hujayralari xo'jayin epiteliysiga hujum qiladi.
+immunosuppression-1bj0k5o|Immunosupressiya|Siklosporin va takrolimus ___ ni bloklab, IL-2 hosil bo'lishiga to'sqinlik qiladi|kalsinevrin|kalsineyrin|Transplantatsiya immunosupressiyasining asosi.
+mycophenolate-0abyq3w|Mikofenolat|Mikofenolat nimani tanlab bloklaydi|Limfotsitlarda purin sintezini|T hujayralarda kalsinevrin signalini|Limfotsitlarda qayta ishlatish yo'li yo'q, shuning uchun ular ko'proq zararlanadi.
+sirolimus-1v16py0|Sirolimus|Sirolimus mTOR ni ingibitsiya qiladi va nimasi bilan ajralib turadi|Buyrakka zarar yetkazmaydi|Kuchli nefrotoksiklik bilan|Kalsinevrin ingibitorlari transplantatni shikastlaganda foydali.
+live-vaccines-1n062fk|Tirik vaksinalar|Tirik susaytirilgan vaksinalar qanday immunitet hosil qiladi|Hujayraviy va gumoral|Faqat gumoral immunitet|Kuchliroq va uzoqroq, ammo immunosupressiyada xavfli.
+toxoid-vaccines-1g1cmyg|Anatoksin vaksinalar|Qoqshol va difteriya vaksinalari — ___ vaksinalar|anatoksin|anatoksinli, toksoid|Ular bakteriyaga emas, toksinga qarshi antitelolar hosil qiladi.
+conjugate-vaccines-0vh3sxk|Konyugatsiyalangan vaksinalar|Polisaxaridlar nima maqsadda oqsilga birlashtiriladi|Chaqaloqlar T ga bog'liq javob bera olishi uchun|Vaksinaning yaroqlilik muddati uzayishi uchun|Ikki yoshgacha bolalar oddiy polisaxaridga javob bera olmaydi.
+passive-immunization-0cv2d7s|Passiv immunizatsiya|Tishlangandan keyin quturishga qarshi immunoglobulin — bu|Passiv immunitet|Faol immunitet|Darhol, ammo vaqtinchalik; vaksina ham birga beriladi.

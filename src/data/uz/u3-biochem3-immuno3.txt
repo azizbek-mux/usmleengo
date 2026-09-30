@@ -1,0 +1,47 @@
+vitamin-cofactors-00jqjak|Vitamin kofaktorlari|Piruvatdegidrogenaza tiamin, lipoat kislota, KoA, FAD va ___ ni talab qiladi|NAD|nad+, niatsin|«Tender Loving Care For Nancy» qoidasi.
+arsenic-poisoning-159khxm|Arsen bilan zaharlanish|Arsen ___ kislotani bloklab, piruvatdegidrogenazani to'xtatadi|lipoat|lipoy|Nafasda sarimsoq hidi va «guruch suvi» kabi najas.
+alkaline-phosphatase-05qhjf5|Ishqoriy fosfataza|Ishqoriy fosfataza qaysi mineralni kofaktor sifatida talab qiladi?|Rux|Temir|Rux yetishmovchiligi o'lchangan darajani pasaytirishi mumkin.
+carbonic-anhydrase-1krwazo|Karboangidraza|Karboangidraza faol markazida ___ ni talab qiladi|rux|ruxni|Atsetazolamid bilan bloklanadi.
+superoxide-dismutase-08chpl7|Superoksiddismutaza|Superoksiddismutaza nimani talab qiladi|Mis, rux yoki manganni|Faqat temir yoki molibdenni|Mutatsiyalari oilaviy ALS ni beradi.
+gs-pathway-1ugrj1l|Gs yo'li|Gs oqsillari adenilatsiklazani faollashtirib, ___ ni oshiradi|sAMF|camp, siklik amf|Keyin A oqsil kinazasi ishga tushadi.
+gq-pathway-1t3pf4l|Gq yo'li|Gq oqsillari fosfolipaza C ni faollashtirib, IF3 va ___ hosil qiladi|DAG|diatsilglitserin|Kalsiyni oshirib, C oqsil kinazasini faollashtiradi.
+gi-pathway-0b13div|Gi yo'li|Gi oqsillari nima qiladi|Adenilatsiklazani tormozlaydi|Adenilatsiklazani faollashtiradi|Alfa-2, M2 va D2 retseptorlari Gi bilan bog'langan.
+cholera-toxin-0egv3vr|Vabo toksini|Vabo toksini ___ ni doimiy FAOLLASHTIRADI|Gs|g-s|Ichakda sAMF ni yuqori holatda qulflab qo'yadi.
+pertussis-toxin-1hzxhug|Ko'kyo'tal toksini|Ko'kyo'tal toksini ___ ni FAOLSIZLANTIRADI va sAMF ni ham oshiradi|Gi|g-i|Tormozlovchi tomonni ishdan chiqaradi.
+nitric-oxide-1kczctb|Azot oksidi|Azot oksidi nima orqali signal beradi|sGMF|sAMF|Guanilatsiklazani faollashtiradi.
+steroid-receptors-02eeipz|Steroid retseptorlari|Steroid gormon retseptorlari yadroda ___ omillari sifatida ishlaydi|transkripsiya|transkripsion|Sekin boshlanadi, uzoq davom etadi.
+receptor-tyrosine-kinases-0w7cj55|Retseptor tirozinkinazalari|Insulin, EGF va PDGF retseptorlari nima hisoblanadi|Retseptor tirozinkinazalari|G oqsil bilan bog'langan|Autofosforillanish kaskadni boshlaydi.
+mitochondria-0q5c1h5|Mitoxondriyalar|Mitoxondriyalar o'zining halqasimon ___ siga ega|DNK|genom|Onadan irsiylanadi.
+nuclear-pore-1ru1m2g|Yadro teshigi|Yadroga kiradigan oqsillar nimani tashiydi|Yadro lokalizatsiya signalini|N-terminal signal peptidini|Signal peptidlari esa ER ga yo'naltiradi.
+lysosomes-1yji4sl|Lizosomalar|Lizosoma fermentlari ___ pH da ishlaydi|kislotali|past|Buni proton nasosi ushlab turadi.
+autophagy-0hg15b9|Autofagiya|Autofagiya nima|Shikastlangan organellalarni o'z-o'zini hazm qilish|Butun hujayraning rejalashtirilgan o'lim jarayoni|Ochlikda kuchayadi.
+cytoskeleton-017u8py|Hujayra skeleti|___ filamentlar cho'zilishga qarshilik beradi va keratinni o'z ichiga oladi|Oraliq|intermediar|O'sma immunogistokimyosida ishlatiladi.
+actin-0r1prnr|Aktin|Listeria va Shigella hujayradan hujayraga nima yordamida tarqaladi|Aktin polimerlanishi|Mikronaychalar orqali|«Aktin raketalari» ularni oldinga suradi.
+cilia-1pfyrjv|Kiprikchalar|Kiprikchalar harakati ___ ATFaza qo'llariga bog'liq|dinein|dineinga|Kartagener sindromida nuqsonli.
+peroxisome-086iy34|Peroksisoma|Peroksisomalar nimani hosil qilib, zararsizlantiradi|Vodorod peroksidni|Sut kislotasini|Katalaza yordamida.
+il-1-1nyndcf|IL-1|Interleykin-1 — isitma beruvchi endogen ___|pirogen|pirogendir|IL-6 va TNF-alfa bilan birga.
+il-2-08w8gpe|IL-2|Interleykin-2 T hujayralarning ___ ini boshqaradi|ko'payishi|o'sishi, proliferatsiyasi|Kalsineyrin ingibitorlari bilan bloklanadi.
+il-5-0ja0d1e|IL-5|Interleykin-5 ___ ni va IgA sinfiga o'tishni rag'batlantiradi|eozinofillar|eozinofil|Astmada mepolizumab uni nishonga oladi.
+il-6-1d2qehf|IL-6|Interleykin-6 jigarda ___ faza oqsillari ishlab chiqarilishini boshqaradi|o'tkir|o'tkir faza|Jumladan CRP va gepsidin.
+il-8-1fkvqjb|IL-8|Interleykin-8 — neytrofillar uchun asosiy ___|xemoattraktant|xemokin|«8-qatorda tozalash» qoidasi.
+il-10-1fnyo59|IL-10|Interleykin-10 va TGF-beta — yallig'lanishga ___ sitokinlar|qarshi|qarshi turuvchi|Th1 javobini susaytiradi.
+il-12-08bjp5l|IL-12|Interleykin-12 ___ differensiatsiyasini boshqaradi|Th1|t xelper 1|Makrofag va dendrit hujayralardan chiqadi.
+tnf-alpha-1v1sayu|TNF-alfa|TNF-alfa nima uchun javobgar|Kaxeksiya va septik shok|Antitelo sinfining o'zgarishi|Infliksimab va etanertsept bilan bloklanadi.
+dendritic-cells-1pxnf1l|Dendrit hujayralar|Dendrit hujayralar nima hisoblanadi|Eng samarali antigen taqdim etuvchi hujayralar|Faqat fagotsitoz qiluvchi tozalovchi hujayralar|Tug'ma va orttirilgan immunitet orasida ko'prik.
+regulatory-t-cells-0ps6j5g|Regulyator T hujayralar|Regulyator T hujayralar CD4, CD25 va ___ transkripsiya omilini ifodalaydi|FOXP3|foxp-3|Uning mutatsiyasi IPEX sindromini beradi.
+anaphylaxis-biphasic-0cbiu2p|Ikki fazali anafilaksiya|Anafilaksiyadan keyin kamida ___ soat kuzatish tavsiya etiladi|4|to'rt, 6|Ikki fazali reaksiyalar tufayli.
+allergy-testing-1w4ucyl|Allergiya tekshiruvi|Teri prik-testi qanday xususiyatga ega|Spetsifik IgE dan sezgirroq|Tashxis uchun yakuniy|Klinik anamnez baribir zarur bo'lib qoladi.
+desensitization-1ohabhe|Desensibilizatsiya|Allergen ___ yillar davomida asta-sekin tolerantlikni keltiradi|immunoterapiyasi|desensibilizatsiya|Zahar va gulchang allergiyasida samarali.
+angioedema-without-urticaria-0i8g4mu|Eshakemisiz angioshish|Eshakemisiz angioshish nimadan dalolat beradi|Bradikinin orqali kechuvchi sabablardan|IgE orqali kechuvchi allergiyadan|AFF ingibitorlari yoki C1 ingibitori yetishmovchiligi.
+mast-cell-tryptase-1ydm9vs|Semiz hujayra triptazasi|Zardobdagi ___ semiz hujayra degranulyatsiyasini keyinchalik tasdiqlaydi|triptaza|triptazasi|Anafilaksiyadan 1-2 soat keyin cho'qqiga chiqadi.
+common-variable-immunodeficiency-0y0rdis|O'zgaruvchan immun tanqislik|CVID nima bilan asoratlanadi|Bronxoektaz, autoimmunitet va limfoma|Neytropeniya va takroriy kandidoz|Kattalikda takrorlanuvchi burun-o'pka infeksiyalari.
+immunoglobulin-replacement-0i4nbba|Immunoglobulin o'rnini bosuvchi davo|Immunoglobulin vena ichiga har ___ haftada beriladi|4|to'rt, 3-4|Yoki teri ostiga har hafta yuboriladi.
+asplenia-vaccination-1tdd4o8|Taloqsizlikda emlash|Taloqsiz bemorlarga nimaga qarshi emlash kerak|Pnevmokokk, meningokokk va gemofil tayoqchaga|Faqat gripp va COVID vaksinalariga, boshqa hech nimaga|Shuningdek har yili gripp va profilaktik antibiotiklar.
+molecular-mimicry-0jxw5nd|Molekulyar mimikriya|___ mimikriya revmatizm va Giyen-Barreni tushuntiradi|Molekulyar|molekulyar mimikriya|Mikrob antigenlari o'z antigenlariga o'xshaydi.
+epitope-spreading-0f7ywqd|Epitop tarqalishi|Epitop tarqalishi nimani bildiradi|Autoimmun javobning vaqt bilan kengayishini|Antigen tanishning vaqt bilan yo'qolishini|Autoimmun kasallikning zo'rayishini tushuntiradi.
+hla-b27-00c6mxh|HLA-B27|HLA-B27 spondilit, reaktiv va psoriatik artrit hamda ___ ichak kasalligi bilan bog'liq|yallig'lanishli|ybk|PAIR qoidasi.
+hla-dq2-1xaiyt1|HLA-DQ2|HLA-DQ2 va DQ8 nima uchun zarur|Seliakiya kasalligi uchun|Faqat 1-tur diabet uchun|Ularning yo'qligi seliakiyani amalda inkor qiladi.
+anti-nuclear-antibody-1j7hqso|Antinuklear antitelo|ANA lupus uchun juda ___, ammo spetsifikligi past|sezgir|sezgirdir|ANA manfiy bo'lsa, lupus ehtimoli juda kam.
+rheumatoid-factor-01qw88a|Revmatoid omil|Revmatoid faktor yana qayerda musbat bo'ladi|Shyogren sindromi, C gepatiti va endokarditda|Faqat revmatoid artritda, boshqa hech qayerda|Bu uning tashxis qiymatini cheklaydi.
+anca-1jn7ic0|ANCA|c-ANCA ___ ni nishonga oladi va poliangiit bilan granulematozdan dalolat beradi|proteinaza 3|pr3|p-ANCA esa miyeloperoksidazani nishonga oladi.
+complement-in-lupus-1llgeoi|Lupusda komplement|Faol lupus nefritida nima ko'rinadi|C3 va C4 past|Komplement oshgan|Immun komplekslar tomonidan sarflanadi.

@@ -1,0 +1,12 @@
+leg-weakness-localization-0ogu04m|Oyoq holsizligini joylashtirish|Insultdan keyin bir oyoqning uvishishi qayerni ko'rsatadi|Miya yarim sharining medial yuzasini|Miya yarim sharining lateral yuzasini|Gomunkulusda oyoq medial joylashgan.
+tongue-deviation-localization-0bnup9o|Til qiyshayishini joylashtirish|Til qaysi tomonga qiyshayadi|Til osti nervi zararlangan tomonga|Til osti nervi sog' qolgan tomonga|Uzunchoq miyaning medial sindromi.
+uvula-deviation-direction-0p5ecm6|Tilchaning qiyshayish yo'nalishi|Adashgan nerv zararlansa, tilcha qayoqqa qiyshayadi|Zararlangan tomondan teskari tomonga|Zararlangan tomonning o'ziga qarab|Tilning teskarisi.
+substantia-nigra-location-03gy0yi|Qora moddaning joylashuvi|Qora moddaning zich qismi qayerda joylashgan|O'rta miyada|Uzunchoq miyada|Ikki tomonlama, Parkinson kasalligida degeneratsiyaga uchraydi.
+locked-in-artery-0wglj4u|«Qamalgan odam» sindromi arteriyasi|«Qamalgan odam» sindromi qaysi arteriya berkilishidan keyin bo'ladi|Bazilyar arteriya|Orqa miya arteriyasi|Faqat ko'z harakati saqlanadi.
+colloid-cyst-site-0emb8ot|Kolloid kistaning joyi|Kolloid kista ___ teshigini bekitib, gidrosefaliya beradi|Monro|monro|Uchinchi qorincha shiftida joylashadi.
+diffuse-axonal-injury-cause-0j23ftq|Diffuz akson shikastlanishining sababi|Diffuz akson shikastlanishi nimadan kelib chiqadi|Tez sekinlashuvdagi qirqib yuboruvchi kuchlardan|Kalla suyagining bevosita teshib o'tuvchi jarohatidan|Ancha vaqtdan keyin bilish buzilishi.
+node-of-ranvier-channels-0limz1s|Ranvye tugunchasidagi kanallar|Ranvye tugunchasi qaysi kanallarga boy|Natriy kanallariga|Kaliy kanallariga|Sakrovchi o'tkazishni shu ta'minlaydi.
+quadrantanopia-localization-1yvlwaz|Kvadrantanopiyani joylashtirish|Pastki kvadrantanopiya qarshi tomondagi qaysi bo'lakni ko'rsatadi|Tepa bo'lakni|Chakka bo'lakni|Chakka bo'lagi yuqori nuqson beradi.
+wilson-disease-in-young-parkinsonism-11dznee|Yosh bemordagi parkinsonizmda Vilson kasalligi|Yosh bemordagi parkinsonizm nimadan dalolat beradi|Vilson kasalligidan|Idiopatik parkinsonizmdan|Po'stloq tanasida mis cho'kadi.
+basal-ganglia-labeling-0zzgcrt|Bazal yadrolarni belgilash|MRT da dumli yadro, ___ va oqargan shar bazal yadrolarni tashkil qiladi|po'stloq tanasi|putamen|Medialdan lateralga tartibda.
+pcom-aneurysm-association-1nqqrpl|Orqa biriktiruvchi arteriya anevrizmasining bog'liqligi|Xaltasimon anevrizmalar kimlarda ko'p uchraydi|Polikistoz buyrak kasalligida|Qandli diabet bilan kasallanganlarda|Oldingi va orqa biriktiruvchi arteriyalarda.

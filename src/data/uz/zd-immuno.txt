@@ -1,0 +1,16 @@
+igm-response-timing-0e41f10|IgM javobining vaqti|IgM nimani ko'rsatadi|O'tkir, birinchi marta yuqqan infeksiyani|Surunkali yoki takroriy yuqqan infeksiyani|Birinchi paydo bo'ladigan antitelo.
+igm-avidity-1ugiv04|IgM avidligi|IgM eng yuqori avidlikka ega, chunki u qanday|Pentamer, o'nta bog'lanish joyi bilan|Dimer, J zanjiri bilan birlashgan|Dimer — bu IgA.
+hyper-igm-defect-0bsc3l7|Giper-IgM nuqsoni|Giper-IgM sindromi nimaning yetishmovchiligi|T hujayralardagi CD40 ligandining|B hujayralardagi CD40 ning o'zining|Sinf almashinuvi amalga oshmaydi.
+igg-affinity-08l6rbr|IgG affinligi|IgG qaysi javobning antitelosi|Ikkilamchi va surunkali javobning|Eng birinchi duch kelishning|Affinligi eng yuqori.
+igg-and-the-placenta-1iby7lo|IgG va yo'ldosh|Yo'ldoshdan o'tadigan antitelo qaysi|IgG|IgM|Shuning uchun Rezus kasalligi homilaga zarar beradi.
+iga-location-1cq7rc6|IgA joylashuvi|IgA qayerda asosiy antitelo hisoblanadi|Shilliq qavat ajralmalarida|Qon aylanish oqimida|Ichak, nafas yo'llari va ona suti.
+iga-structure-0a5aevq|IgA tuzilishi|Ajratilgan IgA — ___ zanjiri bilan birlashgan dimer|J|j|Mayda, lekin muhim tafsilot.
+gut-lymphoid-tissue-00hkmfw|Ichak limfoid to'qimasi|Ichak limfoid to'qimasining to'plamlari ___ pilakchalari deyiladi|Peyer|peyer|IgA javoblari shu yerda hosil bo'ladi.
+septic-shock-hypotension-cytokine-15dbwcm|Septik shokdagi gipotenziya sitokini|Sepsisdagi gipotenziyaga eng ko'p qaysi sitokin javobgar|TNF-alfa|Interleykin-2|U tomir o'tkazuvchanligini oshiradi.
+cachexia-cytokine-0vdbj2h|Kaxeksiya sitokini|TNF-alfa ___ omili deb ham ataladi va saratonda vazn yo'qotishga olib keladi|kaxeksiya|kaxektin|Muhim bog'liqlik.
+fever-cytokines-0cgqko1|Isitma sitokinlari|Sepsisdagi isitmani nima keltiradi|TNF-alfa va interleykin-1|Interleykin-4 va interleykin-10|Keyingi juftlik yallig'lanishga qarshi.
+nsaid-antipyretic-target-1vf1z1p|NYaQV ning isitma tushirish nishoni|NYaQV isitmani nimani kamaytirib tushiradi|Prostaglandinni|Interleykin-1 ni|Prostaglandin — oxirgi vositachi.
+osteoclast-activating-factor-0dmzq89|Osteoklastni faollashtiruvchi omil|Interleykin-1 ___ ni faollashtiruvchi omil deb ham ataladi|osteoklast|osteoklastlar|Miyelomadagi suyak o'choqlariga hissa qo'shadi.
+interleukin-2-role-0qlye1q|Interleykin-2 ning roli|Interleykin-2 asosan nima qiladi|T hujayralar ko'payishini rag'batlantiradi|Antitelo sinf almashinuvini boshqaradi|T hujayralar uchun umumiy o'sish signali.
+calcineurin-inhibitor-effect-08ew2pe|Kalsinevrin ingibitorining ta'siri|Siklosporin va takrolimus qanday ishlaydi|Interleykin-2 transkripsiyasini kamaytirib|Interleykin-2 retseptorini to'sib qo'yib|Sirolimus esa javobning o'zini susaytiradi.
+th2-cytokines-0qu278o|Th2 sitokinlari|Interleykin-4 va 10 T hujayralarni qayoqqa buradi|Th2 ga, Th1 ni bostirib|Th1 ga, Th2 ni bostirib|Gumoral yo'nalish.

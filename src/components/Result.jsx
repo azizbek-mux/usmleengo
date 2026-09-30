@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { t } from "../lib/i18n.js";
 import { APP_LINK, share } from "../lib/telegram.js";
 import { shareMessage } from "../lib/shareText.js";
 import bank from "../data/bank.js";
@@ -11,8 +12,8 @@ function Ring({ pct }) {
   // Start at zero so the ring animates on mount rather than snapping.
   const [shown, setShown] = useState(0);
   useEffect(() => {
-    const t = setTimeout(() => setShown(pct), 80);
-    return () => clearTimeout(t);
+    const timer = setTimeout(() => setShown(pct), 80);
+    return () => clearTimeout(timer);
   }, [pct]);
 
   return (
@@ -28,17 +29,17 @@ function Ring({ pct }) {
       </svg>
       <div className="ring-mid">
         <div className="ring-pct">{pct}%</div>
-        <div className="ring-sub">accuracy</div>
+        <div className="ring-sub">{t("accuracy", "to'g'ri")}</div>
       </div>
     </div>
   );
 }
 
 function title(pct) {
-  if (pct === 100) return "Perfect round";
-  if (pct >= 80) return "Strong work";
-  if (pct >= 50) return "Solid effort";
-  return "Worth another pass";
+  if (pct === 100) return t("Perfect round", "Mukammal natija");
+  if (pct >= 80) return t("Strong work", "Juda yaxshi");
+  if (pct >= 50) return t("Solid effort", "Yaxshi harakat");
+  return t("Worth another pass", "Yana bir bor takrorlang");
 }
 
 export default function Result({ log, label, xpEarned, streak, streakAdvanced, rank, saved = [], onSave, onAgain, onHome, classNote = null }) {
@@ -56,13 +57,13 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
 
       <div className="result-title">{title(pct)}</div>
       <div className="result-sub">
-        {correct} of {log.length} correct{label ? ` · ${label}` : ""}
+        {t(`${correct} of ${log.length} correct`, `${log.length} tadan ${correct} tasi to'g'ri`)}{label ? ` · ${label}` : ""}
       </div>
 
       {streakAdvanced && (
         <div className="streak-pop">
-          <div className="n">🔥 {streak} day{streak > 1 ? "s" : ""}</div>
-          <div className="l">Streak extended — come back tomorrow</div>
+          <div className="n">🔥 {t(`${streak} day${streak > 1 ? "s" : ""}`, `${streak} kun`)}</div>
+          <div className="l">{t("Streak extended — come back tomorrow", "Kunlik intizom davom etmoqda — ertaga ham qayting")}</div>
         </div>
       )}
 
@@ -75,12 +76,12 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
         <div className="split-legend">
           <div className="leg">
             <span className="dot ok" />
-            <b>{correct}</b> correct
+            <b>{correct}</b> {t("correct", "to'g'ri")}
             <span className="leg-pct">{pct}%</span>
           </div>
           <div className="leg">
             <span className="dot no" />
-            <b>{wrong}</b> incorrect
+            <b>{wrong}</b> {t("incorrect", "noto'g'ri")}
             <span className="leg-pct">{100 - pct}%</span>
           </div>
         </div>
@@ -96,18 +97,18 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
           </div>
           <div className="reward">
             <div className="reward-v">{correct}/{log.length}</div>
-            <div className="reward-l">Score</div>
+            <div className="reward-l">{t("Score", "Natija")}</div>
           </div>
           <div className="reward gold">
             <div className="reward-v">{streak}</div>
-            <div className="reward-l">Streak</div>
+            <div className="reward-l">{t("Streak", "Intizom")}</div>
           </div>
         </div>
       )}
 
       {missed.length > 0 && (
         <div className="review">
-          <div className="section-label">What you missed</div>
+          <div className="section-label">{t("What you missed", "Xato qilganlaringiz")}</div>
           {missed.slice(0, 5).map((l, i) => {
             const on = saved.includes(l.question.id);
             return (
@@ -121,7 +122,7 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
                     className={`save-btn small${on ? " on" : ""}`}
                     onClick={() => onSave(l.question.id)}
                     aria-pressed={on}
-                    aria-label={on ? "Remove from saved" : "Save this question"}
+                    aria-label={on ? t("Remove from saved", "Saqlanganlardan olib tashlash") : t("Save this question", "Savolni saqlash")}
                   >
                     <Bookmark size={18} filled={on} />
                   </button>
@@ -130,13 +131,18 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
             );
           })}
           {!inClass && <div className="review-note">
-            {missed.length === 1 ? "It waits" : "They wait"} in <b>Mistakes</b> on the Quiz tab until you get {missed.length === 1 ? "it" : "them"} right.
+            {t(
+              <>{missed.length === 1 ? "It waits" : "They wait"} in <b>Mistakes</b> on the Quiz tab until you get {missed.length === 1 ? "it" : "them"} right.</>,
+              <>To'g'ri javob bermaguningizcha ular «Testlar» bo'limidagi <b>Xatolar</b>da turadi.</>,
+            )}
           </div>}
         </div>
       )}
 
       <div className="result-actions">
-        <button className="btn btn-primary" onClick={onAgain}>{inClass ? "Practise again" : "Another round"}</button>
+        <button className="btn btn-primary" onClick={onAgain}>
+          {inClass ? t("Practise again", "Yana mashq qilish") : t("Another round", "Yana bir marta")}
+        </button>
         {!inClass && <button
           className="btn btn-ghost"
           onClick={() =>
@@ -151,9 +157,9 @@ export default function Result({ log, label, xpEarned, streak, streakAdvanced, r
             }))
           }
         >
-          Share score
+          {t("Share score", "Natijani ulashish")}
         </button>}
-        <button className="btn btn-ghost" onClick={onHome}>Done for now</button>
+        <button className="btn btn-ghost" onClick={onHome}>{t("Done for now", "Hozircha yetarli")}</button>
       </div>
     </div>
   );

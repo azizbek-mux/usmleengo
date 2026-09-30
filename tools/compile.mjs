@@ -78,6 +78,9 @@ const hash = (s) => {
 
 const errors = [];
 const questions = [];
+// Which file each question came from — for the Uzbek worklists only
+// (tools/uz-worklist.mjs); never shipped.
+const sourceOf = {};
 const seenFp = new Set();
 const seenId = new Set();
 // Two questions can be worded differently and still test the same fact —
@@ -128,6 +131,7 @@ function parseLine(raw, file, lineNo) {
   let id = `${slug(topic)}-${hash(`${topic}|${q}`)}`;
   while (seenId.has(id)) id = `${id}x`;
   seenId.add(id);
+  sourceOf[id] = file;
 
   if (base === "I") {
     // The picture is the question: no stem, because a written hint is exactly
@@ -178,7 +182,7 @@ function parseLine(raw, file, lineNo) {
   }
 }
 
-const files = readdirSync(DATA).filter((f) => f.endsWith(".txt")).sort();
+const files = readdirSync(DATA).filter((f) => f.endsWith(".txt") && !f.startsWith(".")).sort();
 if (!files.length) {
   console.error("No .txt source files found in src/data/");
   process.exit(1);
@@ -204,9 +208,90 @@ writeFileSync(join(PUBLIC, "questions.json"), payload, "utf8");
 // stale copy can be served after an update. Stamp its content hash into a
 // generated module: the app appends it as ?v=, so the URL changes only when
 // the bank actually changes — fresh on redeploy, still cacheable in between.
+/* ── Uzbek ────────────────────────────────────────────────────────────────
+   Each English file has an Uzbek partner in src/data/uz/, one line per
+   question, keyed by the English question's id:
+
+     id|topic|question|four|five|explanation
+
+   with four and five meaning what they mean in the English line (the right
+   option and the wrong one; or the answer and other accepted spellings). A
+   picture question's question field is left empty. The Uzbek terms agreed
+   with the owner are in src/data/uz/TERMS.md; the apostrophe in o' and g'
+   is always the plain one. Written to public/questions.uz.json, which the
+   app loads in place of the English text when the player chooses Uzbek. */
+const UZ = join(DATA, "uz");
+const byId = new Map(questions.map((q) => [q.id, q]));
+const uz = {};
+const uzErrors = [];
+const uzOrphans = [];
+const uzLengthTells = [];
+let uzFiles = [];
+try { uzFiles = readdirSync(UZ).filter((f) => f.endsWith(".txt")).sort(); } catch { /* none yet */ }
+const CURLY = /[‘’ʻʼ`]/;
+// Uzbek here is Latin script. A Cyrillic or Turkish letter is a typo that
+// reads as a different letter, so it must never reach the bank.
+const FOREIGN = /[Ѐ-ӿİıŞşĞğ]/;
+for (const f of uzFiles) {
+  readFileSync(join(UZ, f), "utf8").split(/\r?\n/).forEach((raw, i) => {
+    const line = raw.trim();
+    if (!line || line.startsWith("#")) return;
+    const where = `uz/${f}:${i + 1}`;
+    const p = line.split("|").map((s) => s.trim());
+    if (p.length !== 6) { uzErrors.push(`${where}: expected 6 fields, got ${p.length}`); return; }
+    const [id, topic, q, four, five, explain] = p;
+    const en = byId.get(id);
+    if (!en) { uzOrphans.push(`${where}: ${id}`); return; }
+    if (uz[id]) { uzErrors.push(`${where}: ${id} translated twice`); return; }
+    if (!topic || !explain) { uzErrors.push(`${where}: empty topic or explanation`); return; }
+    if (CURLY.test(line)) { uzErrors.push(`${where}: write o' and g' with the plain apostrophe`); return; }
+    const foreign = line.match(FOREIGN);
+    if (foreign) { uzErrors.push(`${where}: "${foreign[0]}" is a Cyrillic or Turkish letter, not Uzbek Latin`); return; }
+    if (en.type === "gap") {
+      if (!q.includes("___")) { uzErrors.push(`${where}: a typed question needs ___`); return; }
+      if (!four) { uzErrors.push(`${where}: no answer`); return; }
+      // The same check as the English: the stem must not hold its own answer.
+      const bare = four.toLowerCase().replace(/[^a-z0-9' ]/g, "");
+      if (bare.length > 2 && new RegExp(`(^|[^a-z0-9'])${bare.replace(/'/g, "\\'")}([^a-z0-9']|$)`).test(q.replace("___", " ").toLowerCase())) {
+        uzErrors.push(`${where}: stem gives away the answer "${four}"`); return;
+      }
+      // Both languages' answers count: the Uzbek ones, and the English.
+      const accept = [...new Set([four, ...five.split(",")].map((s) => s.trim().toLowerCase()).filter(Boolean).concat(en.accept))];
+      uz[id] = { t: topic, q, a: four, c: accept, e: explain };
+      if (topicLeaks(topic, four, null)) uz[id].h = 1;
+    } else {
+      if (!en.img && !q) { uzErrors.push(`${where}: empty question`); return; }
+      if (q.includes("___")) { uzErrors.push(`${where}: a two-option question must not contain ___`); return; }
+      if (!four || !five || four.toLowerCase() === five.toLowerCase()) { uzErrors.push(`${where}: needs two different options`); return; }
+      if (four.length - five.length > 8) uzLengthTells.push(`${where}: correct is ${four.length - five.length} chars longer`);
+      uz[id] = { t: topic, q: en.img ? "" : q, o: [four, five], e: explain };
+      if (topicLeaks(topic, four, five)) uz[id].h = 1;
+    }
+  });
+}
+// One English topic, one Uzbek name: two names would split a topic in the
+// search and in "Quiz me on…" into two half-topics.
+const uzTopicNames = new Map();
+for (const [id, u] of Object.entries(uz)) {
+  const en = byId.get(id).topic;
+  if (!uzTopicNames.has(en)) uzTopicNames.set(en, new Set());
+  uzTopicNames.get(en).add(u.t);
+}
+const uzSplitTopics = [...uzTopicNames].filter(([, names]) => names.size > 1);
+if (uzErrors.length) {
+  console.error(`\n${uzErrors.length} Uzbek error(s):`);
+  for (const e of uzErrors.slice(0, 40)) console.error("  " + e);
+  process.exit(1);
+}
+const uzPayload = JSON.stringify(uz);
+writeFileSync(join(PUBLIC, "questions.uz.json"), uzPayload, "utf8");
+// For tools/uz-worklist.mjs: which file each question is in. Not shipped.
+writeFileSync(join(UZ, ".sources.json"), JSON.stringify(sourceOf), "utf8");
+
 writeFileSync(
   join(DATA, "bank-version.js"),
-  `// GENERATED by tools/compile.mjs — do not edit.\nexport const BANK_VERSION = "${hash(payload)}";\n`,
+  `// GENERATED by tools/compile.mjs — do not edit.\nexport const BANK_VERSION = "${hash(payload)}";\n` +
+  `export const BANK_UZ_VERSION = "${hash(uzPayload)}";\n`,
   "utf8"
 );
 
@@ -224,6 +309,26 @@ console.log(`  tags    : ${tags.size}`);
 console.log(`  skipped : ${dupes} verbatim + ${factDupes} same-fact duplicate(s)`);
 console.log(`  bytes   : ${(JSON.stringify(questions).length / 1024).toFixed(0)} KB`);
 console.log(`  topic hidden : ${questions.filter((x) => x.hideTopic).length} (topic would reveal the answer)`);
+const uzCount = Object.keys(uz).length;
+console.log(`  uzbek   : ${uzCount} of ${questions.length} translated (${Math.floor((100 * uzCount) / questions.length)}%)` +
+            (uzOrphans.length ? `, ${uzOrphans.length} line(s) for questions that no longer exist` : ""));
+for (const o of uzOrphans.slice(0, 10)) console.log(`    orphan ${o}`);
+// The whole bank is translated. A question added without its Uzbek line
+// still ships — the app falls back to English for that one question rather
+// than hide it — but it is named here so it does not slip out unnoticed.
+const untranslated = questions.filter((q) => !uz[q.id]);
+if (untranslated.length) {
+  console.log(`  uzbek missing: ${untranslated.length} question(s) would show English to an Uzbek reader`);
+  for (const q of untranslated.slice(0, 10)) console.log(`    ${sourceOf[q.id] || "?"}  ${q.id}`);
+}
+if (uzSplitTopics.length) {
+  console.log(`  uzbek topics with two names: ${uzSplitTopics.length}`);
+  for (const [en, names] of uzSplitTopics.slice(0, 10)) console.log(`    ${en}: ${[...names].join(" / ")}`);
+}
+if (uzLengthTells.length) {
+  console.log(`  uzbek length tells: ${uzLengthTells.length} (the right option visibly longer)`);
+  for (const l of uzLengthTells.slice(0, 10)) console.log(`    ${l}`);
+}
 
 // Pictures that ship but no question uses are dead weight in the repository
 // and in every clone of it.

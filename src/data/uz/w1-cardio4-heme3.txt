@@ -1,0 +1,46 @@
+apex-beat-0gljetb|Yurak uchi turtkisi|Siljigan, tarqoq yurak uchi turtkisi ___ bilan yuklanishdan dalolat beradi|hajm|hajm bilan|Ko'tariluvchi turtki esa bosim bilan yuklanishni bildiradi.
+thrill-1vokgzc|Titrash|Paypaslanadigan titrash doim nimani bildiradi|Kamida 4-darajali shovqinni|Xavfsiz oqim shovqinini|Darajalash 1 dan 6 gacha.
+third-heart-sound-0lxnt8c|Uchinchi yurak toni|S3 yoshlarda va ___ da normal hisoblanadi|homiladorlik|homiladorlikda|40 yoshdan keyin patologik.
+fourth-heart-sound-0kdptsx|To'rtinchi yurak toni|S4 qaysi holatda hech qachon eshitilmaydi|Bo'lmachalar fibrillatsiyasida|Arterial gipertoniya holatida|U bo'lmacha qisqarishini talab qiladi.
+splitting-of-s2-099ep0n|S2 ning ikkiga bo'linishi|S2 ning keng va QAT'IY bo'linishi ___ lararo to'siq nuqsonini bildiradi|bo'lmacha|bo'lmachalar|Qat'iy, chunki o'ng tomonning to'lishi doimiy.
+paradoxical-splitting-0n4a0k0|Paradoksal bo'linish|S2 ning paradoksal bo'linishi nimadan dalolat beradi|Chap tutamning blokadasi yoki aorta stenozi|O'ng tutamning blokadasi yoki stenozi|Aorta qopqog'ining yopilishi o'pkadan keyinga suriladi.
+pulsus-alternans-1gtt1y1|Almashinuvchi puls|Puls ___ — og'ir chap qorincha yetishmovchiligida kuchli va kuchsiz urishlar almashinishi|alternans|alternansi|Prognoz yomonligining belgisi.
+corrigan-pulse-0210yob|Korrigan pulsi|«Suv bolg'asi» kabi so'nuvchi puls nimani bildiradi|Aorta yetishmovchiligini|Aorta qopqog'i stenozini|Keng puls bosimi.
+hepatojugular-reflux-1os38md|Gepatoyugulyar reflyuks|Musbat gepatoyugulyar reflyuks o'ng ___ yetishmovchiligidan dalolat beradi|yurak|qorincha|Qorinni bosganda bo'yin venalari bosimi uzoq ko'tarilib turadi.
+cardiovascular-risk-0enusui|Yurak-qon tomir xavfi|O'n yillik xavf ___ davosi haqidagi qarorga yo'l ko'rsatadi|statin|birlamchi profilaktika, lipid|Qon bosimi va turmush tarzi bilan birga.
+exercise-1mfz5m1|Jismoniy yuklama|Kattalar uchun haftada tavsiya etilgan o'rtacha jismoniy faollik qancha|150 daqiqa|30 daqiqa|Yoki 75 daqiqa kuchli faollik.
+smoking-1b737xm|Chekish|Chekishni tashlagandan keyin yurak-qon tomir xavfi ___ yil ichida sezilarli kamayadi|1|bir|O'n yil ichida boshlang'ich darajaga yaqinlashadi.
+alcohol-and-heart-09xnyp5|Alkogol va yurak|Ko'p alkogol iste'moli nimaga olib keladi|Dilatatsion kardiomiopatiya va fibrillatsiyaga|Restriktiv kardiomiopatiya va blokadaga|Ko'p ichgandan keyin «bayram yuragi» sindromi.
+salt-1hv7lvx|Tuz|Ovqatdagi ___ ni kamaytirish qon bosimini sezilarli pasaytiradi|tuz|natriy|Ayniqsa tuzga sezgir odamlarda.
+coronary-angiography-05z2oya|Koronar angiografiya|Birlamchi perkutan aralashuv birinchi murojaatdan ___ daqiqa ichida bajarilishi kerak|120|90|Aks holda trombolizisni ko'rib chiqing.
+dual-antiplatelet-therapy-0ny6tpp|Ikkita antiagregant davosi|Stentdan keyin ikkita antiagregant davosi odatda qancha davom etadi|O'n ikki oy|Bir oy|Qon ketish xavfi yuqori bo'lsa, qisqaroq.
+cardiac-rehabilitation-1jl858i|Yurak reabilitatsiyasi|Infarktdan keyingi yurak reabilitatsiyasi ___ ni kamaytirib, hayot sifatini yaxshilaydi|o'lim|o'limni|Eng kam qo'llanadigan samarali aralashuvlardan biri.
+stress-testing-0t0fsoq|Stress-sinov|Jismoniy yuklama bilan stress-sinov qachon qo'llanmaydi|O'tkir koronar sindromda|Barqaror stenokardiyada|Dorili stress tasvirlash muqobil bo'ladi.
+coronary-calcium-score-1gus6cw|Koronar kalsiy bali|Koronar kalsiy balli ___ bo'lsa, xavf juda past hisoblanadi|nol|0|Statin haqidagi qaror chegaraviy bo'lganda foydali.
+myocardial-bridging-0crcbxl|Miokard ko'prigi|Miokard ko'prigi ishemiyani qanday beradi|Koronar arteriyaning sistolada siqilishi orqali|Doimiy aterosklerotik torayish hisobiga|Ko'pincha xavfsiz, ammo stenokardiya berishi mumkin.
+hypertrophic-cardiomyopathy-1jwjae6|Gipertrofik kardiomiopatiya|Gipertrofik kardiomiopatiya yosh ___ da to'satdan yurak o'limining eng ko'p sababi|sportchilar|kattalar|Skriningga EKG va exokardiografiya kiradi.
+hocm-management-0ap5qys|Gipertrofik kardiomiopatiyani olib borish|Gipertrofik kardiomiopatiyali bemorlar nimadan saqlanishi kerak|Suvsizlanish va vazodilatatorlardan|Beta-blokator va verapamildan|Oldingi yuklamani kamaytiruvchi har narsa obstruksiyani yomonlashtiradi.
+restrictive-cardiomyopathy-1ibrr7s|Restriktiv kardiomiopatiya|Amiloid, sarkoid va ___ restriktiv kardiomiopatiyani beradi|gemoxromatoz|gemoxromatozni|To'lish buzilgan, sistolik funksiya normal.
+arrhythmogenic-right-ventricular-cardiom-0zqb85q|Aritmogen o'ng qorincha kardiomiopatiyasi|ARVC miokard o'rnini nima bilan almashtiradi|Fibroz-yog' to'qimasi bilan|Amiloid to'planishi bilan|Yoshlarda qorincha aritmiyasini beradi.
+peripartum-cardiomyopathy-0memnar|Peripartal kardiomiopatiya|Peripartal kardiomiopatiya tug'ruqdan keyingi ___ oygacha namoyon bo'ladi|5|besh, 6|Keyingi homiladorlikda qaytalanish xavfi sezilarli.
+acute-pericarditis-0u8iqyy|O'tkir perikardit|O'tkir perikardit nima bilan davolanadi|NYaQV va kolxitsin bilan|Birinchi qator steroidlar|Kolxitsin qaytalanishni kamaytiradi.
+pericardial-effusion-0n296ft|Perikard suyuqligi|Perikard suyuqligi eng yaxshi ___ bilan baholanadi|exokardiografiya|exo, ultratovush|Hajmi va gemodinamikaga ta'siri baholanadi.
+mean-corpuscular-volume-1oo462e|O'rtacha eritrotsit hajmi|O'rtacha eritrotsit hajmi ___ femtolitrdan oshsa, makrotsitoz deb ataladi|100|yuz|Sabablari: B12, folat, alkogol va gipotireoz.
+non-megaloblastic-macrocytosis-1j2embt|Megaloblast bo'lmagan makrotsitoz|Qaysi biri gipersegmentlangan neytrofillarSIZ makrotsitoz beradi?|Ortiqcha alkogol|Folat yetishmovchiligi|Shuningdek jigar kasalligi, gipotireoz va retikulotsitoz.
+anemia-in-pregnancy-0eh10cm|Homiladorlikda anemiya|Homiladorlikning fiziologik anemiyasi ___ hajmining ortishidan kelib chiqadi|plazma|plazma hajmi|Suyultirish, ammo haqiqiy temir ehtiyoji ham bor.
+iron-therapy-response-10jpmq4|Temir davosiga javob|Temir boshlangandan keyin birinchi javob nima bo'ladi|Bir hafta ichida retikulotsitlar ortadi|Kunlar ichida gemoglobin normallashadi|Gemoglobinning to'g'rilanishi haftalar oladi.
+intravenous-iron-1dmxee1|Vena ichiga temir|Vena ichiga temir og'iz orqali temir ___ yoki so'rilmaganda qo'llanadi|ko'tarilmaganda|samarasiz, ko'tarib bo'lmaganda|Zamonaviy preparatlar kamdan-kam anafilaksiya beradi.
+blood-film-in-hyposplenism-0gb31x2|Gipospleniyada qon surtmasi|Gipospleniyada qon surtmasida nima ko'rinadi|Xauell-Jolli tanachalari va nishonsimon hujayralar|Shistotsitlar va «dubulg'a» shaklidagi hujayralar|Shuningdek trombotsitoz va akantotsitlar.
+leukocytosis-0tz3vsn|Leykotsitoz|Chapga ___ — qonda yetilmagan neytrofillarning paydo bo'lishi|siljish|siljishi|Infeksiya yoki ko'mik zo'riqishidan dalolat beradi.
+lymphocytosis-1z03no6|Limfotsitoz|Atipik hujayralar bilan yaqqol limfotsitoz nimadan dalolat beradi|Epshteyn-Barr kabi virus infeksiyasidan|O'tkir bakterial sepsis holatidan|Bakterial infeksiya neytrofillarni oshiradi.
+monoclonal-gammopathy-0f444o2|Monoklonal gammapatiya|___ elektroforezidagi monoklonal yo'l qo'shimcha tekshiruv talab qiladi|oqsil|zardob oqsili, spep|Erkin yengil zanjirlar va tasvir tekshiruvi bilan.
+bone-marrow-examination-09dbz00|Suyak ko'migini tekshirish|Aspirat emas, trepanobiopsiya qachon kerak bo'ladi|Ko'mik fibrozlangan yoki infiltratsiyalanganda|Har qanday sitopeniya bo'lgan har bir holatda|«Quruq punksiya» fibrozdan dalolat beradi.
+tumor-lysis-prevention-06dsimh|O'sma lizisining oldini olish|___ yuqori xavfli o'sma lizisi profilaktikasida ishlatiladi|Rasburikaza|rasburikazani|G6FD yetishmovchiligida qo'llanmaydi.
+sickle-cell-crisis-1aw0kzx|O'roqsimon hujayrali kriz|Og'riq krizi tezkor ___, gidratatsiya va kislorodni talab qiladi|og'riq qoldirish|analgeziya, opioidlar|Og'riqni yetarli davolamaslik ko'p uchraydi va nohaq.
+sickle-cell-stroke-10u2ood|O'roqsimon hujayrali anemiyada insult|Bu kasallikdagi bolalarda insult xavfi nima bilan skrining qilinadi|Transkranial dopplerografiya|Har yili MRT o'tkazish|Tezlik yuqori bo'lsa, transfuziya programmasi boshlanadi.
+thalassemia-screening-1vh1bzw|Talassemiya skriningi|Homiladorlikda ___ skriningi og'ir talassemiya xavfi bor juftliklarni aniqlaydi|gemoglobinopatiya|tashuvchilik|Bu ongli reproduktiv tanlovga imkon beradi.
+g6pd-triggers-1c5mnvx|G6FD qo'zg'atuvchilari|G6FD gemolizini nima qo'zg'atadi|Boqla, infeksiya va oksidlovchi dorilar|Temir preparatlari va C vitamini|Primakvin, dapson, nitrofurantoin va sulfonamidlar.
+aplastic-crisis-0ezxknk|Aplastik kriz|Parvovirus B19 ___ o'tmishdoshlarini zararlab, aplastik kriz beradi|eritroid|eritrotsit, qizil qon|Surunkali gemolizda o'tkinchi, ammo og'ir kechadi.
+venous-thromboembolism-in-cancer-0ia5d26|Rakda vena tromboemboliyasi|Sababsiz vena tromboemboliyasi nimaga undaydi|Yoshga mos rak skriningiga|Hammani keng tasvir tekshiruviga|Yashirin xavfli o'sma ozchilikda topiladi.
+antiphospholipid-testing-059da9c|Antifosfolipid tekshiruvi|Antifosfolipid antitelolari ___ haftadan keyin tasdiqlanishi kerak|12|o'n ikki|Infeksiyadan keyin o'tkinchi musbat natijalar ko'p uchraydi.
+warfarin-reversal-1hwo757|Varfarin ta'sirini qaytarish|Varfarin fonidagi katta qon ketish nima bilan to'xtatiladi|Protrombin kompleksi konsentrati va K vitamini|Yangi muzlatilgan plazma va trombotsitlar|Konsentrat daqiqalar ichida ishlaydi.

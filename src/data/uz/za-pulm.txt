@@ -1,0 +1,24 @@
+type-i-pneumocyte-function-03lxt63|I tur pnevmotsitlarning vazifasi|I tur pnevmotsitlar nima uchun javobgar|Alveola orqali gaz almashinuvi uchun|Alveola uchun surfaktant ishlab chiqarish uchun|Yuzaning taxminan 95 foizini qoplaydi.
+type-ii-pneumocyte-role-0b9h7n6|II tur pnevmotsitlarning roli|II tur pnevmotsitlar qanday vazifa bajaradi|Alveolaning o'zak hujayralari|Asosiy gaz almashtiruvchi hujayra|Zararlangan I tur hujayralar o'rnini to'ldiradi.
+surfactant-organelle-18i3jmy|Surfaktant organellasi|Surfaktant II tur pnevmotsitning ___ tanachalarida hosil bo'ladi|plastinkasimon|lamellyar|Chaqaloqlarning nafas buzilishida kamaygan.
+emphysema-cell-loss-07d59xx|Emfizemada hujayra yo'qolishi|Emfizema asosan nimani yo'qotadi|I tur pnevmotsitlar va yuza maydonini|II tur pnevmotsitlar va surfaktantni|Almashinuv uchun qolgan maydonni kamaytiradi.
+smoking-target-cell-13y6knk|Chekishning nishon hujayrasi|Chekish asosan nimani zararlaydi|Kiprikli soxta ko'p qatorli epiteliyni|Alveolaning II tur pnevmotsitlarini|Shilliq-kiprikli eskalator ishlamay qoladi.
+raised-a-a-gradient-meaning-11qd3s3|Oshgan A-a gradientining ma'nosi|Kengaygan A-a gradienti nimani bildiradi|O'pkaning o'zi kasal ekanini|Bemor kam nafas olayotganini|Gradient normal, CO2 yuqori bo'lsa — gipoventilyatsiya.
+small-cell-location-1sydji3|Mayda hujayrali rakning joyi|Mayda hujayrali o'pka saratoni qayerda paydo bo'ladi|Markazda, darvoza yaqinida|Chetda, periferik qismlarda|Chekish asosiy xavf omili.
+small-cell-paraneoplastic-0486lpl|Mayda hujayrali rakning paraneoplastik ta'siri|Mayda hujayrali o'pka saratoni klassik holda nima ajratadi|ADG yoki AKTG|PTG ga o'xshash peptid|Shuningdek Lambert-Iton sindromini beradi.
+adenocarcinoma-population-0pzum8v|Adenokarsinoma qaysi guruhda|O'pka adenokarsinomasi kimdagi saraton uchun javob bo'ladi|Chekmaydigan odamda|Ko'p chekadigan odamda|Klassik holda hech qachon chekmagan ayol.
+radon-and-lung-cancer-0za2tdz|Radon va o'pka saratoni|Chekmaydigan odamdagi o'pka saratonini nimaga bog'lash mumkin|Fon radon ta'siriga|Passiv alkogol ta'siriga|Tan olingan atrof-muhit sababi.
+bronchial-carcinoid-secretion-1ncdujv|Bronx karsinoidining sekretsiyasi|Bronxning karsinoid o'smasi nima ajratadi|Serotonin|Insulin|Yuzning qizishi va diareya beradi.
+mesothelioma-cell-of-origin-0l5eab3|Mezoteliomaning kelib chiqish hujayrasi|Mezotelioma nimadan kelib chiqadi|Mezotelial hujayralardan|Alveola epitelial hujayralaridan|Asbest ta'siridan keyin.
+asbestos-sequence-0d8i0gd|Asbest ketma-ketligi|Asbest ta'siridan keyin nima bo'ladi|Avval asbestoz, keyin mezotelioma|Avval mezotelioma, keyin fibroz|Orasi ko'p yillar bilan ajralgan.
+asbestosis-initiating-cell-0ggn1eq|Asbestozni boshlovchi hujayra|Asbestdan keyingi o'pka fibrozini qaysi hujayra boshlaydi|Makrofag|Neytrofil|Tolani yutib, signal beradi.
+asbestos-body-shape-1g2qm16|Asbest tanachasining shakli|Asbestning temirli tanachasi ___ shaklida ta'riflanadi|gantel|shtanga|Histologiyada oltin-jigarrang.
+silicosis-occupation-0qwk1jq|Silikoz va kasb|Silikoz kimlarda uchraydi|Quyuv va tosh konida ishlaydiganlarda|Kema quruvchi va izolyatsiyachilarda|Asbest esa kemasozlik zavodiga tegishli.
+silicosis-lobe-05h7fbg|Silikozdagi bo'lak|Silikoz qayerda kalsiylanadi|Yuqori bo'laklarda|Pastki bo'laklarda|Darvozada «tuxum po'sti» kalsiylanishi.
+silicosis-infection-risk-0vfy8l1|Silikozda infeksiya xavfi|Silikoz ayniqsa nima xavfini oshiradi|Sil kasalligi|Aspergillyoz|Kremniy makrofagni ishdan chiqaradi.
+ipf-presentation-1hklgic|Idiopatik o'pka fibrozining namoyoni|Idiopatik o'pka fibrozi qanday namoyon bo'ladi|Oylar davomida sababsiz quruq yo'tal|Haftalar davomida yashil balg'amli yo'tal|Ellik yoshdan oshgan bemorda.
+ipf-next-investigation-1mef0pm|Idiopatik o'pka fibrozida keyingi tekshiruv|Fibrozda ko'krak rentgeni va spirometriyadan keyin keyingi qadam qaysi|Ko'krak qafasining yuqori aniqlikdagi KT si|Lavaj bilan bajariladigan bronxoskopiya|Hamon noaniq bo'lsa, keyin biopsiya.
+fibrosis-crackles-01bt7ki|Fibrozdagi xirillashlar|O'pka fibrozi nima beradi|Nafas olishda quruq krepitatsiya|Nafas chiqarishda qo'pol hushtak|Ko'pincha kuchli P2 tovushi bilan.
+chronic-bronchitis-definition-1ctla5x|Surunkali bronxitning ta'rifi|Surunkali bronxit — qancha davom etgan balg'amli yo'tal|Yiliga uch oy, ikki yil davomida|Bitta qishda olti hafta davomida|Ta'rif klinik, radiologik emas.
+reid-index-088irp1|Reyd indeksi|0,5 dan yuqori ___ indeksi surunkali bronxitni histologik ta'riflaydi|Reyd|reyd|Bez qalinligining bronx devori qalinligiga nisbati.
+blue-bloater-mechanism-00zabvu|«Ko'k shishgan»ning mexanizmi|Surunkali bronxit nima uchun gipoksiya beradi|Shilliq nafas yo'llari va alveolalarni to'ldiradi|Alveolalarning devorlari butunlay yemiriladi|Emfizema esa yuza maydonini yo'qotadi.

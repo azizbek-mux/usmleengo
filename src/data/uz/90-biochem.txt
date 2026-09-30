@@ -1,0 +1,63 @@
+# 90-biochem — o'zbekcha tarjima (qarang: TERMS.md)
+
+essential-fructosuria-1707koh|Essensial fruktozuriya|Fruktokinaza yetishmovchiligida fruktoza baribir ___ tomonidan parchalanadi|geksokinaza|geksokinaza fermenti|Sekin muqobil yo'l; holat xavfsiz kechadi.
+transamination-0bfmvcs|Transaminatsiya|Alanin o'z aminoguruhini alfa-___ ga beradi va glutamat hosil bo'ladi|ketoglutarat|alfa-ketoglutarat|Buni ALT katalizlaydi; kofaktor — B6 vitamini.
+transaminases-1i6ipha|Transaminazalar|Transaminatsiya reaksiyalari uchun ___ vitamini kofaktor sifatida kerak|B6|piridoksin|Piridoksalfosfat.
+glut-transporters-1yt2nxi|GLUT tashuvchilar|Glyukoza ko'pchilik hujayralarga qanday kiradi|Energiyasiz yengillashtirilgan diffuziya bilan|ATF sarflaydigan birlamchi faol transport bilan|Tashuvchi orqali, D-glyukozaga stereotanlanuvchan.
+steroid-hormone-receptors-1ghexpe|Steroid gormonlar retseptorlari|Progesteron qayerda joylashgan retseptorga bog'lanadi|Hujayra ichida|Hujayra membranasida|Steroidlar yog'da eriydi va transkripsiyaga ta'sir qiladi.
+ehlers-danlos-syndrome-1omol4f|Elers-Danlos sindromi|Elers-Danlos sindromi ___ sintezining nuqsoni|kollagen|kollagen oqsili|Bo'g'imlar o'ta harakatchan, teri cho'ziluvchan, ko'karishlar oson paydo bo'ladi.
+orotic-aciduria-0nxnsxy|Orot atsiduriyasi|Irsiy orot atsiduriyasi ___ bilan davolanadi|uridin|uridinmonofosfat, umf|Bloklangan UMF-sintazani chetlab o'tadi. Ornitintranskarbamilaza yetishmovchiligidan farqli, giperammoniemiya yo'q.
+orotic-aciduria-1gnpn48|Orot atsiduriyasi|Giperammoniemiya bilan kechuvchi orot atsiduriyasi nimadan dalolat beradi|Ornitintranskarbamilaza yetishmovchiligi|Jigarda UMF-sintaza yetishmovchiligi|Ornitintranskarbamilaza yetishmovchiligi X ga birikkan, ensefalopatiya bilan kechadi.
+phenylketonuria-0jfmdgv|Fenilketonuriya|Fenilketonuriyada ___ almashtirib bo'lmaydigan aminokislotaga aylanadi|tirozin|tir|Fenilalaningidroksilaza uni hosil qila olmaydi.
+maple-syrup-urine-disease-1ishhgu|Klyon siropi hidli siydik kasalligi|Bu kasallikda ___ zanjirli aminokislotalar parchalanishi bloklanadi|tarmoqlangan|tarmoqlangan zanjirli|Leytsin, izoleytsin va valin. Alfa-ketokislota degidrogenazasi yetishmaydi.
+pentose-phosphate-pathway-0newvty|Pentozofosfat yo'li|Transketolaza uchun ___ vitamini kofaktor sifatida kerak|B1|tiamin|Shuning uchun u tiamin yetarliligini baholashda ishlatiladi.
+proteasome-0h5ww6k|Proteasoma|Oqsillar proteasomada parchalanish uchun ___ bilan belgilanadi|ubikvitin|ubikvitinlanish|To'rtta yoki undan ortiq monomer yemirilish signalini beradi.
+carnitine-deficiency-0djflsy|Karnitin yetishmovchiligi|Karnitin uzun zanjirli yog' kislotalarini ___ ichiga tashiydi|mitoxondriya|mitoxondriya matriksi|Yetishmovchiligida ketonsiz gipoglikemiya va holsizlik kuzatiladi.
+hypoketotic-hypoglycemia-0xpunx9|Ketonsiz gipoglikemiya|Ochlikdan keyingi ketonsiz gipoglikemiya qayerdagi nuqsondan dalolat beradi|Yog' kislotalari oksidlanishida|Glikogenoliz jarayonida|MCAD yoki karnitin yetishmovchiligi.
+transmembrane-domains-1r6i745|Transmembran sohalar|Oqsilning membranani kesib o'tuvchi qismlari ___ aminokislotalarga boy|gidrofob|noqutbli|Hujayradan tashqaridagi qismlar esa gidrofil.
+thiamine-dependent-enzymes-1qj5f64|Tiaminga bog'liq fermentlar|Piruvatdegidrogenaza uchun ___ vitamini kerak|B1|tiamin|Shuningdek alfa-ketoglutaratdegidrogenaza va transketolaza.
+pyruvate-dehydrogenase-deficiency-06saaqh|Piruvatdegidrogenaza yetishmovchiligi|Piruvatdegidrogenaza yetishmovchiligi nimaga olib keladi|Laktatatsidoz|Ketoatsidoz|Lizin va leytsinga boy ketogen parhez bilan davolanadi.
+pompe-disease-1gqgvjr|Pompe kasalligi|Pompe kasalligi — kislotali ___ yetishmovchiligi|alfa-glyukozidaza|kislotali maltaza|Lizosomal to'planish kasalligi; kardiomegaliya va gipotoniya.
+homocystinuria-0qkjv3i|Gomotsistinuriya|Gomotsistein qayta metillanib, ___ aminokislotasiga aylanadi|metionin|met|B12 va folat kerak. Sistationinsintaza esa B6 dan foydalanadi.
+galactokinase-deficiency-121jq1r|Galaktokinaza yetishmovchiligi|Galaktokinaza yetishmovchiligi izolyatsiyalangan ___ bilan namoyon bo'ladi|katarakta|kataraktalar|Gavharda galaktitol to'planadi. Klassik galaktozemiyaga qaraganda yengilroq.
+classic-galactosemia-0fswvy3|Klassik galaktozemiya|Klassik galaktozemiya qaysi ferment yetishmovchiligi|Galaktoza-1-fosfat uridiltransferaza|Ko'z gavhari epiteliysidagi galaktokinaza|Sariqlik, gepatomegaliya, E. coli sepsisi, aqliy zaiflik.
+urea-cycle-defects-1owkfgd|Mochevina sikli nuqsonlari|Mochevina sikli buzilishlarida parhezda ___ cheklanadi|oqsil|oqsillar|Ammiak to'planib, lanjlik, qusish va miya shishiga olib keladi.
+hereditary-fructose-intolerance-0y602hk|Irsiy fruktozani ko'tara olmaslik|Aldolaza B yetishmovchiligida parhezdan fruktoza va ___ olib tashlanadi|saxaroza|qand|Fruktoza-1-fosfat to'planib, fosfat zaxirasini tugatadi.
+calcium-sensing-receptor-01z31te|Kalsiyni sezuvchi retseptor|Kalsiyni sezuvchi retseptor — bu|G-oqsil bilan bog'langan retseptor|Retseptor tirozinkinaza turidagi|Uning mutatsiyasi oilaviy gipokalsiuriyali giperkalsiemiyaga olib keladi.
+ras-protein-0u3817e|Ras oqsili|Ras faqat ___ bilan bog'langanda faol bo'ladi|GTF|gtp|O'zining GTFaza faolligi uni o'chiradi; mutatsiya doimiy yoqib qo'yadi.
+pentose-phosphate-pathway-0qo464e|Pentozofosfat yo'li|Pentozofosfat yo'lining oksidlovchi qismi yog' kislotalari sintezi uchun ___ hosil qiladi|NADFN|nadph|Shuningdek glutationni qaytarilgan holda saqlaydi.
+niacin-1g1941l|Niatsin|Niatsin oksidlanish-qaytarilish reaksiyalarida ishlatiladigan ___ ning o'tmishdoshi|NAD|nad+, nadn|Pellagra uchta «D» bilan namoyon bo'ladi.
+ribosomal-subunits-1tn40fy|Ribosoma subbirliklari|40S ribosoma subbirligi nima bilan bog'lanadi|mRNK va boshlovchi tRNK bilan|Signalni tanuvchi zarracha bilan|Eukariot ribosomasi 80S: 40S va 60S.
+genetic-anticipation-0l7k0l5|Genetik antitsipatsiya|Trinukleotid takrorlari kasalliklari avloddan avlodga ___ hisobiga og'irlashadi|antitsipatsiya|antitsipatsiyasi|Takrorlar ko'payadi; miotonik distrofiya va Xantington kasalligida klassik.
+cori-disease-1xr0mk5|Kori kasalligi|Kori kasalligi — glikogenni ___ fermentning yetishmovchiligi|tarmoqsizlantiruvchi|amilo-1,6-glyukozidaza|Gipoglikemiya va gepatomegaliya, Girke kasalligiga qaraganda yengilroq.
+lyonization-1lugru1|Lionizatsiya|Ayollarda X-xromosomaning tasodifiy faolsizlanishi ___ deyiladi|lionizatsiya|x-inaktivatsiya|Noteng lionizatsiya ayolda X ga birikkan retsessiv kasallik namoyon bo'lishiga olib kelishi mumkin.
+barr-body-129qvft|Barr tanachasi|Barr tanachasi nimani anglatadi|Faolsizlangan X-xromosomani|Qo'shimcha Y-xromosomani|Barr tanachalari soni X lar sonidan bitta kam.
+glucocorticoid-action-0xktjqw|Glyukokortikoidlar ta'siri|Kortizol qanday ta'sir qiladi|Hujayra ichidagi retseptor orqali|sAMF ni oshiruvchi membrana retseptori orqali|Yog'da eriydi; membranadan erkin o'tadi.
+dna-replication-0ab5ogt|DNK replikatsiyasi|DNK replikatsiyasida RNK boshlagichini ___ sintez qiladi|praymaza|primaza|Boshlagichdagi uratsil uning RNK ekanini bildiradi.
+pleiotropy-1t9mr9a|Pleyotropiya|Bitta genning bir-biriga bog'liq bo'lmagan ko'p ta'sir berishi ___ deyiladi|pleyotropiya|pleyotrop|Fenilketonuriya va Marfan sindromida klassik.
+achondroplasia-099hmfz|Axondroplaziya|Axondroplaziyaning sababi|FGFR3 funksiyasini kuchaytiruvchi mutatsiya|FGFR3 funksiyasini yo'qotuvchi mutatsiya|Autosom-dominant; xondrotsitlar ko'payishini tormozlaydi.
+achondroplasia-inheritance-0201xhx|Axondroplaziyaning irsiylanishi|Ota-onadan biri axondroplaziya bilan og'rigan bo'lsa, bola uchun xavf|50 foiz|25 foiz|Autosom-dominant, to'liq penetrantlik.
+phospholipase-c-0pjis33|Fosfolipaza C|Fosfolipaza C faollashuvi hujayra ichidagi ___ miqdorini oshiradi|kalsiy|ca, ca2+|IF3 kalsiyni chiqaradi; DAG protein kinaza C ni faollashtiradi.
+histone-h1-0h68k95|Giston H1|___ gistoni nukleosoma yadrosidan tashqarida joylashib, xromatinni zichlashtiradi|H1|h1 gistoni|Yadro oktameri: H2A, H2B, H3 va H4.
+heterochromatin-05b3z2p|Geterokromatin|Geterokromatin qanday bo'ladi|Zich joylashgan, transkripsiya qilinmaydi|Bo'sh joylashgan, faol transkripsiya qilinadi|Evkromatin esa ifodalanadi.
+riboflavin-1xhqj7m|Riboflavin|Riboflavin suksinatdegidrogenaza ishlatadigan ___ ning o'tmishdoshi|FAD|fadn2|B2 yetishmovchiligi xeyloz va shox pardaning tomirlanishiga olib keladi.
+telomerase-16uk1mf|Telomeraza|O'zak va saraton hujayralarida xromosoma uchlarini ___ saqlab turadi|telomeraza|telomeraza fermenti|Ko'pchilik somatik hujayralarda yo'q, shuning uchun replikativ qarish yuzaga keladi.
+post-translational-modification-097vghb|Translyatsiyadan keyingi o'zgarishlar|Glikozillanish va fosforillanish qachon sodir bo'ladi|Translyatsiyadan keyin|Transkripsiya paytida|Endoplazmatik to'r va Goldji apparatida.
+eukaryotic-replication-0r8pnja|Eukariot replikatsiyasi|Eukariot DNK si prokariotnikidan tezroq ko'payadi, chunki unda|Ko'p sonli replikatsiya boshlanish nuqtalari bor|Bitta boshlanish nuqtali halqasimon DNK bor|Prokariotlarda halqasimon DNK va bitta boshlanish nuqtasi.
+nonsense-mutation-0uir1hy|Nonsens-mutatsiya|Stop-kodon hosil qiluvchi mutatsiya ___-mutatsiya deyiladi|nonsens|bema'ni|Kaltalashgan oqsil hosil bo'ladi, masalan ba'zi Dyushenn holatlarida.
+frameshift-mutation-06dbfea|O'qish ramkasining siljishi|O'qish ramkasi siljishi nimadan kelib chiqadi|Uchga karrali bo'lmagan qo'shilish yoki yo'qolish|Bitta nukleotid almashinishi, bitta kodon o'zgaradi|Dyushenn odatda ramka siljishi; Bekker kasalligida ramka saqlanadi.
+linkage-disequilibrium-1febws0|Birikma muvozanatsizligi|Ikki lokusdagi allellarning tasodifiy bo'lmagan bog'lanishi birikma ___ deyiladi|muvozanatsizligi|disbalansi|Bu har doim ham fizik yaqinlikni anglatmaydi.
+western-blot-0b84in1|Vestern-blot|Vestern-blot nimani aniqlaydi|Oqsillarni|DNK ni|Sauzern — DNK, Nortern — RNK, Vestern — oqsil uchun.
+southern-blot-113iz7q|Sauzern-blot|___-blot DNK ni aniqlaydi|Sauzern|southern|Sauzern — DNK, Nortern — RNK, Vestern — oqsil.
+rate-limiting-enzymes-1it9f7d|Tezlikni cheklovchi fermentlar|Glyukoneogenezning tezlikni cheklovchi fermenti|Fruktoza-1,6-bisfosfataza|Fosfofruktokinaza-1|Fosfofruktokinaza-1 — glikoliz fermenti; fruktoza-1,6-bisfosfataza uni teskari buradi.
+cholesterol-synthesis-1yqb3x4|Xolesterin sintezi|Xolesterin sintezining tezlikni cheklovchi fermenti — ___-reduktaza|GMG-KoA|gmg koa|Statinlarning nishoni.
+heme-synthesis-15is096|Gem sintezi|Gem sintezining tezlikni cheklovchi fermenti — ALK-___|sintaza|sintetaza|B6 vitamini kerak; gem uni tormozlaydi.
+acute-intermittent-porphyria-1demmx5|O'tkir intermittirlovchi porfiriya|Bu porfiriya nima bilan namoyon bo'ladi|Qorin og'rig'i va neyropsixiatrik belgilar|Qo'llarda yorug'likdan pufakli toshma|Porfobilinogendezaminaza yetishmovchiligi; terida o'zgarish yo'q.
+porphyria-cutanea-tarda-14g0t6p|Kech teri porfiriyasi|Kech teri porfiriyasi nimaga olib keladi|Yorug'likdan pufakli toshma|Qorin og'rig'i va neyropatiya|Uroporfirinogendekarboksilaza yetishmovchiligi; siydik choy rangida.
+mitochondrial-inheritance-1qi9h2q|Mitoxondrial irsiylanish|Mitoxondrial kasalliklar ___dan irsiylanadi|ona|onasi|Kasal onaning barcha bolalari kasallanishi mumkin; geteroplazmiya og'irlikni belgilaydi.
+imprinting-041fbf4|Imprinting|Prader-Villi sindromi qaysi allelning yo'qolishidan kelib chiqadi|Otadan olingan allel|Onadan olingan allel|Angelman sindromi esa onadan olingan allel yo'qolganda yuzaga keladi.
+signal-recognition-particle-1gw1qi9|Signalni tanuvchi zarracha|Ribosomalarni donador endoplazmatik to'rga ___ yo'naltiradi|signalni tanuvchi zarracha|srp|Yo'qligida oqsillar sitoplazmada to'planib qoladi.
+i-cell-disease-0uz31tz|I-hujayra kasalligi|I-hujayra kasalligida nima qo'shilmaydi|Mannoza-6-fosfat|Ubikvitin zanjirlari|Fermentlar lizosomaga bormay, tashqariga ajraladi.
+collagen-synthesis-00vsxlg|Kollagen sintezi|Prolin va lizinni gidroksillash uchun ___ vitamini kerak|C|askorbin kislotasi|Yetishmovchiligi singaga olib keladi.
+osteogenesis-imperfecta-1rltwoe|Mukammal bo'lmagan osteogenez|Mukammal bo'lmagan osteogenez ___ tip kollagen nuqsoni|I|1, i tip|Ko'k sklera, suyak sinishlari, eshitishning pasayishi.
+marfan-syndrome-0tykdze|Marfan sindromi|Marfan sindromi qaysi oqsil nuqsoni|Fibrillin-1|III tip kollagen|Erkin TGF-beta ko'payib, aorta o'rta qavatini bo'shashtiradi.

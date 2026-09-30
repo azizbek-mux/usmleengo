@@ -1,0 +1,47 @@
+down-syndrome-0lpr7mr|Daun sindromi|Daun sindromi eng ko'p 21-xromosomaning ___ dan kelib chiqadi|ajralmasligi|nondisyunksiya, trisomiya|Taxminan 95 foiz; 4 foizi translokatsiya.
+down-syndrome-0q688ig|Daun sindromi|Daun sindromi qaysi ichak nuqsoni bilan bog'liq?|Duodenal atreziya|Ichak malrotatsiyasi|Shuningdek Girshprung kasalligi va seliakiya.
+down-syndrome-07h2uwj|Daun sindromi|Daun sindromli bolalarda ___ xavfi oshgan|leykoz|o'll, o'ml, leykoz xavfi|O'LL ham, O'ML ham, ayniqsa megakarioblastik turi.
+down-syndrome-0yuyrvt|Daun sindromi|Daun sindromli kattalarda nima rivojlanadi|Erta Altsgeymer kasalligi|Xantington kasalligi|APP geni 21-xromosomada joylashgan.
+turner-syndrome-17oz73p|Terner sindromi|Terner sindromi past bo'y va ___ da teri burmalarini beradi|bo'yin|bo'yinda|Homiladagi kistoz gigromadan qoladi.
+turner-syndrome-1izsjqw|Terner sindromi|Terner sindromi qaysi buyrak nuqsoni bilan bog'liq?|Taqasimon buyrak|Polikistoz buyrak kasalligi|Shuningdek koarktatsiya va ikki tabaqali aorta qopqog'i.
+klinefelter-syndrome-1b8bjes|Klaynfelter sindromi|Klaynfelter sindromi ___ va kichik, qattiq moyaklarni beradi|ginekomastiya|ginekomastiyani|47,XXY; ko'pincha bepushtlik tekshiruvida aniqlanadi.
+cri-du-chat-0u4df60|«Mushuk faryodi» sindromi|Bu sindrom qaysi xromosoma deletsiyasidan kelib chiqadi|5p|22q11|Mushukka o'xshash baland ovozda yig'lash.
+williams-syndrome-0qd1ico|Vilyams sindromi|Vilyams sindromi qopqoq usti aorta ___ va giperkalsiemiyani beradi|stenozi|stenoz, torayishi|O'ta do'stona xulq bilan; 7q deletsiyasi.
+22q11-deletion-1g80cib|22q11 deletsiyasi|22q11 deletsiyasi nimani beradi|Yurak nuqsoni, gipokalsiemiya va timus aplaziyasi|Buyrak ageneziyasi va o'pka gipoplaziyasi|Di Jorj va velokardiofatsial sindromlar.
+cystic-fibrosis-0x0moxb|Mukovistsidoz|Eng ko'p uchraydigan CFTR mutatsiyasi — delta-F___|508|f508|II sinf buklanish nuqsoni.
+cystic-fibrosis-0zfmvjv|Mukovistsidoz|Mukovistsidozli erkaklar nima sababdan odatda bepusht|Urug' yo'lining tug'ma yo'qligidan|Moyakda spermatogenez yo'qligidan|Spermani jarrohlik yo'li bilan olish mumkin.
+sickle-cell-disease-1qgv3sx|O'roqsimon hujayrali anemiya|O'roqsimon hujayrali anemiya autosom-___ tarzda irsiylanadi|retsessiv||Tashuvchilik bezgakdan himoya beradi.
+huntington-disease-12lgo2u|Xantington kasalligi|Xantington kasalligi odatda qaysi yoshda namoyon bo'ladi|30-50 yoshda|Bolalikda|Otadan o'tganda va takrorlar ko'p bo'lganda ertaroq.
+neurofibromatosis-type-1-1j3uejq|1-tip neyrofibromatoz|NF1 da rangdor pardada ___ tugunchalari, dog'lar va neyrofibromalar bo'ladi|Lish|lisch|17-xromosoma; shuningdek ko'ruv nervi gliomalari.
+neurofibromatosis-type-2-1shjp37|2-tip neyrofibromatoz|NF2 xarakterli holda nimani beradi|Ikki tomonlama vestibulyar shvannoma|Ikki tomonlama ko'ruv nervi gliomasi|22-xromosoma; NF2 da ikki quloq zararlanadi.
+tuberous-sclerosis-11i5m6i|Tuberoz skleroz|Tuberoz skleroz tutqanoq, «kul rangli barg» dog'lari va ___ adenomasini beradi|yog' bezi|angiofibroma, sebaseya|Shuningdek yurak rabdomiomalari va buyrak angiomiolipomalari.
+von-hippel-lindau-0eh8d45|Fon Xippel-Lindau sindromi|Fon Xippel-Lindau sindromi nima beradi|Gemangioblastoma va tiniq hujayrali buyrak raki|Medullyar qalqonsimon karsinoma va adenomalar|3-xromosoma; shuningdek feoxromotsitoma.
+marfan-syndrome-02hklf0|Marfan sindromi|Marfan sindromida gavhar klassik holda ___ siljiydi|yuqoriga|yuqori, tepaga|Gomotsistinuriyada esa pastga siljiydi.
+ehlers-danlos-vascular-type-1e2mspi|Elers-Danlosning tomir turi|Tomir turidagi Elers-Danlos nima uchun xavfli|Arteriya va ichak yorilishi tufayli|Bo'g'imlarning chiqib ketishi tufayli|III tur kollagen nuqsoni.
+newborn-screening-0hs1221|Chaqaloq skriningi|Chaqaloqda qon tomchisi skriningi hayotning ___ -kunida olinadi|5|besh, 5-8|FKU, kistoz fibroz, gipotireoz va boshqalarni aniqlaydi.
+galactosemia-01t0trw|Galaktozemiya|Chaqaloq galaktozemiyasi qaysi mikrob bilan sepsisga moyillik beradi|Escherichia coli|B guruh streptokokki|Shuningdek sariqlik va katarakta bo'ladi.
+phenylketonuria-0ltqbux|Fenilketonuriya|Davolanmagan FKU aqliy zaiflik va ___ hidini beradi|sichqon|qo'lansa, mog'or|Shuningdek oqargan teri va ekzema.
+urea-cycle-defect-timing-1g9yxo2|Siydikchil sikli nuqsonining vaqti|Siydikchil siklidagi nuqson klassik holda qachon namoyon bo'ladi|Birinchi oqsilli ovqatdan keyin|Tug'ilganda, ovqatlanishdan oldin|Qusish, letargiya va giperammoniemiya bilan.
+organic-acidemia-0ibrxd0|Organik atsidemiya|Organik atsidemiyalar ketoz bilan kechuvchi, oshgan ___ tafovutli atsidoz beradi|anion||Bu ularni siydikchil sikli nuqsonlaridan ajratadi.
+mitochondrial-disease-01xyoye|Mitoxondrial kasallik|MELAS sindromiga nima xos|Insultga o'xshash xurujlar va laktat atsidozi|KFK oshgan sof proksimal miopatiya holati|Onadan irsiylanadi, geteroplazmiya bilan.
+mid-parental-height-13h5qch|O'rta ota-ona bo'yi|Bo'lg'usi bo'y ___ -ota-ona bo'yi hisobi bilan aniqlanadi|o'rta||Jinsga qarab 6,5 sm ga tuzatiladi.
+constitutional-delay-1sxwapk|Konstitutsional kechikish|Konstitutsional o'sish kechikishida nima ko'rinadi|Suyak yoshi kechikkan, o'sish tezligi normal|Suyak yoshi ilgarilagan, o'sish esa tez|Oilada balog'atning kech kelishi tipik.
+breastfeeding-06awiba|Ko'krak suti bilan boqish|Faqat ko'krak suti bilan boqish birinchi ___ oy tavsiya etiladi|6|olti|Keyin qo'shimcha ovqat bilan birga davom etadi.
+vitamin-d-in-infants-0d6wxeo|Chaqaloqlarda D vitamini|Ko'krak suti bilan boqilayotgan chaqaloqqa nima qo'shib beriladi|D vitamini|C vitamini|Ko'krak sutida D vitamini kam.
+iron-in-infancy-0hogx5t|Chaqaloqlikda temir|Muddatida tug'ilganlarda zaxira temir taxminan ___ oyda tugaydi|6|olti, 4-6|Shu paytda temirga boy qo'shimcha ovqat muhim bo'ladi.
+cow-milk-in-infancy-1y9h5lo|Chaqaloqlikda sigir suti|Bir yoshgacha o'zgartirilmagan sigir suti nimaga olib keladi|Temir yetishmovchiligi va yashirin qon ketishga|Laktoza intoleranti va surunkali qabziyatga|Temiri kam, buyrakka tuz yuklamasi yuqori.
+febrile-infant-1npg7s7|Isitmali chaqaloq|___ oygacha bo'lgan isitmali chaqaloqda to'liq septik tekshiruv kerak|3|uch, 1|Immuniteti yetilmagan va belgilari nospetsifik.
+bronchiolitis-admission-0ns7wh2|Bronxiolitda yotqizish|Bronxiolitda qachon kasalxonaga yotqizish kerak|Yomon ovqatlanish, apneya yoki gipoksiyada|Auskultatsiyada har qanday xirillash bo'lsa|Ko'pchiligi uyda olib boriladi.
+asthma-in-children-0ufennq|Bolalarda astma|Besh yoshgacha xirillashli bolalarga bronxodilatator ___ orqali beriladi|spanser|spacer, spanserdan|Ko'pchilik uchun nebulayzerdan samaraliroq.
+urinary-tract-infection-in-infancy-15yqlx3|Chaqaloqlikda siydik yo'li infeksiyasi|Chaqaloqda siydik yo'li infeksiyasi nimani talab qiladi|Siydik yo'llari tasvir tekshiruvini|Faqat tinchlantirishning o'zini|Reflyuks yoki tuzilish nuqsonini qidirish uchun.
+nephrotic-syndrome-in-children-15gn7za|Bolalarda nefrotik sindrom|Bolalar nefrotik sindromi empirik tarzda ___ bilan davolanadi|steroidlar|kortikosteroidlar, prednizolon|Biopsiya faqat steroidga chidamli bo'lsa qilinadi.
+non-accidental-injury-0wmi5ap|Tasodifiy bo'lmagan jarohat|Qaysi jarohat turi zo'ravonlikdan ko'proq dalolat beradi?|Chaqaloqda qovurg'aning orqa sinishi|Kichik bolada peshonadagi ko'karish|Shuningdek turli yoshdagi jarohatlar va mos kelmaydigan anamnez.
+developmental-red-flag-0tyk9if|Rivojlanishning «qizil bayrog'i»|___ oyga borib yura olmaslik tekshiruv talab qiladi|18|o'n sakkiz|Shuningdek ilgari egallangan ko'nikmalarning yo'qolishi.
+autism-screening-1il2r01|Autizm skriningi|Autizm skriningi qachon tavsiya etiladi|18 va 24 oylikda|5 yoshda|Erta aralashuv natijalarni yaxshilaydi.
+sudden-infant-death-0essabg|Chaqaloqning to'satdan o'limi|Chaqaloq uchun eng xavfsiz uyqu holati — ___ yotish|chalqanchasiga|orqa, chalqancha|Qattiq yuzada, bo'sh choyshab va yostiqlarsiz.
+kawasaki-treatment-timing-0k7t2yo|Kavasakini davolash vaqti|Kavasaki kasalligida immunoglobulin qachon eng samarali|Isitma boshlanganidan 10 kun ichida|Isitma boshlanganidan bir oy ichida|Koronar anevrizma xavfini sezilarli kamaytiradi.
+puberty-in-girls-0yccj9z|Qizlarda balog'at|Qizlarda balog'atning birinchi belgisi — ___|telarxe|ko'krak o'sishi, ko'krak rivojlanishi|Keyin pubarxe, so'ng menarxe keladi.
+puberty-in-boys-125abgg|O'g'il bolalarda balog'at|O'g'il bolalarda balog'atning birinchi belgisi nima|Moyaklarning kattalashishi|Ovozning yo'g'onlashishi|Orxidometr bilan o'lchanadi.
+adolescent-confidentiality-0w399uu|O'smir maxfiyligi|O'smirlarga suhbatning bir qismini ___ ishtirokisiz o'tkazish taklif etiladi|ota-ona|ota-onalar, qarovchi|Bu ochiq gaplashishga undaydi.
+scoliosis-0i7t6hc|Skolioz|O'smirlar idiopatik skoliozi qanday tekshiriladi|Oldinga engashish sinamasi bilan|Tik holatda rentgen bilan|Qovurg'a do'ngi yaqqol bo'lsa, yo'llanma beriladi.
+eating-disorder-in-adolescence-1hh2lbe|O'smirlikda ovqatlanish buzilishi|O'smirlik anoreksiyasining eng xavfli o'tkir asorati — ___ beqarorligi|yurak|yurak-qon tomir, elektrolit|Bradikardiya, aritmiya va qayta oziqlantirish xavfi.

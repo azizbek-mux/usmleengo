@@ -1,0 +1,64 @@
+# Klassik belgilar va bog'lanishlar (qarang: TERMS.md)
+
+auer-rods-06b776c|Auer tayoqchalari|___ tayoqchalari o'tkir mieloblastik leykozdan dalolat beradi|Auer|auer tayoqchalari|Ayniqsa promielotsitar turida.
+reed-sternberg-cells-14k7452|Berezovskiy-Shternberg hujayralari|«Boyqush ko'zi» kabi ikki yadroli hujayralar Berezovskiy-___ hujayralari deyiladi|Shternberg|shternberg hujayralari|Xodjkin limfomasi uchun tashxisiy belgi.
+starry-sky-1puqha9|«Yulduzli osmon»|Limfa tuguni biopsiyasida «yulduzli osmon» ko'rinishi ___ limfomasidan dalolat beradi|Berkitt|burkitt|O'sma hujayralari orasida tingibil makrofaglar.
+bence-jones-01dst2y|Bens-Jons oqsillari|Siydikdagi ___-Jons oqsillari ko'p sonli mielomani bildiradi|Bens|bence|Erkin immunoglobulin yengil zanjirlari.
+smudge-cells-1ndxnwf|Yoyilgan hujayralar|Qon surtmasidagi yoyilgan hujayralar surunkali ___ leykozdan dalolat beradi|limfotsitar|limfoid, limfoleykoz|Surtma tayyorlashda ezilib ketadigan mo'rt limfotsitlar.
+heinz-bodies-14lk4pp|Geyns tanachalari|___ tanachalari — G6FD yetishmovchiligidagi denaturatsiyalangan gemoglobin|Geyns|heinz|Taloq ularni olib tashlagach, «tishlangan» hujayralar qoladi.
+howell-jolly-bodies-08h0bmc|Xauell-Jolli tanachalari|Xauell-Jolli tanachalari ___ funksiyasi yo'qligini bildiradi|taloq|taloqning|Odatda olib tashlanadigan yadro qoldiqlari.
+basophilic-stippling-1llidho|Bazofil punktuatsiya|Bazofil punktuatsiya ___ dan zaharlanish yoki talassemiyadan dalolat beradi|qo'rg'oshin|qo'rg'oshindan|Eritrotsit ichidagi ribosoma to'plamlari.
+schistocytes-1tm3urs|Shistotsitlar|___ deb ataladigan parchalangan eritrotsitlar mikroangiopatiyani bildiradi|shistotsitlar|shistotsit, dubulg'a hujayralari|DVS-sindrom, TTP, gemolitik-uremik sindrom yoki mexanik qopqoq.
+rouleaux-formation-1nlajl6|«Tanga ustuni» hosil bo'lishi|Surtmada «tanga ustuni» hosil bo'lishi mieloma kabi yuqori ___ dan dalolat beradi|paraprotein|oqsil, immunoglobulin|Eritrotsitlar tangalar kabi ustma-ust taxlanadi.
+psammoma-bodies-0dmzho4|Psammoma tanachalari|___ tanachalari — papillyar qalqonsimon bez va seroz tuxumdon saratonidagi qatlamli kalsinatlar|Psammoma|psammoma tanachalari|Shuningdek meningioma va mezotelioma.
+negri-bodies-1rcxmyc|Babesh-Negri tanachalari|Babesh-___ tanachalari — quturishning sitoplazmatik kiritmalari|Negri|negri|Klassik holda gippokamp neyronlarida.
+councilman-bodies-0toea4x|Kaunsilmen tanachalari|___ tanachalari — virusli gepatitdagi apoptotik gepatotsitlar|Kaunsilmen|councilman|Sariq isitmada ham ko'rinadi.
+mallory-bodies-1v7fvji|Mellori tanachalari|___ tanachalari — alkogolli gepatitdagi shikastlangan keratin iplari|Mellori|mallory|Sitoplazma ichidagi eozinofil kiritmalar.
+lewy-bodies-1t1rm5y|Levi tanachalari|___ tanachalari — Parkinson kasalligidagi alfa-sinuklein agregatlari|Levi|lewy|Shuningdek Levi tanachali demensiyada.
+rosenthal-fibers-1nwaqkc|Rozental tolalari|___ tolalari pilotsitar astrotsitomada ko'rinadi|Rozental|rosenthal|Parmasimon eozinofil tolalar.
+curschmann-spirals-0dbdyb1|Kurshman spirallari|___ spirallari — astma balg'amidagi ko'chgan epiteliy|Kurshman|curschmann|Sharko-Leyden kristallari bilan birga.
+ferruginous-bodies-0sgg9jt|Temirli tanachalar|Tilla-jigarrang ___ tanachalar asbest ta'sirini bildiradi|temirli|ferruginoz|Temir va oqsil bilan qoplangan asbest tolalari.
+birbeck-granules-011qdbl|Birbek granulalari|«Tennis raketkasi» shaklidagi ___ granulalari Langergans hujayrali gistiotsitozni aniqlaydi|Birbek|birbeck|CD1a va S-100 musbat.
+double-bubble-0ez47hu|«Ikki pufak» belgisi|Chaqaloqda qorin rentgenogrammasidagi «___ pufak» belgisi duodenal atreziyani bildiradi|ikki|ikkita|Daun sindromi bilan bog'liq.
+coffee-bean-sign-1n4kg74|«Qahva doni» belgisi|«Qahva ___» belgisi sigmasimon ichak burilishidan dalolat beradi|doni|don|Juda kengaygan yopiq halqa.
+thumbprint-sign-05i9wxp|«Bosh barmoq izi» belgisi|Bo'yin yon rentgenogrammasidagi «___ barmoq izi» belgisi epiglottitni bildiradi|bosh|bosh barmoq|Krupda esa «cherkov minorasi» belgisi bo'ladi.
+steeple-sign-025mz9m|«Cherkov minorasi» belgisi|Bo'yin rentgenogrammasidagi «___ minorasi» belgisi krupni bildiradi|cherkov|minora|Tovush yorig'i ostida torayish.
+bamboo-spine-1fm17kc|«Bambuk umurtqa»|«___ umurtqa» ankilozlovchi spondilitni bildiradi|bambuk|bambuksimon|Sindesmofitlar bilan qo'shilib ketgan umurtqalar.
+sunburst-pattern-0u542pf|«Quyosh nurlari» ko'rinishi|Suyak usti pardasining «quyosh nurlari» reaksiyasi ___ dan dalolat beradi|osteosarkoma|osteosarkomadan|Chetida Kodman uchburchagi bilan.
+onion-skin-18fnzj5|«Piyoz po'sti»|Suyak usti pardasining «piyoz ___» reaksiyasi Yuing sarkomasidan dalolat beradi|po'sti|po'stloq, po'st|Qatlamli yangi suyak hosil bo'lishi.
+egg-on-a-string-1i5qjmh|«Ipdagi tuxum»|«___ dagi tuxum» ko'rinishi magistral arteriyalar transpozitsiyasini bildiradi|ip|ipda, ipdagi|Magistral tomirlar ustma-ust joylashib, ko'ks oralig'i torayadi.
+boot-shaped-heart-0b20ol0|«Etiksimon yurak»|«___simon yurak» Fallo tetradasidan dalolat beradi|etik|etiksimon|O'ng qorincha gipertrofiyasi hisobiga.
+rib-notching-11jorpr|Qovurg'alarda o'yiqlar|Qovurg'alarning pastki chetidagi ___ aorta koarktatsiyasidan dalolat beradi|o'yiqlar|o'yiq, o'yilish|Kengaygan kollateral qovurg'alararo arteriyalar hisobiga.
+water-bottle-heart-085tz4h|«Grafinsimon yurak»|«Suv ___ » shaklidagi yurak perikardda ko'p suyuqlik borligini bildiradi|grafini|idishi, grafin|Yurak soyasi sharsimon bo'ladi.
+honeycomb-lung-0xgau74|«Asalari uyasi» o'pkasi|Yuqori aniqlikdagi KT da «___ uyasi» o'pkasi oxirgi bosqich fibrozni bildiradi|asalari|asalarichasimon|Odatiy interstitsial pnevmoniyada asosida va plevra ostida.
+ground-glass-0vdfgvs|«Matoviy shisha»|Ikki tomonlama «___ shisha» zichlashuvi va gipoksiya o'tkir distress-sindrom yoki pnevmotsistozdan dalolat beradi|matoviy|xira, sut rangli|Nospetsifik, ammo muhim belgi.
+tram-track-109jahn|«Tramvay izlari»|«___ izlari» bronxoektazni bildiradi|Tramvay|tramvay izi|Kengaygan, devori qalin nafas yo'llari.
+string-sign-1l1b966|«Ip» belgisi|Ingichka ichak tasvirida «___» belgisi Kron kasalligidagi torayishni bildiradi|ip|ipsimon, ip belgisi|Yonbosh ichak oxirining torayishi.
+lead-pipe-colon-0eq06mk|«Qo'rg'oshin quvur» ichagi|«___ quvur» ichagi surunkali yarali kolitni bildiradi|qo'rg'oshin|qo'rg'oshinli|Surunkali yallig'lanishdan gaustralar yo'qoladi.
+apple-core-lesion-1wep6h1|«Olma o'zagi» o'chog'i|Bariyli klizmada «___ o'zagi» o'chog'i kolorektal karsinomadan dalolat beradi|olma|olmaning|Halqa shaklida toraytiruvchi o'sma.
+murphy-sign-1dlz631|Merfi belgisi|___ belgisi — o't pufagini paypaslaganda nafas olishning to'xtashi|Merfi|murphy|O'tkir xoletsistitdan dalolat beradi.
+mcburney-point-1s8ua5y|Mak-Berni nuqtasi|___ nuqtasida og'riq appendisitdan dalolat beradi|Mak-Berni|mcburney, mak berni|Yonbosh suyagi oldingi qirrasidan kindikka qadar uchdan bir masofada.
+rovsing-sign-1hmyygk|Rovzing belgisi|___ belgisi — chap tomonni bosganda o'ng yonbosh sohasida og'riq paydo bo'lishi|Rovzing|rovsing|Appendisitning yana bir belgisi.
+cullen-sign-1ow1kn9|Kallen belgisi|___ belgisi — gemorragik pankreatitda kindik atrofidagi ko'karish|Kallen|cullen|Grey-Terner belgisi esa yon tomonlardagi ko'karish.
+kehr-sign-1j7s6i4|Ker belgisi|___ belgisi — taloq yorilishida chap yelkadagi og'riq|Ker|kehr|Diafragma ta'sirlanishi C3-C5 orqali uzatiladi.
+trousseau-sign-0pnestn|Trusso belgisi|___ belgisi — qon bosimi manjetini shishirganda qo'l panjasining tortishishi|Trusso|trousseau|Gipokalsiemiya belgisi.
+chvostek-sign-1040x1x|Xvostek belgisi|___ belgisi — yuz nervi ustiga urganda yuz mushaklarining tortishishi|Xvostek|chvostek|Bu ham gipokalsiemiya belgisi.
+homan-sign-1laddcz|Goman belgisi|___ belgisi — oyoqni yuqoriga bukkanda boldirdagi og'riq, chuqur vena trombozini ishonchsiz ko'rsatadi|Goman|homan, homans|Sezgirligi va spetsifikligi past.
+brudzinski-sign-1368w11|Brudzinskiy belgisi|___ belgisi — bo'yinni passiv bukkanda sonning bukilishi|Brudzinskiy|brudzinski|Meningeal ta'sirlanish; Kernig belgisi esa tizzani yozishga qarshilik.
+babinski-sign-0jha10h|Babinski belgisi|Tovonni qirg'ichlaganda bosh barmoqning yuqoriga ko'tarilishi — ___ belgisi|Babinski|babinskiy|Yuqori motor neyron shikastlanishini bildiradi.
+romberg-sign-0b6iu38|Romberg belgisi|Musbat ___ belgisi miyacha emas, proprioseptiv sezgi yo'qolganini bildiradi|Romberg|romberg belgisi|Faqat ko'z yumilganda yiqiladi.
+argyll-robertson-pupil-1862o17|Argayl Robertson qorachig'i|___ Robertson qorachig'i akkomodatsiya qiladi, ammo yorug'likka javob bermaydi|Argayl|argyll|Neyrosifilisda klassik belgi.
+nikolsky-sign-02llj61|Nikolskiy belgisi|Musbat ___ belgisi — yon bosim bilan terining ko'chib ketishi|Nikolskiy|nikolsky|Pufakchali kasallik, «kuygan teri» sindromi va toksik epidermal nekroliz.
+auspitz-sign-1x929dw|Auspits belgisi|___ belgisi — psoriaz tangachalari olinganda nuqtali qon chiqishi|Auspits|auspitz|Yupqalashgan so'rg'ich usti epidermisi hisobiga.
+darier-sign-0maespl|Darye belgisi|___ belgisi — mastotsitozda o'choqni ishqalaganda eshakemi paydo bo'lishi|Darye|darier|Semiz hujayralar degranulyatsiyasi.
+levine-sign-0b0vhis|Levayn belgisi|Ko'krak ustida musht qilib ko'rsatish — stenokardiyaning ___ belgisi|Levayn|levine|Ishemik og'riqning klassik tasviri.
+beck-triad-05fci01|Bek triadasi|___ triadasi — gipotoniya, bo'g'iq yurak tonlari va bo'yin venalari bosimining oshishi|Bek|beck|Yurak tamponadasi.
+virchow-node-02uu39q|Virxov tuguni|Chap o'mrov usti ___ tuguni oshqozon o'smasidan dalolat beradi|Virxov|virchow|«Qorovul tugun» deb ham ataladi.
+wernicke-triad-1450aku|Vernike triadasi|Vernike triadasi — ong chalkashligi, ataksiya va ___|oftalmoplegiya|ko'z harakati buzilishi, ko'z belgilari|Tiamin yetishmovchiligi.
+horner-triad-1eb2552|Gorner triadasi|Gorner sindromi — ptoz, mioz va ___|angidroz|angidrozdan|Simpatik innervatsiyaning uzilishi.
+reactive-arthritis-1q7871a|Reaktiv artrit|Reaktiv artrit — artrit, uretrit va ___|konyunktivit|uveit|Ko'ra olmaslik, siya olmaslik, daraxtga chiqa olmaslik.
+meniere-triad-1u7nh7m|Menyer triadasi|Menyer kasalligi — bosh aylanishi, quloq shovqini va ___ pasayishi|eshitish|eshitishning|Shuningdek quloqda to'lishish hissi.
+hypertensive-triad-of-pheochromocytoma-04pqwg3|Feoxromotsitoma triadasi|Feoxromotsitoma klassik holda bosh og'rig'i, yurak urib ketishi va ___ beradi|terlash|ter ajralishi|Xurujlar shaklida kechadi.
+nephrotic-triad-0jspxh4|Nefrotik triada|Nefrotik sindrom — proteinuriya, gipoalbuminemiya va ___|shish|shishlar|Shuningdek giperlipidemiya.
+whipple-triad-0u6aqof|Uippl triadasi|Uippl triadasi gipoglikemiyani tasdiqlaydi: belgilar, past glyukoza va ___ dan keyin yengillik|ovqatlanish|glyukoza, yeganidan|Insulinomani tashxislashda ishlatiladi.
+triad-of-tetralogy-002co6t|Fallo tetradasi|Fallo tetradasi: qorinchalararo nuqson, «otliq» aorta, o'ng qorincha gipertrofiyasi va o'pka arteriyasi ___|stenozi|torayishi, obstruksiyasi|Nomida «tetrada» — to'rtta belgi.

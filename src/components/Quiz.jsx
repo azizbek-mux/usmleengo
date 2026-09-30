@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { t } from "../lib/i18n.js";
 import { grade } from "../lib/session.js";
 import { haptic } from "../lib/telegram.js";
 import { Bookmark } from "./Icons.jsx";
@@ -58,8 +59,8 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
   // the keyboard would cover the explanation.
   useEffect(() => {
     if (q?.type === "gap" && !verdict) {
-      const t = setTimeout(() => inputRef.current?.focus(), 240);
-      return () => clearTimeout(t);
+      const timer = setTimeout(() => inputRef.current?.focus(), 240);
+      return () => clearTimeout(timer);
     }
   }, [idx, q, verdict]);
 
@@ -103,7 +104,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
   return (
     <div className="screen">
       <div className="quiz-top">
-        <button className="close" onClick={onQuit} aria-label="Quit">×</button>
+        <button className="close" onClick={onQuit} aria-label={t("Quit", "Chiqish")}>×</button>
         <div className="bar">
           <div className="bar-fill" style={{ width: `${progress}%` }} />
         </div>
@@ -115,7 +116,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
             className={`save-btn${saved.includes(q.id) ? " on" : ""}`}
             onClick={() => { haptic("light"); onSave(q.id); }}
             aria-pressed={saved.includes(q.id)}
-            aria-label={saved.includes(q.id) ? "Remove from saved" : "Save this question"}
+            aria-label={saved.includes(q.id) ? t("Remove from saved", "Saqlanganlardan olib tashlash") : t("Save this question", "Savolni saqlash")}
           >
             <Bookmark filled={saved.includes(q.id)} />
           </button>
@@ -130,13 +131,13 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
           the question. A teacher's question may have both. */}
       {q.img && (
         <button className="q-img" onClick={() => { haptic("light"); setZoom(true); }}
-                aria-label="Enlarge picture">
+                aria-label={t("Enlarge picture", "Rasmni kattalashtirish")}>
           <img
             src={imgSrc}
             alt=""
             onError={(e) => { e.currentTarget.closest(".q-img").classList.add("broken"); }}
           />
-          <span className="q-img-hint">tap to enlarge</span>
+          <span className="q-img-hint">{t("tap to enlarge", "kattalashtirish uchun bosing")}</span>
         </button>
       )}
       {(!q.img || q.q) && (
@@ -168,7 +169,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
             className={`gap-input${verdict ? (verdict.correct ? " correct" : " wrong") : ""}`}
             value={typed}
             onChange={(e) => setTyped(e.target.value)}
-            placeholder="Type your answer…"
+            placeholder={t("Type your answer…", "Javobingizni yozing…")}
             disabled={Boolean(verdict)}
             autoComplete="off"
             autoCorrect="off"
@@ -183,12 +184,12 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
         {verdict && (
           <div className={`feedback ${verdict.correct ? "ok" : "no"}`}>
             <div className="fb-head">
-              {verdict.correct ? "✓ Correct" : "✗ Not quite"}
+              {verdict.correct ? t("✓ Correct", "✓ To'g'ri") : t("✗ Not quite", "✗ Noto'g'ri")}
             </div>
             <div className="fb-body">
               {!verdict.correct && (
                 <>
-                  Answer: <b>{q.type === "gap" ? q.answer : q.options[q.answer]}</b>
+                  {t("Answer:", "Javob:")} <b>{q.type === "gap" ? q.answer : q.options[q.answer]}</b>
                   {" — "}
                 </>
               )}
@@ -199,7 +200,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
 
         {verdict ? (
           <button className="btn btn-primary" onClick={next}>
-            {isLast ? "See results" : "Continue"}
+            {isLast ? t("See results", "Natijalarni ko'rish") : t("Continue", "Davom etish")}
           </button>
         ) : (
           <button
@@ -208,15 +209,15 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
             disabled={q.type === "binary" || !typed.trim()}
             style={q.type === "binary" ? { visibility: "hidden" } : undefined}
           >
-            Check
+            {t("Check", "Tekshirish")}
           </button>
         )}
       </div>
 
       {zoom && q.img && (
-        <div className="zoom" onClick={() => setZoom(false)} role="dialog" aria-label="Picture">
+        <div className="zoom" onClick={() => setZoom(false)} role="dialog" aria-label={t("Picture", "Rasm")}>
           <img src={imgSrc} alt="" />
-          <button className="zoom-x" aria-label="Close">×</button>
+          <button className="zoom-x" aria-label={t("Close", "Yopish")}>×</button>
         </div>
       )}
     </div>

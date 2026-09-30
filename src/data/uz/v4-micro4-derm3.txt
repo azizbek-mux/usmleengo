@@ -1,0 +1,44 @@
+community-pneumonia-16t3d38|Jamoada orttirilgan pnevmoniya|Yengil jamoada orttirilgan pnevmoniya ___ bilan davolanadi|amoksitsillin|doksitsiklin, amoksitsillinni|Atipik qamrov kerak bo'lsa, makrolid qo'shiladi.
+hospital-pneumonia-0xxiotr|Kasalxona pnevmoniyasi|Kasalxonada orttirilgan pnevmoniya nimani qoplashi kerak|Pseudomonas va chidamli grammanfiylarni|Atipik mikroblar va anaeroblarni|Piperatsillin-tazobaktam yoki karbapenem.
+cellulitis-152nf74|Sellyulit|Yiringsiz sellyulit ___ ga faol antibiotik bilan davolanadi|streptokokk|strep, streptokokkka|Flukloksatsillin yoki sefaleksin.
+diabetic-foot-infection-1quyjax|Diabetik oyoq infeksiyasi|O'rtacha diabetik oyoq infeksiyasi nimani qoplashi kerak|Grammusbat, grammanfiy va anaeroblarni|Faqat grammusbat teri mikroblarini|Ko'pincha polimikrob bo'ladi.
+meningitis-empirical-0q5gvjm|Meningitda empirik davo|Kattalarda meningitning empirik davosi — ___ va vankomitsin|seftriakson|sefotaksim|Keksalarda Listeria uchun ampitsillin qo'shiladi.
+endocarditis-empirical-182stb5|Endokarditda empirik davo|O'z qopqog'i endokarditining empirik davosi nimani qoplaydi|Stafilokokk, streptokokk va enterokokklarni|Grammanfiy va anaerob mikroorganizmlarni|Ekma natijasigacha odatda vankomitsin va gentamitsin.
+intra-abdominal-sepsis-1pnatnw|Qorin ichi sepsisi|Qorin ichi sepsisi grammanfiylar bilan birga ___ qamrovni talab qiladi|anaerob|anaerobli|Metronidazol yoki beta-laktam-ingibitor birikmasi.
+urinary-sepsis-0ykoc0l|Siydik yo'li sepsisi|Urosepsis empirik tarzda nima bilan davolanadi|Keng qamrovli beta-laktam bilan|Faqat og'iz orqali nitrofurantoin|Nitrofurantoin to'qimada yetarli darajaga chiqmaydi.
+septic-arthritis-04rmen6|Septik artrit|Septik artrit ___ va bo'g'imni drenajlash bilan davolanadi|flukloksatsillin|vankomitsin, antibiotik|Gram bo'yash va mahalliy chidamlilikka qarab tanlanadi.
+neutropenic-sepsis-1pigb2l|Neytropenik sepsis|Neytropenik sepsisda empirik davo nimani qoplashi shart|Pseudomonas ni|Faqat anaeroblarni|Piperatsillin-tazobaktam yoki meropenem.
+brucellosis-0t9c0pb|Brutsellyoz|Brutsellyoz pasterizatsiyalanmagan ___ mahsulotlaridan yuqadi va to'lqinsimon isitma beradi|sut|pishloq, sut mahsulotlari|Shuningdek sakroileit va gepatosplenomegaliya.
+leptospirosis-0f03z7h|Leptospiroz|Leptospiroz qayerdan yuqadi|Kalamush siydigi bilan ifloslangan suvdan|Yaxshi pishirilmagan cho'chqa go'shtidan|Veyl kasalligi sariqlik va buyrak yetishmovchiligini qo'shadi.
+q-fever-0ghg06n|Q isitmasi|Q isitmasi qoramoldan yuqadigan ___ burnetii dan kelib chiqadi|Coxiella|koksiella|Ekmada o'smaydigan endokarditning sabablaridan biri.
+psittacosis-0byjwnt|Psittakoz|Psittakoz qayerdan yuqadi|Qushlardan|Qoramoldan|Chlamydia psittaci atipik pnevmoniya beradi.
+toxocariasis-1yw694p|Toksokaroz|It najasidagi Toxocara visseral larva migrans va ___ granulemasini beradi|ko'z|to'r parda, ko'zning|Retinoblastomaga o'xshab ketadi.
+hydatid-disease-1vg90wy|Exinokokkoz|Exinokokkli jigar kistalarini nima qilish MUMKIN EMAS|Ehtiyot chorasi ko'rmasdan punksiya qilish|Albendazol preparati bilan davolash|To'kilishi anafilaksiya xavfini beradi.
+cysticercosis-16cson9|Sistitserkoz|Neyrotsistitserkoz Taenia solium ___ ni yutgandan keyin rivojlanadi|tuxumlari|tuxum|Cho'chqa go'shtidagi lichinkalarni yeyish ichak lenta chuvalchangini beradi.
+chagas-disease-0vtx4x7|Chagas kasalligi|Chagas kasalligi nimani beradi|Dilatatsion kardiomiopatiya va megakolon|Restriktiv kardiomiopatiya va fibroz|Reduviid qandalasi orqali yuqadi.
+enteric-fever-1q48llk|Qorin tifi|Qorin tifi eng sezgir tarzda ___ ekmasi bilan aniqlanadi|suyak ko'migi|ko'mik|Qon ekmasi amaliyroq, ammo kamroq sezgir.
+cholera-treatment-0n4v1xv|Vaboni davolash|Vaboni davolashning asosi nima|Faol suyuqlik berish|Faqat antibiotiklar|Antibiotiklar mikrob ajralishini qisqartiradi, ammo hayotni suyuqlik saqlaydi.
+viral-hemorrhagic-fever-0e87xdi|Virusli gemorragik isitma|Virusli gemorragik isitma gumoni qat'iy ___ choralarini talab qiladi|izolyatsiya|to'siq, kontakt|Va shoshilinch jamoat salomatligi xabarnomasi.
+zika-virus-1wl70vj|Zika virusi|Homiladorlikda Zika virusi nimani beradi|Mikrotsefaliya va miya anomaliyalari|Oyoq-qo'l nuqsonlari va katarakta|Vektor orqali ham, jinsiy yo'l bilan ham yuqadi.
+chikungunya-0lsdmai|Chikungunya|Chikungunya isitma va uzoq davom etuvchi ___ og'rig'ini beradi|bo'g'im|artralgiya, artrit|U oylar davom etishi mumkin.
+melioidosis-1thn5n9|Melioidoz|Melioidoz qayerdan yuqadi|Janubi-Sharqiy Osiyodagi tuproq va suvdan|Janubi-Sharqiy Osiyoda hayvon tishlashidan|Burkholderia pseudomallei; «buyuk taqlidchi».
+antimicrobial-stewardship-18d7mz5|Antimikrob nazorati|Antimikrob nazorati to'g'ri dori, doza, davomiylik va ___ ni berishga qaratilgan|yo'l|yuborish yo'li|Chidamlilik va zararni kamaytiradi.
+de-escalation-1eippez|De-eskalatsiya|Antibiotikni de-eskalatsiya qilish nimani bildiradi|Ekma natijasi kelgach davoni toraytirish|48 soatda barcha antibiotiklarni to'xtatish|Yondosh zararni kamaytiradi.
+duration-of-therapy-0ztc3pd|Davo davomiyligi|Dalillar ko'p infeksiyalarda ___ antibiotik kurslarini qo'llab-quvvatlaydi|qisqaroq|qisqa|Ko'p pnevmoniyalar uchun besh kun.
+resistance-emergence-0dxyiw7|Chidamlilikning paydo bo'lishi|Antibiotikka chidamlilikni cheklashning eng yaxshi yo'li qaysi|Keraksiz tayinlashlardan saqlanish|Antibiotiklarni doim almashtirib turish|Chidamlilikni tanlov bosimi keltiradi.
+colonization-versus-infection-0nc724k|Kolonizatsiya va infeksiya|Belgilarsiz musbat ekma odatda ___ ni bildiradi|kolonizatsiya|kolonizatsiyani|Uni davolash foyda bermasdan chidamlilikni keltiradi.
+skin-biopsy-1f5e361|Teri biopsiyasi|___ immunoflyuoressensiya pufakchali kasalliklarni aniqlashda ishlatiladi|To'g'ridan-to'g'ri|bevosita, dif|Terida bog'langan antiteloni aniqlaydi.
+dermoscopy-1hbzqj6|Dermoskopiya|Dermoskopiya nimani yaxshilaydi|Melanomani aniqlash aniqligini|Bevosita davo natijalarini|Keraksiz kesib olishlarni kamaytiradi.
+sun-protection-057y10i|Quyoshdan himoya|SPF aynan ___ nurlanishidan himoyani o'lchaydi|UVB|ultrabinafsha b|Keng qamrovli mahsulotlar UVA ni ham to'saydi.
+skin-type-0psf9nv|Teri turi|Fitspatrik bo'yicha I tur teri qanday|Doim kuyadi va hech qachon qoraymaydi|Hech qachon kuymaydi va doim qoraydi|Teri raki xavfi eng yuqori.
+psoriasis-triggers-1bu6nmr|Psoriaz qo'zg'atuvchilari|Beta-blokatorlar, litiy va ___ psoriazni qo'zg'ashi mumkin|bezgakka qarshi dorilar|nyaqv, gidroksixlorokvin|Shuningdek infeksiya va steroidni to'xtatish.
+psoriatic-nail-change-0v28lk4|Psoriazda tirnoq o'zgarishi|Psoriazda tirnoq chuqurchalari va onixoliz nimani bashorat qiladi|Psoriatik artritni|Zamburug'li infeksiyani|Foydali klinik markyor.
+eczema-herpeticum-0tmeg31|Gerpetik ekzema|Gerpetik ekzema — ekzemali teridagi tarqalgan ___ infeksiyasi|oddiy gerpes|ogv, gerpes|Og'riqli, chetlari tik eroziyalar; shoshilinch atsiklovir kerak.
+topical-steroid-potency-1916lse|Mahalliy steroid kuchi|Yuzda qanday steroid ishlatilishi kerak|Samarali eng past kuchdagisi|Mavjud eng kuchli steroid|Atrofiya, telangiektaziya va glaukoma xavfi bor.
+topical-steroid-quantity-1my5u05|Mahalliy steroid miqdori|Mahalliy steroid miqdori barmoq uchi ___ da o'lchanadi|birligi|birlik, ftu|Bir birlik taxminan ikki kaft yuzasini qoplaydi.
+chronic-urticaria-0aza5n4|Surunkali eshakemi|Surunkali eshakemi nima bilan davolanadi|Yuqori dozada uyquchanlik bermaydigan antihistamin|Uzoq muddat og'iz orqali kortikosteroidlar|Chidamli bo'lsa, omalizumab.
+hidradenitis-suppurativa-0i37bnm|Yiringli gidradenit|Gidradenit qo'ltiq va chov terisining ___ bezlari bo'lgan sohalarini zararlaydi|apokrin|apokrinli|Og'riqli tugunlar, oqma yo'llar va chandiqlanish.
+pyoderma-gangrenosum-1eticvx|Gangrenoz piodermiya|Piodermiya gangrenoza yaralari qanday kechadi|Jarrohlik tozalashdan yomonlashadi|Jarrohlik tozalashdan tezroq bitadi|Patergiya; immunosupressiya bilan davolanadi.
+erythroderma-0rz3hxt|Eritrodermiya|Terining ___ foizidan ko'pini qamragan eritrodermiya sepsis xavfini beradi|90|to'qson|Dermatologik shoshilinch holat.
+drug-reaction-with-eosinophilia-15qi2wn|Eozinofiliya bilan dori reaksiyasi|DRESS sindromi odatda qachon boshlanadi|Dori boshlangandan ikki-sakkiz hafta keyin|Birinchi doza berilgandan soatlar ichida|Isitma, toshma, eozinofiliya va organ zararlanishi.
+leg-ulcer-assessment-0p4krm2|Oyoq yarasini baholash|Har bir oyoq yarasida kompressiyadan oldin to'piq-yelka ___ o'lchanadi|indeksi|bosim indeksi, abpi|Ishemik oyoqqa kompressiya nekroz beradi.

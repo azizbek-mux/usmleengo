@@ -1,0 +1,47 @@
+brachial-plexus-1384wgo|Yelka chigali|Yelka chigali C5 dan T___ gacha ildizlardan hosil bo'ladi|1|bir, t1|Ildizlar, tutamlar, bo'linmalar, tortmalar, shoxlar.
+axillary-nerve-1el2qdd|Qo'ltiq nervi|Yelka chiqqandan keyin qo'ltiq nervi shikasti nimani beradi|Deltasimon mushak holsizligi va o'sha sohada uvishish|Osilgan panja va qo'l usti sohasida uvishish bo'ladi|Repozitsiyadan oldin va keyin deltasimon soha sezgisini tekshiring.
+musculocutaneous-nerve-13jpwtr|Mushak-teri nervi|Mushak-teri nervi tirsakni ___ ni ta'minlaydi|bukish|bukuvchilar|Ikki boshli, yelka va tumshuq-yelka mushaklari.
+median-nerve-at-the-elbow-058m2z0|Tirsakda o'rta nerv|Oldingi suyaklararo nerv shikasti nimani beradi|Bosh va ko'rsatkich bukilishi susayadi, sezgi saqlanadi|Teniar sohasi ozadi va kaft terisida uvishish bo'ladi|«OK» belgisini ko'rsata olmaydi.
+ulnar-paradox-0y0s6wg|Tirsak nervi paradoksi|Tirsak nervining ___ shikasti panjasimon holatni kuchliroq beradi|distal|distaldagi|Chunki butun uzun bukuvchilar ishlashda davom etadi.
+radial-nerve-in-the-axilla-197yje3|Qo'ltiqda bilak nervi|Qo'ltiq siqilishidan «tayanch falaji» nimani beradi|Osilgan panja va uch boshli mushak holsizligi|Uch boshli mushak normal, faqat osilgan panja|Spiral egatdagi shikast uch boshli mushakni saqlaydi.
+carpal-bones-01ww4x6|Kaft usti suyaklari|___ — eng ko'p siniydigan kaft usti suyagi|qayiqsimon|skafoid|Anatomik tamaki chuqurchasida og'riq beradi.
+erb-palsy-nerve-roots-10ciuzx|Erb falajidagi nerv ildizlari|Erb falaji qaysi ildizlarni qamraydi|C5 va C6|C8 va T1|Klyumpke pastki ildizlarni qamraydi.
+sciatic-nerve-0g4pd6x|Quymich nervi|Quymich nervi boldir va umumiy ___ nervlariga bo'linadi|fibulyar|peroneal|Tizza osti chuqurchasi sathida.
+femoral-nerve-1atqpui|Son nervi|Son nervi shikasti nimani beradi|Tizzani yozish susayadi va tizza refleksi yo'qoladi|Osilgan oyoq va boldir tashqi tomonida uvishish|Son oldingi yuzasida sezgi yo'qoladi.
+obturator-nerve-1vr6gpx|Yopqich nervi|Yopqich nervi sonni ___ ni ta'minlaydi|yaqinlashtirish|adduksiya, keltiruvchilar|Chanoq operatsiyalarida xavf ostida.
+superior-gluteal-nerve-0ctijtl|Yuqori dumba nervi|Yuqori dumba nervi shikasti turganda tos suyagini qanday qiladi|Qarshi tomonga tushiradi|Qarshi tomonga ko'taradi|Trendelenburg belgisi.
+popliteal-fossa-02xm6d6|Tizza osti chuqurchasi|Tizza osti chuqurchasida tizza arteriyasi, venasi va boldir ___ bo'ladi|nervi|nerv|Shuningdek yon tomonda umumiy fibulyar nerv.
+ankle-sprain-1ohsupl|To'piqning cho'zilishi|Eng ko'p shikastlanadigan to'piq boylami qaysi|Oldingi taqim-fibulyar|Deltasimon boylam|Ichkariga burilish jarohatlari eng ko'p uchraydi.
+pleural-reflections-1ana7us|Plevra chegaralari|O'rta qo'ltiq chizig'ida o'pka ___ -qovurg'agacha, plevra ikki qovurg'a pastgacha yetadi|8|sakkiz|Ko'krak drenajini xavfsiz qo'yishga yo'l ko'rsatadi.
+thoracic-duct-drainage-10viveh|Ko'krak limfa yo'lining oqimi|Ko'krak limfa yo'li qayerga quyiladi|Chap o'mrov osti venasi birlashmasiga|Azigos venasi orqali o'ng bo'lmachaga|Tananing o'ng yuqori choragidan tashqari hamma joyni yig'adi.
+azygos-vein-0f1ifhu|Azigos venasi|Azigos venasi yuqori kovak ___ ga quyiladi|venaga|vena|Yuqori kovak vena obstruksiyasida muhim kollateral.
+celiac-plexus-1lwoier|Quyosh chigali|Quyosh chigali blokadasi qanday og'riqda qo'llanadi|Oshqozon osti bezi rakida|Chanoq xavfli o'smasida|Oldingi ichak visseral afferentlarini bloklaydi.
+peritoneal-spaces-11ockvb|Qorin pardasi bo'shliqlari|Chalqancha yotgan bemorda suyuqlik ___ chuqurchasida to'planadi|jigar-buyrak|morison|Morison chuqurchasi, FAST tekshiruvida ko'riladi.
+inguinal-canal-boundaries-01lai0x|Chov kanali chegaralari|Chov kanalining tubini nima hosil qiladi|Chov boylami|Ko'ndalang fastsiya|Ko'ndalang fastsiya orqa devorni hosil qiladi.
+portal-vein-formation-1fshk23|Portal venaning hosil bo'lishi|Portal vena taloq va yuqori ___ venalaridan hosil bo'ladi|chambar|mezenterial|Oshqozon osti bezi bo'yni orqasida.
+appendix-position-0aa68e3|Ko'r ichak o'simtasining joylashuvi|Ko'r ichak o'simtasining eng ko'p uchraydigan holati qaysi|Ko'r ichak orqasida|Chanoq bo'shlig'ida|Bu klassik belgilarni yashirishi mumkin.
+thyroid-blood-supply-080paqe|Qalqonsimon bezning qon ta'minoti|Yuqori qalqonsimon arteriya tashqi ___ arteriyasidan chiqadi|uyqu|karotid|Pastkisi qalqonsimon-bo'yin tanasidan chiqadi.
+superior-laryngeal-nerve-1iu8jrr|Yuqori hiqildoq nervi|Tireoidektomiyada tashqi hiqildoq nervi shikasti nimani beradi|Baland ovozning yo'qolishini|Ovozning to'liq yo'qolishini|U halqa-qalqonsimon mushakni innervatsiya qiladi.
+facial-nerve-branches-1nuuqit|Yuz nervining shoxlari|Yuz nervi shoxlari: chakka, yonoq, lunj, jag' cheti va ___|bo'yin|bo'yinning|Beshta shoxni eslab qolish uchun qoida ishlatiladi.
+parotid-gland-relations-0mg3nz1|Quloq oldi bezining munosabatlari|Quloq oldi bezi ichida yuz nervi, jag' orqa venasi va yana nima bor|Tashqi uyqu arteriyasi|Ichki uyqu arteriyasi|Yuzadan chuqurga shu tartibda joylashadi.
+triangles-of-the-neck-1pcjff5|Bo'yin uchburchaklari|___ mushagi bo'yinni oldingi va orqa uchburchaklarga bo'ladi|to'sh-o'mrov-so'rg'ichsimon|scm|Bo'yindagi shishlarni farqlashga yo'l ko'rsatadi.
+cricothyroid-membrane-11v1spr|Halqa-qalqonsimon parda|Halqa-qalqonsimon parda qayerda joylashgan|Qalqonsimon va halqasimon tog'aylar orasida|Qalqonsimon tog'ayning bevosita ustida|Shoshilinch jarrohlik nafas yo'li uchun joy.
+dural-venous-sinuses-1rfxdjb|Qattiq parda vena sinuslari|Yuqori sagittal sinus ___ sinus qo'shilmasiga quyiladi|ko'ndalang|qo'shilma|Keyin sigmasimon sinus va ichki bo'yin venasiga.
+blood-brain-barrier-gaps-0mk0dy6|Gematoensefalik to'siqdagi tirqishlar|Qorincha atrofidagi a'zolarda bu to'siq yo'q, jumladan|Orqa maydonda|Gippokampda|Qusish markazi toksinlarni sezishiga imkon beradi.
+basal-ganglia-1xjidyu|Bazal yadrolar|Bazal yadrolarga dumli yadro, po'stloq tanasi va ___ shar kiradi|oqargan|pallidus|Funksional jihatdan subtalamik yadro va qora modda ham.
+hypothalamic-nuclei-1th9m3n|Gipotalamus yadrolari|Supraoptik va paraventrikulyar yadrolar nimani ishlab chiqaradi|ADG va oksitotsin|Faqat liberinlarni|Gipofizning orqa bo'lagiga tashiladi.
+bilaminar-disc-0qm2ovs|Ikki qavatli disk|Ikkinchi haftaga borib embrion epiblast va gipoblastdan iborat ___ disk bo'ladi|ikki qavatli|bilaminar|Uchinchi hafta uch qavatli diskni beradi.
+notochord-1fahu99|Xorda|Xorda nimani induksiya qiladi|Nerv plastinkasining hosil bo'lishini|Somitlarning hosil bo'lishini|Keyinchalik pulpoz yadro sifatida saqlanadi.
+somites-0bin8sz|Somitlar|Somitlardan sklerotom, miotom va ___ hosil bo'ladi|dermatom|dermatomlar|Segmentar innervatsiyani tushuntiradi.
+neural-crest-derivatives-0rqtzrh|Nerv naychasi qirg'og'i hosilalari|Qaysi biri nerv naychasi qirg'og'i hosilasi?|Shvann hujayralari|Oligodendrotsitlar|Oligodendrotsitlar neyroektodermadan hosil bo'ladi.
+heart-tube-looping-0fx3gk5|Yurak naychasining aylanishi|Yurakning to'g'ri ___ bo'lmasligi transpozitsiya va shunga o'xshash nuqsonlarni beradi|aylanishi|halqalanishi|To'rtinchi haftada yuz beradi.
+septum-primum-and-secundum-02z937n|Birlamchi va ikkilamchi to'siq|Oval teshik nimalar orasida hosil bo'ladi|Birlamchi va ikkilamchi to'siq orasida|Endokard yostiqchalari orasida|Tug'ilganda yopiladigan klapan-parda.
+aortic-arch-derivatives-1qn8jap|Aorta ravoqlari hosilalari|Chapdagi ___ yoy aorta yoyiga aylanadi|to'rtinchi|4-|O'ngdagi to'rtinchisi o'mrov osti arteriyasining boshlanishiga aylanadi.
+branchial-apparatus-0alexwg|Jabra apparati|Jabra yorig'i kistalari qayerdan kelib chiqadi|Ikkinchi yoriqdan|Birinchi cho'ntakdan|Bo'yin yon tomonida shish sifatida namoyon bo'ladi.
+foregut-rotation-0gxpztl|Oldingi ichakning aylanishi|Oshqozon uzunasiga o'qi atrofida soat yo'nalishida ___ daraja aylanadi|90|to'qson|Vagus nervlarining joylashuvini tushuntiradi.
+pancreatic-buds-088ze2e|Oshqozon osti bezi kurtaklari|Halqasimon bez nimadan kelib chiqadi|Qorin kurtagining aylanmasligidan|Naylarning qo'shilmasligidan|O'n ikki barmoqli ichakni o'rab, to'sib qo'yadi.
+urorectal-septum-044lrr4|Siydik-to'g'ri ichak to'sig'i|Bu to'siq kloakani siydik-jinsiy sinus va ___ ga bo'ladi|to'g'ri ichak|anorektal kanal|Bo'linmasa, fistulalar hosil bo'ladi.
+kidney-ascent-0wjep6v|Buyrakning ko'tarilishi|Buyraklar chanoqdan ko'tarilib, qanday qon bilan ta'minlanadi|Ketma-ket yuqoriroq arteriyalar bilan|Faqat bitta doimiy arteriya bilan|Saqlanib qolgan pastki tomirlar qo'shimcha buyrak arteriyasi bo'ladi.
+mullerian-fusion-10vmg3i|Myuller naychalarining qo'shilishi|Myuller naychalari qo'shilmasligi ___ bachadonni beradi|ikki shoxli|to'siqli, ikkilangan|Homila yo'qotish va noto'g'ri joylashuv bilan bog'liq.
+gonadal-differentiation-1t2vq6z|Jinsiy bezlarning differensiatsiyasi|SRY geni nimani boshqaradi|Moyakning aniqlanishini|Tuxumdonning rivojlanishini|U bo'lmasa, standart ayol yo'li amalga oshadi.
+descent-of-the-testis-11zzwju|Moyakning tushishi|Moyak tushgandan keyin qin o'simtasi odatda ___|bitib ketadi|yopiladi, regressiyaga uchraydi|Bitmasa, churra yoki gidrotsele bo'ladi.

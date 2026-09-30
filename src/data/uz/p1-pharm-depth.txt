@@ -1,0 +1,80 @@
+# p1-pharm-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+michaelis-menten-kinetics-0t6hmbq|Mixaelis-Menten kinetikasi|___ — maksimal tezlikning yarmiga erishiladigan substrat konsentratsiyasi|Km|km|Moyillik o'lchovi: fermentning ishchi diapazoni.
+michaelis-menten-kinetics-0ej3vxq|Mixaelis-Menten kinetikasi|Km YUQORIROQ bo'lsa, moyillik|Pasaygan|Oshgan|Yarim maksimal tezlikka yetish uchun ko'proq substrat kerak.
+michaelis-menten-kinetics-1as44z1|Mixaelis-Menten kinetikasi|Vmax ___ konsentratsiyasiga to'g'ri proporsional|ferment|fermentlar|Ferment ko'p bo'lsa, chegara yuqori. Km o'zgarmaydi.
+enzyme-inhibitors-0eweclh|Ferment ingibitorlari|Laynuiver-Berk grafigida qaysi ingibitor chiziqlari KESISHADI?|Raqobatli|Raqobatsiz|Raqobatli ingibitorlarda Vmax umumiy, shuning uchun chiziqlar y o'qida uchrashadi.
+competitive-inhibitor-1aqxnop|Raqobatli ingibitor|Raqobatli ingibitor nimani o'zgartiradi|Faqat Km ni|Faqat Vmax ni|Km oshadi, Vmax o'zgarmaydi. Ko'proq substrat bilan yengiladi.
+noncompetitive-inhibitor-07c9wkj|Raqobatsiz ingibitor|Raqobatsiz ingibitor nimani o'zgartiradi|Faqat Vmax ni|Faqat Km ni|Vmax pasayadi, Km o'zgarmaydi. Substrat bilan siqib chiqarib bo'lmaydi.
+bioavailability-036c1ls|Bioo'zlashtirilish|Vena ichiga yuborilgan dozaning bioo'zlashtirilishi ___ foiz|100|yuz|Ta'rifga ko'ra, hammasi qon oqimiga yetib boradi.
+bioavailability-03hgfyt|Bioo'zlashtirilish|Og'iz orqali bioo'zlashtirilish asosan nima sababdan 100% dan past|Birlamchi o'tish metabolizmi|Buyrak orqali tozalanish|Shuningdek ichak devoridan to'liq so'rilmaslik.
+volume-of-distribution-0eu9zta|Taqsimlanish hajmi|Taqsimlanish hajmi = preparat miqdori / plazmadagi ___|konsentratsiya|konsentratsiyasi|Nazariy hajm, anatomik emas.
+volume-of-distribution-1bm3wpl|Taqsimlanish hajmi|Jigar va buyrak kasalliklari taqsimlanish hajmini qanday o'zgartiradi|Oshiradi|Kamaytiradi|Oqsil bilan bog'lanish kamayib, taqsimlanadigan erkin preparat ko'payadi.
+hemodialysis-0d604bs|Gemodializ|Gemodializ preparatni qachon eng yaxshi chiqaradi|Taqsimlanish hajmi past bo'lganda|Taqsimlanish hajmi yuqori bo'lganda|Hajm yuqori bo'lsa, preparat to'qimada turadi va filtrga yetmaydi.
+drug-distribution-0qkgo5h|Preparatning taqsimlanishi|Yirik, zaryadli, oqsil bilan bog'langan preparatlar ___ bo'shlig'ida qoladi|tomir ichi|plazma, qon|Shuning uchun ularning taqsimlanish hajmi kichik.
+drug-metabolism-07whst3|Preparat metabolizmi|Keksalarda metabolizmning qaysi fazasi birinchi susayadi?|I faza|II faza|Shuning uchun keksalarda lorazepam va oksazepam afzal.
+phase-ii-metabolism-0cgyc68|II faza metabolizmi|II faza reaksiyalari preparatni ___ orqali suvda eriydigan qiladi|konyugatsiya|glyukuronlash|Glyukuronlash, atsetillash va sulfatlash.
+slow-acetylators-0u1cjo4|Sekin atsetillovchilar|Sekin atsetillovchilarda qaysi preparatning nojo'ya ta'sirlari ko'proq|Izoniazid|Penitsillin|Metabolizm sekin, darajasi yuqori. Shuningdek gidralazin va prokainamid.
+zero-order-elimination-1w4gbrz|Nol tartibli chiqarilish|Nol tartibli chiqarilishda nima chiqariladi|Vaqt birligida doimiy MIQDOR|Soatiga doimiy ulush|Ferment to'yingan, shuning uchun tezlik oshmaydi.
+zero-order-elimination-0r8h7s0|Nol tartibli chiqarilish|Fenitoin, etanol va ___ yuqori dozada nol tartibli kinetikaga bo'ysunadi|aspirin|salitsilatlar|Fenitoin, etanol, aspirin.
+first-order-elimination-0ms4yrr|Birinchi tartibli chiqarilish|Birinchi tartibli chiqarilishda nima chiqariladi|Vaqt birligida doimiy ULUSH|Soatiga doimiy miqdor|Tezlik konsentratsiyaga proporsional — ko'pchilik preparatlar shunday.
+steady-state-1jkmdxk|Barqaror holat|Barqaror holatga taxminan ___ yarim yemirilish davridan keyin erishiladi|4|to'rt, 4-5, besh|Doza yoki qabul chastotasiga bog'liq emas.
+loading-dose-1vvdym7|Yuklama dozasi|Yuklama dozasi nimaga bog'liq|Taqsimlanish hajmiga|Klirens tezligiga|Saqlovchi doza esa klirensga bog'liq.
+renal-impairment-1b9p181|Buyrak yetishmovchiligi|Buyrak yetishmovchiligida qaysi dozani o'zgartirasiz|Saqlovchi dozani|Yuklama dozasini|Klirens kamayadi; taqsimlanish hajmi deyarli o'zgarmaydi.
+ion-trapping-1fduiza|Ionlarni ushlab qolish|Kuchsiz KISLOTALAR ___ siydikda ushlanib, chiqariladi|ishqoriy|asosli|Aspirin, fenobarbital va metotreksat uchun bikarbonat.
+ion-trapping-1d7im0u|Ionlarni ushlab qolish|Kuchsiz ASOSLAR ___ siydikda ushlanib, chiqariladi|kislotali|nordon|Amfetaminlar va uch halqali antidepressantlar — kuchsiz asoslar.
+tricyclic-overdose-0gfcmov|Uch halqali antidepressantlar|Uch halqali antidepressant bilan zaharlanishda bikarbonat qanday ta'sir qiladi|Natriy kanallari blokadasini yengib|Buyrak orqali chiqarilishini tezlashtirib|U preparat darajasini emas, yurakka toksik ta'sirni davolaydi.
+pka-1nzc3wl|pKa|pH preparatning ___ ga teng bo'lganda, u yarmigacha ionlanadi|pKa|pka|Yarmi ushlanadi, yarmi membranadan o'ta oladi.
+efficacy-versus-potency-0huaplv|Samaradorlik va faollik|Doza-javob egri chizig'ida samaradorlikni nima ko'rsatadi|Egri chiziqning eng yuqori balandligi|Egri chiziqning gorizontal holati|Emax — samaradorlik; EC50 — faollik.
+potency-0gcd7yc|Faollik|Faollik ___ bilan o'lchanadi — yarim maksimal ta'sir beradigan doza|EC50|ec-50|Chapga siljish ko'proq samara emas, ko'proq faollikni bildiradi.
+partial-agonist-086ui9w|Qisman agonist|Qisman agonistda nima bo'ladi|To'liq agonistdan kamroq samaradorlik|Har qanday agonistdan yuqoriroq faollik|Mu retseptorida buprenorfin va morfin.
+inverse-agonist-1j49o58|Teskari agonist|Teskari agonist nima qiladi|Retseptorning o'z-o'zidan faolligini kamaytiradi|Agonist bo'lmasa hech qanday ta'sir ko'rsatmaydi|H1 antigistaminlar — teskari agonistlar.
+therapeutic-index-1v3f0dp|Terapevtik indeks|Terapevtik indeks = TD50 / ___|ED50|ed-50|Indeks qancha yuqori bo'lsa, shuncha xavfsiz.
+narrow-therapeutic-index-1eyumgj|Tor terapevtik indeks|Qaysi preparat darajasini muntazam nazorat qilish kerak?|Digoksin|Amoksitsillin|Varfarin, teofillin, digoksin, litiy va antiepileptik preparatlar.
+adrenal-medulla-1h7c7m2|Buyrak usti bezi mag'iz qavati|Buyrak usti bezi mag'iz qavatini bevosita ___ simpatik tolalar innervatsiya qiladi|preganglionar|pre-ganglionar|U o'zgargan simpatik gangliy kabi ishlaydi.
+sweat-glands-19stzeh|Ter bezlari|Ter bezlari simpatik, ammo qaysi mediatordan foydalanadi?|Atsetilxolin|Norepinefrin|Istisno — shuning uchun xolinolitiklar terlashni to'xtatadi.
+nicotinic-receptors-1fkpcj7|Nikotin retseptorlari|Nikotin retseptorlari ligand bilan boshqariladigan ___ kanallari|ion|natriy, kation|Na+ kiradi, K+ chiqadi. NN — gangliyalarda, NM — nerv-mushak sinapsida.
+muscarinic-receptors-1fvv7cb|Muskarin retseptorlari|Muskarin retseptorlari qanday retseptor|G-oqsil bilan bog'langan|Ligand bilan boshqariladigan kanal|Ikkilamchi messenjerlar orqali ishlovchi besh kichik tur.
+muscarinic-subtypes-0twkma5|Muskarin kichik turlari|___ retseptori sinus tugunida yurakni sekinlashtiradi|M2|m-2|M1 — miya va oshqozonda, M3 — bezlar va silliq mushaklarda.
+atropine-03zi8ub|Atropin|Atropin qaysi retseptorni bloklaydi?|Muskarin|Nikotin|Shuning uchun u fosfororganik zaharlanishdagi mushak kuchsizligini bartaraf etmaydi.
+pain-fibers-0d77sto|Og'riq tolalari|O'tkir, aniq joylashgan og'riq qaysi tolalar orqali o'tadi|A-delta tolalar|C tolalar|C tolalar to'mtoq, pulsatsiyalanuvchi, aniq joylashmagan og'riqni o'tkazadi.
+capsaicin-1lv569j|Kapsaitsin|Kapsaitsin nosiseptorlardagi ___ retseptoriga ta'sir qiladi|TRPV1|vanilloid, trpv-1|Takroriy qo'llash P moddasini kamaytiradi.
+local-anesthetics-08u0d55|Mahalliy anestetiklar|Mahalliy anestetiklar og'riq uzatilishining qaysi bosqichini bloklaydi?|Transduksiya va o'tkazish|Og'riqning markaziy idroki|Ular nervdagi potensialga bog'liq natriy kanallarini bloklaydi.
+neuropathic-pain-1txos04|Neyropatik og'riq|Neyropatik og'riqqa nima eng yaxshi ta'sir qiladi|Gabapentinoidlar va uch halqali antidepressantlar|Faqat oddiy og'iz orqali og'riq qoldiruvchilar|NYaQV nervdan kelib chiqqan og'riqqa yomon ta'sir qiladi.
+alpha-1-receptors-14m9rvp|Alfa-1 retseptorlari|Alfa-1 qo'zg'alishi tomirlarning ___ ga olib keladi|torayishi|vazokonstriksiya|Arterial bosim oshadi va reflektor bradikardiya yuzaga keladi.
+beta-1-receptors-01x4n3o|Beta-1 retseptorlari|Beta-1 qo'zg'alishi yurak urishi va qisqaruvchanlikni ___|oshiradi|ko'paytiradi|Bitta yurak — beta-1, ikkita o'pka — beta-2.
+beta-2-receptors-0qjo5j2|Beta-2 retseptorlari|Beta-2 qo'zg'alishi bronxlarning ___ ga olib keladi|kengayishi|bo'shashishi|Shuningdek bachadon bo'shashishi va vazodilatatsiya.
+dopamine-dose-response-1ddu4qd|Dofamin dozasiga javob|PAST dozada dofamin asosan qayerga ta'sir qiladi|Dofamin retseptorlariga|Alfa-1 retseptorlariga|Past doza — buyrak, o'rtacha — beta-1, yuqori — alfa-1.
+epinephrine-versus-norepinephrine-1eefpe5|Epinefrin va norepinefrin|Qaysi birida BETA-2 faolligi sezilarli?|Epinefrin|Norepinefrin|Shuning uchun past dozadagi epinefrin diastolik bosimni pasaytirishi mumkin.
+norepinephrine-and-heart-rate-1trodg5|Norepinefrin va yurak urishi|Norepinefrin yurak urishini qanday o'zgartiradi|Reflektor ravishda pasaytiradi|Bevosita beta-1 orqali oshiradi|Alfa ta'sirida bosim oshib, beta-1 ta'siriga qaramay baroretseptor bradikardiyasi yuzaga keladi.
+phenoxybenzamine-0h3uktv|Fenoksibenzamin|Fenoksibenzamin — feoxromotsitoma operatsiyasidan oldin qo'llanadigan ___ alfa-blokator|qaytmas|raqobatsiz|Fentolamin esa qaytar ta'sir qiladi.
+prazosin-092tc0e|Prazozin|Prazozin alfa-1 ni bloklaydi va klassik holda nimaga olib keladi|Birinchi dozadagi ortostatik gipotoniya|Reflektor gipertenziya va qizarish|Prostata giperplaziyasi va TKSB dagi dahshatli tushlarda ham qo'llanadi.
+neostigmine-1lr6gyb|Neostigmin|Neostigmin ___ ni ingibitsiya qilib, atsetilxolinni oshiradi|atsetilxolinesteraza|xolinesteraza|Gematoensefalik to'siqdan o'tmaydi.
+physostigmine-versus-neostigmine-0nj9erh|Fizostigmin va neostigmin|Qaysi biri miyaga o'tadi?|Fizostigmin|Neostigmin|Shuning uchun fizostigmin markaziy xolinolitik toksiklikni davolaydi.
+organophosphates-1r3gj6m|Fosfororganik moddalar|Fosfororganik moddalardan zaharlanish ___ ortiqchalikka olib keladi|xolinergik|atsetilxolin|Avval atropin, keyin pralidoksim.
+pralidoxime-14rdabr|Pralidoksim|Pralidoksim nimadan oldin berilishi kerak|Ferment qaytmas «qarishidan»|Bemor intubatsiya qilinishidan|«Qarish» fosfatni xolinesterazaga butunlay qulflab qo'yadi.
+penicillins-16x1x2s|Penitsillinlar|Beta-laktamlar ___ bog'lovchi oqsillarga bog'lanib, ko'ndalang bog'lanishni bloklaydi|penitsillin|pbp|Transpeptidaza tormozlanib, devor zaiflashadi.
+vancomycin-1lcpa3o|Vankomitsin|Vankomitsin devor o'tmishdoshining uchidagi D-alanil-D-___ ga bog'lanadi|alanin|ala|Rezistentlikda bu uch D-laktatga almashadi.
+aminoglycosides-1vmjfvx|Aminoglikozidlar|Aminoglikozidlar ___S ribosoma subbirligiga bog'lanadi|30|30s|30 ga — aminoglikozidlar va tetratsiklinlar, 50 ga — qolganlari.
+macrolides-10g6zwr|Makrolidlar|Makrolidlar ___S ribosoma subbirligiga bog'lanadi|50|50s|Translokatsiyani bloklaydi. Shuningdek QT uzayishi va CYP ingibitsiyasi.
+tetracyclines-1frs0pm|Tetratsiklinlar|Tetratsiklinlarni ___ yoki sut mahsulotlari bilan birga qabul qilmaslik kerak|antatsidlar|antatsid, kalsiy, sut|Ikki valentli kationlar ularni bog'lab, so'rilishni bloklaydi.
+trimethoprim-0n7q39r|Trimetoprim|Trimetoprim bakteriyalarning digidrofolat-___ fermentini ingibitsiya qiladi|reduktaza|reduktazasini|Sulfanilamidlar bir bosqich oldin — digidropteroatsintazaga ta'sir qiladi.
+metronidazole-1wxayq6|Metronidazol|Metronidazol alkogol bilan birga ___ga o'xshash reaksiya beradi|disulfiram|teturam|Qizarish, qusish va taxikardiya.
+chloramphenicol-0xgsefh|Xloramfenikol|Chaqaloqlarda xloramfenikol nimaga olib keladi|«Kulrang chaqaloq» sindromi|«Qizil odam» sindromi|Glyukuroniltransferaza yetilmagan. «Qizil odam» — vankomitsinga xos.
+linezolid-0jc2rh8|Linezolid|Linezolidni SSRI bilan birga qo'llash qanday xavf tug'diradi|Serotonin sindromi|Nefrotoksiklik|U kuchsiz monoaminoksidaza ingibitori.
+daptomycin-1y72yhv|Daptomitsin|Daptomitsin nega pnevmoniyada qo'llanmaydi|Surfaktant uni faolsizlantiradi|U o'pkaga yetib bora olmaydi|Boshqa hollarda MRSA ga qarshi a'lo. KFK oshishini kuzating.
+heparin-1hq7e72|Geparin|Geparin ___ III ni faollashtirib ta'sir qiladi|antitrombin|at|U keyin trombin va Xa omilni faolsizlantiradi.
+warfarin-14z1qnz|Varfarin|Varfarin K vitamini epoksid-___ ni ingibitsiya qiladi|reduktaza|reduktazasini|II, VII, IX, X omillari hamda C va S oqsillarini bloklaydi.
+direct-oral-anticoagulants-1sm25pw|To'g'ridan-to'g'ri og'iz antikoagulyantlari|Rivaroksaban va apiksaban ___ omilni bevosita ingibitsiya qiladi|Xa|10a|Dabigatran esa trombinni bevosita ingibitsiya qiladi.
+dabigatran-reversal-1vharxz|Dabigatranni neytrallash|Dabigatran ta'siri nima bilan bartaraf etiladi|Idarutsizumab|Andeksanet alfa|Andeksanet Xa omil ingibitorlarini neytrallaydi.
+heparin-versus-warfarin-in-pregnancy-0ftbe4d|Homiladorlikda geparin va varfarin|Homiladorlikda qaysi biri xavfsiz?|Geparin|Varfarin|Geparin yo'ldoshdan o'tish uchun juda katta; varfarin esa teratogen.
+phenytoin-04hm4ye|Fenitoin|Fenitoin ___ kanallarini bloklaydi va nol tartibli kinetikaga bo'ysunadi|natriy|na, na+|Milk giperplaziyasi, girsutizm va megaloblastik anemiya.
+valproate-1nve1v8|Valproat|Homiladorlikda valproat ___ nayi nuqsonlariga olib keladi|nerv|asab|Shuningdek gepatotoksiklik va pankreatit.
+ethosuximide-0cngy5y|Etosuksimid|Etosuksimid talamusdagi T-tip ___ kanallarini bloklaydi|kalsiy|ca, ca2+|Absans tutqanoqlarda birinchi tanlov.
+carbamazepine-00rj6qb|Karbamazepin|Karbamazepin klassik holda nimaga olib keladi|Agranulotsitoz va ADG noadekvat sekretsiyasi|Nefrogen qandsiz diabet va gipernatriemiya|Shuningdek HLA-B*1502 tashuvchilarida Stivens-Jonson sindromi.
+opioid-receptors-0le8hz5|Opioid retseptorlari|Opioidlarning og'riqsizlantiruvchi ta'siri asosan ___ retseptori orqali amalga oshadi|mu|μ|Nalokson — raqobatli mu antagonisti.
+opioid-tolerance-1la2voh|Opioidlarga chidamlilik|Opioidlarning qaysi ta'siriga chidamlilik RIVOJLANMAYDI?|Qabziyat|Eyforiya|Shuningdek mioz. Har doim surgi dori ham buyuring.
+morphine-in-renal-failure-1bkn503|Buyrak yetishmovchiligida morfin|Buyrak yetishmovchiligida morfin nega qo'llanmaydi|Faol metabolitlar to'planadi|U bevosita nefrotoksik|Morfin-6-glyukuronid to'planadi. O'rniga fentanil ishlating.
+nsaids-0i01oha|NYaQV|NYaQV ___ ni ingibitsiya qilib, prostaglandin sintezini kamaytiradi|siklooksigenaza|sog, cox|SOG-1 oshqozon va buyrakni himoya qiladi; SOG-2 yallig'lanishni boshqaradi.
+cox-2-inhibitors-10xwb5k|SOG-2 ingibitorlari|Selektiv SOG-2 ingibitorlari qaysi xavfni oshiradi|Tromboz|Oshqozon yarasi|Oshqozonni asraydi, ammo prostatsiklin muvozanatini buzadi.
+paracetamol-111dk6b|Paratsetamol|Paratsetamol toksikligi qaysi holatda kuchliroq|Surunkali alkogol iste'molida|Buyrak yetishmovchiligida|Faollashgan CYP2E1 ko'proq NAPXI hosil qiladi, glutation esa kam.

@@ -9,11 +9,66 @@
 // paint for everyone. As a separate asset it is cached independently, so a
 // code change does not force users to re-download the whole bank.
 
-import { BANK_VERSION } from "./bank-version.js";
+import { BANK_UZ_VERSION, BANK_VERSION } from "./bank-version.js";
+import { t } from "../lib/i18n.js";
 
 const bank = [];
 
 let pending = null;
+
+// The bank as compiled, in English; `bank` shows it in the player's
+// language. Uzbek text comes from questions.uz.json, fetched the first time
+// Uzbek is chosen: { id: { t: topic, q, o: [right, wrong] | a: answer,
+// c: accepted, e: explanation } } — see the Uzbek section of compile.mjs.
+const english = [];
+let uzText = null;
+let showing = "en";
+
+function localize(q) {
+  const u = uzText[q.id];
+  if (!u) return q; // not translated yet: only while the translation is in progress
+  // An Uzbek topic can give the answer away where the English didn't (h).
+  const hideTopic = q.hideTopic || u.h === 1 || undefined;
+  if (q.type === "gap") return { ...q, topic: u.t, q: u.q, answer: u.a, accept: u.c, explain: u.e, hideTopic };
+  return { ...q, topic: u.t, q: q.img ? q.q : u.q, options: u.o, explain: u.e, hideTopic };
+}
+
+/**
+ * Show the bank in English or Uzbek. Refilled in place, like loadBank, so
+ * every module holding `bank` sees the change. Ids never change, so saved
+ * questions, mistakes and progress carry across languages.
+ */
+export async function setBankLanguage(lang) {
+  const want = lang === "uz" ? "uz" : "en";
+  if (want === showing || !english.length) return;
+  if (want === "uz") await loadUzText();
+  bank.length = 0;
+  bank.push(...(want === "uz" ? english.map(localize) : english));
+  showing = want;
+}
+
+/** The Uzbek text, fetched the first time anything needs it. */
+async function loadUzText() {
+  if (uzText) return uzText;
+  const res = await fetch(`${import.meta.env.BASE_URL}questions.uz.json?v=${BANK_UZ_VERSION}`);
+  if (!res.ok) throw new Error(`${res.status} loading the Uzbek questions`);
+  uzText = await res.json();
+  return uzText;
+}
+
+/**
+ * The bank in English with each question's Uzbek text attached as `uzt`,
+ * for the multiplayer game.
+ *
+ * A game is played by people who may not read the same language, so the
+ * creator sends both languages of every question and each phone shows the
+ * one its owner reads. If the Uzbek file cannot be fetched the game still
+ * goes ahead in English alone — a lost round is worse than a lost language.
+ */
+export async function bilingualBank() {
+  try { await loadUzText(); } catch { return english; }
+  return english.map((q) => (uzText[q.id] ? { ...q, uzt: uzText[q.id] } : q));
+}
 
 /**
  * Populates the bank in place and resolves once ready.
@@ -26,6 +81,7 @@ export function loadBank() {
   // Single-file builds (the shareable demo) inline the bank on the page,
   // because a sandboxed artifact cannot fetch a sibling asset.
   if (typeof window !== "undefined" && Array.isArray(window.__QUESTIONS__)) {
+    english.push(...window.__QUESTIONS__);
     bank.push(...window.__QUESTIONS__);
     return Promise.resolve(bank);
   }
@@ -41,6 +97,7 @@ export function loadBank() {
       return res.json();
     })
     .then((questions) => {
+      english.push(...questions);
       bank.push(...questions);
       return bank;
     })
@@ -62,9 +119,10 @@ export function loadBank() {
 export function bankBlurb() {
   // Callers render this; an empty bank means it was read before loadBank()
   // resolved. Say nothing rather than advertise "0 quizzes".
-  if (!bank.length) return "Thousands of quizzes";
-  if (bank.length < 100) return `${bank.length} quizzes`;
-  return `${Math.floor(bank.length / 100) * 100}+ quizzes`;
+  if (!bank.length) return t("Thousands of quizzes", "Minglab savollar");
+  if (bank.length < 100) return t(`${bank.length} quizzes`, `${bank.length} ta savol`);
+  const n = Math.floor(bank.length / 100) * 100;
+  return t(`${n}+ quizzes`, `${n.toLocaleString("en-US").replace(",", " ")}+ ta savol`);
 }
 
 export default bank;

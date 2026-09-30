@@ -1,0 +1,63 @@
+# p6-neuro-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+ischemic-stroke-06meyj7|Ishemik insult|Tromboliz insult boshlanganidan keyin ___ soat ichida beriladi|4,5|4.5, to'rt yarim|Yirik tomir okklyuziyasida trombektomiya muddatni uzaytiradi.
+ischemic-stroke-0mm6j0e|Ishemik insult|Insultdan shubha qilinganda birinchi qanday tasviriy tekshiruv o'tkaziladi|Kontrastsiz KT|Kontrastli MRT|Trombolizdan oldin qon quyilishini inkor qilish uchun.
+cerebral-edema-1x9dnn0|Miya shishi|Insultdan keyingi sitotoksik shish ___ kunda avjiga chiqadi|3|3-5, uch|Aynan shu vaqtda churralanish xavfi eng yuqori.
+watershed-infarct-1mey5rh|Chegaraviy infarkt|Chegaraviy infarktlar nimadan keyin yuzaga keladi|Tizimli gipotoniyadan keyin|Yurakdan emboliyadan keyin|Ikki tomonlama proksimal qo'l kuchsizligi — «bochkadagi odam» ko'rinishi.
+lacunar-stroke-1pu6az2|Lakunar insult|Lakunar insultlar ___ arteriyalarni zararlaydi|lentikulostriar|kirib boruvchi, mayda kirib boruvchi|O'rta miya arteriyasining tarmoqlari.
+wallenberg-syndrome-0t52ibf|Vallenberg sindromi|Lateral medulla sindromi qaysi arteriya okklyuziyasidan kelib chiqadi|Orqa pastki miyacha arteriyasi|Oldingi spinal arteriya tarmoqlari|Yuzda shu tomonda, tanada qarama-qarshi tomonda sezgi yo'qoladi.
+wallenberg-syndrome-100ppp9|Vallenberg sindromi|Lateral medulla sindromi shu tomonda ___ sindromini beradi|Gorner|gorner sindromi, horner|Shuningdek yutish buzilishi, xirillash va bosh aylanishi.
+locked-in-syndrome-1jr0mf2|«Qulflangan odam» sindromi|«Qulflangan odam» sindromi qayerdagi shikastlanishdan kelib chiqadi|Ko'prikning ventral qismi|Uzunchoq miyaning dorsal qismi|Faqat vertikal qarash va ko'z pirpiratish saqlanadi.
+hypertensive-hemorrhage-0z7psx9|Gipertonik qon quyilishi|Gipertonik miya ichi qon quyilishi ko'pincha ___ ni zararlaydi|putamen|po'choq, bazal gangliyalar|Sharko-Bushar mikroanevrizmalaridan.
+subarachnoid-hemorrhage-0yffmoj|Subaraxnoidal qon quyilishi|KT manfiy, ammo shubha yuqori bo'lsa, keyingi qadam|Ksantoxromiya uchun lyumbal punksiya|Kontrast bilan bosh miya MRT si|Ksantoxromiya bir necha soatdan keyin paydo bo'ladi.
+cerebral-amyloid-angiopathy-0maihec|Miya amiloid angiopatiyasi|Amiloid angiopatiya keksalarda qaytalanuvchi ___ qon quyilishlarini chaqiradi|lobar|bo'lak, bo'lakli|Chuqur joylashadigan gipertonik qon quyilishlardan farqli.
+multiple-sclerosis-1chzbtu|Tarqalgan skleroz|Tarqalgan sklerozda likvorda oligoklonal ___ topiladi|chiziqlar|chiziq|Intratekal IgG sintezi.
+multiple-sclerosis-19jae9h|Tarqalgan skleroz|Tarqalgan sklerozdagi optik nevrit nimaga olib keladi|Ko'z harakatida og'riq va ko'rish pasayishi|Og'riqsiz, to'satdan boshlangan to'liq ko'rlik|Ko'p uchraydigan birinchi ko'rinish.
+multiple-sclerosis-10h3fm1|Tarqalgan skleroz|Issiqda tarqalgan skleroz belgilarining kuchayishi ___ fenomeni deyiladi|Uxtxoff|uhthoff|Demielinizatsiyalangan aksonlar isiganda yomonroq o'tkazadi.
+multiple-sclerosis-1pibak3|Tarqalgan skleroz|Tarqalgan sklerozning o'tkir qo'zishi nima bilan davolanadi|Yuqori dozadagi kortikosteroidlar|Beta-interferon in'eksiyalari|Interferon va boshqa vositalar qo'zishni davolamaydi, oldini oladi.
+central-pontine-myelinolysis-0xds18r|Markaziy pontin mielinoliz|Markaziy pontin mielinoliz ___ ning tez tuzatilishidan keyin yuzaga keladi|giponatriemiya|natriy, past natriy|Hozir osmotik demielinizatsiya sindromi deyiladi.
+progressive-multifocal-leukoencephalopat-0zi8u0q|Progressiv multifokal leykoensefalopatiya|Bu kasallikdagi o'choqlar uchun nima xos|Kontrast to'plamaydi, hajmiy ta'siri yo'q|Halqasimon kontrast to'playdi, atrofi shishgan|Bu ularni toksoplazmoz va limfomadan ajratadi.
+myasthenia-gravis-0rxil8r|Miasteniya|Miasteniya simptomatik ravishda ___ bilan davolanadi|piridostigmin|piridostigmin preparati|Atsetilxolinesteraza ingibitori. Timektomiya yordam berishi mumkin.
+myasthenic-crisis-1ezpnmo|Miastenik kriz|Miastenik kriz qanday davolanadi|Plazmaferez yoki immunoglobulin|Piridostigmin dozasini oshirish|Kislorod to'yinishini emas, o'pkaning tiriklik sig'imini kuzating.
+lambert-eaton-syndrome-08b5xru|Lambert-Iton sindromi|Lambert-Iton antitelolari presinaptik ___ kanallariga qarshi|kalsiy|ca, potensialga bog'liq kalsiy|Atsetilxolin ajralishi kamayadi.
+botulism-0x0w4aq|Botulizm|Botulinik toksin nimani parchalaydi|SNARE oqsillarini|Atsetilxolin retseptorlarini|Pufakchalar qo'shilishi va atsetilxolin ajralishi bloklanadi.
+guillain-barre-syndrome-12adttq|Giyen-Barre sindromi|Giyen-Barre sindromida likvorda oqsil-hujayra ___ kuzatiladi|dissotsiatsiyasi|dissotsiatsiya|Hujayralar normal, oqsil yuqori.
+guillain-barre-syndrome-0jk0qv7|Giyen-Barre sindromi|Giyen-Barre sindromi nima bilan davolanadi|Immunoglobulin yoki plazmaferez|Yuqori dozadagi kortikosteroidlar|Steroidlar yordam bermaydi va zarar qilishi mumkin.
+amyotrophic-lateral-sclerosis-1l3xk1t|Amiotrofik lateral skleroz|Amiotrofik lateral skleroz odatda nimani saqlab qoladi|Ko'z harakatlari va sfinkterlarni|Sezgi va chuqur reflekslarni|Ko'pchilik bemorlarda aql-idrok ham saqlanadi.
+amyotrophic-lateral-sclerosis-05jtwpu|Amiotrofik lateral skleroz|Bu kasallikda yashovchanlikni uzaytirishi isbotlangan yagona preparat — ___|riluzol|riluzol preparati|Glutamat antagonisti; foydasi kam.
+parkinson-disease-0j65nf4|Parkinson kasalligi|Levi tanachalari alfa-___ agregatlaridir|sinuklein|sinukleyn|Qora moddada topiladi.
+parkinson-disease-1a5j3mo|Parkinson kasalligi|Parkinson kasalligining eng erta harakat belgisi ko'pincha|Qo'l tebranishining kamayishi|Posturali beqarorlik belgisi|Keyin bradikineziya, rigidlik va tinch holat tremori qo'shiladi.
+parkinson-disease-032m9a8|Parkinson kasalligi|Karbidopa levodopaga qo'shiladi, chunki u ___ to'siqdan o'tmaydi|gematoensefalik|gematoensefalik to'siq|U faqat periferiyada parchalanishni bloklaydi, shuning uchun miyaga ko'proq yetib boradi.
+levodopa-141q2ba|Levodopa|Levodopani uzoq qabul qilish nimaga olib keladi|Diskineziyalar va ta'sirning «so'nishi»|Faqat bradikineziyaning kuchayishi|Shuning uchun yosh bemorlar agonistdan boshlashi mumkin.
+huntington-disease-05ar7l4|Xantington kasalligi|Xantington kasalligi ___ yadro atrofiyasiga olib keladi|dumli|dumli yadro|Tasvirda «quti shaklidagi» qorinchalar.
+huntington-disease-0be06p3|Xantington kasalligi|Xantington kasalligi kimdan irsiylanganda antitsipatsiya kuzatiladi|Otadan|Onadan|Otadan o'tganda CAG takrorlari ko'proq ko'payadi.
+wilson-disease-1afilyj|Vilson kasalligi|Vilson kasalligida qon zardobidagi ___ past bo'ladi|seruloplazmin|seruloplazmin oqsili|Siydikda mis yuqori va Kayzer-Fleysher halqalari.
+essential-tremor-0i7c4iy|Essensial tremor|Essensial tremor nima bilan davolanadi|Propranolol yoki primidon|Levodopa yoki dofamin agonisti|Alkogoldan yengillashadi, harakatda kuchayadi.
+tardive-dyskinesia-0ggo2yy|Kechikkan diskineziya|Kechikkan diskineziya VMAT-___ ingibitori bilan davolanadi|2|ikki, vmat2|Valbenazin yoki tetrabenazin.
+restless-legs-syndrome-18qxugz|Tinchimaydigan oyoqlar sindromi|Tinchimaydigan oyoqlar sindromida nimani tekshirish kerak|Qon zardobidagi ferritin|Qon zardobidagi kalsiy|Temir tanqisligi — ko'p uchraydigan qaytar sabab.
+status-epilepticus-08d5opn|Epileptik status|Benzodiazepinlardan keyin epileptik statusda navbatdagi preparat — ___|levetiratsetam|fosfenitoin, valproat|Levetiratsetam, fosfenitoin yoki valproat — barchasi mos.
+febrile-seizure-18gpdwi|Isitmali tutqanoq|Oddiy isitmali tutqanoqda nima kerak|Tinchlantirish va isitma tushiruvchi|Uzoq muddatli antiepileptik davo|15 daqiqadan kam, generallashgan, sutkada bir marta.
+temporal-lobe-epilepsy-0mqpgni|Chakka bo'lagi epilepsiyasi|Chakka bo'lagi tutqanoqlari ko'pincha g'alati hid kabi ___ bilan boshlanadi|aura|aura bilan|Shuningdek lab chapillatish va tutqanoqdan keyingi chalkashlik.
+juvenile-myoclonic-epilepsy-1306acl|Yoshlar mioklonik epilepsiyasi|Yoshlar mioklonik epilepsiyasi nima bilan tavsiflanadi|Ertalabki mioklonik silkinishlar|Tunda tonik tutqanoqlar bo'lishi|Valproat yoki levetiratsetam; ko'pincha umrbod.
+infantile-spasms-19x3b66|Chaqaloqlar spazmi|Vest sindromida elektroensefalogrammada ___ ko'rinadi|gipsaritmiya|gipsaritmiyasi|AKTG yoki vigabatrin bilan davolanadi.
+migraine-03wznm7|Migren|O'tkir migren 5-HT1B/1D agonisti — ___ bilan davolanadi|triptan|triptanlar, sumatriptan|Toj arteriyalar kasalligida mumkin emas.
+migraine-prophylaxis-0ir1k4m|Migren profilaktikasi|Migren profilaktikasiga nima kiradi|Propranolol va topiramat|Har kuni sumatriptan qabul qilish|Shuningdek amitriptilin va CGRP antagonistlari.
+cluster-headache-07ccr16|Klaster bosh og'rig'i|O'tkir klaster bosh og'rig'i yuqori oqimli ___ ga javob beradi|kislorod|o2|Shuningdek teri ostiga sumatriptan.
+idiopathic-intracranial-hypertension-0qp9dcr|Idiopatik kalla ichi gipertenziyasi|Idiopatik kalla ichi gipertenziyasi klassik holda kimlarda uchraydi|Semiz yosh ayollarda|Keksa erkaklarda|Tasvir normal, ko'rish nervi diski shishgan; atsetazolamid bilan davolanadi.
+trigeminal-neuralgia-1f4pr75|Uch shoxli nerv neyralgiyasi|Uch shoxli nerv neyralgiyasi birinchi navbatda ___ bilan davolanadi|karbamazepin|karbamazepin preparati|Teginishdan qo'zg'aladigan o'tkir, sanchiqli yuz og'rig'i.
+temporal-arteritis-1bx0r3b|Chakka arteriiti|Chakka arteriitidan shubha qilinganda nima kerak|Biopsiyadan oldin darhol steroid|Har qanday steroiddan oldin biopsiya|Kechiktirish doimiy ko'rlik xavfini tug'diradi.
+bacterial-meningitis-0m2xkgf|Bakterial meningit|Bakterial meningitda deksametazon qachon beriladi|Birinchi antibiotik dozasidan oldin yoki u bilan|Davolash boshlanganidan bir sutka o'tgach|Pnevmokokkli meningitda eshitish pasayishini kamaytiradi.
+meningitis-0wlk4g5|Meningit|Bo'yinni passiv bukkanda sonning bukilishi — ___ belgisi|Brudzinskiy|brudzinski|Kernig — tizzani yozishga qarshilik.
+brain-abscess-1wyk5un|Miya abssessi|Miya abssessi tasvirda qanday ko'rinadi|Halqasimon kontrast to'playdigan o'choq|Chegarasiz diffuz tarqalgan infiltrat|Halqasimon kontrast toksoplazmoz va metastazlarda ham bo'ladi.
+neurocysticercosis-0pfi1yd|Neyrotsistiserkoz|Neyrotsistiserkoz dunyo bo'yicha kattalarda boshlangan ___ ning eng ko'p uchraydigan sababi|epilepsiya|tutqanoqlar|Kalsinatlangan kistoz o'choqlar.
+creutzfeldt-jakob-disease-11idld9|Kreytsfeldt-Yakob kasalligi|Kreytsfeldt-Yakob kasalligi nimaga olib keladi|Mioklonus bilan tez rivojlanuvchi demensiya|Tremor bilan yillar davomida sekin pasayish|Shimgichsimon o'zgarish; likvorda 14-3-3 oqsili.
+glioblastoma-0p9ql5d|Glioblastoma|Glioblastoma gistologiyasida nima ko'rinadi|Psevdopalisadsimon nekroz|Psammoma tanachalari girdoblari|Qadoqsimon tana orqali o'tib, «kapalak» shaklini beradi.
+meningioma-0lailmm|Meningioma|Meningiomalarda girdoblar va ___ tanachalari ko'rinadi|psammoma|psammoma tanachalari|Xavfsiz, qattiq pardadan o'sadi, ayollarda ko'proq.
+medulloblastoma-0a39l7e|Medulloblastoma|Medulloblastoma qayerda rivojlanadi|Miyachada|Peshona bo'lagida|Bolalikdagi eng ko'p uchraydigan xavfli miya o'smasi; «tomchi» metastazlar.
+pilocytic-astrocytoma-13u76ae|Pilotsitar astrotsitoma|Pilotsitar astrotsitoma gistologiyasida ___ tolalari ko'rinadi|Rozental|rosenthal|Devor tuguni bo'lgan kistoz miyacha o'chog'i. Prognozi yaxshi.
+schwannoma-00hwtvl|Shvannoma|Shvannomalar qaysi markerga musbat bo'yaladi|S-100|GFAP|GFAP esa astrotsitar o'smalarni belgilaydi.
+brain-metastases-1795ye6|Miya metastazlari|Miya metastazlari odatda qayerda joylashadi|Kulrang va oq modda chegarasida|Miya ustuni chuqurligida|Ko'p sonli o'choqlar birlamchi o'smadan ko'ra metastazdan dalolat beradi.
+horner-syndrome-0jhbxbu|Gorner sindromi|Penkost o'smasi ___ gangliyani bosib, Gorner sindromini chaqiradi|yulduzsimon|stellat, bo'yin simpatik|O'pka cho'qqisidagi o'sma va qo'l og'rig'i.
+syncope-0wipqar|Hushdan ketish|Jismoniy zo'riqish paytida hushdan ketish nimadan dalolat beradi|Yurak sababidan|Vazovagal sababdan|Aorta stenozi yoki gipertrofik kardiomiopatiya inkor qilinmaguncha.
+normal-pressure-hydrocephalus-1gtm4gw|Normal bosimli gidrotsefaliya|Bu holat katta hajmli lyumbal ___ dan keyin yaxshilanishi mumkin|punksiya|punksiyadan, drenaj|Bu shuntlashga javobni ham bashorat qiladi.
+pseudotumor-versus-tumor-0o9r2w5|Psevdotumor va o'sma|Tasvir mutlaqo normal bo'lgan holda ko'rish nervi diski shishi nimadan dalolat beradi|Idiopatik kalla ichi gipertenziyasi|Orqa kalla chuqurchasidagi kichik o'sma|Oshgan boshlang'ich bosim bilan tasdiqlanadi.

@@ -1,0 +1,43 @@
+initiation-and-promotion-16ofbet|Initsiatsiya va promotsiya|Kanserogenez initsiatsiya, promotsiya va ___ ni talab qiladi|progressiya|progressiyani|Faqat initsiatsiya DNK da doimiy o'zgarish qoldiradi.
+chemical-carcinogens-0jv215p|Kimyoviy kanserogenlar|Aflatoksin qaysi rakni chaqiradi?|Gepatotsellyulyar karsinoma|Siydik qovug'i karsinomasi|Aromatik aminlar esa qovuq rakini beradi.
+vinyl-chloride-0c4on9m|Vinilxlorid|Vinilxlorid jigar ___ sini chaqiradi|angiosarkoma|angiosarkomasi|Shuningdek arsen va torotrast ham chaqiradi.
+radiation-carcinogenesis-1o277rs|Nurlanish kanserogenezi|Bo'yinga ionlashtiruvchi nurlanish klassik holda nimani chaqiradi|Papillyar qalqonsimon karsinoma|Medullyar qalqonsimon karsinoma|Ayniqsa bolalikda nurlanganda.
+oncogenic-viruses-09k2j6n|Onkogen viruslar|HTLV-1 kattalar T-hujayrali ___ ini chaqiradi|leykoz|limfoma, leykozi|Yaponiya va Karib havzasida endemik.
+helicobacter-pylori-1xn1wwp|Helicobacter pylori|H. pylori qanday tasniflanadi|Aniq 1-guruh kanserogen|Kanserogen bo'lmagan kommensal|Oshqozon adenokarsinomasi va MALT limfomasi.
+tumor-suppressor-genes-050w3kz|O'sma supressor genlari|___ genomning qorovuli deb ataladi|p53|tp53|Odam raklarining yarmidan ko'pida mutatsiyaga uchraydi.
+li-fraumeni-syndrome-1xxkw4e|Li-Fraumeni sindromi|Li-Fraumeni sindromi qaysi genning germinal mutatsiyasidan kelib chiqadi|TP53|BRCA1|Sarkoma, ko'krak, miya va buyrak usti bezi o'smalari.
+retinoblastoma-gene-12dkain|Retinoblastoma geni|RB oqsili ___ dan S fazaga o'tishni ushlab turadi|G1|g1/s|CDK-siklin D tomonidan fosforillanganda bo'shatiladi.
+apc-gene-0imgrjg|APC geni|APC yo'qolishi nimaning to'planishiga olib keladi|Beta-katenin|p53 oqsili|Nazoratsiz WNT signalizatsiyasini boshlaydi.
+cea-0hj3h9v|KEA|___ rezeksiyadan keyin kolorektal rakni kuzatishda ishlatiladi|KEA|cea, karsinoembrional antigen|Skrining uchun mos emas.
+ca-125-0gc4zap|CA-125|CA-125 ___ rakini kuzatadi, ammo endometriozda ham oshadi|tuxumdon|tuxumdonlar|Va qorin pardasining har qanday ta'sirlanishida.
+psa-1n7y3a8|PSA|PSA prostatit, instrumental aralashuv va prostata bezining ___ giperplaziyasida ham oshadi|xavfsiz|beningn|Bu uning spetsifikligini cheklaydi.
+beta-hcg-08zfkt8|Beta-hCG|Beta-hCG xoriokarsinoma va ___ hujayrali o'smalarning markyori|urug'|germinogen, jinsiy|Moyak raki uchun AFP bilan birga qaraladi.
+immunohistochemistry-1ur58mw|Immunogistokimyo|Sitokeratin musbatligi nimani bildiradi|Epitelial kelib chiqishni|Mezenximal kelib chiqishni|Vimentin mezenximal o'smalarni belgilaydi.
+chromogranin-0br6bze|Xromogranin|Xromogranin va sinaptofizin nimani belgilaydi|Neyroendokrin o'smalarni|Faqat B-hujayrali limfomalarni|Mayda hujayrali karsinoma va karsinoid.
+neoadjuvant-therapy-03il7w8|Neoadyuvant davo|___ davo o'smani kichraytirish uchun operatsiyadan OLDIN beriladi|Neoadyuvant||Adyuvant davo esa operatsiyadan keyin beriladi.
+radiotherapy-fractionation-1s2wn2h|Nur terapiyasini fraksiyalash|Nur terapiyasi nima uchun fraksiyalarga bo'linadi|O'smani o'ldirib, normal to'qimani asrash uchun|Davolashning umumiy narxini kamaytirish uchun|Normal to'qima fraksiyalar orasida tiklanadi.
+cell-cycle-specific-0erwcp2|Hujayra sikliga xos|Metotreksat va 5-ftoruratsil ___ fazada ta'sir qiladi|S|s faza|Vinka alkaloidlari va taksanlar M fazada ishlaydi.
+alkylating-agents-1els6vl|Alkillovchi vositalar|Alkillovchi vositalar qanday ta'sir qiladi|Hujayra siklidan mustaqil|S fazaga xos tarzda|Siklofosfamid, busulfan, nitrozoureyalar.
+tyrosine-kinase-inhibitors-1qcqtmr|Tirozinkinaza ingibitorlari|Imatinib SML dagi ___ qo'shilma oqsiliga qarshi ta'sir qiladi|BCR-ABL|bcr abl|Nishonga yo'naltirilgan davoning muhim yutug'i.
+egfr-inhibitors-08hxtn0|EGFR ingibitorlari|EGFR ingibitorlari qachon eng samarali|Adenokarsinomali chekmaydiganlarda|Yassi hujayrali karsinomada|Avval faollashtiruvchi mutatsiyani tekshiring.
+immune-checkpoint-0zjvjkl|Immun nazorat nuqtasi|Pembrolizumab T hujayralardagi ___ retseptorini bloklaydi|PD-1|pd1|O'smaga qarshi immunitetni tiklaydi.
+car-t-therapy-0nb0lhl|CAR-T davosi|CAR-T davosining asosiy o'tkir toksikligi nima|Sitokin chiqarish sindromi|Og'ir nefrotoksiklik|Totsilizumab va steroidlar bilan davolanadi.
+palliative-radiotherapy-07zox0u|Palliativ nur terapiyasi|Bir marta berilgan nur terapiyasi ___ suyak og'rig'ini samarali yengillashtiradi|metastatik|metastaz, metastatik|Kam toksiklik bilan tez yengillik beradi.
+neutropenic-sepsis-0zy3mka|Neytropenik sepsis|Neytropenik sepsisda antibiotik ___ soat ichida berilishi kerak|1|bir|Tasvir tekshiruvi yoki ekma davolashni kechiktirmasligi kerak.
+hypercalcemia-of-malignancy-0m1kt8p|Xavfli o'smadagi giperkalsiemiya|Xavfli o'sma giperkalsiemiyasi suyuqlikdan keyin nima bilan davolanadi|Bisfosfonat bilan|Avval halqa diuretigi|Diuretiklar faqat suyuqlik berilgandan keyin.
+spinal-cord-compression-1gqcxpf|Orqa miyaning siqilishi|Orqa miya siqilishining eng ko'p uchraydigan birinchi belgisi — ___ og'rig'i|bel|orqa, umurtqa|Holsizlikdan kunlar yoki haftalar oldin paydo bo'ladi.
+svc-obstruction-1er6hmm|Yuqori kovak vena obstruksiyasi|Yuqori kovak vena obstruksiyasi qanday davolanadi|Steroid va stent yoki nur terapiyasi|Faqat antikoagulyant va diuretiklar|Asosdagi o'sma turiga qarab tanlanadi.
+tumor-lysis-0zzcso0|O'sma lizisi|O'sma lizisi xavfi hajmli, tez o'sadigan ___ da eng yuqori|limfoma|leykoz, limfomada|Ayniqsa Berkitt limfomasi va o'tkir leykozda.
+hyperplasia-025h9rv|Giperplaziya|Qarshiliksiz estrogen tufayli endometriy giperplaziyasi ___ ga o'tishi mumkin|karsinoma|rak, saraton|Fiziologik giperplaziyadan farqli ravishda.
+metaplasia-sites-02g93lh|Metaplaziya joylari|Chekish bronx metaplaziyasini nimadan nimaga o'tkazadi|Kiprikli silindrikdan yassiga|Yassidan silindrik epiteliyga|Shilliq-kiprikli tozalanish yo'qoladi.
+dystrophic-calcification-1cnyejq|Distrofik kalsinoz|Zardob kalsiyi NORMAL bo'lgan holda shikastlangan to'qimadagi kalsinoz ___ deb ataladi|distrofik||Metastatik kalsinoz esa kalsiy yuqori bo'lganda yuz beradi.
+metastatic-calcification-1ast8l1|Metastatik kalsinoz|Metastatik kalsinoz nimaga ta'sir qiladi|Giperkalsiemiyada normal to'qimaga|Ilgari shikastlangan yoki nekrozlangan to'qimaga|O'pka, buyrak va oshqozon shillig'ini afzal ko'radi.
+hemosiderin-0lvuh38|Gemosiderin|Surunkali qon quyilishi ___ ga to'la makrofaglarni qoldiradi|gemosiderin||O'pkadagi «yurak yetishmovchiligi hujayralari».
+lipofuscin-1ez0hne|Lipofustsin|Lipofustsin to'planishi nimani bildiradi|Yosh va erkin radikal shikastini|To'qimada temir to'planishini|«Eskirish» pigmenti.
+fatty-change-1b2zd1y|Yog' bosishi|Jigar steatozi alkogol yoki semizlikdan kelib chiqadigan ___ o'zgarish|qaytadigan|qaytar, teskari|Davom etsa, steatogepatit va fibrozga o'tadi.
+transudate-versus-exudate-0mirmbh|Transsudat va ekssudat|Tomir ___ oshganda ekssudat hosil bo'ladi|o'tkazuvchanligi|o'tkazuvchanlik|Oqsil va hujayralar tashqariga chiqadi.
+serous-inflammation-15c68nl|Seroz yallig'lanish|Kuyishdan keyingi pufak nima|Seroz yallig'lanish|Fibrinoz yallig'lanish|Fibrinoz ekssudat oqsilga boy, masalan perikarditda.
+abscess-0lalal9|Abssess|Abssess — granulyatsion to'qima bilan chegaralangan ___ to'planishi|yiring|neytrofillar, yiringning|Faqat antibiotik emas, drenaj talab qiladi.
+foreign-body-granuloma-0eqvbwo|Yot jism granulemasi|Yot jism granulemalarida nima bo'ladi|Material atrofida ko'p yadroli gigant hujayralar|Limfotsit halqasi bilan o'ralgan kazeoz nekroz|Immun sensibilizatsiya talab qilinmaydi.
+chronic-granulomatous-inflammation-16hyzw1|Surunkali granulematoz yallig'lanish|Granulemalar makrofaglarning ___ orqali faollashishini talab qiladi|Th1|t xelper 1, interferon gamma|Shuning uchun TNF blokatorlari qayta faollashuvga olib keladi.
+fibrosis-19qjew6|Fibroz|TGF-beta ning ortiqcha miqdori nimaga olib keladi|Fibrozga|Tiklanishga|Ko'p organlarda chandiqlanishning asosiy vositachisi.

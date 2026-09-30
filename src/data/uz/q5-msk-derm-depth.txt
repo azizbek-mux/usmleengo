@@ -1,0 +1,62 @@
+# q5-msk-derm-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+bone-remodeling-1557iqp|Suyakning qayta qurilishi|Osteoblastlar osteoklastlarni faollashtirish uchun ___ ligandini ajratadi|RANK|rank, rankl|Osteoprotegerin — uni bloklovchi aldamchi retseptor.
+osteoclasts-0hqflio|Osteoklastlar|Osteoklastlar nimadan rivojlanadi|Monotsit-makrofag qatoridan|Mezenximal o'zak hujayralardan|Osteoblastlar mezenximadan kelib chiqadi.
+bone-matrix-1flexba|Suyak matriksi|Suyakning organik matriksi asosan ___ tip kollagen|I|i, 1|Gidroksiapatit bilan mineralizatsiyalangan.
+endochondral-ossification-0kzff8r|Endoxondral suyaklanish|Uzun suyaklar qanday hosil bo'ladi|Tog'aydan endoxondral suyaklanish orqali|Mezenximadan membranali suyaklanish orqali|Kalla yassi suyaklari membranali suyaklanish orqali hosil bo'ladi.
+achondroplasia-1ri15xz|Axondroplaziya|Axondroplaziya ___ suyaklanishni buzadi, shuning uchun oyoq-qo'llar kalta|endoxondral|endoxondral suyaklanishni|Membranali suyaklanish normal, shuning uchun kalla katta.
+alkaline-phosphatase-14sspim|Ishqoriy fosfataza|Kalsiy normal holda ishqoriy fosfatazaning oshishi nimadan dalolat beradi|Pedjet kasalligidan|Birlamchi giperparatireozdan|Yoki suyak metastazlari va sinish bitishidan.
+osteoarthritis-04e2jjk|Osteoartrit|Osteoartrit rentgenida bo'g'im yorig'i torayishi, skleroz, kistalar va ___ ko'rinadi|osteofitlar|osteofit|Yoriq torayishi, osteofitlar, skleroz, suyak osti kistalari.
+osteoarthritis-00zo6eu|Osteoartrit|Osteoartritda asosiy muammo nima|Tog'ayning yemirilishi|Sinovial pardaning yallig'lanishi|Yallig'lanish ikkilamchi va yengil.
+rheumatoid-arthritis-0alvswi|Revmatoid artrit|Revmatoid bo'g'imlarda tog'ay ustida yemiruvchi ___ hosil bo'ladi|pannus|pannusi|Yallig'langan, ko'payayotgan sinovial parda.
+rheumatoid-arthritis-0c52j1j|Revmatoid artrit|Pnevmokonioz bilan kechuvchi revmatoid artrit nima deyiladi|Kaplan sindromi|Felti sindromi|Felti — splenomegaliya va neytropeniya bilan kechuvchi revmatoid artrit.
+rheumatoid-arthritis-1cr8u5s|Revmatoid artrit|Revmatoid artritda atlantoaksial ___ intubatsiya paytida orqa miyaga xavf soladi|subluksatsiya|subluksatsiyasi, beqarorlik|Umumiy anesteziyadan oldin har doim bo'yinni tekshiring.
+ankylosing-spondylitis-1p3bsf8|Ankilozlovchi spondilit|Ankilozlovchi spondilit nimaga olib kelishi mumkin|O'pka cho'qqisidagi fibroz|O'pka asosidagi fibroz|Shuningdek aorta regurgitatsiyasi va uveit.
+ankylosing-spondylitis-01yu6j0|Ankilozlovchi spondilit|Ankilozlovchi spondilit HLA-B___ bilan bog'liq|27|b27|Boshqa seronegativ spondiloartropatiyalar bilan bir qatorda.
+psoriatic-arthritis-1cucwjb|Psoriatik artrit|Psoriatik artritda klassik holda nima ko'rinadi|«Qalam qadahda» deformatsiyasi|Faqat chekka eroziyalar|Shuningdek daktilit va tirnoqlarda chuqurchalar.
+gout-1qgkk4b|Podagra|Podagraning ko'pi uratning ortiqcha hosil bo'lishidan emas, ___ dan kelib chiqadi|kam chiqarilishi|yetarli chiqarilmasligi|Taxminan 90 foiz holatlar.
+chronic-gout-0ziq37j|Surunkali podagra|Uratni kamaytiruvchi davo qachon boshlanadi|O'tkir xuruj o'tib ketgach|O'tkir xurujning o'zida|Bir necha oy kolxitsin bilan himoya qilib.
+pseudogout-12iiy3h|Psevdopodagra|Psevdopodagra kristallari — kalsiy ___ digidrat|pirofosfat|pirofosfati|Romb shaklli va musbat nur sindiruvchi.
+pseudogout-0nz0ndt|Psevdopodagra|Psevdopodagrada nimani skrining qilish kerak|Gemoxromatoz va giperparatireoz|Faqat diabet va metabolik sindrom|Shuningdek gipomagniemiya va gipofosfataziya.
+systemic-sclerosis-0nua9gf|Tizimli skleroz|Tizimli skleroz ko'pincha ___ harakatchanligining buzilishi va reflyuksga olib keladi|qizilo'ngach|qizilo'ngachning|Silliq mushak atrofiyasi va fibrozi.
+limited-scleroderma-1dnhkqz|Cheklangan sklerodermiya|Cheklangan teri sklerodermiyasi ko'proq nimaga olib keladi|O'pka gipertenziyasi|Interstitsial o'pka kasalligi|Tarqalgan shakli interstitsial fibroz beradi.
+raynaud-phenomenon-17iato0|Reyno fenomeni|Reyno fenomenida rang uch marta o'zgaradi: oq, ko'k, keyin ___|qizil|qizil rang|Rangparlik, sianoz, keyin reaktiv qizarish.
+sjogren-syndrome-0idmhcm|Shegren sindromi|Shegren sindromi nima bilan tasdiqlanadi|Lab so'lak bezi biopsiyasi bilan|Faqat quloq oldi bezi ultratovushi bilan|O'choqli limfotsitar sialoadenit ko'rinadi.
+dermatomyositis-1lsxnvp|Dermatomiozit|Dermatomiozitdagi qovoqlardagi binafsha toshma ___ deyiladi|geliotrop|geliotrop toshma|Bo'g'imlar ustida Gottron papulalari bilan.
+inclusion-body-myositis-0vast1i|Kiritmali tanachali miozit|Bu miozit polimiozitdan nimasi bilan farq qiladi|Distal mushaklarni zararlaydi va steroidga chidamli|Bir necha hafta ichida steroidga yaxshi javob beradi|50 yoshdan keyin eng ko'p uchraydigan miopatiya.
+fibromyalgia-0by05w3|Fibromialgiya|Fibromialgiyada yallig'lanish markerlari normal va ___ ham normal|KFK|kfk, kreatinkinaza|Keng tarqalgan og'riq bilan, boshqa sabablarni inkor qilib tashxislanadi.
+large-vessel-vasculitis-19defiv|Yirik tomirlar vaskuliti|Gigant hujayrali arteriit va ___ arteriiti yirik tomirlarni zararlaydi|Takayasu|takayasu arteriiti|Asosan yosh bo'yicha farqlanadi.
+granulomatosis-with-polyangiitis-1uycz4d|Poliangiitli granulyomatoz|Poliangiitli granulyomatoz klassik holda nimani zararlaydi|Yuqori nafas yo'llari, o'pka va buyraklarni|Faqat teri va bo'g'imlarni zararlaydi|«Egarsimon» burun deformatsiyasi va qon tupurish.
+eosinophilic-granulomatosis-1ui4zg8|Eozinofil granulyomatoz|Churg-Strauss sindromi astma, eozinofiliya va ___ ni birga beradi|vaskulit|vaskuliti|Taxminan yarmida p-ANCA musbat.
+microscopic-polyangiitis-15ntz1z|Mikroskopik poliangiit|Mikroskopik poliangiit poliangiitli granulyomatozdan nimasi bilan farq qiladi|Granulyomalar bo'lmasligi bilan|Buyrakni zararlamasligi bilan|Ikkalasi ham ANCA bilan bog'liq mayda tomir vaskulitlari.
+behcet-disease-0hl4l9l|Bexchet kasalligi|Bexchet kasalligi qaytalanuvchi og'iz va ___ yaralariga olib keladi|jinsiy a'zolar|jinsiy a'zo|Shuningdek uveit va patergiya.
+buerger-disease-1om79z7|Byurger kasalligi|Obliteratsiyalovchi tromboangiit nima bilan kuchli bog'liq|Chekish|Diabet|Chekishni tashlash — yagona samarali davo.
+scaphoid-fracture-1t0fwdo|Qayiqsimon suyak sinishi|Qayiqsimon suyak sinishi proksimal qutbning avaskulyar ___ xavfini tug'diradi|nekrozi|nekroz|Qon ta'minoti retrograd; boshida rentgenda ko'rinmasligi mumkin.
+femoral-neck-fracture-0ppznx5|Son suyagi bo'yni sinishi|Keksalarda siljigan kapsula ichi sinishi nima bilan davolanadi|Endoprotezlash|Ichki fiksatsiya|Son suyagi boshining qon ta'minoti buziladi.
+compartment-syndrome-0hc05s2|Kompartment sindromi|Kompartment sindromining eng erta belgisi — ___ cho'zishda og'riq|passiv|passiv holda|Puls yo'qolishi — juda kechki belgi.
+compartment-syndrome-0ma1unu|Kompartment sindromi|Kompartment sindromi nima bilan davolanadi|Shoshilinch fassiotomiya|Ko'tarish va kuzatish|Ko'tarish aslida perfuziya bosimini kamaytiradi.
+rotator-cuff-1cfoare|Yelka aylanuvchi manjeti|Aylanuvchi manjet qirra usti, qirra osti, kichik yumaloq va ___ mushaklardan iborat|kurak osti|kurak osti mushagi|Kurak osti mushagi ichkariga buradi.
+adhesive-capsulitis-160y3wn|Adgeziv kapsulit|«Muzlagan yelka» nima bilan kuchli bog'liq|Qandli diabet|Revmatoid artrit|Faol va passiv harakatlar birga cheklanadi.
+anterior-cruciate-ligament-0qubtgv|Oldingi chalkash boylam|Oldingi chalkash boylam uzilishi uchun eng sezgir sinama — ___|Laxman|lachman|Oldingi surish sinamasidan sezgirroq.
+meniscal-tear-1uekcki|Menisk yirilishi|Menisk yirilishi klassik holda nimaga olib keladi|Bo'g'imning qotib qolishi va yoriq bo'ylab og'riq|Burilish paytida bo'g'im beqarorligi hissi|Beqarorlik boylam shikastidan dalolat beradi.
+osgood-schlatter-1kucbh8|Osgud-Shlatter kasalligi|Osgud-Shlatter kasalligi boldir suyagi ___ ini zararlaydi|do'mbog'i|do'mboq, bo'rtmasi|Faol o'smirda tortuvchi apofizit.
+slipped-capital-femoral-epiphysis-113eo7v|Son suyagi boshi epifizining siljishi|Bu holat odatda kimlarda namoyon bo'ladi|Tizza yoki chov og'rig'i bilan semiz o'smirda|Yurishda og'riqsiz cho'loqlanuvchi kichkina bolada|O'smirlardagi tizza og'rig'ida chanoq-son bo'g'imini tekshiring.
+legg-calve-perthes-08bxwys|Legg-Kalve-Perthes kasalligi|Perthes kasalligi — son suyagi ___ ining avaskulyar nekrozi|boshi|bosh, epifizi|4 dan 10 yoshgacha bolalarda.
+epidermis-layers-0r2i80d|Epidermis qavatlari|Epidermis qavatlari: bazal, tikansimon, donador, yaltiroq va ___|shoxsimon|shox qavat, shoxsimon qavat|Tashqi qavat — shoxsimon qavat.
+keratinocytes-0lgvb4j|Keratinotsitlar|Keratinotsitlar nima bilan birlashgan|Desmosomalar bilan|Zich birikmalar bilan|Gemidesmosomalar ularni bazal membranaga bog'laydi.
+melanin-0uvr3id|Melanin|Melanin tirozindan ___ fermenti yordamida sintezlanadi|tirozinaza|tirozinaza fermenti|Okulokutan albinizmda bu ferment yo'q.
+albinism-versus-vitiligo-0e4nhzo|Albinizm va vitiligo|Albinizmda melanotsitlar soni|Normal|Yo'q|Vitiligo esa melanotsitlarning o'zini yemiradi.
+acanthosis-nigricans-1n3ldl6|Qora akantoz|Qora akantoz insulin___ yoki ichki a'zolar o'smasidan dalolat beradi|rezistentligi|rezistentlik|Burmalarda baxmalsimon giperpigmentatsiya.
+erythema-nodosum-0ak1tld|Tugunli eritema|Tugunli eritema qanday bo'ladi|Boldirlarda og'riqli tugunlar|Tanada og'riqsiz plakkalar|Sarkoidoz, streptokokk, ichak yallig'lanishi, sil va dorilar.
+pyoderma-gangrenosum-1jp4cz7|Gangrenoz piodermiya|Gangrenoz piodermiya ___ yallig'lanish kasalligi bilan bog'liq|ichak|ichakning|Binafsha chetli, tez kattalashuvchi yara.
+stevens-johnson-syndrome-1yc2s3m|Stivens-Jonson sindromi|Stivens-Jonson sindromi toksik epidermal nekrolizdan nima bilan farqlanadi|Zararlangan tana yuzasi maydoni bilan|Shilliq qavat zararlanishi bilan|10 foizdan kam — Stivens-Jonson, 30 foizdan ko'p — nekroliz.
+acne-0no9c2r|Akne|Og'ir tugunli-kistoz akne ___ bilan davolanadi|izotretinoin|izotretinoin preparati|Homiladorlikning qat'iy oldini olish talab qilinadi.
+rosacea-1yi2gg5|Rozatsea|Rozatsea aknedan nima bilan farqlanadi|Komedonlar bo'lmasligi bilan|Komedonlar bo'lishi bilan|Qizarish, telangiektaziya va papulopustulalar.
+atopic-dermatitis-1bqg0o7|Atopik dermatit|Kattaroq bolalarda atopik dermatit ___ yuzalarni afzal ko'radi|bukuvchi|bukilish, burmalar|Chaqaloqlarda yuz va yozuvchi yuzalar zararlanadi.
+seborrheic-dermatitis-1ght8wn|Seboreyali dermatit|Seboreyali dermatit nima bilan bog'liq|Malassezia zamburug'i|Staphylococcus aureus|Zamburug'ga qarshi shampun bilan davolanadi.
+lichen-sclerosus-11qagk1|Sklerozlovchi temiratki|Qin dahlizining sklerozlovchi temiratkisi ___ hujayrali karsinoma xavfini oshiradi|yassi|yassi hujayrali|Uzoq muddatli kuzatuv talab qiladi.
+actinic-keratosis-05woc7x|Aktinik keratoz|Aktinik keratoz nima|Yassi hujayrali karsinomaning o'tmishdoshi|Butunlay xavfsiz, xavfli o'smaga aylanmaydi|Quyoshda qoladigan joylarda dag'al, tangachali dog'lar.
+melanoma-abcde-0b30xla|Melanoma ABCDE qoidasi|Melanoma ABCDE qoidasidagi E — ___|o'zgarish|o'zgarib borishi, kattalashishi|Asimmetriya, chet, rang, diametr, o'zgarish.
+nail-changes-0a1tnsw|Tirnoq o'zgarishlari|Isitma bilan tirnoq ostidagi chiziqli qon quyilishlar nimadan dalolat beradi|Infeksion endokarditdan|Psoriatik tirnoq kasalligidan|Umuman olganda eng ko'p uchraydigan sabab — jarohat.
+alopecia-areata-11ud953|O'choqli kal bo'lish|O'choqli kal bo'lishda o'choq chetida «___ belgisi» kabi sochlar bo'ladi|undov|undov belgisi|Chandiqsiz autoimmun kal bo'lish.
+tinea-capitis-0mwq3uh|Bosh temiratkisi|Bosh temiratkisi nimani talab qiladi|Og'iz orqali zamburug'ga qarshi preparat|Faqat mahalliy malham bilan davolash|Mahalliy preparatlar soch follikuliga yetib bora olmaydi.

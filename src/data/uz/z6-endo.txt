@@ -1,0 +1,33 @@
+thyroid-origin-1cncwwm|Qalqonsimon bezning kelib chiqishi|Qalqonsimon bez til asosidagi ___ teshigidan boshlanadi|ko'r|foramen cecum|Keyin bo'yin bo'ylab pastga tushadi.
+thyroglossal-duct-cyst-sign-1l5kqo2|Tiroglossal yo'l kistasi belgisi|Tiroglossal yo'l kistasi xarakterli holda nima qiladi|Til chiqarilganda yuqoriga siljiydi|Yutinganda joyida qotib turadi|Boladagi o'rta chiziqdagi bo'yin shishi.
+thyroglossal-cyst-germ-layer-1t8k69l|Tiroglossal kistaning murtak varag'i|Tiroglossal yo'l kistasi nimadan kelib chiqadi|Ko'r teshik endodermasidan|Jabra yorig'i ektodermasidan|Imtihonda aynan shu ibora kutiladi.
+lingual-thyroid-consequence-11riswq|Til qalqonsimon bezining oqibati|Tildagi ektopik qalqonsimon to'qima nima uchun muhim|U yagona mavjud bez bo'lishi mumkin|U albatta xavfli o'smaga aylanadi|Uni olib tashlash gipotireozga olib keladi.
+parathyroid-blood-supply-191eett|Qalqonsimon oldi bezlarining qon ta'minoti|Qalqonsimon oldi bezlari nimadan qon oladi|Pastki va yuqori qalqonsimon arteriyalardan|To'g'ridan-to'g'ri uyqu arteriyasi shoxlaridan|Shuning uchun tireoidektomiya gipokalsiemiya xavfini beradi.
+iodide-organification-0eb71u7|Yodidning organifikatsiyasi|___ qalqonsimon bezda yodidning organifikatsiyasini ta'minlaydi|Tireoperoksidaza|tpo|Tionamidlar bilan bloklanadi.
+tsh-second-messenger-148e9bl|TTG ning ikkinchi vositachisi|TTG retseptori nima orqali signal beradi|Adenilatsiklaza va sAMF orqali|Fosfolipaza C va IF3 orqali|Gs bilan bog'langan retseptor.
+iodine-storage-protein-0vwmhay|Yodni saqlovchi oqsil|Qalqonsimon gormon ___ ning tirozin qoldiqlari asosida quriladi|tireoglobulin|tireoglobulinning|Keyin proteoliz bilan chiqariladi.
+wolff-chaikoff-effect-0h4qr6a|Volf-Chaykoff effekti|Birdan ko'p yodid kelishi gormon sintezini qanday qiladi|O'tkinchi ravishda tushiradi|O'tkinchi ravishda ko'taradi|Shuning uchun tireotoksik krizda yodid qo'llanadi.
+secondary-hypothyroidism-causes-17di933|Ikkilamchi gipotireoz sabablari|Ikkilamchi gipotireoz nimadan keyin bo'ladi|Shixan sindromi yoki gipofiz o'smasidan|Faqat ovqatdagi yod tanqisligidan|Bez emas, gipofiz ishlamaydi.
+secondary-hyperthyroidism-tsh-1q78xxp|Ikkilamchi gipertireozda TTG|Ikkilamchi gipertireozda TTG qanday bo'ladi|Yuqori, mustaqil o'sma hisobiga|Yuqori gormon tomonidan bostirilgan|Teskari aloqa o'smani o'chira olmaydi.
+hashimoto-biopsy-076ut2g|Xashimoto biopsiyasi|Xashimoto tireoiditida biopsiya nimani ko'rsatadi|Limfotsitar infiltratni|Gigant hujayrali granulemalarni|Granulemalar de Kerven tireoiditini bildiradi.
+hashimoto-antibodies-1r9ue15|Xashimoto antitelolari|Xashimoto tireoiditida nimaga qarshi antitelolar bo'ladi|Tireoperoksidaza va tireoglobulinga|TTG retseptori va uning ligandiga|TTG retseptori antitelolari Greyvsni bildiradi.
+de-quervain-uptake-1gwlzt9|de Kervenda o'zlashtirish|O'tkir osti tireoiditda radioaktiv yod o'zlashtirilishi qanday|Gormon darajasidan qat'i nazar past|Gormonga mos ravishda yuqori|Bez chiqarib yuboradi, ko'p ishlab chiqarmaydi.
+de-quervain-tenderness-1mdaq06|de Kervenda og'riq|O'tkir osti granulematoz tireoidit nimasi bilan ajralib turadi|Og'riqli, sezgir qalqonsimon bez bilan|Og'riqsiz, zich qalqonsimon bez bilan|Odatda virusli kasallikdan keyin.
+drug-induced-thyroiditis-0t7tpeg|Dori chaqirgan tireoidit|Tireoiditni nima keltiradi|Litiy va amiodaron|Metformin va statinlar|Og'riqsiz, o'zlashtirilishi past.
+toxic-adenoma-malignancy-0sghmeo|Toksik adenoma va xavflilik|«ISSIQ» qalqonsimon tugun qanday bo'ladi|Xavfsiz va mustaqil ravishda gormon ajratadi|Aks holi isbotlanmaguncha xavfli hisoblanadi|Xavotirli tugunlar — «sovuq» tugunlar.
+cold-nodule-significance-02gh25o|«Sovuq» tugunning ahamiyati|«SOVUQ» qalqonsimon tugun nimadan xavotir tug'diradi|Karsinomadan|Ortiqcha faollikdan|«Issiq» tugunlar metastaz bermaydi.
+factitious-thyrotoxicosis-gland-0twzpk4|Soxta tireotoksikozda bez|Soxta tireotoksikozda qalqonsimon bez qanday bo'ladi|Kichik va paypaslanmaydi|Diffuz kattalashgan va zich|Bostirilgan TTG uni atrofiyaga uchratgan.
+reverse-t3-1o36yjv|Teskari T3|«Kasal evtireoid» sindromida T4 teskari ___ ga buriladi|T3|t 3|Gormonning faolsiz shakli.
+tbg-deficiency-pattern-0dwxwch|Tiroksin bog'lovchi globulin yetishmovchiligi manzarasi|Bu yetishmovchilik qanday manzara beradi|Umumiy T4 past, erkin T4 normal|Erkin T4 past, umumiy T4 normal|Tashuvchi kam, faol gormon o'sha-o'sha.
+cretinism-cause-worldwide-1f8t910|Kretinizmning dunyodagi sababi|Dunyo bo'yicha tug'ma gipotireozni ko'pincha nima keltiradi|Onadagi yod tanqisligi|Qalqonsimon bez disgeneziyasi|G'arb davlatlarida disgeneziya yetakchi.
+cretinism-features-0v2gb6w|Kretinizm belgilari|Tug'ma gipotireoz nimani beradi|Makroglossiya va chiqib turgan qorin|Baland bo'y va cho'ziq oyoq-qo'l|Kindik churrasi va gipotoniya hisobiga.
+cretinism-screening-0g4dyl0|Kretinizm skriningi|Tug'ma gipotireoz qanday skrining qilinadi|Chaqaloqning tovonidan qon olish testi bilan|Olti oylikda ultratovush tekshiruvi bilan|Aqliy zaiflikning oldini olish uchun.
+pth-net-effect-06m9901|PTG ning yakuniy ta'siri|PTG zardob kalsiyini oshiradi va yana nima qiladi|Zardob fosfatini pasaytiradi|Zardob fosfatini ko'taradi|Fosfat siydik bilan chiqarib yuboriladi.
+pth-and-osteoblasts-18f6mda|PTG va osteoblastlar|PTG osteoblastlarni ___ -L ni ifodalashga majbur qiladi, u osteoklastlarni faollashtiradi|RANK|rankl, rank-l|Osteoklastlarda PTG retseptori yo'q.
+calcium-reabsorption-site-1ncfsn6|Kalsiyning qayta so'rilish joyi|PTG kalsiy qayta so'rilishini kech ___ da oshiradi|DBK|distal buralgan kanalcha|Apikal kalsiy kanali orqali.
+rickets-biochemistry-1mq9v74|Raxit biokimyosi|Ovqatga bog'liq raxit nima beradi|Kalsiy past, fosfat past, PTG yuqori|Kalsiy yuqori, fosfat yuqori, PTG past|Ikkisini ham so'rish uchun D vitamini kerak.
+rickets-versus-osteomalacia-0urst09|Raxit va osteomalyatsiya|Raxit va osteomalyatsiya faqat nimasi bilan farq qiladi|Bemorning yoshi bilan|Qatnashgan vitamin bilan|Bolalar va kattalar.
+sunlight-and-vitamin-d-1ec25sl|Quyosh nuri va D vitamini|Quyosh nuri bo'lmasa, teri nimani hosil qila olmaydi|Xolekalsiferolni|7-degidroxolesterinni|Substrat baribir hosil bo'ladi, mahsulot esa yo'q.
+high-dhea-s-localization-1g5otbz|Yuqori DHEA-S ning joyi|DHEA-S yuqori bo'lgan girsutizm qayerni ko'rsatadi|Buyrak usti bezini|Tuxumdonni|DHEA-S faqat buyrak usti bezidan chiqadi.
+pituitary-stalk-section-hormone-0frhfka|Gipofiz oyoqchasi kesilganda gormon|Gipofiz oyoqchasini kesish faqat nimani oshiradi|Prolaktinni|O'sish gormonini|Qolgan hammasi liberin signalidan mahrum bo'ladi.
+mannitol-and-adh-15l73iw|Mannitol va ADG|Mannitol infuziyasi ADG ni qanday qiladi|Zardob osmolyarligi bilan ko'taradi|Zardob osmolyarligi bilan tushiradi|Osmoretseptorlar qo'shilgan moddani sezadi.

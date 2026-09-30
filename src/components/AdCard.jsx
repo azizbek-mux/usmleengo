@@ -1,3 +1,4 @@
+import { t } from "../lib/i18n.js";
 import React, { useEffect, useState } from "react";
 import { dismiss, isDismissed, loadAnnouncement } from "../data/announcement.js";
 import { haptic, openTelegram } from "../lib/telegram.js";
@@ -46,7 +47,7 @@ export default function AdCard() {
           </span>
         )}
         <span className="ad-body">
-          <span className="ad-from">From the channel</span>
+          <span className="ad-from">{t("From the channel", "Kanaldan")}</span>
           <span className="ad-title">{ad.title}</span>
           {ad.body && <span className="ad-text">{ad.body}</span>}
         </span>

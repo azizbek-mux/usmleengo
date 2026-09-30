@@ -1,0 +1,45 @@
+infertility-0t4xatx|Bepushtlik|35 yoshgacha bo'lganlarda bepushtlik ___ oy urinishdan keyin tekshiriladi|12|o'n ikki|35 dan katta bo'lsa, olti oy.
+male-factor-infertility-12nk7c9|Erkak omilli bepushtlik|Erkak omili qanchaga hissa qo'shadi|Bepushtlik holatlarining yarmiga|Barcha holatlarning o'ndan biridan kamiga|Sperma tahlili tekshiruvning boshida bo'lishi kerak.
+ovulation-confirmation-0lyg6ne|Ovulyatsiyani tasdiqlash|Ovulyatsiya lyuteal fazaning o'rtasidagi zardob ___ i bilan tasdiqlanadi|progesteron|progesteroni|Kutilgan hayzdan yetti kun oldin o'lchanadi.
+tubal-patency-0ucmtjs|Naychalar o'tkazuvchanligi|Naychalarning o'tkazuvchanligi nima bilan baholanadi|Gisterosalpingografiya bilan|Faqat transvaginal ultratovush|Yoki bo'yoq bilan laparoskopiya.
+ovarian-reserve-1qphjhd|Tuxumdon zaxirasi|Tuxumdon zaxirasi anti-___ gormoni bilan baholanadi|Myuller|amg, myullerian|Shuningdek antral follikullar soni.
+ovarian-hyperstimulation-1slhqnc|Tuxumdonning giperstimulyatsiyasi|Tuxumdonning giperstimulyatsiya sindromi nimani beradi|Uchinchi bo'shliqqa o'tish, astsit va tromboz xavfi|Bir kunda o'tib ketadigan yakka chanoq og'rig'i|Bepushtlikni davolashning asorati.
+recurrent-miscarriage-0uven1s|Qaytalanuvchi homila tashlash|Qaytalanuvchi homila tashlash ___ ketma-ket yo'qotishdan keyin tekshiriladi|3|uch, 2|Antifosfolipid sindromi va kariotip tekshiriladi.
+folic-acid-0c0ihbu|Folat kislotasi|Folat kislotasi test musbat chiqqandan keyin emas, homiladorlikdan ___ boshlanadi|oldin|avval|Nerv naychasi to'rtinchi haftada yopiladi.
+high-dose-folate-0o0ov6j|Yuqori dozadagi folat|5 mg folat kislotasi kimlar uchun ishlatiladi|Nerv naychasi nuqsoni bo'lgan yoki antiepileptik oluvchilar|Birinchi uchlikdan boshlab har qanday homiladorlikda|Standart doza — 400 mikrogramm.
+booking-bloods-1itl1x0|Hisobga olishdagi tahlillar|Hisobga olishda anemiya, qon guruhi, infeksiyalar va ___ tekshiriladi|gemoglobinopatiya|talassemiya|Ba'zi joylarda qizilchaga immunitet ham.
+anomaly-scan-0g75ptx|Anomaliya tekshiruvi|Homilaning batafsil anomaliya tekshiruvi qachon bajariladi|18-21 haftada|12 haftada|Muddatni aniqlash tekshiruvi ertaroq bajariladi.
+symphysis-fundal-height-1kmid4n|Bachadon tubi balandligi|24 haftadan keyin bachadon tubi balandligi ___ da muddatga taxminan teng bo'ladi|santimetr|sm|3 dan ko'p farq bo'lsa, o'sish tekshiruvi qilinadi.
+reduced-fetal-movements-04qqfxc|Homila harakatlarining kamayishi|Homila harakatlarining kamayishi nimani talab qiladi|Shu kunning o'zida baholashni|Keyingi tashrifgacha tinchlantirishni|Bu holatning yomonlashuvidan ogohlantirish bo'lishi mumkin.
+group-b-strep-1wca4d9|B guruh streptokokki|B guruh streptokokki tashuvchilariga tug'ruq davrida ___ profilaktikasi beriladi|antibiotik|antibiotiklar, penitsillin|Chaqaloqda erta sepsis ehtimolini kamaytiradi.
+stages-of-labour-1iqh8ld|Tug'ruq davrlari|Tug'ruqning ___ davri bachadon bo'ynining to'liq ochilishi bilan tugaydi|birinchi|birinchisi|Ikkinchisi chaqaloqning tug'ilishi bilan tugaydi.
+active-management-of-third-stage-0wupmia|Uchinchi davrni faol olib borish|Uchinchi davrni faol olib borish nima qiladi|Tug'ruqdan keyingi qon ketishni kamaytiradi|Yo'ldoshning ushlanib qolishini oshiradi|Uterotonik, kindikni tortish va qisqich qo'yish.
+cord-prolapse-15bikbm|Kindikning tushib qolishi|Kindikning tushib qolishi bosimni yengillashtirish va darhol ___ ni talab qiladi|tug'ruq|kesar kesimi, tug'dirish|Odatda shoshilinch kesar kesimi bilan.
+failure-to-progress-0e6qpgc|Tug'ruqning kechikishi|Tug'ruqning kechikishi nimani hisobga olib baholanadi|Kuch, yo'lovchi va yo'l|Ona yoshi va tug'ruqlar soni|Uchta «P» qoidasi.
+instrumental-delivery-0jxewd8|Instrumental tug'ruq|Vakuum-ekstraksiya chaqaloqda ___ qon quyilishi xavfini oshiradi|subgaleal|bosh gematomasi, kalla|Forsepsda esa ona jarohati ko'proq.
+cesarean-risks-0wbyyt3|Kesar kesimi xavflari|Takroriy kesar kesimlari nima xavfini oshiradi|Yo'ldoshning yopishib o'sishi|Muddatidan oldin tug'ruq|Har bir chandiq xavfni yanada oshiradi.
+perineal-tear-0tjpq65|Oraliqning yorilishi|Uchinchi darajali oraliq yorilishi orqa chiqaruv ___ ini qamraydi|sfinkteri|sfinkter|To'rtinchi daraja to'g'ri ichak shilliq qavatiga ham o'tadi.
+neonatal-resuscitation-18034nc|Chaqaloq reanimatsiyasi|Chaqaloq reanimatsiyasi quritish, isitish va ___ ni ochishdan boshlanadi|nafas yo'li|nafas yo'llari|Ko'pchiligi samarali nafas berishga javob beradi.
+delayed-cord-clamping-1f2myzj|Kindikni kechiktirib qisqichlash|Kindikni kechiktirib qisqichlash nima qiladi|Chaqaloqda temir zaxirasini yaxshilaydi|Sariqlik xavfini juda oshirib yuboradi|Chaqaloq sog'lom bo'lsa tavsiya etiladi.
+vitamin-k-at-birth-0m86eyc|Tug'ilganda K vitamini|Mushak ichiga K vitamini ___ ning gemorragik kasalligi oldini oladi|chaqaloq|chaqaloqlar|Og'iz orqali sxema bir necha doza talab qiladi.
+neonatal-hypoglycemia-08vpbn9|Chaqaloq gipoglikemiyasi|Gipoglikemiya xavfi bor chaqaloqlar kimlar|Chala, kichik, yirik va diabetli ona chaqaloqlari|Hayotning birinchi 24 soatidagi barcha chaqaloqlar|Erta ovqatlantirish va monitoring kerak.
+neonatal-jaundice-threshold-0qlwik6|Chaqaloq sariqligi chegarasi|Chaqaloq sariqligi davolash jadvalida ___ da hisoblangan yoshga nisbatan belgilanadi|soat|soatlar|Fototerapiya yoki almashtirib quyishga yo'l ko'rsatadi.
+exchange-transfusion-0p66am0|Almashtirib quyish|Almashtirib quyish qachon qo'llanadi|Bilirubin kernikterus xavfini tug'dirganda|Fototerapiya imkoniyati bo'lmaganda|Bilirubin va antiteloni olib tashlaydi.
+newborn-hearing-screen-1sn90v6|Chaqaloq eshitish skriningi|Chaqaloqlarning eshitish skriningi otoakustik ___ dan foydalanadi|emissiya|emissiyalar|Natija noto'g'ri bo'lsa, miya ustuni javobi tekshiriladi.
+pediatric-fluid-bolus-149hxve|Bolalarda suyuqlik bolyusi|Bolalarda reanimatsiya uchun suyuqlik bolyusi kilogrammga ___ ml|10|o'n, 20|Diqqat bilan qayta baholab, takrorlanadi.
+pediatric-dehydration-0sb4yu7|Bolalarda suvsizlanish|Boladagi suvsizlanishning eng ishonchli o'lchovi qaysi|Vazn yo'qotish|Faqat teri turgori|Yaqinda ma'lum bo'lgan vazn bilan taqqoslanadi.
+sepsis-in-children-0v34090|Bolalarda sepsis|Bolalar sepsisida gipotoniyadan oldin ko'pincha ___ bo'ladi|taxikardiya|taxipneya|Gipotoniya kech va xavfli belgi.
+meningococcal-septicemia-0nhfkca|Meningokokkli septitsemiya|Isitma bilan bosganda o'chmaydigan toshma nimani talab qiladi|Darhol parenteral antibiotik|24 soat kuzatib turish|Tekshiruvlar uchun kechiktirmang.
+anaphylaxis-in-children-1b8agkx|Bolalarda anafilaksiya|Anafilaksiyada adrenalin dozasi mushak ichiga kilogrammga ___ mikrogramm|10|o'n|Kerak bo'lsa, besh daqiqadan keyin takrorlanadi.
+status-epilepticus-in-children-14t6zi1|Bolalarda epileptik status|Bolalarda epileptik status avval nima bilan davolanadi|Benzodiazepin bilan|Fenitoin bilan|Keyin protokol bo'yicha kuchaytiriladi.
+croup-severity-1tiuzue|Krupning og'irligi|Stridor ___ bo'lsa, krup og'ir hisoblanadi|tinch holatda|tinchlikda|Nebulayzer orqali adrenalin va yaqin kuzatuv kerak.
+bronchiolitis-red-flags-16j8w5e|Bronxiolitning «qizil bayroqlari»|Bronxiolitdagi apneya kimlarda eng ko'p uchraydi|Kichik yoki chala tug'ilgan chaqaloqlarda|Kattaroq kichik bolalar va bolalarda|Bu kasalxonaga yotqizish uchun asos.
+growth-faltering-1fn34ub|O'sishning sekinlashuvi|O'sishning sekinlashuvi vaznni ___ jadvaliga belgilash orqali baholanadi|sentil|o'sish, protsentil|Sentillarni pastga kesib o'tish xavotirli.
+short-stature-1qjjyaf|Past bo'ylilik|Past bo'ylilikning eng ko'p uchraydigan sababi qaysi|Oilaviy yoki konstitutsional|O'sish gormoni yetishmovchiligi|Patologiya — istisno.
+speech-delay-046iq4c|Nutqning kechikishi|Nutqi kechikkan har bir bolada ___ tekshiruvi kerak|eshitish|eshitishni|Karlik ko'p uchraydigan va to'g'rilanadigan sabab.
+toe-walking-1lul0g5|Barmoq uchida yurish|Uch yoshdan keyin barmoq uchida yurish nimadan dalolat beradi|Miya falaji yoki miopatiyadan|Butunlay normal xususiyatdan|Tonus, reflekslar va KFK ni tekshiring.
+cerebral-palsy-00shb1i|Miya falaji|Miya falaji — harakat va holatning ___ buzilishi|zo'raymaydigan|statik, progressivlanmaydigan|Garchi klinik ko'rinish o'sish bilan o'zgaradi.
+enuresis-08iyjtq|Enurez|Birlamchi tungi enurez avval qanday olib boriladi|Tinchlantirish va enurez signali bilan|Boshidanoq kechqurun desmopressin|Ko'pchiligi o'z-o'zidan o'tib ketadi.
+immunization-schedule-1gyws7x|Emlash jadvali|Birlamchi emlash kursi odatda ___ haftalik yoshda boshlanadi|8|sakkiz, 6|Ona antitelolari kamayishidan oldin himoya qiladi.
+vaccine-hesitancy-1f4lnjw|Vaksinaga ishonchsizlik|Vaksinaga ishonchsizlikka eng samarali javob qaysi|Tinglash va dalillarni hurmat bilan taqdim etish|Ularga yordam berishdan butunlay bosh tortish|Qarshi turish fikrni yanada mustahkamlaydi.
+safeguarding-0ep0qfe|Bola xavfsizligi|Xavotiri bo'lgan har bir mutaxassis ___ burchiga ega|murojaat qilish|xabar berish, ma'lumot ulashish|Aniq ishonch talab qilinmaydi.

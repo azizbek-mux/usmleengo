@@ -1,0 +1,42 @@
+carbohydrate-digestion-14b5s5i|Uglevodlarning hazm bo'lishi|Kraxmalning hazm bo'lishi so'lak ___ dan boshlanadi|amilaza|amilazasi|Oshqozon osti bezi amilazasi bilan davom etadi.
+protein-digestion-11h5m2y|Oqsillarning hazm bo'lishi|Pepsinogen nima bilan faollashadi|Oshqozon kislotasi|Tripsin fermenti|Tripsin boshqa pankreatik zimogenlarni faollashtiradi.
+fat-digestion-0wfnz51|Yog'larning hazm bo'lishi|Oshqozon osti bezi lipazasi kofaktor sifatida ___ ni talab qiladi|kolipaza|kolipazani|Aks holda o't tuzlari uni siqib chiqaradi.
+enterokinase-0z3f2i6|Enterokinaza|O'n ikki barmoqli ichak shillig'idagi enterokinaza nimani faollashtiradi|Tripsinogenni|Pepsinogenni|Pankreatik proteaza kaskadini boshlaydi.
+short-bowel-syndrome-0zo44om|Qisqa ichak sindromi|Ingichka ichakning ___ sm dan kami qolganda qisqa ichak sindromi ehtimoli katta|200|ikki yuz, 100|Yo'g'on ichak butunligiga qarab.
+vitamin-b12-after-gastrectomy-0tmmf4i|Gastrektomiyadan keyin B12 vitamini|Total gastrektomiyadan keyin B12 vitamini qanday berilishi kerak|Umrbod parenteral|Og'iz orqali yuqori dozada|Ichki faktor ishlab chiqarilmaydi.
+achalasia-treatment-1bia74z|Axalaziyani davolash|Axalaziya pnevmatik kengaytirish yoki ___ miotomiyasi bilan davolanadi|Geller|heller, peroral endoskopik|Muolajaga yaroqsiz bemorlarga botulin toksini.
+diffuse-esophageal-spasm-0o44bc7|Qizilo'ngachning diffuz spazmi|Qizilo'ngachning diffuz spazmida nima ko'rinadi|Bariyda «tiqin ochar» qizilo'ngach|Bariyda «qush tumshug'i» torayishi|«Qush tumshug'i» ko'rinishini axalaziya beradi.
+gastroparesis-diagnosis-04jcc37|Gastroparez tashxisi|Gastroparez oshqozon ___ tekshiruvi bilan tasdiqlanadi|bo'shalishi|bo'shalish|Mexanik to'siq inkor etilgandan keyin.
+chronic-constipation-19p0gwq|Surunkali qabziyat|Qabziyatdagi «qizil bayroqlar» nimalar|Vazn yo'qotish, qon ketish yoki 50 dan keyin boshlanishi|Ichak bo'shaganda yengillashadigan qorin dam bo'lishi|Bu kolonoskopiyani talab qiladi.
+fecal-incontinence-083zzcq|Najas tutmaslik|Tug'ruqda orqa chiqaruv ___ ning shikastlanishi najas tutmaslikning ko'p sababi|sfinkteri|sfinkter|Ko'pincha yillar keyin namoyon bo'ladi.
+upper-endoscopy-1g4jn6f|Yuqori endoskopiya|O'tkir varikoz qon ketishda yuqori endoskopiya ___ soat ichida bajariladi|12|o'n ikki, 24|Reanimatsiya va antibiotiklardan keyin.
+colonoscopy-preparation-1gohy07|Kolonoskopiyaga tayyorlash|Ichakning yetarli tozalanmasligi nima qiladi|Adenomani aniqlashni kamaytiradi|Topilmalarga ta'sir qilmaydi|Tekshiruvni erta takrorlash kerak bo'ladi.
+ercp-0rbi4wp|ERXP|ERXP ning eng ko'p uchraydigan asorati — ___|pankreatit|pankreatitdir|To'g'ri ichakka NYaQV va stent qo'yish bilan kamaytiriladi.
+liver-biopsy-0r281h6|Jigar biopsiyasi|Jigar biopsiyasi qachon qo'llanmaydi|To'g'rilanmagan koagulopatiya yoki astsitda|Transaminazalar oshgan yoki sariqlikda|Transyugulyar biopsiya muqobil bo'ladi.
+paracentesis-1q6r78j|Parasentez|Katta hajmli parasentez qon aylanish buzilishi oldini olish uchun ___ talab qiladi|albumin|albuminni|Olingan har litrga taxminan 8 g.
+tips-procedure-1cq0a4f|TIPS muolajasi|Transyugulyar intragepatik portosistem shunt ko'pincha nimani yomonlashtiradi|Jigar ensefalopatiyasini|Astsit va oyoq shishini|Jigarda zararsizlantirishni chetlab o'tgani uchun.
+hepatitis-b-treatment-0hdtmsb|B gepatitini davolash|Surunkali B gepatiti tenofovir kabi ___ analoglari bilan davolanadi|nukleozid|nukleotid|Bostiradi, ammo kamdan-kam butunlay tuzatadi.
+hepatitis-c-treatment-105fgbf|C gepatitini davolash|Surunkali C gepatiti hozir qanday holatda|Og'iz dorilari bilan 95 foizdan ko'prog'ida tuzaladi|Interferon bilan nazoratda, kamdan-kam tuzaladi|Natijalardagi tub o'zgarish.
+hepatitis-b-reactivation-18stkgv|B gepatitining qayta faollashuvi|Immunosupressiya B gepatitini qayta faollashtiradi, shuning uchun ___ davosidan oldin skrining|immunosupressiv|kimyoterapiya, rituksimab|Profilaktik antivirus dorilar buning oldini oladi.
+non-alcoholic-fatty-liver-1wsqr9s|Alkogolsiz jigar yog' bosishi|Alkogolsiz jigar yog' bosishining eng kuchli sababi nima|Insulinga chidamlilik|Alkogol iste'moli|Endi eng ko'p uchraydigan surunkali jigar kasalligi.
+liver-fibrosis-assessment-1gzt8jb|Jigar fibrozini baholash|Jigar qattiqligi noinvaziv tarzda o'tkinchi ___ bilan o'lchanadi|elastografiya|fibroskan|Biopsiyaga ehtiyojni kamaytiradi.
+hepatorenal-syndrome-treatment-0f5o3xs|Gepatorenal sindromni davolash|Gepatorenal sindrom nima bilan davolanadi|Terlipressin va albumin bilan|Diuretik va suyuqlikni cheklash|Yakuniy davo — jigar transplantatsiyasi.
+alcohol-withdrawal-in-liver-disease-0iu7ey5|Jigar kasalligida alkogol abstinensiyasi|Jigar yetishmovchiligida benzodiazepin tanlashda ___ afzal|lorazepam|oksazepam, temazepam|Faqat glyukuronidlanishga uchraydi.
+spirometry-reversibility-11xckpj|Spirometriyada qaytarilish|Astmada qaytarilish — FEV1 ning ___ foizdan ko'p va 200 ml ga ortishi|12|o'n ikki|Bronxodilatatordan keyin o'lchanadi.
+peak-flow-variability-0ipwsh4|Pik oqimning o'zgaruvchanligi|Pik oqimning kunlik o'zgaruvchanligi 20 foizdan oshsa, bu nima|Astma|O'SOK|Ikki hafta davomida qayd etiladi.
+transfer-factor-1p7wltq|Diffuziya qobiliyati|Diffuziya qobiliyati alveolyar ___ da oshadi|qon quyilishi|qon ketish|Alveolalardagi qon is gazini o'ziga oladi.
+flow-volume-loop-1046p8w|Oqim-hajm halqasi|Nafas OLISH qismi yassilangan bo'lsa, bu nimani bildiradi|Ko'krakdan tashqari yuqori nafas yo'li obstruksiyasi|Nafas chiqarishda kollaps bilan kechuvchi emfizema|Qat'iy obstruksiyada ikki qism ham yassilanadi.
+six-minute-walk-09chnvf|Olti daqiqalik yurish|Olti daqiqalik yurish sinamasi funksional ___ qobiliyatini o'lchaydi|jismoniy|yuklama, yurish|Fibroz va o'pka gipertenziyasida ishlatiladi.
+bronchiectasis-causes-0lyglr8|Bronxoektaz sabablari|Bronxoektaz tekshiruviga kistoz fibroz, immunoglobulinlar va ___ kiradi|aspergillyoz|abpa, allergik bronxopulmonal aspergillyoz|Shuningdek kiprikchalar funksiyasini tekshirish.
+allergic-bronchopulmonary-aspergillosis-0eh2rop|Allergik bronxopulmonal aspergillyoz|ABPA da nima ko'rinadi|IgE oshgan va Aspergillus ga sensibilizatsiya|Neytrofiliya va prokalsitonin oshishi|Markaziy bronxoektaz va eozinofiliya.
+tuberculosis-contact-tracing-0r396ks|Sil bilan kontaktni aniqlash|Yuqumli sil bilan kontaktda bo'lganlar ___ infeksiyasi uchun tekshiriladi|latent|yashirin|Interferon gamma testi yoki teri sinamasi bilan.
+directly-observed-therapy-1v32gfq|Bevosita kuzatiladigan davo|Silda bevosita kuzatiladigan davo nima uchun qo'llanadi|Rioyani ta'minlab, chidamlilik oldini olish uchun|Davolashning umumiy narxini kamaytirish uchun|Ayniqsa rioya noaniq bo'lganda.
+empyema-management-1oh2sxl|Empiyemani olib borish|Empiyema drenajlanadi, fibrinolitiklar ___ ni buzish uchun ishlatiladi|bo'lmalar|bitishmalar, septalar|Drenaj yordam bermasa, jarrohlik.
+lung-abscess-management-1kjrkn8|O'pka abssessini olib borish|O'pka abssessi odatda qanday kechadi|Faqat uzoq antibiotikka javob beradi|Erta jarrohlik rezeksiyasini talab qiladi|Drenaj faqat katta yoki chidamli kavernalarda.
+asthma-action-plan-0a92ch2|Astmada harakat rejasi|Har bir astmali bemorda yozma ___ rejasi bo'lishi kerak|harakat|harakatlar|Natijalarni yaxshilaydi va yotqizishlarni kamaytiradi.
+inhaler-technique-07exo5p|Inhalyator texnikasi|Inhalyator samarasiz ko'rinishining eng ko'p sababi nima|Noto'g'ri texnika|Noto'g'ri dori|Davoni kuchaytirishdan oldin doim texnikani tekshiring.
+copd-exacerbation-prevention-139zul8|O'SOK qo'zishining oldini olish|O'SOK bemorlari har yili gripp va ___ vaksinasini olishi kerak|pnevmokokk|pnevmokokkli|Shuningdek COVID va ko'kyo'tal revaksinatsiyasi.
+alpha-1-antitrypsin-testing-0gp0zrv|Alfa-1 antitripsin tekshiruvi|Alfa-1 antitripsin kimlarda tekshirilishi kerak|45 yoshdan yosh yoki chekmaydigan O'SOK da|O'SOK tashxisi bor barcha bemorlarda|Ayniqsa bazal emfizema yoki jigar kasalligi bilan.
+palliative-breathlessness-1ug7toh|Palliativ yordamda hansirash|Hayot oxirida chidamli hansirash past dozadagi ___ ga javob beradi|opioidlar|morfin, opiatlar|Shuningdek qo'l yelpig'ichi yordam beradi.
+home-non-invasive-ventilation-14voa4d|Uyda noinvaziv ventilyatsiya|Uzoq muddatli uyda noinvaziv ventilyatsiya kimga foyda beradi|Surunkali giperkapnik nafas yetishmovchiligiga|Giperkapniyasiz izolyatsiyalangan gipoksemiyaga|Tanlangan O'SOK va neyromushak kasalliklarida umrni uzaytiradi.
+smoking-cessation-in-copd-0xmjxne|O'SOK da chekishni tashlash|Chekishni tashlash — ___ pasayishini sekinlashtiradigan yagona aralashuv|FEV1|o'pka funksiyasi|Qolgan hammasi faqat belgilarni davolaydi.

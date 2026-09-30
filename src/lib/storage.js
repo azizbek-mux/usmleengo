@@ -46,6 +46,9 @@ export const emptyState = {
   timing: { binary: [0, 0], gap: [0, 0] },
   // The how-to cards have been seen (or skipped); they are shown once.
   introSeen: false,
+  // "en" or "uz". null until chosen — on the first how-to card, or in Me —
+  // and the app is in English meanwhile.
+  lang: null,
 };
 
 /**
@@ -78,6 +81,7 @@ function merge(raw) {
     if (!["auto", "light", "dark"].includes(merged.theme)) merged.theme = "auto";
     if (!["english", "quiz"].includes(merged.section)) merged.section = null;
     merged.introSeen = parsed.introSeen === true;
+    if (!["en", "uz"].includes(merged.lang)) merged.lang = null;
     // Tags can disappear when the bank is re-authored, so anything unknown is
     // dropped on read rather than left to filter a round down to nothing.
     merged.timing = cleanTiming(parsed.timing);
@@ -261,6 +265,11 @@ export function setSubjects(state, subjects) {
 /** Persist which half of the app the user is in. */
 export function setSection(state, section) {
   return { ...state, section: ["english", "quiz"].includes(section) ? section : null };
+}
+
+/** Persist the chosen language. */
+export function setLanguage(state, lang) {
+  return { ...state, lang: ["en", "uz"].includes(lang) ? lang : null };
 }
 
 /** Persist the chosen palette. */

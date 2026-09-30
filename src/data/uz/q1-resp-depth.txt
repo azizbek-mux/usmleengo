@@ -1,0 +1,60 @@
+# q1-resp-depth — o'zbekcha tarjima (qarang: TERMS.md)
+
+lung-volumes-0hdpw2s|O'pka hajmlari|Maksimal chiqarishdan keyin qolgan havo — ___ hajm|qoldiq|qoldiq hajm|Uni faqat spirometriya bilan o'lchab bo'lmaydi.
+functional-residual-capacity-1n0xvhe|Funksional qoldiq sig'im|Funksional qoldiq sig'im — bu nuqta|O'pka tortishishi ko'krak devori tortishuviga teng|O'pka to'liq kengayib, sig'imga yetgan holat|Nafas yo'li bosimi atmosfera bosimiga teng.
+compliance-0245jag|Cho'ziluvchanlik|Cho'ziluvchanlik — hajmning ___ o'zgarishiga nisbati|bosim|bosimning|Emfizemada oshadi, fibrozda kamayadi.
+emphysema-compliance-0z81tac|Emfizemada cho'ziluvchanlik|Emfizema o'pka cho'ziluvchanligini|Oshiradi|Kamaytiradi|Elastin yemirilib, o'pka bo'shashadi va bo'shalishi qiyinlashadi.
+surfactant-1p9yw6o|Surfaktant|Surfaktantning asosiy qismi — dipalmitoil___xolin|fosfatidil|fosfatidilxolin|II tip pnevmotsitlar 24-haftadan boshlab ishlab chiqaradi.
+laplace-law-1snrmhn|Laplas qonuni|Laplas qonuni bo'yicha surfaktantsiz kichik alveola nima qiladi|Kattasiga qo'shilib puchayadi|Kattasidan tezroq kengayadi|Bosim radiusga teskari proporsional.
+dead-space-0yvxktl|O'lik bo'shliq|Anatomik o'lik bo'shliq kattalarda taxminan ___ ml|150|bir yuz ellik|Taxminan kilogrammiga 2 ml.
+ventilation-perfusion-1o4u76e|Ventilyatsiya-perfuziya|O'pka cho'qqisida ventilyatsiya/perfuziya nisbati|Yuqori|Past|Ventilyatsiya perfuziyadan ortiq; asosida esa aksincha.
+hypoxia-0vbhp63|Gipoksiya|___ tanachalaridagi periferik xemoretseptorlar kislorod pastligini sezadi|uyqu|uyqu va aorta|Markaziy xemoretseptorlar esa CO2 ga javob beradi.
+oxygen-content-1cewjjn|Kislorod miqdori|Kislorod miqdori asosan ___ konsentratsiyasiga bog'liq|gemoglobin|gemoglobinning, hb|PaO2 ga emas, u faqat to'yinishni belgilaydi.
+anemia-and-pao2-0eqv1l3|Anemiya va PaO2|Anemiyada arterial PaO2|Normada|Past|Miqdori kamayadi, ammo parsial bosim o'zgarmaydi.
+carbon-dioxide-transport-1u6gmxe|Karbonat angidrid tashilishi|Karbonat angidridning ko'p qismi qonda ___ holida tashiladi|bikarbonat|bikarbonat shaklida|Taxminan 70 foizi; qolgani karbamin va erigan holda.
+haldane-effect-0m4syt0|Xaldeyn effekti|Xaldeyn effekti nimani tavsiflaydi|Kislorodsiz qon ko'proq CO2 tashishini|Kislota kislorodni ajratib yuborishini|Kislota kislorodni ajratishi — Bor effekti.
+shunt-14y78tk|Shunt|Haqiqiy shuntdan kelib chiqqan gipoksemiya|100% kislorod bilan tuzatilmaydi|100% kislorod bilan to'liq tuzatiladi|Qon ventilyatsiya qilinadigan alveolalarni butunlay chetlab o'tadi.
+asthma-1x98fgq|Bronxial astma|Astma balg'amida Kurshman spirallari va ___-Leyden kristallari ko'rinadi|Sharko|charcot, sharko-leyden|Eozinofil membrana oqsilidan hosil bo'ladi.
+asthma-severity-1c7c4gh|Astma og'irligi|Og'ir astma xurujida PaCO2 ning NORMALLIGI nimani bildiradi|Xavfli belgi, charchoqni ko'rsatadi|Yaxshi belgi, tuzalishni ko'rsatadi|Bemor giperventilyatsiya qilishi kerak; CO2 ning oshishi yetishmovchilikni bildiradi.
+asthma-1k08oci|Bronxial astma|Uzoq ta'sirli beta-agonistlar hech qachon ingalyatsion ___ siz qo'llanmaydi|kortikosteroid|steroid, kortikosteroidsiz|Yolg'iz qo'llash astmadan o'limni oshiradi.
+copd-0ohxyge|O'SOK|O'SOK da qaysi chora yashovchanlikni yaxshilaydi?|Chekishni tashlash va uzoq kislorod terapiyasi|Ingalyatsion kortikosteroidlar va mukolitiklar|Bronxodilatatorlar belgilarni yaxshilaydi, o'limni emas.
+copd-1fr2znf|O'SOK|Uzoq muddatli kislorod terapiyasi PaO2 ___ mm sim. ust. dan pastga tushganda ko'rsatiladi|55|ellik besh|Yoki o'pka yuragi yoki politsitemiya bo'lsa, 60 dan past.
+alpha-1-antitrypsin-deficiency-0xbtw9o|Alfa-1-antitripsin yetishmovchiligi|Alfa-1-antitripsin emfizemasi qayerni zararlaydi|Pastki bo'laklarni|Yuqori bo'laklarni|Chekishdan kelib chiqqan emfizema yuqori bo'lakda va tsentriatsinar bo'ladi.
+bronchiectasis-17vd13s|Bronxoektaz|Bronxoektazda ko'krak tasvirida «___ izlari» ko'rinadi|tramvay|tramvay izlari|Kengaygan, devori qalin nafas yo'llari; KT da «uzuk» belgisi.
+cystic-fibrosis-1afy26a|Mukovistsidoz|Mukovistsidoz nima bilan tashxislanadi|Ter xloridi 60 dan yuqori bo'lishi|Qon zardobida natriyning oshishi|Shuningdek CFTR mutatsiyalari bo'yicha genetik tekshiruv.
+cystic-fibrosis-105lgxs|Mukovistsidoz|Kattalarda mukovistsidozda nafas yo'llarining eng ko'p uchraydigan surunkali qo'zg'atuvchisi — ___|Pseudomonas|pseudomonas aeruginosa|Bolalikda esa Staph aureus ustunlik qiladi.
+idiopathic-pulmonary-fibrosis-07k56gr|Idiopatik o'pka fibrozi|Bu kasallikda KT da odatiy interstitsial pnevmoniya va «___» o'pka ko'rinadi|asalari uyasi|asalarichasimon, uya|Asosida va plevra ostida retikulyar o'zgarishlar, tortuvchi bronxoektaz.
+idiopathic-pulmonary-fibrosis-147c3br|Idiopatik o'pka fibrozi|Idiopatik o'pka fibrozi nima bilan davolanadi|Pirfenidon yoki nintedanib|Yuqori dozadagi steroidlar|Steroidlar yordam bermaydi va holatni yomonlashtirishi mumkin.
+hypersensitivity-pneumonitis-01u4xny|O'ta yuqori sezuvchanlik pnevmoniti|O'ta yuqori sezuvchanlik pnevmoniti ___ va IV tur reaksiya|III|iii, uch|«Dehqon o'pkasi», «qush boquvchi o'pkasi».
+sarcoidosis-17gz637|Sarkoidoz|Sarkoidozda qon zardobida nima oshadi|AFF va kalsiy|Revmatoid omil|Granulyomalardagi 1-alfa-gidroksilaza tufayli.
+sarcoidosis-04x8nz7|Sarkoidoz|Tugunli eritema, artrit va o'pka darvozasi limfadenopatiyasi bilan sarkoidoz — ___ sindromi|Lyofgren|lofgren|Prognozi yaxshi bo'lgan o'tkir ko'rinish.
+coal-worker-pneumoconiosis-0igkixq|Ko'mirchi pnevmokoniozi|Ko'mirchi pnevmokoniozi qayerni zararlaydi|Yuqori bo'laklarni|Pastki bo'laklarni|Asbestoz esa pastki bo'laklarni zararlaydi.
+asbestos-exposure-0h7v10h|Asbest ta'siri|Asbest plevrada ___ hosil qiladi, bu ta'sir belgisi|plakkalar|plakka, plakkalari|O'zlari xavfli o'sma oldi holati emas.
+berylliosis-0tdmez8|Berillioz|Berillioz gistologik jihatdan nimadan ajratilmaydi|Sarkoidozdan|Sildan|Tvorogsimon nekrozsiz granulyomalar; steroidga javob beradi.
+pulmonary-embolism-02m1gj8|O'pka arteriyasi tromboemboliyasi|O'pka emboliyalarining ko'pi oyoqning ___ venalaridan kelib chiqadi|chuqur|chuqur venalari, proksimal chuqur|Ayniqsa taqim osti venasi va undan yuqori.
+massive-pulmonary-embolism-0jzzmra|Massiv o'pka emboliyasi|Gipotoniya bilan kechuvchi massiv emboliya nima bilan davolanadi|Tromboliz|Faqat antikoagulyatsiya|Gemodinamik beqarorlik davo taktikasini o'zgartiradi.
+fat-embolism-0o33v06|Yog' emboliyasi|Yog' emboliyasi hansirash, ong chalkashligi va ___ toshma beradi|petexial|petexiyali, petexiyalar|Klassik holda uzun suyak sinishidan keyin.
+amniotic-fluid-embolism-0z11wce|Amniotik suyuqlik emboliyasi|Amniotik suyuqlik emboliyasi uchun nima xos|DVS-sindrom bilan yurak-qon tomir kollapsi|Tez o'tib ketadigan izolyatsiyalangan gipoksiya|Kam uchraydi va ko'pincha o'limga olib keladi.
+pulmonary-hypertension-1qj8jgl|O'pka gipertenziyasi|O'pka gipertenziyasi — o'pka arteriyasidagi o'rtacha bosim ___ mm sim. ust. dan yuqori|20|yigirma, 25|O'ng bo'limlarni kateterizatsiya qilish bilan tasdiqlanadi.
+primary-pulmonary-hypertension-1j4ly6f|Birlamchi o'pka gipertenziyasi|Idiopatik o'pka arterial gipertenziyasi nima bilan bog'liq|BMPR2 mutatsiyasi|CFTR mutatsiyasi|Endotelin antagonistlari va FDE5 ingibitorlari bilan davolanadi.
+ards-1qxqc8q|O'tkir respirator distress-sindrom|Bu sindromda gistologiyada diffuz ___ shikastlanish ko'rinadi|alveolyar|alveola|Oqsilga boy ekssudatdan gialin membranalar hosil bo'ladi.
+ards-0gkbpl1|O'tkir respirator distress-sindrom|Bu sindrom uchun PaO2/FiO2 nisbati qanchadan past bo'lishi kerak|300|500|100 dan past bo'lsa — og'ir shakli.
+ventilator-associated-pneumonia-076lubk|Ventilyator bilan bog'liq pnevmoniya|Bu pnevmoniya ventilyatsiyadan qancha vaqt o'tgach hisoblanadi|48 soatdan keyin|6 soatdan keyin|Ko'pincha Pseudomonas yoki MRSA.
+pleural-effusion-07xqpto|Plevra suyuqligi|Layt mezonlari plevra va zardob oqsilini hamda ___ ni solishtiradi|LDG|ldh, laktatdegidrogenaza|Bitta mezon bajarilsa ham — ekssudat.
+empyema-1a260we|Empiyema|Empiyemada nima kerak|Plevra drenaji|Faqat antibiotiklar|Chinakam yiring, pH past, glyukoza past.
+chylothorax-0w02mkk|Xilotoraks|Xilotoraks suyuqligi sutsimon va ___ ga boy|triglitseridlar|triglitserid, xilus|Ko'krak limfa yo'lining shikastlanishidan.
+primary-spontaneous-pneumothorax-1vb48tu|Birlamchi spontan pnevmotoraks|Birlamchi spontan pnevmotoraks odatda kimlarda uchraydi|Baland, ozg'in yosh erkaklarda|Keksa, ko'p chekadiganlarda|Cho'qqidagi plevra osti bullalarining yorilishi.
+tension-pneumothorax-1gaa1jm|Klapanli pnevmotoraks|Klapanli pnevmotoraks darhol igna bilan ___ qilinadi|dekompressiya|dekompressiyasi, torakostomiya|Har qanday tasviriy tekshiruvdan oldin.
+anterior-mediastinal-mass-1oi8wc7|Ko'ks oralig'ining oldingi hosilasi|Oldingi ko'ks oralig'i hosilasining «to'rt T» siga timoma, teratoma, qalqonsimon bez va yana nima kiradi|Limfoma|Sil kasalligi|Oldingi bo'lim uchun foydali eslatma.
+community-acquired-pneumonia-0ifpmvw|Jamoada orttirilgan pnevmoniya|CURB-65 shkalasiga ong chalkashligi, mochevina, nafas chastotasi, arterial bosim va ___ kiradi|yosh|yoshi, 65 yosh|Yotqizish to'g'risidagi qarorni belgilaydi.
+aspiration-pneumonia-01q58wl|Aspiratsion pnevmoniya|Chalqancha yotgan bemorda aspiratsiya qayerni zararlaydi|O'ng pastki bo'lakning yuqori segmentini|Chap yuqori bo'lakning lingulyar segmentini|O'ng asosiy bronx kengroq va tikroq joylashgan.
+lung-abscess-0246vrk|O'pka abssessi|O'pka abssessi odatda ___ mikroorganizmlar tufayli yuzaga keladi|anaerob|anaeroblar|Sassiq balg'am; klindamitsin bilan davolanadi.
+obstructive-sleep-apnea-0hpmob1|Uyqudagi obstruktiv apnoe|Davolanmagan obstruktiv apnoe nimaga olib keladi|O'pka gipertenziyasi va gipertenziya|Restriktiv o'pka kasalligi va fibroz|Shuningdek kunduzgi uyquchanlik va aritmiya.
+obstructive-sleep-apnea-0bs0wc0|Uyqudagi obstruktiv apnoe|Obstruktiv apnoe ___ bilan tashxislanadi|polisomnografiya|uyqu tekshiruvi|Apnoe-gipopnoe indeksi 5 dan yuqori va belgilar bo'lsa.
+central-sleep-apnea-1oaq76w|Markaziy apnoe|Cheyn-Stoks nafasi nima bilan bog'liq|Yurak yetishmovchiligi va insult|Semizlik va qovurg'a sinishi|Apnoe bilan kuchayib-susayuvchi ko'rinish.
+lung-cancer-screening-08evvg1|O'pka saratoni skriningi|O'pka saratoni skriningida yuqori xavfli chekuvchilarda past dozali ___ ishlatiladi|KT|kt tekshiruvi|50 yoshdan boshlab, chekish tarixi salmoqli bo'lsa, har yili.
+pancoast-tumor-0hwvswh|Penkost o'smasi|Penkost o'smasi nimani bosadi|Yelka chigali va simpatik zanjirni|Diafragma nervi va qizilo'ngachni|Yelka og'rig'i, qo'l kuchsizligi va Gorner sindromi.
+small-cell-lung-cancer-02830my|Mayda hujayrali o'pka saratoni|Mayda hujayrali o'pka saratoni ___ hujayralardan rivojlanadi|neyroendokrin|kulchitskiy|Bu uning paraneoplastik sindromlarini tushuntiradi.
+small-cell-lung-cancer-0pa1575|Mayda hujayrali o'pka saratoni|Bu saraton asosan nima bilan davolanadi|Kimyoterapiya va nurlanish|Faqat jarrohlik rezeksiyasi|Tashxis qo'yilganda deyarli har doim tarqalgan bo'ladi.
+carcinoid-of-the-lung-15gh5f9|O'pka karsinoidi|Bronx karsinoidi xromograninga va ___ ga bo'yaladi|sinaptofizin|sinaptofizinga|Neyroendokrin markerlar; odatda sekin kechadi.
+solitary-pulmonary-nodule-091wnbe|Yakka o'pka tuguni|«Popkorn» kalsinatlari bo'lgan tugun — bu|Xavfsiz gamartoma|Ehtimol xavfli o'sma|Nursimon chetlari esa xavfli o'smadan dalolat beradi.

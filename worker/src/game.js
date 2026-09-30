@@ -40,7 +40,14 @@ const text = (v, max) => (typeof v === "string" ? v.slice(0, max) : "");
 
 /* ── what the creator sends ──────────────────────────────────────────── */
 
-/** A question as the creator's app sent it, checked; or null. */
+/**
+ * A question as the creator's app sent it, checked; or null.
+ *
+ * `uz` is the same question in Uzbek and is optional: a game whose creator
+ * could not load the Uzbek text, or an older app, sends English alone and
+ * everybody reads that. A malformed `uz` is dropped rather than refused, so
+ * one bad translation cannot stop a game.
+ */
 export function cleanQuestion(raw) {
   if (!raw || typeof raw !== "object") return null;
   const q = {
@@ -70,7 +77,34 @@ export function cleanQuestion(raw) {
   } else {
     return null;
   }
+  const uz = cleanUz(raw.uz, q);
+  if (uz) q.uz = uz;
   return q;
+}
+
+/** The Uzbek half of a checked question, or null if it is absent or unusable. */
+function cleanUz(raw, q) {
+  if (!raw || typeof raw !== "object") return null;
+  const uz = {
+    topic: text(raw.topic, 120),
+    q: text(raw.q, 600),
+    explain: text(raw.explain, 600),
+  };
+  if (!uz.topic) return null;
+  if (raw.hideTopic === true) uz.hideTopic = true;
+  if (q.type === "binary") {
+    const ok = Array.isArray(raw.options) && raw.options.length === 2 &&
+      raw.options.every((o) => typeof o === "string" && o && o.length <= 200);
+    if (!ok || (!uz.q && !q.img)) return null;
+    uz.options = [...raw.options];
+  } else {
+    const ok = Array.isArray(raw.accept) && raw.accept.length > 0 && raw.accept.length <= 24 &&
+      raw.accept.every((a) => typeof a === "string" && a && a.length <= 120);
+    if (!ok || typeof raw.answer !== "string" || !raw.answer || raw.answer.length > 120 || !uz.q) return null;
+    uz.accept = [...raw.accept];
+    uz.answer = raw.answer;
+  }
+  return uz;
 }
 
 /** Every question valid, and between one and thirty of them; or null. */
@@ -101,8 +135,15 @@ export function cleanSettings(raw) {
  */
 function present(q, random = Math.random) {
   if (q.type !== "binary" || random() < 0.5) return q;
-  return { ...q, options: [q.options[1], q.options[0]], answer: 1 - q.answer };
+  const out = { ...q, options: [q.options[1], q.options[0]], answer: 1 - q.answer };
+  // Both languages are written right-first, so one swap keeps them in step
+  // with the single answer index.
+  if (q.uz) out.uz = { ...q.uz, options: [q.uz.options[1], q.uz.options[0]] };
+  return out;
 }
+
+/** A question as one player reads it: their language if the game has it. */
+const inLang = (q, lang) => (lang === "uz" && q.uz ? { ...q, ...q.uz } : q);
 
 /* ── the game ────────────────────────────────────────────────────────── */
 
@@ -152,13 +193,17 @@ export function hostOf(game) {
  * A phone joining, or coming back. Coming back works at any point, with
  * the same score; joining fresh only in the lobby.
  */
-export function join(game, { clientId, name, username = null, creatorToken = null }, now) {
+export function join(game, { clientId, name, username = null, creatorToken = null, lang = "en" }, now) {
   if (typeof clientId !== "string" || !CLIENT_ID.test(clientId)) return { error: "bad-client" };
   if (game.phase === "closed") return { error: "missing" };
 
+  // Which language this phone reads the game in. Sent on every join, so
+  // changing it in the app and coming back changes the questions too.
+  const read = lang === "uz" ? "uz" : "en";
+
   const known = game.secrets[clientId];
   if (known && game.players[known]) {
-    Object.assign(game.players[known], { connected: true, name, username });
+    Object.assign(game.players[known], { connected: true, name, username, lang: read });
     game.touchedAt = now;
     return { pid: known };
   }
@@ -166,7 +211,7 @@ export function join(game, { clientId, name, username = null, creatorToken = nul
   if (playersOf(game).length >= MAX_PLAYERS) return { error: "full" };
 
   const pid = `p${++game.seq}`;
-  game.players[pid] = { pid, seq: game.seq, name, username, score: 0, correct: 0, gained: 0, lastCorrect: null, connected: true };
+  game.players[pid] = { pid, seq: game.seq, name, username, lang: read, score: 0, correct: 0, gained: 0, lastCorrect: null, connected: true };
   game.secrets[clientId] = pid;
   if (creatorToken && creatorToken === game.creatorToken && !game.creator) game.creator = pid;
   game.touchedAt = now;
@@ -233,7 +278,9 @@ export function answer(game, pid, msg, now) {
   // server's clock, which can be a fraction of a second off.
   if (now < game.opensAt - 1000 || now > game.endsAt + GRACE_MS) return { error: "not-now" };
 
-  const q = game.questions[game.index];
+  // Graded on the question as this player read it: a typed answer is marked
+  // against their own language's accepted spellings.
+  const q = inLang(game.questions[game.index], game.players[pid].lang);
   let given;
   let correct;
   if (q.type === "binary") {
@@ -375,7 +422,7 @@ export function view(game, pid, now) {
   };
 
   if (game.phase === "question" || game.phase === "reveal") {
-    const q = game.questions[game.index];
+    const q = inLang(game.questions[game.index], game.players[pid]?.lang);
     out.question = {
       type: q.type,
       topic: q.hideTopic ? null : q.topic,

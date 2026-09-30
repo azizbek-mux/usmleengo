@@ -1,0 +1,42 @@
+blood-cultures-129wpzd|Qon ekmasi|Qon ekmasi imkon qadar antibiotikdan ___ olinishi kerak|oldin|avval|Birinchi dozadan keyin natija keskin kamayadi.
+blood-culture-volume-15riybu|Qon ekmasi hajmi|Qon ekmasi natijasida eng muhim omil qaysi|Olingan qonning hajmi|Flakonlarning soni|Ikki xil joydan ikki to'plam olinadi.
+gram-stain-0gvpw26|Gram bo'yash|Grammusbat mikroorganizmlar ___ binafsha bo'yog'ini ushlab qoladi|kristall|kristalli|Qalin peptidoglikani bo'yoqni tutib turadi.
+ziehl-neelsen-14qdbjv|Sil-Nilsen bo'yashi|Kislotaga chidamli tayoqchalar qanday ko'rinadi|Ko'k fonda qizil|Qizil fonda ko'k|Karbol fuksin kislotali spirtga chidamli.
+india-ink-1yt9g5r|Tush bilan bo'yash|Tush Kriptokokkning ___ ni tiniq halqa sifatida ko'rsatadi|kapsula|kapsulasi|Hozir asosan antigen testi bilan almashtirilgan.
+pcr-versus-culture-0tgmqkl|PZR va ekma|PZR ekmadan afzal bo'ladi, agar mikroorganizm qanday bo'lsa|Talabchan bo'lsa yoki bemor antibiotik olsa|Tez o'sadigan va agarda osongina o'sadigan bo'lsa|U nuklein kislotani, tirik yoki o'lik bo'lishidan qat'i nazar aniqlaydi.
+serology-timing-1rkuelu|Serologiya vaqti|Titrning oshishini ko'rsatish uchun o'tkir va ___ namunalar taqqoslanadi|tuzalish davri|konvalessent|Odatda 10-14 kun oralig'ida.
+antibiotic-sensitivity-194yzph|Antibiotikka sezgirlik|Minimal ingibitsiyalovchi konsentratsiya nimani o'lchaydi|O'sishni to'xtatuvchi eng past konsentratsiyani|Mikroorganizmni o'ldiruvchi konsentratsiyani|MBK bakteriotsid faollikni o'lchaydi.
+streptococcus-pneumoniae-vaccine-0ubjsmj|Pnevmokokk vaksinasi|___ pnevmokokk vaksinasi chaqaloqlarda T hujayraga bog'liq immunitet beradi|konyugat|pcv, konyugatli|Polisaxarid vaksinalar ikki yoshgacha ishlamaydi.
+meningococcal-prophylaxis-1n0a8rh|Meningokokk profilaktikasi|Meningokokk kasalligi bilan yaqin kontaktda bo'lganlar nima oladi|Siprofloksatsin yoki rifampitsin|Faqat og'iz orqali penitsillin|Burun-halqumdagi tashuvchilikni kamaytiradi.
+haemophilus-influenzae-1wa4jyo|Haemophilus influenzae|Tiplanmaydigan H. influenzae ko'pincha ___ qo'zishini keltiradi|O'SOK|bronxit, bronxoektaz|Shuningdek o'rta otit va sinusit.
+moraxella-catarrhalis-1af2r9l|Moraxella catarrhalis|Moraxella catarrhalis qanday xususiyatga ega|Deyarli doim beta-laktamaza ishlab chiqaradi|Oddiy penitsillinga ishonchli sezgir bo'ladi|Ko-amoksiklav yoki makrolid talab qiladi.
+staphylococcus-aureus-decolonization-0xwuubl|Oltin stafilokokkni yo'q qilish|MRSA ni yo'q qilishda burunga ___ va antiseptik yuvish qo'llanadi|mupirotsin|mupirotsinli malham|Yuqori xavfli operatsiyadan oldin.
+enterococcus-1w2pxnx|Enterokokk|Enterokokklar tabiatan nimaga chidamli|Sefalosporinlarga|Ampitsillinga|Shuning uchun sefalosporin qo'llash ularni tanlab oladi.
+anaerobic-infection-1drwnla|Anaerob infeksiya|Sassiq hidli yiring va gaz ___ infeksiyadan dalolat beradi|anaerob|anaeroblar|Ko'pincha ichak yoki og'iz florasidan, polimikrob.
+actinomycosis-treatment-0m6ojap|Aktinomikozni davolash|Aktinomikoz nimani talab qiladi|Uzoq muddat yuqori dozada penitsillin|Qisqa kurs penitsillin berish|To'qimaga yomon o'tgani uchun ko'pincha oylar davomida.
+nocardia-12580pl|Nokardiya|Nokardiya odatda o'pkani zararlab, ___ ga tarqalishi mumkin|miya|mns, miyaga|Immuniteti bostirilgan bemorlarda.
+aspergilloma-1qy9wl4|Aspergilloma|Aspergilloma nima|Mavjud kavernadagi zamburug' koptokchasi|O'pka to'qimasining invaziv infeksiyasi|Tasvirda tana holatiga qarab siljiydi.
+invasive-aspergillosis-0lijzq7|Invaziv aspergillyoz|Invaziv aspergillyoz ___ bilan davolanadi|vorikonazol|izavukonazol|Chuqur neytropeniyali bemorlarda.
+candida-auris-1xuvchw|Candida auris|Candida auris nima uchun xavotirli|Ko'p dorilarga chidamli va kasalxonada tarqaladi|Aks holda sog'lom odamlarda juda virulent bo'ladi|Qat'iy izolyatsiya talab qiladi.
+influenza-antigenic-drift-12c6tq9|Gripp antigen siljishi|Antigen ___ har yili gripp vaksinasi kerakligini tushuntiradi|siljishi|drift, siljish|HA va NA dagi asta-sekin nuqtali mutatsiyalar.
+influenza-complications-0ompr4n|Gripp asoratlari|Grippning eng ko'p uchraydigan jiddiy asorati qaysi|Ikkilamchi bakterial pnevmoniya|Tutqanoq bilan kechuvchi ensefalit|Ayniqsa stafilokokk va pnevmokokk keltirgan.
+respiratory-syncytial-virus-0tmww2q|Respirator sinsitial virus|Yuqori xavfli chaqaloqlar RSV profilaktikasi uchun ___ yoki monoklonal antitelo oladi|palivizumab|nirsevimab|Chala tug'ilish va tug'ma yurak nuqsoni.
+norovirus-control-1wpak9v|Norovirusni nazorat qilish|Norovirus epidemiyalari qanday nazorat qilinadi|Izolyatsiya va qo'lni sovun bilan yuvish|Spirtli gel va standart choralar bilan|Spirt unga qarshi yomon ishlaydi.
+rotavirus-0iahpz4|Rotavirus|Rotavirus vaksinasi ___ beriladi va tirik susaytirilgan|og'iz orqali|ichiriladi, og'izdan|Invaginatsiyadan keyin qo'llanmaydi.
+hepatitis-a-prophylaxis-106l6n5|A gepatiti profilaktikasi|A gepatitiga qarshi ta'sirdan keyingi profilaktikada nima qo'llanadi|Vaksina, zaiflarga immunoglobulin bilan|Ikki hafta ichida faqat immunoglobulin|Ikki hafta ichida beriladi.
+human-papillomavirus-vaccine-0o5out2|Odam papilloma virusi vaksinasi|OPV vaksinasi jinsiy aloqa boshlanishidan ___ eng samarali|oldin|avval|Hozir barcha jinslarga taklif qilinadi.
+herpes-zoster-vaccine-1dmalpn|O'rab oluvchi temiratki vaksinasi|Rekombinant temiratki vaksinasi qanday|Immunosupressiyada afzal va xavfsiz|Tirik va bunday holatda qo'llanmaydi|Eski tirik vaksinadan farqli.
+measles-complications-0ch7s3x|Qizamiq asoratlari|O'tkir osti sklerozlovchi ___ — qizamiqning kam uchraydigan, o'limga olib keluvchi kechki asorati|panensefalit|panensefaliti|Infeksiyadan yillar keyin yuz beradi.
+congenital-varicella-07rlu43|Tug'ma suvchechak|Onadagi suvchechak chaqaloq uchun qachon eng xavfli|Tug'ruq vaqti atrofida bo'lganda|Birinchi uchlikda bo'lganda|Chaqaloqqa immunoglobulin talab qiladi.
+immunoglobulin-structure-0n90ipb|Immunoglobulin tuzilishi|Antigen bog'lash joyi og'ir va ___ zanjirlarning o'zgaruvchan qismlaridan hosil bo'ladi|yengil|yengil zanjir|Har bir monomerda ikkita bir xil bog'lash joyi bor.
+fab-versus-fc-0p2bu01|Fab va Fc|Fc qismi nimani belgilaydi|Effektor funksiya va yarim yemirilish davrini|Antigenni bog'lash spetsifikligini belgilaydi|Fab antigenni bog'laydi.
+monoclonal-antibody-naming-15v1qrb|Monoklonal antiteloni nomlash|-___ bilan tugagan monoklonal antitelo to'liq odam antitelosi|umab|-umab|Ximab — ximerik, zumab — insonlashtirilgan.
+biosimilar-120kll9|Biosimilyar|Biosimilyar generikdan nimasi bilan farq qiladi|Biologik mahsulotlar aynan bir xil bo'lolmaydi|Unga kimyoviy jihatdan aynan o'xshash bo'ladi|Taqqoslash tadqiqotlarini talab qiladi.
+immunoglobulin-therapy-1ei9j3d|Immunoglobulin davosi|Yuqori dozadagi vena ichi immunoglobulini autoimmun kasallikni ___ uchun ishlatiladi|modulyatsiya qilish|bostirish, davolash|Shuningdek yetishmovchilikda antitelo o'rnini bosish uchun.
+complement-inhibition-0zsws1h|Komplementni bloklash|Ekulizumab nima xavfini oshiradi|Meningokokk infeksiyasi|Silning qayta faollashuvi|Boshlashdan oldin emlash va profilaktika bering.
+jak-inhibitors-0mimx3t|JAK ingibitorlari|JAK ingibitorlari hujayra ichidagi ___ signalizatsiyasini bloklaydi|sitokin|sitokinlar|Revmatoid artritda qo'llanadigan og'iz orqali kichik molekulalar.
+checkpoint-inhibitor-colitis-0c187aj|Nazorat nuqtasi ingibitori koliti|Immun nazorat nuqtasi koliti nima bilan davolanadi|Kortikosteroid va dorini to'xtatish bilan|Antibiotik va qo'llab-quvvatlovchi davo bilan|Steroidga chidamli bo'lsa, infliksimab.
+anaphylaxis-to-biologics-038jxsg|Biologik dorilarga anafilaksiya|Monoklonal antitelolarga infuziya reaksiyalari ___ va tezlikni sekinlashtirish bilan kamayadi|premedikatsiya|antihistaminlar, steroidlar|Ko'pchiligi haqiqiy IgE allergiyasi emas.
+vaccine-adjuvant-0ewq8bi|Vaksina adyuvanti|Adyuvant nima uchun qo'shiladi|Immun javobni kuchaytirish uchun|Vaksinani saqlab turish uchun|Alyuminiy tuzlari klassik misol.
+live-vaccine-interval-13ktv51|Tirik vaksinalar orasidagi oraliq|Birga berilmagan ikki tirik vaksina ___ hafta bilan ajratilishi kerak|4|to'rt|Aks holda interferon ikkinchisini susaytirishi mumkin.
+immunodeficiency-red-flags-176nysk|Immun tanqisligining «qizil bayroqlari»|Qaysi biri birlamchi immun tanqisligidan dalolat beradi?|Takroriy chuqur yoki g'ayrioddiy infeksiyalar|Yuqori nafas yo'llarining tez-tez infeksiyasi|Shuningdek vazn ortmasligi va oilaviy anamnez.

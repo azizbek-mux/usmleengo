@@ -21,9 +21,12 @@ import AdCard from "./AdCard.jsx";
 import { ScreenHead, StreakPill } from "./Chrome.jsx";
 import { Byline, Sheet } from "./Sheet.jsx";
 import { Gear, SearchIcon } from "./Icons.jsx";
+import { t } from "../lib/i18n.js";
 import { haptic } from "../lib/telegram.js";
 
-const GRADE_NAME = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
+const gradeName = (g) => ({
+  again: t("Again", "Qayta"), hard: t("Hard", "Qiyin"), good: t("Good", "Yaxshi"), easy: t("Easy", "Oson"),
+})[g];
 
 const Back = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
@@ -93,8 +96,8 @@ function DeckSetup({ onDone }) {
   return (
     <div className="screen onboard">
       <div className="onboard-top">
-        <div className="setup-title">Medical English</div>
-        <p className="onboard-sub">How many new cards a day?</p>
+        <div className="setup-title">{t("Medical English", "Tibbiy ingliz tili")}</div>
+        <p className="onboard-sub">{t("How many new cards a day?", "Kuniga nechta yangi kartochka?")}</p>
       </div>
 
       <div className="num-hero">
@@ -103,24 +106,24 @@ function DeckSetup({ onDone }) {
           type="text"
           inputMode="numeric"
           value={text}
-          aria-label="New cards a day"
+          aria-label={t("New cards a day", "Kuniga yangi kartochkalar")}
           onChange={(e) => setText(e.target.value.replace(/[^0-9]/g, "").slice(0, 3))}
           onFocus={(e) => e.target.select()}
           onKeyDown={(e) => { if (e.key === "Enter") e.currentTarget.blur(); }}
         />
-        <div className="num-hero-unit">cards a day</div>
+        <div className="num-hero-unit">{t("cards a day", "ta kartochka kuniga")}</div>
       </div>
 
       <div className="setup-note">
-        Type any number. Each new word comes back several more times before it
-        sticks, so 20 new is closer to 60 cards of work in a day.
+        {t("Type any number. Each new word comes back several more times before it sticks, so 20 new is closer to 60 cards of work in a day.",
+          "Istalgan sonni yozing. Har bir yangi so'z yodda qolguncha yana bir necha marta qaytadi, shuning uchun 20 ta yangi so'z kuniga taxminan 60 ta kartochka ishini anglatadi.")}
       </div>
 
       <div className="pinned">
         <button className="btn btn-primary" disabled={!valid} onClick={() => onDone(n)}>
-          Start studying
+          {t("Start studying", "O'qishni boshlash")}
         </button>
-        <div className="cta-note">You can change it anytime under the gear.</div>
+        <div className="cta-note">{t("You can change it anytime under the gear.", "Buni istalgan vaqtda ⚙️ orqali o'zgartirishingiz mumkin.")}</div>
       </div>
     </div>
   );
@@ -128,62 +131,62 @@ function DeckSetup({ onDone }) {
 
 function OptionsSheet({ config, counts, highOnly, highCount, onHighOnly, onChange, onReset, onClose }) {
   return (
-    <Sheet title="Deck options" onClose={onClose}>
+    <Sheet title={t("Deck options", "Kartochkalar sozlamalari")} onClose={onClose}>
       <button
         className={`deck-toggle${highOnly ? " on" : ""}`}
         onClick={() => { haptic("light"); onHighOnly(!highOnly); }}
         aria-pressed={highOnly}
       >
         <span>
-          <span className="deck-toggle-t">High yield only</span>
+          <span className="deck-toggle-t">{t("High yield only", "Faqat eng muhim atamalar")}</span>
           <span className="deck-toggle-n">
             {highOnly
-              ? `Studying the ${highCount.toLocaleString()} highest-yield terms`
-              : `Studying all ${counts.total.toLocaleString()} terms`}
+              ? t(`Studying the ${highCount.toLocaleString()} highest-yield terms`, `Eng muhim ${highCount.toLocaleString()} ta atama o'rganilmoqda`)
+              : t(`Studying all ${counts.total.toLocaleString()} terms`, `Barcha ${counts.total.toLocaleString()} ta atama o'rganilmoqda`)}
           </span>
         </span>
         <span className="switch"><span className="knob" /></span>
       </button>
 
-      <div className="section-label" style={{ marginTop: 4 }}>New cards per day</div>
+      <div className="section-label" style={{ marginTop: 4 }}>{t("New cards per day", "Kuniga yangi kartochkalar")}</div>
       <NumberField
-        label="New cards per day"
+        label={t("New cards per day", "Kuniga yangi kartochkalar")}
         value={config.newPerDay ?? 20}
         min={0}
         max={NEW_MAX}
-        unit="cards a day"
+        unit={t("cards a day", "ta kartochka kuniga")}
         onCommit={(n) => onChange({ newPerDay: n })}
       />
       <div className="cta-note" style={{ textAlign: "left", marginTop: 8 }}>
-        How many words you meet for the first time each day. Every one comes
-        back several more times, so 20 new is closer to 60 cards of work.
+        {t("How many words you meet for the first time each day. Every one comes back several more times, so 20 new is closer to 60 cards of work.",
+          "Har kuni birinchi marta ko'radigan so'zlaringiz soni. Ularning har biri yana bir necha marta qaytadi, shuning uchun 20 ta yangi so'z taxminan 60 ta kartochka ishini anglatadi.")}
       </div>
 
-      <div className="section-label">Maximum reviews per day</div>
+      <div className="section-label">{t("Maximum reviews per day", "Kuniga ko'pi bilan takrorlash")}</div>
       <NumberField
-        label="Maximum reviews per day"
+        label={t("Maximum reviews per day", "Kuniga ko'pi bilan takrorlash")}
         value={config.revPerDay}
         min={0}
         max={REV_MAX}
-        unit="reviews a day"
+        unit={t("reviews a day", "ta takrorlash kuniga")}
         onCommit={(n) => onChange({ revPerDay: n })}
       />
       <div className="cta-note" style={{ textAlign: "left", marginTop: 8 }}>
-        A ceiling for days when a backlog has built up.
-        {counts.reviewBacklog > 0 && ` You have ${counts.reviewBacklog.toLocaleString()} waiting.`}
+        {t("A ceiling for days when a backlog has built up.", "Takrorlanmagan kartochkalar to'planib qolgan kunlar uchun chegara.")}
+        {counts.reviewBacklog > 0 && t(` You have ${counts.reviewBacklog.toLocaleString()} waiting.`, ` Sizda ${counts.reviewBacklog.toLocaleString()} tasi kutmoqda.`)}
       </div>
 
-      <div className="section-label">This deck</div>
+      <div className="section-label">{t("This deck", "Ushbu to'plam")}</div>
       <div className="stat-grid">
-        <div className="mini"><b>{counts.seen.toLocaleString()}</b><span>studied</span></div>
-        <div className="mini"><b>{counts.known.toLocaleString()}</b><span>mature</span></div>
-        <div className="mini"><b>{counts.total.toLocaleString()}</b><span>in deck</span></div>
+        <div className="mini"><b>{counts.seen.toLocaleString()}</b><span>{t("studied", "o'rganilgan")}</span></div>
+        <div className="mini"><b>{counts.known.toLocaleString()}</b><span>{t("mature", "o'zlashtirilgan")}</span></div>
+        <div className="mini"><b>{counts.total.toLocaleString()}</b><span>{t("in deck", "to'plamda")}</span></div>
       </div>
 
-      <button className="btn btn-danger" onClick={onReset}>Reset this deck</button>
+      <button className="btn btn-danger" onClick={onReset}>{t("Reset this deck", "To'plamni qaytadan boshlash")}</button>
       <div className="cta-note">
-        Forgets every card’s schedule in Medical English. Your quiz progress is
-        untouched. Cannot be undone.
+        {t("Forgets every card’s schedule in Medical English. Your quiz progress is untouched. Cannot be undone.",
+          "Tibbiy ingliz tilidagi barcha kartochkalar jadvali o'chiriladi. Testlardagi natijalaringizga tegilmaydi. Buni qaytarib bo'lmaydi.")}
       </div>
 
       <Byline />
@@ -198,7 +201,7 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
   return (
     <div className="screen">
       <div className="quiz-top">
-        <button className="close" onClick={onQuit} aria-label="Back to deck"><Back /></button>
+        <button className="close" onClick={onQuit} aria-label={t("Back to deck", "To'plamga qaytish")}><Back /></button>
         <div className="lane-counts">
           <span className="lane new">{counts.newCount}</span>
           <span className="lane learn">{counts.learnCount}</span>
@@ -210,11 +213,11 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
         {!shown ? (
           <button className="card-front" onClick={onShow}>
             {card.yield === "high" && (
-              <div className="card-tags"><span className="card-tag hi">high yield</span></div>
+              <div className="card-tags"><span className="card-tag hi">{t("high yield", "muhim")}</span></div>
             )}
             <div className="card-term">{card.term}</div>
             {card.ipa && <div className="card-ipa">{card.ipa}</div>}
-            <div className="card-hint">Tap to see the meaning</div>
+            <div className="card-hint">{t("Tap to see the meaning", "Ma'nosini ko'rish uchun bosing")}</div>
           </button>
         ) : (
           <div className="card-back">
@@ -237,12 +240,12 @@ function Studying({ card, state, shown, counts, onShow, onRate, onQuit }) {
             {GRADES.map((g) => (
               <button key={g} className={`rate ${g}`} onClick={() => onRate(g)}>
                 <span className="rate-i">{formatInterval(ivls[g])}</span>
-                <span className="rate-n">{GRADE_NAME[g]}</span>
+                <span className="rate-n">{gradeName(g)}</span>
               </button>
             ))}
           </div>
         ) : (
-          <button className="btn btn-primary" onClick={onShow}>Show meaning</button>
+          <button className="btn btn-primary" onClick={onShow}>{t("Show meaning", "Ma'nosini ko'rsatish")}</button>
         )}
       </div>
     </div>
@@ -349,24 +352,24 @@ export default function English({ streak, onStudied, onFocus }) {
   if (status !== "ready" || !remoteChecked) {
     return (
       <div className="screen">
-        <ScreenHead title="Medical English" />
+        <ScreenHead title={t("Medical English", "Tibbiy ingliz tili")} />
         <div className="empty" style={{ marginTop: 60 }}>
           {status !== "error" ? (
             <>
               <div className="empty-big">📖</div>
-              <div>Loading {GLOSSARY_COUNT.toLocaleString()} terms…</div>
-              <div className="sub" style={{ marginTop: 6 }}>First time only — it is cached after this.</div>
+              <div>{t(`Loading ${GLOSSARY_COUNT.toLocaleString()} terms…`, `${GLOSSARY_COUNT.toLocaleString()} ta atama yuklanmoqda…`)}</div>
+              <div className="sub" style={{ marginTop: 6 }}>{t("First time only — it is cached after this.", "Faqat birinchi marta — keyin telefonda saqlanadi.")}</div>
             </>
           ) : (
             <>
               <div className="empty-big">😕</div>
-              <div>Couldn’t load the glossary.</div>
+              <div>{t("Couldn’t load the glossary.", "Lug'atni yuklab bo'lmadi.")}</div>
               <button
                 className="btn btn-primary"
                 style={{ marginTop: 20, maxWidth: 240, marginInline: "auto" }}
                 onClick={() => { setStatus("loading"); loadGlossary().then(() => setStatus("ready")).catch(() => setStatus("error")); }}
               >
-                Retry
+                {t("Retry", "Qayta urinish")}
               </button>
             </>
           )}
@@ -419,14 +422,14 @@ export default function English({ streak, onStudied, onFocus }) {
           streak is the one thing both halves share — a day of flashcards
           keeps it alive — so it is the one thing shown. */}
       <ScreenHead
-        title="Medical English"
+        title={t("Medical English", "Tibbiy ingliz tili")}
         sub={highOnly
-          ? `High yield only · ${pool.length.toLocaleString()} terms`
-          : `${cards.length.toLocaleString()} clinical terms`}
+          ? t(`High yield only · ${pool.length.toLocaleString()} terms`, `Faqat eng muhimlari · ${pool.length.toLocaleString()} ta atama`)
+          : t(`${cards.length.toLocaleString()} clinical terms`, `${cards.length.toLocaleString()} ta klinik atama`)}
         right={
           <div className="stats">
             <StreakPill days={streak} />
-            <button className="stat gear" onClick={() => { haptic("light"); setOptions(true); }} aria-label="Deck options">
+            <button className="stat gear" onClick={() => { haptic("light"); setOptions(true); }} aria-label={t("Deck options", "Kartochkalar sozlamalari")}>
               <Gear />
             </button>
           </div>
@@ -437,23 +440,23 @@ export default function English({ streak, onStudied, onFocus }) {
 
       {done > 0 && (
         <div className="done-note">
-          {done} card{done > 1 ? "s" : ""} answered.
-          {waiting > 0 ? " More are waiting." : " Nothing left due today."}
+          {t(`${done} card${done > 1 ? "s" : ""} answered.`, `${done} ta kartochkaga javob berildi.`)}
+          {waiting > 0 ? t(" More are waiting.", " Yana kartochkalar kutmoqda.") : t(" Nothing left due today.", " Bugunga boshqa kartochka qolmadi.")}
         </div>
       )}
 
       <div className="deck-stats">
         <div className="deck-stat">
           <div className="deck-v new">{counts.newCount.toLocaleString()}</div>
-          <div className="deck-l">new</div>
+          <div className="deck-l">{t("new", "yangi")}</div>
         </div>
         <div className="deck-stat">
           <div className="deck-v learn">{counts.learnCount.toLocaleString()}</div>
-          <div className="deck-l">learning</div>
+          <div className="deck-l">{t("learning", "o'rganilmoqda")}</div>
         </div>
         <div className="deck-stat">
           <div className="deck-v due">{counts.dueCount.toLocaleString()}</div>
-          <div className="deck-l">to review</div>
+          <div className="deck-l">{t("to review", "takrorlash")}</div>
         </div>
       </div>
 
@@ -461,8 +464,9 @@ export default function English({ streak, onStudied, onFocus }) {
         <div className="deck-bar-fill" style={{ width: `${(counts.seen / counts.total) * 100}%` }} />
       </div>
       <div className="deck-bar-note">
-        {counts.seen.toLocaleString()} of {counts.total.toLocaleString()} studied
-        {counts.known > 0 && ` · ${counts.known.toLocaleString()} mature`}
+        {t(`${counts.seen.toLocaleString()} of ${counts.total.toLocaleString()} studied`,
+          `${counts.total.toLocaleString()} tadan ${counts.seen.toLocaleString()} tasi o'rganilgan`)}
+        {counts.known > 0 && t(` · ${counts.known.toLocaleString()} mature`, ` · ${counts.known.toLocaleString()} tasi o'zlashtirilgan`)}
       </div>
 
       <div className="search" style={{ marginTop: 18 }}>
@@ -470,7 +474,7 @@ export default function English({ streak, onStudied, onFocus }) {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Look up a word — EN yoki UZ"
+          placeholder={t("Look up a word — EN yoki UZ", "So'z qidiring — EN yoki UZ")}
           autoComplete="off"
           autoCorrect="off"
           spellCheck="false"
@@ -490,21 +494,23 @@ export default function English({ streak, onStudied, onFocus }) {
             ))}
           </div>
         ) : (
-          <div className="empty"><div>Nothing for “{query.trim()}”.</div></div>
+          <div className="empty"><div>{t(<>Nothing for “{query.trim()}”.</>, <>«{query.trim()}» bo'yicha hech narsa topilmadi.</>)}</div></div>
         )
       ) : null}
 
       <div className="pinned">
         <button className="btn btn-primary" onClick={start} disabled={!canStudy}>
-          {canStudy ? "Study now" : waiting > 0 ? "Next card in a few minutes" : "Finished for today"}
+          {canStudy
+            ? t("Study now", "Hozir o'qish")
+            : waiting > 0 ? t("Next card in a few minutes", "Keyingi kartochka bir necha daqiqada") : t("Finished for today", "Bugunga tugadi")}
         </button>
         <div className="cta-note">
           {waiting > 0
-            ? `${waiting.toLocaleString()} card${waiting > 1 ? "s" : ""} to go today`
+            ? t(`${waiting.toLocaleString()} card${waiting > 1 ? "s" : ""} to go today`, `Bugun yana ${waiting.toLocaleString()} ta kartochka`)
             : counts.newRemaining > 0
-              ? `${counts.newRemaining.toLocaleString()} new words waiting for tomorrow`
-              : "Every card here is scheduled for a later day"}
-          {counts.newLimited && waiting > 0 && ` · ${deck.config.newPerDay} new a day`}
+              ? t(`${counts.newRemaining.toLocaleString()} new words waiting for tomorrow`, `Ertaga ${counts.newRemaining.toLocaleString()} ta yangi so'z kutmoqda`)
+              : t("Every card here is scheduled for a later day", "Barcha kartochkalar keyingi kunlarga rejalashtirilgan")}
+          {counts.newLimited && waiting > 0 && t(` · ${deck.config.newPerDay} new a day`, ` · kuniga ${deck.config.newPerDay} ta yangi`)}
         </div>
       </div>
 

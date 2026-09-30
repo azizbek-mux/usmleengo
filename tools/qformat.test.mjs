@@ -69,5 +69,18 @@ check("a picture question needs no words", !F.parseQuestions([{ text: "1." }, { 
 check("an empty file has no questions", read("").length === 0 && read("just some text").length === 0);
 check("Windows line endings", read("1. Q?\r\nA) x\r\nB) y\r\nAnswer: B")[0].answer === 1);
 
+console.log("\nwritten in Uzbek");
+const uz = read(F.FORMAT_EXAMPLE_UZ);
+check("the Uzbek example reads as three questions, none flagged", uz.length === 3 && uz.every((q) => !q.problem), JSON.stringify(uz.map((q) => q.problem)));
+check("Javob: gives the answer", uz[0].answer === 0 && uz[0].options.length === 4);
+check("Izoh: gives the explanation", uz[0].explain === "Hayz ko'radigan ayolda mikrotsitar anemiya.");
+check("Qabul: gives the other spellings", uz[1].type === "typed" && uz[1].accept.includes("niatsin") && uz[1].accept.includes("B3"));
+check("a * marks the right option in Uzbek too", uz[2].answer === 1);
+check("Savol 1. numbers a question", read("Savol 1. Qaysi biri?\nA) x\nB) y\nJavob: B")[0].answer === 1);
+check("To'g'ri javob: with any apostrophe", ["'", "‘", "’", "ʻ"].every((a) => read(`1. Q?\nA) x\nB) y\nTo${a}g${a}ri javob: A`)[0].answer === 0));
+check("(to'g'ri) after an option marks it", read("1. Q?\nA) x\nB) y (to'g'ri)")[0].answer === 1);
+check("Mavzu: names the topic", read("1. Q?\nA) x\nB) y\nJavob: A\nMavzu: Kardiologiya")[0].topic === "Kardiologiya");
+check("a question that begins \"To'g'ri\" is not its own answer", read("1. To'g'ri fikrni tanlang\nA) x\nB) y\nJavob: A")[0].q === "To'g'ri fikrni tanlang");
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

@@ -73,7 +73,14 @@ export function pickGameQuestions(bank, { tags = [], qtype = "binary", count = 1
   return shuffle(pool).slice(0, count).map(forGame);
 }
 
-/** Only what a game needs of a question. */
+/**
+ * Only what a game needs of a question, in both languages.
+ *
+ * The English is the question itself; `uz` carries the Uzbek text beside it,
+ * where the bank has a translation (q.uzt, from bilingualBank). The server
+ * shows and grades each player in the language their app is in, so friends
+ * who read different languages can play the same game together.
+ */
 export function forGame(q) {
   const out = { id: q.id, type: q.type, topic: q.topic, q: q.q, explain: q.explain || "" };
   if (q.hideTopic) out.hideTopic = true;
@@ -84,6 +91,27 @@ export function forGame(q) {
   } else {
     out.answer = q.answer;
     out.accept = q.accept;
+  }
+  const uz = uzOf(q);
+  if (uz) out.uz = uz;
+  return out;
+}
+
+/**
+ * The Uzbek half of a question. A two-option question's options are written
+ * right-first in both languages, so the one `answer` index above holds for
+ * either — and the server's shuffle moves both together. A picture question
+ * has no wording to translate.
+ */
+function uzOf(q) {
+  const u = q.uzt;
+  if (!u) return null;
+  const out = { topic: u.t, q: q.img ? q.q : u.q, explain: u.e || "" };
+  if (u.h === 1) out.hideTopic = true;
+  if (q.type === "binary") out.options = u.o;
+  else {
+    out.answer = u.a;
+    out.accept = u.c;
   }
   return out;
 }

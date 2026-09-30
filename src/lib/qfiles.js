@@ -13,6 +13,8 @@ export class FileError extends Error {
   }
 }
 
+import { t } from "./i18n.js";
+
 export const ACCEPTED = ".docx,.pdf,.html,.htm,.txt";
 
 function kindOf(name, type) {
@@ -254,10 +256,15 @@ async function readPdf(buffer) {
 }
 
 /** What went wrong, in words a teacher can act on. */
-export const FILE_REASONS = {
-  "old-word": "That’s an old Word file (.doc). In Word, choose Save As → Word Document (.docx), then try again.",
-  "unknown-type": "Only Word (.docx), PDF, web pages (.html) and text (.txt) can be read.",
-  broken: "That file couldn’t be opened. It may be damaged — try saving it again.",
-  scanned: "This PDF is a scan, with no text in it to read. Use the Word file it came from, or type the questions.",
-  "old-phone": "This phone can’t unpack Word files here. Save it as PDF or text instead.",
-};
+export const FILE_REASONS = () => ({
+  "old-word": t("That’s an old Word file (.doc). In Word, choose Save As → Word Document (.docx), then try again.",
+    "Bu eski Word fayli (.doc). Word'da «Saqlash sifatida» → «Word hujjati (.docx)» ni tanlang va qayta urinib ko'ring."),
+  "unknown-type": t("Only Word (.docx), PDF, web pages (.html) and text (.txt) can be read.",
+    "Faqat Word (.docx), PDF, veb-sahifa (.html) va matn (.txt) fayllarini o'qish mumkin."),
+  broken: t("That file couldn’t be opened. It may be damaged — try saving it again.",
+    "Faylni ochib bo'lmadi. U shikastlangan bo'lishi mumkin — qaytadan saqlab ko'ring."),
+  scanned: t("This PDF is a scan, with no text in it to read. Use the Word file it came from, or type the questions.",
+    "Bu PDF skanerlangan — unda o'qiladigan matn yo'q. Uning asl Word faylidan foydalaning yoki savollarni yozing."),
+  "old-phone": t("This phone can’t unpack Word files here. Save it as PDF or text instead.",
+    "Bu telefon Word fayllarini ocha olmaydi. Uni PDF yoki matn sifatida saqlang."),
+});

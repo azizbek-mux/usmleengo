@@ -1,0 +1,52 @@
+# Quloq-tomoq-burun va ko'z kasalliklari — chuqurlashtirilgan qism (qarang: TERMS.md)
+
+ossicles-13yvo3y|Eshitish suyakchalari|Uchta eshitish suyakchasi — bolg'acha, sandon va ___|uzangi|uzangi suyakchasi|Tovushni oval teshikka kuchaytirib yetkazadi.
+otosclerosis-164ovpr|Otoskleroz|Otoskleroz nimaga olib keladi|Uzangi qotib qolishidan o'tkazuvchi karlik|Tuk hujayralari nobud bo'lishidan neyrosensor karlik|Ko'pincha yosh kattalarda, homiladorlikda kuchayadi.
+presbycusis-0asfuxv|Presbiakuziya|Presbiakuziya avval ___ chastotali tovushlarni eshitishni buzadi|yuqori|baland|Chig'anoq asosidagi tashqi tuk hujayralarining yoshga bog'liq yo'qolishi.
+noise-induced-hearing-loss-013cisz|Shovqindan karlik|Shovqindan karlikda audiogrammada xarakterli pasayish qayerda bo'ladi|4000 Gs da|1000 Gs da|Klassik audiogramma «tishchasi».
+meniere-disease-0htlug7|Menyer kasalligi|Menyer kasalligi ichki quloqda ortiqcha ___ tufayli yuzaga keladi|endolimfa|endolimfatik suyuqlik|Bosh aylanishi, quloq shovqini, to'lishish hissi va o'zgaruvchan karlik.
+benign-paroxysmal-positional-vertigo-0tv3tmv|Xavfsiz paroksizmal holat bosh aylanishi|Bu holat nima bilan davolanadi|Epli bo'yicha joyiga keltirish usuli|Uzoq muddatli vestibulyar sedativlar|Otokoniyalar yarim doira kanaliga siljigan.
+vestibular-neuritis-0cxaqk9|Vestibulyar nevrit|Vestibulyar nevrit bosh aylanishini ___ yo'qolishisiz beradi|eshitish|eshitishning|Labirintitda esa eshitish ham pasayadi.
+cholesteatoma-17gz21j|Xolesteatoma|Xolesteatoma nima bilan namoyon bo'ladi|Og'riqsiz sassiq ajralma va karlik|Isitma va bosh aylanishi bilan kuchli quloq og'rig'i|Eshitish suyakchalarini yemiradi va yuz nervigacha yetib borishi mumkin.
+acoustic-neuroma-19pocb2|Akustik neyroma|Vestibulyar shvannoma bir tomonlama ___ karlik va quloq shovqinini beradi|neyrosensor|neyrosensor turdagi|Ko'prik-miyacha burchagida joylashadi.
+mastoiditis-0v5thvn|Mastoidit|Mastoidit nimadan shubha qilinadi|Quloq oldinga turib, orqasida shish paydo bo'lishi|Quloq pardasi mutlaqo normal holda yakka og'riq|Davolanmagan o'rta otitning asorati.
+sinusitis-02nxgrh|Sinusit|O'tkir bakterial sinusitdan belgilar ___ kundan oshganda shubha qilinadi|10|o'n|Yoki dastlabki yaxshilanishdan keyin holat yomonlashsa.
+sinusitis-0v6i14s|Sinusit|Sinusitning eng ko'p uchraydigan bakterial qo'zg'atuvchisi|Streptococcus pneumoniae|Pseudomonas aeruginosa|Keyin H. influenzae va Moraxella.
+nasal-polyps-1jtm538|Burun poliplari|Burun poliplari astma va aspiringa sezgirlik bilan ___ triadasini tashkil qiladi|Samter|samter triadasi, aspirin|Aspirin qo'zg'atadigan nafas yo'llari kasalligi.
+nasal-polyps-in-a-child-16js22b|Boladagi burun poliplari|Boladagi burun poliplari nimani tekshirishni talab qiladi|Mukovistsidozni|Allergik rinitni|Sog'lom bolalarda kam uchraydi.
+allergic-rhinitis-0w0l05n|Allergik rinit|Doimiy allergik rinitda birinchi tanlov — burunga ___|kortikosteroid|steroid|Yolg'iz antigistaminlardan samaraliroq.
+epistaxis-1adtm6c|Burundan qon ketishi|Orqa qon ketishi kimlarda ko'proq uchraydi|Gipertenziyali keksa bemorlarda|Burnini kovlaydigan bolalarda|Ko'proq qon ketadi, ko'pincha tamponada kerak.
+tonsillitis-1nm753x|Tonzillit|Sentor mezonlariga isitma, bodomchalarda ajralma, og'riqli tugunlar va ___ yo'qligi kiradi|yo'tal|yo'talning|Streptokokk testini o'tkazishni belgilaydi.
+peritonsillar-abscess-1osb26f|Paratonzillyar abssess|Paratonzillyar abssess nima bilan davolanadi|Igna bilan so'rish yoki drenaj va antibiotik|To'liq o'n kun faqat og'iz orqali antibiotik|Trizm va «issiq kartoshka» ovozi.
+retropharyngeal-abscess-0earttq|Halqum orqasi abssessi|Halqum orqasi abssessi ___ ga tarqalib, mediastinit chaqirishi mumkin|ko'ks oralig'i|ko'krak|«Xavfli bo'shliq» infeksiyasi.
+laryngeal-cancer-1smq119|Halqum saratoni|Chekuvchida uch haftadan ortiq davom etgan xirillash nimani talab qiladi|Laringoskopiyani|Tinchlantirishni|Tovush yorig'i o'smalari ovoz o'zgarishi bilan erta namoyon bo'ladi.
+recurrent-laryngeal-nerve-1swwerx|Qaytuvchi halqum nervi|Qaytuvchi halqum nervi ___ operatsiyasida xavf ostida bo'ladi|qalqonsimon bez|tireoidektomiya|Ikki tomonlama shikastlanish stridor beradi va shoshilinch nafas yo'li yordamini talab qiladi.
+vocal-cord-palsy-0hrjvxo|Tovush burmasi falaji|Chap qaytuvchi nerv falajida nimani tasvirlash kerak|Ko'krak qafasini, aortopulmonal oyna bilan|Faqat bo'yin va qalqonsimon bez sohasini|Chap nerv aorta ravog'i ostidan o'raladi.
+salivary-gland-tumors-0x8vy9r|So'lak bezi o'smalari|So'lak bezining eng ko'p uchraydigan o'smasi — ___ adenoma|pleomorf|pleomorf adenoma|Xavfsiz, ammo to'liq olinmasa qaytalanadi.
+parotid-surgery-1gidw3w|Quloq oldi bezi operatsiyasi|Quloq oldi bezini olib tashlash qaysi nervni shikastlash xavfini tug'diradi|Yuz nervini|Til osti nervini|Nerv bez ichidan o'tadi.
+sialolithiasis-1dw31xy|Sialolitiaz|So'lak toshlari ko'pincha ___ bezni zararlaydi|jag' osti|jag' osti bezi|Uning nayi yuqoriga qarab boradi va sekreti quyuqroq.
+head-and-neck-cancer-1rw84lo|Bosh va bo'yin saratoni|OPV musbat halqum saratoni qanday kechadi|Prognozi yaxshiroq|Prognozi yomonroq|Bemorlar yoshroq, ko'pincha chekmaydi.
+aqueous-humour-17zdety|Ko'z ichi suyuqligi|Ko'z ichi suyuqligini ___ tanasi ishlab chiqaradi|kiprikli|kiprikli tana|Trabekulyar to'r va Shlemm kanali orqali chiqadi.
+accommodation-0q8rojs|Akkomodatsiya|Yaqin narsaga fokuslash uchun kiprikli mushak nima qiladi|Qisqarib, boylamlarni bo'shashtiradi|Bo'shashib, boylamlarni taranglashtiradi|Shunda gavhar sharsimonroq bo'ladi.
+hyperopia-04nd6eu|Giperopiya|Giperopiya ___ linza bilan tuzatiladi|qavariq|yig'uvchi, plyus|Ko'z juda kalta; miopiyada esa botiq linza kerak.
+astigmatism-1k63os7|Astigmatizm|Astigmatizm nimadan kelib chiqadi|Shox pardaning notekis qavariqligidan|Ko'z olmasining cho'zilganidan|Silindrik linza bilan tuzatiladi.
+pupillary-light-reflex-1ttw8nc|Qorachiqning yorug'lik refleksi|Yorug'lik refleksining keltiruvchi qismi — ___ juft bosh miya nervi|II|2, ikki, ko'rish|Olib ketuvchi qismi esa III juft nerv.
+relative-afferent-pupillary-defect-0t1reix|Nisbiy afferent qorachiq nuqsoni|Markus Gunn qorachig'i nimadan dalolat beradi|Ko'rish nervi yoki og'ir to'r parda kasalligidan|Ptoz bilan kechuvchi III juft nerv falajidan|Chiroqni almashtirib sinash bilan aniqlanadi.
+open-angle-glaucoma-1fswmnl|Ochiq burchakli glaukoma|Ochiq burchakli glaukoma avval ___ ko'rish maydonini zararlaydi|periferik|chetdagi|Markaziy ko'rish kechki bosqichgacha saqlanadi.
+glaucoma-treatment-0l0lw35|Glaukomani davolash|Latanoprost bosimni qanday pasaytiradi|Uveoskleral oqimni kuchaytirib|Suyuqlik ishlab chiqarilishini kamaytirib|Shuningdek rangdor pardani to'qlashtiradi va kiprikni uzaytiradi.
+cataract-0a8ue6l|Katarakta|Diabet kataraktani gavharda ___ to'planishi orqali tezlashtiradi|sorbitol|sorbitolning|Aldozareduktaza orqali.
+age-related-macular-degeneration-1fn4a01|Yoshga bog'liq makula degeneratsiyasi|Ho'l makula degeneratsiyasi nima bilan davolanadi|Ko'z ichiga VEGF ga qarshi in'eksiyalar|Faqat o'choqli lazer fotokoagulyatsiyasi|Quruq shaklining aniq davosi yo'q.
+macular-degeneration-1dfb982|Makula degeneratsiyasi|Makula degeneratsiyasi ___ ko'rishni yemiradi, chetdagi ko'rish saqlanadi|markaziy|markazdagi|Glaukomaning aksi.
+retinal-detachment-1ksacsl|To'r pardaning ko'chishi|To'r pardaning ko'chishi klassik holda nima bilan namoyon bo'ladi|Chaqnashlar, «uchuvchi nuqtalar» va «parda»|Asta-sekin, og'riqsiz xiralashib borishi|Shoshilinch oftalmologik holat.
+diabetic-retinopathy-0ksson6|Diabetik retinopatiya|Diabetda ko'rish pasayishining eng ko'p uchraydigan sababi — makula ___|shishi|shish, shishishi|Proliferativ kasallikning o'zidan ham ko'proq.
+hypertensive-retinopathy-1lczpf3|Gipertonik retinopatiya|«Mis sim» va arteriya-vena kesishmasida siqilish nimadan dalolat beradi|Surunkali gipertenziyadan|O'tkir gipertonik krizdan|Ko'rish nervi diski shishi xavfli gipertenziyani bildiradi.
+uveitis-1s9cprw|Uveit|Oldingi uveit HLA-B___ bilan bog'liq kasalliklarda uchraydi|27|b27|Ankilozlovchi spondilit, reaktiv artrit, ichak yallig'lanishi.
+conjunctivitis-03kizxy|Konyunktivit|Yiringli ajralma va qovoqlarning yopishib qolishi nimadan dalolat beradi|Bakterial konyunktivitdan|Virusli konyunktivitdan|Virusli turida ajralma suvsimon va quloq oldi tuguni kattalashadi.
+herpes-keratitis-0ekwgkl|Gerpetik keratit|Gerpetik keratitda fluoressein bilan bo'yaganda ___ yara ko'rinadi|daraxtsimon|dendritik|Mahalliy steroidlar mumkin emas.
+corneal-abrasion-0jvy6ho|Shox parda shilinishi|Shox parda shilinishida mahalliy steroidlar qanday|Qo'llash mumkin emas|Birinchi tanlov|Ular bitishni sekinlashtiradi va infeksiya xavfini tug'diradi.
+orbital-cellulitis-1c9hh5v|Ko'z kosasi sellyuliti|Ko'z kosasi sellyuliti ko'z ___ da og'riq va ekzoftalm bilan ajralib turadi|harakati|harakatlanishi|Septum oldidagi sellyulitda ko'z harakati og'rimaydi.
+papilledema-0yitr0d|Ko'rish nervi diski shishi|Ko'rish nervi diski shishi qanday bo'ladi|Deyarli har doim ikki tomonlama|Odatda faqat bir tomonlama|Kalla ichi bosimi oshganini aks ettiradi.
+retinoblastoma-0cuyla5|Retinoblastoma|Ikki tomonlama retinoblastoma har doim ___ bo'ladi|irsiy|germinal, nasldan o'tgan|RB1 genining irsiy mutatsiyasi va ikkinchi somatik «zarba».
+amblyopia-1jcypy7|Ambliopiya|Ambliopiya qaysi yoshgacha davolanishi kerak|Taxminan 7-8 yoshgacha|O'smirlik davriga qadar|Ko'rish po'stlog'i rivojlanib bo'lgach, u qaytmas bo'ladi.
+strabismus-1v3emc3|Strabizm|___ oylikdan keyin ham saqlangan qiyshiqlik yo'llanmani talab qiladi|4|to'rt, 4-6|Undan oldinroq o'tkinchi qiyshiqlik normal bo'lishi mumkin.
+leukocoria-0gw1d0a|Leykokoriya|Dunyo bo'yicha leykokoriyaning eng ko'p uchraydigan sababi|Tug'ma katarakta|Retinoblastoma|Ammo har doim avval retinoblastoma inkor qilinishi kerak.

@@ -20,19 +20,27 @@
 //
 // No AI, by the owner's choice: what cannot be read is flagged, never
 // guessed, and the teacher fixes it in the preview.
+//
+// Uzbek works the same way: "Savol 1.", "Javob: B", "To'g'ri javob: B",
+// "Qabul: …", "Izoh: …", "Mavzu: …", and "(to'g'ri)" after an option. The
+// apostrophe may be typed as ' ‘ ’ or ʻ — phones differ.
+
+import { t } from "./i18n.js";
 
 export const MAX_OPTIONS = 10;
 
-const QUESTION = /^(?:q(?:uestion)?\s*)?(\d{1,3})\s*[.):\]-]\s*(.*)$/i;
+const Q = "['‘’ʻ`]"; // the apostrophe in o' and g', however it was typed
+const QUESTION = /^(?:(?:q(?:uestion)?|savol)\s*)?(\d{1,3})\s*[.):\]-]\s*(.*)$/i;
 const OPTION = /^[([]?([a-j])\s*[.):\]-]\s*(.+)$/i;
-const MARKED = /\s*(?:\*+|\((?:correct|right|answer)\)|\[(?:correct|right|answer)\]|✓|✔)\s*$/i;
-// "Answer: A", "Answer:A", "Ans B", "Key - C"; but "Correct" and "Right" only
-// with a colon, so a question that begins "Correct statement about…" is not
-// taken for its own answer.
-const ANSWER = /^(?:(?:answer|ans|key)(?:\s*[:.=-]\s*|\s+)|(?:correct|right)(?:\s+answer)?\s*[:=-]\s*)(.+)$/i;
-const ACCEPT = /^(?:accept|also\s+accept|alternatives?)\s*[:=-]\s*(.+)$/i;
-const EXPLAIN = /^(?:explanation|explain|rationale|why|reason)\s*[:=-]\s*(.*)$/i;
-const TOPIC = /^(?:topic|subject)\s*[:=-]\s*(.+)$/i;
+const MARKED = new RegExp(`\\s*(?:\\*+|\\((?:correct|right|answer|to${Q}g${Q}ri)\\)|\\[(?:correct|right|answer|to${Q}g${Q}ri)\\]|✓|✔)\\s*$`, "i");
+// "Answer: A", "Answer:A", "Ans B", "Key - C", "Javob: A"; but "Correct",
+// "Right" and "To'g'ri" only with a colon, so a question that begins
+// "Correct statement about…" is not taken for its own answer.
+const ANSWER = new RegExp(
+  `^(?:(?:answer|ans|key|javob)(?:\\s*[:.=-]\\s*|\\s+)|(?:correct|right|to${Q}g${Q}ri)(?:\\s+(?:answer|javob))?\\s*[:=-]\\s*)(.+)$`, "i");
+const ACCEPT = /^(?:accept|also\s+accept|alternatives?|qabul(?:\s+qilinadi)?|muqobil)\s*[:=-]\s*(.+)$/i;
+const EXPLAIN = /^(?:explanation|explain|rationale|why|reason|izoh|tushuntirish)\s*[:=-]\s*(.*)$/i;
+const TOPIC = /^(?:topic|subject|mavzu|fan)\s*[:=-]\s*(.+)$/i;
 
 /** One letter, A–J, as an option index; or null. */
 function letterIndex(s) {
@@ -63,18 +71,20 @@ function finish(q) {
       else answer = -2; // an answer that names no option
     }
     out.answer = answer;
-    if (options.length < 2) problem = "Only one option — a question needs at least two.";
-    else if (options.length > MAX_OPTIONS) problem = `More than ${MAX_OPTIONS} options.`;
-    else if (answer === -2) problem = `The answer “${q.answer}” isn’t one of the options.`;
-    else if (answer < 0) problem = "No right answer marked.";
-    else if (answer >= options.length) problem = `The answer ${String.fromCharCode(65 + answer)} has no option.`;
+    if (options.length < 2) problem = t("Only one option — a question needs at least two.", "Faqat bitta variant — savolda kamida ikkita bo'lishi kerak.");
+    else if (options.length > MAX_OPTIONS) problem = t(`More than ${MAX_OPTIONS} options.`, `${MAX_OPTIONS} tadan ortiq variant.`);
+    else if (answer === -2) problem = t(`The answer “${q.answer}” isn’t one of the options.`, `«${q.answer}» javobi variantlar orasida yo'q.`);
+    else if (answer < 0) problem = t("No right answer marked.", "To'g'ri javob belgilanmagan.");
+    else if (answer >= options.length) {
+      problem = t(`The answer ${String.fromCharCode(65 + answer)} has no option.`, `${String.fromCharCode(65 + answer)} javobiga mos variant yo'q.`);
+    }
   } else {
     out.type = "typed";
     out.answer = (q.answer || "").trim();
     out.accept = [out.answer, ...q.accept].map((a) => a.trim()).filter(Boolean);
-    if (!out.answer) problem = "No options, and no answer to type.";
+    if (!out.answer) problem = t("No options, and no answer to type.", "Variantlar ham, yoziladigan javob ham yo'q.");
   }
-  if (!out.q && !out.image) problem = problem || "The question has no words.";
+  if (!out.q && !out.image) problem = problem || t("The question has no words.", "Savol matni yo'q.");
   out.problem = problem;
   return out;
 }
@@ -170,3 +180,25 @@ Explanation: Pellagra — the three D's.
 A) Phenytoin
 B) Ethosuximide *
 C) Carbamazepine`;
+
+/** The same example in Uzbek, with the Uzbek keywords. */
+export const FORMAT_EXAMPLE_UZ = `1. 25 yoshli ayolda holsizlik va konyunktivalar rangparligi kuzatiladi. Eng ehtimoliy yetishmovchilik?
+A) Temir
+B) B12 vitamini
+C) Foliy kislotasi
+D) Rux
+Javob: A
+Izoh: Hayz ko'radigan ayolda mikrotsitar anemiya.
+
+2. Demensiya, diareya va dermatit = ___ vitamini yetishmovchiligi
+Javob: B3
+Qabul: niatsin, vitamin b3
+Izoh: Pellagra — uchta «D».
+
+3. Absans tutqanoqlarida birlamchi preparat?
+A) Fenitoin
+B) Etosuksimid *
+C) Karbamazepin`;
+
+/** The example in the app's language. */
+export const formatExample = () => t(FORMAT_EXAMPLE, FORMAT_EXAMPLE_UZ);
