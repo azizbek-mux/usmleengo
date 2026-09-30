@@ -463,8 +463,23 @@ teacher, 10 classes a student.
   burst.
   Setup, once: a random `WEBHOOK_SECRET` Worker secret, then
   `POST /bot/setup` with header `x-setup-key: <that secret>` points the
-  bot's webhook here and sets its commands. Telegram signs every webhook
-  call with the same secret, and anything else is refused.
+  bot's webhook here and sets its commands — the English list, and the
+  Uzbek one Telegram shows to phones set to Uzbek. Telegram signs every
+  webhook call with the same secret, and anything else is refused.
+  `worker/setup-bot.ps1` does the whole thing on Windows:
+
+  ```powershell
+  powershell -ExecutionPolicy Bypass -File worker\setup-bot.ps1
+  ```
+
+  It rotates the secret rather than asking for it, because Cloudflare never
+  shows a stored secret back: a fresh value is generated, saved, and used
+  once for the call, printed nowhere. Two things that bite on Windows —
+  call `npx.cmd`, not `npx`, or PowerShell's execution policy blocks npm's
+  `.ps1` shim; and sign in with `npx.cmd wrangler login` first if
+  wrangler's session has lapsed, because it cannot renew itself inside a
+  piped command and asks for a `CLOUDFLARE_API_TOKEN` instead. The bot is
+  deaf for the second between the two steps, so pick a quiet moment.
 - **Homework:** a package with a due date. Each student's first try is
   handed in and graded on the server; later tries, and the Practice list,
   are practice. The teacher sees each student's score (late ones marked)
