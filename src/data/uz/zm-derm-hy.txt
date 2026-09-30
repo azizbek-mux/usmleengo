@@ -285,3 +285,48 @@ keloid-picture-0hxuv93|Keloid rasmi||Keloid|Gipertrofik chandiq|Quloqdagi chandi
 keloid-collagen-0v2bplh|Keloid kollageni|Keloid qaysi tur kollagenning tartibsiz o'sishi|I va III|II va IV|Gipertrofik chandiq yara ichida qoladi, keloid esa chiqib ketadi.
 pseudofolliculitis-barbae-0u7255c|Soqol psevdofollikuliti||Soqol psevdofollikuliti|Yuzdagi oddiy akne|Soqol sohasidagi papulalar, jingalak soch teriga qayta kirib ketgan.
 pseudofolliculitis-treatment-0k8ueov|Soqol psevdofollikulitini davolash|Soqoldagi «ustara bo'rtmalari» qanday davolanadi|Soqolni o'sishiga qo'yib berish bilan|Yanada yaqinroq soqol olish bilan|Soch teriga qayta kirishdan to'xtashi kerak.
+arterial-ulcer-1q7h6nf|Arterial yara||Arterial yara|Vena yarasi|Chetlari tik, kichik, «o'yib olingandek» yara, barmoqlarda.
+arterial-ulcer-history-0mfr7al|Arterial yara anamnezi|Arterial yara qanday anamnez bilan keladi|Yurganda boldir og'rig'i bilan|Kechga borib to'piq shishishi bilan|Boldirdagi yaltiroq, tuksiz teri bilan birga.
+venous-ulcer-0zjlt4u|Vena yarasi||Vena yarasi|Arterial yara|Ichki to'piqdagi yirik, yiringli yara, atrofi jigarrang bo'yalgan.
+venous-ulcer-pigmentation-041yej2|Vena yarasidagi pigmentatsiya|Vena yarasi atrofidagi jigarrang bo'yalish nima|Dimlanishdan chiqqan gemosiderin|Quyoshdan hosil bo'lgan melanin|Surunkali vena kasalligining zich shishi.
+varicose-veins-1r0umpl|Venalarning varikoz kengayishi||Venalarning varikoz kengayishi|Oyoqning chuqur vena trombozi|Oyoq bo'ylab ko'rinib turgan kengaygan, buralgan venalar.
+varicose-vein-investigation-1d9tmc3|Varikoz venalarni tekshirish|Varikoz venalar nima bilan tekshiriladi|Dupleks ultratovush bilan|Kontrastli venografiya bilan|Va jarrohlik emas, kompression paypoq bilan davolanadi.
+superficial-thrombophlebitis-014w62n|Yuza tromboflebit|Oyoq bo'ylab ko'tarilgan og'riqli, paypaslanadigan tizimcha nima bilan davolanadi|Teri ostiga enoksaparin|Kompression paypoq|Bekilgan vena, hatto yuzasi ham, geparin talab qiladi.
+buerger-disease-picture-1ns0hor|Byurger kasalligi rasmi||Obliteratsiyalovchi tromboangiit|Barmoqlardagi Reyno hodisasi|Ko'p chekuvchida qorayib ketgan barmoq uchlari. Reyno rangini o'zgartiradi va qaytadi.
+buerger-disease-treatment-1sjppfn|Byurger kasalligini davolash|Obliteratsiyalovchi tromboangiit qanday davolanadi|Chekishni tashlash bilan|Uzoq muddatli antikoagulyatsiya bilan|Boshqa hech narsa kechishni o'zgartirmaydi.
+charcot-joint-0kcxp19|Sharko bo'g'imi||Neyropatik yara|Arterial yara|Oyog'ini sezmaydigan diabetli bemorning deformatsiyalangan to'pig'idagi yara.
+livedo-reticularis-0p90jx0|To'rsimon livedo||To'rsimon livedo|Sellyulit|Oyoqlar bo'ylab to'rga o'xshash binafsha naqsh.
+cryoglobulinaemia-complement-0np9s1c|Krioglobulinemiyada komplement|C gepatitida past C4 bilan kechgan to'rsimon livedo nima|Krioglobulinemiya|Tizimli qizil yuguruk|Sovuqda cho'kma beradigan immun komplekslar.
+pemberton-sign-145wlp9|Pemberton belgisi||Pemberton belgisi|Yuzdagi rozatsea|Qo'llar ko'tarilganda yuzning qizarishi — venalar qaytara olmaydi.
+caput-medusae-0tyobuw|«Meduza boshi»||«Meduza boshi»|Striyalar|Kindikdan atrofga tarqalgan kengaygan venalar.
+caput-medusae-vessels-1oew9ld|«Meduza boshi» tomirlari|«Meduza boshi»ni qaysi venalar hosil qiladi|Yuza qorin usti venalari|Pastki kovak vena|Portal gipertenziya qonni aylanma yo'ldan haydaydi.
+palmar-erythema-0s85ps6|Kaft eritemasi||Kaft eritemasi|Reyno hodisasi|Ikki kaftning tenar va gipotenar sohalari qizargan.
+palmar-erythema-mechanism-1jkuuh7|Kaft eritemasining mexanizmi|Jigar kasalligidagi kaft eritemasini nima keltiradi|Jigar parchalay olmagan estrogen|Teriga cho'kib qolgan temir|Yonida o'rgimchaksimon nevuslar va ginekomastiya.
+splinter-haemorrhages-14v9sgw|Tirnoq ostidagi qon quyilishlari||Tirnoq ostidagi qon quyilishlari|Tirnoq ostidagi melanoma|Tirnoq chiziqlari bo'ylab ketgan ingichka to'q yo'llar.
+endocarditis-first-step-1tslj9o|Endokarditda birinchi qadam|Tish davolagandan keyingi isitma va yangi shovqin nimani talab qiladi|Qon ekmasini|Darhol antibiotik berishni|Avval ekma, keyin qizilo'ngach orqali exoKG.
+cholesterol-emboli-1dh6zm2|Xolesterin emboliyasi||Xolesterin emboliyasi|Sovuqda kuyish|Aorta operatsiyasidan keyin pulsi saqlangan, olaqura binafsha oyoq.
+fat-embolism-rash-1ewfetf|Yog' emboliyasidagi toshma||Yog' emboliyasi|Immun trombotsitopenik purpura|Uzun suyak singanidan keyin ko'krakdagi petexiyalar.
+fat-embolism-platelets-1eq1xxq|Yog' emboliyasida trombotsitlar|Yog' emboliyasida trombotsitlar nega kamayadi|Ko'mik yog'i ularni bog'lab oladi|Ko'mikning o'zini yemiradi|Toshma past trombotsitdan emas, mayda tomirlarning bekilishidan.
+suture-granuloma-0jrm4e9|Chok granulemasi||Chok granulemasi|Chandiq keloidi|Eski kesma chizig'ida gistiotsitlar o'ragan begona modda.
+casal-necklace-02vaq09|Kazal marjoni||Pellagra|Qora akantoz|Bo'yin atrofidagi quyosh tegadigan to'q, qipiqli halqa.
+pellagra-triad-1q0enwz|Pellagra uchligi|Pellagra — dermatit, diareya va yana nima|Demensiya|Karlik|Niatsin, ya'ni B3 vitamini.
+zinc-deficiency-signs-0mk828c|Rux tanqisligi belgilari|Qo'ltiqdagi toshma, soch to'kilishi va hid sezmaslik nimani bildiradi|Rux tanqisligini|Niatsin tanqisligini|Anosmiya va gipogeviziya birga yuradi.
+scurvy-bleeding-0tm4te9|Singadagi qon ketish|Ko'karish, soch follikulasi atrofidan va milkdan qon ketish nima|Singa|Keksalik purpurasi|Follikula atrofidagi qon quyilishi hal qiluvchi belgi.
+acute-gout-0bg8n5d|O'tkir podagra||O'tkir podagra|Sellyulit|Bitta qizargan, issiq, juda og'riqli bosh barmoq bo'g'imi.
+acute-gout-treatment-1uo59qo|O'tkir podagrani davolash|O'tkir podagra xuruji nima bilan davolanadi|Indometatsin yoki kolxitsin|Kundalik allopurinol|Allopurinol xurujlar orasida beriladi, xuruj paytida emas.
+first-degree-burn-1uqo6jy|Birinchi darajali kuyish|Tananing ko'p qismidagi quyosh kuyishi qanday davolanadi|Qo'llab-quvvatlovchi davo bilan|Kumush sulfadiazin bilan|Birinchi darajali kuyish faqat epidermisni tutadi.
+second-degree-burn-1njn9t0|Ikkinchi darajali kuyish|Pufak beradigan va og'riqli kuyish qayerga yetgan|So'rg'ichsimon dermaga|Teri osti yog'iga|Chuqurroq qismiy kuyish oqarib, og'riqni yo'qotadi.
+third-degree-burn-pain-0jerj6u|Uchinchi darajali kuyishdagi og'riq|To'liq qalinlikdagi kuyish qanday|Og'riqsiz|Eng og'riqlisi|Nerv uchlari derma bilan birga yo'qolgan.
+parkland-formula-0bo7hhk|Parkland formulasi|Kuyishdagi suyuqlik — 4 ml x kg dagi vazn x kuygan ___ foizi|tana yuzasi|tana yuza maydoni|Yarmi birinchi sakkiz soatda.
+tight-junction-function-0ssvciu|Zich birikmaning vazifasi|Hujayralar orasidan moddaning o'tishiga nima to'sqinlik qiladi|Zich birikma|Yoriqsimon birikma|Klaudin va okkludinlar; yallig'lanishli ichak kasalligida yo'qoladi.
+adherens-junction-0q3g07u|Yopishuvchi birikma|Bir hujayraning aktinini ikkinchisiga nima bog'laydi|Yopishuvchi birikma|Oddiy desmosoma|E-kadgerinlar, va ularga kalsiy kerak.
+gap-junction-protein-0brntr3|Yoriqsimon birikma oqsili|Yoriqsimon birikmalar nimadan tuzilgan|Konneksinlardan|Kadgerinlardan|Yurak mushagi elektr jihatdan shu bilan hamnafas bo'ladi.
+vitamin-d-first-step-1jgr8e5|D vitaminining birinchi bosqichi|D vitamini sintezi qaysi qavatda boshlanadi|Bazal qavatda|Shox qavatda|7-degidroxolesterin, UVB nuri ta'sirida.
+macule-versus-patch-11gop75|Dog' va yirik dog'|Bir santimetrdan katta yassi o'choq nima|Yirik dog'|Mayda dog'|«Sutli kofe» dog'i — yirik dog'.
+papule-versus-plaque-00tl7eo|Papula va pilakcha|Bir santimetrdan katta ko'tarilgan o'choq nima|Pilakcha|Papula|Psoriaz pilakcha beradi.
+vesicle-versus-bulla-029qkwi|Pufakcha va pufak|Besh millimetrdan katta tiniq pufak nima|Pufak|Pufakcha|Pufakchani gerpes, pufakni pemfigus beradi.
+battle-sign-1au9mpn|Battl belgisi||Battl belgisi|Oddiy ko'karish|Bosh jarohatidan keyin so'rg'ichsimon o'siq ustidagi ko'karish — kalla asosi singan.
+cushing-reflex-0rulbxr|Kushing refleksi|Bosh jarohatidan keyin yuqori bosim, sekin puls va sekin nafas nimani bildiradi|Kalla ichi bosimi oshganini|Ko'p qon yo'qotilganini|Kushing refleksi.
+androgenetic-alopecia-0f32q5g|Androgenetik alopetsiya|Chakka va tepadagi soch to'kilishi qanday irsiylanadi|Ko'p genli|Bitta dominant gen bilan|Digidrotestosteronga sezgirlik; mahalliy minoksidil sinaladi.
+post-inflammatory-hyperpigmentation-1p2nn4u|Yallig'lanishdan keyingi giperpigmentatsiya|Kuyish bitganidan oylar keyin atrofidan to'qroq bo'lgan teri nima|Yallig'lanishdan keyingi giperpigmentatsiya|Chandiq o'rnida paydo bo'lgan melanoma|U o'z-o'zidan o'tib ketadi.
+melasma-0crnesh|Melazma|Kontratseptiv ichadigan ayolning yonoqlaridagi simmetrik jigarrang dog'lar nima|Melazma|Yallig'lanishdan keyingi giperpigmentatsiya|Estrogen va quyosh; dorini to'xtatish mumkin.

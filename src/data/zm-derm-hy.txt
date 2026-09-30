@@ -343,3 +343,59 @@ I|Keloid picture|derm|hdp58a.webp|A keloid|A hypertrophic scar|Lumpy scar tissue
 B|Keloid collagen|derm,histo|A keloid is disorganised growth of collagen types|I and III|II and IV|A hypertrophic scar stays inside the wound; a keloid does not.
 I|Pseudofolliculitis barbae|derm|hdp58b.webp|Pseudofolliculitis barbae|Acne vulgaris|Papules through the beard area where curly hairs have grown back into the skin.
 B|Pseudofolliculitis treatment|derm|Razor bumps in the beard are treated by|Letting the beard grow|Shaving closer|The hair has to stop re-entering the skin.
+
+# -- ulcers and the vessels under them ----------------------------------
+I|Arterial ulcer|derm,vascular|hdp59a.webp|An arterial ulcer|A venous ulcer|A small punched-out ulcer with clean edges, out on the toes.
+B|Arterial ulcer history|derm,vascular|An arterial ulcer comes with a history of|Pain in the calves on walking|Swollen ankles by evening|And shiny, hairless skin over the shin.
+I|Venous ulcer|derm,vascular|hdp59b.webp|A venous ulcer|An arterial ulcer|A large, sloughy ulcer at the inner ankle, with brown staining around it.
+B|Venous ulcer pigmentation|derm,vascular|The brown staining around a venous ulcer is|Haemosiderin from congestion|Melanin from the sun|The brawny oedema of chronic venous disease.
+I|Varicose veins|derm,vascular|hdp59c.webp|Varicose veins|Deep vein thrombosis|Visibly dilated, tortuous veins running down the leg.
+B|Varicose vein investigation|derm,vascular|Varicose veins are investigated with|Duplex ultrasonography|Contrast venography|And treated with compression stockings, not surgery.
+B|Superficial thrombophlebitis|derm,vascular,pharm|A tender palpable cord running up the leg is treated with|Subcutaneous enoxaparin|Compression stockings|An occluded vein wants heparin, even a superficial one.
+I|Buerger disease picture|derm,vascular|hdp60b.webp|Thromboangiitis obliterans|Raynaud phenomenon|Blackened fingertips in a heavy smoker. Raynaud changes colour and comes back.
+B|Buerger disease treatment|derm,vascular|Thromboangiitis obliterans is treated by|Stopping smoking|Long-term anticoagulation|Nothing else alters the course.
+I|Charcot joint|derm,endocrine,bone|hdp61a.webp|A neuropathic ulcer|An arterial ulcer|An ulcer over a deformed ankle in a diabetic who cannot feel her feet.
+B|Charcot joint cause|derm,endocrine,bone|The ulcer of a Charcot joint is caused by|Loss of joint sensation|Loss of arterial supply|The x-ray shows the tarsals in disarray.
+I|Livedo reticularis|derm,vascular,immuno|hdp61b.webp|Livedo reticularis|Cellulitis|A mottled, net-like purple pattern over the legs.
+B|Cryoglobulinaemia complement|derm,immuno,liver|Livedo reticularis in hepatitis C with a low C4 is|Cryoglobulinaemia|Systemic lupus erythematosus|Immune complexes that fall out of solution in the cold.
+
+# -- what the face and hands say about the chest and the liver ----------
+I|Pemberton sign|derm,oncology,resp|hdp62a.webp|Pemberton sign|Rosacea|The face going red when the arms are raised - the veins cannot drain.
+B|Pemberton sign meaning|derm,oncology,resp|A positive Pemberton sign in a smoker means|Superior vena cava obstruction|Simple facial flushing|A Pancoast tumour pressing on the vein.
+I|Caput medusae|derm,liver|hdp62b.webp|Caput medusae|Striae|Dilated veins radiating from the umbilicus.
+B|Caput medusae vessels|derm,liver|The veins of caput medusae are|The superficial epigastric veins|The inferior vena cava|Portal hypertension pushing blood the long way round.
+I|Palmar erythema|derm,liver|hdp62c.webp|Palmar erythema|Raynaud phenomenon|Both palms red over the thenar and hypothenar eminences.
+B|Palmar erythema mechanism|derm,liver,endocrine|Palmar erythema in liver disease is caused by|Oestrogen the liver cannot clear|Iron deposited in the skin|Spider naevi and gynaecomastia come with it.
+I|Splinter haemorrhages|derm,cardio|hdp63a.webp|Splinter haemorrhages|A subungual melanoma|Thin dark streaks under the nail, running with its lines.
+B|Endocarditis first step|derm,cardio,micro|Fever and a new murmur after dental work needs|Blood cultures|Antibiotics straight away|Cultures first, then a transoesophageal echo.
+I|Cholesterol emboli|derm,vascular|hdp63b.webp|Cholesterol emboli|Frostbite|A mottled, purple foot with the pulses still present, after aortic surgery.
+I|Fat embolism rash|derm,ortho,resp|hdp64a.webp|Fat embolism|Immune thrombocytopenic purpura|Petechiae over the chest after a long-bone fracture.
+B|Fat embolism platelets|derm,ortho,heme|The platelet count falls in fat embolism because marrow fat|Binds the platelets up|Destroys the marrow|The rash is from fat blocking small vessels, not from the low count.
+I|Suture granuloma|derm,surgery,histo|hdp64b.webp|A suture granuloma|A keloid|Foreign material ringed by histiocytes along an old incision.
+
+# -- nutrition, and the last of the skin --------------------------------
+I|Casal necklace|derm,vitamins|hdp65a.webp|Pellagra|Acanthosis nigricans|A dark, scaling band around the neck where the sun reaches.
+B|Pellagra triad|derm,vitamins,gi|Pellagra is dermatitis, diarrhoea and|Dementia|Deafness|Niacin, vitamin B3.
+B|Zinc deficiency signs|derm,vitamins|A rash in the armpits with hair loss and no sense of smell means|Zinc deficiency|Niacin deficiency|Anosmia and hypogeusia together.
+B|Scurvy bleeding|derm,vitamins|Bruising with bleeding around the hair follicles and from the gums is|Scurvy|Senile purpura|Perifollicular haemorrhage is the giveaway.
+I|Acute gout|derm,rheum|hdp65b.webp|Acute gout|Cellulitis|One red, hot, exquisitely tender big toe joint.
+B|Acute gout treatment|derm,rheum,pharm|An acute attack of gout is treated with|Indomethacin or colchicine|Allopurinol|Allopurinol is for between attacks, not during one.
+
+# -- burns, junctions and the layers ------------------------------------
+B|First-degree burn|derm,emergency|Sunburn over most of the body is treated with|Supportive care|Silver sulfadiazine|A first-degree burn involves the epidermis alone.
+B|Second-degree burn|derm,emergency|A burn that blisters and is painful has reached|The papillary dermis|The subcutaneous fat|Deeper partial burns turn white and stop hurting.
+B|Third-degree burn pain|derm,emergency|A full-thickness burn is|Painless|The most painful of all|The nerve endings have gone with the dermis.
+G|Parkland formula|derm,emergency|Fluid for a burn is 4 mL x weight in kg x the percentage of ___ burned|body surface area|bsa,surface area|Half in the first eight hours.
+B|Tight junction function|derm,histo|What stops solute passing between cells is|The tight junction|The gap junction|Claudins and occludins; lost in inflammatory bowel disease.
+B|Adherens junction|derm,histo|What ties the actin of one cell to the next is|The adherens junction|The desmosome|E-cadherins, and they need calcium.
+B|Gap junction protein|derm,histo,cardio|Gap junctions are built from|Connexins|Cadherins|How heart muscle keeps electrical step.
+B|Vitamin D first step|derm,biochem,vitamins|Vitamin D synthesis begins in the|Stratum basale|Stratum corneum|7-dehydrocholesterol, turned by UVB light.
+B|No sunlight|derm,biochem,vitamins|Without sunlight the skin cannot make|Cholecalciferol|7-dehydrocholesterol|The substrate is still there; the product is not.
+B|Macule versus patch|derm|A flat lesion larger than a centimetre is|A patch|A macule|A cafe au lait spot is a patch.
+B|Papule versus plaque|derm|A raised lesion larger than a centimetre is|A plaque|A papule|Psoriasis makes plaques.
+B|Vesicle versus bulla|derm|A clear blister larger than five millimetres is|A bulla|A vesicle|Pemphigus and pemphigoid make bullae; herpes makes vesicles.
+I|Battle sign|derm,neuro,emergency|hdp68a.webp|Battle sign|A simple bruise|Bruising over the mastoid after a head injury - the base of the skull is fractured.
+B|Cushing reflex|derm,neuro,emergency|High blood pressure with a slow pulse and slow breathing after head injury means|Raised intracranial pressure|Blood loss|The Cushing reflex.
+B|Androgenetic alopecia|derm|Receding temples and thinning on the crown are inherited|Polygenically|As a single dominant gene|Sensitivity to dihydrotestosterone; topical minoxidil may be tried.
+B|Post-inflammatory hyperpigmentation|derm|Skin darker than its surroundings months after a burn healed is|Post-inflammatory hyperpigmentation|A melanoma|It fades by itself.
+B|Melasma|derm,gyn|Symmetrical brown patches on the cheeks of a woman on the pill are|Melasma|Post-inflammatory hyperpigmentation|Oestrogen and sun; stopping the pill is an option.
