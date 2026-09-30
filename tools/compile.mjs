@@ -193,6 +193,19 @@ for (const f of files) {
   text.split(/\r?\n/).forEach((line, i) => parseLine(line, basename(f), i + 1));
 }
 
+/* ── where each question is filed ─────────────────────────────────────────
+   Two axes, one of each per question: the organ system it is about, and the
+   discipline it is asked from. Both are worked out from the tags by the
+   rules in src/lib/taxonomy.js, not written by hand, so a question cannot
+   drift out of step with its own tags. See the notes there for why an organ
+   always beats a "(General Principles)" bucket. */
+const { fileQuestion, SYSTEMS, SUBJECTS } = await import(new URL("../src/lib/taxonomy.js", import.meta.url).href);
+for (const q of questions) {
+  const filed = fileQuestion(q);
+  q.system = filed.system;
+  q.subject = filed.subject;
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} error(s):`);
   for (const e of errors.slice(0, 40)) console.error("  " + e);
@@ -309,6 +322,16 @@ console.log(`  tags    : ${tags.size}`);
 console.log(`  skipped : ${dupes} verbatim + ${factDupes} same-fact duplicate(s)`);
 console.log(`  bytes   : ${(JSON.stringify(questions).length / 1024).toFixed(0)} KB`);
 console.log(`  topic hidden : ${questions.filter((x) => x.hideTopic).length} (topic would reveal the answer)`);
+const countBy = (key) => questions.reduce((m, q) => m.set(q[key], (m.get(q[key]) || 0) + 1), new Map());
+const systemCounts = countBy("system");
+const subjectCounts = countBy("subject");
+const emptySystems = SYSTEMS.filter((x) => !systemCounts.get(x.id));
+const emptySubjects = SUBJECTS.filter((x) => !subjectCounts.get(x.id));
+console.log(`  systems : ${SYSTEMS.length - emptySystems.length} of ${SYSTEMS.length} in use` +
+            `, ${systemCounts.get("miscellaneous") || 0} filed as Miscellaneous (multisystem)`);
+for (const x of emptySystems) console.log(`    empty: ${x.en}`);
+console.log(`  subjects: ${SUBJECTS.length - emptySubjects.length} of ${SUBJECTS.length} in use`);
+for (const x of emptySubjects) console.log(`    empty: ${x.en}`);
 const uzCount = Object.keys(uz).length;
 console.log(`  uzbek   : ${uzCount} of ${questions.length} translated (${Math.floor((100 * uzCount) / questions.length)}%)` +
             (uzOrphans.length ? `, ${uzOrphans.length} line(s) for questions that no longer exist` : ""));
