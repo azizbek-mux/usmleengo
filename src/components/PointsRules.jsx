@@ -21,7 +21,7 @@ export default function PointsRules() {
         <span>
           {t(
             <><b>Right answer:</b> {SCORE.base} points, plus up to {SCORE.bonus} for speed. {top} if instant, {at(3)} at 3 seconds, {at(10)} at 10 seconds — never less than {SCORE.base}.</>,
-            <><b>To'g'ri javob:</b> {SCORE.base} ball, tezlik uchun yana {SCORE.bonus} ballgacha. Bir zumda bo'lsa {top}, 3 soniyada {at(3)}, 10 soniyada {at(10)} ball — hech qachon {SCORE.base} dan kam emas.</>,
+            <><b>To'g'ri javob:</b> {SCORE.base} ball, tezlik uchun {SCORE.bonus} ballgacha qo'shimcha. Qanchalik tez javob bersangiz, shunchalik ko'p: bir zumda — {top}, 3 soniyada — {at(3)}, 10 soniyada — {at(10)} ball. Eng kami — {SCORE.base} ball.</>,
           )}
         </span>
       </div>
@@ -30,7 +30,7 @@ export default function PointsRules() {
         <span>
           {t(
             <><b>Wrong answer:</b> −{SCORE.wrongTap} points.</>,
-            <><b>Noto'g'ri javob:</b> −{SCORE.wrongTap} ball.</>,
+            <><b>Noto'g'ri javob:</b> {SCORE.wrongTap} ball ayriladi.</>,
           )}
         </span>
       </div>
@@ -39,14 +39,14 @@ export default function PointsRules() {
         <span>
           {t(
             <><b>Typed answer:</b> a right one is worth {SCORE.typed} times a tapped one at the same speed. A wrong one costs nothing.</>,
-            <><b>Yozma javob:</b> to'g'risi shu tezlikdagi test javobidan {String(SCORE.typed).replace(".", ",")} baravar ko'p. Noto'g'risi hech narsa olmaydi.</>,
+            <><b>Yozma javob:</b> to'g'ri bo'lsa, shu tezlikdagi test javobidan {String(SCORE.typed).replace(".", ",")} baravar ko'p ball beradi. Noto'g'ri bo'lsa, ball ayrilmaydi.</>,
           )}
         </span>
       </div>
       <p className="pr-note">
         {t(
           "Your points never go below 0. The clock stops when you answer, so reading the explanation isn't counted. The same question again counts half as much, and an answer too fast to read the question earns nothing.",
-          "Ballaringiz hech qachon 0 dan pastga tushmaydi. Vaqt javob bergan zahotingiz to'xtaydi, izohni o'qish hisoblanmaydi. Bir xil savol qayta chiqsa, har safar yarmiga kam ball beradi, savolni o'qishga ulgurmay berilgan javob esa hech narsa bermaydi.",
+          "Ballaringiz hech qachon 0 dan pastga tushmaydi. Vaqt savol chiqqanda boshlanadi va javob bergan zahotingiz to'xtaydi — izohni o'qishga ketgan vaqt hisobga olinmaydi. Bir xil savolga qayta to'g'ri javob bersangiz, ball har safar yarmiga kamayadi. Savolni o'qishga ulgurmay bosilgan javob esa ball bermaydi.",
         )}
       </p>
     </div>

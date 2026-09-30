@@ -168,7 +168,7 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
       </button>
 
       <details className="rating-how points-how">
-        <summary>{t("How points are counted", "Ballar qanday hisoblanadi")}</summary>
+        <summary>{t("How points are counted", "Ballar qanday to'planadi")}</summary>
         <PointsRules />
       </details>
 

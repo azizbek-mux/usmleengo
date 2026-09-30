@@ -251,7 +251,7 @@ export default function Rating({ state, standings, loading, onRefresh }) {
       )}
 
       <details className="rating-how">
-        <summary>{t("How points are counted", "Ballar qanday hisoblanadi")}</summary>
+        <summary>{t("How points are counted", "Ballar qanday to'planadi")}</summary>
         <PointsRules />
         <p>
           {t(
