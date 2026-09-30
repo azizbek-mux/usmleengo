@@ -175,8 +175,8 @@ export function inviteMessage({ code, about, link }) {
 export function classInviteMessage({ name, code, link }) {
   if (isUz()) {
     return [
-      `📚 ${boldText("usmleengo")}dagi «${name}» sinfimga qo'shiling`,
-      `🔢 Sinf kodi: ${code}`,
+      `📚 ${boldText("usmleengo")}dagi «${name}» guruhimga qo'shiling`,
+      `🔢 Guruh kodi: ${code}`,
       "",
       "Qo'shilish uchun bosing 👇",
       link,

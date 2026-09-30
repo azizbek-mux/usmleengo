@@ -19,7 +19,7 @@ export const tabs = () => [
   { id: "quiz", label: t("Quiz", "Testlar"), Icon: Checklist },
   { id: "english", label: t("English", "Ingliz tili"), Icon: Book },
   { id: "play", label: t("Play", "O'yin"), Icon: Players },
-  { id: "class", label: t("Class", "Sinf"), Icon: School },
+  { id: "class", label: t("Class", "Guruh"), Icon: School },
   { id: "rating", label: t("Rating", "Reyting"), Icon: Trophy },
   { id: "me", label: t("Me", "Profil"), Icon: User },
 ];

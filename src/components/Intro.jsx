@@ -41,10 +41,10 @@ export const introCards = () => [
   {
     id: "class",
     Icon: School,
-    title: t("Class", "Sinf"),
+    title: t("Class", "Guruh"),
     text: t(
       "Teachers make a class, invite students with a link, set homework and follow everyone's progress. Students join with a code.",
-      "O'qituvchi sinf ochadi, talabalarni havola orqali taklif qiladi, uy vazifasi beradi va har birining natijasini kuzatadi. Talabalar sinfga kod orqali qo'shiladi.",
+      "O'qituvchi guruh ochadi, talabalarni havola orqali taklif qiladi, uy vazifasi beradi va har birining natijasini kuzatadi. Talabalar guruhga kod orqali qo'shiladi.",
     ),
   },
   {

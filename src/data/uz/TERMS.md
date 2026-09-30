@@ -14,7 +14,7 @@ fully in Uzbek (no English in brackets, no English terms kept).
 | Quiz (tab) | Testlar |
 | English (tab) | Ingliz tili |
 | Play | O'yin |
-| Class | Sinf (owner, 2026-09-30 - was Guruh; the bot already said sinf) |
+| Class (the tab, a teacher's class) | **Guruh** - owner, 2026-09-30, final. It was briefly changed to Sinf and changed back. Do not touch `sinf` in the question bank: there it means a drug class, an antibody class, an ASA or NYHA class. |
 | Rating | Reyting |
 | Me | Profil |
 | points | ball |
@@ -181,6 +181,8 @@ file).
 ## Answered by the owner, 2026-09-30
 - **G6PD -> G6FD** everywhere, following ATP -> ATF. The bank was changed.
 - **zinc -> rux** confirmed, as the glossary has it. Never `sink`.
+- **Class -> Guruh**, not Sinf. Asked for as Sinf earlier the same day and
+  reverted; Guruh is what it stays.
 - **Duchenne -> Dyushen**, one n, as the glossary has it. The bank spelled it
   `Dyushenn` in 19 places; all of them were changed (`Dyushennda` ->
   `Dyushenda`).

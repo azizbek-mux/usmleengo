@@ -21,13 +21,13 @@ const reasons = () => ({
   name: t("Give the package a name.", "To'plamga nom bering."),
   questions: t("Add at least one question.", "Kamida bitta savol qo'shing."),
   question: t("One of the questions is incomplete.", "Savollardan biri to'liq emas."),
-  "too-many-packages": t("This class has the most packages it can hold.", "Bu sinfda to'plamlar soni chegaraga yetgan."),
-  "too-many-assignments": t("This class has the most homework it can hold.", "Bu sinfda uy vazifalari soni chegaraga yetgan."),
+  "too-many-packages": t("This class has the most packages it can hold.", "Bu guruhda to'plamlar soni chegaraga yetgan."),
+  "too-many-assignments": t("This class has the most homework it can hold.", "Bu guruhda uy vazifalari soni chegaraga yetgan."),
   due: t("Pick a due date in the future, within a year.", "Bir yil ichidagi kelgusi sanani tanlang."),
   "image-too-large": t("That picture is too large, even shrunk.", "Rasm kichraytirilgandan keyin ham juda katta."),
   "image-type": t("Only pictures can be added.", "Faqat rasm qo'shish mumkin."),
   image: t("That picture couldn’t be read.", "Rasmni o'qib bo'lmadi."),
-  "too-many-images": t("This class has the most pictures it can hold.", "Bu sinfda rasmlar soni chegaraga yetgan."),
+  "too-many-images": t("This class has the most pictures it can hold.", "Bu guruhda rasmlar soni chegaraga yetgan."),
 });
 export const reasonOf = (err) => reasons()[err?.code] || t("Something went wrong. Try again.", "Nimadir xato ketdi. Qayta urinib ko'ring.");
 const questionsText = (n) => t(`${n} question${n === 1 ? "" : "s"}`, `${n} ta savol`);
@@ -759,7 +759,7 @@ export function AssignmentResults({ assignmentId, onBack }) {
             <span className="board-value">{s.done ? `${s.score}/${s.total}` : "—"}</span>
           </div>
         ))}
-        {!data.students.length && <div className="board-empty">{t("No students in the class yet.", "Sinfda hali talabalar yo'q.")}</div>}
+        {!data.students.length && <div className="board-empty">{t("No students in the class yet.", "Guruhda hali talabalar yo'q.")}</div>}
       </div>
 
       <div className="section-label">{t("Each question", "Har bir savol")}</div>

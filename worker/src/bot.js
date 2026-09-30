@@ -72,9 +72,9 @@ const WELCOME_EN = [
 
 const WELCOME_UZ = [
   "<b>usmleengo</b> 🩺",
-  "6 300+ USMLE savoli, Tibbiy ingliz tili kartochkalari, do'stlar bilan jonli o'yinlar va sinflar.",
+  "6 300+ USMLE savoli, Tibbiy ingliz tili kartochkalari, do'stlar bilan jonli o'yinlar va guruhlar.",
   "",
-  "<b>O'qituvchilarga:</b> savollaringizni shu yerga yozing yoki nusxalab tashlang, viktorinalarni menga yuboring yoki fayl jo'nating — Word, PDF, veb-sahifa yoki matn — men ularni sinfingiz uchun to'plamga aylantiraman. Qanday yozilishini ko'rish uchun /format yuboring.",
+  "<b>O'qituvchilarga:</b> savollaringizni shu yerga yozing yoki nusxalab tashlang, viktorinalarni menga yuboring yoki fayl jo'nating — Word, PDF, veb-sahifa yoki matn — men ularni guruhingiz uchun to'plamga aylantiraman. Qanday yozilishini ko'rish uchun /format yuboring.",
 ].join("\n");
 
 const OPEN_APP = ["Open usmleengo", "usmleengoni ochish"];
@@ -143,7 +143,7 @@ async function takeText(env, msg, now, { text: given, poll, later, sleep }) {
       chat_id,
       text: both(
         "This list is full. Open it and add its questions to a class — then send the rest, and they'll start a new list.",
-        "Bu ro'yxat to'ldi. Uni ochib, savollarini sinfga qo'shing — keyin qolganini yuborsangiz, yangi ro'yxat boshlanadi.",
+        "Bu ro'yxat to'ldi. Uni ochib, savollarini guruhga qo'shing — keyin qolganini yuborsangiz, yangi ro'yxat boshlanadi.",
         uzLead),
       reply_markup: openButton(pick(...REVIEW, uzLead), `${APP_LINK}?startapp=f${open.token}`),
     });
@@ -190,7 +190,7 @@ async function answerWhenQuiet(env, chat_id, { token, size }, hiddenAnswer, slee
     ...(hiddenAnswer
       ? ["Telegram yuborilgan viktorinaning to'g'ri javobini u yopilmaguncha botlarga ko'rsatmaydi, shuning uchun to'g'ri variantni ilovada belgilang."]
       : []),
-    "Yana yuborsangiz, shu ro'yxatga qo'shiladi yoki pastdagi tugma bilan sinfga qo'shing.",
+    "Yana yuborsangiz, shu ro'yxatga qo'shiladi yoki pastdagi tugma bilan guruhga qo'shing.",
   ].join("\n");
   await telegramApi(env, "sendMessage", {
     chat_id,
@@ -248,7 +248,7 @@ export async function handleBot(request, env, now = Date.now(), ctx = null, slee
         parse_mode: "HTML",
         text: both(
           `Got <b>${escapeHtml(name)}</b>. Tap below to see the questions in it and add them to one of your classes.`,
-          `<b>${escapeHtml(name)}</b> qabul qilindi. Undagi savollarni ko'rib, sinflaringizdan biriga qo'shish uchun pastdagi tugmani bosing.`,
+          `<b>${escapeHtml(name)}</b> qabul qilindi. Undagi savollarni ko'rib, guruhlaringizdan biriga qo'shish uchun pastdagi tugmani bosing.`,
           uzLead),
         reply_markup: openButton(pick(...REVIEW, uzLead), `${APP_LINK}?startapp=f${token}`),
       });
