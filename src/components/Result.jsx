@@ -111,11 +111,12 @@ export default function Result({ log, label, points, streak, streakAdvanced, ran
           <div className="section-label">{t("What you missed", "Xato qilganlaringiz")}</div>
           {missed.slice(0, 5).map((l, i) => {
             const on = saved.includes(l.question.id);
+            const right = l.question.type === "gap" ? l.question.answer : l.question.options[l.question.answer];
             return (
               <div className="review-item" key={i}>
                 <span className="review-mark no">✗</span>
                 <span className="review-q">
-                  {l.question.topic} — <b>{l.question.type === "gap" ? l.question.answer : l.question.options[l.question.answer]}</b>
+                  {l.question.topic !== right && <>{l.question.topic} — </>}<b>{right}</b>
                 </span>
                 {onSave && (
                   <button

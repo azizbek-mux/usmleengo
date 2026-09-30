@@ -502,7 +502,7 @@ function TeacherView({ data, onBack, onStudent, reload, onGo }) {
                       : t("Joined before this was kept", "Bu ma'lumot saqlanishidan oldin qo'shilgan")}
                   </span>
                 </span>
-                <span className="board-value">{n ? (period === "since" ? signed(n.points) : n.points) : "—"}</span>
+                <span className="board-value">{n ? (period === "since" ? signed(n.points) : n.points.toLocaleString()) : "—"}</span>
               </button>
             );
           })}
@@ -603,7 +603,7 @@ function StudentDetail({ classId, student, onBack }) {
   const tiles = n ? [
     {
       label: period === "since" ? t("Points gained", "Qo'shilgan ball") : t("Points", "Ball"),
-      value: period === "since" ? signed(n.points) : n.points,
+      value: period === "since" ? signed(n.points) : n.points.toLocaleString(),
       sub: period === "all" ? t(`Rank #${n.rank}`, `O'rin #${n.rank}`) : t("since joining", "qo'shilgandan beri"),
     },
     { label: t("Day streak", "Kunlik intizom"), value: n.streak, sub: t(n.streak === 1 ? "day" : "days", "kun") },
@@ -731,7 +731,7 @@ function StudentView({ data, onBack, onStartClass }) {
       {me && (
         <div className="rating-place">
           <span className="rating-rank">{t("Your place in class", "Guruhdagi o'rningiz")} <b>#{me.place} / {me.total}</b></span>
-          <b>{me.points} <small>{t("pts", "ball")}</small></b>
+          <b>{me.points.toLocaleString()} <small>{t("pts", "ball")}</small></b>
         </div>
       )}
 
@@ -751,7 +751,7 @@ function StudentView({ data, onBack, onStartClass }) {
               <span className="board-name">{r.isMe ? t("You", "Siz") : r.name}</span>
               {!r.isMe && r.username && <span className="board-user">@{r.username}</span>}
             </span>
-            <span className="board-value">{r.points}</span>
+            <span className="board-value">{r.points.toLocaleString()}</span>
           </div>
         ))}
         {meBelow && (
@@ -760,7 +760,7 @@ function StudentView({ data, onBack, onStartClass }) {
             <div className="board-row me">
               <span className="board-place">{meBelow.place}</span>
               <span className="board-who"><span className="board-name">{t("You", "Siz")}</span></span>
-              <span className="board-value">{meBelow.points}</span>
+              <span className="board-value">{meBelow.points.toLocaleString()}</span>
             </div>
           </>
         )}

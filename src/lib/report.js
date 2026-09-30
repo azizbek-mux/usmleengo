@@ -17,11 +17,12 @@ const QUOTE = 220;
 const open = (draft) => openTelegram(`${DEVELOPER}?text=${encodeURIComponent(draft)}`);
 
 /** Something is broken or wrong in the app itself. */
-export function reportProblem() {
+export function reportProblem(detail = "") {
   haptic("light");
+  const seen = detail ? `${detail}\n` : "";
   open(t(
-    `usmleengo problem (version ${VERSION}, ${platformText()}):\n`,
-    `usmleengoda muammo (versiya ${VERSION}, ${platformText()}):\n`,
+    `usmleengo problem (version ${VERSION}, ${platformText()}):\n${seen}`,
+    `usmleengoda muammo (versiya ${VERSION}, ${platformText()}):\n${seen}`,
   ));
 }
 
