@@ -157,3 +157,44 @@ auspitz-sign-1ruoye7|Auspits belgisi|Psoriaz qipig'ini ko'chirsa nima bo'ladi|Nu
 psoriasis-microabscess-0dfr9nx|Psoriazdagi mikroabssess|Psoriazli teridagi neytrofil to'plamlari qanday ataladi|Munro mikroabssesslari|Potrye mikroabssesslari|Potrye zamburug'simon mikozga tegishli.
 psoriasis-first-line-treatment-1cwb54y|Psoriazning birlamchi davosi|Psoriazning mahalliy davosiga nima kiradi|Kalsipotrien|Kalsitonin|D vitamini hosilasi, yoki steroid, yoki toshko'mir smolasi.
 psoriatic-arthritis-x-ray-1l5fuc6|Psoriatik artritda rentgen|Psoriatik artritda qo'l rentgeni nimani ko'rsatadi|«Qalam kosada» deformatsiyasini|Simmetrik bo'g'im torayishini|Va yonida HLA-B27 yuradi.
+atopic-dermatitis-picture-01x4gqn|Atopik dermatit rasmi||Atopik dermatit|Psoriaz|Bukuvchi burmadagi tirnalgan, ho'llanuvchi teri. Psoriaz yozuvchi yuzani afzal ko'radi.
+atopy-hypersensitivity-1p9zdb0|Atopiyada yuqori sezgirlik|Atopiyadagi ekzema, astma va pichan isitmasi qaysi tur yuqori sezgirlik|I|IV|Bir zumda kechadi va IgE orqali boradi.
+cough-variant-asthma-0vabl45|Yo'tal shaklidagi astma|Astmali bolalarning uchdan birida faqat nima bo'ladi|Qishda kuchayadigan quruq yo'tal|Tinch holatda eshitiladigan hushtak|Shuning uchun anamnezdagi ekzema muhim.
+topical-steroid-overuse-0pf4zuo|Mahalliy steroidni ortiqcha ishlatish|Bir haftadan ortiq uzluksiz ishlatilgan mahalliy steroid nimaga olib keladi|Dermaning yupqalashuviga|Dermaning qalinlashuviga|Avval namlovchi, steroid esa oz-oz.
+weeping-eczema-09n2axk|Ho'llanuvchi ekzema|Qizarib, qizib, ho'llanib qolgan ekzemada nima bo'lgan|Bakteriya qo'shilgan|Psoriazga aylangan|Oltin stafilokokk yoki A guruh streptokokk, ko'pincha akasidan yuqadi.
+urticaria-picture-18iz1f0|Eshakemi rasmi||Eshakemi|Ko'p shaklli eritema|Markazi oqish, ko'tarilgan pufaklar — kelib, o'tib ketadi.
+urticaria-hypersensitivity-1byl8uu|Eshakemida yuqori sezgirlik turi|Eshakemi qaysi tur yuqori sezgirlik|I|III|Dori, gulchang va hayvon junining hammasi keltiradi.
+poison-ivy-01bcx5a|Zaharli pechak||Kontakt dermatit|O'rab oluvchi temiratki|Barg tekkan joyda to'g'ri chiziq bo'ylab pufakchalar.
+linear-vesicles-0or8a4e|Chiziqli pufakchalar|Sayrdan keyingi chiziqli pufakchalarning oldini nima oladi|Begona o'tlardan uzoq yurish|Ko'proq quyoshdan himoya krem|Toshma ochiq joylarning hammasida bo'lsa, javob — krem.
+contact-dermatitis-hypersensitivity-0blc654|Kontakt dermatitda yuqori sezgirlik|Kontakt dermatit qaysi tur yuqori sezgirlik|IV|I|T hujayra orqali, shuning uchun kunlarda keladi va kunlarda ketadi.
+nickel-dermatitis-1mg74md|Nikel dermatiti|Soat taqadigan odamning bilagidagi pufakchalarni nima keltiradi|Nikel|Lateks|Nikel allergiyasining klassik iborasi.
+stevens-johnson-syndrome-picture-073m094|Stivens-Jonson sindromi rasmi||Stivens-Jonson sindromi|Ikkinchi darajali kuyish|Sulfanilamiddan keyin teri varaq-varaq ko'chadi.
+stevens-johnson-extent-1pb67xz|Stivens-Jonson sindromining kengligi|Stivens-Jonson sindromi terining qanchasini ko'chiradi|O'ndan biridan kamini|Uchdan biridan ko'pini|30 foizdan ortig'i — toksik epidermal nekroliz.
+stevens-johnson-triggers-1sa7vhr|Stivens-Jonsonni qo'zg'atuvchilar|Stivens-Jonson sindromini klassik holda nima qo'zg'atadi|Sulfanilamidlar va antiepileptiklar|Penitsillinlar va sefalosporinlar|Lamotrijinni eslab qolish kerak.
+latex-allergy-1mb1ayr|Lateks allergiyasi||Lateksdan kontakt dermatit|Qo'llardagi psoriaz|Hamshiraning qizargan, qipiqli qo'llari — va u bananga allergiyali.
+latex-and-bananas-1bbr7ck|Lateks va banan|Lateks allergiyasi nimaga allergiya bilan yonma-yon yuradi|Bananga|Dengiz mahsulotlariga|O'zaro reaksiyaga kirishuvchi oqsillar.
+lichen-simplex-chronicus-picture-1gvcibb|Surunkali oddiy temiratki rasmi||Surunkali oddiy temiratki|Oddiy kontakt dermatit|Yillar davomida qashilgan, teri chiziqlari bo'rtib chiqqan charmsimon soha.
+erythema-multiforme-picture-0336e90|Ko'p shaklli eritema rasmi||Ko'p shaklli eritema|Oddiy eshakemi|Qo'llardagi nishonsimon o'choqlar, bu yerda uchuqdan keyin.
+erythema-multiforme-trigger-1h1fjvf|Ko'p shaklli eritemani qo'zg'atuvchi|Ko'p shaklli eritemani klassik holda nima qo'zg'atadi|Oddiy gerpes virusi|Streptococcus pyogenes|Immun komplekslar, ya'ni III tur.
+pemphigus-vulgaris-target-1att1k0|Oddiy pufakchalining nishoni|Oddiy pufakchalidagi antitelolar nimaga hujum qiladi|Desmosomalarga|Gemidesmosomalarga|Keratinotsitlar orasida, shuning uchun teri ajraladi.
+pemphigus-vulgaris-mouth-0r4ejzh|Oddiy pufakchali va og'iz|Oddiy pufakchali odatda og'izga qanday ta'sir qiladi|Og'izni ham tutadi|Og'izni chetlab o'tadi|Nikolskiy belgisi musbat bo'ladi.
+bullous-pemphigoid-target-0bd7hd8|Bullyoz pemfigoidning nishoni|Bullyoz pemfigoiddagi antitelolar nimaga hujum qiladi|Gemidesmosomalarga|Desmosomalarga|Bazal hujayrani ostidagi pardaga mahkamlaydi.
+pemphigoid-immunofluorescence-0nn2ix8|Pemfigoidda immunoflyuoressensiya|Bullyoz pemfigoidda immunoflyuoressensiya qanday|Chiziqli|To'rsimon|To'rni oddiy pufakchali beradi.
+epidermolysis-bullosa-1e8urxg|Bullyoz epidermoliz|Teriga tekkan har qanday zarbadan paydo bo'ladigan pufakchalarni nima keltiradi|Keratin mutatsiyasi|Autoantitelo|Keratin 5 va 14, ya'ni bazal-suprabazal bog'lanish.
+behcet-disease-0hr7gnh|Bexchet kasalligi|Og'iz va jinsiy a'zo yaralari va yuqori EChT nima|Bexchet kasalligi|Oddiy pufakchali|Bu vaskulit, pufakchali kasallik emas.
+rosacea-picture-0wksj5s|Rozatsea rasmi||Rozatsea|Oddiy akne|Qizargan, do'ng burun va yonoqlar, tomirlari ko'rinib turadi. Aknede komedon bo'ladi.
+rosacea-triggers-04k3oyw|Rozatseani qo'zg'atuvchilar|Rozatseani nima kuchaytiradi|Achchiq ovqat va alkogol|Faqat sovuq, quruq havo|Ba'zan mahalliy metronidazol yordam beradi.
+rhinophyma-04hf3xs|Rinofima|Uzoq davom etgan rozatseadagi do'ng, shishgan burun nima|Rinofima|Bazal hujayrali karsinoma|Shu kasallikning og'ir cheti.
+lupus-pernio-picture-131u54t|Lupus pernio rasmi||Lupus pernio|Rozatsea|Sarkoidozdagi burun va yonoqning binafsha shishi — nomi chalg'itadi.
+lupus-pernio-disease-0l1ss8h|Lupus pernio qaysi kasallik|Nomiga qaramay, lupus pernio qaysi kasallikning belgisi|Sarkoidozning|Tizimli qizil yugurukning|Yuqori kalsiy va darvoza tugunlari tasdiqlaydi.
+perniosis-picture-1vsj1ns|Perniozning rasmi||Perniozning belgisi|Reyno hodisasi|Qishdagi og'riqli, shishgan qizil barmoqlar — sovuq shikastlanishi.
+frostnip-versus-frostbite-1bsgwpc|Sovuq urishi va sovuqda kuyish|Hech qanday zararsiz to'liq tiklanadigan sovuq ta'siri nima|Sovuq urishi|Sovuqda kuyish|Sovuqda kuyish pufak beradi va nekrozga borishi mumkin.
+aphthous-ulcer-picture-0c4wfhz|Aftoz yara rasmi||Aftoz yara|Lab gerpesi|Og'iz ichidagi yakka yuza yara. Gerpes labning tashqarisida bo'ladi.
+aphthous-ulcer-treatment-17xycwt|Aftoz yarani davolash|Aftoz yara nimani talab qiladi|Hech qanday davo kerak emas|Og'iz orqali atsiklovir|Uning gerpesga hech qanday aloqasi yo'q.
+mouth-ulcers-after-thyroid-treatment-1ctyqli|Qalqonsimon bez davosidan keyingi og'iz yaralari|Tionamid boshlangandan bir necha kun keyingi og'iz yarasi va isitma nima|Dori chaqirgan neytropeniya|Og'izdagi gerpes infeksiyasi|Klozapin, gantsiklovir va metotreksat ham shunday qiladi.
+granuloma-annulare-picture-0cpolh3|Halqasimon granulema rasmi||Halqasimon granulema|Tana temiratkisi|Qipiqsiz, zich mayda bo'rtmalardan halqa. Temiratkining cheti qipiqli.
+granuloma-annulare-treatment-0k8g3pm|Halqasimon granulemani davolash|Halqasimon granulema nimani talab qiladi|Hech qanday davo kerak emas|Mahalliy antimikotik|Sog'lom yosh bemordagi T hujayra javobi.
+lichen-planus-picture-1d1pnos|Yassi temiratki rasmi||Yassi temiratki|Psoriaz|Bilakdagi usti yassi binafsha papulalar. Psoriaz kumushrang va ko'tarilgan.
+lichen-planus-association-09brel7|Yassi temiratki bilan bog'liqlik|Binafsha, qichiydigan, usti yassi papulalar nima bilan yonma-yon yuradi|C gepatiti bilan|A gepatiti bilan|Binafsha, qichiydigan, ko'pburchak papulalar.
+discoid-lupus-picture-0k7q02m|Diskoid lupus rasmi||Diskoid lupus|Uyali alopetsiya|Bosh terisidagi chandiqli, qipiqli soha. Uyali alopetsiyada teri silliq va sog'lom qoladi.
+discoid-lupus-and-sle-1pf7971|Diskoid lupus va tizimli lupus|Yuz va bosh terisidagi chandiqli yaralar va anti-Smit antitelolari nimani bildiradi|Tizimli qizil yugurukni|Yakka diskoid lupusni|Artrit lupusning eng ko'p birinchi belgisi.

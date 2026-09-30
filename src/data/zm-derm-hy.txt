@@ -193,3 +193,51 @@ B|Auspitz sign|derm|Scraping psoriatic scale away causes|Pinpoint bleeding|Clear
 B|Psoriasis microabscess|derm,histo|The neutrophil collections in psoriatic skin are called|Munro microabscesses|Pautrier microabscesses|Pautrier belongs to mycosis fungoides.
 B|Psoriasis first-line treatment|derm,pharm|Topical treatment for psoriasis includes|Calcipotriene|Calcitonin|A vitamin D derivative, or a steroid, or coal tar.
 B|Psoriatic arthritis x-ray|derm,rheum|The hand x-ray of psoriatic arthritis shows|A pencil-in-cup deformity|Symmetric joint space loss|And HLA-B27 keeps it company.
+
+# -- the hypersensitivities you can see ---------------------------------
+I|Atopic dermatitis picture|derm,immuno,peds|hdp34a.webp|Atopic dermatitis|Psoriasis|Excoriated, weeping skin in the flexor crease. Psoriasis prefers the extensor side.
+B|Atopy hypersensitivity|derm,immuno|The eczema, asthma and hay fever of atopy are hypersensitivity of type|I|IV|Immediate, and IgE-mediated.
+B|Cough-variant asthma|derm,resp,peds|A third of asthmatic children have only|A dry cough, worse in winter|Audible wheeze at rest|Which is why the eczema matters in the history.
+B|Topical steroid overuse|derm,pharm|Topical steroids used beyond a week at a time cause|Thinning of the dermis|Thickening of the dermis|Emollient first, steroid sparingly.
+B|Weeping eczema|derm,micro,immuno|Eczema that turns red, hot and oozing has been|Superinfected with bacteria|Turned into psoriasis|Staph aureus or Group A Strep, often caught from a sibling.
+I|Urticaria picture|derm,immuno,pharm|hdp34b.webp|Urticaria|Erythema multiforme|Raised, pale-centred weals that come and go - hives.
+B|Urticaria hypersensitivity|derm,immuno|Urticaria is hypersensitivity of type|I|III|Drugs, pollen and pet dander all do it.
+I|Poison ivy|derm,immuno|hdp35a.webp|Contact dermatitis|Shingles|Vesicles in straight lines where a leaf brushed the skin.
+B|Linear vesicles|derm,immuno|Vesicles in straight lines after a hike are prevented by|Keeping away from weeds|Using more sunscreen|Sunscreen is the answer when the rash is everywhere exposed.
+B|Contact dermatitis hypersensitivity|derm,immuno|Contact dermatitis is hypersensitivity of type|IV|I|T cell-mediated, so it takes days to come and days to go.
+B|Nickel dermatitis|derm,immuno|Vesicles on the wrist of someone who wears a watch are caused by|Nickel|Latex|The classic wording for a nickel allergy.
+I|Stevens-Johnson syndrome picture|derm,pharm,immuno|hdp35b.webp|Stevens-Johnson syndrome|A second-degree burn|Skin sloughing away in sheets after a sulfa drug.
+B|Stevens-Johnson extent|derm,pharm|Stevens-Johnson syndrome detaches|Under a tenth of the skin|More than a third of the skin|Over 30 percent is toxic epidermal necrolysis.
+B|Stevens-Johnson triggers|derm,pharm|Stevens-Johnson syndrome is classically set off by|Sulfa drugs and anti-epileptics|Penicillins and cephalosporins|Lamotrigine is the one to remember.
+I|Latex allergy|derm,immuno|hdp36a.webp|Latex contact dermatitis|Psoriasis of the hands|Red, scaly hands in a nurse - and she is allergic to bananas.
+B|Latex and bananas|derm,immuno|Latex allergy keeps company with allergy to|Bananas|Shellfish|Cross-reacting proteins.
+I|Lichen simplex chronicus picture|derm|hdp36b.webp|Lichen simplex chronicus|Contact dermatitis|A leathery patch with the skin lines thrown into relief, from years of scratching.
+I|Erythema multiforme picture|derm,immuno,micro|hdp36c.webp|Erythema multiforme|Urticaria|Target lesions on the hands, here after a cold sore.
+B|Erythema multiforme trigger|derm,immuno,micro|Erythema multiforme is classically triggered by|Herpes simplex virus|Streptococcus pyogenes|Immune complexes, so type III.
+
+# -- the blistering diseases --------------------------------------------
+B|Pemphigus vulgaris target|derm,immuno|The antibodies of pemphigus vulgaris attack|Desmosomes|Hemidesmosomes|Between the keratinocytes, so the skin comes apart.
+B|Pemphigus vulgaris mouth|derm,immuno|Pemphigus vulgaris usually|Involves the mouth|Spares the mouth|And the Nikolsky sign is positive.
+B|Bullous pemphigoid target|derm,immuno|The antibodies of bullous pemphigoid attack|Hemidesmosomes|Desmosomes|Anchoring the basal cell to the membrane below it.
+B|Pemphigoid immunofluorescence|derm,immuno|Immunofluorescence in bullous pemphigoid is|Linear|Net-like|Pemphigus vulgaris gives the net.
+B|Epidermolysis bullosa|derm,genetics|Blisters that form wherever the skin is knocked are caused by|A keratin mutation|An autoantibody|Keratin 5 and 14, so basal on suprabasal.
+B|Behcet disease|derm,immuno,rheum|Mouth and genital ulcers with a high ESR are|Behcet disease|Pemphigus vulgaris|A vasculitis, not a blistering disease.
+
+# -- faces, mouths and the rest -----------------------------------------
+I|Rosacea picture|derm|hdp37a.webp|Rosacea|Acne vulgaris|A red, bumpy nose and cheeks with visible vessels. Acne has comedones.
+B|Rosacea triggers|derm|Rosacea is worsened by|Spicy food and alcohol|Cold, dry air alone|Topical metronidazole sometimes helps.
+B|Rhinophyma|derm|The bulbous, swollen nose of long-standing rosacea is|Rhinophyma|A basal cell carcinoma|The severe end of the same disease.
+I|Lupus pernio picture|derm,immuno,resp|hdp38a.webp|Lupus pernio|Rosacea|Violet swelling of the nose and cheeks in sarcoidosis - the name misleads.
+B|Lupus pernio disease|derm,immuno,resp|Despite its name, lupus pernio is a sign of|Sarcoidosis|Systemic lupus erythematosus|Raised calcium and hilar nodes confirm it.
+I|Perniosis picture|derm|hdp38b.webp|Perniosis|Raynaud phenomenon|Painful, swollen red toes in winter - chilblains.
+B|Perniosis mechanism|derm|Chilblains follow|Cold air, then rapid rewarming|A fungal infection of the toes|Antifungals do nothing for it.
+B|Frostnip versus frostbite|derm,emergency|Cold-exposed skin that recovers completely with no damage is|Frostnip|Frostbite|Frostbite blisters and can go on to necrose.
+I|Aphthous ulcer picture|derm,gi|hdp39a.webp|An aphthous ulcer|Herpes labialis|A single shallow ulcer inside the mouth. Herpes sits on the lip, outside.
+B|Aphthous ulcer treatment|derm,gi|An aphthous ulcer needs|No treatment|Oral aciclovir|It has nothing to do with herpes.
+B|Mouth ulcers after thyroid treatment|derm,pharm,endocrine|Mouth ulcers and fever days after starting a thionamide mean|Drug-induced neutropenia|A herpes infection|Clozapine, ganciclovir and methotrexate do it too.
+I|Granuloma annulare picture|derm,immuno|hdp39b.webp|Granuloma annulare|Tinea corporis|A ring of small firm bumps with no scale. Ringworm scales at the edge.
+B|Granuloma annulare treatment|derm,immuno|Granuloma annulare needs|No treatment|A topical antifungal|A T cell response in an otherwise well young patient.
+I|Lichen planus picture|derm,immuno,liver|hdp39c.webp|Lichen planus|Psoriasis|Flat-topped purple papules on the wrist. Psoriasis is silvery and raised.
+B|Lichen planus association|derm,immuno,liver|Purple, itchy, flat-topped papules keep company with|Hepatitis C|Hepatitis A|Purple, pruritic, polygonal papules - the Ps.
+I|Discoid lupus picture|derm,immuno,rheum|hdp40a.webp|Discoid lupus|Alopecia areata|A scarring, scaly patch on the scalp. Alopecia areata leaves smooth, normal skin.
+B|Discoid lupus and SLE|derm,immuno,rheum|Scarring sores of the face and scalp with anti-Smith antibodies mean|Systemic lupus erythematosus|Isolated discoid lupus|Arthritis is the commonest presenting feature of lupus.
