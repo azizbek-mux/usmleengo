@@ -21,8 +21,8 @@ wagr-syndrome-129o1np|WAGR sindromi|WAGR — Vilms o'smasi, ___, siydik-tanosil 
 nf1-chromosome-15833qe|NF1 xromosomasi|1-tur neyrofibromatoz qaysi xromosomada joylashgan|17|22|2-tur 22-xromosomada joylashgan.
 nf1-expressivity-0hvhe18|NF1 ekspressivligi|1-tur neyrofibromatoz klassik holda nimani ko'rsatadi|O'zgaruvchan ekspressivlikni|To'liq bo'lmagan penetrantlikni|Og'irlik darajasi bemorlarda farq qiladi.
 tuberous-sclerosis-proteins-1tqo0e9|Tuberoz skleroz oqsillari|Tuberoz sklerozda gamartin va ___ qatnashadi|tuberin|tuberinning|TSC1 va TSC2 genlaridan.
-duchenne-protein-1s0rjlf|Dyushenn oqsili|Dyushenn mushak distrofiyasi qaysi gendagi mutatsiya|Distrofin|Fibrillin|Distroglikan kompleksini buzadi.
-duchenne-pseudohypertrophy-1nslwfc|Dyushennda soxta gipertrofiya|Dyushennda boldirning soxta gipertrofiyasi nima|Mushakning fibroz-yog' bilan almashinishi|Mushak to'qimasining haqiqiy o'sib ketishi|Mushak katta ko'rinadi, lekin kuchsiz.
+duchenne-protein-1s0rjlf|Dyushen oqsili|Dyushen mushak distrofiyasi qaysi gendagi mutatsiya|Distrofin|Fibrillin|Distroglikan kompleksini buzadi.
+duchenne-pseudohypertrophy-1nslwfc|Dyushenda soxta gipertrofiya|Dyushenda boldirning soxta gipertrofiyasi nima|Mushakning fibroz-yog' bilan almashinishi|Mushak to'qimasining haqiqiy o'sib ketishi|Mushak katta ko'rinadi, lekin kuchsiz.
 marfan-protein-1rkpzfk|Marfan oqsili|Marfan sindromi qaysi gendagi mutatsiya|Fibrillin|Distrofin|Elastin atrofidagi qobiq.
 fragile-x-repeat-06lahu9|Mo'rt X takrori|Mo'rt X sindromi nimaning ko'payishidan kelib chiqadi|CGG trinukleotid takrorining|CAG trinukleotid takrorining|Gipermetillanish FMR1 ni o'chiradi.
 fragile-x-features-1f13glu|Mo'rt X belgilari|Mo'rt X sindromi qanday namoyon bo'ladi|Katta quloqlar, uzun jag', makroorxidizm|Bo'yning pastligi va qanotsimon bo'yin|Aqliy zaiflik bilan birga.

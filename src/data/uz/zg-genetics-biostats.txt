@@ -1,6 +1,6 @@
 angelman-gene-1d7c62u|Angelman geni|Angelman sindromi qaysi nusxaning yo'qolishidan kelib chiqadi|UBE3A ning onadan kelgan nusxasi|UBE3A ning otadan kelgan nusxasi|Otadan kelgan nusxa imprinting bilan o'chirilgan.
-duchenne-carrier-sex-0uhlgmr|Dyushenn tashuvchisining jinsi|O'g'il bola nima uchun Dyushenn tashuvchisi bo'la olmaydi|Unda faqat bitta X xromosoma bor|U mutatsiyani meros olmaydi|X ga bog'langan retsessiv kasallik.
-duchenne-mutation-type-14s0lxr|Dyushenn mutatsiyasining turi|Dyushenn mushak distrofiyasini odatda nima keltiradi|O'qish ramkasining siljishi|Bitta nuqtada almashinish|Bekker kasalligida ramka saqlanadi.
+duchenne-carrier-sex-0uhlgmr|Dyushen tashuvchisining jinsi|O'g'il bola nima uchun Dyushen tashuvchisi bo'la olmaydi|Unda faqat bitta X xromosoma bor|U mutatsiyani meros olmaydi|X ga bog'langan retsessiv kasallik.
+duchenne-mutation-type-14s0lxr|Dyushen mutatsiyasining turi|Dyushen mushak distrofiyasini odatda nima keltiradi|O'qish ramkasining siljishi|Bitta nuqtada almashinish|Bekker kasalligida ramka saqlanadi.
 sideroblastic-anemia-inheritance-1qbabu9|Sideroblastik anemiyaning irsiylanishi|Tug'ma sideroblastik anemiya qanday irsiylanadi|X ga bog'langan retsessiv|Autosom-dominant yo'l bilan|Prussiya ko'kida halqali sideroblastlar.
 hemochromatosis-gene-0fc357x|Gemoxromatoz geni|Irsiy gemoxromatozni qaysi gen mutatsiyasi keltiradi|HFE geni|ATP7B geni|ATP7B Vilson kasalligini keltiradi.
 pyloric-stenosis-syndrome-link-0280jzw|Pilorostenoz va sindrom bog'liqligi|Pilorostenoz qanday holat|Yakka anomaliya, sindrom emas|Daun sindromi bilan kuchli bog'liq|Daun bilan bog'liq bo'lgani — o'n ikki barmoqli ichak atreziyasi.

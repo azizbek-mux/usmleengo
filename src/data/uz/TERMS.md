@@ -144,7 +144,7 @@ file).
 | mismatch repair | mos kelmaslikni tuzatish |
 | HNPCC | Linch sindromi |
 | Wilms tumour | Vilms o'smasi |
-| Duchenne | Dyushenn |
+| Duchenne | Dyushen |
 | putamen / globus pallidus / caudate | po'stloq tanasi / oqargan shar / dumli yadro |
 | basal ganglia | bazal yadrolar |
 | anterior white commissure | oldingi oq bitishma |
@@ -180,15 +180,13 @@ file).
 
 ## Answered by the owner, 2026-09-30
 - **G6PD -> G6FD** everywhere, following ATP -> ATF. The bank was changed.
+- **zinc -> rux** confirmed, as the glossary has it. Never `sink`.
+- **Duchenne -> Dyushen**, one n, as the glossary has it. The bank spelled it
+  `Dyushenn` in 19 places; all of them were changed (`Dyushennda` ->
+  `Dyushenda`).
 - **The bot's language order** stays as built: it replies in both and leads
   with the phone's Telegram language, so a phone set to Russian reads the
   English half first with the Uzbek under it.
-
-## To ask the owner
-Chosen for now to keep the bank consistent, but worth his word:
-- **Zinc**: `rux` is used throughout, from the glossary. Confirm it is what a
-  student expects over `sink`.
-- **Duchenne**: `Dyushenn` (10) against `Dyushen` (4) — `Dyushenn` was kept.
 
 ## Workflow note
 - Write at most ~40 questions per batch. A long unbroken block of microbiology (toxins, organisms) can trip a safety filter mid-write; smaller batches go through cleanly. Nothing is lost when one is stopped — the file on disk is untouched.

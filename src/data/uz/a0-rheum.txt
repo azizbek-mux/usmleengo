@@ -45,7 +45,7 @@ osteoarthritis-0l3kyd4|Osteoartrit|Osteoartritda ertalabki qotishlik qancha davo
 septic-arthritis-1na7242|Septik artrit|Septik artritning eng ko'p uchraydigan qo'zg'atuvchisi|Staphylococcus aureus|Neisseria gonorrhoeae|Yosh, jinsiy faol kattalarda gonokokk birinchi o'rinda.
 osteosarcoma-18ffu77|Osteosarkoma|Osteosarkomada klassik holda nima ko'rinadi|«Quyosh nurlari» va Kodman uchburchagi|«Piyoz po'sti» ko'rinishidagi qatlamlar|O'smirlarda uzun suyaklar metafizida.
 ewing-sarcoma-0zobmqm|Yuing sarkomasi|Yuing sarkomasida qanday translokatsiya bo'ladi?|t(11;22)|t(9;22)|«Piyoz po'sti» periostal reaksiyasi; mayda yumaloq ko'k hujayralar.
-duchenne-muscular-dystrophy-00ifp89|Dyushenn mushak distrofiyasi|Dyushenn distrofiyasi qaysi oqsil mutatsiyasidan kelib chiqadi|Distrofin|Fibrillin|X ga birikkan; ramka siljishli delesiya. Bekker kasalligida ramka saqlanadi.
+duchenne-muscular-dystrophy-00ifp89|Dyushen mushak distrofiyasi|Dyushen distrofiyasi qaysi oqsil mutatsiyasidan kelib chiqadi|Distrofin|Fibrillin|X ga birikkan; ramka siljishli delesiya. Bekker kasalligida ramka saqlanadi.
 gower-sign-0d373rz|Gauers belgisi|Gauers belgisi qaysi mushaklar kuchsizligidan dalolat beradi|Proksimal mushaklar|Distal mushaklar|Bola turish uchun qo'llari bilan oyoqlariga tayanib ko'tariladi.
 polymyositis-197g53a|Polimiozit|Polimiozitda qanday yallig'lanish manzarasi bo'ladi?|Endomiziyda CD8 infiltratsiyasi|Perimiziyda CD4 infiltratsiyasi|Dermatomiozitda perimizial infiltrat va perifassikulyar atrofiya bo'ladi.
 dermatomyositis-0nc2o08|Dermatomiozit|Dermatomiozitda nimani qidirish kerak|Yashirin xavfli o'sma|Buyrak kasalligi|Gottron papulalari va geliotrop toshma.

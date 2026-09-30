@@ -54,7 +54,7 @@ henoch-schonlein-purpura-1r1nmnd|Shenlyayn-Genox purpurasi|Bu purpura nima bilan
 kawasaki-disease-0puf0x1|Kavasaki kasalligi|Kavasaki kasalligi uchun kamida ___ kun isitma va to'rtta mezon kerak|5|besh|Konyunktivit, toshma, limfadenopatiya, shilliq qavat va oyoq-qo'l o'zgarishlari.
 juvenile-idiopathic-arthritis-0gnf0cf|Yuvenil idiopatik artrit|Oligoartikulyar yuvenil artritda nimani skrining qilish kerak|Uveit|Nefrit|Ko'pincha belgisiz kechadi; ANA musbat bo'lsa xavf ortadi.
 cystic-fibrosis-1omvs1p|Mukovistsidoz|Chaqaloqda mekoniy ___ i mukovistsidozdan kuchli dalolat beradi|ileus|ileusi|48 soat ichida mekoniy ajralmasligi.
-duchenne-muscular-dystrophy-0vqip1x|Dyushenn mushak distrofiyasi|Dyushenn distrofiyasi qon zardobida nimaning oshishi bilan skrining qilinadi|Kreatinkinaza|Faqat aldolaza|Genetik tekshiruv bilan tasdiqlanadi.
+duchenne-muscular-dystrophy-0vqip1x|Dyushen mushak distrofiyasi|Dyushen distrofiyasi qon zardobida nimaning oshishi bilan skrining qilinadi|Kreatinkinaza|Faqat aldolaza|Genetik tekshiruv bilan tasdiqlanadi.
 retinoblastoma-09n1vyw|Retinoblastoma|Retinoblastoma klassik holda oq qorachiq refleksi — ___ bilan namoyon bo'ladi|leykokoriya|leykokoria|Shoshilinch yo'llanma; irsiy bo'lsa, ikki tomonlama bo'lishi mumkin.
 neuroblastoma-0yo5hk8|Neyroblastoma|Opsoklonus-mioklonus sindromi qaysi o'smaning paraneoplastik belgisi|Neyroblastoma|Vilms o'smasi|«Raqs tushuvchi ko'zlar, raqs tushuvchi oyoqlar».
 sudden-infant-death-02huetm|Chaqaloqning to'satdan o'limi|Bu holatning bartaraf etiladigan asosiy xavf omili — ___ yotish|qorinda|qorin bilan, yuzi pastga|«Chalqancha uxlash» kampaniyalari o'limni keskin kamaytirdi.
