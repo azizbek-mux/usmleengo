@@ -591,8 +591,10 @@ the format chosen per fact — fill-the-gap where one short answer is worth
 recalling cold, multiple choice where the answer is a phrase or where two
 things are genuinely confusable.
 
-`tools/` holds only the compiler. The extraction scripts were scratch work and
-are not part of the build.
+`tools/` holds the compiler, the tests, and `tools/guide/`, which makes the
+user guide (an English and an Uzbek PDF with annotated screenshots) from the
+running app: see its README. The extraction scripts were scratch work and are
+not part of the build.
 
 ## How it works
 

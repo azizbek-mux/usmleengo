@@ -1,0 +1,8 @@
+# everything the generator makes
+shots/
+img/
+work/
+*.pdf
+guide-*.html
+demo-state.json
+game-snaps.json
