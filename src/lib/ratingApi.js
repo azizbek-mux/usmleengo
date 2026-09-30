@@ -11,10 +11,9 @@
 //     the latest board.
 
 import bank from "../data/bank.js";
-import { subjects } from "./match.js";
-import { topicAccuracy } from "./review.js";
+import { systemTotals } from "./review.js";
 import { ratingInput } from "./storage.js";
-import { PICTURE_TAGS } from "./tags.js";
+import { SYSTEMS } from "./taxonomy.js";
 import { scoped } from "./account.js";
 import { initData } from "./telegram.js";
 
@@ -36,12 +35,13 @@ export function setClassSharing(on) {
   } catch { /* a preference */ }
 }
 
-/** Right answers, and right/wrong per category, in the shape checkDetail takes. */
+/**
+ * Right answers, and right/wrong per system, in the shape checkDetail takes.
+ * Systems, because they are what the player sees on their own weak-topics
+ * screen, so the teacher and the student are talking about the same thing.
+ */
 export function classDetail(state) {
-  const tags = [...PICTURE_TAGS, ...subjects().slice(0, 12).map((s) => s.tag)];
-  const topics = {};
-  for (const r of topicAccuracy(bank, state.seen, tags)) if (r.answered) topics[r.tag] = [r.right, r.wrong];
-  return { correct: state.correct || 0, topics };
+  return { correct: state.correct || 0, topics: systemTotals(bank, state.seen, SYSTEMS.map((x) => x.id)) };
 }
 
 /**

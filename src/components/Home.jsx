@@ -2,15 +2,15 @@ import React, { useEffect, useMemo, useState } from "react";
 import bank, { bankBlurb } from "../data/bank.js";
 import AdCard from "./AdCard.jsx";
 import { BackBar, ScreenHead, StreakPill } from "./Chrome.jsx";
-import { Bookmark, ChevronDown, Retry, SearchIcon, Target } from "./Icons.jsx";
+import { Bookmark, ChevronDown, Flask, Retry, SearchIcon, Target } from "./Icons.jsx";
+import LabValues from "./LabValues.jsx";
 import { Sheet } from "./Sheet.jsx";
-import { search, suggest, subjects } from "../lib/match.js";
+import { search, suggest } from "../lib/match.js";
 import { QTYPES } from "../lib/qtypes.js";
-import { MIN_ANSWERS, mistakesIn, savedIn, topicAccuracy } from "../lib/review.js";
+import { MIN_ANSWERS, mistakesIn, progressBy, savedIn } from "../lib/review.js";
 import { byFormat } from "../lib/session.js";
-import { tagLabel } from "../lib/tags.js";
 import CategoryGroup, { narrow, useCategories } from "./CategoryGroup.jsx";
-import { subjectName, systemName } from "../lib/taxonomy.js";
+import { SUBJECTS, SYSTEMS, subjectName, subjectShort, systemName, systemShort } from "../lib/taxonomy.js";
 import { t } from "../lib/i18n.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
@@ -67,6 +67,7 @@ const savedPool = (s) => savedIn(bank, s.saved);
 export default function Home({ state, onStart, onFocus, onCount, onQType, onSubjects, onSystems }) {
   const [query, setQuery] = useState("");
   const [picker, setPicker] = useState(null); // null | "count" | "type"
+  const [labs, setLabs] = useState(false); // the normal lab values, over the tab
   const [view, setView] = useState("main"); // main | weak
 
   // Weak topics is a screen of its own and wants the whole of it. Handed
@@ -84,7 +85,6 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
   const topics = useMemo(() => topicIndex(bank), []);
   const found = useMemo(() => [...new Set(hits.map((q) => q.topic))], [hits]);
   const tips = useMemo(() => (query.trim() && !hits.length ? suggest(query) : []), [query, hits]);
-  const chips = useMemo(() => subjects().slice(0, 12), []);
 
   const groups = useCategories(state.lang);
 
@@ -104,11 +104,13 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
 
   const mistakes = useMemo(() => mistakesIn(bank, state.seen), [state.seen]);
   const savedQs = useMemo(() => savedIn(bank, state.saved), [state.saved]);
-  const accuracy = useMemo(
-    () => topicAccuracy(bank, state.seen, chips.map((c) => c.tag)),
-    [state.seen, chips],
-  );
-  const weakest = accuracy.find((r) => r.pct !== null);
+  // How the player is doing in each system and each subject: the weak-topics
+  // screen lists both, and the tile names the weakest system, or the weakest
+  // subject while no system has enough answers to judge.
+  const bySystem = useMemo(() => progressBy(bank, state.seen, "system", SYSTEMS.map((x) => x.id)), [state.seen, state.lang]);
+  const bySubject = useMemo(() => progressBy(bank, state.seen, "subject", SUBJECTS.map((x) => x.id)), [state.seen, state.lang]);
+  const weakestSystem = bySystem.find((r) => r.pct !== null);
+  const weakestSubject = bySubject.find((r) => r.pct !== null);
 
   function toggleSubject(id) {
     haptic("light");
@@ -146,11 +148,12 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
   if (view === "weak") {
     return (
       <WeakTopics
-        rows={accuracy}
+        systems={bySystem}
+        subjects={bySubject}
         onBack={() => setView("main")}
-        onPractise={(tags, label) => {
-          const wanted = new Set(tags);
-          launch(bank.filter((q) => q.tags.some((tag) => wanted.has(tag))), label);
+        onPractise={(kind, ids, label) => {
+          const wanted = new Set(ids);
+          launch(bank.filter((q) => wanted.has(q[kind])), label);
         }}
       />
     );
@@ -162,6 +165,7 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
 
       <AdCard />
 
+      <div className="search-row">
       <div className="search">
         <span className="search-icon"><SearchIcon /></span>
         <input
@@ -179,6 +183,14 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
             }
           }}
         />
+      </div>
+      <button
+        className="lab-btn"
+        onClick={() => { haptic("light"); setLabs(true); }}
+        aria-label={t("Normal lab values", "Normal laboratoriya ko'rsatkichlari")}
+      >
+        <Flask size={22} />
+      </button>
       </div>
 
       {query.trim() ? (
@@ -257,8 +269,12 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
             <button className="review-tile" onClick={() => { haptic("light"); setView("weak"); }}>
               <span className="review-ico"><Target /></span>
               {/* A soft hyphen lets the long Uzbek word break on a narrow phone. */}
-              <span className="review-t">{t("Weak topics", "Yaxshi o'zlashtiril­magan mavzular")}</span>
-              <span className="review-n">{weakest ? `${tagLabel(weakest.tag)} · ${weakest.pct}%` : t("Answer more first", "Javoblar kam")}</span>
+              <span className="review-t">{t("Weak topics", "Zaif mavzular")}</span>
+              <span className="review-n">
+                {weakestSystem ? `${systemShort(weakestSystem.id)} · ${weakestSystem.pct}%`
+                  : weakestSubject ? `${subjectShort(weakestSubject.id)} · ${weakestSubject.pct}%`
+                    : t("Answer more first", "Javoblar kam")}
+              </span>
             </button>
           </div>
 
@@ -313,6 +329,8 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
         </div>
       </div>
 
+      {labs && <LabValues onClose={() => setLabs(false)} />}
+
       {picker === "count" && (
         <Sheet title={t("Questions per round", "Bir martada nechta savol")} onClose={() => setPicker(null)}>
           <div className="count-presets picker-grid">
@@ -353,62 +371,78 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
 }
 
 /**
- * Weak topics: accuracy in every category, weakest first, from every answer
- * the player has given. Tapping a category practises it; the button
- * practises the three weakest together. Categories with too few answers to
- * judge are named at the end rather than ranked on luck.
+ * Weak topics: how the player is doing in every system and every subject,
+ * weakest first, from every answer they have given. Each row says how much of
+ * the category they have seen and how much of what they answered was right;
+ * tapping one practises it, and the button practises the three weakest of the
+ * list showing. Categories with too few answers to judge follow the ranked
+ * ones, marked "—", rather than being ranked on luck.
  */
-function WeakTopics({ rows, onBack, onPractise }) {
+function WeakTopics({ systems, subjects, onBack, onPractise }) {
+  const [axis, setAxis] = useState("system"); // system | subject
+  const rows = axis === "system" ? systems : subjects;
+  const name = axis === "system" ? systemName : subjectName;
   const judged = rows.filter((r) => r.pct !== null);
-  const unjudged = rows.filter((r) => r.pct === null);
   const worst = judged.slice(0, 3);
-  const band = (pct) => (pct < 60 ? " low" : pct < 80 ? " mid" : "");
+  // Those not yet judged follow: the ones they have started first, then by
+  // name, so a list of twenty they have not touched can be scanned.
+  const ordered = [
+    ...judged,
+    ...rows.filter((r) => r.pct === null).sort((a, b) => b.seen - a.seen || name(a.id).localeCompare(name(b.id))),
+  ];
+  const band = (pct) => (pct === null ? "" : pct < 60 ? " low" : pct < 80 ? " mid" : "");
 
   return (
     <div className="screen">
-      <BackBar title={t("Weak topics", "Yaxshi o'zlashtirilmagan mavzular")} onBack={onBack} />
+      <BackBar title={t("Weak topics", "Zaif mavzular")} onBack={onBack} />
       <p className="weak-intro">
-        {t("Your accuracy in each category, weakest first. Tap one to practise it.",
-          "Har bir fan bo'yicha to'g'ri javoblaringiz foizi, eng pastidan boshlab. Mashq qilish uchun birini bosing.")}
+        {t("How many questions you have seen, and how many of your answers were right, weakest first. Tap one to practise it.",
+          "Nechta savolni ko'rganingiz va javoblaringizning qanchasi to'g'ri bo'lgani, eng zaifidan boshlab. Mashq qilish uchun birini bosing.")}
       </p>
 
-      {judged.length ? (
-        <div className="weak-list">
-          {judged.map((r) => (
-            <button key={r.tag} className="weak-row" onClick={() => onPractise([r.tag], tagLabel(r.tag))}>
-              <span className="weak-name">
-                {tagLabel(r.tag)}
-                <small>{t(`${r.answered.toLocaleString()} answered`, `${r.answered.toLocaleString()} ta javob`)}</small>
-              </span>
-              <span className="weak-bar"><span className={`weak-fill${band(r.pct)}`} style={{ width: `${r.pct}%` }} /></span>
-              <span className={`weak-pct${band(r.pct)}`}>{r.pct}%</span>
-            </button>
-          ))}
-        </div>
-      ) : (
-        <div className="empty">
-          <div className="empty-big">🎯</div>
-          <div>
-            {t(`Answer at least ${MIN_ANSWERS} questions in a category to see how you do in it.`,
-              `Natijangizni ko'rish uchun biror fan bo'yicha kamida ${MIN_ANSWERS} ta savolga javob bering.`)}
-          </div>
-        </div>
-      )}
+      <div className="period" role="tablist" aria-label={t("Group by", "Guruhlash")}>
+        {[["system", t("Systems", "Tizimlar")], ["subject", t("Subjects", "Fanlar")]].map(([id, label]) => (
+          <button
+            key={id}
+            role="tab"
+            aria-selected={axis === id}
+            className={`period-opt${axis === id ? " on" : ""}`}
+            onClick={() => { if (axis !== id) { haptic("light"); setAxis(id); } }}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
 
-      {unjudged.length > 0 && (
+      <div className="weak-list">
+        {ordered.map((r) => (
+          <button key={r.id} className="weak-row stack" onClick={() => onPractise(axis, [r.id], name(r.id))}>
+            <span className="weak-name">{name(r.id)}</span>
+            <span className={`weak-pct${band(r.pct)}`}>{r.pct === null ? "—" : `${r.pct}%`}</span>
+            <span className="weak-bar"><span className={`weak-fill${band(r.pct)}`} style={{ width: `${r.pct ?? 0}%` }} /></span>
+            <span className="weak-sub">
+              {t(`${r.seen.toLocaleString()} of ${r.total.toLocaleString()} seen · ${r.answered.toLocaleString()} answered`,
+                `${r.total.toLocaleString()} tadan ${r.seen.toLocaleString()} tasi ko'rilgan · ${r.answered.toLocaleString()} ta javob`)}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {!judged.length && (
         <div className="cta-note weak-more">
-          {t("Not enough answers yet:", "Hali javoblar yetarli emas:")} {unjudged.map((r) => tagLabel(r.tag)).join(", ")}
+          {t(`Answer at least ${MIN_ANSWERS} questions in one to see how you do in it.`,
+            `Natijangizni ko'rish uchun birortasida kamida ${MIN_ANSWERS} ta savolga javob bering.`)}
         </div>
       )}
 
       {worst.length > 0 && (
         <div className="home-cta">
-          <button className="btn btn-primary" onClick={() => onPractise(worst.map((r) => r.tag), t("Weak topics", "Yaxshi o'zlashtirilmagan mavzular"))}>
+          <button className="btn btn-primary" onClick={() => onPractise(axis, worst.map((r) => r.id), t("Weak topics", "Zaif mavzular"))}>
             {worst.length === 1
-              ? t("Practise my weakest", "Eng zaif mavzuni mashq qilish")
-              : t(`Practise my ${worst.length} weakest`, `Eng zaif ${worst.length} ta mavzuni mashq qilish`)}
+              ? t("Practise my weakest", "Eng zaifini mashq qilish")
+              : t(`Practise my ${worst.length} weakest`, `Eng zaif ${worst.length} tasini mashq qilish`)}
           </button>
-          <div className="cta-note">{worst.map((r) => tagLabel(r.tag)).join(", ")}</div>
+          <div className="cta-note">{worst.map((r) => name(r.id)).join(", ")}</div>
         </div>
       )}
     </div>

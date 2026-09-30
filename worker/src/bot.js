@@ -19,6 +19,14 @@ import { FORMAT_EXAMPLE, FORMAT_EXAMPLE_UZ, parseQuestions } from "../../src/lib
 import { playerKey } from "../../src/lib/scorecard.js";
 
 export const APP_LINK = "https://t.me/usmleengo_bot/study";
+// Where the app itself is served from: the menu button opens this address,
+// where APP_LINK is the t.me link people share.
+export const APP_URL = "https://azizbek-mux.github.io/usmleengo/";
+// The size of the question bank as the bot says it, rounded down to a
+// hundred like the app's own blurb. tools/classroom.test.mjs checks it
+// against the compiled bank, so it cannot drift far from the truth.
+export const COUNT_EN = "6,600+";
+export const COUNT_UZ = "6 600+";
 const FILE_TYPES = /\.(docx|pdf|html?|txt)$/i;
 const MAX_FILE = 20 * 1024 * 1024; // what a bot may download from Telegram
 const KEEP_SECONDS = 2 * 86400;
@@ -63,16 +71,16 @@ const both = (en, uz, uzLead) => (uzLead ? [uz, RULE, en] : [en, RULE, uz]).join
 /** A button has room for one label, so it takes the leading language's. */
 const pick = (en, uz, uzLead) => (uzLead ? uz : en);
 
-const WELCOME_EN = [
+export const WELCOME_EN = [
   "<b>usmleengo</b> 🩺",
-  "6,300+ USMLE quizzes, Medical English flashcards, live games with friends, and classrooms.",
+  `${COUNT_EN} USMLE quizzes, Medical English flashcards, live games with friends, and classrooms.`,
   "",
   "<b>Teachers:</b> type or paste your questions here, forward me quizzes, or send a file — Word, PDF, web page or text — and I'll turn them into a package for your class. Send /format to see how to write them.",
 ].join("\n");
 
-const WELCOME_UZ = [
+export const WELCOME_UZ = [
   "<b>usmleengo</b> 🩺",
-  "6 300+ USMLE savoli, Tibbiy ingliz tili kartochkalari, do'stlar bilan jonli o'yinlar va guruhlar.",
+  `${COUNT_UZ} USMLE savoli, Tibbiy ingliz tili kartochkalari, do'stlar bilan jonli o'yinlar va guruhlar.`,
   "",
   "<b>O'qituvchilarga:</b> savollaringizni shu yerga yozing yoki nusxalab tashlang, viktorinalarni menga yuboring yoki fayl jo'nating — Word, PDF, veb-sahifa yoki matn — men ularni guruhingiz uchun to'plamga aylantiraman. Qanday yozilishini ko'rish uchun /format yuboring.",
 ].join("\n");
@@ -368,5 +376,29 @@ export async function setupBot(request, env) {
       { command: "format", description: "Savol faylini qanday yozish kerak" },
     ],
   })).json();
-  return { status: 200, body: { webhook: hook, commands, commandsUz } };
+
+  // What a person sees before they have said anything: a button beside the
+  // message box that opens the app, and the text on the empty chat and on
+  // the bot's profile. Each has a default and an Uzbek version, which
+  // Telegram shows to phones set to Uzbek.
+  const menu = await (await telegramApi(env, "setChatMenuButton", {
+    menu_button: { type: "web_app", text: "usmleengo", web_app: { url: APP_URL } },
+  })).json();
+  const describe = async (method, texts) => ({
+    en: await (await telegramApi(env, method, texts.en)).json(),
+    uz: await (await telegramApi(env, method, { ...texts.uz, language_code: "uz" })).json(),
+  });
+  const description = await describe("setMyDescription", {
+    en: {
+      description: `USMLE practice in your pocket: ${COUNT_EN} five-second questions by system and subject, 8,000 Medical English flashcards, live games with friends, and classrooms for teachers. Free. Tap the usmleengo button below to start.`,
+    },
+    uz: {
+      description: `Cho'ntagingizdagi USMLE mashqi: tizim va fanlar bo'yicha ${COUNT_UZ} ta besh soniyalik savol, 8 000 ta Tibbiy ingliz tili kartochkasi, do'stlar bilan jonli o'yinlar va o'qituvchilar uchun guruhlar. Bepul. Boshlash uchun pastdagi «usmleengo» tugmasini bosing.`,
+    },
+  });
+  const short = await describe("setMyShortDescription", {
+    en: { short_description: "USMLE quizzes, Medical English flashcards, live games and classrooms. Free." },
+    uz: { short_description: "USMLE savollari, Tibbiy ingliz tili kartochkalari, jonli o'yinlar va guruhlar. Bepul." },
+  });
+  return { status: 200, body: { webhook: hook, commands, commandsUz, menu, description, short } };
 }

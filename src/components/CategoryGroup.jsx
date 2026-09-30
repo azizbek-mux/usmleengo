@@ -32,9 +32,13 @@ export default function CategoryGroup({ label, rows, chosen, onToggle, onAll, on
           <span className={`cat-chevron${open ? " open" : ""}`}><ChevronDown /></span>
         </button>
         {open && (
+          // One action at a time: with something chosen, Clear puts the whole
+          // axis back; with nothing chosen, Select all starts from everything
+          // to untick from. Both at once would not fit a phone's width.
           <div className="cat-acts">
-            <button className="chips-clear" onClick={onAll}>{t("Select all", "Hammasini tanlash")}</button>
-            {n > 0 && <button className="chips-clear" onClick={onNone}>{t("Clear", "Tozalash")}</button>}
+            {n > 0
+              ? <button className="chips-clear" onClick={onNone}>{t("Clear", "Tozalash")}</button>
+              : <button className="chips-clear" onClick={onAll}>{t("Select all", "Hammasini tanlash")}</button>}
           </div>
         )}
       </div>

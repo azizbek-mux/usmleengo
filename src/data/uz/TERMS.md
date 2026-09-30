@@ -22,7 +22,7 @@ fully in Uzbek (no English in brackets, no English terms kept).
 | XP | XP |
 | Mistakes | Xatolar |
 | Saved | Saqlangan |
-| Weak topics | Yaxshi o'zlashtirilmagan mavzular |
+| Weak topics | Zaif mavzular |
 | Homework | Uy vazifasi |
 | question package | savollar to'plami |
 | teacher / student | o'qituvchi / talaba |

@@ -119,3 +119,12 @@ export const SearchIcon = ({ size = 18 }) => (
 export const Tick = ({ size = 14 }) => (
   <Line size={size} width={3}><path d="M4 12.5l5.5 5.5L20 6" /></Line>
 );
+
+/** A laboratory flask: normal lab values. */
+export const Flask = ({ size = 20 }) => (
+  <Line size={size}>
+    <path d="M9 3h6" />
+    <path d="M10 3v6.2L4.6 18.4A2 2 0 0 0 6.3 21.4h11.4a2 2 0 0 0 1.7-3L14 9.2V3" />
+    <path d="M7.6 15h8.8" />
+  </Line>
+);

@@ -402,19 +402,31 @@ class invite skips them until next time. Seeing them sets `introSeen` in the
 saved progress, which a reset keeps. **Me → How to use usmleengo** shows
 them again. Help & support there also has **Report a problem** (a chat with
 the developer, the draft already carrying the version and platform) and
-**Buy me a coffee** (the developer's card, with a Copy button).
+**Buy me a coffee** (the developer's card, with a Copy button). Both reports
+are in `src/lib/report.js`; a question can be reported from its own
+explanation, which quotes its id, so it is found in either language.
 
 Under the Quiz tab's search, **Review** holds the player's own material:
 **Mistakes** (every question whose last answer was wrong, until it is
 answered right), **Saved** (questions bookmarked with 🔖 in a quiz or on the
-result screen) and **Weak topics** (accuracy per category, weakest first,
-from 5 answers up; tap one to practise it). See `src/lib/review.js`.
+result screen) and **Weak topics** (how many questions seen and how many answers were right in
+each system and each subject, weakest first, judged from 5 answers up; tap one
+to practise it). See `progressBy` in `src/lib/review.js`. A class teacher sees
+the same systems for each student.
 
-The Quiz tab keeps the categories on screen, one tap each, under short even
-names (histo, radio, endo, gen, onco…, see `src/lib/tags.js`); how many
-questions and which kind sit as two small buttons beside **Start**. A new
-player lands straight on it, with mixed question types, and is asked
-nothing first.
+Beside the search, a flask opens the **normal lab values**
+(`src/data/labs.js`, `src/components/LabValues.jsx`); the same flask is in the
+top bar of every question. Analyte names stay in English, as on the exam.
+The ranges are typed by hand: `tools/labs.test.mjs` catches slips of shape,
+not of medicine, so they want a proofread from someone who knows.
+
+The Quiz tab keeps the two category lists on screen (systems and subjects,
+`src/lib/taxonomy.js`), one tap each; how many questions and which kind sit
+as two small buttons beside **Start**. A new player lands straight on it,
+with mixed question types, and is asked nothing first.
+
+The search reads a question's English topic and stem as well as the Uzbek
+ones, so "apoptosis" finds Apoptoz in an Uzbek app (`src/lib/match.js`).
 
 ## Classrooms
 
@@ -470,9 +482,13 @@ teacher, 10 classes a student.
   burst.
   Setup, once: a random `WEBHOOK_SECRET` Worker secret, then
   `POST /bot/setup` with header `x-setup-key: <that secret>` points the
-  bot's webhook here and sets its commands — the English list, and the
-  Uzbek one Telegram shows to phones set to Uzbek. Telegram signs every
-  webhook call with the same secret, and anything else is refused.
+  bot's webhook here and sets what people see before they type: its
+  commands, the menu button beside the message box that opens the app, and the
+  description on the empty chat and on the profile - each in English, and in
+  Uzbek for phones set to Uzbek. Telegram signs every webhook call with the
+  same secret, and anything else is refused. The size of the bank quoted there
+  (`COUNT_EN` in `worker/src/bot.js`) is checked against the compiled bank by
+  `tools/classroom.test.mjs`.
   `worker/setup-bot.ps1` does the whole thing on Windows:
 
   ```powershell

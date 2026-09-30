@@ -1,5 +1,7 @@
-# Points @usmleengo_bot's webhook at this Worker and sets its command lists:
-# the English one, plus the Uzbek one Telegram shows to phones set to Uzbek.
+# Points @usmleengo_bot's webhook at this Worker, and sets what people see
+# before they type anything: its command lists, the menu button that opens the
+# app, and the descriptions on the empty chat and the profile - each in English
+# and in Uzbek, which Telegram shows to phones set to Uzbek.
 #
 #   powershell -ExecutionPolicy Bypass -File worker\setup-bot.ps1
 #
@@ -28,9 +30,9 @@ Write-Host $reply
 
 $ok = ([regex]::Matches($reply, '"ok":true')).Count
 Write-Host ""
-if ($ok -ge 3) {
-  Write-Host "Done - webhook set, both command lists updated." -ForegroundColor Green
+if ($ok -ge 8) {
+  Write-Host "Done - webhook, commands, menu button and descriptions are set." -ForegroundColor Green
   Write-Host "Send /start to @usmleengo_bot to check it answers." -ForegroundColor Green
 } else {
-  Write-Host "Not finished - the reply above should hold three ok:true." -ForegroundColor Yellow
+  Write-Host "Not finished - the reply above should hold eight ok:true." -ForegroundColor Yellow
 }

@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { t } from "../lib/i18n.js";
 import { WEIGHTS, XP, formatPace, medalFor, points } from "../lib/rating.js";
-import { DEVELOPER, haptic, inTelegram, openTelegram, platformText } from "../lib/telegram.js";
+import { reportProblem } from "../lib/report.js";
+import { DEVELOPER, haptic, inTelegram, openTelegram } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
 import { Chevron, ChevronDown } from "./Icons.jsx";
 import { rankText, ratingData, useLiveBoard } from "./Rating.jsx";
@@ -9,21 +10,6 @@ import { Byline, Sheet, ThemePicker } from "./Sheet.jsx";
 
 /** "#88 / 2,300" when there is anyone to be placed against. */
 const placeOf = (p) => (p?.place && p.total > 1 ? rankText(p) : null);
-
-const VERSION = typeof __APP_VERSION__ === "undefined" ? "dev" : __APP_VERSION__;
-
-/**
- * A chat with the developer, the message already started with what a report
- * needs and people forget: which version, on which phone.
- */
-function reportProblem() {
-  haptic("light");
-  const draft = t(
-    `usmleengo problem (version ${VERSION}, ${platformText()}):\n`,
-    `usmleengoda muammo (versiya ${VERSION}, ${platformText()}):\n`,
-  );
-  openTelegram(`${DEVELOPER}?text=${encodeURIComponent(draft)}`);
-}
 
 /**
  * "Buy me a coffee": the author's card, to send any amount to from Click,

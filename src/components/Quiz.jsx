@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { t } from "../lib/i18n.js";
 import { grade } from "../lib/session.js";
+import { reportQuestion } from "../lib/report.js";
 import { haptic } from "../lib/telegram.js";
-import { Bookmark } from "./Icons.jsx";
+import { Bookmark, Flask } from "./Icons.jsx";
+import LabValues from "./LabValues.jsx";
 
 /** Renders "… vitamin ___" with the blank styled rather than literal underscores. */
 function GapText({ text }) {
@@ -27,6 +29,8 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
   // Histology detail does not survive a phone-sized card, so the picture opens
   // full screen on a tap.
   const [zoom, setZoom] = useState(false);
+  // The normal lab values, in a sheet over the question.
+  const [labs, setLabs] = useState(false);
   const inputRef = useRef(null);
   // When the current question appeared, and whether the app left the screen
   // while it was up. Feeds the speed rating; see record() in storage.js.
@@ -109,6 +113,13 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
           <div className="bar-fill" style={{ width: `${progress}%` }} />
         </div>
         <div className="combo">{combo >= 2 ? `🔥${combo}` : ""}</div>
+        <button
+          className="save-btn"
+          onClick={() => { haptic("light"); setLabs(true); }}
+          aria-label={t("Normal lab values", "Normal laboratoriya ko'rsatkichlari")}
+        >
+          <Flask />
+        </button>
         {/* Save for later: the question lands in Saved on the Quiz tab.
             Not offered in a class round, whose questions are the teacher's. */}
         {onSave && (
@@ -195,6 +206,12 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
               )}
               {q.explain}
             </div>
+            {/* Only the bank's own questions: a teacher's are theirs to fix. */}
+            {onSave && (
+              <button className="fb-report" onClick={() => reportQuestion(q)}>
+                {t("Something wrong with this question? Tell me", "Savolda xato bormi? Menga yozing")}
+              </button>
+            )}
           </div>
         )}
 
@@ -213,6 +230,8 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
           </button>
         )}
       </div>
+
+      {labs && <LabValues onClose={() => setLabs(false)} />}
 
       {zoom && q.img && (
         <div className="zoom" onClick={() => setZoom(false)} role="dialog" aria-label={t("Picture", "Rasm")}>

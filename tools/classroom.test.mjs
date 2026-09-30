@@ -243,7 +243,7 @@ console.log("\nthe bot");
   // Both languages, every time. The bot cannot see which one the person
   // reads the app in, so it sends both and leads with their phone's.
   check("/start comes in English and Uzbek",
-    /6,300\+ USMLE quizzes/.test(sent.at(-2).body.text) && /6 300\+ USMLE savoli/.test(sent.at(-2).body.text));
+    /6,600\+ USMLE quizzes/.test(sent.at(-2).body.text) && /6 600\+ USMLE savoli/.test(sent.at(-2).body.text));
   check("/format shows the example in both, with the Uzbek words",
     /Ethosuximide/.test(sent.at(-1).body.text) && /Etosuksimid/.test(sent.at(-1).body.text) &&
     /Javob:/.test(sent.at(-1).body.text));
@@ -351,6 +351,34 @@ console.log("\nthe bot");
   await setup("hook-secret");
   const hook = sent.find((s) => s.method === "setWebhook");
   check("and points Telegram's webhook here, with the secret", hook.body.url === "https://rating.example/bot" && hook.body.secret_token === "hook-secret");
+  // What people see before they type: a menu button into the app, and the
+  // descriptions, each in English and in Uzbek.
+  const menu = sent.find((s) => s.method === "setChatMenuButton");
+  check("puts a button that opens the app beside the message box",
+    menu?.body.menu_button.type === "web_app" && menu.body.menu_button.web_app.url === BOT.APP_URL && menu.body.menu_button.text.length > 0);
+  check("with the app's own address, not the t.me link", BOT.APP_URL.startsWith("https://") && !BOT.APP_URL.includes("t.me"));
+  const described = (method) => sent.filter((s) => s.method === method);
+  check("describes the bot on the empty chat, in English and in Uzbek",
+    described("setMyDescription").length === 2 &&
+    described("setMyDescription").filter((d) => d.body.language_code === "uz").length === 1 &&
+    described("setMyDescription").every((d) => d.body.description.length > 40 && d.body.description.length <= 512));
+  check("and on its profile, within Telegram's 120 characters",
+    described("setMyShortDescription").length === 2 &&
+    described("setMyShortDescription").every((d) => d.body.short_description.length > 20 && d.body.short_description.length <= 120));
+  check("the Uzbek text is Uzbek",
+    described("setMyDescription").find((d) => d.body.language_code === "uz").body.description.includes("Bepul"));
+  check("the command lists are set too, in both languages",
+    sent.filter((s) => s.method === "setMyCommands").length === 2);
+
+  // The size of the bank, said the same everywhere: the bot's welcome and
+  // descriptions must agree with the compiled bank to the nearest hundred.
+  try {
+    const compiled = JSON.parse(readFileSync(new URL("../public/questions.json", import.meta.url), "utf8"));
+    const hundreds = Math.floor(compiled.length / 100) * 100;
+    check(`the bot says ${BOT.COUNT_EN}, and the bank has ${compiled.length.toLocaleString()}`,
+      BOT.COUNT_EN === `${hundreds.toLocaleString("en-US")}+` && BOT.COUNT_UZ === `${hundreds.toLocaleString("en-US").replace(",", " ")}+`);
+    check("the welcome carries it in both languages", BOT.WELCOME_EN.includes(BOT.COUNT_EN) && BOT.WELCOME_UZ.includes(BOT.COUNT_UZ));
+  } catch { /* the bank is compiled by npm run build; without it there is nothing to compare */ }
   globalThis.fetch = realFetch;
 }
 

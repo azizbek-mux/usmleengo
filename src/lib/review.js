@@ -62,3 +62,50 @@ export function topicAccuracy(bank, seen = {}, tags = []) {
   const unjudged = rows.filter((r) => r.pct === null);
   return [...judged, ...unjudged];
 }
+
+/**
+ * How the player is doing in each system, or in each subject: one row per id
+ * that has questions in the bank.
+ *
+ *   { id, total, seen, right, wrong, answered, pct }
+ *
+ * `seen` is how many of its questions they have answered at least once, out
+ * of `total`; `pct` is the share of every answer given that was right, or
+ * null while there are too few answers to judge. Weakest first, then the
+ * ones not yet judged, most-seen first - the order the progress screen
+ * reads in.
+ *
+ * `key` is "system" or "subject": the field the bank stamps on each question.
+ */
+export function progressBy(bank, seen = {}, key, ids = []) {
+  const rows = new Map(ids.map((id) => [id, { id, total: 0, seen: 0, right: 0, wrong: 0 }]));
+  for (const q of bank) {
+    const row = rows.get(q[key]);
+    if (!row) continue;
+    row.total += 1;
+    const entry = seen[q.id];
+    const right = Number(entry?.[0]) || 0;
+    const wrong = Number(entry?.[1]) || 0;
+    if (!right && !wrong) continue;
+    row.seen += 1;
+    row.right += right;
+    row.wrong += wrong;
+  }
+  const done = [...rows.values()].filter((r) => r.total > 0).map((r) => {
+    const answered = r.right + r.wrong;
+    return { ...r, answered, pct: answered >= MIN_ANSWERS ? Math.round((r.right / answered) * 100) : null };
+  });
+  const judged = done.filter((r) => r.pct !== null).sort((a, b) => a.pct - b.pct || b.answered - a.answered);
+  const rest = done.filter((r) => r.pct === null).sort((a, b) => b.seen - a.seen);
+  return [...judged, ...rest];
+}
+
+/**
+ * Right and wrong answers in each system, as [right, wrong] by id, for the
+ * teacher of a class the player has joined. Only systems with answers.
+ */
+export function systemTotals(bank, seen = {}, ids = []) {
+  const out = {};
+  for (const r of progressBy(bank, seen, "system", ids)) if (r.answered) out[r.id] = [r.right, r.wrong];
+  return out;
+}

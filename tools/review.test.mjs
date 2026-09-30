@@ -82,5 +82,42 @@ check("having seen them is kept in the saved progress", S.loadLocal().introSeen 
 globalThis.localStorage = { getItem: () => JSON.stringify({ introSeen: "yes" }), setItem() {}, removeItem() {} };
 check("and only a real true counts", S.loadLocal().introSeen === false);
 
+console.log("\nprogress by system and subject");
+{
+  const pq = (id, system, subject) => ({ id, type: "binary", tags: [], system, subject, topic: id, q: "?", options: ["a", "b"] });
+  const pbank = [
+    pq("a1", "renal", "physiology"), pq("a2", "renal", "physiology"), pq("a3", "renal", "pathology"),
+    pq("b1", "cardiovascular", "pharmacology"), pq("b2", "cardiovascular", "pharmacology"),
+    pq("c1", "dermatology", "pathology"),
+  ];
+  const ids = ["renal", "cardiovascular", "dermatology", "nervous"];
+  let ps = { ...S.emptyState };
+  // renal: 4 right + 2 wrong over two questions; cardiovascular: 1 right, 4 wrong over one
+  for (let i = 0; i < 4; i++) ps = S.record(ps, pbank[0], true, 3000);
+  for (let i = 0; i < 2; i++) ps = S.record(ps, pbank[1], false, 3000);
+  ps = S.record(ps, pbank[3], true, 3000);
+  for (let i = 0; i < 4; i++) ps = S.record(ps, pbank[3], false, 3000);
+  const rows = R.progressBy(pbank, ps.seen, "system", ids);
+  const by = Object.fromEntries(rows.map((r) => [r.id, r]));
+
+  check("a system with no questions in the bank is left out", !by.nervous);
+  check("total is the questions in it", by.renal.total === 3 && by.cardiovascular.total === 2 && by.dermatology.total === 1);
+  check("seen counts the questions answered at least once", by.renal.seen === 2 && by.cardiovascular.seen === 1 && by.dermatology.seen === 0);
+  check("answered and right count every answer", by.renal.answered === 6 && by.renal.right === 4 && by.cardiovascular.answered === 5);
+  check("the percentage is right answers over answers", by.renal.pct === 67 && by.cardiovascular.pct === 20, `${by.renal.pct} ${by.cardiovascular.pct}`);
+  check("weakest first", rows[0].id === "cardiovascular" && rows[1].id === "renal");
+  check("too few answers to judge is null, and comes last", by.dermatology.pct === null && rows[rows.length - 1].id === "dermatology");
+  check("four answers is still too few", R.progressBy(pbank, { c1: [3, 1] }, "system", ids).find((r) => r.id === "dermatology").pct === null);
+  check("five is enough", R.progressBy(pbank, { c1: [4, 1] }, "system", ids).find((r) => r.id === "dermatology").pct === 80);
+
+  const subj = R.progressBy(pbank, ps.seen, "subject", ["physiology", "pathology", "pharmacology"]);
+  check("the same answers, read by subject", subj.find((r) => r.id === "physiology").answered === 6 && subj.find((r) => r.id === "pharmacology").answered === 5);
+  check("every answer is in one system and one subject", rows.reduce((n, r) => n + r.answered, 0) === subj.reduce((n, r) => n + r.answered, 0));
+
+  const totals = R.systemTotals(pbank, ps.seen, ids);
+  check("the teacher is sent right/wrong by system", totals.renal?.join() === "4,2" && totals.cardiovascular?.join() === "1,4" && Object.keys(totals).length === 2, JSON.stringify(totals));
+  check("only systems with answers", !("dermatology" in totals));
+}
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

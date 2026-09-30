@@ -88,14 +88,46 @@ function tokenize(s) {
   return [...new Set(out)];
 }
 
-function haystack(q) {
-  return normalize([q.topic, q.tags.join(" "), q.q, q.answer || "", (q.options || []).join(" ")].join(" "));
+/**
+ * What a question is searched on, normalised once. The bank is searched on
+ * every keystroke, and normalising six thousand questions each time is most
+ * of what a search costs. Keyed by the question object, so a language switch,
+ * which builds new ones, starts afresh.
+ *
+ * A question shown in Uzbek also carries its English topic and stem
+ * (bank.js). They are searched too, as a second reading of the same
+ * question: the student may type either language, and the abbreviations
+ * above are English.
+ */
+const prepared = new WeakMap();
+
+function readings(q) {
+  let r = prepared.get(q);
+  if (r) return r;
+  const tags = q.tags.map(normalize);
+  r = [{
+    topic: normalize(q.topic),
+    tags,
+    text: normalize(q.q),
+    hay: normalize([q.topic, q.tags.join(" "), q.q, q.answer || "", (q.options || []).join(" ")].join(" ")),
+  }];
+  if (q.enTopic) {
+    r.push({
+      topic: normalize(q.enTopic),
+      tags,
+      text: normalize(q.enQ),
+      hay: normalize([q.enTopic, q.tags.join(" "), q.enQ].join(" ")),
+    });
+  }
+  prepared.set(q, r);
+  return r;
 }
 
 function score(q, query, tokens) {
-  const topic = normalize(q.topic);
-  const tags = q.tags.map(normalize);
-  const text = normalize(q.q);
+  return Math.max(...readings(q).map((r) => scoreReading(r, query, tokens)));
+}
+
+function scoreReading({ topic, tags, text, hay }, query, tokens) {
   let s = 0;
 
   if (topic === query) s += 120;
@@ -113,7 +145,6 @@ function score(q, query, tokens) {
 
   // Reward covering more of what the user typed, so a two-word query prefers
   // a question matching both words over one matching a single word twice.
-  const hay = haystack(q);
   const covered = tokens.filter((t) => hay.includes(t)).length;
   if (tokens.length) s += Math.round((covered / tokens.length) * 40);
 

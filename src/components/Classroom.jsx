@@ -6,6 +6,7 @@ import { formatPace } from "../lib/rating.js";
 import { setClassSharing } from "../lib/ratingApi.js";
 import { classInviteMessage } from "../lib/shareText.js";
 import { tagLabel } from "../lib/tags.js";
+import { SYSTEMS, systemName } from "../lib/taxonomy.js";
 import { APP_LINK, haptic, initData, share } from "../lib/telegram.js";
 import { BackBar, ScreenHead } from "./Chrome.jsx";
 import { PlaceMark } from "./Rating.jsx";
@@ -34,6 +35,13 @@ const reasons = () => ({
 const reasonOf = (err) => reasons()[err?.code] || t("Something went wrong. Try again.", "Nimadir xato ketdi. Qayta urinib ko'ring.");
 const studentsText = (n) => t(`${n} student${n === 1 ? "" : "s"}`, `${n} ta talaba`);
 const questionsText = (n) => t(`${n} question${n === 1 ? "" : "s"}`, `${n} ta savol`);
+
+/**
+ * A weak topic as a teacher reads it. New ones are systems; a student who
+ * has not opened the app since the change still has the old category tags
+ * stored, which are shown as they were until their next visit replaces them.
+ */
+const topicName = (id) => (SYSTEMS.some((x) => x.id === id) ? systemName(id) : tagLabel(id));
 
 const pct = (n) => (n === null || n === undefined ? "—" : `${n}%`);
 const signed = (n) => (n > 0 ? `+${n.toLocaleString()}` : n.toLocaleString());
@@ -621,13 +629,13 @@ function StudentDetail({ classId, student, onBack }) {
             ))}
           </div>
 
-          <div className="section-label">{t("Weak topics", "Yaxshi o'zlashtirilmagan mavzular")}</div>
+          <div className="section-label">{t("Weak topics", "Zaif mavzular")}</div>
           {n.weak.length ? (
             <div className="weak-list">
               {n.weak.map((w) => (
                 <div key={w.tag} className="weak-row">
                   <span className="weak-name">
-                    {tagLabel(w.tag)}
+                    {topicName(w.tag)}
                     <small>{t(`${w.answered} answered`, `${w.answered} ta javob`)}</small>
                   </span>
                   <span className="weak-bar">

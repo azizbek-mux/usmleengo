@@ -29,8 +29,12 @@ function localize(q) {
   if (!u) return q; // not translated yet: only while the translation is in progress
   // An Uzbek topic can give the answer away where the English didn't (h).
   const hideTopic = q.hideTopic || u.h === 1 || undefined;
-  if (q.type === "gap") return { ...q, topic: u.t, q: u.q, answer: u.a, accept: u.c, explain: u.e, hideTopic };
-  return { ...q, topic: u.t, q: q.img ? q.q : u.q, options: u.o, explain: u.e, hideTopic };
+  // The English topic and stem ride along for the search alone: a student
+  // reading Uzbek still types "apoptosis" and "pheochromocytoma", the names
+  // the exam uses, and must find them (see match.js).
+  const en = { enTopic: q.topic, enQ: q.q };
+  if (q.type === "gap") return { ...q, ...en, topic: u.t, q: u.q, answer: u.a, accept: u.c, explain: u.e, hideTopic };
+  return { ...q, ...en, topic: u.t, q: q.img ? q.q : u.q, options: u.o, explain: u.e, hideTopic };
 }
 
 /**
@@ -121,8 +125,20 @@ export function bankBlurb() {
   // resolved. Say nothing rather than advertise "0 quizzes".
   if (!bank.length) return t("Thousands of quizzes", "Minglab savollar");
   if (bank.length < 100) return t(`${bank.length} quizzes`, `${bank.length} ta savol`);
-  const n = Math.floor(bank.length / 100) * 100;
-  return t(`${n}+ quizzes`, `${n.toLocaleString("en-US").replace(",", " ")}+ ta savol`);
+  return t(`${bankPlus()} quizzes`, `${bankPlus()} ta savol`);
+}
+
+/**
+ * The bank's size as a bare figure, "6,600+" or "6 600+" in Uzbek, rounded
+ * down like the blurb. For sentences that need the number itself; null while
+ * the bank is small or not yet loaded, so a caller can fall back to a word.
+ * The bot says the same figure in worker/src/bot.js, and a test keeps the
+ * two together.
+ */
+export function bankPlus() {
+  if (bank.length < 100) return null;
+  const n = (Math.floor(bank.length / 100) * 100).toLocaleString("en-US");
+  return t(`${n}+`, `${n.replace(",", " ")}+`);
 }
 
 export default bank;

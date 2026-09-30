@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { bankPlus } from "../data/bank.js";
 import { t } from "../lib/i18n.js";
 import { haptic, showBack } from "../lib/telegram.js";
 import { Book, Checklist, Players, School, Trophy, User } from "./Icons.jsx";
@@ -16,8 +17,8 @@ export const introCards = () => [
     eyebrow: t("Welcome to usmleengo", "usmleengoga xush kelibsiz"),
     title: t("Quiz", "Testlar"),
     text: t(
-      "6,300+ five-second USMLE questions. Pick subjects, or tap Random for a mixed round. Your mistakes and saved questions wait in Review.",
-      "6 300+ ta besh soniyalik USMLE savoli. Fanlarni tanlang yoki aralash savollar uchun «Tasodifiy» tugmasini bosing. Xatolaringiz va saqlangan savollaringiz «Takrorlash» bo'limida turadi.",
+      `${bankPlus() || "Thousands of"} five-second USMLE questions. Tap Random for a mixed round, or pick systems and subjects first. Your mistakes and saved questions wait in Review. The flask beside the search opens normal lab values.`,
+      `${bankPlus() ? `${bankPlus()} ta` : "Minglab"} besh soniyalik USMLE savoli. Aralash savollar uchun «Tasodifiy»ni bosing yoki avval tizim va fanlarni tanlang. Xatolaringiz va saqlangan savollaringiz «Takrorlash» bo'limida turadi. Qidiruv yonidagi kolba normal laboratoriya ko'rsatkichlarini ochadi.`,
     ),
   },
   {
