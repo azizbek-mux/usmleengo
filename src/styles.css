@@ -2088,3 +2088,6 @@ input { font: inherit; }
 
 /* The last line of the answers card's rules: what the rules add up to. */
 .xp-note { font-size: 12.5px; line-height: 1.5; color: var(--muted); padding: 11px 0 9px; }
+
+/* Kahoot's answer streak, under the result: how many in a row, and the bonus. */
+.game-streak { text-align: center; font-size: 13.5px; font-weight: 700; color: var(--gold); margin: -6px 0 10px; }

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import bank, { bilingualBank } from "../data/bank.js";
 import {
   CODE_RE, DEFAULT_SETTINGS, GAME_TYPES, MAX_PLAYERS, MIN_PLAYERS, QUESTION_COUNTS, SECONDS,
-  availableFor, inviteLink, maxPoints, pickGameQuestions,
+  STREAK_BONUS_MAX, availableFor, inviteLink, maxPoints, pickGameQuestions,
 } from "../lib/game.js";
 import { connectGame, createGame } from "../lib/gameApi.js";
 import { scoped } from "../lib/account.js";
@@ -451,11 +451,8 @@ function Lobby({ game, send }) {
             <div className="cta-note">
               {here.length < MIN_PLAYERS
                 ? t("Waiting for at least one more player — share the invite.", "Yana kamida bitta o'yinchi kerak — taklifni ulashing.")
-                : game.settings.qtype === "binary"
-                  ? t(`Right earns up to ${maxPoints("binary").toLocaleString()} a question: the faster, the more. Wrong earns 0.`,
-                    `To'g'ri javob har bir savolga ${maxPoints("binary").toLocaleString()} ballgacha beradi: qanchalik tez bo'lsa, shunchalik ko'p. Noto'g'ri javob — 0.`)
-                  : t(`Right earns up to ${maxPoints("binary").toLocaleString()} tapped, ${maxPoints("gap").toLocaleString()} typed: the faster, the more. Wrong earns 0.`,
-                    `To'g'ri javob: testda ${maxPoints("binary").toLocaleString()} ballgacha, yozma javobda ${maxPoints("gap").toLocaleString()} ballgacha — qanchalik tez bo'lsa, shunchalik ko'p. Noto'g'ri javob — 0.`)}
+                : t(`Right earns ${maxPoints() / 2} to ${maxPoints().toLocaleString()} a question: the faster, the more. Right answers in a row add a bonus of up to ${STREAK_BONUS_MAX}. Wrong earns 0.`,
+                  `To'g'ri javob har bir savolga ${maxPoints() / 2} dan ${maxPoints().toLocaleString()} gacha ball beradi: qanchalik tez bo'lsa, shunchalik ko'p. Ketma-ket to'g'ri javoblar ${STREAK_BONUS_MAX} gacha bonus qo'shadi. Noto'g'ri javob — 0.`)}
             </div>
           </>
         ) : (
@@ -671,8 +668,13 @@ function Reveal({ game, serverNow }) {
         <span className="game-result-t">
           {verdict === "ok" ? t("✓ Correct", "✓ To'g'ri") : verdict === "no" ? t("✗ Wrong", "✗ Noto'g'ri") : t("⏱ No answer", "⏱ Javob berilmadi")}
         </span>
-        <span className="game-result-p">+{(mine?.points || 0).toLocaleString()}</span>
+        <span className="game-result-p">+{((mine?.points || 0) + (mine?.bonus || 0)).toLocaleString()}</span>
       </div>
+      {mine?.bonus > 0 && (
+        <div className="game-streak">
+          {t(`🔥 ${mine.streak} right in a row · +${mine.bonus} bonus`, `🔥 ketma-ket ${mine.streak} ta to'g'ri · +${mine.bonus} bonus`)}
+        </div>
+      )}
       <div className="game-behind">{standingLine(game)}</div>
 
       {q.type === "binary" && tally ? (

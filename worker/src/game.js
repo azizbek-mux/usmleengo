@@ -17,7 +17,7 @@
 
 import { grade } from "../../src/lib/grade.js";
 import {
-  GAME_TYPES, MAX_PLAYERS, MIN_PLAYERS, QUESTION_COUNTS, SECONDS, gamePoints, placesOf,
+  GAME_TYPES, MAX_PLAYERS, MIN_PLAYERS, QUESTION_COUNTS, SECONDS, gamePoints, placesOf, streakBonus,
 } from "../../src/lib/game.js";
 
 /**
@@ -220,7 +220,7 @@ export function join(game, { clientId, name, username = null, creatorToken = nul
   if (playersOf(game).length >= MAX_PLAYERS) return { error: "full" };
 
   const pid = `p${++game.seq}`;
-  game.players[pid] = { pid, seq: game.seq, name, username, lang: read, score: 0, correct: 0, gained: 0, lastCorrect: null, connected: true };
+  game.players[pid] = { pid, seq: game.seq, name, username, lang: read, score: 0, correct: 0, gained: 0, streak: 0, bonus: 0, lastCorrect: null, connected: true };
   game.secrets[clientId] = pid;
   if (creatorToken && creatorToken === game.creatorToken && !game.creator) game.creator = pid;
   game.touchedAt = now;
@@ -256,7 +256,7 @@ export function start(game, pid, now) {
   if (connected(game).length < MIN_PLAYERS) return { error: "too-few" };
   // Anyone who left the lobby without coming back is not in this game.
   for (const p of playersOf(game)) if (!p.connected) removePlayer(game, p.pid);
-  for (const p of playersOf(game)) Object.assign(p, { score: 0, correct: 0, gained: 0, lastCorrect: null });
+  for (const p of playersOf(game)) Object.assign(p, { score: 0, correct: 0, gained: 0, streak: 0, bonus: 0, lastCorrect: null });
   openQuestion(game, 0, now);
   return { ok: true };
 }
@@ -301,9 +301,9 @@ export function answer(game, pid, msg, now) {
     if (!given) return { error: "bad-answer" };
     correct = grade(q, given);
   }
-  // Seconds since the question opened, on the server's own clock: a phone's
-  // claim about how quickly it answered is never taken.
-  const points = gamePoints(q, correct, Math.max(0, now - game.opensAt));
+  // How long it took, on the server's own clock: a phone's claim about how
+  // quickly it answered is never taken.
+  const points = gamePoints(correct, Math.max(0, now - game.opensAt), game.settings.seconds * 1000);
   game.answers[pid] = { given, correct, points };
   game.touchedAt = now;
 
@@ -314,7 +314,11 @@ export function answer(game, pid, msg, now) {
 function reveal(game, now) {
   for (const p of playersOf(game)) {
     const a = game.answers[p.pid];
-    p.gained = a?.points || 0;
+    // Kahoot's answer streak: right answers in a row add a bonus; a wrong
+    // answer, or none, ends it.
+    p.streak = a?.correct ? p.streak + 1 : 0;
+    p.bonus = a?.correct ? streakBonus(p.streak) : 0;
+    p.gained = (a?.points || 0) + p.bonus;
     p.score += p.gained;
     if (a?.correct) p.correct++;
     p.lastCorrect = a ? a.correct : null;
@@ -368,7 +372,7 @@ export function newRound(game, pid, questions, now, random = Math.random) {
   const clean = cleanQuestions(questions);
   if (!clean) return { error: "bad-questions" };
   for (const p of playersOf(game)) if (!p.connected) removePlayer(game, p.pid);
-  for (const p of playersOf(game)) Object.assign(p, { score: 0, correct: 0, gained: 0, lastCorrect: null });
+  for (const p of playersOf(game)) Object.assign(p, { score: 0, correct: 0, gained: 0, streak: 0, bonus: 0, lastCorrect: null });
   Object.assign(game, {
     questions: clean.map((q) => present(q, random)),
     round: game.round + 1,
@@ -425,6 +429,7 @@ export function view(game, pid, now) {
       score: p.score,
       place: inLobby ? null : places[i],
       gained: p.gained,
+      streak: p.streak,
       correct: p.correct,
       lastCorrect: p.lastCorrect,
       answered: game.phase === "question" ? Boolean(game.answers[p.pid]) : undefined,
@@ -446,7 +451,8 @@ export function view(game, pid, now) {
     if (game.phase === "question") {
       out.mine = mine ? { given: mine.given } : null;
     } else {
-      out.mine = mine ? { given: mine.given, correct: mine.correct, points: mine.points } : null;
+      const me = game.players[pid];
+      out.mine = mine ? { given: mine.given, correct: mine.correct, points: mine.points, bonus: me?.bonus || 0, streak: me?.streak || 0 } : null;
       out.solution = { answer: q.answer, explain: q.explain, tally: tallyOf(game, q) };
       out.revealEndsAt = game.revealEndsAt;
     }

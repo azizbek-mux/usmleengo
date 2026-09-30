@@ -6,8 +6,6 @@
 // in one touches the player's own XP, streak, rating or question history,
 // and nothing about it is kept once it ends.
 
-import { XP, reflexSeconds } from "./rating.js";
-
 export const MAX_PLAYERS = 50;
 export const MIN_PLAYERS = 2;
 
@@ -24,43 +22,41 @@ export const DEFAULT_SETTINGS = { count: 10, seconds: 15, qtype: "binary" };
 export const CODE_RE = /^\d{6}$/;
 
 /**
- * How quickly the speed bonus fades: it falls by a factor of e (to about
- * 37%) every this many seconds after the question opens. Typing takes longer
- * than tapping, so it fades more slowly.
+ * Scoring: exactly Kahoot's.
+ *
+ * A correct answer is worth up to 1,000 points, and the faster it comes the
+ * more of them it keeps: the share of the question's time that had passed
+ * when it was answered is halved and taken off, so an instant answer earns
+ * 1,000, one at the halfway mark 750, and one at the very last moment 500.
+ * It is a share of the time limit, as in Kahoot, so the same answer is worth
+ * more in a game with more time. A wrong answer, or none, earns nothing.
+ *
+ *   1000 × (1 − (response time / question time) / 2)
+ *
+ * Kahoot's own example: a 20-second question answered in 2 seconds earns 950.
+ * A typed answer is worth the same as a tapped one.
  */
-export const BONUS_FADE = { binary: 8, gap: 16 };
+export const POINTS_POSSIBLE = 1000;
 
-/**
- * Points for one answer.
- *
- * A correct answer is worth its XP — the same 10 for a tapped answer and 15
- * for a typed one that the app pays — times a hundred, so a game's numbers
- * read like a game's, plus a speed bonus of as much again for an instant
- * answer, fading with the seconds it took. A wrong answer is worth nothing.
- *
- *   10 × 100 × (1 + e^(−4s / 8s))  =  1,607
- *
- * The bonus runs on real seconds, not on the share of the time limit used.
- * Measured against the limit, a 30-second game would pay someone who looked
- * the answer up in twelve seconds nearly what it pays someone who knew it in
- * three; measured in seconds, the same slow answer is worth the same in a
- * 5-second game and a 30-second one.
- *
- * A tapped answer faster than the question can be read is a reflex, not an
- * answer, and earns nothing: it is a guess, and half of all guesses are
- * right. (The same rule rates a player's own answers; see rating.js.)
- */
-export function gamePoints(question, correct, elapsedMs) {
+export function gamePoints(correct, elapsedMs, limitMs) {
   if (!correct) return 0;
-  const type = question?.type === "gap" ? "gap" : "binary";
-  const seconds = Math.max(0, Number(elapsedMs) || 0) / 1000;
-  if (type === "binary" && seconds < reflexSeconds(question)) return 0;
-  const base = (type === "gap" ? XP.gapCorrect : XP.binaryCorrect) * 100;
-  return Math.round(base * (1 + Math.exp(-seconds / BONUS_FADE[type])));
+  const share = limitMs > 0 ? Math.min(1, Math.max(0, elapsedMs / limitMs)) : 1;
+  return Math.round(POINTS_POSSIBLE * (1 - share / 2));
 }
 
-/** The best a question can pay: an instant correct answer. */
-export const maxPoints = (type) => (type === "gap" ? XP.gapCorrect : XP.binaryCorrect) * 200;
+/**
+ * Kahoot's answer streak: correct answers in a row add a bonus on top of the
+ * points, nothing for the first, 100 for the second, then 100 more for each,
+ * up to 500. A wrong answer, or none, ends the streak. `streak` counts the
+ * answer just given.
+ */
+export const STREAK_BONUS_MAX = 500;
+export function streakBonus(streak) {
+  return streak >= 2 ? Math.min(STREAK_BONUS_MAX, (streak - 1) * 100) : 0;
+}
+
+/** The most a question can pay in points: an instant correct answer. */
+export const maxPoints = () => POINTS_POSSIBLE;
 
 /** Fisher-Yates. */
 function shuffle(arr) {

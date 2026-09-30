@@ -83,8 +83,7 @@ const answerFor = (s, right) => {
 
 for (let i = 0; i < 3; i++) {
   const s = await A.until((x) => x.phase === "question" && x.index === i);
-  // Fast, but not a reflex: an answer faster than the question can be read earns nothing.
-  await sleep(Math.max(0, s.opensAt - s.now) + 3500);
+  await sleep(Math.max(0, s.opensAt - s.now) + 200);
   A.send({ type: "answer", index: i, ...answerFor(s, true) });   // fast and right
   await sleep(1500);
   if (i === 0) {

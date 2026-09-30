@@ -409,16 +409,17 @@ or time is up, each phone shows the right answer, how many chose what, its
 own place and the top five; after the last question, a podium. **New round**
 plays again with the same people and fresh questions.
 
-- **Points:** a correct answer earns its XP (10 tapped, 15 typed) × 100,
-  plus a speed bonus of as much again that fades with the real seconds taken
-  since the question opened (by a factor of e every 8 s tapped, 16 s typed),
-  measured on the server's clock: 2,000 for an instant tapped answer, 1,607
-  at 4 s, 1,223 at 12 s, and never under 1,000. A wrong answer earns nothing.
-  The bonus is in seconds rather than the share of the time limit used, so a
-  long limit does not turn a look-up into a fast answer; and a tapped answer
-  faster than the question can be read is a reflex and earns nothing, since
-  half of all taps at random are right. Simulated lobbies of knowers, random
-  tappers and a googler are in `tools/game.test.mjs`.
+- **Points: exactly Kahoot's** (owner's rule). A correct answer earns
+  `1000 × (1 − (response time / question time) / 2)`: 1,000 for an instant
+  answer, 750 halfway, 500 at the last moment - Kahoot's own example is a
+  20-second question answered in 2 seconds, 950. It is a share of the time
+  limit, as in Kahoot. Typed and tapped answers pay the same. A wrong answer,
+  or none, earns nothing, and takes nothing away. **Answer streak:** right
+  answers in a row add a bonus - nothing for the first, +100 for the second,
+  +100 more for each after it, up to +500 - and a wrong or missed answer ends
+  the streak. The server times every answer on its own clock. Nothing else
+  (no reflex rule, no penalty) is added: do not "improve" this without the
+  owner asking.
 - **Either language.** Each phone reads the game in the language its owner
   reads the app in, and a typed answer is marked against that language. See
   [Uzbek](#uzbek).
