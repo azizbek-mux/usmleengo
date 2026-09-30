@@ -107,7 +107,7 @@ parvovirus-in-an-adult-0r0p7mo|Kattalarda parvovirus||Virusli ekzantema|Sellyuli
 eczema-herpeticum-picture-0crvgjb|Gerpetik ekzema rasmi||Gerpetik ekzema|Impetigo|Ekzema ustidagi og'riqli, o'yilgan pufakchalar, isitma va tugunlar bilan.
 shingles-picture-15efdh0|O'rab oluvchi temiratki rasmi||O'rab oluvchi temiratki|Kontakt dermatit|Bitta dermatomdagi to'da pufakchalar, o'rta chiziqda to'xtaydi.
 shingles-in-a-child-0kw91vl|Boladagi o'rab oluvchi temiratki|Kimyoterapiya olayotgan boladagi o'rab oluvchi temiratki qanday|Bo'lishi mumkin, chunki immuniteti pasaygan|Voyaga yetmasdan bo'lishi mumkin emas|Bolalardagi o'rab oluvchi temiratki haqiqatan uchraydi.
-herpes-zoster-naming-1biid3n|Herpes zoster atamasi|Herpes zoster nima|O'rab oluvchi temiratkining boshqa nomi|Virusning o'zining ilmiy nomi|Virus — suvchechak-zoster virusi, HHV3.
+herpes-zoster-naming-1biid3n|Herpes zoster atamasi|Herpes zoster nima|O'rab oluvchi temiratkining boshqa nomi|Virusning o'zining to'liq ilmiy nomi|Virus — suvchechak-zoster virusi, HHV3.
 herpes-zoster-oticus-13j79y5|Quloq zosteri||Quloq zosteri|Tashqi otit|Quloq atrofidagi qobiqli o'choqlar va yuz nervi falaji — Remsi Hant.
 shingles-vaccine-age-1qwb3kp|O'rab oluvchi temiratki emlashi|O'rab oluvchi temiratkiga qarshi emlash necha yoshdan taklif qilinadi|Oltmish yoshdan|Qirq yoshdan|Yangi oilaviy tibbiyot shakli shuni so'raydi.
 chickenpox-crops-1vbm14g|Suvchechakdagi to'lqinlar|Bir vaqtda turli bosqichdagi qichiydigan pufakchalar nima|Suvchechak|Chechak|Chechakda o'choqlarning hammasi bir bosqichda bo'ladi.
