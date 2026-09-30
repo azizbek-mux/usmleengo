@@ -5,7 +5,7 @@ reed-sternberg-cells-14k7452|Berezovskiy-Shternberg hujayralari|«Boyqush ko'zi�
 starry-sky-1puqha9|«Yulduzli osmon»|Limfa tuguni biopsiyasida «yulduzli osmon» ko'rinishi ___ limfomasidan dalolat beradi|Berkitt|burkitt|O'sma hujayralari orasida tingibil makrofaglar.
 bence-jones-01dst2y|Bens-Jons oqsillari|Siydikdagi ___-Jons oqsillari ko'p sonli mielomani bildiradi|Bens|bence|Erkin immunoglobulin yengil zanjirlari.
 smudge-cells-1ndxnwf|Yoyilgan hujayralar|Qon surtmasidagi yoyilgan hujayralar surunkali ___ leykozdan dalolat beradi|limfotsitar|limfoid, limfoleykoz|Surtma tayyorlashda ezilib ketadigan mo'rt limfotsitlar.
-heinz-bodies-14lk4pp|Geyns tanachalari|___ tanachalari — G6PD yetishmovchiligidagi denaturatsiyalangan gemoglobin|Geyns|heinz|Taloq ularni olib tashlagach, «tishlangan» hujayralar qoladi.
+heinz-bodies-14lk4pp|Geyns tanachalari|___ tanachalari — G6FD yetishmovchiligidagi denaturatsiyalangan gemoglobin|Geyns|heinz|Taloq ularni olib tashlagach, «tishlangan» hujayralar qoladi.
 howell-jolly-bodies-08h0bmc|Xauell-Jolli tanachalari|Xauell-Jolli tanachalari ___ funksiyasi yo'qligini bildiradi|taloq|taloqning|Odatda olib tashlanadigan yadro qoldiqlari.
 basophilic-stippling-1llidho|Bazofil punktuatsiya|Bazofil punktuatsiya ___ dan zaharlanish yoki talassemiyadan dalolat beradi|qo'rg'oshin|qo'rg'oshindan|Eritrotsit ichidagi ribosoma to'plamlari.
 schistocytes-1tm3urs|Shistotsitlar|___ deb ataladigan parchalangan eritrotsitlar mikroangiopatiyani bildiradi|shistotsitlar|shistotsit, dubulg'a hujayralari|DVS-sindrom, TTP, gemolitik-uremik sindrom yoki mexanik qopqoq.

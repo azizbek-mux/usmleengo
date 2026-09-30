@@ -21,7 +21,7 @@ chloramphenicol-1cw4dm4|Xloramfenikol|Xloramfenikol qaytmas ___ anemiya chaqiris
 clozapine-1o83e3d|Klozapin|Klozapin ___ chaqirishi mumkin, shuning uchun neytrofillar muntazam tekshiriladi|agranulotsitoz|agranulotsitozni|Xavfi taxminan 1 foiz.
 heparin-0e4h8lb|Geparin|___ ga bog'langan 4-trombotsitar omilga qarshi antitelolar HIT ni keltirib chiqaradi|Geparin|geparinga|Trombotsitlar 5-10 kundan keyin pasayadi, qon ketishi emas, tromboz bo'ladi.
 methyldopa-1f6u9vt|Metildopa|Metildopa to'g'ridan-to'g'ri ___ testini musbat qiladi|Kumbs|coombs, antiglobulin|Odatda klinik gemolizsiz kechadi.
-dapsone-14t0idn|Dapson|Dapson ___ va G6PD yetishmovchiligida gemoliz chaqiradi|metgemoglobinemiya|metgemoglobinemiyani|Qon shokolad rangida; metilen ko'ki bilan davolanadi.
+dapsone-14t0idn|Dapson|Dapson ___ va G6FD yetishmovchiligida gemoliz chaqiradi|metgemoglobinemiya|metgemoglobinemiyani|Qon shokolad rangida; metilen ko'ki bilan davolanadi.
 linezolid-0irto0h|Linezolid|Uzoq muddatli linezolid nimaga olib keladi|Trombotsitopeniya va ko'rish nervi neyropatiyasi|Nefrotoksiklik va elektrolitlar yo'qotilishi|Ikki haftadan ortiq kurslarni cheklang.
 aminoglycosides-1vur19y|Aminoglikozidlar|Aminoglikozidlar proksimal ___ da to'planib, oliguriyasiz yetishmovchilik beradi|kanalcha|kanalchalar, kanalcha hujayralari|Dori darajasi va buyrak funksiyasini kuzatib boring.
 nsaids-1n0nodx|NYaQV|NYaQV ___ chaqiradigan vazodilatatsiyani yo'qotib, o'tkir buyrak shikastini beradi|prostaglandin|prostaglandinlar|Hajm kamayganda, AFF ingibitori va diuretiklar bilan birga xavfli.

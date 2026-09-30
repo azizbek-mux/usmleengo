@@ -14,7 +14,7 @@ pernicious-anemia-06qxsju|Pernitsioz anemiya|Pernitsioz anemiya nimaga qarshi an
 aplastic-anemia-1wef8qa|Aplastik anemiya|Aplastik anemiyada biopsiyada ko'mik ___ bo'ladi|gipotsellyulyar|bo'sh, yog'li|Pansitopeniya, patologik hujayralar yo'q.
 hereditary-spherocytosis-1qwq2sd|Irsiy sferotsitoz|Irsiy sferotsitoz nima bilan tasdiqlanadi|Eozin-5-maleimid bilan bog'lanish testi|To'g'ridan-to'g'ri Kumbs antiglobulin testi|Osmotik mo'rtlik — eski test. Kumbs manfiy bo'ladi.
 hereditary-spherocytosis-1fcmgvl|Irsiy sferotsitoz|Irsiy sferotsitozda gemoglobinning o'rtacha ___ i oshadi|konsentratsiyasi|konsentratsiya, mchc|Hujayralar kichik, yumaloq va zich to'lgan.
-g6pd-deficiency-15i6pan|G6PD yetishmovchiligi|G6PD qachon tekshirilishi kerak|Gemolitik epizoddan haftalar keyin|O'tkir gemolitik krizning o'zida|Yosh hujayralarda ferment ko'proq, bu soxta normal natija beradi.
+g6pd-deficiency-15i6pan|G6FD yetishmovchiligi|G6FD qachon tekshirilishi kerak|Gemolitik epizoddan haftalar keyin|O'tkir gemolitik krizning o'zida|Yosh hujayralarda ferment ko'proq, bu soxta normal natija beradi.
 sickle-cell-disease-0ci6sx6|O'roqsimon hujayrali anemiya|O'roqsimon hujayrali anemiyada penitsillin profilaktikasi funksional ___ tufayli kerak|taloqsizlik|gipoplenizm|Bolalikdan boshlab taloqning takroriy infarkti.
 sickle-cell-crisis-0hsfnm4|O'roqsimon hujayrali kriz|O'tkir ko'krak sindromi nima bilan davolanadi|Kislorod, antibiotik va qon quyish|Vena ichiga suyuqlik va og'riq qoldiruvchi|O'roqsimon hujayrali anemiyada o'limning asosiy sababi.
 beta-thalassemia-major-1x2481u|Beta-talassemiyaning og'ir shakli|Bu holat ___ qon yaratilishga olib keladi, kalla suyagida «cho'tka» ko'rinishi|ekstramedullyar|ko'mikdan tashqari|Shuningdek «olmaxon yuzi» va gepatosplenomegaliya.

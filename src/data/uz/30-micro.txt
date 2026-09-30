@@ -76,7 +76,7 @@ rifampin-0zk7io4|Rifampitsin|Rifampitsin klassik holda tana suyuqliklarini qanda
 candidemia-0a4znvp|Kandidemiya|Keng spektrli antibiotik olayotgan neytropenik bemorlarda qanday xavf bor|Qonda kandida infeksiyasi|Listeriyali meningit va sepsis|Chuqur neytropeniya va shilliq qavat shikasti birga keladi.
 urinary-tract-infection-1vnlb3q|Siydik yo'llari infeksiyasi|Asoratsiz siydik yo'llari infeksiyasining eng ko'p uchraydigan sababi|Escherichia coli|Proteus mirabilis|Taxminan 80% holatlarda E. coli.
 cat-scratch-disease-0vame8v|Mushuk tirnashi kasalligi|Mushuk tirnashi kasalligining qo'zg'atuvchisi|Bartonella henselae|Pasteurella multocida|Tirnalgandan keyin mahalliy limfadenopatiya. Pasteurella esa tishlagandan keyin tez sellyulit beradi.
-abacavir-12j7h8v|Abakavir|Abakavir buyurishdan oldin nimani tekshirish shart|HLA-B*57:01|G6PD yetishmovchiligini|Bu allel o'limga olib keluvchi o'ta yuqori sezuvchanlikni bashorat qiladi.
+abacavir-12j7h8v|Abakavir|Abakavir buyurishdan oldin nimani tekshirish shart|HLA-B*57:01|G6FD yetishmovchiligini|Bu allel o'limga olib keluvchi o'ta yuqori sezuvchanlikni bashorat qiladi.
 genital-herpes-1dvkwlv|Jinsiy a'zolar gerpesi|Qaytalanuvchi jinsiy gerpes nima bilan bostiriladi|Har kuni valatsiklovir|Bir martalik atsiklovir dozasi|Surunkali bostiruvchi davo qaytalanish va virus ajralishini kamaytiradi.
 tularemia-0jliuch|Tulyaremiya|Tulyaremiya qanday yuqadi|Quyonlar va kana chaqishidan|Faqat ifloslangan suvdan|Francisella tularensis; ovchilar va terini shilib olganlarda.
 heterophile-negative-mononucleosis-1f320j2|Geterofil manfiy mononukleoz|Monospot testi manfiy bo'lgan mononukleoz nimadan dalolat beradi|Sitomegalovirusdan|Epshteyn-Barr virusidan|Sitomegalovirus geterofil manfiy mononukleoz beradi.

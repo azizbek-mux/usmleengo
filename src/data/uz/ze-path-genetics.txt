@@ -26,7 +26,7 @@ duchenne-pseudohypertrophy-1nslwfc|Dyushennda soxta gipertrofiya|Dyushennda bold
 marfan-protein-1rkpzfk|Marfan oqsili|Marfan sindromi qaysi gendagi mutatsiya|Fibrillin|Distrofin|Elastin atrofidagi qobiq.
 fragile-x-repeat-06lahu9|Mo'rt X takrori|Mo'rt X sindromi nimaning ko'payishidan kelib chiqadi|CGG trinukleotid takrorining|CAG trinukleotid takrorining|Gipermetillanish FMR1 ni o'chiradi.
 fragile-x-features-1f13glu|Mo'rt X belgilari|Mo'rt X sindromi qanday namoyon bo'ladi|Katta quloqlar, uzun jag', makroorxidizm|Bo'yning pastligi va qanotsimon bo'yin|Aqliy zaiflik bilan birga.
-g6pd-film-findings-1965e2o|G6PD da surtma topilmalari|G6PD tanqisligi nimani ko'rsatadi|Geyns tanachalari va «tishlangan» hujayralar|Nishon hujayralar va parchalangan shistotsitlar|Oksidlovchi dorini qabul qilgandan keyin.
+g6pd-film-findings-1965e2o|G6FD da surtma topilmalari|G6FD tanqisligi nimani ko'rsatadi|Geyns tanachalari va «tishlangan» hujayralar|Nishon hujayralar va parchalangan shistotsitlar|Oksidlovchi dorini qabul qilgandan keyin.
 elastin-cross-link-0roq1i2|Elastinning ko'ndalang bog'i|Elastin ___ bilan ko'ndalang bog'lanadi va lizinga boy|desmozin|desmozinlar|Fibrillin uni qoplab turadi.
 collagen-primary-sequence-1ebakgw|Kollagenning birlamchi ketma-ketligi|Kollagen takrorlanuvchi Gli-X-___ birlamchi tuzilishiga ega|Y|y|Har uchinchi qoldiqda glitsin.
 alport-collagen-0nl1db3|Alport kollageni|Alport sindromi qaysi tur kollagendagi nuqson|IV|I|Ko'z, quloq va buyrak kasalligi bilan.

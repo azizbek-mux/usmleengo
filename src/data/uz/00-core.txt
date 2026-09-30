@@ -13,7 +13,7 @@ biotin-deficiency-012d0tq|Biotin yetishmovchiligi|Ko'p miqdorda xom tuxum oqsili
 vitamin-b6-deficiency-1877pgg|B6 vitamini yetishmovchiligi|Izoniazid B6 vitamini yetishmovchiligiga olib keladi:|Ha|Yo'q|Ha — neyropatiyaning oldini olish uchun izoniazid bilan birga piridoksin beriladi.
 glycolysis-rate-limiting-enzyme-1pnh3zv|Glikolizning tezlikni cheklovchi fermenti|Glikolizning tezlikni cheklovchi fermenti — ___|fosfofruktokinaza-1|ffk-1, ffk, fosfofruktokinaza|FFK-1. Fruktoza-6-fosfat → fruktoza-1,6-bisfosfat.
 insulin-1rcpf2a|Insulin|Insulin glikolizni kuchaytiradi:|Ha|Yo'q|Ha — insulin ovqatdan keyingi holatning zaxiralovchi gormoni.
-g6pd-deficiency-13v5kmp|G6PD yetishmovchiligi|G6PD yetishmovchiligida periferik qon surtmasida ___ tanachalari ko'rinadi|Geyns|geyns tanachalari|Geyns tanachalari (denaturatsiyalangan gemoglobin), taloq ularni olib tashlagach — «tishlangan» hujayralar.
+g6pd-deficiency-13v5kmp|G6FD yetishmovchiligi|G6FD yetishmovchiligida periferik qon surtmasida ___ tanachalari ko'rinadi|Geyns|geyns tanachalari|Geyns tanachalari (denaturatsiyalangan gemoglobin), taloq ularni olib tashlagach — «tishlangan» hujayralar.
 von-gierke-disease-14haghw|Girke kasalligi|Girke kasalligida (I tip) qondagi glyukoza:|Past|Yuqori|Och qoringa og'ir gipoglikemiya — glyukoza-6-fosfataza yetishmovchiligi.
 phenylketonuria-0qudee4|Fenilketonuriya|Fenilketonuriya bilan og'rigan bemorlar ___ aminokislotasini iste'mol qilmasligi kerak|fenilalanin|fen|Fenilalaningidroksilaza yetishmovchiligi. Tirozin almashtirib bo'lmaydigan aminokislotaga aylanadi.
 essential-fructosuria-0nxm634|Essensial fruktozuriya|Essensial fruktozuriya — xavfsiz holat:|Ha|Yo'q|Ha — fruktokinaza yetishmovchiligi, belgisiz kechadi. Xavflisi — aldolaza B yetishmovchiligi.

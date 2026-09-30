@@ -43,7 +43,8 @@ peds pediatr · histo gisto · radio radio
 | COPD, ARDS, DIC, NSAIDs | O'SOK, O'RDS, DVS-sindrom, NYaQV |
 | CMV, HSV, HPV, TNF | SMV, OGV, OPV, O'NO |
 | CSF, BP, IV | likvor, arterial bosim, vena ichiga |
-| T3/T4, B12, CD4, IL-6, G6PD, HLA, MHC, QT, FEV1 | unchanged |
+| T3/T4, B12, CD4, IL-6, HLA, MHC, QT, FEV1 | unchanged |
+| G6PD | **G6FD** (owner, 2026-09-30), by the ATP -> ATF pattern |
 
 ## Names
 - Drugs in Uzbek spelling: furosemid, gidroxlorotiazid, spironolakton,
@@ -177,19 +178,17 @@ file).
 | ICU | reanimatsiya bo'limi |
 | informed consent | xabardor rozilik |
 
+## Answered by the owner, 2026-09-30
+- **G6PD -> G6FD** everywhere, following ATP -> ATF. The bank was changed.
+- **The bot's language order** stays as built: it replies in both and leads
+  with the phone's Telegram language, so a phone set to Russian reads the
+  English half first with the Uzbek under it.
+
 ## To ask the owner
 Chosen for now to keep the bank consistent, but worth his word:
 - **Zinc**: `rux` is used throughout, from the glossary. Confirm it is what a
   student expects over `sink`.
-- **G6PD**: the bank has both `G6PD` (14) and `G6FD` (10). One of them should
-  win; `G6PD` is used in the newest files because the neighbouring questions
-  use it.
 - **Duchenne**: `Dyushenn` (10) against `Dyushen` (4) — `Dyushenn` was kept.
-- **The bot's language.** It cannot see the app's language, so it now replies
-  in **both**, leading with whatever the phone's Telegram is set to. An
-  Uzbek student with Telegram in Russian therefore reads the English half
-  first. If that is the common case, leading with Uzbek for `ru` phones too
-  is a one-line change (`uzFirst` in `worker/src/bot.js`).
 
 ## Workflow note
 - Write at most ~40 questions per batch. A long unbroken block of microbiology (toxins, organisms) can trip a safety filter mid-write; smaller batches go through cleanly. Nothing is lost when one is stopped — the file on disk is untouched.
