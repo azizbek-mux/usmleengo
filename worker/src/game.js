@@ -301,8 +301,9 @@ export function answer(game, pid, msg, now) {
     if (!given) return { error: "bad-answer" };
     correct = grade(q, given);
   }
-  const limit = game.settings.seconds * 1000;
-  const points = gamePoints(q.type, correct, game.endsAt - Math.max(now, game.opensAt), limit);
+  // Seconds since the question opened, on the server's own clock: a phone's
+  // claim about how quickly it answered is never taken.
+  const points = gamePoints(q, correct, Math.max(0, now - game.opensAt));
   game.answers[pid] = { given, correct, points };
   game.touchedAt = now;
 

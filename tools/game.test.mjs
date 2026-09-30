@@ -4,6 +4,7 @@
 
 const L = await import(new URL("../src/lib/game.js", import.meta.url).href);
 const G = await import(new URL("../worker/src/game.js", import.meta.url).href);
+const RT = await import(new URL("../src/lib/rating.js", import.meta.url).href);
 const R = await import(new URL("../worker/src/room.js", import.meta.url).href);
 const W = await import(new URL("../worker/src/index.js", import.meta.url).href);
 const T = await import(new URL("../worker/src/telegram.js", import.meta.url).href);
@@ -16,14 +17,60 @@ const check = (name, cond, detail = "") => {
 
 /* ── points ────────────────────────────────────────────────────────────── */
 console.log("\npoints");
-check("an instant tapped answer is worth 2,000", L.gamePoints("binary", true, 15000, 15000) === 2000);
-check("the example: 12 of 15 seconds left is 1,800", L.gamePoints("binary", true, 12000, 15000) === 1800);
-check("at the last second, the plain 1,000", L.gamePoints("binary", true, 0, 15000) === 1000);
-check("a typed answer is worth half as much again", L.gamePoints("gap", true, 15000, 15000) === 3000 &&
-  L.gamePoints("gap", true, 0, 15000) === 1500);
-check("a wrong answer is worth nothing, however fast", L.gamePoints("binary", false, 15000, 15000) === 0);
-check("late or early never goes outside the range",
-  L.gamePoints("binary", true, -500, 15000) === 1000 && L.gamePoints("binary", true, 99999, 15000) === 2000);
+const tap = { type: "binary", q: "x".repeat(48) };
+const typedQ = { type: "gap", q: "x".repeat(48) };
+check("the most a tapped answer can pay is 2,000, a typed one 3,000", L.maxPoints("binary") === 2000 && L.maxPoints("gap") === 3000);
+check("a tapped answer 4 s in is worth 1,607", L.gamePoints(tap, true, 4000) === 1607);
+check("12 s in, 1,223: a look-up is worth little more than being right", L.gamePoints(tap, true, 12000) === 1223);
+check("never less than the plain 1,000, however long it took", L.gamePoints(tap, true, 600000) === 1000);
+check("faster is always worth more", [1.6, 2, 3, 5, 8, 12, 20, 40].map((sec) => L.gamePoints(tap, true, sec * 1000)).every((x, i, arr) => i === 0 || x < arr[i - 1]));
+check("a typed answer is worth half as much again: 3,000 the instant it opens", L.gamePoints(typedQ, true, 0) === 3000);
+check("and fades more slowly, since typing takes longer", L.gamePoints(typedQ, true, 16000) === Math.round(1500 * (1 + Math.exp(-1))) &&
+  L.gamePoints(typedQ, true, 16000) / 1500 > L.gamePoints(tap, true, 16000) / 1000);
+check("a wrong answer is worth nothing, however fast", L.gamePoints(tap, false, 2000) === 0 && L.gamePoints(typedQ, false, 0) === 0);
+check("a tapped answer faster than the question can be read is a reflex, and earns nothing",
+  L.gamePoints(tap, true, 300) === 0 && L.gamePoints(tap, true, 1000) === 0);
+check("just after the reading time it is a real answer, and a good one",
+  L.gamePoints(tap, true, RT.reflexSeconds(tap) * 1000 + 100) > 1800);
+check("a longer stem takes longer to read", RT.reflexSeconds({ q: "x".repeat(160) }) > RT.reflexSeconds(tap));
+check("a clock that runs backwards never goes outside the range", L.gamePoints(typedQ, true, -500) === 3000 && L.gamePoints(tap, true, NaN) === 0);
+
+// The fairness the rules exist for: a lobby of four who know it (75-92% right,
+// answering in about four seconds), two who tap at random after a couple of
+// seconds, and one who looks every answer up (always right, about twelve
+// seconds). Whatever the time limit, the knowers must win, and the one who
+// looks things up must not do better than they do.
+{
+  let seed = 99;
+  const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
+  const gauss = () => Math.sqrt(-2 * Math.log(rnd() + 1e-12)) * Math.cos(2 * Math.PI * rnd());
+  const lobby = (limit, questions) => {
+    const ps = [];
+    for (let i = 0; i < 4; i++) ps.push({ kind: "knower", acc: 0.75 + rnd() * 0.17, med: 3.5 + rnd() * 1.5, sigma: 0.4 });
+    for (let i = 0; i < 2; i++) ps.push({ kind: "tapper", acc: 0.5, med: 2.2, sigma: 0.25 });
+    ps.push({ kind: "googler", acc: 1, med: 12, sigma: 0.25 });
+    const total = ps.map(() => 0);
+    for (let q = 0; q < questions; q++) ps.forEach((p, i) => {
+      const sec = Math.max(0.3, p.med * Math.exp(p.sigma * gauss()));
+      if (sec >= limit) return;
+      total[i] += L.gamePoints(tap, rnd() < p.acc, sec * 1000);
+    });
+    return { ps, total, winner: ps[total.indexOf(Math.max(...total))].kind };
+  };
+  for (const limit of [15, 30]) {
+    const wins = { knower: 0, tapper: 0, googler: 0 };
+    const sum = { knower: 0, googler: 0 };
+    const runs = 1500;
+    for (let g = 0; g < runs; g++) {
+      const r = lobby(limit, 10);
+      wins[r.winner]++;
+      r.ps.forEach((pl, i) => { if (pl.kind !== "tapper") sum[pl.kind] += r.total[i]; });
+    }
+    check(`${limit} s a question, 10 questions: the ones who know it win nearly every game`, wins.knower / runs > 0.94, JSON.stringify(wins));
+    check(`${limit} s: the one who looks it up almost never does`, wins.googler / runs < 0.03, JSON.stringify(wins));
+    check(`${limit} s: and averages less than someone who knows it`, sum.googler / runs < sum.knower / runs / 4, `${Math.round(sum.googler / runs)} vs ${Math.round(sum.knower / runs / 4)}`);
+  }
+}
 
 /* ── picking questions ─────────────────────────────────────────────────── */
 console.log("\npicking questions");
@@ -127,7 +174,7 @@ check("the options were shuffled on the server", g.questions[0].answer === 1 && 
 const open = g.opensAt;
 check("an answer before the question opens is refused", G.answer(g, host, { index: 0, choice: 1 }, open - 2000).error === "not-now");
 const a1 = G.answer(g, host, { index: 0, choice: 1 }, open + 3000);
-check("a right answer 3s in earns 1,800", a1.correct && a1.points === 1800, JSON.stringify(a1));
+check("a right answer 3s in earns 1,687", a1.correct && a1.points === 1687, JSON.stringify(a1));
 check("only the first answer counts", G.answer(g, host, { index: 0, choice: 0 }, open + 4000).error === "answered");
 check("the board waits for everyone", g.phase === "question");
 v = G.view(g, laylo, open + 3000);
@@ -141,7 +188,7 @@ check("with the right answer and the explanation", v.solution.answer === 1 && v.
 check("and each player's own result", v.mine.correct === false && v.mine.points === 0);
 check("and how the room split, as Kahoot shows it", v.solution.tally.options.join() === "1,1" && v.solution.tally.answered === 2);
 check("counts only, never who chose what", !JSON.stringify(v.solution.tally).includes("p1"));
-check("the scoreboard leads with the leader", v.players[0].pid === host && v.players[0].score === 1800 && v.players[0].place === 1);
+check("the scoreboard leads with the leader", v.players[0].pid === host && v.players[0].score === 1687 && v.players[0].place === 1);
 
 const scoreboardEnds = g.revealEndsAt;
 check("the clock moves on after the scoreboard", G.tick(g, scoreboardEnds) && g.phase === "question" && g.index === 1);
@@ -149,7 +196,7 @@ check("and the next question opens at once — only the first has a get-ready", 
 const deadline = g.endsAt;
 check("nothing happens before time is up", !G.tick(g, deadline) && g.phase === "question");
 const late = G.answer(g, host, { index: 1, choice: 1 }, deadline + 500);
-check("an answer just past the deadline still counts, at the plain rate", late.points === 1000);
+check("an answer just past the deadline still counts, at close to the plain rate", late.points > 1000 && late.points < 1200, String(late.points));
 check("time up with someone silent: the answer shows anyway", G.tick(g, deadline + G.GRACE_MS) && g.phase === "reveal");
 check("silence scores nothing", G.view(g, laylo, deadline).mine === null && g.players[laylo].gained === 0);
 check("an answer to an old question is ignored", G.answer(g, laylo, { index: 0, choice: 1 }, deadline + 2000).error === "not-now");
@@ -179,6 +226,20 @@ G.disconnect(h, c, T0 + 3);
 check("with the creator gone, the longest here hosts", G.hostOf(h) === p2);
 G.join(h, { clientId: id(1), name: "Aziz" }, T0 + 4);
 check("and hands it back when they return", G.hostOf(h) === c);
+
+console.log("\nthe time limit does not change what an answer is worth");
+{
+  // The same right answer, three seconds after the question opened, in a
+  // 5-second game and in a 30-second one, is worth the same.
+  const pay = (seconds) => {
+    const game = makeGame(forGame.slice(0, 1), { seconds, qtype: "binary", count: 5, tags: [] });
+    const a = G.join(game, { clientId: id(1), name: "Aziz", creatorToken: "tok" }, T0).pid;
+    G.join(game, { clientId: id(2), name: "Laylo" }, T0);
+    G.start(game, a, T0);
+    return G.answer(game, a, { index: 0, choice: game.questions[0].answer }, game.opensAt + 3000).points;
+  };
+  check("3 s in earns 1,687 with 5 s to answer, 15 s, or 30", pay(5) === 1687 && pay(15) === 1687 && pay(30) === 1687, [pay(5), pay(15), pay(30)].join());
+}
 
 console.log("\ntyped answers");
 let t = makeGame(forGame.slice(40, 41), { seconds: 30, qtype: "gap", count: 5, tags: [] });

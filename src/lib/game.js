@@ -6,7 +6,7 @@
 // in one touches the player's own XP, streak, rating or question history,
 // and nothing about it is kept once it ends.
 
-import { XP } from "./rating.js";
+import { XP, reflexSeconds } from "./rating.js";
 
 export const MAX_PLAYERS = 50;
 export const MIN_PLAYERS = 2;
@@ -24,25 +24,43 @@ export const DEFAULT_SETTINGS = { count: 10, seconds: 15, qtype: "binary" };
 export const CODE_RE = /^\d{6}$/;
 
 /**
+ * How quickly the speed bonus fades: it falls by a factor of e (to about
+ * 37%) every this many seconds after the question opens. Typing takes longer
+ * than tapping, so it fades more slowly.
+ */
+export const BONUS_FADE = { binary: 8, gap: 16 };
+
+/**
  * Points for one answer.
  *
  * A correct answer is worth its XP — the same 10 for a tapped answer and 15
  * for a typed one that the app pays — times a hundred, so a game's numbers
- * read like a game's, times how fast it came: twice as much for an instant
- * answer, falling evenly to the plain amount at the last second. A wrong
- * answer is worth nothing.
+ * read like a game's, plus a speed bonus of as much again for an instant
+ * answer, fading with the seconds it took. A wrong answer is worth nothing.
  *
- *   10 × 100 × (1 + 12s left / 15s)  =  1,800
+ *   10 × 100 × (1 + e^(−4s / 8s))  =  1,607
+ *
+ * The bonus runs on real seconds, not on the share of the time limit used.
+ * Measured against the limit, a 30-second game would pay someone who looked
+ * the answer up in twelve seconds nearly what it pays someone who knew it in
+ * three; measured in seconds, the same slow answer is worth the same in a
+ * 5-second game and a 30-second one.
+ *
+ * A tapped answer faster than the question can be read is a reflex, not an
+ * answer, and earns nothing: it is a guess, and half of all guesses are
+ * right. (The same rule rates a player's own answers; see rating.js.)
  */
-export function gamePoints(type, correct, remainingMs, limitMs) {
+export function gamePoints(question, correct, elapsedMs) {
   if (!correct) return 0;
+  const type = question?.type === "gap" ? "gap" : "binary";
+  const seconds = Math.max(0, Number(elapsedMs) || 0) / 1000;
+  if (type === "binary" && seconds < reflexSeconds(question)) return 0;
   const base = (type === "gap" ? XP.gapCorrect : XP.binaryCorrect) * 100;
-  const left = limitMs > 0 ? Math.min(1, Math.max(0, remainingMs / limitMs)) : 0;
-  return Math.round(base * (1 + left));
+  return Math.round(base * (1 + Math.exp(-seconds / BONUS_FADE[type])));
 }
 
 /** The best a question can pay: an instant correct answer. */
-export const maxPoints = (type) => gamePoints(type, true, 1, 1);
+export const maxPoints = (type) => (type === "gap" ? XP.gapCorrect : XP.binaryCorrect) * 200;
 
 /** Fisher-Yates. */
 function shuffle(arr) {

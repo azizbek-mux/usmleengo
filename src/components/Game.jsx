@@ -452,10 +452,10 @@ function Lobby({ game, send }) {
               {here.length < MIN_PLAYERS
                 ? t("Waiting for at least one more player — share the invite.", "Yana kamida bitta o'yinchi kerak — taklifni ulashing.")
                 : game.settings.qtype === "binary"
-                  ? t(`Right and fast earns up to ${maxPoints("binary").toLocaleString()} a question. Wrong earns 0.`,
-                    `Tez va to'g'ri javob har bir savolga ${maxPoints("binary").toLocaleString()} ballgacha beradi. Noto'g'ri javob — 0.`)
-                  : t(`Right and fast earns up to ${maxPoints("binary").toLocaleString()} tapped, ${maxPoints("gap").toLocaleString()} typed. Wrong earns 0.`,
-                    `Tez va to'g'ri javob: testda ${maxPoints("binary").toLocaleString()} ballgacha, yozma javobda ${maxPoints("gap").toLocaleString()} ballgacha. Noto'g'ri javob — 0.`)}
+                  ? t(`Right earns up to ${maxPoints("binary").toLocaleString()} a question: the faster, the more. Wrong earns 0.`,
+                    `To'g'ri javob har bir savolga ${maxPoints("binary").toLocaleString()} ballgacha beradi: qanchalik tez bo'lsa, shunchalik ko'p. Noto'g'ri javob — 0.`)
+                  : t(`Right earns up to ${maxPoints("binary").toLocaleString()} tapped, ${maxPoints("gap").toLocaleString()} typed: the faster, the more. Wrong earns 0.`,
+                    `To'g'ri javob: testda ${maxPoints("binary").toLocaleString()} ballgacha, yozma javobda ${maxPoints("gap").toLocaleString()} ballgacha — qanchalik tez bo'lsa, shunchalik ko'p. Noto'g'ri javob — 0.`)}
             </div>
           </>
         ) : (

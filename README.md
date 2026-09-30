@@ -409,9 +409,16 @@ or time is up, each phone shows the right answer, how many chose what, its
 own place and the top five; after the last question, a podium. **New round**
 plays again with the same people and fresh questions.
 
-- **Points:** a correct answer earns its XP (10 tapped, 15 typed) × 100 ×
-  speed — twice that for an instant answer, falling to once at the last
-  second (Kahoot's own curve). A wrong answer earns nothing.
+- **Points:** a correct answer earns its XP (10 tapped, 15 typed) × 100,
+  plus a speed bonus of as much again that fades with the real seconds taken
+  since the question opened (by a factor of e every 8 s tapped, 16 s typed),
+  measured on the server's clock: 2,000 for an instant tapped answer, 1,607
+  at 4 s, 1,223 at 12 s, and never under 1,000. A wrong answer earns nothing.
+  The bonus is in seconds rather than the share of the time limit used, so a
+  long limit does not turn a look-up into a fast answer; and a tapped answer
+  faster than the question can be read is a reflex and earns nothing, since
+  half of all taps at random are right. Simulated lobbies of knowers, random
+  tappers and a googler are in `tools/game.test.mjs`.
 - **Either language.** Each phone reads the game in the language its owner
   reads the app in, and a typed answer is marked against that language. See
   [Uzbek](#uzbek).
