@@ -8,6 +8,10 @@
 import { cloudAvailable, cloudGet, cloudGetChunked, cloudSet, cloudSetChunked } from "./telegram.js";
 import { dayIndex, xpFor } from "./rating.js";
 import { PACE_MAX_MS, PACE_MIN_MS } from "./scorecard.js";
+import { SUBJECTS, SYSTEMS } from "./taxonomy.js";
+
+const SYSTEM_IDS = new Set(SYSTEMS.map((x) => x.id));
+const SUBJECT_IDS = new Set(SUBJECTS.map((x) => x.id));
 
 const KEY = "usmle_drops_v1";
 
@@ -26,7 +30,10 @@ export const emptyState = {
   theme: "auto",
   // How many questions the user wants per session (2-100).
   count: 10,
-  // Category tags the user has selected. Empty means the whole bank.
+  // What the user has narrowed the bank to, one list per axis. Empty means
+  // the whole bank on that axis; the two are combined with "and", so
+  // Cardiovascular + Pharmacology is heart drugs and nothing else.
+  systems: [],
   subjects: [],
   xp: 0,
   streak: 0,
@@ -257,10 +264,23 @@ export function setCount(state, count) {
   return { ...state, count: Math.min(100, Math.max(2, Math.round(count))) };
 }
 
-/** Persist the chosen category tags. Empty means every subject. */
+/**
+ * Persist the chosen systems and subjects. Empty means every one of them.
+ *
+ * Only ids the taxonomy actually knows are kept. Before the bank was filed
+ * by system and subject this list held category tags — "pharm", "cardio" —
+ * and those are dropped on the way past rather than left to filter nothing.
+ */
 export function setSubjects(state, subjects) {
-  return { ...state, subjects: [...new Set(subjects)].slice(0, 24) };
+  return { ...state, subjects: keepKnown(subjects, SUBJECT_IDS) };
 }
+
+export function setSystems(state, systems) {
+  return { ...state, systems: keepKnown(systems, SYSTEM_IDS) };
+}
+
+const keepKnown = (list, known) =>
+  [...new Set(Array.isArray(list) ? list : [])].filter((id) => known.has(id)).slice(0, 30);
 
 /** Persist which half of the app the user is in. */
 export function setSection(state, section) {

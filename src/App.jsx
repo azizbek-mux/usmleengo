@@ -16,7 +16,7 @@ import { quietSync, syncRating } from "./lib/ratingApi.js";
 import { loadBank, setBankLanguage } from "./data/bank.js";
 import { resetDeck } from "./lib/deck.js";
 import { build, daily } from "./lib/session.js";
-import { emptyState, isNewPlayer, loadLocal, loadRemote, record, reset, save, setCount, setLanguage, setQType, setSection, setSubjects, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
+import { emptyState, isNewPlayer, loadLocal, loadRemote, record, reset, save, setCount, setLanguage, setQType, setSection, setSubjects, setSystems, setTheme, toggleSaved, touchStreak } from "./lib/storage.js";
 import { setLang, t } from "./lib/i18n.js";
 import { startParam } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
@@ -393,7 +393,8 @@ export default function App() {
         onFocus={setFocused}
         onCount={(n) => persist(setCount(stateRef.current, n))}
         onQType={(qtype) => persist(setQType(stateRef.current, qtype))}
-        onSubjects={(tags) => persist(setSubjects(stateRef.current, tags))}
+        onSubjects={(ids) => persist(setSubjects(stateRef.current, ids))}
+        onSystems={(ids) => persist(setSystems(stateRef.current, ids))}
       />
     );
   }

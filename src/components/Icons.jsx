@@ -114,3 +114,8 @@ export const ChevronDown = ({ size = 14 }) => (
 export const SearchIcon = ({ size = 18 }) => (
   <Line size={size} width={2.5}><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></Line>
 );
+
+/** The tick in a ticked box. Heavier than the rest: it is tiny on screen. */
+export const Tick = ({ size = 14 }) => (
+  <Line size={size} width={3}><path d="M4 12.5l5.5 5.5L20 6" /></Line>
+);

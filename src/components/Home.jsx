@@ -2,13 +2,14 @@ import React, { useEffect, useMemo, useState } from "react";
 import bank, { bankBlurb } from "../data/bank.js";
 import AdCard from "./AdCard.jsx";
 import { BackBar, ScreenHead, StreakPill } from "./Chrome.jsx";
-import { Bookmark, ChevronDown, Retry, SearchIcon, Target } from "./Icons.jsx";
+import { Bookmark, ChevronDown, Retry, SearchIcon, Target, Tick } from "./Icons.jsx";
 import { Sheet } from "./Sheet.jsx";
 import { search, suggest, subjects } from "../lib/match.js";
 import { QTYPES } from "../lib/qtypes.js";
 import { MIN_ANSWERS, mistakesIn, savedIn, topicAccuracy } from "../lib/review.js";
 import { byFormat } from "../lib/session.js";
-import { PICTURE_TAGS, tagLabel } from "../lib/tags.js";
+import { tagLabel } from "../lib/tags.js";
+import { SUBJECTS, SYSTEMS, subjectName, systemName } from "../lib/taxonomy.js";
 import { t } from "../lib/i18n.js";
 import { haptic } from "../lib/telegram.js";
 import { today } from "../lib/storage.js";
@@ -62,7 +63,7 @@ const questionsLabel = (n) => t(`${n.toLocaleString()} question${n === 1 ? "" : 
 const mistakePool = (s) => mistakesIn(bank, s.seen);
 const savedPool = (s) => savedIn(bank, s.saved);
 
-export default function Home({ state, onStart, onFocus, onCount, onQType, onSubjects }) {
+export default function Home({ state, onStart, onFocus, onCount, onQType, onSubjects, onSystems }) {
   const [query, setQuery] = useState("");
   const [picker, setPicker] = useState(null); // null | "count" | "type"
   const [view, setView] = useState("main"); // main | weak
@@ -83,29 +84,55 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
   const found = useMemo(() => [...new Set(hits.map((q) => q.topic))], [hits]);
   const tips = useMemo(() => (query.trim() && !hits.length ? suggest(query) : []), [query, hits]);
   const chips = useMemo(() => subjects().slice(0, 12), []);
-  const pictureTags = useMemo(() => PICTURE_TAGS.filter((tag) => bank.some((q) => q.img && q.tags.includes(tag))), []);
 
-  // Chosen categories. Empty means the whole bank, which is why the button
-  // still says Random until something is picked.
+  // How many questions each system and each subject holds. Counted from the
+  // bank rather than written down, so the numbers cannot go stale, and one
+  // that holds nothing is not offered at all.
+  const groups = useMemo(() => {
+    const tally = (key) => bank.reduce((m, q) => m.set(q[key], (m.get(q[key]) || 0) + 1), new Map());
+    const build = (list, counts, name) => list
+      .map((x) => ({ id: x.id, name: name(x.id), n: counts.get(x.id) || 0 }))
+      .filter((x) => x.n > 0)
+      .sort((a, b) => a.name.localeCompare(b.name));
+    return {
+      systems: build(SYSTEMS, tally("system"), systemName),
+      subjects: build(SUBJECTS, tally("subject"), subjectName),
+    };
+  }, [state.lang]);
+
+  // The two chosen lists. Empty means the whole bank on that axis, which is
+  // why the button still says Random until something is picked. They are
+  // combined with "and": Cardiovascular plus Pharmacology is heart drugs.
+  const chosenSystems = state.systems || [];
   const chosen = state.subjects || [];
+  const systemSet = useMemo(() => new Set(chosenSystems), [chosenSystems]);
   const chosenSet = useMemo(() => new Set(chosen), [chosen]);
+  const picked = chosenSystems.length + chosen.length;
   const pool = useMemo(
-    () => (chosen.length ? bank.filter((q) => q.tags.some((tag) => chosenSet.has(tag))) : null),
-    [chosen, chosenSet],
+    () => (picked
+      ? bank.filter((q) => (!systemSet.size || systemSet.has(q.system)) &&
+                           (!chosenSet.size || chosenSet.has(q.subject)))
+      : null),
+    [picked, systemSet, chosenSet],
   );
   const qtype = state.qtype || "random";
 
   const mistakes = useMemo(() => mistakesIn(bank, state.seen), [state.seen]);
   const savedQs = useMemo(() => savedIn(bank, state.saved), [state.saved]);
   const accuracy = useMemo(
-    () => topicAccuracy(bank, state.seen, [...pictureTags, ...chips.map((c) => c.tag)]),
-    [state.seen, pictureTags, chips],
+    () => topicAccuracy(bank, state.seen, chips.map((c) => c.tag)),
+    [state.seen, chips],
   );
   const weakest = accuracy.find((r) => r.pct !== null);
 
-  function toggle(tag) {
+  function toggleSubject(id) {
     haptic("light");
-    onSubjects(chosenSet.has(tag) ? chosen.filter((c) => c !== tag) : [...chosen, tag]);
+    onSubjects(chosenSet.has(id) ? chosen.filter((c) => c !== id) : [...chosen, id]);
+  }
+
+  function toggleSystem(id) {
+    haptic("light");
+    onSystems(systemSet.has(id) ? chosenSystems.filter((c) => c !== id) : [...chosenSystems, id]);
   }
 
   function launch(p, label) {
@@ -113,21 +140,23 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
     onStart(p, label);
   }
 
+  /**
+   * What the round is called afterwards. One category names itself; a mix
+   * is counted, because "Cardiovascular, Renal, Pharmacology" does not fit
+   * anywhere it is shown.
+   */
+  function roundLabel() {
+    if (!picked) return t("Random", "Tasodifiy");
+    if (picked === 1) return chosenSystems.length ? systemName(chosenSystems[0]) : subjectName(chosen[0]);
+    return t(`${picked} categories`, `${picked} ta yo'nalish`);
+  }
+
   /** How many questions a round from this pool can draw, in the chosen format. */
   const usable = (p) => byFormat(p, state.qtype).length;
   const count = state.count;
   const roundSize = Math.min(count, pool ? usable(pool) : count);
 
-  const chip = (tag) => (
-    <button
-      key={tag}
-      className={`chip${chosenSet.has(tag) ? " on" : ""}`}
-      aria-pressed={chosenSet.has(tag)}
-      onClick={() => toggle(tag)}
-    >
-      {tagLabel(tag)}
-    </button>
-  );
+
 
   if (view === "weak") {
     return (
@@ -248,31 +277,25 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
             </button>
           </div>
 
-          {/* Picture questions are a different axis from body system, and
-              there are far fewer of them, so they would never survive the
-              cut into the subject row. They get their own row, but share one
-              selection with the subjects: picking peds and radio together
-              is a perfectly reasonable way to study. */}
-          {pictureTags.length > 0 && (
-            <>
-              <div className="section-label">{t("By picture", "Rasm bo'yicha")}</div>
-              <div className="chips">
-                {pictureTags.map(chip)}
-              </div>
-            </>
-          )}
-
-          <div className="chips-head">
-            <span className="section-label" style={{ margin: 0 }}>{t("By subject", "Fan bo'yicha")}</span>
-            {chosen.length > 0 && (
-              <button className="chips-clear" onClick={() => { haptic("light"); onSubjects([]); }}>
-                {t(`Clear ${chosen.length}`, `Tozalash (${chosen.length})`)}
-              </button>
-            )}
-          </div>
-          <div className="chips">
-            {chips.map(({ tag }) => chip(tag))}
-          </div>
+          {/* Two independent axes: what the question is about, and what it
+              is asked from. Picked together they narrow with "and", which is
+              how a student actually revises — the heart, from pharmacology. */}
+          <CategoryGroup
+            label={t("Systems", "Tizimlar")}
+            rows={groups.systems}
+            chosen={systemSet}
+            onToggle={toggleSystem}
+            onAll={() => { haptic("light"); onSystems(groups.systems.map((r) => r.id)); }}
+            onNone={() => { haptic("light"); onSystems([]); }}
+          />
+          <CategoryGroup
+            label={t("Subjects", "Fanlar")}
+            rows={groups.subjects}
+            chosen={chosenSet}
+            onToggle={toggleSubject}
+            onAll={() => { haptic("light"); onSubjects(groups.subjects.map((r) => r.id)); }}
+            onNone={() => { haptic("light"); onSubjects([]); }}
+          />
           <div className="bank-sources">
             {t("Sources: UWorld, First Aid, Mehlman PDFs, NBMEs, Free 120s", "Manbalar: UWorld, First Aid, Mehlman PDF fayllari, NBME, Free 120")}
           </div>
@@ -292,19 +315,15 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
         <button
           className="btn btn-primary btn-icon"
           disabled={pool !== null && pool.length === 0}
-          onClick={() => launch(pool, chosen.length === 1
-            ? tagLabel(chosen[0])
-            : chosen.length ? t(`${chosen.length} categories`, `${chosen.length} ta fan`) : t("Random", "Tasodifiy"))}
+          onClick={() => launch(pool, roundLabel())}
         >
           <Dice />
-          {chosen.length ? t("Start", "Boshlash") : t("Random", "Tasodifiy")} · {questionsLabel(roundSize)}
+          {picked ? t("Start", "Boshlash") : t("Random", "Tasodifiy")} · {questionsLabel(roundSize)}
         </button>
         <div className="cta-note">
-          {chosen.length
-            ? t(
-              `${chosen.length} of ${chips.length + pictureTags.length} categories · ${questionsLabel(usable(pool))}`,
-              `${chips.length + pictureTags.length} tadan ${chosen.length} ta fan · ${questionsLabel(usable(pool))}`,
-            )
+          {picked
+            ? t(`${roundLabel()} · ${questionsLabel(usable(pool))}`,
+                `${roundLabel()} · ${questionsLabel(usable(pool))}`)
             : state.lastDay === today() ? t("Practised today ✓", "Bugun shug'ullandingiz ✓") : t("From every subject", "Barcha fanlardan")}
         </div>
       </div>
@@ -405,6 +424,61 @@ function WeakTopics({ rows, onBack, onPractise }) {
               : t(`Practise my ${worst.length} weakest`, `Eng zaif ${worst.length} ta mavzuni mashq qilish`)}
           </button>
           <div className="cta-note">{worst.map((r) => tagLabel(r.tag)).join(", ")}</div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * One axis of the bank, as a list to tick down.
+ *
+ * Twenty-six systems and thirteen subjects is more than a row of chips can
+ * hold, and a chip cannot say how many questions are behind it. A list can
+ * do both, and folds away once it has been used — the header keeps saying
+ * what is chosen while it is shut, so nothing is hidden by closing it.
+ */
+function CategoryGroup({ label, rows, chosen, onToggle, onAll, onNone }) {
+  const [open, setOpen] = useState(true);
+  const n = rows.filter((r) => chosen.has(r.id)).length;
+
+  return (
+    <div className="cat-group">
+      <div className="cat-head">
+        <button
+          className="cat-title"
+          aria-expanded={open}
+          onClick={() => { haptic("light"); setOpen(!open); }}
+        >
+          <span className="section-label" style={{ margin: 0 }}>{label}</span>
+          <span className="cat-count">
+            {n ? t(`${n} chosen`, `${n} ta tanlandi`) : t("All", "Hammasi")}
+          </span>
+          <span className={`cat-chevron${open ? " open" : ""}`}><ChevronDown /></span>
+        </button>
+        {open && (
+          <div className="cat-acts">
+            <button className="chips-clear" onClick={onAll}>{t("Select all", "Hammasini tanlash")}</button>
+            {n > 0 && <button className="chips-clear" onClick={onNone}>{t("Clear", "Tozalash")}</button>}
+          </div>
+        )}
+      </div>
+
+      {open && (
+        <div className="cat-list">
+          {rows.map((r) => (
+            <button
+              key={r.id}
+              className={`cat-row${chosen.has(r.id) ? " on" : ""}`}
+              role="checkbox"
+              aria-checked={chosen.has(r.id)}
+              onClick={() => onToggle(r.id)}
+            >
+              <span className="cat-box" aria-hidden="true">{chosen.has(r.id) ? <Tick /> : null}</span>
+              <span className="cat-name">{r.name}</span>
+              <span className="cat-n">{r.n}</span>
+            </button>
+          ))}
         </div>
       )}
     </div>
