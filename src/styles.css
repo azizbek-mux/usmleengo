@@ -2000,7 +2000,7 @@ input { font: inherit; }
 /* The bank picker: how many questions are in view, and a way to take them all. */
 .pick-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0 8px; }
 
-/* The flask beside the search opens the normal lab values. */
+/* The flask beside the search opens the NBME lab values. */
 .search-row { display: flex; align-items: stretch; gap: 10px; margin-bottom: 14px; }
 .search-row .search { flex: 1; min-width: 0; margin-bottom: 0; }
 .lab-btn {
@@ -2017,10 +2017,14 @@ input { font: inherit; }
 .lab-btn:active { background: var(--card-hi); transform: scale(0.96); }
 
 .lab-search { margin: 8px 0 4px; }
+.lab-units { margin: 10px 0 0; }
 .lab-title { margin: 18px 0 8px; }
 .lab-list { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .lab-row { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 11px 14px; }
 .lab-row + .lab-row { border-top: 1px solid var(--line); }
+/* A long name takes the whole line, and its value sits under it. */
+.lab-row.stack { flex-direction: column; align-items: flex-start; gap: 3px; }
+.lab-row.stack .lab-val { text-align: left; }
 .lab-name { font-size: 14.5px; font-weight: 600; min-width: 0; }
 .lab-val { font-size: 14.5px; font-weight: 800; text-align: right; font-variant-numeric: tabular-nums; flex-shrink: 0; }
 .lab-val small { font-size: 12px; font-weight: 600; color: var(--muted); margin-left: 5px; }

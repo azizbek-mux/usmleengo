@@ -29,7 +29,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
   // Histology detail does not survive a phone-sized card, so the picture opens
   // full screen on a tap.
   const [zoom, setZoom] = useState(false);
-  // The normal lab values, in a sheet over the question.
+  // The NBME lab values, in a sheet over the question.
   const [labs, setLabs] = useState(false);
   const inputRef = useRef(null);
   // When the current question appeared. Feeds XP and the rating: an answer is
@@ -108,7 +108,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
         <button
           className="save-btn"
           onClick={() => { haptic("light"); setLabs(true); }}
-          aria-label={t("Normal lab values", "Normal laboratoriya ko'rsatkichlari")}
+          aria-label={t("NBME lab values", "NBME laboratoriya me'yorlari")}
         >
           <Flask />
         </button>

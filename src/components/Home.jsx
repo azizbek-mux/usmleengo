@@ -67,7 +67,7 @@ const savedPool = (s) => savedIn(bank, s.saved);
 export default function Home({ state, onStart, onFocus, onCount, onQType, onSubjects, onSystems }) {
   const [query, setQuery] = useState("");
   const [picker, setPicker] = useState(null); // null | "count" | "type"
-  const [labs, setLabs] = useState(false); // the normal lab values, over the tab
+  const [labs, setLabs] = useState(false); // the NBME lab values, over the tab
   const [view, setView] = useState("main"); // main | weak
 
   // Weak topics is a screen of its own and wants the whole of it. Handed
@@ -187,7 +187,7 @@ export default function Home({ state, onStart, onFocus, onCount, onQType, onSubj
       <button
         className="lab-btn"
         onClick={() => { haptic("light"); setLabs(true); }}
-        aria-label={t("Normal lab values", "Normal laboratoriya ko'rsatkichlari")}
+        aria-label={t("NBME lab values", "NBME laboratoriya me'yorlari")}
       >
         <Flask size={22} />
       </button>

@@ -467,11 +467,13 @@ each system and each subject, weakest first, judged from 5 answers up; tap one
 to practise it). See `progressBy` in `src/lib/review.js`. A class teacher sees
 the same systems for each student.
 
-Beside the search, a flask opens the **normal lab values**
+Beside the search, a flask opens the **NBME lab values**
 (`src/data/labs.js`, `src/components/LabValues.jsx`); the same flask is in the
-top bar of every question. Analyte names stay in English, as on the exam.
-The ranges are typed by hand: `tools/labs.test.mjs` catches slips of shape,
-not of medicine, so they want a proofread from someone who knows.
+top bar of every question. It is the NBME's own "Laboratory Values" page, all
+114 tests in the NBME's own order and sections, with its two columns as a
+switch: conventional units or SI. Analyte names stay in English, as on the
+exam. The values were typed in from the page (the owner's copy, 2026-09-30):
+`tools/labs.test.mjs` catches slips of shape and the count, not of medicine.
 
 The Quiz tab keeps the two category lists on screen (systems and subjects,
 `src/lib/taxonomy.js`), one tap each; how many questions and which kind sit

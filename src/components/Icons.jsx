@@ -120,7 +120,7 @@ export const Tick = ({ size = 14 }) => (
   <Line size={size} width={3}><path d="M4 12.5l5.5 5.5L20 6" /></Line>
 );
 
-/** A laboratory flask: normal lab values. */
+/** A laboratory flask: the NBME lab values. */
 export const Flask = ({ size = 20 }) => (
   <Line size={size}>
     <path d="M9 3h6" />

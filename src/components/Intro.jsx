@@ -17,8 +17,8 @@ export const introCards = () => [
     eyebrow: t("Welcome to usmleengo", "usmleengoga xush kelibsiz"),
     title: t("Quiz", "Testlar"),
     text: t(
-      `${bankPlus() || "Thousands of"} five-second USMLE questions. Tap Random for a mixed round, or pick systems and subjects first. Your mistakes and saved questions wait in Review. The flask beside the search opens normal lab values.`,
-      `${bankPlus() ? `${bankPlus()} ta` : "Minglab"} besh soniyalik USMLE savoli. Aralash savollar uchun «Tasodifiy»ni bosing yoki avval tizim va fanlarni tanlang. Xatolaringiz va saqlangan savollaringiz «Takrorlash» bo'limida turadi. Qidiruv yonidagi kolba normal laboratoriya ko'rsatkichlarini ochadi.`,
+      `${bankPlus() || "Thousands of"} five-second USMLE questions. Tap Random for a mixed round, or pick systems and subjects first. Your mistakes and saved questions wait in Review. The flask beside the search opens the NBME lab values.`,
+      `${bankPlus() ? `${bankPlus()} ta` : "Minglab"} besh soniyalik USMLE savoli. Aralash savollar uchun «Tasodifiy»ni bosing yoki avval tizim va fanlarni tanlang. Xatolaringiz va saqlangan savollaringiz «Takrorlash» bo'limida turadi. Qidiruv yonidagi kolba NBME laboratoriya me'yorlarini ochadi.`,
     ),
   },
   {
