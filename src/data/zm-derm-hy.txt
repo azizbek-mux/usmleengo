@@ -241,3 +241,63 @@ I|Lichen planus picture|derm,immuno,liver|hdp39c.webp|Lichen planus|Psoriasis|Fl
 B|Lichen planus association|derm,immuno,liver|Purple, itchy, flat-topped papules keep company with|Hepatitis C|Hepatitis A|Purple, pruritic, polygonal papules - the Ps.
 I|Discoid lupus picture|derm,immuno,rheum|hdp40a.webp|Discoid lupus|Alopecia areata|A scarring, scaly patch on the scalp. Alopecia areata leaves smooth, normal skin.
 B|Discoid lupus and SLE|derm,immuno,rheum|Scarring sores of the face and scalp with anti-Smith antibodies mean|Systemic lupus erythematosus|Isolated discoid lupus|Arthritis is the commonest presenting feature of lupus.
+
+# -- pregnancy, ageing skin and the sun ---------------------------------
+B|Senile purpura|derm,geriatrics|Purpura on the forearms of an old man with normal clotting is|A normal change of ageing|A platelet disorder|Dermal collagen and vessels grow fragile.
+B|Solar elastosis|derm|Thick, yellow, coarsely wrinkled forearms in a builder are caused by|Sun exposure|Repeated friction|Ultraviolet light breaking down the elastic tissue.
+B|Preventing sun damage|derm|When avoiding the sun is not offered, the best protection is|Protective clothing|Sunscreen at SPF 30|Students talk themselves out of the obvious answer.
+I|PUPPP|derm,ob|hdp41a.webp|Pruritic urticarial papules of pregnancy|Gestational pemphigoid|Itchy red papules sitting inside the stretch marks late in pregnancy.
+B|PUPPP treatment|derm,ob,pharm|PUPPP is treated with|An oral antihistamine|An oral antibiotic|A second-generation H1 blocker.
+I|Gestational pemphigoid|derm,ob,immuno|hdp41b.webp|Gestational pemphigoid|Pruritic urticarial papules of pregnancy|An itchy rash around the umbilicus that leaves the stretch marks alone.
+B|Cholestasis of pregnancy|derm,ob,liver|Intense itching of palms and soles late in pregnancy with no rash is|Intrahepatic cholestasis|Gestational pemphigoid|Raised serum bile acids; treat with ursodeoxycholic acid.
+B|Immune thrombocytopenic purpura|derm,heme,peds|Nosebleeds and petechiae with a platelet count of 90,000 are|Immune thrombocytopenic purpura|Von Willebrand disease|Antibodies against glycoprotein IIb/IIIa.
+
+# -- the skin cancers ----------------------------------------------------
+I|Basal cell carcinoma picture|derm,oncology|hdp42a.webp|Basal cell carcinoma|Squamous cell carcinoma|A pearly nodule with a rolled edge and fine vessels across it.
+B|Basal cell carcinoma look|derm,oncology|The lesion that is pearly with telangiectasia across it is|A basal cell carcinoma|A squamous cell carcinoma|Squamous cell carcinoma has neither.
+I|Basal cell carcinoma histology|derm,oncology,histo|hdp42b.webp|Basal cell carcinoma|Squamous cell carcinoma|Islands and nests of basophilic cells budding off the epidermis.
+B|Mohs surgery|derm,oncology,surgery|A skin cancer on the eyelid or nose is removed by|Mohs micrographic surgery|Wide local excision|It spares the most tissue where tissue matters.
+B|Imiquimod mechanism|derm,oncology,pharm|Imiquimod treats basal cell carcinoma by stimulating|Toll-like receptor 7|The interleukin-2 receptor|A topical immunomodulator.
+I|Actinic keratosis picture|derm,oncology|hdp43a.webp|Actinic keratoses|Seborrheic keratoses|Rough, scaly red patches on sun-worn hands - the forerunner of squamous cell carcinoma.
+B|Actinic keratosis treatment|derm,oncology|Actinic keratoses are usually treated with|Cryotherapy|Mohs surgery|Farmers, fishermen and builders.
+I|Squamous cell carcinoma picture|derm,oncology|hdp43b.webp|Squamous cell carcinoma|Basal cell carcinoma|An ulcerated lesion on the ear of a fisherman whose forehead is covered in actinic keratoses.
+I|Squamous cell carcinoma histology|derm,oncology,histo|hdp44a.webp|Squamous cell carcinoma|Basal cell carcinoma|Keratin pearls and intercellular bridges.
+B|Squamous cell carcinoma risks|derm,oncology|The high-yield risks for squamous cell carcinoma are|Smoking and immunodeficiency|Fair skin and freckles alone|Along with the sun, and old scars.
+B|Marjolin ulcer|derm,oncology,surgery|A cancer arising in an old scar or burn is|A squamous cell carcinoma|A basal cell carcinoma|Called a Marjolin ulcer.
+B|Lichen sclerosus|derm,gyn,oncology|A rough white plaque on the labia majora needs|A biopsy before any steroid|A topical steroid straight away|To rule out squamous cell carcinoma first.
+I|Keratoacanthoma|derm,oncology|hdp44b.webp|Keratoacanthoma|Basal cell carcinoma|A dome with a horn-filled crater in the middle, ringed by inflamed skin.
+I|Benign nevus|derm,oncology|hdp45a.webp|A benign mole|A melanoma|One even colour, a regular border, and it has not changed.
+B|When to excise a mole|derm,oncology|A mole is excised when it shows|Asymmetry and an irregular border|Any brown colour at all|A, B, C, D, E - and change over time.
+I|Melanoma picture|derm,oncology|hdp45b.webp|Melanoma|A benign mole|Uneven colour, a ragged border and a lesion over a centimetre across.
+B|Biopsy for suspected melanoma|derm,oncology,surgery|A suspicious pigmented lesion on the leg is managed by|Excisional biopsy|Shave biopsy|Shaving it ruins the depth, which is what matters.
+B|Melanoma prognosis|derm,oncology|The prognosis of a melanoma depends most on|Its depth|The lymphocytes around it|Those lymphocytes are a good sign, not a bad one.
+B|Aldesleukin|derm,oncology,pharm|Aldesleukin used in melanoma is recombinant|Interleukin-2|Interferon alpha|It drives T cells against the tumour.
+I|Acral lentiginous melanoma|derm,oncology|hdp46a.webp|Acral lentiginous melanoma|A plantar wart|A dark patch on the sole, where the sun never reaches.
+I|Subungual melanoma|derm,oncology|hdp46b.webp|Acral lentiginous melanoma|A splinter haemorrhage|A dark band running the length of the nail.
+B|Glomus tumour|derm,oncology|A nail-bed lesion with pain shooting on exposure to cold is|A glomus tumour|A subungual melanoma|A tumour of the thermoregulating glomus body.
+I|Lentigo maligna|derm,oncology|hdp47a.webp|Lentigo maligna|A seborrheic keratosis|A flat brown-black stain spreading sideways on sun-worn skin.
+B|Lentigo maligna staging|derm,oncology|Lentigo maligna is|Melanoma in situ|An entirely benign lesion|Once it invades, it becomes lentigo maligna melanoma.
+B|Familial melanoma gene|derm,oncology,genetics|Melanoma running in a family points to|BRAF|RB1|A proto-oncogene coding for a serine-threonine kinase.
+I|Seborrheic keratosis picture|derm,oncology|hdp47b.webp|Seborrheic keratoses|Melanomas|Waxy, greasy growths that look stuck on and ready to peel off.
+B|Leser-Trelat sign|derm,oncology|Seborrheic keratoses erupting suddenly in crops suggest|An internal malignancy|Simple ageing|The sign of Leser-Trelat.
+
+# -- what the skin says about the gut, the blood and the genes ----------
+B|Genital warts virus|derm,micro,oncology|Painless skin-coloured warts on the penis are caused by|Human papillomavirus 6 or 11|Human papillomavirus 16 or 18|Sixteen and eighteen are the cancer strains.
+I|Peutz-Jeghers lips|derm,gi,genetics|hdp48a.webp|Peutz-Jeghers syndrome|Addison disease|Dark macules on and around the lips of a teenager.
+B|Peutz-Jeghers polyps|derm,gi,genetics|The polyps of Peutz-Jeghers syndrome are|Hamartomatous|Adenomatous|Perioral melanosis plus hamartomas.
+I|Burkitt lymphoma jaw|derm,oncology,peds|hdp49a.webp|Burkitt lymphoma|Mumps|A rapidly growing jaw mass in an African child.
+B|Burkitt gene product|derm,oncology,genetics|The c-MYC gene of Burkitt lymphoma codes for|A transcription factor|An anti-apoptotic protein|BCL-2 is the anti-apoptotic one.
+B|Leukoplakia|derm,oncology|A rough white patch on the tongue that will not scrape off is|Leukoplakia|Oral candidiasis|Precancerous, and caused by tobacco.
+B|Oral hairy leukoplakia|derm,micro,hiv|White tongue plaques that will not scrape off in HIV are caused by|Epstein-Barr virus|Candida albicans|Hairy leukoplakia, and it is not precancerous.
+I|Mycosis fungoides picture|derm,oncology|hdp49b.webp|Mycosis fungoides|Psoriasis|Violet patches and plaques that have crept over years - a T cell lymphoma of the skin.
+B|Mycosis fungoides cells|derm,oncology,histo|The malignant cells of mycosis fungoides have|Cerebriform nuclei|Owl-eye inclusions|Pautrier microabscesses in the epidermis.
+I|Sezary syndrome|derm,oncology|hdp50a.webp|Sezary syndrome|Stevens-Johnson syndrome|Red, scaling skin over the whole body - erythroderma, with leukaemic T cells.
+B|HTLV structure|derm,oncology,micro|Human T cell lymphotropic virus is|RNA and enveloped|DNA and not enveloped|A retrovirus, like HIV.
+I|Jaundice picture|derm,liver,oncology|hdp50b.webp|Jaundice|Carotenaemia|Yellow skin and sclerae. Carotenaemia stains the skin but spares the eyes.
+B|Painless jaundice workup|derm,liver,oncology|Painless jaundice in an older patient whose gallbladder is long gone needs|CT of the abdomen with contrast|Ultrasound of the gallbladder|The head of the pancreas is pressing on the bile duct.
+B|Necrolytic migratory erythema|derm,endocrine,oncology|A rash with high glucose and a pancreatic tumour points to|A glucagonoma|An insulinoma|Necrolytic migratory erythema.
+B|VIPoma|derm,endocrine,gi|Facial flushing with watery diarrhoea and low potassium is|A VIPoma|A carcinoid tumour|Watery diarrhoea, hypokalaemia, achlorhydria.
+I|Cafe au lait spot|derm,genetics|hdp51a.webp|A cafe au lait spot|A lentigo|A large, evenly light-brown patch. A lentigo is small and dark.
+B|Neurofibromatosis inheritance|derm,genetics|Neurofibromatosis type 1 is inherited|Autosomal dominantly|X-linked recessively|Cafe au lait spots, freckling in the armpits, neurofibromas.
+I|Adenoma sebaceum|derm,genetics,neuro|hdp51b.webp|Tuberous sclerosis|Acne vulgaris|Firm papules spreading over the nose and cheeks - angiofibromas, not acne.
+B|Tuberous sclerosis features|derm,genetics,neuro|Tuberous sclerosis pairs facial angiofibromas with|Cardiac rhabdomyoma|Cardiac myxoma|And renal angiomyolipoma, and subungual fibromas.

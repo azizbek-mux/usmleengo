@@ -198,3 +198,55 @@ lichen-planus-picture-1d1pnos|Yassi temiratki rasmi||Yassi temiratki|Psoriaz|Bil
 lichen-planus-association-09brel7|Yassi temiratki bilan bog'liqlik|Binafsha, qichiydigan, usti yassi papulalar nima bilan yonma-yon yuradi|C gepatiti bilan|A gepatiti bilan|Binafsha, qichiydigan, ko'pburchak papulalar.
 discoid-lupus-picture-0k7q02m|Diskoid lupus rasmi||Diskoid lupus|Uyali alopetsiya|Bosh terisidagi chandiqli, qipiqli soha. Uyali alopetsiyada teri silliq va sog'lom qoladi.
 discoid-lupus-and-sle-1pf7971|Diskoid lupus va tizimli lupus|Yuz va bosh terisidagi chandiqli yaralar va anti-Smit antitelolari nimani bildiradi|Tizimli qizil yugurukni|Yakka diskoid lupusni|Artrit lupusning eng ko'p birinchi belgisi.
+senile-purpura-1rkrevq|Keksalik purpurasi|Laxtalanishi normal keksa erkakning bilagidagi purpura nima|Qarishning normal o'zgarishi|Trombotsit kasalligi|Derma kollageni va tomirlari mo'rtlashadi.
+solar-elastosis-1nfa5nk|Quyosh elastozi|Quruvchining qalin, sarg'ish, dag'al ajinli bilagini nima keltiradi|Quyosh ta'siri|Takroriy ishqalanish|Ultrabinafsha nur elastik to'qimani parchalaydi.
+preventing-sun-damage-03ss3ko|Quyosh zararining oldini olish|Quyoshdan qochish taklif qilinmasa, eng yaxshi himoya qaysi|Himoya kiyim kiyish|SPF 30 li krem surtish|Talabalar aniq javobdan o'zlarini chalg'itadi.
+puppp-1omjiyc|Homiladorlikning qichiydigan papulalari||Homiladorlikning qichiydigan papulalari|Homiladorlikdagi gestatsion pemfigoid|Homiladorlik oxirida chandiq izlari ichidagi qichiydigan qizil papulalar.
+puppp-treatment-0ud3uyw|Homiladorlik papulalarini davolash|Homiladorlikning qichiydigan papulalari nima bilan davolanadi|Og'iz orqali antigistamin|Og'iz orqali antibiotik|Ikkinchi avlod H1 blokatori.
+gestational-pemphigoid-15who5h|Gestatsion pemfigoid||Gestatsion pemfigoid|Homiladorlikning qichiydigan papulalari|Kindik atrofidagi qichiydigan toshma, chandiq izlariga tegmaydi.
+cholestasis-of-pregnancy-1pvfa2z|Homiladorlik xolestazi|Homiladorlik oxirida toshmasiz, kaft va tovondagi kuchli qichishish nima|Jigar ichi xolestazi|Gestatsion pemfigoid|Zardob o't kislotalari oshgan, ursodezoksixol kislotasi bilan davolanadi.
+basal-cell-carcinoma-picture-0ki7rk2|Bazal hujayrali karsinoma rasmi||Bazal hujayrali karsinoma|Yassi hujayrali karsinoma|Cheti aylanib ko'tarilgan, sadaf rangli tugun, usti bo'ylab mayda tomirlar.
+basal-cell-carcinoma-look-1cjcyot|Bazal hujayrali karsinomaning ko'rinishi|Sadaf rangli va usti telangiektaziyali o'choq nima|Bazal hujayrali karsinoma|Yassi hujayrali karsinoma|Yassi hujayrali karsinomada ikkalasi ham bo'lmaydi.
+imiquimod-mechanism-1qj8i17|Imikvimod mexanizmi|Imikvimod bazal hujayrali karsinomani nimani qo'zg'atib davolaydi|Toll-simon retseptor 7 ni|Interleykin-2 retseptorini|Mahalliy immunomodulyator.
+mohs-surgery-1i7s5su|Mos jarrohligi|Qovoq yoki burundagi teri raki qanday olib tashlanadi|Mos mikrografik jarrohligi bilan|Keng mahalliy kesish bilan|To'qima qadrli joyda eng kam to'qima olinadi.
+actinic-keratosis-picture-0ky0fer|Aktinik keratoz rasmi||Aktinik keratoz|Seboreyali keratoz|Quyoshdan qarigan qo'ldagi dag'al, qipiqli qizil dog'lar — yassi hujayrali rakning o'tmishdoshi.
+actinic-keratosis-treatment-0b17567|Aktinik keratozni davolash|Aktinik keratoz odatda nima bilan davolanadi|Kriyoterapiya bilan|Mos jarrohligi bilan|Dehqonlar, baliqchilar va quruvchilar.
+squamous-cell-carcinoma-picture-1jgnf63|Yassi hujayrali karsinoma rasmi||Yassi hujayrali karsinoma|Bazal hujayrali karsinoma|Peshonasi aktinik keratozga to'la baliqchining qulog'idagi yaralangan o'choq.
+squamous-cell-carcinoma-histology-0xscpjj|Yassi hujayrali karsinoma histologiyasi||Yassi hujayrali karsinoma|Bazal hujayrali karsinoma|Keratin marvaridlari va hujayralararo ko'priklar.
+squamous-cell-carcinoma-risks-129bljj|Yassi hujayrali karsinoma xavflari|Yassi hujayrali karsinomaning asosiy xavf omillari qaysi|Chekish va immunitet tanqisligi|Faqat oq teri va sepkil|Shuningdek quyosh va eski chandiqlar.
+marjolin-ulcer-1dkg504|Marjolen yarasi|Eski chandiq yoki kuyish o'rnida paydo bo'lgan rak nima|Yassi hujayrali karsinoma|Bazal hujayrali karsinoma|Marjolen yarasi deb ataladi.
+lichen-sclerosus-1k1l51m|Sklerozlovchi temiratki|Katta uyatli labdagi dag'al oq pilakcha nimani talab qiladi|Steroiddan oldin biopsiyani|Darhol mahalliy steroidni|Avval yassi hujayrali rakni istisno qilish kerak.
+keratoacanthoma-1dvungf|Keratoakantoma||Keratoakantoma|Bazal hujayrali karsinoma|O'rtasi shox bilan to'lgan gumbaz, atrofi yallig'langan teri bilan o'ralgan.
+benign-nevus-0qz166n|Xavfsiz nevus||Xavfsiz xol|Melanoma|Bir xil rang, tekis chegara, va u o'zgarmagan.
+when-to-excise-a-mole-0zydl7t|Xolni qachon olib tashlash kerak|Xol qachon kesib olinadi|Assimetriya va notekis chegara bo'lsa|Umuman jigarrang rangda bo'lsa|A, B, C, D, E — va vaqt bilan o'zgarishi.
+melanoma-picture-1b7y1nq|Melanoma rasmi||Melanoma|Xavfsiz xol|Notekis rang, yirtilgan chegara va bir santimetrdan katta o'choq.
+biopsy-for-suspected-melanoma-1imipqh|Melanomaga gumonda biopsiya|Oyoqdagi shubhali pigmentli o'choq qanday olib boriladi|Kesib olib biopsiya qilinadi|Yuzasidan qirib olinadi|Qirib olish chuqurlikni buzadi, chuqurlik esa asosiy narsa.
+melanoma-prognosis-0v52zaz|Melanoma prognozi|Melanoma prognozi eng ko'p nimaga bog'liq|Uning chuqurligiga|Atrofidagi limfotsitlarga|U limfotsitlar yaxshi belgi, yomon emas.
+aldesleukin-0mf61ur|Aldesleykin|Melanomada qo'llanadigan aldesleykin — rekombinant nima|Interleykin-2|Alfa-interferon|U T hujayralarni o'smaga qarshi qo'zg'atadi.
+acral-lentiginous-melanoma-0c9b0n6|Akral lentiginoz melanoma||Akral lentiginoz melanoma|Tovondagi oddiy so'gal|Quyosh tegmaydigan tovondagi to'q dog'.
+subungual-melanoma-1nwj24d|Tirnoq ostidagi melanoma||Akral lentiginoz melanoma|Tirnoq ostidagi qon quyilishi|Tirnoq bo'ylab cho'zilgan to'q chiziq.
+glomus-tumour-0m5scdj|Glomus o'smasi|Sovuqda og'riq beradigan tirnoq o'zani o'chog'i nima|Glomus o'smasi|Tirnoq ostidagi melanoma|Issiqlikni boshqaruvchi glomus tanachasining o'smasi.
+lentigo-maligna-1ez4zka|Xavfli lentigo||Xavfli lentigo|Seboreyali keratoz|Quyoshdan qarigan terida yon tomonga tarqalayotgan jigarrang-qora dog'.
+lentigo-maligna-staging-0ggkrh6|Xavfli lentigoning bosqichi|Xavfli lentigo nima|O'z joyidagi melanoma|Butunlay xavfsiz o'choq|Ichkariga o'sganda xavfli lentigo melanomasi deyiladi.
+familial-melanoma-gene-07jplns|Oilaviy melanoma geni|Oilada takrorlanadigan melanoma qaysi genni ko'rsatadi|BRAF|RB1|Serin-treonin kinaza kodlaydigan protoonkogen.
+seborrheic-keratosis-picture-1xiesr9|Seboreyali keratoz rasmi||Seboreyali keratoz|Tarqalgan melanoma|Yopishtirib qo'yilgandek, yog'li, mumsimon o'simtalar.
+leser-trelat-sign-00dh785|Lezer-Trela belgisi|Birdan to'p-to'p chiqqan seboreyali keratozlar nimani ko'rsatadi|Ichki a'zo xavfli o'smasini|Oddiy qarish belgisini|Lezer-Trela belgisi.
+genital-warts-virus-100ebhn|Jinsiy so'gallar virusi|Olatdagi og'riqsiz, teri rangli so'gallarni nima keltiradi|6 yoki 11-tur papilloma virusi|16 yoki 18-tur papilloma virusi|16 va 18 — saraton beruvchi turlar.
+peutz-jeghers-lips-0hkucsv|Peyts-Yegersda lablar||Peyts-Yegers sindromi|Addison kasalligi|O'smirning lablari va atrofidagi to'q dog'lar.
+peutz-jeghers-polyps-14emrmw|Peyts-Yegers poliplari|Peyts-Yegers sindromining poliplari qanday|Gamartomatoz|Adenomatoz|Og'iz atrofidagi pigmentatsiya va gamartomalar.
+burkitt-lymphoma-jaw-04z887r|Berkitt limfomasida jag'||Berkitt limfomasi|Epidemik parotit|Afrikalik boladagi tez o'sayotgan jag' massasi.
+burkitt-gene-product-0hep0jp|Berkitt gen mahsuloti|Berkitt limfomasidagi c-MYC geni nimani kodlaydi|Transkripsiya omilini|Apoptozga qarshi oqsilni|Apoptozga qarshisi — BCL-2.
+leukoplakia-0hnuc7j|Leykoplakiya|Tildagi qirib olinmaydigan dag'al oq dog' nima|Leykoplakiya|Og'iz kandidozi|Saraton oldi holati, tamakidan kelib chiqadi.
+oral-hairy-leukoplakia-035jas7|Og'izdagi tukli leykoplakiya|OIVda tildagi qirib olinmaydigan oq pilakchalarni nima keltiradi|Epshteyn-Barr virusi|Candida albicans|Tukli leykoplakiya, va u saraton oldi emas.
+mycosis-fungoides-picture-1ry2fmf|Zamburug'simon mikoz rasmi||Zamburug'simon mikoz|Tarqalgan psoriaz|Yillar davomida sekin tarqalgan binafsha dog' va pilakchalar — terining T hujayrali limfomasi.
+mycosis-fungoides-cells-129psam|Zamburug'simon mikoz hujayralari|Zamburug'simon mikozning xavfli hujayralari qanday|Miyasimon yadroli|«Boyqush ko'zi» kiritmali|Epidermisda Potrye mikroabssesslari.
+sezary-syndrome-1uo1swg|Sezari sindromi||Sezari sindromi|Stivens-Jonson sindromi|Butun tana bo'ylab qizargan, qipiqlanayotgan teri — eritrodermiya, qonda leykemik T hujayralar.
+htlv-structure-19ebbig|HTLV tuzilishi|Odamning T hujayrali limfotrop virusi qanday|RNK li va qobiqli|DNK li va qobiqsiz|OIV kabi retrovirus.
+jaundice-picture-1f6956t|Sariqlik rasmi||Sariqlik|Karotinemiya|Sarg'aygan teri va sklera. Karotinemiya terini bo'yaydi, ko'zni esa yo'q.
+painless-jaundice-workup-03s1w6a|Og'riqsiz sariqlikni tekshirish|O't pufagi allaqachon olingan keksa bemordagi og'riqsiz sariqlik nimani talab qiladi|Kontrastli qorin KT sini|O't pufagi ultratovushini|Oshqozon osti bezining boshi o't yo'lini bosadi.
+necrolytic-migratory-erythema-0m43td5|Nekrolitik ko'chuvchi eritema|Yuqori qand va oshqozon osti bezi o'smasi bilan kechgan toshma nimani ko'rsatadi|Glyukagonomani|Insulinomani|Nekrolitik ko'chuvchi eritema.
+vipoma-1v9nl8c|VIPoma|Yuzning qizishi, suvli diareya va past kaliy nima|VIPoma|Karsinoid o'sma|Suvli diareya, gipokaliemiya, axlorgidriya.
+cafe-au-lait-spot-1olvcur|«Sutli kofe» dog'i||«Sutli kofe» dog'i|Oddiy lentigo|Yirik, bir tekis och jigarrang dog'. Lentigo mayda va to'q bo'ladi.
+neurofibromatosis-inheritance-02zscxc|Neyrofibromatozning irsiylanishi|1-tur neyrofibromatoz qanday irsiylanadi|Autosom-dominant|X ga bog'langan retsessiv|«Sutli kofe» dog'lari, qo'ltiqdagi sepkillar, neyrofibromalar.
+adenoma-sebaceum-0we6r55|Yog' bezi adenomasi||Tuberoz skleroz|Oddiy akne|Burun va yonoqlar bo'ylab zich papulalar — angiofibromalar, akne emas.
+tuberous-sclerosis-features-0q3fr7a|Tuberoz skleroz belgilari|Tuberoz skleroz yuz angiofibromalari bilan birga nima beradi|Yurak rabdomiomasini|Yurak miksomasini|Va buyrak angiomiolipomasi, tirnoq osti fibromalari.
