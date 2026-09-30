@@ -62,3 +62,46 @@ hidradenitis-treatment-0wd98ht|Yiringli gidradenitni davolash|Yiringli gidradeni
 body-odour-gland-0cnjlrb|Tana hidining bezi|Tana hidi qaysi bezlardan chiqadi|Apokrin bezlardan|Ekkrin bezlardan|Chov va qo'ltiqda; membrananing bir qismi ajralma bilan uziladi.
 sebaceous-gland-type-0rp2796|Yog' bezining turi|Yog' bezlari qanday ajratadi|Butunlay parchalanib|Mahsulotni ekzotsitoz qilib|Golokrin, va soch follikulasiga birikkan.
 hot-tub-folliculitis-0ys2q59|Issiq vanna follikuliti||Issiq vanna follikuliti|Oddiy akne toshmasi|Issiq vannadan keyin soch follikulalari atrofidagi pustulalar — yana ko'k yiring tayoqchasi.
+furuncle-versus-carbuncle-1iovvkx|Furunkul va karbunkul|Bir yiring bo'shlig'iga qo'shilib ketgan chipqonlar to'dasi nima|Karbunkul|Furunkul|Furunkul — bitta follikula, karbunkul — bir nechtasi.
+abscess-versus-folliculitis-0h52hup|Abssess va follikulit|Soch follikulasiga aloqasiz yiring to'planishi nima|Abssess|Follikulit|Follikulit — follikulaning o'zi atrofidagi yallig'lanish.
+draining-a-skin-abscess-1ym4854|Teri abssessini ochish|Teri abssessi ochilgandan keyin bo'shliq nima qilinadi|Doka bilan to'ldirilib, ochiq qoldiriladi|Zich qilib chok bilan tikib qo'yiladi|Doka har kuni sekin-asta tortib chiqariladi.
+fournier-gangrene-0i5xz8d|Furnye gangrenasi|Keksa diabetli erkakda oraliq terisining qorayishi nimani talab qiladi|Nekrotik to'qimani kesib olib tashlashni|Og'iz orqali uzoq antibiotik kursini|Furnye gangrenasi, odatda Clostridium perfringens.
+necrotizing-fasciitis-1j3g2ov|Nekrozlovchi fassiit|Fassiya bo'ylab tarqalayotgan nekroz nima|Nekrozlovchi fassiit|Chuqur sellyulit|Vena ichiga antibiotik va nekrektomiya, ikkalasi ham.
+bartholin-gland-abscess-15sho7e|Bartolin bezi abssessi|Katta uyatli labdagi og'riqli tugunda nima o'sadi|Ko'p mikrobli flora|Yolg'iz oltin stafilokokk|Oddiy bo'lsa iliq kompress, abssess bo'lsa ochish.
+rocky-mountain-spotted-fever-spread-0ab1nh6|Toshmali tepki isitmasining tarqalishi|Toshmali tepki isitmasining toshmasi qayoqqa tarqaladi|Bilak va to'piqdan ichkariga|Tanadan chetga, tashqariga|Sentripetal, ya'ni bolalar toshmalarining teskarisi.
+rocky-mountain-spotted-fever-treatment-1o1me2g|Toshmali tepki isitmasini davolash|Toshmali tepki isitmasi nima bilan davolanadi|To'qqiz yoshdan doksitsiklin|Har qanday yoshda doksitsiklin|Kichik bolalar va homiladorlar boshqa dori oladi.
+hand-foot-and-mouth-virus-077xn7y|Qo'l-oyoq-og'iz kasalligi virusi|Boladagi kaft, tovon va og'iz atrofidagi pufakchalarni nima keltiradi|RNK li, qobiqsiz virus|DNK li, qobiqli virus|Koksaki A, u gerpanginani ham beradi.
+diagnosing-herpes-vesicles-0d4iyo4|Gerpes pufakchalarini aniqlash|Gerpesga gumon qilingan pufakchalar nima bilan tasdiqlanadi|Pufakcha suyuqligining PZR tekshiruvi|Suyuqlikning virusologik ekmasi|Ekma — klassik noto'g'ri javob.
+herpes-labialis-048imd9|Lab gerpesi||Lab gerpesi|Impetigo|Labdagi to'da bo'lgan pufakchalar. Impetigo asal rangli qobiq beradi va to'da bo'lmaydi.
+herpes-simplex-virus-structure-02j5fs8|Oddiy gerpes virusining tuzilishi|Oddiy gerpes virusi qanday|DNK li, qobiqli va chiziqli|RNK li, qobiqsiz, halqasimon|Uchuqqa o'ralgan tuzilish savoli.
+aciclovir-mechanism-0gp06i1|Atsiklovir mexanizmi|Atsiklovir qanday ishlaydi|DNK zanjirini uzib qo'yadi|Virusning kirishini to'sadi|DNK polimeraza ingibitori.
+mees-lines-1ayt3z1|Mees chiziqlari||Mees chiziqlari|Onixomikoz|Tirnoqlar bo'ylab oq ko'ndalang chiziqlar. Onixomikozda tirnoq qalinlashib sarg'ayadi.
+mees-lines-cause-07rh1g9|Mees chiziqlarining sababi|Bog'bonning tirnog'idagi oq ko'ndalang chiziqlar nimani bildiradi|Mishyak|Qo'rg'oshin|Mishyak o'g'itda bo'ladi, shuning uchun bog'bon.
+orbital-cellulitis-picture-1vzsony|Ko'z kosasi sellyuliti rasmi||Ko'z kosasi sellyuliti|Qovoqdagi arpacha|Sinusitdan keyin butunlay shishib yumilgan ko'z — to'siqdan orqada.
+orbital-cellulitis-emergency-1r0u6nx|Ko'z kosasi sellyuliti shoshilinchligi|Ko'z kosasi sellyuliti nima bilan davolanadi|Vena ichiga antibiotik|Faqat iliq kompress|Ko'rish uchun xavfli holat, odatda oltin stafilokokk.
+hordeolum-picture-01lzsnp|Arpacha rasmi||Arpacha|Xalazion|Qovoq chetidagi og'riqli qizil tugun. Xalazion og'riqsiz bo'ladi.
+chalazion-picture-1h6c4yw|Xalazion rasmi||Xalazion|Arpacha|Qovoqdagi og'riqsiz tugun, infeksiya emas, yog' yo'lining bekilishi.
+primary-syphilis-ulcer-1b90b7l|Birlamchi sifilis yarasi|Olat tanasidagi og'riqsiz yara nima|Birlamchi sifilis|Yumshoq shankr|Yumshoq shankr og'riqli va Haemophilus ducreyi keltiradi.
+secondary-syphilis-rash-0o2dnxj|Ikkilamchi sifilis toshmasi||Ikkilamchi sifilis|Pushti pityriaz|Tana bo'ylab mis rangli makulopapulyar toshma, kaft va tovonda ham.
+confirming-secondary-syphilis-1kfk2uh|Ikkilamchi sifilisni tasdiqlash|Ikkilamchi sifilis nima bilan tasdiqlanadi|Treponemaga qarshi antitelo testi|Kaliy gidroksidli oddiy surtma|Avval VDRL yoki RPR, keyin aniqroq FTA.
+syphilitic-gumma-0kdhdsz|Sifilitik gumma||Sifilitik gumma|Teri leyshmaniozi|Uchlamchi sifilisning yemiruvchi granulematoz yarasi.
+spirochete-relatives-1bb3h2d|Spiroxetalarning qarindoshlari|Treponema pallidum taksonomik jihatdan kimga eng yaqin|Leptospira interrogans|Rickettsia rickettsii|Hammasi spiroxeta: Treponema, Leptospira, Borrelia.
+tertiary-syphilis-murmur-0bslcpb|Uchlamchi sifilisdagi shovqin|Uchlamchi sifilis qanday shovqin beradi|Aorta regurgitatsiyasi|Mitral klapan stenozi|Ko'tariluvchi aortit qopqoq halqasini buzadi.
+erythema-migrans-picture-1wgylll|Ko'chuvchi eritema rasmi||Ko'chuvchi eritema|Tana temiratkisi|Markazi tozalangan bitta kengayuvchi halqa — Laym kasalligi. Temiratkining cheti qipiqli.
+lyme-disease-in-a-child-1jrhohk|Boladagi Laym kasalligi|Sakkiz yosh va undan kichik bolada Laym kasalligi nima bilan davolanadi|Amoksitsillin|Doksitsiklin|Doksitsiklin tishlarni bo'yaydi.
+lyme-disease-in-pregnancy-0r94b41|Homiladorlikda Laym kasalligi|Yuz nervi falaji bo'lgan homilador ayolda Laym kasalligi nima bilan davolanadi|Seftriakson|Doksitsiklin|Seftriakson odatda og'ir shakl uchun, lekin bu yerda doksitsiklin mumkin emas.
+ehrlichiosis-smear-1h3ha1c|Erlixiozda surtma|Fagotsitlar ichidagi «uzum boshi» kiritmalari nimani ko'rsatadi|Ehrlichia chaffeensis|Borrelia burgdorferi|Morulalar, va nishonsimon toshma bo'lmaydi.
+scabies-picture-1rddfe2|Qo'tir rasmi||Qo'tir|Kontakt dermatit|Qo'llardagi tirnalgan chiziqli yo'llar, kechasi kuchayadi.
+scabies-treatment-1q31a4g|Qo'tirni davolash|Qo'tir nima bilan davolanadi|Mahalliy permetrin|Mahalliy zamburug'ga qarshi dori|OIVda tarqalgan bo'lsa, og'iz orqali ivermektin.
+bed-bug-bites-1w7m5sd|Kandala chaqishi||Kandala chaqishi|Qo'tir kanasi|Arzon mehmonxonada tunagandan keyingi qichiydigan to'da chaqishlar — Cimex.
+koplik-spots-picture-1jn2gf7|Koplik dog'lari rasmi||Koplik dog'lari|Og'iz kandidozi|Lunj shilliq qavatidagi oq dog'lar, qizamiqqa patognomonik.
+rubella-nodes-0o65zeq|Qizilchadagi limfa tugunlari|Qizilcha qizamiqdan nima bilan ajratiladi|Quloq orqasi va ensa tugunlari bilan|Og'iz ichidagi oq dog'lar bilan|Oq dog'lar qizamiqqa tegishli.
+mumps-parotitis-03ys1d4|Epidemik parotit||Epidemik parotit|Bo'yin limfadeniti|Quloq oldi va ostidagi shish, quloq suprasini ko'taradi.
+mumps-complications-1pmel43|Epidemik parotit asoratlari|Epidemik parotit parotit, orxit va yana nima beradi|Meningit|Miokardit|Uchtasi uning klassik uchligini tashkil qiladi.
+blueberry-muffin-rash-1x2mjgn|«Ko'k rezavorli non» toshmasi||«Ko'k rezavorli non» toshmasi|Meningokokk purpurasi|Tug'ma infeksiyada qon yaratuvchi to'qimaning ko'k-binafsha tugunlari.
+congenital-cmv-versus-rubella-0m8q3zh|Tug'ma sitomegalovirus va qizilcha|Miya kalsifikatsiyasi bor, shovqinsiz «ko'k rezavorli non» chaqalog'ida nima bor|Sitomegalovirus|Qizilcha|Tug'ma qizilcha ochiq oqim yo'li, ya'ni shovqin berardi.
+slapped-cheek-0pyteco|«Shapaloq tekkan yuz»||Yuqumli eritema|Skarlatina|Sog'lom boladagi yorqin qizil yonoqlar — parvovirus B19, beshinchi kasallik.
+parvovirus-and-the-marrow-0ii31hy|Parvovirus va ko'mik|O'roqsimon anemiyada parvovirus B19 nimani keltiradi|Aplastik krizni|Gemolitik krizni|U eritrotsit o'tmishdoshlarini to'xtatib qo'yadi.
+parvovirus-once-the-cheeks-are-red-0l2xxpp|Yonoqlar qizargandan keyin parvovirus|Yonoqlar qizargan paytda bola qanday|Endi yuqtirmaydi|Hamon kuchli yuqtiradi|Toshma — immun javob, virusning o'zi emas.
+parvovirus-in-an-adult-0r0p7mo|Kattalarda parvovirus||Virusli ekzantema|Sellyulit|Bolalar bog'chasi xodimining qo'l-oyog'idagi to'rsimon toshma — kattalardagi parvovirus.
+eczema-herpeticum-picture-0crvgjb|Gerpetik ekzema rasmi||Gerpetik ekzema|Impetigo|Ekzema ustidagi og'riqli, o'yilgan pufakchalar, isitma va tugunlar bilan.

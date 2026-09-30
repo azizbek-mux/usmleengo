@@ -82,3 +82,53 @@ B|Hidradenitis treatment|derm|The NBME answer for hidradenitis suppurativa is|Su
 B|Body odour gland|derm,anatomy|Body odour comes from the|Apocrine glands|Eccrine glands|Groin and axilla; part of the cell membrane buds off with the secretion.
 B|Sebaceous gland type|derm,anatomy|Sebaceous glands secrete by|Disintegrating entirely|Exocytosing the product|Holocrine, and attached to hair follicles.
 I|Hot tub folliculitis|derm,micro|hdp14b.webp|Hot tub folliculitis|Acne vulgaris|Pustules around the hair follicles after a hot tub - Pseudomonas again.
+
+# -- pus, gangrene and the deep infections -------------------------------
+B|Furuncle versus carbuncle|derm,micro|A cluster of boils running together into one cavity of pus is|A carbuncle|A furuncle|A furuncle is one follicle; a carbuncle is several.
+B|Abscess versus folliculitis|derm,micro|A collection of pus that does not involve a hair follicle is|An abscess|Folliculitis|Folliculitis is inflammation around the follicle itself.
+B|Draining a skin abscess|derm,surgery|After draining a skin abscess the cavity is|Packed with gauze and left open|Closed with sutures|The packing is withdrawn a little each day.
+B|Fournier gangrene|derm,micro,surgery|Black perineal skin in an older diabetic man calls for|Debridement of the necrotic tissue|A course of oral antibiotics|Fournier gangrene, usually Clostridium perfringens.
+B|Necrotizing fasciitis|derm,micro,surgery|Necrosis spreading along the fascial planes is|Necrotizing fasciitis|Deep cellulitis|Intravenous antibiotics and debridement, both.
+B|Bartholin gland abscess|derm,micro,gyn|A painful lump in the labium majus grows|Polymicrobial flora|Staphylococcus aureus alone|Warm compresses if simple, drainage if frankly abscessed.
+B|Kawasaki disease|derm,peds,cardio|Five days of fever with peeling palms, red lips and neck nodes is|Kawasaki disease|Scarlet fever|Aspirin and IVIG, and this is the one time a child gets aspirin.
+B|Rocky Mountain spotted fever spread|derm,micro|The rash of Rocky Mountain spotted fever moves|Inward from wrists and ankles|Outward from the trunk|Centripetal, which is the opposite of most childhood rashes.
+B|Rocky Mountain spotted fever treatment|derm,micro,pharm|Rocky Mountain spotted fever is treated with|Doxycycline from age nine|Doxycycline at any age|Younger children and pregnant women get something else.
+
+# -- the herpes family and the exanthems ---------------------------------
+B|Hand foot and mouth virus|derm,micro,peds|Vesicles on the palms, soles and around the mouth of a child are caused by|An RNA virus, not enveloped|A DNA virus, enveloped|Coxsackie A, which also gives herpangina.
+B|Diagnosing herpes vesicles|derm,micro|Vesicles suspected of being herpes are confirmed by|PCR of the vesicle fluid|Viral culture of the fluid|Culture is the classic wrong answer.
+I|Herpes labialis|derm,micro|hdp16a.webp|Herpes labialis|Impetigo|Grouped vesicles on the lip. Impetigo crusts honey-coloured and is not grouped.
+B|Herpes simplex virus structure|derm,micro|Herpes simplex virus is|DNA, enveloped and linear|RNA, not enveloped, circular|A structure question dressed up as a cold sore.
+I|Herpetic whitlow|derm,micro|hdp16b.webp|Herpetic whitlow|A bacterial paronychia|Painful vesicles on the finger of a dentist, caught from a cold sore.
+B|Aciclovir mechanism|derm,micro,pharm|Aciclovir works by|Terminating the DNA chain|Blocking viral entry|A DNA polymerase inhibitor.
+I|Mees lines|derm,toxicology|hdp17a.webp|Mees lines|Onychomycosis|White transverse bands across the nails. Onychomycosis thickens and yellows the nail instead.
+B|Mees lines cause|derm,toxicology|White transverse bands across the nails of a gardener mean|Arsenic|Lead|Arsenic is in fertiliser, which is why the gardener.
+I|Orbital cellulitis picture|derm,micro,eye|hdp17b.webp|Orbital cellulitis|A hordeolum|The whole eye swollen shut after a sinus infection - behind the orbital septum.
+B|Orbital cellulitis emergency|derm,micro,eye|Orbital cellulitis is treated with|Intravenous antibiotics|Warm compresses|A sight-threatening emergency, usually Staph aureus.
+I|Hordeolum picture|derm,micro,eye|hdp17c.webp|A hordeolum|A chalazion|A painful red bump on the lid margin - a stye. A chalazion is painless.
+I|Chalazion picture|derm,eye|hdp18a.webp|A chalazion|A hordeolum|A painless lump in the lid, a blocked oil duct rather than an infection.
+B|Primary syphilis ulcer|derm,micro|A painless ulcer on the penile shaft is|Primary syphilis|Chancroid|Chancroid is painful, and it is Haemophilus ducreyi.
+I|Secondary syphilis rash|derm,micro|hdp18b.webp|Secondary syphilis|Pityriasis rosea|A coppery maculopapular rash over the trunk, classically on palms and soles too.
+B|Confirming secondary syphilis|derm,micro,lab|Secondary syphilis is confirmed by|A treponemal antibody test|A potassium hydroxide prep|VDRL or RPR first, then the more specific FTA.
+I|Syphilitic gumma|derm,micro|hdp19a.webp|A syphilitic gumma|Cutaneous leishmaniasis|A destructive granulomatous ulcer of tertiary syphilis.
+B|Spirochete relatives|derm,micro|Treponema pallidum is taxonomically closest to|Leptospira interrogans|Rickettsia rickettsii|All spirochetes: Treponema, Leptospira, Borrelia.
+B|Tertiary syphilis murmur|derm,micro,cardio|The murmur of tertiary syphilis is|Aortic regurgitation|Mitral stenosis|Ascending aortitis wrecks the valve ring.
+I|Erythema migrans picture|derm,micro|hdp19b.webp|Erythema migrans|Tinea corporis|One expanding ring with a clearing centre - Lyme disease. Ringworm has a scaly edge.
+B|Lyme disease in a child|derm,micro,pharm,peds|A child of eight or under with Lyme disease is treated with|Amoxicillin|Doxycycline|Doxycycline stains the teeth.
+B|Lyme disease in pregnancy|derm,micro,pharm|A pregnant woman with Lyme disease and Bell palsy is treated with|Ceftriaxone|Doxycycline|Ceftriaxone is usually for severe disease, but doxycycline is barred here.
+B|Ehrlichiosis smear|derm,micro|Phagocytes holding berry-cluster inclusions point to|Ehrlichia chaffeensis|Borrelia burgdorferi|Morulae, and no target rash.
+I|Scabies picture|derm,micro|hdp20a.webp|Scabies|Contact dermatitis|Excoriated linear burrows on the hands, worst at night.
+B|Scabies treatment|derm,micro,pharm|Scabies is treated with|Topical permethrin|A topical antifungal|Oral ivermectin if it is disseminated in HIV.
+I|Bed bug bites|derm,micro|hdp21a.webp|Bed bug bites|Scabies|Itchy grouped bites after a night in a cheap motel - Cimex.
+I|Koplik spots picture|derm,micro,peds|hdp21b.webp|Koplik spots|Oral thrush|White spots on the buccal mucosa, pathognomonic of measles.
+B|Rubella nodes|derm,micro,peds|Rubella is told apart from measles by|Nodes behind the ears and occiput|White spots in the mouth|The white spots belong to measles.
+I|Mumps parotitis|derm,micro,peds|hdp21c.webp|Mumps|Cervical lymphadenitis|Swelling in front of and below the ear, lifting the earlobe.
+B|Mumps complications|derm,micro,peds|Mumps causes parotitis, orchitis and|Meningitis|Myocarditis|The three make up its classic triad.
+I|Blueberry muffin rash|derm,micro,peds|hdp22a.webp|A blueberry muffin rash|Meningococcal purpura|Blue-purple nodules of blood-forming tissue in a congenital infection.
+B|Congenital CMV versus rubella|derm,micro,peds|A blueberry muffin baby with brain calcification and no murmur has|Cytomegalovirus|Rubella|Congenital rubella would give a patent ductus, hence a murmur.
+I|Slapped cheek|derm,micro,peds|hdp22b.webp|Erythema infectiosum|Scarlet fever|Bright red cheeks in a well child - parvovirus B19, fifth disease.
+B|Parvovirus and the marrow|derm,micro,heme|Parvovirus B19 in sickle cell disease can cause|Aplastic crisis|Haemolytic crisis|It shuts down the red cell precursors.
+B|Parvovirus once the cheeks are red|derm,micro,peds|By the time the cheeks are red, the child is|No longer infectious|Still very infectious|The rash is the immune response, not the virus.
+I|Parvovirus in an adult|derm,micro|hdp23a.webp|A viral exanthem|Cellulitis|A lacy rash over the limbs of a daycare worker - parvovirus in an adult.
+I|Eczema herpeticum picture|derm,micro,immuno|hdp23b.webp|Eczema herpeticum|Impetigo|Painful punched-out vesicles over eczema, with fever and nodes.
+B|Eczema herpeticum treatment|derm,micro,pharm|Eczema herpeticum is treated with|Oral aciclovir|A stronger topical steroid|A steroid would feed it.
