@@ -32,10 +32,12 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
   // The normal lab values, in a sheet over the question.
   const [labs, setLabs] = useState(false);
   const inputRef = useRef(null);
-  // When the current question appeared, and whether the app left the screen
-  // while it was up. Feeds the speed rating; see record() in storage.js.
+  // When the current question appeared. Feeds XP and the rating: an answer is
+  // worth less the longer it took, and the clock runs whether or not the app
+  // stayed on screen, because leaving to look something up is exactly what it
+  // is there to notice. It stops at the answer, so reading the explanation
+  // afterwards costs nothing. See rating.js.
   const shownAt = useRef(0);
-  const leftScreen = useRef(false);
 
   const q = questions[idx];
   const isLast = idx === questions.length - 1;
@@ -47,17 +49,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
   // Start the clock for each question.
   useEffect(() => {
     shownAt.current = performance.now();
-    leftScreen.current = document.hidden;
   }, [idx]);
-
-  // A phone call or a switch to another app mid-question is not thinking
-  // time. Rather than guess how much of the gap was away, that one answer is
-  // simply not timed.
-  useEffect(() => {
-    const onHide = () => { if (document.hidden) leftScreen.current = true; };
-    document.addEventListener("visibilitychange", onHide);
-    return () => document.removeEventListener("visibilitychange", onHide);
-  }, []);
 
   // Focus the text field for gap questions, but never while feedback is up —
   // the keyboard would cover the explanation.
@@ -76,7 +68,7 @@ export default function Quiz({ questions, label, saved = [], onSave, onAnswer, o
     : null;
 
   function settle(correct, chosen) {
-    const elapsed = leftScreen.current ? null : performance.now() - shownAt.current;
+    const elapsed = performance.now() - shownAt.current;
     setVerdict({ correct, chosen });
     setCombo((c) => (correct ? c + 1 : 0));
     haptic(correct ? "success" : "error");

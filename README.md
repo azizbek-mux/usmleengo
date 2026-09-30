@@ -230,16 +230,59 @@ To follow a different tag or change the 10-day window, edit `TAG` and
 
 ## The rating
 
-The **Rating** tab ranks every player on points out of 1000,
-made from their day streak (50%), XP (30%) and average time on correct
-answers (20%). Points are the only rank; day streak, XP and time are filters
-that show who leads each part. The top ten are shown by Telegram name and
-@username; everyone sees their own place, like **#88 / 2,300**. The top
-three wear gold, silver and bronze.
+The **Rating** tab ranks every player on points out of 1000, from three
+things in their order of weight: **discipline**, the day streak (50%);
+**mastery**, what right and wrong answers prove (30%); and **speed**, how
+quickly the right ones came (20%). Points are the only rank; day streak, XP
+and time are filters that show who leads each part. The top ten are shown by
+Telegram name and @username; everyone sees their own place, like
+**#88 / 2,300**. The top three wear gold, silver and bronze.
+
+### How answers are scored
+
+The aim is that points say what is in someone's head. There are three ways
+to be right without it being there, and each is closed:
+
+- **Guessing.** Half the questions have two options, so a random tap is
+  right half the time. A wrong tap takes 1 credit away and a right one adds
+  at most 1, so guessing is worth nothing on average. A typed answer adds 1.5
+  and a wrong typed one takes nothing, because a typed guess is never right
+  by luck.
+- **Looking it up.** It takes time. A right answer is worth its full credit
+  up to 4 s (typed: 12 s, plus a few seconds for a long stem or a picture),
+  then less and less by a factor of e every 8 s (typed: 16 s), down to 15%.
+  The clock is wall-clock from the question appearing to the answer, so
+  leaving the app to search counts, and it stops at the answer, so reading
+  the explanation never does. An answer faster than the stem can be read
+  (0.7 s + 1 s per 60 characters) is a reflex tap and earns nothing.
+  XP follows the same clock: a quick right answer earns its full 10 (15
+  typed), a slow one 4 (6), a wrong one 2.
+- **Grinding.** The second right answer to a question earns half of the
+  first, the third a quarter, so a handful of questions cannot be farmed.
+
+Two running totals, both in hundredths, carry all of it: `credit` (net credit
+above) and `fluent` (the time credits of the right answers). From them:
+mastery is `100 (1 - e^(-credit/1200))`; speed is the mean time credit rescaled
+to 0-100, multiplied by `1 - e^(-credit/400)`, so it counts only as far as the
+mastery behind it, and one lucky quick tap or a run of fast random taps scores
+nothing; discipline is `100 (1 - e^(-days/30))` as before. A streak alone can
+never pass half the points. The time board (Vaqt) lists only players with 100
+credit, for the same reason. `tools/rating.test.mjs` runs simulated players -
+one who knows it, one who looks it up, a random tapper, someone who only turns
+up, a repeat farmer, a newcomer - and holds the ordering they must land in.
+
+Progress saved before credit existed is given an estimate once, on first
+open, from the answers, accuracy and timings it kept
+(`legacyKnowledge` in `src/lib/storage.js`). The server holds `credit`,
+`fluent` and their weekly bases (`worker/credit.sql` added the columns); an
+older app that sends neither leaves the stored totals alone. Classes store a
+`v` in each student's joining base, and "points since joining" is shown only
+when it matches (`RATING_VERSION`), since a difference between two formulas
+means nothing.
 
 **This week** is a second board, points only: the same formula fed with
 this week's numbers alone — days studied Monday to Sunday in place of the
-streak, the XP earned since Monday, and this week's average time — so
+streak, the credit earned since Monday, and this week's time credits — so
 everyone starts level each Monday (00:00 UTC). The server keeps where each
 player stood when the week began (`base_*` columns, `week_days` bitmask)
 and the week is the difference; see `worker/src/board.js`.

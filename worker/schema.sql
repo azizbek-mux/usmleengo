@@ -24,5 +24,9 @@ CREATE TABLE IF NOT EXISTS players (
   base_gms   INTEGER NOT NULL DEFAULT 0,
   base_gn    INTEGER NOT NULL DEFAULT 0,
   correct    INTEGER NOT NULL DEFAULT 0,
-  topics     TEXT    NOT NULL DEFAULT ''
+  topics     TEXT    NOT NULL DEFAULT '',
+  credit     INTEGER NOT NULL DEFAULT 0,
+  fluent     INTEGER NOT NULL DEFAULT 0,
+  base_credit INTEGER NOT NULL DEFAULT 0,
+  base_fluent INTEGER NOT NULL DEFAULT 0
 );

@@ -1558,7 +1558,8 @@ input { font: inherit; }
   align-items: center;
   justify-content: center;
   gap: 3px;
-  font-size: 12px;
+  font-size: 11px;
+  white-space: nowrap; /* six labels share the width; one wrapping is worse than a small one */
   font-weight: 700;
   color: var(--muted);
   transition: color 0.15s, transform 0.12s var(--tap);
@@ -2071,3 +2072,6 @@ input { font: inherit; }
   text-align: left;
 }
 .fb-report:active { opacity: 0.6; }
+
+/* The last line of the answers card's rules: what the rules add up to. */
+.xp-note { font-size: 12.5px; line-height: 1.5; color: var(--muted); padding: 11px 0 9px; }

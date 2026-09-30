@@ -7,7 +7,7 @@
 
 import { readOwn, scoped, unlabelledStart } from "./account.js";
 import { cloudAvailable, cloudGet, cloudGetChunked, cloudSet, cloudSetChunked } from "./telegram.js";
-import { dayIndex, xpFor } from "./rating.js";
+import { dayIndex, knowledgeFor, timeCredit, xpFor } from "./rating.js";
 import { PACE_MAX_MS, PACE_MIN_MS } from "./scorecard.js";
 import { SUBJECTS, SYSTEMS } from "./taxonomy.js";
 
@@ -37,6 +37,10 @@ export const emptyState = {
   systems: [],
   subjects: [],
   xp: 0,
+  // The two running totals the rating is built from, in hundredths: net
+  // knowledge credit and the time credits of the right answers. See rating.js.
+  credit: 0,
+  fluent: 0,
   streak: 0,
   best: 0,
   lastDay: null,
@@ -93,6 +97,13 @@ function merge(raw) {
     // Tags can disappear when the bank is re-authored, so anything unknown is
     // dropped on read rather than left to filter a round down to nothing.
     merged.timing = cleanTiming(parsed.timing);
+    // Progress saved before the rating measured credit has none; it is
+    // estimated once from what was kept, and counted from there.
+    const know = Number.isInteger(parsed.credit) && Number.isInteger(parsed.fluent)
+      ? { credit: parsed.credit, fluent: parsed.fluent }
+      : legacyKnowledge(merged);
+    merged.credit = know.credit;
+    merged.fluent = know.fluent;
     merged.subjects = Array.isArray(parsed.subjects)
       ? [...new Set(parsed.subjects.filter((t) => typeof t === "string" && t))].slice(0, 24)
       : [];
@@ -103,6 +114,33 @@ function merge(raw) {
   } catch {
     return null;
   }
+}
+
+/**
+ * Credit for progress made before credit was kept, from what was: how many
+ * answers were right, how many were timed as tapped and as typed, and how
+ * long they took on average. Every wrong answer is taken as a tapped one, and
+ * the typed ones as being in the proportion the timings show. It is an
+ * estimate, made once; the very next answer is counted exactly.
+ */
+export function legacyKnowledge(state) {
+  const answered = Math.max(0, Number(state.answered) || 0);
+  const correct = Math.min(answered, Math.max(0, Number(state.correct) || 0));
+  const t = cleanTiming(state.timing);
+  const timed = t.binary[1] + t.gap[1];
+  const gapShare = timed ? t.gap[1] / timed : 0;
+  const rightGap = Math.round(correct * gapShare);
+  const rightTap = correct - rightGap;
+  const wrongTap = (answered - correct) * (1 - gapShare);
+  // The credit of an average answer: the average time, as the average question.
+  const typical = ([ms, n], type) => (n ? timeCredit({ type }, ms / n / 1000) : 0.6);
+  const fTap = typical(t.binary, "binary");
+  const fGap = typical(t.gap, "gap");
+  return {
+    credit: Math.round(100 * (rightTap * fTap + 1.5 * rightGap * fGap - wrongTap)),
+    // No more than one time credit for each timing that was kept.
+    fluent: Math.round(100 * (Math.min(rightTap, t.binary[1]) * fTap + Math.min(rightGap, t.gap[1]) * fGap)),
+  };
 }
 
 // A blank first paint - this account has nothing on the phone yet - lasts
@@ -221,14 +259,21 @@ function cleanTiming(raw) {
 export function record(state, question, wasCorrect, elapsedMs) {
   const [c, w] = state.seen[question.id] || [0, 0];
   const timing = cleanTiming(state.timing);
-  if (wasCorrect && Number.isFinite(elapsedMs) && elapsedMs > 0) {
+  // An answer whose time is not known counts as the slowest there is, so
+  // every right answer is timed and the totals below stay in step.
+  const ms = Number.isFinite(elapsedMs) && elapsedMs > 0
+    ? Math.min(PACE_MAX_MS, Math.max(PACE_MIN_MS, elapsedMs))
+    : PACE_MAX_MS;
+  if (wasCorrect) {
     const kind = question.type === "gap" ? "gap" : "binary";
-    const ms = Math.min(PACE_MAX_MS, Math.max(PACE_MIN_MS, elapsedMs));
     timing[kind] = [timing[kind][0] + ms, timing[kind][1] + 1];
   }
+  const gain = knowledgeFor(question, wasCorrect, ms / 1000, c);
   return {
     ...state,
-    xp: state.xp + xpFor(question, wasCorrect),
+    xp: state.xp + xpFor(question, wasCorrect, ms / 1000),
+    credit: (state.credit || 0) + Math.round(gain.credit * 100),
+    fluent: (state.fluent || 0) + Math.round(gain.fluent * 100),
     answered: state.answered + 1,
     correct: state.correct + (wasCorrect ? 1 : 0),
     timing,
@@ -251,6 +296,8 @@ export function ratingInput(state) {
     lastDay: dayIndex(state.lastDay),
     xp: state.xp || 0,
     answered: state.answered || 0,
+    credit: state.credit || 0,
+    fluent: state.fluent || 0,
     timing: {
       binaryMs: avg(t.binary), binaryN: t.binary[1],
       gapMs: avg(t.gap), gapN: t.gap[1],

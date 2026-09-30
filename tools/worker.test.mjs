@@ -52,10 +52,16 @@ const TODAY = B.serverToday(NOW);
 const sign = (user, { token = TOKEN, authDate = Math.floor(NOW / 1000) - 60, extra = {} } = {}) =>
   T.signInitData({ user: JSON.stringify(user), auth_date: String(authDate), query_id: "AAE1", ...extra }, token);
 
-const score = (patch = {}) => ({
-  streak: 5, lastDay: TODAY, xp: 800, answered: 90,
-  timing: { binaryMs: 5200, binaryN: 40, gapMs: 11000, gapN: 20 }, ...patch,
-});
+// A score as the app sends it. Credit and fluency (see rating.js) follow XP,
+// so the players in these tests differ on every board, and are always within
+// what the answers behind them allow.
+const score = (patch = {}) => {
+  const s = {
+    streak: 5, lastDay: TODAY, xp: 800, answered: 90,
+    timing: { binaryMs: 5200, binaryN: 40, gapMs: 11000, gapN: 20 }, ...patch,
+  };
+  return { credit: Math.round(s.xp * 0.8), fluent: ((s.timing.binaryN || 0) + (s.timing.gapN || 0)) * 70, ...s };
+};
 const sync = (env, cache, body) =>
   W.handleSync(new Request("https://rating.test/sync", { method: "POST", body: JSON.stringify(body) }), env, cache, NOW);
 
@@ -90,6 +96,20 @@ check("more timings than answers does not", !S.checkScore(score({ answered: 50 }
 check("an impossible pace does not", !S.checkScore(score({ timing: { binaryMs: 100, binaryN: 5, gapMs: 0, gapN: 0 } }), TODAY).ok);
 check("fractions and negatives do not", !S.checkScore(score({ xp: 10.5 }), TODAY).ok && !S.checkScore(score({ xp: -1 }), TODAY).ok);
 check("text where a number belongs does not", !S.checkScore(score({ xp: "800" }), TODAY).ok);
+check("credit and fluency come through as they were sent",
+  S.checkScore(score({ credit: 4200, fluent: 3100 }), TODAY).score.credit === 4200 && S.checkScore(score({ credit: 4200, fluent: 3100 }), TODAY).score.fluent === 3100);
+check("credit can be below zero: someone who answers worse than chance", S.checkScore(score({ credit: -900 }), TODAY).ok);
+check("but not below a wrong tap on every answer", !S.checkScore(score({ credit: -100 * 90 - 1 }), TODAY).ok);
+check("nor above a quick typed answer every time", !S.checkScore(score({ credit: 150 * 90 + 1 }), TODAY).ok);
+check("nor fractions", !S.checkScore(score({ credit: 10.5 }), TODAY).ok && !S.checkScore(score({ fluent: 10.5 }), TODAY).ok);
+check("fluency cannot exceed one full credit for each timed answer", !S.checkScore(score({ fluent: 100 * 60 + 1 }), TODAY).ok && S.checkScore(score({ fluent: 100 * 60 }), TODAY).ok);
+check("one without the other does not pass", !S.checkScore({ ...score(), credit: 100, fluent: undefined }, TODAY).ok);
+{
+  const old = score();
+  delete old.credit; delete old.fluent;
+  const c = S.checkScore(old, TODAY);
+  check("an app from before credit sends neither, and passes with none", c.ok && c.score.credit === null && c.score.fluent === null);
+}
 
 /* ── syncing ───────────────────────────────────────────────────────────── */
 console.log("\nsyncing");
@@ -204,8 +224,8 @@ console.log("\nthis week");
   const at = (day, hour = 12) => (day * 86400 + hour * 3600) * 1000;
   check("2026-09-28 is a Monday, the first day of its week", R.weekdayOf(MON) === 0 && R.weekOf(MON - 1) === R.weekOf(MON) - 1);
   const who = (key, name) => ({ key, name, username: null });
-  const sc = (lastDay, xp, binaryMs, binaryN) => ({
-    streak: 3, lastDay, xp, answered: binaryN, timing: { binaryMs, binaryN, gapMs: 0, gapN: 0 },
+  const sc = (lastDay, xp, binaryMs, binaryN, credit = 0, fluent = 0) => ({
+    streak: 3, lastDay, xp, answered: binaryN, timing: { binaryMs, binaryN, gapMs: 0, gapN: 0 }, credit, fluent,
   });
 
   // Aziz played last week, then Monday and Wednesday this week.
@@ -236,6 +256,27 @@ console.log("\nthis week");
   const mine = B.weekBoard(players, { key: "d" }, MON + 2);
   check("a player sees their own week: place, points, numbers", mine.me.place === 2 && mine.me.points > 0 && mine.me.raw.xp === 50);
   check("and not their own name from the server", mine.top.find((r) => r.isMe).name === null);
+
+  // Credit is a week's difference too, and it can fall.
+  await B.savePlayer(db, who("c", "Cem"), sc(MON - 1, 100, 5000, 10, 4000, 700), at(MON - 1));
+  const cMon = await B.savePlayer(db, who("c", "Cem"), sc(MON, 200, 5000, 20, 9000, 1500), at(MON));
+  check("a new week's credit starts from where the last one ended", cMon.base_credit === 4000 && cMon.base_fluent === 700, JSON.stringify([cMon.base_credit, cMon.base_fluent]));
+  const cWed = await B.savePlayer(db, who("c", "Cem"), sc(MON + 2, 260, 5000, 26, 12000, 2100), at(MON + 2));
+  check("and keeps that start all week", cWed.base_credit === 4000 && cWed.credit === 12000 && cWed.fluent === 2100);
+  const snap2 = await B.snapshotCache().get(db, at(MON + 2));
+  const cWeek = B.weekScore(snap2.get("c"), R.weekOf(MON), MON + 2);
+  check("the week's credit is only this week's", cWeek.credit === 8000 && cWeek.fluent === 1400, JSON.stringify([cWeek.credit, cWeek.fluent]));
+  await B.savePlayer(db, who("c", "Cem"), { ...sc(MON + 2, 300, 5000, 30), credit: null, fluent: null }, at(MON + 2, 20));
+  const cOld = (await B.snapshotCache().get(db, at(MON + 2, 20) + B.SNAPSHOT_MS)).get("c");
+  check("an app that sends no credit leaves what is stored alone", cOld.score.credit === 12000 && cOld.score.fluent === 2100 && cOld.score.xp === 300,
+    JSON.stringify(cOld.score));
+  // Elyor had no credit at all until midweek; his whole history must not become one week's work.
+  await B.savePlayer(db, who("e", "Elyor"), sc(MON + 1, 50, 5000, 5), at(MON + 1));
+  const eFirst = await B.savePlayer(db, who("e", "Elyor"), sc(MON + 1, 80, 5000, 8, 30000, 5000), at(MON + 1, 15));
+  check("the first credit a player sends starts the week level", eFirst.base_credit === 30000 && eFirst.base_fluent === 5000, JSON.stringify([eFirst.base_credit, eFirst.base_fluent]));
+  const eLater = await B.savePlayer(db, who("e", "Elyor"), sc(MON + 2, 120, 5000, 12, 30600, 5300), at(MON + 2));
+  check("and what he does after counts", eLater.credit - eLater.base_credit === 600);
+  await B.snapshotCache().get(db, at(MON + 2));
 
   const next = await B.savePlayer(db, who("a", "Aziz"), sc(MON + 7, 1400, 4800, 61), at(MON + 7));
   check("next Monday the week starts over", next.base_xp === 1300 && R.daysIn(next.week_days) === 1);

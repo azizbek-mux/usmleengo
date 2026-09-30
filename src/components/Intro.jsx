@@ -53,8 +53,8 @@ export const introCards = () => [
     Icon: Trophy,
     title: t("Rating", "Reyting"),
     text: t(
-      "Every player is ranked by points: your day streak counts most, then XP, then speed. Top 10 all time and this week.",
-      "Har bir o'yinchi ball bo'yicha saralanadi: eng katta ulushi kunlik intizomda, keyin XP va tezlikda. Barcha vaqtlar va shu haftaning eng yaxshi 10 talik ro'yxati.",
+      "Every player is ranked by points: turning up every day counts most, then right answers, then how fast you give them. Answers looked up earn little. Top 10 all time and this week.",
+      "Har bir o'yinchi ball bo'yicha saralanadi: eng katta ulush har kuni shug'ullanishda, keyin to'g'ri javoblarda, keyin ularni qanchalik tez berishingizda. Qidirib topilgan javoblar kam ball beradi. Barcha vaqtlar va shu haftaning eng yaxshi 10 talik ro'yxati.",
     ),
   },
   {

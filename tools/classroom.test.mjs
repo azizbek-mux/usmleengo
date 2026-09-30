@@ -117,6 +117,21 @@ check("with its own accuracy", st.since.accuracy === 90);
 check("its own weak topics", st.since.weak[0]?.tag === "renal" && st.since.weak[0].pct === 90 && st.since.weak.length === 1,
   JSON.stringify(st.since.weak));
 check("and its own time", st.since.pace === Math.round((4500 * 70 - 5000 * 50) / 20), String(st.since.pace));
+check("points since joining are today's less the joining base's", typeof st.since.points === "number", JSON.stringify(st.since));
+{
+  // A student who joined before the rating changed has a base in the old
+  // points. Subtracting them would be nonsense, so it says nothing instead.
+  const baseJson = d1.db.prepare("SELECT base FROM members WHERE player = ?1 AND class_id = ?2").get(lay, cls.id).base;
+  const old = JSON.parse(baseJson);
+  delete old.v;
+  d1.db.prepare("UPDATE members SET base = ?1 WHERE player = ?2 AND class_id = ?3").run(JSON.stringify(old), lay, cls.id);
+  cache.clear();
+  const legacy = (await call("teacher", "view", { classId: cls.id })).body.students[0];
+  check("a base from before the rating changed gives no points figure, not a wrong one",
+    legacy.since.points === null && legacy.since.xp === 190, JSON.stringify(legacy.since));
+  d1.db.prepare("UPDATE members SET base = ?1 WHERE player = ?2 AND class_id = ?3").run(baseJson, lay, cls.id);
+  cache.clear();
+}
 check("never anything bookmarked", !JSON.stringify(r.body).includes("saved"));
 
 console.log("\nwhat a student sees");

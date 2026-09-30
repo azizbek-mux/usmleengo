@@ -44,7 +44,8 @@ const questionsText = (n) => t(`${n} question${n === 1 ? "" : "s"}`, `${n} ta sa
 const topicName = (id) => (SYSTEMS.some((x) => x.id === id) ? systemName(id) : tagLabel(id));
 
 const pct = (n) => (n === null || n === undefined ? "—" : `${n}%`);
-const signed = (n) => (n > 0 ? `+${n.toLocaleString()}` : n.toLocaleString());
+// A change in points; a dash where it cannot be told (a class joined before the rating changed).
+const signed = (n) => (n === null || n === undefined ? "—" : n > 0 ? `+${n.toLocaleString()}` : n.toLocaleString());
 
 /** Load something from the server, again whenever the app comes back to the front. */
 function useServer(load, deps) {

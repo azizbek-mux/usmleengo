@@ -133,10 +133,19 @@ export function weakest(topics, n = 3) {
     .slice(0, n);
 }
 
+/**
+ * The version of the rating a stored base was made under. "Points since
+ * joining" is today's points less the base's, which only means something if
+ * both came from the same formula; a base without this is from before the
+ * rating changed, and its points are not comparable.
+ */
+export const RATING_VERSION = 2;
+
 /** Totals behind a player row: what "since joining" subtracts from. */
 function totalsOf(p, today) {
   const s = p.score;
   return {
+    v: RATING_VERSION,
     points: points(rate(s, today).overall),
     xp: s.xp,
     answered: s.answered,
@@ -159,7 +168,7 @@ function playerOf(r) {
     username: r.p_name ? r.p_username : r.m_username,
     streak: r.streak ?? 0, last_day: r.last_day ?? 0, xp: r.xp ?? 0, answered: r.answered ?? 0,
     binary_ms: r.binary_ms ?? 0, binary_n: r.binary_n ?? 0, gap_ms: r.gap_ms ?? 0, gap_n: r.gap_n ?? 0,
-    correct: r.correct ?? 0, topics: r.topics ?? "",
+    correct: r.correct ?? 0, topics: r.topics ?? "", credit: r.credit ?? 0, fluent: r.fluent ?? 0,
   });
 }
 
@@ -194,7 +203,7 @@ export function studentStats(p, base, today, rankOf) {
       topics[tag] = [Math.max(0, r - br), Math.max(0, w - bw)];
     }
     since = {
-      points: now.points - base.points,
+      points: base.v === RATING_VERSION ? now.points - base.points : null,
       streak: rating.raw.streak,
       xp: Math.max(0, now.xp - base.xp),
       answered,
@@ -310,7 +319,7 @@ async function approve(db, me, body, now) {
   const today = serverToday(now);
   const base = results[0]
     ? totalsOf(fromRow(results[0]), today)
-    : { points: 0, xp: 0, answered: 0, correct: 0, bms: 0, bn: 0, gms: 0, gn: 0, topics: {} };
+    : { v: RATING_VERSION, points: 0, xp: 0, answered: 0, correct: 0, bms: 0, bn: 0, gms: 0, gn: 0, topics: {} };
   await db.prepare(`
     UPDATE members SET status = 'active', joined_at = ?3, base = ?4
     WHERE class_id = ?1 AND player = ?2`).bind(cls.id, m.player, Math.floor(now / 1000), JSON.stringify(base)).run();
@@ -361,7 +370,7 @@ async function view(db, me, body, now, players) {
   const rows = (await db.prepare(`
     SELECT m.player, m.status, m.name AS m_name, m.username AS m_username, m.requested_at, m.joined_at, m.base,
            p.name AS p_name, p.username AS p_username, p.streak, p.last_day, p.xp, p.answered,
-           p.binary_ms, p.binary_n, p.gap_ms, p.gap_n, p.correct, p.topics
+           p.binary_ms, p.binary_n, p.gap_ms, p.gap_n, p.correct, p.topics, p.credit, p.fluent
     FROM members m LEFT JOIN players p ON p.key = m.player
     WHERE m.class_id = ?1`).bind(cls.id).all()).results;
   const active = rows.filter((r) => r.status === "active");

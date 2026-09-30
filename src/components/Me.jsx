@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { t } from "../lib/i18n.js";
-import { WEIGHTS, XP, formatPace, medalFor, points } from "../lib/rating.js";
+import { POINTS_MAX, WEIGHTS, XP, formatPace, medalFor, points, xpFor } from "../lib/rating.js";
 import { reportProblem } from "../lib/report.js";
 import { DEVELOPER, haptic, inTelegram, openTelegram } from "../lib/telegram.js";
 import { ScreenHead } from "./Chrome.jsx";
@@ -109,13 +109,15 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
   const timing = input.timing;
   const accuracy = state.answered ? Math.round((state.correct / state.answered) * 100) : 0;
   const best = Math.max(state.best || 0, r.raw.streak);
+  // A right answer that took a minute, for the line that says what a slow one earns.
+  const slowXp = xpFor({ type: "binary" }, true, 60);
 
   // Resetting everything is two taps apart, so a stray one while scrolling
   // cannot wipe months of progress.
   const [arming, setArming] = useState(false);
   const [coffee, setCoffee] = useState(false);
-  // How XP is earned is one tap under the XP number, not a section of its own.
-  const [xpOpen, setXpOpen] = useState(false);
+  // How answers are counted is one tap under the answers card, not a section of its own.
+  const [howOpen, setHowOpen] = useState(false);
   useEffect(() => {
     if (!arming) return undefined;
     const id = setTimeout(() => setArming(false), 4000);
@@ -131,13 +133,13 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
       detail: t(`Best ever: ${best} ${best === 1 ? "day" : "days"}`, `Eng yaxshi natija: ${best} kun`),
     },
     {
-      id: "xp",
-      label: "XP",
-      value: r.raw.xp.toLocaleString(),
+      id: "mastery",
+      label: t("Right answers", "To'g'ri javoblar"),
+      value: `${accuracy}%`,
       unit: "",
       detail: t(
-        `${state.answered.toLocaleString()} answered · ${accuracy}% correct`,
-        `${state.answered.toLocaleString()} ta javob · ${accuracy}% to'g'ri`,
+        `${state.answered.toLocaleString()} answered · ${r.raw.xp.toLocaleString()} XP`,
+        `${state.answered.toLocaleString()} ta javob · ${r.raw.xp.toLocaleString()} XP`,
       ),
     },
     {
@@ -150,7 +152,7 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
           timing.binaryN ? t(`Tapped ${formatPace(timing.binaryMs)}`, `Test ${formatPace(timing.binaryMs)}`) : null,
           timing.gapN ? t(`typed ${formatPace(timing.gapMs)}`, `yozma ${formatPace(timing.gapMs)}`) : null,
         ].filter(Boolean).join(" · ")
-        : t("Timed on correct answers only", "Faqat to'g'ri javoblar vaqti o'lchanadi"),
+        : t("Right answers only — reading the explanation isn't timed", "Faqat to'g'ri javoblar — izohni o'qish vaqti hisoblanmaydi"),
     },
   ];
 
@@ -174,6 +176,10 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
       <div className="section-label">{t("What your points are made of", "Ballaringiz nimalardan iborat")}</div>
       <div className="perf-list">
         {cards.map((c) => {
+          // What this part earned of what it can: the rating is points, so
+          // each part says how many it is worth to you right now.
+          const max = Math.round(WEIGHTS[c.id] * POINTS_MAX);
+          const earned = Math.round(r[c.id] * WEIGHTS[c.id] * (POINTS_MAX / 100));
           const body = (
             <>
               <div className="perf-main">
@@ -184,36 +190,40 @@ export default function Me({ state, standings, onRefresh, onRating, onTheme, onR
                 <span className="perf-detail">{c.detail}</span>
               </div>
               <span className="perf-weight">
-                {t(`${Math.round(WEIGHTS[c.id] * 100)}% of points`, `ballning ${Math.round(WEIGHTS[c.id] * 100)}%i`)}
+                {t(`${earned} of ${max}`, `${max} balldan ${earned}`)}
               </span>
             </>
           );
-          if (c.id !== "xp") return <div key={c.id} className="perf-card">{body}</div>;
+          if (c.id !== "mastery") return <div key={c.id} className="perf-card">{body}</div>;
           return (
             <React.Fragment key={c.id}>
               <button
                 className="perf-card perf-tap"
-                aria-expanded={xpOpen}
-                aria-label={t("XP - how an answer earns it", "XP - har bir javob qancha beradi")}
-                onClick={() => { haptic("light"); setXpOpen(!xpOpen); }}
+                aria-expanded={howOpen}
+                aria-label={t("How answers are counted", "Javoblar qanday hisoblanadi")}
+                onClick={() => { haptic("light"); setHowOpen(!howOpen); }}
               >
                 {body}
-                <span className={`cat-chevron${xpOpen ? " open" : ""}`}><ChevronDown /></span>
+                <span className={`cat-chevron${howOpen ? " open" : ""}`}><ChevronDown /></span>
               </button>
-              {xpOpen && (
+              {howOpen && (
                 <div className="xp-rules">
                   <div className="xp-rules-t">{t("What an answer earns", "Har bir javob nima beradi")}</div>
                   <div className="xp-rule">
-                    <span className="xp-amt ok">+{XP.gapCorrect}</span>
-                    <span>{t(<>for a correct answer you <b>typed</b></>, <><b>yozma</b> to'g'ri javob uchun</>)}</span>
+                    <span className="xp-amt ok">+{XP.binaryCorrect}</span>
+                    <span>{t(<>for a right answer given <b>quickly</b> (typed: +{XP.gapCorrect})</>, <><b>tez</b> berilgan to'g'ri javob uchun (yozma: +{XP.gapCorrect})</>)}</span>
                   </div>
                   <div className="xp-rule">
-                    <span className="xp-amt ok">+{XP.binaryCorrect}</span>
-                    <span>{t(<>for a correct answer you <b>tapped</b></>, <><b>test</b> usulidagi to'g'ri javob uchun</>)}</span>
+                    <span className="xp-amt ok">+{slowXp}</span>
+                    <span>{t("for a right answer that took long — a long wait looks like a look-up", "uzoq o'ylab berilgan to'g'ri javob uchun — uzoq kutish qidirib topilganini bildiradi")}</span>
                   </div>
                   <div className="xp-rule">
                     <span className="xp-amt">+{XP.wrong}</span>
                     <span>{t("for a wrong answer — reading why is how it sticks", "noto'g'ri javob uchun — sababini o'qish bilimni mustahkamlaydi")}</span>
+                  </div>
+                  <div className="xp-note">
+                    {t("Points count right answers beyond what guessing gives: a wrong tap takes away what a right one adds. The same question again is worth half as much each time. The clock stops when you answer, not when you finish reading.",
+                      "Ball tasodifiy topishdan ortiq to'g'ri javoblarni hisoblaydi: noto'g'ri bosish to'g'ri javob qo'shganini qaytarib oladi. Bir xil savol qayta chiqsa, har safar yarmiga kam hisoblanadi. Vaqt javob bergan zahotingiz to'xtaydi, izohni o'qib bo'lganingizda emas.")}
                   </div>
                 </div>
               )}

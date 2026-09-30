@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import {
-  BOARDS, FREE_SECONDS, WEIGHTS, dayIndex, formatPace, medalFor, points, rate,
+  BOARDS, TIME, WEIGHTS, dayIndex, formatPace, medalFor, points, rate,
 } from "../lib/rating.js";
 import { t } from "../lib/i18n.js";
 import { displayName, usernameOf } from "../lib/scorecard.js";
@@ -273,14 +273,23 @@ export default function Rating({ state, standings, loading, onRefresh }) {
               only show who leads each part of the points — they are not ranks.
             </p>
             <p>
-              Points mix three things: <b>day streak</b> counts most
-              ({Math.round(WEIGHTS.streak * 100)}%), then <b>XP</b> ({Math.round(WEIGHTS.xp * 100)}%),
-              then <b>average time</b> ({Math.round(WEIGHTS.speed * 100)}%).
+              Points mix three things, in this order of weight: <b>day streak</b>
+              ({Math.round(WEIGHTS.streak * 100)}%), turning up day after day; <b>right and wrong
+              answers</b> ({Math.round(WEIGHTS.mastery * 100)}%), how much you have shown you know;
+              and <b>speed</b> ({Math.round(WEIGHTS.speed * 100)}%), how quickly you answer what you know.
             </p>
             <p>
-              Only correct answers are timed, so guessing fast never helps. Typing gets
-              more time than tapping — {FREE_SECONDS.gap}s against {FREE_SECONDS.binary}s — so
-              choosing the harder format never costs you points.
+              An answer counts for what it shows. A wrong tap takes away what a right one adds,
+              so guessing earns nothing. A right answer counts in full when it is quick and less
+              the longer it takes: a long wait looks like a look-up. An answer faster than the
+              question can be read is a reflex and earns nothing. The clock stops the moment you
+              answer, so reading the explanation is never counted. The same question again is
+              worth half as much each time.
+            </p>
+            <p>
+              Typing gets more time than tapping — {TIME.gap.free}s against {TIME.binary.free}s
+              before the clock starts to cost you — and counts one and a half times, because a
+              typed answer cannot be guessed.
             </p>
             <p>
               Each part levels off as it grows, so the top stays within reach of someone
@@ -299,14 +308,24 @@ export default function Rating({ state, standings, loading, onRefresh }) {
               saralash ballning har bir qismida kim oldinda ekanini ko'rsatadi, xolos — bular o'rin emas.
             </p>
             <p>
-              Ball uch narsadan iborat: eng katta ulush <b>kunlik intizom</b>da
-              ({Math.round(WEIGHTS.streak * 100)}%), keyin <b>XP</b> ({Math.round(WEIGHTS.xp * 100)}%),
-              keyin <b>o'rtacha vaqt</b> ({Math.round(WEIGHTS.speed * 100)}%).
+              Ball uch narsadan iborat, ulushi kattadan kichikka: <b>kunlik intizom</b>
+              ({Math.round(WEIGHTS.streak * 100)}%) — har kuni shug'ullanish; <b>to'g'ri va noto'g'ri
+              javoblar</b> ({Math.round(WEIGHTS.mastery * 100)}%) — bilimingizni qanchalik ko'rsatganingiz;
+              <b> tezlik</b> ({Math.round(WEIGHTS.speed * 100)}%) — biladigan savolingizga qanchalik tez javob berishingiz.
             </p>
             <p>
-              Faqat to'g'ri javoblar vaqti o'lchanadi, shuning uchun tez taxmin qilish foyda bermaydi.
-              Yozma javobga testdan ko'ra ko'proq vaqt beriladi — {FREE_SECONDS.gap} soniya va
-              {" "}{FREE_SECONDS.binary} soniya — shuning uchun qiyinroq usulni tanlash ballingizni kamaytirmaydi.
+              Har bir javob o'zi ko'rsatgan narsa uchun hisoblanadi. Noto'g'ri bosish to'g'ri javob
+              qo'shganini qaytarib oladi, shuning uchun taxmin qilishdan foyda yo'q. To'g'ri javob tez
+              berilsa to'liq hisoblanadi, uzoq o'ylansa kamayadi — uzoq kutish ko'pincha qidirib
+              topilganini bildiradi. Savolni o'qishga ulgurmay bosilgan javob refleks hisoblanadi va
+              hech narsa bermaydi. Vaqt javob bergan zahotingiz to'xtaydi, shuning uchun izohni o'qish
+              vaqti hech qachon hisoblanmaydi. Bir xil savolga qayta to'g'ri javob har safar yarmiga
+              kam hisoblanadi.
+            </p>
+            <p>
+              Yozma javobga test javobidan ko'ra ko'proq vaqt beriladi — vaqt hisobga ta'sir qila
+              boshlaguncha {TIME.gap.free} soniya va {TIME.binary.free} soniya — va u bir yarim baravar
+              hisoblanadi, chunki yozma javobni tasodifan topib bo'lmaydi.
             </p>
             <p>
               Har bir qism o'sgan sari sekinlashadi, shuning uchun shu oy boshlagan kishi ham yuqoriga

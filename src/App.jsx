@@ -20,7 +20,6 @@ import { emptyState, isNewPlayer, loadLocal, loadRemote, record, reset, save, se
 import { setLang, t } from "./lib/i18n.js";
 import { startParam } from "./lib/telegram.js";
 import { applyTheme, watchSystemTheme } from "./lib/theme.js";
-import { xpFor } from "./lib/rating.js";
 
 export default function App() {
   const [state, setState] = useState(loadLocal);
@@ -186,9 +185,12 @@ export default function App() {
       return;
     }
     const updated = record(stateRef.current, question, correct, elapsedMs);
+    // What the answer earned is what was recorded for it, not a guess made
+    // again later: XP depends on how long the answer took.
+    const xp = updated.xp - stateRef.current.xp;
     stateRef.current = updated;
     setState(updated);
-    setLog((l) => [...l, { question, correct }]);
+    setLog((l) => [...l, { question, correct, xp }]);
   }
 
   function finish() {
@@ -291,7 +293,7 @@ export default function App() {
   setLang(state.lang);
   const chooseLang = (next) => persist(setLanguage(stateRef.current, next));
 
-  const xpEarned = log.reduce((sum, l) => sum + xpFor(l.question, l.correct), 0);
+  const xpEarned = log.reduce((sum, l) => sum + (l.xp || 0), 0);
 
   if (bankStatus !== "ready") {
     return (
