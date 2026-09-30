@@ -1,0 +1,64 @@
+tinea-capitis-0t8t9gb|Bosh temiratkisi||Bosh temiratkisi|Seboreyali dermatit|Dumaloq, qipiqli soch to'kilgan soha. Seboreyali dermatitda soch chetida qipiq bor, kal dog' yo'q.
+tinea-capitis-treatment-1phqbhc|Bosh temiratkisini davolash|Bosh temiratkisi nima bilan davolanadi|Bemorga og'iz orqali grizeofulvin|Sinfdoshlariga ham grizeofulvin|Faqat kasal bola davolanadi.
+tinea-capitis-prevention-0rotmzp|Bosh temiratkisining oldini olish|Bosh temiratkisining oldini nima oladi|Bosh kiyimni birga ishlatmaslik|Davolovchi shampun ishlatish|Zamburug' bosh teriga tekkan narsa orqali yuqadi.
+seborrheic-dermatitis-0grhp3e|Seboreyali dermatit||Seboreyali dermatit|Bosh temiratkisi|Soch chetida yog'li qipiq, kal dog' yo'q. Bosh temiratkisi dumaloq alopetsiya beradi.
+seborrheic-dermatitis-cause-04dmk8w|Seboreyali dermatitning sababi|Seboreyali dermatit nimaga qarshi yallig'lanish|Malassezia zamburug'iga|Trichophyton turlariga|Hammada bo'ladigan qazg'oq, faqat haddan tashqari.
+seborrheic-dermatitis-and-hiv-1u8sc4i|Seboreyali dermatit va OIV|Yosh erkakda birdan boshlangan og'ir seboreyali dermatit nimani talab qiladi|OIVga tekshirish|Teri biopsiyasi|OIVda ko'p va og'ir kechadi.
+tinea-corporis-17xmzta|Tana temiratkisi||Tana temiratkisi|Tangasimon ekzema|Chekkasi ko'tarilgan, qipiqli halqa, markazi toza — «o'rab oluvchi qurt».
+tinea-corporis-treatment-1ihoomw|Tana temiratkisini davolash|Tana temiratkisi nima bilan davolanadi|Mahalliy klotrimazol|Og'iz orqali grizeofulvin|Anamnezda ko'pincha it yoki sport gilamchasi bo'ladi.
+cutaneous-candidiasis-risk-1gr62sq|Teri kandidozining xavfi|Diabetli ayolda sut bezi ostidagi kandidoz uchun eng katta xavf nima|Insulinga rezistentlik|Uning semizligi|Semizlik chalg'ituvchi javob; zamburug'ni qand boqadi.
+tinea-pedis-treatment-1wpq0c0|Oyoq temiratkisini davolash|Oyoq temiratkisi nima bilan davolanadi|Mahalliy terbinafin|Og'iz orqali grizeofulvin|Azol ham bo'ladi. Grizeofulvin bosh uchun.
+fever-over-tinea-pedis-16vppuj|Oyoq temiratkisi ustidagi isitma|Barmoqlar orasidan ko'tarilgan sellyulit va isitmani nima keltiradi|Oltin stafilokokk|Trichophyton rubrum|Zamburug' eshikni ochdi, isitmani bakteriya berdi.
+diabetic-foot-ulcer-culture-1v1yaxe|Diabetik oyoq yarasining ekmasi|Diabetik oyoq yarasi tubidan olingan ekma nimani ko'rsatadi|Ko'p mikroblilikni|Yolg'iz oltin stafilokokkni|Uzoq bahsli savol, NBME javobi shu.
+plantar-puncture-osteomyelitis-17jv4r8|Tovon teshilishidan osteomiyelit|Poyabzal orqali teshilgan yaradan keyingi osteomiyelitni nima keltiradi|Ko'k yiring tayoqchasi|Oltin stafilokokk|U poyabzal tagligining g'ovagida yashaydi.
+rash-returning-after-treatment-1thip7o|Davodan keyin qaytgan toshma|Davolangan temiratki qashilgan terida qaytsa, bu nima|Qayta o'ziga yuqtirish|Immunitet tanqisligi|Tirnalgan izlar bemor qashiganini bildiradi.
+onychomycosis-treatment-1yug1j0|Onixomikozni davolash|Qalinlashgan sarg'aygan tirnoq og'iz orqali ___ bilan davolanadi|terbinafin|terbinafinning|Terbinafin bo'lmasa, grizeofulvin.
+chronic-mucocutaneous-candidiasis-1q0xv87|Surunkali shilliq-teri kandidozi|Bolalikdan boshlangan kandidoz va autoimmun kasallik nimaning nuqsonini bildiradi|Hujayraviy immunitetning|Antitelo ishlab chiqarishning|T hujayra muammosi, yonida autoimmunitet yuradi.
+sporotrichosis-07azqgm|Sporotrixoz||Sporotrixoz|Sellyulit|Qo'l bo'ylab limfa yo'li ketidan tizilgan tugunlar — bog'bon kasalligi.
+sporotrichosis-mechanism-1i3u9gl|Sporotrixoz mexanizmi|Sporotrixozda qo'l bo'ylab ko'tarilgan tugunlar nima ketidan boradi|Limfa tomirlari|Yuzaki vena|Limfangit, flebit emas.
+sporotrichosis-treatment-0t3vyq5|Sporotrixozni davolash|Sporotrixoz og'iz orqali ___ bilan davolanadi|itrakonazol|itrakonazolning|Atirgul tikanidagi Sporothrix schenckii.
+tinea-versicolor-pigment-188eilw|Rangli temiratkida pigment|Rangli temiratki terini nima uchun oqartiradi|Teridagi yog' kislotalarini parchalaydi|Melanotsitlarni butunlay yo'q qiladi|Dog'lar atrofdagi teri qoraygandan keyin ko'rinadi.
+candida-diaper-rash-1gl28r5|Taglik kandidozi|Chaqaloqning chov va dumba burmasidagi qizil papulalar nima|Kandidoz|Atopik dermatit|Atopik dermatit tana, qo'l va yuzni afzal ko'radi.
+antibiotics-and-candida-0c4nqsd|Antibiotiklar va kandidoz|Haftalab keng ta'sirli antibiotik nima xavfini oshiradi|Kandidoz xavfini|Dermatofitoz xavfini|Antibiotik raqobatchilarni yo'q qiladi.
+cellulitis-0dfufep|Sellyulit||Sellyulit|Erizipel|Chekkasi asta yo'qoladigan diffuz pushti shish. Erizipel esa olovrang va tik chegarali.
+cellulitis-organism-12fg16t|Sellyulit qo'zg'atuvchisi|Sellyulitning eng ko'p sababi qaysi|Oltin stafilokokk|Streptococcus pyogenes|Bu yerda stafilokokk A guruh streptokokkdan o'zib ketadi.
+cellulitis-treatment-0vd7xuo|Sellyulitni davolash|Sellyulit nima bilan davolanadi|Dikloksatsillin yoki sefaleksin|Penitsillin yoki amoksitsillin|Jamiyatdagi stafilokokkning ko'pi beta-laktamaza ishlab chiqaradi.
+erysipelas-0on9sc6|Erizipel||Erizipel|Sellyulit|Olovrang, ko'tarilgan va aniq chegarali — yuza derma va yuza limfa tomirlari.
+erysipelas-organism-1mkcy1b|Erizipel qo'zg'atuvchisi|Erizipelning eng ko'p sababi qaysi|Streptococcus pyogenes|Oltin stafilokokk|Bu yerda A guruh streptokokk stafilokokkdan ustun.
+erysipelas-depth-1mlzf6e|Erizipelning chuqurligi|Erizipel sellyulitdan yuzaroq, u qayerni tutadi|Yuza dermani|Teri osti yog'ini|Ko'rinishi yomonroq, lekin yuqoriroq turadi.
+impetigo-0yk6l0m|Impetigo||Impetigo|Lab gerpesi|Bolaning og'zi atrofida asal rangli qobiqlar — «maktab yarasi».
+impetigo-treatment-0vckphs|Impetigoni davolash|Impetigo nima bilan davolanadi|Mahalliy mupirotsin|Og'iz orqali dikloksatsillin|Ichimlik ham ishlaydi, lekin imtihon mahalliysini so'raydi.
+toxic-shock-receptors-1cg6iev|Toksik shokdagi retseptorlar|Toksik shok superantigeni nimalarni bir-biriga ulaydi|MHC-II va T hujayra retseptorini|B hujayra retseptori va CD40 ni|Ular ulangach, qonga sitokinlar toshadi.
+toxic-shock-after-cellulitis-0d4xzg4|Sellyulitdan keyingi toksik shok|Sellyulit asoratidagi shokni nima keltiradi|Streptococcus pyogenes|Neisseria meningitidis|Uning A ekzotoksini, stafilokokk ro'yxatda bo'lmasa.
+scalded-skin-target-1mdfs5l|Kuygan teri sindromining nishoni|Stafilokokkli kuygan teri sindromi toksini nimani ajratadi|Desmosomalarni|Gemidesmosomalarni|U desmoglein-1 ni kesadi, teri sirg'alib tushadi.
+scarlet-fever-features-1y649uo|Skarlatina belgilari|Skarlatina tomoq og'rig'i bilan yana nima beradi|«Qulupnay» til va pushti toshma|Og'iz yaralari va binafsha toshma|Revmatizmning oldini olish uchun penitsillin.
+erythema-marginatum-1uwyaia|Chekkali eritema||Chekkali eritema|Ko'chuvchi eritema|Revmatizmda teri bo'ylab ilonizi pushti halqalar. Ko'chuvchi eritema esa bitta kengayuvchi halqa.
+rash-before-red-urine-1u82v5c|Qizil siydikdan oldingi toshma|Qobiqli yaralardan keyin qizil siydik nimani ko'rsatadi|Streptokokkdan keyingi glomerulonefritni|IgA nefropatiyasining boshlanishini|«Proliferativ glomerulonefrit» deb ham yoziladi.
+burn-wound-colour-1kioykx|Kuyish yarasining rangi|Kuyish yarasining sariq infeksiyasini nima keltiradi|Oltin stafilokokk|Ko'k yiring tayoqchasi|Ko'k yiring tayoqchasi piotsianin bilan ko'k-yashil qiladi.
+mastitis-versus-abscess-11gq8km|Mastit va abssess|Sut bezidagi issiq, og'riqli, fluktuatsiyasiz massa nima|Mastit|Sut bezi abssessi|Abssess fluktuatsiya beradi, mastit bermaydi.
+galactocele-03zy0ma|Galaktotsele|Emizishni to'xtatgach paydo bo'lgan og'riqsiz, fluktuatsiyali, isitmasiz massa nima|Galaktotsele|Sut bezi abssessi|Abssess qizargan, issiq, ko'pincha isitmali bo'lardi.
+nipple-inversion-03rqx9f|So'rg'ichning ichiga tortilishi|Massasiz, yangi ichiga tortilgan so'rg'ich odatda nima|Sut yo'li ektaziyasi|Pedjet kasalligi|Shunchaki sut yo'lining kengayishi.
+paget-disease-of-the-breast-1eius7b|Ko'krak bezining Pedjet kasalligi|Paypaslanadigan massa ustidagi ekzemasimon so'rg'ich nima|Pedjet kasalligi|Oddiy ekzema|Odatda ostida sut yo'li karsinomasi turadi.
+peau-d-orange-1d2yjjl|«Apelsin po'sti»|Qizargan sut bezidagi chuqurchali, apelsin po'stiga o'xshash teri nimani bildiradi|Yallig'lanishli sut bezi rakini|Oddiy emizish mastitini|Kuper boylamlari shishgan terini tortib turadi.
+acne-vulgaris-1hjjjcf|Oddiy akne||Oddiy akne|Yuz temiratkisi|Yuz bo'ylab sochilgan papula va pustulalar. Yuz temiratkisi bitta qipiqli halqa bo'ladi.
+acne-first-line-treatment-1mudc8m|Aknening birlamchi davosi|Akne uchun birlamchi davo qaysi|Mahalliy retinoid|Og'iz orqali izotretinoin|Izotretinoin oxirgi chora, birinchi emas.
+topical-retinoid-effect-0g2mnjc|Mahalliy retinoidning ta'siri|Mahalliy retinoid aknega qanday ta'sir qiladi|Yog' ishlab chiqarishni kamaytiradi|Teridagi bakteriyalarni o'ldiradi|Bakteriyani benzoil peroksid o'ldiradi.
+retinoid-photosensitivity-0pssi2n|Retinoiddan fotosezuvchanlik||Fotosezuvchanlik toshmasi|Asal qobiqli impetigo|Aknedan davolanayotgan odamda quyosh tegadigan terida diffuz qizarish.
+acne-photosensitivity-advice-1y9235h|Aknedagi fotosezuvchanlik maslahati|Akne davosidagi bemorning peshonasidagi toshma nimani talab qiladi|Quyoshdan saqlanishni|Shirinlikdan saqlanishni|Akne savollarida parhez hech qachon javob emas.
+isotretinoin-before-starting-1wky4at|Izotretinoindan oldin|Og'iz orqali izotretinoindan oldin ayolga nima kerak|Homiladorlik testi|Jigar biopsiyasi|U kuchli teratogen.
+tinea-faciei-06e2may|Yuz temiratkisi||Yuz temiratkisi|Oddiy akne|Yuzdagi qipiqli halqa, mahalliy azol bilan davolanadi.
+meningococcal-rash-0gp2tn3|Meningokokkli toshma||Bosilganda o'chmaydigan purpura|Qichiydigan eshakemi pufagi|Isitmali, bo'yni qotgan boladagi purpura — Neisseria meningitidis.
+meningococcal-organism-0mwbjkv|Meningokokk qo'zg'atuvchisi|Meningokokk toshmasini nima keltiradi|Gram-manfiy diplokokk|Zanjirsimon gram-musbat kokk|Uoterxaus-Frideriksen sindromini ham unutmang.
+gonococcal-arthritis-039i1nr|Gonokokkli artrit|Tenosinovit va teri papulalari bilan kechgan bo'g'im og'rig'i nima|Gonokokkli artrit|Reaktiv artrit|Yoki bitta yirik issiq bo'g'im bilan keladi.
+typhoid-transmission-19bipw4|Qorin tifining yuqishi|Isitma va qabziyat bilan kechgan atirgul dog'lari qayerdan yuqadi|Najas tekkan ovqatdan|Chala pishgan parranda go'shtidan|Salmonella typhi uchun manba — odam.
+gas-gangrene-organism-0diqepk|Gaz gangrenasi qo'zg'atuvchisi|Yaradan keyingi qora teri va krepitatsiya qo'zg'atuvchisi yana nima keltiradi|Suvli diareya|Qonli dizenteriya|Clostridium perfringens, letsitinaza orqali.
+ecthyma-gangrenosum-0rd5skw|Gangrenoz ektima||Gangrenoz ektima|Teri kuydirgisi|Ko'k yiring tayoqchasi sepsisidagi qora nekrotik yara.
+cutaneous-anthrax-0sz8kjj|Teri kuydirgisi||Teri kuydirgisi|Gangrenoz ektima|Atrofi shishgan qora qobiq. Shish faktori sAMFni oshiradi.
+granulomatosis-infantiseptica-117621g|Chaqaloq granulematozi|Homiladorlikda yumshoq pishloqdan keyin granulemali o'lik tug'ilish nimani ko'rsatadi|Gram-musbat tayoqchani|Gram-manfiy tayoqchani|Listeria monocytogenes.
+cutaneous-tularemia-1mmbfc7|Teri tulyaremiyasi||Teri tulyaremiyasi|Teri kuydirgisi|Quyon boqadigan odamning qo'lidagi yara, atipik pnevmoniya bilan.
+erythrasma-0e0ovhx|Eritrazma||Eritrazma|Chov temiratkisi|Vud lampasida marjon-qizil tovlanish — Corynebacterium minutissimum.
+hidradenitis-suppurativa-15tzm7v|Yiringli gidradenit||Yiringli gidradenit|Furunkulyoz|Qo'ltiqdagi og'riqli abssesslar va oqma yo'llar, apokrin bezlardan.
+hidradenitis-treatment-0wd98ht|Yiringli gidradenitni davolash|Yiringli gidradenit uchun NBME javobi qaysi|O'choqlarni jarrohlik yo'li bilan olib tashlash|Uzoq muddat davom etadigan antibiotik kursi|Chov, qo'ltiq va sut bezi ostida.
+body-odour-gland-0cnjlrb|Tana hidining bezi|Tana hidi qaysi bezlardan chiqadi|Apokrin bezlardan|Ekkrin bezlardan|Chov va qo'ltiqda; membrananing bir qismi ajralma bilan uziladi.
+sebaceous-gland-type-0rp2796|Yog' bezining turi|Yog' bezlari qanday ajratadi|Butunlay parchalanib|Mahsulotni ekzotsitoz qilib|Golokrin, va soch follikulasiga birikkan.
+hot-tub-folliculitis-0ys2q59|Issiq vanna follikuliti||Issiq vanna follikuliti|Oddiy akne toshmasi|Issiq vannadan keyin soch follikulalari atrofidagi pustulalar — yana ko'k yiring tayoqchasi.

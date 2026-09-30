@@ -1,0 +1,84 @@
+# Dermatology, from Mehlman's HY Dermatology.
+#
+#   B|topic|tags|question|CORRECT option|wrong option|explanation
+#   G|topic|tags|question with ___|answer|other,accepted,spellings|explanation
+#   I|topic|tags|picture file|answer|distractor|explanation
+#
+# The pictures are the document's own clinical photographs, cropped out of
+# its pages. A picture question has no stem on purpose: a written hint is
+# what makes an image question too easy.
+
+# -- fungal skin infections ---------------------------------------------
+I|Tinea capitis|derm,micro,peds|hdp03a.webp|Tinea capitis|Seborrheic dermatitis|A circular, scaly patch of hair loss. Seborrheic dermatitis scales along the hairline without a bald patch.
+B|Tinea capitis treatment|derm,micro,peds|Tinea capitis is treated with|Oral griseofulvin for the patient|Oral griseofulvin for the class too|Only the child with the infection is treated.
+B|Tinea capitis prevention|derm,micro,peds|Tinea capitis is prevented by|Not sharing hats|A medicated shampoo|The fungus travels on whatever touches the scalp.
+I|Seborrheic dermatitis|derm,micro|hdp03b.webp|Seborrheic dermatitis|Tinea capitis|Greasy scale along the hairline, no bald patch. Tinea capitis makes a circular area of alopecia.
+B|Seborrheic dermatitis cause|derm,micro|Seborrheic dermatitis is inflammation against|Malassezia yeast|Trichophyton species|The dandruff everybody has, in excess.
+B|Seborrheic dermatitis and HIV|derm,micro,hiv|Sudden, severe seborrheic dermatitis in a young man calls for|An HIV test|A skin biopsy|It is common and severe in HIV.
+I|Tinea corporis|derm,micro|hdp04a.webp|Tinea corporis|Nummular eczema|A ring with a raised, scaly edge and a clearing centre - ringworm.
+B|Tinea corporis treatment|derm,micro|Tinea corporis is treated with|Topical clotrimazole|Oral griseofulvin|The history often mentions dogs or a gym mat.
+B|Cutaneous candidiasis risk|derm,micro,endocrine|The biggest risk for candida under the breast of a diabetic woman is|Insulin resistance|Her obesity|Obesity is the distractor; the sugar is what feeds it.
+B|Tinea pedis treatment|derm,micro|Tinea pedis is treated with|Topical terbinafine|Oral griseofulvin|An azole works too. Griseofulvin is for the scalp.
+B|Fever over tinea pedis|derm,micro|Fever with cellulitis spreading up from between the toes is caused by|Staphylococcus aureus|Trichophyton rubrum|The fungus opened the door; the bacterium caused the fever.
+B|Diabetic foot ulcer culture|derm,micro,endocrine|Probing the base of a diabetic foot ulcer grows|Polymicrobial flora|Staphylococcus aureus alone|The long-argued answer, settled on the NBME.
+B|Plantar puncture osteomyelitis|derm,micro,bone|Osteomyelitis after a puncture wound through a shoe is caused by|Pseudomonas aeruginosa|Staphylococcus aureus|It lives in the foam of the sole.
+B|Rash returning after treatment|derm,micro|A treated tinea that returns on excoriated skin is|Autoinfection|An immune deficiency|Excoriations mean the patient has been scratching.
+G|Onychomycosis treatment|derm,micro|A thickened yellow nail is treated with oral ___|terbinafine|terbinafin|Griseofulvin if terbinafine is not offered.
+B|Chronic mucocutaneous candidiasis|derm,micro,immuno|Candida since childhood with autoimmune disease means a defect of|Cell-mediated immunity|Antibody production|A T cell problem, and autoimmunity keeps it company.
+I|Sporotrichosis|derm,micro|hdp05a.webp|Sporotrichosis|Cellulitis|Nodules in a line up the arm, following the lymphatics - the gardener's disease.
+B|Sporotrichosis mechanism|derm,micro|The nodules climbing the arm in sporotrichosis follow|The lymphatics|A vein|Lymphangitis, not phlebitis.
+G|Sporotrichosis treatment|derm,micro|Sporotrichosis is treated with oral ___|itraconazole|itrakonazol|The rose-thorn fungus, Sporothrix schenckii.
+I|Tinea versicolor|derm,micro|hdp06a.webp|Tinea versicolor|Vitiligo|Pale, finely scaly patches over the back. Vitiligo is chalk-white and has no scale.
+B|Tinea versicolor pigment|derm,micro|Tinea versicolor lightens the skin because the fungus|Breaks down skin fatty acids|Destroys the melanocytes|The patches show up once the skin around them tans.
+G|Tinea versicolor treatment|derm,micro|Tinea versicolor is treated with topical ___ sulfide|selenium|selen|Or a topical azole.
+B|Candida diaper rash|derm,micro,peds|Red papules in the groin and gluteal cleft of a baby are|Candida|Atopic dermatitis|Atopic dermatitis prefers the trunk, hands and face.
+B|Antibiotics and candida|derm,micro|Weeks of broad-spectrum antibiotics raise the risk of|Candida infection|Dermatophyte infection|The antibiotics clear the competition.
+
+# -- bacterial skin infections ------------------------------------------
+I|Cellulitis|derm,micro|hdp06b.webp|Cellulitis|Erysipelas|Diffuse pink swelling whose edges fade out. Erysipelas is fiery red and sharply raised.
+B|Cellulitis organism|derm,micro|The commonest cause of cellulitis is|Staphylococcus aureus|Streptococcus pyogenes|Staph edges out Group A Strep here.
+B|Cellulitis treatment|derm,micro,pharm|Cellulitis is treated with|Dicloxacillin or cephalexin|Penicillin or amoxicillin|Most community Staph makes beta-lactamase.
+I|Erysipelas|derm,micro|hdp07a.webp|Erysipelas|Cellulitis|Fiery red, raised and sharply demarcated - the upper dermis and superficial lymphatics.
+B|Erysipelas organism|derm,micro|The commonest cause of erysipelas is|Streptococcus pyogenes|Staphylococcus aureus|Here Group A Strep eclipses Staph.
+B|Erysipelas depth|derm,micro|Erysipelas is shallower than cellulitis, involving|The upper dermis|The subcutaneous fat|It looks worse but sits higher.
+I|Impetigo|derm,micro,peds|hdp07b.webp|Impetigo|Herpes labialis|Honey-coloured crusts around the mouth of a child - school sores.
+B|Impetigo treatment|derm,micro,peds|Impetigo is treated with|Topical mupirocin|Oral dicloxacillin|Orals work, but the exam wants the topical.
+B|Toxic shock receptors|derm,micro,immuno|The superantigen of toxic shock bridges|MHC-II and the T cell receptor|The B cell receptor and CD40|Bridging them floods the blood with cytokines.
+B|Toxic shock after cellulitis|derm,micro|Shock complicating cellulitis is caused by|Streptococcus pyogenes|Neisseria meningitidis|Its exotoxin A, when Staph is not offered.
+B|Scalded skin target|derm,micro,peds|The toxin of staphylococcal scalded skin syndrome splits|Desmosomes|Hemidesmosomes|It cleaves desmoglein-1, so the skin slides off.
+B|Scarlet fever features|derm,micro,peds|Scarlet fever gives a sore throat with|Strawberry tongue and a pink rash|Oral ulcers and a purple rash|Penicillin, to head off rheumatic fever.
+I|Erythema marginatum|derm,micro,cardio|hdp08a.webp|Erythema marginatum|Erythema migrans|Pink rings snaking across the skin in rheumatic fever. Erythema migrans is one expanding ring.
+B|Rash before red urine|derm,micro,renal|Crusted sores followed by red urine point to|Post-streptococcal glomerulonephritis|IgA nephropathy|Written as "proliferative glomerulonephritis" too.
+B|Burn wound colour|derm,micro|A yellow burn wound infection is caused by|Staphylococcus aureus|Pseudomonas aeruginosa|Pseudomonas turns it blue-green with pyocyanin.
+B|Mastitis versus abscess|derm,micro,ob|A warm, tender, non-fluctuant breast mass is|Mastitis|A breast abscess|An abscess is fluctuant; mastitis is not.
+B|Mastitis treatment|derm,micro,ob|Mastitis is treated with dicloxacillin and|Continued breastfeeding|Stopping breastfeeding|Feed through the affected breast.
+B|Galactocele|derm,ob|A painless, fluctuant breast lump after weaning, with no fever, is|A galactocele|A breast abscess|An abscess would be red, warm, often febrile.
+B|Nipple inversion|derm,ob,oncology|A newly inverted nipple with no mass is usually|Duct ectasia|Paget disease|Simply a widened lactiferous duct.
+B|Paget disease of the breast|derm,ob,oncology|An eczema-like nipple over a palpable mass is|Paget disease|Simple eczema|Usually over ductal carcinoma in situ.
+B|Peau d'orange|derm,ob,oncology|Dimpled, orange-peel skin over a red breast means|Inflammatory breast cancer|Mastitis|Cooper ligaments tether the swollen skin.
+
+# -- acne ----------------------------------------------------------------
+I|Acne vulgaris|derm|hdp10a.webp|Acne vulgaris|Tinea faciei|Papules and pustules scattered over the face. Tinea faciei is one annular scaly patch.
+B|Acne first-line treatment|derm,pharm|First-line treatment for acne is|A topical retinoid|Oral isotretinoin|Isotretinoin is the last resort, not the first.
+B|Topical retinoid effect|derm,pharm|A topical retinoid works on acne by|Cutting sebum production|Killing the bacteria|Benzoyl peroxide is what kills bacteria.
+I|Retinoid photosensitivity|derm,pharm|hdp10b.webp|A photosensitivity rash|Honey-crusted impetigo|Diffuse redness over sun-exposed skin in someone treated for acne.
+B|Acne photosensitivity advice|derm,pharm|A rash on the forehead of a patient on acne treatment calls for|Avoiding sun exposure|Avoiding sweet foods|Diet advice is never the answer in acne questions.
+B|Isotretinoin before starting|derm,pharm,ob|Before oral isotretinoin a woman needs|A pregnancy test|A liver biopsy|It is a potent teratogen.
+I|Tinea faciei|derm,micro|hdp11a.webp|Tinea faciei|Acne vulgaris|A scaly ring on the cheek, treated with a topical azole.
+
+# -- rashes that mean something systemic ---------------------------------
+I|Meningococcal rash|derm,micro,neuro|hdp11b.webp|A non-blanching purpuric rash|An urticarial wheal|Purpura in a feverish child with a stiff neck - Neisseria meningitidis.
+B|Meningococcal organism|derm,micro,neuro|The rash of meningococcal disease is caused by|A gram-negative diplococcus|A gram-positive coccus in chains|Watch for Waterhouse-Friderichsen too.
+B|Gonococcal arthritis|derm,micro,rheum|Joint pain with tenosynovitis and skin papules is|Gonococcal arthritis|Reactive arthritis|Or a single large hot joint instead.
+B|Typhoid transmission|derm,micro,gi|Rose spots with fever and constipation are caught from|Food contaminated with faeces|Undercooked poultry|Humans are the reservoir for Salmonella typhi.
+B|Gas gangrene organism|derm,micro|Black skin with crepitus after a wound comes from an organism that also causes|Watery diarrhoea|Bloody dysentery|Clostridium perfringens, through its lecithinase.
+I|Ecthyma gangrenosum|derm,micro|hdp12a.webp|Ecthyma gangrenosum|Cutaneous anthrax|A black necrotic ulcer in a patient septic with Pseudomonas.
+I|Cutaneous anthrax|derm,micro|hdp12b.webp|Cutaneous anthrax|Ecthyma gangrenosum|A black eschar ringed by swelling. The edema factor raises cAMP.
+B|Granulomatosis infantiseptica|derm,micro,peds|A stillborn covered in granulomas after soft cheese in pregnancy points to|A gram-positive rod|A gram-negative rod|Listeria monocytogenes.
+I|Cutaneous tularemia|derm,micro|hdp13a.webp|Cutaneous tularemia|Cutaneous anthrax|An ulcer on the hand of someone who keeps rabbits, with atypical pneumonia.
+I|Erythrasma|derm,micro|hdp13b.webp|Erythrasma|Tinea cruris|Coral-red fluorescence under Wood lamp - Corynebacterium minutissimum.
+I|Hidradenitis suppurativa|derm|hdp14a.webp|Hidradenitis suppurativa|Furunculosis|Painful abscesses and sinus tracts in the axilla, from the apocrine glands.
+B|Hidradenitis treatment|derm|The NBME answer for hidradenitis suppurativa is|Surgical excision of the lesions|A long course of antibiotics|Groin, axilla and under the breasts.
+B|Body odour gland|derm,anatomy|Body odour comes from the|Apocrine glands|Eccrine glands|Groin and axilla; part of the cell membrane buds off with the secretion.
+B|Sebaceous gland type|derm,anatomy|Sebaceous glands secrete by|Disintegrating entirely|Exocytosing the product|Holocrine, and attached to hair follicles.
+I|Hot tub folliculitis|derm,micro|hdp14b.webp|Hot tub folliculitis|Acne vulgaris|Pustules around the hair follicles after a hot tub - Pseudomonas again.
