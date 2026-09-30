@@ -105,3 +105,55 @@ parvovirus-and-the-marrow-0ii31hy|Parvovirus va ko'mik|O'roqsimon anemiyada parv
 parvovirus-once-the-cheeks-are-red-0l2xxpp|Yonoqlar qizargandan keyin parvovirus|Yonoqlar qizargan paytda bola qanday|Endi yuqtirmaydi|Hamon kuchli yuqtiradi|Toshma — immun javob, virusning o'zi emas.
 parvovirus-in-an-adult-0r0p7mo|Kattalarda parvovirus||Virusli ekzantema|Sellyulit|Bolalar bog'chasi xodimining qo'l-oyog'idagi to'rsimon toshma — kattalardagi parvovirus.
 eczema-herpeticum-picture-0crvgjb|Gerpetik ekzema rasmi||Gerpetik ekzema|Impetigo|Ekzema ustidagi og'riqli, o'yilgan pufakchalar, isitma va tugunlar bilan.
+shingles-picture-15efdh0|O'rab oluvchi temiratki rasmi||O'rab oluvchi temiratki|Kontakt dermatit|Bitta dermatomdagi to'da pufakchalar, o'rta chiziqda to'xtaydi.
+shingles-in-a-child-0kw91vl|Boladagi o'rab oluvchi temiratki|Kimyoterapiya olayotgan boladagi o'rab oluvchi temiratki qanday|Bo'lishi mumkin, chunki immuniteti pasaygan|Voyaga yetmasdan bo'lishi mumkin emas|Bolalardagi o'rab oluvchi temiratki haqiqatan uchraydi.
+herpes-zoster-naming-1biid3n|Herpes zoster atamasi|Herpes zoster nima|O'rab oluvchi temiratkining boshqa nomi|Virusning o'zining ilmiy nomi|Virus — suvchechak-zoster virusi, HHV3.
+herpes-zoster-oticus-13j79y5|Quloq zosteri||Quloq zosteri|Tashqi otit|Quloq atrofidagi qobiqli o'choqlar va yuz nervi falaji — Remsi Hant.
+shingles-vaccine-age-1qwb3kp|O'rab oluvchi temiratki emlashi|O'rab oluvchi temiratkiga qarshi emlash necha yoshdan taklif qilinadi|Oltmish yoshdan|Qirq yoshdan|Yangi oilaviy tibbiyot shakli shuni so'raydi.
+chickenpox-crops-1vbm14g|Suvchechakdagi to'lqinlar|Bir vaqtda turli bosqichdagi qichiydigan pufakchalar nima|Suvchechak|Chechak|Chechakda o'choqlarning hammasi bir bosqichda bo'ladi.
+pityriasis-rosea-picture-04zrs40|Pushti pityriaz rasmi||Pushti pityriaz|Tana temiratkisi|Bitta yirik «xabarchi» dog'dan keyin teri chiziqlari bo'ylab oval dog'lar.
+pityriasis-rosea-course-1eq5jo2|Pushti pityriazning kechishi|Pushti pityriaz qanday kechadi|O'z-o'zidan o'tib ketadi|Og'iz orqali antimikotik talab qiladi|Orqada «archa» ko'rinishida joylashadi.
+kaposi-sarcoma-picture-1vqujp7|Kaposhi sarkomasi rasmi||Kaposhi sarkomasi|Batsillyar angiomatoz|Immuniteti pasaygan bemordagi binafsha tugun va pilakchalar — HHV8.
+bacillary-angiomatosis-082wtz3|Batsillyar angiomatoz||Batsillyar angiomatoz|Kaposhi sarkomasi|Kaposhiga o'xshaydi, lekin ekmada bakteriya o'sadi.
+bacillary-angiomatosis-organism-1awabnc|Batsillyar angiomatoz qo'zg'atuvchisi|Kaposhiga o'xshash o'choqlarda faqat bakteriyalar taklif qilinsa, qaysi biri|Bartonella henselae|Oltin stafilokokk|Mushuk tirnashi kasalligidagi bilan bir xil mikrob.
+cat-scratch-stain-0luo5zf|Mushuk tirnashi kasalligida bo'yash|Mushuk tirnashi kasalligi qo'zg'atuvchisi nima bilan ko'rinadi|Kumushli bo'yash bilan|Gram bo'yash bilan|Mushukchali boladagi granulematoz tugunlar.
+molluscum-contagiosum-1b14ue5|Yuqumli mollyusk||Yuqumli mollyusk|Suvchechak|Markazi botiq, teri rangidagi papulalar — eng yirik DNK virusi.
+onchocerciasis-1fuzg7p|Onxotserkoz|Teri tugunlari bilan kechgan «daryo ko'rligi»ni nima keltiradi|Qora pashsha tashigan yumaloq chuvalchang|Iskabtopar tashiydigan protozoa turi|Onchocerca volvulus, dunyoda traxomadan keyin ikkinchi.
+romana-sign-1ts7os7|Romanya belgisi|Janubiy Amerikada qovoq shishi va yurak yetishmovchiligi nima|Shagas kasalligi|Leyshmanioz|Trypanosoma cruzi, og'riqsiz chaqadigan qandala orqali.
+cutaneous-leishmaniasis-picture-1bj3qk2|Teri leyshmaniozi rasmi||Teri leyshmaniozi|Teri kuydirgisi|Sayohatdan keyingi qobiqli pilakcha, iskabtopar tashiydi.
+visceral-leishmaniasis-1yzx18x|Visseral leyshmanioz|Leishmania donovani ichkariga tarqalsa nima bo'ladi|Jigar fermentlari oshadi va pantsitopeniya|Faqat teridagi yakka yara bilan qoladi|Kala-azar.
+mycobacterium-marinum-picture-18h03x7|Mycobacterium marinum rasmi||Mycobacterium marinum|Stafilokokkli sellyulit|Akvarium ishchisining qo'li bo'ylab tugunlar.
+mycobacterium-avium-lesion-12diuu5|Mycobacterium avium o'chog'i||Mycobacterium avium intracellulare|Quloq oldi bezi yallig'lanishi|Buyrak ko'chirilgan boladagi quloq oldi qizg'ish tuguni.
+leprosy-temperature-0ik4981|Moxovda harorat|Mycobacterium leprae nega burun va barmoqlarni tanlaydi|Sovuqroq haroratda o'sadi|Boy qon ta'minotini talab qiladi|Shuning uchun «sher yuzi» va sezgisiz qo'llar.
+dermatitis-herpetiformis-picture-01nql73|Gerpetiform dermatit rasmi||Gerpetiform dermatit|Gerpetik ekzema|Seliakiyali bemorning tirsak va tizzasidagi qichiydigan to'da pufakchalar.
+dermatitis-herpetiformis-biopsy-01d85q2|Gerpetiform dermatit biopsiyasi|Gerpetiform dermatitda biopsiya nimani ko'rsatadi|Derma so'rg'ichlarida IgA|Asos pardasi bo'ylab IgG|Nomiga qaramay, hech qanday gerpes yo'q.
+pyoderma-gangrenosum-picture-0qmb40y|Gangrenoz piodermiya rasmi||Gangrenoz piodermiya|Diabetik oyoq yarasi|Yallig'lanishli ichak kasalligidagi nekrotik, ostidan o'yilgan yara.
+erythema-nodosum-picture-12tm9ex|Tugunli eritema rasmi||Tugunli eritema|Sellyulit|Boldir oldidagi og'riqli binafsha tugunlar — teri osti yog'ining yallig'lanishi.
+erythema-nodosum-hypersensitivity-08k94kc|Tugunli eritemada yuqori sezgirlik|Tugunli eritema qaysi tur yuqori sezgirlik|III|I|Immun komplekslar, sarkoidoz, Kron va zardob kasalligidagi kabi.
+perianal-fistula-10tyl5i|Anus atrofidagi oqma|Qonli najas bilan kechgan anus atrofidagi abssess va oqmalar nimani ko'rsatadi|Kron kasalligini|Yarali kolitni|Kronda yallig'lanish devor bo'ylab o'tadi.
+anal-fissure-1cl2suj|Anal yoriq|Teri o'simtasi bilan kechgan anal yoriq qanday olib boriladi|O'tirg'ich vannasi bilan|Darhol jarrohlik bilan|Odatda orqada, o'rta chiziqda joylashadi.
+pilonidal-disease-171zp2s|Pilonidal kasallik|Dumba burmasi tepasidagi og'riqli massa qanday davolanadi|Jarrohlik yo'li bilan yopish|Faqat og'iz orqali antibiotik|Pilonidal kista yoki abssess.
+arthus-reaction-timing-0m6jkgs|Artyus reaksiyasining vaqti|In'eksiya joyida uch kundan keyin paydo bo'lgan qizil toshma nima|Artyus reaksiyasi|Bir zumdagi allergiya|III tur kunlar oladi, I tur esa bir zumda.
+serum-sickness-0mh3k2d|Zardob kasalligi|In'eksiyadan bir necha kun keyingi poliartrit nima|Zardob kasalligi|Anafilaksiya|Yana bir III tur reaksiya.
+malar-rash-0jozzgz|«Kapalak» toshmasi||«Kapalak» toshmasi|Yuzdagi rozatsea|Yonoq va burun ustidagi qizarish, burun-lab burmalarini chetlab o'tadi.
+malar-rash-immunology-0xidsv8|«Kapalak» toshmasining immunologiyasi|Lupusdagi «kapalak» toshmasini nima keltiradi|Immun komplekslar|Hujayraning bevosita lizisi|Shuning uchun zardob kasalligi unga eng yaqin.
+heliotrope-rash-1n8uyly|Geliotrop toshma||Dermatomiozit|Tizimli qizil yuguruk|Binafsha qovoqlar va yelka bo'ylab toshma — geliotrop va «ro'mol».
+dermatomyositis-antibody-04xwyqf|Dermatomiozit antitelosi|Dermatomiozitda klassik antitelo qaysi|Anti-Jo1|Anti-Smit|Kreatinkinaza oshgan, son mushaklari kuchsiz.
+gottron-papules-0xfis0f|Gottron papulalari||Gottron papulalari|Qo'l psoriazi|Barmoq bo'g'imlari ustidagi qipiqli binafsha papulalar.
+juvenile-rheumatoid-arthritis-anaemia-0zavr63|Yuvenil revmatoid artritda anemiya|Takroriy bo'g'im og'rig'i va past MCV bo'lgan bolada nima bor|Surunkali kasallik anemiyasi|Qon ketishdan temir tanqisligi|Losos rangli toshma faqat ozchilikda ko'rinadi.
+vitiligo-picture-1c8gru5|Vitiligo rasmi||Vitiligo|Rangli temiratki|Chegarasi aniq, bo'r kabi oq dog'lar. Rangli temiratki oq emas, mayda qipiqli.
+vitiligo-melanocytes-1g3re79|Vitiligoda melanotsitlar|Vitiligoda melanotsitlar qanday|Kamaygan, melanin ham kam|Normada, melanin esa kam|Ularni T hujayralar yo'q qiladi.
+albinism-melanocytes-1juvjs9|Albinizmda melanotsitlar|Albinizmda melanotsitlar qanday|Normada, melanin esa kam|Kamaygan, melanin ham kam|Hujayralar bor, tirozinaza yo'q.
+freckle-melanocytes-14bqjfk|Sepkilda melanotsitlar|Sepkilda melanotsitlar qanday|Normada, melanin esa ko'p|Ko'paygan, melanin normada|Efelis deb ataladi.
+lentigo-0i1ebzl|Lentigo||Lentigo|Sepkil|Quyoshdan qarigan teridagi yassi jigarrang dog' — «yosh dog'i».
+lentigo-melanocytes-19q72ec|Lentigoda melanotsitlar|Lentigoda melanotsitlar qanday|Ko'paygan, melanin odatdagidek|Normada, melanin esa ko'p|Hujayra soni oshadi, mahsulot emas.
+dark-skin-melanosomes-16hsmox|To'q teridagi melanosomalar|To'qroq terida nima ko'p|Melanotsit bir xil, melanosoma ko'p|Melanotsit ko'p, melanosoma bir xil|Hujayra emas, uning ichidagi organella.
+raynaud-and-sclerodactyly-1u2kktv|Reyno va sklerodaktiliya||Chegaralangan sklerodermiya|Yakka Reyno kasalligi|Oqargan barmoqlar va barmoq terisining taranglashuvi — CREST.
+limited-scleroderma-outcome-1fu0775|Chegaralangan sklerodermiyaning oqibati|CREST sindromi bo'lgan bemorda eng ko'p nima rivojlanadi|O'pka gipertenziyasi|Buyrak krizi|Ostidagi o'pka fibrozi hisobiga.
+koilonychia-0l6ouiw|Koylonixiya||Koylonixiya|Barmoqlarning «baraban tayoqchasi» shakli|Qoshiqqa o'xshab botgan tirnoq — og'ir temir tanqisligi.
+plummer-vinson-blood-count-0n7sz6w|Plammer-Vinsonda qon tahlili|Disfagiya, og'iz burchagi yorilishi va qoshiqsimon tirnoqli ayolda nima bor|Past MCV|Yuqori MCV|Plammer-Vinson: parda, xeylit va temir tanqisligi.
+psoriasis-picture-0xl3jki|Psoriaz rasmi||Psoriaz|Seboreyali dermatit|Chegarasi aniq pilakchalardagi kumushrang qipiq, bu yerda peshonada.
+auspitz-sign-1ruoye7|Auspits belgisi|Psoriaz qipig'ini ko'chirsa nima bo'ladi|Nuqtali qon chiqadi|Tiniq pufakcha paydo bo'ladi|Auspits belgisi.
+psoriasis-microabscess-0dfr9nx|Psoriazdagi mikroabssess|Psoriazli teridagi neytrofil to'plamlari qanday ataladi|Munro mikroabssesslari|Potrye mikroabssesslari|Potrye zamburug'simon mikozga tegishli.
+psoriasis-first-line-treatment-1cwb54y|Psoriazning birlamchi davosi|Psoriazning mahalliy davosiga nima kiradi|Kalsipotrien|Kalsitonin|D vitamini hosilasi, yoki steroid, yoki toshko'mir smolasi.
+psoriatic-arthritis-x-ray-1l5fuc6|Psoriatik artritda rentgen|Psoriatik artritda qo'l rentgeni nimani ko'rsatadi|«Qalam kosada» deformatsiyasini|Simmetrik bo'g'im torayishini|Va yonida HLA-B27 yuradi.

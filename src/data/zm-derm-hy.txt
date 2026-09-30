@@ -132,3 +132,64 @@ B|Parvovirus once the cheeks are red|derm,micro,peds|By the time the cheeks are 
 I|Parvovirus in an adult|derm,micro|hdp23a.webp|A viral exanthem|Cellulitis|A lacy rash over the limbs of a daycare worker - parvovirus in an adult.
 I|Eczema herpeticum picture|derm,micro,immuno|hdp23b.webp|Eczema herpeticum|Impetigo|Painful punched-out vesicles over eczema, with fever and nodes.
 B|Eczema herpeticum treatment|derm,micro,pharm|Eczema herpeticum is treated with|Oral aciclovir|A stronger topical steroid|A steroid would feed it.
+
+# -- shingles, and what else the herpes viruses do -----------------------
+I|Shingles picture|derm,micro|hdp23c.webp|Shingles|Contact dermatitis|Grouped vesicles in one dermatome, stopping at the midline.
+B|Shingles in a child|derm,micro,peds|Shingles in a child on chemotherapy is|Possible, because he is immunosuppressed|Impossible before adulthood|Paediatric shingles is a real thing.
+B|Herpes zoster naming|derm,micro|Herpes zoster is|Another name for shingles|The name of a virus|The virus is varicella zoster, HHV3.
+I|Herpes zoster oticus|derm,micro,neuro|hdp24a.webp|Herpes zoster oticus|Otitis externa|Crusted lesions around the ear with a facial palsy - Ramsay Hunt.
+B|Shingles vaccine age|derm,micro|The shingles vaccine is offered from age|Sixty|Forty|What the newer family medicine form wants.
+B|Chickenpox crops|derm,micro,peds|Itchy vesicles at several stages of healing at once are|Chickenpox|Smallpox|Smallpox lesions are all at the same stage.
+I|Roseola|derm,micro,peds|hdp24b.webp|Roseola|Measles|The rash that arrives as a three-day fever breaks - HHV6.
+I|Pityriasis rosea picture|derm|hdp25a.webp|Pityriasis rosea|Tinea corporis|Oval patches following the skin lines after one larger herald patch.
+B|Pityriasis rosea course|derm|Pityriasis rosea|Clears on its own|Needs oral antifungals|A Christmas-tree pattern down the back.
+I|Kaposi sarcoma picture|derm,oncology,hiv|hdp25b.webp|Kaposi sarcoma|Bacillary angiomatosis|Violaceous nodules and plaques in an immunosuppressed patient - HHV8.
+I|Bacillary angiomatosis|derm,micro,hiv|hdp26a.webp|Bacillary angiomatosis|Kaposi sarcoma|Red vascular papules that look like Kaposi but grow a bacterium.
+B|Bacillary angiomatosis organism|derm,micro,hiv|When Kaposi-like lesions are offered only bacterial answers, choose|Bartonella henselae|Staphylococcus aureus|The same organism as cat scratch disease.
+B|Cat scratch stain|derm,micro|The organism of cat scratch disease is seen with|A silver stain|A Gram stain|Granulomatous nodes in a child with a kitten.
+I|Molluscum contagiosum|derm,micro,peds|hdp26b.webp|Molluscum contagiosum|Chickenpox|Skin-coloured papules dimpled in the centre - the largest DNA virus.
+B|Onchocerciasis|derm,micro,eye|River blindness with skin nodules is caused by|A roundworm from a black fly|A protozoan from a sandfly|Onchocerca volvulus, second to trachoma worldwide.
+B|Romana sign|derm,micro,cardio|A swollen eyelid with heart failure in South America is|Chagas disease|Leishmaniasis|Trypanosoma cruzi, from the painless kissing bug.
+I|Cutaneous leishmaniasis picture|derm,micro|hdp27a.webp|Cutaneous leishmaniasis|Cutaneous anthrax|A crusted plaque after travel, carried by the sandfly.
+B|Visceral leishmaniasis|derm,micro,liver|Leishmania donovani spreading inward causes|Raised liver enzymes and pancytopenia|An isolated skin ulcer only|Kala azar.
+I|Mycobacterium marinum picture|derm,micro|hdp27b.webp|Mycobacterium marinum|Staphylococcal cellulitis|Nodules up the arm of an aquarium worker.
+I|Mycobacterium avium lesion|derm,micro,peds|hdp27c.webp|Mycobacterium avium intracellulare|Mumps|A reddish preauricular node in a transplanted child.
+B|Leprosy temperature|derm,micro,neuro|Mycobacterium leprae picks the nose and the fingers because it|Grows at cooler temperatures|Needs a rich blood supply|Hence leonine facies and numb hands.
+
+# -- skin that reports on the inside ------------------------------------
+I|Dermatitis herpetiformis picture|derm,immuno,gi|hdp28a.webp|Dermatitis herpetiformis|Eczema herpeticum|Itchy grouped vesicles on the elbows and knees of a coeliac patient.
+B|Dermatitis herpetiformis biopsy|derm,immuno,gi|Biopsy in dermatitis herpetiformis shows|IgA at the dermal papillae|IgG along the basement membrane|Despite the name, no herpes anywhere.
+I|Pyoderma gangrenosum picture|derm,gi|hdp28b.webp|Pyoderma gangrenosum|A diabetic foot ulcer|An ulcer with a necrotic, undermined edge in inflammatory bowel disease.
+I|Erythema nodosum picture|derm,immuno|hdp29a.webp|Erythema nodosum|Cellulitis|Tender violet nodules over the shins - inflamed subcutaneous fat.
+B|Erythema nodosum hypersensitivity|derm,immuno|Erythema nodosum is hypersensitivity of type|III|I|Immune complexes, as in sarcoidosis, Crohn and serum sickness.
+B|Perianal fistula|derm,gi|Perianal abscesses and fistulae with bloody stool point to|Crohn disease|Ulcerative colitis|The inflammation in Crohn goes through the wall.
+B|Anal fissure|derm,gi|An anal fissure with a skin tag is managed with|A sitz bath|Immediate surgery|Usually posterior, in the midline.
+B|Pilonidal disease|derm,surgery|A painful mass at the top of the gluteal cleft is treated by|Surgical closure|Oral antibiotics alone|A pilonidal cyst or abscess.
+B|Arthus reaction timing|derm,immuno,pharm|A red rash at an injection site three days later is|An Arthus reaction|An immediate allergy|Type III takes days; type I is immediate.
+B|Serum sickness|derm,immuno,pharm|Polyarthritis a few days after an injected drug is|Serum sickness|Anaphylaxis|Another type III reaction.
+I|Malar rash|derm,immuno,rheum|hdp29b.webp|A malar rash|Rosacea|Redness over the cheeks and bridge of the nose, sparing the folds beside it.
+B|Malar rash immunology|derm,immuno,rheum|The malar rash of lupus is caused by|Immune complexes|Direct cell lysis|Which is why serum sickness is its closest relative.
+I|Heliotrope rash|derm,immuno,rheum|hdp30a.webp|Dermatomyositis|Systemic lupus erythematosus|Violet eyelids and a rash across the shoulders - the heliotrope and the shawl.
+B|Dermatomyositis antibody|derm,immuno,rheum|The antibody classically found in dermatomyositis is|Anti-Jo1|Anti-Smith|Raised creatine kinase and weak hips as well.
+I|Gottron papules|derm,immuno,rheum|hdp30b.webp|Gottron papules|Psoriasis of the hands|Scaly violet papules sitting over the knuckles.
+B|Juvenile rheumatoid arthritis anaemia|derm,rheum,peds|A child with recurrent joint pains and a low MCV has|Anaemia of chronic disease|Iron deficiency from bleeding|The salmon-pink rash shows up in only a minority.
+
+# -- pigment -------------------------------------------------------------
+I|Vitiligo picture|derm,immuno|hdp31a.webp|Vitiligo|Tinea versicolor|Sharply edged chalk-white patches. Tinea versicolor is faintly scaly, not white.
+B|Vitiligo melanocytes|derm,immuno|In vitiligo the melanocytes are|Fewer, making less melanin|Normal, making less melanin|T cells destroy them.
+B|Albinism melanocytes|derm,genetics|In albinism the melanocytes are|Normal, making less melanin|Fewer, making less melanin|The cells are there; the tyrosinase is not.
+B|Freckle melanocytes|derm|In a freckle the melanocytes are|Normal, making more melanin|More, making normal melanin|An ephelis.
+I|Lentigo|derm|hdp32a.webp|A lentigo|A freckle|A flat brown patch on sun-worn skin - an age spot.
+B|Lentigo melanocytes|derm|In a lentigo the melanocytes are|More, making the usual melanin|Normal, making more melanin|The cell count rises, not the output.
+B|Dark skin melanosomes|derm,histo|Darker skin has|The same melanocytes, more melanosomes|More melanocytes, the same melanosomes|The organelles inside the cell, not the cells.
+
+# -- connective tissue and the nails -------------------------------------
+I|Raynaud and sclerodactyly|derm,rheum|hdp32b.webp|Limited scleroderma|Raynaud disease alone|White fingers and tight, shiny skin over the digits - CREST.
+B|Limited scleroderma outcome|derm,rheum,resp|A patient with CREST syndrome is most likely to develop|Pulmonary hypertension|Renal crisis|From the pulmonary fibrosis beneath it.
+I|Koilonychia|derm,heme|hdp33a.webp|Koilonychia|Clubbing|A nail hollowed into a spoon - severe iron deficiency.
+B|Plummer-Vinson blood count|derm,heme,gi|A woman with dysphagia, cracked mouth corners and spoon nails has|A low MCV|A high MCV|Plummer-Vinson: webs, cheilosis and iron deficiency.
+I|Psoriasis picture|derm|hdp33b.webp|Psoriasis|Seborrheic dermatitis|Silvery scale on sharply edged plaques, here on the forehead.
+B|Auspitz sign|derm|Scraping psoriatic scale away causes|Pinpoint bleeding|Clear blistering|The Auspitz sign.
+B|Psoriasis microabscess|derm,histo|The neutrophil collections in psoriatic skin are called|Munro microabscesses|Pautrier microabscesses|Pautrier belongs to mycosis fungoides.
+B|Psoriasis first-line treatment|derm,pharm|Topical treatment for psoriasis includes|Calcipotriene|Calcitonin|A vitamin D derivative, or a steroid, or coal tar.
+B|Psoriatic arthritis x-ray|derm,rheum|The hand x-ray of psoriatic arthritis shows|A pencil-in-cup deformity|Symmetric joint space loss|And HLA-B27 keeps it company.
